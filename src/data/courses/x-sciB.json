@@ -1,0 +1,7398 @@
+{
+ "sci-bio": {
+  "name": "Biology",
+  "units": [
+   {
+    "title": "Cells and Organelles",
+    "period": "Cell basics",
+    "learn": [
+     {
+      "h": "Cell theory",
+      "b": "All living things are made of cells. The cell is the basic unit of life. All cells come from other cells. Prokaryotes, like bacteria, have no nucleus. Eukaryotes, like plants and animals, have a nucleus and other membrane-bound organelles."
+     },
+     {
+      "h": "Organelles and their jobs",
+      "b": "The nucleus holds the DNA. Ribosomes build proteins. Mitochondria make most of the cell's ATP. The Golgi apparatus packages and ships proteins. Lysosomes digest waste."
+     },
+     {
+      "h": "Plant cells and levels of life",
+      "b": "Plant cells also have a cell wall, chloroplasts for photosynthesis, and a large central vacuole. Life is organized in levels: cell, tissue, organ, organ system, organism."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which organelle makes most of the cell's ATP?",
+      "o": [
+       "Ribosome",
+       "Mitochondrion",
+       "Lysosome",
+       "Golgi apparatus"
+      ],
+      "a": 1,
+      "why": "Mitochondria carry out cellular respiration."
+     },
+     {
+      "t": "mc",
+      "q": "Which structure is found in plant cells but NOT in animal cells?",
+      "o": [
+       "Cell wall",
+       "Nucleus",
+       "Ribosome",
+       "Cell membrane"
+      ],
+      "a": 0,
+      "why": "Plants have a rigid cell wall outside the membrane."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a prokaryote?",
+      "o": [
+       "A plant cell",
+       "A human skin cell",
+       "A bacterium",
+       "A yeast cell"
+      ],
+      "a": 2,
+      "why": "Bacteria have no nucleus."
+     },
+     {
+      "t": "mc",
+      "q": "Where are proteins built in the cell?",
+      "o": [
+       "Lysosomes",
+       "Vacuoles",
+       "Cell wall",
+       "Ribosomes"
+      ],
+      "a": 3,
+      "why": "Ribosomes read mRNA and join amino acids."
+     },
+     {
+      "t": "tf",
+      "q": "Prokaryotic cells have a nucleus.",
+      "a": false,
+      "why": "Prokaryotes have no nucleus; their DNA floats in the cytoplasm."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Nucleus",
+        "Holds the DNA"
+       ],
+       [
+        "Chloroplast",
+        "Does photosynthesis"
+       ],
+       [
+        "Lysosome",
+        "Digests waste"
+       ],
+       [
+        "Golgi apparatus",
+        "Packages and ships proteins"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the levels of life in order from smallest to largest",
+      "items": [
+       [
+        "Cell",
+        1
+       ],
+       [
+        "Tissue",
+        2
+       ],
+       [
+        "Organ",
+        3
+       ],
+       [
+        "Organ system",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which organelle is called the 'powerhouse of the cell'?",
+      "a": [
+       "mitochondria",
+       "mitochondrion",
+       "the mitochondria"
+      ],
+      "hint": "It makes ATP.",
+      "why": "Mitochondria carry out cellular respiration to make ATP."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a microscope has a 10x eyepiece and a 40x objective lens. What is the total magnification?",
+      "a": [
+       "400",
+       "400x"
+      ],
+      "hint": "Multiply the two lenses.",
+      "why": "10 x 40 = 400."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a cell has no nucleus and no membrane-bound organelles. Is it prokaryotic or eukaryotic?",
+      "a": [
+       "prokaryotic",
+       "prokaryote"
+      ],
+      "hint": "Think of bacteria.",
+      "why": "Cells without a nucleus are prokaryotic."
+     }
+    ]
+   },
+   {
+    "title": "Biochemistry and the Cell Membrane",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Macromolecules",
+      "b": "Living things are built from four big molecule types. Carbohydrates give quick energy. Lipids store energy and form membranes. Proteins are chains of amino acids and do most of the cell's work. Nucleic acids (DNA and RNA) store information."
+     },
+     {
+      "h": "Enzymes",
+      "b": "Enzymes are proteins that speed up reactions by lowering the activation energy. Each enzyme fits a specific substrate, like a key in a lock. Heat or the wrong pH can change an enzyme's shape so it stops working."
+     },
+     {
+      "h": "Moving across membranes",
+      "b": "The cell membrane is a phospholipid bilayer. Diffusion moves particles from high to low concentration with no energy needed. Osmosis is the diffusion of water across a membrane. Active transport moves particles against the gradient and uses energy (ATP)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the building blocks (monomers) of proteins?",
+      "o": [
+       "Glucose",
+       "Fatty acids",
+       "Nucleotides",
+       "Amino acids"
+      ],
+      "a": 3,
+      "why": "Proteins are chains of amino acids."
+     },
+     {
+      "t": "mc",
+      "q": "What does an enzyme do?",
+      "o": [
+       "Provides energy as fuel",
+       "Lowers the activation energy of a reaction",
+       "Stores genetic information",
+       "Builds cell walls"
+      ],
+      "a": 1,
+      "why": "Enzymes are biological catalysts."
+     },
+     {
+      "t": "mc",
+      "q": "What is osmosis?",
+      "o": [
+       "Movement of water across a membrane",
+       "Movement of ions using ATP",
+       "Movement of proteins into the nucleus",
+       "Copying of DNA"
+      ],
+      "a": 0,
+      "why": "Osmosis is the diffusion of water."
+     },
+     {
+      "t": "mc",
+      "q": "What makes active transport different from diffusion?",
+      "o": [
+       "It moves particles from high to low concentration",
+       "It needs no membrane",
+       "It uses energy to move particles against a gradient",
+       "It only moves water"
+      ],
+      "a": 2,
+      "why": "Active transport uses ATP to go against the gradient."
+     },
+     {
+      "t": "tf",
+      "q": "Diffusion requires the cell to use ATP.",
+      "a": false,
+      "why": "Diffusion is passive, so it needs no cell energy."
+     },
+     {
+      "t": "match",
+      "q": "Match each molecule type to its role",
+      "pairs": [
+       [
+        "Carbohydrate",
+        "Quick energy from sugars"
+       ],
+       [
+        "Lipid",
+        "Stores energy, forms membranes"
+       ],
+       [
+        "Protein",
+        "Chains of amino acids"
+       ],
+       [
+        "Nucleic acid",
+        "DNA and RNA"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from smallest to largest",
+      "items": [
+       [
+        "Atom",
+        1
+       ],
+       [
+        "Amino acid",
+        2
+       ],
+       [
+        "Protein",
+        3
+       ],
+       [
+        "Cell",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what type of molecule is an enzyme?",
+      "a": [
+       "protein",
+       "a protein",
+       "proteins"
+      ],
+      "hint": "Chains of amino acids.",
+      "why": "Enzymes are proteins."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the monomer (building block) of a nucleic acid called?",
+      "a": [
+       "nucleotide",
+       "nucleotides",
+       "a nucleotide"
+      ],
+      "hint": "DNA and RNA are chains of these.",
+      "why": "Nucleic acids are chains of nucleotides."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a cell is placed in pure water. Water moves in by osmosis. Does the cell swell or shrink?",
+      "a": [
+       "swell",
+       "swells",
+       "it swells",
+       "swell up"
+      ],
+      "hint": "Water moves to where there is more solute.",
+      "why": "The cell has more solute than pure water, so water enters and it swells."
+     }
+    ]
+   },
+   {
+    "title": "Cell Energy and Division",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Photosynthesis",
+      "b": "Photosynthesis has two stages. The light reactions happen in the thylakoid membranes and capture light energy. The Calvin cycle happens in the stroma and uses that energy to build sugar from carbon dioxide."
+     },
+     {
+      "h": "Cellular respiration",
+      "b": "Glycolysis splits glucose in the cytoplasm and does not need oxygen. The Krebs cycle and the electron transport chain happen in the mitochondria and need oxygen. Together they make about 36 to 38 ATP per glucose."
+     },
+     {
+      "h": "Mitosis and meiosis",
+      "b": "Mitosis makes two identical body cells. Its phases are prophase, metaphase, anaphase, and telophase. Meiosis makes four different gametes, each with half the number of chromosomes (haploid)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where do the light reactions of photosynthesis occur?",
+      "o": [
+       "Mitochondrial matrix",
+       "Cytoplasm",
+       "Nucleus",
+       "Thylakoid membranes"
+      ],
+      "a": 3,
+      "why": "Thylakoids hold the chlorophyll."
+     },
+     {
+      "t": "mc",
+      "q": "Which stage of cellular respiration happens in the cytoplasm and needs no oxygen?",
+      "o": [
+       "Glycolysis",
+       "Krebs cycle",
+       "Electron transport chain",
+       "Calvin cycle"
+      ],
+      "a": 0,
+      "why": "Glycolysis occurs in the cytoplasm."
+     },
+     {
+      "t": "mc",
+      "q": "What does mitosis produce?",
+      "o": [
+       "Four haploid gametes",
+       "Two genetically identical cells",
+       "One large cell",
+       "Two different gametes"
+      ],
+      "a": 1,
+      "why": "Mitosis makes identical daughter cells."
+     },
+     {
+      "t": "mc",
+      "q": "What does meiosis produce?",
+      "o": [
+       "Two identical body cells",
+       "Two diploid cells",
+       "Four haploid cells",
+       "One diploid cell"
+      ],
+      "a": 2,
+      "why": "Meiosis halves the chromosome number to make gametes."
+     },
+     {
+      "t": "tf",
+      "q": "Chromosomes line up in the middle of the cell during anaphase.",
+      "a": false,
+      "why": "They line up during metaphase; in anaphase the sister chromatids separate."
+     },
+     {
+      "t": "match",
+      "q": "Match each process to its description",
+      "pairs": [
+       [
+        "Glycolysis",
+        "Splits glucose in cytoplasm"
+       ],
+       [
+        "Calvin cycle",
+        "Builds sugar from carbon dioxide"
+       ],
+       [
+        "Mitosis",
+        "Makes identical body cells"
+       ],
+       [
+        "Meiosis",
+        "Makes gametes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the phases of mitosis in order",
+      "items": [
+       [
+        "Prophase",
+        1
+       ],
+       [
+        "Metaphase",
+        2
+       ],
+       [
+        "Anaphase",
+        3
+       ],
+       [
+        "Telophase",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what sugar is made by photosynthesis?",
+      "a": [
+       "glucose"
+      ],
+      "hint": "C6H12O6.",
+      "why": "The Calvin cycle builds glucose."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a body cell with 46 chromosomes divides by mitosis. How many chromosomes are in each new cell?",
+      "a": [
+       "46"
+      ],
+      "hint": "Mitosis makes identical cells.",
+      "why": "Mitosis keeps the chromosome number the same."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a human cell with 46 chromosomes goes through meiosis. How many chromosomes are in each gamete?",
+      "a": [
+       "23"
+      ],
+      "hint": "Gametes are haploid.",
+      "why": "Meiosis halves the number: 46 / 2 = 23."
+     }
+    ]
+   },
+   {
+    "title": "DNA and Genetics",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "DNA structure and copying",
+      "b": "DNA is a double helix made of nucleotides. The bases pair in a fixed way: A with T, and C with G. In replication, each strand is used as a template to build a new matching strand."
+     },
+     {
+      "h": "From gene to protein",
+      "b": "In transcription, DNA is copied into mRNA in the nucleus. In translation, a ribosome reads the mRNA three bases (a codon) at a time and joins amino acids into a protein. RNA uses uracil (U) instead of thymine."
+     },
+     {
+      "h": "Inheritance",
+      "b": "Mendel showed that each parent gives one allele for a gene. A genotype is the alleles, such as AA, Aa, or aa. Heterozygous means two different alleles. A mutation is a change in the DNA sequence."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In DNA, which base pairs with adenine (A)?",
+      "o": [
+       "Guanine",
+       "Cytosine",
+       "Uracil",
+       "Thymine"
+      ],
+      "a": 3,
+      "why": "A pairs with T in DNA."
+     },
+     {
+      "t": "mc",
+      "q": "What is made during transcription?",
+      "o": [
+       "mRNA",
+       "A protein",
+       "A new DNA strand",
+       "A lipid"
+      ],
+      "a": 0,
+      "why": "DNA is copied into messenger RNA."
+     },
+     {
+      "t": "mc",
+      "q": "Where does translation take place?",
+      "o": [
+       "Nucleus",
+       "Ribosome",
+       "Cell wall",
+       "Vacuole"
+      ],
+      "a": 1,
+      "why": "Ribosomes build proteins from mRNA."
+     },
+     {
+      "t": "mc",
+      "q": "Which genotype is heterozygous?",
+      "o": [
+       "AA",
+       "aa",
+       "Aa",
+       "A"
+      ],
+      "a": 2,
+      "why": "Heterozygous means two different alleles."
+     },
+     {
+      "t": "tf",
+      "q": "In RNA, adenine pairs with thymine.",
+      "a": false,
+      "why": "RNA has uracil instead of thymine."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Codon",
+        "Three bases that code for an amino acid"
+       ],
+       [
+        "Ribosome",
+        "Builds proteins"
+       ],
+       [
+        "mRNA",
+        "Copy of a gene sent out of nucleus"
+       ],
+       [
+        "Mutation",
+        "Change in DNA sequence"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps from gene to protein",
+      "items": [
+       [
+        "DNA is transcribed into mRNA",
+        1
+       ],
+       [
+        "mRNA moves to a ribosome",
+        2
+       ],
+       [
+        "tRNA brings amino acids",
+        3
+       ],
+       [
+        "A protein chain forms",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a DNA strand reads ATTGC. Write the complementary strand.",
+      "a": [
+       "TAACG"
+      ],
+      "hint": "A pairs with T, C pairs with G.",
+      "why": "A-T, T-A, T-A, G-C, C-G gives TAACG."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in a cross of Aa x Aa, what fraction of offspring are aa?",
+      "a": [
+       "1/4",
+       "25%",
+       "25",
+       "0.25"
+      ],
+      "hint": "Make a Punnett square.",
+      "why": "The cross gives AA, Aa, Aa, aa, so 1 in 4 is aa."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: an mRNA has 12 bases and no stop codon. How many amino acids does it code for?",
+      "a": [
+       "4"
+      ],
+      "hint": "A codon is 3 bases.",
+      "why": "12 / 3 = 4 codons, so 4 amino acids."
+     }
+    ]
+   },
+   {
+    "title": "Gene Expression and Biotechnology",
+    "period": "Advanced genetics",
+    "learn": [
+     {
+      "h": "Mutations and gene control",
+      "b": "A mutation is a change in the DNA sequence. A substitution swaps one base. An insertion or deletion adds or removes bases and can cause a frameshift, which changes every codon after it. All your cells have the same DNA, but each cell type turns on different genes."
+     },
+     {
+      "h": "Copying and reading DNA",
+      "b": "PCR makes millions of copies of a DNA segment using heat cycles and DNA polymerase. Gel electrophoresis separates DNA fragments by size. DNA is negative, so it moves toward the positive end, and the smallest pieces travel farthest."
+     },
+     {
+      "h": "Genetic engineering",
+      "b": "CRISPR can cut DNA at a chosen spot to edit a gene. Scientists can also put a human gene, like the one for insulin, into a bacterial plasmid so bacteria make the protein. An organism with added genes is called transgenic or a GMO."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does PCR do?",
+      "o": [
+       "Makes many copies of a DNA segment",
+       "Cuts DNA at one spot",
+       "Makes proteins from mRNA",
+       "Separates DNA by size"
+      ],
+      "a": 0,
+      "why": "PCR amplifies a chosen DNA segment."
+     },
+     {
+      "t": "mc",
+      "q": "In gel electrophoresis, which DNA fragments travel the farthest?",
+      "o": [
+       "The largest fragments",
+       "The fragments with the most A bases",
+       "The smallest fragments",
+       "All travel the same distance"
+      ],
+      "a": 2,
+      "why": "Small pieces move through the gel more easily."
+     },
+     {
+      "t": "mc",
+      "q": "Deleting one base from the middle of a gene usually causes what?",
+      "o": [
+       "A silent mutation",
+       "A frameshift mutation",
+       "No change at all",
+       "A change in only one amino acid"
+      ],
+      "a": 1,
+      "why": "The reading frame shifts, changing all later codons."
+     },
+     {
+      "t": "mc",
+      "q": "Why do muscle cells and nerve cells look different if they have the same DNA?",
+      "o": [
+       "They have different DNA",
+       "They have different numbers of genes",
+       "Only muscle cells use DNA",
+       "They express different genes"
+      ],
+      "a": 3,
+      "why": "Gene expression differs between cell types."
+     },
+     {
+      "t": "tf",
+      "q": "In gel electrophoresis, DNA fragments move toward the positive electrode.",
+      "a": true,
+      "why": "DNA has a negative charge, so it is pulled toward the positive end."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "PCR",
+        "Copies a DNA segment"
+       ],
+       [
+        "CRISPR",
+        "Edits a gene"
+       ],
+       [
+        "Plasmid",
+        "Small ring of bacterial DNA"
+       ],
+       [
+        "Gel electrophoresis",
+        "Separates fragments by size"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of one PCR cycle in order",
+      "items": [
+       [
+        "Heat separates the DNA strands",
+        1
+       ],
+       [
+        "Primers attach to the strands",
+        2
+       ],
+       [
+        "DNA polymerase builds new strands",
+        3
+       ],
+       [
+        "The cycle repeats to double the copies",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a DNA template strand reads TAC GGA. Write the mRNA (no spaces).",
+      "a": [
+       "AUGCCU"
+      ],
+      "hint": "A pairs with U in RNA.",
+      "why": "TAC pairs to AUG, and GGA pairs to CCU."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: PCR doubles the DNA every cycle. Starting from 1 molecule, how many copies after 5 cycles?",
+      "a": [
+       "32"
+      ],
+      "hint": "2 to the power 5.",
+      "why": "2^5 = 32."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which enzyme builds the new DNA strands in PCR? (two words)",
+      "a": [
+       "dna polymerase",
+       "taq polymerase",
+       "polymerase",
+       "taq"
+      ],
+      "hint": "It is a heat-stable polymerase.",
+      "why": "DNA polymerase adds nucleotides to the primers."
+     }
+    ]
+   },
+   {
+    "title": "Evolution and Ecology",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Evolution",
+      "b": "Natural selection acts on variation in a population. Homologous structures, like the limb bones of humans, whales, and bats, show common ancestry. New species often form when populations become separated and stop interbreeding."
+     },
+     {
+      "h": "Energy in ecosystems",
+      "b": "Energy enters from the Sun and is captured by producers. Only about 10 percent of energy passes from one trophic level to the next. The rest is lost as heat. Energy flows one way, while matter like carbon and nitrogen is recycled."
+     },
+     {
+      "h": "Populations",
+      "b": "Populations can grow quickly at first. Carrying capacity is the largest population an environment can support with its food, water, and space."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "About what percent of energy passes to the next trophic level?",
+      "o": [
+       "1 percent",
+       "10 percent",
+       "50 percent",
+       "90 percent"
+      ],
+      "a": 1,
+      "why": "About 90 percent is lost, mostly as heat."
+     },
+     {
+      "t": "mc",
+      "q": "What is carrying capacity?",
+      "o": [
+       "The largest population an environment can support",
+       "The fastest growth rate",
+       "The number of species in an area",
+       "The age of a population"
+      ],
+      "a": 0,
+      "why": "Resources set the limit."
+     },
+     {
+      "t": "mc",
+      "q": "What often starts the formation of a new species?",
+      "o": [
+       "Eating more food",
+       "Geographic separation of populations",
+       "Warmer weather",
+       "Seeds spreading"
+      ],
+      "a": 1,
+      "why": "Separated groups can no longer interbreed and diverge."
+     },
+     {
+      "t": "mc",
+      "q": "What do homologous structures suggest?",
+      "o": [
+       "Same climate",
+       "Same diet",
+       "Same habitat",
+       "Common ancestry"
+      ],
+      "a": 3,
+      "why": "Similar bone patterns point to a shared ancestor."
+     },
+     {
+      "t": "tf",
+      "q": "In ecosystems, energy is recycled while matter flows in one direction.",
+      "a": false,
+      "why": "It is the opposite: energy flows one way and matter is recycled."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Carrying capacity",
+        "Largest sustainable population"
+       ],
+       [
+        "Homologous structures",
+        "Similar structures from a common ancestor"
+       ],
+       [
+        "Producer",
+        "Makes food from sunlight"
+       ],
+       [
+        "Decomposer",
+        "Recycles nutrients from dead matter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the trophic levels, starting with the producer",
+      "items": [
+       [
+        "Producer",
+        1
+       ],
+       [
+        "Primary consumer",
+        2
+       ],
+       [
+        "Secondary consumer",
+        3
+       ],
+       [
+        "Tertiary consumer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: grass has 10000 J of energy. How many joules reach the frog in grass -> grasshopper -> frog? (10% rule)",
+      "a": [
+       "100",
+       "100 j"
+      ],
+      "hint": "Take 10% twice.",
+      "why": "10000 x 0.1 = 1000, and 1000 x 0.1 = 100."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the largest population an environment can support called? (two words)",
+      "a": [
+       "carrying capacity"
+      ],
+      "hint": "K in the logistic model.",
+      "why": "Food, water, and space set the carrying capacity."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: structures like the human arm and whale flipper share a similar bone layout. What word describes them?",
+      "a": [
+       "homologous",
+       "homologous structures",
+       "homologous structure"
+      ],
+      "hint": "It shows common ancestry.",
+      "why": "Homologous structures come from a shared ancestor."
+     }
+    ]
+   },
+   {
+    "title": "Body Systems and Homeostasis",
+    "period": "Human body",
+    "learn": [
+     {
+      "h": "Homeostasis",
+      "b": "Homeostasis is keeping the body's inside conditions steady. Most control uses negative feedback, which reverses a change. When you get too hot, you sweat, and the sweat cools you back toward normal, about 37 degrees Celsius."
+     },
+     {
+      "h": "Moving and breathing",
+      "b": "The circulatory system uses the heart, blood vessels, and blood to carry oxygen and nutrients. Arteries carry blood away from the heart. In the lungs, oxygen enters the blood through tiny air sacs called alveoli, and carbon dioxide leaves."
+     },
+     {
+      "h": "Digestion and control",
+      "b": "In digestion, enzymes break food down and the small intestine absorbs most nutrients. The nervous system sends fast electrical signals through neurons. The endocrine system uses hormones: the pancreas releases insulin to lower blood sugar. The kidneys filter the blood."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where does gas exchange happen in the lungs?",
+      "o": [
+       "Arteries",
+       "Bronchi",
+       "Alveoli",
+       "Trachea"
+      ],
+      "a": 2,
+      "why": "Alveoli are thin air sacs surrounded by capillaries."
+     },
+     {
+      "t": "mc",
+      "q": "Which hormone lowers blood glucose?",
+      "o": [
+       "Insulin",
+       "Adrenaline",
+       "Glucagon",
+       "Estrogen"
+      ],
+      "a": 0,
+      "why": "The pancreas releases insulin when blood sugar is high."
+     },
+     {
+      "t": "mc",
+      "q": "Where is most nutrient absorption done?",
+      "o": [
+       "Stomach",
+       "Small intestine",
+       "Large intestine",
+       "Esophagus"
+      ],
+      "a": 1,
+      "why": "The small intestine has a huge surface area for absorption."
+     },
+     {
+      "t": "mc",
+      "q": "What does negative feedback do?",
+      "o": [
+       "Makes a change bigger",
+       "Stops all body activity",
+       "Only works in the brain",
+       "Reverses a change to return to a set point"
+      ],
+      "a": 3,
+      "why": "It keeps conditions such as temperature stable."
+     },
+     {
+      "t": "tf",
+      "q": "Arteries carry blood away from the heart.",
+      "a": true,
+      "why": "Arteries move blood away; veins return it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Neuron",
+        "Sends electrical signals"
+       ],
+       [
+        "Red blood cell",
+        "Carries oxygen"
+       ],
+       [
+        "Pancreas",
+        "Makes insulin"
+       ],
+       [
+        "Kidney",
+        "Filters the blood"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of blood in order, starting at the right side of the heart",
+      "items": [
+       [
+        "Right side of the heart",
+        1
+       ],
+       [
+        "Lungs",
+        2
+       ],
+       [
+        "Left side of the heart",
+        3
+       ],
+       [
+        "Body tissues",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is normal human body temperature in degrees Celsius?",
+      "a": [
+       "37",
+       "37.0"
+      ],
+      "hint": "About 98.6 F.",
+      "why": "Normal body temperature is about 37 C."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which hormone does the pancreas release when blood sugar is high?",
+      "a": [
+       "insulin"
+      ],
+      "hint": "It lowers blood glucose.",
+      "why": "Insulin helps cells take up glucose."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a heart beats 70 times per minute. How many beats in 10 minutes?",
+      "a": [
+       "700"
+      ],
+      "hint": "Multiply.",
+      "why": "70 x 10 = 700."
+     }
+    ]
+   },
+   {
+    "title": "Viruses, Bacteria and Immunity",
+    "period": "Health and disease",
+    "learn": [
+     {
+      "h": "Bacteria and viruses",
+      "b": "Bacteria are living prokaryotic cells that reproduce by binary fission. Viruses are not cells. A virus is genetic material inside a protein coat, and it can only reproduce inside a host cell. Antibiotics kill bacteria but do not work on viruses."
+     },
+     {
+      "h": "How the body fights germs",
+      "b": "A pathogen is a germ that causes disease. Skin and mucus are the first barrier. White blood cells then attack. An antigen is a marker on a pathogen. B cells make antibodies, proteins that bind to a specific antigen."
+     },
+     {
+      "h": "Vaccines",
+      "b": "A vaccine shows the immune system a harmless piece or weak form of a germ. The body makes antibodies and memory cells. If the real germ comes later, the memory cells respond fast, so you often do not get sick."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Antibiotics are used to treat infections caused by what?",
+      "o": [
+       "Bacteria",
+       "Viruses",
+       "Both viruses and bacteria",
+       "Allergies"
+      ],
+      "a": 0,
+      "why": "Antibiotics target bacterial cells, not viruses."
+     },
+     {
+      "t": "mc",
+      "q": "How do bacteria reproduce?",
+      "o": [
+       "Meiosis",
+       "Pollination",
+       "Binary fission",
+       "Budding off a spore case"
+      ],
+      "a": 2,
+      "why": "One cell splits into two identical cells."
+     },
+     {
+      "t": "mc",
+      "q": "What does a vaccine do?",
+      "o": [
+       "Kills all bacteria in the body",
+       "Trains the immune system to recognize a germ",
+       "Replaces white blood cells",
+       "Makes the body stop making antibodies"
+      ],
+      "a": 1,
+      "why": "It builds memory cells without causing the disease."
+     },
+     {
+      "t": "mc",
+      "q": "Which cells make antibodies?",
+      "o": [
+       "Red blood cells",
+       "Platelets",
+       "Neurons",
+       "B cells"
+      ],
+      "a": 3,
+      "why": "B cells are a type of white blood cell that produce antibodies."
+     },
+     {
+      "t": "tf",
+      "q": "Viruses are made of cells.",
+      "a": false,
+      "why": "Viruses are not cells; they need a host cell to reproduce."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Pathogen",
+        "Disease-causing organism"
+       ],
+       [
+        "Antigen",
+        "Marker that triggers a response"
+       ],
+       [
+        "Antibody",
+        "Protein that binds an antigen"
+       ],
+       [
+        "Memory cell",
+        "Remembers a past germ"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a virus infecting a cell in order",
+      "items": [
+       [
+        "Virus attaches to a host cell",
+        1
+       ],
+       [
+        "Virus puts its genetic material inside",
+        2
+       ],
+       [
+        "Host cell makes new viruses",
+        3
+       ],
+       [
+        "New viruses burst out",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a bacterium divides every 20 minutes. Starting from 1 cell, how many cells after 2 hours?",
+      "a": [
+       "64"
+      ],
+      "hint": "2 hours is 6 doublings.",
+      "why": "2^6 = 64."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what word means a disease-causing organism?",
+      "a": [
+       "pathogen",
+       "a pathogen",
+       "pathogens"
+      ],
+      "hint": "Starts with P.",
+      "why": "A pathogen is a germ that causes disease."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which blood cells fight infection? (three words)",
+      "a": [
+       "white blood cells",
+       "white blood cell",
+       "white cells",
+       "leukocytes"
+      ],
+      "hint": "Not the red ones.",
+      "why": "White blood cells make up the immune response."
+     }
+    ]
+   }
+  ]
+ },
+ "sci-chem": {
+  "name": "Chemistry",
+  "units": [
+   {
+    "title": "Matter and Measurement",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "States and changes of state",
+      "b": "Matter is anything with mass that takes up space. In a solid, particles are packed and vibrate. In a liquid they slide past each other. In a gas they are far apart and move freely. Melting, freezing, boiling, and condensing are changes of state."
+     },
+     {
+      "h": "Physical and chemical change",
+      "b": "In a physical change, no new substance forms. Melting ice and dissolving salt are examples. In a chemical change, new substances form. Rusting, burning, and cooking an egg are examples. Signs include gas bubbles, a color change, or heat and light."
+     },
+     {
+      "h": "Pure substances, mixtures, and density",
+      "b": "An element has one kind of atom. A compound has two or more elements bonded together. A mixture is not chemically joined. Density is mass divided by volume: D = m / V. A 20 g sample with a volume of 5 cm^3 has a density of 4 g/cm^3."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a chemical change?",
+      "o": [
+       "Ice melting",
+       "Iron rusting",
+       "Sugar dissolving in water",
+       "Water boiling"
+      ],
+      "a": 1,
+      "why": "Rust is a new substance, iron oxide."
+     },
+     {
+      "t": "mc",
+      "q": "What is the change from gas to liquid called?",
+      "o": [
+       "Condensation",
+       "Evaporation",
+       "Melting",
+       "Sublimation"
+      ],
+      "a": 0,
+      "why": "Gas particles slow down and join into a liquid."
+     },
+     {
+      "t": "mc",
+      "q": "A sample has a mass of 20 g and a volume of 5 cm^3. What is its density?",
+      "o": [
+       "15 g/cm^3",
+       "100 g/cm^3",
+       "4 g/cm^3",
+       "0.25 g/cm^3"
+      ],
+      "a": 2,
+      "why": "20 / 5 = 4."
+     },
+     {
+      "t": "mc",
+      "q": "Salt fully dissolved in water is an example of what?",
+      "o": [
+       "A pure element",
+       "A compound",
+       "A heterogeneous mixture",
+       "A homogeneous mixture"
+      ],
+      "a": 3,
+      "why": "It looks the same throughout and can be separated by evaporation."
+     },
+     {
+      "t": "tf",
+      "q": "Melting is a chemical change.",
+      "a": false,
+      "why": "Melting only changes the state; no new substance forms."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Element",
+        "One kind of atom"
+       ],
+       [
+        "Compound",
+        "Elements bonded together"
+       ],
+       [
+        "Mixture",
+        "Substances not chemically joined"
+       ],
+       [
+        "Density",
+        "Mass per volume"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the changes in order as ice is heated",
+      "items": [
+       [
+        "Ice warms up",
+        1
+       ],
+       [
+        "Ice melts",
+        2
+       ],
+       [
+        "Water warms up",
+        3
+       ],
+       [
+        "Water boils",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a block has a mass of 60 g and a volume of 12 cm^3. What is its density in g/cm^3?",
+      "a": [
+       "5",
+       "5 g/cm3",
+       "5 g/cm^3"
+      ],
+      "hint": "D = m / V.",
+      "why": "60 / 12 = 5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the change from a solid directly to a gas called?",
+      "a": [
+       "sublimation"
+      ],
+      "hint": "Dry ice does it.",
+      "why": "Sublimation skips the liquid state."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a liquid has a density of 2.5 g/mL. What is the mass of 8 mL in grams?",
+      "a": [
+       "20",
+       "20 g"
+      ],
+      "hint": "m = D x V.",
+      "why": "2.5 x 8 = 20 g."
+     }
+    ]
+   },
+   {
+    "title": "Atoms and the Periodic Table",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Atomic structure",
+      "b": "An atom has protons and neutrons in the nucleus and electrons outside it. The atomic number is the number of protons. Isotopes are atoms of the same element with different numbers of neutrons."
+     },
+     {
+      "h": "Electrons and valence",
+      "b": "Electrons sit in energy levels. The outer-shell electrons are called valence electrons. For main-group elements, the group number tells how many: group 1 has 1, and group 17 has 7."
+     },
+     {
+      "h": "Trends",
+      "b": "Atomic radius increases going down a group. Alkali metals (group 1) are very reactive. Halogens (group 17) are reactive nonmetals. Noble gases (group 18) are stable and rarely react."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What do isotopes of an element have in common?",
+      "o": [
+       "Same number of neutrons",
+       "Same number of protons",
+       "Same mass",
+       "Same number of shells"
+      ],
+      "a": 1,
+      "why": "Isotopes differ only in neutrons."
+     },
+     {
+      "t": "mc",
+      "q": "How many valence electrons does a halogen (group 17) atom have?",
+      "o": [
+       "1",
+       "5",
+       "8",
+       "7"
+      ],
+      "a": 3,
+      "why": "Group 17 elements have 7 valence electrons."
+     },
+     {
+      "t": "mc",
+      "q": "How does atomic radius change going down a group?",
+      "o": [
+       "Increases",
+       "Decreases",
+       "Stays the same",
+       "Becomes zero"
+      ],
+      "a": 0,
+      "why": "More energy levels make the atom larger."
+     },
+     {
+      "t": "mc",
+      "q": "Which group contains the very reactive metals like sodium and potassium?",
+      "o": [
+       "Noble gases",
+       "Halogens",
+       "Alkali metals",
+       "Transition metals"
+      ],
+      "a": 2,
+      "why": "Alkali metals are group 1."
+     },
+     {
+      "t": "tf",
+      "q": "The atomic number of an element equals its number of neutrons.",
+      "a": false,
+      "why": "The atomic number equals the number of protons."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Isotope",
+        "Same protons, different neutrons"
+       ],
+       [
+        "Valence electron",
+        "Outer-shell electron"
+       ],
+       [
+        "Noble gas",
+        "Very stable and unreactive"
+       ],
+       [
+        "Halogen",
+        "Group 17 nonmetal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order by increasing atomic number",
+      "items": [
+       [
+        "Sodium",
+        1
+       ],
+       [
+        "Magnesium",
+        2
+       ],
+       [
+        "Aluminum",
+        3
+       ],
+       [
+        "Silicon",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: an atom has atomic number 17 and mass number 35. How many neutrons does it have?",
+      "a": [
+       "18"
+      ],
+      "hint": "Neutrons = mass number - atomic number.",
+      "why": "35 - 17 = 18."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a neutral atom has 8 protons. How many electrons does it have?",
+      "a": [
+       "8"
+      ],
+      "hint": "Neutral means equal charges.",
+      "why": "Electrons equal protons in a neutral atom."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what family of elements is group 18? (two words)",
+      "a": [
+       "noble gases",
+       "noble gas",
+       "the noble gases"
+      ],
+      "hint": "They rarely react.",
+      "why": "Group 18 is the noble gases."
+     }
+    ]
+   },
+   {
+    "title": "Chemical Bonding",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Ionic bonds",
+      "b": "In an ionic bond, one atom transfers electrons to another, making positive and negative ions that attract each other. It usually forms between a metal and a nonmetal, like sodium chloride (NaCl)."
+     },
+     {
+      "h": "Covalent bonds",
+      "b": "In a covalent bond, atoms share electrons. It usually forms between nonmetals, like in H2O and CO2. A molecule is a group of atoms joined by covalent bonds."
+     },
+     {
+      "h": "Polarity",
+      "b": "If one atom pulls shared electrons harder, the bond is polar. Oxygen pulls harder than hydrogen, so water is a polar molecule. Cations are positive ions and anions are negative ions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What kind of bond holds sodium and chlorine together in NaCl?",
+      "o": [
+       "Covalent",
+       "Ionic",
+       "Metallic",
+       "Hydrogen"
+      ],
+      "a": 1,
+      "why": "Sodium gives an electron to chlorine."
+     },
+     {
+      "t": "mc",
+      "q": "What happens in a covalent bond?",
+      "o": [
+       "Atoms share electrons",
+       "Electrons are transferred",
+       "Protons are shared",
+       "Neutrons are lost"
+      ],
+      "a": 0,
+      "why": "Covalent bonds are shared pairs of electrons."
+     },
+     {
+      "t": "mc",
+      "q": "Which pair of elements is most likely to form an ionic compound?",
+      "o": [
+       "Carbon and oxygen",
+       "Hydrogen and oxygen",
+       "Sodium and chlorine",
+       "Nitrogen and hydrogen"
+      ],
+      "a": 2,
+      "why": "A metal and a nonmetal usually bond ionically."
+     },
+     {
+      "t": "mc",
+      "q": "Why is water a polar molecule?",
+      "o": [
+       "It is a liquid",
+       "It has three atoms",
+       "It contains hydrogen",
+       "Oxygen pulls the shared electrons harder"
+      ],
+      "a": 3,
+      "why": "Unequal sharing creates partial charges."
+     },
+     {
+      "t": "tf",
+      "q": "Ionic compounds are made of molecules that share electrons.",
+      "a": false,
+      "why": "Ionic compounds are lattices of ions attracted by opposite charges."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Ionic bond",
+        "Electrons transferred"
+       ],
+       [
+        "Covalent bond",
+        "Electrons shared"
+       ],
+       [
+        "Cation",
+        "Positive ion"
+       ],
+       [
+        "Anion",
+        "Negative ion"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of forming NaCl",
+      "items": [
+       [
+        "Sodium loses an electron",
+        1
+       ],
+       [
+        "Chlorine gains an electron",
+        2
+       ],
+       [
+        "Na+ and Cl- ions form",
+        3
+       ],
+       [
+        "Ions attract into a lattice",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what type of bond forms between sodium and chlorine in NaCl?",
+      "a": [
+       "ionic",
+       "ionic bond"
+      ],
+      "hint": "Metal plus nonmetal.",
+      "why": "Sodium transfers an electron to chlorine."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what type of bond shares electrons between two nonmetals?",
+      "a": [
+       "covalent",
+       "covalent bond"
+      ],
+      "hint": "Co- means together.",
+      "why": "Nonmetals share electrons in covalent bonds."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a magnesium atom loses 2 electrons. What is the charge of the ion? (like 1+)",
+      "a": [
+       "2+",
+       "+2",
+       "mg2+"
+      ],
+      "hint": "Losing negative charge makes it positive.",
+      "why": "It has two more protons than electrons, so the charge is 2+."
+     }
+    ]
+   },
+   {
+    "title": "Moles and Reactions",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "The mole",
+      "b": "A mole is 6.02 x 10^23 particles (Avogadro's number). Molar mass is the mass of one mole in grams. For water (H2O) it is 2(1) + 16 = 18 g/mol."
+     },
+     {
+      "h": "Balancing equations",
+      "b": "Atoms are conserved, so a balanced equation has the same number of each atom on both sides. Coefficients are changed, not subscripts. For example, 2H2 + O2 -> 2H2O is balanced."
+     },
+     {
+      "h": "Reaction types",
+      "b": "Synthesis: two or more reactants make one product. Decomposition: one reactant breaks into simpler ones. Combustion: a fuel burns with oxygen. Single and double replacement swap parts between compounds."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Avogadro's number?",
+      "o": [
+       "6.02 x 10^23",
+       "3.14",
+       "9.8",
+       "1.6 x 10^-19"
+      ],
+      "a": 0,
+      "why": "One mole contains 6.02 x 10^23 particles."
+     },
+     {
+      "t": "mc",
+      "q": "What is the molar mass of water (H2O)?",
+      "o": [
+       "10 g/mol",
+       "16 g/mol",
+       "18 g/mol",
+       "34 g/mol"
+      ],
+      "a": 2,
+      "why": "2 x 1 + 16 = 18 g/mol."
+     },
+     {
+      "t": "mc",
+      "q": "In 2H2 + O2 -> ?H2O, what coefficient balances the water?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 1,
+      "why": "Four H atoms and two O atoms make 2 H2O."
+     },
+     {
+      "t": "mc",
+      "q": "What type of reaction is 2H2O -> 2H2 + O2?",
+      "o": [
+       "Synthesis",
+       "Combustion",
+       "Single replacement",
+       "Decomposition"
+      ],
+      "a": 3,
+      "why": "One compound breaks into simpler substances."
+     },
+     {
+      "t": "tf",
+      "q": "The number of atoms of each element changes in a balanced equation.",
+      "a": false,
+      "why": "Atoms are conserved, so each element has equal atoms on both sides."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Mole",
+        "6.02 x 10^23 particles"
+       ],
+       [
+        "Synthesis",
+        "Reactants combine into one product"
+       ],
+       [
+        "Decomposition",
+        "One reactant splits apart"
+       ],
+       [
+        "Combustion",
+        "Burning with oxygen"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to convert grams to particles",
+      "items": [
+       [
+        "Start with mass in grams",
+        1
+       ],
+       [
+        "Divide by molar mass",
+        2
+       ],
+       [
+        "Get moles",
+        3
+       ],
+       [
+        "Multiply by 6.02 x 10^23",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the molar mass of CO2 in g/mol? (C = 12, O = 16)",
+      "a": [
+       "44",
+       "44 g/mol"
+      ],
+      "hint": "12 + 16 + 16.",
+      "why": "12 + 2(16) = 44."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how many moles are in 88 g of CO2?",
+      "a": [
+       "2",
+       "2 mol"
+      ],
+      "hint": "moles = mass / molar mass.",
+      "why": "88 / 44 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the mass of 3 moles of H2O in grams? (18 g/mol)",
+      "a": [
+       "54",
+       "54 g"
+      ],
+      "hint": "mass = moles x molar mass.",
+      "why": "3 x 18 = 54 g."
+     }
+    ]
+   },
+   {
+    "title": "Solutions, Gases, and Acids",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Solutions",
+      "b": "Molarity (M) is moles of solute per liter of solution. If you dissolve 2 moles of NaCl to make 4 L of solution, the molarity is 2/4 = 0.5 M."
+     },
+     {
+      "h": "Gas laws",
+      "b": "Boyle's law: at constant temperature, if the volume of a gas decreases, its pressure increases. Charles's law: at constant pressure, volume increases as temperature increases. Gas laws need temperature in kelvins (K = C + 273)."
+     },
+     {
+      "h": "Acids and bases",
+      "b": "Acids donate H+ ions, and bases accept H+ or release OH-. A pH below 7 is acidic, 7 is neutral, and above 7 is basic. Neutralization: acid + base -> salt + water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is molarity?",
+      "o": [
+       "Moles of solute per liter of solution",
+       "Grams per mole",
+       "Mass per volume of gas",
+       "Liters per mole"
+      ],
+      "a": 0,
+      "why": "M = moles / liters."
+     },
+     {
+      "t": "mc",
+      "q": "What is the molarity of 2 moles of NaCl dissolved to make 4 L of solution?",
+      "o": [
+       "0.25 M",
+       "0.5 M",
+       "2 M",
+       "8 M"
+      ],
+      "a": 1,
+      "why": "2 moles / 4 L = 0.5 M."
+     },
+     {
+      "t": "mc",
+      "q": "At constant temperature, what happens to the pressure of a gas if its volume decreases?",
+      "o": [
+       "It decreases",
+       "It stays the same",
+       "It increases",
+       "It becomes zero"
+      ],
+      "a": 2,
+      "why": "This is Boyle's law."
+     },
+     {
+      "t": "mc",
+      "q": "Which pH value is basic?",
+      "o": [
+       "2",
+       "5",
+       "7",
+       "11"
+      ],
+      "a": 3,
+      "why": "A pH above 7 is basic."
+     },
+     {
+      "t": "tf",
+      "q": "Gas law calculations should use temperature in degrees Celsius.",
+      "a": false,
+      "why": "They must use kelvins."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Molarity",
+        "Moles per liter"
+       ],
+       [
+        "Acid",
+        "Donates H+ ions"
+       ],
+       [
+        "Base",
+        "Accepts H+ or gives OH-"
+       ],
+       [
+        "Neutralization",
+        "Acid + base makes salt and water"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from coldest to hottest",
+      "items": [
+       [
+        "Absolute zero (0 K)",
+        1
+       ],
+       [
+        "Freezing water (273 K)",
+        2
+       ],
+       [
+        "Room temperature (about 298 K)",
+        3
+       ],
+       [
+        "Boiling water (373 K)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 3 moles of solute are dissolved to make 1.5 L of solution. What is the molarity (M)?",
+      "a": [
+       "2",
+       "2 m",
+       "2 mol/l"
+      ],
+      "hint": "M = moles / liters.",
+      "why": "3 / 1.5 = 2 M."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a gas at 1 atm in 2 L is squeezed to 0.5 L at constant temperature. What is the new pressure in atm?",
+      "a": [
+       "4",
+       "4 atm"
+      ],
+      "hint": "Boyle's law: P1V1 = P2V2.",
+      "why": "1 x 2 = P2 x 0.5, so P2 = 4 atm."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a solution has [H+] = 0.001 M (1 x 10^-3). What is its pH?",
+      "a": [
+       "3"
+      ],
+      "hint": "pH = -log[H+].",
+      "why": "-log(10^-3) = 3."
+     }
+    ]
+   },
+   {
+    "title": "Energy, Rates and Equilibrium",
+    "period": "Reactions in action",
+    "learn": [
+     {
+      "h": "Energy in reactions",
+      "b": "An exothermic reaction releases energy to the surroundings, so the temperature rises. An endothermic reaction absorbs energy, so things feel cold. Activation energy is the energy needed to start a reaction."
+     },
+     {
+      "h": "How fast reactions go",
+      "b": "Collision theory says particles must collide with enough energy and the right orientation. Rates go up with higher temperature, higher concentration, and more surface area (like a powder). A catalyst speeds up a reaction by lowering the activation energy and is not used up."
+     },
+     {
+      "h": "Equilibrium",
+      "b": "In a reversible reaction, the forward and reverse rates become equal at equilibrium, so amounts stay constant. Le Chatelier's principle says a system shifts to oppose a change. Adding more reactant shifts the reaction toward the products."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In an exothermic reaction, what happens to energy?",
+      "o": [
+       "It is released to the surroundings",
+       "It is absorbed from the surroundings",
+       "It is destroyed",
+       "It stays exactly the same everywhere"
+      ],
+      "a": 0,
+      "why": "Exothermic reactions give off heat."
+     },
+     {
+      "t": "mc",
+      "q": "Which change would speed up a reaction of a solid?",
+      "o": [
+       "Cooling it down",
+       "Using a larger lump",
+       "Diluting the other reactant",
+       "Crushing it into a powder"
+      ],
+      "a": 3,
+      "why": "More surface area means more collisions."
+     },
+     {
+      "t": "mc",
+      "q": "What is true at equilibrium?",
+      "o": [
+       "The reaction has stopped completely",
+       "Forward and reverse rates are equal",
+       "All reactants are gone",
+       "Only the forward reaction happens"
+      ],
+      "a": 1,
+      "why": "Both reactions continue at the same rate."
+     },
+     {
+      "t": "mc",
+      "q": "Adding more reactant to a system at equilibrium shifts it toward what?",
+      "o": [
+       "The reactants",
+       "Neither side",
+       "The products",
+       "A catalyst"
+      ],
+      "a": 2,
+      "why": "The system shifts to use up the added reactant."
+     },
+     {
+      "t": "tf",
+      "q": "A catalyst is used up during the reaction.",
+      "a": false,
+      "why": "A catalyst is regenerated and is not consumed."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Exothermic",
+        "Releases heat"
+       ],
+       [
+        "Endothermic",
+        "Absorbs heat"
+       ],
+       [
+        "Catalyst",
+        "Speeds up without being used up"
+       ],
+       [
+        "Activation energy",
+        "Energy needed to start"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a successful collision in order",
+      "items": [
+       [
+        "Particles move and collide",
+        1
+       ],
+       [
+        "The collision has enough energy and the right angle",
+        2
+       ],
+       [
+        "Old bonds break",
+        3
+       ],
+       [
+        "New bonds form",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how much heat (in J) warms 100 g of water by 10 C? (c = 4.18 J/g C)",
+      "a": [
+       "4180",
+       "4180 j"
+      ],
+      "hint": "q = m c (change in T).",
+      "why": "100 x 4.18 x 10 = 4180 J."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: suppose a reaction rate doubles for every 10 C rise. The rate is 3 units at 20 C. What is it at 40 C?",
+      "a": [
+       "12"
+      ],
+      "hint": "Two doublings.",
+      "why": "3 x 2 x 2 = 12."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what principle predicts how an equilibrium shifts when you change conditions?",
+      "a": [
+       "le chatelier",
+       "le chateliers",
+       "le chatelier's principle",
+       "le chateliers principle",
+       "le chatelier principle"
+      ],
+      "hint": "Named after a French chemist.",
+      "why": "Le Chatelier's principle: the system shifts to oppose the change."
+     }
+    ]
+   },
+   {
+    "title": "Redox and Electrochemistry",
+    "period": "Electron transfer",
+    "learn": [
+     {
+      "h": "Oxidation and reduction",
+      "b": "Oxidation is the loss of electrons. Reduction is the gain of electrons. Remember OIL RIG: Oxidation Is Loss, Reduction Is Gain. They always happen together. In Zn + Cu2+ -> Zn2+ + Cu, zinc is oxidized and copper ions are reduced."
+     },
+     {
+      "h": "Oxidation numbers",
+      "b": "An oxidation number is the charge an atom would have if electrons were fully transferred. A pure element is 0. Na in NaCl is +1 and Cl is -1. Oxygen is usually -2. If the number goes up, the atom was oxidized."
+     },
+     {
+      "h": "Cells and corrosion",
+      "b": "A battery is a galvanic cell: a spontaneous redox reaction makes electric current. Oxidation happens at the anode and reduction at the cathode. Electrolysis uses electricity to force a reaction. Rusting is the slow oxidation of iron."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does oxidation mean?",
+      "o": [
+       "Gain of electrons",
+       "Gain of protons",
+       "Loss of electrons",
+       "Loss of neutrons"
+      ],
+      "a": 2,
+      "why": "OIL: Oxidation Is Loss."
+     },
+     {
+      "t": "mc",
+      "q": "In Zn + Cu2+ -> Zn2+ + Cu, which species is oxidized?",
+      "o": [
+       "Zn",
+       "Cu2+",
+       "Zn2+",
+       "Cu"
+      ],
+      "a": 0,
+      "why": "Zinc loses two electrons."
+     },
+     {
+      "t": "mc",
+      "q": "What is the oxidation number of oxygen in most compounds?",
+      "o": [
+       "+2",
+       "0",
+       "-1",
+       "-2"
+      ],
+      "a": 3,
+      "why": "Oxygen is usually -2, except in peroxides."
+     },
+     {
+      "t": "mc",
+      "q": "In a battery (galvanic cell), chemical energy is converted into what?",
+      "o": [
+       "Nuclear energy",
+       "Electrical energy",
+       "Sound energy",
+       "Mechanical energy only"
+      ],
+      "a": 1,
+      "why": "The redox reaction pushes electrons through a wire."
+     },
+     {
+      "t": "tf",
+      "q": "Reduction is the loss of electrons.",
+      "a": false,
+      "why": "Reduction is the gain of electrons."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Anode",
+        "Where oxidation happens"
+       ],
+       [
+        "Cathode",
+        "Where reduction happens"
+       ],
+       [
+        "Electrolyte",
+        "Ion-carrying solution"
+       ],
+       [
+        "Corrosion",
+        "Metal slowly oxidizing, like rust"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in a zinc-copper cell in order",
+      "items": [
+       [
+        "Zinc atoms lose electrons",
+        1
+       ],
+       [
+        "Electrons travel through the wire",
+        2
+       ],
+       [
+        "Electrons reach the copper electrode",
+        3
+       ],
+       [
+        "Copper ions gain electrons and plate out",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the oxidation number of Na in NaCl?",
+      "a": [
+       "+1",
+       "1"
+      ],
+      "hint": "Sodium loses one electron.",
+      "why": "Na+ has an oxidation number of +1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the oxidation number of Cl in NaCl?",
+      "a": [
+       "-1"
+      ],
+      "hint": "Chlorine gains one electron.",
+      "why": "Cl- has an oxidation number of -1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in Mg + 2HCl -> MgCl2 + H2, which element is oxidized? (name or symbol)",
+      "a": [
+       "mg",
+       "magnesium"
+      ],
+      "hint": "Which one loses electrons?",
+      "why": "Mg goes from 0 to +2, so it is oxidized."
+     }
+    ]
+   },
+   {
+    "title": "Nuclear and Organic Chemistry",
+    "period": "Advanced topics",
+    "learn": [
+     {
+      "h": "Radioactive decay",
+      "b": "Unstable nuclei decay. An alpha particle is a helium nucleus (2 protons, 2 neutrons). A beta particle is a fast electron. Gamma rays are high-energy waves. A half-life is the time for half of a sample to decay: 80 g becomes 40 g, then 20 g."
+     },
+     {
+      "h": "Fission and fusion",
+      "b": "Fission splits a heavy nucleus, like uranium, into smaller ones and is used in nuclear power plants. Fusion joins light nuclei, like hydrogen, into heavier ones and powers the Sun. Both release huge amounts of energy."
+     },
+     {
+      "h": "Organic chemistry",
+      "b": "Organic chemistry is the chemistry of carbon compounds. Carbon forms four bonds. Alkanes have only single bonds: methane CH4, ethane C2H6, propane C3H8, butane C4H10. Alkenes have a C=C double bond. An alcohol has an -OH group."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A sample has a half-life of 10 days. How much of an 80 g sample is left after 20 days?",
+      "o": [
+       "20 g",
+       "40 g",
+       "10 g",
+       "60 g"
+      ],
+      "a": 0,
+      "why": "Two half-lives: 80 -> 40 -> 20."
+     },
+     {
+      "t": "mc",
+      "q": "What is an alpha particle?",
+      "o": [
+       "A fast electron",
+       "A high-energy wave",
+       "A helium nucleus",
+       "A single neutron"
+      ],
+      "a": 2,
+      "why": "It has 2 protons and 2 neutrons."
+     },
+     {
+      "t": "mc",
+      "q": "How many bonds does each carbon atom usually form?",
+      "o": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ],
+      "a": 1,
+      "why": "Carbon has 4 valence electrons."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is an alkane?",
+      "o": [
+       "C2H4",
+       "C2H2",
+       "C2H5OH",
+       "C3H8"
+      ],
+      "a": 3,
+      "why": "Alkanes follow CnH(2n+2): C3H8 fits."
+     },
+     {
+      "t": "tf",
+      "q": "Fusion splits a heavy nucleus into smaller ones.",
+      "a": false,
+      "why": "That is fission; fusion joins light nuclei."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Alpha decay",
+        "Emits 2 protons and 2 neutrons"
+       ],
+       [
+        "Fission",
+        "Splits a heavy nucleus"
+       ],
+       [
+        "Fusion",
+        "Joins light nuclei, like in the Sun"
+       ],
+       [
+        "Alcohol",
+        "Has an -OH group"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the alkanes in order by number of carbons, fewest first",
+      "items": [
+       [
+        "Methane",
+        1
+       ],
+       [
+        "Ethane",
+        2
+       ],
+       [
+        "Propane",
+        3
+       ],
+       [
+        "Butane",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a 64 g sample has a half-life of 5 years. How many grams remain after 15 years?",
+      "a": [
+       "8",
+       "8 g"
+      ],
+      "hint": "15 years is 3 half-lives.",
+      "why": "64 -> 32 -> 16 -> 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how many carbon atoms are in a molecule of propane?",
+      "a": [
+       "3",
+       "three"
+      ],
+      "hint": "Prop- means 3.",
+      "why": "Propane is C3H8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the name of the alkane with 1 carbon?",
+      "a": [
+       "methane",
+       "ch4"
+      ],
+      "hint": "CH4.",
+      "why": "Methane is the simplest alkane."
+     }
+    ]
+   }
+  ]
+ },
+ "sci-phys": {
+  "name": "Physics",
+  "units": [
+   {
+    "title": "Motion",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Describing motion",
+      "b": "Displacement is the change in position, with direction. Velocity is speed with direction: v = d / t. Acceleration is how fast velocity changes: a = (change in v) / t."
+     },
+     {
+      "h": "Constant acceleration",
+      "b": "For an object starting from rest with constant acceleration, v = at and d = (1/2)at^2. An object moving at constant velocity has zero acceleration."
+     },
+     {
+      "h": "Free fall",
+      "b": "Near Earth, objects in free fall accelerate downward at about 9.8 m/s^2 (g). Every second, the falling speed grows by about 9.8 m/s."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A car speeds up from 0 to 20 m/s in 4 s. What is its acceleration?",
+      "o": [
+       "4 m/s^2",
+       "5 m/s^2",
+       "16 m/s^2",
+       "80 m/s^2"
+      ],
+      "a": 1,
+      "why": "a = 20 / 4 = 5 m/s^2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the acceleration due to gravity near Earth's surface?",
+      "o": [
+       "0.98 m/s^2",
+       "98 m/s^2",
+       "9.8 m/s^2",
+       "6.7 m/s^2"
+      ],
+      "a": 2,
+      "why": "g is about 9.8 m/s^2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the acceleration of an object moving at constant velocity?",
+      "o": [
+       "Zero",
+       "9.8 m/s^2",
+       "Equal to its speed",
+       "Always increasing"
+      ],
+      "a": 0,
+      "why": "No change in velocity means zero acceleration."
+     },
+     {
+      "t": "mc",
+      "q": "An object starts from rest and accelerates at 2 m/s^2 for 5 s. How far does it travel?",
+      "o": [
+       "10 m",
+       "20 m",
+       "50 m",
+       "25 m"
+      ],
+      "a": 3,
+      "why": "d = (1/2)(2)(25) = 25 m."
+     },
+     {
+      "t": "tf",
+      "q": "Speed and velocity mean exactly the same thing.",
+      "a": false,
+      "why": "Velocity includes direction; speed does not."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Displacement",
+        "Change in position with direction"
+       ],
+       [
+        "Velocity",
+        "Speed with direction"
+       ],
+       [
+        "Acceleration",
+        "Rate velocity changes"
+       ],
+       [
+        "Free fall",
+        "Motion under gravity only"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a dropped object's speed from earliest to latest",
+      "items": [
+       [
+        "After 1 s (9.8 m/s)",
+        1
+       ],
+       [
+        "After 2 s (19.6 m/s)",
+        2
+       ],
+       [
+        "After 3 s (29.4 m/s)",
+        3
+       ],
+       [
+        "After 4 s (39.2 m/s)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a runner covers 150 m in 10 s at constant speed. What is the speed in m/s?",
+      "a": [
+       "15",
+       "15 m/s"
+      ],
+      "hint": "v = d / t.",
+      "why": "150 / 10 = 15 m/s."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a car goes from 0 to 20 m/s in 4 s. What is its acceleration in m/s^2?",
+      "a": [
+       "5",
+       "5 m/s2",
+       "5 m/s^2"
+      ],
+      "hint": "a = change in v / t.",
+      "why": "20 / 4 = 5 m/s^2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a ball falls from rest for 3 s. What is its speed in m/s? (g = 9.8)",
+      "a": [
+       "29.4",
+       "29.4 m/s"
+      ],
+      "hint": "v = gt.",
+      "why": "9.8 x 3 = 29.4 m/s."
+     }
+    ]
+   },
+   {
+    "title": "Forces and Newton's Laws",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Net force",
+      "b": "The net force is the sum of all forces on an object, with direction. A 10 N force to the right and a 4 N force to the left give a net force of 6 N to the right."
+     },
+     {
+      "h": "Newton's second law",
+      "b": "Net force equals mass times acceleration: F = ma. A bigger force gives more acceleration, and a bigger mass gives less. Weight is the force of gravity on a mass: W = mg."
+     },
+     {
+      "h": "Other forces",
+      "b": "The normal force is the push of a surface perpendicular to it. Friction opposes sliding. In a vacuum, heavy and light objects fall at the same rate because gravity gives all masses the same acceleration."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A 3 kg object has a net force of 15 N. What is its acceleration?",
+      "o": [
+       "0.2 m/s^2",
+       "45 m/s^2",
+       "12 m/s^2",
+       "5 m/s^2"
+      ],
+      "a": 3,
+      "why": "a = F / m = 15 / 3 = 5 m/s^2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the weight of a 10 kg object? (Use g = 9.8 m/s^2.)",
+      "o": [
+       "98 N",
+       "10 N",
+       "1 N",
+       "0.98 N"
+      ],
+      "a": 0,
+      "why": "W = mg = 10 x 9.8 = 98 N."
+     },
+     {
+      "t": "mc",
+      "q": "A 10 N force pushes right and a 4 N force pushes left. What is the net force?",
+      "o": [
+       "14 N right",
+       "6 N left",
+       "6 N right",
+       "40 N right"
+      ],
+      "a": 2,
+      "why": "10 - 4 = 6 N to the right."
+     },
+     {
+      "t": "mc",
+      "q": "What is the normal force?",
+      "o": [
+       "Force of gravity",
+       "Force that opposes sliding",
+       "Force from a magnet",
+       "Support force perpendicular to a surface"
+      ],
+      "a": 3,
+      "why": "A surface pushes back at 90 degrees to itself."
+     },
+     {
+      "t": "tf",
+      "q": "In a vacuum, a heavier object always falls faster than a lighter one.",
+      "a": false,
+      "why": "All objects fall with the same acceleration in a vacuum."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Net force",
+        "Sum of all forces"
+       ],
+       [
+        "Weight",
+        "Force of gravity on a mass"
+       ],
+       [
+        "Normal force",
+        "Surface pushes back"
+       ],
+       [
+        "Friction",
+        "Opposes sliding"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the acceleration of a 2 kg object, smallest first",
+      "items": [
+       [
+        "Pushed with 2 N",
+        1
+       ],
+       [
+        "Pushed with 4 N",
+        2
+       ],
+       [
+        "Pushed with 6 N",
+        3
+       ],
+       [
+        "Pushed with 8 N",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a 5 kg cart accelerates at 3 m/s^2. What is the net force in N?",
+      "a": [
+       "15",
+       "15 n"
+      ],
+      "hint": "F = ma.",
+      "why": "5 x 3 = 15 N."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: forces of 20 N right and 8 N left act on a box. What is the net force in N?",
+      "a": [
+       "12",
+       "12 n"
+      ],
+      "hint": "Subtract opposite forces.",
+      "why": "20 - 8 = 12 N to the right."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the weight in N of a 60 kg person? (g = 9.8)",
+      "a": [
+       "588",
+       "588 n"
+      ],
+      "hint": "W = mg.",
+      "why": "60 x 9.8 = 588 N."
+     }
+    ]
+   },
+   {
+    "title": "Circular Motion and Gravity",
+    "period": "Orbits and gravity",
+    "learn": [
+     {
+      "h": "Circular motion",
+      "b": "An object moving in a circle changes direction all the time, so it accelerates even at constant speed. The centripetal force points toward the center of the circle. The acceleration is a = v^2 / r. A 6 m/s object on a 3 m circle has a = 36 / 3 = 12 m/s^2."
+     },
+     {
+      "h": "Universal gravitation",
+      "b": "Every two masses attract each other. The force grows with the masses and gets weaker with distance: if the distance doubles, the force becomes one fourth, and if it triples, one ninth. Mass is the amount of matter and never changes. Weight is the gravity force, W = mg."
+     },
+     {
+      "h": "Orbits",
+      "b": "A satellite in orbit is in continuous free fall. It keeps falling toward the planet but moves sideways fast enough to keep missing it. That is why astronauts seem weightless. On the Moon, g is about 1.6 m/s^2, so weight is smaller but mass is the same."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In which direction does the centripetal force point?",
+      "o": [
+       "Toward the center of the circle",
+       "Away from the center",
+       "In the direction of motion",
+       "Straight up"
+      ],
+      "a": 0,
+      "why": "It pulls the object inward, keeping it on the circle."
+     },
+     {
+      "t": "mc",
+      "q": "If the distance between two masses doubles, the gravitational force becomes what?",
+      "o": [
+       "Half",
+       "Double",
+       "One fourth",
+       "Four times larger"
+      ],
+      "a": 2,
+      "why": "Gravity follows an inverse-square law."
+     },
+     {
+      "t": "mc",
+      "q": "On the Moon g is about 1.6 m/s^2. What is the weight of a 10 kg mass there?",
+      "o": [
+       "98 N",
+       "16 N",
+       "10 N",
+       "1.6 N"
+      ],
+      "a": 1,
+      "why": "W = mg = 10 x 1.6 = 16 N."
+     },
+     {
+      "t": "mc",
+      "q": "Why do astronauts float inside the space station?",
+      "o": [
+       "There is no gravity there",
+       "The station is outside the atmosphere's weight",
+       "Space pushes up on them",
+       "They are in continuous free fall"
+      ],
+      "a": 3,
+      "why": "Gravity is still strong; they and the station fall together."
+     },
+     {
+      "t": "tf",
+      "q": "An object's mass becomes smaller on the Moon.",
+      "a": false,
+      "why": "Mass stays the same; only the weight changes."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Centripetal force",
+        "Points toward the circle's center"
+       ],
+       [
+        "Satellite",
+        "Object that orbits a larger body"
+       ],
+       [
+        "Weight",
+        "Force of gravity on a mass"
+       ],
+       [
+        "Mass",
+        "Amount of matter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these planets in order by distance from the Sun, closest first",
+      "items": [
+       [
+        "Mercury",
+        1
+       ],
+       [
+        "Venus",
+        2
+       ],
+       [
+        "Earth",
+        3
+       ],
+       [
+        "Mars",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: an object moves at 6 m/s on a circle of radius 3 m. What is its centripetal acceleration in m/s^2?",
+      "a": [
+       "12",
+       "12 m/s2",
+       "12 m/s^2"
+      ],
+      "hint": "a = v^2 / r.",
+      "why": "36 / 3 = 12 m/s^2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the weight in N of a 5 kg object on Earth? (g = 9.8)",
+      "a": [
+       "49",
+       "49 n"
+      ],
+      "hint": "W = mg.",
+      "why": "5 x 9.8 = 49 N."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: if the distance between two masses triples, the gravitational force becomes what fraction of the original?",
+      "a": [
+       "1/9",
+       "one ninth",
+       "one-ninth"
+      ],
+      "hint": "Inverse-square law.",
+      "why": "3^2 = 9, so the force is 1/9."
+     }
+    ]
+   },
+   {
+    "title": "Energy and Momentum",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Work and power",
+      "b": "Work equals force times distance: W = Fd, measured in joules (J). Power is work per time: P = W / t, measured in watts (W). Pushing with 10 N over 5 m does 50 J of work."
+     },
+     {
+      "h": "Kinetic and potential energy",
+      "b": "Kinetic energy is KE = (1/2)mv^2. Gravitational potential energy is PE = mgh. Energy is conserved. When friction slows an object, its kinetic energy becomes thermal energy, not nothing."
+     },
+     {
+      "h": "Momentum",
+      "b": "Momentum is p = mv, measured in kg m/s. In a collision with no outside forces, the total momentum before equals the total momentum after."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How much work is done by pushing with 10 N over 5 m?",
+      "o": [
+       "2 J",
+       "15 J",
+       "50 J",
+       "500 J"
+      ],
+      "a": 2,
+      "why": "W = 10 x 5 = 50 J."
+     },
+     {
+      "t": "mc",
+      "q": "What is the momentum of a 2 kg object moving at 3 m/s?",
+      "o": [
+       "6 kg m/s",
+       "5 kg m/s",
+       "1.5 kg m/s",
+       "9 kg m/s"
+      ],
+      "a": 0,
+      "why": "p = mv = 2 x 3 = 6."
+     },
+     {
+      "t": "mc",
+      "q": "What is the SI unit of power?",
+      "o": [
+       "Joule",
+       "Newton",
+       "Watt",
+       "Hertz"
+      ],
+      "a": 2,
+      "why": "Power is measured in watts."
+     },
+     {
+      "t": "mc",
+      "q": "What is the kinetic energy of a 2 kg object moving at 3 m/s?",
+      "o": [
+       "6 J",
+       "12 J",
+       "18 J",
+       "9 J"
+      ],
+      "a": 3,
+      "why": "KE = (1/2)(2)(9) = 9 J."
+     },
+     {
+      "t": "tf",
+      "q": "Energy is destroyed when friction slows an object down.",
+      "a": false,
+      "why": "The kinetic energy becomes thermal energy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Work",
+        "Force times distance"
+       ],
+       [
+        "Power",
+        "Work per unit time"
+       ],
+       [
+        "Momentum",
+        "Mass times velocity"
+       ],
+       [
+        "Joule",
+        "Unit of energy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a ball rolling down a ramp by increasing kinetic energy",
+      "items": [
+       [
+        "At the top (KE is zero)",
+        1
+       ],
+       [
+        "One quarter of the way down",
+        2
+       ],
+       [
+        "Three quarters of the way down",
+        3
+       ],
+       [
+        "At the bottom",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a 20 N force pushes a box 6 m. How much work in J?",
+      "a": [
+       "120",
+       "120 j"
+      ],
+      "hint": "W = Fd.",
+      "why": "20 x 6 = 120 J."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 2 kg ball moves at 3 m/s. What is its kinetic energy in J?",
+      "a": [
+       "9",
+       "9 j"
+      ],
+      "hint": "KE = (1/2)mv^2.",
+      "why": "0.5 x 2 x 9 = 9 J."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 4 kg cart moves at 5 m/s. What is its momentum in kg m/s?",
+      "a": [
+       "20",
+       "20 kg m/s"
+      ],
+      "hint": "p = mv.",
+      "why": "4 x 5 = 20 kg m/s."
+     }
+    ]
+   },
+   {
+    "title": "Heat and Thermodynamics",
+    "period": "Thermal physics",
+    "learn": [
+     {
+      "h": "Temperature and heat",
+      "b": "Temperature measures the average kinetic energy of particles. Heat is thermal energy moving from a hotter object to a colder one. The Kelvin scale starts at absolute zero: K = C + 273. The heat needed to warm a material is Q = mc(change in T), where c is the specific heat."
+     },
+     {
+      "h": "Three ways heat moves",
+      "b": "Conduction moves heat through direct contact, like a spoon heating in soup. Convection moves heat in a flowing fluid, like warm air rising. Radiation moves heat as electromagnetic waves and needs no matter, like sunlight crossing space."
+     },
+     {
+      "h": "Laws of thermodynamics",
+      "b": "The first law says energy is conserved: heat added can raise thermal energy or do work. The second law says heat flows on its own only from hot to cold, and disorder (entropy) tends to increase. No engine can turn all heat into work."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How does the Sun's energy reach Earth?",
+      "o": [
+       "Conduction",
+       "Convection",
+       "Radiation",
+       "Friction"
+      ],
+      "a": 2,
+      "why": "Radiation can cross empty space."
+     },
+     {
+      "t": "mc",
+      "q": "In which direction does heat flow by itself?",
+      "o": [
+       "From hot to cold",
+       "From cold to hot",
+       "From low mass to high mass",
+       "It does not flow"
+      ],
+      "a": 0,
+      "why": "That is the second law of thermodynamics."
+     },
+     {
+      "t": "mc",
+      "q": "How much heat warms 2 kg of water by 5 C? (c = 4200 J/kg C)",
+      "o": [
+       "2100 J",
+       "8400 J",
+       "21000 J",
+       "42000 J"
+      ],
+      "a": 3,
+      "why": "Q = 2 x 4200 x 5 = 42000 J."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of conduction?",
+      "o": [
+       "Warm air rising from a heater",
+       "A metal spoon heating up in hot soup",
+       "Sunlight warming your face",
+       "Wind carrying cold air"
+      ],
+      "a": 1,
+      "why": "Heat passes through direct contact."
+     },
+     {
+      "t": "tf",
+      "q": "Temperature measures the total thermal energy of an object.",
+      "a": false,
+      "why": "Temperature is the average kinetic energy of particles, not the total."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Conduction",
+        "Heat through direct contact"
+       ],
+       [
+        "Convection",
+        "Heat carried by a moving fluid"
+       ],
+       [
+        "Radiation",
+        "Heat as electromagnetic waves"
+       ],
+       [
+        "Specific heat",
+        "Energy to warm a material"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from coldest to hottest",
+      "items": [
+       [
+        "Absolute zero",
+        1
+       ],
+       [
+        "Freezing water",
+        2
+       ],
+       [
+        "Room temperature",
+        3
+       ],
+       [
+        "Boiling water",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how much heat in J warms 0.5 kg of a metal (c = 900 J/kg C) by 20 C?",
+      "a": [
+       "9000",
+       "9000 j"
+      ],
+      "hint": "Q = mc(change in T).",
+      "why": "0.5 x 900 x 20 = 9000 J."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: convert 25 C to kelvin.",
+      "a": [
+       "298",
+       "298 k"
+      ],
+      "hint": "K = C + 273.",
+      "why": "25 + 273 = 298 K."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which type of heat transfer needs no matter at all?",
+      "a": [
+       "radiation"
+      ],
+      "hint": "Think of sunlight.",
+      "why": "Radiation travels through empty space."
+     }
+    ]
+   },
+   {
+    "title": "Waves and Circuits",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Wave speed",
+      "b": "Wave speed equals frequency times wavelength: v = f x wavelength. A wave with a frequency of 10 Hz and a wavelength of 3 m travels at 30 m/s."
+     },
+     {
+      "h": "Ohm's law",
+      "b": "Voltage is the energy per charge, current is the flow of charge, and resistance opposes the current. Ohm's law is V = IR. Voltage is in volts, current in amps (A), and resistance in ohms."
+     },
+     {
+      "h": "Series and parallel",
+      "b": "In a series circuit, there is one path, so the same current flows through every part, and if one bulb breaks, all go out. In a parallel circuit, there are several paths, and each branch has the same voltage."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A wave has a frequency of 10 Hz and a wavelength of 3 m. What is its speed?",
+      "o": [
+       "13 m/s",
+       "0.3 m/s",
+       "30 m/s",
+       "3.3 m/s"
+      ],
+      "a": 2,
+      "why": "v = f x wavelength = 10 x 3."
+     },
+     {
+      "t": "mc",
+      "q": "A 12 V battery is connected across a 4 ohm resistor. What is the current?",
+      "o": [
+       "48 A",
+       "3 A",
+       "8 A",
+       "0.33 A"
+      ],
+      "a": 1,
+      "why": "I = V / R = 12 / 4 = 3 A."
+     },
+     {
+      "t": "mc",
+      "q": "What is the unit of electrical resistance?",
+      "o": [
+       "Ohm",
+       "Volt",
+       "Amp",
+       "Watt"
+      ],
+      "a": 0,
+      "why": "Resistance is measured in ohms."
+     },
+     {
+      "t": "mc",
+      "q": "In a series circuit, what happens if one bulb burns out?",
+      "o": [
+       "The others get brighter",
+       "Nothing changes",
+       "The others get dimmer but stay on",
+       "All the bulbs go out"
+      ],
+      "a": 3,
+      "why": "A series circuit has only one path for current."
+     },
+     {
+      "t": "tf",
+      "q": "In a series circuit, the current has several separate paths to take.",
+      "a": false,
+      "why": "Several paths describe a parallel circuit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Voltage",
+        "Energy per charge"
+       ],
+       [
+        "Current",
+        "Flow of charge"
+       ],
+       [
+        "Resistance",
+        "Opposes current"
+       ],
+       [
+        "Frequency",
+        "Cycles per second"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the current from smallest to largest when 12 V is across each resistor",
+      "items": [
+       [
+        "6 ohm",
+        1
+       ],
+       [
+        "4 ohm",
+        2
+       ],
+       [
+        "3 ohm",
+        3
+       ],
+       [
+        "2 ohm",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a wave has a frequency of 5 Hz and a wavelength of 4 m. What is its speed in m/s?",
+      "a": [
+       "20",
+       "20 m/s"
+      ],
+      "hint": "v = f x wavelength.",
+      "why": "5 x 4 = 20 m/s."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 2 A current flows through a 6 ohm resistor. What is the voltage in V?",
+      "a": [
+       "12",
+       "12 v"
+      ],
+      "hint": "V = IR.",
+      "why": "2 x 6 = 12 V."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 4 ohm and a 6 ohm resistor are in series. What is the total resistance in ohms?",
+      "a": [
+       "10",
+       "10 ohms",
+       "10 ohm"
+      ],
+      "hint": "Add them.",
+      "why": "In series, resistances add: 4 + 6 = 10."
+     }
+    ]
+   },
+   {
+    "title": "Electricity and Magnetism",
+    "period": "Fields",
+    "learn": [
+     {
+      "h": "Electric charge",
+      "b": "Protons are positive and electrons are negative. Like charges repel and opposite charges attract. Rubbing materials together can move electrons and make static electricity. Electric power is P = IV, and energy is E = Pt."
+     },
+     {
+      "h": "Magnets",
+      "b": "Every magnet has a north and a south pole. Like poles repel and opposite poles attract. A moving charge or current makes a magnetic field. A coil of wire with current is an electromagnet, which can be switched on and off."
+     },
+     {
+      "h": "Making electricity",
+      "b": "Moving a magnet near a coil of wire pushes charges through it. This is electromagnetic induction, and it is how generators work. Transformers change the voltage of alternating current. Power plants use heat to make steam that turns a turbine connected to a generator."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What happens between two negative charges?",
+      "o": [
+       "They attract",
+       "They repel",
+       "Nothing",
+       "They turn positive"
+      ],
+      "a": 1,
+      "why": "Like charges repel."
+     },
+     {
+      "t": "mc",
+      "q": "A device runs at 12 V and 2 A. What is its power?",
+      "o": [
+       "24 W",
+       "6 W",
+       "14 W",
+       "10 W"
+      ],
+      "a": 0,
+      "why": "P = IV = 2 x 12 = 24 W."
+     },
+     {
+      "t": "mc",
+      "q": "What happens in a generator?",
+      "o": [
+       "A battery pushes a magnet",
+       "A coil makes heat only",
+       "A magnet moves near a coil and makes current",
+       "Light is turned into sound"
+      ],
+      "a": 2,
+      "why": "That is electromagnetic induction."
+     },
+     {
+      "t": "mc",
+      "q": "What do two north poles of magnets do when brought together?",
+      "o": [
+       "Attract each other",
+       "Cancel and vanish",
+       "Spin in a circle only",
+       "Repel each other"
+      ],
+      "a": 3,
+      "why": "Like poles repel."
+     },
+     {
+      "t": "tf",
+      "q": "An electric current in a wire creates a magnetic field.",
+      "a": true,
+      "why": "Moving charges make magnetic fields, which is how electromagnets work."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Proton",
+        "Positive charge"
+       ],
+       [
+        "Electron",
+        "Negative charge"
+       ],
+       [
+        "Transformer",
+        "Changes AC voltage"
+       ],
+       [
+        "Electromagnet",
+        "Magnet made by current in a coil"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in a power plant in order",
+      "items": [
+       [
+        "Fuel burns and makes heat",
+        1
+       ],
+       [
+        "Steam turns a turbine",
+        2
+       ],
+       [
+        "A generator makes electricity",
+        3
+       ],
+       [
+        "Wires carry power to homes",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: an appliance uses 120 V and 5 A. What is its power in W?",
+      "a": [
+       "600",
+       "600 w"
+      ],
+      "hint": "P = IV.",
+      "why": "120 x 5 = 600 W."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 60 W bulb stays on for 10 s. How much energy in J?",
+      "a": [
+       "600",
+       "600 j"
+      ],
+      "hint": "E = Pt.",
+      "why": "60 x 10 = 600 J."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 100 W lamp runs for 3 hours. How many kWh is that?",
+      "a": [
+       "0.3",
+       "0.3 kwh"
+      ],
+      "hint": "100 W = 0.1 kW.",
+      "why": "0.1 x 3 = 0.3 kWh."
+     }
+    ]
+   },
+   {
+    "title": "Light, Optics and Modern Physics",
+    "period": "Light and atoms",
+    "learn": [
+     {
+      "h": "Light as a wave",
+      "b": "Light is an electromagnetic wave. It travels at 3 x 10^8 m/s in a vacuum and needs no medium. The spectrum from lowest to highest frequency is radio, microwave, infrared, visible, ultraviolet, X-ray, gamma. Remember c = f x wavelength."
+     },
+     {
+      "h": "Reflection and refraction",
+      "b": "In reflection, light bounces off a surface, and the angle of incidence equals the angle of reflection. In refraction, light bends when it goes from one material into another because its speed changes. A convex lens bends light rays together (converges). A concave lens spreads them out."
+     },
+     {
+      "h": "Photons and the atom",
+      "b": "Light also acts like tiny packets of energy called photons. Higher-frequency light has more energy per photon, so gamma rays are more energetic than radio waves. Atoms have a tiny dense nucleus with electrons around it, and electrons give off light when they drop to lower energy levels."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which travels fastest in a vacuum?",
+      "o": [
+       "Sound",
+       "A bullet",
+       "Light",
+       "Wind"
+      ],
+      "a": 2,
+      "why": "Light travels at 3 x 10^8 m/s."
+     },
+     {
+      "t": "mc",
+      "q": "What does the law of reflection say?",
+      "o": [
+       "The angle of incidence equals the angle of reflection",
+       "The reflected angle is double the incoming angle",
+       "Light always reflects at 90 degrees",
+       "Light stops at the surface"
+      ],
+      "a": 0,
+      "why": "The two angles are equal."
+     },
+     {
+      "t": "mc",
+      "q": "What does a convex lens do to parallel light rays?",
+      "o": [
+       "Spreads them apart",
+       "Brings them together",
+       "Stops them",
+       "Turns them into sound"
+      ],
+      "a": 1,
+      "why": "A convex lens converges light."
+     },
+     {
+      "t": "mc",
+      "q": "Which type of electromagnetic wave has the highest frequency here?",
+      "o": [
+       "Radio waves",
+       "Microwaves",
+       "Visible light",
+       "Gamma rays"
+      ],
+      "a": 3,
+      "why": "Gamma rays are at the top of the spectrum."
+     },
+     {
+      "t": "tf",
+      "q": "Light needs a medium, like air, to travel.",
+      "a": false,
+      "why": "Light travels through empty space, as sunlight does."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Reflection",
+        "Light bounces off a surface"
+       ],
+       [
+        "Refraction",
+        "Light bends between materials"
+       ],
+       [
+        "Photon",
+        "Packet of light energy"
+       ],
+       [
+        "Lens",
+        "Curved glass that focuses light"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order of increasing frequency",
+      "items": [
+       [
+        "Radio",
+        1
+       ],
+       [
+        "Microwave",
+        2
+       ],
+       [
+        "Visible light",
+        3
+       ],
+       [
+        "X-ray",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a light ray hits a mirror with an angle of incidence of 35 degrees. What is the angle of reflection in degrees?",
+      "a": [
+       "35",
+       "35 degrees"
+      ],
+      "hint": "Law of reflection.",
+      "why": "The two angles are equal."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a light wave has f = 1 x 10^8 Hz and speed 3 x 10^8 m/s. What is its wavelength in m?",
+      "a": [
+       "3",
+       "3 m"
+      ],
+      "hint": "wavelength = v / f.",
+      "why": "3 x 10^8 / 10^8 = 3 m."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which has the longer wavelength, radio waves or X-rays?",
+      "a": [
+       "radio",
+       "radio waves",
+       "radio wave"
+      ],
+      "hint": "Radio is lowest in frequency.",
+      "why": "Lower frequency means longer wavelength."
+     }
+    ]
+   }
+  ]
+ },
+ "sci-env": {
+  "name": "Environmental Science",
+  "units": [
+   {
+    "title": "Earth Systems and Cycles",
+    "period": "Earth basics",
+    "learn": [
+     {
+      "h": "Earth's spheres and atmosphere",
+      "b": "Earth has four main spheres: the atmosphere (air), hydrosphere (water), lithosphere (rock and soil), and biosphere (life). The air is about 78 percent nitrogen and 21 percent oxygen. Weather happens in the lowest layer, the troposphere. The ozone layer is in the stratosphere above it."
+     },
+     {
+      "h": "Water and carbon cycles",
+      "b": "In the water cycle, water evaporates, condenses into clouds, falls as precipitation, and runs off or soaks in. Plants also release water vapor, called transpiration. In the carbon cycle, photosynthesis takes CO2 out of the air, while respiration, decay, and burning fuels put it back."
+     },
+     {
+      "h": "Nitrogen and soil",
+      "b": "Plants need nitrogen, but they cannot use nitrogen gas from the air. Nitrogen-fixing bacteria turn it into ammonia that plants can take up. Soil forms in layers: topsoil is rich in organic matter, subsoil is below it, and bedrock is at the bottom."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In which atmospheric layer does most weather happen?",
+      "o": [
+       "Troposphere",
+       "Stratosphere",
+       "Mesosphere",
+       "Thermosphere"
+      ],
+      "a": 0,
+      "why": "The troposphere is the lowest layer and holds most of the air."
+     },
+     {
+      "t": "mc",
+      "q": "Which process removes CO2 from the air?",
+      "o": [
+       "Respiration",
+       "Burning fuel",
+       "Photosynthesis",
+       "Decomposition"
+      ],
+      "a": 2,
+      "why": "Plants use CO2 to make sugar."
+     },
+     {
+      "t": "mc",
+      "q": "What do nitrogen-fixing bacteria do?",
+      "o": [
+       "Make oxygen from water",
+       "Turn nitrogen gas into forms plants can use",
+       "Destroy soil nutrients",
+       "Remove nitrogen from plants"
+      ],
+      "a": 1,
+      "why": "They convert N2 into ammonia."
+     },
+     {
+      "t": "mc",
+      "q": "Which sphere includes oceans, lakes, and ice?",
+      "o": [
+       "Atmosphere",
+       "Lithosphere",
+       "Biosphere",
+       "Hydrosphere"
+      ],
+      "a": 3,
+      "why": "Hydro means water."
+     },
+     {
+      "t": "tf",
+      "q": "Most of Earth's atmosphere is oxygen.",
+      "a": false,
+      "why": "About 78 percent is nitrogen."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Evaporation",
+        "Liquid water to vapor"
+       ],
+       [
+        "Condensation",
+        "Vapor to liquid"
+       ],
+       [
+        "Transpiration",
+        "Plants release water vapor"
+       ],
+       [
+        "Precipitation",
+        "Water falling to Earth"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the water cycle steps in order",
+      "items": [
+       [
+        "Evaporation",
+        1
+       ],
+       [
+        "Condensation",
+        2
+       ],
+       [
+        "Precipitation",
+        3
+       ],
+       [
+        "Runoff to rivers and oceans",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which gas makes up about 78 percent of the air?",
+      "a": [
+       "nitrogen",
+       "n2"
+      ],
+      "hint": "It is not oxygen.",
+      "why": "Air is about 78 percent nitrogen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in which atmospheric layer is the ozone layer found?",
+      "a": [
+       "stratosphere",
+       "the stratosphere"
+      ],
+      "hint": "Above the troposphere.",
+      "why": "The ozone layer is in the stratosphere."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the process by which plants release water vapor from their leaves?",
+      "a": [
+       "transpiration"
+      ],
+      "hint": "Starts with T.",
+      "why": "Plants lose water vapor through their leaves by transpiration."
+     }
+    ]
+   },
+   {
+    "title": "Ecosystems and Biodiversity",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Parts of an ecosystem",
+      "b": "Biotic factors are living parts, like plants and animals. Abiotic factors are nonliving parts, like sunlight, water, and temperature. Biodiversity is the variety of life in an area."
+     },
+     {
+      "h": "Special species",
+      "b": "A keystone species has a large effect on its ecosystem compared to how many there are. Losing it can change the whole system. Invasive species are non-native species that spread and harm native species by outcompeting them."
+     },
+     {
+      "h": "Succession",
+      "b": "Succession is the slow change in a community over time. Primary succession starts on bare rock: lichens and moss come first, then grasses and shrubs, then forest."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is an abiotic factor?",
+      "o": [
+       "Sunlight",
+       "Fungus",
+       "Bacteria",
+       "Grass"
+      ],
+      "a": 0,
+      "why": "Sunlight is nonliving."
+     },
+     {
+      "t": "mc",
+      "q": "What is a keystone species?",
+      "o": [
+       "The largest species",
+       "The oldest species",
+       "A species with a very large effect on its ecosystem",
+       "A species that only eats plants"
+      ],
+      "a": 2,
+      "why": "Its removal changes the whole ecosystem."
+     },
+     {
+      "t": "mc",
+      "q": "Why can invasive species be harmful?",
+      "o": [
+       "They help native species grow",
+       "They only live one day",
+       "They are always smaller",
+       "They outcompete native species"
+      ],
+      "a": 3,
+      "why": "They use up resources native species need."
+     },
+     {
+      "t": "mc",
+      "q": "What is biodiversity?",
+      "o": [
+       "The number of people in an area",
+       "The variety of life in an area",
+       "The size of a forest",
+       "The amount of rainfall"
+      ],
+      "a": 1,
+      "why": "Biodiversity means variety of species and life."
+     },
+     {
+      "t": "tf",
+      "q": "Losing a keystone species usually has little effect on an ecosystem.",
+      "a": false,
+      "why": "Keystone species have a very large effect, so losing one can cause major changes."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Biotic",
+        "Living part of an ecosystem"
+       ],
+       [
+        "Abiotic",
+        "Nonliving part"
+       ],
+       [
+        "Invasive species",
+        "Non-native and harmful"
+       ],
+       [
+        "Keystone species",
+        "Large effect on ecosystem"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order primary succession on bare rock",
+      "items": [
+       [
+        "Bare rock",
+        1
+       ],
+       [
+        "Lichens and moss",
+        2
+       ],
+       [
+        "Grasses and shrubs",
+        3
+       ],
+       [
+        "Forest",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what kind of species has a large effect on its ecosystem compared to its numbers? (two words)",
+      "a": [
+       "keystone species",
+       "keystone",
+       "a keystone species"
+      ],
+      "hint": "Without it the arch falls.",
+      "why": "Removing a keystone species changes the whole system."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: producers hold 5000 kJ of energy. How many kJ reach the primary consumers? (10% rule)",
+      "a": [
+       "500",
+       "500 kj"
+      ],
+      "hint": "Take 10 percent.",
+      "why": "5000 x 0.1 = 500 kJ."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: succession starting on bare rock is called what? (two words, first word is the type)",
+      "a": [
+       "primary succession",
+       "primary"
+      ],
+      "hint": "Lichens come first.",
+      "why": "Succession on bare rock is primary succession."
+     }
+    ]
+   },
+   {
+    "title": "Human Population",
+    "period": "People and growth",
+    "learn": [
+     {
+      "h": "Measuring population change",
+      "b": "The birth rate and death rate are counted per 1000 people per year. The growth rate in percent is (births - deaths) / 10. If births are 20 and deaths are 10 per 1000, growth is 1 percent. Total fertility rate (TFR) is the average number of children per woman. Replacement level is about 2.1."
+     },
+     {
+      "h": "Doubling time",
+      "b": "The rule of 70 estimates doubling time: 70 divided by the growth rate in percent. At 2 percent growth, a population doubles in 35 years. At 1 percent it takes 70 years. Growth that keeps adding a percent each year is called exponential."
+     },
+     {
+      "h": "Demographic transition",
+      "b": "Countries often move through four stages. Stage 1 has high birth and death rates. In stage 2 the death rate falls (better food and medicine), so the population grows fast. In stage 3 the birth rate falls. In stage 4 both are low. An age pyramid with a wide base shows many young people and fast growth."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Using the rule of 70, how long does a population growing 2 percent per year take to double?",
+      "o": [
+       "35 years",
+       "14 years",
+       "70 years",
+       "140 years"
+      ],
+      "a": 0,
+      "why": "70 / 2 = 35."
+     },
+     {
+      "t": "mc",
+      "q": "About what total fertility rate is replacement level?",
+      "o": [
+       "1.0",
+       "3.5",
+       "2.1 children per woman",
+       "5.0"
+      ],
+      "a": 2,
+      "why": "Slightly over 2 replaces both parents, allowing for early deaths."
+     },
+     {
+      "t": "mc",
+      "q": "What does an age pyramid with a very wide base show?",
+      "o": [
+       "An aging, shrinking population",
+       "Many young people and rapid growth",
+       "No births",
+       "A stable population"
+      ],
+      "a": 1,
+      "why": "A big young group means many future parents."
+     },
+     {
+      "t": "mc",
+      "q": "What mainly causes the fast growth in stage 2 of the demographic transition?",
+      "o": [
+       "Birth rates fall",
+       "Both rates rise",
+       "People move away",
+       "Death rates fall while birth rates stay high"
+      ],
+      "a": 3,
+      "why": "Better food and medicine cut deaths first."
+     },
+     {
+      "t": "tf",
+      "q": "A growth rate of 1 percent per year gives a doubling time of about 70 years.",
+      "a": true,
+      "why": "70 / 1 = 70 years."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Birth rate",
+        "Births per 1000 people per year"
+       ],
+       [
+        "Death rate",
+        "Deaths per 1000 people per year"
+       ],
+       [
+        "TFR",
+        "Average children per woman"
+       ],
+       [
+        "Doubling time",
+        "Years for population to double"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the demographic transition stages in order",
+      "items": [
+       [
+        "High birth and death rates",
+        1
+       ],
+       [
+        "Death rate falls",
+        2
+       ],
+       [
+        "Birth rate falls",
+        3
+       ],
+       [
+        "Low birth and death rates",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a population grows 1.4 percent per year. Using the rule of 70, what is the doubling time in years?",
+      "a": [
+       "50",
+       "50 years"
+      ],
+      "hint": "70 / growth rate.",
+      "why": "70 / 1.4 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a country has 20 births and 10 deaths per 1000 people. What is the growth rate in percent?",
+      "a": [
+       "1",
+       "1%",
+       "1.0"
+      ],
+      "hint": "(births - deaths) / 10.",
+      "why": "(20 - 10) / 10 = 1 percent."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a town of 2000 people grows 5 percent in one year. What is the new population?",
+      "a": [
+       "2100"
+      ],
+      "hint": "2000 x 1.05.",
+      "why": "2000 + 100 = 2100."
+     }
+    ]
+   },
+   {
+    "title": "Resources and Energy",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Renewable resources",
+      "b": "Renewable energy sources are naturally replaced. Examples are solar, wind, hydroelectric, and geothermal energy. Geothermal uses heat from inside Earth."
+     },
+     {
+      "h": "Nonrenewable resources",
+      "b": "Fossil fuels (coal, oil, and natural gas) take millions of years to form. Burning them releases carbon dioxide. Nuclear power uses uranium, a nonrenewable fuel, and releases almost no carbon dioxide while operating."
+     },
+     {
+      "h": "Water, soil, and conservation",
+      "b": "Most of Earth's fresh water is frozen in glaciers and ice sheets. Crop rotation helps keep nutrients in soil. Conservation means using resources wisely so they last."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a renewable energy source?",
+      "o": [
+       "Coal",
+       "Oil",
+       "Natural gas",
+       "Solar"
+      ],
+      "a": 3,
+      "why": "Sunlight is constantly supplied."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a fossil fuel?",
+      "o": [
+       "Wind",
+       "Geothermal",
+       "Coal",
+       "Hydroelectric"
+      ],
+      "a": 2,
+      "why": "Coal is a fossil fuel."
+     },
+     {
+      "t": "mc",
+      "q": "Why do farmers practice crop rotation?",
+      "o": [
+       "To use more water",
+       "To help keep nutrients in the soil",
+       "To grow weeds",
+       "To make soil salty"
+      ],
+      "a": 1,
+      "why": "Different crops use and return different nutrients."
+     },
+     {
+      "t": "mc",
+      "q": "Where is most of Earth's fresh water stored?",
+      "o": [
+       "Glaciers and ice sheets",
+       "Rivers",
+       "Lakes",
+       "Clouds"
+      ],
+      "a": 0,
+      "why": "Most fresh water is frozen."
+     },
+     {
+      "t": "tf",
+      "q": "Nuclear power plants release large amounts of carbon dioxide while operating.",
+      "a": false,
+      "why": "They release almost none while operating."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Solar",
+        "Energy from sunlight"
+       ],
+       [
+        "Geothermal",
+        "Heat from Earth's interior"
+       ],
+       [
+        "Fossil fuel",
+        "Coal, oil, or natural gas"
+       ],
+       [
+        "Conservation",
+        "Using resources wisely"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a coal power plant makes electricity",
+      "items": [
+       [
+        "Coal is burned",
+        1
+       ],
+       [
+        "Water is heated into steam",
+        2
+       ],
+       [
+        "Steam turns a turbine",
+        3
+       ],
+       [
+        "A generator makes electricity",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which renewable energy source uses heat from inside Earth?",
+      "a": [
+       "geothermal",
+       "geothermal energy"
+      ],
+      "hint": "Geo means Earth.",
+      "why": "Geothermal energy taps Earth's internal heat."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a solar panel gives 250 W for 4 hours. How many watt-hours of energy is that?",
+      "a": [
+       "1000",
+       "1000 wh",
+       "1 kwh"
+      ],
+      "hint": "Energy = power x time.",
+      "why": "250 x 4 = 1000 Wh."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: name one fossil fuel.",
+      "a": [
+       "coal",
+       "oil",
+       "natural gas",
+       "petroleum",
+       "gas",
+       "crude oil"
+      ],
+      "hint": "There are three main ones.",
+      "why": "Coal, oil, and natural gas are fossil fuels."
+     }
+    ]
+   },
+   {
+    "title": "Land, Agriculture and Water",
+    "period": "Using land and water",
+    "learn": [
+     {
+      "h": "Farming and soil",
+      "b": "Monoculture is growing one crop over a large area. It is efficient, but one pest or disease can wipe out a whole field. Tilling and bare soil cause erosion. Contour plowing, no-till farming, and crop rotation protect soil. Integrated pest management (IPM) mixes methods to control pests with fewer chemicals."
+     },
+     {
+      "h": "Land use",
+      "b": "Urban sprawl spreads cities into farmland and wild habitat. Deforestation clears forests for farms and wood. Strip mining removes the surface layers to reach coal or minerals and can leave scars and pollution. Overgrazing can turn grassland into desert (desertification)."
+     },
+     {
+      "h": "Water use",
+      "b": "Worldwide, agriculture uses the most fresh water. An aquifer is an underground layer of water-bearing rock. If people pump water faster than it refills, the aquifer is depleted. Overfishing takes fish faster than they can reproduce."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which practice helps reduce soil erosion on a slope?",
+      "o": [
+       "Contour plowing",
+       "Plowing straight down the slope",
+       "Leaving soil bare",
+       "Burning crop residue"
+      ],
+      "a": 0,
+      "why": "Plowing across the slope slows water runoff."
+     },
+     {
+      "t": "mc",
+      "q": "Which sector uses the most fresh water worldwide?",
+      "o": [
+       "Households",
+       "Industry",
+       "Power plants",
+       "Agriculture"
+      ],
+      "a": 3,
+      "why": "Irrigation takes about 70 percent of withdrawals."
+     },
+     {
+      "t": "mc",
+      "q": "What is a main risk of monoculture?",
+      "o": [
+       "It adds many new species",
+       "It increases soil biodiversity",
+       "A single pest or disease can destroy the whole crop",
+       "It needs no water"
+      ],
+      "a": 2,
+      "why": "All plants are the same, so they share weaknesses."
+     },
+     {
+      "t": "mc",
+      "q": "What is it called when water is pumped from an aquifer faster than it refills?",
+      "o": [
+       "Eutrophication",
+       "Aquifer depletion",
+       "Transpiration",
+       "Succession"
+      ],
+      "a": 1,
+      "why": "The water table drops over time."
+     },
+     {
+      "t": "tf",
+      "q": "Urban sprawl converts farmland and natural habitat into developed land.",
+      "a": true,
+      "why": "Cities spread outward and replace other land."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Contour plowing",
+        "Plowing across a slope"
+       ],
+       [
+        "Crop rotation",
+        "Changing crops to renew nutrients"
+       ],
+       [
+        "IPM",
+        "Mix of methods to control pests"
+       ],
+       [
+        "Aquifer",
+        "Underground water layer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the soil layers in order from the surface down",
+      "items": [
+       [
+        "Organic litter",
+        1
+       ],
+       [
+        "Topsoil",
+        2
+       ],
+       [
+        "Subsoil",
+        3
+       ],
+       [
+        "Bedrock",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the practice of planting different crops in a field each season? (two words)",
+      "a": [
+       "crop rotation",
+       "rotation"
+      ],
+      "hint": "It renews nutrients.",
+      "why": "Crop rotation helps keep soil fertile."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: IPM stands for ___ pest management. Fill in the missing word.",
+      "a": [
+       "integrated"
+      ],
+      "hint": "Think of combining methods.",
+      "why": "Integrated pest management combines several methods."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a field loses 2 cm of topsoil per decade. How many cm are lost in 50 years?",
+      "a": [
+       "10",
+       "10 cm"
+      ],
+      "hint": "50 years is 5 decades.",
+      "why": "2 x 5 = 10 cm."
+     }
+    ]
+   },
+   {
+    "title": "Pollution and Health",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Air pollution",
+      "b": "Sulfur dioxide and nitrogen oxides from burning fossil fuels cause acid rain. Ground-level ozone is a main part of smog and harms lungs. Ozone high in the stratosphere is helpful because it blocks ultraviolet light."
+     },
+     {
+      "h": "Water pollution",
+      "b": "A point source comes from one identifiable place, like a factory pipe. A nonpoint source is spread out, like runoff from farm fields. Fertilizer runoff causes eutrophication, which is overgrowth of algae."
+     },
+     {
+      "h": "Toxins in food chains",
+      "b": "Some toxins build up in organisms. Biomagnification means toxins become more concentrated at each higher level of the food chain."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What mainly causes acid rain?",
+      "o": [
+       "Carbon dioxide only",
+       "Sulfur dioxide and nitrogen oxides",
+       "Oxygen",
+       "Helium"
+      ],
+      "a": 1,
+      "why": "These gases react with water in the air to make acids."
+     },
+     {
+      "t": "mc",
+      "q": "What causes eutrophication in a lake?",
+      "o": [
+       "Too much salt",
+       "Too much sunlight",
+       "Too little rain",
+       "Excess nutrients from fertilizer"
+      ],
+      "a": 3,
+      "why": "Nutrients cause algae blooms."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of nonpoint source pollution?",
+      "o": [
+       "Runoff from farm fields",
+       "A factory discharge pipe",
+       "A leaking tanker",
+       "A sewage pipe"
+      ],
+      "a": 0,
+      "why": "Runoff comes from a wide area."
+     },
+     {
+      "t": "mc",
+      "q": "What does biomagnification mean?",
+      "o": [
+       "Toxins break down higher in the food chain",
+       "Toxins stay at the same level",
+       "Toxins become more concentrated up the food chain",
+       "Toxins only affect plants"
+      ],
+      "a": 2,
+      "why": "Top predators carry the highest toxin levels."
+     },
+     {
+      "t": "tf",
+      "q": "A factory smokestack is an example of a nonpoint source of pollution.",
+      "a": false,
+      "why": "A smokestack is a single identifiable point source."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Eutrophication",
+        "Algae overgrowth from nutrients"
+       ],
+       [
+        "Biomagnification",
+        "Toxins build up up the food chain"
+       ],
+       [
+        "Point source",
+        "Single identifiable origin"
+       ],
+       [
+        "Smog",
+        "Ground-level ozone haze"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of eutrophication",
+      "items": [
+       [
+        "Fertilizer runs into a lake",
+        1
+       ],
+       [
+        "Algae bloom",
+        2
+       ],
+       [
+        "Algae die and decompose",
+        3
+       ],
+       [
+        "Oxygen drops and fish die",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the overgrowth of algae caused by fertilizer runoff called?",
+      "a": [
+       "eutrophication"
+      ],
+      "hint": "Starts with E.",
+      "why": "Extra nutrients cause algae blooms and low oxygen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: farm runoff is a ___ source of pollution (point or nonpoint?)",
+      "a": [
+       "nonpoint",
+       "non-point",
+       "nonpoint source",
+       "non-point source"
+      ],
+      "hint": "It comes from a wide area.",
+      "why": "Runoff has no single pipe, so it is a nonpoint source."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which two oxides from burning fossil fuels cause acid rain? Name one.",
+      "a": [
+       "sulfur dioxide",
+       "so2",
+       "nitrogen oxides",
+       "nitrogen oxide",
+       "nox",
+       "no2"
+      ],
+      "hint": "One has sulfur.",
+      "why": "Sulfur dioxide and nitrogen oxides make acids in the air."
+     }
+    ]
+   },
+   {
+    "title": "Climate Change and Solutions",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "The greenhouse effect",
+      "b": "Greenhouse gases like carbon dioxide, methane, and water vapor trap heat in the atmosphere. The natural greenhouse effect keeps Earth warm enough for life. Burning fossil fuels adds extra carbon dioxide."
+     },
+     {
+      "h": "Effects",
+      "b": "A warming climate melts glaciers and ice sheets and warms the oceans, which raises sea level. It can also make heat waves and heavy storms more common."
+     },
+     {
+      "h": "Solutions",
+      "b": "Mitigation means reducing the causes, for example by switching to renewable energy, improving energy efficiency, and planting forests. Adaptation means adjusting to changes, such as building sea walls."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a greenhouse gas?",
+      "o": [
+       "Argon",
+       "Helium",
+       "Oxygen",
+       "Carbon dioxide"
+      ],
+      "a": 3,
+      "why": "Carbon dioxide traps heat."
+     },
+     {
+      "t": "mc",
+      "q": "Which human activity adds the most carbon dioxide to the air?",
+      "o": [
+       "Burning fossil fuels",
+       "Planting trees",
+       "Using wind turbines",
+       "Recycling paper"
+      ],
+      "a": 0,
+      "why": "Coal, oil, and gas release stored carbon when burned."
+     },
+     {
+      "t": "mc",
+      "q": "What helps raise sea level as the planet warms?",
+      "o": [
+       "More snowfall in deserts",
+       "Melting land ice and warming oceans",
+       "Stronger winds",
+       "Fewer clouds"
+      ],
+      "a": 1,
+      "why": "Water expands as it warms and ice melts into the sea."
+     },
+     {
+      "t": "mc",
+      "q": "Which action most directly reduces greenhouse gas emissions?",
+      "o": [
+       "Using more fossil fuels",
+       "Cutting down forests",
+       "Switching to renewable energy",
+       "Paving more land"
+      ],
+      "a": 2,
+      "why": "Renewables produce little carbon dioxide."
+     },
+     {
+      "t": "tf",
+      "q": "The greenhouse effect is caused only by human activity.",
+      "a": false,
+      "why": "A natural greenhouse effect exists; humans have strengthened it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Greenhouse gas",
+        "Traps heat in the air"
+       ],
+       [
+        "Carbon footprint",
+        "Greenhouse gases from your actions"
+       ],
+       [
+        "Mitigation",
+        "Reducing the causes"
+       ],
+       [
+        "Adaptation",
+        "Adjusting to the changes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how the greenhouse effect works",
+      "items": [
+       [
+        "Sunlight reaches Earth",
+        1
+       ],
+       [
+        "Earth absorbs it and gives off heat",
+        2
+       ],
+       [
+        "Greenhouse gases trap some heat",
+        3
+       ],
+       [
+        "The atmosphere warms",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: name a greenhouse gas other than carbon dioxide and water vapor.",
+      "a": [
+       "methane",
+       "ch4",
+       "nitrous oxide",
+       "n2o",
+       "ozone"
+      ],
+      "hint": "Cows and landfills release one.",
+      "why": "Methane and nitrous oxide are also greenhouse gases."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: reducing the causes of climate change is called what?",
+      "a": [
+       "mitigation"
+      ],
+      "hint": "Not adaptation.",
+      "why": "Mitigation cuts emissions."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: building sea walls is mitigation or adaptation?",
+      "a": [
+       "adaptation"
+      ],
+      "hint": "It adjusts to changes.",
+      "why": "Sea walls help us live with rising seas."
+     }
+    ]
+   },
+   {
+    "title": "Waste, Policy and Sustainability",
+    "period": "Solutions",
+    "learn": [
+     {
+      "h": "Managing waste",
+      "b": "Most solid waste goes to landfills, which can leak pollutants. Incineration burns waste and makes energy, but can release air pollution. Composting turns food scraps and yard waste into fertilizer. The 3 Rs are reduce, reuse, recycle, and reducing is the best because it makes the least waste. E-waste and chemicals are hazardous waste."
+     },
+     {
+      "h": "Laws and agreements",
+      "b": "In the US, the Clean Air Act and Clean Water Act limit pollution, and the Endangered Species Act protects at-risk species. The EPA enforces many environmental laws. The Montreal Protocol phased out ozone-damaging CFCs. The Paris Agreement aims to limit global warming."
+     },
+     {
+      "h": "Sustainability",
+      "b": "Sustainability means meeting today's needs without harming future generations. Your ecological footprint is the land and water needed to support your lifestyle. The tragedy of the commons happens when people overuse a shared resource, like a fishery, because each gains by taking more."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What did the Montreal Protocol target?",
+      "o": [
+       "Plastic waste",
+       "Oil spills",
+       "Ozone-depleting CFCs",
+       "Coal mining"
+      ],
+      "a": 2,
+      "why": "CFCs were phased out to protect the ozone layer."
+     },
+     {
+      "t": "mc",
+      "q": "Which of the 3 Rs is the best choice?",
+      "o": [
+       "Reduce",
+       "Reuse",
+       "Recycle",
+       "Incinerate"
+      ],
+      "a": 0,
+      "why": "Making less waste avoids the problem at its source."
+     },
+     {
+      "t": "mc",
+      "q": "What is the tragedy of the commons?",
+      "o": [
+       "A farm field loses nutrients",
+       "A shared resource gets overused by individuals",
+       "A species goes extinct naturally",
+       "A landfill fills up"
+      ],
+      "a": 1,
+      "why": "Each person benefits from taking more, but the resource is lost."
+     },
+     {
+      "t": "mc",
+      "q": "What is compost?",
+      "o": [
+       "Burned trash ash",
+       "Recycled plastic",
+       "A type of landfill liner",
+       "Decomposed organic waste used as fertilizer"
+      ],
+      "a": 3,
+      "why": "Microbes break food and yard waste down into rich soil."
+     },
+     {
+      "t": "tf",
+      "q": "The Paris Agreement aims to limit global warming.",
+      "a": true,
+      "why": "Countries pledged to cut emissions to limit warming."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Ecological footprint",
+        "Land needed to support a lifestyle"
+       ],
+       [
+        "Landfill",
+        "Site where waste is buried"
+       ],
+       [
+        "Endangered Species Act",
+        "Protects at-risk species"
+       ],
+       [
+        "EPA",
+        "US agency enforcing environmental laws"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the waste choices in order from best to worst",
+      "items": [
+       [
+        "Reduce",
+        1
+       ],
+       [
+        "Reuse",
+        2
+       ],
+       [
+        "Recycle",
+        3
+       ],
+       [
+        "Send to a landfill",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which US law protects species at risk of extinction? (three words)",
+      "a": [
+       "endangered species act",
+       "the endangered species act",
+       "esa"
+      ],
+      "hint": "Its name tells you.",
+      "why": "The Endangered Species Act protects at-risk species."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a town makes 120 kg of trash and recycles 30 kg. What percent is recycled?",
+      "a": [
+       "25",
+       "25%"
+      ],
+      "hint": "30 / 120.",
+      "why": "30 / 120 = 0.25, or 25 percent."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which international treaty phased out CFCs? (two words)",
+      "a": [
+       "montreal protocol",
+       "the montreal protocol"
+      ],
+      "hint": "Named after a Canadian city.",
+      "why": "The Montreal Protocol protected the ozone layer."
+     }
+    ]
+   }
+  ]
+ },
+ "ap-bio": {
+  "name": "AP Biology",
+  "units": [
+   {
+    "title": "Chemistry of Life",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "Water and molecules",
+      "b": "Water is polar, so its molecules form hydrogen bonds. This makes water cohesive and a good solvent. Proteins are built from amino acids, and nucleic acids are built from nucleotides."
+     },
+     {
+      "h": "Cell structures",
+      "b": "Eukaryotic cells have a membrane-bound nucleus; prokaryotes do not. Mitochondria make ATP, ribosomes build proteins, and lysosomes break down waste. The cell membrane controls what enters and leaves."
+     },
+     {
+      "h": "Moving across membranes",
+      "b": "Osmosis is the passive movement of water across a membrane. Active transport uses ATP to move substances against their gradient. A secreted protein travels from the rough ER to the Golgi to a vesicle."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What type of bond holds water molecules together, giving water cohesion?",
+      "o": [
+       "Ionic bonds",
+       "Hydrogen bonds",
+       "Metallic bonds",
+       "Peptide bonds"
+      ],
+      "a": 1,
+      "why": "Polar water molecules attract each other through hydrogen bonds."
+     },
+     {
+      "t": "mc",
+      "q": "What is the monomer of a protein?",
+      "o": [
+       "Nucleotide",
+       "Monosaccharide",
+       "Amino acid",
+       "Fatty acid"
+      ],
+      "a": 2,
+      "why": "Proteins are chains of amino acids."
+     },
+     {
+      "t": "mc",
+      "q": "Which organelle produces most of a cell's ATP?",
+      "o": [
+       "Mitochondrion",
+       "Ribosome",
+       "Golgi apparatus",
+       "Lysosome"
+      ],
+      "a": 0,
+      "why": "Mitochondria carry out most cellular respiration."
+     },
+     {
+      "t": "mc",
+      "q": "What is the passive movement of water across a membrane called?",
+      "o": [
+       "Active transport",
+       "Endocytosis",
+       "Exocytosis",
+       "Osmosis"
+      ],
+      "a": 3,
+      "why": "Osmosis needs no ATP; water moves toward higher solute concentration."
+     },
+     {
+      "t": "tf",
+      "q": "Prokaryotic cells have a membrane-bound nucleus.",
+      "a": false,
+      "why": "Only eukaryotic cells have a membrane-bound nucleus."
+     },
+     {
+      "t": "match",
+      "q": "Match each organelle to its job",
+      "pairs": [
+       [
+        "Ribosome",
+        "Builds proteins"
+       ],
+       [
+        "Lysosome",
+        "Breaks down waste"
+       ],
+       [
+        "Cell membrane",
+        "Controls what enters and leaves"
+       ],
+       [
+        "Nucleus",
+        "Stores DNA"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a secreted protein in order",
+      "items": [
+       [
+        "Made on a ribosome at the rough ER",
+        1
+       ],
+       [
+        "Folded inside the rough ER",
+        2
+       ],
+       [
+        "Modified in the Golgi apparatus",
+        3
+       ],
+       [
+        "Sent out in a vesicle",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what type of bond holds water molecules to each other?",
+      "a": [
+       "hydrogen bond",
+       "hydrogen bonds",
+       "hydrogen"
+      ],
+      "hint": "It forms between H and O of neighbors.",
+      "why": "Polar water molecules form hydrogen bonds."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the monomer of a protein? (two words)",
+      "a": [
+       "amino acid",
+       "amino acids"
+      ],
+      "hint": "Joined by peptide bonds.",
+      "why": "Proteins are chains of amino acids."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the property called when water molecules stick to each other?",
+      "a": [
+       "cohesion"
+      ],
+      "hint": "Co- means together.",
+      "why": "Hydrogen bonds cause cohesion."
+     }
+    ]
+   },
+   {
+    "title": "Cell Structure and Function",
+    "period": "Unit 2",
+    "learn": [
+     {
+      "h": "Size and compartments",
+      "b": "As a cell grows, its volume increases faster than its surface area, so the surface area to volume ratio (SA:V) falls. Small cells exchange materials more efficiently. Eukaryotes use organelles to compartmentalize reactions. Mitochondria and chloroplasts have their own circular DNA and ribosomes, which supports the endosymbiotic theory: they came from engulfed prokaryotes."
+     },
+     {
+      "h": "Membrane transport",
+      "b": "The membrane is a fluid mosaic of phospholipids and proteins. Passive transport needs no ATP. Simple diffusion moves small nonpolar molecules, and facilitated diffusion uses channel or carrier proteins. Active transport uses ATP to move a substance against its gradient. Endocytosis and exocytosis move large particles in vesicles."
+     },
+     {
+      "h": "Water potential",
+      "b": "Water potential (psi) predicts the direction of water movement: water moves from higher to lower water potential. Psi = psi_S + psi_P (solute plus pressure potential). Adding solute makes psi_S more negative. Pure water in an open container has psi = 0."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "As a cell gets larger, what happens to its surface area to volume ratio?",
+      "o": [
+       "It increases",
+       "It decreases",
+       "It stays the same",
+       "It becomes zero"
+      ],
+      "a": 1,
+      "why": "Volume grows faster than surface area."
+     },
+     {
+      "t": "mc",
+      "q": "Which observation best supports the endosymbiotic theory?",
+      "o": [
+       "Mitochondria have their own circular DNA",
+       "Mitochondria have a nucleus",
+       "Chloroplasts lack membranes",
+       "The Golgi has ribosomes"
+      ],
+      "a": 0,
+      "why": "Prokaryote-like DNA suggests a bacterial origin."
+     },
+     {
+      "t": "mc",
+      "q": "Facilitated diffusion moves molecules how?",
+      "o": [
+       "Against the gradient using ATP",
+       "Through vesicles only",
+       "By cutting the membrane",
+       "Through channel or carrier proteins with no ATP"
+      ],
+      "a": 3,
+      "why": "It is passive but needs a protein pathway."
+     },
+     {
+      "t": "mc",
+      "q": "Water moves toward which region?",
+      "o": [
+       "Higher water potential",
+       "Higher pressure only",
+       "Lower water potential",
+       "The region with less solute"
+      ],
+      "a": 2,
+      "why": "Water moves from high to low water potential."
+     },
+     {
+      "t": "tf",
+      "q": "Active transport can move molecules from low concentration to high concentration.",
+      "a": true,
+      "why": "ATP energy pushes them against the gradient."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Smooth ER",
+        "Lipid synthesis and detox"
+       ],
+       [
+        "Rough ER",
+        "Makes proteins for export"
+       ],
+       [
+        "Lysosome",
+        "Hydrolytic digestion"
+       ],
+       [
+        "Golgi",
+        "Modifies and sorts proteins"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a secreted protein in order",
+      "items": [
+       [
+        "Made on a ribosome at the rough ER",
+        1
+       ],
+       [
+        "Moves to the Golgi",
+        2
+       ],
+       [
+        "Packaged in a vesicle",
+        3
+       ],
+       [
+        "Released by exocytosis",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a cube cell has sides of 2 cm. What is its SA:V ratio? (surface area / volume)",
+      "a": [
+       "3",
+       "3:1"
+      ],
+      "hint": "SA = 6 x side^2, V = side^3.",
+      "why": "SA = 24, V = 8, so 24 / 8 = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: psi_S = -0.5 MPa and psi_P = +0.2 MPa. What is the water potential in MPa?",
+      "a": [
+       "-0.3",
+       "-0.3 mpa"
+      ],
+      "hint": "psi = psi_S + psi_P.",
+      "why": "-0.5 + 0.2 = -0.3 MPa."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which theory says mitochondria came from engulfed prokaryotes? (one or two words)",
+      "a": [
+       "endosymbiosis",
+       "endosymbiotic theory",
+       "endosymbiotic",
+       "endosymbiont theory",
+       "endosymbiosis theory"
+      ],
+      "hint": "Endo- means inside.",
+      "why": "The endosymbiotic theory explains organelle DNA."
+     }
+    ]
+   },
+   {
+    "title": "Cellular Energetics",
+    "period": "Unit 3",
+    "learn": [
+     {
+      "h": "Enzymes",
+      "b": "Enzymes are proteins that speed up reactions by lowering the activation energy. They are not used up. Temperature and pH can change an enzyme's shape and its activity."
+     },
+     {
+      "h": "Photosynthesis",
+      "b": "Photosynthesis happens in chloroplasts. The light reactions in the thylakoid membranes make ATP and NADPH, and the Calvin cycle in the stroma uses them to build glucose from carbon dioxide."
+     },
+     {
+      "h": "Cellular respiration",
+      "b": "Cells break down glucose in four steps: glycolysis in the cytoplasm, pyruvate oxidation, the Krebs cycle, and the electron transport chain, which makes the most ATP. ATP is the cell's energy currency."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the reactants of photosynthesis?",
+      "o": [
+       "Oxygen and glucose",
+       "Nitrogen and water",
+       "Carbon dioxide and water",
+       "Lactic acid and ATP"
+      ],
+      "a": 2,
+      "why": "Plants combine CO2 and H2O using light energy."
+     },
+     {
+      "t": "mc",
+      "q": "Where do the light reactions occur in a chloroplast?",
+      "o": [
+       "Stroma",
+       "Thylakoid membranes",
+       "Matrix",
+       "Cytosol"
+      ],
+      "a": 1,
+      "why": "Light-capturing pigments sit in the thylakoid membranes."
+     },
+     {
+      "t": "mc",
+      "q": "Which stage of cellular respiration makes the most ATP?",
+      "o": [
+       "Glycolysis",
+       "Krebs cycle",
+       "Fermentation",
+       "Electron transport chain"
+      ],
+      "a": 3,
+      "why": "The electron transport chain drives ATP synthase."
+     },
+     {
+      "t": "mc",
+      "q": "How do enzymes speed up reactions?",
+      "o": [
+       "By lowering activation energy",
+       "By adding energy to products",
+       "By being used up",
+       "By raising temperature"
+      ],
+      "a": 0,
+      "why": "Enzymes provide an easier path for the reaction."
+     },
+     {
+      "t": "tf",
+      "q": "Glycolysis occurs in the cytoplasm and does not require oxygen.",
+      "a": true,
+      "why": "Glycolysis is the first, oxygen-independent step of respiration."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "ATP",
+        "Cell's energy currency"
+       ],
+       [
+        "Enzyme",
+        "Biological catalyst"
+       ],
+       [
+        "Chloroplast",
+        "Site of photosynthesis"
+       ],
+       [
+        "Receptor",
+        "Protein that binds a signal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the stages of cellular respiration in order",
+      "items": [
+       [
+        "Glycolysis",
+        1
+       ],
+       [
+        "Pyruvate oxidation",
+        2
+       ],
+       [
+        "Krebs cycle",
+        3
+       ],
+       [
+        "Electron transport chain",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: ATP stands for adenosine ___. Fill in the missing word.",
+      "a": [
+       "triphosphate"
+      ],
+      "hint": "Three phosphates.",
+      "why": "ATP is adenosine triphosphate."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how many net ATP does glycolysis make per glucose?",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "It makes 4 and uses 2.",
+      "why": "Net gain from glycolysis is 2 ATP."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in which part of the chloroplast does the Calvin cycle occur?",
+      "a": [
+       "stroma",
+       "the stroma"
+      ],
+      "hint": "The fluid around the thylakoids.",
+      "why": "The Calvin cycle runs in the stroma."
+     }
+    ]
+   },
+   {
+    "title": "Cell Communication and the Cell Cycle",
+    "period": "Unit 4",
+    "learn": [
+     {
+      "h": "Cell signaling",
+      "b": "Cell signaling has three steps. In reception, a ligand binds a receptor. In transduction, a relay such as a phosphorylation cascade or a second messenger like cAMP passes and amplifies the signal. In response, the cell changes gene expression or enzyme activity. Negative feedback keeps conditions stable. Positive feedback amplifies a change, as oxytocin does in childbirth."
+     },
+     {
+      "h": "The cell cycle",
+      "b": "The cell cycle has interphase (G1, S, G2) and the mitotic phase. DNA is replicated in S phase. Mitosis separates the chromosomes, then cytokinesis splits the cytoplasm. Checkpoints at G1, G2, and M make sure the cell is ready to continue."
+     },
+     {
+      "h": "Regulation and cancer",
+      "b": "Cyclins bind CDKs (cyclin-dependent kinases) to push the cell past checkpoints. The protein p53 stops the cycle or triggers apoptosis (programmed cell death) when DNA is damaged. Cancer is uncontrolled division, often from mutations in genes that control the cycle."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What happens in the reception step of signaling?",
+      "o": [
+       "A ligand binds a receptor",
+       "The cell divides",
+       "A gene is copied",
+       "A second messenger leaves the cell"
+      ],
+      "a": 0,
+      "why": "Reception is when the signal molecule binds."
+     },
+     {
+      "t": "mc",
+      "q": "In which phase is DNA replicated?",
+      "o": [
+       "G1 phase",
+       "Prophase",
+       "Cytokinesis",
+       "S phase"
+      ],
+      "a": 3,
+      "why": "S stands for synthesis of DNA."
+     },
+     {
+      "t": "mc",
+      "q": "Which proteins work together to drive the cell cycle forward?",
+      "o": [
+       "Histones and ligases",
+       "Cyclins and CDKs",
+       "Ribosomes and tRNAs",
+       "Actin and myosin"
+      ],
+      "a": 1,
+      "why": "Cyclin-CDK complexes trigger checkpoints."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of positive feedback?",
+      "o": [
+       "Insulin lowering blood sugar",
+       "Sweating to cool the body",
+       "Oxytocin strengthening contractions in labor",
+       "A thermostat turning off a heater"
+      ],
+      "a": 2,
+      "why": "Each contraction triggers more oxytocin, amplifying the change."
+     },
+     {
+      "t": "tf",
+      "q": "Negative feedback tends to amplify a change.",
+      "a": false,
+      "why": "Negative feedback reverses a change; positive feedback amplifies it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Reception",
+        "Ligand binds receptor"
+       ],
+       [
+        "Transduction",
+        "Signal relayed inside the cell"
+       ],
+       [
+        "Cyclin",
+        "Works with CDK to control the cycle"
+       ],
+       [
+        "Apoptosis",
+        "Programmed cell death"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the cell cycle phases in order",
+      "items": [
+       [
+        "G1",
+        1
+       ],
+       [
+        "S",
+        2
+       ],
+       [
+        "G2",
+        3
+       ],
+       [
+        "Mitosis",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a cell divides by mitosis 3 times. Starting from 1 cell, how many cells result?",
+      "a": [
+       "8"
+      ],
+      "hint": "Doubles each time.",
+      "why": "2^3 = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in which phase of the cell cycle is DNA replicated?",
+      "a": [
+       "s",
+       "s phase",
+       "synthesis",
+       "synthesis phase"
+      ],
+      "hint": "One letter.",
+      "why": "S phase is the DNA synthesis phase."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which protein, called the 'guardian of the genome', halts the cycle after DNA damage?",
+      "a": [
+       "p53",
+       "tp53",
+       "p53 gene"
+      ],
+      "hint": "Its name is a letter and a number.",
+      "why": "p53 stops the cycle or triggers apoptosis."
+     }
+    ]
+   },
+   {
+    "title": "Heredity",
+    "period": "Unit 5",
+    "learn": [
+     {
+      "h": "Cell division",
+      "b": "Mitosis makes two genetically identical cells. Meiosis makes gametes with half the number of chromosomes, and crossing over and independent assortment create variety."
+     },
+     {
+      "h": "Inheritance",
+      "b": "An allele is a version of a gene. Genotype is the genetic makeup and phenotype is the observable trait. A cross of Aa x Aa gives a 3:1 phenotype ratio when one allele is completely dominant."
+     },
+     {
+      "h": "From DNA to protein",
+      "b": "In DNA, A pairs with T and C pairs with G. Transcription copies DNA into mRNA. In translation, a ribosome reads mRNA codons (three bases) and tRNA brings the matching amino acids."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does mitosis produce?",
+      "o": [
+       "Four haploid cells",
+       "Two genetically identical cells",
+       "Two different haploid cells",
+       "One large cell"
+      ],
+      "a": 1,
+      "why": "Mitosis makes identical diploid daughter cells."
+     },
+     {
+      "t": "mc",
+      "q": "Compared with its parent cell, how many chromosomes does a gamete have?",
+      "o": [
+       "Double",
+       "One quarter",
+       "Half as many",
+       "The same number"
+      ],
+      "a": 2,
+      "why": "Meiosis halves the chromosome number."
+     },
+     {
+      "t": "mc",
+      "q": "What is the phenotype ratio of an Aa x Aa cross with complete dominance?",
+      "o": [
+       "1:1",
+       "1:2:1",
+       "9:3:3:1",
+       "3:1"
+      ],
+      "a": 3,
+      "why": "Three offspring show the dominant trait for each one that shows the recessive."
+     },
+     {
+      "t": "mc",
+      "q": "What does transcription produce?",
+      "o": [
+       "mRNA from a DNA template",
+       "Protein from mRNA",
+       "DNA from protein",
+       "tRNA from a ribosome"
+      ],
+      "a": 0,
+      "why": "RNA polymerase copies a DNA gene into mRNA."
+     },
+     {
+      "t": "tf",
+      "q": "In DNA, adenine pairs with cytosine.",
+      "a": false,
+      "why": "Adenine pairs with thymine; cytosine pairs with guanine."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Allele",
+        "Version of a gene"
+       ],
+       [
+        "Genotype",
+        "Genetic makeup"
+       ],
+       [
+        "Phenotype",
+        "Observable trait"
+       ],
+       [
+        "Codon",
+        "Three-base mRNA code"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of gene expression in order",
+      "items": [
+       [
+        "DNA is transcribed into mRNA",
+        1
+       ],
+       [
+        "mRNA moves to a ribosome",
+        2
+       ],
+       [
+        "tRNA brings amino acids matching codons",
+        3
+       ],
+       [
+        "A polypeptide chain forms",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: in a cross of Aa x Aa, what fraction of offspring are aa?",
+      "a": [
+       "1/4",
+       "25%",
+       "25",
+       "0.25"
+      ],
+      "hint": "Punnett square.",
+      "why": "One of four boxes is aa."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what phenotype ratio is expected from AaBb x AaBb? (use colons)",
+      "a": [
+       "9:3:3:1",
+       "9331"
+      ],
+      "hint": "Dihybrid cross.",
+      "why": "The classic ratio is 9:3:3:1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a chi-square test has 4 phenotype categories. How many degrees of freedom?",
+      "a": [
+       "3"
+      ],
+      "hint": "Categories minus one.",
+      "why": "df = 4 - 1 = 3."
+     }
+    ]
+   },
+   {
+    "title": "Gene Expression and Regulation",
+    "period": "Unit 6",
+    "learn": [
+     {
+      "h": "DNA replication",
+      "b": "Helicase unwinds the double helix and primase lays down an RNA primer. DNA polymerase adds nucleotides only in the 5' to 3' direction. The leading strand is made continuously. The lagging strand is made in short Okazaki fragments, which DNA ligase joins."
+     },
+     {
+      "h": "From gene to protein",
+      "b": "RNA polymerase binds a promoter and transcribes DNA into mRNA. In eukaryotes the pre-mRNA gets a 5' cap and a poly-A tail, and introns are spliced out, leaving exons. In translation, the start codon is AUG, tRNA anticodons match codons, and stop codons (UAA, UAG, UGA) end the chain."
+     },
+     {
+      "h": "Regulation and biotechnology",
+      "b": "In the lac operon, the repressor blocks transcription until lactose binds it, so the genes turn on only when lactose is present. Eukaryotes also use transcription factors. Tools include PCR to copy DNA, gel electrophoresis to separate fragments by size, and CRISPR to edit genes."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which enzyme joins Okazaki fragments on the lagging strand?",
+      "o": [
+       "Helicase",
+       "Primase",
+       "DNA ligase",
+       "RNA polymerase"
+      ],
+      "a": 2,
+      "why": "Ligase seals gaps in the sugar-phosphate backbone."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to introns during RNA processing?",
+      "o": [
+       "They are spliced out",
+       "They are translated",
+       "They are added to the 3' end",
+       "They become the 5' cap"
+      ],
+      "a": 0,
+      "why": "Only exons stay in the mature mRNA."
+     },
+     {
+      "t": "mc",
+      "q": "How does the lac operon turn on?",
+      "o": [
+       "Lactose binds RNA polymerase",
+       "The repressor makes lactose",
+       "Glucose activates the promoter",
+       "Lactose binds the repressor, so it releases the DNA"
+      ],
+      "a": 3,
+      "why": "The inducer inactivates the repressor."
+     },
+     {
+      "t": "mc",
+      "q": "Which codon is the usual start codon?",
+      "o": [
+       "UAA",
+       "AUG",
+       "GGC",
+       "UGA"
+      ],
+      "a": 1,
+      "why": "AUG codes for methionine and starts translation."
+     },
+     {
+      "t": "tf",
+      "q": "Eukaryotic mRNA gets a 5' cap and a poly-A tail.",
+      "a": true,
+      "why": "These modifications protect the mRNA and help translation."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Helicase",
+        "Unwinds DNA"
+       ],
+       [
+        "DNA polymerase",
+        "Adds nucleotides"
+       ],
+       [
+        "Ligase",
+        "Seals gaps"
+       ],
+       [
+        "Primase",
+        "Makes an RNA primer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of gene expression in order",
+      "items": [
+       [
+        "DNA is transcribed into pre-mRNA",
+        1
+       ],
+       [
+        "The mRNA is processed",
+        2
+       ],
+       [
+        "The mRNA moves to the cytoplasm",
+        3
+       ],
+       [
+        "A ribosome translates it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a template reads 3'-TACGGT-5'. Write the mRNA 5' to 3' (no spaces).",
+      "a": [
+       "AUGCCA"
+      ],
+      "hint": "Complement each base, using U for A.",
+      "why": "T-A, A-U, C-G, G-C, G-C, T-A gives AUGCCA."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: name one stop codon.",
+      "a": [
+       "uaa",
+       "uag",
+       "uga"
+      ],
+      "hint": "They all start with U.",
+      "why": "UAA, UAG, and UGA end translation."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a coding region has 30 nucleotides and no stop codon. How many amino acids does it code for?",
+      "a": [
+       "10"
+      ],
+      "hint": "Codons are 3 nucleotides.",
+      "why": "30 / 3 = 10."
+     }
+    ]
+   },
+   {
+    "title": "Natural Selection",
+    "period": "Unit 7",
+    "learn": [
+     {
+      "h": "Natural selection",
+      "b": "Individuals vary, and some traits help them survive and reproduce more. Over generations, those traits become more common in the population. Mutations are the original source of new alleles."
+     },
+     {
+      "h": "Species",
+      "b": "Darwin and Wallace proposed natural selection. Speciation is the formation of new species, often after populations become isolated. A niche is an organism's role in its ecosystem."
+     },
+     {
+      "h": "Ecosystems",
+      "b": "Producers make their own food. Energy flows from producers to consumers, and only about 10% of energy passes to the next trophic level. A population is one species in an area; a community includes all species there."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does natural selection mean?",
+      "o": [
+       "Organisms choose their traits",
+       "Individuals with helpful traits reproduce more",
+       "Traits gained in life are passed on",
+       "All individuals survive equally"
+      ],
+      "a": 1,
+      "why": "Helpful heritable traits become more common."
+     },
+     {
+      "t": "mc",
+      "q": "Who proposed the theory of natural selection?",
+      "o": [
+       "Mendel",
+       "Lamarck",
+       "Darwin",
+       "Pasteur"
+      ],
+      "a": 2,
+      "why": "Charles Darwin published it in On the Origin of Species."
+     },
+     {
+      "t": "mc",
+      "q": "Which group makes its own food in an ecosystem?",
+      "o": [
+       "Producers",
+       "Consumers",
+       "Decomposers",
+       "Predators"
+      ],
+      "a": 0,
+      "why": "Producers use light or chemicals to make food."
+     },
+     {
+      "t": "mc",
+      "q": "About how much energy passes to the next trophic level?",
+      "o": [
+       "90%",
+       "50%",
+       "1%",
+       "10%"
+      ],
+      "a": 3,
+      "why": "Most energy is lost as heat at each step."
+     },
+     {
+      "t": "tf",
+      "q": "Mutations are the original source of new alleles.",
+      "a": true,
+      "why": "Mutations create new variation that selection can act on."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Population",
+        "One species in an area"
+       ],
+       [
+        "Community",
+        "All species in an area"
+       ],
+       [
+        "Niche",
+        "Organism's role in its ecosystem"
+       ],
+       [
+        "Speciation",
+        "Formation of new species"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this food chain in order, from producer to top consumer",
+      "items": [
+       [
+        "Grass",
+        1
+       ],
+       [
+        "Grasshopper",
+        2
+       ],
+       [
+        "Frog",
+        3
+       ],
+       [
+        "Snake",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: if q^2 = 0.16 in Hardy-Weinberg, what is q?",
+      "a": [
+       "0.4"
+      ],
+      "hint": "Take the square root.",
+      "why": "sqrt(0.16) = 0.4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: p = 0.7 and q = 0.3. What is the heterozygote frequency 2pq?",
+      "a": [
+       "0.42"
+      ],
+      "hint": "2 x 0.7 x 0.3.",
+      "why": "2 x 0.21 = 0.42."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is random change in allele frequency in a small population called? (two words)",
+      "a": [
+       "genetic drift",
+       "drift"
+      ],
+      "hint": "Chance, not selection.",
+      "why": "Genetic drift is strongest in small populations."
+     }
+    ]
+   },
+   {
+    "title": "Ecology",
+    "period": "Unit 8",
+    "learn": [
+     {
+      "h": "Population growth",
+      "b": "Exponential growth follows dN/dt = rN and happens when resources are unlimited. Logistic growth follows dN/dt = rN(K - N)/K and levels off at the carrying capacity K. Density-dependent factors, like competition and disease, matter more as a population gets crowded. Density-independent factors, like storms and fires, do not depend on crowding."
+     },
+     {
+      "h": "Communities",
+      "b": "Species interact. In mutualism both benefit, in commensalism one benefits and the other is unaffected, and in parasitism one benefits and the other is harmed. Competition happens when species use the same limited resource. A keystone species affects the community far more than its numbers suggest. Succession is the change in a community over time."
+     },
+     {
+      "h": "Energy and disruptions",
+      "b": "Net primary productivity is the energy left after producers' respiration (GPP minus respiration). About 10 percent of energy passes to the next trophic level. Ecosystems are disrupted by invasive species, habitat loss, pollution, and climate change, which can lower biodiversity."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In logistic growth, what happens as the population nears K?",
+      "o": [
+       "Growth slows and levels off",
+       "Growth speeds up",
+       "The population crashes to zero",
+       "r becomes infinite"
+      ],
+      "a": 0,
+      "why": "The (K - N)/K term shrinks, slowing growth."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a density-dependent factor?",
+      "o": [
+       "A wildfire",
+       "A hurricane",
+       "A volcanic eruption",
+       "Competition for food"
+      ],
+      "a": 3,
+      "why": "Competition gets stronger as density rises."
+     },
+     {
+      "t": "mc",
+      "q": "What is mutualism?",
+      "o": [
+       "One benefits and the other is harmed",
+       "One benefits and the other is unaffected",
+       "Both species benefit",
+       "Both species are harmed"
+      ],
+      "a": 2,
+      "why": "Both partners gain."
+     },
+     {
+      "t": "mc",
+      "q": "What is net primary productivity?",
+      "o": [
+       "All sunlight reaching a plant",
+       "Energy stored by producers after their own respiration",
+       "Energy eaten by herbivores",
+       "Total energy in a food web"
+      ],
+      "a": 1,
+      "why": "NPP = GPP - respiration."
+     },
+     {
+      "t": "tf",
+      "q": "Exponential growth can continue forever in nature.",
+      "a": false,
+      "why": "Resources are limited, so growth eventually slows."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Mutualism",
+        "Both benefit"
+       ],
+       [
+        "Commensalism",
+        "One benefits, other unaffected"
+       ],
+       [
+        "Parasitism",
+        "One benefits, other harmed"
+       ],
+       [
+        "Competition",
+        "Species share a limited resource"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put primary succession stages in order",
+      "items": [
+       [
+        "Bare rock",
+        1
+       ],
+       [
+        "Lichens and moss",
+        2
+       ],
+       [
+        "Grasses and shrubs",
+        3
+       ],
+       [
+        "Forest",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: exponential growth with r = 0.1 and N = 500. What is dN/dt?",
+      "a": [
+       "50"
+      ],
+      "hint": "dN/dt = rN.",
+      "why": "0.1 x 500 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: logistic growth with r = 0.4, N = 500, K = 1000. What is dN/dt?",
+      "a": [
+       "100"
+      ],
+      "hint": "dN/dt = rN(K - N)/K.",
+      "why": "0.4 x 500 x 0.5 = 100."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: producers have 20000 kJ. How many kJ reach tertiary consumers? (10% rule)",
+      "a": [
+       "20",
+       "20 kj"
+      ],
+      "hint": "Three transfers.",
+      "why": "20000 -> 2000 -> 200 -> 20."
+     }
+    ]
+   }
+  ]
+ },
+ "ap-chem": {
+  "name": "AP Chemistry",
+  "units": [
+   {
+    "title": "Atomic Structure and Bonding",
+    "period": "Units 1-2",
+    "learn": [
+     {
+      "h": "Inside the atom",
+      "b": "The atomic number is the number of protons. Isotopes have the same protons but different neutrons. Valence electrons are the outer electrons that take part in bonding."
+     },
+     {
+      "h": "Periodic trends",
+      "b": "Moving left to right across a period, ionization energy and electronegativity generally increase. Fluorine has the highest electronegativity. Electrons fill subshells in order: 1s, 2s, 2p, 3s, and so on."
+     },
+     {
+      "h": "Bonds",
+      "b": "Ionic bonds form between a metal and a nonmetal when electrons transfer. Covalent bonds form between nonmetals when electrons are shared. A cation is a positive ion."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the atomic number of an element tell you?",
+      "o": [
+       "Number of neutrons",
+       "Number of protons",
+       "Protons plus neutrons",
+       "Number of shells"
+      ],
+      "a": 1,
+      "why": "Atomic number equals the number of protons."
+     },
+     {
+      "t": "mc",
+      "q": "How does first ionization energy generally change across a period, left to right?",
+      "o": [
+       "It decreases",
+       "It stays the same",
+       "It increases",
+       "It is random"
+      ],
+      "a": 2,
+      "why": "Greater nuclear charge holds electrons more tightly."
+     },
+     {
+      "t": "mc",
+      "q": "Which type of bond forms between a metal and a nonmetal?",
+      "o": [
+       "Ionic",
+       "Covalent",
+       "Hydrogen",
+       "Nonpolar"
+      ],
+      "a": 0,
+      "why": "The metal gives electrons to the nonmetal, forming ions."
+     },
+     {
+      "t": "mc",
+      "q": "Which element has the highest electronegativity?",
+      "o": [
+       "Oxygen",
+       "Chlorine",
+       "Nitrogen",
+       "Fluorine"
+      ],
+      "a": 3,
+      "why": "Fluorine attracts shared electrons most strongly."
+     },
+     {
+      "t": "tf",
+      "q": "Electrons are found inside the nucleus of an atom.",
+      "a": false,
+      "why": "The nucleus has protons and neutrons; electrons are outside it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Isotope",
+        "Same protons, different neutrons"
+       ],
+       [
+        "Cation",
+        "Positive ion"
+       ],
+       [
+        "Valence electrons",
+        "Outer shell electrons"
+       ],
+       [
+        "Covalent bond",
+        "Shared electron pair"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these subshells in the order electrons fill them",
+      "items": [
+       [
+        "1s",
+        1
+       ],
+       [
+        "2s",
+        2
+       ],
+       [
+        "2p",
+        3
+       ],
+       [
+        "3s",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how many neutrons are in chlorine-37 (atomic number 17)?",
+      "a": [
+       "20"
+      ],
+      "hint": "Mass number - atomic number.",
+      "why": "37 - 17 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how many total valence electrons are in CO2?",
+      "a": [
+       "16"
+      ],
+      "hint": "C has 4, each O has 6.",
+      "why": "4 + 6 + 6 = 16."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which element has the highest electronegativity? (name or symbol)",
+      "a": [
+       "fluorine",
+       "f"
+      ],
+      "hint": "Top right of the periodic table (not noble gases).",
+      "why": "Fluorine has the highest electronegativity."
+     }
+    ]
+   },
+   {
+    "title": "Intermolecular Forces and Properties",
+    "period": "Unit 3",
+    "learn": [
+     {
+      "h": "Intermolecular forces",
+      "b": "London dispersion forces exist in all particles and grow with more electrons. Dipole-dipole forces act between polar molecules. A hydrogen bond is a strong dipole-dipole force when H is bonded to N, O, or F. Ion-dipole forces hold ions in water. Stronger forces mean a higher boiling point and lower vapor pressure."
+     },
+     {
+      "h": "Gases",
+      "b": "The ideal gas law is PV = nRT, with R = 0.0821 L atm/(mol K) and T in kelvins. At STP, 1 mol of gas takes up 22.4 L. Boyle's law: P1V1 = P2V2 at constant T and n. Dalton's law: the total pressure is the sum of the partial pressures. Kinetic molecular theory says temperature is proportional to average kinetic energy."
+     },
+     {
+      "h": "Solutions and light",
+      "b": "Molarity is moles of solute per liter of solution. Spectroscopy uses light to study substances. In Beer's law, A = (epsilon)(b)(c): absorbance is proportional to concentration, so a darker solution absorbs more light. Chromatography separates a mixture based on how strongly each part sticks to the stationary phase."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the strongest intermolecular force in liquid HF?",
+      "o": [
+       "London dispersion only",
+       "Ionic bonding",
+       "Hydrogen bonding",
+       "Metallic bonding"
+      ],
+      "a": 2,
+      "why": "H is bonded to the very electronegative F."
+     },
+     {
+      "t": "mc",
+      "q": "Which has the highest boiling point?",
+      "o": [
+       "Methane (CH4)",
+       "Ethane (C2H6)",
+       "Propane (C3H8)",
+       "Butane (C4H10)"
+      ],
+      "a": 3,
+      "why": "More electrons means stronger dispersion forces."
+     },
+     {
+      "t": "mc",
+      "q": "What volume does 1 mol of an ideal gas occupy at STP?",
+      "o": [
+       "22.4 L",
+       "1.0 L",
+       "11.2 L",
+       "44.8 L"
+      ],
+      "a": 0,
+      "why": "That is the molar volume at 0 C and 1 atm."
+     },
+     {
+      "t": "mc",
+      "q": "According to Beer's law, what is directly proportional to concentration?",
+      "o": [
+       "Wavelength",
+       "Absorbance",
+       "Boiling point",
+       "Molar mass"
+      ],
+      "a": 1,
+      "why": "A = (epsilon)(b)(c)."
+     },
+     {
+      "t": "tf",
+      "q": "London dispersion forces exist only between nonpolar molecules.",
+      "a": false,
+      "why": "They exist between all particles."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Dispersion",
+        "Temporary dipoles in all particles"
+       ],
+       [
+        "Dipole-dipole",
+        "Attraction between polar molecules"
+       ],
+       [
+        "Hydrogen bond",
+        "H on N, O, or F attracted to a lone pair"
+       ],
+       [
+        "Ion-dipole",
+        "Ion attracted to polar water"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these noble gases in order of increasing boiling point",
+      "items": [
+       [
+        "Helium",
+        1
+       ],
+       [
+        "Neon",
+        2
+       ],
+       [
+        "Argon",
+        3
+       ],
+       [
+        "Krypton",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a gas at 3 atm and 4 L is compressed to 6 L at constant T. What is the new pressure in atm? ",
+      "a": [
+       "2",
+       "2 atm"
+      ],
+      "hint": "P1V1 = P2V2.",
+      "why": "3 x 4 = P2 x 6, so P2 = 2 atm."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a mixture has partial pressures of 1.5 atm (N2) and 2.5 atm (O2). What is the total pressure in atm?",
+      "a": [
+       "4",
+       "4.0",
+       "4 atm",
+       "4.0 atm"
+      ],
+      "hint": "Dalton's law.",
+      "why": "1.5 + 2.5 = 4.0 atm."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: epsilon = 200, b = 1 cm, c = 0.005 M. What is the absorbance A?",
+      "a": [
+       "1",
+       "1.0"
+      ],
+      "hint": "A = (epsilon)(b)(c).",
+      "why": "200 x 1 x 0.005 = 1.0."
+     }
+    ]
+   },
+   {
+    "title": "Moles and Reactions",
+    "period": "Stoichiometry",
+    "learn": [
+     {
+      "h": "The mole",
+      "b": "A mole is 6.022 x 10^23 particles, which is Avogadro's number. Molar mass is the mass of one mole in grams. For water, H2O, it is 18 g/mol."
+     },
+     {
+      "h": "Balancing equations",
+      "b": "Mass is conserved in a reaction, so both sides must have the same number of each atom. Balanced: 2H2 + O2 -> 2H2O."
+     },
+     {
+      "h": "Limiting reactant and yield",
+      "b": "The limiting reactant is used up first and limits how much product forms. Percent yield is actual yield divided by theoretical yield, times 100."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Avogadro's number?",
+      "o": [
+       "3.0 x 10^8",
+       "1.6 x 10^-19",
+       "6.022 x 10^23",
+       "9.8 x 10^1"
+      ],
+      "a": 2,
+      "why": "One mole contains 6.022 x 10^23 particles."
+     },
+     {
+      "t": "mc",
+      "q": "What is the molar mass of H2O in g/mol?",
+      "o": [
+       "16",
+       "18",
+       "20",
+       "34"
+      ],
+      "a": 1,
+      "why": "2(1) + 16 = 18."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limiting reactant?",
+      "o": [
+       "The one in the largest amount",
+       "A catalyst",
+       "The product",
+       "The one used up first"
+      ],
+      "a": 3,
+      "why": "It runs out first and stops the reaction."
+     },
+     {
+      "t": "mc",
+      "q": "What are the coefficients that balance H2 + O2 -> H2O, in order?",
+      "o": [
+       "1, 1, 1",
+       "1, 2, 2",
+       "2, 1, 2",
+       "2, 2, 1"
+      ],
+      "a": 2,
+      "why": "2H2 + O2 -> 2H2O has 4 H and 2 O on each side."
+     },
+     {
+      "t": "tf",
+      "q": "Mass is conserved in a chemical reaction.",
+      "a": true,
+      "why": "Atoms are rearranged, not created or destroyed."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Mole",
+        "6.022 x 10^23 particles"
+       ],
+       [
+        "Reactant",
+        "Substance that is consumed"
+       ],
+       [
+        "Product",
+        "Substance that is formed"
+       ],
+       [
+        "Percent yield",
+        "Actual over theoretical yield"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of converting grams to particles in order",
+      "items": [
+       [
+        "Start with grams of the substance",
+        1
+       ],
+       [
+        "Divide by molar mass to get moles",
+        2
+       ],
+       [
+        "Multiply moles by 6.022 x 10^23",
+        3
+       ],
+       [
+        "The result is the number of particles",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how many moles are in 50.0 g of CaCO3 (molar mass 100.0 g/mol)?",
+      "a": [
+       "0.5",
+       "0.50",
+       "0.5 mol",
+       "0.50 mol"
+      ],
+      "hint": "moles = mass / molar mass.",
+      "why": "50.0 / 100.0 = 0.50 mol."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 2H2 + O2 -> 2H2O. Starting with 4 mol H2 and 3 mol O2, how many mol of H2O form?",
+      "a": [
+       "4",
+       "4 mol"
+      ],
+      "hint": "Find the limiting reactant.",
+      "why": "H2 is limiting (needs 2 mol O2), so 4 mol H2O forms."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the theoretical yield is 10 g and the actual yield is 8 g. What is the percent yield?",
+      "a": [
+       "80",
+       "80%"
+      ],
+      "hint": "actual / theoretical x 100.",
+      "why": "8 / 10 x 100 = 80 percent."
+     }
+    ]
+   },
+   {
+    "title": "Energy and Rates",
+    "period": "Thermochemistry and Kinetics",
+    "learn": [
+     {
+      "h": "Heat in reactions",
+      "b": "An exothermic reaction releases heat and has a negative change in enthalpy (delta H). An endothermic reaction absorbs heat. Heat transfer is calculated with q = mc(delta T)."
+     },
+     {
+      "h": "Reaction rates",
+      "b": "Rates depend on concentration, temperature, and catalysts. Higher temperature means more collisions with enough energy, so the rate usually goes up. Activation energy is the energy needed to start a reaction."
+     },
+     {
+      "h": "Catalysts and entropy",
+      "b": "A catalyst lowers the activation energy and is not used up. Entropy measures disorder, and nature tends toward more disorder."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is true of an exothermic reaction?",
+      "o": [
+       "It absorbs heat and delta H is positive",
+       "It releases heat and delta H is negative",
+       "It has no energy change",
+       "It only absorbs light"
+      ],
+      "a": 1,
+      "why": "Exothermic reactions give off heat to the surroundings."
+     },
+     {
+      "t": "mc",
+      "q": "What does a catalyst do?",
+      "o": [
+       "Raises activation energy",
+       "Changes the products",
+       "Is used up",
+       "Lowers activation energy"
+      ],
+      "a": 3,
+      "why": "A catalyst gives a lower-energy path and is not consumed."
+     },
+     {
+      "t": "mc",
+      "q": "How does raising the temperature usually affect reaction rate?",
+      "o": [
+       "It increases the rate",
+       "It decreases the rate",
+       "It has no effect",
+       "It stops the reaction"
+      ],
+      "a": 0,
+      "why": "More particles have enough energy to react."
+     },
+     {
+      "t": "mc",
+      "q": "In q = mc(delta T), what does q stand for?",
+      "o": [
+       "Charge",
+       "Pressure",
+       "Heat energy transferred",
+       "Moles"
+      ],
+      "a": 2,
+      "why": "q is the heat gained or lost, in joules."
+     },
+     {
+      "t": "tf",
+      "q": "An endothermic process absorbs heat from its surroundings.",
+      "a": true,
+      "why": "Endothermic means energy flows in."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Enthalpy",
+        "Heat content at constant pressure"
+       ],
+       [
+        "Activation energy",
+        "Energy needed to start a reaction"
+       ],
+       [
+        "Rate law",
+        "Links rate to concentrations"
+       ],
+       [
+        "Entropy",
+        "Measure of disorder"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these temperatures in order from coldest to hottest",
+      "items": [
+       [
+        "Absolute zero (0 K)",
+        1
+       ],
+       [
+        "Water freezes (273 K)",
+        2
+       ],
+       [
+        "Room temperature (298 K)",
+        3
+       ],
+       [
+        "Water boils (373 K)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how much heat in J warms 200 g of water by 5 C? (c = 4.18 J/g C)",
+      "a": [
+       "4180",
+       "4180 j"
+      ],
+      "hint": "q = mc(change in T).",
+      "why": "200 x 4.18 x 5 = 4180 J."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: delta H is negative. Is the reaction exothermic or endothermic?",
+      "a": [
+       "exothermic"
+      ],
+      "hint": "Negative means heat is released.",
+      "why": "A negative delta H means heat is released."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does a catalyst lower? (two words)",
+      "a": [
+       "activation energy",
+       "the activation energy"
+      ],
+      "hint": "It makes the barrier smaller.",
+      "why": "A catalyst provides a path with lower activation energy."
+     }
+    ]
+   },
+   {
+    "title": "Kinetics and Rate Laws",
+    "period": "Unit 5",
+    "learn": [
+     {
+      "h": "Rate laws",
+      "b": "A rate law has the form rate = k[A]^m[B]^n. The orders m and n must be found by experiment, not from the coefficients. If doubling [A] doubles the rate, the order is 1. If it quadruples the rate, the order is 2. If it has no effect, the order is 0. The units of k depend on the overall order; for first order, k is in s^-1."
+     },
+     {
+      "h": "Integrated rate laws",
+      "b": "Zero order: [A] vs time is a straight line. First order: ln[A] vs time is a straight line, and the half-life is t1/2 = 0.693 / k, which stays constant. Second order: 1/[A] vs time is a straight line."
+     },
+     {
+      "h": "Mechanisms",
+      "b": "A mechanism is a series of elementary steps. The slowest step is the rate-determining step. An intermediate is made and then used up, while a catalyst is used and then regenerated. Collision theory and the Arrhenius idea say that more molecules have enough activation energy as temperature rises."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Doubling [A] makes the rate four times larger. What is the order in A?",
+      "o": [
+       "2",
+       "1",
+       "0",
+       "4"
+      ],
+      "a": 0,
+      "why": "2^2 = 4."
+     },
+     {
+      "t": "mc",
+      "q": "What is the rate-determining step in a mechanism?",
+      "o": [
+       "The first step",
+       "The fastest step",
+       "The slowest step",
+       "The last step"
+      ],
+      "a": 2,
+      "why": "The slowest step limits the overall rate."
+     },
+     {
+      "t": "mc",
+      "q": "What plot is a straight line for a first-order reaction?",
+      "o": [
+       "[A] vs time",
+       "ln[A] vs time",
+       "1/[A] vs time",
+       "[A]^2 vs time"
+      ],
+      "a": 1,
+      "why": "First-order decay is exponential, so ln[A] is linear."
+     },
+     {
+      "t": "mc",
+      "q": "What are the units of k for a first-order reaction?",
+      "o": [
+       "M^-1 s^-1",
+       "M s^-1",
+       "M^2 s^-1",
+       "s^-1"
+      ],
+      "a": 3,
+      "why": "Rate (M/s) = k x M, so k is in 1/s."
+     },
+     {
+      "t": "tf",
+      "q": "Rate-law exponents always equal the coefficients in the balanced equation.",
+      "a": false,
+      "why": "Orders are found by experiment."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Intermediate",
+        "Made, then used up"
+       ],
+       [
+        "Catalyst",
+        "Used, then regenerated"
+       ],
+       [
+        "Activation energy",
+        "Minimum energy for a reaction"
+       ],
+       [
+        "Half-life",
+        "Time for half to react"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order by how much doubling [A] changes the rate (smallest first)",
+      "items": [
+       [
+        "Zero order (rate x1)",
+        1
+       ],
+       [
+        "First order (rate x2)",
+        2
+       ],
+       [
+        "Second order (rate x4)",
+        3
+       ],
+       [
+        "Third order (rate x8)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a first-order reaction has k = 0.0693 s^-1. What is the half-life in s?",
+      "a": [
+       "10",
+       "10 s"
+      ],
+      "hint": "t1/2 = 0.693 / k.",
+      "why": "0.693 / 0.0693 = 10 s."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: rate = k[A]^2 with k = 0.5 and [A] = 0.2 M. What is the rate in M/s?",
+      "a": [
+       "0.02"
+      ],
+      "hint": "Square [A] first.",
+      "why": "0.5 x 0.04 = 0.02."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a first-order sample of 80 g goes through 3 half-lives. How many grams remain?",
+      "a": [
+       "10",
+       "10 g"
+      ],
+      "hint": "Halve it three times.",
+      "why": "80 -> 40 -> 20 -> 10."
+     }
+    ]
+   },
+   {
+    "title": "Thermochemistry",
+    "period": "Unit 6",
+    "learn": [
+     {
+      "h": "Heat and calorimetry",
+      "b": "Heat is q = mc(change in T). In a calorimeter, the heat gained by the water equals the heat lost by the reaction, so q_rxn = -q_water. If the water warms, the reaction is exothermic. Divide q by moles to get delta H per mole."
+     },
+     {
+      "h": "Hess's law",
+      "b": "Enthalpy change is a state function, so you can add the delta H values of steps. If you reverse a reaction, change the sign of delta H. If you multiply a reaction, multiply delta H by the same factor. The standard enthalpy of formation of an element in its standard state is zero."
+     },
+     {
+      "h": "Formation and bond enthalpies",
+      "b": "delta H(rxn) = sum of delta Hf of products - sum of delta Hf of reactants. With bond energies, delta H = energy of bonds broken - energy of bonds formed. Breaking bonds takes energy (endothermic) and forming bonds releases it (exothermic)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In a calorimeter the water temperature rises. What does this tell you about the reaction?",
+      "o": [
+       "It is endothermic",
+       "It is exothermic",
+       "It has delta H = 0",
+       "It is at equilibrium"
+      ],
+      "a": 1,
+      "why": "The reaction released heat into the water."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to delta H when you reverse a reaction?",
+      "o": [
+       "It changes sign",
+       "It doubles",
+       "It stays the same",
+       "It becomes zero"
+      ],
+      "a": 0,
+      "why": "The reverse of an exothermic process is endothermic."
+     },
+     {
+      "t": "mc",
+      "q": "What is the standard enthalpy of formation of O2(g)?",
+      "o": [
+       "+249 kJ/mol",
+       "-249 kJ/mol",
+       "0 kJ/mol",
+       "+498 kJ/mol"
+      ],
+      "a": 2,
+      "why": "Elements in their standard states have delta Hf = 0."
+     },
+     {
+      "t": "mc",
+      "q": "Using bond energies, delta H equals what?",
+      "o": [
+       "Bonds formed minus bonds broken",
+       "Bonds broken plus bonds formed",
+       "Only the bonds broken",
+       "Bonds broken minus bonds formed"
+      ],
+      "a": 3,
+      "why": "Breaking costs energy, forming returns it."
+     },
+     {
+      "t": "tf",
+      "q": "Breaking chemical bonds releases energy.",
+      "a": false,
+      "why": "Breaking bonds requires energy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Calorimeter",
+        "Measures heat transfer"
+       ],
+       [
+        "Hess's law",
+        "delta H values add for steps"
+       ],
+       [
+        "Specific heat",
+        "Energy per gram per degree"
+       ],
+       [
+        "delta Hf",
+        "Enthalpy to form 1 mol from elements"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a calorimetry calculation in order",
+      "items": [
+       [
+        "Measure the mass of water and its temperature change",
+        1
+       ],
+       [
+        "Calculate q = mc(change in T)",
+        2
+       ],
+       [
+        "Set q_rxn = -q_water",
+        3
+       ],
+       [
+        "Divide by moles to get delta H",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 50 g of water warms by 20 C (c = 4.18 J/g C). How many J did it absorb?",
+      "a": [
+       "4180",
+       "4180 j"
+      ],
+      "hint": "q = mc(change in T).",
+      "why": "50 x 4.18 x 20 = 4180 J."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: step 1 has delta H = -100 kJ and step 2 has delta H = -50 kJ. What is delta H for the overall reaction in kJ?",
+      "a": [
+       "-150",
+       "-150 kj"
+      ],
+      "hint": "Hess's law: add them.",
+      "why": "-100 + -50 = -150 kJ."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a reaction has delta H = -200 kJ. What is delta H in kJ for the reverse reaction?",
+      "a": [
+       "200",
+       "+200",
+       "200 kj"
+      ],
+      "hint": "Reverse changes the sign.",
+      "why": "The reverse reaction has delta H = +200 kJ."
+     }
+    ]
+   },
+   {
+    "title": "Equilibrium and Acids",
+    "period": "Equilibrium and pH",
+    "learn": [
+     {
+      "h": "Equilibrium",
+      "b": "At equilibrium, the forward and reverse reaction rates are equal, so concentrations stay constant. The equilibrium constant K is the ratio of products to reactants. Le Chatelier's principle says a system shifts to oppose a change."
+     },
+     {
+      "h": "Acids and bases",
+      "b": "An acid donates H+ and a base accepts H+. A strong acid like HCl fully ionizes in water, while a weak acid like acetic acid does not."
+     },
+     {
+      "h": "pH",
+      "b": "pH measures acidity. At 25 C, pH 7 is neutral, below 7 is acidic, and above 7 is basic. A buffer resists changes in pH."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is true at chemical equilibrium?",
+      "o": [
+       "The forward rate is faster",
+       "Forward and reverse rates are equal",
+       "The reverse rate is zero",
+       "Both reactions stop"
+      ],
+      "a": 1,
+      "why": "Both reactions continue at the same rate, so concentrations stay constant."
+     },
+     {
+      "t": "mc",
+      "q": "What is the pH of a neutral solution at 25 C?",
+      "o": [
+       "0",
+       "7",
+       "10",
+       "14"
+      ],
+      "a": 1,
+      "why": "Pure water has pH 7 at 25 C."
+     },
+     {
+      "t": "mc",
+      "q": "If more reactant is added to a system at equilibrium, which way does it shift?",
+      "o": [
+       "Toward reactants",
+       "It does not shift",
+       "Toward products",
+       "It reverses permanently"
+      ],
+      "a": 2,
+      "why": "Le Chatelier: the system uses up the added reactant."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a strong acid?",
+      "o": [
+       "CH3COOH",
+       "NH3",
+       "NaOH",
+       "HCl"
+      ],
+      "a": 3,
+      "why": "HCl ionizes completely in water."
+     },
+     {
+      "t": "tf",
+      "q": "A solution with pH 3 is more acidic than one with pH 5.",
+      "a": true,
+      "why": "Lower pH means higher H+ concentration."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Acid",
+        "Donates H+"
+       ],
+       [
+        "Base",
+        "Accepts H+"
+       ],
+       [
+        "Buffer",
+        "Resists pH change"
+       ],
+       [
+        "K",
+        "Products over reactants at equilibrium"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from most acidic to most basic",
+      "items": [
+       [
+        "Stomach acid",
+        1
+       ],
+       [
+        "Black coffee",
+        2
+       ],
+       [
+        "Pure water",
+        3
+       ],
+       [
+        "Household ammonia",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: for A + B <-> C, [A] = 0.2, [B] = 0.1, [C] = 0.4 at equilibrium. What is K?",
+      "a": [
+       "20"
+      ],
+      "hint": "K = [C] / ([A][B]).",
+      "why": "0.4 / (0.2 x 0.1) = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the pH of 0.001 M HCl?",
+      "a": [
+       "3"
+      ],
+      "hint": "Strong acid, so [H+] = 0.001.",
+      "why": "-log(10^-3) = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the pH of a solution with pOH = 5 at 25 C?",
+      "a": [
+       "9"
+      ],
+      "hint": "pH + pOH = 14.",
+      "why": "14 - 5 = 9."
+     }
+    ]
+   },
+   {
+    "title": "Acids, Bases and Buffers",
+    "period": "Unit 8",
+    "learn": [
+     {
+      "h": "pH and strength",
+      "b": "pH = -log[H+] and pOH = -log[OH-]. At 25 C, pH + pOH = 14 and Kw = 1.0 x 10^-14. A strong acid like HCl ionizes completely, so 0.01 M HCl has pH 2. A weak acid ionizes only a little and is described by Ka. A larger Ka means a stronger acid."
+     },
+     {
+      "h": "Buffers",
+      "b": "A buffer holds a nearly constant pH. It contains a weak acid and its conjugate base. Added acid reacts with the base, and added base reacts with the acid. The Henderson-Hasselbalch equation is pH = pKa + log([A-]/[HA]). When [A-] = [HA], pH = pKa."
+     },
+     {
+      "h": "Titrations",
+      "b": "In a titration, a solution of known concentration is added to an unknown one. At the equivalence point, moles of acid equal moles of base. For a strong acid with a strong base, the equivalence point is at pH 7. For a weak acid, the pH at the half-equivalence point equals pKa."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the pH of 0.01 M HCl at 25 C?",
+      "o": [
+       "1",
+       "12",
+       "0.01",
+       "2"
+      ],
+      "a": 3,
+      "why": "HCl is strong, so [H+] = 0.01 = 10^-2."
+     },
+     {
+      "t": "mc",
+      "q": "A solution has pOH = 3. What is its pH at 25 C?",
+      "o": [
+       "3",
+       "11",
+       "7",
+       "14"
+      ],
+      "a": 1,
+      "why": "pH = 14 - 3 = 11."
+     },
+     {
+      "t": "mc",
+      "q": "What does a buffer contain?",
+      "o": [
+       "A weak acid and its conjugate base",
+       "A strong acid and a strong base",
+       "Only water",
+       "Two strong acids"
+      ],
+      "a": 0,
+      "why": "The pair neutralizes small additions of acid or base."
+     },
+     {
+      "t": "mc",
+      "q": "In a weak acid titration, what equals pKa?",
+      "o": [
+       "The pH at the equivalence point",
+       "The starting pH",
+       "The pH at the half-equivalence point",
+       "The final pH"
+      ],
+      "a": 2,
+      "why": "At half-equivalence, [A-] = [HA]."
+     },
+     {
+      "t": "tf",
+      "q": "The equivalence point of a strong acid-strong base titration is at pH 7 at 25 C.",
+      "a": true,
+      "why": "Neither ion hydrolyzes, so the solution is neutral."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Ka",
+        "Strength of a weak acid"
+       ],
+       [
+        "Conjugate base",
+        "What remains after acid loses H+"
+       ],
+       [
+        "Buffer",
+        "Resists pH change"
+       ],
+       [
+        "Equivalence point",
+        "Moles acid = moles base"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order of increasing pH",
+      "items": [
+       [
+        "0.1 M HCl",
+        1
+       ],
+       [
+        "Vinegar",
+        2
+       ],
+       [
+        "Pure water",
+        3
+       ],
+       [
+        "0.1 M NaOH",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: [H+] = 1 x 10^-4 M. What is the pH?",
+      "a": [
+       "4"
+      ],
+      "hint": "pH = -log[H+].",
+      "why": "-log(10^-4) = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a buffer has pKa = 5 and [A-]/[HA] = 10. What is the pH?",
+      "a": [
+       "6"
+      ],
+      "hint": "pH = pKa + log(ratio).",
+      "why": "5 + log(10) = 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a buffer has pKa = 4.75 and [A-] = [HA]. What is the pH?",
+      "a": [
+       "4.75"
+      ],
+      "hint": "log(1) = 0.",
+      "why": "pH = pKa when concentrations are equal."
+     }
+    ]
+   },
+   {
+    "title": "Entropy, Free Energy and Electrochemistry",
+    "period": "Unit 9",
+    "learn": [
+     {
+      "h": "Entropy and free energy",
+      "b": "Entropy (S) measures how spread out energy and matter are. Gases have more entropy than liquids, and liquids more than solids. Delta G = delta H - T(delta S). A reaction is spontaneous if delta G is negative. If delta H is negative and delta S is positive, it is spontaneous at all temperatures. Delta G is related to K by delta G = -RT ln K, so K > 1 means a negative delta G."
+     },
+     {
+      "h": "Galvanic cells",
+      "b": "A galvanic cell uses a spontaneous redox reaction to make electricity. Oxidation happens at the anode and reduction at the cathode. Electrons flow from anode to cathode. E(cell) = E(cathode) - E(anode), and a positive E(cell) means the reaction is spontaneous. Also, delta G = -nFE."
+     },
+     {
+      "h": "Electrolysis",
+      "b": "An electrolytic cell uses electricity to force a nonspontaneous reaction. Charge is q = It. Moles of electrons = q / F, where F = 96,485 C/mol. More current or more time plates out more metal."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "When delta H is negative and delta S is positive, what is true?",
+      "o": [
+       "The reaction is never spontaneous",
+       "The reaction is spontaneous at all temperatures",
+       "The reaction is spontaneous only at low T",
+       "The reaction is spontaneous only at high T"
+      ],
+      "a": 1,
+      "why": "Delta G = delta H - T delta S is always negative."
+     },
+     {
+      "t": "mc",
+      "q": "Which has the highest entropy?",
+      "o": [
+       "1 mol of H2O(g)",
+       "1 mol of H2O(s)",
+       "1 mol of H2O(l)",
+       "They are equal"
+      ],
+      "a": 0,
+      "why": "Gas particles are the most spread out."
+     },
+     {
+      "t": "mc",
+      "q": "What does a positive E(cell) mean for a galvanic cell?",
+      "o": [
+       "The reaction is nonspontaneous",
+       "The cell is at equilibrium",
+       "The reaction is spontaneous",
+       "No electrons flow"
+      ],
+      "a": 2,
+      "why": "Positive E corresponds to negative delta G."
+     },
+     {
+      "t": "mc",
+      "q": "In which direction do electrons flow in a galvanic cell?",
+      "o": [
+       "From cathode to anode",
+       "Through the salt bridge",
+       "Only inside the electrolyte",
+       "From anode to cathode"
+      ],
+      "a": 3,
+      "why": "Oxidation at the anode releases electrons that travel through the wire."
+     },
+     {
+      "t": "tf",
+      "q": "Reduction occurs at the anode.",
+      "a": false,
+      "why": "Oxidation occurs at the anode and reduction at the cathode."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Delta G",
+        "Predicts spontaneity"
+       ],
+       [
+        "Entropy",
+        "Dispersal of energy and matter"
+       ],
+       [
+        "Galvanic cell",
+        "Spontaneous reaction makes current"
+       ],
+       [
+        "Electrolytic cell",
+        "Current forces a reaction"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in a galvanic cell in order",
+      "items": [
+       [
+        "Oxidation at the anode releases electrons",
+        1
+       ],
+       [
+        "Electrons flow through the external wire",
+        2
+       ],
+       [
+        "Electrons reach the cathode",
+        3
+       ],
+       [
+        "Reduction occurs at the cathode",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: delta H = 20 kJ, T = 400 K, delta S = 0.1 kJ/(mol K). What is delta G in kJ?",
+      "a": [
+       "-20",
+       "-20 kj"
+      ],
+      "hint": "delta G = delta H - T delta S.",
+      "why": "20 - 400 x 0.1 = 20 - 40 = -20 kJ."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: E(cathode) = +0.34 V and E(anode) = -0.76 V. What is E(cell) in V?",
+      "a": [
+       "1.10",
+       "1.1",
+       "1.10 v",
+       "1.1 v"
+      ],
+      "hint": "E(cell) = E(cathode) - E(anode).",
+      "why": "0.34 - (-0.76) = 1.10 V."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 2 A flows for 4825 s. How many moles of electrons? (use F = 96500 C/mol)",
+      "a": [
+       "0.1",
+       "0.10",
+       "0.1 mol"
+      ],
+      "hint": "q = It, then q / F.",
+      "why": "q = 9650 C, and 9650 / 96500 = 0.1 mol."
+     }
+    ]
+   }
+  ]
+ }
+}

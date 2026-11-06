@@ -416,7 +416,7 @@ export function Face({ c, mood, size }: { c: CastMember; mood: 'neutral' | 'happ
   return <img className={`who-face ${talk ? 'talking' : ''}`} src={src} alt={c.name} style={size ? { width: size } : undefined} />;
 }
 
-const normAns = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^\p{L}\p{N}.\-]+/gu, ' ').replace(/\s+/g, ' ').trim();
+const normAns = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/['’‘ʼʿʾ`´]/g, '').replace(/[^\p{L}\p{N}.\-]+/gu, ' ').replace(/\s+/g, ' ').trim();
 
 /** A real coding challenge: write code, run it, and pass every test. */
 function CodeTask({ task, locked, onDone }: { task: Code; locked: boolean; onDone: (pass: boolean) => void }) {

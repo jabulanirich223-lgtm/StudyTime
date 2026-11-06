@@ -1,0 +1,6116 @@
+{
+ "ja-1": {
+  "name": "Japanese · Beginner",
+  "units": [
+   {
+    "title": "Hiragana 1: Vowels and First Rows",
+    "period": "Hiragana",
+    "learn": [
+     {
+      "h": "Meet hiragana",
+      "b": "Japanese uses three scripts: hiragana, katakana and kanji. Hiragana is the first one to learn. It has 46 basic sounds, and each character is one beat. The five vowels are あ (a), い (i), う (u), え (e), お (o)."
+     },
+     {
+      "h": "Rows of hiragana",
+      "b": "K row: か (ka) き (ki) く (ku) け (ke) こ (ko). S row: さ (sa) し (shi) す (su) せ (se) そ (so). T row: た (ta) ち (chi) つ (tsu) て (te) と (to). N row: な (na) に (ni) ぬ (nu) ね (ne) の (no)."
+     },
+     {
+      "h": "Reading words",
+      "b": "Read from left to right, one character at a time. かさ (kasa) means umbrella and has 2 beats. さかな (sakana) means fish and has 3 beats. The sound ん (n) is a beat on its own."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which hiragana sounds like 'ku'?",
+      "o": [
+       "く",
+       "け",
+       "こ",
+       "き"
+      ],
+      "a": 0,
+      "why": "く is ku. け is ke, こ is ko and き is ki."
+     },
+     {
+      "t": "mc",
+      "q": "How do you read し?",
+      "o": [
+       "si",
+       "chi",
+       "tsu",
+       "shi"
+      ],
+      "a": 3,
+      "why": "し is read 'shi', the second sound of the S row."
+     },
+     {
+      "t": "mc",
+      "q": "Which row does の (no) belong to?",
+      "o": [
+       "The K row",
+       "The N row",
+       "The S row",
+       "The T row"
+      ],
+      "a": 1,
+      "why": "な に ぬ ね の make the N row."
+     },
+     {
+      "t": "mc",
+      "q": "How many beats does さかな (sakana) have?",
+      "o": [
+       "2",
+       "4",
+       "3",
+       "5"
+      ],
+      "a": 2,
+      "why": "sa-ka-na is three beats."
+     },
+     {
+      "t": "tf",
+      "q": "つ is read 'tsu'.",
+      "a": true,
+      "why": "つ belongs to the T row and is read 'tsu'."
+     },
+     {
+      "t": "match",
+      "q": "Match each hiragana to its sound",
+      "pairs": [
+       [
+        "あ",
+        "a"
+       ],
+       [
+        "せ",
+        "se"
+       ],
+       [
+        "と",
+        "to"
+       ],
+       [
+        "ぬ",
+        "nu"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these rows in chart order (first sound of each row)",
+      "items": [
+       [
+        "か (ka)",
+        1
+       ],
+       [
+        "さ (sa)",
+        2
+       ],
+       [
+        "た (ta)",
+        3
+       ],
+       [
+        "な (na)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the romaji for こ.",
+      "a": [
+       "ko"
+      ],
+      "hint": "It is the last sound of the K row.",
+      "why": "こ is read 'ko'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the hiragana for 'sa' (as in さかな).",
+      "a": [
+       "さ"
+      ],
+      "hint": "It is the first sound of the S row.",
+      "why": "さ is 'sa'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of さかな (sakana).",
+      "a": [
+       "fish",
+       "a fish",
+       "afish"
+      ],
+      "hint": "It is food that swims.",
+      "why": "さかな means fish."
+     }
+    ]
+   },
+   {
+    "title": "Hiragana 2: More Rows and Voiced Sounds",
+    "period": "Hiragana",
+    "learn": [
+     {
+      "h": "The rest of the chart",
+      "b": "H row: は (ha) ひ (hi) ふ (fu) へ (he) ほ (ho). M row: ま (ma) み (mi) む (mu) め (me) も (mo). Y row: や (ya) ゆ (yu) よ (yo). R row: ら (ra) り (ri) る (ru) れ (re) ろ (ro). Also わ (wa), を (o) and ん (n). As a particle, は is read 'wa'."
+     },
+     {
+      "h": "Two dots and a circle",
+      "b": "Add two dots (dakuten) to change a sound: か (ka) becomes が (ga), さ (sa) becomes ざ (za), た (ta) becomes だ (da), は (ha) becomes ば (ba). Add a small circle (handakuten) to は to make ぱ (pa)."
+     },
+     {
+      "h": "Small characters",
+      "b": "A small ゃ ゅ ょ joins the sound before it: き (ki) + ゃ makes きゃ (kya), and し + ゅ makes しゅ (shu). A small っ doubles the next consonant: きって (kitte) means stamp."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which hiragana sounds like 'ha'?",
+      "o": [
+       "ま",
+       "ほ",
+       "わ",
+       "は"
+      ],
+      "a": 3,
+      "why": "は is ha. ほ is ho, ま is ma and わ is wa."
+     },
+     {
+      "t": "mc",
+      "q": "What sound do you get when you add two dots to か (ka)?",
+      "o": [
+       "ba",
+       "ga",
+       "za",
+       "da"
+      ],
+      "a": 1,
+      "why": "か with two dots is が (ga)."
+     },
+     {
+      "t": "mc",
+      "q": "Which mark turns は (ha) into ぱ (pa)?",
+      "o": [
+       "Two dots",
+       "A small つ",
+       "A small circle",
+       "A long line"
+      ],
+      "a": 2,
+      "why": "The small circle (handakuten) makes a 'p' sound."
+     },
+     {
+      "t": "mc",
+      "q": "How do you read きゃ?",
+      "o": [
+       "kya",
+       "kiya",
+       "ka",
+       "ki"
+      ],
+      "a": 0,
+      "why": "きゃ is one beat, read 'kya'."
+     },
+     {
+      "t": "tf",
+      "q": "A small っ makes the next consonant sound double, as in きって (kitte).",
+      "a": true,
+      "why": "The small っ adds a short pause before the next consonant."
+     },
+     {
+      "t": "match",
+      "q": "Match each hiragana to its sound",
+      "pairs": [
+       [
+        "ざ",
+        "za"
+       ],
+       [
+        "ぶ",
+        "bu"
+       ],
+       [
+        "ぱ",
+        "pa"
+       ],
+       [
+        "ご",
+        "go"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these rows in chart order",
+      "items": [
+       [
+        "は row (ha)",
+        1
+       ],
+       [
+        "ま row (ma)",
+        2
+       ],
+       [
+        "や row (ya)",
+        3
+       ],
+       [
+        "ら row (ra)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the romaji for ひ.",
+      "a": [
+       "hi"
+      ],
+      "hint": "It is in the H row.",
+      "why": "ひ is 'hi'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the hiragana for 'ba'.",
+      "a": [
+       "ば"
+      ],
+      "hint": "Start from は and add two dots.",
+      "why": "ば is 'ba'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the romaji for きって (it means stamp).",
+      "a": [
+       "kitte"
+      ],
+      "hint": "The small っ doubles the t.",
+      "why": "きって is 'kitte'."
+     }
+    ]
+   },
+   {
+    "title": "Katakana: Foreign Words",
+    "period": "Katakana",
+    "learn": [
+     {
+      "h": "What is katakana?",
+      "b": "Katakana is the second script. It is used for foreign words, foreign names and sounds. It has the same sounds as hiragana but with sharper shapes: ア (a) イ (i) ウ (u) エ (e) オ (o), カ (ka) キ (ki) ク (ku) ケ (ke) コ (ko), サ (sa) シ (shi) ス (su) セ (se) ソ (so)."
+     },
+     {
+      "h": "More katakana",
+      "b": "タ (ta) チ (chi) ツ (tsu) テ (te) ト (to), ナ (na) ニ (ni) ヌ (nu) ネ (ne) ノ (no), ハ (ha) ヒ (hi) フ (fu) ヘ (he) ホ (ho), マ (ma) ミ (mi) ム (mu), ラ (ra) リ (ri) ル (ru), ン (n). A long line ー makes the vowel long. Dots and circles work as in hiragana."
+     },
+     {
+      "h": "Katakana words",
+      "b": "コーヒー (koohii) is coffee. テレビ (terebi) is TV. ホテル (hoteru) is hotel. ピザ (piza) is pizza. ハンバーガー (hanbaagaa) is hamburger. Names like ケン (Ken) are also written in katakana."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which script is used for foreign words like コーヒー?",
+      "o": [
+       "Hiragana",
+       "Katakana",
+       "Kanji",
+       "Romaji"
+      ],
+      "a": 1,
+      "why": "Foreign loanwords are normally written in katakana."
+     },
+     {
+      "t": "mc",
+      "q": "What does コーヒー (koohii) mean?",
+      "o": [
+       "Tea",
+       "Juice",
+       "Coffee",
+       "Milk"
+      ],
+      "a": 2,
+      "why": "コーヒー comes from the English word coffee."
+     },
+     {
+      "t": "mc",
+      "q": "Which katakana is read 'shi'?",
+      "o": [
+       "シ",
+       "ツ",
+       "ソ",
+       "ン"
+      ],
+      "a": 0,
+      "why": "シ is shi. ツ is tsu, ソ is so and ン is n."
+     },
+     {
+      "t": "mc",
+      "q": "What does the long mark ー do?",
+      "o": [
+       "It doubles the consonant",
+       "It makes a question",
+       "It means 'no'",
+       "It makes the vowel before it long"
+      ],
+      "a": 3,
+      "why": "ー stretches the previous vowel, as in コーヒー (koohii)."
+     },
+     {
+      "t": "tf",
+      "q": "ピザ (piza) is normally written in hiragana.",
+      "a": false,
+      "why": "Foreign words such as ピザ are written in katakana."
+     },
+     {
+      "t": "match",
+      "q": "Match each katakana to its sound",
+      "pairs": [
+       [
+        "カ",
+        "ka"
+       ],
+       [
+        "ミ",
+        "mi"
+       ],
+       [
+        "ル",
+        "ru"
+       ],
+       [
+        "ホ",
+        "ho"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these katakana in chart order",
+      "items": [
+       [
+        "ア (a)",
+        1
+       ],
+       [
+        "カ (ka)",
+        2
+       ],
+       [
+        "サ (sa)",
+        3
+       ],
+       [
+        "タ (ta)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the romaji for ネ.",
+      "a": [
+       "ne"
+      ],
+      "hint": "It is in the N row.",
+      "why": "ネ is 'ne'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of ホテル (hoteru).",
+      "a": [
+       "hotel",
+       "a hotel",
+       "ahotel"
+      ],
+      "hint": "Say it out loud.",
+      "why": "ホテル is hotel."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write 'pan' (bread) in katakana.",
+      "a": [
+       "パン"
+      ],
+      "hint": "pa + n: パ and ン.",
+      "why": "パン is bread."
+     }
+    ]
+   },
+   {
+    "title": "Greetings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Everyday greetings",
+      "b": "こんにちは (konnichiwa) means hello. おはよう (ohayou) is good morning, and こんばんは (konbanwa) is good evening. Use them at different times of the day."
+     },
+     {
+      "h": "Thanks and sorry",
+      "b": "ありがとう (arigatou) means thank you. すみません (sumimasen) means excuse me or sorry. さようなら (sayounara) means goodbye."
+     },
+     {
+      "h": "Introducing yourself",
+      "b": "Say はじめまして (hajimemashite) when you meet someone. Then say わたしは ○○ です (watashi wa ○○ desu), which means I am ○○."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does こんにちは (konnichiwa) mean?",
+      "o": [
+       "Good night",
+       "Hello",
+       "Thank you",
+       "Goodbye"
+      ],
+      "a": 1,
+      "why": "こんにちは (konnichiwa) is the standard daytime hello."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'thank you' in Japanese?",
+      "o": [
+       "おはよう (ohayou)",
+       "さようなら (sayounara)",
+       "ありがとう (arigatou)",
+       "こんばんは (konbanwa)"
+      ],
+      "a": 2,
+      "why": "ありがとう (arigatou) means thank you."
+     },
+     {
+      "t": "mc",
+      "q": "Which greeting do you use in the morning?",
+      "o": [
+       "おはよう (ohayou)",
+       "こんばんは (konbanwa)",
+       "おやすみ (oyasumi)",
+       "さようなら (sayounara)"
+      ],
+      "a": 0,
+      "why": "おはよう (ohayou) means good morning."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am Ken' politely?",
+      "o": [
+       "ケン を たべます (Ken o tabemasu)",
+       "ケン が すき (Ken ga suki)",
+       "ケン に いきます (Ken ni ikimasu)",
+       "わたしは ケン です (watashi wa Ken desu)"
+      ],
+      "a": 3,
+      "why": "わたしは ○○ です (watashi wa ○○ desu) is the pattern for I am ○○."
+     },
+     {
+      "t": "tf",
+      "q": "さようなら (sayounara) means goodbye.",
+      "a": true,
+      "why": "さようなら (sayounara) is used to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each Japanese greeting to its meaning",
+      "pairs": [
+       [
+        "おはよう (ohayou)",
+        "Good morning"
+       ],
+       [
+        "こんばんは (konbanwa)",
+        "Good evening"
+       ],
+       [
+        "ありがとう (arigatou)",
+        "Thank you"
+       ],
+       [
+        "さようなら (sayounara)",
+        "Goodbye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these greetings in order from morning to night",
+      "items": [
+       [
+        "おはよう (ohayou)",
+        1
+       ],
+       [
+        "こんにちは (konnichiwa)",
+        2
+       ],
+       [
+        "こんばんは (konbanwa)",
+        3
+       ],
+       [
+        "おやすみ (oyasumi)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'thank you' in Japanese (kana or romaji).",
+      "a": [
+       "ありがとう",
+       "arigatou",
+       "arigato"
+      ],
+      "hint": "It starts with あり.",
+      "why": "ありがとう means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'good morning' in Japanese (kana or romaji).",
+      "a": [
+       "おはよう",
+       "ohayou",
+       "ohayo",
+       "おはようございます",
+       "ohayou gozaimasu",
+       "ohayougozaimasu"
+      ],
+      "hint": "It starts with おは.",
+      "why": "おはよう means good morning."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for こんばんは (konbanwa).",
+      "a": [
+       "good evening",
+       "evening",
+       "goodevening"
+      ],
+      "hint": "You say it after sunset.",
+      "why": "こんばんは is good evening."
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 5",
+      "b": "いち (ichi) is 1, に (ni) is 2, さん (san) is 3, よん (yon) is 4, and ご (go) is 5. In writing they look like 一, 二, 三."
+     },
+     {
+      "h": "Numbers 6 to 10",
+      "b": "ろく (roku) is 6, なな (nana) is 7, はち (hachi) is 8, きゅう (kyuu) is 9, and じゅう (juu) is 10."
+     },
+     {
+      "h": "Family words",
+      "b": "おかあさん (okaasan) is mother and おとうさん (otousan) is father. いもうと (imouto) is younger sister. かぞく (kazoku) means family."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number is さん (san)?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "さん (san) is 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'five' in Japanese?",
+      "o": [
+       "ご (go)",
+       "ろく (roku)",
+       "はち (hachi)",
+       "に (ni)"
+      ],
+      "a": 0,
+      "why": "ご (go) is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does おかあさん (okaasan) mean?",
+      "o": [
+       "Father",
+       "Sister",
+       "Grandfather",
+       "Mother"
+      ],
+      "a": 3,
+      "why": "おかあさん (okaasan) means mother."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'father' politely?",
+      "o": [
+       "おかあさん (okaasan)",
+       "おとうさん (otousan)",
+       "いもうと (imouto)",
+       "かぞく (kazoku)"
+      ],
+      "a": 1,
+      "why": "おとうさん (otousan) means father."
+     },
+     {
+      "t": "tf",
+      "q": "はち (hachi) means seven.",
+      "a": false,
+      "why": "はち (hachi) means eight. Seven is なな (nana)."
+     },
+     {
+      "t": "match",
+      "q": "Match each number word to its number",
+      "pairs": [
+       [
+        "に (ni)",
+        "2"
+       ],
+       [
+        "ご (go)",
+        "5"
+       ],
+       [
+        "きゅう (kyuu)",
+        "9"
+       ],
+       [
+        "じゅう (juu)",
+        "10"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "いち (ichi)",
+        1
+       ],
+       [
+        "さん (san)",
+        2
+       ],
+       [
+        "ろく (roku)",
+        3
+       ],
+       [
+        "きゅう (kyuu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 3 + 4 = ? Type the answer in Japanese (kana or romaji).",
+      "a": [
+       "なな",
+       "しち",
+       "nana",
+       "shichi",
+       "七",
+       "7"
+      ],
+      "hint": "The answer is seven.",
+      "why": "3 + 4 = 7, which is なな or しち."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for おかあさん (okaasan).",
+      "a": [
+       "mother",
+       "mom",
+       "mum"
+      ],
+      "hint": "The parent who is not おとうさん.",
+      "why": "おかあさん means mother."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 10 in Japanese (kana or romaji).",
+      "a": [
+       "じゅう",
+       "juu",
+       "十",
+       "jyuu",
+       "ju"
+      ],
+      "hint": "It starts with じゅ.",
+      "why": "10 is じゅう (juu)."
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Food words",
+      "b": "ごはん (gohan) is rice or a meal. さかな (sakana) is fish and にく (niku) is meat. りんご (ringo) is apple and パン (pan) is bread."
+     },
+     {
+      "h": "Drinks and verbs",
+      "b": "みず (mizu) is water and おちゃ (ocha) is tea. たべます (tabemasu) means eat and のみます (nomimasu) means drink."
+     },
+     {
+      "h": "Likes and requests",
+      "b": "おいしい (oishii) means delicious. すき (suki) means like. ください (kudasai) means please give me."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does みず (mizu) mean?",
+      "o": [
+       "Tea",
+       "Rice",
+       "Fish",
+       "Water"
+      ],
+      "a": 3,
+      "why": "みず (mizu) means water."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I drink tea'?",
+      "o": [
+       "おちゃを たべます (ocha o tabemasu)",
+       "おちゃを のみます (ocha o nomimasu)",
+       "みずを たべます (mizu o tabemasu)",
+       "ごはんを のみます (gohan o nomimasu)"
+      ],
+      "a": 1,
+      "why": "のみます (nomimasu) is the verb for drinking, and おちゃ (ocha) is tea."
+     },
+     {
+      "t": "mc",
+      "q": "What does おいしい (oishii) mean?",
+      "o": [
+       "Delicious",
+       "Cold",
+       "Hungry",
+       "Big"
+      ],
+      "a": 0,
+      "why": "おいしい (oishii) means delicious."
+     },
+     {
+      "t": "mc",
+      "q": "Which food is りんご (ringo)?",
+      "o": [
+       "Bread",
+       "Fish",
+       "Apple",
+       "Meat"
+      ],
+      "a": 2,
+      "why": "りんご (ringo) means apple."
+     },
+     {
+      "t": "tf",
+      "q": "パン (pan) means bread.",
+      "a": true,
+      "why": "パン (pan) is bread, borrowed from Portuguese."
+     },
+     {
+      "t": "match",
+      "q": "Match each food word to its meaning",
+      "pairs": [
+       [
+        "さかな (sakana)",
+        "Fish"
+       ],
+       [
+        "にく (niku)",
+        "Meat"
+       ],
+       [
+        "ごはん (gohan)",
+        "Rice or meal"
+       ],
+       [
+        "おちゃ (ocha)",
+        "Tea"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat fish every day",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "まいにち (mainichi)",
+        2
+       ],
+       [
+        "さかなを (sakana o)",
+        3
+       ],
+       [
+        "たべます (tabemasu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for みず (mizu).",
+      "a": [
+       "water"
+      ],
+      "hint": "You drink it.",
+      "why": "みず means water."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'tea' in Japanese (kana or romaji).",
+      "a": [
+       "おちゃ",
+       "ocha",
+       "ちゃ",
+       "cha"
+      ],
+      "hint": "It starts with お.",
+      "why": "おちゃ means tea."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'delicious' in Japanese (kana or romaji).",
+      "a": [
+       "おいしい",
+       "oishii",
+       "美味しい"
+      ],
+      "hint": "It starts with おい.",
+      "why": "おいしい means delicious."
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "です and questions",
+      "b": "です (desu) is like am, is, or are. Add か (ka) at the end to make a question. がっこうですか (gakkou desu ka) means Is it school?"
+     },
+     {
+      "h": "Polite verbs",
+      "b": "Polite verbs end in ます (masu). いきます (ikimasu) means go, きます (kimasu) means come, and みます (mimasu) means see or watch."
+     },
+     {
+      "h": "Negatives and existing",
+      "b": "Change ます (masu) to ません (masen) for no. たべません (tabemasen) means do not eat. Use います (imasu) for living things and あります (arimasu) for objects."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does か (ka) at the end of a sentence do?",
+      "o": [
+       "Makes it a question",
+       "Makes it past tense",
+       "Makes it negative",
+       "Means thank you"
+      ],
+      "a": 0,
+      "why": "か (ka) turns a sentence into a question."
+     },
+     {
+      "t": "mc",
+      "q": "What does いきます (ikimasu) mean?",
+      "o": [
+       "Eat",
+       "Come",
+       "Go",
+       "Sleep"
+      ],
+      "a": 2,
+      "why": "いきます (ikimasu) means go."
+     },
+     {
+      "t": "mc",
+      "q": "What is the negative of たべます (tabemasu)?",
+      "o": [
+       "たべました (tabemashita)",
+       "たべません (tabemasen)",
+       "たべますか (tabemasu ka)",
+       "たべて (tabete)"
+      ],
+      "a": 1,
+      "why": "Replace ます (masu) with ません (masen) to make a verb negative."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'There is a cat'?",
+      "o": [
+       "ねこが あります (neko ga arimasu)",
+       "ねこを たべます (neko o tabemasu)",
+       "ねこが いきます (neko ga ikimasu)",
+       "ねこが います (neko ga imasu)"
+      ],
+      "a": 3,
+      "why": "Animals are living things, so they use います (imasu)."
+     },
+     {
+      "t": "tf",
+      "q": "がっこう (gakkou) means school.",
+      "a": true,
+      "why": "がっこう (gakkou) is the word for school."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "いきます (ikimasu)",
+        "Go"
+       ],
+       [
+        "みます (mimasu)",
+        "See or watch"
+       ],
+       [
+        "のみます (nomimasu)",
+        "Drink"
+       ],
+       [
+        "きます (kimasu)",
+        "Come"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I go to school every day",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "まいにち (mainichi)",
+        2
+       ],
+       [
+        "がっこうに (gakkou ni)",
+        3
+       ],
+       [
+        "いきます (ikimasu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for たべます (tabemasu).",
+      "a": [
+       "eat",
+       "to eat",
+       "eats",
+       "i eat",
+       "toeat",
+       "ieat"
+      ],
+      "hint": "You do it with food.",
+      "why": "たべます means eat."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: make the negative of のみます (kana or romaji).",
+      "a": [
+       "のみません",
+       "nomimasen"
+      ],
+      "hint": "Change ます to ません.",
+      "why": "のみません means do not drink."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: to say 'there is a cat' you use ___ (kana or romaji). Type the verb.",
+      "a": [
+       "います",
+       "imasu"
+      ],
+      "hint": "Cats are living things.",
+      "why": "Living things use います."
+     }
+    ]
+   },
+   {
+    "title": "Time and Days",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Telling the time",
+      "b": "Add じ (ji) to a number for o'clock: いちじ (ichiji) is 1:00, にじ (niji) 2:00, さんじ (sanji) 3:00. Careful: 4:00 is よじ (yoji), 7:00 is しちじ (shichiji) and 9:00 is くじ (kuji). はん (han) means half. ごぜん (gozen) is AM and ごご (gogo) is PM."
+     },
+     {
+      "h": "Days of the week",
+      "b": "にちようび (nichiyoubi) is Sunday, げつようび (getsuyoubi) Monday, かようび (kayoubi) Tuesday, すいようび (suiyoubi) Wednesday, もくようび (mokuyoubi) Thursday, きんようび (kinyoubi) Friday, どようび (doyoubi) Saturday."
+     },
+     {
+      "h": "Daily words",
+      "b": "きょう (kyou) is today, あした (ashita) is tomorrow and きのう (kinou) is yesterday. Use に (ni) after a time: しちじに おきます (shichiji ni okimasu) means I get up at 7. ねます (nemasu) means sleep."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 4 o'clock?",
+      "o": [
+       "よんじ (yonji)",
+       "しじ (shiji)",
+       "よじ (yoji)",
+       "よじゅう (yojuu)"
+      ],
+      "a": 2,
+      "why": "4:00 is irregular: よじ (yoji)."
+     },
+     {
+      "t": "mc",
+      "q": "What day is げつようび (getsuyoubi)?",
+      "o": [
+       "Monday",
+       "Sunday",
+       "Tuesday",
+       "Saturday"
+      ],
+      "a": 0,
+      "why": "げつ means moon, so げつようび is Monday."
+     },
+     {
+      "t": "mc",
+      "q": "What does あした (ashita) mean?",
+      "o": [
+       "Yesterday",
+       "Today",
+       "Every day",
+       "Tomorrow"
+      ],
+      "a": 3,
+      "why": "あした is tomorrow."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'I get up at 7'?",
+      "o": [
+       "しちじに ねます (shichiji ni nemasu)",
+       "しちじに おきます (shichiji ni okimasu)",
+       "くじに おきます (kuji ni okimasu)",
+       "しちじですか (shichiji desu ka)"
+      ],
+      "a": 1,
+      "why": "しちじ is 7:00, に marks the time and おきます means get up."
+     },
+     {
+      "t": "tf",
+      "q": "ごご (gogo) means PM.",
+      "a": true,
+      "why": "ごぜん is AM and ごご is PM."
+     },
+     {
+      "t": "match",
+      "q": "Match each day to its English name",
+      "pairs": [
+       [
+        "にちようび (nichiyoubi)",
+        "Sunday"
+       ],
+       [
+        "かようび (kayoubi)",
+        "Tuesday"
+       ],
+       [
+        "もくようび (mokuyoubi)",
+        "Thursday"
+       ],
+       [
+        "どようび (doyoubi)",
+        "Saturday"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order starting from Monday",
+      "items": [
+       [
+        "げつようび (getsuyoubi)",
+        1
+       ],
+       [
+        "かようび (kayoubi)",
+        2
+       ],
+       [
+        "すいようび (suiyoubi)",
+        3
+       ],
+       [
+        "もくようび (mokuyoubi)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for きんようび (kinyoubi).",
+      "a": [
+       "friday"
+      ],
+      "hint": "It is the day before Saturday.",
+      "why": "きんようび is Friday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'today' in Japanese (kana or romaji).",
+      "a": [
+       "きょう",
+       "kyou",
+       "kyo"
+      ],
+      "hint": "It starts with きょ.",
+      "why": "きょう means today."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 9 o'clock in Japanese (kana or romaji).",
+      "a": [
+       "くじ",
+       "kuji",
+       "9じ",
+       "九時"
+      ],
+      "hint": "9 is irregular in this word.",
+      "why": "9:00 is くじ (kuji)."
+     }
+    ]
+   },
+   {
+    "title": "Adjectives and Describing",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "い-adjectives",
+      "b": "Many adjectives end in い: おおきい (ookii) big, ちいさい (chiisai) small, あたらしい (atarashii) new, ふるい (furui) old, あつい (atsui) hot, さむい (samui) cold. They go before the noun: おおきい いぬ (ookii inu) is a big dog. For no, change い to くない: おおきくない (ookikunai)."
+     },
+     {
+      "h": "な-adjectives",
+      "b": "Some adjectives need な before a noun: きれい (kirei) pretty or clean, しずか (shizuka) quiet, げんき (genki) healthy. きれいな はな (kirei na hana) is a pretty flower. For no, use じゃ ありません: しずかじゃ ありません (shizuka ja arimasen)."
+     },
+     {
+      "h": "Colors and very",
+      "b": "あかい (akai) is red, あおい (aoi) is blue, しろい (shiroi) is white and くろい (kuroi) is black. とても (totemo) means very. これ (kore) means this: これは とても おもしろい です (kore wa totemo omoshiroi desu) means This is very interesting."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does ちいさい (chiisai) mean?",
+      "o": [
+       "Small",
+       "Big",
+       "New",
+       "Old"
+      ],
+      "a": 0,
+      "why": "ちいさい means small."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'not big'?",
+      "o": [
+       "おおきいない (ookiinai)",
+       "おおきじゃ ありません (ookiji ja arimasen)",
+       "おおきいくない (ookiikunai)",
+       "おおきくない (ookikunai)"
+      ],
+      "a": 3,
+      "why": "For い-adjectives, drop い and add くない."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is a な-adjective?",
+      "o": [
+       "あつい (atsui)",
+       "きれい (kirei)",
+       "さむい (samui)",
+       "あたらしい (atarashii)"
+      ],
+      "a": 1,
+      "why": "きれい ends in い but is a な-adjective."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'pretty flower'?",
+      "o": [
+       "きれいい はな (kireii hana)",
+       "きれいくない はな (kirei kunai hana)",
+       "きれいな はな (kirei na hana)",
+       "きれいの はな (kirei no hana)"
+      ],
+      "a": 2,
+      "why": "な-adjectives need な before the noun."
+     },
+     {
+      "t": "tf",
+      "q": "とても (totemo) means 'very'.",
+      "a": true,
+      "why": "とても makes an adjective stronger."
+     },
+     {
+      "t": "match",
+      "q": "Match each adjective to its meaning",
+      "pairs": [
+       [
+        "あつい (atsui)",
+        "Hot"
+       ],
+       [
+        "さむい (samui)",
+        "Cold"
+       ],
+       [
+        "あたらしい (atarashii)",
+        "New"
+       ],
+       [
+        "ふるい (furui)",
+        "Old"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: This is a big dog",
+      "items": [
+       [
+        "これは (kore wa)",
+        1
+       ],
+       [
+        "おおきい (ookii)",
+        2
+       ],
+       [
+        "いぬ (inu)",
+        3
+       ],
+       [
+        "です (desu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for あたらしい (atarashii).",
+      "a": [
+       "new"
+      ],
+      "hint": "The opposite of old.",
+      "why": "あたらしい means new."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: make 'not hot' from あつい (kana or romaji).",
+      "a": [
+       "あつくない",
+       "atsukunai"
+      ],
+      "hint": "Drop い and add くない.",
+      "why": "あつい becomes あつくない."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'quiet' in Japanese (kana or romaji).",
+      "a": [
+       "しずか",
+       "shizuka"
+      ],
+      "hint": "It is a な-adjective starting with し.",
+      "why": "しずか means quiet."
+     }
+    ]
+   },
+   {
+    "title": "Places and Particles",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Key particles",
+      "b": "Particles are small words after nouns. は (wa) marks the topic. を (o) marks the object. に (ni) shows a direction or time. で (de) shows where an action happens. の (no) shows belonging. も (mo) means also. Remember: は is read 'wa' and を is read 'o'."
+     },
+     {
+      "h": "Places",
+      "b": "うち (uchi) is home, えき (eki) station, みせ (mise) shop, こうえん (kouen) park. がっこうに いきます (gakkou ni ikimasu) means I go to school. レストランで たべます (resutoran de tabemasu) means I eat at a restaurant."
+     },
+     {
+      "h": "Belonging and location",
+      "b": "わたしの ほん (watashi no hon) means my book. うえ (ue) is on or above, した (shita) is under and なか (naka) is inside. ほんは つくえの うえに あります (hon wa tsukue no ue ni arimasu) means The book is on the desk."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which particle marks the object of a verb?",
+      "o": [
+       "は (wa)",
+       "に (ni)",
+       "の (no)",
+       "を (o)"
+      ],
+      "a": 3,
+      "why": "を marks what the verb acts on."
+     },
+     {
+      "t": "mc",
+      "q": "Fill in the blank: がっこう __ いきます (I go to school).",
+      "o": [
+       "を (o)",
+       "に (ni)",
+       "で (de)",
+       "の (no)"
+      ],
+      "a": 1,
+      "why": "に shows the direction you go to."
+     },
+     {
+      "t": "mc",
+      "q": "Fill in the blank: レストラン __ たべます (I eat at a restaurant).",
+      "o": [
+       "に (ni)",
+       "を (o)",
+       "で (de)",
+       "も (mo)"
+      ],
+      "a": 2,
+      "why": "で marks where an action happens."
+     },
+     {
+      "t": "mc",
+      "q": "What does わたしの ほん (watashi no hon) mean?",
+      "o": [
+       "My book",
+       "I read a book",
+       "The book is mine too",
+       "A big book"
+      ],
+      "a": 0,
+      "why": "の shows belonging, so わたしの ほん is my book."
+     },
+     {
+      "t": "tf",
+      "q": "The particle は is written with は but read 'wa'.",
+      "a": true,
+      "why": "As a particle, は is pronounced 'wa'."
+     },
+     {
+      "t": "match",
+      "q": "Match each particle to its job",
+      "pairs": [
+       [
+        "を (o)",
+        "Marks the object"
+       ],
+       [
+        "の (no)",
+        "Shows belonging"
+       ],
+       [
+        "も (mo)",
+        "Also or too"
+       ],
+       [
+        "で (de)",
+        "Place of an action"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat rice at school",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "がっこうで (gakkou de)",
+        2
+       ],
+       [
+        "ごはんを (gohan o)",
+        3
+       ],
+       [
+        "たべます (tabemasu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the missing particle in hiragana: ごはん __ たべます.",
+      "a": [
+       "を"
+      ],
+      "hint": "It marks the object.",
+      "why": "を marks ごはん as the object."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the missing particle in hiragana: わたし __ がくせいです (I am a student too).",
+      "a": [
+       "も"
+      ],
+      "hint": "It means also.",
+      "why": "も means also."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for こうえん (kouen).",
+      "a": [
+       "park",
+       "a park",
+       "apark"
+      ],
+      "hint": "A green place with trees.",
+      "why": "こうえん means park."
+     }
+    ]
+   }
+  ]
+ },
+ "ja-2": {
+  "name": "Japanese · Intermediate",
+  "units": [
+   {
+    "title": "Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Polite past",
+      "b": "Change ます (masu) to ました (mashita) for the past. たべます (tabemasu) becomes たべました (tabemashita), which means ate."
+     },
+     {
+      "h": "Past negative",
+      "b": "Use ませんでした (masen deshita) for did not. いきませんでした (ikimasen deshita) means did not go. The past of です (desu) is でした (deshita)."
+     },
+     {
+      "h": "Time words",
+      "b": "きのう (kinou) means yesterday. けさ (kesa) means this morning. These words often come near the start of the sentence."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does たべました (tabemashita) mean?",
+      "o": [
+       "Will eat",
+       "Do not eat",
+       "Ate",
+       "Want to eat"
+      ],
+      "a": 2,
+      "why": "ました (mashita) shows past tense, so it means ate."
+     },
+     {
+      "t": "mc",
+      "q": "What does きのう (kinou) mean?",
+      "o": [
+       "Yesterday",
+       "Tomorrow",
+       "Today",
+       "Next week"
+      ],
+      "a": 0,
+      "why": "きのう (kinou) means yesterday."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not go'?",
+      "o": [
+       "いきます (ikimasu)",
+       "いきました (ikimashita)",
+       "いきません (ikimasen)",
+       "いきませんでした (ikimasen deshita)"
+      ],
+      "a": 3,
+      "why": "ませんでした (masen deshita) is the polite past negative."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past of です (desu)?",
+      "o": [
+       "でした (deshita)",
+       "ません (masen)",
+       "ました (mashita)",
+       "ですか (desu ka)"
+      ],
+      "a": 0,
+      "why": "でした (deshita) is the past form of です (desu)."
+     },
+     {
+      "t": "tf",
+      "q": "ませんでした (masen deshita) is the polite past negative ending.",
+      "a": true,
+      "why": "It means did not, for example たべませんでした (tabemasen deshita) means did not eat."
+     },
+     {
+      "t": "match",
+      "q": "Match each present verb to its past form",
+      "pairs": [
+       [
+        "たべます (tabemasu)",
+        "たべました (tabemashita)"
+       ],
+       [
+        "いきます (ikimasu)",
+        "いきました (ikimashita)"
+       ],
+       [
+        "のみます (nomimasu)",
+        "のみました (nomimashita)"
+       ],
+       [
+        "みます (mimasu)",
+        "みました (mimashita)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I watched a movie yesterday",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "きのう (kinou)",
+        2
+       ],
+       [
+        "えいがを (eiga o)",
+        3
+       ],
+       [
+        "みました (mimashita)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the polite past of たべます (kana or romaji).",
+      "a": [
+       "たべました",
+       "tabemashita"
+      ],
+      "hint": "Change ます to ました.",
+      "why": "たべます becomes たべました."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'did not go' in polite Japanese (kana or romaji).",
+      "a": [
+       "いきませんでした",
+       "いきません でした",
+       "ikimasen deshita",
+       "ikimasendeshita"
+      ],
+      "hint": "Use ませんでした.",
+      "why": "いきませんでした means did not go."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for きのう (kinou).",
+      "a": [
+       "yesterday"
+      ],
+      "hint": "It is the day before today.",
+      "why": "きのう means yesterday."
+     }
+    ]
+   },
+   {
+    "title": "Te-Form and Requests",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Making the te-form",
+      "b": "ru-verbs: drop る and add て: たべる becomes たべて (tabete). Irregular: する becomes して (shite), くる becomes きて (kite). u-verbs: う/つ/る become って (かう becomes かって), む/ぶ/ぬ become んで (のむ becomes のんで), く becomes いて (かく becomes かいて), す becomes して (はなす becomes はなして). いく is special: いって (itte)."
+     },
+     {
+      "h": "Requests and permission",
+      "b": "Verb in te-form + ください (kudasai) means please do. ちょっと まって ください (chotto matte kudasai) means Please wait a moment. ゆっくり はなして ください (yukkuri hanashite kudasai) means Please speak slowly. Add もいいですか (mo ii desu ka) to ask for permission."
+     },
+     {
+      "h": "Ongoing actions and lists",
+      "b": "Te-form + います (imasu) means is doing: べんきょうして います (benkyou shite imasu) is I am studying. The te-form also links actions: あさ おきて、ごはんを たべます (asa okite, gohan o tabemasu) means I get up, then eat breakfast."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the te-form of たべる (taberu)?",
+      "o": [
+       "たべって (tabette)",
+       "たべて (tabete)",
+       "たべんで (tabende)",
+       "たべいて (tabeite)"
+      ],
+      "a": 1,
+      "why": "For ru-verbs drop る and add て."
+     },
+     {
+      "t": "mc",
+      "q": "What is the te-form of のむ (nomu)?",
+      "o": [
+       "のって (notte)",
+       "のいて (noite)",
+       "のんで (nonde)",
+       "のみて (nomite)"
+      ],
+      "a": 2,
+      "why": "む-verbs become んで."
+     },
+     {
+      "t": "mc",
+      "q": "What does ゆっくり はなして ください mean?",
+      "o": [
+       "Please speak slowly",
+       "Please write quickly",
+       "Please wait here",
+       "Please eat slowly"
+      ],
+      "a": 0,
+      "why": "ゆっくり is slowly and はなして is from はなす, to speak."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'I am studying'?",
+      "o": [
+       "べんきょうしました (benkyou shimashita)",
+       "べんきょうしません (benkyou shimasen)",
+       "べんきょうじゃ ありません (benkyou ja arimasen)",
+       "べんきょうして います (benkyou shite imasu)"
+      ],
+      "a": 3,
+      "why": "Te-form + います shows an ongoing action."
+     },
+     {
+      "t": "tf",
+      "q": "The te-form of いく (iku) is いって (itte).",
+      "a": true,
+      "why": "いく is the one exception among く-verbs."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its te-form",
+      "pairs": [
+       [
+        "かく (kaku)",
+        "かいて (kaite)"
+       ],
+       [
+        "よむ (yomu)",
+        "よんで (yonde)"
+       ],
+       [
+        "はなす (hanasu)",
+        "はなして (hanashite)"
+       ],
+       [
+        "かう (kau)",
+        "かって (katte)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, please wait a moment",
+      "items": [
+       [
+        "すみません (sumimasen)",
+        1
+       ],
+       [
+        "ちょっと (chotto)",
+        2
+       ],
+       [
+        "まって (matte)",
+        3
+       ],
+       [
+        "ください (kudasai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the te-form of みる (kana or romaji).",
+      "a": [
+       "みて",
+       "mite"
+      ],
+      "hint": "It is a ru-verb: drop る, add て.",
+      "why": "みる becomes みて."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the te-form of かく, to write (kana or romaji).",
+      "a": [
+       "かいて",
+       "kaite"
+      ],
+      "hint": "く becomes いて.",
+      "why": "かく becomes かいて."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'Please eat' in Japanese (kana or romaji).",
+      "a": [
+       "たべてください",
+       "たべて ください",
+       "tabete kudasai",
+       "tabetekudasai"
+      ],
+      "hint": "Te-form + ください.",
+      "why": "たべて ください means please eat."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Asking where",
+      "b": "どこ (doko) means where. えきは どこですか (eki wa doko desu ka) means Where is the station? The word えき (eki) means station."
+     },
+     {
+      "h": "Directions",
+      "b": "みぎ (migi) is right and ひだり (hidari) is left. まっすぐ (massugu) is straight. まがります (magarimasu) means turn."
+     },
+     {
+      "h": "Places and distance",
+      "b": "びょういん (byouin) is hospital and ぎんこう (ginkou) is bank. ちかい (chikai) means near and とおい (tooi) means far."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does えきは どこですか (eki wa doko desu ka) mean?",
+      "o": [
+       "Is this a station?",
+       "Where is the station?",
+       "I like the station",
+       "The station is big"
+      ],
+      "a": 1,
+      "why": "どこ (doko) means where, and えき (eki) means station."
+     },
+     {
+      "t": "mc",
+      "q": "What does みぎ (migi) mean?",
+      "o": [
+       "Left",
+       "Straight",
+       "Back",
+       "Right"
+      ],
+      "a": 3,
+      "why": "みぎ (migi) means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does まっすぐ (massugu) mean?",
+      "o": [
+       "Straight ahead",
+       "Turn",
+       "Far",
+       "Stop"
+      ],
+      "a": 0,
+      "why": "まっすぐ (massugu) means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'Please turn left'?",
+      "o": [
+       "みぎに まがってください (migi ni magatte kudasai)",
+       "まっすぐ たべてください (massugu tabete kudasai)",
+       "ひだりに まがってください (hidari ni magatte kudasai)",
+       "ひだりは どこですか (hidari wa doko desu ka)"
+      ],
+      "a": 2,
+      "why": "ひだり (hidari) is left, and まがってください (magatte kudasai) means please turn."
+     },
+     {
+      "t": "tf",
+      "q": "とおい (tooi) means near.",
+      "a": false,
+      "why": "とおい (tooi) means far. Near is ちかい (chikai)."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "えき (eki)",
+        "Station"
+       ],
+       [
+        "びょういん (byouin)",
+        "Hospital"
+       ],
+       [
+        "ぎんこう (ginkou)",
+        "Bank"
+       ],
+       [
+        "がっこう (gakkou)",
+        "School"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, where is the bank?",
+      "items": [
+       [
+        "すみません (sumimasen)",
+        1
+       ],
+       [
+        "ぎんこうは (ginkou wa)",
+        2
+       ],
+       [
+        "どこ (doko)",
+        3
+       ],
+       [
+        "ですか (desu ka)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for みぎ (migi).",
+      "a": [
+       "right"
+      ],
+      "hint": "The opposite of ひだり.",
+      "why": "みぎ means right."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'hospital' in Japanese (kana or romaji).",
+      "a": [
+       "びょういん",
+       "byouin",
+       "病院"
+      ],
+      "hint": "It starts with びょう.",
+      "why": "びょういん is hospital."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for とおい (tooi).",
+      "a": [
+       "far"
+      ],
+      "hint": "The opposite of ちかい.",
+      "why": "とおい means far."
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Transport",
+      "b": "でんしゃ (densha) is train and ひこうき (hikouki) is airplane. きっぷ (kippu) is ticket. りょこう (ryokou) means trip."
+     },
+     {
+      "h": "Prices",
+      "b": "いくらですか (ikura desu ka) means How much is it? たかい (takai) means expensive or high. やすい (yasui) means cheap."
+     },
+     {
+      "h": "Wanting things",
+      "b": "Use ○○が ほしいです (○○ ga hoshii desu) for I want ○○. きっぷが ほしいです (kippu ga hoshii desu) means I want a ticket."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does いくらですか (ikura desu ka) mean?",
+      "o": [
+       "Where is it?",
+       "How much is it?",
+       "What is it?",
+       "Who is it?"
+      ],
+      "a": 1,
+      "why": "いくら (ikura) means how much."
+     },
+     {
+      "t": "mc",
+      "q": "What does でんしゃ (densha) mean?",
+      "o": [
+       "Airplane",
+       "Hotel",
+       "Bus",
+       "Train"
+      ],
+      "a": 3,
+      "why": "でんしゃ (densha) means train."
+     },
+     {
+      "t": "mc",
+      "q": "What does たかい (takai) mean when talking about a price?",
+      "o": [
+       "Expensive",
+       "Cheap",
+       "Free",
+       "Small"
+      ],
+      "a": 0,
+      "why": "たかい (takai) means high or expensive."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want a ticket'?",
+      "o": [
+       "きっぷを みます (kippu o mimasu)",
+       "きっぷは どこですか (kippu wa doko desu ka)",
+       "きっぷが たかい (kippu ga takai)",
+       "きっぷが ほしいです (kippu ga hoshii desu)"
+      ],
+      "a": 3,
+      "why": "ほしいです (hoshii desu) means want."
+     },
+     {
+      "t": "tf",
+      "q": "やすい (yasui) means expensive.",
+      "a": false,
+      "why": "やすい (yasui) means cheap."
+     },
+     {
+      "t": "match",
+      "q": "Match each travel word to its meaning",
+      "pairs": [
+       [
+        "ひこうき (hikouki)",
+        "Airplane"
+       ],
+       [
+        "ホテル (hoteru)",
+        "Hotel"
+       ],
+       [
+        "きっぷ (kippu)",
+        "Ticket"
+       ],
+       [
+        "りょこう (ryokou)",
+        "Trip"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: How much is this ticket?",
+      "items": [
+       [
+        "この (kono)",
+        1
+       ],
+       [
+        "きっぷは (kippu wa)",
+        2
+       ],
+       [
+        "いくら (ikura)",
+        3
+       ],
+       [
+        "ですか (desu ka)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for きっぷ (kippu).",
+      "a": [
+       "ticket",
+       "a ticket",
+       "aticket"
+      ],
+      "hint": "You need one for the train.",
+      "why": "きっぷ means ticket."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'How much is it?' in Japanese (kana or romaji).",
+      "a": [
+       "いくらですか",
+       "いくら ですか",
+       "ikura desu ka",
+       "ikuradesuka"
+      ],
+      "hint": "It starts with いくら.",
+      "why": "いくらですか asks the price."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for やすい (yasui).",
+      "a": [
+       "cheap",
+       "inexpensive"
+      ],
+      "hint": "The opposite of たかい.",
+      "why": "やすい means cheap."
+     }
+    ]
+   },
+   {
+    "title": "Wants and Plans",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Wanting to do",
+      "b": "Take the verb stem (the ます form without ます) and add たい (tai): たべたい (tabetai) is I want to eat, いきたい (ikitai) is I want to go. It acts like an い-adjective: いきたくない (ikitakunai) means I do not want to go."
+     },
+     {
+      "h": "Plans and invitations",
+      "b": "Dictionary form + つもりです (tsumori desu) means I plan to: にほんへ いく つもりです (nihon e iku tsumori desu). ましょう (mashou) means let's: いきましょう (ikimashou). ませんか (masen ka) invites: いっしょに たべませんか (issho ni tabemasen ka) means Shall we eat together?"
+     },
+     {
+      "h": "Future time words",
+      "b": "せんしゅう (senshuu) is last week, こんしゅう (konshuu) this week and らいしゅう (raishuu) next week. らいげつ (raigetsu) is next month, らいねん (rainen) is next year and しゅうまつ (shuumatsu) is the weekend. いっしょに (issho ni) means together."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does たべたい (tabetai) mean?",
+      "o": [
+       "I ate",
+       "I will not eat",
+       "I want to eat",
+       "Let's eat"
+      ],
+      "a": 2,
+      "why": "Stem + たい means want to."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want to go' from いきます?",
+      "o": [
+       "いきたい (ikitai)",
+       "いくたい (ikutai)",
+       "いきほしい (ikihoshii)",
+       "いきましょう (ikimashou)"
+      ],
+      "a": 0,
+      "why": "Use the stem いき plus たい."
+     },
+     {
+      "t": "mc",
+      "q": "Which means 'Let's go'?",
+      "o": [
+       "いきました (ikimashita)",
+       "いきません (ikimasen)",
+       "いきたい (ikitai)",
+       "いきましょう (ikimashou)"
+      ],
+      "a": 3,
+      "why": "ましょう makes a suggestion."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'next week'?",
+      "o": [
+       "せんしゅう (senshuu)",
+       "らいしゅう (raishuu)",
+       "こんしゅう (konshuu)",
+       "まいしゅう (maishuu)"
+      ],
+      "a": 1,
+      "why": "らい means next. せんしゅう is last week."
+     },
+     {
+      "t": "tf",
+      "q": "つもりです (tsumori desu) is used after the dictionary form of a verb.",
+      "a": true,
+      "why": "Example: いく つもりです means I plan to go."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "らいげつ (raigetsu)",
+        "Next month"
+       ],
+       [
+        "らいねん (rainen)",
+        "Next year"
+       ],
+       [
+        "しゅうまつ (shuumatsu)",
+        "Weekend"
+       ],
+       [
+        "いっしょに (issho ni)",
+        "Together"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Shall we eat together on the weekend?",
+      "items": [
+       [
+        "しゅうまつ (shuumatsu)",
+        1
+       ],
+       [
+        "いっしょに (issho ni)",
+        2
+       ],
+       [
+        "ごはんを (gohan o)",
+        3
+       ],
+       [
+        "たべませんか (tabemasen ka)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'I want to drink' in one word, from のみます (kana or romaji).",
+      "a": [
+       "のみたい",
+       "nomitai",
+       "のみたいです",
+       "nomitai desu",
+       "nomitaidesu"
+      ],
+      "hint": "Stem + たい.",
+      "why": "のみ + たい makes のみたい."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for らいげつ (raigetsu).",
+      "a": [
+       "next month",
+       "nextmonth"
+      ],
+      "hint": "らい means next.",
+      "why": "らいげつ is next month."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'let's eat' in Japanese (kana or romaji).",
+      "a": [
+       "たべましょう",
+       "tabemashou",
+       "tabemasho"
+      ],
+      "hint": "Stem + ましょう.",
+      "why": "たべ + ましょう makes たべましょう."
+     }
+    ]
+   },
+   {
+    "title": "Plain Form (Casual Speech)",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Dictionary form",
+      "b": "With friends and family, Japanese uses plain form. The dictionary form is the plain present: たべます becomes たべる (taberu), のみます becomes のむ (nomu), いきます becomes いく (iku), します becomes する (suru), きます becomes くる (kuru)."
+     },
+     {
+      "h": "Plain negative and past",
+      "b": "Plain negative ends in ない: たべない (tabenai), のまない (nomanai), いかない (ikanai), しない (shinai), こない (konai). Plain past of ru-verbs is た: たべた (tabeta). For のむ it is のんだ (nonda). Past negative: たべなかった (tabenakatta)."
+     },
+     {
+      "h": "Casual talk",
+      "b": "Drop か and use a rising voice for questions: ごはん たべた? (gohan tabeta?) Yes is うん (un) and no is ううん (uun). Casual です is だ (da): がくせいだ (gakusei da). The い-adjective past is かった: おいしかった (oishikatta) was delicious."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the plain form of たべます (tabemasu)?",
+      "o": [
+       "たべる (taberu)",
+       "たべない (tabenai)",
+       "たべた (tabeta)",
+       "たべて (tabete)"
+      ],
+      "a": 0,
+      "why": "Replace ます with る for ru-verbs."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plain negative of のみます (nomimasu)?",
+      "o": [
+       "のみない (nominai)",
+       "のめない (nomenai)",
+       "のむない (nomunai)",
+       "のまない (nomanai)"
+      ],
+      "a": 3,
+      "why": "For u-verbs change the last u sound to a, then add ない."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plain past of たべます?",
+      "o": [
+       "たべって (tabette)",
+       "たべた (tabeta)",
+       "たべんだ (tabenda)",
+       "たべない (tabenai)"
+      ],
+      "a": 1,
+      "why": "ru-verbs drop る and add た."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is casual 'no'?",
+      "o": [
+       "うん (un)",
+       "はい (hai)",
+       "ううん (uun)",
+       "どうぞ (douzo)"
+      ],
+      "a": 2,
+      "why": "うん is yes and ううん is no."
+     },
+     {
+      "t": "tf",
+      "q": "Plain form is the polite style to use with a teacher or boss.",
+      "a": false,
+      "why": "Plain form is casual. Use ます form to be polite."
+     },
+     {
+      "t": "match",
+      "q": "Match each polite verb to its plain form",
+      "pairs": [
+       [
+        "のみます (nomimasu)",
+        "のむ (nomu)"
+       ],
+       [
+        "いきます (ikimasu)",
+        "いく (iku)"
+       ],
+       [
+        "します (shimasu)",
+        "する (suru)"
+       ],
+       [
+        "きます (kimasu)",
+        "くる (kuru)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I did not go to school yesterday",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "きのう (kinou)",
+        2
+       ],
+       [
+        "がっこうに (gakkou ni)",
+        3
+       ],
+       [
+        "いかなかった (ikanakatta)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the plain form of いきます (kana or romaji).",
+      "a": [
+       "いく",
+       "iku"
+      ],
+      "hint": "Change ます to the u sound.",
+      "why": "いきます becomes いく."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the plain negative of みます (kana or romaji).",
+      "a": [
+       "みない",
+       "minai"
+      ],
+      "hint": "Drop ます and add ない.",
+      "why": "みます becomes みない."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the plain past of のみます (kana or romaji).",
+      "a": [
+       "のんだ",
+       "nonda"
+      ],
+      "hint": "む-verbs use んだ.",
+      "why": "のむ becomes のんだ."
+     }
+    ]
+   },
+   {
+    "title": "Comparisons and Superlatives",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Comparing two things",
+      "b": "A は B より ～です means A is more ~ than B. くるまは じてんしゃより はやいです (kuruma wa jitensha yori hayai desu) means Cars are faster than bikes. より (yori) means than. Useful adjectives: はやい (hayai) fast, おそい (osoi) slow, ながい (nagai) long, みじかい (mijikai) short."
+     },
+     {
+      "h": "Asking which",
+      "b": "Use どちらが (dochira ga) to ask which of two: ねこと いぬと どちらが すきですか (neko to inu to dochira ga suki desu ka) means Which do you like more, cats or dogs? Answer with ～のほうが: ねこの ほうが すきです (neko no hou ga suki desu)."
+     },
+     {
+      "h": "The most",
+      "b": "いちばん (ichiban) means the most. なつが いちばん すきです (natsu ga ichiban suki desu) means I like summer the most. なつ (natsu) is summer and ふゆ (fuyu) is winter. Use なにが (nani ga) for what and だれが (dare ga) for who."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does より (yori) mean in a comparison?",
+      "o": [
+       "Because",
+       "Also",
+       "Until",
+       "Than"
+      ],
+      "a": 3,
+      "why": "A は B より means A is more than B."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'the most'?",
+      "o": [
+       "もっと (motto)",
+       "いちばん (ichiban)",
+       "すこし (sukoshi)",
+       "とても (totemo)"
+      ],
+      "a": 1,
+      "why": "いちばん means number one, or the most."
+     },
+     {
+      "t": "mc",
+      "q": "Fill in the blank: くるまは じてんしゃ __ はやいです.",
+      "o": [
+       "から (kara)",
+       "へ (e)",
+       "より (yori)",
+       "を (o)"
+      ],
+      "a": 2,
+      "why": "より means than."
+     },
+     {
+      "t": "mc",
+      "q": "What does どちらが すきですか (dochira ga suki desu ka) mean?",
+      "o": [
+       "Which do you like more?",
+       "Where do you go?",
+       "Who is it?",
+       "What time is it?"
+      ],
+      "a": 0,
+      "why": "どちら is which of two."
+     },
+     {
+      "t": "tf",
+      "q": "いちばん (ichiban) means 'the most'.",
+      "a": true,
+      "why": "It is used for superlatives."
+     },
+     {
+      "t": "match",
+      "q": "Match each adjective to its meaning",
+      "pairs": [
+       [
+        "はやい (hayai)",
+        "Fast"
+       ],
+       [
+        "おそい (osoi)",
+        "Slow"
+       ],
+       [
+        "ながい (nagai)",
+        "Long"
+       ],
+       [
+        "みじかい (mijikai)",
+        "Short"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I like summer the most",
+      "items": [
+       [
+        "なつが (natsu ga)",
+        1
+       ],
+       [
+        "いちばん (ichiban)",
+        2
+       ],
+       [
+        "すき (suki)",
+        3
+       ],
+       [
+        "です (desu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'than' in Japanese (kana or romaji).",
+      "a": [
+       "より",
+       "yori"
+      ],
+      "hint": "It goes after the thing you compare to.",
+      "why": "より means than."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for おそい (osoi).",
+      "a": [
+       "slow",
+       "late"
+      ],
+      "hint": "The opposite of はやい.",
+      "why": "おそい means slow."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'the most' in Japanese (kana or romaji).",
+      "a": [
+       "いちばん",
+       "ichiban",
+       "一番"
+      ],
+      "hint": "It starts with いち.",
+      "why": "いちばん means the most."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Reasons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Describing things",
+      "b": "おもしろい (omoshiroi) means interesting or fun. つまらない (tsumaranai) means boring. かんたん (kantan) means easy and むずかしい (muzukashii) means difficult."
+     },
+     {
+      "h": "Giving an opinion",
+      "b": "Add と おもいます (to omoimasu) to say I think. おもしろいと おもいます (omoshiroi to omoimasu) means I think it is fun."
+     },
+     {
+      "h": "Reasons and contrast",
+      "b": "どうして (doushite) means why. から (kara) means because and goes after the reason. けど (kedo) means but."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I think it is fun'?",
+      "o": [
+       "おもしろいと おもいます (omoshiroi to omoimasu)",
+       "おもしろいを たべます (omoshiroi o tabemasu)",
+       "つまらないですか (tsumaranai desu ka)",
+       "おもしろいに いきます (omoshiroi ni ikimasu)"
+      ],
+      "a": 0,
+      "why": "と おもいます (to omoimasu) means I think."
+     },
+     {
+      "t": "mc",
+      "q": "What does むずかしい (muzukashii) mean?",
+      "o": [
+       "Easy",
+       "Boring",
+       "Difficult",
+       "Cheap"
+      ],
+      "a": 2,
+      "why": "むずかしい (muzukashii) means difficult."
+     },
+     {
+      "t": "mc",
+      "q": "What does どうして (doushite) mean?",
+      "o": [
+       "Where",
+       "When",
+       "Who",
+       "Why"
+      ],
+      "a": 3,
+      "why": "どうして (doushite) means why."
+     },
+     {
+      "t": "mc",
+      "q": "What does から (kara) mean after a reason?",
+      "o": [
+       "But",
+       "Because",
+       "Also",
+       "Maybe"
+      ],
+      "a": 1,
+      "why": "から (kara) after a clause means because."
+     },
+     {
+      "t": "tf",
+      "q": "きらい (kirai) means like.",
+      "a": false,
+      "why": "きらい (kirai) means dislike. Like is すき (suki)."
+     },
+     {
+      "t": "match",
+      "q": "Match each describing word to its meaning",
+      "pairs": [
+       [
+        "おもしろい (omoshiroi)",
+        "Interesting"
+       ],
+       [
+        "つまらない (tsumaranai)",
+        "Boring"
+       ],
+       [
+        "かんたん (kantan)",
+        "Easy"
+       ],
+       [
+        "むずかしい (muzukashii)",
+        "Difficult"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I think Japanese is interesting",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "にほんごは (nihongo wa)",
+        2
+       ],
+       [
+        "おもしろいと (omoshiroi to)",
+        3
+       ],
+       [
+        "おもいます (omoimasu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'because' (the word after the reason) in Japanese (kana or romaji).",
+      "a": [
+       "から",
+       "kara"
+      ],
+      "hint": "It goes after the reason.",
+      "why": "から means because."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for むずかしい (muzukashii).",
+      "a": [
+       "difficult",
+       "hard"
+      ],
+      "hint": "The opposite of かんたん.",
+      "why": "むずかしい means difficult."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'why' in Japanese (kana or romaji).",
+      "a": [
+       "どうして",
+       "doushite",
+       "なぜ",
+       "naze"
+      ],
+      "hint": "It starts with どう.",
+      "why": "どうして means why."
+     }
+    ]
+   },
+   {
+    "title": "Conditionals and Experience",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "If and when: ～たら",
+      "b": "Plain past + ら (ra) means if or when. あめが ふったら、いきません (ame ga futtara, ikimasen) means If it rains, I will not go. ふる (furu) means to fall, used for rain."
+     },
+     {
+      "h": "Have you ever?",
+      "b": "Plain past + ことが あります (koto ga arimasu) means I have done it before. すしを たべた ことが あります (sushi o tabeta koto ga arimasu) means I have eaten sushi. For never use ことが ありません (koto ga arimasen)."
+     },
+     {
+      "h": "Must and must not",
+      "b": "Te-form + は いけません (wa ikemasen) means must not: ここで たべては いけません (koko de tabete wa ikemasen) means You must not eat here. Plain negative stem + ないと いけません (nai to ikemasen) means must: べんきょうしないと いけません (benkyou shinai to ikemasen) means I must study."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does あめが ふったら (ame ga futtara) mean?",
+      "o": [
+       "Because it rained",
+       "If it rains",
+       "While it rains",
+       "It rained yesterday"
+      ],
+      "a": 1,
+      "why": "～たら means if or when."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have eaten sushi'?",
+      "o": [
+       "すしを たべて います",
+       "すしを たべたいです",
+       "すしを たべた ことが あります",
+       "すしを たべません"
+      ],
+      "a": 2,
+      "why": "Plain past + ことが あります shows experience."
+     },
+     {
+      "t": "mc",
+      "q": "What does ここで たべては いけません mean?",
+      "o": [
+       "You must not eat here",
+       "You may eat here",
+       "I want to eat here",
+       "Let's eat here"
+      ],
+      "a": 0,
+      "why": "は いけません means must not."
+     },
+     {
+      "t": "mc",
+      "q": "What does べんきょうしないと いけません mean?",
+      "o": [
+       "I did not study",
+       "I want to study",
+       "I must not study",
+       "I must study"
+      ],
+      "a": 3,
+      "why": "ないと いけません means must do."
+     },
+     {
+      "t": "tf",
+      "q": "The ～たことがあります pattern uses the plain past (ta-form) of a verb.",
+      "a": true,
+      "why": "Example: いった ことが あります means I have been."
+     },
+     {
+      "t": "match",
+      "q": "Match each pattern to its meaning",
+      "pairs": [
+       [
+        "～たら (tara)",
+        "If or when"
+       ],
+       [
+        "～たことが あります",
+        "Have done before"
+       ],
+       [
+        "～ては いけません",
+        "Must not"
+       ],
+       [
+        "～ないと いけません",
+        "Must do"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I have been to Japan",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "にほんに (nihon ni)",
+        2
+       ],
+       [
+        "いった (itta)",
+        3
+       ],
+       [
+        "ことが あります (koto ga arimasu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: にほんに いった __ が あります. Type the word (kana or romaji).",
+      "a": [
+       "こと",
+       "koto"
+      ],
+      "hint": "It means thing or experience.",
+      "why": "いった ことが あります means have been."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: add the ending: ふった + __ makes 'if it rains' (kana or romaji).",
+      "a": [
+       "ら",
+       "ra"
+      ],
+      "hint": "It is the たら ending.",
+      "why": "ふったら means if it rains."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete べんきょうしないと __ (I must study). Type the word (kana or romaji).",
+      "a": [
+       "いけません",
+       "ikemasen",
+       "いけない",
+       "ikenai"
+      ],
+      "hint": "It also appears in 'must not'.",
+      "why": "ないと いけません means must."
+     }
+    ]
+   },
+   {
+    "title": "Basic Kanji",
+    "period": "Kanji",
+    "learn": [
+     {
+      "h": "What are kanji?",
+      "b": "Kanji are characters from China. Each has a meaning and often two readings. Days use them: 日 (nichi, hi) is sun or day, 月 (getsu, tsuki) is moon or month, 火 (ka, hi) is fire, 水 (sui, mizu) is water, 木 (moku, ki) is tree, 金 (kin) is gold, 土 (do, tsuchi) is earth."
+     },
+     {
+      "h": "Simple kanji",
+      "b": "人 (hito, jin) is person. 大 (ookii, dai) is big and 小 (chiisai, shou) is small. 中 (naka, chuu) is middle or inside. 山 (yama) is mountain, 川 (kawa) is river and 口 (kuchi) is mouth. Many look like pictures of the thing."
+     },
+     {
+      "h": "Kanji words",
+      "b": "Kanji combine into words. 日本 (nihon) is Japan: sun + origin. 本 (hon) means book. 日本人 (nihonjin) is a Japanese person. 学 (gaku) means study and 生 (sei) means life, so 学生 (gakusei) is student. 学校 (gakkou) is school."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 山 mean?",
+      "o": [
+       "River",
+       "Tree",
+       "Mountain",
+       "Mouth"
+      ],
+      "a": 2,
+      "why": "山 looks like three peaks and means mountain."
+     },
+     {
+      "t": "mc",
+      "q": "Which kanji means 'water'?",
+      "o": [
+       "水",
+       "木",
+       "火",
+       "土"
+      ],
+      "a": 0,
+      "why": "水 is water (sui, mizu)."
+     },
+     {
+      "t": "mc",
+      "q": "What does 日本 (nihon) mean?",
+      "o": [
+       "Sunday",
+       "Book",
+       "Birthday",
+       "Japan"
+      ],
+      "a": 3,
+      "why": "日本 is the name of Japan."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'Japanese person'?",
+      "o": [
+       "日本語 (nihongo)",
+       "日本人 (nihonjin)",
+       "大人 (otona)",
+       "山人 (yamabito)"
+      ],
+      "a": 1,
+      "why": "日本 + 人 means a person from Japan."
+     },
+     {
+      "t": "tf",
+      "q": "火 (ka, hi) means fire.",
+      "a": true,
+      "why": "火 is fire, as in かようび (Tuesday)."
+     },
+     {
+      "t": "match",
+      "q": "Match each kanji to its meaning",
+      "pairs": [
+       [
+        "日",
+        "Sun or day"
+       ],
+       [
+        "月",
+        "Moon or month"
+       ],
+       [
+        "木",
+        "Tree"
+       ],
+       [
+        "川",
+        "River"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these kanji in weekday order starting from Monday",
+      "items": [
+       [
+        "月 (getsu)",
+        1
+       ],
+       [
+        "火 (ka)",
+        2
+       ],
+       [
+        "水 (sui)",
+        3
+       ],
+       [
+        "木 (moku)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 大 (dai, ookii).",
+      "a": [
+       "big",
+       "large"
+      ],
+      "hint": "The opposite of 小.",
+      "why": "大 means big."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the kanji for 'mountain'.",
+      "a": [
+       "山"
+      ],
+      "hint": "It has three peaks.",
+      "why": "山 means mountain."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 日本人 (nihonjin).",
+      "a": [
+       "japanese person",
+       "japanese",
+       "a japanese person",
+       "japanese people",
+       "japaneseperson",
+       "ajapaneseperson",
+       "japanesepeople"
+      ],
+      "hint": "日本 is Japan, 人 is person.",
+      "why": "日本人 is a Japanese person."
+     }
+    ]
+   }
+  ]
+ },
+ "zh-1": {
+  "name": "Mandarin Chinese · Beginner",
+  "units": [
+   {
+    "title": "Pinyin Sounds",
+    "period": "Pinyin",
+    "learn": [
+     {
+      "h": "What is pinyin?",
+      "b": "Pinyin writes Mandarin sounds with the Roman alphabet. A syllable has an initial (the start) and a final (the rest), plus a tone. Initials: b p m f, d t n l, g k h, j q x, zh ch sh r, z c s. Finals: a o e i u ü, ai ei ao ou, an en ang eng, ong."
+     },
+     {
+      "h": "Tricky sounds",
+      "b": "q sounds like 'ch' in cheese with spread lips. x is like 'sh' with a smile. zh is like 'j' in jam with the tongue curled back. c is like 'ts' in cats and z is like 'ds' in beds. ü is said with round lips while saying 'ee'."
+     },
+     {
+      "h": "Puffs of air",
+      "b": "b, d, g are soft. p, t, k puff out air: bā and pā sound different. After j, q, x the letter u is really ü, so 去 (qù) has the ü sound. Examples: 你 (nǐ), 好 (hǎo), 学 (xué)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What two parts make a pinyin syllable before the tone?",
+      "o": [
+       "Initial and final",
+       "Vowel and tone",
+       "Consonant and number",
+       "Root and ending"
+      ],
+      "a": 0,
+      "why": "For example, h (initial) + ao (final) makes hao."
+     },
+     {
+      "t": "mc",
+      "q": "Which initial sounds like 'ts' in cats?",
+      "o": [
+       "z",
+       "s",
+       "zh",
+       "c"
+      ],
+      "a": 3,
+      "why": "c is aspirated 'ts'. z is like 'ds'."
+     },
+     {
+      "t": "mc",
+      "q": "Which pair differs by a puff of air?",
+      "o": [
+       "m and n",
+       "b and p",
+       "f and h",
+       "l and r"
+      ],
+      "a": 1,
+      "why": "p is b with a puff of air."
+     },
+     {
+      "t": "mc",
+      "q": "In 去 (qù), the vowel u is pronounced like:",
+      "o": [
+       "oo as in moon",
+       "o as in go",
+       "ü (round lips, say ee)",
+       "a as in cat"
+      ],
+      "a": 2,
+      "why": "After j, q and x the letter u stands for ü."
+     },
+     {
+      "t": "tf",
+      "q": "Pinyin letters always sound exactly like the same English letters.",
+      "a": false,
+      "why": "Letters such as q, x, zh and c sound different from English."
+     },
+     {
+      "t": "match",
+      "q": "Match each pinyin initial to its sound",
+      "pairs": [
+       [
+        "x",
+        "Like 'sh' with a smile"
+       ],
+       [
+        "q",
+        "Like 'ch' with spread lips"
+       ],
+       [
+        "z",
+        "Like 'ds' in beds"
+       ],
+       [
+        "p",
+        "Like b with a puff of air"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these initials in the standard chart order",
+      "items": [
+       [
+        "b",
+        1
+       ],
+       [
+        "p",
+        2
+       ],
+       [
+        "m",
+        3
+       ],
+       [
+        "f",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the pinyin initial that sounds like 'ts' in cats.",
+      "a": [
+       "c"
+      ],
+      "hint": "It is not z or s.",
+      "why": "c is the 'ts' sound."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a syllable has an initial and a ___ . Type the missing word.",
+      "a": [
+       "final",
+       "a final",
+       "afinal"
+      ],
+      "hint": "It is the second part, such as ao in hao.",
+      "why": "A syllable is initial + final + tone."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the pinyin for 你好 (without tone marks).",
+      "a": [
+       "ni hao",
+       "nihao",
+       "你好"
+      ],
+      "hint": "Two syllables: n-i and h-ao.",
+      "why": "你好 is nǐ hǎo."
+     }
+    ]
+   },
+   {
+    "title": "Tones and Tone Changes",
+    "period": "Pinyin",
+    "learn": [
+     {
+      "h": "Four tones and a light tone",
+      "b": "Tone 1 is high and flat: mā (妈, mother). Tone 2 rises: má (麻, hemp). Tone 3 dips down and up: mǎ (马, horse). Tone 4 falls sharply: mà (骂, scold). A neutral tone is short and light: ma. The mark goes on the vowel; if there is a, it takes it."
+     },
+     {
+      "h": "Two third tones",
+      "b": "When two third tones are together, the first one is said as a second tone. So 你好 (nǐ hǎo) is said ní hǎo. It is still written nǐ hǎo. Say it aloud and it feels natural."
+     },
+     {
+      "h": "不 and 一 change",
+      "b": "不 (bù) becomes bú before a fourth tone: 不是 (bú shì). 一 (yī) becomes yí before a fourth tone: 一个 (yí gè). Before tones 1, 2 and 3 it becomes yì: 一天 (yì tiān)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which tone falls sharply?",
+      "o": [
+       "The 1st tone",
+       "The 2nd tone",
+       "The 3rd tone",
+       "The 4th tone"
+      ],
+      "a": 3,
+      "why": "The 4th tone drops from high to low, like mà."
+     },
+     {
+      "t": "mc",
+      "q": "What does 马 (mǎ) mean?",
+      "o": [
+       "Mother",
+       "Horse",
+       "Hemp",
+       "Scold"
+      ],
+      "a": 1,
+      "why": "妈 is mother, 麻 is hemp, 马 is horse and 骂 is scold."
+     },
+     {
+      "t": "mc",
+      "q": "How is 你好 (nǐ hǎo) actually said?",
+      "o": [
+       "nǐ hǎo",
+       "nī hǎo",
+       "ní hǎo",
+       "nǐ hào"
+      ],
+      "a": 2,
+      "why": "The first of two third tones becomes second tone."
+     },
+     {
+      "t": "mc",
+      "q": "What does 不 (bù) change to before a fourth tone, as in 不是?",
+      "o": [
+       "bú",
+       "bū",
+       "bǔ",
+       "It stays bù"
+      ],
+      "a": 0,
+      "why": "不 becomes bú before another 4th tone."
+     },
+     {
+      "t": "tf",
+      "q": "The tone mark is written on the vowel of the syllable.",
+      "a": true,
+      "why": "For example the mark in mǎ sits on the a."
+     },
+     {
+      "t": "match",
+      "q": "Match each syllable to its tone",
+      "pairs": [
+       [
+        "mā",
+        "1st tone, high flat"
+       ],
+       [
+        "má",
+        "2nd tone, rising"
+       ],
+       [
+        "mǎ",
+        "3rd tone, dipping"
+       ],
+       [
+        "mà",
+        "4th tone, falling"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the tones in number order",
+      "items": [
+       [
+        "High and flat (mā)",
+        1
+       ],
+       [
+        "Rising (má)",
+        2
+       ],
+       [
+        "Dipping (mǎ)",
+        3
+       ],
+       [
+        "Falling (mà)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 妈 (mā).",
+      "a": [
+       "mother",
+       "mom",
+       "mum",
+       "mama"
+      ],
+      "hint": "It is in 妈妈.",
+      "why": "妈 means mother."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which tone number is mǎ? Type a digit.",
+      "a": [
+       "3",
+       "three",
+       "third",
+       "3rd"
+      ],
+      "hint": "It dips down and up.",
+      "why": "mǎ is the 3rd tone."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in 不是 (bú shì), which tone does 不 change to? Type a digit.",
+      "a": [
+       "2",
+       "two",
+       "second",
+       "2nd"
+      ],
+      "hint": "It becomes bú.",
+      "why": "不 changes to the 2nd tone before a 4th tone."
+     }
+    ]
+   },
+   {
+    "title": "Greetings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Four tones",
+      "b": "Mandarin has four tones. The 1st is high and level (mā), the 2nd rises (má), the 3rd dips (mǎ), and the 4th falls (mà). The tone changes the meaning."
+     },
+     {
+      "h": "Basic greetings",
+      "b": "你好 (nǐ hǎo) means hello. 谢谢 (xièxie) means thank you and 不客气 (bú kèqi) means you're welcome. 再见 (zàijiàn) means goodbye."
+     },
+     {
+      "h": "Saying your name",
+      "b": "Say 我叫 (wǒ jiào) and then your name. 我叫李 (wǒ jiào Lǐ) means My name is Li. 对不起 (duìbuqǐ) means sorry."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 你好 (nǐ hǎo) mean?",
+      "o": [
+       "Goodbye",
+       "Thank you",
+       "Hello",
+       "Sorry"
+      ],
+      "a": 2,
+      "why": "你好 (nǐ hǎo) is the basic hello."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'thank you' in Mandarin?",
+      "o": [
+       "谢谢 (xièxie)",
+       "再见 (zàijiàn)",
+       "对不起 (duìbuqǐ)",
+       "你好 (nǐ hǎo)"
+      ],
+      "a": 0,
+      "why": "谢谢 (xièxie) means thank you."
+     },
+     {
+      "t": "mc",
+      "q": "What does 再见 (zàijiàn) mean?",
+      "o": [
+       "Hello",
+       "Sorry",
+       "Please",
+       "Goodbye"
+      ],
+      "a": 3,
+      "why": "再见 (zàijiàn) means goodbye."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'My name is Li'?",
+      "o": [
+       "我好李 (wǒ hǎo Lǐ)",
+       "我叫李 (wǒ jiào Lǐ)",
+       "谢谢李 (xièxie Lǐ)",
+       "再见李 (zàijiàn Lǐ)"
+      ],
+      "a": 1,
+      "why": "我叫 (wǒ jiào) means my name is."
+     },
+     {
+      "t": "tf",
+      "q": "对不起 (duìbuqǐ) means sorry.",
+      "a": true,
+      "why": "对不起 (duìbuqǐ) is used to apologize."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "不客气 (bú kèqi)",
+        "You're welcome"
+       ],
+       [
+        "没关系 (méi guānxi)",
+        "It's okay"
+       ],
+       [
+        "早上好 (zǎoshang hǎo)",
+        "Good morning"
+       ],
+       [
+        "再见 (zàijiàn)",
+        "Goodbye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the four Mandarin tones in order, 1st to 4th",
+      "items": [
+       [
+        "High and level (mā)",
+        1
+       ],
+       [
+        "Rising (má)",
+        2
+       ],
+       [
+        "Dipping (mǎ)",
+        3
+       ],
+       [
+        "Falling (mà)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'hello' in Chinese.",
+      "a": [
+       "你好",
+       "ni hao",
+       "nihao"
+      ],
+      "hint": "Two characters: you + good.",
+      "why": "你好 means hello."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 谢谢 (xièxie).",
+      "a": [
+       "thank you",
+       "thanks",
+       "thankyou"
+      ],
+      "hint": "It is polite.",
+      "why": "谢谢 means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'goodbye' in Chinese.",
+      "a": [
+       "再见",
+       "zai jian",
+       "zaijian"
+      ],
+      "hint": "It starts with 再.",
+      "why": "再见 means goodbye."
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 5",
+      "b": "一 (yī) is 1, 二 (èr) is 2, 三 (sān) is 3, 四 (sì) is 4, and 五 (wǔ) is 5. The first three are simple lines."
+     },
+     {
+      "h": "Numbers 6 to 10",
+      "b": "六 (liù) is 6, 七 (qī) is 7, 八 (bā) is 8, 九 (jiǔ) is 9, and 十 (shí) is 10."
+     },
+     {
+      "h": "Family words",
+      "b": "妈妈 (māma) is mom and 爸爸 (bàba) is dad. 哥哥 (gēge) is older brother and 姐姐 (jiějie) is older sister. 弟弟 (dìdi) and 妹妹 (mèimei) are younger brother and younger sister."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number is 三 (sān)?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "三 (sān) has three lines and means 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'eight' in Mandarin?",
+      "o": [
+       "六 (liù)",
+       "八 (bā)",
+       "九 (jiǔ)",
+       "十 (shí)"
+      ],
+      "a": 1,
+      "why": "八 (bā) means 8."
+     },
+     {
+      "t": "mc",
+      "q": "What does 妈妈 (māma) mean?",
+      "o": [
+       "Mother",
+       "Father",
+       "Sister",
+       "Brother"
+      ],
+      "a": 0,
+      "why": "妈妈 (māma) means mom."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'older sister'?",
+      "o": [
+       "妹妹 (mèimei)",
+       "哥哥 (gēge)",
+       "弟弟 (dìdi)",
+       "姐姐 (jiějie)"
+      ],
+      "a": 3,
+      "why": "姐姐 (jiějie) means older sister."
+     },
+     {
+      "t": "tf",
+      "q": "十 (shí) means ten.",
+      "a": true,
+      "why": "十 (shí) is the number 10."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "哥哥 (gēge)",
+        "Older brother"
+       ],
+       [
+        "弟弟 (dìdi)",
+        "Younger brother"
+       ],
+       [
+        "妹妹 (mèimei)",
+        "Younger sister"
+       ],
+       [
+        "爸爸 (bàba)",
+        "Dad"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "二 (èr)",
+        1
+       ],
+       [
+        "四 (sì)",
+        2
+       ],
+       [
+        "七 (qī)",
+        3
+       ],
+       [
+        "九 (jiǔ)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 三 + 四 = ? Type the answer in Chinese (character or pinyin).",
+      "a": [
+       "七",
+       "qi",
+       "7"
+      ],
+      "hint": "The answer is seven.",
+      "why": "3 + 4 = 7, which is 七 (qī)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 妈妈 (māma).",
+      "a": [
+       "mother",
+       "mom",
+       "mum",
+       "mama"
+      ],
+      "hint": "Family member.",
+      "why": "妈妈 means mom."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'older sister' in Chinese.",
+      "a": [
+       "姐姐",
+       "jiejie",
+       "jie jie"
+      ],
+      "hint": "Repeat one character twice.",
+      "why": "姐姐 means older sister."
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Eat and drink",
+      "b": "吃 (chī) means to eat and 喝 (hē) means to drink. 我吃米饭 (wǒ chī mǐfàn) means I eat rice. 我喝水 (wǒ hē shuǐ) means I drink water."
+     },
+     {
+      "h": "Food words",
+      "b": "米饭 (mǐfàn) is rice and 面条 (miàntiáo) is noodles. 鱼 (yú) is fish and 苹果 (píngguǒ) is apple. 水 (shuǐ) is water and 茶 (chá) is tea."
+     },
+     {
+      "h": "Wanting and liking",
+      "b": "我想 (wǒ xiǎng) means I would like. 好吃 (hǎochī) means delicious. 我要 (wǒ yào) means I want."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 水 (shuǐ) mean?",
+      "o": [
+       "Fire",
+       "Water",
+       "Tea",
+       "Rice"
+      ],
+      "a": 1,
+      "why": "水 (shuǐ) means water."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I drink tea'?",
+      "o": [
+       "我吃茶 (wǒ chī chá)",
+       "我喝米饭 (wǒ hē mǐfàn)",
+       "我喝茶 (wǒ hē chá)",
+       "我吃水 (wǒ chī shuǐ)"
+      ],
+      "a": 2,
+      "why": "喝 (hē) is used for drinking, and 茶 (chá) is tea."
+     },
+     {
+      "t": "mc",
+      "q": "What does 好吃 (hǎochī) mean?",
+      "o": [
+       "Delicious",
+       "Hungry",
+       "Hot",
+       "Expensive"
+      ],
+      "a": 0,
+      "why": "好吃 (hǎochī) means tasty or delicious."
+     },
+     {
+      "t": "mc",
+      "q": "Which food is 苹果 (píngguǒ)?",
+      "o": [
+       "Fish",
+       "Noodles",
+       "Rice",
+       "Apple"
+      ],
+      "a": 3,
+      "why": "苹果 (píngguǒ) means apple."
+     },
+     {
+      "t": "tf",
+      "q": "吃 (chī) means to drink.",
+      "a": false,
+      "why": "吃 (chī) means to eat. To drink is 喝 (hē)."
+     },
+     {
+      "t": "match",
+      "q": "Match each food word to its meaning",
+      "pairs": [
+       [
+        "米饭 (mǐfàn)",
+        "Rice"
+       ],
+       [
+        "面条 (miàntiáo)",
+        "Noodles"
+       ],
+       [
+        "鱼 (yú)",
+        "Fish"
+       ],
+       [
+        "茶 (chá)",
+        "Tea"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat rice every day",
+      "items": [
+       [
+        "我 (wǒ)",
+        1
+       ],
+       [
+        "每天 (měitiān)",
+        2
+       ],
+       [
+        "吃 (chī)",
+        3
+       ],
+       [
+        "米饭 (mǐfàn)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 米饭 (mǐfàn).",
+      "a": [
+       "rice",
+       "cooked rice",
+       "cookedrice"
+      ],
+      "hint": "A common staple food.",
+      "why": "米饭 is rice."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'water' in Chinese (character or pinyin).",
+      "a": [
+       "水",
+       "shui"
+      ],
+      "hint": "One character.",
+      "why": "水 means water."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'I eat' in Chinese.",
+      "a": [
+       "我吃",
+       "wo chi",
+       "wochi"
+      ],
+      "hint": "我 + 吃.",
+      "why": "我吃 means I eat."
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "To be and to have",
+      "b": "是 (shì) means to be. 我是学生 (wǒ shì xuéshēng) means I am a student. 有 (yǒu) means to have. 我有一只猫 (wǒ yǒu yì zhī māo) means I have a cat."
+     },
+     {
+      "h": "Making negatives",
+      "b": "Use 不 (bù) before most verbs. 不是 (bú shì) means is not. Use 没有 (méiyǒu) for do not have."
+     },
+     {
+      "h": "Questions and movement",
+      "b": "Add 吗 (ma) at the end to make a yes or no question. 去 (qù) means go and 来 (lái) means come. 学校 (xuéxiào) means school."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 吗 (ma) do at the end of a sentence?",
+      "o": [
+       "Makes it past tense",
+       "Makes it negative",
+       "Makes it a question",
+       "Means thank you"
+      ],
+      "a": 2,
+      "why": "吗 (ma) turns a statement into a yes or no question."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a cat'?",
+      "o": [
+       "我有一只猫 (wǒ yǒu yì zhī māo)",
+       "我是一只猫 (wǒ shì yì zhī māo)",
+       "我去一只猫 (wǒ qù yì zhī māo)",
+       "我不猫 (wǒ bù māo)"
+      ],
+      "a": 0,
+      "why": "有 (yǒu) means to have."
+     },
+     {
+      "t": "mc",
+      "q": "What does 去 (qù) mean?",
+      "o": [
+       "Come",
+       "Eat",
+       "See",
+       "Go"
+      ],
+      "a": 3,
+      "why": "去 (qù) means go."
+     },
+     {
+      "t": "mc",
+      "q": "What is the negative of 是 (shì)?",
+      "o": [
+       "没是 (méi shì)",
+       "不是 (bú shì)",
+       "吗是 (ma shì)",
+       "有是 (yǒu shì)"
+      ],
+      "a": 1,
+      "why": "不是 (bú shì) means is not or am not."
+     },
+     {
+      "t": "tf",
+      "q": "没有 (méiyǒu) means 'do not have'.",
+      "a": true,
+      "why": "没有 (méiyǒu) is the negative of 有 (yǒu)."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "是 (shì)",
+        "To be"
+       ],
+       [
+        "有 (yǒu)",
+        "To have"
+       ],
+       [
+        "去 (qù)",
+        "To go"
+       ],
+       [
+        "来 (lái)",
+        "To come"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I go to school every day",
+      "items": [
+       [
+        "我 (wǒ)",
+        1
+       ],
+       [
+        "每天 (měitiān)",
+        2
+       ],
+       [
+        "去 (qù)",
+        3
+       ],
+       [
+        "学校 (xuéxiào)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'I am a student' in Chinese.",
+      "a": [
+       "我是学生",
+       "wo shi xuesheng",
+       "woshixuesheng"
+      ],
+      "hint": "Use 是.",
+      "why": "我是学生 means I am a student."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'do not have' in Chinese.",
+      "a": [
+       "没有",
+       "meiyou",
+       "mei you"
+      ],
+      "hint": "It starts with 没.",
+      "why": "没有 means do not have."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the character for 'go' (qù).",
+      "a": [
+       "去",
+       "qu"
+      ],
+      "hint": "Opposite of 来.",
+      "why": "去 means go."
+     }
+    ]
+   },
+   {
+    "title": "Measure Words",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Why measure words?",
+      "b": "In Chinese you put a measure word between a number and a noun. 一个人 (yí gè rén) means one person. 个 (gè) is the most common and works for many things."
+     },
+     {
+      "h": "Common measure words",
+      "b": "本 (běn) for books: 一本书 (yì běn shū). 只 (zhī) for small animals: 一只猫 (yì zhī māo). 杯 (bēi) for cups and glasses: 一杯水 (yì bēi shuǐ). 张 (zhāng) for flat things like tickets and paper: 一张票 (yì zhāng piào)."
+     },
+     {
+      "h": "Two and how many",
+      "b": "For two things use 两 (liǎng), not 二: 两个人 (liǎng gè rén). To ask how many, use 几 (jǐ): 你有几个哥哥? (nǐ yǒu jǐ gè gēge) means How many older brothers do you have?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which measure word is the most general?",
+      "o": [
+       "本 (běn)",
+       "个 (gè)",
+       "只 (zhī)",
+       "杯 (bēi)"
+      ],
+      "a": 1,
+      "why": "个 is used for people and many other things."
+     },
+     {
+      "t": "mc",
+      "q": "Which measure word is used for books?",
+      "o": [
+       "只 (zhī)",
+       "杯 (bēi)",
+       "本 (běn)",
+       "张 (zhāng)"
+      ],
+      "a": 2,
+      "why": "本 is for books, as in 一本书."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'two cups of tea'?",
+      "o": [
+       "两杯茶 (liǎng bēi chá)",
+       "二杯茶 (èr bēi chá)",
+       "两个茶 (liǎng gè chá)",
+       "两本茶 (liǎng běn chá)"
+      ],
+      "a": 0,
+      "why": "Use 两 before measure words and 杯 for cups."
+     },
+     {
+      "t": "mc",
+      "q": "Which noun goes with 只 (zhī)?",
+      "o": [
+       "书 (shū)",
+       "水 (shuǐ)",
+       "票 (piào)",
+       "猫 (māo)"
+      ],
+      "a": 3,
+      "why": "只 is for small animals such as cats."
+     },
+     {
+      "t": "tf",
+      "q": "You say 二个人 (èr gè rén) for 'two people'.",
+      "a": false,
+      "why": "Say 两个人 (liǎng gè rén)."
+     },
+     {
+      "t": "match",
+      "q": "Match each measure word to what it counts",
+      "pairs": [
+       [
+        "个 (gè)",
+        "General things"
+       ],
+       [
+        "本 (běn)",
+        "Books"
+       ],
+       [
+        "杯 (bēi)",
+        "Cups or glasses"
+       ],
+       [
+        "张 (zhāng)",
+        "Flat things, tickets"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I have one cat",
+      "items": [
+       [
+        "我 (wǒ)",
+        1
+       ],
+       [
+        "有 (yǒu)",
+        2
+       ],
+       [
+        "一只 (yì zhī)",
+        3
+       ],
+       [
+        "猫 (māo)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the measure word for books (character or pinyin).",
+      "a": [
+       "本",
+       "ben"
+      ],
+      "hint": "It is in 一本书.",
+      "why": "本 is the measure word for books."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'two people' in Chinese.",
+      "a": [
+       "两个人",
+       "liang ge ren",
+       "lianggeren"
+      ],
+      "hint": "Use 两, not 二.",
+      "why": "两个人 means two people."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'I have a cat' in Chinese.",
+      "a": [
+       "我有一只猫",
+       "wo you yi zhi mao",
+       "woyouyizhimao"
+      ],
+      "hint": "Use 只 for the cat.",
+      "why": "我有一只猫 means I have a cat."
+     }
+    ]
+   },
+   {
+    "title": "Time and Dates",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Telling the time",
+      "b": "点 (diǎn) means o'clock: 三点 (sān diǎn) is 3:00. 半 (bàn) means half: 三点半 is 3:30. 分 (fēn) means minute: 三点十分 is 3:10. To ask the time say 现在几点? (xiànzài jǐ diǎn?)"
+     },
+     {
+      "h": "Days of the week",
+      "b": "星期一 (xīngqī yī) is Monday, 星期二 Tuesday, 星期三 Wednesday, 星期四 Thursday, 星期五 Friday, 星期六 Saturday. Sunday is 星期天 (xīngqītiān). 今天 (jīntiān) is today, 明天 (míngtiān) is tomorrow and 昨天 (zuótiān) is yesterday."
+     },
+     {
+      "h": "Dates",
+      "b": "月 (yuè) means month and 号 (hào) means day of the month: 十月五号 (shí yuè wǔ hào) is October 5th. 年 (nián) means year. Time words go before the verb: 我明天去学校 (wǒ míngtiān qù xuéxiào) means I go to school tomorrow."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 现在几点 (xiànzài jǐ diǎn) mean?",
+      "o": [
+       "What day is it?",
+       "Where are you now?",
+       "What time is it now?",
+       "How old are you?"
+      ],
+      "a": 2,
+      "why": "几点 asks for the hour."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 3:30?",
+      "o": [
+       "三点半 (sān diǎn bàn)",
+       "三半点 (sān bàn diǎn)",
+       "半三点 (bàn sān diǎn)",
+       "三分半 (sān fēn bàn)"
+      ],
+      "a": 0,
+      "why": "Hour + 点 + 半 gives half past."
+     },
+     {
+      "t": "mc",
+      "q": "What day is 星期三 (xīngqī sān)?",
+      "o": [
+       "Monday",
+       "Tuesday",
+       "Friday",
+       "Wednesday"
+      ],
+      "a": 3,
+      "why": "星期 + 3 means Wednesday."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'tomorrow'?",
+      "o": [
+       "今天 (jīntiān)",
+       "明天 (míngtiān)",
+       "昨天 (zuótiān)",
+       "星期 (xīngqī)"
+      ],
+      "a": 1,
+      "why": "明天 is tomorrow."
+     },
+     {
+      "t": "tf",
+      "q": "Time words like 明天 usually come before the verb.",
+      "a": true,
+      "why": "Example: 我明天去学校."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "今天 (jīntiān)",
+        "Today"
+       ],
+       [
+        "昨天 (zuótiān)",
+        "Yesterday"
+       ],
+       [
+        "月 (yuè)",
+        "Month"
+       ],
+       [
+        "号 (hào)",
+        "Day of the month"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order starting from Monday",
+      "items": [
+       [
+        "星期一 (xīngqī yī)",
+        1
+       ],
+       [
+        "星期二 (xīngqī èr)",
+        2
+       ],
+       [
+        "星期三 (xīngqī sān)",
+        3
+       ],
+       [
+        "星期四 (xīngqī sì)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 昨天 (zuótiān).",
+      "a": [
+       "yesterday"
+      ],
+      "hint": "It is the day before today.",
+      "why": "昨天 means yesterday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'Friday' in Chinese.",
+      "a": [
+       "星期五",
+       "xingqi wu",
+       "xingqiwu"
+      ],
+      "hint": "星期 + the number 5.",
+      "why": "星期五 is Friday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the character for 'o'clock' (diǎn).",
+      "a": [
+       "点",
+       "dian",
+       "點"
+      ],
+      "hint": "It is in 三点.",
+      "why": "点 means o'clock."
+     }
+    ]
+   },
+   {
+    "title": "Asking Questions",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Yes or no questions",
+      "b": "Add 吗 (ma) at the end of a statement. 你是学生吗? (nǐ shì xuéshēng ma?) means Are you a student? To answer, repeat the verb: 是 (shì) for yes, 不是 (bú shì) for no."
+     },
+     {
+      "h": "Question words",
+      "b": "什么 (shénme) is what, 谁 (shéi) is who, 哪儿 (nǎr) is where, 几 (jǐ) is how many, 怎么 (zěnme) is how and 为什么 (wèishénme) is why. The question word stays where the answer would go: 你吃什么? (nǐ chī shénme?) means What do you eat? 这 (zhè) is this and 那 (nà) is that: 这是什么? means What is this?"
+     },
+     {
+      "h": "More patterns",
+      "b": "呢 (ne) asks back: 我很好，你呢? (wǒ hěn hǎo, nǐ ne?) means I am fine, and you? Verb + 不 + verb asks a choice: 你去不去? (nǐ qù bú qù?) means Are you going or not?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word makes a statement into a yes or no question?",
+      "o": [
+       "吗 (ma)",
+       "了 (le)",
+       "的 (de)",
+       "不 (bù)"
+      ],
+      "a": 0,
+      "why": "吗 goes at the end of a sentence."
+     },
+     {
+      "t": "mc",
+      "q": "What does 什么 (shénme) mean?",
+      "o": [
+       "Who",
+       "Where",
+       "Why",
+       "What"
+      ],
+      "a": 3,
+      "why": "什么 is what."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'Who is he?'",
+      "o": [
+       "他是什么? (tā shì shénme?)",
+       "他是谁? (tā shì shéi?)",
+       "他是哪儿? (tā shì nǎr?)",
+       "他是几? (tā shì jǐ?)"
+      ],
+      "a": 1,
+      "why": "谁 means who."
+     },
+     {
+      "t": "mc",
+      "q": "What does 你去不去 (nǐ qù bú qù) mean?",
+      "o": [
+       "Where are you going?",
+       "Why are you going?",
+       "Are you going or not?",
+       "I am not going."
+      ],
+      "a": 2,
+      "why": "Verb + 不 + verb asks a choice question."
+     },
+     {
+      "t": "tf",
+      "q": "In Chinese the question word moves to the start of the sentence, as in English.",
+      "a": false,
+      "why": "The question word stays in the same place as the answer."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "谁 (shéi)",
+        "Who"
+       ],
+       [
+        "哪儿 (nǎr)",
+        "Where"
+       ],
+       [
+        "几 (jǐ)",
+        "How many"
+       ],
+       [
+        "为什么 (wèishénme)",
+        "Why"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: What are you eating now?",
+      "items": [
+       [
+        "你 (nǐ)",
+        1
+       ],
+       [
+        "现在 (xiànzài)",
+        2
+       ],
+       [
+        "吃 (chī)",
+        3
+       ],
+       [
+        "什么 (shénme)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'who' in Chinese (one character).",
+      "a": [
+       "谁",
+       "shei",
+       "shui",
+       "誰"
+      ],
+      "hint": "It sounds like shéi.",
+      "why": "谁 means who."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: add the particle: 你是学生__? Type the character.",
+      "a": [
+       "吗",
+       "ma"
+      ],
+      "hint": "It makes a yes or no question.",
+      "why": "吗 ends a yes or no question."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 为什么 (wèishénme).",
+      "a": [
+       "why"
+      ],
+      "hint": "It asks for a reason.",
+      "why": "为什么 means why."
+     }
+    ]
+   },
+   {
+    "title": "Describing Things",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Adjectives and 很",
+      "b": "Adjectives do not need 是. Put 很 (hěn) before them: 我很高 (wǒ hěn gāo) means I am tall. Not 我是高. Useful: 大 (dà) big, 小 (xiǎo) small, 好 (hǎo) good, 高 (gāo) tall, 新 (xīn) new, 漂亮 (piàoliang) pretty, 热 (rè) hot, 冷 (lěng) cold."
+     },
+     {
+      "h": "的 shows belonging",
+      "b": "的 (de) links an owner or a description to a noun. 我的书 (wǒ de shū) means my book. 好看的书 (hǎokàn de shū) means a good-looking book. For close family you can drop it: 我妈妈 (wǒ māma)."
+     },
+     {
+      "h": "Colors",
+      "b": "红 (hóng) is red, 白 (bái) is white, 黑 (hēi) is black and 蓝 (lán) is blue. Add 色 (sè) for color: 红色 (hóngsè). 红色的苹果 (hóngsè de píngguǒ) means a red apple. 不 makes it negative: 我不高 (wǒ bù gāo)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I am tall'?",
+      "o": [
+       "我是高 (wǒ shì gāo)",
+       "我高很 (wǒ gāo hěn)",
+       "我有高 (wǒ yǒu gāo)",
+       "我很高 (wǒ hěn gāo)"
+      ],
+      "a": 3,
+      "why": "Use 很 before the adjective."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'my book'?",
+      "o": [
+       "我书的 (wǒ shū de)",
+       "我的书 (wǒ de shū)",
+       "的我书 (de wǒ shū)",
+       "我是书 (wǒ shì shū)"
+      ],
+      "a": 1,
+      "why": "Owner + 的 + noun."
+     },
+     {
+      "t": "mc",
+      "q": "What does 冷 (lěng) mean?",
+      "o": [
+       "Hot",
+       "Big",
+       "Cold",
+       "New"
+      ],
+      "a": 2,
+      "why": "冷 is cold. 热 is hot."
+     },
+     {
+      "t": "mc",
+      "q": "What does 红色的苹果 (hóngsè de píngguǒ) mean?",
+      "o": [
+       "Red apple",
+       "Blue apple",
+       "White apple",
+       "Black apple"
+      ],
+      "a": 0,
+      "why": "红色 is red."
+     },
+     {
+      "t": "tf",
+      "q": "我是高 (wǒ shì gāo) is the natural way to say 'I am tall'.",
+      "a": false,
+      "why": "Say 我很高 instead. Adjectives do not take 是."
+     },
+     {
+      "t": "match",
+      "q": "Match each adjective to its meaning",
+      "pairs": [
+       [
+        "大 (dà)",
+        "Big"
+       ],
+       [
+        "小 (xiǎo)",
+        "Small"
+       ],
+       [
+        "新 (xīn)",
+        "New"
+       ],
+       [
+        "漂亮 (piàoliang)",
+        "Pretty"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: My book is very good",
+      "items": [
+       [
+        "我的 (wǒ de)",
+        1
+       ],
+       [
+        "书 (shū)",
+        2
+       ],
+       [
+        "很 (hěn)",
+        3
+       ],
+       [
+        "好 (hǎo)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 漂亮 (piàoliang).",
+      "a": [
+       "pretty",
+       "beautiful"
+      ],
+      "hint": "It describes looks.",
+      "why": "漂亮 means pretty."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'red' in Chinese (one character).",
+      "a": [
+       "红",
+       "hong",
+       "紅"
+      ],
+      "hint": "It is the first character of 红色.",
+      "why": "红 means red."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: 我__高 (I am very tall). Type the character.",
+      "a": [
+       "很",
+       "hen"
+      ],
+      "hint": "It means very.",
+      "why": "很 goes before adjectives."
+     }
+    ]
+   }
+  ]
+ },
+ "zh-2": {
+  "name": "Mandarin Chinese · Intermediate",
+  "units": [
+   {
+    "title": "Past and Experience",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Completed actions",
+      "b": "Put 了 (le) after a verb to show an action is done. 我吃了 (wǒ chī le) means I ate. 昨天 (zuótiān) means yesterday."
+     },
+     {
+      "h": "Life experience",
+      "b": "Put 过 (guo) after a verb to say you have done it before. 我去过中国 (wǒ qù guo Zhōngguó) means I have been to China."
+     },
+     {
+      "h": "Past negatives",
+      "b": "Use 没 (méi) to say you did not do something. 我没吃饭 (wǒ méi chī fàn) means I did not eat. Do not add 了 (le) after it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 昨天 (zuótiān) mean?",
+      "o": [
+       "Today",
+       "Tomorrow",
+       "Yesterday",
+       "Next week"
+      ],
+      "a": 2,
+      "why": "昨天 (zuótiān) means yesterday."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I ate'?",
+      "o": [
+       "我吃了 (wǒ chī le)",
+       "我吃过去 (wǒ chī guòqù)",
+       "我不吃吗 (wǒ bù chī ma)",
+       "我没吃了 (wǒ méi chī le)"
+      ],
+      "a": 0,
+      "why": "了 (le) after the verb shows the action is complete."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have been to China'?",
+      "o": [
+       "我去了中国吗 (wǒ qù le Zhōngguó ma)",
+       "我没中国 (wǒ méi Zhōngguó)",
+       "我是中国 (wǒ shì Zhōngguó)",
+       "我去过中国 (wǒ qù guo Zhōngguó)"
+      ],
+      "a": 3,
+      "why": "过 (guo) shows a past experience."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not go'?",
+      "o": [
+       "我不去了 (wǒ bù qù le)",
+       "我没去 (wǒ méi qù)",
+       "我去吗 (wǒ qù ma)",
+       "我有去 (wǒ yǒu qù)"
+      ],
+      "a": 1,
+      "why": "没 (méi) is used to negate past actions."
+     },
+     {
+      "t": "tf",
+      "q": "了 (le) often shows that an action is completed.",
+      "a": true,
+      "why": "了 (le) marks a completed action, as in 我吃了 (wǒ chī le)."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "昨天 (zuótiān)",
+        "Yesterday"
+       ],
+       [
+        "今天 (jīntiān)",
+        "Today"
+       ],
+       [
+        "明天 (míngtiān)",
+        "Tomorrow"
+       ],
+       [
+        "上个星期 (shàng ge xīngqī)",
+        "Last week"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I watched a movie yesterday",
+      "items": [
+       [
+        "我 (wǒ)",
+        1
+       ],
+       [
+        "昨天 (zuótiān)",
+        2
+       ],
+       [
+        "看了 (kàn le)",
+        3
+       ],
+       [
+        "电影 (diànyǐng)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: 我吃__ (I ate). Type the character.",
+      "a": [
+       "了",
+       "le"
+      ],
+      "hint": "It shows the action is done.",
+      "why": "了 marks a completed action."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'yesterday' in Chinese.",
+      "a": [
+       "昨天",
+       "zuotian",
+       "zuo tian"
+      ],
+      "hint": "It starts with 昨.",
+      "why": "昨天 means yesterday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which character goes after a verb for 'have done it before'?",
+      "a": [
+       "过",
+       "guo",
+       "過"
+      ],
+      "hint": "As in 我去过中国.",
+      "why": "过 shows past experience."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Asking where",
+      "b": "哪儿 (nǎr) means where. 银行在哪儿 (yínháng zài nǎr) means Where is the bank? 在 (zài) means at or is located at."
+     },
+     {
+      "h": "Directions",
+      "b": "左 (zuǒ) is left and 右 (yòu) is right. 一直走 (yìzhí zǒu) means go straight. 转 (zhuǎn) means turn."
+     },
+     {
+      "h": "Places and distance",
+      "b": "医院 (yīyuàn) is hospital and 火车站 (huǒchēzhàn) is train station. 近 (jìn) means near and 远 (yuǎn) means far. 附近 (fùjìn) means nearby."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 银行在哪儿 (yínháng zài nǎr) mean?",
+      "o": [
+       "The bank is big",
+       "I like the bank",
+       "Where is the bank?",
+       "I go to the bank"
+      ],
+      "a": 2,
+      "why": "哪儿 (nǎr) means where."
+     },
+     {
+      "t": "mc",
+      "q": "What does 右 (yòu) mean?",
+      "o": [
+       "Left",
+       "Right",
+       "Straight",
+       "Back"
+      ],
+      "a": 1,
+      "why": "右 (yòu) means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does 一直走 (yìzhí zǒu) mean?",
+      "o": [
+       "Go straight",
+       "Turn right",
+       "Stop here",
+       "Come back"
+      ],
+      "a": 0,
+      "why": "一直 (yìzhí) means straight and 走 (zǒu) means walk or go."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'turn left'?",
+      "o": [
+       "向右转 (xiàng yòu zhuǎn)",
+       "一直走 (yìzhí zǒu)",
+       "在左边吗 (zài zuǒbiān ma)",
+       "向左转 (xiàng zuǒ zhuǎn)"
+      ],
+      "a": 3,
+      "why": "左 (zuǒ) is left and 转 (zhuǎn) is turn."
+     },
+     {
+      "t": "tf",
+      "q": "远 (yuǎn) means near.",
+      "a": false,
+      "why": "远 (yuǎn) means far. Near is 近 (jìn)."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "医院 (yīyuàn)",
+        "Hospital"
+       ],
+       [
+        "火车站 (huǒchēzhàn)",
+        "Train station"
+       ],
+       [
+        "银行 (yínháng)",
+        "Bank"
+       ],
+       [
+        "学校 (xuéxiào)",
+        "School"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, where is the hospital?",
+      "items": [
+       [
+        "请问 (qǐngwèn)",
+        1
+       ],
+       [
+        "医院 (yīyuàn)",
+        2
+       ],
+       [
+        "在 (zài)",
+        3
+       ],
+       [
+        "哪儿 (nǎr)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 左 (zuǒ).",
+      "a": [
+       "left"
+      ],
+      "hint": "The opposite of 右.",
+      "why": "左 means left."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'hospital' in Chinese.",
+      "a": [
+       "医院",
+       "yiyuan",
+       "yi yuan",
+       "醫院"
+      ],
+      "hint": "It starts with 医.",
+      "why": "医院 means hospital."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'far' in Chinese (one character).",
+      "a": [
+       "远",
+       "yuan",
+       "遠"
+      ],
+      "hint": "The opposite of 近.",
+      "why": "远 means far."
+     }
+    ]
+   },
+   {
+    "title": "Actions in Progress and Duration",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Doing right now",
+      "b": "Put 在 (zài) before a verb for an action in progress: 我在吃饭 (wǒ zài chī fàn) means I am eating. 正在 (zhèngzài) is stronger: 他正在看书 (tā zhèngzài kàn shū). The negative is 没在 (méi zài)."
+     },
+     {
+      "h": "How long",
+      "b": "Duration goes after the verb and 了, before the object: 我学了两年中文 (wǒ xué le liǎng nián Zhōngwén) means I studied Chinese for two years. 小时 (xiǎoshí) means hour: 我看了一个小时 (wǒ kàn le yí gè xiǎoshí)."
+     },
+     {
+      "h": "States and soon",
+      "b": "着 (zhe) shows a continuing state: 门开着 (mén kāi zhe) means The door is open. 要…了 (yào…le) shows something is about to happen: 火车要来了 (huǒchē yào lái le) means The train is about to come."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 我在吃饭 (wǒ zài chī fàn) mean?",
+      "o": [
+       "I ate",
+       "I am eating",
+       "I will eat",
+       "I did not eat"
+      ],
+      "a": 1,
+      "why": "在 + verb shows an action in progress."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence shows an action in progress?",
+      "o": [
+       "他看过书 (tā kàn guo shū)",
+       "他看了书 (tā kàn le shū)",
+       "他正在看书 (tā zhèngzài kàn shū)",
+       "他没看书 (tā méi kàn shū)"
+      ],
+      "a": 2,
+      "why": "正在 means right now."
+     },
+     {
+      "t": "mc",
+      "q": "In 我学了两年中文, where is the duration 两年?",
+      "o": [
+       "After 了 and before the object",
+       "Before the verb",
+       "At the end of the sentence",
+       "Before 我"
+      ],
+      "a": 0,
+      "why": "Duration goes between 了 and the object."
+     },
+     {
+      "t": "mc",
+      "q": "What does 火车要来了 (huǒchē yào lái le) mean?",
+      "o": [
+       "The train came yesterday",
+       "The train does not come",
+       "The train is full",
+       "The train is about to come"
+      ],
+      "a": 3,
+      "why": "要…了 means about to."
+     },
+     {
+      "t": "tf",
+      "q": "In 门开着 (mén kāi zhe), 着 shows a continuing state.",
+      "a": true,
+      "why": "着 means the state stays that way."
+     },
+     {
+      "t": "match",
+      "q": "Match each pattern to its meaning",
+      "pairs": [
+       [
+        "在 + verb",
+        "Action in progress"
+       ],
+       [
+        "着 (zhe)",
+        "Continuing state"
+       ],
+       [
+        "要…了",
+        "About to happen"
+       ],
+       [
+        "小时 (xiǎoshí)",
+        "Hour"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I am reading a book now",
+      "items": [
+       [
+        "我 (wǒ)",
+        1
+       ],
+       [
+        "现在 (xiànzài)",
+        2
+       ],
+       [
+        "在 (zài)",
+        3
+       ],
+       [
+        "看书 (kàn shū)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 我在喝水 (wǒ zài hē shuǐ).",
+      "a": [
+       "i am drinking water",
+       "im drinking water",
+       "i drink water",
+       "iamdrinkingwater",
+       "imdrinkingwater",
+       "idrinkwater"
+      ],
+      "hint": "在 shows it is happening now.",
+      "why": "我在喝水 means I am drinking water."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: 他__看书 (He is reading now). Type the character.",
+      "a": [
+       "在",
+       "正在",
+       "zai",
+       "zhengzai"
+      ],
+      "hint": "It goes before the verb.",
+      "why": "在 shows an action in progress."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: 火车__来了 (The train is about to come). Type the character.",
+      "a": [
+       "要",
+       "yao"
+      ],
+      "hint": "The pattern is __…了.",
+      "why": "要…了 means about to."
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Prices",
+      "b": "多少钱 (duōshao qián) means How much? 贵 (guì) means expensive and 便宜 (piányi) means cheap."
+     },
+     {
+      "h": "Travel words",
+      "b": "机票 (jīpiào) is plane ticket and 酒店 (jiǔdiàn) is hotel. 护照 (hùzhào) is passport and 旅行 (lǚxíng) means travel. 地铁 (dìtiě) is subway."
+     },
+     {
+      "h": "Buying and taking",
+      "b": "买 (mǎi) means buy. 我想买机票 (wǒ xiǎng mǎi jīpiào) means I want to buy a plane ticket. 坐 (zuò) means to take a vehicle."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 多少钱 (duōshao qián) mean?",
+      "o": [
+       "Where is it?",
+       "What time is it?",
+       "Who is it?",
+       "How much is it?"
+      ],
+      "a": 3,
+      "why": "多少钱 (duōshao qián) asks the price."
+     },
+     {
+      "t": "mc",
+      "q": "What does 贵 (guì) mean?",
+      "o": [
+       "Expensive",
+       "Cheap",
+       "Free",
+       "Small"
+      ],
+      "a": 0,
+      "why": "贵 (guì) means expensive."
+     },
+     {
+      "t": "mc",
+      "q": "What is 护照 (hùzhào)?",
+      "o": [
+       "Ticket",
+       "Hotel",
+       "Passport",
+       "Suitcase"
+      ],
+      "a": 2,
+      "why": "护照 (hùzhào) means passport."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want to buy a ticket'?",
+      "o": [
+       "我想买机票 (wǒ xiǎng mǎi jīpiào)",
+       "我想吃机票 (wǒ xiǎng chī jīpiào)",
+       "我不是机票 (wǒ bú shì jīpiào)",
+       "我去过机票 (wǒ qù guo jīpiào)"
+      ],
+      "a": 0,
+      "why": "想 (xiǎng) means want and 买 (mǎi) means buy."
+     },
+     {
+      "t": "tf",
+      "q": "便宜 (piányi) means expensive.",
+      "a": false,
+      "why": "便宜 (piányi) means cheap."
+     },
+     {
+      "t": "match",
+      "q": "Match each travel word to its meaning",
+      "pairs": [
+       [
+        "酒店 (jiǔdiàn)",
+        "Hotel"
+       ],
+       [
+        "地铁 (dìtiě)",
+        "Subway"
+       ],
+       [
+        "机票 (jīpiào)",
+        "Plane ticket"
+       ],
+       [
+        "旅行 (lǚxíng)",
+        "Travel"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: How much is this ticket?",
+      "items": [
+       [
+        "这张 (zhè zhāng)",
+        1
+       ],
+       [
+        "机票 (jīpiào)",
+        2
+       ],
+       [
+        "多少 (duōshao)",
+        3
+       ],
+       [
+        "钱 (qián)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 便宜 (piányi).",
+      "a": [
+       "cheap",
+       "inexpensive"
+      ],
+      "hint": "The opposite of 贵.",
+      "why": "便宜 means cheap."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'passport' in Chinese.",
+      "a": [
+       "护照",
+       "huzhao",
+       "hu zhao",
+       "護照"
+      ],
+      "hint": "It starts with 护.",
+      "why": "护照 means passport."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'How much is it?' in Chinese.",
+      "a": [
+       "多少钱",
+       "duoshao qian",
+       "duo shao qian",
+       "duoshaoqian"
+      ],
+      "hint": "It has three characters.",
+      "why": "多少钱 asks the price."
+     }
+    ]
+   },
+   {
+    "title": "Complements",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Result complements",
+      "b": "A second word after a verb shows the result: 看懂 (kàndǒng) means read and understand, 听懂 (tīngdǒng) listen and understand, 看见 (kànjiàn) see, 吃完 (chīwán) finish eating, 做好 (zuòhǎo) get done. Negative: 我没看懂 (wǒ méi kàndǒng) means I did not understand."
+     },
+     {
+      "h": "Direction complements",
+      "b": "来 (lái) and 去 (qù) show direction: 进来 (jìnlái) is come in, 出去 (chūqù) is go out, 回来 (huílái) is come back and 回去 (huíqù) is go back. 来 moves toward the speaker and 去 moves away."
+     },
+     {
+      "h": "How well: 得",
+      "b": "Verb + 得 (de) + adjective says how an action is done: 他说得很好 (tā shuō de hěn hǎo) means He speaks well. 她跑得很快 (tā pǎo de hěn kuài) means She runs fast. With an object, repeat the verb: 他说中文说得很好."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 看懂 (kàndǒng) mean?",
+      "o": [
+       "Look at",
+       "Buy",
+       "Read and understand",
+       "Forget"
+      ],
+      "a": 2,
+      "why": "懂 is the result: understand."
+     },
+     {
+      "t": "mc",
+      "q": "What does 进来 (jìnlái) mean?",
+      "o": [
+       "Come in",
+       "Go out",
+       "Go back",
+       "Come back"
+      ],
+      "a": 0,
+      "why": "进 means enter and 来 means toward the speaker."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'She runs fast'?",
+      "o": [
+       "她跑很快得 (tā pǎo hěn kuài de)",
+       "她得跑很快 (tā de pǎo hěn kuài)",
+       "她很快跑得 (tā hěn kuài pǎo de)",
+       "她跑得很快 (tā pǎo de hěn kuài)"
+      ],
+      "a": 3,
+      "why": "Verb + 得 + adjective."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not understand what I read'?",
+      "o": [
+       "我不看懂 (wǒ bù kàndǒng)",
+       "我没看懂 (wǒ méi kàndǒng)",
+       "我看没懂 (wǒ kàn méi dǒng)",
+       "我没懂看 (wǒ méi dǒng kàn)"
+      ],
+      "a": 1,
+      "why": "Use 没 before the verb + complement."
+     },
+     {
+      "t": "tf",
+      "q": "In 他说得很好, the word 得 links the verb to how well it is done.",
+      "a": true,
+      "why": "得 introduces the degree complement."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "吃完 (chīwán)",
+        "Finish eating"
+       ],
+       [
+        "回来 (huílái)",
+        "Come back"
+       ],
+       [
+        "出去 (chūqù)",
+        "Go out"
+       ],
+       [
+        "听懂 (tīngdǒng)",
+        "Listen and understand"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: He speaks very well",
+      "items": [
+       [
+        "他 (tā)",
+        1
+       ],
+       [
+        "说得 (shuō de)",
+        2
+       ],
+       [
+        "很 (hěn)",
+        3
+       ],
+       [
+        "好 (hǎo)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 吃完 (chīwán).",
+      "a": [
+       "finish eating",
+       "finished eating",
+       "to finish eating",
+       "eat up",
+       "finisheating",
+       "finishedeating",
+       "tofinisheating",
+       "eatup"
+      ],
+      "hint": "完 means finished.",
+      "why": "吃完 means finish eating."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: 她跑__很快. Type the character.",
+      "a": [
+       "得",
+       "de"
+      ],
+      "hint": "It links the verb and how well.",
+      "why": "得 introduces the degree."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'come back' in Chinese (two characters).",
+      "a": [
+       "回来",
+       "hui lai",
+       "huilai"
+      ],
+      "hint": "回 + 来.",
+      "why": "回来 means come back."
+     }
+    ]
+   },
+   {
+    "title": "Health and Body",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "The body",
+      "b": "头 (tóu) is head, 眼睛 (yǎnjing) eyes, 嘴 (zuǐ) mouth, 手 (shǒu) hand, 脚 (jiǎo) foot, 肚子 (dùzi) stomach. 疼 (téng) means hurts: 我头疼 (wǒ tóu téng) means My head hurts."
+     },
+     {
+      "h": "Being sick",
+      "b": "生病 (shēngbìng) means to get sick. 感冒 (gǎnmào) is a cold and 发烧 (fāshāo) is a fever. 医生 (yīshēng) is a doctor and 药 (yào) is medicine. 看病 (kànbìng) means to see a doctor. 不舒服 (bù shūfu) means not feeling well."
+     },
+     {
+      "h": "Giving advice",
+      "b": "应该 (yīnggāi) means should: 你应该休息 (nǐ yīnggāi xiūxi) means You should rest. 多喝水 (duō hē shuǐ) means drink more water. 别 (bié) means don't: 别担心 (bié dānxīn) means Don't worry."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 头 (tóu) mean?",
+      "o": [
+       "Head",
+       "Hand",
+       "Foot",
+       "Mouth"
+      ],
+      "a": 0,
+      "why": "头 is head."
+     },
+     {
+      "t": "mc",
+      "q": "What does 我肚子疼 (wǒ dùzi téng) mean?",
+      "o": [
+       "My head hurts",
+       "I am hungry",
+       "I am tired",
+       "My stomach hurts"
+      ],
+      "a": 3,
+      "why": "肚子 is stomach and 疼 is hurts."
+     },
+     {
+      "t": "mc",
+      "q": "What is 医生 (yīshēng)?",
+      "o": [
+       "A teacher",
+       "A doctor",
+       "A driver",
+       "A student"
+      ],
+      "a": 1,
+      "why": "医 means medicine and 生 means person in this word."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'You should rest'?",
+      "o": [
+       "你别休息 (nǐ bié xiūxi)",
+       "你没休息 (nǐ méi xiūxi)",
+       "你应该休息 (nǐ yīnggāi xiūxi)",
+       "你休息吗 (nǐ xiūxi ma)"
+      ],
+      "a": 2,
+      "why": "应该 means should."
+     },
+     {
+      "t": "tf",
+      "q": "别 (bié) is used to tell someone not to do something.",
+      "a": true,
+      "why": "别担心 means don't worry."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "感冒 (gǎnmào)",
+        "A cold"
+       ],
+       [
+        "发烧 (fāshāo)",
+        "Fever"
+       ],
+       [
+        "药 (yào)",
+        "Medicine"
+       ],
+       [
+        "手 (shǒu)",
+        "Hand"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in a natural order",
+      "items": [
+       [
+        "生病 (shēngbìng) get sick",
+        1
+       ],
+       [
+        "看病 (kànbìng) see a doctor",
+        2
+       ],
+       [
+        "吃药 (chī yào) take medicine",
+        3
+       ],
+       [
+        "休息 (xiūxi) rest",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 发烧 (fāshāo).",
+      "a": [
+       "fever",
+       "have a fever",
+       "a fever",
+       "haveafever",
+       "afever"
+      ],
+      "hint": "It means your temperature is high.",
+      "why": "发烧 means fever."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'medicine' in Chinese (one character).",
+      "a": [
+       "药",
+       "yao",
+       "藥"
+      ],
+      "hint": "You take it when you are sick.",
+      "why": "药 means medicine."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'hand' in Chinese (one character).",
+      "a": [
+       "手",
+       "shou"
+      ],
+      "hint": "You use it to write.",
+      "why": "手 means hand."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Comparisons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving opinions",
+      "b": "觉得 (juéde) means to think or feel. 我觉得很有意思 (wǒ juéde hěn yǒu yìsi) means I think it is very interesting. 喜欢 (xǐhuan) means like."
+     },
+     {
+      "h": "Reasons and contrast",
+      "b": "因为 (yīnwèi) means because and 所以 (suǒyǐ) means so. 但是 (dànshì) means but."
+     },
+     {
+      "h": "Comparing",
+      "b": "Use 比 (bǐ) to compare. 他比我高 (tā bǐ wǒ gāo) means He is taller than me. 更 (gèng) means even more."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I think it is very interesting'?",
+      "o": [
+       "我不是有意思 (wǒ bú shì yǒu yìsi)",
+       "我去很有意思 (wǒ qù hěn yǒu yìsi)",
+       "我吃很有意思 (wǒ chī hěn yǒu yìsi)",
+       "我觉得很有意思 (wǒ juéde hěn yǒu yìsi)"
+      ],
+      "a": 3,
+      "why": "觉得 (juéde) introduces an opinion."
+     },
+     {
+      "t": "mc",
+      "q": "What does 因为 (yīnwèi) mean?",
+      "o": [
+       "But",
+       "Because",
+       "So",
+       "Maybe"
+      ],
+      "a": 1,
+      "why": "因为 (yīnwèi) introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'He is taller than me'?",
+      "o": [
+       "他比我高 (tā bǐ wǒ gāo)",
+       "他和我高 (tā hé wǒ gāo)",
+       "他不是高 (tā bú shì gāo)",
+       "他去我高 (tā qù wǒ gāo)"
+      ],
+      "a": 0,
+      "why": "比 (bǐ) means than in comparisons."
+     },
+     {
+      "t": "mc",
+      "q": "What does 难 (nán) mean?",
+      "o": [
+       "Easy",
+       "Cheap",
+       "Difficult",
+       "Near"
+      ],
+      "a": 2,
+      "why": "难 (nán) means difficult. Easy is 容易 (róngyì)."
+     },
+     {
+      "t": "tf",
+      "q": "但是 (dànshì) means 'because'.",
+      "a": false,
+      "why": "但是 (dànshì) means but."
+     },
+     {
+      "t": "match",
+      "q": "Match each connecting word to its meaning",
+      "pairs": [
+       [
+        "因为 (yīnwèi)",
+        "Because"
+       ],
+       [
+        "所以 (suǒyǐ)",
+        "So"
+       ],
+       [
+        "但是 (dànshì)",
+        "But"
+       ],
+       [
+        "觉得 (juéde)",
+        "To think or feel"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I think Chinese is interesting",
+      "items": [
+       [
+        "我 (wǒ)",
+        1
+       ],
+       [
+        "觉得 (juéde)",
+        2
+       ],
+       [
+        "中文 (Zhōngwén)",
+        3
+       ],
+       [
+        "很有意思 (hěn yǒu yìsi)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'because' in Chinese.",
+      "a": [
+       "因为",
+       "yinwei",
+       "yin wei",
+       "因為"
+      ],
+      "hint": "It starts with 因.",
+      "why": "因为 means because."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'but' in Chinese (two characters).",
+      "a": [
+       "但是",
+       "danshi",
+       "dan shi",
+       "可是",
+       "keshi",
+       "ke shi"
+      ],
+      "hint": "It starts with 但.",
+      "why": "但是 means but."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: 他__我高 (He is taller than me). Type the character.",
+      "a": [
+       "比",
+       "bi"
+      ],
+      "hint": "It is used to compare.",
+      "why": "比 compares two things."
+     }
+    ]
+   },
+   {
+    "title": "把 Sentences",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "The 把 pattern",
+      "b": "把 (bǎ) moves the object before the verb to show what you do to it. Pattern: subject + 把 + object + verb + extra. 我把书放在桌子上 (wǒ bǎ shū fàng zài zhuōzi shang) means I put the book on the table. 放 (fàng) is put and 桌子 (zhuōzi) is table."
+     },
+     {
+      "h": "Verb needs a result",
+      "b": "The verb cannot stand alone: add 了, a complement or a place. 我把作业做完了 (wǒ bǎ zuòyè zuò wán le) means I finished my homework. 作业 (zuòyè) is homework. The object should be known or specific."
+     },
+     {
+      "h": "Negatives and requests",
+      "b": "Put 没 and modal words before 把: 我没把门关好 (wǒ méi bǎ mén guān hǎo) means I did not close the door properly. 请把门关上 (qǐng bǎ mén guān shàng) means Please close the door. 关 (guān) is close and 开 (kāi) is open."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where does the object go in a 把 sentence?",
+      "o": [
+       "After the verb",
+       "Before 把",
+       "At the end",
+       "Between 把 and the verb"
+      ],
+      "a": 3,
+      "why": "Pattern: 把 + object + verb."
+     },
+     {
+      "t": "mc",
+      "q": "What does 请把门关上 mean?",
+      "o": [
+       "Please open the door",
+       "Please close the door",
+       "Please come in",
+       "Please buy a door"
+      ],
+      "a": 1,
+      "why": "关上 means close."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is correct?",
+      "o": [
+       "我把作业做 (wǒ bǎ zuòyè zuò)",
+       "我作业把做完了 (wǒ zuòyè bǎ zuò wán le)",
+       "我把作业做完了 (wǒ bǎ zuòyè zuò wán le)",
+       "我做把作业完了 (wǒ zuò bǎ zuòyè wán le)"
+      ],
+      "a": 2,
+      "why": "The verb needs a result such as 完了."
+     },
+     {
+      "t": "mc",
+      "q": "Which means 'I did not close the door properly'?",
+      "o": [
+       "我没把门关好 (wǒ méi bǎ mén guān hǎo)",
+       "我把没门关好 (wǒ bǎ méi mén guān hǎo)",
+       "我把门关好没 (wǒ bǎ mén guān hǎo méi)",
+       "我关好把门没 (wǒ guān hǎo bǎ mén méi)"
+      ],
+      "a": 0,
+      "why": "没 goes before 把."
+     },
+     {
+      "t": "tf",
+      "q": "A 把 sentence usually needs a result or extra word after the verb.",
+      "a": true,
+      "why": "The verb cannot stand alone."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "放 (fàng)",
+        "Put"
+       ],
+       [
+        "关 (guān)",
+        "Close"
+       ],
+       [
+        "开 (kāi)",
+        "Open"
+       ],
+       [
+        "作业 (zuòyè)",
+        "Homework"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I put the book on the table",
+      "items": [
+       [
+        "我 (wǒ)",
+        1
+       ],
+       [
+        "把书 (bǎ shū)",
+        2
+       ],
+       [
+        "放在 (fàng zài)",
+        3
+       ],
+       [
+        "桌子上 (zhuōzi shang)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 放 (fàng).",
+      "a": [
+       "put",
+       "to put",
+       "place",
+       "toput"
+      ],
+      "hint": "You do this with a book on a table.",
+      "why": "放 means put."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the blank: 请__门关上 (Please close the door). Type the character.",
+      "a": [
+       "把",
+       "ba"
+      ],
+      "hint": "It moves the object before the verb.",
+      "why": "把 introduces the object."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'homework' in Chinese (two characters).",
+      "a": [
+       "作业",
+       "zuo ye",
+       "zuoye",
+       "作業"
+      ],
+      "hint": "It starts with 作.",
+      "why": "作业 means homework."
+     }
+    ]
+   },
+   {
+    "title": "Connecting Ideas",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "If and although",
+      "b": "如果…就… (rúguǒ…jiù…) means if…then: 如果明天下雨，我就不去 (rúguǒ míngtiān xiàyǔ, wǒ jiù bú qù) means If it rains tomorrow, I won't go. 下雨 (xiàyǔ) is rain. 虽然…但是… (suīrán…dànshì…) means although…but: 虽然很贵，但是很好。"
+     },
+     {
+      "h": "First then, and at the same time",
+      "b": "先…再… (xiān…zài…) means first…then: 先吃饭，再去学校. 一边…一边… (yìbiān…yìbiān…) means doing two things at once: 一边吃饭一边看电视 (yìbiān chī fàn yìbiān kàn diànshì)."
+     },
+     {
+      "h": "Or",
+      "b": "还是 (háishi) means or in questions: 你喝茶还是咖啡? (nǐ hē chá háishi kāfēi?) means Do you drink tea or coffee? 或者 (huòzhě) means or in statements: 我喝茶或者咖啡 (wǒ hē chá huòzhě kāfēi)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 如果…就… mean?",
+      "o": [
+       "Because…so",
+       "If…then",
+       "Although…but",
+       "First…then"
+      ],
+      "a": 1,
+      "why": "如果 is if and 就 is then."
+     },
+     {
+      "t": "mc",
+      "q": "What does 虽然…但是… mean?",
+      "o": [
+       "If…then",
+       "Not only…but also",
+       "Although…but",
+       "First…then"
+      ],
+      "a": 2,
+      "why": "虽然 is although and 但是 is but."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'or' in a question?",
+      "o": [
+       "还是 (háishi)",
+       "或者 (huòzhě)",
+       "因为 (yīnwèi)",
+       "所以 (suǒyǐ)"
+      ],
+      "a": 0,
+      "why": "还是 is used in questions."
+     },
+     {
+      "t": "mc",
+      "q": "What does 一边吃饭一边看电视 mean?",
+      "o": [
+       "Eat after watching TV",
+       "Watch TV instead of eating",
+       "Do not eat or watch TV",
+       "Eat while watching TV"
+      ],
+      "a": 3,
+      "why": "一边…一边… means two actions at once."
+     },
+     {
+      "t": "tf",
+      "q": "或者 (huòzhě) is the word for 'or' in questions.",
+      "a": false,
+      "why": "In questions use 还是. 或者 is for statements."
+     },
+     {
+      "t": "match",
+      "q": "Match each pattern to its meaning",
+      "pairs": [
+       [
+        "先…再…",
+        "First…then"
+       ],
+       [
+        "一边…一边…",
+        "Do two things at once"
+       ],
+       [
+        "如果…就…",
+        "If…then"
+       ],
+       [
+        "虽然…但是…",
+        "Although…but"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: First eat, then go to school",
+      "items": [
+       [
+        "先 (xiān)",
+        1
+       ],
+       [
+        "吃饭 (chī fàn)",
+        2
+       ],
+       [
+        "再 (zài)",
+        3
+       ],
+       [
+        "去学校 (qù xuéxiào)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'if' in Chinese (two characters, as in 如果…就…).",
+      "a": [
+       "如果",
+       "ru guo",
+       "ruguo"
+      ],
+      "hint": "It starts with 如.",
+      "why": "如果 means if."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English for 虽然 (suīrán).",
+      "a": [
+       "although",
+       "though",
+       "even though",
+       "eventhough"
+      ],
+      "hint": "It is the first half of 虽然…但是….",
+      "why": "虽然 means although."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Chinese word for 'but' used in 虽然…但是… (two characters).",
+      "a": [
+       "但是",
+       "dan shi",
+       "danshi"
+      ],
+      "hint": "It starts with 但.",
+      "why": "但是 means but."
+     }
+    ]
+   },
+   {
+    "title": "Radicals and Characters",
+    "period": "Characters",
+    "learn": [
+     {
+      "h": "Radicals give hints",
+      "b": "Many characters have a radical that hints at meaning. 氵 means water: 河 (hé) is river. 口 means mouth: 吃 (chī) is eat and 喝 (hē) is drink. 亻 means person: 你 (nǐ) is you and 他 (tā) is he."
+     },
+     {
+      "h": "Building characters",
+      "b": "女 means woman: 妈 (mā), 姐 (jiě), and 好 (hǎo) is woman + child. 木 is tree: 林 (lín) forest has two trees and 森 (sēn) has three. 日 (sun) + 月 (moon) make 明 (míng), bright. 钅 means metal: 钱 (qián) is money."
+     },
+     {
+      "h": "Writing rules",
+      "b": "Write strokes from top to bottom and from left to right. Mainland China uses simplified characters, for example 马 instead of 馬 and 学 instead of 學. Count strokes: 一 has 1, 人 has 2, 大 has 3 and 水 has 4."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which character contains the water radical 氵?",
+      "o": [
+       "吃 (chī)",
+       "你 (nǐ)",
+       "河 (hé)",
+       "妈 (mā)"
+      ],
+      "a": 2,
+      "why": "河 means river and has 氵."
+     },
+     {
+      "t": "mc",
+      "q": "Which radical is in both 吃 and 喝?",
+      "o": [
+       "口",
+       "氵",
+       "女",
+       "木"
+      ],
+      "a": 0,
+      "why": "口 is mouth, which fits eating and drinking."
+     },
+     {
+      "t": "mc",
+      "q": "Which two parts make 明 (míng, bright)?",
+      "o": [
+       "木 and 木",
+       "女 and 子",
+       "山 and 水",
+       "日 and 月 (sun and moon)"
+      ],
+      "a": 3,
+      "why": "The sun and the moon together mean bright."
+     },
+     {
+      "t": "mc",
+      "q": "What is the general stroke order rule?",
+      "o": [
+       "Bottom to top",
+       "Top to bottom, left to right",
+       "Right to left",
+       "Inside to outside"
+      ],
+      "a": 1,
+      "why": "Most characters follow top-to-bottom, left-to-right."
+     },
+     {
+      "t": "tf",
+      "q": "Mainland China uses simplified characters such as 马 instead of 馬.",
+      "a": true,
+      "why": "Simplified characters have fewer strokes."
+     },
+     {
+      "t": "match",
+      "q": "Match each radical to its meaning",
+      "pairs": [
+       [
+        "氵",
+        "Water"
+       ],
+       [
+        "亻",
+        "Person"
+       ],
+       [
+        "女",
+        "Woman"
+       ],
+       [
+        "木",
+        "Tree"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these characters from fewest to most strokes",
+      "items": [
+       [
+        "一 (1)",
+        1
+       ],
+       [
+        "人 (2)",
+        2
+       ],
+       [
+        "大 (3)",
+        3
+       ],
+       [
+        "水 (4)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the character made from 日 + 月 that means 'bright'.",
+      "a": [
+       "明",
+       "ming"
+      ],
+      "hint": "Sun and moon together.",
+      "why": "明 means bright."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of the radical 口.",
+      "a": [
+       "mouth"
+      ],
+      "hint": "It appears in 吃 and 喝.",
+      "why": "口 means mouth."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the character for 'forest' (two 木 side by side).",
+      "a": [
+       "林",
+       "lin"
+      ],
+      "hint": "Two trees.",
+      "why": "林 means forest."
+     }
+    ]
+   }
+  ]
+ }
+}
