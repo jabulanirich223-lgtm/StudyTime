@@ -1,17 +1,19 @@
 import { useEffect, useRef } from 'react';
-import { SUBJECTS, SUBJECT_META } from './data';
+import { SUBJECTS } from './data';
+import { courseIcon, levelName, trackOf } from './data/catalog';
+import { CoursePicker } from './components/CoursePicker';
 import { useGame, levelOf, xpAt, TIERS, tierIdx, today } from './lib/store';
 import { useUI, type View } from './lib/ui';
 import { startReview } from './lib/launch';
 import { Tock } from './components/Tock';
-import { Svg, SVG, NAV_ICON, iconUrl } from './components/Icons';
+import { Svg, SVG, NAV_ICON, CourseIcon } from './components/Icons';
 import { Learn } from './views/Learn';
 import { APView, CramView, LeagueView, ShopView, ReviewView, ProfileView } from './views/Other';
 import { Lesson } from './views/Lesson';
 import { Flashcards } from './views/Flashcards';
 import { Onboarding } from './views/Onboarding';
 
-const NAV: [View, string][] = [['learn', 'Learn'], ['ap', 'AP Prep'], ['cram', 'Cram'], ['league', 'Leagues'], ['shop', 'Shop'], ['review', 'Review'], ['profile', 'Profile']];
+const NAV: [View, string][] = [['learn', 'Learn'], ['ap', 'Test Prep'], ['cram', 'Cram'], ['league', 'Leagues'], ['shop', 'Shop'], ['review', 'Review'], ['profile', 'Profile']];
 
 function Side() {
   const ui = useUI();
@@ -37,8 +39,8 @@ function TopBar() {
   useEffect(() => { last.current = g.gems; });
   return (
     <div className="topbar">
-      <button className="subject-pick" onClick={() => ui.go('profile')} aria-label="Change subject">
-        <img src={iconUrl(SUBJECT_META[g.subject].icon)} alt="" /><span><small>Subject</small>{s.name}</span>
+      <button className="subject-pick" onClick={() => ui.go('courses')} aria-label="Change course">
+        <CourseIcon icon={courseIcon(g.subject)} size={34} /><span><small>{trackOf(g.subject)?.name || 'Course'} · change</small>{levelName(g.subject) && levelName(g.subject) !== 'Full course' && !s.name.includes(levelName(g.subject)) ? `${s.name} · ${levelName(g.subject)}` : s.name}</span>
       </button>
       <div className="pills">
         <span className="pill fire" title="Day streak"><Svg html={g.lastDay === today() ? SVG.fire : SVG.fireGrey} />{g.streak}</span>
@@ -108,7 +110,7 @@ export default function App() {
     <>
       <div className="app">
         <Side />
-        <main className="main"><div className="main-in">
+        <main className="main"><div className={`main-in ${ui.view === 'courses' ? 'wide' : ''}`}>
           <TopBar />
           {ui.view === 'learn' && <Learn />}
           {ui.view === 'ap' && <APView />}
@@ -117,6 +119,7 @@ export default function App() {
           {ui.view === 'shop' && <ShopView />}
           {ui.view === 'review' && <ReviewView />}
           {ui.view === 'profile' && <ProfileView />}
+          {ui.view === 'courses' && <><h1 className="view-h">What do you want to learn?</h1><p className="muted">Pick a subject, then a level. Your progress in every course is kept.</p><div style={{ marginTop: 16 }}><CoursePicker current={g.subject} onPick={(id) => { g.set({ subject: id }); ui.go('learn'); }} /></div></>}
         </div></main>
         <Rail />
       </div>

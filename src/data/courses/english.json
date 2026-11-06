@@ -1,0 +1,4772 @@
+{
+ "ja-1": {
+  "name": "Japanese · Beginner",
+  "units": [
+   {
+    "title": "Greetings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Everyday greetings",
+      "b": "こんにちは (konnichiwa) means hello. おはよう (ohayou) is good morning, and こんばんは (konbanwa) is good evening. Use them at different times of the day."
+     },
+     {
+      "h": "Thanks and sorry",
+      "b": "ありがとう (arigatou) means thank you. すみません (sumimasen) means excuse me or sorry. さようなら (sayounara) means goodbye."
+     },
+     {
+      "h": "Introducing yourself",
+      "b": "Say はじめまして (hajimemashite) when you meet someone. Then say わたしは ○○ です (watashi wa ○○ desu), which means I am ○○."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does こんにちは (konnichiwa) mean?",
+      "o": [
+       "Good night",
+       "Hello",
+       "Thank you",
+       "Goodbye"
+      ],
+      "a": 1,
+      "why": "こんにちは (konnichiwa) is the standard daytime hello."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'thank you' in Japanese?",
+      "o": [
+       "おはよう (ohayou)",
+       "さようなら (sayounara)",
+       "ありがとう (arigatou)",
+       "こんばんは (konbanwa)"
+      ],
+      "a": 2,
+      "why": "ありがとう (arigatou) means thank you."
+     },
+     {
+      "t": "mc",
+      "q": "Which greeting do you use in the morning?",
+      "o": [
+       "おはよう (ohayou)",
+       "こんばんは (konbanwa)",
+       "おやすみ (oyasumi)",
+       "さようなら (sayounara)"
+      ],
+      "a": 0,
+      "why": "おはよう (ohayou) means good morning."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am Ken' politely?",
+      "o": [
+       "ケン を たべます (Ken o tabemasu)",
+       "ケン が すき (Ken ga suki)",
+       "ケン に いきます (Ken ni ikimasu)",
+       "わたしは ケン です (watashi wa Ken desu)"
+      ],
+      "a": 3,
+      "why": "わたしは ○○ です (watashi wa ○○ desu) is the pattern for I am ○○."
+     },
+     {
+      "t": "tf",
+      "q": "さようなら (sayounara) means goodbye.",
+      "a": true,
+      "why": "さようなら (sayounara) is used to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each Japanese greeting to its meaning",
+      "pairs": [
+       [
+        "おはよう (ohayou)",
+        "Good morning"
+       ],
+       [
+        "こんばんは (konbanwa)",
+        "Good evening"
+       ],
+       [
+        "ありがとう (arigatou)",
+        "Thank you"
+       ],
+       [
+        "さようなら (sayounara)",
+        "Goodbye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these greetings in order from morning to night",
+      "items": [
+       [
+        "おはよう (ohayou)",
+        1
+       ],
+       [
+        "こんにちは (konnichiwa)",
+        2
+       ],
+       [
+        "こんばんは (konbanwa)",
+        3
+       ],
+       [
+        "おやすみ (oyasumi)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 5",
+      "b": "いち (ichi) is 1, に (ni) is 2, さん (san) is 3, よん (yon) is 4, and ご (go) is 5. In writing they look like 一, 二, 三."
+     },
+     {
+      "h": "Numbers 6 to 10",
+      "b": "ろく (roku) is 6, なな (nana) is 7, はち (hachi) is 8, きゅう (kyuu) is 9, and じゅう (juu) is 10."
+     },
+     {
+      "h": "Family words",
+      "b": "おかあさん (okaasan) is mother and おとうさん (otousan) is father. いもうと (imouto) is younger sister. かぞく (kazoku) means family."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number is さん (san)?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "さん (san) is 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'five' in Japanese?",
+      "o": [
+       "ご (go)",
+       "ろく (roku)",
+       "はち (hachi)",
+       "に (ni)"
+      ],
+      "a": 0,
+      "why": "ご (go) is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does おかあさん (okaasan) mean?",
+      "o": [
+       "Father",
+       "Sister",
+       "Grandfather",
+       "Mother"
+      ],
+      "a": 3,
+      "why": "おかあさん (okaasan) means mother."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'father' politely?",
+      "o": [
+       "おかあさん (okaasan)",
+       "おとうさん (otousan)",
+       "いもうと (imouto)",
+       "かぞく (kazoku)"
+      ],
+      "a": 1,
+      "why": "おとうさん (otousan) means father."
+     },
+     {
+      "t": "tf",
+      "q": "はち (hachi) means seven.",
+      "a": false,
+      "why": "はち (hachi) means eight. Seven is なな (nana)."
+     },
+     {
+      "t": "match",
+      "q": "Match each number word to its number",
+      "pairs": [
+       [
+        "に (ni)",
+        "2"
+       ],
+       [
+        "ご (go)",
+        "5"
+       ],
+       [
+        "きゅう (kyuu)",
+        "9"
+       ],
+       [
+        "じゅう (juu)",
+        "10"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "いち (ichi)",
+        1
+       ],
+       [
+        "さん (san)",
+        2
+       ],
+       [
+        "ろく (roku)",
+        3
+       ],
+       [
+        "きゅう (kyuu)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Food words",
+      "b": "ごはん (gohan) is rice or a meal. さかな (sakana) is fish and にく (niku) is meat. りんご (ringo) is apple and パン (pan) is bread."
+     },
+     {
+      "h": "Drinks and verbs",
+      "b": "みず (mizu) is water and おちゃ (ocha) is tea. たべます (tabemasu) means eat and のみます (nomimasu) means drink."
+     },
+     {
+      "h": "Likes and requests",
+      "b": "おいしい (oishii) means delicious. すき (suki) means like. ください (kudasai) means please give me."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does みず (mizu) mean?",
+      "o": [
+       "Tea",
+       "Rice",
+       "Fish",
+       "Water"
+      ],
+      "a": 3,
+      "why": "みず (mizu) means water."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I drink tea'?",
+      "o": [
+       "おちゃを たべます (ocha o tabemasu)",
+       "おちゃを のみます (ocha o nomimasu)",
+       "みずを たべます (mizu o tabemasu)",
+       "ごはんを のみます (gohan o nomimasu)"
+      ],
+      "a": 1,
+      "why": "のみます (nomimasu) is the verb for drinking, and おちゃ (ocha) is tea."
+     },
+     {
+      "t": "mc",
+      "q": "What does おいしい (oishii) mean?",
+      "o": [
+       "Delicious",
+       "Cold",
+       "Hungry",
+       "Big"
+      ],
+      "a": 0,
+      "why": "おいしい (oishii) means delicious."
+     },
+     {
+      "t": "mc",
+      "q": "Which food is りんご (ringo)?",
+      "o": [
+       "Bread",
+       "Fish",
+       "Apple",
+       "Meat"
+      ],
+      "a": 2,
+      "why": "りんご (ringo) means apple."
+     },
+     {
+      "t": "tf",
+      "q": "パン (pan) means bread.",
+      "a": true,
+      "why": "パン (pan) is bread, borrowed from Portuguese."
+     },
+     {
+      "t": "match",
+      "q": "Match each food word to its meaning",
+      "pairs": [
+       [
+        "さかな (sakana)",
+        "Fish"
+       ],
+       [
+        "にく (niku)",
+        "Meat"
+       ],
+       [
+        "ごはん (gohan)",
+        "Rice or meal"
+       ],
+       [
+        "おちゃ (ocha)",
+        "Tea"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat fish every day",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "まいにち (mainichi)",
+        2
+       ],
+       [
+        "さかなを (sakana o)",
+        3
+       ],
+       [
+        "たべます (tabemasu)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "です and questions",
+      "b": "です (desu) is like am, is, or are. Add か (ka) at the end to make a question. がっこうですか (gakkou desu ka) means Is it school?"
+     },
+     {
+      "h": "Polite verbs",
+      "b": "Polite verbs end in ます (masu). いきます (ikimasu) means go, きます (kimasu) means come, and みます (mimasu) means see or watch."
+     },
+     {
+      "h": "Negatives and existing",
+      "b": "Change ます (masu) to ません (masen) for no. たべません (tabemasen) means do not eat. Use います (imasu) for living things and あります (arimasu) for objects."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does か (ka) at the end of a sentence do?",
+      "o": [
+       "Makes it a question",
+       "Makes it past tense",
+       "Makes it negative",
+       "Means thank you"
+      ],
+      "a": 0,
+      "why": "か (ka) turns a sentence into a question."
+     },
+     {
+      "t": "mc",
+      "q": "What does いきます (ikimasu) mean?",
+      "o": [
+       "Eat",
+       "Come",
+       "Go",
+       "Sleep"
+      ],
+      "a": 2,
+      "why": "いきます (ikimasu) means go."
+     },
+     {
+      "t": "mc",
+      "q": "What is the negative of たべます (tabemasu)?",
+      "o": [
+       "たべました (tabemashita)",
+       "たべません (tabemasen)",
+       "たべますか (tabemasu ka)",
+       "たべて (tabete)"
+      ],
+      "a": 1,
+      "why": "Replace ます (masu) with ません (masen) to make a verb negative."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'There is a cat'?",
+      "o": [
+       "ねこが あります (neko ga arimasu)",
+       "ねこを たべます (neko o tabemasu)",
+       "ねこが いきます (neko ga ikimasu)",
+       "ねこが います (neko ga imasu)"
+      ],
+      "a": 3,
+      "why": "Animals are living things, so they use います (imasu)."
+     },
+     {
+      "t": "tf",
+      "q": "がっこう (gakkou) means school.",
+      "a": true,
+      "why": "がっこう (gakkou) is the word for school."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "いきます (ikimasu)",
+        "Go"
+       ],
+       [
+        "みます (mimasu)",
+        "See or watch"
+       ],
+       [
+        "のみます (nomimasu)",
+        "Drink"
+       ],
+       [
+        "きます (kimasu)",
+        "Come"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I go to school every day",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "まいにち (mainichi)",
+        2
+       ],
+       [
+        "がっこうに (gakkou ni)",
+        3
+       ],
+       [
+        "いきます (ikimasu)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ja-2": {
+  "name": "Japanese · Intermediate",
+  "units": [
+   {
+    "title": "Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Polite past",
+      "b": "Change ます (masu) to ました (mashita) for the past. たべます (tabemasu) becomes たべました (tabemashita), which means ate."
+     },
+     {
+      "h": "Past negative",
+      "b": "Use ませんでした (masen deshita) for did not. いきませんでした (ikimasen deshita) means did not go. The past of です (desu) is でした (deshita)."
+     },
+     {
+      "h": "Time words",
+      "b": "きのう (kinou) means yesterday. けさ (kesa) means this morning. These words often come near the start of the sentence."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does たべました (tabemashita) mean?",
+      "o": [
+       "Will eat",
+       "Do not eat",
+       "Ate",
+       "Want to eat"
+      ],
+      "a": 2,
+      "why": "ました (mashita) shows past tense, so it means ate."
+     },
+     {
+      "t": "mc",
+      "q": "What does きのう (kinou) mean?",
+      "o": [
+       "Yesterday",
+       "Tomorrow",
+       "Today",
+       "Next week"
+      ],
+      "a": 0,
+      "why": "きのう (kinou) means yesterday."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not go'?",
+      "o": [
+       "いきます (ikimasu)",
+       "いきました (ikimashita)",
+       "いきません (ikimasen)",
+       "いきませんでした (ikimasen deshita)"
+      ],
+      "a": 3,
+      "why": "ませんでした (masen deshita) is the polite past negative."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past of です (desu)?",
+      "o": [
+       "でした (deshita)",
+       "ません (masen)",
+       "ました (mashita)",
+       "ですか (desu ka)"
+      ],
+      "a": 0,
+      "why": "でした (deshita) is the past form of です (desu)."
+     },
+     {
+      "t": "tf",
+      "q": "ませんでした (masen deshita) is the polite past negative ending.",
+      "a": true,
+      "why": "It means did not, for example たべませんでした (tabemasen deshita) means did not eat."
+     },
+     {
+      "t": "match",
+      "q": "Match each present verb to its past form",
+      "pairs": [
+       [
+        "たべます (tabemasu)",
+        "たべました (tabemashita)"
+       ],
+       [
+        "いきます (ikimasu)",
+        "いきました (ikimashita)"
+       ],
+       [
+        "のみます (nomimasu)",
+        "のみました (nomimashita)"
+       ],
+       [
+        "みます (mimasu)",
+        "みました (mimashita)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I watched a movie yesterday",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "きのう (kinou)",
+        2
+       ],
+       [
+        "えいがを (eiga o)",
+        3
+       ],
+       [
+        "みました (mimashita)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Asking where",
+      "b": "どこ (doko) means where. えきは どこですか (eki wa doko desu ka) means Where is the station? The word えき (eki) means station."
+     },
+     {
+      "h": "Directions",
+      "b": "みぎ (migi) is right and ひだり (hidari) is left. まっすぐ (massugu) is straight. まがります (magarimasu) means turn."
+     },
+     {
+      "h": "Places and distance",
+      "b": "びょういん (byouin) is hospital and ぎんこう (ginkou) is bank. ちかい (chikai) means near and とおい (tooi) means far."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does えきは どこですか (eki wa doko desu ka) mean?",
+      "o": [
+       "Is this a station?",
+       "Where is the station?",
+       "I like the station",
+       "The station is big"
+      ],
+      "a": 1,
+      "why": "どこ (doko) means where, and えき (eki) means station."
+     },
+     {
+      "t": "mc",
+      "q": "What does みぎ (migi) mean?",
+      "o": [
+       "Left",
+       "Straight",
+       "Back",
+       "Right"
+      ],
+      "a": 3,
+      "why": "みぎ (migi) means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does まっすぐ (massugu) mean?",
+      "o": [
+       "Straight ahead",
+       "Turn",
+       "Far",
+       "Stop"
+      ],
+      "a": 0,
+      "why": "まっすぐ (massugu) means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'Please turn left'?",
+      "o": [
+       "みぎに まがってください (migi ni magatte kudasai)",
+       "まっすぐ たべてください (massugu tabete kudasai)",
+       "ひだりに まがってください (hidari ni magatte kudasai)",
+       "ひだりは どこですか (hidari wa doko desu ka)"
+      ],
+      "a": 2,
+      "why": "ひだり (hidari) is left, and まがってください (magatte kudasai) means please turn."
+     },
+     {
+      "t": "tf",
+      "q": "とおい (tooi) means near.",
+      "a": false,
+      "why": "とおい (tooi) means far. Near is ちかい (chikai)."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "えき (eki)",
+        "Station"
+       ],
+       [
+        "びょういん (byouin)",
+        "Hospital"
+       ],
+       [
+        "ぎんこう (ginkou)",
+        "Bank"
+       ],
+       [
+        "がっこう (gakkou)",
+        "School"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, where is the bank?",
+      "items": [
+       [
+        "すみません (sumimasen)",
+        1
+       ],
+       [
+        "ぎんこうは (ginkou wa)",
+        2
+       ],
+       [
+        "どこ (doko)",
+        3
+       ],
+       [
+        "ですか (desu ka)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Transport",
+      "b": "でんしゃ (densha) is train and ひこうき (hikouki) is airplane. きっぷ (kippu) is ticket. りょこう (ryokou) means trip."
+     },
+     {
+      "h": "Prices",
+      "b": "いくらですか (ikura desu ka) means How much is it? たかい (takai) means expensive or high. やすい (yasui) means cheap."
+     },
+     {
+      "h": "Wanting things",
+      "b": "Use ○○が ほしいです (○○ ga hoshii desu) for I want ○○. きっぷが ほしいです (kippu ga hoshii desu) means I want a ticket."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does いくらですか (ikura desu ka) mean?",
+      "o": [
+       "Where is it?",
+       "How much is it?",
+       "What is it?",
+       "Who is it?"
+      ],
+      "a": 1,
+      "why": "いくら (ikura) means how much."
+     },
+     {
+      "t": "mc",
+      "q": "What does でんしゃ (densha) mean?",
+      "o": [
+       "Airplane",
+       "Hotel",
+       "Bus",
+       "Train"
+      ],
+      "a": 3,
+      "why": "でんしゃ (densha) means train."
+     },
+     {
+      "t": "mc",
+      "q": "What does たかい (takai) mean when talking about a price?",
+      "o": [
+       "Expensive",
+       "Cheap",
+       "Free",
+       "Small"
+      ],
+      "a": 0,
+      "why": "たかい (takai) means high or expensive."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want a ticket'?",
+      "o": [
+       "きっぷを みます (kippu o mimasu)",
+       "きっぷは どこですか (kippu wa doko desu ka)",
+       "きっぷが たかい (kippu ga takai)",
+       "きっぷが ほしいです (kippu ga hoshii desu)"
+      ],
+      "a": 3,
+      "why": "ほしいです (hoshii desu) means want."
+     },
+     {
+      "t": "tf",
+      "q": "やすい (yasui) means expensive.",
+      "a": false,
+      "why": "やすい (yasui) means cheap."
+     },
+     {
+      "t": "match",
+      "q": "Match each travel word to its meaning",
+      "pairs": [
+       [
+        "ひこうき (hikouki)",
+        "Airplane"
+       ],
+       [
+        "ホテル (hoteru)",
+        "Hotel"
+       ],
+       [
+        "きっぷ (kippu)",
+        "Ticket"
+       ],
+       [
+        "りょこう (ryokou)",
+        "Trip"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: How much is this ticket?",
+      "items": [
+       [
+        "この (kono)",
+        1
+       ],
+       [
+        "きっぷは (kippu wa)",
+        2
+       ],
+       [
+        "いくら (ikura)",
+        3
+       ],
+       [
+        "ですか (desu ka)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Reasons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Describing things",
+      "b": "おもしろい (omoshiroi) means interesting or fun. つまらない (tsumaranai) means boring. かんたん (kantan) means easy and むずかしい (muzukashii) means difficult."
+     },
+     {
+      "h": "Giving an opinion",
+      "b": "Add と おもいます (to omoimasu) to say I think. おもしろいと おもいます (omoshiroi to omoimasu) means I think it is fun."
+     },
+     {
+      "h": "Reasons and contrast",
+      "b": "どうして (doushite) means why. から (kara) means because and goes after the reason. けど (kedo) means but."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I think it is fun'?",
+      "o": [
+       "おもしろいと おもいます (omoshiroi to omoimasu)",
+       "おもしろいを たべます (omoshiroi o tabemasu)",
+       "つまらないですか (tsumaranai desu ka)",
+       "おもしろいに いきます (omoshiroi ni ikimasu)"
+      ],
+      "a": 0,
+      "why": "と おもいます (to omoimasu) means I think."
+     },
+     {
+      "t": "mc",
+      "q": "What does むずかしい (muzukashii) mean?",
+      "o": [
+       "Easy",
+       "Boring",
+       "Difficult",
+       "Cheap"
+      ],
+      "a": 2,
+      "why": "むずかしい (muzukashii) means difficult."
+     },
+     {
+      "t": "mc",
+      "q": "What does どうして (doushite) mean?",
+      "o": [
+       "Where",
+       "When",
+       "Who",
+       "Why"
+      ],
+      "a": 3,
+      "why": "どうして (doushite) means why."
+     },
+     {
+      "t": "mc",
+      "q": "What does から (kara) mean after a reason?",
+      "o": [
+       "But",
+       "Because",
+       "Also",
+       "Maybe"
+      ],
+      "a": 1,
+      "why": "から (kara) after a clause means because."
+     },
+     {
+      "t": "tf",
+      "q": "きらい (kirai) means like.",
+      "a": false,
+      "why": "きらい (kirai) means dislike. Like is すき (suki)."
+     },
+     {
+      "t": "match",
+      "q": "Match each describing word to its meaning",
+      "pairs": [
+       [
+        "おもしろい (omoshiroi)",
+        "Interesting"
+       ],
+       [
+        "つまらない (tsumaranai)",
+        "Boring"
+       ],
+       [
+        "かんたん (kantan)",
+        "Easy"
+       ],
+       [
+        "むずかしい (muzukashii)",
+        "Difficult"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I think Japanese is interesting",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "にほんごは (nihongo wa)",
+        2
+       ],
+       [
+        "おもしろいと (omoshiroi to)",
+        3
+       ],
+       [
+        "おもいます (omoimasu)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "geography": {
+  "name": "World Geography",
+  "units": [
+   {
+    "title": "Maps and Earth Basics",
+    "period": "Map Skills",
+    "learn": [
+     {
+      "h": "Latitude and longitude",
+      "b": "Latitude lines run east-west and measure distance north or south of the equator. Longitude lines run north-south and measure distance east or west of the prime meridian, which passes through Greenwich, England."
+     },
+     {
+      "h": "Hemispheres and continents",
+      "b": "The equator splits Earth into Northern and Southern Hemispheres. There are seven continents: Africa, Antarctica, Asia, Australia, Europe, North America, and South America."
+     },
+     {
+      "h": "Reading a map",
+      "b": "A legend explains the symbols on a map. A scale shows how map distance matches real distance. The Pacific is the largest ocean."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which lines measure distance north or south of the equator?",
+      "o": [
+       "Longitude",
+       "Latitude",
+       "Meridians",
+       "Time zones"
+      ],
+      "a": 1,
+      "why": "Latitude measures north-south position."
+     },
+     {
+      "t": "mc",
+      "q": "The prime meridian passes through which place?",
+      "o": [
+       "Paris",
+       "Cairo",
+       "Greenwich, England",
+       "Rome"
+      ],
+      "a": 2,
+      "why": "Greenwich is at 0 degrees longitude."
+     },
+     {
+      "t": "mc",
+      "q": "How many continents are there?",
+      "o": [
+       "Five",
+       "Six",
+       "Eight",
+       "Seven"
+      ],
+      "a": 3,
+      "why": "The common model counts seven continents."
+     },
+     {
+      "t": "mc",
+      "q": "What does the equator divide Earth into?",
+      "o": [
+       "Northern and Southern Hemispheres",
+       "Eastern and Western Hemispheres",
+       "Land and water",
+       "Tropics and poles"
+      ],
+      "a": 0,
+      "why": "The equator is 0 degrees latitude."
+     },
+     {
+      "t": "tf",
+      "q": "The Pacific Ocean is the largest ocean on Earth.",
+      "a": true,
+      "why": "It covers about one third of Earth's surface."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Latitude",
+        "Distance north or south of equator"
+       ],
+       [
+        "Longitude",
+        "Distance east or west of prime meridian"
+       ],
+       [
+        "Scale",
+        "Map distance versus real distance"
+       ],
+       [
+        "Legend",
+        "Key to map symbols"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these oceans from largest to smallest",
+      "items": [
+       [
+        "Pacific",
+        1
+       ],
+       [
+        "Atlantic",
+        2
+       ],
+       [
+        "Indian",
+        3
+       ],
+       [
+        "Arctic",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Landforms and Climate",
+    "period": "Physical Geography",
+    "learn": [
+     {
+      "h": "Landforms",
+      "b": "A peninsula is land surrounded by water on three sides. A plateau is high, flat land. A delta forms where a river meets the sea. An archipelago is a group of islands. Mount Everest is the highest mountain above sea level."
+     },
+     {
+      "h": "Climate and weather",
+      "b": "Weather is what the air is like today. Climate is the usual weather pattern over many years. Places near the equator are usually warm, and places near the poles are cold."
+     },
+     {
+      "h": "Biomes and Earth's layers",
+      "b": "A biome is a large natural region, such as rainforest, desert, or tundra. Tundra has permanently frozen ground. Earth has four layers: crust, mantle, outer core, and inner core."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the highest mountain above sea level?",
+      "o": [
+       "K2",
+       "Mount Everest",
+       "Denali",
+       "Kilimanjaro"
+      ],
+      "a": 1,
+      "why": "Everest is about 8,849 meters high."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the largest hot desert in the world?",
+      "o": [
+       "Gobi",
+       "Kalahari",
+       "Sahara",
+       "Atacama"
+      ],
+      "a": 2,
+      "why": "The Sahara in Africa is the largest hot desert."
+     },
+     {
+      "t": "mc",
+      "q": "What is climate?",
+      "o": [
+       "Today's temperature",
+       "A storm that lasts days",
+       "Tomorrow's forecast",
+       "The usual weather pattern over many years"
+      ],
+      "a": 3,
+      "why": "Climate is long-term; weather is short-term."
+     },
+     {
+      "t": "mc",
+      "q": "Which biome has permanently frozen ground?",
+      "o": [
+       "Tundra",
+       "Savanna",
+       "Rainforest",
+       "Desert"
+      ],
+      "a": 0,
+      "why": "Tundra has permafrost beneath the surface."
+     },
+     {
+      "t": "tf",
+      "q": "Tropical rainforests receive very little rainfall.",
+      "a": false,
+      "why": "Rainforests are among the wettest places on Earth."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Peninsula",
+        "Land with water on three sides"
+       ],
+       [
+        "Plateau",
+        "High flat land"
+       ],
+       [
+        "Delta",
+        "Land formed at a river's mouth"
+       ],
+       [
+        "Archipelago",
+        "Group of islands"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Earth's layers in order from the surface to the center",
+      "items": [
+       [
+        "Crust",
+        1
+       ],
+       [
+        "Mantle",
+        2
+       ],
+       [
+        "Outer core",
+        3
+       ],
+       [
+        "Inner core",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "People and Places",
+    "period": "Human Geography",
+    "learn": [
+     {
+      "h": "Population",
+      "b": "India and China have the largest populations in the world. Population density means how many people live in a certain area. Many people now live in cities, a trend called urbanization."
+     },
+     {
+      "h": "Migration",
+      "b": "Migration is moving from one place to live in another. Push factors, like war or famine, drive people away. Pull factors, like jobs or safety, attract them. An emigrant leaves a country and an immigrant enters one."
+     },
+     {
+      "h": "Culture",
+      "b": "Culture means the customs, beliefs, and language a group shares. Mandarin Chinese has the most native speakers of any language. A capital city is the seat of government and is not always the largest city."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which two countries have the largest populations?",
+      "o": [
+       "United States and Brazil",
+       "Russia and Japan",
+       "India and China",
+       "Nigeria and Indonesia"
+      ],
+      "a": 2,
+      "why": "India and China each have more than 1.4 billion people."
+     },
+     {
+      "t": "mc",
+      "q": "What is urbanization?",
+      "o": [
+       "Growth of farmland",
+       "Decline of trade",
+       "Moving to remote villages",
+       "Growth of cities as more people live there"
+      ],
+      "a": 3,
+      "why": "Urbanization means a rising share of people living in cities."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of a push factor in migration?",
+      "o": [
+       "A job offer abroad",
+       "War in the home country",
+       "Good schools overseas",
+       "Family living abroad"
+      ],
+      "a": 1,
+      "why": "Push factors drive people away from their home."
+     },
+     {
+      "t": "mc",
+      "q": "Which language has the most native speakers?",
+      "o": [
+       "Mandarin Chinese",
+       "English",
+       "Hindi",
+       "Arabic"
+      ],
+      "a": 0,
+      "why": "Mandarin has more native speakers than any other language."
+     },
+     {
+      "t": "tf",
+      "q": "A country's capital city is always its largest city.",
+      "a": false,
+      "why": "For example, Canberra is Australia's capital, but Sydney is larger."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Immigrant",
+        "Person moving into a country"
+       ],
+       [
+        "Emigrant",
+        "Person leaving a country"
+       ],
+       [
+        "Culture",
+        "Shared customs and beliefs"
+       ],
+       [
+        "Population density",
+        "People per area"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these settlements from smallest to largest",
+      "items": [
+       [
+        "Village",
+        1
+       ],
+       [
+        "Town",
+        2
+       ],
+       [
+        "City",
+        3
+       ],
+       [
+        "Megacity",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Regions of the World",
+    "period": "Countries and Capitals",
+    "learn": [
+     {
+      "h": "Big countries and rivers",
+      "b": "Russia is the largest country by area, followed by Canada and China. The Nile flows through Egypt and the Amazon flows through Brazil."
+     },
+     {
+      "h": "Capitals",
+      "b": "Every country has a capital. Tokyo is the capital of Japan, Cairo of Egypt, Ottawa of Canada, Nairobi of Kenya, and Brasilia of Brazil."
+     },
+     {
+      "h": "Continents and countries",
+      "b": "Africa has the most countries of any continent. Australia is both a country and a continent. Oslo is far north, Rome is in the middle latitudes, Nairobi is near the equator, and Cape Town is in the far south."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the capital of Brazil?",
+      "o": [
+       "Rio de Janeiro",
+       "Sao Paulo",
+       "Brasilia",
+       "Buenos Aires"
+      ],
+      "a": 2,
+      "why": "Brasilia became the capital in 1960."
+     },
+     {
+      "t": "mc",
+      "q": "Which continent has the most countries?",
+      "o": [
+       "Asia",
+       "Africa",
+       "Europe",
+       "South America"
+      ],
+      "a": 1,
+      "why": "Africa has 54 countries."
+     },
+     {
+      "t": "mc",
+      "q": "Which river flows through Egypt?",
+      "o": [
+       "Amazon",
+       "Danube",
+       "Ganges",
+       "Nile"
+      ],
+      "a": 3,
+      "why": "The Nile runs north through Egypt to the Mediterranean."
+     },
+     {
+      "t": "mc",
+      "q": "Which country is the largest by area?",
+      "o": [
+       "Russia",
+       "Canada",
+       "China",
+       "Brazil"
+      ],
+      "a": 0,
+      "why": "Russia covers more than 17 million square kilometers."
+     },
+     {
+      "t": "tf",
+      "q": "Australia is both a country and a continent.",
+      "a": true,
+      "why": "The country of Australia covers most of the Australian continent."
+     },
+     {
+      "t": "match",
+      "q": "Match each country to its capital",
+      "pairs": [
+       [
+        "Japan",
+        "Tokyo"
+       ],
+       [
+        "Egypt",
+        "Cairo"
+       ],
+       [
+        "Canada",
+        "Ottawa"
+       ],
+       [
+        "Kenya",
+        "Nairobi"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cities in order from north to south",
+      "items": [
+       [
+        "Oslo",
+        1
+       ],
+       [
+        "Rome",
+        2
+       ],
+       [
+        "Nairobi",
+        3
+       ],
+       [
+        "Cape Town",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "psych": {
+  "name": "Psychology",
+  "units": [
+   {
+    "title": "What Is Psychology?",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "The science of the mind",
+      "b": "Psychology is the scientific study of behavior and mental processes. Wilhelm Wundt opened the first psychology lab in 1879. Today psychologists study things like memory, emotions, and relationships."
+     },
+     {
+      "h": "Research methods",
+      "b": "Surveys ask many people questions. A case study looks deeply at one person. In an experiment, researchers assign people randomly to groups, so they can test cause and effect."
+     },
+     {
+      "h": "Correlation",
+      "b": "A correlation means two things are related. It does not prove that one causes the other. Only a well-designed experiment can show cause and effect."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Psychology is the scientific study of what?",
+      "o": [
+       "Behavior and mental processes",
+       "Only dreams",
+       "Only the brain's size",
+       "Human history"
+      ],
+      "a": 0,
+      "why": "That is the standard definition of psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Who opened the first psychology lab in 1879?",
+      "o": [
+       "Sigmund Freud",
+       "Wilhelm Wundt",
+       "B.F. Skinner",
+       "Carl Rogers"
+      ],
+      "a": 1,
+      "why": "Wundt's lab in Leipzig is seen as the start of modern psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Which method can show cause and effect?",
+      "o": [
+       "Survey",
+       "Case study",
+       "Experiment",
+       "Naturalistic observation"
+      ],
+      "a": 2,
+      "why": "Experiments control variables and use random assignment."
+     },
+     {
+      "t": "mc",
+      "q": "What does a correlation tell us?",
+      "o": [
+       "One thing causes the other",
+       "The two things are opposites",
+       "The data is false",
+       "Two things are related, but one may not cause the other"
+      ],
+      "a": 3,
+      "why": "Correlation does not prove causation."
+     },
+     {
+      "t": "tf",
+      "q": "A correlation proves that one variable causes the other.",
+      "a": false,
+      "why": "A third factor may explain the link."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Hypothesis",
+        "Testable prediction"
+       ],
+       [
+        "Variable",
+        "Factor that can change"
+       ],
+       [
+        "Survey",
+        "Questions given to many people"
+       ],
+       [
+        "Case study",
+        "In-depth look at one person"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the scientific method in order",
+      "items": [
+       [
+        "Ask a question",
+        1
+       ],
+       [
+        "Form a hypothesis",
+        2
+       ],
+       [
+        "Collect data",
+        3
+       ],
+       [
+        "Draw conclusions",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Brain and Behavior",
+    "period": "Biology and the Mind",
+    "learn": [
+     {
+      "h": "Neurons",
+      "b": "A neuron is a nerve cell. It receives signals through dendrites, passes them down the axon, and releases chemical messengers called neurotransmitters into the synapse, the small gap before the next neuron."
+     },
+     {
+      "h": "Brain parts",
+      "b": "The cerebellum controls balance and coordination. The hippocampus helps form new memories. The amygdala handles fear and emotion. The frontal lobe helps with planning and decisions."
+     },
+     {
+      "h": "Two sides",
+      "b": "The brain has two hemispheres. The left hemisphere mostly controls the right side of the body, and the right hemisphere mostly controls the left side."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which brain part helps control balance and coordination?",
+      "o": [
+       "Cerebrum",
+       "Cerebellum",
+       "Hippocampus",
+       "Amygdala"
+      ],
+      "a": 1,
+      "why": "The cerebellum fine-tunes movement and balance."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of the hippocampus?",
+      "o": [
+       "Controlling hunger",
+       "Seeing colors",
+       "Forming new memories",
+       "Breathing"
+      ],
+      "a": 2,
+      "why": "Damage to the hippocampus makes it hard to form new memories."
+     },
+     {
+      "t": "mc",
+      "q": "What are neurotransmitters?",
+      "o": [
+       "Bones in the skull",
+       "Brain cells that protect neurons",
+       "Electric wires",
+       "Chemical messengers between neurons"
+      ],
+      "a": 3,
+      "why": "They cross the synapse to carry signals."
+     },
+     {
+      "t": "mc",
+      "q": "Which brain part is most linked to fear and emotion?",
+      "o": [
+       "Amygdala",
+       "Cerebellum",
+       "Occipital lobe",
+       "Brain stem"
+      ],
+      "a": 0,
+      "why": "The amygdala processes fear and other strong emotions."
+     },
+     {
+      "t": "tf",
+      "q": "The right side of the brain mostly controls the left side of the body.",
+      "a": true,
+      "why": "Each hemisphere controls the opposite side of the body."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Neuron",
+        "Nerve cell"
+       ],
+       [
+        "Synapse",
+        "Gap between neurons"
+       ],
+       [
+        "Amygdala",
+        "Processes fear and emotion"
+       ],
+       [
+        "Frontal lobe",
+        "Planning and decisions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a nerve signal in order",
+      "items": [
+       [
+        "Dendrites receive the signal",
+        1
+       ],
+       [
+        "Cell body processes it",
+        2
+       ],
+       [
+        "Signal travels down the axon",
+        3
+       ],
+       [
+        "Axon terminals release neurotransmitters",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Learning and Memory",
+    "period": "How We Learn",
+    "learn": [
+     {
+      "h": "Conditioning",
+      "b": "Classical conditioning is learning by association, as in Pavlov's dogs, who learned that a bell meant food. Operant conditioning is learning from consequences. A reward after a behavior is positive reinforcement."
+     },
+     {
+      "h": "How memory works",
+      "b": "Memory has three jobs: encoding (getting information in), storage (keeping it), and retrieval (getting it out). Short-term memory holds about 7 items. Long-term memory is very large."
+     },
+     {
+      "h": "Better studying",
+      "b": "Spacing your study over several days helps you remember more than cramming. Testing yourself also strengthens memory."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Pavlov's dogs showed which kind of learning?",
+      "o": [
+       "Operant conditioning",
+       "Classical conditioning",
+       "Observational learning",
+       "Insight learning"
+      ],
+      "a": 1,
+      "why": "They learned to link a bell with food."
+     },
+     {
+      "t": "mc",
+      "q": "A dog gets a treat after it sits. This is an example of what?",
+      "o": [
+       "Punishment",
+       "Extinction",
+       "Positive reinforcement",
+       "Habituation"
+      ],
+      "a": 2,
+      "why": "Adding a reward makes the behavior more likely."
+     },
+     {
+      "t": "mc",
+      "q": "About how many items can short-term memory hold?",
+      "o": [
+       "About 7",
+       "About 70",
+       "An unlimited number",
+       "About 1"
+      ],
+      "a": 0,
+      "why": "Miller's research suggested 7, plus or minus 2."
+     },
+     {
+      "t": "mc",
+      "q": "Which study method best builds long-term memory?",
+      "o": [
+       "Cramming all night",
+       "Reading once",
+       "Only highlighting",
+       "Spacing study over several days"
+      ],
+      "a": 3,
+      "why": "Spaced practice beats cramming for long-term recall."
+     },
+     {
+      "t": "tf",
+      "q": "Long-term memory can only hold a small amount of information.",
+      "a": false,
+      "why": "Long-term memory has no known practical limit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Classical conditioning",
+        "Learning by association"
+       ],
+       [
+        "Operant conditioning",
+        "Learning from consequences"
+       ],
+       [
+        "Encoding",
+        "Getting information into memory"
+       ],
+       [
+        "Retrieval",
+        "Pulling a memory out"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the flow of information through memory in order",
+      "items": [
+       [
+        "Sensory memory",
+        1
+       ],
+       [
+        "Attention",
+        2
+       ],
+       [
+        "Short-term memory",
+        3
+       ],
+       [
+        "Long-term memory",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Development and Social Behavior",
+    "period": "People Over Time",
+    "learn": [
+     {
+      "h": "Stages of growth",
+      "b": "Jean Piaget described four stages of thinking in children: sensorimotor, preoperational, concrete operational, and formal operational. Erik Erikson said people face a social challenge at every stage of life."
+     },
+     {
+      "h": "Needs",
+      "b": "Abraham Maslow said people have a hierarchy of needs. Basic physiological needs like food and sleep come first, then safety, belonging, esteem, and finally self-actualization."
+     },
+     {
+      "h": "Groups",
+      "b": "Conformity means changing your behavior to match a group. Obedience means following an authority. The bystander effect means people are less likely to help when others are present."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which psychologist proposed four stages of cognitive development?",
+      "o": [
+       "Freud",
+       "Piaget",
+       "Pavlov",
+       "Skinner"
+      ],
+      "a": 1,
+      "why": "Piaget described how children's thinking changes with age."
+     },
+     {
+      "t": "mc",
+      "q": "What is at the base of Maslow's hierarchy of needs?",
+      "o": [
+       "Self-actualization",
+       "Esteem",
+       "Safety",
+       "Physiological needs"
+      ],
+      "a": 3,
+      "why": "Basic needs like food and water come first."
+     },
+     {
+      "t": "mc",
+      "q": "What does the bystander effect describe?",
+      "o": [
+       "People help more in large groups",
+       "People always help strangers",
+       "People are less likely to help when others are present",
+       "People only help family"
+      ],
+      "a": 2,
+      "why": "Responsibility is spread across onlookers."
+     },
+     {
+      "t": "mc",
+      "q": "What is conformity?",
+      "o": [
+       "Changing behavior to match a group",
+       "Obeying a direct order",
+       "Helping a stranger",
+       "Blaming others"
+      ],
+      "a": 0,
+      "why": "Asch's line experiments showed people conform to the group."
+     },
+     {
+      "t": "tf",
+      "q": "Erikson proposed that people face a social challenge at each stage of life.",
+      "a": true,
+      "why": "His theory has eight psychosocial stages."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stereotype",
+        "Fixed idea about a group"
+       ],
+       [
+        "Obedience",
+        "Following an authority's orders"
+       ],
+       [
+        "Attachment",
+        "Emotional bond to a caregiver"
+       ],
+       [
+        "Conformity",
+        "Matching a group's behavior"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Piaget's stages in order",
+      "items": [
+       [
+        "Sensorimotor",
+        1
+       ],
+       [
+        "Preoperational",
+        2
+       ],
+       [
+        "Concrete operational",
+        3
+       ],
+       [
+        "Formal operational",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-bio": {
+  "name": "AP Biology",
+  "units": [
+   {
+    "title": "Chemistry of Life and Cells",
+    "period": "Units 1-2",
+    "learn": [
+     {
+      "h": "Water and molecules",
+      "b": "Water is polar, so its molecules form hydrogen bonds. This makes water cohesive and a good solvent. Proteins are built from amino acids, and nucleic acids are built from nucleotides."
+     },
+     {
+      "h": "Cell structures",
+      "b": "Eukaryotic cells have a membrane-bound nucleus; prokaryotes do not. Mitochondria make ATP, ribosomes build proteins, and lysosomes break down waste. The cell membrane controls what enters and leaves."
+     },
+     {
+      "h": "Moving across membranes",
+      "b": "Osmosis is the passive movement of water across a membrane. Active transport uses ATP to move substances against their gradient. A secreted protein travels from the rough ER to the Golgi to a vesicle."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What type of bond holds water molecules together, giving water cohesion?",
+      "o": [
+       "Ionic bonds",
+       "Hydrogen bonds",
+       "Metallic bonds",
+       "Peptide bonds"
+      ],
+      "a": 1,
+      "why": "Polar water molecules attract each other through hydrogen bonds."
+     },
+     {
+      "t": "mc",
+      "q": "What is the monomer of a protein?",
+      "o": [
+       "Nucleotide",
+       "Monosaccharide",
+       "Amino acid",
+       "Fatty acid"
+      ],
+      "a": 2,
+      "why": "Proteins are chains of amino acids."
+     },
+     {
+      "t": "mc",
+      "q": "Which organelle produces most of a cell's ATP?",
+      "o": [
+       "Mitochondrion",
+       "Ribosome",
+       "Golgi apparatus",
+       "Lysosome"
+      ],
+      "a": 0,
+      "why": "Mitochondria carry out most cellular respiration."
+     },
+     {
+      "t": "mc",
+      "q": "What is the passive movement of water across a membrane called?",
+      "o": [
+       "Active transport",
+       "Endocytosis",
+       "Exocytosis",
+       "Osmosis"
+      ],
+      "a": 3,
+      "why": "Osmosis needs no ATP; water moves toward higher solute concentration."
+     },
+     {
+      "t": "tf",
+      "q": "Prokaryotic cells have a membrane-bound nucleus.",
+      "a": false,
+      "why": "Only eukaryotic cells have a membrane-bound nucleus."
+     },
+     {
+      "t": "match",
+      "q": "Match each organelle to its job",
+      "pairs": [
+       [
+        "Ribosome",
+        "Builds proteins"
+       ],
+       [
+        "Lysosome",
+        "Breaks down waste"
+       ],
+       [
+        "Cell membrane",
+        "Controls what enters and leaves"
+       ],
+       [
+        "Nucleus",
+        "Stores DNA"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a secreted protein in order",
+      "items": [
+       [
+        "Made on a ribosome at the rough ER",
+        1
+       ],
+       [
+        "Folded inside the rough ER",
+        2
+       ],
+       [
+        "Modified in the Golgi apparatus",
+        3
+       ],
+       [
+        "Sent out in a vesicle",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Cell Energy and Enzymes",
+    "period": "Units 3-4",
+    "learn": [
+     {
+      "h": "Enzymes",
+      "b": "Enzymes are proteins that speed up reactions by lowering the activation energy. They are not used up. Temperature and pH can change an enzyme's shape and its activity."
+     },
+     {
+      "h": "Photosynthesis",
+      "b": "Photosynthesis happens in chloroplasts. The light reactions in the thylakoid membranes make ATP and NADPH, and the Calvin cycle in the stroma uses them to build glucose from carbon dioxide."
+     },
+     {
+      "h": "Cellular respiration",
+      "b": "Cells break down glucose in four steps: glycolysis in the cytoplasm, pyruvate oxidation, the Krebs cycle, and the electron transport chain, which makes the most ATP. ATP is the cell's energy currency."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the reactants of photosynthesis?",
+      "o": [
+       "Oxygen and glucose",
+       "Nitrogen and water",
+       "Carbon dioxide and water",
+       "Lactic acid and ATP"
+      ],
+      "a": 2,
+      "why": "Plants combine CO2 and H2O using light energy."
+     },
+     {
+      "t": "mc",
+      "q": "Where do the light reactions occur in a chloroplast?",
+      "o": [
+       "Stroma",
+       "Thylakoid membranes",
+       "Matrix",
+       "Cytosol"
+      ],
+      "a": 1,
+      "why": "Light-capturing pigments sit in the thylakoid membranes."
+     },
+     {
+      "t": "mc",
+      "q": "Which stage of cellular respiration makes the most ATP?",
+      "o": [
+       "Glycolysis",
+       "Krebs cycle",
+       "Fermentation",
+       "Electron transport chain"
+      ],
+      "a": 3,
+      "why": "The electron transport chain drives ATP synthase."
+     },
+     {
+      "t": "mc",
+      "q": "How do enzymes speed up reactions?",
+      "o": [
+       "By lowering activation energy",
+       "By adding energy to products",
+       "By being used up",
+       "By raising temperature"
+      ],
+      "a": 0,
+      "why": "Enzymes provide an easier path for the reaction."
+     },
+     {
+      "t": "tf",
+      "q": "Glycolysis occurs in the cytoplasm and does not require oxygen.",
+      "a": true,
+      "why": "Glycolysis is the first, oxygen-independent step of respiration."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "ATP",
+        "Cell's energy currency"
+       ],
+       [
+        "Enzyme",
+        "Biological catalyst"
+       ],
+       [
+        "Chloroplast",
+        "Site of photosynthesis"
+       ],
+       [
+        "Receptor",
+        "Protein that binds a signal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the stages of cellular respiration in order",
+      "items": [
+       [
+        "Glycolysis",
+        1
+       ],
+       [
+        "Pyruvate oxidation",
+        2
+       ],
+       [
+        "Krebs cycle",
+        3
+       ],
+       [
+        "Electron transport chain",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Genetics",
+    "period": "Units 5-6",
+    "learn": [
+     {
+      "h": "Cell division",
+      "b": "Mitosis makes two genetically identical cells. Meiosis makes gametes with half the number of chromosomes, and crossing over and independent assortment create variety."
+     },
+     {
+      "h": "Inheritance",
+      "b": "An allele is a version of a gene. Genotype is the genetic makeup and phenotype is the observable trait. A cross of Aa x Aa gives a 3:1 phenotype ratio when one allele is completely dominant."
+     },
+     {
+      "h": "From DNA to protein",
+      "b": "In DNA, A pairs with T and C pairs with G. Transcription copies DNA into mRNA. In translation, a ribosome reads mRNA codons (three bases) and tRNA brings the matching amino acids."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does mitosis produce?",
+      "o": [
+       "Four haploid cells",
+       "Two genetically identical cells",
+       "Two different haploid cells",
+       "One large cell"
+      ],
+      "a": 1,
+      "why": "Mitosis makes identical diploid daughter cells."
+     },
+     {
+      "t": "mc",
+      "q": "Compared with its parent cell, how many chromosomes does a gamete have?",
+      "o": [
+       "Double",
+       "One quarter",
+       "Half as many",
+       "The same number"
+      ],
+      "a": 2,
+      "why": "Meiosis halves the chromosome number."
+     },
+     {
+      "t": "mc",
+      "q": "What is the phenotype ratio of an Aa x Aa cross with complete dominance?",
+      "o": [
+       "1:1",
+       "1:2:1",
+       "9:3:3:1",
+       "3:1"
+      ],
+      "a": 3,
+      "why": "Three offspring show the dominant trait for each one that shows the recessive."
+     },
+     {
+      "t": "mc",
+      "q": "What does transcription produce?",
+      "o": [
+       "mRNA from a DNA template",
+       "Protein from mRNA",
+       "DNA from protein",
+       "tRNA from a ribosome"
+      ],
+      "a": 0,
+      "why": "RNA polymerase copies a DNA gene into mRNA."
+     },
+     {
+      "t": "tf",
+      "q": "In DNA, adenine pairs with cytosine.",
+      "a": false,
+      "why": "Adenine pairs with thymine; cytosine pairs with guanine."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Allele",
+        "Version of a gene"
+       ],
+       [
+        "Genotype",
+        "Genetic makeup"
+       ],
+       [
+        "Phenotype",
+        "Observable trait"
+       ],
+       [
+        "Codon",
+        "Three-base mRNA code"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of gene expression in order",
+      "items": [
+       [
+        "DNA is transcribed into mRNA",
+        1
+       ],
+       [
+        "mRNA moves to a ribosome",
+        2
+       ],
+       [
+        "tRNA brings amino acids matching codons",
+        3
+       ],
+       [
+        "A polypeptide chain forms",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Evolution and Ecology",
+    "period": "Units 7-8",
+    "learn": [
+     {
+      "h": "Natural selection",
+      "b": "Individuals vary, and some traits help them survive and reproduce more. Over generations, those traits become more common in the population. Mutations are the original source of new alleles."
+     },
+     {
+      "h": "Species",
+      "b": "Darwin and Wallace proposed natural selection. Speciation is the formation of new species, often after populations become isolated. A niche is an organism's role in its ecosystem."
+     },
+     {
+      "h": "Ecosystems",
+      "b": "Producers make their own food. Energy flows from producers to consumers, and only about 10% of energy passes to the next trophic level. A population is one species in an area; a community includes all species there."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does natural selection mean?",
+      "o": [
+       "Organisms choose their traits",
+       "Individuals with helpful traits reproduce more",
+       "Traits gained in life are passed on",
+       "All individuals survive equally"
+      ],
+      "a": 1,
+      "why": "Helpful heritable traits become more common."
+     },
+     {
+      "t": "mc",
+      "q": "Who proposed the theory of natural selection?",
+      "o": [
+       "Mendel",
+       "Lamarck",
+       "Darwin",
+       "Pasteur"
+      ],
+      "a": 2,
+      "why": "Charles Darwin published it in On the Origin of Species."
+     },
+     {
+      "t": "mc",
+      "q": "Which group makes its own food in an ecosystem?",
+      "o": [
+       "Producers",
+       "Consumers",
+       "Decomposers",
+       "Predators"
+      ],
+      "a": 0,
+      "why": "Producers use light or chemicals to make food."
+     },
+     {
+      "t": "mc",
+      "q": "About how much energy passes to the next trophic level?",
+      "o": [
+       "90%",
+       "50%",
+       "1%",
+       "10%"
+      ],
+      "a": 3,
+      "why": "Most energy is lost as heat at each step."
+     },
+     {
+      "t": "tf",
+      "q": "Mutations are the original source of new alleles.",
+      "a": true,
+      "why": "Mutations create new variation that selection can act on."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Population",
+        "One species in an area"
+       ],
+       [
+        "Community",
+        "All species in an area"
+       ],
+       [
+        "Niche",
+        "Organism's role in its ecosystem"
+       ],
+       [
+        "Speciation",
+        "Formation of new species"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this food chain in order, from producer to top consumer",
+      "items": [
+       [
+        "Grass",
+        1
+       ],
+       [
+        "Grasshopper",
+        2
+       ],
+       [
+        "Frog",
+        3
+       ],
+       [
+        "Snake",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sql": {
+  "name": "SQL",
+  "units": [
+   {
+    "title": "Reading Data",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Tables and SELECT",
+      "b": "A database stores data in tables made of rows and columns. `SELECT name FROM users;` reads the name column. `SELECT *` reads every column."
+     },
+     {
+      "h": "WHERE",
+      "b": "`WHERE` filters rows: `SELECT * FROM users WHERE age > 18;`. Text values use single quotes, like `'Ann'`."
+     },
+     {
+      "h": "DISTINCT and LIMIT",
+      "b": "`SELECT DISTINCT city` removes repeated values. `LIMIT 5` returns only the first 5 rows."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which clause names the table you read from?",
+      "o": [
+       "SELECT",
+       "FROM",
+       "WHERE",
+       "LIMIT"
+      ],
+      "a": 1,
+      "why": "FROM tells SQL which table to use."
+     },
+     {
+      "t": "mc",
+      "q": "What does SELECT * FROM users; return?",
+      "o": [
+       "Only the first row",
+       "All columns of all rows",
+       "Only the column names",
+       "The row count"
+      ],
+      "a": 1,
+      "why": "The star means every column."
+     },
+     {
+      "t": "mc",
+      "q": "Which query returns only users older than 18?",
+      "o": [
+       "SELECT * FROM users HAVING age > 18;",
+       "SELECT * FROM users WHERE age > 18;",
+       "SELECT age > 18 FROM users;",
+       "FROM users SELECT age > 18;"
+      ],
+      "a": 1,
+      "why": "WHERE filters rows before they are returned."
+     },
+     {
+      "t": "mc",
+      "q": "What does SELECT DISTINCT city FROM users do?",
+      "o": [
+       "Sorts the cities",
+       "Counts the cities",
+       "Returns each city only once",
+       "Deletes duplicates"
+      ],
+      "a": 2,
+      "why": "DISTINCT removes duplicate values from the result."
+     },
+     {
+      "t": "tf",
+      "q": "SQL keywords like SELECT and select work the same way.",
+      "a": true,
+      "why": "SQL keywords are not case-sensitive."
+     },
+     {
+      "t": "match",
+      "q": "Match each clause to its job",
+      "pairs": [
+       [
+        "SELECT",
+        "choose columns"
+       ],
+       [
+        "FROM",
+        "choose table"
+       ],
+       [
+        "WHERE",
+        "filter rows"
+       ],
+       [
+        "LIMIT",
+        "cap row count"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the parts of a basic query",
+      "items": [
+       [
+        "SELECT name",
+        1
+       ],
+       [
+        "FROM users",
+        2
+       ],
+       [
+        "WHERE age > 18",
+        3
+       ],
+       [
+        "LIMIT 10",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Sorting and Summarizing",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "ORDER BY",
+      "b": "`ORDER BY price` sorts from small to large (ASC is the default). `ORDER BY price DESC` sorts from large to small."
+     },
+     {
+      "h": "Aggregate functions",
+      "b": "`COUNT(*)` counts rows, `SUM` adds, `AVG` averages, `MIN` and `MAX` find extremes. The average of 2, 4, 6 is 4."
+     },
+     {
+      "h": "GROUP BY and HAVING",
+      "b": "`GROUP BY city` makes one result row per city. `HAVING` filters those groups after counting, while `WHERE` filters rows before."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A table has 5 rows. What does SELECT COUNT(*) FROM t; return?",
+      "o": [
+       "1",
+       "4",
+       "5",
+       "The column count"
+      ],
+      "a": 2,
+      "why": "COUNT(*) counts all rows."
+     },
+     {
+      "t": "mc",
+      "q": "What is AVG of the values 2, 4 and 6?",
+      "o": [
+       "3",
+       "4",
+       "6",
+       "12"
+      ],
+      "a": 1,
+      "why": "(2 + 4 + 6) / 3 = 4."
+     },
+     {
+      "t": "mc",
+      "q": "What is the default order of ORDER BY?",
+      "o": [
+       "Descending",
+       "Random",
+       "Ascending",
+       "By insertion time"
+      ],
+      "a": 2,
+      "why": "ASC is the default."
+     },
+     {
+      "t": "mc",
+      "q": "Which clause filters groups after GROUP BY?",
+      "o": [
+       "WHERE",
+       "HAVING",
+       "FROM",
+       "LIMIT"
+      ],
+      "a": 1,
+      "why": "HAVING filters aggregated groups."
+     },
+     {
+      "t": "tf",
+      "q": "ORDER BY price DESC puts the highest price first.",
+      "a": true,
+      "why": "DESC means descending order."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "COUNT",
+        "number of rows"
+       ],
+       [
+        "SUM",
+        "total of values"
+       ],
+       [
+        "MAX",
+        "largest value"
+       ],
+       [
+        "AVG",
+        "mean value"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the clauses in a grouped query",
+      "items": [
+       [
+        "SELECT city, COUNT(*)",
+        1
+       ],
+       [
+        "FROM users",
+        2
+       ],
+       [
+        "GROUP BY city",
+        3
+       ],
+       [
+        "ORDER BY COUNT(*) DESC",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Joins and Keys",
+    "period": "Relational",
+    "learn": [
+     {
+      "h": "Primary and foreign keys",
+      "b": "A primary key uniquely identifies each row. A foreign key in another table points to it, linking the tables."
+     },
+     {
+      "h": "INNER JOIN",
+      "b": "`INNER JOIN` returns only rows that match in both tables: `FROM orders JOIN users ON orders.user_id = users.id`."
+     },
+     {
+      "h": "LEFT JOIN",
+      "b": "`LEFT JOIN` keeps every row from the left table. If nothing matches on the right, those columns are NULL."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a primary key do?",
+      "o": [
+       "Encrypts a table",
+       "Uniquely identifies each row",
+       "Sorts the rows",
+       "Deletes duplicates"
+      ],
+      "a": 1,
+      "why": "Each primary key value is unique per row."
+     },
+     {
+      "t": "mc",
+      "q": "Which join keeps all rows from the left table even with no match?",
+      "o": [
+       "INNER JOIN",
+       "LEFT JOIN",
+       "CROSS only",
+       "MATCH JOIN"
+      ],
+      "a": 1,
+      "why": "LEFT JOIN keeps all left rows and fills missing right values with NULL."
+     },
+     {
+      "t": "mc",
+      "q": "Which join returns only rows that match in both tables?",
+      "o": [
+       "INNER JOIN",
+       "LEFT JOIN",
+       "OUTER ONLY",
+       "UNION"
+      ],
+      "a": 0,
+      "why": "INNER JOIN keeps matching rows only."
+     },
+     {
+      "t": "mc",
+      "q": "A foreign key in orders.user_id usually points to what?",
+      "o": [
+       "A column in users, often its id",
+       "The orders table itself",
+       "A text file",
+       "The database name"
+      ],
+      "a": 0,
+      "why": "A foreign key references a key in another table."
+     },
+     {
+      "t": "tf",
+      "q": "In a LEFT JOIN, unmatched right-side columns are returned as NULL.",
+      "a": true,
+      "why": "No matching row means no values, shown as NULL."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Primary key",
+        "unique row ID"
+       ],
+       [
+        "Foreign key",
+        "link to another table"
+       ],
+       [
+        "INNER JOIN",
+        "matching rows only"
+       ],
+       [
+        "LEFT JOIN",
+        "all left rows"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the parts of a join query",
+      "items": [
+       [
+        "SELECT columns",
+        1
+       ],
+       [
+        "FROM orders",
+        2
+       ],
+       [
+        "JOIN users",
+        3
+       ],
+       [
+        "ON orders.user_id = users.id",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Changing Data and Design",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "INSERT, UPDATE, DELETE",
+      "b": "`INSERT INTO t (a) VALUES (1)` adds a row. `UPDATE t SET a = 2 WHERE id = 1` changes rows. `DELETE FROM t WHERE id = 1` removes rows. Without WHERE, they affect every row!"
+     },
+     {
+      "h": "CREATE TABLE and indexes",
+      "b": "`CREATE TABLE` defines columns and types. An index makes searches on a column faster."
+     },
+     {
+      "h": "Transactions",
+      "b": "A transaction groups changes so they all succeed or all fail. `COMMIT` saves them and `ROLLBACK` undoes them."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does UPDATE users SET age = 20; do without a WHERE clause?",
+      "o": [
+       "Updates nothing",
+       "Updates every row",
+       "Updates the first row",
+       "Causes an error"
+      ],
+      "a": 1,
+      "why": "Without WHERE the change applies to all rows."
+     },
+     {
+      "t": "mc",
+      "q": "Which statement adds a new row?",
+      "o": [
+       "ADD ROW",
+       "INSERT INTO",
+       "NEW INTO",
+       "UPDATE INTO"
+      ],
+      "a": 1,
+      "why": "INSERT INTO adds rows."
+     },
+     {
+      "t": "mc",
+      "q": "What is an index for?",
+      "o": [
+       "Making searches faster",
+       "Encrypting data",
+       "Naming a table",
+       "Deleting rows"
+      ],
+      "a": 0,
+      "why": "Indexes speed up lookups on a column."
+     },
+     {
+      "t": "mc",
+      "q": "Which command undoes the changes of a transaction?",
+      "o": [
+       "COMMIT",
+       "ROLLBACK",
+       "REVERT ALL",
+       "DROP"
+      ],
+      "a": 1,
+      "why": "ROLLBACK cancels uncommitted changes."
+     },
+     {
+      "t": "tf",
+      "q": "DELETE FROM users; with no WHERE removes all rows from the table.",
+      "a": true,
+      "why": "No filter means every row is deleted."
+     },
+     {
+      "t": "match",
+      "q": "Match each statement to its job",
+      "pairs": [
+       [
+        "INSERT",
+        "add rows"
+       ],
+       [
+        "UPDATE",
+        "change rows"
+       ],
+       [
+        "DELETE",
+        "remove rows"
+       ],
+       [
+        "CREATE TABLE",
+        "define a new table"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of a safe transaction",
+      "items": [
+       [
+        "BEGIN",
+        1
+       ],
+       [
+        "Run the changes",
+        2
+       ],
+       [
+        "Check the result",
+        3
+       ],
+       [
+        "COMMIT",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "bash": {
+  "name": "Bash & Linux",
+  "units": [
+   {
+    "title": "Moving Around",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "The shell",
+      "b": "The terminal runs a shell, such as Bash. You type commands and press Enter. `pwd` shows where you are."
+     },
+     {
+      "h": "Look and move",
+      "b": "`ls` lists files and `ls -a` also shows hidden files that start with a dot. `cd folder` enters a folder and `cd ..` goes up one level."
+     },
+     {
+      "h": "Make folders",
+      "b": "`mkdir name` creates a folder. `~` means your home folder and `/` is the root of the whole system."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command shows your current directory?",
+      "o": [
+       "pwd",
+       "cwd",
+       "where",
+       "ls -d"
+      ],
+      "a": 0,
+      "why": "pwd means print working directory."
+     },
+     {
+      "t": "mc",
+      "q": "What does cd .. do?",
+      "o": [
+       "Goes to the home folder",
+       "Goes up one folder",
+       "Lists files",
+       "Deletes the folder"
+      ],
+      "a": 1,
+      "why": "Two dots mean the parent folder."
+     },
+     {
+      "t": "mc",
+      "q": "Which command lists hidden files too?",
+      "o": [
+       "ls -h",
+       "ls -a",
+       "ls -x",
+       "ls --all-files"
+      ],
+      "a": 1,
+      "why": "-a shows all entries, including those starting with a dot."
+     },
+     {
+      "t": "mc",
+      "q": "Which command creates a folder named docs?",
+      "o": [
+       "newdir docs",
+       "mkdir docs",
+       "touch docs/",
+       "md docs only"
+      ],
+      "a": 1,
+      "why": "mkdir makes directories."
+     },
+     {
+      "t": "tf",
+      "q": "In Linux, a file whose name starts with a dot is hidden by default in ls.",
+      "a": true,
+      "why": "Plain ls does not show dotfiles."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "pwd",
+        "show current folder"
+       ],
+       [
+        "ls",
+        "list files"
+       ],
+       [
+        "cd",
+        "change folder"
+       ],
+       [
+        "mkdir",
+        "make a folder"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to create and enter a folder",
+      "items": [
+       [
+        "pwd to see where you are",
+        1
+       ],
+       [
+        "mkdir project",
+        2
+       ],
+       [
+        "cd project",
+        3
+       ],
+       [
+        "ls to check it is empty",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Working with Files",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Create and read",
+      "b": "`touch a.txt` creates an empty file. `cat a.txt` prints it. `echo hi` prints text."
+     },
+     {
+      "h": "Copy, move, delete",
+      "b": "`cp a b` copies, `mv a b` moves or renames, and `rm a` deletes. There is no trash in the terminal, so be careful with rm."
+     },
+     {
+      "h": "Permissions and search",
+      "b": "`chmod +x file` makes a file executable. `grep word file` finds lines that contain a word."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command renames a.txt to b.txt?",
+      "o": [
+       "cp a.txt b.txt",
+       "mv a.txt b.txt",
+       "rn a.txt b.txt",
+       "rename-only a.txt"
+      ],
+      "a": 1,
+      "why": "mv moves a file, which renames it when the folder is the same."
+     },
+     {
+      "t": "mc",
+      "q": "Which command searches for the word hello inside notes.txt?",
+      "o": [
+       "find hello notes.txt",
+       "grep hello notes.txt",
+       "cat hello notes.txt",
+       "look hello notes.txt"
+      ],
+      "a": 1,
+      "why": "grep prints lines that match a pattern."
+     },
+     {
+      "t": "mc",
+      "q": "What does chmod +x script.sh do?",
+      "o": [
+       "Deletes the script",
+       "Makes it executable",
+       "Hides it",
+       "Copies it"
+      ],
+      "a": 1,
+      "why": "+x adds the execute permission."
+     },
+     {
+      "t": "mc",
+      "q": "Which command creates an empty file?",
+      "o": [
+       "touch",
+       "make",
+       "new",
+       "cat -e"
+      ],
+      "a": 0,
+      "why": "touch creates an empty file if it does not exist."
+     },
+     {
+      "t": "tf",
+      "q": "Files removed with rm go to a recycle bin and can be restored easily.",
+      "a": false,
+      "why": "rm deletes immediately; there is no trash."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "cp",
+        "copy"
+       ],
+       [
+        "mv",
+        "move or rename"
+       ],
+       [
+        "rm",
+        "delete"
+       ],
+       [
+        "cat",
+        "print file contents"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to back up then delete a file",
+      "items": [
+       [
+        "touch a.txt",
+        1
+       ],
+       [
+        "cp a.txt backup.txt",
+        2
+       ],
+       [
+        "ls to check both exist",
+        3
+       ],
+       [
+        "rm a.txt",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Pipes and Redirects",
+    "period": "Power tools",
+    "learn": [
+     {
+      "h": "Redirects",
+      "b": "`>` sends output to a file and replaces its contents. `>>` adds to the end of the file."
+     },
+     {
+      "h": "Pipes",
+      "b": "The pipe `|` sends the output of one command into the next. `ls | wc -l` counts how many files are listed."
+     },
+     {
+      "h": "Useful filters",
+      "b": "`sort` orders lines, `wc -l` counts lines, `head` shows the first lines, and `echo \"hi\" | wc -c` gives 3 because it counts h, i and the newline."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which symbol sends one command's output into another command?",
+      "o": [
+       ">",
+       "|",
+       "&",
+       ";"
+      ],
+      "a": 1,
+      "why": "The pipe connects output to input."
+     },
+     {
+      "t": "mc",
+      "q": "What does echo \"hi\" | wc -c print?",
+      "o": [
+       "2",
+       "3",
+       "1",
+       "hi"
+      ],
+      "a": 1,
+      "why": "echo adds a newline, so there are 3 bytes: h, i and newline."
+     },
+     {
+      "t": "mc",
+      "q": "What does echo a > f; echo b >> f; cat f show?",
+      "o": [
+       "Only a",
+       "Only b",
+       "a then b on two lines",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "> writes a, then >> appends b."
+     },
+     {
+      "t": "mc",
+      "q": "Which command counts lines of input?",
+      "o": [
+       "wc -l",
+       "count",
+       "lines",
+       "sort -n"
+      ],
+      "a": 0,
+      "why": "wc -l prints the number of lines."
+     },
+     {
+      "t": "tf",
+      "q": "The > redirect adds to the end of a file without removing what is already there.",
+      "a": false,
+      "why": "> overwrites; >> appends."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol or tool to its job",
+      "pairs": [
+       [
+        ">",
+        "overwrite a file"
+       ],
+       [
+        ">>",
+        "append to a file"
+       ],
+       [
+        "|",
+        "pipe output onward"
+       ],
+       [
+        "sort",
+        "order lines"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the stages of: cat names | sort | head -3",
+      "items": [
+       [
+        "cat prints the file",
+        1
+       ],
+       [
+        "sort orders the lines",
+        2
+       ],
+       [
+        "head takes the first 3",
+        3
+       ],
+       [
+        "Result shows in terminal",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Shell Scripting",
+    "period": "Automation",
+    "learn": [
+     {
+      "h": "Your first script",
+      "b": "A script starts with `#!/bin/bash`. Save it, run `chmod +x script.sh`, then run `./script.sh`."
+     },
+     {
+      "h": "Variables and math",
+      "b": "Set `x=4` with no spaces around =, and read it with `$x`. `echo $((2+3))` prints 5."
+     },
+     {
+      "h": "if, for and exit codes",
+      "b": "`if [ \"$x\" -gt 3 ]; then ... fi` makes decisions. `for f in *.txt; do ... done` loops. `$?` holds the last exit code, and 0 means success."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does echo $((2+3)) print?",
+      "o": [
+       "2+3",
+       "5",
+       "23",
+       "$((5))"
+      ],
+      "a": 1,
+      "why": "$(( )) does arithmetic."
+     },
+     {
+      "t": "mc",
+      "q": "After x=4, what does echo $x print?",
+      "o": [
+       "x",
+       "$x",
+       "4",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "$x expands to the value of x."
+     },
+     {
+      "t": "mc",
+      "q": "What does an exit code of 0 mean?",
+      "o": [
+       "Failure",
+       "Success",
+       "Timeout",
+       "Unknown command"
+      ],
+      "a": 1,
+      "why": "By convention 0 means the command succeeded."
+     },
+     {
+      "t": "mc",
+      "q": "What is the first line of a Bash script called, as in #!/bin/bash?",
+      "o": [
+       "Comment only",
+       "Shebang",
+       "Header guard",
+       "Import line"
+      ],
+      "a": 1,
+      "why": "The shebang tells the system which interpreter to use."
+     },
+     {
+      "t": "tf",
+      "q": "In Bash you should write variable assignments without spaces around =, like x=4.",
+      "a": true,
+      "why": "Spaces around = break the assignment."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "#!/bin/bash",
+        "choose the interpreter"
+       ],
+       [
+        "$?",
+        "last exit code"
+       ],
+       [
+        "fi",
+        "ends an if block"
+       ],
+       [
+        "done",
+        "ends a loop"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to run a new script",
+      "items": [
+       [
+        "Write the script with a shebang",
+        1
+       ],
+       [
+        "Save it as script.sh",
+        2
+       ],
+       [
+        "chmod +x script.sh",
+        3
+       ],
+       [
+        "./script.sh",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "git": {
+  "name": "Git & GitHub",
+  "units": [
+   {
+    "title": "Git Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "What is Git?",
+      "b": "Git is a tool that saves versions of your project. Each saved version is called a commit. It works on your own computer."
+     },
+     {
+      "h": "The basic cycle",
+      "b": "`git init` starts a repository. `git add file` stages a change. `git commit -m \"message\"` saves it. `git status` shows what is going on."
+     },
+     {
+      "h": "History",
+      "b": "`git log` lists past commits. `git diff` shows changes you have not staged yet."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command starts a new Git repository?",
+      "o": [
+       "git start",
+       "git init",
+       "git new",
+       "git create"
+      ],
+      "a": 1,
+      "why": "git init creates a new repository."
+     },
+     {
+      "t": "mc",
+      "q": "What does git add file.txt do?",
+      "o": [
+       "Saves a commit",
+       "Stages the file for the next commit",
+       "Uploads the file",
+       "Deletes the file"
+      ],
+      "a": 1,
+      "why": "Adding stages changes to be committed."
+     },
+     {
+      "t": "mc",
+      "q": "Which command shows the list of past commits?",
+      "o": [
+       "git history",
+       "git log",
+       "git list",
+       "git past"
+      ],
+      "a": 1,
+      "why": "git log prints the commit history."
+     },
+     {
+      "t": "mc",
+      "q": "Which command shows which files are changed or staged?",
+      "o": [
+       "git status",
+       "git info",
+       "git check",
+       "git show-all"
+      ],
+      "a": 0,
+      "why": "git status summarizes the working tree."
+     },
+     {
+      "t": "tf",
+      "q": "A commit in Git is a saved snapshot of your project.",
+      "a": true,
+      "why": "Commits record versions with a message."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "git init",
+        "start a repo"
+       ],
+       [
+        "git add",
+        "stage changes"
+       ],
+       [
+        "git commit",
+        "save a snapshot"
+       ],
+       [
+        "git log",
+        "view history"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the basic Git workflow",
+      "items": [
+       [
+        "git init",
+        1
+       ],
+       [
+        "Edit files",
+        2
+       ],
+       [
+        "git add .",
+        3
+       ],
+       [
+        "git commit -m \"msg\"",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Branches and Merging",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Branches",
+      "b": "A branch is a separate line of work. `git branch name` creates one and `git switch name` moves to it. `git switch -c name` does both."
+     },
+     {
+      "h": "Merging",
+      "b": "`git merge feature` brings the changes of the feature branch into the branch you are on. The main branch is often called main."
+     },
+     {
+      "h": "Conflicts",
+      "b": "If two branches change the same lines, Git asks you to fix a merge conflict by editing the file, then adding and committing."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command creates a branch and switches to it?",
+      "o": [
+       "git switch -c feature",
+       "git branch -d feature",
+       "git merge feature",
+       "git new feature"
+      ],
+      "a": 0,
+      "why": "switch -c creates and switches in one step."
+     },
+     {
+      "t": "mc",
+      "q": "You are on main and run git merge feature. What happens?",
+      "o": [
+       "main changes go into feature",
+       "feature changes come into main",
+       "Both branches are deleted",
+       "A new repo is created"
+      ],
+      "a": 1,
+      "why": "Merge brings the other branch into the current branch."
+     },
+     {
+      "t": "mc",
+      "q": "When does a merge conflict happen?",
+      "o": [
+       "When branches change the same lines",
+       "When you commit too often",
+       "When a file is empty",
+       "When you use git log"
+      ],
+      "a": 0,
+      "why": "Git cannot choose between competing edits to the same lines."
+     },
+     {
+      "t": "mc",
+      "q": "What is a branch in Git?",
+      "o": [
+       "A backup folder",
+       "A separate line of development",
+       "A remote server",
+       "A commit message"
+      ],
+      "a": 1,
+      "why": "Branches let you work in isolation."
+     },
+     {
+      "t": "tf",
+      "q": "After you resolve a merge conflict in a file, you must stage and commit the fix.",
+      "a": true,
+      "why": "The resolution is finished with git add and a commit."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "git branch",
+        "list or create branches"
+       ],
+       [
+        "git switch",
+        "change branch"
+       ],
+       [
+        "git merge",
+        "combine branches"
+       ],
+       [
+        "git status",
+        "see current state"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of a feature branch workflow",
+      "items": [
+       [
+        "Create the branch",
+        1
+       ],
+       [
+        "Commit your work",
+        2
+       ],
+       [
+        "Switch to main",
+        3
+       ],
+       [
+        "Merge the branch",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Remotes and GitHub",
+    "period": "Sharing code",
+    "learn": [
+     {
+      "h": "Remotes",
+      "b": "A remote is a copy of your repository on a server, like GitHub. The usual name is `origin`."
+     },
+     {
+      "h": "Clone, push, pull",
+      "b": "`git clone url` copies a repo. `git push` uploads your commits. `git pull` downloads and merges new commits. `git fetch` downloads without merging."
+     },
+     {
+      "h": "GitHub",
+      "b": "GitHub is a website that hosts Git repositories. Git is the tool; GitHub is a service that uses it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command copies a remote repository to your computer?",
+      "o": [
+       "git copy",
+       "git clone",
+       "git pull",
+       "git download"
+      ],
+      "a": 1,
+      "why": "git clone copies a whole repository."
+     },
+     {
+      "t": "mc",
+      "q": "Which command uploads your local commits to the remote?",
+      "o": [
+       "git push",
+       "git pull",
+       "git fetch",
+       "git send"
+      ],
+      "a": 0,
+      "why": "git push sends commits to the remote."
+     },
+     {
+      "t": "mc",
+      "q": "What is the usual default name of the main remote?",
+      "o": [
+       "server",
+       "origin",
+       "remote1",
+       "main"
+      ],
+      "a": 1,
+      "why": "origin is the conventional name."
+     },
+     {
+      "t": "mc",
+      "q": "How is git fetch different from git pull?",
+      "o": [
+       "Fetch downloads but does not merge",
+       "Fetch deletes commits",
+       "Fetch uploads",
+       "They are exactly the same"
+      ],
+      "a": 0,
+      "why": "pull is fetch plus a merge."
+     },
+     {
+      "t": "tf",
+      "q": "Git and GitHub are the same thing.",
+      "a": false,
+      "why": "Git is the version control tool; GitHub is a hosting service."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "origin",
+        "default remote name"
+       ],
+       [
+        "clone",
+        "copy a repo"
+       ],
+       [
+        "push",
+        "upload commits"
+       ],
+       [
+        "pull",
+        "download and merge"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order sharing a change to GitHub",
+      "items": [
+       [
+        "Edit files",
+        1
+       ],
+       [
+        "git add and git commit",
+        2
+       ],
+       [
+        "git push",
+        3
+       ],
+       [
+        "Change appears on GitHub",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Teamwork and Undoing",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Pull requests",
+      "b": "A pull request (PR) asks the team to review and merge your branch on GitHub. A fork is your own copy of someone else's repo."
+     },
+     {
+      "h": "Ignoring and undoing",
+      "b": "List files Git should skip in `.gitignore`, such as secrets. `git restore file` discards unstaged edits. `git revert` makes a new commit that undoes an old one."
+     },
+     {
+      "h": "Rebase and conflicts",
+      "b": "`git rebase main` replays your commits on top of main for a cleaner history. Do not rebase commits that others already use."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a pull request?",
+      "o": [
+       "A request to review and merge a branch",
+       "A command that downloads code",
+       "A type of commit",
+       "A bug report"
+      ],
+      "a": 0,
+      "why": "PRs let teammates review changes before merging."
+     },
+     {
+      "t": "mc",
+      "q": "Which file lists paths Git should not track?",
+      "o": [
+       ".gitignore",
+       ".gitskip",
+       "ignore.txt",
+       ".gitconfig"
+      ],
+      "a": 0,
+      "why": ".gitignore tells Git which files to ignore."
+     },
+     {
+      "t": "mc",
+      "q": "What does git revert do?",
+      "o": [
+       "Deletes all history",
+       "Creates a new commit that undoes an earlier one",
+       "Switches branches",
+       "Clones a repo"
+      ],
+      "a": 1,
+      "why": "Revert safely undoes a commit by adding a new one."
+     },
+     {
+      "t": "mc",
+      "q": "What is a fork on GitHub?",
+      "o": [
+       "A merge conflict",
+       "Your own copy of another repo",
+       "A commit message",
+       "A deleted branch"
+      ],
+      "a": 1,
+      "why": "Forking copies a repo to your account."
+     },
+     {
+      "t": "tf",
+      "q": "You should avoid rebasing commits that other people have already pulled.",
+      "a": true,
+      "why": "Rebase rewrites history, which confuses collaborators."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "PR",
+        "review request"
+       ],
+       [
+        "fork",
+        "your copy of a repo"
+       ],
+       [
+        ".gitignore",
+        "files to skip"
+       ],
+       [
+        "rebase",
+        "replay commits"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a typical open source contribution",
+      "items": [
+       [
+        "Fork the repo",
+        1
+       ],
+       [
+        "Make a branch and commit",
+        2
+       ],
+       [
+        "Push the branch",
+        3
+       ],
+       [
+        "Open a pull request",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g11": {
+  "name": "Grade 11 English",
+  "units": [
+   {
+    "title": "Early American Literature",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Puritans and Colonial writing",
+      "b": "Early American writers like William Bradford and Anne Bradstreet wrote plain, religious works. Jonathan Edwards preached the famous sermon 'Sinners in the Hands of an Angry God'. Themes were faith, duty, and God's judgment."
+     },
+     {
+      "h": "Rationalism and the Revolution",
+      "b": "The Enlightenment valued reason. Benjamin Franklin wrote practical essays and an autobiography. Thomas Paine's Common Sense and Thomas Jefferson's Declaration of Independence used clear arguments to support revolution."
+     },
+     {
+      "h": "Romanticism and Transcendentalism",
+      "b": "Romantic writers like Poe and Hawthorne explored emotion and the dark side of human nature. Transcendentalists such as Emerson and Thoreau valued nature, individualism, and intuition."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote 'Common Sense' to urge American independence?",
+      "o": [
+       "Benjamin Franklin",
+       "Thomas Paine",
+       "Jonathan Edwards",
+       "Ralph Waldo Emerson"
+      ],
+      "a": 1,
+      "why": "Thomas Paine's 1776 pamphlet argued for independence."
+     },
+     {
+      "t": "mc",
+      "q": "Which writer wrote Walden, about living simply in nature?",
+      "o": [
+       "Henry David Thoreau",
+       "Edgar Allan Poe",
+       "Nathaniel Hawthorne",
+       "Walt Whitman"
+      ],
+      "a": 0,
+      "why": "Thoreau lived near Walden Pond and wrote about it."
+     },
+     {
+      "t": "mc",
+      "q": "Which idea is central to Transcendentalism?",
+      "o": [
+       "Blind obedience",
+       "Individualism and nature",
+       "Industrial progress",
+       "Strict social rules"
+      ],
+      "a": 1,
+      "why": "Transcendentalists trusted the individual and valued nature."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote 'The Raven'?",
+      "o": [
+       "Herman Melville",
+       "Mark Twain",
+       "Washington Irving",
+       "Edgar Allan Poe"
+      ],
+      "a": 3,
+      "why": "Poe published 'The Raven' in 1845."
+     },
+     {
+      "t": "tf",
+      "q": "The Declaration of Independence was mainly written by Thomas Jefferson.",
+      "a": true,
+      "why": "Jefferson was its principal author."
+     },
+     {
+      "t": "match",
+      "q": "Match each author to a work",
+      "pairs": [
+       [
+        "Nathaniel Hawthorne",
+        "The Scarlet Letter"
+       ],
+       [
+        "Herman Melville",
+        "Moby-Dick"
+       ],
+       [
+        "Ralph Waldo Emerson",
+        "Self-Reliance"
+       ],
+       [
+        "Jonathan Edwards",
+        "Sinners in the Hands"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these literary movements in order of time",
+      "items": [
+       [
+        "Puritan writing",
+        1
+       ],
+       [
+        "Revolutionary writing",
+        2
+       ],
+       [
+        "Romanticism",
+        3
+       ],
+       [
+        "Realism",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Realism, Modernism and the 20th Century",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Realism and Naturalism",
+      "b": "After the Civil War, writers like Mark Twain and Stephen Crane showed ordinary life and regional speech. Realism describes life as it is. Naturalism adds that nature and environment control people's fate."
+     },
+     {
+      "h": "The Modernists",
+      "b": "After World War I, writers like F. Scott Fitzgerald, Ernest Hemingway, and T. S. Eliot broke old forms. Fitzgerald's The Great Gatsby critiques the American Dream. Hemingway used short, plain sentences."
+     },
+     {
+      "h": "Harlem Renaissance and beyond",
+      "b": "In the 1920s, Langston Hughes, Zora Neale Hurston, and Claude McKay celebrated Black culture and voices. Later writers like Arthur Miller and Harper Lee explored justice and society."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote The Great Gatsby?",
+      "o": [
+       "Ernest Hemingway",
+       "F. Scott Fitzgerald",
+       "John Steinbeck",
+       "William Faulkner"
+      ],
+      "a": 1,
+      "why": "F. Scott Fitzgerald published it in 1925."
+     },
+     {
+      "t": "mc",
+      "q": "Which author is known for short, plain sentences?",
+      "o": [
+       "Henry James",
+       "Edith Wharton",
+       "Ernest Hemingway",
+       "Herman Melville"
+      ],
+      "a": 2,
+      "why": "Hemingway's sparse style is famous."
+     },
+     {
+      "t": "mc",
+      "q": "Which writer was a leader of the Harlem Renaissance?",
+      "o": [
+       "Langston Hughes",
+       "Jack London",
+       "Robert Frost",
+       "Mark Twain"
+      ],
+      "a": 0,
+      "why": "Hughes was a central poet of the movement."
+     },
+     {
+      "t": "mc",
+      "q": "Realism in literature focuses on",
+      "o": [
+       "Fantasy worlds",
+       "Ordinary life as it is",
+       "Ancient myths",
+       "Pure rhyme"
+      ],
+      "a": 1,
+      "why": "Realists wrote about believable people and settings."
+     },
+     {
+      "t": "tf",
+      "q": "Mark Twain wrote The Adventures of Huckleberry Finn.",
+      "a": true,
+      "why": "Twain published it in 1884."
+     },
+     {
+      "t": "match",
+      "q": "Match each work to its author",
+      "pairs": [
+       [
+        "The Crucible",
+        "Arthur Miller"
+       ],
+       [
+        "The Grapes of Wrath",
+        "John Steinbeck"
+       ],
+       [
+        "Their Eyes Were Watching God",
+        "Zora Neale Hurston"
+       ],
+       [
+        "The Red Badge of Courage",
+        "Stephen Crane"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order of publication",
+      "items": [
+       [
+        "Huckleberry Finn (1884)",
+        1
+       ],
+       [
+        "The Great Gatsby (1925)",
+        2
+       ],
+       [
+        "The Crucible (1953)",
+        3
+       ],
+       [
+        "To Kill a Mockingbird (1960)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Rhetoric and Language Analysis",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Analyzing an argument",
+      "b": "Find the claim, the reasons, and the evidence. Then judge the author's choices: how appeals, tone, and organization help persuade the audience."
+     },
+     {
+      "h": "Logical fallacies",
+      "b": "A straw man misstates the other side to attack it. An ad hominem attacks the person, not the argument. A false dilemma offers only two choices when more exist. A slippery slope claims one step will lead to disaster."
+     },
+     {
+      "h": "Style and tone",
+      "b": "Diction, syntax, and imagery create tone. Short sentences can feel urgent, long ones thoughtful. Notice shifts in tone, which often signal a change in the author's argument."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Attacking a speaker's character instead of their argument is called",
+      "o": [
+       "Ad hominem",
+       "Straw man",
+       "Slippery slope",
+       "Bandwagon"
+      ],
+      "a": 0,
+      "why": "Ad hominem means against the person."
+     },
+     {
+      "t": "mc",
+      "q": "Presenting only two options when more exist is a",
+      "o": [
+       "Hasty generalization",
+       "Straw man",
+       "False dilemma",
+       "Red herring"
+      ],
+      "a": 2,
+      "why": "It falsely limits the choices."
+     },
+     {
+      "t": "mc",
+      "q": "Misrepresenting an opponent's view to attack it easily is a",
+      "o": [
+       "Appeal to emotion",
+       "Straw man",
+       "Circular reasoning",
+       "Testimonial"
+      ],
+      "a": 1,
+      "why": "The weak 'straw' version is easy to knock down."
+     },
+     {
+      "t": "mc",
+      "q": "A series of short, sharp sentences most likely creates a feeling of",
+      "o": [
+       "Calm",
+       "Humor",
+       "Urgency",
+       "Confusion"
+      ],
+      "a": 2,
+      "why": "Short sentences move fast and feel tense."
+     },
+     {
+      "t": "tf",
+      "q": "A shift in tone can signal a change in the author's argument.",
+      "a": true,
+      "why": "Tone changes often mark a turning point."
+     },
+     {
+      "t": "match",
+      "q": "Match each fallacy to its description",
+      "pairs": [
+       [
+        "ad hominem",
+        "attacks the person"
+       ],
+       [
+        "slippery slope",
+        "predicts a chain of disasters"
+       ],
+       [
+        "bandwagon",
+        "everyone does it"
+       ],
+       [
+        "straw man",
+        "misstates the opposing view"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for analyzing an argument in order",
+      "items": [
+       [
+        "Find the claim",
+        1
+       ],
+       [
+        "Note the evidence",
+        2
+       ],
+       [
+        "Identify appeals and devices",
+        3
+       ],
+       [
+        "Evaluate effectiveness",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "College-Ready Writing",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Synthesis",
+      "b": "Synthesis means combining ideas from several sources to support your own argument. Do not just summarize each source one by one. Use them together to build a point."
+     },
+     {
+      "h": "Personal and college essays",
+      "b": "A college essay tells a true story about you, shows who you are, and reflects on what you learned. Use specific details and a natural voice. Avoid cliches."
+     },
+     {
+      "h": "Revising for style",
+      "b": "Cut wordiness, use strong verbs, and vary sentence length. Replace 'is' and 'are' with active verbs where you can. Read your work aloud to hear awkward spots."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does synthesis mean in writing?",
+      "o": [
+       "Copying a source",
+       "Combining ideas from several sources",
+       "Fixing spelling",
+       "Writing a title"
+      ],
+      "a": 1,
+      "why": "Synthesis blends sources to support your argument."
+     },
+     {
+      "t": "mc",
+      "q": "Which makes a college essay stronger?",
+      "o": [
+       "Specific personal details",
+       "Long vague statements",
+       "Cliches",
+       "Copied quotes"
+      ],
+      "a": 0,
+      "why": "Specific details show who you are."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses the stronger verb?",
+      "o": [
+       "The dog was running fast.",
+       "The dog is a fast runner.",
+       "The dog went fast.",
+       "The dog sprinted across the yard."
+      ],
+      "a": 3,
+      "why": "Sprinted is vivid and active."
+     },
+     {
+      "t": "mc",
+      "q": "A good way to catch awkward sentences is to",
+      "o": [
+       "Read aloud",
+       "Ignore them",
+       "Add more words",
+       "Use all caps"
+      ],
+      "a": 0,
+      "why": "Hearing your writing reveals clunky spots."
+     },
+     {
+      "t": "tf",
+      "q": "A synthesis essay should summarize each source separately without connecting them.",
+      "a": false,
+      "why": "Synthesis connects sources to build an argument."
+     },
+     {
+      "t": "match",
+      "q": "Match each tip to its goal",
+      "pairs": [
+       [
+        "cut wordiness",
+        "be concise"
+       ],
+       [
+        "use strong verbs",
+        "add energy"
+       ],
+       [
+        "vary sentences",
+        "improve rhythm"
+       ],
+       [
+        "cite sources",
+        "give credit"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing process in order",
+      "items": [
+       [
+        "Brainstorm",
+        1
+       ],
+       [
+        "Outline",
+        2
+       ],
+       [
+        "Draft",
+        3
+       ],
+       [
+        "Revise and proofread",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g12": {
+  "name": "Grade 12 English",
+  "units": [
+   {
+    "title": "British Literature to 1800",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Anglo-Saxon and Medieval",
+      "b": "Beowulf is an Old English epic poem about a hero fighting monsters. Geoffrey Chaucer's The Canterbury Tales (about 1400) tells stories of pilgrims traveling to Canterbury in Middle English."
+     },
+     {
+      "h": "Renaissance",
+      "b": "Shakespeare wrote plays like Hamlet and Macbeth and many sonnets. Writers like Christopher Marlowe and John Donne also thrived. English began to look more like the language we use today."
+     },
+     {
+      "h": "Epic and Enlightenment",
+      "b": "John Milton wrote the epic Paradise Lost. In the 1700s, Jonathan Swift wrote satires like Gulliver's Travels, and Alexander Pope used witty verse. Satire criticized society."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Beowulf is an example of what kind of work?",
+      "o": [
+       "Novel",
+       "Sonnet",
+       "Epic poem",
+       "Essay"
+      ],
+      "a": 2,
+      "why": "Beowulf is an Old English epic poem."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote The Canterbury Tales?",
+      "o": [
+       "John Milton",
+       "Geoffrey Chaucer",
+       "William Shakespeare",
+       "Jonathan Swift"
+      ],
+      "a": 1,
+      "why": "Chaucer wrote it around 1400."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote Paradise Lost?",
+      "o": [
+       "John Milton",
+       "John Donne",
+       "Alexander Pope",
+       "Ben Jonson"
+      ],
+      "a": 0,
+      "why": "Milton's epic retells the fall of Adam and Eve."
+     },
+     {
+      "t": "mc",
+      "q": "Gulliver's Travels is best known as a",
+      "o": [
+       "Sonnet sequence",
+       "Tragedy",
+       "Satire",
+       "Diary"
+      ],
+      "a": 2,
+      "why": "Swift used fantasy to mock human society."
+     },
+     {
+      "t": "tf",
+      "q": "Hamlet was written by William Shakespeare.",
+      "a": true,
+      "why": "It is one of his best-known tragedies."
+     },
+     {
+      "t": "match",
+      "q": "Match each author to a work",
+      "pairs": [
+       [
+        "Chaucer",
+        "The Canterbury Tales"
+       ],
+       [
+        "Shakespeare",
+        "Macbeth"
+       ],
+       [
+        "Milton",
+        "Paradise Lost"
+       ],
+       [
+        "Swift",
+        "Gulliver's Travels"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these works in order of time, earliest first",
+      "items": [
+       [
+        "Beowulf",
+        1
+       ],
+       [
+        "The Canterbury Tales",
+        2
+       ],
+       [
+        "Hamlet",
+        3
+       ],
+       [
+        "Gulliver's Travels",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "British Literature since 1800",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Romantics",
+      "b": "Romantic poets like Wordsworth, Coleridge, Keats, and Shelley valued emotion, imagination, and nature. Mary Shelley's Frankenstein (1818) is a Gothic Romantic novel about the dangers of unchecked science."
+     },
+     {
+      "h": "Victorian era",
+      "b": "Under Queen Victoria, Charles Dickens (Great Expectations) exposed poverty and injustice. The Brontë sisters wrote Jane Eyre and Wuthering Heights. Many novels were published in serial parts."
+     },
+     {
+      "h": "Modern and contemporary",
+      "b": "Modernists like Virginia Woolf used stream of consciousness to show a character's thoughts. George Orwell wrote 1984 about totalitarian control. Post-war writers explored identity, empire, and society."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote Frankenstein?",
+      "o": [
+       "Jane Austen",
+       "Charlotte Bronte",
+       "Virginia Woolf",
+       "Mary Shelley"
+      ],
+      "a": 3,
+      "why": "Mary Shelley published it in 1818."
+     },
+     {
+      "t": "mc",
+      "q": "Which author wrote Great Expectations?",
+      "o": [
+       "Charles Dickens",
+       "Thomas Hardy",
+       "George Eliot",
+       "Oscar Wilde"
+      ],
+      "a": 0,
+      "why": "Dickens published it in 1860-61."
+     },
+     {
+      "t": "mc",
+      "q": "Stream of consciousness is a technique used by",
+      "o": [
+       "Wordsworth",
+       "Chaucer",
+       "Virginia Woolf",
+       "Alexander Pope"
+      ],
+      "a": 2,
+      "why": "Woolf showed the flow of characters' thoughts."
+     },
+     {
+      "t": "mc",
+      "q": "Romantic poets mainly valued",
+      "o": [
+       "Strict reason",
+       "Emotion and nature",
+       "Factory work",
+       "Politics only"
+      ],
+      "a": 1,
+      "why": "Romanticism celebrated feeling and nature."
+     },
+     {
+      "t": "tf",
+      "q": "Wuthering Heights was written by Emily Bronte.",
+      "a": true,
+      "why": "Emily Bronte published it in 1847."
+     },
+     {
+      "t": "match",
+      "q": "Match each author to a work",
+      "pairs": [
+       [
+        "Dickens",
+        "Oliver Twist"
+       ],
+       [
+        "Emily Bronte",
+        "Wuthering Heights"
+       ],
+       [
+        "Orwell",
+        "1984"
+       ],
+       [
+        "Keats",
+        "Ode to a Nightingale"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these works in order of publication",
+      "items": [
+       [
+        "Frankenstein (1818)",
+        1
+       ],
+       [
+        "Jane Eyre (1847)",
+        2
+       ],
+       [
+        "Mrs Dalloway (1925)",
+        3
+       ],
+       [
+        "1984 (1949)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Critical Theory and Close Reading",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Literary lenses",
+      "b": "A critical lens is a way of reading a text. A historical lens looks at the time it was written. A feminist lens looks at gender roles. A psychological lens looks at the characters' minds and motives."
+     },
+     {
+      "h": "Close reading",
+      "b": "Close reading means reading slowly and noticing details: word choice, imagery, structure, and tone. Ask why the author made each choice and what effect it has."
+     },
+     {
+      "h": "Unreliable narrators and structure",
+      "b": "An unreliable narrator cannot be fully trusted, which makes readers question the story. Structure choices like flashbacks, frame stories, and nonlinear time shape meaning."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Reading a text by studying the era it was written in uses a",
+      "o": [
+       "Psychological lens",
+       "Feminist lens",
+       "Historical lens",
+       "Formal lens"
+      ],
+      "a": 2,
+      "why": "A historical lens focuses on the context of the time."
+     },
+     {
+      "t": "mc",
+      "q": "A narrator who cannot be fully trusted is",
+      "o": [
+       "Omniscient",
+       "Unreliable",
+       "Objective",
+       "Static"
+      ],
+      "a": 1,
+      "why": "Unreliable narrators distort or hide the truth."
+     },
+     {
+      "t": "mc",
+      "q": "Studying how gender roles shape a text uses a",
+      "o": [
+       "Feminist lens",
+       "Marxist lens",
+       "Historical lens",
+       "Formal lens"
+      ],
+      "a": 0,
+      "why": "A feminist lens examines gender."
+     },
+     {
+      "t": "mc",
+      "q": "What does close reading focus on?",
+      "o": [
+       "Skimming the plot",
+       "Counting pages",
+       "Reading the ending first",
+       "Careful attention to words and details"
+      ],
+      "a": 3,
+      "why": "Close reading analyzes the author's specific choices."
+     },
+     {
+      "t": "tf",
+      "q": "A frame story is a story told inside another story.",
+      "a": true,
+      "why": "The outer story frames the inner one."
+     },
+     {
+      "t": "match",
+      "q": "Match each lens to its focus",
+      "pairs": [
+       [
+        "historical",
+        "time and context"
+       ],
+       [
+        "feminist",
+        "gender roles"
+       ],
+       [
+        "psychological",
+        "minds and motives"
+       ],
+       [
+        "formal",
+        "text structure"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for a close reading in order",
+      "items": [
+       [
+        "Read the passage once",
+        1
+       ],
+       [
+        "Annotate key details",
+        2
+       ],
+       [
+        "Find patterns",
+        3
+       ],
+       [
+        "Interpret meaning",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Senior Writing and Communication",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Research papers",
+      "b": "A research paper asks a focused question, gathers credible sources, and builds an argument with evidence. Use a consistent citation style and a works cited page."
+     },
+     {
+      "h": "Professional writing",
+      "b": "Resumes list skills and experience briefly. Cover letters explain why you fit a job. Emails should have a clear subject, a polite tone, and be short and specific."
+     },
+     {
+      "h": "Speaking and presenting",
+      "b": "Good speakers know their audience, organize points clearly, make eye contact, and speak at a steady pace. Visuals should support, not replace, what you say."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A cover letter is mainly used to",
+      "o": [
+       "List every class taken",
+       "Explain why you fit a job",
+       "Replace a resume",
+       "Ask for a loan"
+      ],
+      "a": 1,
+      "why": "It connects your skills to the job."
+     },
+     {
+      "t": "mc",
+      "q": "A strong research paper begins with",
+      "o": [
+       "A focused research question",
+       "A long quotation",
+       "A bibliography only",
+       "A conclusion"
+      ],
+      "a": 0,
+      "why": "A focused question guides all the research."
+     },
+     {
+      "t": "mc",
+      "q": "Which is best for a professional email?",
+      "o": [
+       "No subject line",
+       "All capital letters",
+       "Slang and emojis",
+       "A clear subject and polite tone"
+      ],
+      "a": 3,
+      "why": "Clarity and politeness are professional."
+     },
+     {
+      "t": "mc",
+      "q": "Slides in a presentation should",
+      "o": [
+       "Contain your whole script",
+       "Support your spoken points",
+       "Be hard to read",
+       "Replace speaking"
+      ],
+      "a": 1,
+      "why": "Visuals should help the audience follow along."
+     },
+     {
+      "t": "tf",
+      "q": "A research paper should use credible sources and cite them.",
+      "a": true,
+      "why": "Credible, cited sources make an argument trustworthy."
+     },
+     {
+      "t": "match",
+      "q": "Match each document to its purpose",
+      "pairs": [
+       [
+        "resume",
+        "summarizes experience"
+       ],
+       [
+        "cover letter",
+        "pitches you for a job"
+       ],
+       [
+        "works cited",
+        "lists sources"
+       ],
+       [
+        "thesis",
+        "states main argument"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of writing a research paper in order",
+      "items": [
+       [
+        "Choose a question",
+        1
+       ],
+       [
+        "Gather sources",
+        2
+       ],
+       [
+        "Draft the paper",
+        3
+       ],
+       [
+        "Cite and proofread",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

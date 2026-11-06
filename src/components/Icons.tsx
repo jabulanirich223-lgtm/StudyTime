@@ -44,3 +44,32 @@ export const iconUrl = (name: string) => unitIcons[`../assets/icons/${name}.png`
 export function Svg({ html, className = '', size }: { html: string; className?: string; size?: number }) {
   return <span className={`svg ${className}`} style={size ? { width: size, height: size } : undefined} dangerouslySetInnerHTML={{ __html: html }} />;
 }
+
+/* Simple rounded flags for language tracks (drawn, not images). */
+const FLAG: Record<string, string> = {
+  es: '<rect width="60" height="44" rx="9" fill="#e53935"/><rect y="11" width="60" height="22" fill="#fbc02d"/>',
+  fr: '<rect width="60" height="44" rx="9" fill="#e53935"/><rect width="40" height="44" fill="#fff"/><path d="M9 0h11v44H9a9 9 0 0 1-9-9V9a9 9 0 0 1 9-9z" fill="#1e5bbf"/>',
+  de: '<rect width="60" height="44" rx="9" fill="#fbc02d"/><path d="M0 9a9 9 0 0 1 9-9h42a9 9 0 0 1 9 9v20H0z" fill="#e53935"/><path d="M0 9a9 9 0 0 1 9-9h42a9 9 0 0 1 9 9v6H0z" fill="#333"/>',
+  it: '<rect width="60" height="44" rx="9" fill="#e53935"/><rect width="40" height="44" fill="#fff"/><path d="M9 0h11v44H9a9 9 0 0 1-9-9V9a9 9 0 0 1 9-9z" fill="#2e9e4f"/>',
+  pt: '<rect width="60" height="44" rx="9" fill="#e53935"/><path d="M9 0h15v44H9a9 9 0 0 1-9-9V9a9 9 0 0 1 9-9z" fill="#2e7d32"/><circle cx="24" cy="22" r="8" fill="#fbc02d"/>',
+  ru: '<rect width="60" height="44" rx="9" fill="#e53935"/><path d="M0 9a9 9 0 0 1 9-9h42a9 9 0 0 1 9 9v20H0z" fill="#1e5bbf"/><path d="M0 9a9 9 0 0 1 9-9h42a9 9 0 0 1 9 9v6H0z" fill="#fff"/>',
+  ja: '<rect width="60" height="44" rx="9" fill="#fff" stroke="#e5e7eb" stroke-width="2"/><circle cx="30" cy="22" r="11" fill="#e53935"/>',
+  zh: '<rect width="60" height="44" rx="9" fill="#e53935"/><path d="M14 8l2.6 6.4 6.9.4-5.3 4.4 1.7 6.7L14 22.2l-5.9 3.7 1.7-6.7-5.3-4.4 6.9-.4z" fill="#fbc02d"/>',
+  ko: '<rect width="60" height="44" rx="9" fill="#fff" stroke="#e5e7eb" stroke-width="2"/><path d="M19 22a11 11 0 0 1 22 0z" fill="#e53935"/><path d="M19 22a11 11 0 0 0 22 0z" fill="#1e5bbf"/><path d="M19 22a5.5 5.5 0 0 0 11 0 5.5 5.5 0 0 1 11 0" fill="none"/>',
+  hi: '<rect width="60" height="44" rx="9" fill="#2e9e4f"/><path d="M0 9a9 9 0 0 1 9-9h42a9 9 0 0 1 9 9v20H0z" fill="#fff"/><path d="M0 9a9 9 0 0 1 9-9h42a9 9 0 0 1 9 9v6H0z" fill="#ff9933"/><circle cx="30" cy="22" r="5" fill="none" stroke="#1a237e" stroke-width="1.6"/>',
+};
+
+/** Icon for a course or track: ComfyUI PNG, a drawn flag, or a colored code tile. */
+export function CourseIcon({ icon, size = 48 }: { icon: string; size?: number }) {
+  if (icon.startsWith('flag:')) {
+    const f = FLAG[icon.slice(5)];
+    return <span className="svg" style={{ width: size, height: size }} dangerouslySetInnerHTML={{ __html: `<svg viewBox="-2 -10 64 64" aria-hidden="true"><rect x="0" y="6" width="60" height="44" rx="9" fill="rgba(0,0,0,.12)"/>${f}</svg>` }} />;
+  }
+  if (icon.startsWith('tile:')) {
+    const [, label, color] = icon.split(':');
+    const fs = label.length > 2 ? 17 : 22;
+    return <span className="svg" style={{ width: size, height: size }} dangerouslySetInnerHTML={{ __html: `<svg viewBox="0 0 56 56" aria-hidden="true"><rect x="2" y="6" width="52" height="48" rx="12" fill="rgba(0,0,0,.18)"/><rect x="2" y="2" width="52" height="48" rx="12" fill="${color}"/><text x="28" y="27" dominant-baseline="middle" text-anchor="middle" font-family="Fredoka, Nunito, sans-serif" font-weight="700" font-size="${fs}" fill="#fff">${label.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</text></svg>` }} />;
+  }
+  const url = iconUrl(icon);
+  return url ? <img src={url} alt="" style={{ width: size, height: size, objectFit: 'contain' }} /> : <span style={{ width: size, height: size }} />;
+}

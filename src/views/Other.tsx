@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
-import { SUBJECTS, SUBJECT_META, unitName } from '../data';
+import { SUBJECTS, unitName } from '../data';
+import { courseIcon } from '../data/catalog';
 import { useGame, TIERS, tierIdx, BADGES, levelOf } from '../lib/store';
 import { useUI } from '../lib/ui';
-import { startAPSim, startDrill, startUnit, startLightning, startDateDash, startReview } from '../lib/launch';
+import { startAPSim, startDrill, startUnit, startLightning, startDateDash, startReview, hasDates } from '../lib/launch';
 import { snd } from '../lib/sound';
 import { speak, enVoices, pickVoice, voiceScore, canSpeak } from '../lib/speech';
 import { Tock } from '../components/Tock';
-import { Svg, SVG, iconUrl } from '../components/Icons';
+import { Svg, SVG, CourseIcon } from '../components/Icons';
 import { CAST } from '../data/cast';
 import { Guidebook } from './Learn';
-import type { SubjectId } from '../lib/types';
 
 function Mode({ color, icon, title, text, tag, btn, onGo, children }: { color: string; icon: string; title: string; text: string; tag?: string; btn: string; onGo: () => void; children?: React.ReactNode }) {
   return (
@@ -28,11 +28,11 @@ export function APView() {
   const best = g.best.ap[g.subject];
   return (
     <>
-      <h1 className="view-h">AP Prep</h1>
-      <p className="muted">Practice the way the real {s.name} exam asks: a source first, then a question about it.</p>
+      <h1 className="view-h">Test Prep</h1>
+      <p className="muted">{s.apq.length ? `Practice the way the real ${s.name} exam asks: a source first, then a question about it.` : `Timed, exam-style practice for ${s.name}.`}</p>
       <div className="grid">
         <Mode color="#4f46e5" icon={SVG.target} title="Exam Sim" text="20 mixed multiple-choice questions, a 25-minute clock, no hints. Get a score estimate and a full review." tag={best ? `Best: ${best}` : undefined} btn="Start exam" onGo={startAPSim} />
-        <Mode color="#a855f7" icon={SVG.book} title="Source Drills" text="Stimulus questions with instant feedback and an explanation after each one." btn="Start drill" onGo={startDrill} />
+        {s.apq.length > 0 && <Mode color="#a855f7" icon={SVG.book} title="Source Drills" text="Stimulus questions with instant feedback and an explanation after each one." btn="Start drill" onGo={startDrill} />}
         <Mode color="#14b8a6" icon={SVG.star} title="Unit Focus" text="Pick one unit and practice every question from it, shuffled." btn="Practice unit" onGo={() => startUnit(unit)}>
           <select aria-label="Unit" value={unit} onChange={(e) => setUnit(Number(e.target.value))}>{s.units.map((u, i) => <option key={i} value={i}>{unitName(s, i)}: {u.title}</option>)}</select>
         </Mode>
@@ -51,7 +51,7 @@ export function CramView() {
       <p className="muted">Short, fast rounds for the night before a test. No hearts lost here.</p>
       <div className="grid">
         <Mode color="#f97316" icon={SVG.bolt} title="Lightning Round" text="60 seconds. Answer as many as you can from every unit." tag={`Best: ${g.best.lightning} correct`} btn="Go" onGo={startLightning} />
-        <Mode color="#ef4444" icon={SVG.cal} title="Date Dash" text="Pick the right year for 12 key events. Dates are the easiest points to lose." btn="Start" onGo={startDateDash} />
+        {hasDates() && <Mode color="#ef4444" icon={SVG.cal} title="Date Dash" text="Pick the right year for 12 key events. Dates are the easiest points to lose." btn="Start" onGo={startDateDash} />}
         <Mode color="#a855f7" icon={SVG.cards} title="Flashcards" text="Every key term and person in the course. Tap to flip, keep the ones you miss." btn="Open deck" onGo={() => ui.start({ kind: 'flash', title: 'Flashcards', items: [] })} />
         <Mode color="#14b8a6" icon={SVG.scroll} title="Cram Sheet" text="All the unit notes on one page for a fast read-through." btn="Read" onGo={() => ui.open(<CramSheet />)} />
       </div>
@@ -160,14 +160,8 @@ export function ProfileView() {
         <div className="tile" style={{ ['--c' as string]: '#22c55e', ['--cd' as string]: '#16a34a' }}><div className="t">Lessons</div><div className="v">{g.stats.lessons}</div></div>
       </div>
 
-      <h2 style={{ marginTop: 28, fontSize: 24 }}>Subjects</h2>
-      <div className="subj-grid" style={{ marginTop: 12 }}>
-        {(Object.keys(SUBJECTS) as SubjectId[]).map((k) => (
-          <button key={k} className="subj-card" style={g.subject === k ? { borderColor: '#a5b4fc', background: 'var(--brand-l)' } : undefined} onClick={() => { g.set({ subject: k }); ui.go('learn'); }}>
-            <img src={iconUrl(SUBJECT_META[k].icon)} alt="" /><b>{SUBJECTS[k].name}</b><span>{SUBJECT_META[k].blurb}</span>
-          </button>
-        ))}
-      </div>
+      <h2 style={{ marginTop: 28, fontSize: 24 }}>Course</h2>
+      <div className="row" style={{ marginTop: 10 }}><CourseIcon icon={courseIcon(g.subject)} size={48} /><b style={{ flex: 1 }}>{SUBJECTS[g.subject]?.name}</b><button className="btn" onClick={() => ui.go('courses')}>Change course</button></div>
 
       <h2 style={{ marginTop: 28, fontSize: 24 }}>Your study crew</h2>
       <div className="crew">{CAST.map((c) => <img key={c.id} src={c.img} alt={c.name} title={c.name} />)}</div>

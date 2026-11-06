@@ -101,6 +101,12 @@ export function tockSVG(m: Mood = 'idle') {
   </svg>`;
 }
 
+/* Tock's look comes from the Gemini character sheet; each mood is a cut-out PNG in src/assets/tock. */
+const TOCK_IMG = import.meta.glob('../assets/tock/*.png', { eager: true, import: 'default' }) as Record<string, string>;
+const tockUrl = (m: Mood) => TOCK_IMG[`../assets/tock/${m}.png`] || TOCK_IMG['../assets/tock/idle.png'];
+
 export function Tock({ mood = 'idle', size, className = '' }: { mood?: Mood; size?: number; className?: string }) {
-  return <span className={`tock-wrap ${className}`} style={size ? { width: size } : undefined} dangerouslySetInnerHTML={{ __html: tockSVG(mood) }} />;
+  const url = tockUrl(mood);
+  if (!url) return <span className={`tock-wrap ${className}`} style={size ? { width: size } : undefined} dangerouslySetInnerHTML={{ __html: tockSVG(mood) }} />;
+  return <span className={`tock-wrap ${className}`} style={size ? { width: size } : undefined}><img src={url} alt={`Tock, ${mood}`} draggable={false} /></span>;
 }

@@ -1,39 +1,31 @@
 import raw from './subjects.json';
-import type { Subject, SubjectId } from '../lib/types';
+import type { Subject } from '../lib/types';
+import { courseIcon, trackOf } from './catalog';
 
-export const SUBJECTS = raw as unknown as Record<SubjectId, Subject>;
+/** Every course file in ./courses is merged in automatically: { "<course id>": { name, units } } */
+const files = import.meta.glob('./courses/*.json', { eager: true, import: 'default' }) as Record<string, Record<string, Partial<Subject>>>;
 
-/** Look and icon for every unit, in course order. Icons are file names in src/assets/icons. */
-export const UNIT_STYLE: Record<SubjectId, { c: string; d: string; icon: string }[]> = {
-  world: [
-    { c: '#14b8a6', d: '#0f8f82', icon: 'globe' },
-    { c: '#f59e0b', d: '#c27c06', icon: 'caravan' },
-    { c: '#8b5cf6', d: '#6d3fd6', icon: 'palace' },
-    { c: '#3b82f6', d: '#2563c9', icon: 'ship' },
-    { c: '#ef4444', d: '#c42f2f', icon: 'flag' },
-    { c: '#84a33a', d: '#647e27', icon: 'factory' },
-    { c: '#64748b', d: '#475569', icon: 'helmet' },
-    { c: '#ec4899', d: '#c22d76', icon: 'rocket' },
-    { c: '#06b6d4', d: '#0891b2', icon: 'satellite' },
-    { c: '#d4a017', d: '#a67c0d', icon: 'pyramid' },
-    { c: '#c2410c', d: '#9a3409', icon: 'temple' },
-  ],
-  us: [
-    { c: '#3b82f6', d: '#2563c9', icon: 'ship' },
-    { c: '#f59e0b', d: '#c27c06', icon: 'house' },
-    { c: '#ef4444', d: '#c42f2f', icon: 'bell' },
-    { c: '#8b5cf6', d: '#6d3fd6', icon: 'scroll' },
-    { c: '#64748b', d: '#475569', icon: 'cannon' },
-    { c: '#d4a017', d: '#a67c0d', icon: 'train' },
-    { c: '#14b8a6', d: '#0f8f82', icon: 'bulb' },
-    { c: '#ec4899', d: '#c22d76', icon: 'rocket' },
-    { c: '#06b6d4', d: '#0891b2', icon: 'laptop' },
-  ],
+export const SUBJECTS: Record<string, Subject> = { ...(raw as unknown as Record<string, Subject>) };
+for (const file of Object.values(files))
+  for (const [id, c] of Object.entries(file))
+    SUBJECTS[id] = { name: c.name || id, short: (c.name || id).slice(0, 2).toUpperCase(), units: c.units || [], apq: c.apq || [] };
+
+export const hasCourse = (id: string) => !!SUBJECTS[id]?.units?.length;
+
+const PALETTE: [string, string][] = [
+  ['#14b8a6', '#0f8f82'], ['#f59e0b', '#c27c06'], ['#8b5cf6', '#6d3fd6'], ['#3b82f6', '#2563c9'],
+  ['#ef4444', '#c42f2f'], ['#84a33a', '#647e27'], ['#ec4899', '#c22d76'], ['#06b6d4', '#0891b2'],
+];
+
+/** The two original AP history courses keep their hand-picked unit icons. */
+const HISTORY_ICONS: Record<string, string[]> = {
+  world: ['globe', 'caravan', 'palace', 'ship', 'flag', 'factory', 'helmet', 'rocket', 'satellite', 'pyramid', 'temple'],
+  us: ['ship', 'house', 'bell', 'scroll', 'cannon', 'train', 'bulb', 'rocket', 'laptop'],
 };
 
-export const SUBJECT_META: Record<SubjectId, { color: string; blurb: string; icon: string }> = {
-  world: { color: '#14b8a6', blurb: '9 AP units, c. 1200 to today, plus 2 ancient bonus units', icon: 'globe' },
-  us: { color: '#3b82f6', blurb: 'All 9 AP periods, 1491 to today', icon: 'bell' },
-};
+export function unitStyle(course: string, i: number) {
+  const [c, d] = PALETTE[(i + (trackOf(course)?.id.length || 0)) % PALETTE.length];
+  return { c, d, icon: HISTORY_ICONS[course]?.[i] || courseIcon(course) };
+}
 
 export const unitName = (s: Subject, i: number) => s.units[i].kicker || `Unit ${i + 1}`;

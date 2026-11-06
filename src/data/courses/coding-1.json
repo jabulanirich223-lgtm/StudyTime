@@ -1,0 +1,5249 @@
+{
+ "code-basics": {
+  "name": "Coding Basics",
+  "units": [
+   {
+    "title": "How Computers Follow Instructions",
+    "period": "Getting started",
+    "learn": [
+     {
+      "h": "What is a program?",
+      "b": "A program is a list of instructions that a computer follows. The computer does exactly what the instructions say, nothing more."
+     },
+     {
+      "h": "What is an algorithm?",
+      "b": "An algorithm is a step-by-step plan to solve a problem. For example, making tea has steps: boil water, add the tea bag, wait, drink."
+     },
+     {
+      "h": "Code and bugs",
+      "b": "Programmers write source code in a programming language like Python. A mistake in code is called a bug, and fixing it is called debugging."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a program?",
+      "o": [
+       "A list of instructions for a computer",
+       "A type of computer screen",
+       "A kind of internet cable",
+       "A computer password"
+      ],
+      "a": 0,
+      "why": "A program is a set of instructions that a computer follows."
+     },
+     {
+      "t": "mc",
+      "q": "What is an algorithm?",
+      "o": [
+       "A bug in a program",
+       "A step-by-step plan to solve a problem",
+       "A type of keyboard",
+       "A file name"
+      ],
+      "a": 1,
+      "why": "An algorithm is a clear sequence of steps that solves a problem."
+     },
+     {
+      "t": "mc",
+      "q": "What do we call a mistake in code?",
+      "o": [
+       "Feature",
+       "Loop",
+       "Bug",
+       "Comment"
+      ],
+      "a": 2,
+      "why": "A mistake in code is called a bug."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a programming language?",
+      "o": [
+       "Wi-Fi",
+       "Chrome",
+       "Windows",
+       "Python"
+      ],
+      "a": 3,
+      "why": "Python is a programming language; the others are a network, a browser and an operating system."
+     },
+     {
+      "t": "tf",
+      "q": "Computers understand English sentences directly without any translation.",
+      "a": false,
+      "why": "Computers need code in a programming language, which is translated into machine instructions."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Bug",
+        "A mistake in code"
+       ],
+       [
+        "Algorithm",
+        "Steps to solve a problem"
+       ],
+       [
+        "Source code",
+        "Text a programmer writes"
+       ],
+       [
+        "Comment",
+        "A note the computer ignores"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of making a program in order",
+      "items": [
+       [
+        "Plan the idea",
+        1
+       ],
+       [
+        "Write the code",
+        2
+       ],
+       [
+        "Run and test it",
+        3
+       ],
+       [
+        "Fix the bugs",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Variables and Data Types",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "What is a variable?",
+      "b": "A variable is a named place that stores a value. Think of a labeled box: the label is the name and the thing inside is the value."
+     },
+     {
+      "h": "Common data types",
+      "b": "Integers are whole numbers like 7. Floats have decimals like 3.5. Strings are text like 'cat'. Booleans are only true or false."
+     },
+     {
+      "h": "Using variables",
+      "b": "You give a variable a value, use it in your code, and you can change it later. Good names like score or age make code easier to read."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A variable is best described as:",
+      "o": [
+       "A named place that stores a value",
+       "A type of loop",
+       "A broken line of code",
+       "A kind of error"
+      ],
+      "a": 0,
+      "why": "A variable has a name and holds a value."
+     },
+     {
+      "t": "mc",
+      "q": "Which value is a string?",
+      "o": [
+       "42",
+       "3.14",
+       "'hello'",
+       "true"
+      ],
+      "a": 2,
+      "why": "Text inside quotes is a string."
+     },
+     {
+      "t": "mc",
+      "q": "Which data type stores only true or false?",
+      "o": [
+       "Integer",
+       "String",
+       "Float",
+       "Boolean"
+      ],
+      "a": 3,
+      "why": "A Boolean can only be true or false."
+     },
+     {
+      "t": "mc",
+      "q": "Which value is a whole number (integer)?",
+      "o": [
+       "7.5",
+       "7",
+       "'7'",
+       "'seven'"
+      ],
+      "a": 1,
+      "why": "7 has no decimal part and no quotes, so it is an integer."
+     },
+     {
+      "t": "tf",
+      "q": "A float can store a number with a decimal point, like 2.5.",
+      "a": true,
+      "why": "Floats are decimal numbers."
+     },
+     {
+      "t": "match",
+      "q": "Match each value to its data type",
+      "pairs": [
+       [
+        "12",
+        "Integer"
+       ],
+       [
+        "3.5",
+        "Float"
+       ],
+       [
+        "'cat'",
+        "String"
+       ],
+       [
+        "false",
+        "Boolean"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for using a variable in order",
+      "items": [
+       [
+        "Choose a name",
+        1
+       ],
+       [
+        "Give it a value",
+        2
+       ],
+       [
+        "Use it in code",
+        3
+       ],
+       [
+        "Change it if needed",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Decisions and Loops",
+    "period": "Control flow",
+    "learn": [
+     {
+      "h": "If and else",
+      "b": "An if statement runs code only when a condition is true. The else part runs when the condition is false."
+     },
+     {
+      "h": "Conditions",
+      "b": "A condition is a test that is either true or false, like age >= 18. Programs use conditions to make decisions."
+     },
+     {
+      "h": "Loops",
+      "b": "A loop repeats code. Use it when you want to do something many times, like printing 10 numbers. A loop that never stops is an infinite loop."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does an if statement do?",
+      "o": [
+       "Runs code only when a condition is true",
+       "Repeats code forever",
+       "Deletes a variable",
+       "Always prints a message"
+      ],
+      "a": 0,
+      "why": "An if statement runs its code only when the condition is true."
+     },
+     {
+      "t": "mc",
+      "q": "What is a loop?",
+      "o": [
+       "A mistake",
+       "Code that repeats",
+       "A data type",
+       "A comment"
+      ],
+      "a": 1,
+      "why": "A loop repeats code."
+     },
+     {
+      "t": "mc",
+      "q": "In 'if age >= 18', what is 'age >= 18'?",
+      "o": [
+       "A loop",
+       "A string",
+       "A condition",
+       "A function"
+      ],
+      "a": 2,
+      "why": "It is a true-or-false test, called a condition."
+     },
+     {
+      "t": "mc",
+      "q": "Which code runs when the if condition is false?",
+      "o": [
+       "The loop",
+       "The import",
+       "The comment",
+       "The else part"
+      ],
+      "a": 3,
+      "why": "The else part is the fallback when the condition is false."
+     },
+     {
+      "t": "tf",
+      "q": "An infinite loop is a loop that never stops.",
+      "a": true,
+      "why": "If the loop condition is always true, the loop never ends."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "Run code on a condition"
+       ],
+       [
+        "else",
+        "Run code if condition is false"
+       ],
+       [
+        "loop",
+        "Repeat code"
+       ],
+       [
+        "condition",
+        "A true or false test"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the flow of an if/else in order",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "If true, run the if block",
+        2
+       ],
+       [
+        "Otherwise run the else block",
+        3
+       ],
+       [
+        "Continue with the program",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Functions and Debugging",
+    "period": "Reusable code",
+    "learn": [
+     {
+      "h": "What is a function?",
+      "b": "A function is a named block of code you can reuse. You write it once and call it whenever you need it."
+     },
+     {
+      "h": "Inputs and outputs",
+      "b": "A function can take inputs (parameters) and give back a result with return. For example, add(2, 3) can return 5."
+     },
+     {
+      "h": "Debugging",
+      "b": "Debugging means finding and fixing bugs. Read the error message, find the line, change the code, and test again."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a function?",
+      "o": [
+       "A reusable block of code with a name",
+       "A type of number",
+       "A computer part",
+       "A syntax error"
+      ],
+      "a": 0,
+      "why": "A function is a named, reusable block of code."
+     },
+     {
+      "t": "mc",
+      "q": "What is an input given to a function called?",
+      "o": [
+       "Output",
+       "Parameter or argument",
+       "Comment",
+       "Bug"
+      ],
+      "a": 1,
+      "why": "Inputs to functions are parameters (or arguments)."
+     },
+     {
+      "t": "mc",
+      "q": "What is debugging?",
+      "o": [
+       "Writing comments",
+       "Making code longer",
+       "Finding and fixing bugs",
+       "Deleting a program"
+      ],
+      "a": 2,
+      "why": "Debugging means finding and fixing bugs."
+     },
+     {
+      "t": "mc",
+      "q": "Why do programmers use functions?",
+      "o": [
+       "To make bugs",
+       "To slow computers",
+       "To hide files",
+       "To avoid repeating the same code"
+      ],
+      "a": 3,
+      "why": "Functions let you reuse code instead of copying it."
+     },
+     {
+      "t": "tf",
+      "q": "A function can return a value back to the code that called it.",
+      "a": true,
+      "why": "The return statement sends a value back."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Parameter",
+        "Input name in a function"
+       ],
+       [
+        "Return",
+        "Sends a value back"
+       ],
+       [
+        "Call",
+        "Run a function"
+       ],
+       [
+        "Bug",
+        "A mistake in code"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to fix a bug in order",
+      "items": [
+       [
+        "Notice something is wrong",
+        1
+       ],
+       [
+        "Find the line causing it",
+        2
+       ],
+       [
+        "Change the code",
+        3
+       ],
+       [
+        "Test again",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "py-1": {
+  "name": "Python · Beginner",
+  "units": [
+   {
+    "title": "Print and Variables",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "print()",
+      "b": "print() shows something on the screen. print('Hi') shows Hi, without the quotes."
+     },
+     {
+      "h": "Variables",
+      "b": "In Python you make a variable by writing a name, an equals sign and a value, like x = 5. You do not need to say the type."
+     },
+     {
+      "h": "Types and comments",
+      "b": "Python has int (3), float (3.0), str ('3') and bool (True). A line that starts with # is a comment and Python ignores it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does print('Hi') output?",
+      "o": [
+       "Hi",
+       "'Hi'",
+       "print Hi",
+       "Error"
+      ],
+      "a": 0,
+      "why": "print shows the text without the quote marks."
+     },
+     {
+      "t": "mc",
+      "q": "What does x = 5 then print(x + 2) output?",
+      "o": [
+       "52",
+       "7",
+       "x + 2",
+       "Error"
+      ],
+      "a": 1,
+      "why": "x is 5, and 5 + 2 is 7."
+     },
+     {
+      "t": "mc",
+      "q": "Which symbol starts a comment in Python?",
+      "o": [
+       "//",
+       "--",
+       "/*",
+       "#"
+      ],
+      "a": 3,
+      "why": "Python comments start with #."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(type('3')) show?",
+      "o": [
+       "<class 'int'>",
+       "<class 'float'>",
+       "<class 'str'>",
+       "<class 'bool'>"
+      ],
+      "a": 2,
+      "why": "'3' is in quotes, so it is a string (str)."
+     },
+     {
+      "t": "tf",
+      "q": "In Python, you must declare a variable's type before using it.",
+      "a": false,
+      "why": "Python figures out the type from the value."
+     },
+     {
+      "t": "match",
+      "q": "Match each Python type to its meaning",
+      "pairs": [
+       [
+        "int",
+        "Whole number"
+       ],
+       [
+        "float",
+        "Decimal number"
+       ],
+       [
+        "str",
+        "Text"
+       ],
+       [
+        "bool",
+        "True or False"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these lines in order so the code prints 10",
+      "items": [
+       [
+        "x = 4",
+        1
+       ],
+       [
+        "y = 6",
+        2
+       ],
+       [
+        "total = x + y",
+        3
+       ],
+       [
+        "print(total)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Strings and Numbers",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Strings",
+      "b": "Join strings with + , so 'ab' + 'cd' gives 'abcd'. len('hello') gives the number of characters, which is 5."
+     },
+     {
+      "h": "Math operators",
+      "b": "+ - * / work as usual. // is whole-number division, % gives the remainder, and ** is power."
+     },
+     {
+      "h": "Mixing types",
+      "b": "'5' + '5' joins text and gives '55'. 5 + 5 adds numbers and gives 10. You cannot add a string and a number directly."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does print('ab' + 'cd') output?",
+      "o": [
+       "ab cd",
+       "abcd",
+       "'abcd'",
+       "Error"
+      ],
+      "a": 1,
+      "why": "+ joins strings with no space."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(len('hello')) output?",
+      "o": [
+       "4",
+       "6",
+       "5",
+       "hello"
+      ],
+      "a": 2,
+      "why": "hello has 5 characters."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(7 // 2) output?",
+      "o": [
+       "3",
+       "3.5",
+       "4",
+       "1"
+      ],
+      "a": 0,
+      "why": "// divides and rounds down, so 7 // 2 is 3."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(2 ** 3) output?",
+      "o": [
+       "6",
+       "5",
+       "9",
+       "8"
+      ],
+      "a": 3,
+      "why": "2 ** 3 means 2 x 2 x 2 = 8."
+     },
+     {
+      "t": "tf",
+      "q": "print('5' + '5') outputs 10.",
+      "a": false,
+      "why": "Joining two strings gives 55."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to what it does",
+      "pairs": [
+       [
+        "+",
+        "Add or join"
+       ],
+       [
+        "*",
+        "Multiply or repeat"
+       ],
+       [
+        "%",
+        "Remainder"
+       ],
+       [
+        "**",
+        "Power"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest result",
+      "items": [
+       [
+        "10 % 3",
+        1
+       ],
+       [
+        "2 ** 2",
+        2
+       ],
+       [
+        "15 // 2",
+        3
+       ],
+       [
+        "3 * 4",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Lists and Conditions",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Lists",
+      "b": "A list holds many items in order, like [1, 2, 3]. The first item has index 0, so [1, 2, 3][0] is 1."
+     },
+     {
+      "h": "List tools",
+      "b": "len(x) counts items and x.append(4) adds an item at the end."
+     },
+     {
+      "h": "If, elif, else",
+      "b": "Use if to test a condition, elif to test another one, and else for everything left. Use and, or, not to combine tests."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does print([1, 2, 3][0]) output?",
+      "o": [
+       "0",
+       "1",
+       "2",
+       "3"
+      ],
+      "a": 1,
+      "why": "The first item has index 0, and it is 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(len([4, 5, 6, 7])) output?",
+      "o": [
+       "3",
+       "7",
+       "4",
+       "22"
+      ],
+      "a": 2,
+      "why": "The list has 4 items."
+     },
+     {
+      "t": "mc",
+      "q": "What does x = [1, 2]; x.append(3); print(x) output?",
+      "o": [
+       "[1, 2]",
+       "[3, 1, 2]",
+       "[3]",
+       "[1, 2, 3]"
+      ],
+      "a": 3,
+      "why": "append adds 3 at the end."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(5 > 3 and 2 > 4) output?",
+      "o": [
+       "True",
+       "None",
+       "False",
+       "Error"
+      ],
+      "a": 2,
+      "why": "5 > 3 is True but 2 > 4 is False, so and gives False."
+     },
+     {
+      "t": "tf",
+      "q": "In Python, the first item in a list is at index 1.",
+      "a": false,
+      "why": "Python starts counting at index 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "Start a test"
+       ],
+       [
+        "elif",
+        "Test another condition"
+       ],
+       [
+        "else",
+        "Fallback when all fail"
+       ],
+       [
+        "in",
+        "Check if item is inside"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this if/else in order from top to bottom",
+      "items": [
+       [
+        "if x > 5:",
+        1
+       ],
+       [
+        "print('big')",
+        2
+       ],
+       [
+        "else:",
+        3
+       ],
+       [
+        "print('small')",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loops and Functions",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "for loops",
+      "b": "for i in range(3) repeats three times, with i equal to 0, then 1, then 2. range(3) starts at 0 and stops before 3."
+     },
+     {
+      "h": "while loops",
+      "b": "A while loop keeps running as long as its condition is True. Make sure something changes so it can stop."
+     },
+     {
+      "h": "Functions",
+      "b": "def creates a function. return sends a value back. If def add(a, b) returns a + b, then add(2, 3) is 5."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What numbers does range(3) produce?",
+      "o": [
+       "1, 2, 3",
+       "0, 1, 2",
+       "0, 1, 2, 3",
+       "1, 2"
+      ],
+      "a": 1,
+      "why": "range(3) starts at 0 and stops before 3."
+     },
+     {
+      "t": "mc",
+      "q": "If add(a, b) returns a + b, what does print(add(2, 3)) output?",
+      "o": [
+       "5",
+       "23",
+       "a + b",
+       "None"
+      ],
+      "a": 0,
+      "why": "2 + 3 is 5."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword defines a function in Python?",
+      "o": [
+       "func",
+       "define",
+       "def",
+       "function"
+      ],
+      "a": 2,
+      "why": "Python uses def."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(sum(range(4))) output?",
+      "o": [
+       "4",
+       "10",
+       "3",
+       "6"
+      ],
+      "a": 3,
+      "why": "0 + 1 + 2 + 3 = 6."
+     },
+     {
+      "t": "tf",
+      "q": "A while loop keeps running as long as its condition is True.",
+      "a": true,
+      "why": "That is how while loops work."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "for",
+        "Loop over items"
+       ],
+       [
+        "while",
+        "Loop while true"
+       ],
+       [
+        "def",
+        "Create a function"
+       ],
+       [
+        "return",
+        "Send a value back"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of for i in range(3) in order",
+      "items": [
+       [
+        "i is 0",
+        1
+       ],
+       [
+        "i is 1",
+        2
+       ],
+       [
+        "i is 2",
+        3
+       ],
+       [
+        "Loop ends",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "py-2": {
+  "name": "Python · Intermediate",
+  "units": [
+   {
+    "title": "Dicts, Tuples and Sets",
+    "period": "Data structures",
+    "learn": [
+     {
+      "h": "Dictionaries",
+      "b": "A dict stores key-value pairs, like {'a': 1}. d['a'] gives 1. d.get('z', 0) gives 0 if the key is missing, with no error."
+     },
+     {
+      "h": "Tuples",
+      "b": "A tuple is like a list but cannot be changed. Write it with round brackets, like (1, 2)."
+     },
+     {
+      "h": "Sets",
+      "b": "A set keeps only unique items. {1, 2, 2, 3} becomes {1, 2, 3}, so its length is 3."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does d = {'a': 1}; print(d['a']) output?",
+      "o": [
+       "a",
+       "1",
+       "{'a': 1}",
+       "KeyError"
+      ],
+      "a": 1,
+      "why": "d['a'] looks up the key 'a' and gives its value, 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(len({1, 2, 2, 3})) output?",
+      "o": [
+       "3",
+       "4",
+       "2",
+       "1"
+      ],
+      "a": 0,
+      "why": "A set removes duplicates, leaving 1, 2, 3."
+     },
+     {
+      "t": "mc",
+      "q": "Which Python type cannot be changed after it is created?",
+      "o": [
+       "list",
+       "dict",
+       "tuple",
+       "set"
+      ],
+      "a": 2,
+      "why": "Tuples are immutable."
+     },
+     {
+      "t": "mc",
+      "q": "What does print({'x': 1, 'y': 2}.get('z', 0)) output?",
+      "o": [
+       "None",
+       "KeyError",
+       "z",
+       "0"
+      ],
+      "a": 3,
+      "why": "get returns the default value 0 when the key is missing."
+     },
+     {
+      "t": "tf",
+      "q": "A Python set can contain duplicate values.",
+      "a": false,
+      "why": "Sets keep only unique values."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its description",
+      "pairs": [
+       [
+        "list",
+        "Ordered, changeable"
+       ],
+       [
+        "tuple",
+        "Ordered, unchangeable"
+       ],
+       [
+        "dict",
+        "Key-value pairs"
+       ],
+       [
+        "set",
+        "Unique items only"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest length",
+      "items": [
+       [
+        "len('')",
+        1
+       ],
+       [
+        "len((1,))",
+        2
+       ],
+       [
+        "len({1, 2})",
+        3
+       ],
+       [
+        "len([1, 2, 3])",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Comprehensions and Functions",
+    "period": "Functions",
+    "learn": [
+     {
+      "h": "List comprehensions",
+      "b": "[x * 2 for x in range(3)] builds a new list in one line: [0, 2, 4]. You can add if to filter."
+     },
+     {
+      "h": "lambda",
+      "b": "A lambda is a small function with no name. (lambda x: x + 1)(4) gives 5."
+     },
+     {
+      "h": "*args and defaults",
+      "b": "*args collects extra positional arguments into a tuple. **kwargs collects keyword arguments. A function with no return gives back None."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does print([x * 2 for x in range(3)]) output?",
+      "o": [
+       "[2, 4, 6]",
+       "[0, 1, 2]",
+       "[0, 2, 4]",
+       "[0, 2, 4, 6]"
+      ],
+      "a": 2,
+      "why": "x is 0, 1, 2, so doubled it is 0, 2, 4."
+     },
+     {
+      "t": "mc",
+      "q": "What does print((lambda x: x + 1)(4)) output?",
+      "o": [
+       "4",
+       "5",
+       "x + 1",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The lambda adds 1 to 4."
+     },
+     {
+      "t": "mc",
+      "q": "What does print([n for n in range(6) if n % 2 == 0]) output?",
+      "o": [
+       "[1, 3, 5]",
+       "[0, 2, 4, 6]",
+       "[2, 4]",
+       "[0, 2, 4]"
+      ],
+      "a": 3,
+      "why": "The even numbers below 6 are 0, 2, 4."
+     },
+     {
+      "t": "mc",
+      "q": "In def f(*args), what is args?",
+      "o": [
+       "A tuple of extra positional arguments",
+       "A dict",
+       "A string",
+       "A list of keys"
+      ],
+      "a": 0,
+      "why": "*args collects the extra positional arguments into a tuple."
+     },
+     {
+      "t": "tf",
+      "q": "A function with no return statement returns None.",
+      "a": true,
+      "why": "Python returns None by default."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "*args",
+        "Extra positional arguments"
+       ],
+       [
+        "**kwargs",
+        "Extra keyword arguments"
+       ],
+       [
+        "lambda",
+        "Small anonymous function"
+       ],
+       [
+        "Default value",
+        "Used if no argument given"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest result",
+      "items": [
+       [
+        "min([4, 2, 9])",
+        1
+       ],
+       [
+        "len('abc')",
+        2
+       ],
+       [
+        "max([1, 5])",
+        3
+       ],
+       [
+        "sum([4, 4])",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Files and Errors",
+    "period": "Robust code",
+    "learn": [
+     {
+      "h": "try and except",
+      "b": "Put risky code in try. If it fails, the except part runs instead of crashing. finally always runs."
+     },
+     {
+      "h": "Common errors",
+      "b": "int('abc') raises ValueError. A missing key raises KeyError. Using a wrong type raises TypeError."
+     },
+     {
+      "h": "Files",
+      "b": "open('a.txt', 'w') opens a file for writing and erases old content. Use with open(...) so Python closes the file for you."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which statement handles errors in Python?",
+      "o": [
+       "if/else",
+       "for/while",
+       "try/except",
+       "def/return"
+      ],
+      "a": 2,
+      "why": "try/except catches errors."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(int('12') + 1) output?",
+      "o": [
+       "121",
+       "13",
+       "'13'",
+       "Error"
+      ],
+      "a": 1,
+      "why": "int('12') is 12, and 12 + 1 is 13."
+     },
+     {
+      "t": "mc",
+      "q": "Which error does int('abc') raise?",
+      "o": [
+       "TypeError",
+       "NameError",
+       "KeyError",
+       "ValueError"
+      ],
+      "a": 3,
+      "why": "The value is a string that is not a number, so it is a ValueError."
+     },
+     {
+      "t": "mc",
+      "q": "What does open('a.txt', 'w') do?",
+      "o": [
+       "Opens for writing and erases old content",
+       "Opens for reading only",
+       "Opens for appending at the end",
+       "Deletes the file"
+      ],
+      "a": 0,
+      "why": "Mode 'w' writes and replaces any old content."
+     },
+     {
+      "t": "tf",
+      "q": "The with statement closes a file automatically when its block ends.",
+      "a": true,
+      "why": "with handles cleanup for you."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "try",
+        "Code that may fail"
+       ],
+       [
+        "except",
+        "Runs if an error happens"
+       ],
+       [
+        "finally",
+        "Always runs"
+       ],
+       [
+        "raise",
+        "Create an error on purpose"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to read a file safely in order",
+      "items": [
+       [
+        "Open the file with with",
+        1
+       ],
+       [
+        "Read its contents",
+        2
+       ],
+       [
+        "Use the data",
+        3
+       ],
+       [
+        "File closes automatically",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Classes and Modules",
+    "period": "OOP",
+    "learn": [
+     {
+      "h": "Classes and objects",
+      "b": "A class is a blueprint. An object is one thing made from it. __init__ sets up a new object."
+     },
+     {
+      "h": "self and methods",
+      "b": "A method is a function inside a class. self is the object the method is working on."
+     },
+     {
+      "h": "Modules",
+      "b": "import loads code from another file. import math lets you use math.sqrt(16), which gives 4.0."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does __init__ do in a class?",
+      "o": [
+       "Deletes the object",
+       "Sets up a new object",
+       "Prints the class",
+       "Imports a module"
+      ],
+      "a": 1,
+      "why": "__init__ runs when a new object is created."
+     },
+     {
+      "t": "mc",
+      "q": "What is self inside a method?",
+      "o": [
+       "The class name",
+       "A module",
+       "The object itself",
+       "A global variable"
+      ],
+      "a": 2,
+      "why": "self refers to the object calling the method."
+     },
+     {
+      "t": "mc",
+      "q": "What does import math then print(math.sqrt(16)) output?",
+      "o": [
+       "4",
+       "16",
+       "Error",
+       "4.0"
+      ],
+      "a": 3,
+      "why": "math.sqrt returns a float, so the output is 4.0."
+     },
+     {
+      "t": "mc",
+      "q": "What is a class?",
+      "o": [
+       "A blueprint for creating objects",
+       "A kind of loop",
+       "A file type",
+       "A built-in error"
+      ],
+      "a": 0,
+      "why": "A class describes how to build objects."
+     },
+     {
+      "t": "tf",
+      "q": "A class can inherit from another class.",
+      "a": true,
+      "why": "Inheritance lets a class reuse another class."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "class",
+        "Blueprint for objects"
+       ],
+       [
+        "object",
+        "One instance of a class"
+       ],
+       [
+        "method",
+        "Function inside a class"
+       ],
+       [
+        "import",
+        "Load a module"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a class in order",
+      "items": [
+       [
+        "Define the class",
+        1
+       ],
+       [
+        "Create an object",
+        2
+       ],
+       [
+        "Call a method",
+        3
+       ],
+       [
+        "See the result",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "js-1": {
+  "name": "JavaScript · Beginner",
+  "units": [
+   {
+    "title": "Variables and Types",
+    "period": "JS basics",
+    "learn": [
+     {
+      "h": "let and const",
+      "b": "let makes a variable that can change. const makes one that cannot be reassigned. Use const by default."
+     },
+     {
+      "h": "Types",
+      "b": "JavaScript has number (42), string ('hi'), boolean (true) and undefined. typeof tells you the type."
+     },
+     {
+      "h": "console.log",
+      "b": "console.log() prints a value so you can see it. It is the main way to check what your code does."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword declares a variable that can change?",
+      "o": [
+       "const",
+       "let",
+       "fixed",
+       "static"
+      ],
+      "a": 1,
+      "why": "let creates a variable you can reassign."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(typeof 42) print?",
+      "o": [
+       "number",
+       "integer",
+       "int",
+       "Number"
+      ],
+      "a": 0,
+      "why": "JavaScript uses one type called number."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(typeof 'hi') print?",
+      "o": [
+       "text",
+       "char",
+       "string",
+       "String"
+      ],
+      "a": 2,
+      "why": "typeof gives the lowercase word string."
+     },
+     {
+      "t": "mc",
+      "q": "What happens with const x = 5; and then x = 6;?",
+      "o": [
+       "Sets x to 6",
+       "Prints 6",
+       "Deletes x",
+       "Throws an error"
+      ],
+      "a": 3,
+      "why": "A const variable cannot be reassigned."
+     },
+     {
+      "t": "tf",
+      "q": "In JavaScript, 'true' (with quotes) is a boolean.",
+      "a": false,
+      "why": "With quotes it is a string."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to an example",
+      "pairs": [
+       [
+        "number",
+        "42"
+       ],
+       [
+        "string",
+        "'hello'"
+       ],
+       [
+        "boolean",
+        "true"
+       ],
+       [
+        "undefined",
+        "Variable with no value"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these lines in order so console.log(a) prints 3",
+      "items": [
+       [
+        "let a = 1;",
+        1
+       ],
+       [
+        "a = a + 1;",
+        2
+       ],
+       [
+        "a = a + 1;",
+        3
+       ],
+       [
+        "console.log(a);",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Operators and Strings",
+    "period": "JS basics",
+    "learn": [
+     {
+      "h": "Math",
+      "b": "+ - * / work as usual. % gives the remainder and ** is power."
+     },
+     {
+      "h": "Strings",
+      "b": "'5' + 1 joins them and gives '51'. But '5' - 1 turns the text into a number and gives 4. 'hello'.length is 5."
+     },
+     {
+      "h": "Comparing",
+      "b": "=== checks value and type, so 5 === '5' is false. && means AND, || means OR, and ! means NOT."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does console.log('5' + 1) print?",
+      "o": [
+       "6",
+       "51",
+       "'51'",
+       "Error"
+      ],
+      "a": 1,
+      "why": "+ with a string joins, giving 51."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log('5' - 1) print?",
+      "o": [
+       "4",
+       "51",
+       "0",
+       "NaN"
+      ],
+      "a": 0,
+      "why": "- converts '5' to a number, so 5 - 1 is 4."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(10 % 3) print?",
+      "o": [
+       "3",
+       "0",
+       "1",
+       "10"
+      ],
+      "a": 2,
+      "why": "10 divided by 3 leaves remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log('hello'.length) print?",
+      "o": [
+       "4",
+       "6",
+       "hello",
+       "5"
+      ],
+      "a": 3,
+      "why": "hello has 5 letters."
+     },
+     {
+      "t": "tf",
+      "q": "In JavaScript, 5 === '5' is true.",
+      "a": false,
+      "why": "=== compares types too, and a number is not a string."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "===",
+        "Strict equality"
+       ],
+       [
+        "&&",
+        "Logical AND"
+       ],
+       [
+        "||",
+        "Logical OR"
+       ],
+       [
+        "!",
+        "Logical NOT"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest result",
+      "items": [
+       [
+        "9 % 4",
+        1
+       ],
+       [
+        "6 / 2",
+        2
+       ],
+       [
+        "2 * 3",
+        3
+       ],
+       [
+        "2 ** 4",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Arrays and Conditions",
+    "period": "JS basics",
+    "learn": [
+     {
+      "h": "Arrays",
+      "b": "An array holds items in order, like [10, 20, 30]. The first item is at index 0."
+     },
+     {
+      "h": "Array tools",
+      "b": "push adds to the end, pop removes from the end, length counts items and includes checks if an item is there."
+     },
+     {
+      "h": "if and ternary",
+      "b": "if (x > 0) {...} else {...} chooses code. A ternary is a short version: condition ? a : b."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does console.log([10, 20, 30][1]) print?",
+      "o": [
+       "10",
+       "30",
+       "20",
+       "undefined"
+      ],
+      "a": 2,
+      "why": "Index 1 is the second item, 20."
+     },
+     {
+      "t": "mc",
+      "q": "What does const a = [1, 2]; a.push(3); console.log(a.length) print?",
+      "o": [
+       "3",
+       "2",
+       "4",
+       "undefined"
+      ],
+      "a": 0,
+      "why": "After push, the array has 3 items."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log([1, 2, 3].includes(2)) print?",
+      "o": [
+       "false",
+       "true",
+       "2",
+       "undefined"
+      ],
+      "a": 1,
+      "why": "The array contains 2, so includes gives true."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(5 > 3 ? 'yes' : 'no') print?",
+      "o": [
+       "no",
+       "true",
+       "5",
+       "yes"
+      ],
+      "a": 3,
+      "why": "5 > 3 is true, so the first value is used."
+     },
+     {
+      "t": "tf",
+      "q": "JavaScript array indexes start at 0.",
+      "a": true,
+      "why": "The first item is at index 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each array tool to its job",
+      "pairs": [
+       [
+        "push",
+        "Add to the end"
+       ],
+       [
+        "pop",
+        "Remove from the end"
+       ],
+       [
+        "length",
+        "Number of items"
+       ],
+       [
+        "includes",
+        "Check if item exists"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put an if / else if / else chain in order",
+      "items": [
+       [
+        "if (x > 0) {...}",
+        1
+       ],
+       [
+        "else if (x === 0) {...}",
+        2
+       ],
+       [
+        "else {...}",
+        3
+       ],
+       [
+        "Code after the chain",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Loops and Functions",
+    "period": "JS basics",
+    "learn": [
+     {
+      "h": "for loops",
+      "b": "for (let i = 0; i < 3; i++) runs 3 times, with i equal to 0, 1 and 2. It has a start, a check and an update."
+     },
+     {
+      "h": "while loops",
+      "b": "A while loop checks its condition before each run and stops when it is false."
+     },
+     {
+      "h": "Functions",
+      "b": "function add(a, b) { return a + b } is a function. An arrow function is a short form, like (x) => x * 2. With no return, a function gives undefined."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many times does for (let i = 0; i < 3; i++) run?",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "Infinite"
+      ],
+      "a": 1,
+      "why": "i is 0, 1, 2, so 3 times."
+     },
+     {
+      "t": "mc",
+      "q": "If add(a, b) returns a + b, what does console.log(add(2, 3)) print?",
+      "o": [
+       "5",
+       "23",
+       "a + b",
+       "undefined"
+      ],
+      "a": 0,
+      "why": "Numbers are added, so 5."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an arrow function?",
+      "o": [
+       "function => x",
+       "x -> x * 2",
+       "(x) => x * 2",
+       "=> (x) x"
+      ],
+      "a": 2,
+      "why": "Arrow functions use =>."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(f()) print if f has no return statement?",
+      "o": [
+       "null",
+       "0",
+       "undefined",
+       "empty"
+      ],
+      "a": 2,
+      "why": "Functions without return give undefined."
+     },
+     {
+      "t": "tf",
+      "q": "A while loop checks its condition before each run of the loop body.",
+      "a": true,
+      "why": "If the condition is false at the start, the body never runs."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "for",
+        "Counted loop"
+       ],
+       [
+        "while",
+        "Loop while true"
+       ],
+       [
+        "return",
+        "Send value back"
+       ],
+       [
+        "=>",
+        "Arrow function syntax"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a for loop in the order they happen",
+      "items": [
+       [
+        "let i = 0 (start)",
+        1
+       ],
+       [
+        "i < 3 (check)",
+        2
+       ],
+       [
+        "Run the body",
+        3
+       ],
+       [
+        "i++ (update)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "js-2": {
+  "name": "JavaScript · Intermediate",
+  "units": [
+   {
+    "title": "Objects and Destructuring",
+    "period": "Objects",
+    "learn": [
+     {
+      "h": "Objects",
+      "b": "An object stores key-value pairs, like {a: 1}. Read a value with o.a. Object.keys(o) lists the keys."
+     },
+     {
+      "h": "Destructuring",
+      "b": "const {x} = {x: 5, y: 6} creates a variable x equal to 5. It unpacks values into variables."
+     },
+     {
+      "h": "Spread",
+      "b": "The spread operator ... copies or expands items. [...[1, 2], 3] gives [1, 2, 3]. const stops reassigning, but you can still change an object's contents."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does const o = {a: 1}; console.log(o.a) print?",
+      "o": [
+       "a",
+       "1",
+       "undefined",
+       "{a: 1}"
+      ],
+      "a": 1,
+      "why": "o.a reads the value of key a, which is 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does const {x} = {x: 5, y: 6}; console.log(x) print?",
+      "o": [
+       "5",
+       "6",
+       "undefined",
+       "{x: 5}"
+      ],
+      "a": 0,
+      "why": "Destructuring takes x as 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log([...[1, 2], 3].length) print?",
+      "o": [
+       "2",
+       "4",
+       "3",
+       "undefined"
+      ],
+      "a": 2,
+      "why": "The new array is [1, 2, 3]."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(Object.keys({a: 1, b: 2}).length) print?",
+      "o": [
+       "1",
+       "a,b",
+       "undefined",
+       "2"
+      ],
+      "a": 3,
+      "why": "There are two keys."
+     },
+     {
+      "t": "tf",
+      "q": "const prevents changing the contents of an object.",
+      "a": false,
+      "why": "const stops reassigning the variable, but object properties can still change."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "Object.keys",
+        "List of keys"
+       ],
+       [
+        "Object.values",
+        "List of values"
+       ],
+       [
+        "Spread (...)",
+        "Copy or expand items"
+       ],
+       [
+        "Destructuring",
+        "Unpack into variables"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest length",
+      "items": [
+       [
+        "[].length",
+        1
+       ],
+       [
+        "[1].length",
+        2
+       ],
+       [
+        "'ab'.length",
+        3
+       ],
+       [
+        "[1, 2, 3].length",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Array Methods",
+    "period": "Arrays",
+    "learn": [
+     {
+      "h": "map",
+      "b": "map makes a new array by changing every item. [1, 2, 3].map(n => n * 2) gives [2, 4, 6]. The original array is not changed."
+     },
+     {
+      "h": "filter and find",
+      "b": "filter keeps items that pass a test. find returns the first item that matches."
+     },
+     {
+      "h": "reduce",
+      "b": "reduce combines all items into one value. [1, 2, 3].reduce((s, n) => s + n, 0) gives 6."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does console.log([1, 2, 3].map(n => n * 2).join()) print?",
+      "o": [
+       "1,2,3",
+       "2,4,6",
+       "2,4",
+       "6"
+      ],
+      "a": 1,
+      "why": "Each item is doubled, then joined with commas."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log([1, 2, 3, 4].filter(n => n > 2).length) print?",
+      "o": [
+       "1",
+       "3",
+       "4",
+       "2"
+      ],
+      "a": 3,
+      "why": "Only 3 and 4 pass the test."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log([1, 2, 3].reduce((s, n) => s + n, 0)) print?",
+      "o": [
+       "3",
+       "123",
+       "6",
+       "0"
+      ],
+      "a": 2,
+      "why": "0 + 1 + 2 + 3 = 6."
+     },
+     {
+      "t": "mc",
+      "q": "Which method returns the first item that matches a test?",
+      "o": [
+       "map",
+       "find",
+       "push",
+       "slice"
+      ],
+      "a": 1,
+      "why": "find returns the first matching item."
+     },
+     {
+      "t": "tf",
+      "q": "map() changes the original array.",
+      "a": false,
+      "why": "map returns a new array."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "map",
+        "Transform each item"
+       ],
+       [
+        "filter",
+        "Keep items that pass"
+       ],
+       [
+        "reduce",
+        "Combine into one value"
+       ],
+       [
+        "forEach",
+        "Run code for each item"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of this data pipeline in order",
+      "items": [
+       [
+        "Start with [1, 2, 3, 4]",
+        1
+       ],
+       [
+        "filter keeps [2, 4]",
+        2
+       ],
+       [
+        "map doubles to [4, 8]",
+        3
+       ],
+       [
+        "reduce sums to 12",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Scope and Closures",
+    "period": "Core concepts",
+    "learn": [
+     {
+      "h": "let, const and var",
+      "b": "let and const are block-scoped. var is function-scoped and is hoisted to the top of its function."
+     },
+     {
+      "h": "Closures",
+      "b": "A closure is a function that remembers the variables from where it was created, even after that outer code has finished."
+     },
+     {
+      "h": "Odd results",
+      "b": "typeof null is 'object'. 0.1 + 0.2 is not exactly 0.3 because of how decimals are stored. Number('3') turns text into a number."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword is block-scoped?",
+      "o": [
+       "var",
+       "let",
+       "function",
+       "global"
+      ],
+      "a": 1,
+      "why": "let (and const) stay inside their block."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(typeof null) print?",
+      "o": [
+       "null",
+       "undefined",
+       "object",
+       "number"
+      ],
+      "a": 2,
+      "why": "This is a famous quirk of JavaScript."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(0.1 + 0.2 === 0.3) print?",
+      "o": [
+       "true",
+       "NaN",
+       "undefined",
+       "false"
+      ],
+      "a": 3,
+      "why": "0.1 + 0.2 is 0.30000000000000004, so it is false."
+     },
+     {
+      "t": "mc",
+      "q": "What is a closure?",
+      "o": [
+       "A function that remembers variables from where it was created",
+       "A loop that never ends",
+       "A way to close the browser",
+       "An error type"
+      ],
+      "a": 0,
+      "why": "A closure keeps access to its outer variables."
+     },
+     {
+      "t": "tf",
+      "q": "Variables declared with var are hoisted to the top of their function.",
+      "a": true,
+      "why": "var declarations are hoisted."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword or term to its meaning",
+      "pairs": [
+       [
+        "let",
+        "Block scoped, can change"
+       ],
+       [
+        "const",
+        "Block scoped, fixed binding"
+       ],
+       [
+        "var",
+        "Function scoped"
+       ],
+       [
+        "Closure",
+        "Function plus remembered scope"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest result",
+      "items": [
+       [
+        "Number('3')",
+        1
+       ],
+       [
+        "parseInt('12px')",
+        2
+       ],
+       [
+        "'4' * '5'",
+        3
+       ],
+       [
+        "Number(true) + 99",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Async JavaScript",
+    "period": "Async",
+    "learn": [
+     {
+      "h": "Promises",
+      "b": "A Promise is a value that will be available later. then handles success and catch handles errors."
+     },
+     {
+      "h": "async and await",
+      "b": "An async function always returns a Promise. Inside it, await pauses until a Promise is done."
+     },
+     {
+      "h": "Event loop order",
+      "b": "setTimeout callbacks run after the current code finishes, even with 0 delay. So console.log(1), setTimeout(log 2), console.log(3) prints 1, 3, 2."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a Promise represent?",
+      "o": [
+       "A loop",
+       "A string method",
+       "A value available later",
+       "A CSS rule"
+      ],
+      "a": 2,
+      "why": "A Promise stands for a value that arrives later."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword pauses an async function until a Promise settles?",
+      "o": [
+       "wait",
+       "await",
+       "pause",
+       "hold"
+      ],
+      "a": 1,
+      "why": "await waits for the Promise."
+     },
+     {
+      "t": "mc",
+      "q": "What order prints? console.log(1); setTimeout(() => console.log(2), 0); console.log(3);",
+      "o": [
+       "1 3 2",
+       "1 2 3",
+       "2 1 3",
+       "3 2 1"
+      ],
+      "a": 0,
+      "why": "The timeout runs after the other code."
+     },
+     {
+      "t": "mc",
+      "q": "Which Promise method handles an error?",
+      "o": [
+       "error",
+       "fail",
+       "then",
+       "catch"
+      ],
+      "a": 3,
+      "why": "catch runs when the Promise is rejected."
+     },
+     {
+      "t": "tf",
+      "q": "An async function always returns a Promise.",
+      "a": true,
+      "why": "Even a plain return value gets wrapped in a Promise."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "Promise",
+        "Future value"
+       ],
+       [
+        "then",
+        "Handle success"
+       ],
+       [
+        "catch",
+        "Handle failure"
+       ],
+       [
+        "await",
+        "Wait for a Promise"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put how a fetch call works in order",
+      "items": [
+       [
+        "Call fetch(url)",
+        1
+       ],
+       [
+        "Promise is pending",
+        2
+       ],
+       [
+        "Server responds",
+        3
+       ],
+       [
+        "then() runs with the response",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ts": {
+  "name": "TypeScript",
+  "units": [
+   {
+    "title": "Basic Types",
+    "period": "Types",
+    "learn": [
+     {
+      "h": "What is TypeScript?",
+      "b": "TypeScript is JavaScript with static types. A tool called the compiler checks types, then turns the code into plain JavaScript."
+     },
+     {
+      "h": "Adding types",
+      "b": "Write a type after a colon: let x: number = 5. Basic types are string, number, boolean and void for no return value."
+     },
+     {
+      "h": "The any type",
+      "b": "any turns off type checking for a value. Avoid it, because it removes the safety that TypeScript gives you."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is TypeScript?",
+      "o": [
+       "JavaScript with static types",
+       "A database",
+       "A CSS tool",
+       "A new browser"
+      ],
+      "a": 0,
+      "why": "TypeScript adds static types to JavaScript."
+     },
+     {
+      "t": "mc",
+      "q": "How do you type a variable x as a number?",
+      "o": [
+       "let number x",
+       "let x = number()",
+       "let x: number",
+       "let x -> number"
+      ],
+      "a": 2,
+      "why": "The type goes after a colon."
+     },
+     {
+      "t": "mc",
+      "q": "What does TypeScript compile to?",
+      "o": [
+       "Python",
+       "JavaScript",
+       "Java",
+       "C"
+      ],
+      "a": 1,
+      "why": "TypeScript is compiled into JavaScript."
+     },
+     {
+      "t": "mc",
+      "q": "Which type should you avoid because it turns off type checking?",
+      "o": [
+       "number",
+       "boolean",
+       "string",
+       "any"
+      ],
+      "a": 3,
+      "why": "any removes type safety."
+     },
+     {
+      "t": "tf",
+      "q": "TypeScript code runs directly in browsers without compiling.",
+      "a": false,
+      "why": "Browsers run JavaScript, so TypeScript must be compiled first."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its meaning",
+      "pairs": [
+       [
+        "string",
+        "Text"
+       ],
+       [
+        "number",
+        "Integers and decimals"
+       ],
+       [
+        "boolean",
+        "true or false"
+       ],
+       [
+        "void",
+        "Returns nothing"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using TypeScript in order",
+      "items": [
+       [
+        "Write .ts code",
+        1
+       ],
+       [
+        "Type-check it",
+        2
+       ],
+       [
+        "Compile to JavaScript",
+        3
+       ],
+       [
+        "Run the .js file",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Interfaces and Aliases",
+    "period": "Object types",
+    "learn": [
+     {
+      "h": "Interfaces",
+      "b": "An interface describes the shape of an object: its property names and types."
+     },
+     {
+      "h": "Type aliases",
+      "b": "type ID = string gives a type a new name. Aliases can name any type, including unions."
+     },
+     {
+      "h": "Optional and readonly",
+      "b": "A ? after a name, like age?: number, means the property is optional. readonly means it cannot be reassigned after creation."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword describes the shape of an object?",
+      "o": [
+       "shape",
+       "interface",
+       "struct",
+       "object"
+      ],
+      "a": 1,
+      "why": "interface describes an object's shape."
+     },
+     {
+      "t": "mc",
+      "q": "What does a ? after a property name mean, like age?: number?",
+      "o": [
+       "The property is private",
+       "The property is readonly",
+       "The property is optional",
+       "The property is a string"
+      ],
+      "a": 2,
+      "why": "The ? makes the property optional."
+     },
+     {
+      "t": "mc",
+      "q": "Which line creates a type alias?",
+      "o": [
+       "alias ID = string",
+       "var ID: type",
+       "typedef ID string",
+       "type ID = string"
+      ],
+      "a": 3,
+      "why": "TypeScript uses the type keyword."
+     },
+     {
+      "t": "mc",
+      "q": "What does readonly do on a property?",
+      "o": [
+       "Prevents reassignment after creation",
+       "Hides it",
+       "Makes it a string",
+       "Deletes it"
+      ],
+      "a": 0,
+      "why": "A readonly property cannot be changed after it is set."
+     },
+     {
+      "t": "tf",
+      "q": "Interfaces exist at runtime as real JavaScript objects.",
+      "a": false,
+      "why": "Types and interfaces are erased when compiling to JavaScript."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "interface",
+        "Describes object shape"
+       ],
+       [
+        "type",
+        "Names any type"
+       ],
+       [
+        "Optional (?)",
+        "Property may be missing"
+       ],
+       [
+        "readonly",
+        "Cannot be reassigned"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using an interface in order",
+      "items": [
+       [
+        "Declare interface User",
+        1
+       ],
+       [
+        "Add properties and types",
+        2
+       ],
+       [
+        "Annotate a variable as User",
+        3
+       ],
+       [
+        "Compiler checks the shape",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Unions and Generics",
+    "period": "Advanced types",
+    "learn": [
+     {
+      "h": "Union types",
+      "b": "string | number means a value can be a string or a number. Use a check like typeof x === 'string' to narrow it down."
+     },
+     {
+      "h": "Generics",
+      "b": "A generic like <T> lets code work with many types. Array<number> is an array of numbers."
+     },
+     {
+      "h": "Other helpers",
+      "b": "& combines types (intersection). unknown is a safe type that you must check before using."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does string | number mean?",
+      "o": [
+       "Both a string and a number",
+       "Neither type",
+       "Either a string or a number",
+       "A string turned into a number"
+      ],
+      "a": 2,
+      "why": "| means one of the listed types."
+     },
+     {
+      "t": "mc",
+      "q": "What does Array<number> mean?",
+      "o": [
+       "An array of numbers",
+       "A number of arrays",
+       "A tuple",
+       "A function"
+      ],
+      "a": 0,
+      "why": "It is an array whose items are numbers."
+     },
+     {
+      "t": "mc",
+      "q": "What are generics like <T> used for?",
+      "o": [
+       "Making variables constant",
+       "Importing files",
+       "Skipping type checks",
+       "Writing code that works with many types"
+      ],
+      "a": 3,
+      "why": "Generics make code reusable across types."
+     },
+     {
+      "t": "mc",
+      "q": "What does a type guard like typeof x === 'string' do?",
+      "o": [
+       "Converts x to string",
+       "Narrows the type inside the if block",
+       "Throws an error",
+       "Deletes x"
+      ],
+      "a": 1,
+      "why": "It narrows x to string inside the block."
+     },
+     {
+      "t": "tf",
+      "q": "A union type lets a value be one of several types.",
+      "a": true,
+      "why": "That is the purpose of the | operator."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol or type to its meaning",
+      "pairs": [
+       [
+        "|",
+        "Union of types"
+       ],
+       [
+        "&",
+        "Intersection of types"
+       ],
+       [
+        "<T>",
+        "Generic type parameter"
+       ],
+       [
+        "unknown",
+        "Safe type needing checks"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these types from most specific to most general",
+      "items": [
+       [
+        "'a' (literal)",
+        1
+       ],
+       [
+        "string",
+        2
+       ],
+       [
+        "string | number",
+        3
+       ],
+       [
+        "unknown",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Functions, Classes and Config",
+    "period": "Real projects",
+    "learn": [
+     {
+      "h": "Typed functions",
+      "b": "Type the parameters and the return: function f(x: number): number. A function with return type void returns nothing useful."
+     },
+     {
+      "h": "Classes",
+      "b": "Classes can have public, private and readonly members. private means only the class itself can use it. A class can implement an interface."
+     },
+     {
+      "h": "tsconfig.json",
+      "b": "This file configures the TypeScript compiler. Setting strict: true turns on a group of strict type checks."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you type a function's return as a number?",
+      "o": [
+       "function f() => number",
+       "function number f()",
+       "function f(): number",
+       "function f(number)"
+      ],
+      "a": 2,
+      "why": "The return type goes after the parameters and a colon."
+     },
+     {
+      "t": "mc",
+      "q": "Which modifier makes a class member usable only inside the class?",
+      "o": [
+       "hidden",
+       "private",
+       "local",
+       "closed"
+      ],
+      "a": 1,
+      "why": "private limits access to the class."
+     },
+     {
+      "t": "mc",
+      "q": "What does the tsconfig.json file do?",
+      "o": [
+       "Stores passwords",
+       "Lists npm packages",
+       "Styles the page",
+       "Configures the TypeScript compiler"
+      ],
+      "a": 3,
+      "why": "tsconfig.json holds compiler options."
+     },
+     {
+      "t": "mc",
+      "q": "What does strict: true in tsconfig turn on?",
+      "o": [
+       "A group of strict type-checking options",
+       "Faster compile",
+       "Dark mode",
+       "Removal of types"
+      ],
+      "a": 0,
+      "why": "strict enables several strict checks together."
+     },
+     {
+      "t": "tf",
+      "q": "A function return type of void means it returns nothing useful.",
+      "a": true,
+      "why": "void signals no meaningful return value."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "private",
+        "Only inside class"
+       ],
+       [
+        "public",
+        "Accessible anywhere"
+       ],
+       [
+        "constructor",
+        "Runs when object is created"
+       ],
+       [
+        "implements",
+        "Class follows an interface"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to build a TypeScript project in order",
+      "items": [
+       [
+        "Run npm init",
+        1
+       ],
+       [
+        "Install typescript",
+        2
+       ],
+       [
+        "Create tsconfig.json",
+        3
+       ],
+       [
+        "Run tsc",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "web": {
+  "name": "HTML & CSS",
+  "units": [
+   {
+    "title": "HTML Basics",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "What is HTML?",
+      "b": "HTML (HyperText Markup Language) gives a web page its structure. It uses tags like <p> for a paragraph."
+     },
+     {
+      "h": "Common tags",
+      "b": "<h1> is the biggest heading, <a href> makes a link, and <img src alt> shows an image. The alt text describes the image."
+     },
+     {
+      "h": "Page structure",
+      "b": "A page starts with <!DOCTYPE html>, then <html>, then <head> for settings and <body> for what people see."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does HTML stand for?",
+      "o": [
+       "HyperText Markup Language",
+       "High Tech Modern Language",
+       "Home Tool Markup Language",
+       "Hyper Transfer Markup Logic"
+      ],
+      "a": 0,
+      "why": "HTML means HyperText Markup Language."
+     },
+     {
+      "t": "mc",
+      "q": "Which tag makes the biggest heading?",
+      "o": [
+       "<h6>",
+       "<head>",
+       "<h1>",
+       "<title>"
+      ],
+      "a": 2,
+      "why": "<h1> is the top-level, largest heading."
+     },
+     {
+      "t": "mc",
+      "q": "Which tag creates a link?",
+      "o": [
+       "<link>",
+       "<a>",
+       "<href>",
+       "<url>"
+      ],
+      "a": 1,
+      "why": "The <a> (anchor) tag makes links."
+     },
+     {
+      "t": "mc",
+      "q": "Which attribute gives an image alternative text?",
+      "o": [
+       "title",
+       "src",
+       "href",
+       "alt"
+      ],
+      "a": 3,
+      "why": "alt describes the image for people who cannot see it."
+     },
+     {
+      "t": "tf",
+      "q": "The <p> tag creates a paragraph.",
+      "a": true,
+      "why": "p stands for paragraph."
+     },
+     {
+      "t": "match",
+      "q": "Match each tag to its use",
+      "pairs": [
+       [
+        "<p>",
+        "Paragraph"
+       ],
+       [
+        "<ul>",
+        "Bulleted list"
+       ],
+       [
+        "<img>",
+        "Image"
+       ],
+       [
+        "<a>",
+        "Link"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a basic HTML page in order from top to bottom",
+      "items": [
+       [
+        "<!DOCTYPE html>",
+        1
+       ],
+       [
+        "<html>",
+        2
+       ],
+       [
+        "<head>",
+        3
+       ],
+       [
+        "<body>",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "More HTML",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "Lists and tables",
+      "b": "<ul> makes a bulleted list and <ol> a numbered list, with <li> for each item. A table uses <table>, <tr> for rows and <td> for cells."
+     },
+     {
+      "h": "Semantic tags",
+      "b": "Tags like <nav>, <header>, <main> and <footer> describe what each part of the page is. This helps search engines and screen readers."
+     },
+     {
+      "h": "Forms",
+      "b": "A <form> collects input. <input type='password'> hides what you type, and <button> sends the form."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which tag creates a numbered list?",
+      "o": [
+       "<ul>",
+       "<ol>",
+       "<li>",
+       "<dl>"
+      ],
+      "a": 1,
+      "why": "<ol> means ordered list."
+     },
+     {
+      "t": "mc",
+      "q": "Which element is the semantic choice for page navigation links?",
+      "o": [
+       "<div>",
+       "<span>",
+       "<nav>",
+       "<b>"
+      ],
+      "a": 2,
+      "why": "<nav> marks navigation links."
+     },
+     {
+      "t": "mc",
+      "q": "Which input type hides the typed characters?",
+      "o": [
+       "text",
+       "hidden",
+       "secret",
+       "password"
+      ],
+      "a": 3,
+      "why": "type='password' shows dots instead of letters."
+     },
+     {
+      "t": "mc",
+      "q": "Which tag holds each row in a table?",
+      "o": [
+       "<tr>",
+       "<td>",
+       "<th>",
+       "<tab>"
+      ],
+      "a": 0,
+      "why": "<tr> means table row."
+     },
+     {
+      "t": "tf",
+      "q": "The <br> tag adds a line break.",
+      "a": true,
+      "why": "br breaks the line."
+     },
+     {
+      "t": "match",
+      "q": "Match each tag to its use",
+      "pairs": [
+       [
+        "<form>",
+        "Collects user input"
+       ],
+       [
+        "<table>",
+        "Rows and columns"
+       ],
+       [
+        "<li>",
+        "List item"
+       ],
+       [
+        "<button>",
+        "Clickable button"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these table tags in order from outer to inner",
+      "items": [
+       [
+        "<table>",
+        1
+       ],
+       [
+        "<tr>",
+        2
+       ],
+       [
+        "<td>",
+        3
+       ],
+       [
+        "Text in the cell",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "CSS Basics",
+    "period": "CSS",
+    "learn": [
+     {
+      "h": "What is CSS?",
+      "b": "CSS (Cascading Style Sheets) controls how HTML looks: colors, sizes and spacing."
+     },
+     {
+      "h": "Selectors",
+      "b": "A selector chooses elements. p targets paragraphs, .box targets class box, and #menu targets the element with id menu."
+     },
+     {
+      "h": "Common properties",
+      "b": "color changes text color, background sets the background, font-size sets text size, and border draws a line around an element. padding is the space inside the border."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does CSS stand for?",
+      "o": [
+       "Computer Style System",
+       "Cascading Style Sheets",
+       "Creative Style Syntax",
+       "Colorful Style Sheets"
+      ],
+      "a": 1,
+      "why": "CSS means Cascading Style Sheets."
+     },
+     {
+      "t": "mc",
+      "q": "Which property changes text color?",
+      "o": [
+       "font-color",
+       "text-style",
+       "color",
+       "fg"
+      ],
+      "a": 2,
+      "why": "color sets the text color."
+     },
+     {
+      "t": "mc",
+      "q": "Which selector targets elements with the class box?",
+      "o": [
+       "#box",
+       "box",
+       "*box",
+       ".box"
+      ],
+      "a": 3,
+      "why": "A dot selects a class."
+     },
+     {
+      "t": "mc",
+      "q": "Which property sets the space inside an element's border?",
+      "o": [
+       "padding",
+       "margin",
+       "gap",
+       "spacing"
+      ],
+      "a": 0,
+      "why": "padding is inside the border; margin is outside."
+     },
+     {
+      "t": "tf",
+      "q": "An id selector starts with a # symbol.",
+      "a": true,
+      "why": "#name selects the element with that id."
+     },
+     {
+      "t": "match",
+      "q": "Match each property to what it does",
+      "pairs": [
+       [
+        "color",
+        "Text color"
+       ],
+       [
+        "background",
+        "Background style"
+       ],
+       [
+        "font-size",
+        "Text size"
+       ],
+       [
+        "border",
+        "Line around element"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the box model in order from inside to outside",
+      "items": [
+       [
+        "Content",
+        1
+       ],
+       [
+        "Padding",
+        2
+       ],
+       [
+        "Border",
+        3
+       ],
+       [
+        "Margin",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Layout and Responsive Design",
+    "period": "CSS layout",
+    "learn": [
+     {
+      "h": "Flexbox",
+      "b": "display: flex makes a flex container. justify-content: center centers items along the main direction."
+     },
+     {
+      "h": "Position",
+      "b": "The position property sets how an element is placed, such as relative or absolute. display: none hides an element and removes it from the layout."
+     },
+     {
+      "h": "Media queries",
+      "b": "@media (max-width: 600px) applies styles only on screens 600px wide or narrower. This makes pages work on phones."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which declaration makes a flex container?",
+      "o": [
+       "layout: flex",
+       "flex: display",
+       "display: flex",
+       "flexbox: on"
+      ],
+      "a": 2,
+      "why": "display: flex creates a flex container."
+     },
+     {
+      "t": "mc",
+      "q": "Which flex property centers items along the main axis?",
+      "o": [
+       "align-text: center",
+       "justify-content: center",
+       "flex-center: true",
+       "center-items: main"
+      ],
+      "a": 1,
+      "why": "justify-content aligns items along the main axis."
+     },
+     {
+      "t": "mc",
+      "q": "What does @media (max-width: 600px) do?",
+      "o": [
+       "Plays media",
+       "Sets image size",
+       "Applies styles at least 600px wide",
+       "Applies styles on screens 600px wide or narrower"
+      ],
+      "a": 3,
+      "why": "max-width 600px means 600px or less."
+     },
+     {
+      "t": "mc",
+      "q": "Which property sets how an element is positioned, like absolute or relative?",
+      "o": [
+       "position",
+       "place",
+       "layout",
+       "float-mode"
+      ],
+      "a": 0,
+      "why": "The position property controls this."
+     },
+     {
+      "t": "tf",
+      "q": "display: none hides an element and removes it from the layout.",
+      "a": true,
+      "why": "The element takes up no space."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Flex",
+        "One-dimensional layout"
+       ],
+       [
+        "Grid",
+        "Rows and columns layout"
+       ],
+       [
+        "Media query",
+        "Styles by screen size"
+       ],
+       [
+        "Position",
+        "How element is placed"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of making a responsive page in order",
+      "items": [
+       [
+        "Add the viewport meta tag",
+        1
+       ],
+       [
+        "Build a flexible layout",
+        2
+       ],
+       [
+        "Add media queries",
+        3
+       ],
+       [
+        "Test on small screens",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "java": {
+  "name": "Java",
+  "units": [
+   {
+    "title": "Java Basics",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "Hello, Java",
+      "b": "System.out.println() prints a line. Code lives in a class, and the program starts at public static void main(String[] args)."
+     },
+     {
+      "h": "Compile and run",
+      "b": "javac compiles a .java file into a .class file of bytecode. The java command runs it on the JVM (Java Virtual Machine)."
+     },
+     {
+      "h": "Syntax",
+      "b": "Every statement ends with a semicolon, and blocks use curly braces."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method prints a line in Java?",
+      "o": [
+       "print()",
+       "console.log()",
+       "echo()",
+       "System.out.println()"
+      ],
+      "a": 3,
+      "why": "Java prints with System.out.println."
+     },
+     {
+      "t": "mc",
+      "q": "What is the entry point of a Java program?",
+      "o": [
+       "start()",
+       "public static void main(String[] args)",
+       "run()",
+       "init()"
+      ],
+      "a": 1,
+      "why": "The JVM begins at the main method."
+     },
+     {
+      "t": "mc",
+      "q": "What does the JVM do?",
+      "o": [
+       "Writes your code",
+       "Designs web pages",
+       "Runs compiled Java bytecode",
+       "Stores passwords"
+      ],
+      "a": 2,
+      "why": "The JVM runs the bytecode."
+     },
+     {
+      "t": "mc",
+      "q": "What file extension does Java source code use?",
+      "o": [
+       ".java",
+       ".class",
+       ".jar",
+       ".js"
+      ],
+      "a": 0,
+      "why": "Source files end in .java."
+     },
+     {
+      "t": "tf",
+      "q": "Java statements end with a semicolon.",
+      "a": true,
+      "why": "A semicolon ends each statement."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "javac",
+        "Compiles Java code"
+       ],
+       [
+        "java",
+        "Runs a program"
+       ],
+       [
+        ".class",
+        "Bytecode file"
+       ],
+       [
+        "JVM",
+        "Runs bytecode"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to run Java code in order",
+      "items": [
+       [
+        "Write Hello.java",
+        1
+       ],
+       [
+        "Compile with javac",
+        2
+       ],
+       [
+        "Get Hello.class",
+        3
+       ],
+       [
+        "Run with java",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Variables and Operators",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "Types",
+      "b": "Java needs a type for every variable: int (whole number), double (decimal), boolean, char (one character) and String (text)."
+     },
+     {
+      "h": "Integer division",
+      "b": "7 / 2 with ints gives 3, not 3.5, because the decimal part is dropped. % gives the remainder, so 7 % 3 is 1."
+     },
+     {
+      "h": "Type rules",
+      "b": "int x = 3.5; does not compile, because a decimal does not fit in an int. A char is a number inside: 'a' + 1 is 98."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does System.out.println(7 / 2) print?",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "3.0"
+      ],
+      "a": 1,
+      "why": "Both are ints, so the result is the int 3."
+     },
+     {
+      "t": "mc",
+      "q": "What does System.out.println(7 % 3) print?",
+      "o": [
+       "2",
+       "0",
+       "1",
+       "3"
+      ],
+      "a": 2,
+      "why": "7 divided by 3 leaves remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "Which type stores true or false?",
+      "o": [
+       "boolean",
+       "bool",
+       "bit",
+       "logic"
+      ],
+      "a": 0,
+      "why": "Java uses boolean."
+     },
+     {
+      "t": "mc",
+      "q": "What does System.out.println('a' + 1) print?",
+      "o": [
+       "a1",
+       "b",
+       "Error",
+       "98"
+      ],
+      "a": 3,
+      "why": "'a' is 97, so 'a' + 1 is the int 98."
+     },
+     {
+      "t": "tf",
+      "q": "In Java, int x = 3.5; compiles without an error.",
+      "a": false,
+      "why": "A double cannot be stored in an int without a cast."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its use",
+      "pairs": [
+       [
+        "int",
+        "Whole number"
+       ],
+       [
+        "double",
+        "Decimal number"
+       ],
+       [
+        "String",
+        "Text"
+       ],
+       [
+        "char",
+        "Single character"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these types from smallest to largest range",
+      "items": [
+       [
+        "byte",
+        1
+       ],
+       [
+        "short",
+        2
+       ],
+       [
+        "int",
+        3
+       ],
+       [
+        "long",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Control Flow and Arrays",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "Loops",
+      "b": "A for loop has a start, a check and an update: for (int i = 0; i < 3; i++). while repeats while a condition is true."
+     },
+     {
+      "h": "Switch",
+      "b": "switch picks between cases, and break leaves the case or loop."
+     },
+     {
+      "h": "Arrays",
+      "b": "int[] a = {4, 5, 6} makes an array. The first index is 0 and a.length gives the size, which is 3 here."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first element in a Java array?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "It depends"
+      ],
+      "a": 1,
+      "why": "Java arrays start at index 0."
+     },
+     {
+      "t": "mc",
+      "q": "If int[] a = new int[5], what is a.length?",
+      "o": [
+       "4",
+       "6",
+       "5",
+       "0"
+      ],
+      "a": 2,
+      "why": "The array has 5 slots."
+     },
+     {
+      "t": "mc",
+      "q": "What does int[] a = {4, 5, 6}; System.out.println(a[2]) print?",
+      "o": [
+       "4",
+       "5",
+       "2",
+       "6"
+      ],
+      "a": 3,
+      "why": "Index 2 is the third item, 6."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop has an init, a condition and an update in one line?",
+      "o": [
+       "for",
+       "do-while only",
+       "switch",
+       "if"
+      ],
+      "a": 0,
+      "why": "The for loop has all three parts."
+     },
+     {
+      "t": "tf",
+      "q": "A switch statement can choose between several cases.",
+      "a": true,
+      "why": "That is what switch is for."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "for",
+        "Counted loop"
+       ],
+       [
+        "while",
+        "Condition loop"
+       ],
+       [
+        "switch",
+        "Pick a case"
+       ],
+       [
+        "break",
+        "Exit loop or case"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of for (int i = 0; i < 3; i++) in order",
+      "items": [
+       [
+        "int i = 0",
+        1
+       ],
+       [
+        "Check i < 3",
+        2
+       ],
+       [
+        "Run the body",
+        3
+       ],
+       [
+        "i++",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Methods and OOP",
+    "period": "Java OOP",
+    "learn": [
+     {
+      "h": "Methods",
+      "b": "A method is a named block of code. void means it returns nothing. Other methods return a type like int."
+     },
+     {
+      "h": "Classes and objects",
+      "b": "A class is a blueprint. new creates an object. A constructor sets up the new object."
+     },
+     {
+      "h": "Inheritance and access",
+      "b": "extends makes a class inherit from one other class. private means only the class itself can use the field."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does void mean as a return type?",
+      "o": [
+       "The method returns zero",
+       "The method returns nothing",
+       "The method is empty",
+       "The method is private"
+      ],
+      "a": 1,
+      "why": "void means no value is returned."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword creates a new object?",
+      "o": [
+       "make",
+       "create",
+       "new",
+       "object"
+      ],
+      "a": 2,
+      "why": "Java uses new."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword makes a class inherit from another class?",
+      "o": [
+       "inherits",
+       "implements",
+       "super",
+       "extends"
+      ],
+      "a": 3,
+      "why": "extends is used for class inheritance."
+     },
+     {
+      "t": "mc",
+      "q": "What does private mean for a field?",
+      "o": [
+       "Only accessible inside its class",
+       "Accessible everywhere",
+       "Read-only",
+       "Static"
+      ],
+      "a": 0,
+      "why": "private limits access to the class."
+     },
+     {
+      "t": "tf",
+      "q": "A Java class can extend more than one class.",
+      "a": false,
+      "why": "Java allows only single class inheritance."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Class",
+        "Blueprint"
+       ],
+       [
+        "Object",
+        "Instance of a class"
+       ],
+       [
+        "Constructor",
+        "Sets up new objects"
+       ],
+       [
+        "extends",
+        "Inherit from a class"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a class in order",
+      "items": [
+       [
+        "Define the class",
+        1
+       ],
+       [
+        "Create object with new",
+        2
+       ],
+       [
+        "Call a method",
+        3
+       ],
+       [
+        "Use the result",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "c": {
+  "name": "C",
+  "units": [
+   {
+    "title": "C Basics",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "Hello, C",
+      "b": "A C program starts at main. #include <stdio.h> gives you printf, which prints text."
+     },
+     {
+      "h": "Compiling",
+      "b": "C is compiled. A compiler like gcc turns your code into an executable file that you then run."
+     },
+     {
+      "h": "Return value",
+      "b": "main returns 0 when the program ends successfully."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which header provides printf?",
+      "o": [
+       "<stdio.h>",
+       "<stdlib.h>",
+       "<string.h>",
+       "<math.h>"
+      ],
+      "a": 0,
+      "why": "printf is declared in stdio.h."
+     },
+     {
+      "t": "mc",
+      "q": "Which function prints formatted text in C?",
+      "o": [
+       "print()",
+       "printf()",
+       "cout",
+       "echo"
+      ],
+      "a": 1,
+      "why": "C uses printf."
+     },
+     {
+      "t": "mc",
+      "q": "What does main returning 0 usually mean?",
+      "o": [
+       "An error",
+       "An infinite loop",
+       "The program ended successfully",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "0 is the success code."
+     },
+     {
+      "t": "mc",
+      "q": "Which compiler command is commonly used for C on Linux?",
+      "o": [
+       "javac",
+       "python",
+       "node",
+       "gcc"
+      ],
+      "a": 3,
+      "why": "gcc compiles C code."
+     },
+     {
+      "t": "tf",
+      "q": "C is a compiled language.",
+      "a": true,
+      "why": "C code is compiled to machine code."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its job",
+      "pairs": [
+       [
+        "#include",
+        "Add a header"
+       ],
+       [
+        "main",
+        "Program start"
+       ],
+       [
+        "printf",
+        "Print output"
+       ],
+       [
+        "gcc",
+        "Compiles C code"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to build a C program in order",
+      "items": [
+       [
+        "Write code.c",
+        1
+       ],
+       [
+        "Compile with gcc",
+        2
+       ],
+       [
+        "Get an executable",
+        3
+       ],
+       [
+        "Run it",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Variables and Operators",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "Types",
+      "b": "C has int, float, double and char. There is no built-in string type; text is an array of chars."
+     },
+     {
+      "h": "Integer division",
+      "b": "With two ints, 7 / 2 is 3. % gives the remainder, so 10 % 4 is 2."
+     },
+     {
+      "h": "printf formats",
+      "b": "%d prints an int, %f prints a float, %c prints a char and %s prints a string."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In C, what is the value of 7 / 2 when both are ints?",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "3.0"
+      ],
+      "a": 1,
+      "why": "Integer division drops the decimal part."
+     },
+     {
+      "t": "mc",
+      "q": "What is the value of 10 % 4?",
+      "o": [
+       "1",
+       "2.5",
+       "2",
+       "0"
+      ],
+      "a": 2,
+      "why": "10 divided by 4 leaves remainder 2."
+     },
+     {
+      "t": "mc",
+      "q": "Which format specifier prints an int?",
+      "o": [
+       "%s",
+       "%f",
+       "%c",
+       "%d"
+      ],
+      "a": 3,
+      "why": "%d is for int."
+     },
+     {
+      "t": "mc",
+      "q": "Which type stores a single character?",
+      "o": [
+       "char",
+       "string",
+       "text",
+       "chr"
+      ],
+      "a": 0,
+      "why": "char holds one character."
+     },
+     {
+      "t": "tf",
+      "q": "In C, string is a built-in type like int.",
+      "a": false,
+      "why": "C has no string type; strings are char arrays."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "int",
+        "Whole number"
+       ],
+       [
+        "float",
+        "Decimal number"
+       ],
+       [
+        "char",
+        "Single character"
+       ],
+       [
+        "%s",
+        "Print a string"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these types from smallest to largest typical size",
+      "items": [
+       [
+        "char",
+        1
+       ],
+       [
+        "short",
+        2
+       ],
+       [
+        "int",
+        3
+       ],
+       [
+        "long long",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Control Flow and Arrays",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "Conditions",
+      "b": "In C, 0 means false and any other number means true. if, else and switch choose code."
+     },
+     {
+      "h": "Loops",
+      "b": "for repeats a set number of times, while checks first, and do-while runs the body at least once."
+     },
+     {
+      "h": "Arrays",
+      "b": "int a[3] = {1, 2, 3} makes an array. Index 0 is the first item, so a[1] is 2. A C string ends with a special null character."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first element of a C array?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "It depends on the type"
+      ],
+      "a": 1,
+      "why": "C arrays start at 0."
+     },
+     {
+      "t": "mc",
+      "q": "If int a[3] = {1, 2, 3}, what is a[1]?",
+      "o": [
+       "1",
+       "3",
+       "2",
+       "0"
+      ],
+      "a": 2,
+      "why": "Index 1 is the second item, 2."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop runs its body at least once before checking the condition?",
+      "o": [
+       "for",
+       "while",
+       "if",
+       "do-while"
+      ],
+      "a": 3,
+      "why": "do-while checks after the body."
+     },
+     {
+      "t": "mc",
+      "q": "In C, what does 0 mean in a condition?",
+      "o": [
+       "False",
+       "True",
+       "An error",
+       "Always loop"
+      ],
+      "a": 0,
+      "why": "0 counts as false."
+     },
+     {
+      "t": "tf",
+      "q": "A C string ends with a special null character.",
+      "a": true,
+      "why": "The null character marks the end of the string."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "for",
+        "Counted loop"
+       ],
+       [
+        "while",
+        "Condition loop"
+       ],
+       [
+        "break",
+        "Exit a loop"
+       ],
+       [
+        "continue",
+        "Skip to next round"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a while loop in order",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "Run the body",
+        2
+       ],
+       [
+        "Go back to the check",
+        3
+       ],
+       [
+        "Stop when false",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Functions and Pointers",
+    "period": "C intermediate",
+    "learn": [
+     {
+      "h": "Pointers",
+      "b": "A pointer stores the address of a variable. & gives the address and * reads the value at an address. If int x = 5; int *p = &x; then *p is 5."
+     },
+     {
+      "h": "Declaring pointers",
+      "b": "int *p declares a pointer to an int. The * in a declaration means pointer."
+     },
+     {
+      "h": "Memory",
+      "b": "malloc gets memory from the heap. Check that it is not NULL, use it, then call free to release it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the & operator give you?",
+      "o": [
+       "The value",
+       "The address of a variable",
+       "A copy",
+       "The size"
+      ],
+      "a": 1,
+      "why": "& gives the address."
+     },
+     {
+      "t": "mc",
+      "q": "What does * mean in the declaration int *p?",
+      "o": [
+       "Multiply",
+       "Delete",
+       "Declares a pointer to int",
+       "Declares an array"
+      ],
+      "a": 2,
+      "why": "It declares p as a pointer to int."
+     },
+     {
+      "t": "mc",
+      "q": "If int x = 5; int *p = &x; what is *p?",
+      "o": [
+       "The address of x",
+       "0",
+       "p",
+       "5"
+      ],
+      "a": 3,
+      "why": "*p reads the value stored at the address, which is 5."
+     },
+     {
+      "t": "mc",
+      "q": "Which function allocates memory on the heap?",
+      "o": [
+       "malloc",
+       "alloc",
+       "new",
+       "make"
+      ],
+      "a": 0,
+      "why": "malloc allocates heap memory in C."
+     },
+     {
+      "t": "tf",
+      "q": "Memory from malloc should be released with free.",
+      "a": true,
+      "why": "free gives the memory back."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "&",
+        "Address of"
+       ],
+       [
+        "*",
+        "Dereference or pointer"
+       ],
+       [
+        "malloc",
+        "Allocate memory"
+       ],
+       [
+        "free",
+        "Release memory"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using malloc in order",
+      "items": [
+       [
+        "Call malloc",
+        1
+       ],
+       [
+        "Check it is not NULL",
+        2
+       ],
+       [
+        "Use the memory",
+        3
+       ],
+       [
+        "Call free",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "cpp": {
+  "name": "C++",
+  "units": [
+   {
+    "title": "C++ Basics",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Hello, C++",
+      "b": "Add #include <iostream>, then print with std::cout << x;. The << operator sends data to the output."
+     },
+     {
+      "h": "Input",
+      "b": "std::cin >> x; reads input from the keyboard. The >> operator sends data into the variable."
+     },
+     {
+      "h": "std and ::",
+      "b": "std is the standard library namespace. The :: symbol (scope resolution) says that cout lives inside std."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line prints x in C++?",
+      "o": [
+       "std::cout << x;",
+       "std::cin << x;",
+       "print(x);",
+       "echo x;"
+      ],
+      "a": 0,
+      "why": "cout with << prints output."
+     },
+     {
+      "t": "mc",
+      "q": "Which header is needed for cout?",
+      "o": [
+       "<stdio.h>",
+       "<iostream>",
+       "<cout>",
+       "<io>"
+      ],
+      "a": 1,
+      "why": "cout is declared in <iostream>."
+     },
+     {
+      "t": "mc",
+      "q": "What does :: mean in std::cout?",
+      "o": [
+       "Division",
+       "Pointer",
+       "Scope resolution",
+       "Comment"
+      ],
+      "a": 2,
+      "why": ":: says cout belongs to the std namespace."
+     },
+     {
+      "t": "mc",
+      "q": "Which operator reads input from the keyboard with cin?",
+      "o": [
+       "<<",
+       "->",
+       "==",
+       ">>"
+      ],
+      "a": 3,
+      "why": "cin uses >>."
+     },
+     {
+      "t": "tf",
+      "q": "C++ is a compiled language.",
+      "a": true,
+      "why": "C++ is compiled to machine code."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "#include",
+        "Add a header"
+       ],
+       [
+        "cout",
+        "Output stream"
+       ],
+       [
+        "cin",
+        "Input stream"
+       ],
+       [
+        "std",
+        "Standard library namespace"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to build C++ code in order",
+      "items": [
+       [
+        "Write main.cpp",
+        1
+       ],
+       [
+        "Compile with g++",
+        2
+       ],
+       [
+        "Get an executable",
+        3
+       ],
+       [
+        "Run it",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Variables and Strings",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Types",
+      "b": "C++ has int, double, bool, char and std::string for text. Integer division drops decimals, so 7 / 2 is 3."
+     },
+     {
+      "h": "auto and const",
+      "b": "auto lets the compiler find the type. const means the value cannot be changed."
+     },
+     {
+      "h": "Strings",
+      "b": "Include <string> to use std::string. It holds text and has helpers like .size()."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 7 / 2 in C++ when both are ints?",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "3.0"
+      ],
+      "a": 1,
+      "why": "Integer division drops the decimal part."
+     },
+     {
+      "t": "mc",
+      "q": "Which type holds text in C++ (with <string>)?",
+      "o": [
+       "text",
+       "str",
+       "std::string",
+       "String"
+      ],
+      "a": 2,
+      "why": "std::string is the text type."
+     },
+     {
+      "t": "mc",
+      "q": "What does auto do in 'auto x = 5;'?",
+      "o": [
+       "Makes x constant",
+       "Makes x global",
+       "Deletes x",
+       "Deduces the type automatically"
+      ],
+      "a": 3,
+      "why": "The compiler works out the type from the value."
+     },
+     {
+      "t": "mc",
+      "q": "What does const mean?",
+      "o": [
+       "The value cannot be changed",
+       "The value is a string",
+       "The value is global",
+       "The value is deleted"
+      ],
+      "a": 0,
+      "why": "const makes a value read-only."
+     },
+     {
+      "t": "tf",
+      "q": "bool in C++ can be true or false.",
+      "a": true,
+      "why": "bool has exactly two values."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its use",
+      "pairs": [
+       [
+        "int",
+        "Whole number"
+       ],
+       [
+        "double",
+        "Decimal"
+       ],
+       [
+        "bool",
+        "true or false"
+       ],
+       [
+        "char",
+        "Single character"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest result",
+      "items": [
+       [
+        "10 % 4",
+        1
+       ],
+       [
+        "7 / 2",
+        2
+       ],
+       [
+        "2 * 3",
+        3
+       ],
+       [
+        "10 - 1",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Vectors and Loops",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "vector",
+      "b": "std::vector from <vector> is a list that grows. v.push_back(4) adds to the end and v.size() counts items. The first index is 0."
+     },
+     {
+      "h": "Range-based for",
+      "b": "for (int x : v) goes through every item in v, one at a time."
+     },
+     {
+      "h": "More tools",
+      "b": "pop_back removes the last item. Vectors are safer and easier than raw arrays."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which header provides std::vector?",
+      "o": [
+       "<array>",
+       "<vector>",
+       "<list>",
+       "<vec>"
+      ],
+      "a": 1,
+      "why": "std::vector is in <vector>."
+     },
+     {
+      "t": "mc",
+      "q": "If vector<int> v = {1, 2, 3}, what does v.size() return?",
+      "o": [
+       "2",
+       "4",
+       "3",
+       "0"
+      ],
+      "a": 2,
+      "why": "There are 3 items."
+     },
+     {
+      "t": "mc",
+      "q": "What does v.push_back(4) do?",
+      "o": [
+       "Adds 4 at the start",
+       "Removes 4",
+       "Sorts the vector",
+       "Adds 4 at the end"
+      ],
+      "a": 3,
+      "why": "push_back adds an item at the end."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a range-based for loop?",
+      "o": [
+       "for (int x : v)",
+       "for x in v",
+       "foreach x in v",
+       "for (x of v)"
+      ],
+      "a": 0,
+      "why": "C++ uses a colon in range-based for."
+     },
+     {
+      "t": "tf",
+      "q": "C++ vector indexes start at 0.",
+      "a": true,
+      "why": "The first item is v[0]."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "push_back",
+        "Add to end"
+       ],
+       [
+        "size",
+        "Number of items"
+       ],
+       [
+        "pop_back",
+        "Remove last item"
+       ],
+       [
+        "for (x : v)",
+        "Loop over all items"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to fill and print a vector in order",
+      "items": [
+       [
+        "Include <vector>",
+        1
+       ],
+       [
+        "Create the vector",
+        2
+       ],
+       [
+        "Add items with push_back",
+        3
+       ],
+       [
+        "Loop to print them",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "References, Pointers and Classes",
+    "period": "C++ OOP",
+    "learn": [
+     {
+      "h": "References and pointers",
+      "b": "void f(int& x) takes a reference, which is another name for the caller's variable. A pointer stores an address, and nullptr means it points to nothing."
+     },
+     {
+      "h": "Classes",
+      "b": "A class is a blueprint. private members can only be used inside the class. A constructor has the same name as the class and runs when an object is made."
+     },
+     {
+      "h": "Destructors",
+      "b": "A destructor (written ~ClassName) runs when an object is destroyed, to clean up."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does & mean in void f(int& x)?",
+      "o": [
+       "x is a pointer",
+       "x is a reference",
+       "x is the address of 0",
+       "x is constant"
+      ],
+      "a": 1,
+      "why": "& after the type makes x a reference."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword makes a class member usable only inside the class?",
+      "o": [
+       "hidden",
+       "closed",
+       "private",
+       "local"
+      ],
+      "a": 2,
+      "why": "private limits access to the class."
+     },
+     {
+      "t": "mc",
+      "q": "What does nullptr represent?",
+      "o": [
+       "The number 1",
+       "An empty string",
+       "A deleted class",
+       "A pointer that points to nothing"
+      ],
+      "a": 3,
+      "why": "nullptr is the null pointer."
+     },
+     {
+      "t": "mc",
+      "q": "What does a destructor do?",
+      "o": [
+       "Cleans up when an object is destroyed",
+       "Creates an object",
+       "Copies it",
+       "Prints it"
+      ],
+      "a": 0,
+      "why": "It runs on destruction."
+     },
+     {
+      "t": "tf",
+      "q": "A constructor has the same name as its class.",
+      "a": true,
+      "why": "That is how C++ constructors are written."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Class",
+        "Blueprint for objects"
+       ],
+       [
+        "Constructor",
+        "Runs on creation"
+       ],
+       [
+        "Destructor",
+        "Runs on destruction"
+       ],
+       [
+        "Reference",
+        "Alias for a variable"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the life of an object in order",
+      "items": [
+       [
+        "Constructor runs",
+        1
+       ],
+       [
+        "Object is used",
+        2
+       ],
+       [
+        "Object goes out of scope",
+        3
+       ],
+       [
+        "Destructor runs",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "csharp": {
+  "name": "C#",
+  "units": [
+   {
+    "title": "C# Basics",
+    "period": "C# basics",
+    "learn": [
+     {
+      "h": "Hello, C#",
+      "b": "Console.WriteLine() prints a line. C# files end in .cs and programs start at Main."
+     },
+     {
+      "h": "Using",
+      "b": "using brings in a namespace, such as using System;. It is like import in other languages."
+     },
+     {
+      "h": "The platform",
+      "b": "C# runs on .NET. Each statement ends with a semicolon."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which prints a line in C#?",
+      "o": [
+       "Console.WriteLine()",
+       "System.out.println()",
+       "print()",
+       "cout"
+      ],
+      "a": 0,
+      "why": "C# uses Console.WriteLine."
+     },
+     {
+      "t": "mc",
+      "q": "What does C# code run on?",
+      "o": [
+       "JVM",
+       ".NET",
+       "Node.js",
+       "CPython"
+      ],
+      "a": 1,
+      "why": "C# runs on .NET."
+     },
+     {
+      "t": "mc",
+      "q": "Which file extension do C# files use?",
+      "o": [
+       ".c",
+       ".cpp",
+       ".cs",
+       ".csharp"
+      ],
+      "a": 2,
+      "why": "C# source files end in .cs."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword brings in a namespace?",
+      "o": [
+       "import",
+       "include",
+       "require",
+       "using"
+      ],
+      "a": 3,
+      "why": "C# uses using."
+     },
+     {
+      "t": "tf",
+      "q": "C# statements end with a semicolon.",
+      "a": true,
+      "why": "A semicolon ends each statement."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "Console.WriteLine",
+        "Print a line"
+       ],
+       [
+        "using",
+        "Import a namespace"
+       ],
+       [
+        ".cs",
+        "C# file"
+       ],
+       [
+        "Main",
+        "Program entry point"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to run a C# app in order",
+      "items": [
+       [
+        "Write Program.cs",
+        1
+       ],
+       [
+        "Compile it",
+        2
+       ],
+       [
+        "Runtime runs the program",
+        3
+       ],
+       [
+        "See the output",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Variables and Operators",
+    "period": "C# basics",
+    "learn": [
+     {
+      "h": "Types",
+      "b": "C# types include int, double, bool, char and string. var lets the compiler infer the type."
+     },
+     {
+      "h": "Integer division",
+      "b": "7 / 2 with ints is 3, and 7 % 3 is 1."
+     },
+     {
+      "h": "string keyword",
+      "b": "string (lowercase) is the keyword for text. It is the same as System.String."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does Console.WriteLine(7 / 2) print?",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "3.0"
+      ],
+      "a": 1,
+      "why": "Both are ints, so the result is 3."
+     },
+     {
+      "t": "mc",
+      "q": "What does Console.WriteLine(7 % 3) print?",
+      "o": [
+       "2",
+       "0",
+       "1",
+       "3"
+      ],
+      "a": 2,
+      "why": "7 divided by 3 leaves remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "Which type stores true or false?",
+      "o": [
+       "bool",
+       "boolean",
+       "bit",
+       "logic"
+      ],
+      "a": 0,
+      "why": "C# uses bool."
+     },
+     {
+      "t": "mc",
+      "q": "What does var do in 'var x = 5;'?",
+      "o": [
+       "Makes x dynamic",
+       "Makes x global",
+       "Makes x constant",
+       "Lets the compiler infer the type"
+      ],
+      "a": 3,
+      "why": "var infers the type, here int."
+     },
+     {
+      "t": "tf",
+      "q": "In C#, string is written in lowercase as a keyword.",
+      "a": true,
+      "why": "string is a keyword alias for System.String."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its use",
+      "pairs": [
+       [
+        "int",
+        "Whole number"
+       ],
+       [
+        "double",
+        "Decimal number"
+       ],
+       [
+        "string",
+        "Text"
+       ],
+       [
+        "char",
+        "Single character"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these types from smallest to largest size",
+      "items": [
+       [
+        "byte",
+        1
+       ],
+       [
+        "short",
+        2
+       ],
+       [
+        "int",
+        3
+       ],
+       [
+        "long",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Control Flow and Collections",
+    "period": "C# intermediate",
+    "learn": [
+     {
+      "h": "Loops",
+      "b": "for is a counted loop, while repeats while a condition is true, and foreach goes through each item in a collection."
+     },
+     {
+      "h": "Arrays",
+      "b": "int[] a = {4, 5, 6} makes an array. The first index is 0, and a.Length is 3."
+     },
+     {
+      "h": "List",
+      "b": "List<T> is a collection that grows. Use Add to append an item."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first array item in C#?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "It depends"
+      ],
+      "a": 1,
+      "why": "C# arrays start at index 0."
+     },
+     {
+      "t": "mc",
+      "q": "If int[] a = {4, 5, 6}, what is a.Length?",
+      "o": [
+       "2",
+       "4",
+       "3",
+       "6"
+      ],
+      "a": 2,
+      "why": "The array has 3 items."
+     },
+     {
+      "t": "mc",
+      "q": "Which collection grows dynamically?",
+      "o": [
+       "int[]",
+       "string",
+       "char",
+       "List<T>"
+      ],
+      "a": 3,
+      "why": "List<T> can grow as you add items."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop goes through each item in a collection?",
+      "o": [
+       "foreach",
+       "forall",
+       "each",
+       "iterate"
+      ],
+      "a": 0,
+      "why": "C# uses foreach."
+     },
+     {
+      "t": "tf",
+      "q": "In C#, a List<int> can use Add to append an item.",
+      "a": true,
+      "why": "Add puts an item at the end."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "for",
+        "Counted loop"
+       ],
+       [
+        "foreach",
+        "Loop over items"
+       ],
+       [
+        "while",
+        "Condition loop"
+       ],
+       [
+        "break",
+        "Exit a loop"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a foreach loop in order",
+      "items": [
+       [
+        "Take the first item",
+        1
+       ],
+       [
+        "Run the body",
+        2
+       ],
+       [
+        "Take the next item",
+        3
+       ],
+       [
+        "Stop after the last item",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Methods and OOP",
+    "period": "C# OOP",
+    "learn": [
+     {
+      "h": "Methods",
+      "b": "A method is a named block of code. void means it returns nothing."
+     },
+     {
+      "h": "Classes",
+      "b": "A class is a blueprint and new creates an object. class Dog : Animal makes Dog inherit from Animal. A class can have only one base class."
+     },
+     {
+      "h": "Properties",
+      "b": "A property uses get and set to read and change a value safely. private members are only usable inside the class."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does void mean as a return type?",
+      "o": [
+       "Returns 0",
+       "No value is returned",
+       "Private",
+       "Static"
+      ],
+      "a": 1,
+      "why": "void means nothing is returned."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword creates an object?",
+      "o": [
+       "make",
+       "create",
+       "new",
+       "alloc"
+      ],
+      "a": 2,
+      "why": "C# uses new."
+     },
+     {
+      "t": "mc",
+      "q": "How do you make class Dog inherit from Animal?",
+      "o": [
+       "class Dog extends Animal",
+       "class Dog inherits Animal",
+       "class Dog -> Animal",
+       "class Dog : Animal"
+      ],
+      "a": 3,
+      "why": "C# uses a colon for inheritance."
+     },
+     {
+      "t": "mc",
+      "q": "What are get and set used for?",
+      "o": [
+       "Properties",
+       "Loops",
+       "Imports",
+       "Comments"
+      ],
+      "a": 0,
+      "why": "get and set define a property."
+     },
+     {
+      "t": "tf",
+      "q": "A C# class can inherit from only one base class.",
+      "a": true,
+      "why": "C# allows single class inheritance."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Class",
+        "Blueprint"
+       ],
+       [
+        "Property",
+        "Get/set member"
+       ],
+       [
+        "Constructor",
+        "Runs on creation"
+       ],
+       [
+        "private",
+        "Only inside class"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a class in order",
+      "items": [
+       [
+        "Define the class",
+        1
+       ],
+       [
+        "Create object with new",
+        2
+       ],
+       [
+        "Call a method",
+        3
+       ],
+       [
+        "Use the result",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

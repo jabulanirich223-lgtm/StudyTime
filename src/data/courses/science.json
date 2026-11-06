@@ -1,0 +1,4772 @@
+{
+ "sci-g3": {
+  "name": "Grade 3 Science",
+  "units": [
+   {
+    "title": "Living Things and Life Cycles",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "What makes something alive?",
+      "b": "Living things need food, water, and air. They grow, change, and make new living things. A tree is alive. A rock is not."
+     },
+     {
+      "h": "Plant life cycle",
+      "b": "A plant starts as a seed. The seed sprouts and grows into a plant. The plant makes flowers, and the flowers make new seeds."
+     },
+     {
+      "h": "Animal life cycles",
+      "b": "A butterfly changes a lot as it grows: egg, caterpillar, chrysalis, then adult butterfly. A frog starts as an egg, then a tadpole that lives in water. Not every animal hatches from an egg. Dogs and cats are born alive."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a living thing?",
+      "o": [
+       "Rock",
+       "Tree",
+       "Cloud",
+       "Spoon"
+      ],
+      "a": 1,
+      "why": "A tree grows, needs water and air, and makes seeds."
+     },
+     {
+      "t": "mc",
+      "q": "What do plants need to make their food?",
+      "o": [
+       "Sunlight, water, and air",
+       "Only soil",
+       "Moonlight and sand",
+       "Wind and rocks"
+      ],
+      "a": 0,
+      "why": "Plants use sunlight, water, and air to make food."
+     },
+     {
+      "t": "mc",
+      "q": "What stage of a butterfly comes right after the egg?",
+      "o": [
+       "Adult butterfly",
+       "Chrysalis",
+       "Caterpillar",
+       "Seed"
+      ],
+      "a": 2,
+      "why": "An egg hatches into a caterpillar (larva)."
+     },
+     {
+      "t": "mc",
+      "q": "A young frog that lives in water is called a what?",
+      "o": [
+       "Chick",
+       "Tadpole",
+       "Pup",
+       "Calf"
+      ],
+      "a": 1,
+      "why": "A tadpole grows legs and becomes a frog."
+     },
+     {
+      "t": "tf",
+      "q": "All animals hatch from eggs.",
+      "a": false,
+      "why": "Many mammals, like dogs and cats, are born alive."
+     },
+     {
+      "t": "match",
+      "q": "Match each stage to what it means",
+      "pairs": [
+       [
+        "Seed",
+        "Where a plant begins"
+       ],
+       [
+        "Egg",
+        "Where a bird begins"
+       ],
+       [
+        "Caterpillar",
+        "Eats leaves and grows"
+       ],
+       [
+        "Chrysalis",
+        "Butterfly changes inside"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the butterfly life cycle in order",
+      "items": [
+       [
+        "Egg",
+        1
+       ],
+       [
+        "Caterpillar",
+        2
+       ],
+       [
+        "Chrysalis",
+        3
+       ],
+       [
+        "Adult butterfly",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Weather and Climate",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Weather tools",
+      "b": "Weather is what the air is like outside right now. A thermometer measures temperature. A rain gauge measures rainfall. An anemometer measures wind speed, and a weather vane shows wind direction."
+     },
+     {
+      "h": "Weather versus climate",
+      "b": "Weather changes from day to day. Climate is the usual weather in a place over many years. A desert has a dry climate, even if it rains one day."
+     },
+     {
+      "h": "Seasons",
+      "b": "The year has four seasons that repeat in order: spring, summer, fall, and winter. Weather is often warmer in summer and colder in winter."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a thermometer measure?",
+      "o": [
+       "Wind speed",
+       "Temperature",
+       "Rainfall",
+       "Cloud type"
+      ],
+      "a": 1,
+      "why": "A thermometer shows how hot or cold it is."
+     },
+     {
+      "t": "mc",
+      "q": "What does a rain gauge measure?",
+      "o": [
+       "Wind direction",
+       "Temperature",
+       "Cloud height",
+       "Amount of rain"
+      ],
+      "a": 3,
+      "why": "A rain gauge collects rain so you can measure it."
+     },
+     {
+      "t": "mc",
+      "q": "What is climate?",
+      "o": [
+       "The weather today",
+       "The usual weather in a place over many years",
+       "A big storm",
+       "A type of cloud"
+      ],
+      "a": 1,
+      "why": "Climate is the long-term pattern of weather."
+     },
+     {
+      "t": "mc",
+      "q": "Which tool shows the direction the wind blows?",
+      "o": [
+       "Weather vane",
+       "Thermometer",
+       "Ruler",
+       "Scale"
+      ],
+      "a": 0,
+      "why": "A weather vane points into the wind."
+     },
+     {
+      "t": "tf",
+      "q": "Weather can change from one day to the next.",
+      "a": true,
+      "why": "Weather changes often, sometimes within hours."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to what it measures",
+      "pairs": [
+       [
+        "Thermometer",
+        "Temperature"
+       ],
+       [
+        "Rain gauge",
+        "Rainfall"
+       ],
+       [
+        "Anemometer",
+        "Wind speed"
+       ],
+       [
+        "Weather vane",
+        "Wind direction"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the seasons in order, starting with spring",
+      "items": [
+       [
+        "Spring",
+        1
+       ],
+       [
+        "Summer",
+        2
+       ],
+       [
+        "Fall",
+        3
+       ],
+       [
+        "Winter",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Forces and Motion",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Pushes and pulls",
+      "b": "A force is a push or a pull. Forces can start an object moving, stop it, or change its direction. A bigger force changes motion more."
+     },
+     {
+      "h": "Friction and gravity",
+      "b": "Friction is a force that slows things that rub together. Rough surfaces have more friction than smooth ones. Gravity is a force that pulls objects toward Earth."
+     },
+     {
+      "h": "Magnets",
+      "b": "A magnet can pull on objects made of iron or steel without touching them. Magnets can attract and they can also repel (push away) other magnets."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A push or a pull is called a what?",
+      "o": [
+       "Force",
+       "Light",
+       "Heat",
+       "Sound"
+      ],
+      "a": 0,
+      "why": "A force is any push or pull."
+     },
+     {
+      "t": "mc",
+      "q": "Which force pulls objects down toward the Earth?",
+      "o": [
+       "Friction",
+       "Gravity",
+       "Wind",
+       "Sound"
+      ],
+      "a": 1,
+      "why": "Gravity pulls things toward Earth's center."
+     },
+     {
+      "t": "mc",
+      "q": "Which surface has the MOST friction?",
+      "o": [
+       "Ice",
+       "Smooth glass",
+       "Wet soap",
+       "Sandpaper"
+      ],
+      "a": 3,
+      "why": "Rough sandpaper grips and slows sliding objects."
+     },
+     {
+      "t": "mc",
+      "q": "A magnet will attract which material?",
+      "o": [
+       "Wood",
+       "Plastic",
+       "Iron",
+       "Paper"
+      ],
+      "a": 2,
+      "why": "Magnets attract iron and steel."
+     },
+     {
+      "t": "tf",
+      "q": "Magnets can only pull and never push.",
+      "a": false,
+      "why": "Two magnets can repel, which is a push."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Push",
+        "Moves an object away from you"
+       ],
+       [
+        "Pull",
+        "Moves an object toward you"
+       ],
+       [
+        "Friction",
+        "Slows things that rub"
+       ],
+       [
+        "Gravity",
+        "Pulls things toward Earth"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these surfaces from least to most friction",
+      "items": [
+       [
+        "Ice",
+        1
+       ],
+       [
+        "Polished wood floor",
+        2
+       ],
+       [
+        "Carpet",
+        3
+       ],
+       [
+        "Sandpaper",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Habitats and Traits",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Habitats",
+      "b": "A habitat is the place where a plant or animal lives and finds what it needs. Deserts, oceans, and forests are habitats. Energy moves in a food chain: grass is eaten by a rabbit, and a rabbit is eaten by a fox."
+     },
+     {
+      "h": "Adaptations",
+      "b": "An adaptation is a body part or behavior that helps a living thing survive. A polar bear has thick fur to stay warm. A cactus stores water. Fish have gills to breathe underwater."
+     },
+     {
+      "h": "Traits",
+      "b": "Traits are features of a living thing. Some traits, like eye color, are inherited from parents. Other things, like a scar, are not inherited. Members of the same group can look a little different."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a habitat?",
+      "o": [
+       "A place where a living thing lives and gets what it needs",
+       "A kind of food",
+       "A body part",
+       "A type of weather"
+      ],
+      "a": 0,
+      "why": "A habitat meets an organism's needs."
+     },
+     {
+      "t": "mc",
+      "q": "A polar bear's thick fur helps it do what?",
+      "o": [
+       "Swim faster",
+       "Stay warm in the cold",
+       "Dig holes",
+       "Hide in sand"
+      ],
+      "a": 1,
+      "why": "Thick fur is an adaptation for cold places."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an inherited trait?",
+      "o": [
+       "A scar from a fall",
+       "Knowing how to read",
+       "Eye color",
+       "A short haircut"
+      ],
+      "a": 2,
+      "why": "Eye color is passed from parents to children."
+     },
+     {
+      "t": "mc",
+      "q": "Which animal is adapted to live in a hot desert?",
+      "o": [
+       "Penguin",
+       "Polar bear",
+       "Whale",
+       "Camel"
+      ],
+      "a": 3,
+      "why": "Camels can go a long time without water."
+     },
+     {
+      "t": "tf",
+      "q": "All animals in the same group look exactly alike.",
+      "a": false,
+      "why": "Members of a group often have small differences."
+     },
+     {
+      "t": "match",
+      "q": "Match each adaptation to its job",
+      "pairs": [
+       [
+        "Cactus",
+        "Stores water"
+       ],
+       [
+        "Gills",
+        "Breathe underwater"
+       ],
+       [
+        "Webbed feet",
+        "Swim well"
+       ],
+       [
+        "Thick fur",
+        "Keep warm"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this food chain in order, starting with the Sun",
+      "items": [
+       [
+        "Sun",
+        1
+       ],
+       [
+        "Grass",
+        2
+       ],
+       [
+        "Rabbit",
+        3
+       ],
+       [
+        "Fox",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-g4": {
+  "name": "Grade 4 Science",
+  "units": [
+   {
+    "title": "Energy and Heat",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "What is energy?",
+      "b": "Energy is the ability to cause change. It comes in forms like light, heat, sound, motion, and electrical energy. Energy can move from one place to another."
+     },
+     {
+      "h": "Kinetic and potential",
+      "b": "Kinetic energy is the energy of motion. Potential energy is stored energy. A ball at the top of a hill has potential energy. When it rolls, that changes to kinetic energy."
+     },
+     {
+      "h": "How heat moves",
+      "b": "Heat always moves from hotter things to colder things. Metals are good conductors, so heat moves through them easily. Wood and plastic are insulators, so heat moves through them slowly."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is energy?",
+      "o": [
+       "The ability to cause change",
+       "A type of rock",
+       "Only heat",
+       "A kind of animal"
+      ],
+      "a": 0,
+      "why": "Energy is what makes things change or move."
+     },
+     {
+      "t": "mc",
+      "q": "A ball sitting at the top of a hill has mostly which kind of energy?",
+      "o": [
+       "Kinetic",
+       "Sound",
+       "Potential",
+       "Light"
+      ],
+      "a": 2,
+      "why": "It has stored energy because of its high position."
+     },
+     {
+      "t": "mc",
+      "q": "Heat always flows from where to where?",
+      "o": [
+       "Cold to hot",
+       "Hot to cold",
+       "Dark to light",
+       "Low to high"
+      ],
+      "a": 1,
+      "why": "Heat moves from warmer objects to cooler ones."
+     },
+     {
+      "t": "mc",
+      "q": "What is the energy of motion called?",
+      "o": [
+       "Kinetic energy",
+       "Potential energy",
+       "Stored energy",
+       "Insulation"
+      ],
+      "a": 0,
+      "why": "Moving objects have kinetic energy."
+     },
+     {
+      "t": "tf",
+      "q": "A metal spoon is a good insulator of heat.",
+      "a": false,
+      "why": "Metal is a conductor, so heat moves through it quickly."
+     },
+     {
+      "t": "match",
+      "q": "Match each type of energy to its meaning",
+      "pairs": [
+       [
+        "Kinetic",
+        "Energy of motion"
+       ],
+       [
+        "Potential",
+        "Stored energy"
+       ],
+       [
+        "Thermal",
+        "Heat energy"
+       ],
+       [
+        "Chemical",
+        "Energy stored in food or fuel"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order this energy chain, starting with the Sun",
+      "items": [
+       [
+        "Sun gives light",
+        1
+       ],
+       [
+        "Plant makes food",
+        2
+       ],
+       [
+        "You eat the plant",
+        3
+       ],
+       [
+        "You run",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Electricity and Circuits",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Circuits",
+      "b": "An electric circuit is a path for electric current. A simple circuit has a battery, wires, and a bulb. The circuit must be a complete, closed loop for the bulb to light."
+     },
+     {
+      "h": "Conductors and insulators",
+      "b": "Conductors let electricity flow easily. Copper and other metals are conductors. Insulators, like rubber, plastic, and wood, block the flow of electricity."
+     },
+     {
+      "h": "Switches",
+      "b": "A switch opens or closes a circuit. When the switch is closed, current flows. When it is open, there is a gap and the current stops."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "For a bulb to light, a circuit must be what?",
+      "o": [
+       "Open",
+       "A complete closed loop",
+       "Made of rubber",
+       "Without a battery"
+      ],
+      "a": 1,
+      "why": "Current can only flow around a closed loop."
+     },
+     {
+      "t": "mc",
+      "q": "Which material is a good conductor of electricity?",
+      "o": [
+       "Rubber",
+       "Copper wire",
+       "Wood",
+       "Plastic"
+      ],
+      "a": 1,
+      "why": "Metals like copper let current flow easily."
+     },
+     {
+      "t": "mc",
+      "q": "What does an open switch do?",
+      "o": [
+       "Makes the bulb brighter",
+       "Charges the battery",
+       "Breaks the circuit so current stops",
+       "Makes more electricity"
+      ],
+      "a": 2,
+      "why": "An open switch leaves a gap in the circuit."
+     },
+     {
+      "t": "mc",
+      "q": "Which material is an insulator?",
+      "o": [
+       "Aluminum foil",
+       "Iron nail",
+       "Copper",
+       "Rubber"
+      ],
+      "a": 3,
+      "why": "Rubber blocks electric current."
+     },
+     {
+      "t": "tf",
+      "q": "Electricity can flow through an open circuit.",
+      "a": false,
+      "why": "An open circuit has a gap, so current cannot flow."
+     },
+     {
+      "t": "match",
+      "q": "Match each circuit part to its job",
+      "pairs": [
+       [
+        "Battery",
+        "Provides energy"
+       ],
+       [
+        "Wire",
+        "Carries current"
+       ],
+       [
+        "Switch",
+        "Opens or closes the circuit"
+       ],
+       [
+        "Bulb",
+        "Changes electricity to light"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the path of current in a simple circuit",
+      "items": [
+       [
+        "Battery",
+        1
+       ],
+       [
+        "Wire",
+        2
+       ],
+       [
+        "Bulb",
+        3
+       ],
+       [
+        "Wire back to battery",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Waves, Light, and Sound",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Waves carry energy",
+      "b": "Waves move energy from place to place. A wave has a height called amplitude. Sound and light both travel as waves."
+     },
+     {
+      "h": "Sound",
+      "b": "Sound is made by vibrations, which are fast back-and-forth movements. Sound needs matter such as air, water, or metal to travel, so it cannot travel through empty space. Faster vibrations make a higher pitch."
+     },
+     {
+      "h": "Light",
+      "b": "Light usually travels in straight lines. A mirror reflects light, which means it bounces off. Light travels much faster than sound."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What makes sound?",
+      "o": [
+       "Reflection",
+       "Vibrations",
+       "Shadows",
+       "Magnets"
+      ],
+      "a": 1,
+      "why": "Sound comes from vibrating objects."
+     },
+     {
+      "t": "mc",
+      "q": "Sound cannot travel through which of these?",
+      "o": [
+       "Water",
+       "Air",
+       "A vacuum (empty space)",
+       "Steel"
+      ],
+      "a": 2,
+      "why": "Sound needs matter to travel through."
+     },
+     {
+      "t": "mc",
+      "q": "A mirror shows your image because light does what?",
+      "o": [
+       "Reflects",
+       "Disappears",
+       "Turns into sound",
+       "Stops moving"
+      ],
+      "a": 0,
+      "why": "Light bounces off the smooth mirror surface."
+     },
+     {
+      "t": "mc",
+      "q": "What gives a sound a higher pitch?",
+      "o": [
+       "Slower vibrations",
+       "Faster vibrations",
+       "A darker room",
+       "A softer touch"
+      ],
+      "a": 1,
+      "why": "Faster vibrations make a higher pitch."
+     },
+     {
+      "t": "tf",
+      "q": "Sound travels faster than light.",
+      "a": false,
+      "why": "Light is much faster, which is why you see lightning before thunder."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Reflection",
+        "Light bouncing off a surface"
+       ],
+       [
+        "Vibration",
+        "Fast back-and-forth motion"
+       ],
+       [
+        "Amplitude",
+        "Height of a wave"
+       ],
+       [
+        "Pitch",
+        "How high or low a sound is"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how you hear a sound",
+      "items": [
+       [
+        "Object vibrates",
+        1
+       ],
+       [
+        "Air passes the vibration along",
+        2
+       ],
+       [
+        "Eardrum vibrates",
+        3
+       ],
+       [
+        "Brain senses the sound",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Changing Earth",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Weathering and erosion",
+      "b": "Weathering breaks rock into smaller pieces. Erosion moves those pieces away by water, wind, or ice. Deposition is when the pieces are dropped in a new place."
+     },
+     {
+      "h": "Fossils and rock layers",
+      "b": "Fossils are the remains or traces of living things from long ago. They are often found in layers of sedimentary rock. Lower layers are usually older than higher layers."
+     },
+     {
+      "h": "Fast and slow changes",
+      "b": "Some changes to Earth are slow, like a river carving a canyon. Others are fast, like volcanic eruptions, earthquakes, and landslides."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is weathering?",
+      "o": [
+       "Rock breaking into smaller pieces",
+       "Moving rock far away",
+       "Making new mountains",
+       "Burying fossils"
+      ],
+      "a": 0,
+      "why": "Weathering breaks down rock."
+     },
+     {
+      "t": "mc",
+      "q": "What is it called when water or wind carries sediment away?",
+      "o": [
+       "Deposition",
+       "Weathering",
+       "Erosion",
+       "Melting"
+      ],
+      "a": 2,
+      "why": "Erosion moves broken rock from place to place."
+     },
+     {
+      "t": "mc",
+      "q": "What are fossils?",
+      "o": [
+       "Fresh bones",
+       "Remains or traces of ancient living things",
+       "Types of lava",
+       "Man-made tools"
+      ],
+      "a": 1,
+      "why": "Fossils preserve ancient life."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a FAST change to Earth's surface?",
+      "o": [
+       "A volcanic eruption",
+       "A canyon forming",
+       "A mountain wearing down",
+       "A delta building slowly"
+      ],
+      "a": 0,
+      "why": "Eruptions can change land in hours or days."
+     },
+     {
+      "t": "tf",
+      "q": "Fossils are most often found in lava.",
+      "a": false,
+      "why": "Fossils are usually found in sedimentary rock layers."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Weathering",
+        "Rock breaks down"
+       ],
+       [
+        "Erosion",
+        "Material carried away"
+       ],
+       [
+        "Deposition",
+        "Material dropped in a new place"
+       ],
+       [
+        "Fossil",
+        "Trace of ancient life"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how sediment can become rock",
+      "items": [
+       [
+        "Rock weathers into pieces",
+        1
+       ],
+       [
+        "Pieces are eroded",
+        2
+       ],
+       [
+        "Sediment is deposited in layers",
+        3
+       ],
+       [
+        "Layers press together into rock",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-g5": {
+  "name": "Grade 5 Science",
+  "units": [
+   {
+    "title": "Matter and Its Changes",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Matter is made of particles",
+      "b": "All matter is made of tiny particles too small to see. Solids keep their shape, liquids take the shape of their container, and gases spread out to fill a container."
+     },
+     {
+      "h": "Physical and chemical changes",
+      "b": "In a physical change, like melting ice or cutting paper, no new substance forms. In a chemical change, like burning wood or rusting, a new substance forms."
+     },
+     {
+      "h": "Mixtures and mass",
+      "b": "A mixture combines substances that keep their own properties. A solution is a mixture where one substance dissolves evenly, like sugar in water. Mass is not lost when things dissolve or melt. It stays the same."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Everything that is matter is made of tiny what?",
+      "o": [
+       "Particles",
+       "Colors",
+       "Sounds",
+       "Shadows"
+      ],
+      "a": 0,
+      "why": "All matter is made of particles."
+     },
+     {
+      "t": "mc",
+      "q": "Which one is a chemical change?",
+      "o": [
+       "Melting ice",
+       "Burning wood",
+       "Cutting paper",
+       "Dissolving sugar in water"
+      ],
+      "a": 1,
+      "why": "Burning makes new substances like ash and smoke."
+     },
+     {
+      "t": "mc",
+      "q": "When sugar dissolves in water, what happens to the total mass?",
+      "o": [
+       "It increases a lot",
+       "It becomes zero",
+       "It decreases",
+       "It stays the same"
+      ],
+      "a": 3,
+      "why": "Matter is not lost when it dissolves."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a mixture?",
+      "o": [
+       "Pure gold",
+       "Oxygen gas",
+       "Trail mix",
+       "Distilled water"
+      ],
+      "a": 2,
+      "why": "Trail mix combines parts that keep their own properties."
+     },
+     {
+      "t": "tf",
+      "q": "Mass is lost when ice melts into water.",
+      "a": false,
+      "why": "Melting is a physical change, and mass stays the same."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Solid",
+        "Keeps its own shape"
+       ],
+       [
+        "Liquid",
+        "Flows and takes container shape"
+       ],
+       [
+        "Gas",
+        "Spreads to fill a container"
+       ],
+       [
+        "Solution",
+        "Substance dissolved evenly"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these changes as heat is added to ice",
+      "items": [
+       [
+        "Solid ice",
+        1
+       ],
+       [
+        "Melts into liquid water",
+        2
+       ],
+       [
+        "Boils into water vapor",
+        3
+       ],
+       [
+        "Vapor condenses on a cold glass",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Ecosystems and Energy",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Producers, consumers, decomposers",
+      "b": "Producers, like plants, make their own food using sunlight. Consumers eat other living things. Decomposers, like fungi and bacteria, break down dead things and return nutrients to the soil."
+     },
+     {
+      "h": "Food chains and webs",
+      "b": "A food chain shows how energy moves from one living thing to another, starting with the Sun and a producer. A food web shows many connected food chains."
+     },
+     {
+      "h": "Where plants get their matter",
+      "b": "Plants grow mostly from air and water, not soil. They take in carbon dioxide from the air and water from the ground, and use light to build their food."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which organism is a producer?",
+      "o": [
+       "Grass",
+       "Rabbit",
+       "Fox",
+       "Mushroom"
+      ],
+      "a": 0,
+      "why": "Grass makes its own food using sunlight."
+     },
+     {
+      "t": "mc",
+      "q": "What do decomposers like fungi do?",
+      "o": [
+       "Hunt prey",
+       "Make food from sunlight",
+       "Break down dead things and return nutrients",
+       "Only eat plants"
+      ],
+      "a": 2,
+      "why": "Decomposers recycle nutrients into the soil."
+     },
+     {
+      "t": "mc",
+      "q": "Where does the energy in most food chains first come from?",
+      "o": [
+       "The Moon",
+       "Wind",
+       "Soil",
+       "The Sun"
+      ],
+      "a": 3,
+      "why": "Producers capture the Sun's energy."
+     },
+     {
+      "t": "mc",
+      "q": "An animal that eats only plants is called a what?",
+      "o": [
+       "Carnivore",
+       "Herbivore",
+       "Decomposer",
+       "Predator"
+      ],
+      "a": 1,
+      "why": "Herbivores eat plants."
+     },
+     {
+      "t": "tf",
+      "q": "Plants get most of their mass from the soil.",
+      "a": false,
+      "why": "Most of a plant's mass comes from air (carbon dioxide) and water."
+     },
+     {
+      "t": "match",
+      "q": "Match each role to its meaning",
+      "pairs": [
+       [
+        "Producer",
+        "Makes its own food"
+       ],
+       [
+        "Consumer",
+        "Eats other living things"
+       ],
+       [
+        "Decomposer",
+        "Breaks down dead matter"
+       ],
+       [
+        "Predator",
+        "Hunts other animals"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order this food chain, starting with the Sun",
+      "items": [
+       [
+        "Sun",
+        1
+       ],
+       [
+        "Grass",
+        2
+       ],
+       [
+        "Grasshopper",
+        3
+       ],
+       [
+        "Frog",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Earth's Systems and Water",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Four spheres",
+      "b": "Earth has four main systems. The geosphere is rock, soil, and land. The hydrosphere is all water. The atmosphere is the layer of gases around Earth. The biosphere is all living things."
+     },
+     {
+      "h": "Water on Earth",
+      "b": "About 97 percent of Earth's water is salt water in the oceans. Most of the fresh water is frozen in glaciers and ice sheets. Only a very small part is easy to use."
+     },
+     {
+      "h": "The water cycle",
+      "b": "Water evaporates into vapor, condenses into clouds, falls as precipitation, and collects in oceans, lakes, and ground. The cycle repeats. People protect water by using less and keeping it clean."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where is most of Earth's water found?",
+      "o": [
+       "In rivers",
+       "In the oceans as salt water",
+       "In the air",
+       "In lakes"
+      ],
+      "a": 1,
+      "why": "About 97 percent is salty ocean water."
+     },
+     {
+      "t": "mc",
+      "q": "What does the biosphere include?",
+      "o": [
+       "Only rocks",
+       "Only water",
+       "Only gases",
+       "All living things"
+      ],
+      "a": 3,
+      "why": "The biosphere is all life on Earth."
+     },
+     {
+      "t": "mc",
+      "q": "What is it called when water vapor cools into droplets?",
+      "o": [
+       "Condensation",
+       "Evaporation",
+       "Erosion",
+       "Collection"
+      ],
+      "a": 0,
+      "why": "Condensation forms clouds."
+     },
+     {
+      "t": "mc",
+      "q": "Most of Earth's fresh water is stored as what?",
+      "o": [
+       "Rain",
+       "Ice in glaciers and ice sheets",
+       "River water",
+       "Water vapor"
+      ],
+      "a": 1,
+      "why": "Most fresh water is frozen."
+     },
+     {
+      "t": "tf",
+      "q": "Most of Earth's water is fresh water.",
+      "a": false,
+      "why": "Most is salty ocean water."
+     },
+     {
+      "t": "match",
+      "q": "Match each sphere to what it includes",
+      "pairs": [
+       [
+        "Geosphere",
+        "Rock, soil, and land"
+       ],
+       [
+        "Hydrosphere",
+        "All water"
+       ],
+       [
+        "Atmosphere",
+        "Layer of gases"
+       ],
+       [
+        "Biosphere",
+        "Living things"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the water cycle, starting with water on the ground",
+      "items": [
+       [
+        "Evaporation",
+        1
+       ],
+       [
+        "Condensation",
+        2
+       ],
+       [
+        "Precipitation",
+        3
+       ],
+       [
+        "Collection",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Earth, Sun, and Moon",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Spinning and orbiting",
+      "b": "Earth rotates (spins) once about every 24 hours, which causes day and night. Earth revolves (orbits) around the Sun once a year, about 365 days."
+     },
+     {
+      "h": "The Sun and stars",
+      "b": "The Sun is a star, a giant ball of hot gas. It looks brighter than other stars because it is much closer to us. Other stars are far away, so they look like tiny dots."
+     },
+     {
+      "h": "Gravity",
+      "b": "Gravity is a force that pulls objects toward each other. It keeps us on the ground and keeps the planets in orbit around the Sun. The planets in order from the Sun start with Mercury, Venus, Earth, and Mars."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What causes day and night on Earth?",
+      "o": [
+       "Earth's rotation",
+       "The Moon blocking the Sun",
+       "Earth's orbit",
+       "Clouds"
+      ],
+      "a": 0,
+      "why": "As Earth spins, parts face toward or away from the Sun."
+     },
+     {
+      "t": "mc",
+      "q": "About how long does Earth take to orbit the Sun once?",
+      "o": [
+       "One day",
+       "One month",
+       "One year",
+       "One week"
+      ],
+      "a": 2,
+      "why": "One orbit takes about 365 days."
+     },
+     {
+      "t": "mc",
+      "q": "Why does the Sun look brighter than other stars?",
+      "o": [
+       "It is the biggest star in space",
+       "It is much closer to Earth",
+       "It is made of fire only",
+       "It is not a star"
+      ],
+      "a": 1,
+      "why": "Distance makes the Sun look far brighter."
+     },
+     {
+      "t": "mc",
+      "q": "Which force keeps the planets in orbit around the Sun?",
+      "o": [
+       "Friction",
+       "Magnetism",
+       "Wind",
+       "Gravity"
+      ],
+      "a": 3,
+      "why": "The Sun's gravity pulls planets into orbit."
+     },
+     {
+      "t": "tf",
+      "q": "The Sun is a planet.",
+      "a": false,
+      "why": "The Sun is a star."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Rotation",
+        "Spin on an axis"
+       ],
+       [
+        "Revolution",
+        "Orbit around the Sun"
+       ],
+       [
+        "Star",
+        "Giant ball of hot gas"
+       ],
+       [
+        "Gravity",
+        "Force pulling objects together"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these planets from closest to the Sun",
+      "items": [
+       [
+        "Mercury",
+        1
+       ],
+       [
+        "Venus",
+        2
+       ],
+       [
+        "Earth",
+        3
+       ],
+       [
+        "Mars",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-g6": {
+  "name": "Grade 6 Earth Science",
+  "units": [
+   {
+    "title": "Earth's Layers and Plates",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Layers of Earth",
+      "b": "Earth has four main layers. The crust is the thin outer layer. Under it is the thick mantle of hot, slowly flowing rock. The outer core is liquid metal, and the inner core is solid metal."
+     },
+     {
+      "h": "Moving plates",
+      "b": "Earth's crust is broken into big pieces called tectonic plates. They move only a few centimeters each year. Heat inside Earth drives this slow movement."
+     },
+     {
+      "h": "Plate boundaries",
+      "b": "At a divergent boundary, plates move apart. At a convergent boundary, they push together. At a transform boundary, they slide past each other. Most earthquakes and volcanoes happen near plate boundaries."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which layer of Earth is the thickest?",
+      "o": [
+       "Crust",
+       "Mantle",
+       "Outer core",
+       "Inner core"
+      ],
+      "a": 1,
+      "why": "The mantle is about 2,900 km thick."
+     },
+     {
+      "t": "mc",
+      "q": "What state is Earth's outer core in?",
+      "o": [
+       "Solid",
+       "Gas",
+       "Liquid",
+       "Plasma"
+      ],
+      "a": 2,
+      "why": "The outer core is liquid metal."
+     },
+     {
+      "t": "mc",
+      "q": "What is it called when two plates move apart?",
+      "o": [
+       "Divergent boundary",
+       "Convergent boundary",
+       "Transform boundary",
+       "Fault line"
+      ],
+      "a": 0,
+      "why": "Diverging means moving apart."
+     },
+     {
+      "t": "mc",
+      "q": "Where do most earthquakes happen?",
+      "o": [
+       "Only in deserts",
+       "Near plate boundaries",
+       "In the middle of oceans only",
+       "Only at the poles"
+      ],
+      "a": 1,
+      "why": "Plates grind against each other at their edges."
+     },
+     {
+      "t": "tf",
+      "q": "The crust is the hottest layer of Earth.",
+      "a": false,
+      "why": "The core is the hottest layer."
+     },
+     {
+      "t": "match",
+      "q": "Match each layer to its description",
+      "pairs": [
+       [
+        "Crust",
+        "Thin outer rocky layer"
+       ],
+       [
+        "Mantle",
+        "Thick layer of hot, flowing rock"
+       ],
+       [
+        "Outer core",
+        "Liquid metal"
+       ],
+       [
+        "Inner core",
+        "Solid metal ball"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order Earth's layers from the surface to the center",
+      "items": [
+       [
+        "Crust",
+        1
+       ],
+       [
+        "Mantle",
+        2
+       ],
+       [
+        "Outer core",
+        3
+       ],
+       [
+        "Inner core",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Rocks and the Rock Cycle",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Minerals",
+      "b": "A mineral is a natural, solid substance with a crystal structure. Rocks are made of one or more minerals."
+     },
+     {
+      "h": "Three rock types",
+      "b": "Igneous rock forms when magma or lava cools. Sedimentary rock forms when layers of sediment are pressed and cemented together. Metamorphic rock forms when heat and pressure change existing rock."
+     },
+     {
+      "h": "The rock cycle",
+      "b": "Rocks slowly change from one type to another again and again. Weathering, erosion, melting, and pressure all take part. For example, heat and pressure change limestone into marble."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which type of rock forms when magma or lava cools?",
+      "o": [
+       "Igneous",
+       "Sedimentary",
+       "Metamorphic",
+       "Fossil"
+      ],
+      "a": 0,
+      "why": "Igneous rock comes from cooled molten rock."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a sedimentary rock?",
+      "o": [
+       "Granite",
+       "Sandstone",
+       "Marble",
+       "Basalt"
+      ],
+      "a": 1,
+      "why": "Sandstone forms from pressed sand grains."
+     },
+     {
+      "t": "mc",
+      "q": "Heat and pressure change limestone into which rock?",
+      "o": [
+       "Obsidian",
+       "Sandstone",
+       "Marble",
+       "Pumice"
+      ],
+      "a": 2,
+      "why": "Marble is metamorphic rock made from limestone."
+     },
+     {
+      "t": "mc",
+      "q": "In which type of rock are fossils most often found?",
+      "o": [
+       "Igneous",
+       "Metamorphic",
+       "Lava",
+       "Sedimentary"
+      ],
+      "a": 3,
+      "why": "Sediment can bury living things gently and preserve them."
+     },
+     {
+      "t": "tf",
+      "q": "Rocks stay the same type forever.",
+      "a": false,
+      "why": "The rock cycle slowly changes rocks from one type to another."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Igneous",
+        "Cooled magma or lava"
+       ],
+       [
+        "Sedimentary",
+        "Pressed layers of sediment"
+       ],
+       [
+        "Metamorphic",
+        "Changed by heat and pressure"
+       ],
+       [
+        "Mineral",
+        "Natural solid with crystals"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a sedimentary rock forms",
+      "items": [
+       [
+        "Weathering",
+        1
+       ],
+       [
+        "Erosion",
+        2
+       ],
+       [
+        "Deposition",
+        3
+       ],
+       [
+        "Compaction and cementation",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Atmosphere and Weather",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Layers of air",
+      "b": "Air is about 78 percent nitrogen and 21 percent oxygen. The atmosphere has layers. From the ground up they are the troposphere, stratosphere, mesosphere, and thermosphere. Weather happens in the troposphere."
+     },
+     {
+      "h": "Heat, air, and wind",
+      "b": "The Sun heats Earth unevenly. Warm air is less dense and rises. Cooler air sinks. This movement of air from high pressure to low pressure is wind. A barometer measures air pressure."
+     },
+     {
+      "h": "Fronts and weather",
+      "b": "A front is the boundary between two air masses. Fronts often bring clouds, rain, or storms. The stratosphere holds the ozone layer, which absorbs harmful ultraviolet light."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which gas makes up most of Earth's atmosphere?",
+      "o": [
+       "Oxygen",
+       "Carbon dioxide",
+       "Nitrogen",
+       "Hydrogen"
+      ],
+      "a": 2,
+      "why": "Nitrogen is about 78 percent of the air."
+     },
+     {
+      "t": "mc",
+      "q": "In which layer does most weather happen?",
+      "o": [
+       "Troposphere",
+       "Stratosphere",
+       "Mesosphere",
+       "Thermosphere"
+      ],
+      "a": 0,
+      "why": "The troposphere is the lowest layer and holds most of the air."
+     },
+     {
+      "t": "mc",
+      "q": "What causes wind?",
+      "o": [
+       "The Moon only",
+       "Differences in air pressure from uneven heating",
+       "Ocean tides",
+       "Earth's core"
+      ],
+      "a": 1,
+      "why": "Air moves from high to low pressure."
+     },
+     {
+      "t": "mc",
+      "q": "What does a barometer measure?",
+      "o": [
+       "Wind speed",
+       "Temperature",
+       "Rainfall",
+       "Air pressure"
+      ],
+      "a": 3,
+      "why": "A barometer measures air pressure."
+     },
+     {
+      "t": "tf",
+      "q": "Warm air is denser than cold air, so it sinks.",
+      "a": false,
+      "why": "Warm air is less dense, so it rises."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Troposphere",
+        "Layer where weather happens"
+       ],
+       [
+        "Stratosphere",
+        "Layer with the ozone layer"
+       ],
+       [
+        "Barometer",
+        "Measures air pressure"
+       ],
+       [
+        "Front",
+        "Boundary between air masses"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the atmosphere layers from the ground up",
+      "items": [
+       [
+        "Troposphere",
+        1
+       ],
+       [
+        "Stratosphere",
+        2
+       ],
+       [
+        "Mesosphere",
+        3
+       ],
+       [
+        "Thermosphere",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Earth's History and Resources",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Reading the rocks",
+      "b": "Earth is about 4.6 billion years old. The law of superposition says that in undisturbed rock layers, the oldest layers are at the bottom and the youngest are on top. Fossils help scientists tell the age of layers."
+     },
+     {
+      "h": "Geologic time",
+      "b": "Scientists divide Earth's history into big eras. In order, they are the Precambrian, Paleozoic, Mesozoic, and Cenozoic. Dinosaurs lived in the Mesozoic."
+     },
+     {
+      "h": "Resources",
+      "b": "Renewable resources, like wind and sunlight, are naturally replaced quickly. Nonrenewable resources, like coal, oil, and natural gas, take millions of years to form. Fossil fuels come from the remains of ancient living things."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "About how old is Earth?",
+      "o": [
+       "4.6 million years",
+       "46 million years",
+       "4.6 billion years",
+       "460 billion years"
+      ],
+      "a": 2,
+      "why": "Earth formed about 4.6 billion years ago."
+     },
+     {
+      "t": "mc",
+      "q": "In undisturbed rock layers, where are the oldest layers?",
+      "o": [
+       "At the bottom",
+       "At the top",
+       "In the middle only",
+       "They are all the same age"
+      ],
+      "a": 0,
+      "why": "This is the law of superposition."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a renewable resource?",
+      "o": [
+       "Coal",
+       "Oil",
+       "Natural gas",
+       "Wind"
+      ],
+      "a": 3,
+      "why": "Wind is constantly replaced."
+     },
+     {
+      "t": "mc",
+      "q": "What are fossil fuels made from?",
+      "o": [
+       "Ancient volcanic ash",
+       "Remains of ancient living things",
+       "Ocean salt",
+       "Moon rock"
+      ],
+      "a": 1,
+      "why": "Buried plants and animals slowly became coal, oil, and gas."
+     },
+     {
+      "t": "tf",
+      "q": "Coal is a renewable resource.",
+      "a": false,
+      "why": "Coal takes millions of years to form, so it is nonrenewable."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fossil",
+        "Preserved sign of ancient life"
+       ],
+       [
+        "Renewable",
+        "Replaced quickly by nature"
+       ],
+       [
+        "Nonrenewable",
+        "Used faster than it forms"
+       ],
+       [
+        "Superposition",
+        "Older layers lie below"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the eras of Earth's history from oldest to newest",
+      "items": [
+       [
+        "Precambrian",
+        1
+       ],
+       [
+        "Paleozoic",
+        2
+       ],
+       [
+        "Mesozoic",
+        3
+       ],
+       [
+        "Cenozoic",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-g7": {
+  "name": "Grade 7 Life Science",
+  "units": [
+   {
+    "title": "Cells",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "The cell is the unit of life",
+      "b": "All living things are made of cells. Cells come from other cells. Some living things have one cell, and others have trillions."
+     },
+     {
+      "h": "Parts of a cell",
+      "b": "The nucleus holds DNA and controls the cell. Mitochondria release energy from food. The cell membrane controls what enters and leaves. Plant cells also have a cell wall and chloroplasts, which animal cells do not have."
+     },
+     {
+      "h": "Levels of organization",
+      "b": "In many living things, cells of one kind form a tissue. Tissues form an organ, like the heart. Organs work together as an organ system, like the digestive system."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the basic unit of life?",
+      "o": [
+       "Atom",
+       "Tissue",
+       "Organ",
+       "Cell"
+      ],
+      "a": 3,
+      "why": "All living things are made of cells."
+     },
+     {
+      "t": "mc",
+      "q": "Which cell part is called the powerhouse of the cell?",
+      "o": [
+       "Nucleus",
+       "Cell wall",
+       "Mitochondria",
+       "Cytoplasm"
+      ],
+      "a": 2,
+      "why": "Mitochondria release energy for the cell."
+     },
+     {
+      "t": "mc",
+      "q": "Which structure is found in plant cells but NOT in animal cells?",
+      "o": [
+       "Nucleus",
+       "Cell membrane",
+       "Cytoplasm",
+       "Chloroplast"
+      ],
+      "a": 3,
+      "why": "Chloroplasts let plant cells make food from light."
+     },
+     {
+      "t": "mc",
+      "q": "What does the nucleus contain?",
+      "o": [
+       "DNA",
+       "Chlorophyll",
+       "Water only",
+       "Sugar"
+      ],
+      "a": 0,
+      "why": "The nucleus stores the cell's DNA."
+     },
+     {
+      "t": "tf",
+      "q": "Animal cells have cell walls.",
+      "a": false,
+      "why": "Plant cells have cell walls; animal cells do not."
+     },
+     {
+      "t": "match",
+      "q": "Match each cell part to its job",
+      "pairs": [
+       [
+        "Nucleus",
+        "Controls the cell, holds DNA"
+       ],
+       [
+        "Mitochondria",
+        "Releases energy from food"
+       ],
+       [
+        "Cell membrane",
+        "Controls what enters and exits"
+       ],
+       [
+        "Chloroplast",
+        "Makes food using light"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from smallest to largest level of organization",
+      "items": [
+       [
+        "Cell",
+        1
+       ],
+       [
+        "Tissue",
+        2
+       ],
+       [
+        "Organ",
+        3
+       ],
+       [
+        "Organ system",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Photosynthesis and Respiration",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Photosynthesis",
+      "b": "Plants, algae, and some bacteria make food by photosynthesis. In the chloroplasts, they use light, water, and carbon dioxide to make glucose (sugar) and oxygen. Chlorophyll is the green pigment that captures light."
+     },
+     {
+      "h": "Cellular respiration",
+      "b": "Cells use glucose and oxygen to release energy. This happens in the mitochondria. The waste products are carbon dioxide and water."
+     },
+     {
+      "h": "Working together",
+      "b": "Photosynthesis and respiration are opposites. The products of one are the starting materials of the other. Plants do both, and animals do respiration."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which gas do plants take in for photosynthesis?",
+      "o": [
+       "Oxygen",
+       "Nitrogen",
+       "Carbon dioxide",
+       "Helium"
+      ],
+      "a": 2,
+      "why": "Plants use carbon dioxide and water to make sugar."
+     },
+     {
+      "t": "mc",
+      "q": "Which gas is released as a product of photosynthesis?",
+      "o": [
+       "Oxygen",
+       "Carbon dioxide",
+       "Methane",
+       "Nitrogen"
+      ],
+      "a": 0,
+      "why": "Plants release oxygen."
+     },
+     {
+      "t": "mc",
+      "q": "Where in a plant cell does photosynthesis happen?",
+      "o": [
+       "Nucleus",
+       "Chloroplasts",
+       "Cell wall",
+       "Mitochondria"
+      ],
+      "a": 1,
+      "why": "Chloroplasts contain chlorophyll."
+     },
+     {
+      "t": "mc",
+      "q": "What does cellular respiration do?",
+      "o": [
+       "Makes sugar from light",
+       "Copies DNA",
+       "Releases energy from glucose",
+       "Builds cell walls"
+      ],
+      "a": 2,
+      "why": "Respiration frees the energy stored in glucose."
+     },
+     {
+      "t": "tf",
+      "q": "Only animals do cellular respiration.",
+      "a": false,
+      "why": "Plants also do cellular respiration, day and night."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Photosynthesis",
+        "Makes sugar using light"
+       ],
+       [
+        "Respiration",
+        "Releases energy from sugar"
+       ],
+       [
+        "Chlorophyll",
+        "Green pigment that captures light"
+       ],
+       [
+        "Glucose",
+        "Sugar used for energy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of photosynthesis",
+      "items": [
+       [
+        "Leaves absorb sunlight",
+        1
+       ],
+       [
+        "Plant takes in water and carbon dioxide",
+        2
+       ],
+       [
+        "Glucose is made",
+        3
+       ],
+       [
+        "Oxygen is released",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Genetics and Reproduction",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "DNA, genes, and traits",
+      "b": "DNA carries the instructions for building a living thing. A gene is a section of DNA that codes for a trait. Different versions of a gene are called alleles."
+     },
+     {
+      "h": "Dominant and recessive",
+      "b": "A dominant allele shows its trait when at least one copy is present. A recessive allele only shows when two copies are present. A Punnett square predicts the chances of offspring traits. Write the parents' alleles, place them on the sides of the grid, fill in the boxes, and count the results."
+     },
+     {
+      "h": "Ways to reproduce",
+      "b": "Asexual reproduction needs one parent and makes offspring identical to the parent. Sexual reproduction needs two parents and mixes their genes, so offspring are different from both."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which molecule carries genetic information?",
+      "o": [
+       "Protein",
+       "Sugar",
+       "DNA",
+       "Fat"
+      ],
+      "a": 2,
+      "why": "DNA stores genetic instructions."
+     },
+     {
+      "t": "mc",
+      "q": "What does a dominant allele do?",
+      "o": [
+       "Never shows up",
+       "Shows its trait when at least one copy is present",
+       "Only shows with two copies",
+       "Changes DNA"
+      ],
+      "a": 1,
+      "why": "A dominant allele hides the recessive one."
+     },
+     {
+      "t": "mc",
+      "q": "Two parents are both Bb (B is dominant). What is the chance of a bb child?",
+      "o": [
+       "0 percent",
+       "25 percent",
+       "50 percent",
+       "75 percent"
+      ],
+      "a": 1,
+      "why": "The Punnett square gives 1 bb out of 4 boxes."
+     },
+     {
+      "t": "mc",
+      "q": "Offspring from asexual reproduction are usually what?",
+      "o": [
+       "Genetically identical to the parent",
+       "Very different from the parent",
+       "Made from two parents",
+       "Always bigger"
+      ],
+      "a": 0,
+      "why": "One parent copies its genes."
+     },
+     {
+      "t": "tf",
+      "q": "A recessive trait shows up when only one copy of the allele is present.",
+      "a": false,
+      "why": "A recessive trait needs two copies to show."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Gene",
+        "Section of DNA for a trait"
+       ],
+       [
+        "Allele",
+        "Version of a gene"
+       ],
+       [
+        "Dominant",
+        "Shows with one copy"
+       ],
+       [
+        "Recessive",
+        "Needs two copies to show"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of making a Punnett square",
+      "items": [
+       [
+        "Write the parents' alleles",
+        1
+       ],
+       [
+        "Place alleles on the sides of the grid",
+        2
+       ],
+       [
+        "Fill in the boxes",
+        3
+       ],
+       [
+        "Count the offspring results",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Evolution and Populations",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Natural selection",
+      "b": "Individuals in a population vary. Some have traits that help them survive and reproduce better. They pass these traits to their young, so over many generations the helpful trait becomes more common."
+     },
+     {
+      "h": "Evidence for evolution",
+      "b": "The fossil record shows how living things changed over time. Similar body structures and DNA between species also show they share ancestors."
+     },
+     {
+      "h": "Populations",
+      "b": "A population is a group of one species living in one area. Limiting factors, such as food, water, and space, keep populations from growing forever."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What happens in natural selection?",
+      "o": [
+       "Individuals choose to change",
+       "Helpful traits become more common over time",
+       "All traits disappear",
+       "Animals only copy each other"
+      ],
+      "a": 1,
+      "why": "Better-suited individuals leave more offspring."
+     },
+     {
+      "t": "mc",
+      "q": "What must exist in a population for natural selection to work?",
+      "o": [
+       "No variation",
+       "Variation in traits",
+       "Only one trait",
+       "No reproduction"
+      ],
+      "a": 1,
+      "why": "Without differences, there is nothing to select."
+     },
+     {
+      "t": "mc",
+      "q": "Which is evidence of evolution?",
+      "o": [
+       "Weather reports",
+       "Tide tables",
+       "Fossils showing changes over time",
+       "Maps"
+      ],
+      "a": 2,
+      "why": "The fossil record shows how species changed."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a limiting factor for a population?",
+      "o": [
+       "Color of the sky",
+       "Amount of food",
+       "Time of day",
+       "Day of the week"
+      ],
+      "a": 1,
+      "why": "Food limits how many animals can live in an area."
+     },
+     {
+      "t": "tf",
+      "q": "Individual organisms evolve during their own lifetime to match their environment.",
+      "a": false,
+      "why": "Populations evolve over generations, not single individuals."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Adaptation",
+        "Trait that helps survival"
+       ],
+       [
+        "Variation",
+        "Differences among individuals"
+       ],
+       [
+        "Fossil record",
+        "Evidence of past life"
+       ],
+       [
+        "Population",
+        "One species in one area"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of natural selection",
+      "items": [
+       [
+        "Variation exists in a population",
+        1
+       ],
+       [
+        "Some individuals survive better",
+        2
+       ],
+       [
+        "They reproduce and pass on traits",
+        3
+       ],
+       [
+        "Helpful trait becomes common",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-g8": {
+  "name": "Grade 8 Physical Science",
+  "units": [
+   {
+    "title": "Atoms and the Periodic Table",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Inside the atom",
+      "b": "Atoms have a nucleus with positive protons and neutral neutrons. Negative electrons move around the nucleus. The number of protons is the atomic number, and it tells you which element the atom is."
+     },
+     {
+      "h": "The periodic table",
+      "b": "Elements are arranged by increasing atomic number. Rows are called periods, and columns are called groups. Elements in the same group have similar properties."
+     },
+     {
+      "h": "Elements and compounds",
+      "b": "An element is made of only one kind of atom, like gold or oxygen. A compound has two or more elements joined together, like water (H2O)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which particle has a positive charge?",
+      "o": [
+       "Electron",
+       "Neutron",
+       "Proton",
+       "Photon"
+      ],
+      "a": 2,
+      "why": "Protons are positive."
+     },
+     {
+      "t": "mc",
+      "q": "What does the atomic number tell you?",
+      "o": [
+       "Number of protons",
+       "Number of electrons only",
+       "Mass of the atom",
+       "Number of neutrons"
+      ],
+      "a": 0,
+      "why": "Atomic number equals the number of protons."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a compound?",
+      "o": [
+       "O2",
+       "H2O",
+       "Fe",
+       "Au"
+      ],
+      "a": 1,
+      "why": "H2O has hydrogen and oxygen joined together."
+     },
+     {
+      "t": "mc",
+      "q": "Elements in the same column of the periodic table are called what?",
+      "o": [
+       "Period",
+       "Isotope",
+       "Compound",
+       "Group"
+      ],
+      "a": 3,
+      "why": "A column is a group, and group members behave alike."
+     },
+     {
+      "t": "tf",
+      "q": "Neutrons have a negative charge.",
+      "a": false,
+      "why": "Neutrons have no charge; electrons are negative."
+     },
+     {
+      "t": "match",
+      "q": "Match each particle or term to its meaning",
+      "pairs": [
+       [
+        "Proton",
+        "Positive, in nucleus"
+       ],
+       [
+        "Neutron",
+        "No charge, in nucleus"
+       ],
+       [
+        "Electron",
+        "Negative, outside nucleus"
+       ],
+       [
+        "Element",
+        "One kind of atom"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order by increasing atomic number",
+      "items": [
+       [
+        "Hydrogen",
+        1
+       ],
+       [
+        "Helium",
+        2
+       ],
+       [
+        "Lithium",
+        3
+       ],
+       [
+        "Beryllium",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Chemical Reactions",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Reactants and products",
+      "b": "In a chemical reaction, reactants change into new substances called products. Signs include gas bubbles, color change, a new solid, and temperature change."
+     },
+     {
+      "h": "Conservation of mass",
+      "b": "Atoms are not created or destroyed in a reaction. They are only rearranged. So the total mass of the reactants equals the total mass of the products. Exothermic reactions release heat, and endothermic reactions absorb heat."
+     },
+     {
+      "h": "Acids and bases",
+      "b": "The pH scale runs from 0 to 14. Below 7 is acidic, like lemon juice (about 2). 7 is neutral, like pure water. Above 7 is basic, like baking soda solution (about 9) and bleach (about 12 to 13)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In the reaction 2H2 + O2 -> 2H2O, which are the reactants?",
+      "o": [
+       "Water only",
+       "Hydrogen and oxygen",
+       "Oxygen only",
+       "Water and oxygen"
+      ],
+      "a": 1,
+      "why": "Reactants are on the left of the arrow."
+     },
+     {
+      "t": "mc",
+      "q": "What does the law of conservation of mass say?",
+      "o": [
+       "Mass of reactants equals mass of products",
+       "Mass is always lost",
+       "Mass is always gained",
+       "Atoms disappear"
+      ],
+      "a": 0,
+      "why": "Atoms are only rearranged."
+     },
+     {
+      "t": "mc",
+      "q": "What is a reaction that releases heat called?",
+      "o": [
+       "Endothermic",
+       "Neutral",
+       "Dissolving",
+       "Exothermic"
+      ],
+      "a": 3,
+      "why": "Exo means out, so heat goes out."
+     },
+     {
+      "t": "mc",
+      "q": "What is the pH of pure water?",
+      "o": [
+       "0",
+       "7",
+       "10",
+       "14"
+      ],
+      "a": 1,
+      "why": "pH 7 is neutral."
+     },
+     {
+      "t": "tf",
+      "q": "Atoms are destroyed during a chemical reaction.",
+      "a": false,
+      "why": "Atoms are only rearranged into new substances."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Reactant",
+        "Starting substance"
+       ],
+       [
+        "Product",
+        "Substance formed"
+       ],
+       [
+        "Exothermic",
+        "Releases heat"
+       ],
+       [
+        "Endothermic",
+        "Absorbs heat"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these from most acidic to most basic",
+      "items": [
+       [
+        "Lemon juice",
+        1
+       ],
+       [
+        "Pure water",
+        2
+       ],
+       [
+        "Baking soda solution",
+        3
+       ],
+       [
+        "Bleach",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Motion and Forces",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Speed and acceleration",
+      "b": "Speed equals distance divided by time. Velocity is speed in a certain direction. Acceleration is a change in velocity over time, so speeding up, slowing down, or turning is acceleration."
+     },
+     {
+      "h": "Newton's laws",
+      "b": "First law: an object keeps its motion unless an unbalanced force acts on it (inertia). Second law: force equals mass times acceleration (F = ma). Third law: for every action there is an equal and opposite reaction."
+     },
+     {
+      "h": "Mass and weight",
+      "b": "Mass is the amount of matter in an object. Weight is the pull of gravity on that mass. Your mass is the same on the Moon, but your weight is smaller."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A car travels 150 km in 3 hours. What is its average speed?",
+      "o": [
+       "30 km/h",
+       "45 km/h",
+       "50 km/h",
+       "450 km/h"
+      ],
+      "a": 2,
+      "why": "150 divided by 3 is 50."
+     },
+     {
+      "t": "mc",
+      "q": "What does Newton's first law say?",
+      "o": [
+       "Force equals mass times acceleration",
+       "An object keeps its motion unless an unbalanced force acts",
+       "Every action has a reaction",
+       "Heavy things fall faster"
+      ],
+      "a": 1,
+      "why": "This idea is called inertia."
+     },
+     {
+      "t": "mc",
+      "q": "A force of 10 N acts on a 2 kg object. What is its acceleration?",
+      "o": [
+       "2 m/s^2",
+       "20 m/s^2",
+       "12 m/s^2",
+       "5 m/s^2"
+      ],
+      "a": 3,
+      "why": "a = F / m = 10 / 2 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "A rocket pushes gas down and the gas pushes the rocket up. Which law is this?",
+      "o": [
+       "Newton's first law",
+       "Newton's third law",
+       "Newton's second law",
+       "Law of conservation of mass"
+      ],
+      "a": 1,
+      "why": "Action and reaction forces are equal and opposite."
+     },
+     {
+      "t": "tf",
+      "q": "Mass and weight are the same thing.",
+      "a": false,
+      "why": "Mass is the amount of matter; weight is the pull of gravity on it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Speed",
+        "Distance divided by time"
+       ],
+       [
+        "Acceleration",
+        "Change in velocity over time"
+       ],
+       [
+        "Inertia",
+        "Resistance to change in motion"
+       ],
+       [
+        "Friction",
+        "Force that opposes sliding"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from slowest to fastest typical speed",
+      "items": [
+       [
+        "Snail",
+        1
+       ],
+       [
+        "Person walking",
+        2
+       ],
+       [
+        "Cyclist",
+        3
+       ],
+       [
+        "Car on a highway",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Energy and Waves",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Energy changes",
+      "b": "Kinetic energy depends on an object's mass and speed. Potential energy depends on position or condition. The law of conservation of energy says energy cannot be created or destroyed. It only changes form."
+     },
+     {
+      "h": "Wave properties",
+      "b": "Wavelength is the distance between two crests. Frequency is how many waves pass a point each second, measured in hertz (Hz). Amplitude is the height of the wave. Sound waves need matter to travel."
+     },
+     {
+      "h": "Electromagnetic waves",
+      "b": "Light is an electromagnetic wave that can travel through empty space. From low energy to high energy the spectrum goes: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the law of conservation of energy say?",
+      "o": [
+       "Energy can be destroyed",
+       "Energy cannot be created or destroyed, only changed",
+       "Energy is always lost as heat",
+       "Energy only exists in motion"
+      ],
+      "a": 1,
+      "why": "The total amount of energy stays the same."
+     },
+     {
+      "t": "mc",
+      "q": "What two things does kinetic energy depend on?",
+      "o": [
+       "Color and shape",
+       "Mass and speed",
+       "Height and size",
+       "Time and temperature"
+      ],
+      "a": 1,
+      "why": "A heavier or faster object has more kinetic energy."
+     },
+     {
+      "t": "mc",
+      "q": "What is the distance between two wave crests called?",
+      "o": [
+       "Amplitude",
+       "Frequency",
+       "Speed",
+       "Wavelength"
+      ],
+      "a": 3,
+      "why": "Wavelength is crest to crest."
+     },
+     {
+      "t": "mc",
+      "q": "Which electromagnetic wave has the most energy?",
+      "o": [
+       "Radio waves",
+       "Microwaves",
+       "Visible light",
+       "Gamma rays"
+      ],
+      "a": 3,
+      "why": "Gamma rays are at the high-energy end."
+     },
+     {
+      "t": "tf",
+      "q": "Sound waves can travel through a vacuum.",
+      "a": false,
+      "why": "Sound needs matter. Light can travel through a vacuum."
+     },
+     {
+      "t": "match",
+      "q": "Match each wave term to its meaning",
+      "pairs": [
+       [
+        "Wavelength",
+        "Distance between crests"
+       ],
+       [
+        "Frequency",
+        "Waves per second"
+       ],
+       [
+        "Amplitude",
+        "Wave height"
+       ],
+       [
+        "Hertz",
+        "Unit of frequency"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from lowest to highest energy",
+      "items": [
+       [
+        "Radio waves",
+        1
+       ],
+       [
+        "Infrared",
+        2
+       ],
+       [
+        "Visible light",
+        3
+       ],
+       [
+        "X-rays",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-bio": {
+  "name": "Biology",
+  "units": [
+   {
+    "title": "Biochemistry and the Cell Membrane",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Macromolecules",
+      "b": "Living things are built from four big molecule types. Carbohydrates give quick energy. Lipids store energy and form membranes. Proteins are chains of amino acids and do most of the cell's work. Nucleic acids (DNA and RNA) store information."
+     },
+     {
+      "h": "Enzymes",
+      "b": "Enzymes are proteins that speed up reactions by lowering the activation energy. Each enzyme fits a specific substrate, like a key in a lock. Heat or the wrong pH can change an enzyme's shape so it stops working."
+     },
+     {
+      "h": "Moving across membranes",
+      "b": "The cell membrane is a phospholipid bilayer. Diffusion moves particles from high to low concentration with no energy needed. Osmosis is the diffusion of water across a membrane. Active transport moves particles against the gradient and uses energy (ATP)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the building blocks (monomers) of proteins?",
+      "o": [
+       "Glucose",
+       "Fatty acids",
+       "Nucleotides",
+       "Amino acids"
+      ],
+      "a": 3,
+      "why": "Proteins are chains of amino acids."
+     },
+     {
+      "t": "mc",
+      "q": "What does an enzyme do?",
+      "o": [
+       "Provides energy as fuel",
+       "Lowers the activation energy of a reaction",
+       "Stores genetic information",
+       "Builds cell walls"
+      ],
+      "a": 1,
+      "why": "Enzymes are biological catalysts."
+     },
+     {
+      "t": "mc",
+      "q": "What is osmosis?",
+      "o": [
+       "Movement of water across a membrane",
+       "Movement of ions using ATP",
+       "Movement of proteins into the nucleus",
+       "Copying of DNA"
+      ],
+      "a": 0,
+      "why": "Osmosis is the diffusion of water."
+     },
+     {
+      "t": "mc",
+      "q": "What makes active transport different from diffusion?",
+      "o": [
+       "It moves particles from high to low concentration",
+       "It needs no membrane",
+       "It uses energy to move particles against a gradient",
+       "It only moves water"
+      ],
+      "a": 2,
+      "why": "Active transport uses ATP to go against the gradient."
+     },
+     {
+      "t": "tf",
+      "q": "Diffusion requires the cell to use ATP.",
+      "a": false,
+      "why": "Diffusion is passive, so it needs no cell energy."
+     },
+     {
+      "t": "match",
+      "q": "Match each molecule type to its role",
+      "pairs": [
+       [
+        "Carbohydrate",
+        "Quick energy from sugars"
+       ],
+       [
+        "Lipid",
+        "Stores energy, forms membranes"
+       ],
+       [
+        "Protein",
+        "Chains of amino acids"
+       ],
+       [
+        "Nucleic acid",
+        "DNA and RNA"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from smallest to largest",
+      "items": [
+       [
+        "Atom",
+        1
+       ],
+       [
+        "Amino acid",
+        2
+       ],
+       [
+        "Protein",
+        3
+       ],
+       [
+        "Cell",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Cell Energy and Division",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Photosynthesis",
+      "b": "Photosynthesis has two stages. The light reactions happen in the thylakoid membranes and capture light energy. The Calvin cycle happens in the stroma and uses that energy to build sugar from carbon dioxide."
+     },
+     {
+      "h": "Cellular respiration",
+      "b": "Glycolysis splits glucose in the cytoplasm and does not need oxygen. The Krebs cycle and the electron transport chain happen in the mitochondria and need oxygen. Together they make about 36 to 38 ATP per glucose."
+     },
+     {
+      "h": "Mitosis and meiosis",
+      "b": "Mitosis makes two identical body cells. Its phases are prophase, metaphase, anaphase, and telophase. Meiosis makes four different gametes, each with half the number of chromosomes (haploid)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where do the light reactions of photosynthesis occur?",
+      "o": [
+       "Mitochondrial matrix",
+       "Cytoplasm",
+       "Nucleus",
+       "Thylakoid membranes"
+      ],
+      "a": 3,
+      "why": "Thylakoids hold the chlorophyll."
+     },
+     {
+      "t": "mc",
+      "q": "Which stage of cellular respiration happens in the cytoplasm and needs no oxygen?",
+      "o": [
+       "Glycolysis",
+       "Krebs cycle",
+       "Electron transport chain",
+       "Calvin cycle"
+      ],
+      "a": 0,
+      "why": "Glycolysis occurs in the cytoplasm."
+     },
+     {
+      "t": "mc",
+      "q": "What does mitosis produce?",
+      "o": [
+       "Four haploid gametes",
+       "Two genetically identical cells",
+       "One large cell",
+       "Two different gametes"
+      ],
+      "a": 1,
+      "why": "Mitosis makes identical daughter cells."
+     },
+     {
+      "t": "mc",
+      "q": "What does meiosis produce?",
+      "o": [
+       "Two identical body cells",
+       "Two diploid cells",
+       "Four haploid cells",
+       "One diploid cell"
+      ],
+      "a": 2,
+      "why": "Meiosis halves the chromosome number to make gametes."
+     },
+     {
+      "t": "tf",
+      "q": "Chromosomes line up in the middle of the cell during anaphase.",
+      "a": false,
+      "why": "They line up during metaphase; in anaphase the sister chromatids separate."
+     },
+     {
+      "t": "match",
+      "q": "Match each process to its description",
+      "pairs": [
+       [
+        "Glycolysis",
+        "Splits glucose in cytoplasm"
+       ],
+       [
+        "Calvin cycle",
+        "Builds sugar from carbon dioxide"
+       ],
+       [
+        "Mitosis",
+        "Makes identical body cells"
+       ],
+       [
+        "Meiosis",
+        "Makes gametes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the phases of mitosis in order",
+      "items": [
+       [
+        "Prophase",
+        1
+       ],
+       [
+        "Metaphase",
+        2
+       ],
+       [
+        "Anaphase",
+        3
+       ],
+       [
+        "Telophase",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "DNA and Genetics",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "DNA structure and copying",
+      "b": "DNA is a double helix made of nucleotides. The bases pair in a fixed way: A with T, and C with G. In replication, each strand is used as a template to build a new matching strand."
+     },
+     {
+      "h": "From gene to protein",
+      "b": "In transcription, DNA is copied into mRNA in the nucleus. In translation, a ribosome reads the mRNA three bases (a codon) at a time and joins amino acids into a protein. RNA uses uracil (U) instead of thymine."
+     },
+     {
+      "h": "Inheritance",
+      "b": "Mendel showed that each parent gives one allele for a gene. A genotype is the alleles, such as AA, Aa, or aa. Heterozygous means two different alleles. A mutation is a change in the DNA sequence."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In DNA, which base pairs with adenine (A)?",
+      "o": [
+       "Guanine",
+       "Cytosine",
+       "Uracil",
+       "Thymine"
+      ],
+      "a": 3,
+      "why": "A pairs with T in DNA."
+     },
+     {
+      "t": "mc",
+      "q": "What is made during transcription?",
+      "o": [
+       "mRNA",
+       "A protein",
+       "A new DNA strand",
+       "A lipid"
+      ],
+      "a": 0,
+      "why": "DNA is copied into messenger RNA."
+     },
+     {
+      "t": "mc",
+      "q": "Where does translation take place?",
+      "o": [
+       "Nucleus",
+       "Ribosome",
+       "Cell wall",
+       "Vacuole"
+      ],
+      "a": 1,
+      "why": "Ribosomes build proteins from mRNA."
+     },
+     {
+      "t": "mc",
+      "q": "Which genotype is heterozygous?",
+      "o": [
+       "AA",
+       "aa",
+       "Aa",
+       "A"
+      ],
+      "a": 2,
+      "why": "Heterozygous means two different alleles."
+     },
+     {
+      "t": "tf",
+      "q": "In RNA, adenine pairs with thymine.",
+      "a": false,
+      "why": "RNA has uracil instead of thymine."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Codon",
+        "Three bases that code for an amino acid"
+       ],
+       [
+        "Ribosome",
+        "Builds proteins"
+       ],
+       [
+        "mRNA",
+        "Copy of a gene sent out of nucleus"
+       ],
+       [
+        "Mutation",
+        "Change in DNA sequence"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps from gene to protein",
+      "items": [
+       [
+        "DNA is transcribed into mRNA",
+        1
+       ],
+       [
+        "mRNA moves to a ribosome",
+        2
+       ],
+       [
+        "tRNA brings amino acids",
+        3
+       ],
+       [
+        "A protein chain forms",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Evolution and Ecology",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Evolution",
+      "b": "Natural selection acts on variation in a population. Homologous structures, like the limb bones of humans, whales, and bats, show common ancestry. New species often form when populations become separated and stop interbreeding."
+     },
+     {
+      "h": "Energy in ecosystems",
+      "b": "Energy enters from the Sun and is captured by producers. Only about 10 percent of energy passes from one trophic level to the next. The rest is lost as heat. Energy flows one way, while matter like carbon and nitrogen is recycled."
+     },
+     {
+      "h": "Populations",
+      "b": "Populations can grow quickly at first. Carrying capacity is the largest population an environment can support with its food, water, and space."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "About what percent of energy passes to the next trophic level?",
+      "o": [
+       "1 percent",
+       "10 percent",
+       "50 percent",
+       "90 percent"
+      ],
+      "a": 1,
+      "why": "About 90 percent is lost, mostly as heat."
+     },
+     {
+      "t": "mc",
+      "q": "What is carrying capacity?",
+      "o": [
+       "The largest population an environment can support",
+       "The fastest growth rate",
+       "The number of species in an area",
+       "The age of a population"
+      ],
+      "a": 0,
+      "why": "Resources set the limit."
+     },
+     {
+      "t": "mc",
+      "q": "What often starts the formation of a new species?",
+      "o": [
+       "Eating more food",
+       "Geographic separation of populations",
+       "Warmer weather",
+       "Seeds spreading"
+      ],
+      "a": 1,
+      "why": "Separated groups can no longer interbreed and diverge."
+     },
+     {
+      "t": "mc",
+      "q": "What do homologous structures suggest?",
+      "o": [
+       "Same climate",
+       "Same diet",
+       "Same habitat",
+       "Common ancestry"
+      ],
+      "a": 3,
+      "why": "Similar bone patterns point to a shared ancestor."
+     },
+     {
+      "t": "tf",
+      "q": "In ecosystems, energy is recycled while matter flows in one direction.",
+      "a": false,
+      "why": "It is the opposite: energy flows one way and matter is recycled."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Carrying capacity",
+        "Largest sustainable population"
+       ],
+       [
+        "Homologous structures",
+        "Similar structures from a common ancestor"
+       ],
+       [
+        "Producer",
+        "Makes food from sunlight"
+       ],
+       [
+        "Decomposer",
+        "Recycles nutrients from dead matter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the trophic levels, starting with the producer",
+      "items": [
+       [
+        "Producer",
+        1
+       ],
+       [
+        "Primary consumer",
+        2
+       ],
+       [
+        "Secondary consumer",
+        3
+       ],
+       [
+        "Tertiary consumer",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-chem": {
+  "name": "Chemistry",
+  "units": [
+   {
+    "title": "Atoms and the Periodic Table",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Atomic structure",
+      "b": "An atom has protons and neutrons in the nucleus and electrons outside it. The atomic number is the number of protons. Isotopes are atoms of the same element with different numbers of neutrons."
+     },
+     {
+      "h": "Electrons and valence",
+      "b": "Electrons sit in energy levels. The outer-shell electrons are called valence electrons. For main-group elements, the group number tells how many: group 1 has 1, and group 17 has 7."
+     },
+     {
+      "h": "Trends",
+      "b": "Atomic radius increases going down a group. Alkali metals (group 1) are very reactive. Halogens (group 17) are reactive nonmetals. Noble gases (group 18) are stable and rarely react."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What do isotopes of an element have in common?",
+      "o": [
+       "Same number of neutrons",
+       "Same number of protons",
+       "Same mass",
+       "Same number of shells"
+      ],
+      "a": 1,
+      "why": "Isotopes differ only in neutrons."
+     },
+     {
+      "t": "mc",
+      "q": "How many valence electrons does a halogen (group 17) atom have?",
+      "o": [
+       "1",
+       "5",
+       "8",
+       "7"
+      ],
+      "a": 3,
+      "why": "Group 17 elements have 7 valence electrons."
+     },
+     {
+      "t": "mc",
+      "q": "How does atomic radius change going down a group?",
+      "o": [
+       "Increases",
+       "Decreases",
+       "Stays the same",
+       "Becomes zero"
+      ],
+      "a": 0,
+      "why": "More energy levels make the atom larger."
+     },
+     {
+      "t": "mc",
+      "q": "Which group contains the very reactive metals like sodium and potassium?",
+      "o": [
+       "Noble gases",
+       "Halogens",
+       "Alkali metals",
+       "Transition metals"
+      ],
+      "a": 2,
+      "why": "Alkali metals are group 1."
+     },
+     {
+      "t": "tf",
+      "q": "The atomic number of an element equals its number of neutrons.",
+      "a": false,
+      "why": "The atomic number equals the number of protons."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Isotope",
+        "Same protons, different neutrons"
+       ],
+       [
+        "Valence electron",
+        "Outer-shell electron"
+       ],
+       [
+        "Noble gas",
+        "Very stable and unreactive"
+       ],
+       [
+        "Halogen",
+        "Group 17 nonmetal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order by increasing atomic number",
+      "items": [
+       [
+        "Sodium",
+        1
+       ],
+       [
+        "Magnesium",
+        2
+       ],
+       [
+        "Aluminum",
+        3
+       ],
+       [
+        "Silicon",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Chemical Bonding",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Ionic bonds",
+      "b": "In an ionic bond, one atom transfers electrons to another, making positive and negative ions that attract each other. It usually forms between a metal and a nonmetal, like sodium chloride (NaCl)."
+     },
+     {
+      "h": "Covalent bonds",
+      "b": "In a covalent bond, atoms share electrons. It usually forms between nonmetals, like in H2O and CO2. A molecule is a group of atoms joined by covalent bonds."
+     },
+     {
+      "h": "Polarity",
+      "b": "If one atom pulls shared electrons harder, the bond is polar. Oxygen pulls harder than hydrogen, so water is a polar molecule. Cations are positive ions and anions are negative ions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What kind of bond holds sodium and chlorine together in NaCl?",
+      "o": [
+       "Covalent",
+       "Ionic",
+       "Metallic",
+       "Hydrogen"
+      ],
+      "a": 1,
+      "why": "Sodium gives an electron to chlorine."
+     },
+     {
+      "t": "mc",
+      "q": "What happens in a covalent bond?",
+      "o": [
+       "Atoms share electrons",
+       "Electrons are transferred",
+       "Protons are shared",
+       "Neutrons are lost"
+      ],
+      "a": 0,
+      "why": "Covalent bonds are shared pairs of electrons."
+     },
+     {
+      "t": "mc",
+      "q": "Which pair of elements is most likely to form an ionic compound?",
+      "o": [
+       "Carbon and oxygen",
+       "Hydrogen and oxygen",
+       "Sodium and chlorine",
+       "Nitrogen and hydrogen"
+      ],
+      "a": 2,
+      "why": "A metal and a nonmetal usually bond ionically."
+     },
+     {
+      "t": "mc",
+      "q": "Why is water a polar molecule?",
+      "o": [
+       "It is a liquid",
+       "It has three atoms",
+       "It contains hydrogen",
+       "Oxygen pulls the shared electrons harder"
+      ],
+      "a": 3,
+      "why": "Unequal sharing creates partial charges."
+     },
+     {
+      "t": "tf",
+      "q": "Ionic compounds are made of molecules that share electrons.",
+      "a": false,
+      "why": "Ionic compounds are lattices of ions attracted by opposite charges."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Ionic bond",
+        "Electrons transferred"
+       ],
+       [
+        "Covalent bond",
+        "Electrons shared"
+       ],
+       [
+        "Cation",
+        "Positive ion"
+       ],
+       [
+        "Anion",
+        "Negative ion"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of forming NaCl",
+      "items": [
+       [
+        "Sodium loses an electron",
+        1
+       ],
+       [
+        "Chlorine gains an electron",
+        2
+       ],
+       [
+        "Na+ and Cl- ions form",
+        3
+       ],
+       [
+        "Ions attract into a lattice",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Moles and Reactions",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "The mole",
+      "b": "A mole is 6.02 x 10^23 particles (Avogadro's number). Molar mass is the mass of one mole in grams. For water (H2O) it is 2(1) + 16 = 18 g/mol."
+     },
+     {
+      "h": "Balancing equations",
+      "b": "Atoms are conserved, so a balanced equation has the same number of each atom on both sides. Coefficients are changed, not subscripts. For example, 2H2 + O2 -> 2H2O is balanced."
+     },
+     {
+      "h": "Reaction types",
+      "b": "Synthesis: two or more reactants make one product. Decomposition: one reactant breaks into simpler ones. Combustion: a fuel burns with oxygen. Single and double replacement swap parts between compounds."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Avogadro's number?",
+      "o": [
+       "6.02 x 10^23",
+       "3.14",
+       "9.8",
+       "1.6 x 10^-19"
+      ],
+      "a": 0,
+      "why": "One mole contains 6.02 x 10^23 particles."
+     },
+     {
+      "t": "mc",
+      "q": "What is the molar mass of water (H2O)?",
+      "o": [
+       "10 g/mol",
+       "16 g/mol",
+       "18 g/mol",
+       "34 g/mol"
+      ],
+      "a": 2,
+      "why": "2 x 1 + 16 = 18 g/mol."
+     },
+     {
+      "t": "mc",
+      "q": "In 2H2 + O2 -> ?H2O, what coefficient balances the water?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 1,
+      "why": "Four H atoms and two O atoms make 2 H2O."
+     },
+     {
+      "t": "mc",
+      "q": "What type of reaction is 2H2O -> 2H2 + O2?",
+      "o": [
+       "Synthesis",
+       "Combustion",
+       "Single replacement",
+       "Decomposition"
+      ],
+      "a": 3,
+      "why": "One compound breaks into simpler substances."
+     },
+     {
+      "t": "tf",
+      "q": "The number of atoms of each element changes in a balanced equation.",
+      "a": false,
+      "why": "Atoms are conserved, so each element has equal atoms on both sides."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Mole",
+        "6.02 x 10^23 particles"
+       ],
+       [
+        "Synthesis",
+        "Reactants combine into one product"
+       ],
+       [
+        "Decomposition",
+        "One reactant splits apart"
+       ],
+       [
+        "Combustion",
+        "Burning with oxygen"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to convert grams to particles",
+      "items": [
+       [
+        "Start with mass in grams",
+        1
+       ],
+       [
+        "Divide by molar mass",
+        2
+       ],
+       [
+        "Get moles",
+        3
+       ],
+       [
+        "Multiply by 6.02 x 10^23",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Solutions, Gases, and Acids",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Solutions",
+      "b": "Molarity (M) is moles of solute per liter of solution. If you dissolve 2 moles of NaCl to make 4 L of solution, the molarity is 2/4 = 0.5 M."
+     },
+     {
+      "h": "Gas laws",
+      "b": "Boyle's law: at constant temperature, if the volume of a gas decreases, its pressure increases. Charles's law: at constant pressure, volume increases as temperature increases. Gas laws need temperature in kelvins (K = C + 273)."
+     },
+     {
+      "h": "Acids and bases",
+      "b": "Acids donate H+ ions, and bases accept H+ or release OH-. A pH below 7 is acidic, 7 is neutral, and above 7 is basic. Neutralization: acid + base -> salt + water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is molarity?",
+      "o": [
+       "Moles of solute per liter of solution",
+       "Grams per mole",
+       "Mass per volume of gas",
+       "Liters per mole"
+      ],
+      "a": 0,
+      "why": "M = moles / liters."
+     },
+     {
+      "t": "mc",
+      "q": "What is the molarity of 2 moles of NaCl dissolved to make 4 L of solution?",
+      "o": [
+       "0.25 M",
+       "0.5 M",
+       "2 M",
+       "8 M"
+      ],
+      "a": 1,
+      "why": "2 moles / 4 L = 0.5 M."
+     },
+     {
+      "t": "mc",
+      "q": "At constant temperature, what happens to the pressure of a gas if its volume decreases?",
+      "o": [
+       "It decreases",
+       "It stays the same",
+       "It increases",
+       "It becomes zero"
+      ],
+      "a": 2,
+      "why": "This is Boyle's law."
+     },
+     {
+      "t": "mc",
+      "q": "Which pH value is basic?",
+      "o": [
+       "2",
+       "5",
+       "7",
+       "11"
+      ],
+      "a": 3,
+      "why": "A pH above 7 is basic."
+     },
+     {
+      "t": "tf",
+      "q": "Gas law calculations should use temperature in degrees Celsius.",
+      "a": false,
+      "why": "They must use kelvins."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Molarity",
+        "Moles per liter"
+       ],
+       [
+        "Acid",
+        "Donates H+ ions"
+       ],
+       [
+        "Base",
+        "Accepts H+ or gives OH-"
+       ],
+       [
+        "Neutralization",
+        "Acid + base makes salt and water"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from coldest to hottest",
+      "items": [
+       [
+        "Absolute zero (0 K)",
+        1
+       ],
+       [
+        "Freezing water (273 K)",
+        2
+       ],
+       [
+        "Room temperature (about 298 K)",
+        3
+       ],
+       [
+        "Boiling water (373 K)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-phys": {
+  "name": "Physics",
+  "units": [
+   {
+    "title": "Motion",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Describing motion",
+      "b": "Displacement is the change in position, with direction. Velocity is speed with direction: v = d / t. Acceleration is how fast velocity changes: a = (change in v) / t."
+     },
+     {
+      "h": "Constant acceleration",
+      "b": "For an object starting from rest with constant acceleration, v = at and d = (1/2)at^2. An object moving at constant velocity has zero acceleration."
+     },
+     {
+      "h": "Free fall",
+      "b": "Near Earth, objects in free fall accelerate downward at about 9.8 m/s^2 (g). Every second, the falling speed grows by about 9.8 m/s."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A car speeds up from 0 to 20 m/s in 4 s. What is its acceleration?",
+      "o": [
+       "4 m/s^2",
+       "5 m/s^2",
+       "16 m/s^2",
+       "80 m/s^2"
+      ],
+      "a": 1,
+      "why": "a = 20 / 4 = 5 m/s^2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the acceleration due to gravity near Earth's surface?",
+      "o": [
+       "0.98 m/s^2",
+       "98 m/s^2",
+       "9.8 m/s^2",
+       "6.7 m/s^2"
+      ],
+      "a": 2,
+      "why": "g is about 9.8 m/s^2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the acceleration of an object moving at constant velocity?",
+      "o": [
+       "Zero",
+       "9.8 m/s^2",
+       "Equal to its speed",
+       "Always increasing"
+      ],
+      "a": 0,
+      "why": "No change in velocity means zero acceleration."
+     },
+     {
+      "t": "mc",
+      "q": "An object starts from rest and accelerates at 2 m/s^2 for 5 s. How far does it travel?",
+      "o": [
+       "10 m",
+       "20 m",
+       "50 m",
+       "25 m"
+      ],
+      "a": 3,
+      "why": "d = (1/2)(2)(25) = 25 m."
+     },
+     {
+      "t": "tf",
+      "q": "Speed and velocity mean exactly the same thing.",
+      "a": false,
+      "why": "Velocity includes direction; speed does not."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Displacement",
+        "Change in position with direction"
+       ],
+       [
+        "Velocity",
+        "Speed with direction"
+       ],
+       [
+        "Acceleration",
+        "Rate velocity changes"
+       ],
+       [
+        "Free fall",
+        "Motion under gravity only"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a dropped object's speed from earliest to latest",
+      "items": [
+       [
+        "After 1 s (9.8 m/s)",
+        1
+       ],
+       [
+        "After 2 s (19.6 m/s)",
+        2
+       ],
+       [
+        "After 3 s (29.4 m/s)",
+        3
+       ],
+       [
+        "After 4 s (39.2 m/s)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Forces and Newton's Laws",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Net force",
+      "b": "The net force is the sum of all forces on an object, with direction. A 10 N force to the right and a 4 N force to the left give a net force of 6 N to the right."
+     },
+     {
+      "h": "Newton's second law",
+      "b": "Net force equals mass times acceleration: F = ma. A bigger force gives more acceleration, and a bigger mass gives less. Weight is the force of gravity on a mass: W = mg."
+     },
+     {
+      "h": "Other forces",
+      "b": "The normal force is the push of a surface perpendicular to it. Friction opposes sliding. In a vacuum, heavy and light objects fall at the same rate because gravity gives all masses the same acceleration."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A 3 kg object has a net force of 15 N. What is its acceleration?",
+      "o": [
+       "0.2 m/s^2",
+       "45 m/s^2",
+       "12 m/s^2",
+       "5 m/s^2"
+      ],
+      "a": 3,
+      "why": "a = F / m = 15 / 3 = 5 m/s^2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the weight of a 10 kg object? (Use g = 9.8 m/s^2.)",
+      "o": [
+       "98 N",
+       "10 N",
+       "1 N",
+       "0.98 N"
+      ],
+      "a": 0,
+      "why": "W = mg = 10 x 9.8 = 98 N."
+     },
+     {
+      "t": "mc",
+      "q": "A 10 N force pushes right and a 4 N force pushes left. What is the net force?",
+      "o": [
+       "14 N right",
+       "6 N left",
+       "6 N right",
+       "40 N right"
+      ],
+      "a": 2,
+      "why": "10 - 4 = 6 N to the right."
+     },
+     {
+      "t": "mc",
+      "q": "What is the normal force?",
+      "o": [
+       "Force of gravity",
+       "Force that opposes sliding",
+       "Force from a magnet",
+       "Support force perpendicular to a surface"
+      ],
+      "a": 3,
+      "why": "A surface pushes back at 90 degrees to itself."
+     },
+     {
+      "t": "tf",
+      "q": "In a vacuum, a heavier object always falls faster than a lighter one.",
+      "a": false,
+      "why": "All objects fall with the same acceleration in a vacuum."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Net force",
+        "Sum of all forces"
+       ],
+       [
+        "Weight",
+        "Force of gravity on a mass"
+       ],
+       [
+        "Normal force",
+        "Surface pushes back"
+       ],
+       [
+        "Friction",
+        "Opposes sliding"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the acceleration of a 2 kg object, smallest first",
+      "items": [
+       [
+        "Pushed with 2 N",
+        1
+       ],
+       [
+        "Pushed with 4 N",
+        2
+       ],
+       [
+        "Pushed with 6 N",
+        3
+       ],
+       [
+        "Pushed with 8 N",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Energy and Momentum",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Work and power",
+      "b": "Work equals force times distance: W = Fd, measured in joules (J). Power is work per time: P = W / t, measured in watts (W). Pushing with 10 N over 5 m does 50 J of work."
+     },
+     {
+      "h": "Kinetic and potential energy",
+      "b": "Kinetic energy is KE = (1/2)mv^2. Gravitational potential energy is PE = mgh. Energy is conserved. When friction slows an object, its kinetic energy becomes thermal energy, not nothing."
+     },
+     {
+      "h": "Momentum",
+      "b": "Momentum is p = mv, measured in kg m/s. In a collision with no outside forces, the total momentum before equals the total momentum after."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How much work is done by pushing with 10 N over 5 m?",
+      "o": [
+       "2 J",
+       "15 J",
+       "50 J",
+       "500 J"
+      ],
+      "a": 2,
+      "why": "W = 10 x 5 = 50 J."
+     },
+     {
+      "t": "mc",
+      "q": "What is the momentum of a 2 kg object moving at 3 m/s?",
+      "o": [
+       "6 kg m/s",
+       "5 kg m/s",
+       "1.5 kg m/s",
+       "9 kg m/s"
+      ],
+      "a": 0,
+      "why": "p = mv = 2 x 3 = 6."
+     },
+     {
+      "t": "mc",
+      "q": "What is the SI unit of power?",
+      "o": [
+       "Joule",
+       "Newton",
+       "Watt",
+       "Hertz"
+      ],
+      "a": 2,
+      "why": "Power is measured in watts."
+     },
+     {
+      "t": "mc",
+      "q": "What is the kinetic energy of a 2 kg object moving at 3 m/s?",
+      "o": [
+       "6 J",
+       "12 J",
+       "18 J",
+       "9 J"
+      ],
+      "a": 3,
+      "why": "KE = (1/2)(2)(9) = 9 J."
+     },
+     {
+      "t": "tf",
+      "q": "Energy is destroyed when friction slows an object down.",
+      "a": false,
+      "why": "The kinetic energy becomes thermal energy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Work",
+        "Force times distance"
+       ],
+       [
+        "Power",
+        "Work per unit time"
+       ],
+       [
+        "Momentum",
+        "Mass times velocity"
+       ],
+       [
+        "Joule",
+        "Unit of energy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a ball rolling down a ramp by increasing kinetic energy",
+      "items": [
+       [
+        "At the top (KE is zero)",
+        1
+       ],
+       [
+        "One quarter of the way down",
+        2
+       ],
+       [
+        "Three quarters of the way down",
+        3
+       ],
+       [
+        "At the bottom",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Waves and Circuits",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Wave speed",
+      "b": "Wave speed equals frequency times wavelength: v = f x wavelength. A wave with a frequency of 10 Hz and a wavelength of 3 m travels at 30 m/s."
+     },
+     {
+      "h": "Ohm's law",
+      "b": "Voltage is the energy per charge, current is the flow of charge, and resistance opposes the current. Ohm's law is V = IR. Voltage is in volts, current in amps (A), and resistance in ohms."
+     },
+     {
+      "h": "Series and parallel",
+      "b": "In a series circuit, there is one path, so the same current flows through every part, and if one bulb breaks, all go out. In a parallel circuit, there are several paths, and each branch has the same voltage."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A wave has a frequency of 10 Hz and a wavelength of 3 m. What is its speed?",
+      "o": [
+       "13 m/s",
+       "0.3 m/s",
+       "30 m/s",
+       "3.3 m/s"
+      ],
+      "a": 2,
+      "why": "v = f x wavelength = 10 x 3."
+     },
+     {
+      "t": "mc",
+      "q": "A 12 V battery is connected across a 4 ohm resistor. What is the current?",
+      "o": [
+       "48 A",
+       "3 A",
+       "8 A",
+       "0.33 A"
+      ],
+      "a": 1,
+      "why": "I = V / R = 12 / 4 = 3 A."
+     },
+     {
+      "t": "mc",
+      "q": "What is the unit of electrical resistance?",
+      "o": [
+       "Ohm",
+       "Volt",
+       "Amp",
+       "Watt"
+      ],
+      "a": 0,
+      "why": "Resistance is measured in ohms."
+     },
+     {
+      "t": "mc",
+      "q": "In a series circuit, what happens if one bulb burns out?",
+      "o": [
+       "The others get brighter",
+       "Nothing changes",
+       "The others get dimmer but stay on",
+       "All the bulbs go out"
+      ],
+      "a": 3,
+      "why": "A series circuit has only one path for current."
+     },
+     {
+      "t": "tf",
+      "q": "In a series circuit, the current has several separate paths to take.",
+      "a": false,
+      "why": "Several paths describe a parallel circuit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Voltage",
+        "Energy per charge"
+       ],
+       [
+        "Current",
+        "Flow of charge"
+       ],
+       [
+        "Resistance",
+        "Opposes current"
+       ],
+       [
+        "Frequency",
+        "Cycles per second"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the current from smallest to largest when 12 V is across each resistor",
+      "items": [
+       [
+        "6 ohm",
+        1
+       ],
+       [
+        "4 ohm",
+        2
+       ],
+       [
+        "3 ohm",
+        3
+       ],
+       [
+        "2 ohm",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sci-env": {
+  "name": "Environmental Science",
+  "units": [
+   {
+    "title": "Ecosystems and Biodiversity",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Parts of an ecosystem",
+      "b": "Biotic factors are living parts, like plants and animals. Abiotic factors are nonliving parts, like sunlight, water, and temperature. Biodiversity is the variety of life in an area."
+     },
+     {
+      "h": "Special species",
+      "b": "A keystone species has a large effect on its ecosystem compared to how many there are. Losing it can change the whole system. Invasive species are non-native species that spread and harm native species by outcompeting them."
+     },
+     {
+      "h": "Succession",
+      "b": "Succession is the slow change in a community over time. Primary succession starts on bare rock: lichens and moss come first, then grasses and shrubs, then forest."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is an abiotic factor?",
+      "o": [
+       "Sunlight",
+       "Fungus",
+       "Bacteria",
+       "Grass"
+      ],
+      "a": 0,
+      "why": "Sunlight is nonliving."
+     },
+     {
+      "t": "mc",
+      "q": "What is a keystone species?",
+      "o": [
+       "The largest species",
+       "The oldest species",
+       "A species with a very large effect on its ecosystem",
+       "A species that only eats plants"
+      ],
+      "a": 2,
+      "why": "Its removal changes the whole ecosystem."
+     },
+     {
+      "t": "mc",
+      "q": "Why can invasive species be harmful?",
+      "o": [
+       "They help native species grow",
+       "They only live one day",
+       "They are always smaller",
+       "They outcompete native species"
+      ],
+      "a": 3,
+      "why": "They use up resources native species need."
+     },
+     {
+      "t": "mc",
+      "q": "What is biodiversity?",
+      "o": [
+       "The number of people in an area",
+       "The variety of life in an area",
+       "The size of a forest",
+       "The amount of rainfall"
+      ],
+      "a": 1,
+      "why": "Biodiversity means variety of species and life."
+     },
+     {
+      "t": "tf",
+      "q": "Losing a keystone species usually has little effect on an ecosystem.",
+      "a": false,
+      "why": "Keystone species have a very large effect, so losing one can cause major changes."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Biotic",
+        "Living part of an ecosystem"
+       ],
+       [
+        "Abiotic",
+        "Nonliving part"
+       ],
+       [
+        "Invasive species",
+        "Non-native and harmful"
+       ],
+       [
+        "Keystone species",
+        "Large effect on ecosystem"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order primary succession on bare rock",
+      "items": [
+       [
+        "Bare rock",
+        1
+       ],
+       [
+        "Lichens and moss",
+        2
+       ],
+       [
+        "Grasses and shrubs",
+        3
+       ],
+       [
+        "Forest",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Resources and Energy",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Renewable resources",
+      "b": "Renewable energy sources are naturally replaced. Examples are solar, wind, hydroelectric, and geothermal energy. Geothermal uses heat from inside Earth."
+     },
+     {
+      "h": "Nonrenewable resources",
+      "b": "Fossil fuels (coal, oil, and natural gas) take millions of years to form. Burning them releases carbon dioxide. Nuclear power uses uranium, a nonrenewable fuel, and releases almost no carbon dioxide while operating."
+     },
+     {
+      "h": "Water, soil, and conservation",
+      "b": "Most of Earth's fresh water is frozen in glaciers and ice sheets. Crop rotation helps keep nutrients in soil. Conservation means using resources wisely so they last."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a renewable energy source?",
+      "o": [
+       "Coal",
+       "Oil",
+       "Natural gas",
+       "Solar"
+      ],
+      "a": 3,
+      "why": "Sunlight is constantly supplied."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a fossil fuel?",
+      "o": [
+       "Wind",
+       "Geothermal",
+       "Coal",
+       "Hydroelectric"
+      ],
+      "a": 2,
+      "why": "Coal is a fossil fuel."
+     },
+     {
+      "t": "mc",
+      "q": "Why do farmers practice crop rotation?",
+      "o": [
+       "To use more water",
+       "To help keep nutrients in the soil",
+       "To grow weeds",
+       "To make soil salty"
+      ],
+      "a": 1,
+      "why": "Different crops use and return different nutrients."
+     },
+     {
+      "t": "mc",
+      "q": "Where is most of Earth's fresh water stored?",
+      "o": [
+       "Glaciers and ice sheets",
+       "Rivers",
+       "Lakes",
+       "Clouds"
+      ],
+      "a": 0,
+      "why": "Most fresh water is frozen."
+     },
+     {
+      "t": "tf",
+      "q": "Nuclear power plants release large amounts of carbon dioxide while operating.",
+      "a": false,
+      "why": "They release almost none while operating."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Solar",
+        "Energy from sunlight"
+       ],
+       [
+        "Geothermal",
+        "Heat from Earth's interior"
+       ],
+       [
+        "Fossil fuel",
+        "Coal, oil, or natural gas"
+       ],
+       [
+        "Conservation",
+        "Using resources wisely"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a coal power plant makes electricity",
+      "items": [
+       [
+        "Coal is burned",
+        1
+       ],
+       [
+        "Water is heated into steam",
+        2
+       ],
+       [
+        "Steam turns a turbine",
+        3
+       ],
+       [
+        "A generator makes electricity",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Pollution and Health",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "Air pollution",
+      "b": "Sulfur dioxide and nitrogen oxides from burning fossil fuels cause acid rain. Ground-level ozone is a main part of smog and harms lungs. Ozone high in the stratosphere is helpful because it blocks ultraviolet light."
+     },
+     {
+      "h": "Water pollution",
+      "b": "A point source comes from one identifiable place, like a factory pipe. A nonpoint source is spread out, like runoff from farm fields. Fertilizer runoff causes eutrophication, which is overgrowth of algae."
+     },
+     {
+      "h": "Toxins in food chains",
+      "b": "Some toxins build up in organisms. Biomagnification means toxins become more concentrated at each higher level of the food chain."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What mainly causes acid rain?",
+      "o": [
+       "Carbon dioxide only",
+       "Sulfur dioxide and nitrogen oxides",
+       "Oxygen",
+       "Helium"
+      ],
+      "a": 1,
+      "why": "These gases react with water in the air to make acids."
+     },
+     {
+      "t": "mc",
+      "q": "What causes eutrophication in a lake?",
+      "o": [
+       "Too much salt",
+       "Too much sunlight",
+       "Too little rain",
+       "Excess nutrients from fertilizer"
+      ],
+      "a": 3,
+      "why": "Nutrients cause algae blooms."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of nonpoint source pollution?",
+      "o": [
+       "Runoff from farm fields",
+       "A factory discharge pipe",
+       "A leaking tanker",
+       "A sewage pipe"
+      ],
+      "a": 0,
+      "why": "Runoff comes from a wide area."
+     },
+     {
+      "t": "mc",
+      "q": "What does biomagnification mean?",
+      "o": [
+       "Toxins break down higher in the food chain",
+       "Toxins stay at the same level",
+       "Toxins become more concentrated up the food chain",
+       "Toxins only affect plants"
+      ],
+      "a": 2,
+      "why": "Top predators carry the highest toxin levels."
+     },
+     {
+      "t": "tf",
+      "q": "A factory smokestack is an example of a nonpoint source of pollution.",
+      "a": false,
+      "why": "A smokestack is a single identifiable point source."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Eutrophication",
+        "Algae overgrowth from nutrients"
+       ],
+       [
+        "Biomagnification",
+        "Toxins build up up the food chain"
+       ],
+       [
+        "Point source",
+        "Single identifiable origin"
+       ],
+       [
+        "Smog",
+        "Ground-level ozone haze"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of eutrophication",
+      "items": [
+       [
+        "Fertilizer runs into a lake",
+        1
+       ],
+       [
+        "Algae bloom",
+        2
+       ],
+       [
+        "Algae die and decompose",
+        3
+       ],
+       [
+        "Oxygen drops and fish die",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Climate Change and Solutions",
+    "period": "High school",
+    "learn": [
+     {
+      "h": "The greenhouse effect",
+      "b": "Greenhouse gases like carbon dioxide, methane, and water vapor trap heat in the atmosphere. The natural greenhouse effect keeps Earth warm enough for life. Burning fossil fuels adds extra carbon dioxide."
+     },
+     {
+      "h": "Effects",
+      "b": "A warming climate melts glaciers and ice sheets and warms the oceans, which raises sea level. It can also make heat waves and heavy storms more common."
+     },
+     {
+      "h": "Solutions",
+      "b": "Mitigation means reducing the causes, for example by switching to renewable energy, improving energy efficiency, and planting forests. Adaptation means adjusting to changes, such as building sea walls."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a greenhouse gas?",
+      "o": [
+       "Argon",
+       "Helium",
+       "Oxygen",
+       "Carbon dioxide"
+      ],
+      "a": 3,
+      "why": "Carbon dioxide traps heat."
+     },
+     {
+      "t": "mc",
+      "q": "Which human activity adds the most carbon dioxide to the air?",
+      "o": [
+       "Burning fossil fuels",
+       "Planting trees",
+       "Using wind turbines",
+       "Recycling paper"
+      ],
+      "a": 0,
+      "why": "Coal, oil, and gas release stored carbon when burned."
+     },
+     {
+      "t": "mc",
+      "q": "What helps raise sea level as the planet warms?",
+      "o": [
+       "More snowfall in deserts",
+       "Melting land ice and warming oceans",
+       "Stronger winds",
+       "Fewer clouds"
+      ],
+      "a": 1,
+      "why": "Water expands as it warms and ice melts into the sea."
+     },
+     {
+      "t": "mc",
+      "q": "Which action most directly reduces greenhouse gas emissions?",
+      "o": [
+       "Using more fossil fuels",
+       "Cutting down forests",
+       "Switching to renewable energy",
+       "Paving more land"
+      ],
+      "a": 2,
+      "why": "Renewables produce little carbon dioxide."
+     },
+     {
+      "t": "tf",
+      "q": "The greenhouse effect is caused only by human activity.",
+      "a": false,
+      "why": "A natural greenhouse effect exists; humans have strengthened it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Greenhouse gas",
+        "Traps heat in the air"
+       ],
+       [
+        "Carbon footprint",
+        "Greenhouse gases from your actions"
+       ],
+       [
+        "Mitigation",
+        "Reducing the causes"
+       ],
+       [
+        "Adaptation",
+        "Adjusting to the changes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how the greenhouse effect works",
+      "items": [
+       [
+        "Sunlight reaches Earth",
+        1
+       ],
+       [
+        "Earth absorbs it and gives off heat",
+        2
+       ],
+       [
+        "Greenhouse gases trap some heat",
+        3
+       ],
+       [
+        "The atmosphere warms",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

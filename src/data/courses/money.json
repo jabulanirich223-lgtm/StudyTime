@@ -1,0 +1,5249 @@
+{
+ "fin-personal": {
+  "name": "Personal Finance",
+  "units": [
+   {
+    "title": "Budgeting Basics",
+    "period": "Budgeting",
+    "learn": [
+     {
+      "h": "What is a budget?",
+      "b": "A budget is a plan for your money. You write down the money coming in (income) and the money going out (expenses). Example: if you earn $200 and spend $150, you have $50 left."
+     },
+     {
+      "h": "Needs vs wants",
+      "b": "Needs are things you must have, like rent, food and transport. Wants are extras, like games or fancy sneakers. A good budget pays for needs first."
+     },
+     {
+      "h": "The 50/30/20 rule",
+      "b": "One simple plan is 50% of income for needs, 30% for wants and 20% for savings or paying off debt. It is a guide, not a law. You can change the numbers to fit your life."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a need?",
+      "o": [
+       "A streaming subscription",
+       "Rent for a home",
+       "Designer sneakers",
+       "A restaurant dinner"
+      ],
+      "a": 1,
+      "why": "Housing is a basic need, while the others are wants."
+     },
+     {
+      "t": "mc",
+      "q": "In the 50/30/20 rule, what share goes to savings or debt payments?",
+      "o": [
+       "50%",
+       "30%",
+       "20%",
+       "10%"
+      ],
+      "a": 2,
+      "why": "The 20 in 50/30/20 is for savings and debt repayment."
+     },
+     {
+      "t": "mc",
+      "q": "Your income is higher than your expenses. What do you have?",
+      "o": [
+       "A deficit",
+       "A surplus",
+       "A loan",
+       "A penalty"
+      ],
+      "a": 1,
+      "why": "Money left over after expenses is called a surplus."
+     },
+     {
+      "t": "mc",
+      "q": "Why is it useful to track your spending?",
+      "o": [
+       "It increases your income",
+       "To see where your money actually goes",
+       "It lowers prices",
+       "It replaces a budget"
+      ],
+      "a": 1,
+      "why": "Tracking shows real habits so you can adjust your budget."
+     },
+     {
+      "t": "tf",
+      "q": "Net income is the money you earn before taxes are taken out.",
+      "a": false,
+      "why": "Net income is what you keep after taxes; before taxes it is gross income."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Income",
+        "Money coming in"
+       ],
+       [
+        "Expense",
+        "Money going out"
+       ],
+       [
+        "Savings",
+        "Money set aside for later"
+       ],
+       [
+        "Budget",
+        "A plan for your money"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the budgeting steps in order",
+      "items": [
+       [
+        "Add up your income",
+        1
+       ],
+       [
+        "List your expenses",
+        2
+       ],
+       [
+        "Compare and adjust",
+        3
+       ],
+       [
+        "Track spending each month",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Saving and Interest",
+    "period": "Saving",
+    "learn": [
+     {
+      "h": "Emergency fund",
+      "b": "An emergency fund is cash kept for surprises like a broken phone or a medical bill. Many experts suggest saving 3 to 6 months of basic expenses. Keep it in an easy-to-reach savings account."
+     },
+     {
+      "h": "What is interest?",
+      "b": "Interest is money a bank pays you for keeping money with it. Simple interest uses only your starting amount (the principal). Example: 5% simple interest on $100 for one year is $5."
+     },
+     {
+      "h": "Compound interest",
+      "b": "With compound interest, you earn interest on your principal and on the interest you already earned. Money grows faster over time. Starting early gives compounding more time to work."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How much is a common emergency fund goal?",
+      "o": [
+       "1 week of expenses",
+       "1 year of income",
+       "3 to 6 months of expenses",
+       "Exactly $50"
+      ],
+      "a": 2,
+      "why": "Many experts suggest 3 to 6 months of basic expenses."
+     },
+     {
+      "t": "mc",
+      "q": "You earn 5% simple interest on $100 for one year. How much interest is that?",
+      "o": [
+       "$5",
+       "$50",
+       "$0.50",
+       "$105"
+      ],
+      "a": 0,
+      "why": "5% of $100 is $5."
+     },
+     {
+      "t": "mc",
+      "q": "What does compound interest mean?",
+      "o": [
+       "Interest only on the starting amount",
+       "A fee for opening an account",
+       "Interest paid once at the end of life",
+       "Interest on both principal and past interest"
+      ],
+      "a": 3,
+      "why": "Compounding adds earned interest to the base that earns more interest."
+     },
+     {
+      "t": "mc",
+      "q": "Which usually pays you interest?",
+      "o": [
+       "Cash under a mattress",
+       "A savings account",
+       "A wallet",
+       "A piggy bank"
+      ],
+      "a": 1,
+      "why": "Banks pay interest on money held in savings accounts."
+     },
+     {
+      "t": "tf",
+      "q": "Starting to save earlier usually lets compound interest grow your money more.",
+      "a": true,
+      "why": "More time means more compounding periods."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Principal",
+        "The starting amount"
+       ],
+       [
+        "Interest",
+        "Payment for using money"
+       ],
+       [
+        "APY",
+        "Yearly yield with compounding"
+       ],
+       [
+        "Emergency fund",
+        "Cash for surprises"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "$1,000 grows 10% a year, compounded. Order the balance from year 0 to year 3",
+      "items": [
+       [
+        "$1,000",
+        1
+       ],
+       [
+        "$1,100",
+        2
+       ],
+       [
+        "$1,210",
+        3
+       ],
+       [
+        "$1,331",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Credit and Debt",
+    "period": "Credit & Debt",
+    "learn": [
+     {
+      "h": "Credit scores",
+      "b": "A credit score is a number that shows how likely you are to repay money you borrow. Paying bills on time is the biggest factor. Lenders use it to decide whether to lend to you and at what rate."
+     },
+     {
+      "h": "Credit card interest",
+      "b": "APR means annual percentage rate, the yearly cost of borrowing. If you do not pay your full statement balance, interest is added to what you owe. Credit limit is the most you can borrow on the card."
+     },
+     {
+      "h": "Handling debt",
+      "b": "Debt is money you owe. Paying only the minimum keeps you in debt longer and costs more interest. Paying the full balance on time avoids card interest."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a credit score mainly show?",
+      "o": [
+       "How much you earn",
+       "How likely you are to repay debt",
+       "Your age",
+       "How much you saved"
+      ],
+      "a": 1,
+      "why": "It estimates your reliability as a borrower."
+     },
+     {
+      "t": "mc",
+      "q": "How can you avoid credit card interest?",
+      "o": [
+       "Pay only the minimum",
+       "Pay late",
+       "Pay the full statement balance by the due date",
+       "Use the card up to the limit"
+      ],
+      "a": 2,
+      "why": "Paying in full on time usually means no interest charged."
+     },
+     {
+      "t": "mc",
+      "q": "What does APR stand for?",
+      "o": [
+       "Annual Percentage Rate",
+       "Average Payment Record",
+       "Account Payment Review",
+       "Applied Penalty Rate"
+      ],
+      "a": 0,
+      "why": "APR is the yearly cost of borrowing as a percentage."
+     },
+     {
+      "t": "mc",
+      "q": "Which action helps a credit score most?",
+      "o": [
+       "Having a long name",
+       "Owning many phones",
+       "Checking the weather",
+       "Paying bills on time"
+      ],
+      "a": 3,
+      "why": "Payment history is a major scoring factor."
+     },
+     {
+      "t": "tf",
+      "q": "Paying only the minimum on a credit card usually means paying more interest over time.",
+      "a": true,
+      "why": "The balance shrinks slowly, so interest keeps building."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "APR",
+        "Yearly cost of borrowing"
+       ],
+       [
+        "Credit limit",
+        "Most you can borrow"
+       ],
+       [
+        "Minimum payment",
+        "Smallest amount due"
+       ],
+       [
+        "Debt",
+        "Money you owe"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these borrowing costs from lowest to highest",
+      "items": [
+       [
+        "0% APR",
+        1
+       ],
+       [
+        "5% APR",
+        2
+       ],
+       [
+        "15% APR",
+        3
+       ],
+       [
+        "25% APR",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Money Planning",
+    "period": "Money Plans",
+    "learn": [
+     {
+      "h": "Net worth",
+      "b": "Net worth is what you own (assets) minus what you owe (liabilities). Example: $500 in savings and a $100 debt gives a net worth of $400."
+     },
+     {
+      "h": "Inflation",
+      "b": "Inflation is when prices rise over time. A bag of snacks that costs $2 today may cost more in ten years. Money kept only in cash buys less as time passes."
+     },
+     {
+      "h": "Insurance and goals",
+      "b": "Insurance shares the risk of big losses. You pay a small premium, and the insurer pays for covered problems after your deductible. Clear goals help too: a good goal has an amount and a date."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you calculate net worth?",
+      "o": [
+       "Income minus expenses",
+       "Assets minus liabilities",
+       "Savings plus debts",
+       "Assets plus liabilities"
+      ],
+      "a": 1,
+      "why": "Net worth equals what you own minus what you owe."
+     },
+     {
+      "t": "mc",
+      "q": "Which best describes inflation?",
+      "o": [
+       "Prices falling over time",
+       "Banks closing",
+       "Prices generally rising, so money buys less",
+       "Interest rates being zero"
+      ],
+      "a": 2,
+      "why": "Inflation is a general rise in prices."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main purpose of insurance?",
+      "o": [
+       "To make you rich",
+       "To avoid taxes",
+       "To pay for groceries",
+       "To protect against large unexpected losses"
+      ],
+      "a": 3,
+      "why": "Insurance spreads the cost of big risks across many people."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best savings goal?",
+      "o": [
+       "Save some money someday",
+       "Save $600 in 6 months by putting aside $100 monthly",
+       "Spend less",
+       "Be rich"
+      ],
+      "a": 1,
+      "why": "It has a clear amount, deadline and plan."
+     },
+     {
+      "t": "tf",
+      "q": "A checking account is mainly designed for long-term growth of savings.",
+      "a": false,
+      "why": "Checking is for everyday spending; savings and investments are for growth."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Asset",
+        "Something valuable you own"
+       ],
+       [
+        "Liability",
+        "Something you owe"
+       ],
+       [
+        "Premium",
+        "Payment for insurance"
+       ],
+       [
+        "Deductible",
+        "Amount you pay before insurance"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to reach a savings goal in order",
+      "items": [
+       [
+        "Set a goal amount and date",
+        1
+       ],
+       [
+        "Divide it into monthly amounts",
+        2
+       ],
+       [
+        "Save automatically each month",
+        3
+       ],
+       [
+        "Check your progress",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "fin-invest": {
+  "name": "Investing & Stocks",
+  "units": [
+   {
+    "title": "Investing Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "Stocks",
+      "b": "A stock is a small piece of ownership in a company. If the company grows, the share price may rise. Some companies also pay dividends, a share of profit paid to owners."
+     },
+     {
+      "h": "Bonds",
+      "b": "A bond is a loan you give to a company or government. They pay you interest and return your money on a set date. Bonds are usually less risky than stocks."
+     },
+     {
+      "h": "Risk and return",
+      "b": "Higher possible returns usually come with higher risk of losing money. Savings accounts are safer but grow slowly. Stocks can grow more but go up and down."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does owning a share of stock mean?",
+      "o": [
+       "You lent money to a company",
+       "You own a small part of the company",
+       "You work for the company",
+       "You insure the company"
+      ],
+      "a": 1,
+      "why": "A stock is an ownership share."
+     },
+     {
+      "t": "mc",
+      "q": "What is a bond?",
+      "o": [
+       "A loan made to a company or government",
+       "A piece of ownership",
+       "A type of bank fee",
+       "A tax form"
+      ],
+      "a": 0,
+      "why": "Bond buyers lend money and receive interest."
+     },
+     {
+      "t": "mc",
+      "q": "Generally, higher potential returns come with what?",
+      "o": [
+       "Lower taxes",
+       "Guaranteed profit",
+       "Higher risk",
+       "No fees"
+      ],
+      "a": 2,
+      "why": "Risk and return are linked."
+     },
+     {
+      "t": "mc",
+      "q": "What is a dividend?",
+      "o": [
+       "A stock fee",
+       "A company's debt",
+       "A stock ticker",
+       "A share of profit paid to shareholders"
+      ],
+      "a": 3,
+      "why": "Some companies pay part of profits to owners as dividends."
+     },
+     {
+      "t": "tf",
+      "q": "Owning a stock guarantees that you will make money.",
+      "a": false,
+      "why": "Stock prices can fall, so losses are possible."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stock",
+        "Ownership share"
+       ],
+       [
+        "Bond",
+        "Loan to an issuer"
+       ],
+       [
+        "Dividend",
+        "Profit payout"
+       ],
+       [
+        "Ticker",
+        "Short code for a stock"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order by typical risk, from lowest to highest",
+      "items": [
+       [
+        "Insured savings account",
+        1
+       ],
+       [
+        "Government bond",
+        2
+       ],
+       [
+        "Stock index fund",
+        3
+       ],
+       [
+        "Single small-company stock",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Funds and Diversification",
+    "period": "Funds",
+    "learn": [
+     {
+      "h": "Diversification",
+      "b": "Diversification means spreading money across many investments. If one falls, others may hold up. It is like not putting all your eggs in one basket."
+     },
+     {
+      "h": "Index funds and ETFs",
+      "b": "An index fund holds the stocks in an index, like the S&P 500, which tracks 500 large US companies. An ETF is a fund that trades on an exchange like a stock. Both give instant diversification."
+     },
+     {
+      "h": "Fees matter",
+      "b": "Funds charge an expense ratio, a yearly fee as a percent of your money. A 0.1% fee costs $1 a year on $1,000. Lower fees mean you keep more of your returns."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is diversification?",
+      "o": [
+       "Buying only one stock",
+       "Spreading money across many investments",
+       "Selling everything",
+       "Borrowing to invest"
+      ],
+      "a": 1,
+      "why": "Diversifying reduces the impact of any single investment failing."
+     },
+     {
+      "t": "mc",
+      "q": "What does an index fund do?",
+      "o": [
+       "Picks one winning stock",
+       "Pays no fees ever",
+       "Guarantees profit",
+       "Tracks a market index like the S&P 500"
+      ],
+      "a": 3,
+      "why": "Index funds copy the holdings of an index."
+     },
+     {
+      "t": "mc",
+      "q": "What is an expense ratio?",
+      "o": [
+       "A fund's yearly fee as a percent of assets",
+       "A company's profit",
+       "A stock's price",
+       "A tax rate"
+      ],
+      "a": 0,
+      "why": "It is the annual cost of owning the fund."
+     },
+     {
+      "t": "mc",
+      "q": "How does an ETF trade?",
+      "o": [
+       "Only once a year",
+       "Only through the government",
+       "On an exchange during the day like a stock",
+       "Only by mail"
+      ],
+      "a": 2,
+      "why": "ETF shares are bought and sold on exchanges."
+     },
+     {
+      "t": "tf",
+      "q": "An index fund holds many stocks, so it is diversified.",
+      "a": true,
+      "why": "Owning many companies spreads risk."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "ETF",
+        "Fund traded like a stock"
+       ],
+       [
+        "Index",
+        "List measuring a market"
+       ],
+       [
+        "Diversify",
+        "Spread out risk"
+       ],
+       [
+        "Expense ratio",
+        "Fund's yearly fee"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from least diversified to most diversified",
+      "items": [
+       [
+        "One company stock",
+        1
+       ],
+       [
+        "Ten stocks",
+        2
+       ],
+       [
+        "500-stock index fund",
+        3
+       ],
+       [
+        "Total world stock fund",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Valuing Companies",
+    "period": "Valuation",
+    "learn": [
+     {
+      "h": "Earnings per share",
+      "b": "EPS is a company's profit divided by its number of shares. If a company earns $100 million and has 20 million shares, EPS is $5."
+     },
+     {
+      "h": "The P/E ratio",
+      "b": "The P/E ratio is share price divided by EPS. A $50 stock with $5 EPS has a P/E of 10. It shows how much investors pay for each $1 of earnings."
+     },
+     {
+      "h": "Market cap and markets",
+      "b": "Market cap is share price times the number of shares, the total value of a company. A bull market is rising prices, a bear market is falling prices."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How is the P/E ratio calculated?",
+      "o": [
+       "Profit divided by price",
+       "Price per share divided by earnings per share",
+       "Shares times price",
+       "Debt divided by cash"
+      ],
+      "a": 1,
+      "why": "P/E equals price divided by EPS."
+     },
+     {
+      "t": "mc",
+      "q": "A stock costs $50 and EPS is $5. What is the P/E ratio?",
+      "o": [
+       "5",
+       "55",
+       "10",
+       "250"
+      ],
+      "a": 2,
+      "why": "50 / 5 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "How do you calculate market cap?",
+      "o": [
+       "Profit times debt",
+       "Revenue minus costs",
+       "Dividends divided by price",
+       "Share price times number of shares"
+      ],
+      "a": 3,
+      "why": "Market cap is the total market value of all shares."
+     },
+     {
+      "t": "mc",
+      "q": "What is a bear market?",
+      "o": [
+       "A period of broadly falling prices",
+       "A market for animals",
+       "A period of rising prices",
+       "A tax on stocks"
+      ],
+      "a": 0,
+      "why": "Bear markets are marked by sustained price declines."
+     },
+     {
+      "t": "tf",
+      "q": "Market capitalization is the total value of all of a company's shares.",
+      "a": true,
+      "why": "It equals share price times shares outstanding."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "EPS",
+        "Profit per share"
+       ],
+       [
+        "P/E",
+        "Price compared to earnings"
+       ],
+       [
+        "Market cap",
+        "Total value of shares"
+       ],
+       [
+        "Bull market",
+        "Rising prices"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order company sizes by market cap, smallest to largest",
+      "items": [
+       [
+        "Small-cap",
+        1
+       ],
+       [
+        "Mid-cap",
+        2
+       ],
+       [
+        "Large-cap",
+        3
+       ],
+       [
+        "Mega-cap",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Strategy and Risk",
+    "period": "Strategy",
+    "learn": [
+     {
+      "h": "Time horizon and volatility",
+      "b": "Time horizon is how long until you need the money. Volatility is how much prices swing up and down. Longer horizons give more time to ride out swings."
+     },
+     {
+      "h": "Dollar-cost averaging",
+      "b": "Dollar-cost averaging means investing a fixed amount at regular times, like $50 each month. You buy more shares when prices are low and fewer when high. It avoids trying to guess the best day."
+     },
+     {
+      "h": "Rebalancing",
+      "b": "Over time some investments grow faster, changing your mix. Rebalancing means adjusting back to your target mix. Risk tolerance is how much loss you can handle without panic."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is dollar-cost averaging?",
+      "o": [
+       "Investing everything on the cheapest day",
+       "Investing a fixed amount at regular intervals",
+       "Selling when prices fall",
+       "Only buying bonds"
+      ],
+      "a": 1,
+      "why": "It spreads purchases across time."
+     },
+     {
+      "t": "mc",
+      "q": "What does volatility measure?",
+      "o": [
+       "A fund's fee",
+       "How much prices move up and down",
+       "A company's age",
+       "The tax rate"
+      ],
+      "a": 1,
+      "why": "High volatility means big price swings."
+     },
+     {
+      "t": "mc",
+      "q": "Why can a longer time horizon help investors?",
+      "o": [
+       "Prices never fall",
+       "Fees disappear",
+       "There is more time to recover from dips",
+       "Taxes are zero"
+      ],
+      "a": 2,
+      "why": "Longer periods let markets recover from short-term drops."
+     },
+     {
+      "t": "mc",
+      "q": "What is rebalancing?",
+      "o": [
+       "Buying a new house",
+       "Changing your bank",
+       "Selling all investments",
+       "Adjusting your investments back to a target mix"
+      ],
+      "a": 3,
+      "why": "It restores your intended proportions."
+     },
+     {
+      "t": "tf",
+      "q": "Past performance guarantees future results.",
+      "a": false,
+      "why": "Past returns do not promise future returns."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Volatility",
+        "Size of price swings"
+       ],
+       [
+        "Time horizon",
+        "Time until you need money"
+       ],
+       [
+        "Rebalancing",
+        "Restoring target mix"
+       ],
+       [
+        "Risk tolerance",
+        "Loss you can handle"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a simple investing plan in order",
+      "items": [
+       [
+        "Set a goal and time horizon",
+        1
+       ],
+       [
+        "Choose a diversified mix",
+        2
+       ],
+       [
+        "Invest regularly",
+        3
+       ],
+       [
+        "Review and rebalance",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "fin-crypto": {
+  "name": "Crypto & Blockchain",
+  "units": [
+   {
+    "title": "Blockchain Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "What is a blockchain?",
+      "b": "A blockchain is a shared digital record book. Transactions are grouped into blocks, and each block links to the one before it. This makes old records very hard to change."
+     },
+     {
+      "h": "Decentralization",
+      "b": "Decentralized means no single company or government is in charge. Many computers, called nodes, each keep a copy of the ledger. They check each other's work."
+     },
+     {
+      "h": "Bitcoin",
+      "b": "Bitcoin was the first cryptocurrency, created by a person or group called Satoshi Nakamoto. It launched in 2009. Only 21 million bitcoin can ever exist."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a blockchain?",
+      "o": [
+       "A shared ledger of linked blocks of transactions",
+       "A type of bank",
+       "A video game",
+       "A tax form"
+      ],
+      "a": 0,
+      "why": "Blocks of transactions are chained together in a shared record."
+     },
+     {
+      "t": "mc",
+      "q": "Who created Bitcoin?",
+      "o": [
+       "Elon Musk",
+       "A bank",
+       "Satoshi Nakamoto",
+       "The US government"
+      ],
+      "a": 2,
+      "why": "Bitcoin was created under the name Satoshi Nakamoto."
+     },
+     {
+      "t": "mc",
+      "q": "What does decentralized mean?",
+      "o": [
+       "Run by one company",
+       "Not used by anyone",
+       "Stored in one office",
+       "No single authority controls it"
+      ],
+      "a": 3,
+      "why": "Control is spread across many participants."
+     },
+     {
+      "t": "mc",
+      "q": "What is the maximum supply of Bitcoin?",
+      "o": [
+       "1 million",
+       "21 million",
+       "100 million",
+       "Unlimited"
+      ],
+      "a": 1,
+      "why": "Bitcoin's code caps supply at 21 million."
+     },
+     {
+      "t": "tf",
+      "q": "One person can easily edit old records on a large blockchain.",
+      "a": false,
+      "why": "Changing old blocks would require redoing many linked blocks and beating the network."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Blockchain",
+        "Linked ledger"
+       ],
+       [
+        "Bitcoin",
+        "First cryptocurrency"
+       ],
+       [
+        "Block",
+        "Group of transactions"
+       ],
+       [
+        "Node",
+        "Computer in the network"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put how a transaction is recorded in order",
+      "items": [
+       [
+        "Someone sends a transaction",
+        1
+       ],
+       [
+        "The network verifies it",
+        2
+       ],
+       [
+        "It is added to a block",
+        3
+       ],
+       [
+        "The block is linked to the chain",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Wallets and Keys",
+    "period": "Wallets",
+    "learn": [
+     {
+      "h": "Public and private keys",
+      "b": "A public address is like an email address: you share it to receive crypto. A private key is like a password that allows spending. Never share your private key."
+     },
+     {
+      "h": "Seed phrases",
+      "b": "A seed phrase is a list of words that can restore your wallet. Anyone with it can take your funds. Write it down and keep it offline."
+     },
+     {
+      "h": "Hot, cold, custodial",
+      "b": "A hot wallet is connected to the internet, a cold wallet is offline. In a custodial wallet, like an exchange, a company holds the keys for you. In self-custody, you hold them yourself."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a private key do?",
+      "o": [
+       "Lets you receive messages",
+       "Shows your balance publicly",
+       "Lowers fees",
+       "Authorizes spending your crypto"
+      ],
+      "a": 3,
+      "why": "The private key proves ownership and signs transactions."
+     },
+     {
+      "t": "mc",
+      "q": "What is a public address used for?",
+      "o": [
+       "Receiving crypto",
+       "Spending crypto secretly",
+       "Restoring a wallet",
+       "Mining"
+      ],
+      "a": 0,
+      "why": "You can share it so others can send you funds."
+     },
+     {
+      "t": "mc",
+      "q": "Who should know your seed phrase?",
+      "o": [
+       "Support staff",
+       "Only you",
+       "Your friends",
+       "Any website that asks"
+      ],
+      "a": 1,
+      "why": "Anyone with the seed phrase can control your wallet."
+     },
+     {
+      "t": "mc",
+      "q": "What is a cold wallet?",
+      "o": [
+       "A wallet stored in a fridge",
+       "A wallet that is always online",
+       "A wallet with no keys",
+       "A wallet kept offline"
+      ],
+      "a": 3,
+      "why": "Cold storage is not connected to the internet."
+     },
+     {
+      "t": "tf",
+      "q": "If you lose your private key and have no backup, you may lose access to your crypto permanently.",
+      "a": true,
+      "why": "No central company can reset it in self-custody."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Public address",
+        "Where to receive"
+       ],
+       [
+        "Private key",
+        "Secret that authorizes"
+       ],
+       [
+        "Hot wallet",
+        "Connected to internet"
+       ],
+       [
+        "Cold wallet",
+        "Offline storage"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps for setting up a self-custody wallet",
+      "items": [
+       [
+        "Install a wallet from the official source",
+        1
+       ],
+       [
+        "Write your seed phrase on paper",
+        2
+       ],
+       [
+        "Store the backup safely offline",
+        3
+       ],
+       [
+        "Send a small test transaction",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "How Crypto Works",
+    "period": "Technology",
+    "learn": [
+     {
+      "h": "Consensus",
+      "b": "Consensus means the network agrees on which transactions are valid. Bitcoin uses proof of work, where miners use computer power to solve puzzles. The winner adds the next block."
+     },
+     {
+      "h": "Proof of stake",
+      "b": "In proof of stake, validators lock up coins as a stake. They are chosen to add blocks and can lose stake if they cheat. It uses much less energy than proof of work."
+     },
+     {
+      "h": "Smart contracts",
+      "b": "A smart contract is a program on a blockchain that runs automatically when conditions are met. Ethereum made them popular. Users pay a gas fee to process transactions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What do miners do in proof of work?",
+      "o": [
+       "Solve computational puzzles to add blocks",
+       "Lock up coins as a stake",
+       "Print paper money",
+       "Store wallets for users"
+      ],
+      "a": 0,
+      "why": "Miners compete to solve puzzles and add the next block."
+     },
+     {
+      "t": "mc",
+      "q": "What do validators do in proof of stake?",
+      "o": [
+       "Mine with heavy computers",
+       "Delete old blocks",
+       "Lock up coins as stake to help add blocks",
+       "Set prices"
+      ],
+      "a": 2,
+      "why": "Validators put coins at stake to earn the right to add blocks."
+     },
+     {
+      "t": "mc",
+      "q": "What is a smart contract?",
+      "o": [
+       "A paper agreement",
+       "A bank loan form",
+       "A tax return",
+       "A program that runs automatically on a blockchain"
+      ],
+      "a": 3,
+      "why": "It executes code when set conditions are met."
+     },
+     {
+      "t": "mc",
+      "q": "Which blockchain is best known for smart contracts?",
+      "o": [
+       "Litecoin",
+       "Ethereum",
+       "Dogecoin",
+       "Bitcoin Cash"
+      ],
+      "a": 1,
+      "why": "Ethereum popularized programmable smart contracts."
+     },
+     {
+      "t": "tf",
+      "q": "Bitcoin uses proof of stake.",
+      "a": false,
+      "why": "Bitcoin uses proof of work."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Consensus",
+        "Agreement on valid ledger"
+       ],
+       [
+        "Miner",
+        "Solves puzzles in proof of work"
+       ],
+       [
+        "Validator",
+        "Stakes coins in proof of stake"
+       ],
+       [
+        "Gas fee",
+        "Cost to process a transaction"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these crypto events by year",
+      "items": [
+       [
+        "Bitcoin launches",
+        2009
+       ],
+       [
+        "Dogecoin launches",
+        2013
+       ],
+       [
+        "Ethereum launches",
+        2015
+       ],
+       [
+        "Ethereum moves to proof of stake",
+        2022
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Risks and Uses",
+    "period": "Risks",
+    "learn": [
+     {
+      "h": "Volatility",
+      "b": "Crypto prices can rise or fall a lot in a short time. This is high volatility. Some stablecoins try to avoid this by tracking a steady asset like the US dollar."
+     },
+     {
+      "h": "Scams",
+      "b": "Scammers promise guaranteed high returns, rush you, or ask for your seed phrase. Real projects never need your seed phrase. A rug pull is when creators abandon a project and take the money."
+     },
+     {
+      "h": "Uses and rules",
+      "b": "Crypto is used for payments, DeFi (financial services on blockchains) and NFTs (unique digital tokens). Transactions usually cannot be reversed. Laws about crypto differ by country."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a stablecoin designed to do?",
+      "o": [
+       "Double in price weekly",
+       "Keep a steady value tied to an asset",
+       "Replace the internet",
+       "Avoid all blockchains"
+      ],
+      "a": 1,
+      "why": "Stablecoins aim to hold a stable value, such as one dollar."
+     },
+     {
+      "t": "mc",
+      "q": "How would you describe crypto prices?",
+      "o": [
+       "Always stable",
+       "Fixed by law",
+       "Highly volatile",
+       "Controlled by schools"
+      ],
+      "a": 2,
+      "why": "Crypto prices often swing sharply."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a common scam red flag?",
+      "o": [
+       "Clear public information",
+       "Open-source code",
+       "Independent audits",
+       "Guaranteed high returns"
+      ],
+      "a": 3,
+      "why": "No real investment can guarantee high returns."
+     },
+     {
+      "t": "mc",
+      "q": "What is an NFT?",
+      "o": [
+       "A bank account",
+       "A unique digital token tied to a specific item",
+       "A type of stablecoin",
+       "A mining computer"
+      ],
+      "a": 1,
+      "why": "NFTs are one-of-a-kind tokens on a blockchain."
+     },
+     {
+      "t": "tf",
+      "q": "Crypto sent to the wrong address usually cannot be reversed.",
+      "a": true,
+      "why": "Blockchain transactions are generally final."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stablecoin",
+        "Pegged to a steady value"
+       ],
+       [
+        "DeFi",
+        "Finance services on blockchain"
+       ],
+       [
+        "NFT",
+        "Unique token"
+       ],
+       [
+        "Rug pull",
+        "Creators abandon and take funds"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a scam-spotting routine in order",
+      "items": [
+       [
+        "Notice an unexpected offer",
+        1
+       ],
+       [
+        "Check if the sender is official",
+        2
+       ],
+       [
+        "Never share your seed phrase",
+        3
+       ],
+       [
+        "Report the scam",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "econ-micro": {
+  "name": "Microeconomics",
+  "units": [
+   {
+    "title": "Scarcity and Choice",
+    "period": "Foundations",
+    "learn": [
+     {
+      "h": "Scarcity",
+      "b": "Scarcity means resources are limited but wants are unlimited. Because of this, everyone must make choices. Even rich people have limited time."
+     },
+     {
+      "h": "Opportunity cost",
+      "b": "Opportunity cost is the value of the next best thing you give up when you choose. If you spend Saturday at the beach instead of a paid shift, the shift is what you gave up. Every choice has a trade-off."
+     },
+     {
+      "h": "Incentives",
+      "b": "An incentive is something that motivates people to act, like a discount or a reward. People usually respond to incentives. Economics studies how people make choices with limited resources."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is scarcity?",
+      "o": [
+       "Too much money",
+       "Limited resources but unlimited wants",
+       "A type of tax",
+       "Free goods for all"
+      ],
+      "a": 1,
+      "why": "Scarcity is the gap between limited resources and unlimited wants."
+     },
+     {
+      "t": "mc",
+      "q": "What is opportunity cost?",
+      "o": [
+       "The price on the tag",
+       "A bank fee",
+       "The value of the next best alternative you give up",
+       "The cost of making a good"
+      ],
+      "a": 2,
+      "why": "It measures what you sacrifice by choosing one option."
+     },
+     {
+      "t": "mc",
+      "q": "What is an incentive?",
+      "o": [
+       "A type of loan",
+       "A law",
+       "A tax return",
+       "Something that motivates a choice"
+      ],
+      "a": 3,
+      "why": "Rewards and costs push people toward certain behavior."
+     },
+     {
+      "t": "mc",
+      "q": "What does economics study?",
+      "o": [
+       "How people make choices with limited resources",
+       "Only stock prices",
+       "Only banks",
+       "Only governments"
+      ],
+      "a": 0,
+      "why": "Economics is about choices under scarcity."
+     },
+     {
+      "t": "tf",
+      "q": "Scarcity only affects poor people.",
+      "a": false,
+      "why": "Everyone faces limited time, money or resources."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Scarcity",
+        "Limited resources"
+       ],
+       [
+        "Opportunity cost",
+        "Next best option lost"
+       ],
+       [
+        "Incentive",
+        "Motivation to act"
+       ],
+       [
+        "Trade-off",
+        "Giving up one thing for another"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a good decision in order",
+      "items": [
+       [
+        "Identify your choices",
+        1
+       ],
+       [
+        "Weigh costs and benefits",
+        2
+       ],
+       [
+        "Make a choice",
+        3
+       ],
+       [
+        "Review the outcome",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Supply and Demand",
+    "period": "Markets",
+    "learn": [
+     {
+      "h": "Demand and supply",
+      "b": "Demand is how much buyers want at each price. The law of demand says that when price rises, quantity demanded falls. Supply is how much sellers offer, and when price rises, quantity supplied rises."
+     },
+     {
+      "h": "Equilibrium",
+      "b": "Equilibrium is the price where the amount buyers want equals the amount sellers offer. At that price there is no shortage and no surplus. Markets tend to move toward it."
+     },
+     {
+      "h": "Shortage and surplus",
+      "b": "If the price is below equilibrium, buyers want more than sellers offer: a shortage. If the price is above equilibrium, sellers have extra goods: a surplus. Prices then tend to adjust."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "According to the law of demand, if price rises, quantity demanded usually does what?",
+      "o": [
+       "Rises",
+       "Falls",
+       "Stays the same always",
+       "Doubles"
+      ],
+      "a": 1,
+      "why": "Higher prices lead buyers to buy less."
+     },
+     {
+      "t": "mc",
+      "q": "According to the law of supply, if price rises, quantity supplied usually does what?",
+      "o": [
+       "Falls",
+       "Becomes zero",
+       "Rises",
+       "Does not matter"
+      ],
+      "a": 2,
+      "why": "Higher prices encourage sellers to offer more."
+     },
+     {
+      "t": "mc",
+      "q": "What is equilibrium?",
+      "o": [
+       "Where prices are zero",
+       "When government sets prices",
+       "When a firm has profit",
+       "The price where quantity supplied equals quantity demanded"
+      ],
+      "a": 3,
+      "why": "At equilibrium the market clears."
+     },
+     {
+      "t": "mc",
+      "q": "What happens when price is below equilibrium?",
+      "o": [
+       "A shortage",
+       "A surplus",
+       "Nothing",
+       "A recession"
+      ],
+      "a": 0,
+      "why": "Buyers want more than sellers supply at the low price."
+     },
+     {
+      "t": "tf",
+      "q": "A surplus happens when the price is set above equilibrium.",
+      "a": true,
+      "why": "Sellers offer more than buyers want at a high price."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Demand",
+        "What buyers want at each price"
+       ],
+       [
+        "Supply",
+        "What sellers offer at each price"
+       ],
+       [
+        "Equilibrium",
+        "Supply equals demand"
+       ],
+       [
+        "Shortage",
+        "Demand exceeds supply"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "A toy becomes very popular. Order what happens next",
+      "items": [
+       [
+        "Demand rises",
+        1
+       ],
+       [
+        "A shortage appears",
+        2
+       ],
+       [
+        "Price rises",
+        3
+       ],
+       [
+        "A new equilibrium is reached",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Elasticity and Costs",
+    "period": "Firms",
+    "learn": [
+     {
+      "h": "Elasticity",
+      "b": "Elasticity shows how much quantity changes when price changes. Elastic demand means buyers react a lot, like for a luxury treat. Inelastic demand means buyers react little, like for salt."
+     },
+     {
+      "h": "Costs",
+      "b": "Fixed costs do not change with how much you make, like rent. Variable costs change with output, like ingredients. Marginal cost is the extra cost of making one more unit."
+     },
+     {
+      "h": "Profit",
+      "b": "Revenue is money from sales. Profit equals total revenue minus total cost. A firm often keeps producing while the extra revenue from a unit is more than its marginal cost."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does elastic demand mean?",
+      "o": [
+       "Price never changes",
+       "Quantity demanded changes a lot when price changes",
+       "Quantity does not respond to price",
+       "Only the rich buy"
+      ],
+      "a": 1,
+      "why": "Elastic means buyers are very sensitive to price."
+     },
+     {
+      "t": "mc",
+      "q": "Which good likely has the most inelastic demand?",
+      "o": [
+       "Salt",
+       "A specific cereal brand",
+       "Concert tickets",
+       "Souvenirs"
+      ],
+      "a": 0,
+      "why": "People need salt and have few substitutes, so price changes matter little."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a fixed cost for a bakery?",
+      "o": [
+       "Flour",
+       "Eggs",
+       "Monthly rent",
+       "Packaging"
+      ],
+      "a": 2,
+      "why": "Rent stays the same however many loaves are baked."
+     },
+     {
+      "t": "mc",
+      "q": "How is profit calculated?",
+      "o": [
+       "Revenue plus cost",
+       "Price times quantity",
+       "Cost minus revenue",
+       "Total revenue minus total cost"
+      ],
+      "a": 3,
+      "why": "Profit is what remains after costs."
+     },
+     {
+      "t": "tf",
+      "q": "Marginal cost is the total cost of all units produced.",
+      "a": false,
+      "why": "Marginal cost is the extra cost of producing one more unit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Elasticity",
+        "Sensitivity to price change"
+       ],
+       [
+        "Marginal cost",
+        "Cost of one more unit"
+       ],
+       [
+        "Fixed cost",
+        "Does not change with output"
+       ],
+       [
+        "Revenue",
+        "Money from sales"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to find profit in order",
+      "items": [
+       [
+        "Find total revenue",
+        1
+       ],
+       [
+        "Add up all costs",
+        2
+       ],
+       [
+        "Subtract costs from revenue",
+        3
+       ],
+       [
+        "Check if the result is positive",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Market Structures",
+    "period": "Competition",
+    "learn": [
+     {
+      "h": "Types of markets",
+      "b": "In perfect competition there are many sellers of identical goods, so no one controls the price. A monopoly has one seller. An oligopoly has a few big firms, like some phone companies."
+     },
+     {
+      "h": "Externalities",
+      "b": "An externality is a cost or benefit that affects people who were not part of the deal. Pollution is a negative externality. A neighbor's beautiful garden can be a positive one."
+     },
+     {
+      "h": "Public goods",
+      "b": "A public good, like national defense or streetlights, is available to everyone and one person using it does not stop others. Private companies often will not provide them, so governments often do."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a monopoly?",
+      "o": [
+       "Many sellers",
+       "A market with one seller",
+       "Two buyers",
+       "A government store"
+      ],
+      "a": 1,
+      "why": "Mono means one: a single seller controls the market."
+     },
+     {
+      "t": "mc",
+      "q": "What is an oligopoly?",
+      "o": [
+       "Only one firm",
+       "Thousands of tiny sellers",
+       "A few large firms dominate",
+       "No firms"
+      ],
+      "a": 2,
+      "why": "Oligopolies are dominated by a small number of big firms."
+     },
+     {
+      "t": "mc",
+      "q": "What is an externality?",
+      "o": [
+       "A type of tax",
+       "A company's profit",
+       "An export",
+       "A cost or benefit affecting people outside a deal"
+      ],
+      "a": 3,
+      "why": "Outsiders feel effects they did not choose."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a public good?",
+      "o": [
+       "Streetlights",
+       "A pizza",
+       "A concert ticket",
+       "A private jet"
+      ],
+      "a": 0,
+      "why": "Streetlights serve everyone and use by one does not reduce use by others."
+     },
+     {
+      "t": "tf",
+      "q": "Pollution from a factory is an example of a negative externality.",
+      "a": true,
+      "why": "People nearby bear a cost they did not agree to."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Monopoly",
+        "One seller"
+       ],
+       [
+        "Oligopoly",
+        "A few large sellers"
+       ],
+       [
+        "Externality",
+        "Side effect on outsiders"
+       ],
+       [
+        "Public good",
+        "Open to all, use does not exclude others"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order markets by number of sellers, fewest to most",
+      "items": [
+       [
+        "Monopoly",
+        1
+       ],
+       [
+        "Oligopoly",
+        2
+       ],
+       [
+        "Monopolistic competition",
+        3
+       ],
+       [
+        "Perfect competition",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "econ-macro": {
+  "name": "Macroeconomics",
+  "units": [
+   {
+    "title": "GDP and Growth",
+    "period": "Output",
+    "learn": [
+     {
+      "h": "What is GDP?",
+      "b": "GDP, gross domestic product, is the total value of final goods and services made in a country in a period. It measures the size of an economy. It counts new production, not used items resold."
+     },
+     {
+      "h": "Real vs nominal",
+      "b": "Nominal GDP uses current prices. Real GDP adjusts for inflation so you can compare years fairly. If prices rise 5% and output is the same, nominal GDP grows but real GDP does not."
+     },
+     {
+      "h": "Business cycle",
+      "b": "The economy goes through ups and downs. Expansion is growth, a peak is the high point, contraction is decline, and a trough is the low point. A recession is a significant fall in economic activity."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does GDP measure?",
+      "o": [
+       "Total value of final goods and services produced",
+       "A country's debt",
+       "The number of workers",
+       "Government taxes only"
+      ],
+      "a": 0,
+      "why": "GDP is the value of final output in a period."
+     },
+     {
+      "t": "mc",
+      "q": "What does real GDP adjust for?",
+      "o": [
+       "Population",
+       "Inflation",
+       "Exchange rates",
+       "Taxes"
+      ],
+      "a": 1,
+      "why": "Real GDP removes the effect of price changes."
+     },
+     {
+      "t": "mc",
+      "q": "Which counts in GDP for this year?",
+      "o": [
+       "Resale of a used car",
+       "Buying shares of stock",
+       "A new car built and sold this year",
+       "A gift between friends"
+      ],
+      "a": 2,
+      "why": "GDP counts newly produced final goods."
+     },
+     {
+      "t": "mc",
+      "q": "What is a recession?",
+      "o": [
+       "A time of rapid growth",
+       "A tax cut",
+       "A bank holiday",
+       "A significant decline in economic activity"
+      ],
+      "a": 3,
+      "why": "Recessions involve falling output, jobs and income."
+     },
+     {
+      "t": "tf",
+      "q": "GDP counts the resale of used goods.",
+      "a": false,
+      "why": "Only newly produced goods and services count."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "GDP",
+        "Value of goods and services made"
+       ],
+       [
+        "Nominal",
+        "Not adjusted for inflation"
+       ],
+       [
+        "Real",
+        "Adjusted for inflation"
+       ],
+       [
+        "Recession",
+        "Economy shrinks"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the business cycle phases in order starting from growth",
+      "items": [
+       [
+        "Expansion",
+        1
+       ],
+       [
+        "Peak",
+        2
+       ],
+       [
+        "Contraction",
+        3
+       ],
+       [
+        "Trough",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Inflation and Jobs",
+    "period": "Prices & Work",
+    "learn": [
+     {
+      "h": "Inflation and CPI",
+      "b": "Inflation is a general rise in prices over time. The CPI, consumer price index, tracks the price of a typical basket of goods people buy. If CPI rises 3%, prices are about 3% higher."
+     },
+     {
+      "h": "Deflation",
+      "b": "Deflation is when prices fall over time. It sounds nice but can make people delay buying, which hurts the economy. Most central banks aim for low, stable inflation."
+     },
+     {
+      "h": "Unemployment",
+      "b": "The labor force is people who have a job or are actively looking. The unemployment rate is the percent of the labor force without a job. A student not looking for work is not counted as unemployed."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does CPI measure?",
+      "o": [
+       "Average price changes of a basket of consumer goods",
+       "Company profits",
+       "Total exports",
+       "Interest rates"
+      ],
+      "a": 0,
+      "why": "CPI tracks the cost of a typical shopping basket."
+     },
+     {
+      "t": "mc",
+      "q": "What is the unemployment rate?",
+      "o": [
+       "People without a job divided by population",
+       "Percent of the labor force without a job who are looking",
+       "Percent of workers who retire",
+       "Number of job ads"
+      ],
+      "a": 1,
+      "why": "It uses the labor force as the base."
+     },
+     {
+      "t": "mc",
+      "q": "What is deflation?",
+      "o": [
+       "Rising prices",
+       "Stable prices",
+       "A general fall in prices",
+       "Higher wages"
+      ],
+      "a": 2,
+      "why": "Deflation is a decline in the price level."
+     },
+     {
+      "t": "mc",
+      "q": "Who is counted as unemployed?",
+      "o": [
+       "A retiree",
+       "A full-time student not looking for work",
+       "A person working part time",
+       "Someone without a job who is actively looking"
+      ],
+      "a": 3,
+      "why": "Unemployed means jobless and actively seeking work."
+     },
+     {
+      "t": "tf",
+      "q": "Inflation reduces the purchasing power of money.",
+      "a": true,
+      "why": "When prices rise, each dollar buys less."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Inflation",
+        "Rising prices"
+       ],
+       [
+        "Deflation",
+        "Falling prices"
+       ],
+       [
+        "CPI",
+        "Price index of a basket"
+       ],
+       [
+        "Labor force",
+        "Working or seeking work"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these yearly price changes from lowest to highest",
+      "items": [
+       [
+        "-2%",
+        1
+       ],
+       [
+        "0%",
+        2
+       ],
+       [
+        "3%",
+        3
+       ],
+       [
+        "10%",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Government and Money",
+    "period": "Policy",
+    "learn": [
+     {
+      "h": "Fiscal policy",
+      "b": "Fiscal policy is how the government uses taxes and spending to influence the economy. Cutting taxes or spending more can boost growth. A budget deficit happens when spending is higher than revenue."
+     },
+     {
+      "h": "Monetary policy",
+      "b": "Monetary policy is run by the central bank, like the Federal Reserve in the US. It sets interest rates and influences the money supply. Lower rates make borrowing cheaper."
+     },
+     {
+      "h": "Cooling inflation",
+      "b": "When prices rise too fast, a central bank may raise interest rates. Borrowing becomes costlier and spending slows. This eases pressure on prices."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is fiscal policy?",
+      "o": [
+       "Government taxes and spending choices",
+       "Setting interest rates by a central bank",
+       "Printing coins",
+       "Trade deals only"
+      ],
+      "a": 0,
+      "why": "Fiscal policy uses the government budget."
+     },
+     {
+      "t": "mc",
+      "q": "Who runs monetary policy in the US?",
+      "o": [
+       "Congress",
+       "The Federal Reserve",
+       "The Supreme Court",
+       "Local schools"
+      ],
+      "a": 1,
+      "why": "The Federal Reserve is the US central bank."
+     },
+     {
+      "t": "mc",
+      "q": "If a central bank raises interest rates, what generally happens to borrowing?",
+      "o": [
+       "It gets cheaper",
+       "It stops entirely",
+       "It gets more expensive",
+       "Nothing changes"
+      ],
+      "a": 2,
+      "why": "Higher rates raise the cost of loans."
+     },
+     {
+      "t": "mc",
+      "q": "What is a budget deficit?",
+      "o": [
+       "Revenue greater than spending",
+       "Zero taxes",
+       "A type of bond",
+       "Spending greater than revenue"
+      ],
+      "a": 3,
+      "why": "A deficit means the government spends more than it collects."
+     },
+     {
+      "t": "tf",
+      "q": "Fiscal policy is set by the central bank.",
+      "a": false,
+      "why": "Fiscal policy is set by government; the central bank handles monetary policy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fiscal policy",
+        "Taxes and spending"
+       ],
+       [
+        "Monetary policy",
+        "Interest rates and money supply"
+       ],
+       [
+        "Federal Reserve",
+        "US central bank"
+       ],
+       [
+        "Budget deficit",
+        "Spending exceeds revenue"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a rate hike cools inflation",
+      "items": [
+       [
+        "Central bank raises rates",
+        1
+       ],
+       [
+        "Borrowing becomes costlier",
+        2
+       ],
+       [
+        "Spending slows",
+        3
+       ],
+       [
+        "Price pressure eases",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Trade and the World",
+    "period": "Global Economy",
+    "learn": [
+     {
+      "h": "Imports and exports",
+      "b": "Exports are goods and services sold to other countries. Imports are those bought from other countries. Trade lets countries get things they cannot make cheaply."
+     },
+     {
+      "h": "Comparative advantage",
+      "b": "A country has a comparative advantage when it can make something at a lower opportunity cost than others. Each country does best by specializing in what it makes most efficiently, then trading."
+     },
+     {
+      "h": "Tariffs and exchange rates",
+      "b": "A tariff is a tax on imported goods. An exchange rate is the price of one currency in another. If a currency gets stronger, imports for that country become cheaper."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are exports?",
+      "o": [
+       "Goods bought from abroad",
+       "Goods and services sold to other countries",
+       "Taxes on trade",
+       "Currency notes"
+      ],
+      "a": 1,
+      "why": "Exports leave the country to be sold abroad."
+     },
+     {
+      "t": "mc",
+      "q": "What is a tariff?",
+      "o": [
+       "A bank loan",
+       "A trade agreement",
+       "A subsidy",
+       "A tax on imported goods"
+      ],
+      "a": 3,
+      "why": "Tariffs raise the price of imports."
+     },
+     {
+      "t": "mc",
+      "q": "What is comparative advantage?",
+      "o": [
+       "Making something at a lower opportunity cost",
+       "Having the biggest army",
+       "Having more money",
+       "Selling more than you buy"
+      ],
+      "a": 0,
+      "why": "It is about lower opportunity cost, not absolute output."
+     },
+     {
+      "t": "mc",
+      "q": "If a country's currency strengthens, imports generally become what?",
+      "o": [
+       "More expensive",
+       "Illegal",
+       "Cheaper",
+       "Unchanged always"
+      ],
+      "a": 2,
+      "why": "A stronger currency buys more foreign goods."
+     },
+     {
+      "t": "tf",
+      "q": "Countries can both gain from trade by specializing where their opportunity cost is lower.",
+      "a": true,
+      "why": "Specialization and trade can raise total output for both."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Export",
+        "Sold abroad"
+       ],
+       [
+        "Import",
+        "Bought from abroad"
+       ],
+       [
+        "Tariff",
+        "Tax on imports"
+       ],
+       [
+        "Exchange rate",
+        "Price of one currency in another"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a trade chain in order",
+      "items": [
+       [
+        "Raw material is grown",
+        1
+       ],
+       [
+        "Factory makes a product",
+        2
+       ],
+       [
+        "Product is exported",
+        3
+       ],
+       [
+        "Consumer buys it abroad",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "biz-basics": {
+  "name": "Business Basics",
+  "units": [
+   {
+    "title": "What Is a Business?",
+    "period": "Foundations",
+    "learn": [
+     {
+      "h": "Goods and services",
+      "b": "A business makes goods, like shoes, or provides services, like haircuts, to earn money. It exists to meet customer needs. Some businesses sell both."
+     },
+     {
+      "h": "Revenue, expenses, profit",
+      "b": "Revenue is the money from sales. Expenses are the costs of running the business. Profit is revenue minus expenses."
+     },
+     {
+      "h": "Stakeholders",
+      "b": "Stakeholders are people affected by a business: owners, employees, customers, suppliers and the community. Good businesses think about all of them."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is revenue?",
+      "o": [
+       "Costs of the business",
+       "Money earned from sales",
+       "Money owed",
+       "Taxes"
+      ],
+      "a": 1,
+      "why": "Revenue is the total sales income."
+     },
+     {
+      "t": "mc",
+      "q": "How is profit calculated?",
+      "o": [
+       "Revenue plus expenses",
+       "Expenses minus revenue",
+       "Revenue minus expenses",
+       "Sales times price"
+      ],
+      "a": 2,
+      "why": "Profit is what remains after expenses."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a service?",
+      "o": [
+       "A pair of shoes",
+       "A phone",
+       "A bag of rice",
+       "A haircut"
+      ],
+      "a": 3,
+      "why": "Services are actions done for customers, not physical items."
+     },
+     {
+      "t": "mc",
+      "q": "Who is a stakeholder of a business?",
+      "o": [
+       "Its employees",
+       "Only the owner",
+       "Only the bank",
+       "Nobody else"
+      ],
+      "a": 0,
+      "why": "Employees, customers, suppliers and owners are all affected."
+     },
+     {
+      "t": "tf",
+      "q": "A business always makes a profit.",
+      "a": false,
+      "why": "If expenses exceed revenue, a business has a loss."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Revenue",
+        "Money from sales"
+       ],
+       [
+        "Expense",
+        "Cost of operating"
+       ],
+       [
+        "Profit",
+        "Revenue minus expenses"
+       ],
+       [
+        "Customer",
+        "Buyer of goods or services"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of running a lemonade stand in order",
+      "items": [
+       [
+        "Buy supplies",
+        1
+       ],
+       [
+        "Make the lemonade",
+        2
+       ],
+       [
+        "Sell to customers",
+        3
+       ],
+       [
+        "Count the profit",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Business Structures",
+    "period": "Ownership",
+    "learn": [
+     {
+      "h": "Sole proprietorship and partnership",
+      "b": "A sole proprietorship has one owner who keeps all profit and is personally responsible for debts. A partnership has two or more owners who share profit and responsibility."
+     },
+     {
+      "h": "LLC",
+      "b": "An LLC, limited liability company, is a flexible structure. In general it keeps owners' personal belongings separate from business debts. This is called limited liability."
+     },
+     {
+      "h": "Corporation",
+      "b": "A corporation is a separate legal entity owned by shareholders. It can raise money by selling shares. It is more complex and has more rules."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many owners does a sole proprietorship have?",
+      "o": [
+       "Two",
+       "One",
+       "Many shareholders",
+       "None"
+      ],
+      "a": 1,
+      "why": "Sole means one owner."
+     },
+     {
+      "t": "mc",
+      "q": "What does limited liability mean?",
+      "o": [
+       "No taxes",
+       "No customers",
+       "Owners are generally not personally responsible for all business debts",
+       "Owners cannot make profit"
+      ],
+      "a": 2,
+      "why": "Personal assets are generally protected from business debts."
+     },
+     {
+      "t": "mc",
+      "q": "What is a corporation?",
+      "o": [
+       "A one-person shop",
+       "A family loan",
+       "A hobby",
+       "A separate legal entity owned by shareholders"
+      ],
+      "a": 3,
+      "why": "A corporation is legally separate from its owners."
+     },
+     {
+      "t": "mc",
+      "q": "How many owners does a partnership have?",
+      "o": [
+       "Two or more",
+       "Exactly one",
+       "None",
+       "Only shareholders"
+      ],
+      "a": 0,
+      "why": "Partnerships are owned by two or more people."
+     },
+     {
+      "t": "tf",
+      "q": "An LLC can generally protect owners' personal assets from business debts.",
+      "a": true,
+      "why": "Limited liability is the main feature of an LLC."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Sole proprietorship",
+        "One owner"
+       ],
+       [
+        "Partnership",
+        "Two or more owners"
+       ],
+       [
+        "LLC",
+        "Flexible with limited liability"
+       ],
+       [
+        "Corporation",
+        "Separate legal entity"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of forming a company in order",
+      "items": [
+       [
+        "Choose a business structure",
+        1
+       ],
+       [
+        "Register with the state",
+        2
+       ],
+       [
+        "Get required licenses",
+        3
+       ],
+       [
+        "Open for business",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Operations and Management",
+    "period": "Running It",
+    "learn": [
+     {
+      "h": "Supply chain and inventory",
+      "b": "A supply chain is the path from raw materials to the customer. Inventory is the goods a business holds for sale. Too little means lost sales, too much ties up money."
+     },
+     {
+      "h": "Management functions",
+      "b": "Managers plan (set goals), organize (arrange people and resources), lead (guide and motivate) and control (check results and fix problems)."
+     },
+     {
+      "h": "SWOT analysis",
+      "b": "SWOT stands for Strengths, Weaknesses, Opportunities and Threats. Strengths and weaknesses are inside the business. Opportunities and threats come from outside, like new rivals."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a supply chain?",
+      "o": [
+       "The path from raw materials to the customer",
+       "A store sign",
+       "A bank chain",
+       "A list of employees"
+      ],
+      "a": 0,
+      "why": "It covers everything needed to get a product to buyers."
+     },
+     {
+      "t": "mc",
+      "q": "What is inventory?",
+      "o": [
+       "Employee records",
+       "Goods a business holds for sale",
+       "Bank loans",
+       "Advertising plans"
+      ],
+      "a": 1,
+      "why": "Inventory is the stock of goods ready to sell."
+     },
+     {
+      "t": "mc",
+      "q": "What does the T in SWOT stand for?",
+      "o": [
+       "Taxes",
+       "Time",
+       "Threats",
+       "Tools"
+      ],
+      "a": 2,
+      "why": "SWOT is Strengths, Weaknesses, Opportunities, Threats."
+     },
+     {
+      "t": "mc",
+      "q": "Which management function means setting goals and deciding how to reach them?",
+      "o": [
+       "Controlling",
+       "Leading",
+       "Organizing",
+       "Planning"
+      ],
+      "a": 3,
+      "why": "Planning sets the goals and the path."
+     },
+     {
+      "t": "tf",
+      "q": "Opportunities and threats in a SWOT analysis are internal to the company.",
+      "a": false,
+      "why": "They are external; strengths and weaknesses are internal."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Supply chain",
+        "Raw materials to customer"
+       ],
+       [
+        "Inventory",
+        "Goods held for sale"
+       ],
+       [
+        "Quality control",
+        "Checking products meet standards"
+       ],
+       [
+        "Planning",
+        "Setting goals"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the management functions in order",
+      "items": [
+       [
+        "Planning",
+        1
+       ],
+       [
+        "Organizing",
+        2
+       ],
+       [
+        "Leading",
+        3
+       ],
+       [
+        "Controlling",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Money and Growth",
+    "period": "Growth",
+    "learn": [
+     {
+      "h": "Cash flow",
+      "b": "Cash flow is the movement of money in and out of a business. Positive cash flow means more comes in than goes out. A profitable business can still run out of cash if customers pay late."
+     },
+     {
+      "h": "Break-even and scale",
+      "b": "The break-even point is when revenue equals total costs, so profit is zero. Economies of scale mean the cost per unit falls as a business makes more."
+     },
+     {
+      "h": "Product life cycle and ethics",
+      "b": "Products go through introduction, growth, maturity and decline. Business ethics means doing the right thing, such as honest ads and fair pay. Trust helps a business last."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is cash flow?",
+      "o": [
+       "Total profit",
+       "Movement of money in and out",
+       "Stock price",
+       "Number of customers"
+      ],
+      "a": 1,
+      "why": "Cash flow tracks money entering and leaving."
+     },
+     {
+      "t": "mc",
+      "q": "What are economies of scale?",
+      "o": [
+       "Rising costs per unit",
+       "Cost per unit falls as output grows",
+       "Weighing machines",
+       "Lower quality"
+      ],
+      "a": 1,
+      "why": "Making more can spread costs and lower the unit cost."
+     },
+     {
+      "t": "mc",
+      "q": "What is the break-even point?",
+      "o": [
+       "Revenue exceeds costs",
+       "Costs are zero",
+       "When revenue equals total costs",
+       "When the company closes"
+      ],
+      "a": 2,
+      "why": "At break-even, profit is zero."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the first stage of the product life cycle?",
+      "o": [
+       "Decline",
+       "Maturity",
+       "Growth",
+       "Introduction"
+      ],
+      "a": 3,
+      "why": "A product starts with its introduction to the market."
+     },
+     {
+      "t": "tf",
+      "q": "A profitable business can still run out of cash.",
+      "a": true,
+      "why": "Timing matters: if money arrives late, bills may go unpaid."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Cash flow",
+        "Money in and out"
+       ],
+       [
+        "Break-even",
+        "Revenue equals costs"
+       ],
+       [
+        "Economies of scale",
+        "Lower unit cost with more output"
+       ],
+       [
+        "Stakeholder",
+        "Person affected by the business"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the product life cycle in order",
+      "items": [
+       [
+        "Introduction",
+        1
+       ],
+       [
+        "Growth",
+        2
+       ],
+       [
+        "Maturity",
+        3
+       ],
+       [
+        "Decline",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "biz-entre": {
+  "name": "Entrepreneurship",
+  "units": [
+   {
+    "title": "Finding an Idea",
+    "period": "Ideas",
+    "learn": [
+     {
+      "h": "What is an entrepreneur?",
+      "b": "An entrepreneur starts and runs a business and takes on financial risk. Many great businesses begin by solving a real problem. Example: a tutoring app for students who need homework help."
+     },
+     {
+      "h": "Know your customer",
+      "b": "Your target market is the group of people you want to serve. Market research means collecting information about customers and competitors, by talking to people or using surveys."
+     },
+     {
+      "h": "Value proposition",
+      "b": "A value proposition explains why customers should choose you. It answers: what problem do you solve and why are you better? Keep it short and clear."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an entrepreneur?",
+      "o": [
+       "Someone who only works for others",
+       "Someone who starts and runs a business and takes risk",
+       "A tax officer",
+       "A bank clerk"
+      ],
+      "a": 1,
+      "why": "Entrepreneurs create businesses and accept financial risk."
+     },
+     {
+      "t": "mc",
+      "q": "Good business ideas often do what?",
+      "o": [
+       "Copy every competitor exactly",
+       "Avoid customers",
+       "Solve a real problem for customers",
+       "Ignore costs"
+      ],
+      "a": 2,
+      "why": "Solving a problem gives people a reason to buy."
+     },
+     {
+      "t": "mc",
+      "q": "What is a value proposition?",
+      "o": [
+       "A tax form",
+       "A loan agreement",
+       "A price list",
+       "The reason customers should choose your product"
+      ],
+      "a": 3,
+      "why": "It states the benefit you offer."
+     },
+     {
+      "t": "mc",
+      "q": "What is market research?",
+      "o": [
+       "Collecting information about customers and competitors",
+       "Printing flyers",
+       "Hiring staff",
+       "Buying stock"
+      ],
+      "a": 0,
+      "why": "Research helps you understand the market before you spend."
+     },
+     {
+      "t": "tf",
+      "q": "Talking to potential customers before launching can reduce risk.",
+      "a": true,
+      "why": "You learn what people want before investing heavily."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Entrepreneur",
+        "Starts and runs a business"
+       ],
+       [
+        "Target market",
+        "Group you want to serve"
+       ],
+       [
+        "Value proposition",
+        "Why customers should pick you"
+       ],
+       [
+        "Competitor",
+        "Business selling similar things"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of developing an idea in order",
+      "items": [
+       [
+        "Spot a problem",
+        1
+       ],
+       [
+        "Brainstorm a solution",
+        2
+       ],
+       [
+        "Test it with customers",
+        3
+       ],
+       [
+        "Improve it",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Planning and Funding",
+    "period": "Planning",
+    "learn": [
+     {
+      "h": "Business plan and MVP",
+      "b": "A business plan is a written plan of your goals and how to reach them. An MVP, minimum viable product, is the simplest version you can test with real customers. It saves time and money."
+     },
+     {
+      "h": "Startup costs",
+      "b": "Startup costs are what you must spend before earning, such as equipment, a website and licenses. Estimate them to know how much money you need."
+     },
+     {
+      "h": "Ways to fund",
+      "b": "Bootstrapping uses your own savings and sales. A loan must be repaid with interest but you keep ownership. Equity investors give money for a share of ownership. Crowdfunding collects small sums from many people."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an MVP?",
+      "o": [
+       "Most valuable player",
+       "The final perfect product",
+       "The simplest version you can test with customers",
+       "A tax number"
+      ],
+      "a": 2,
+      "why": "An MVP tests the idea with minimal effort."
+     },
+     {
+      "t": "mc",
+      "q": "What is bootstrapping?",
+      "o": [
+       "Getting a big loan",
+       "Selling to investors",
+       "Buying boots",
+       "Funding a business with your own savings and sales"
+      ],
+      "a": 3,
+      "why": "Bootstrapped founders rely on their own money."
+     },
+     {
+      "t": "mc",
+      "q": "What does an equity investor receive?",
+      "o": [
+       "An ownership share",
+       "Guaranteed repayment with interest",
+       "A coupon",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "Equity means ownership in the company."
+     },
+     {
+      "t": "mc",
+      "q": "What is a business plan?",
+      "o": [
+       "A bank card",
+       "A written plan of goals and how to reach them",
+       "A logo",
+       "A tax return"
+      ],
+      "a": 1,
+      "why": "It lays out the idea, market, costs and goals."
+     },
+     {
+      "t": "tf",
+      "q": "A loan gives the lender part ownership of your business.",
+      "a": false,
+      "why": "A loan is repaid with interest; it does not give ownership."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "MVP",
+        "Simplest testable product"
+       ],
+       [
+        "Bootstrapping",
+        "Using your own money"
+       ],
+       [
+        "Crowdfunding",
+        "Small sums from many people"
+       ],
+       [
+        "Equity",
+        "Ownership share"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the startup steps in order",
+      "items": [
+       [
+        "Write a business plan",
+        1
+       ],
+       [
+        "Estimate startup costs",
+        2
+       ],
+       [
+        "Secure funding",
+        3
+       ],
+       [
+        "Launch your MVP",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Launching and Growing",
+    "period": "Launch",
+    "learn": [
+     {
+      "h": "Pricing",
+      "b": "Cost-plus pricing means cost plus a markup. If a product costs $6 and you add a 50% markup, the price is $9. Prices that are too low can cause losses, and too high can scare customers away."
+     },
+     {
+      "h": "Break-even",
+      "b": "Break-even is when revenue equals costs. If fixed costs are $100 and each sale adds $5 after variable costs, you need 20 sales to break even."
+     },
+     {
+      "h": "Feedback and pivots",
+      "b": "Customer feedback shows what to improve. A pivot is a big change in strategy based on what you learn. Scaling means growing without costs rising as fast as sales."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A product costs $6 to make. With a 50% markup on cost, what is the price?",
+      "o": [
+       "$7",
+       "$12",
+       "$9",
+       "$6"
+      ],
+      "a": 2,
+      "why": "50% of 6 is 3, so 6 + 3 = 9."
+     },
+     {
+      "t": "mc",
+      "q": "Fixed costs are $100 and each sale adds $5 toward them. How many sales to break even?",
+      "o": [
+       "5",
+       "10",
+       "50",
+       "20"
+      ],
+      "a": 3,
+      "why": "100 / 5 = 20."
+     },
+     {
+      "t": "mc",
+      "q": "What is a pivot?",
+      "o": [
+       "A change in strategy based on what you learn",
+       "Closing the business",
+       "A tax rule",
+       "Hiring a manager"
+      ],
+      "a": 0,
+      "why": "Startups pivot when evidence shows a better path."
+     },
+     {
+      "t": "mc",
+      "q": "What does scaling mean?",
+      "o": [
+       "Weighing goods",
+       "Making the business smaller",
+       "Growing without costs rising as fast as sales",
+       "Lowering quality"
+      ],
+      "a": 2,
+      "why": "Scaling grows revenue faster than costs."
+     },
+     {
+      "t": "tf",
+      "q": "A price that is too low can never hurt a business.",
+      "a": false,
+      "why": "Very low prices can fail to cover costs and cause losses."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Pivot",
+        "Major change in strategy"
+       ],
+       [
+        "Markup",
+        "Amount added to cost"
+       ],
+       [
+        "Scaling",
+        "Growing efficiently"
+       ],
+       [
+        "Feedback",
+        "Customer opinions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the growth stages in order",
+      "items": [
+       [
+        "Idea",
+        1
+       ],
+       [
+        "Prototype",
+        2
+       ],
+       [
+        "First customers",
+        3
+       ],
+       [
+        "Scale up",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Leadership and Protection",
+    "period": "Leading",
+    "learn": [
+     {
+      "h": "Leading a team",
+      "b": "Good leaders share a clear goal and delegate, which means giving tasks to others. They also listen. Setbacks are normal, and smart founders learn from them."
+     },
+     {
+      "h": "Protecting ideas",
+      "b": "Intellectual property protects creations. A patent protects an invention. A trademark protects a name or logo. A copyright protects creative works like writing and music."
+     },
+     {
+      "h": "Doing the right thing",
+      "b": "Ethics means honest ads, fair pay and respecting customers. Trust helps a business grow over time."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a trademark protect?",
+      "o": [
+       "A recipe for soup",
+       "Brand names and logos",
+       "A new invention",
+       "A song"
+      ],
+      "a": 1,
+      "why": "Trademarks protect identifiers of a brand."
+     },
+     {
+      "t": "mc",
+      "q": "What does a patent protect?",
+      "o": [
+       "A logo",
+       "A book",
+       "An invention",
+       "A slogan only"
+      ],
+      "a": 2,
+      "why": "Patents cover new inventions."
+     },
+     {
+      "t": "mc",
+      "q": "What does a copyright protect?",
+      "o": [
+       "A machine",
+       "A logo",
+       "A shop name",
+       "Creative works like writing or music"
+      ],
+      "a": 3,
+      "why": "Copyright covers original creative works."
+     },
+     {
+      "t": "mc",
+      "q": "What does delegation mean?",
+      "o": [
+       "Giving tasks to others",
+       "Doing everything yourself",
+       "Firing staff",
+       "Raising prices"
+      ],
+      "a": 0,
+      "why": "Delegating shares work with team members."
+     },
+     {
+      "t": "tf",
+      "q": "A trademark can protect a brand logo.",
+      "a": true,
+      "why": "Logos are a classic trademark use."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Patent",
+        "Protects inventions"
+       ],
+       [
+        "Trademark",
+        "Protects brand identity"
+       ],
+       [
+        "Copyright",
+        "Protects creative works"
+       ],
+       [
+        "Delegation",
+        "Assigning tasks"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of learning from a setback in order",
+      "items": [
+       [
+        "Notice what went wrong",
+        1
+       ],
+       [
+        "Find the cause",
+        2
+       ],
+       [
+        "Make a change",
+        3
+       ],
+       [
+        "Try again",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "biz-marketing": {
+  "name": "Marketing",
+  "units": [
+   {
+    "title": "Marketing Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "What is marketing?",
+      "b": "Marketing is everything a business does to understand customers and get them interested in its products. Advertising is only one part."
+     },
+     {
+      "h": "The 4 Ps",
+      "b": "The 4 Ps are Product (what you sell), Price (what it costs), Place (where it is sold) and Promotion (how you tell people). Together they form a marketing mix."
+     },
+     {
+      "h": "Target market",
+      "b": "No product suits everyone. A target market is the group you aim at. Segmentation divides people by age, interests or needs so you can speak to them directly."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which are the 4 Ps of marketing?",
+      "o": [
+       "People, Planet, Profit, Power",
+       "Product, Price, Place, Promotion",
+       "Plan, Pack, Pay, Print",
+       "Policy, Power, Pitch, Prize"
+      ],
+      "a": 1,
+      "why": "The marketing mix is product, price, place and promotion."
+     },
+     {
+      "t": "mc",
+      "q": "Which P describes where a product is sold?",
+      "o": [
+       "Price",
+       "Product",
+       "Place",
+       "Promotion"
+      ],
+      "a": 2,
+      "why": "Place covers where and how customers can buy."
+     },
+     {
+      "t": "mc",
+      "q": "What is a target market?",
+      "o": [
+       "A store in a mall",
+       "A discount",
+       "A price tag",
+       "The group of customers a business aims at"
+      ],
+      "a": 3,
+      "why": "Businesses focus on the people most likely to buy."
+     },
+     {
+      "t": "mc",
+      "q": "What is segmentation?",
+      "o": [
+       "Dividing a market into groups with similar traits",
+       "Cutting prices",
+       "Printing ads",
+       "Selling less"
+      ],
+      "a": 0,
+      "why": "Segments help tailor messages to groups."
+     },
+     {
+      "t": "tf",
+      "q": "Marketing means only advertising.",
+      "a": false,
+      "why": "Marketing also includes research, pricing, product design and distribution."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Product",
+        "What you sell"
+       ],
+       [
+        "Price",
+        "What it costs"
+       ],
+       [
+        "Place",
+        "Where it is sold"
+       ],
+       [
+        "Promotion",
+        "How you tell people"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the marketing planning steps in order",
+      "items": [
+       [
+        "Research customers",
+        1
+       ],
+       [
+        "Choose a target market",
+        2
+       ],
+       [
+        "Plan the 4 Ps",
+        3
+       ],
+       [
+        "Launch the campaign",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Branding",
+    "period": "Brand",
+    "learn": [
+     {
+      "h": "What is a brand?",
+      "b": "A brand is the identity and feeling people connect with a business. It includes the name, logo, colors and promises. A strong brand is easy to remember."
+     },
+     {
+      "h": "Standing out",
+      "b": "A USP, unique selling proposition, is what makes you different from others. Positioning is the place your brand holds in customers' minds compared with competitors."
+     },
+     {
+      "h": "Brand voice",
+      "b": "Brand voice is the personality in your words, like friendly or serious. Using the same voice and look everywhere builds trust and recognition."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a brand?",
+      "o": [
+       "Only a logo",
+       "A type of tax",
+       "The identity and feeling people connect with a business",
+       "A discount"
+      ],
+      "a": 2,
+      "why": "A brand is more than a logo; it is the whole impression."
+     },
+     {
+      "t": "mc",
+      "q": "What does USP stand for?",
+      "o": [
+       "Unique Selling Proposition",
+       "United Sales Plan",
+       "Universal Store Price",
+       "Useful Shopping Place"
+      ],
+      "a": 0,
+      "why": "A USP is what makes you different."
+     },
+     {
+      "t": "mc",
+      "q": "What is positioning?",
+      "o": [
+       "Where the store is built",
+       "Your brand's place in customers' minds versus rivals",
+       "The price of a product",
+       "A shelf layout"
+      ],
+      "a": 1,
+      "why": "Positioning is about perception relative to competitors."
+     },
+     {
+      "t": "mc",
+      "q": "What is brand voice?",
+      "o": [
+       "A radio ad",
+       "A phone call",
+       "A loud speaker",
+       "The personality of a brand's words"
+      ],
+      "a": 3,
+      "why": "Voice shows personality in how a brand communicates."
+     },
+     {
+      "t": "tf",
+      "q": "Consistent branding helps customers recognize a business.",
+      "a": true,
+      "why": "Repetition builds familiarity and trust."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Brand",
+        "Identity people connect with"
+       ],
+       [
+        "Logo",
+        "Symbol of a business"
+       ],
+       [
+        "Positioning",
+        "Place in customers' minds"
+       ],
+       [
+        "USP",
+        "What makes you different"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of building a brand in order",
+      "items": [
+       [
+        "Define your values",
+        1
+       ],
+       [
+        "Pick a name and logo",
+        2
+       ],
+       [
+        "Choose a consistent voice",
+        3
+       ],
+       [
+        "Share it everywhere",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Digital Marketing",
+    "period": "Online",
+    "learn": [
+     {
+      "h": "SEO and content",
+      "b": "SEO, search engine optimization, means improving your website so it shows higher in search results without paying for ads. Content marketing means sharing useful posts or videos to attract customers."
+     },
+     {
+      "h": "Social and email",
+      "b": "Social media lets brands talk with people directly. Email reaches people who already signed up. A CTA, call to action, tells people what to do next, like Sign up now."
+     },
+     {
+      "h": "Measuring results",
+      "b": "A conversion happens when a visitor does what you wanted, such as buying. CTR, click-through rate, is the percent of viewers who click. If 1,000 people see an ad and 50 click, CTR is 5%."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does SEO try to do?",
+      "o": [
+       "Pay for ads",
+       "Delete competitors",
+       "Help a website rank higher in search results",
+       "Lower prices"
+      ],
+      "a": 2,
+      "why": "SEO improves organic visibility."
+     },
+     {
+      "t": "mc",
+      "q": "What is a CTA?",
+      "o": [
+       "A prompt telling people what to do next",
+       "A tax",
+       "A type of logo",
+       "A customer survey"
+      ],
+      "a": 0,
+      "why": "CTA means call to action."
+     },
+     {
+      "t": "mc",
+      "q": "An ad is seen 1,000 times and clicked 50 times. What is the CTR?",
+      "o": [
+       "50%",
+       "0.5%",
+       "10%",
+       "5%"
+      ],
+      "a": 3,
+      "why": "50 / 1,000 = 5%."
+     },
+     {
+      "t": "mc",
+      "q": "What is a conversion?",
+      "o": [
+       "Changing currency",
+       "A visitor taking the desired action",
+       "A new logo",
+       "Moving a shop"
+      ],
+      "a": 1,
+      "why": "A conversion is a completed goal like a purchase or sign-up."
+     },
+     {
+      "t": "tf",
+      "q": "SEO means paying for search ads.",
+      "a": false,
+      "why": "SEO is about earning higher results unpaid, not buying ads."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "SEO",
+        "Rank higher in search"
+       ],
+       [
+        "CTA",
+        "Prompt to act"
+       ],
+       [
+        "Conversion",
+        "Visitor completes goal"
+       ],
+       [
+        "Content marketing",
+        "Useful content to attract buyers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the customer journey in order",
+      "items": [
+       [
+        "Awareness",
+        1
+       ],
+       [
+        "Interest",
+        2
+       ],
+       [
+        "Desire",
+        3
+       ],
+       [
+        "Action",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Strategy and Ethics",
+    "period": "Strategy",
+    "learn": [
+     {
+      "h": "Testing and surveys",
+      "b": "A survey asks people for opinions. An A/B test shows two versions, like two ad headlines, to different groups and compares which works better."
+     },
+     {
+      "h": "Keeping customers",
+      "b": "Retention means keeping existing customers buying. Customer acquisition cost is how much it costs to win a new customer. Keeping a customer is often cheaper than finding a new one."
+     },
+     {
+      "h": "Honest marketing",
+      "b": "Ads should not make false claims. Misleading customers can break the law and harms trust. Ethical marketing respects privacy and tells the truth."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an A/B test?",
+      "o": [
+       "A school exam",
+       "A tax check",
+       "Comparing two versions to see which performs better",
+       "A discount code"
+      ],
+      "a": 2,
+      "why": "A/B tests compare two options with real audiences."
+     },
+     {
+      "t": "mc",
+      "q": "What is customer retention?",
+      "o": [
+       "Keeping existing customers buying",
+       "Gaining new customers only",
+       "Lowering prices",
+       "Ending a brand"
+      ],
+      "a": 0,
+      "why": "Retention is about repeat business."
+     },
+     {
+      "t": "mc",
+      "q": "What is a survey?",
+      "o": [
+       "A type of ad",
+       "A map",
+       "A way to collect opinions",
+       "A price"
+      ],
+      "a": 2,
+      "why": "Surveys gather customer feedback."
+     },
+     {
+      "t": "mc",
+      "q": "Why is false advertising a problem?",
+      "o": [
+       "It lowers taxes",
+       "It is always free",
+       "It makes products cheaper",
+       "It is unethical and can be illegal"
+      ],
+      "a": 3,
+      "why": "Misleading claims harm customers and break trust."
+     },
+     {
+      "t": "tf",
+      "q": "Keeping an existing customer is often cheaper than winning a new one.",
+      "a": true,
+      "why": "New customers usually require more marketing spend."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "A/B test",
+        "Compare two versions"
+       ],
+       [
+        "Retention",
+        "Keeping customers"
+       ],
+       [
+        "Survey",
+        "Collecting opinions"
+       ],
+       [
+        "Acquisition cost",
+        "Cost to win a new customer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an A/B test in order",
+      "items": [
+       [
+        "Pick one change to test",
+        1
+       ],
+       [
+        "Show versions to different groups",
+        2
+       ],
+       [
+        "Measure the results",
+        3
+       ],
+       [
+        "Use the winner",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "biz-accounting": {
+  "name": "Accounting",
+  "units": [
+   {
+    "title": "Accounting Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "What is accounting?",
+      "b": "Accounting records, summarizes and reports a business's money. Bookkeeping is the day-to-day recording of transactions. Owners, banks and tax offices use the reports."
+     },
+     {
+      "h": "Assets, liabilities, equity",
+      "b": "Assets are things the business owns, like cash and equipment. Liabilities are what it owes, like loans. Equity is the owner's share after debts are paid."
+     },
+     {
+      "h": "The accounting equation",
+      "b": "Assets = Liabilities + Equity. This always balances. If assets are $500 and liabilities are $200, equity is $300."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the accounting equation?",
+      "o": [
+       "Assets = Revenue - Costs",
+       "Assets = Liabilities + Equity",
+       "Equity = Assets + Liabilities",
+       "Profit = Assets x Equity"
+      ],
+      "a": 1,
+      "why": "The two sides of the balance sheet must always match."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an asset?",
+      "o": [
+       "A bank loan",
+       "Rent owed",
+       "Equipment the business owns",
+       "Unpaid wages"
+      ],
+      "a": 2,
+      "why": "Assets are resources owned by the business."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a liability?",
+      "o": [
+       "Cash",
+       "A delivery van",
+       "Inventory",
+       "A loan from a bank"
+      ],
+      "a": 3,
+      "why": "Liabilities are amounts the business owes."
+     },
+     {
+      "t": "mc",
+      "q": "What is bookkeeping?",
+      "o": [
+       "Recording financial transactions",
+       "Writing books",
+       "Selling stock",
+       "Advertising"
+      ],
+      "a": 0,
+      "why": "Bookkeepers keep daily financial records."
+     },
+     {
+      "t": "tf",
+      "q": "If assets are $500 and liabilities are $200, equity is $300.",
+      "a": true,
+      "why": "Equity = 500 - 200 = 300."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Asset",
+        "Owned resource"
+       ],
+       [
+        "Liability",
+        "Amount owed"
+       ],
+       [
+        "Equity",
+        "Owner's share"
+       ],
+       [
+        "Bookkeeping",
+        "Recording transactions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the basic accounting steps in order",
+      "items": [
+       [
+        "Record transactions",
+        1
+       ],
+       [
+        "Summarize them in ledgers",
+        2
+       ],
+       [
+        "Prepare financial statements",
+        3
+       ],
+       [
+        "Close the period",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Debits and Credits",
+    "period": "Double Entry",
+    "learn": [
+     {
+      "h": "Double-entry",
+      "b": "In double-entry bookkeeping, every transaction affects at least two accounts. Total debits always equal total credits. This helps catch mistakes."
+     },
+     {
+      "h": "Debit and credit",
+      "b": "A debit is an entry on the left side of an account. A credit is on the right. Debits increase assets and expenses. Credits increase liabilities, equity and revenue."
+     },
+     {
+      "h": "Journal and ledger",
+      "b": "The journal records transactions in date order. The ledger groups them by account. If you pay cash for equipment, equipment goes up and cash goes down."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does double-entry mean?",
+      "o": [
+       "Every transaction is recorded twice in different books only",
+       "Every transaction affects at least two accounts",
+       "Two accountants must sign",
+       "Costs are doubled"
+      ],
+      "a": 1,
+      "why": "Each transaction has a debit side and a credit side."
+     },
+     {
+      "t": "mc",
+      "q": "Which side increases an asset account?",
+      "o": [
+       "Credit",
+       "Neither",
+       "Debit",
+       "Both"
+      ],
+      "a": 2,
+      "why": "Debits increase asset accounts."
+     },
+     {
+      "t": "mc",
+      "q": "A business pays cash for new equipment. What changes?",
+      "o": [
+       "Cash up and equipment down",
+       "Revenue goes up",
+       "Only expenses change",
+       "Equipment goes up and cash goes down"
+      ],
+      "a": 3,
+      "why": "One asset rises while another asset falls."
+     },
+     {
+      "t": "mc",
+      "q": "What is a ledger?",
+      "o": [
+       "A collection of accounts",
+       "A calendar",
+       "A type of tax",
+       "A loan form"
+      ],
+      "a": 0,
+      "why": "The ledger organizes transactions by account."
+     },
+     {
+      "t": "tf",
+      "q": "A debit always means a decrease.",
+      "a": false,
+      "why": "Debits increase assets and expenses, and decrease liabilities."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Debit",
+        "Left-side entry"
+       ],
+       [
+        "Credit",
+        "Right-side entry"
+       ],
+       [
+        "Journal",
+        "Date-order record"
+       ],
+       [
+        "Ledger",
+        "Set of accounts"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the recording steps in order",
+      "items": [
+       [
+        "Transaction happens",
+        1
+       ],
+       [
+        "Record in the journal",
+        2
+       ],
+       [
+        "Post to the ledger",
+        3
+       ],
+       [
+        "Check the trial balance",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Financial Statements",
+    "period": "Statements",
+    "learn": [
+     {
+      "h": "Income statement",
+      "b": "The income statement shows revenue, expenses and profit over a period, like a month. Net income = revenue - expenses. Example: $500 revenue and $350 expenses leaves $150."
+     },
+     {
+      "h": "Balance sheet",
+      "b": "The balance sheet is a snapshot of assets, liabilities and equity on one date. It shows what the business owns and owes at that moment."
+     },
+     {
+      "h": "Cash flow statement",
+      "b": "The cash flow statement shows cash coming in and going out. A business can show profit but still lack cash. Owners check all three statements."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does an income statement show?",
+      "o": [
+       "Assets on one date",
+       "Revenue, expenses and profit over a period",
+       "Only cash",
+       "Only taxes"
+      ],
+      "a": 1,
+      "why": "It covers performance across a period."
+     },
+     {
+      "t": "mc",
+      "q": "What does a balance sheet show?",
+      "o": [
+       "Profit for a year",
+       "Daily cash",
+       "Assets, liabilities and equity at a point in time",
+       "Marketing results"
+      ],
+      "a": 2,
+      "why": "It is a snapshot at a specific date."
+     },
+     {
+      "t": "mc",
+      "q": "Revenue is $500 and expenses are $350. What is net income?",
+      "o": [
+       "$850",
+       "$500",
+       "$350",
+       "$150"
+      ],
+      "a": 3,
+      "why": "500 - 350 = 150."
+     },
+     {
+      "t": "mc",
+      "q": "What does a cash flow statement show?",
+      "o": [
+       "Cash coming in and going out",
+       "Brand value",
+       "Number of customers",
+       "Total equity only"
+      ],
+      "a": 0,
+      "why": "It tracks cash movements."
+     },
+     {
+      "t": "tf",
+      "q": "A balance sheet is a snapshot at one date.",
+      "a": true,
+      "why": "It reports balances at a specific point in time."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Balance sheet",
+        "Snapshot of what is owned and owed"
+       ],
+       [
+        "Income statement",
+        "Profit over a period"
+       ],
+       [
+        "Cash flow statement",
+        "Cash in and out"
+       ],
+       [
+        "Net income",
+        "Revenue minus expenses"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these income statement lines in order from top to bottom",
+      "items": [
+       [
+        "Revenue",
+        1
+       ],
+       [
+        "Cost of goods sold",
+        2
+       ],
+       [
+        "Operating expenses",
+        3
+       ],
+       [
+        "Net income",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Analyzing the Numbers",
+    "period": "Analysis",
+    "learn": [
+     {
+      "h": "Gross profit and ratios",
+      "b": "Gross profit = revenue - cost of goods sold. The current ratio = current assets / current liabilities. If you have $200 of current assets and $100 of current liabilities, it is 2."
+     },
+     {
+      "h": "Depreciation",
+      "b": "Depreciation spreads the cost of an asset, like a machine, over its useful life. A $1,000 machine lasting 5 years can be recorded as $200 of expense per year."
+     },
+     {
+      "h": "Accrual and audits",
+      "b": "Accrual accounting records revenue when earned and expenses when incurred, even if cash moves later. Cash-basis records when cash moves. An audit is an independent check of financial records."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How is gross profit calculated?",
+      "o": [
+       "Net income minus taxes",
+       "Revenue minus cost of goods sold",
+       "Assets minus liabilities",
+       "Revenue plus costs"
+      ],
+      "a": 1,
+      "why": "Gross profit is sales minus direct production cost."
+     },
+     {
+      "t": "mc",
+      "q": "Current assets are $200 and current liabilities are $100. What is the current ratio?",
+      "o": [
+       "0.5",
+       "100",
+       "2",
+       "300"
+      ],
+      "a": 2,
+      "why": "200 / 100 = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What does depreciation do?",
+      "o": [
+       "Raises asset value",
+       "Cancels debts",
+       "Adds revenue",
+       "Spreads an asset's cost over its useful life"
+      ],
+      "a": 3,
+      "why": "It matches an asset's cost to the years it is used."
+     },
+     {
+      "t": "mc",
+      "q": "When does accrual accounting record revenue?",
+      "o": [
+       "When it is earned",
+       "Only when cash arrives",
+       "At year end only",
+       "Never"
+      ],
+      "a": 0,
+      "why": "Accrual records revenue when earned, not when paid."
+     },
+     {
+      "t": "tf",
+      "q": "Under cash-basis accounting, revenue is recorded when the sale is made even if unpaid.",
+      "a": false,
+      "why": "Cash-basis records revenue when cash is actually received."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Depreciation",
+        "Spreads asset cost"
+       ],
+       [
+        "Accrual",
+        "Record when earned"
+       ],
+       [
+        "Gross profit",
+        "Revenue minus COGS"
+       ],
+       [
+        "Audit",
+        "Independent check of records"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these profit lines in order from top to bottom",
+      "items": [
+       [
+        "Revenue",
+        1
+       ],
+       [
+        "Gross profit",
+        2
+       ],
+       [
+        "Operating income",
+        3
+       ],
+       [
+        "Net income",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "fin-realestate": {
+  "name": "Real Estate",
+  "units": [
+   {
+    "title": "Property Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "Types of property",
+      "b": "Residential property is for living, like houses and apartments. Commercial property is for business, like offices and shops. Land can be used for either or kept as it is."
+     },
+     {
+      "h": "Renting vs owning",
+      "b": "Renters pay a landlord and do not build ownership. Owners pay for upkeep, taxes and often a mortgage, but build equity. Equity is the home's value minus the loan still owed."
+     },
+     {
+      "h": "Appreciation",
+      "b": "Appreciation is when a property's value rises over time. Values can also fall. Location, demand and the economy all matter."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is residential property?",
+      "o": [
+       "Property used for offices",
+       "Property meant for people to live in",
+       "Unused land only",
+       "Factories"
+      ],
+      "a": 1,
+      "why": "Residential means homes where people live."
+     },
+     {
+      "t": "mc",
+      "q": "How is home equity calculated?",
+      "o": [
+       "Home value plus mortgage",
+       "Mortgage minus home value",
+       "Home value minus mortgage owed",
+       "Rent times months"
+      ],
+      "a": 2,
+      "why": "Equity is your ownership share after the loan."
+     },
+     {
+      "t": "mc",
+      "q": "What is appreciation?",
+      "o": [
+       "Saying thank you",
+       "A property fee",
+       "A repair",
+       "A rise in a property's value"
+      ],
+      "a": 3,
+      "why": "Appreciation means value goes up over time."
+     },
+     {
+      "t": "mc",
+      "q": "Who does a renter pay?",
+      "o": [
+       "A landlord",
+       "A tax office",
+       "A mortgage broker",
+       "An inspector"
+      ],
+      "a": 0,
+      "why": "Rent is paid to the property owner or landlord."
+     },
+     {
+      "t": "tf",
+      "q": "Renting a home builds ownership equity.",
+      "a": false,
+      "why": "Rent payments do not give the renter ownership of the property."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Residential",
+        "Property for living"
+       ],
+       [
+        "Commercial",
+        "Property for business"
+       ],
+       [
+        "Appreciation",
+        "Value rising"
+       ],
+       [
+        "Landlord",
+        "Owner who rents out property"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of renting a home in order",
+      "items": [
+       [
+        "Search listings",
+        1
+       ],
+       [
+        "Visit and apply",
+        2
+       ],
+       [
+        "Sign the lease",
+        3
+       ],
+       [
+        "Move in",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Mortgages",
+    "period": "Financing",
+    "learn": [
+     {
+      "h": "What is a mortgage?",
+      "b": "A mortgage is a loan used to buy property. The property is collateral. If payments stop, the lender can take the property in a process called foreclosure."
+     },
+     {
+      "h": "Down payment",
+      "b": "A down payment is the part of the price you pay up front in cash. On a $200,000 home, a 10% down payment is $20,000. The rest is borrowed. Principal is the amount borrowed."
+     },
+     {
+      "h": "Rates and terms",
+      "b": "A fixed-rate mortgage keeps the same interest rate for its whole term. An adjustable-rate mortgage can change over time. Amortization is paying off the loan gradually through regular payments."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a down payment?",
+      "o": [
+       "A monthly fee",
+       "Money paid up front toward the price",
+       "A tax",
+       "A penalty"
+      ],
+      "a": 1,
+      "why": "It is the cash you pay at the start of the purchase."
+     },
+     {
+      "t": "mc",
+      "q": "A home costs $200,000. How much is a 10% down payment?",
+      "o": [
+       "$2,000",
+       "$200",
+       "$20,000",
+       "$10,000"
+      ],
+      "a": 2,
+      "why": "10% of 200,000 is 20,000."
+     },
+     {
+      "t": "mc",
+      "q": "What does a fixed-rate mortgage mean?",
+      "o": [
+       "The price of the house is fixed",
+       "Payments end after one year",
+       "The loan has no interest",
+       "The interest rate stays the same for the term"
+      ],
+      "a": 3,
+      "why": "A fixed rate does not change over the term."
+     },
+     {
+      "t": "mc",
+      "q": "What secures a mortgage loan?",
+      "o": [
+       "The property itself",
+       "A car",
+       "A phone",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "The home acts as collateral for the lender."
+     },
+     {
+      "t": "tf",
+      "q": "If you stop paying a mortgage, the lender may take the property through foreclosure.",
+      "a": true,
+      "why": "Foreclosure lets the lender recover money by taking the property."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Down payment",
+        "Cash paid up front"
+       ],
+       [
+        "Principal",
+        "Amount borrowed"
+       ],
+       [
+        "Amortization",
+        "Gradual loan payoff"
+       ],
+       [
+        "Foreclosure",
+        "Lender takes the property"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path to buying with a mortgage in order",
+      "items": [
+       [
+        "Save for a down payment",
+        1
+       ],
+       [
+        "Get pre-approved",
+        2
+       ],
+       [
+        "Make an offer",
+        3
+       ],
+       [
+        "Close on the home",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Buying and Owning",
+    "period": "The Process",
+    "learn": [
+     {
+      "h": "Checks before buying",
+      "b": "An inspection checks the condition of the home. An appraisal estimates its market value, and lenders use it to decide how much they will lend."
+     },
+     {
+      "h": "Costs of owning",
+      "b": "Closing costs are fees paid when the sale is finished. Owners also pay property tax to local government, homeowner insurance and maintenance. These are on top of the mortgage."
+     },
+     {
+      "h": "Escrow",
+      "b": "Escrow is when a neutral third party holds money or documents until all conditions of the deal are met. Many lenders also collect taxes and insurance through an escrow account."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a home inspection do?",
+      "o": [
+       "Sets the price",
+       "Examines the condition of the home",
+       "Pays the mortgage",
+       "Collects taxes"
+      ],
+      "a": 1,
+      "why": "Inspectors look for problems in the building."
+     },
+     {
+      "t": "mc",
+      "q": "What is an appraisal?",
+      "o": [
+       "A loan payment",
+       "A sales ad",
+       "An estimate of a property's value",
+       "A tax bill"
+      ],
+      "a": 2,
+      "why": "Appraisers estimate market value."
+     },
+     {
+      "t": "mc",
+      "q": "What are closing costs?",
+      "o": [
+       "Rent for one month",
+       "The cost of closing a bank account",
+       "A tax refund",
+       "Fees paid when the purchase is completed"
+      ],
+      "a": 3,
+      "why": "They cover loan, legal and other fees at closing."
+     },
+     {
+      "t": "mc",
+      "q": "Who receives property tax?",
+      "o": [
+       "Local government",
+       "The seller",
+       "The inspector",
+       "The lender only"
+      ],
+      "a": 0,
+      "why": "Property tax funds local services."
+     },
+     {
+      "t": "tf",
+      "q": "An appraisal is a monthly loan payment.",
+      "a": false,
+      "why": "An appraisal is an estimate of value, not a payment."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Appraisal",
+        "Estimate of value"
+       ],
+       [
+        "Inspection",
+        "Check of condition"
+       ],
+       [
+        "Escrow",
+        "Neutral holding of funds"
+       ],
+       [
+        "Closing costs",
+        "Fees at completion"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the buying steps in order",
+      "items": [
+       [
+        "Make an offer",
+        1
+       ],
+       [
+        "Inspection and appraisal",
+        2
+       ],
+       [
+        "Sign closing documents",
+        3
+       ],
+       [
+        "Receive the keys",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Real Estate as Investment",
+    "period": "Investing",
+    "learn": [
+     {
+      "h": "Rental income",
+      "b": "Owners can rent property to earn income. Cash flow from a rental is rent minus costs such as the mortgage, taxes, insurance and repairs. Vacancy, when no one is renting, means lost income."
+     },
+     {
+      "h": "Leverage",
+      "b": "Leverage means using borrowed money to buy an asset. It can magnify gains, but it also magnifies losses. Debt still must be repaid if the property falls in value."
+     },
+     {
+      "h": "REITs and liquidity",
+      "b": "A REIT is a company that owns income-producing real estate, and you can buy its shares like a stock. Real estate is illiquid, meaning it can take time to sell and turn into cash."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a REIT?",
+      "o": [
+       "A company that owns income-producing real estate with shares you can buy",
+       "A type of loan",
+       "A tax form",
+       "A home inspection"
+      ],
+      "a": 0,
+      "why": "REITs let people invest in real estate through shares."
+     },
+     {
+      "t": "mc",
+      "q": "How is rental cash flow calculated?",
+      "o": [
+       "Mortgage minus rent",
+       "Rent minus expenses",
+       "Value minus tax",
+       "Rent plus loan"
+      ],
+      "a": 1,
+      "why": "Cash flow is income left after costs."
+     },
+     {
+      "t": "mc",
+      "q": "What does illiquid mean?",
+      "o": [
+       "Very cheap",
+       "Easy to sell in a second",
+       "Slow and harder to turn into cash",
+       "Free of tax"
+      ],
+      "a": 2,
+      "why": "Real estate can take weeks or months to sell."
+     },
+     {
+      "t": "mc",
+      "q": "What is vacancy?",
+      "o": [
+       "A vacation",
+       "A tax break",
+       "A repair",
+       "A period when a unit is empty and earns no rent"
+      ],
+      "a": 3,
+      "why": "Empty units do not produce rental income."
+     },
+     {
+      "t": "tf",
+      "q": "Using borrowed money to buy property is called leverage and can magnify both gains and losses.",
+      "a": true,
+      "why": "Debt amplifies results in both directions."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "REIT",
+        "Shares in real estate company"
+       ],
+       [
+        "Leverage",
+        "Using borrowed money"
+       ],
+       [
+        "Illiquid",
+        "Hard to sell quickly"
+       ],
+       [
+        "Vacancy",
+        "Unit with no renter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to find rental cash flow in order",
+      "items": [
+       [
+        "Add up monthly rent",
+        1
+       ],
+       [
+        "Subtract the mortgage payment",
+        2
+       ],
+       [
+        "Subtract taxes, insurance and repairs",
+        3
+       ],
+       [
+        "The result is cash flow",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "fin-taxes": {
+  "name": "Taxes",
+  "units": [
+   {
+    "title": "Tax Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "Why taxes?",
+      "b": "Governments collect taxes to pay for public services like roads, schools and emergency help. Common taxes include income tax, sales tax and property tax."
+     },
+     {
+      "h": "Gross vs net pay",
+      "b": "Gross pay is what you earn before anything is taken out. Net pay, or take-home pay, is what you receive after taxes and other deductions. Employers withhold tax from each paycheck."
+     },
+     {
+      "h": "Filing a return",
+      "b": "A tax return is a form that reports your income and works out your tax. If too much was withheld, you get a refund. If too little, you owe more."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are taxes mainly used for?",
+      "o": [
+       "Only paying politicians",
+       "Public services like roads and schools",
+       "Private shopping",
+       "Making coins"
+      ],
+      "a": 1,
+      "why": "Tax revenue funds services for the public."
+     },
+     {
+      "t": "mc",
+      "q": "What is gross pay?",
+      "o": [
+       "Pay after taxes",
+       "A bonus",
+       "Pay before deductions",
+       "A refund"
+      ],
+      "a": 2,
+      "why": "Gross pay is total earnings before anything is taken out."
+     },
+     {
+      "t": "mc",
+      "q": "What is withholding?",
+      "o": [
+       "A refund",
+       "A penalty",
+       "Hiding income",
+       "An employer taking tax out of your paycheck"
+      ],
+      "a": 3,
+      "why": "Employers withhold tax and send it to the government."
+     },
+     {
+      "t": "mc",
+      "q": "What is a tax return?",
+      "o": [
+       "A form reporting income and calculating tax owed or refunded",
+       "A store return",
+       "A tax bill only",
+       "A receipt"
+      ],
+      "a": 0,
+      "why": "It summarizes your income and tax for the year."
+     },
+     {
+      "t": "tf",
+      "q": "Your take-home pay is the same as your gross pay.",
+      "a": false,
+      "why": "Take-home pay is lower because taxes are taken out."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Gross pay",
+        "Before deductions"
+       ],
+       [
+        "Net pay",
+        "Take-home amount"
+       ],
+       [
+        "Withholding",
+        "Tax taken from paycheck"
+       ],
+       [
+        "Refund",
+        "Money returned for overpaying"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the pay and tax cycle in order",
+      "items": [
+       [
+        "Earn gross pay",
+        1
+       ],
+       [
+        "Taxes are withheld",
+        2
+       ],
+       [
+        "Receive net pay",
+        3
+       ],
+       [
+        "File a tax return",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Brackets and Rates",
+    "period": "Rates",
+    "learn": [
+     {
+      "h": "Progressive tax",
+      "b": "Many income taxes are progressive: higher income is taxed at higher rates. Income is split into tax brackets, and each slice is taxed at its own rate."
+     },
+     {
+      "h": "Marginal vs effective",
+      "b": "The marginal rate is the rate on your next dollar earned. The effective rate is your total tax divided by your total income. The effective rate is usually lower than the top bracket you reach."
+     },
+     {
+      "h": "Taxable income",
+      "b": "Taxable income is your income minus deductions. Only this amount is run through the brackets. Moving into a higher bracket taxes only the income above that threshold at the higher rate."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a progressive tax?",
+      "o": [
+       "Everyone pays the same amount",
+       "Higher incomes are taxed at higher rates",
+       "The tax shrinks every year",
+       "Only companies pay"
+      ],
+      "a": 1,
+      "why": "Progressive taxes rise in rate as income rises."
+     },
+     {
+      "t": "mc",
+      "q": "What is a marginal tax rate?",
+      "o": [
+       "Total tax divided by income",
+       "The lowest rate you pay",
+       "The rate on your next dollar of income",
+       "The sales tax"
+      ],
+      "a": 2,
+      "why": "Marginal rate applies to additional income."
+     },
+     {
+      "t": "mc",
+      "q": "How is taxable income calculated?",
+      "o": [
+       "Gross pay plus bonuses",
+       "Total spending",
+       "Savings minus debt",
+       "Income minus deductions"
+      ],
+      "a": 3,
+      "why": "Deductions reduce the amount that is taxed."
+     },
+     {
+      "t": "mc",
+      "q": "What is the effective tax rate?",
+      "o": [
+       "Total tax divided by total income",
+       "The top bracket rate",
+       "The sales tax rate",
+       "The refund rate"
+      ],
+      "a": 0,
+      "why": "It shows the overall percentage of income paid in tax."
+     },
+     {
+      "t": "tf",
+      "q": "Moving into a higher bracket does not tax all your income at the higher rate.",
+      "a": true,
+      "why": "Only the portion above the threshold is taxed at the higher rate."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Tax bracket",
+        "Income range with one rate"
+       ],
+       [
+        "Marginal rate",
+        "Rate on the next dollar"
+       ],
+       [
+        "Effective rate",
+        "Total tax divided by income"
+       ],
+       [
+        "Taxable income",
+        "Income after deductions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of calculating income tax in order",
+      "items": [
+       [
+        "Add up your income",
+        1
+       ],
+       [
+        "Subtract deductions",
+        2
+       ],
+       [
+        "Apply the bracket rates",
+        3
+       ],
+       [
+        "Subtract any credits",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Deductions and Credits",
+    "period": "Savings",
+    "learn": [
+     {
+      "h": "Deductions",
+      "b": "A deduction lowers your taxable income. If you are in a 20% bracket, a $1,000 deduction saves about $200 in tax. The standard deduction is a fixed amount you can subtract without listing expenses."
+     },
+     {
+      "h": "Credits",
+      "b": "A tax credit lowers your tax bill directly, dollar for dollar. A $1,000 credit cuts your tax by $1,000. That makes a credit usually worth more than a deduction of the same size."
+     },
+     {
+      "h": "Standard or itemize",
+      "b": "Itemizing means listing eligible expenses, like certain interest or charity gifts. You normally choose whichever method gives the larger deduction."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a tax deduction reduce?",
+      "o": [
+       "Your tax bill directly",
+       "Your taxable income",
+       "Your gross pay before work",
+       "Sales tax"
+      ],
+      "a": 1,
+      "why": "Deductions lower the income that is taxed."
+     },
+     {
+      "t": "mc",
+      "q": "What does a tax credit reduce?",
+      "o": [
+       "Your income",
+       "Your age",
+       "Your tax bill dollar for dollar",
+       "Your deductions"
+      ],
+      "a": 2,
+      "why": "Credits subtract directly from tax owed."
+     },
+     {
+      "t": "mc",
+      "q": "Which usually lowers tax more: a $1,000 credit or a $1,000 deduction?",
+      "o": [
+       "The deduction",
+       "They are always equal",
+       "Neither",
+       "The credit"
+      ],
+      "a": 3,
+      "why": "A credit reduces tax by $1,000; a deduction only saves tax at your rate."
+     },
+     {
+      "t": "mc",
+      "q": "What is a standard deduction?",
+      "o": [
+       "A fixed amount you can subtract without listing expenses",
+       "A refund",
+       "A tax penalty",
+       "A sales tax"
+      ],
+      "a": 0,
+      "why": "It is a flat deduction available to most filers."
+     },
+     {
+      "t": "tf",
+      "q": "A tax credit only reduces taxable income.",
+      "a": false,
+      "why": "A credit reduces the tax owed directly, not the income."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Deduction",
+        "Lowers taxable income"
+       ],
+       [
+        "Credit",
+        "Lowers tax bill directly"
+       ],
+       [
+        "Standard deduction",
+        "Flat amount subtracted"
+       ],
+       [
+        "Itemizing",
+        "Listing eligible expenses"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for choosing a deduction method in order",
+      "items": [
+       [
+        "Add up itemizable expenses",
+        1
+       ],
+       [
+        "Find the standard deduction",
+        2
+       ],
+       [
+        "Compare the two amounts",
+        3
+       ],
+       [
+        "Use the larger one",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Employees and Freelancers",
+    "period": "W-2 vs 1099",
+    "learn": [
+     {
+      "h": "W-2 employees",
+      "b": "An employee works for an employer. The employer withholds income tax and payroll taxes from each paycheck and sends you a W-2 form at year end. You give a W-4 form to set how much is withheld."
+     },
+     {
+      "h": "1099 contractors",
+      "b": "An independent contractor, or freelancer, is paid without withholding and usually gets a 1099 form. They must set aside money for their own taxes and often make estimated tax payments during the year."
+     },
+     {
+      "h": "Self-employment tax",
+      "b": "Employees share Social Security and Medicare taxes with their employer. Self-employed people pay both parts, called self-employment tax. Keeping good records of income and expenses is important."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which form do employees usually receive at year end?",
+      "o": [
+       "1099",
+       "W-4",
+       "W-2",
+       "A parking ticket"
+      ],
+      "a": 2,
+      "why": "A W-2 reports wages and tax withheld."
+     },
+     {
+      "t": "mc",
+      "q": "Who handles tax payments for a 1099 contractor?",
+      "o": [
+       "The customer always",
+       "The contractor",
+       "The bank",
+       "Nobody"
+      ],
+      "a": 1,
+      "why": "Contractors are responsible for their own taxes."
+     },
+     {
+      "t": "mc",
+      "q": "What does Form W-4 do?",
+      "o": [
+       "Reports a freelancer's income",
+       "Files a return",
+       "Pays tax",
+       "Tells an employer how much tax to withhold"
+      ],
+      "a": 3,
+      "why": "The W-4 sets withholding for an employee's paycheck."
+     },
+     {
+      "t": "mc",
+      "q": "What does self-employment tax cover?",
+      "o": [
+       "Social Security and Medicare for self-employed people",
+       "Sales tax",
+       "Property tax",
+       "Parking fees"
+      ],
+      "a": 0,
+      "why": "It funds Social Security and Medicare contributions of the self-employed."
+     },
+     {
+      "t": "tf",
+      "q": "Independent contractors generally must set aside money for their own taxes.",
+      "a": true,
+      "why": "No employer withholds tax from their payments."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "W-2",
+        "Employee wage report"
+       ],
+       [
+        "1099",
+        "Contractor income report"
+       ],
+       [
+        "W-4",
+        "Withholding instructions"
+       ],
+       [
+        "Estimated taxes",
+        "Payments by the self-employed during the year"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a freelancer's tax cycle in order",
+      "items": [
+       [
+        "Earn income",
+        1
+       ],
+       [
+        "Track income and expenses",
+        2
+       ],
+       [
+        "Pay estimated taxes",
+        3
+       ],
+       [
+        "File the annual return",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

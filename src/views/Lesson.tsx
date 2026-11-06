@@ -23,7 +23,7 @@ const FIRE = ["You're on fire!", 'Unstoppable!', 'Keep it going!'];
 function answerText(it: Question) {
   if (it.t === 'mc' || it.t === 'year') return it.o[it.a];
   if (it.t === 'tf') return it.a ? 'True' : 'False';
-  if (it.t === 'order') return it.items.map((x) => `${x[0]} (${fmtYear(x[1])})`).join(' → ');
+  if (it.t === 'order') return it.items.map((x) => (Math.abs(x[1]) > 100 ? `${x[0]} (${fmtYear(x[1])})` : x[0])).join(' → ');
   return it.pairs.map((p) => `${p[0]} = ${p[1]}`).join('; ');
 }
 
@@ -305,7 +305,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
               {it.t === 'order' && (
                 <>
                   <div className="slots">{order.length ? order.map((k, n) => (
-                    <button key={k} className="mt" disabled={phase !== 'answer'} onClick={() => setOrder(order.filter((x) => x !== k))}><span className="n">{n + 1}</span>{it.items[k][0]}{phase === 'feedback' && <span className="muted small" style={{ marginLeft: 'auto' }}>{fmtYear(it.items[k][1])}</span>}</button>
+                    <button key={k} className="mt" disabled={phase !== 'answer'} onClick={() => setOrder(order.filter((x) => x !== k))}><span className="n">{n + 1}</span>{it.items[k][0]}{phase === 'feedback' && Math.abs(it.items[k][1]) > 100 && <span className="muted small" style={{ marginLeft: 'auto' }}>{fmtYear(it.items[k][1])}</span>}</button>
                   )) : <span className="muted small">Tap events below, earliest first</span>}</div>
                   <div className="pool">{pool.map((k) => <button key={k} className={`mt ${order.includes(k) ? 'used' : ''}`} onClick={() => { if (phase === 'answer') { setOrder([...order, k]); snd('tap'); } }}>{it.items[k][0]}</button>)}</div>
                 </>

@@ -9,7 +9,7 @@ export type Item = Question | Card;
 
 export type Unit = { title: string; period: string; kicker?: string; learn: { h: string; b: string }[]; qs: Question[] };
 export type Subject = { name: string; short: string; units: Unit[]; apq: MC[] };
-export type SubjectId = 'world' | 'us';
+export type SubjectId = string;
 
 export type NodeKind = 'learn' | 'p1' | 'p2' | 'test';
 export type Mood = 'idle' | 'cheer' | 'sad' | 'think' | 'fire' | 'sleepy' | 'trophy';

@@ -1,4 +1,4 @@
-import { SUBJECTS, UNIT_STYLE, unitName } from '../data';
+import { SUBJECTS, unitStyle, unitName } from '../data';
 import { useGame } from './store';
 import { useUI } from './ui';
 import { shuffle, fmtYear } from './util';
@@ -28,7 +28,7 @@ export function startNode(ui: number, k: NodeKind) {
   const u = sub().units[ui];
   if (!s.unlimited && s.hearts <= 0) return 'no-hearts';
   useUI.getState().start({
-    kind: 'lesson', title: `${unitName(sub(), ui)} · ${u.title}`, color: UNIT_STYLE[s.subject][ui]?.c,
+    kind: 'lesson', title: `${unitName(sub(), ui)} · ${u.title}`, color: unitStyle(s.subject, ui).c,
     items: copy(nodeItems(ui, k)), hearts: true, requeue: true, nodeId: nid(ui, k), nodeK: k, unit: ui,
   });
   return 'ok';
@@ -51,7 +51,7 @@ export function startLightning() {
 
 export function startDateDash() {
   const ev = new Map<string, number>();
-  for (const q of allQs((q) => q.t === 'order')) if (q.t === 'order') q.items.forEach(([l, y]) => ev.set(l, y));
+  for (const q of allQs((q) => q.t === 'order')) if (q.t === 'order') q.items.forEach(([l, y]) => { if (Math.abs(y) > 100) ev.set(l, y); });
   const items: Item[] = shuffle([...ev.entries()]).slice(0, 12).map(([l, y]) => {
     const set = new Set([y]);
     const d = [3, 7, 12, 20, 30, 45, 60];
@@ -72,3 +72,5 @@ export function startReview() {
 export function flashDeck() {
   return sub().units.flatMap((u, ui) => u.qs.flatMap((q) => (q.t === 'match' ? q.pairs.map(([f, b]) => ({ f, b, u: ui })) : [])));
 }
+
+export const hasDates = () => allQs((q) => q.t === 'order' && q.items.every(([, y]) => Math.abs(y) > 100)).length > 0;

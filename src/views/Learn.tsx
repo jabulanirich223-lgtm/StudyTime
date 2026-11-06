@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import { SUBJECTS, UNIT_STYLE, unitName } from '../data';
+import { SUBJECTS, unitStyle, unitName } from '../data';
 import { useGame, today, levelOf } from '../lib/store';
 import { useUI } from '../lib/ui';
 import { nid, startNode } from '../lib/launch';
 import { snd } from '../lib/sound';
 import { confetti } from '../lib/fx';
 import { Tock } from '../components/Tock';
-import { Svg, SVG, iconUrl } from '../components/Icons';
+import { Svg, SVG, iconUrl, CourseIcon } from '../components/Icons';
 import type { NodeKind } from '../lib/types';
 
 const NODES: NodeKind[] = ['learn', 'p1', 'p2', 'test'];
@@ -23,10 +23,10 @@ const ROW = 112;
 
 export function Guidebook({ ui: idx }: { ui: number }) {
   const g = useGame();
-  const s = SUBJECTS[g.subject], u = s.units[idx], st = UNIT_STYLE[g.subject][idx];
+  const s = SUBJECTS[g.subject], u = s.units[idx], st = unitStyle(g.subject, idx);
   return (
     <div style={{ ['--u' as string]: st.c }}>
-      <div className="row" style={{ gap: 14 }}><img src={iconUrl(st.icon)} alt="" style={{ width: 64 }} /><div><div className="muted small">{unitName(s, idx)} · {u.period}</div><h2>{u.title}</h2></div></div>
+      <div className="row" style={{ gap: 14 }}><CourseIcon icon={st.icon} size={64} /><div><div className="muted small">{unitName(s, idx)} · {u.period}</div><h2>{u.title}</h2></div></div>
       {u.learn.map((c) => <div className="gb" key={c.h}><h4>{c.h}</h4><p>{c.b}</p></div>)}
       <button className="btn wide" style={{ marginTop: 16 }} onClick={() => useUI.getState().close()}>Got it</button>
     </div>
@@ -69,7 +69,7 @@ export function Learn() {
           <span className="muted small">{g.daily.xp}/{g.goal} XP today</span></div>
       </div>
       {s.units.map((u, ui2) => {
-        const st = UNIT_STYLE[g.subject][ui2];
+        const st = unitStyle(g.subject, ui2);
         const offs = [0, 1, 2, 3, 4].map((k) => OFFS[(ui2 * 5 + k) % 8]);
         const pts = offs.map((o, k) => [150 + o, 26 + ROW / 2 + k * ROW]);
         let d = `M${pts[0][0]} ${pts[0][1]}`;
@@ -78,7 +78,7 @@ export function Learn() {
         return (
           <section className="unit" key={ui2} style={{ ['--u' as string]: st.c, ['--ud' as string]: st.d }}>
             <div className="banner">
-              <img src={iconUrl(st.icon)} alt="" />
+              <span className="banner-ico"><CourseIcon icon={st.icon} size={74} /></span>
               <div className="banner-txt"><h2>{unitName(s, ui2)}</h2><p>{u.title} · {u.period}</p></div>
               <button className="guide" onClick={() => ui.open(<Guidebook ui={ui2} />)}><Svg html={SVG.book} /><span>Guidebook</span></button>
             </div>
