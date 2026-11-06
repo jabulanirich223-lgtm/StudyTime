@@ -1,0 +1,5987 @@
+{
+ "es-1": {
+  "name": "Spanish · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "Say Hola for hello. Use Buenos días in the morning, Buenas tardes in the afternoon and Buenas noches at night. To say goodbye, use Adiós or Hasta luego (see you later)."
+     },
+     {
+      "h": "Saying your name",
+      "b": "To say your name, use Me llamo and then your name. Me llamo Ana means My name is Ana. To ask someone, say ¿Cómo te llamas?"
+     },
+     {
+      "h": "Feelings and manners",
+      "b": "Ask ¿Cómo estás? to say How are you? You can answer Bien, gracias (Fine, thanks). Say por favor for please, gracias for thank you and de nada for you're welcome."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'good morning' in Spanish?",
+      "o": [
+       "Buenas noches",
+       "Buenos días",
+       "Hasta luego",
+       "De nada"
+      ],
+      "a": 1,
+      "why": "Buenos días is used to greet people in the morning."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Me llamo Ana' mean?",
+      "o": [
+       "My name is Ana",
+       "I like Ana",
+       "I am from Ana",
+       "Where is Ana"
+      ],
+      "a": 0,
+      "why": "Me llamo means 'my name is'."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'thank you'?",
+      "o": [
+       "Por favor",
+       "Perdón",
+       "Gracias",
+       "Hola"
+      ],
+      "a": 2,
+      "why": "Gracias is the Spanish word for thank you."
+     },
+     {
+      "t": "mc",
+      "q": "How can you answer '¿Cómo estás?' if you feel fine?",
+      "o": [
+       "Me llamo bien",
+       "De nada",
+       "Buenas noches",
+       "Bien, gracias"
+      ],
+      "a": 3,
+      "why": "Bien, gracias means 'Fine, thanks'."
+     },
+     {
+      "t": "tf",
+      "q": "'Adiós' means 'goodbye'.",
+      "a": true,
+      "why": "Adiós is a common way to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each Spanish word to its meaning",
+      "pairs": [
+       [
+        "Hola",
+        "Hello"
+       ],
+       [
+        "Gracias",
+        "Thank you"
+       ],
+       [
+        "Por favor",
+        "Please"
+       ],
+       [
+        "Adiós",
+        "Goodbye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Hello, my name is Luis'",
+      "items": [
+       [
+        "Hola",
+        1
+       ],
+       [
+        "me",
+        2
+       ],
+       [
+        "llamo",
+        3
+       ],
+       [
+        "Luis",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'thank you' in Spanish.",
+      "a": [
+       "gracias",
+       "muchas gracias"
+      ],
+      "hint": "One word, it starts with g.",
+      "why": "Gracias means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how do you say 'My name is Marta'?",
+      "a": [
+       "me llamo marta"
+      ],
+      "hint": "Use Me llamo + name.",
+      "why": "Me llamo means 'my name is'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'Buenas noches' into English.",
+      "a": [
+       "good night",
+       "good evening",
+       "good night!"
+      ],
+      "hint": "You say it at night.",
+      "why": "Buenas noches is used in the evening and at night."
+     }
+    ]
+   },
+   {
+    "title": "Numbers, Colors and Food",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "Count like this: uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez. Use them for ages, prices and addresses."
+     },
+     {
+      "h": "Colors",
+      "b": "Rojo is red, azul is blue, verde is green and amarillo is yellow. Colors usually come after the noun, like la manzana roja (the red apple)."
+     },
+     {
+      "h": "Food and wants",
+      "b": "Learn el pan (bread), el agua (water), la manzana (apple) and la leche (milk). To ask for something, say Quiero and then the thing. Quiero agua means I want water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'cinco' in English?",
+      "o": [
+       "Four",
+       "Six",
+       "Five",
+       "Fifteen"
+      ],
+      "a": 2,
+      "why": "Cinco is the number five."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'blue'?",
+      "o": [
+       "Rojo",
+       "Verde",
+       "Azul",
+       "Amarillo"
+      ],
+      "a": 2,
+      "why": "Azul means blue; rojo is red and verde is green."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'la manzana' mean?",
+      "o": [
+       "The orange",
+       "The bread",
+       "The milk",
+       "The apple"
+      ],
+      "a": 3,
+      "why": "La manzana is the apple."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want water'?",
+      "o": [
+       "Quiero agua",
+       "Tengo agua",
+       "Soy agua",
+       "Voy agua"
+      ],
+      "a": 0,
+      "why": "Quiero means 'I want', so Quiero agua is 'I want water'."
+     },
+     {
+      "t": "tf",
+      "q": "'Siete' means seven.",
+      "a": true,
+      "why": "Siete is the number seven."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its meaning",
+      "pairs": [
+       [
+        "uno",
+        "one"
+       ],
+       [
+        "tres",
+        "three"
+       ],
+       [
+        "ocho",
+        "eight"
+       ],
+       [
+        "diez",
+        "ten"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "dos",
+        1
+       ],
+       [
+        "tres",
+        2
+       ],
+       [
+        "cinco",
+        3
+       ],
+       [
+        "siete",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Spanish word for the number 7.",
+      "a": [
+       "siete"
+      ],
+      "hint": "It sounds like 'see-eh-teh'.",
+      "why": "7 is siete."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Spanish word for the color red.",
+      "a": [
+       "rojo"
+      ],
+      "hint": "It starts with r.",
+      "why": "Rojo means red."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I want water' into Spanish.",
+      "a": [
+       "quiero agua",
+       "yo quiero agua"
+      ],
+      "hint": "Use Quiero + thing.",
+      "why": "Quiero agua means I want water."
+     }
+    ]
+   },
+   {
+    "title": "Family and Key Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Family words",
+      "b": "Learn la madre (mother), el padre (father), el hermano (brother) and la hermana (sister). Words with el are masculine and words with la are feminine."
+     },
+     {
+      "h": "The verb ser (to be)",
+      "b": "Ser has the forms soy (I am), eres (you are) and es (he or she is). Yo soy estudiante means I am a student."
+     },
+     {
+      "h": "The verb tener (to have)",
+      "b": "Tener has the forms tengo (I have), tienes (you have) and tiene (he or she has). Tengo un hermano means I have a brother."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'la hermana' mean?",
+      "o": [
+       "The mother",
+       "The aunt",
+       "The sister",
+       "The daughter"
+      ],
+      "a": 2,
+      "why": "La hermana means the sister."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Yo ___ estudiante. (I am a student)",
+      "o": [
+       "eres",
+       "soy",
+       "es",
+       "tengo"
+      ],
+      "a": 1,
+      "why": "Soy is the 'I' form of ser (to be)."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a brother'?",
+      "o": [
+       "Soy un hermano",
+       "Tienes un hermano",
+       "Tiene un hermano",
+       "Tengo un hermano"
+      ],
+      "a": 3,
+      "why": "Tengo is the 'I' form of tener (to have)."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ella ___ dos gatos. (She has two cats)",
+      "o": [
+       "tengo",
+       "tienes",
+       "tiene",
+       "soy"
+      ],
+      "a": 2,
+      "why": "Tiene is the 'he or she' form of tener."
+     },
+     {
+      "t": "tf",
+      "q": "'El padre' means 'the father'.",
+      "a": true,
+      "why": "El padre is the father."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "la madre",
+        "mother"
+       ],
+       [
+        "el abuelo",
+        "grandfather"
+       ],
+       [
+        "el hijo",
+        "son"
+       ],
+       [
+        "la tía",
+        "aunt"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I have two sisters'",
+      "items": [
+       [
+        "Yo",
+        1
+       ],
+       [
+        "tengo",
+        2
+       ],
+       [
+        "dos",
+        3
+       ],
+       [
+        "hermanas",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the sister' into Spanish.",
+      "a": [
+       "la hermana",
+       "hermana"
+      ],
+      "hint": "Sister is feminine.",
+      "why": "La hermana means the sister."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete with ser: Ella ___ mi madre.",
+      "a": [
+       "es"
+      ],
+      "hint": "Use the he/she form of ser.",
+      "why": "Ella es mi madre: she is my mother."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete with tener: Yo ___ dos gatos.",
+      "a": [
+       "tengo"
+      ],
+      "hint": "Use the yo form of tener.",
+      "why": "Yo tengo = I have."
+     }
+    ]
+   },
+   {
+    "title": "Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Articles and plurals",
+      "b": "Use el or la for 'the' with one thing and los or las for many. Un and una mean 'a'. To make most plurals, add -s: libro becomes libros."
+     },
+     {
+      "h": "Days of the week",
+      "b": "The days are lunes, martes, miércoles, jueves, viernes, sábado and domingo. They are not written with a capital letter in Spanish."
+     },
+     {
+      "h": "Asking where",
+      "b": "Use ¿Dónde está...? to ask where something is. ¿Dónde está la escuela? means Where is the school? Remember la casa (house) and la escuela (school) use la."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which article goes with 'casa' (house)?",
+      "o": [
+       "el",
+       "la",
+       "los",
+       "un"
+      ],
+      "a": 1,
+      "why": "Casa is feminine, so it uses la."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'libro'?",
+      "o": [
+       "libra",
+       "libres",
+       "libros",
+       "los libro"
+      ],
+      "a": 2,
+      "why": "Add -s to most words that end in a vowel: libros."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'miércoles' mean?",
+      "o": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday"
+      ],
+      "a": 2,
+      "why": "Miércoles is Wednesday."
+     },
+     {
+      "t": "mc",
+      "q": "What does '¿Dónde está la escuela?' ask?",
+      "o": [
+       "What is the school?",
+       "Where is the school?",
+       "Who is at school?",
+       "When is school?"
+      ],
+      "a": 1,
+      "why": "Dónde means 'where'."
+     },
+     {
+      "t": "tf",
+      "q": "'Sábado' means Sunday.",
+      "a": false,
+      "why": "Sábado is Saturday; Sunday is domingo."
+     },
+     {
+      "t": "match",
+      "q": "Match each day to its meaning",
+      "pairs": [
+       [
+        "lunes",
+        "Monday"
+       ],
+       [
+        "viernes",
+        "Friday"
+       ],
+       [
+        "domingo",
+        "Sunday"
+       ],
+       [
+        "jueves",
+        "Thursday"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order, starting from Monday",
+      "items": [
+       [
+        "lunes",
+        1
+       ],
+       [
+        "martes",
+        2
+       ],
+       [
+        "jueves",
+        3
+       ],
+       [
+        "sábado",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'Monday' in Spanish.",
+      "a": [
+       "lunes"
+      ],
+      "hint": "It starts with l and ends in -s.",
+      "why": "Lunes means Monday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the plural article: ___ libros (the books).",
+      "a": [
+       "los"
+      ],
+      "hint": "Masculine plural.",
+      "why": "Libro is masculine, so los libros."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'Where is the school?' into Spanish.",
+      "a": [
+       "donde esta la escuela",
+       "donde esta el colegio"
+      ],
+      "hint": "Start with ¿Dónde está...",
+      "why": "¿Dónde está la escuela? asks where the school is."
+     }
+    ]
+   },
+   {
+    "title": "Adjectives",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Adjectives match the noun",
+      "b": "In Spanish, an adjective matches its noun. Many end in -o for masculine and -a for feminine. Add -s for plural: el gato negro, la casa blanca, los gatos negros."
+     },
+     {
+      "h": "Where adjectives go",
+      "b": "Adjectives usually come after the noun: un coche rojo (a red car), una chica simpática (a nice girl). Learn alto (tall), bajo (short), nuevo (new), viejo (old) and simpático (nice)."
+     },
+     {
+      "h": "Adjectives ending in -e",
+      "b": "Adjectives ending in -e or a consonant stay the same for masculine and feminine: un perro grande, una casa grande. Add -s for plural: grandes. Add -es after a consonant: fácil becomes fáciles."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which phrase means 'the white house'?",
+      "o": [
+       "la casa blanca",
+       "la casa blanco",
+       "el casa blanco",
+       "la casa blancas"
+      ],
+      "a": 0,
+      "why": "Casa is feminine, so the adjective ends in -a."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct form: los gatos ___ (black).",
+      "o": [
+       "negro",
+       "negros",
+       "negra",
+       "negras"
+      ],
+      "a": 1,
+      "why": "Gatos is masculine plural, so use negros."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'alto' mean?",
+      "o": [
+       "short",
+       "old",
+       "tall",
+       "new"
+      ],
+      "a": 2,
+      "why": "Alto means tall."
+     },
+     {
+      "t": "mc",
+      "q": "Which adjective has the same form for masculine and feminine?",
+      "o": [
+       "alto",
+       "pequeño",
+       "rojo",
+       "grande"
+      ],
+      "a": 3,
+      "why": "Adjectives ending in -e do not change for gender."
+     },
+     {
+      "t": "tf",
+      "q": "In Spanish, adjectives usually come before the noun.",
+      "a": false,
+      "why": "They usually come after the noun: un coche rojo."
+     },
+     {
+      "t": "match",
+      "q": "Match each adjective to its meaning",
+      "pairs": [
+       [
+        "alto",
+        "tall"
+       ],
+       [
+        "nuevo",
+        "new"
+       ],
+       [
+        "viejo",
+        "old"
+       ],
+       [
+        "simpático",
+        "nice"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I have a red car'",
+      "items": [
+       [
+        "Tengo",
+        1
+       ],
+       [
+        "un",
+        2
+       ],
+       [
+        "coche",
+        3
+       ],
+       [
+        "rojo",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'a big house' into Spanish.",
+      "a": [
+       "una casa grande",
+       "casa grande"
+      ],
+      "hint": "Casa is feminine; grande does not change.",
+      "why": "Una casa grande: the adjective follows the noun."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Las chicas son ___ (tall).",
+      "a": [
+       "altas"
+      ],
+      "hint": "Feminine plural of alto.",
+      "why": "Chicas is feminine plural, so altas."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the new books' into Spanish.",
+      "a": [
+       "los libros nuevos"
+      ],
+      "hint": "Libro is masculine; nuevo goes after.",
+      "why": "Los libros nuevos: masculine plural."
+     }
+    ]
+   },
+   {
+    "title": "Regular Present Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Verbs ending in -ar",
+      "b": "To use a regular -ar verb, drop -ar and add endings: hablo, hablas, habla, hablamos, habláis, hablan. Hablo español means I speak Spanish."
+     },
+     {
+      "h": "Verbs ending in -er and -ir",
+      "b": "For -er verbs, use -o, -es, -e, -emos, -éis, -en: como, comes, come. For -ir verbs, use -o, -es, -e, -imos, -ís, -en: vivo, vives, vive."
+     },
+     {
+      "h": "Subject pronouns",
+      "b": "The pronouns are yo, tú, él/ella, nosotros, vosotros and ellos/ellas. Spanish often drops them because the ending shows who does the action: Trabajamos hoy means We work today."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence means 'I speak Spanish'?",
+      "o": [
+       "Hablas español",
+       "Hablo español",
+       "Habla español",
+       "Hablamos español"
+      ],
+      "a": 1,
+      "why": "Hablo is the yo form of hablar."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ella ___ pan. (comer)",
+      "o": [
+       "como",
+       "comes",
+       "come",
+       "comen"
+      ],
+      "a": 2,
+      "why": "Ella uses the él/ella form: come."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Nosotros ___ en Madrid. (vivir)",
+      "o": [
+       "vivo",
+       "vive",
+       "viven",
+       "vivimos"
+      ],
+      "a": 3,
+      "why": "Nosotros takes -imos for -ir verbs."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'bebes' mean?",
+      "o": [
+       "you drink",
+       "I drink",
+       "he drinks",
+       "we drink"
+      ],
+      "a": 0,
+      "why": "-es is the tú ending, so bebes means you drink."
+     },
+     {
+      "t": "tf",
+      "q": "'Trabajan' means 'they work'.",
+      "a": true,
+      "why": "-an is the ellos ending of -ar verbs."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb form to its meaning",
+      "pairs": [
+       [
+        "hablo",
+        "I speak"
+       ],
+       [
+        "comes",
+        "you eat"
+       ],
+       [
+        "vive",
+        "he lives"
+       ],
+       [
+        "escribimos",
+        "we write"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Ana lives in Madrid'",
+      "items": [
+       [
+        "Ana",
+        1
+       ],
+       [
+        "vive",
+        2
+       ],
+       [
+        "en",
+        3
+       ],
+       [
+        "Madrid",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Yo ___ (trabajar) en una tienda.",
+      "a": [
+       "trabajo"
+      ],
+      "hint": "Yo form of an -ar verb ends in -o.",
+      "why": "Yo trabajo = I work."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Tú ___ (beber) agua.",
+      "a": [
+       "bebes"
+      ],
+      "hint": "Tú form of an -er verb ends in -es.",
+      "why": "Tú bebes = you drink."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'They live in Italy' into Spanish.",
+      "a": [
+       "viven en italia",
+       "ellos viven en italia",
+       "ellas viven en italia"
+      ],
+      "hint": "Use the ellos form of vivir.",
+      "why": "Viven en Italia."
+     }
+    ]
+   },
+   {
+    "title": "Ser and Estar",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Ser: who and what",
+      "b": "Use ser for identity, origin, jobs and descriptions: Soy Ana. Soy de Italia. Es alto. The forms are soy, eres, es, somos, sois, son."
+     },
+     {
+      "h": "Estar: where and how",
+      "b": "Use estar for place and feelings or states: Estoy en casa. Estoy cansado (I am tired). The forms are estoy, estás, está, estamos, estáis, están."
+     },
+     {
+      "h": "Useful phrases",
+      "b": "¿De dónde eres? Soy de Italia uses ser for origin. ¿Cómo estás? Estoy bien uses estar for feelings. Hoy es lunes uses ser for the day. Madrid está en España uses estar for place."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: ___ de Italia. (I am from Italy)",
+      "o": [
+       "Estoy",
+       "Eres",
+       "Soy",
+       "Está"
+      ],
+      "a": 2,
+      "why": "Origin uses ser: soy de."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Madrid ___ en España.",
+      "o": [
+       "es",
+       "son",
+       "estoy",
+       "está"
+      ],
+      "a": 3,
+      "why": "Location uses estar."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence says 'I am tired'?",
+      "o": [
+       "Estoy cansado",
+       "Soy cansado",
+       "Es cansado",
+       "Eres cansado"
+      ],
+      "a": 0,
+      "why": "Feelings and states use estar."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Nosotros ___ estudiantes.",
+      "o": [
+       "estamos",
+       "somos",
+       "son",
+       "están"
+      ],
+      "a": 1,
+      "why": "Identity uses ser: nosotros somos."
+     },
+     {
+      "t": "tf",
+      "q": "Spanish uses estar to say where something is.",
+      "a": true,
+      "why": "Place uses estar: El libro está en la mesa."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "Eres",
+        "you are (ser)"
+       ],
+       [
+        "Está",
+        "he or she is (estar)"
+       ],
+       [
+        "Son",
+        "they are (ser)"
+       ],
+       [
+        "Estamos",
+        "we are (estar)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'She is from Mexico'",
+      "items": [
+       [
+        "Ella",
+        1
+       ],
+       [
+        "es",
+        2
+       ],
+       [
+        "de",
+        3
+       ],
+       [
+        "México",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete with ser: Yo ___ de Italia.",
+      "a": [
+       "soy"
+      ],
+      "hint": "Origin uses ser.",
+      "why": "Yo soy de Italia."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete with estar: El libro ___ en la mesa.",
+      "a": [
+       "está",
+       "esta"
+      ],
+      "hint": "Place uses estar, él form.",
+      "why": "El libro está en la mesa."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'We are happy' into Spanish.",
+      "a": [
+       "estamos contentos",
+       "estamos felices",
+       "nosotros estamos contentos",
+       "nosotros estamos felices"
+      ],
+      "hint": "Feelings use estar.",
+      "why": "Estamos contentos or felices."
+     }
+    ]
+   },
+   {
+    "title": "Time, Months and Seasons",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Telling the time",
+      "b": "Ask ¿Qué hora es? For one o'clock say Es la una. For other hours say Son las dos, Son las tres. Add y media (half past), y cuarto (quarter past) or menos cuarto (quarter to)."
+     },
+     {
+      "h": "Months",
+      "b": "The months are enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre and diciembre. They are not written with a capital letter."
+     },
+     {
+      "h": "Seasons and dates",
+      "b": "The seasons are la primavera (spring), el verano (summer), el otoño (autumn) and el invierno (winter). For dates, say Es el cinco de mayo (It is the fifth of May)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'It is three o'clock'?",
+      "o": [
+       "Es la tres",
+       "Son tres las",
+       "Soy las tres",
+       "Son las tres"
+      ],
+      "a": 3,
+      "why": "Use son las for all hours except one."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'y media' add to the time?",
+      "o": [
+       "half past",
+       "quarter past",
+       "quarter to",
+       "o'clock"
+      ],
+      "a": 0,
+      "why": "Y media means and a half."
+     },
+     {
+      "t": "mc",
+      "q": "Which month is 'junio'?",
+      "o": [
+       "July",
+       "June",
+       "March",
+       "May"
+      ],
+      "a": 1,
+      "why": "Junio is June."
+     },
+     {
+      "t": "mc",
+      "q": "Which season is 'invierno'?",
+      "o": [
+       "summer",
+       "autumn",
+       "winter",
+       "spring"
+      ],
+      "a": 2,
+      "why": "Invierno means winter."
+     },
+     {
+      "t": "tf",
+      "q": "'Es la una' means 'It is one o'clock'.",
+      "a": true,
+      "why": "Es la una is the only hour that uses es and la."
+     },
+     {
+      "t": "match",
+      "q": "Match each season to its meaning",
+      "pairs": [
+       [
+        "primavera",
+        "spring"
+       ],
+       [
+        "verano",
+        "summer"
+       ],
+       [
+        "otoño",
+        "autumn"
+       ],
+       [
+        "invierno",
+        "winter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the months in order",
+      "items": [
+       [
+        "enero",
+        1
+       ],
+       [
+        "febrero",
+        2
+       ],
+       [
+        "marzo",
+        3
+       ],
+       [
+        "abril",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'July' in Spanish.",
+      "a": [
+       "julio"
+      ],
+      "hint": "It looks like the English word.",
+      "why": "Julio is July."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'It is two thirty' into Spanish.",
+      "a": [
+       "son las dos y media"
+      ],
+      "hint": "Use Son las + hour + y media.",
+      "why": "Son las dos y media."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'summer' in Spanish.",
+      "a": [
+       "verano",
+       "el verano"
+      ],
+      "hint": "It starts with v.",
+      "why": "El verano is summer."
+     }
+    ]
+   },
+   {
+    "title": "Town and Question Words",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Places in town",
+      "b": "Learn la ciudad (city), la calle (street), el banco (bank), el parque (park), la tienda (shop), el mercado (market), la biblioteca (library) and el supermercado (supermarket)."
+     },
+     {
+      "h": "Question words",
+      "b": "Use qué (what), quién (who), dónde (where), cuándo (when), por qué (why), cómo (how) and cuánto (how much). Questions have ¿ at the start and ? at the end."
+     },
+     {
+      "h": "The verb ir",
+      "b": "Ir means to go: voy, vas, va, vamos, vais, van. Say ir a + place: Voy a la tienda. A + el becomes al: Voy al parque."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'Where do you live?'",
+      "o": [
+       "¿Dónde vives?",
+       "¿Cuándo vives?",
+       "¿Quién vives?",
+       "¿Por qué vives?"
+      ],
+      "a": 0,
+      "why": "Dónde asks where."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Nosotros ___ al parque. (ir)",
+      "o": [
+       "voy",
+       "vamos",
+       "va",
+       "van"
+      ],
+      "a": 1,
+      "why": "Nosotros goes with vamos."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Voy ___ parque.",
+      "o": [
+       "a el",
+       "del",
+       "al",
+       "en el"
+      ],
+      "a": 2,
+      "why": "A + el always becomes al."
+     },
+     {
+      "t": "mc",
+      "q": "What does '¿Por qué?' mean?",
+      "o": [
+       "What?",
+       "Who?",
+       "When?",
+       "Why?"
+      ],
+      "a": 3,
+      "why": "Por qué means why."
+     },
+     {
+      "t": "tf",
+      "q": "'¿Cuándo?' asks about a place.",
+      "a": false,
+      "why": "Cuándo asks about time. Dónde asks about place."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "¿Quién?",
+        "Who?"
+       ],
+       [
+        "¿Cuándo?",
+        "When?"
+       ],
+       [
+        "¿Cómo?",
+        "How?"
+       ],
+       [
+        "¿Qué?",
+        "What?"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Ana goes to the bank'",
+      "items": [
+       [
+        "Ana",
+        1
+       ],
+       [
+        "va",
+        2
+       ],
+       [
+        "al",
+        3
+       ],
+       [
+        "banco",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the library' into Spanish.",
+      "a": [
+       "la biblioteca",
+       "biblioteca"
+      ],
+      "hint": "It is feminine.",
+      "why": "La biblioteca."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Spanish words for 'why' (two words).",
+      "a": [
+       "por qué",
+       "porque"
+      ],
+      "hint": "It has two words in a question.",
+      "why": "¿Por qué? means why."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Yo ___ al mercado. (ir)",
+      "a": [
+       "voy"
+      ],
+      "hint": "Yo form of ir.",
+      "why": "Yo voy al mercado."
+     }
+    ]
+   },
+   {
+    "title": "Home, Clothes and Weather",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Rooms in the house",
+      "b": "Learn la casa (house), la cocina (kitchen), el dormitorio (bedroom), el baño (bathroom), la sala (living room) and el jardín (garden). Use en to say where: Estoy en la cocina."
+     },
+     {
+      "h": "Clothes",
+      "b": "Learn la camisa (shirt), los pantalones (trousers), el vestido (dress), los zapatos (shoes) and la chaqueta (jacket). Use llevar for to wear: Llevo una camisa azul."
+     },
+     {
+      "h": "Weather",
+      "b": "Ask ¿Qué tiempo hace? Say Hace sol (sunny), Hace frío (cold) or Hace calor (hot). For rain and snow use verbs: Llueve (it rains), Nieva (it snows)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'It is cold'?",
+      "o": [
+       "Hace calor",
+       "Hace frío",
+       "Hace sol",
+       "Llueve"
+      ],
+      "a": 1,
+      "why": "Frío means cold."
+     },
+     {
+      "t": "mc",
+      "q": "What are 'los zapatos'?",
+      "o": [
+       "shirts",
+       "trousers",
+       "shoes",
+       "jackets"
+      ],
+      "a": 2,
+      "why": "Zapatos means shoes."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'la cocina'?",
+      "o": [
+       "the bedroom",
+       "the bathroom",
+       "the garden",
+       "the kitchen"
+      ],
+      "a": 3,
+      "why": "Cocina means kitchen."
+     },
+     {
+      "t": "mc",
+      "q": "In which room do you usually sleep?",
+      "o": [
+       "el dormitorio",
+       "la cocina",
+       "el baño",
+       "el jardín"
+      ],
+      "a": 0,
+      "why": "Dormitorio means bedroom."
+     },
+     {
+      "t": "tf",
+      "q": "'Llueve' means 'It is snowing'.",
+      "a": false,
+      "why": "Llueve means it rains. Nieva means it snows."
+     },
+     {
+      "t": "match",
+      "q": "Match each clothing word to its meaning",
+      "pairs": [
+       [
+        "la camisa",
+        "shirt"
+       ],
+       [
+        "los pantalones",
+        "trousers"
+       ],
+       [
+        "el vestido",
+        "dress"
+       ],
+       [
+        "la chaqueta",
+        "jacket"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Today it is very hot'",
+      "items": [
+       [
+        "Hoy",
+        1
+       ],
+       [
+        "hace",
+        2
+       ],
+       [
+        "mucho",
+        3
+       ],
+       [
+        "calor",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'It is sunny' into Spanish.",
+      "a": [
+       "hace sol"
+      ],
+      "hint": "Use Hace + noun.",
+      "why": "Hace sol."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'kitchen' in Spanish.",
+      "a": [
+       "cocina",
+       "la cocina"
+      ],
+      "hint": "It starts with c.",
+      "why": "La cocina is the kitchen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the dress' into Spanish.",
+      "a": [
+       "el vestido",
+       "vestido"
+      ],
+      "hint": "It is masculine.",
+      "why": "El vestido."
+     }
+    ]
+   }
+  ]
+ },
+ "es-2": {
+  "name": "Spanish · Intermediate",
+  "units": [
+   {
+    "title": "The Past Tense",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Regular past endings",
+      "b": "For -ar verbs, use -é, -aste, -ó: hablé (I spoke), hablaste (you spoke), habló (he or she spoke). For -er and -ir verbs, use -í, -iste, -ió: comí (I ate)."
+     },
+     {
+      "h": "Ir and ser in the past",
+      "b": "Ir (to go) and ser (to be) share the same past forms: fui, fuiste, fue. Context tells you which one is meant. Fui al cine means I went to the cinema."
+     },
+     {
+      "h": "Past time words",
+      "b": "Use ayer (yesterday), anoche (last night), la semana pasada (last week) and el año pasado (last year). They show that the action is finished."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Ayer yo ___ pizza. (I ate)",
+      "o": [
+       "como",
+       "comí",
+       "comeré",
+       "comía"
+      ],
+      "a": 1,
+      "why": "Comí is the past 'I' form of comer."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'hablaste' mean?",
+      "o": [
+       "I spoke",
+       "You spoke",
+       "He spoke",
+       "We spoke"
+      ],
+      "a": 1,
+      "why": "The ending -aste is the past 'you' form."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Fui al cine anoche' mean?",
+      "o": [
+       "I went to the movies last night",
+       "I go to the movies every night",
+       "I will go to the movies tonight",
+       "I was at the movies last week"
+      ],
+      "a": 0,
+      "why": "Fui is 'I went' and anoche is 'last night'."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'yesterday'?",
+      "o": [
+       "mañana",
+       "hoy",
+       "ayer",
+       "anoche"
+      ],
+      "a": 2,
+      "why": "Ayer means yesterday; anoche means last night."
+     },
+     {
+      "t": "tf",
+      "q": "'Ella comió' means 'She ate'.",
+      "a": true,
+      "why": "Comió is the past 'he or she' form of comer."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "ayer",
+        "yesterday"
+       ],
+       [
+        "anoche",
+        "last night"
+       ],
+       [
+        "la semana pasada",
+        "last week"
+       ],
+       [
+        "el año pasado",
+        "last year"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yesterday I ate pizza'",
+      "items": [
+       [
+        "Ayer",
+        1
+       ],
+       [
+        "yo",
+        2
+       ],
+       [
+        "comí",
+        3
+       ],
+       [
+        "pizza",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Ayer yo ___ (hablar) con Ana.",
+      "a": [
+       "hablé",
+       "hable"
+      ],
+      "hint": "Preterite yo form of -ar verbs ends in -é.",
+      "why": "Hablé = I spoke."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I ate pizza' into Spanish.",
+      "a": [
+       "comí pizza",
+       "yo comí pizza"
+      ],
+      "hint": "Preterite of comer, yo form.",
+      "why": "Comí pizza."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Ayer nosotros ___ (ir) al cine.",
+      "a": [
+       "fuimos"
+      ],
+      "hint": "Ir uses the same past forms as ser.",
+      "why": "Fuimos = we went."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Travel",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Use a la derecha (to the right), a la izquierda (to the left) and todo recto (straight ahead). La esquina is the corner."
+     },
+     {
+      "h": "Near and far",
+      "b": "Cerca de means near and lejos de means far from. To ask the way, say ¿Cómo llego a la estación? (How do I get to the station?)."
+     },
+     {
+      "h": "Travel words",
+      "b": "Learn el aeropuerto (airport), el billete (ticket), la estación (station) and la habitación (room). Use reservar to say to book."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'a la izquierda' mean?",
+      "o": [
+       "to the right",
+       "to the left",
+       "straight ahead",
+       "behind"
+      ],
+      "a": 1,
+      "why": "Izquierda means left."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'todo recto' mean?",
+      "o": [
+       "turn back",
+       "on the corner",
+       "far away",
+       "straight ahead"
+      ],
+      "a": 3,
+      "why": "Todo recto means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask 'How do I get to the station?'",
+      "o": [
+       "¿Cómo llego a la estación?",
+       "¿Dónde estás la estación?",
+       "¿Qué es la estación?",
+       "¿Cuándo llega la estación?"
+      ],
+      "a": 0,
+      "why": "¿Cómo llego a...? is the usual way to ask for directions."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'la habitación' at a hotel?",
+      "o": [
+       "The key",
+       "The room",
+       "The kitchen",
+       "The door"
+      ],
+      "a": 1,
+      "why": "La habitación means the room."
+     },
+     {
+      "t": "tf",
+      "q": "'Lejos de' means 'far from'.",
+      "a": true,
+      "why": "Lejos means far; cerca means near."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "cerca de",
+        "near"
+       ],
+       [
+        "el aeropuerto",
+        "airport"
+       ],
+       [
+        "el billete",
+        "ticket"
+       ],
+       [
+        "la esquina",
+        "corner"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these travel steps in a logical order",
+      "items": [
+       [
+        "Compro el billete",
+        1
+       ],
+       [
+        "Voy al aeropuerto",
+        2
+       ],
+       [
+        "Subo al avión",
+        3
+       ],
+       [
+        "Llego al hotel",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'to the left' in Spanish.",
+      "a": [
+       "a la izquierda"
+      ],
+      "hint": "Three words.",
+      "why": "A la izquierda."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'straight ahead' in Spanish.",
+      "a": [
+       "todo recto",
+       "todo derecho"
+      ],
+      "hint": "Two words, starting with todo.",
+      "why": "Todo recto."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'The airport is far' into Spanish.",
+      "a": [
+       "el aeropuerto está lejos",
+       "el aeropuerto esta lejos"
+      ],
+      "hint": "Place uses estar.",
+      "why": "El aeropuerto está lejos."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Preferences",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Liking things",
+      "b": "Use me gusta with one thing and me gustan with many things. Me gusta el cine means I like cinema. Me gustan los libros means I like books. Say no me gusta for I don't like."
+     },
+     {
+      "h": "Giving your opinion",
+      "b": "Say creo que or pienso que to mean I think that. Say estoy de acuerdo for I agree and no estoy de acuerdo for I disagree."
+     },
+     {
+      "h": "Preferring and explaining",
+      "b": "Prefiero means I prefer. Porque means because, and más que means more than. Prefiero el té al café means I prefer tea to coffee."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence means 'I like the books'?",
+      "o": [
+       "Me gusta los libros",
+       "Me gustan los libros",
+       "Me gusto los libros",
+       "Gusto los libros"
+      ],
+      "a": 1,
+      "why": "Books are plural, so use me gustan."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Estoy de acuerdo' mean?",
+      "o": [
+       "I'm tired",
+       "I'm in a hurry",
+       "I agree",
+       "I disagree"
+      ],
+      "a": 2,
+      "why": "Estoy de acuerdo means I agree."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I think that it is good'?",
+      "o": [
+       "Creo que es bueno",
+       "Creo es bueno que",
+       "Pienso de bueno",
+       "Soy bueno que"
+      ],
+      "a": 0,
+      "why": "Creo que + a sentence means 'I think that...'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Prefiero el té al café' express?",
+      "o": [
+       "A dislike of tea",
+       "A wish to buy tea",
+       "A question about coffee",
+       "A preference for tea over coffee"
+      ],
+      "a": 3,
+      "why": "Prefiero means 'I prefer'."
+     },
+     {
+      "t": "tf",
+      "q": "'Porque' means 'because'.",
+      "a": true,
+      "why": "Porque (one word) introduces a reason."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "me gusta",
+        "I like"
+       ],
+       [
+        "no estoy de acuerdo",
+        "I disagree"
+       ],
+       [
+        "creo que",
+        "I think that"
+       ],
+       [
+        "prefiero",
+        "I prefer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I think that cinema is fun'",
+      "items": [
+       [
+        "Creo",
+        1
+       ],
+       [
+        "que",
+        2
+       ],
+       [
+        "el cine",
+        3
+       ],
+       [
+        "es divertido",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Me ___ los libros. (gustar)",
+      "a": [
+       "gustan"
+      ],
+      "hint": "The books are plural.",
+      "why": "Me gustan los libros."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I think that it is good' into Spanish.",
+      "a": [
+       "creo que es bueno",
+       "pienso que es bueno",
+       "creo que es bien"
+      ],
+      "hint": "Use creo que.",
+      "why": "Creo que es bueno."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I prefer tea' into Spanish.",
+      "a": [
+       "prefiero té",
+       "prefiero el té",
+       "yo prefiero el té",
+       "yo prefiero té"
+      ],
+      "hint": "Use prefiero.",
+      "why": "Prefiero el té."
+     }
+    ]
+   },
+   {
+    "title": "Plans and Routines",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Future plans with ir a",
+      "b": "Use ir a + a verb to talk about plans: voy a viajar means I am going to travel. Add words like mañana (tomorrow) or el próximo año (next year)."
+     },
+     {
+      "h": "Daily routine verbs",
+      "b": "Reflexive verbs use me: me levanto (I get up), me ducho (I shower) and me acuesto (I go to bed). Add the time with a la una or a las siete."
+     },
+     {
+      "h": "Past habits",
+      "b": "The imperfect tense talks about habits in the past. Jugaba means I used to play. Use words like siempre (always) and de niño (as a child)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Mañana ___ a viajar. (I'm going to travel)",
+      "o": [
+       "voy",
+       "fui",
+       "iba",
+       "soy"
+      ],
+      "a": 0,
+      "why": "Voy a + verb expresses a plan for the future."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Me levanto a las siete' mean?",
+      "o": [
+       "I go to bed at seven",
+       "I get up at seven",
+       "I eat at seven",
+       "I left at seven"
+      ],
+      "a": 1,
+      "why": "Me levanto means 'I get up'."
+     },
+     {
+      "t": "mc",
+      "q": "Which form means 'I used to play'?",
+      "o": [
+       "jugué",
+       "jugaré",
+       "jugaba",
+       "juego"
+      ],
+      "a": 2,
+      "why": "Jugaba is the imperfect form for past habits."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'el próximo año' mean?",
+      "o": [
+       "last year",
+       "this year",
+       "every year",
+       "next year"
+      ],
+      "a": 3,
+      "why": "Próximo means next."
+     },
+     {
+      "t": "tf",
+      "q": "'Me acuesto' means 'I wake up'.",
+      "a": false,
+      "why": "Me acuesto means I go to bed."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "me ducho",
+        "I shower"
+       ],
+       [
+        "me acuesto",
+        "I go to bed"
+       ],
+       [
+        "mañana",
+        "tomorrow"
+       ],
+       [
+        "siempre",
+        "always"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this morning routine in a logical order",
+      "items": [
+       [
+        "Me levanto",
+        1
+       ],
+       [
+        "Me ducho",
+        2
+       ],
+       [
+        "Desayuno",
+        3
+       ],
+       [
+        "Voy a la escuela",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I am going to travel' into Spanish.",
+      "a": [
+       "voy a viajar",
+       "yo voy a viajar"
+      ],
+      "hint": "Use ir a + verb.",
+      "why": "Voy a viajar."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Nosotros ___ a comer. (ir)",
+      "a": [
+       "vamos"
+      ],
+      "hint": "Nosotros form of ir.",
+      "why": "Vamos a comer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Yo ___ a las siete. (levantarse)",
+      "a": [
+       "me levanto"
+      ],
+      "hint": "Reflexive: me + verb.",
+      "why": "Me levanto = I get up."
+     }
+    ]
+   },
+   {
+    "title": "The Imperfect",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Imperfect endings",
+      "b": "The imperfect has easy endings. For -ar verbs: -aba, -abas, -aba, -ábamos, -aban (jugaba). For -er and -ir verbs: -ía, -ías, -ía, -íamos, -ían (comía, vivía)."
+     },
+     {
+      "h": "Three irregular verbs",
+      "b": "Only three verbs are irregular. Ser: era, eras, era, éramos, eran. Ir: iba, ibas, iba, íbamos, iban. Ver: veía, veías, veía, veíamos, veían."
+     },
+     {
+      "h": "When to use it",
+      "b": "Use the imperfect for habits, descriptions and background in the past: Cuando era niño, jugaba cada día. Use the preterite for a single finished event: Ayer jugué al fútbol."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Cuando era niña, yo ___ en el parque. (jugar)",
+      "o": [
+       "jugaba",
+       "jugué",
+       "juego",
+       "jugaré"
+      ],
+      "a": 0,
+      "why": "A repeated past habit uses the imperfect."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the imperfect of 'comer' for ellos?",
+      "o": [
+       "comieron",
+       "comían",
+       "comen",
+       "comerán"
+      ],
+      "a": 1,
+      "why": "-ían is the ellos ending for -er verbs."
+     },
+     {
+      "t": "mc",
+      "q": "What is the imperfect of 'ir' for yo?",
+      "o": [
+       "fui",
+       "voy",
+       "iba",
+       "iría"
+      ],
+      "a": 2,
+      "why": "Ir has the imperfect iba."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence describes a habit in the past?",
+      "o": [
+       "Ayer fuimos a la playa",
+       "Mañana vamos a la playa",
+       "Voy a la playa ahora",
+       "Todos los veranos íbamos a la playa"
+      ],
+      "a": 3,
+      "why": "Todos los veranos shows a repeated habit."
+     },
+     {
+      "t": "tf",
+      "q": "The imperfect is used for a single finished action.",
+      "a": false,
+      "why": "A single finished action uses the preterite."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "era",
+        "I was"
+       ],
+       [
+        "tenía",
+        "I had"
+       ],
+       [
+        "vivían",
+        "they lived"
+       ],
+       [
+        "hablábamos",
+        "we used to speak"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'When I was little I used to play'",
+      "items": [
+       [
+        "Cuando",
+        1
+       ],
+       [
+        "era",
+        2
+       ],
+       [
+        "pequeño",
+        3
+       ],
+       [
+        "jugaba",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Yo ___ (vivir) en Roma de niño.",
+      "a": [
+       "vivía"
+      ],
+      "hint": "Yo form of -ir verbs ends in -ía.",
+      "why": "Vivía = I used to live."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete with ser: Nosotros ___ amigos.",
+      "a": [
+       "éramos",
+       "eramos"
+      ],
+      "hint": "Imperfect of ser, nosotros.",
+      "why": "Éramos = we were."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'She used to read every night' into Spanish.",
+      "a": [
+       "leía todas las noches",
+       "ella leía todas las noches",
+       "leía cada noche",
+       "ella leía cada noche"
+      ],
+      "hint": "Use the imperfect of leer.",
+      "why": "Leía todas las noches."
+     }
+    ]
+   },
+   {
+    "title": "Irregular Past and Present Perfect",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Irregular preterite",
+      "b": "Some verbs change stem in the preterite: tener becomes tuve, hacer becomes hice, decir becomes dije, venir becomes vine, poder becomes pude. The endings are -e, -iste, -o, -imos, -isteis, -ieron, with no accents."
+     },
+     {
+      "h": "Special forms",
+      "b": "Hacer has hizo for él or ella. Verbs with j in the stem, like decir and traer, use -eron: dijeron, trajeron. Estar becomes estuve and poner becomes puse."
+     },
+     {
+      "h": "The present perfect",
+      "b": "Use he, has, ha, hemos, habéis, han + a past participle: he comido (I have eaten). Participles end in -ado or -ido. Some are irregular: hecho, dicho, visto, escrito, puesto, abierto."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the preterite of 'tener' for yo?",
+      "o": [
+       "tenía",
+       "tuve",
+       "tengo",
+       "tendré"
+      ],
+      "a": 1,
+      "why": "Tener becomes tuve in the preterite."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ayer ella ___ la tarea. (hacer)",
+      "o": [
+       "hace",
+       "hacía",
+       "hizo",
+       "hecho"
+      ],
+      "a": 2,
+      "why": "Hacer has hizo for ella in the preterite."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Yo ___ comido paella.",
+      "o": [
+       "has",
+       "ha",
+       "hay",
+       "he"
+      ],
+      "a": 3,
+      "why": "Yo goes with he + participle."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past participle of 'escribir'?",
+      "o": [
+       "escrito",
+       "escribido",
+       "escribiendo",
+       "escribí"
+      ],
+      "a": 0,
+      "why": "Escribir has the irregular participle escrito."
+     },
+     {
+      "t": "tf",
+      "q": "The past participle of 'ver' is 'visto'.",
+      "a": true,
+      "why": "Visto is irregular."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "tuve",
+        "I had"
+       ],
+       [
+        "hizo",
+        "he did"
+       ],
+       [
+        "dijimos",
+        "we said"
+       ],
+       [
+        "vinieron",
+        "they came"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I have already eaten'",
+      "items": [
+       [
+        "Yo",
+        1
+       ],
+       [
+        "ya",
+        2
+       ],
+       [
+        "he",
+        3
+       ],
+       [
+        "comido",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Ayer yo no ___ (poder) venir.",
+      "a": [
+       "pude"
+      ],
+      "hint": "Preterite of poder, yo.",
+      "why": "Pude = I could (and did)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the past participle of 'hacer'.",
+      "a": [
+       "hecho"
+      ],
+      "hint": "It is irregular.",
+      "why": "Hecho."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I have seen the film' into Spanish.",
+      "a": [
+       "he visto la película",
+       "yo he visto la película",
+       "he visto la pelicula"
+      ],
+      "hint": "Use he + visto.",
+      "why": "He visto la película."
+     }
+    ]
+   },
+   {
+    "title": "Comparisons",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "More, less and as",
+      "b": "To compare, use más + adjective + que (more than), menos + adjective + que (less than) and tan + adjective + como (as ... as). Ana es más alta que Luis. Luis es tan simpático como Ana."
+     },
+     {
+      "h": "Irregular comparisons",
+      "b": "Four adjectives are irregular: bueno becomes mejor (better), malo becomes peor (worse), grande can become mayor (older) and pequeño can become menor (younger). Do not say más mejor."
+     },
+     {
+      "h": "Superlatives and amounts",
+      "b": "For the most or the least, use el/la/los/las más + adjective: la más alta de la clase. Use el mejor for the best. Use tanto/tanta/tantos/tantas ... como for amounts: Tengo tantos libros como tú."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence means 'Ana is taller than Luis'?",
+      "o": [
+       "Ana es más alta como Luis",
+       "Ana es tan alta que Luis",
+       "Ana es más alta que Luis",
+       "Ana es alta más que Luis"
+      ],
+      "a": 2,
+      "why": "Use más + adjective + que."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'mejor' mean?",
+      "o": [
+       "worse",
+       "older",
+       "younger",
+       "better"
+      ],
+      "a": 3,
+      "why": "Mejor is the comparative of bueno."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'as tall as'?",
+      "o": [
+       "tan alto como",
+       "más alto que",
+       "tanto alto como",
+       "tan alto que"
+      ],
+      "a": 0,
+      "why": "Equal comparisons use tan ... como."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'He is the best student in the class'?",
+      "o": [
+       "Es el más mejor estudiante de la clase",
+       "Es el mejor estudiante de la clase",
+       "Es el tan bueno estudiante de la clase",
+       "Es el muy bueno estudiante de la clase"
+      ],
+      "a": 1,
+      "why": "Use el mejor, never más mejor."
+     },
+     {
+      "t": "tf",
+      "q": "'Menor' can mean 'younger'.",
+      "a": true,
+      "why": "Menor is used for younger, and mayor for older."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "mayor",
+        "older"
+       ],
+       [
+        "peor",
+        "worse"
+       ],
+       [
+        "tan ... como",
+        "as ... as"
+       ],
+       [
+        "menos ... que",
+        "less ... than"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'My house is bigger than yours'",
+      "items": [
+       [
+        "Mi casa",
+        1
+       ],
+       [
+        "es",
+        2
+       ],
+       [
+        "más grande",
+        3
+       ],
+       [
+        "que la tuya",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'worse' in Spanish.",
+      "a": [
+       "peor"
+      ],
+      "hint": "It is irregular.",
+      "why": "Peor = worse."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Mi hermano es ___ alto que yo. (taller)",
+      "a": [
+       "más",
+       "mas"
+      ],
+      "hint": "Use the word for more.",
+      "why": "Más alto que = taller than."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'She is as intelligent as him' into Spanish.",
+      "a": [
+       "ella es tan inteligente como él",
+       "es tan inteligente como él",
+       "ella es tan inteligente como el",
+       "es tan inteligente como el"
+      ],
+      "hint": "Use tan ... como.",
+      "why": "Es tan inteligente como él."
+     }
+    ]
+   },
+   {
+    "title": "Object Pronouns",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Direct object pronouns",
+      "b": "These replace the thing or person: me, te, lo, la, nos, os, los, las. Yo leo el libro becomes Yo lo leo. Compro las manzanas becomes Las compro. They go before the verb."
+     },
+     {
+      "h": "With two verbs",
+      "b": "With an infinitive, put the pronoun before the first verb or attach it to the infinitive: Lo quiero ver or Quiero verlo (I want to see it)."
+     },
+     {
+      "h": "Indirect objects and se lo",
+      "b": "Indirect pronouns say to or for whom: me, te, le, nos, os, les. Le doy un regalo means I give her a gift. With lo or la after le or les, use se: Se lo doy (I give it to him)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Replace 'el libro': Yo leo el libro. Yo ___ leo.",
+      "o": [
+       "la",
+       "le",
+       "los",
+       "lo"
+      ],
+      "a": 3,
+      "why": "El libro is masculine singular, so lo."
+     },
+     {
+      "t": "mc",
+      "q": "Replace 'las manzanas': Compro las manzanas.",
+      "o": [
+       "Las compro",
+       "Lo compro",
+       "Los compro",
+       "Les compro"
+      ],
+      "a": 0,
+      "why": "Las manzanas is feminine plural, so las."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: ___ doy un regalo a Ana. (I give Ana a gift)",
+      "o": [
+       "Lo",
+       "Le",
+       "La",
+       "Les"
+      ],
+      "a": 1,
+      "why": "Le is the indirect pronoun for one person."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'I want to see it' (el museo)?",
+      "o": [
+       "Quiero verla",
+       "Quiero ver lo",
+       "Quiero verlo",
+       "Quiero verles"
+      ],
+      "a": 2,
+      "why": "Attach lo to the infinitive."
+     },
+     {
+      "t": "tf",
+      "q": "'Se lo doy' replaces 'Le lo doy'.",
+      "a": true,
+      "why": "Le or les becomes se before lo, la, los or las."
+     },
+     {
+      "t": "match",
+      "q": "Match each pronoun to its meaning",
+      "pairs": [
+       [
+        "lo",
+        "him or it (m.)"
+       ],
+       [
+        "la",
+        "her or it (f.)"
+       ],
+       [
+        "les",
+        "to them"
+       ],
+       [
+        "nos",
+        "us"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I give it to you'",
+      "items": [
+       [
+        "Yo",
+        1
+       ],
+       [
+        "te",
+        2
+       ],
+       [
+        "lo",
+        3
+       ],
+       [
+        "doy",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: replace the noun: Compro la camisa. ___ compro.",
+      "a": [
+       "la"
+      ],
+      "hint": "Camisa is feminine singular.",
+      "why": "La compro."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I see you' (informal) into Spanish.",
+      "a": [
+       "te veo"
+      ],
+      "hint": "Use te before the verb.",
+      "why": "Te veo."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: replace both nouns: Doy el libro a Ana. ___ ___ doy.",
+      "a": [
+       "se lo"
+      ],
+      "hint": "Le + lo becomes se lo.",
+      "why": "Se lo doy."
+     }
+    ]
+   },
+   {
+    "title": "Future and Conditional",
+    "period": "B1",
+    "learn": [
+     {
+      "h": "The future tense",
+      "b": "Add -é, -ás, -á, -emos, -éis, -án to the whole infinitive: hablaré, comerás, viviremos. Mañana viajaré a Roma means Tomorrow I will travel to Rome."
+     },
+     {
+      "h": "Irregular stems",
+      "b": "Some verbs change the stem but keep the same endings: tener becomes tendr-, hacer har-, decir dir-, poder podr-, venir vendr-, salir saldr-, querer querr-, saber sabr-. Tendré means I will have."
+     },
+     {
+      "h": "The conditional",
+      "b": "For would, add -ía, -ías, -ía, -íamos, -ían to the same stem: hablaría, comería, tendría. Use it for polite requests and imagined situations: Me gustaría un café. Yo viajaría por el mundo."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the future of 'hablar' for yo?",
+      "o": [
+       "hablaré",
+       "hablaría",
+       "hablo",
+       "hablé"
+      ],
+      "a": 0,
+      "why": "Future: infinitive + é."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: El próximo año ellos ___ en Madrid. (vivir)",
+      "o": [
+       "vivían",
+       "vivirán",
+       "vivieron",
+       "vivirían"
+      ],
+      "a": 1,
+      "why": "Future ellos: infinitive + án."
+     },
+     {
+      "t": "mc",
+      "q": "What is the future of 'tener' for él?",
+      "o": [
+       "tenerá",
+       "tendría",
+       "tendrá",
+       "tuvo"
+      ],
+      "a": 2,
+      "why": "Tener has the stem tendr-."
+     },
+     {
+      "t": "mc",
+      "q": "How do you politely say 'I would like a coffee'?",
+      "o": [
+       "Me gustará un café",
+       "Me gustaba un café",
+       "Me gustó un café",
+       "Me gustaría un café"
+      ],
+      "a": 3,
+      "why": "Gustaría is the conditional."
+     },
+     {
+      "t": "tf",
+      "q": "The future tense of 'hacer' is 'haré'.",
+      "a": true,
+      "why": "Hacer uses the stem har-."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "haré",
+        "I will do"
+       ],
+       [
+        "saldrán",
+        "they will leave"
+       ],
+       [
+        "querría",
+        "I would want"
+       ],
+       [
+        "podríamos",
+        "we could"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Tomorrow I will travel to Rome'",
+      "items": [
+       [
+        "Mañana",
+        1
+       ],
+       [
+        "viajaré",
+        2
+       ],
+       [
+        "a",
+        3
+       ],
+       [
+        "Roma",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Yo ___ (comer) pasta mañana.",
+      "a": [
+       "comeré",
+       "comere"
+      ],
+      "hint": "Infinitive + é.",
+      "why": "Comeré = I will eat."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'we will have' in Spanish (tener).",
+      "a": [
+       "tendremos",
+       "nosotros tendremos"
+      ],
+      "hint": "Stem tendr- + emos.",
+      "why": "Tendremos."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete in the conditional: Yo ___ (viajar) por el mundo.",
+      "a": [
+       "viajaría",
+       "viajaria"
+      ],
+      "hint": "Infinitive + ía.",
+      "why": "Viajaría = I would travel."
+     }
+    ]
+   },
+   {
+    "title": "Commands and the Subjunctive",
+    "period": "B1",
+    "learn": [
+     {
+      "h": "Commands with tú",
+      "b": "For a positive tú command, use the él form: habla (speak), come (eat), escribe (write). Eight verbs are irregular: ven, di, haz, ve, pon, sal, sé, ten. Ven aquí means Come here."
+     },
+     {
+      "h": "Negative commands",
+      "b": "For a negative tú command, use no + the subjunctive form: no hables, no comas, no vengas. No comas tan rápido means Don't eat so fast."
+     },
+     {
+      "h": "The present subjunctive",
+      "b": "Take the yo form, drop -o and add the opposite vowel: -ar verbs use -e, -es, -e, -emos, -en; -er and -ir verbs use -a, -as, -a, -amos, -an. Use it after quiero que, espero que and es importante que: Quiero que hables."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'Speak!' (tú)?",
+      "o": [
+       "Hablas",
+       "Habla",
+       "Hables",
+       "Hablar"
+      ],
+      "a": 1,
+      "why": "The positive tú command uses the él form."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'Don't eat!' (tú)?",
+      "o": [
+       "No come",
+       "No comes",
+       "No comas",
+       "No comer"
+      ],
+      "a": 2,
+      "why": "Negative commands use the subjunctive."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'Come here!' (tú, venir)?",
+      "o": [
+       "Vienes",
+       "Viene",
+       "Venir",
+       "Ven"
+      ],
+      "a": 3,
+      "why": "Ven is an irregular tú command."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Quiero que tú ___ español. (hablar)",
+      "o": [
+       "hables",
+       "hablas",
+       "hablar",
+       "hablaste"
+      ],
+      "a": 0,
+      "why": "Quiero que is followed by the subjunctive."
+     },
+     {
+      "t": "tf",
+      "q": "After 'quiero que', Spanish uses the present subjunctive.",
+      "a": true,
+      "why": "Wishes about other people trigger the subjunctive."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its meaning",
+      "pairs": [
+       [
+        "haz",
+        "do (tú)"
+       ],
+       [
+        "ten",
+        "have (tú)"
+       ],
+       [
+        "no digas",
+        "don't say"
+       ],
+       [
+        "sal",
+        "go out (tú)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I want you to eat'",
+      "items": [
+       [
+        "Quiero",
+        1
+       ],
+       [
+        "que",
+        2
+       ],
+       [
+        "tú",
+        3
+       ],
+       [
+        "comas",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: give the tú command of 'comer'.",
+      "a": [
+       "come"
+      ],
+      "hint": "Use the él form.",
+      "why": "Come = eat!"
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: No ___ (hablar) tan rápido.",
+      "a": [
+       "hables"
+      ],
+      "hint": "Negative tú command uses the subjunctive.",
+      "why": "No hables = don't speak."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Quiero que ellos ___ (venir).",
+      "a": [
+       "vengan"
+      ],
+      "hint": "Yo form is vengo, so the stem is veng-.",
+      "why": "Quiero que ellos vengan."
+     }
+    ]
+   }
+  ]
+ },
+ "fr-1": {
+  "name": "French · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "Say Bonjour for hello or good day, and Salut for a casual hi. Use Bonsoir in the evening and Bonne nuit before bed. To say goodbye, use Au revoir."
+     },
+     {
+      "h": "Your name and feelings",
+      "b": "Say Je m'appelle and your name: Je m'appelle Léa means My name is Léa. Ask Comment ça va ? to say How are you? and answer Ça va bien."
+     },
+     {
+      "h": "Polite words",
+      "b": "Merci means thank you and De rien means you're welcome. S'il vous plaît means please. It is the polite form you use with adults or strangers."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'good evening' in French?",
+      "o": [
+       "Bonjour",
+       "Bonsoir",
+       "Bonne nuit",
+       "Salut"
+      ],
+      "a": 1,
+      "why": "Bonsoir is used to greet people in the evening."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Je m'appelle Léa' mean?",
+      "o": [
+       "I like Léa",
+       "I live with Léa",
+       "I love Léa",
+       "My name is Léa"
+      ],
+      "a": 3,
+      "why": "Je m'appelle means 'my name is'."
+     },
+     {
+      "t": "mc",
+      "q": "Which phrase means 'please' (polite)?",
+      "o": [
+       "Merci",
+       "Pardon",
+       "S'il vous plaît",
+       "De rien"
+      ],
+      "a": 2,
+      "why": "S'il vous plaît is the polite way to say please."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Comment ça va ?' ask?",
+      "o": [
+       "What is your name?",
+       "How are you?",
+       "Where are you from?",
+       "How old are you?"
+      ],
+      "a": 1,
+      "why": "Comment ça va ? means 'How are you?'."
+     },
+     {
+      "t": "tf",
+      "q": "'Au revoir' means 'hello'.",
+      "a": false,
+      "why": "Au revoir means goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each French phrase to its meaning",
+      "pairs": [
+       [
+        "Bonjour",
+        "Hello"
+       ],
+       [
+        "Merci",
+        "Thank you"
+       ],
+       [
+        "Au revoir",
+        "Goodbye"
+       ],
+       [
+        "De rien",
+        "You're welcome"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Hello, my name is Paul'",
+      "items": [
+       [
+        "Bonjour",
+        1
+       ],
+       [
+        "je",
+        2
+       ],
+       [
+        "m'appelle",
+        3
+       ],
+       [
+        "Paul",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'thank you' in French.",
+      "a": [
+       "merci",
+       "merci beaucoup"
+      ],
+      "hint": "One word starting with m.",
+      "why": "Merci means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how do you say 'My name is Paul'?",
+      "a": [
+       "je m'appelle paul",
+       "je mappelle paul"
+      ],
+      "hint": "Use Je m'appelle + name.",
+      "why": "Je m'appelle means 'my name is'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'Au revoir' into English.",
+      "a": [
+       "goodbye",
+       "bye",
+       "good bye"
+      ],
+      "hint": "You say it when you leave.",
+      "why": "Au revoir means goodbye."
+     }
+    ]
+   },
+   {
+    "title": "Numbers, Colors and Food",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "Count like this: un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix. Use them for ages, prices and phone numbers."
+     },
+     {
+      "h": "Colors",
+      "b": "Rouge is red, bleu is blue, vert is green and jaune is yellow. Colors usually come after the noun: la pomme rouge means the red apple."
+     },
+     {
+      "h": "Food and wishes",
+      "b": "Learn le pain (bread), l'eau (water), la pomme (apple) and le lait (milk). To ask politely, say Je voudrais. Je voudrais de l'eau means I would like some water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'sept' in English?",
+      "o": [
+       "Six",
+       "Seven",
+       "Eight",
+       "Ten"
+      ],
+      "a": 1,
+      "why": "Sept is the number seven."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'green'?",
+      "o": [
+       "Rouge",
+       "Bleu",
+       "Jaune",
+       "Vert"
+      ],
+      "a": 3,
+      "why": "Vert means green."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'la pomme' mean?",
+      "o": [
+       "The pear",
+       "The cheese",
+       "The apple",
+       "The milk"
+      ],
+      "a": 2,
+      "why": "La pomme is the apple."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I would like some water'?",
+      "o": [
+       "Je voudrais de l'eau",
+       "Je suis de l'eau",
+       "Je vais l'eau",
+       "Je fais de l'eau"
+      ],
+      "a": 0,
+      "why": "Je voudrais means 'I would like'."
+     },
+     {
+      "t": "tf",
+      "q": "'Le lait' means 'milk'.",
+      "a": true,
+      "why": "Le lait is milk."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its meaning",
+      "pairs": [
+       [
+        "un",
+        "one"
+       ],
+       [
+        "trois",
+        "three"
+       ],
+       [
+        "huit",
+        "eight"
+       ],
+       [
+        "dix",
+        "ten"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "un",
+        1
+       ],
+       [
+        "quatre",
+        2
+       ],
+       [
+        "six",
+        3
+       ],
+       [
+        "neuf",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the French word for the number 5.",
+      "a": [
+       "cinq"
+      ],
+      "hint": "It starts with c.",
+      "why": "5 is cinq."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the French word for the color blue.",
+      "a": [
+       "bleu"
+      ],
+      "hint": "It looks like the English word.",
+      "why": "Bleu means blue."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I would like some water' into French.",
+      "a": [
+       "je voudrais de l'eau",
+       "je voudrais de leau",
+       "je voudrais l'eau",
+       "je voudrais leau"
+      ],
+      "hint": "Start with Je voudrais.",
+      "why": "Je voudrais de l'eau."
+     }
+    ]
+   },
+   {
+    "title": "Family and Key Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Family words",
+      "b": "Learn la mère (mother), le père (father), le frère (brother) and la sœur (sister). Le goes with masculine words and la with feminine words."
+     },
+     {
+      "h": "The verb être (to be)",
+      "b": "Être has the forms je suis (I am), tu es (you are) and il est (he is). Je suis étudiant means I am a student."
+     },
+     {
+      "h": "The verb avoir (to have)",
+      "b": "Avoir has the forms j'ai (I have), tu as (you have) and il a (he has). J'ai un frère means I have a brother."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'la sœur' mean?",
+      "o": [
+       "The sister",
+       "The mother",
+       "The cousin",
+       "The daughter"
+      ],
+      "a": 0,
+      "why": "La sœur means the sister."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Je ___ étudiant. (I am a student)",
+      "o": [
+       "as",
+       "suis",
+       "est",
+       "ai"
+      ],
+      "a": 1,
+      "why": "Suis is the 'I' form of être (to be)."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a brother'?",
+      "o": [
+       "Je suis un frère",
+       "Tu as un frère",
+       "Il a un frère",
+       "J'ai un frère"
+      ],
+      "a": 3,
+      "why": "J'ai is the 'I' form of avoir (to have)."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Elle ___ deux chats. (She has two cats)",
+      "o": [
+       "ai",
+       "as",
+       "a",
+       "est"
+      ],
+      "a": 2,
+      "why": "A is the 'he or she' form of avoir."
+     },
+     {
+      "t": "tf",
+      "q": "'Le père' means 'the father'.",
+      "a": true,
+      "why": "Le père is the father."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "la mère",
+        "mother"
+       ],
+       [
+        "le grand-père",
+        "grandfather"
+       ],
+       [
+        "le fils",
+        "son"
+       ],
+       [
+        "la tante",
+        "aunt"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'My mother has two brothers'",
+      "items": [
+       [
+        "Ma mère",
+        1
+       ],
+       [
+        "a",
+        2
+       ],
+       [
+        "deux",
+        3
+       ],
+       [
+        "frères",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete with être: Je ___ français.",
+      "a": [
+       "suis"
+      ],
+      "hint": "Je form of être.",
+      "why": "Je suis = I am."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete with avoir: Tu ___ un frère.",
+      "a": [
+       "as"
+      ],
+      "hint": "Tu form of avoir.",
+      "why": "Tu as = you have."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the mother' into French.",
+      "a": [
+       "la mère",
+       "mère",
+       "la mere",
+       "mere"
+      ],
+      "hint": "Mother is feminine.",
+      "why": "La mère."
+     }
+    ]
+   },
+   {
+    "title": "Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Articles and plurals",
+      "b": "Use le or la for 'the' with one thing and les for many. Un and une mean 'a'. Most plurals add -s, which you do not pronounce: livre becomes livres."
+     },
+     {
+      "h": "Days of the week",
+      "b": "The days are lundi, mardi, mercredi, jeudi, vendredi, samedi and dimanche. In French they are written with a small first letter."
+     },
+     {
+      "h": "Asking where",
+      "b": "Use Où est...? to ask where something is. Où est l'école ? means Where is the school? La maison (house) and l'école (school) are both feminine."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which article goes with 'maison' (house)?",
+      "o": [
+       "le",
+       "la",
+       "les",
+       "un"
+      ],
+      "a": 1,
+      "why": "Maison is feminine, so it uses la."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'livre'?",
+      "o": [
+       "livre",
+       "livrent",
+       "livres",
+       "les"
+      ],
+      "a": 2,
+      "why": "Most plurals add -s: livres."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'mercredi' mean?",
+      "o": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday"
+      ],
+      "a": 2,
+      "why": "Mercredi is Wednesday."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Où est l'école ?' ask?",
+      "o": [
+       "What is the school?",
+       "Who is at school?",
+       "When is school?",
+       "Where is the school?"
+      ],
+      "a": 3,
+      "why": "Où means 'where'."
+     },
+     {
+      "t": "tf",
+      "q": "'Samedi' means Sunday.",
+      "a": false,
+      "why": "Samedi is Saturday; Sunday is dimanche."
+     },
+     {
+      "t": "match",
+      "q": "Match each day to its meaning",
+      "pairs": [
+       [
+        "lundi",
+        "Monday"
+       ],
+       [
+        "vendredi",
+        "Friday"
+       ],
+       [
+        "dimanche",
+        "Sunday"
+       ],
+       [
+        "jeudi",
+        "Thursday"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order, starting from Monday",
+      "items": [
+       [
+        "lundi",
+        1
+       ],
+       [
+        "mardi",
+        2
+       ],
+       [
+        "jeudi",
+        3
+       ],
+       [
+        "samedi",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'Monday' in French.",
+      "a": [
+       "lundi"
+      ],
+      "hint": "It starts with l.",
+      "why": "Lundi is Monday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the plural article: ___ livres (the books).",
+      "a": [
+       "les"
+      ],
+      "hint": "One word, plural for both genders.",
+      "why": "Les livres."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'Where is the school?' into French.",
+      "a": [
+       "où est l'école",
+       "ou est l'ecole",
+       "où est l'ecole",
+       "ou est ecole"
+      ],
+      "hint": "Start with Où est...",
+      "why": "Où est l'école ?"
+     }
+    ]
+   },
+   {
+    "title": "Adjectives",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Adjectives match the noun",
+      "b": "In French, adjectives change with the noun. For feminine, add -e: petit becomes petite. For plural, add -s: petits, petites. Un garçon grand, une fille grande, des filles grandes."
+     },
+     {
+      "h": "Where adjectives go",
+      "b": "Most adjectives come after the noun: une voiture rouge (a red car). A few short common ones come before: petit, grand, bon, beau, jeune, vieux, nouveau, joli. Say un petit chat, une grande maison."
+     },
+     {
+      "h": "Irregular feminine forms",
+      "b": "Some adjectives change more: beau becomes belle, nouveau becomes nouvelle, blanc becomes blanche, heureux becomes heureuse. Adjectives ending in -e, like rouge, stay the same."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which phrase means 'a small cat'?",
+      "o": [
+       "un petit chat",
+       "un chat petit",
+       "une petit chat",
+       "un chat petite"
+      ],
+      "a": 0,
+      "why": "Petit comes before the noun."
+     },
+     {
+      "t": "mc",
+      "q": "What is the feminine singular of 'grand'?",
+      "o": [
+       "granda",
+       "grande",
+       "grandes",
+       "grand"
+      ],
+      "a": 1,
+      "why": "Add -e for feminine."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: une maison ___ (white)",
+      "o": [
+       "blanc",
+       "blancs",
+       "blanche",
+       "blanches"
+      ],
+      "a": 2,
+      "why": "Blanc becomes blanche for feminine singular."
+     },
+     {
+      "t": "mc",
+      "q": "Which adjective usually comes AFTER the noun?",
+      "o": [
+       "petit",
+       "grand",
+       "beau",
+       "rouge"
+      ],
+      "a": 3,
+      "why": "Colors come after the noun."
+     },
+     {
+      "t": "tf",
+      "q": "In French, adjectives never change with the noun.",
+      "a": false,
+      "why": "They agree in gender and number."
+     },
+     {
+      "t": "match",
+      "q": "Match each adjective to its meaning",
+      "pairs": [
+       [
+        "beau",
+        "handsome (m.)"
+       ],
+       [
+        "belle",
+        "beautiful (f.)"
+       ],
+       [
+        "vieux",
+        "old (m.)"
+       ],
+       [
+        "nouveau",
+        "new (m.)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I have a red car'",
+      "items": [
+       [
+        "J'ai",
+        1
+       ],
+       [
+        "une",
+        2
+       ],
+       [
+        "voiture",
+        3
+       ],
+       [
+        "rouge",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'a big house' into French.",
+      "a": [
+       "une grande maison",
+       "grande maison"
+      ],
+      "hint": "Grand comes before the noun and agrees.",
+      "why": "Une grande maison."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Les filles sont ___ (petit).",
+      "a": [
+       "petites"
+      ],
+      "hint": "Feminine plural: add -e and -s.",
+      "why": "Petites."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the new book' into French.",
+      "a": [
+       "le nouveau livre",
+       "nouveau livre"
+      ],
+      "hint": "Nouveau comes before the noun.",
+      "why": "Le nouveau livre."
+     }
+    ]
+   },
+   {
+    "title": "Regular Present Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Verbs ending in -er",
+      "b": "Drop -er and add: -e, -es, -e, -ons, -ez, -ent. Parler gives je parle, tu parles, il parle, nous parlons, vous parlez, ils parlent. Before a vowel, je becomes j': j'aime, j'habite."
+     },
+     {
+      "h": "Verbs ending in -ir and -re",
+      "b": "Regular -ir verbs like finir use -is, -is, -it, -issons, -issez, -issent: je finis, nous finissons. Regular -re verbs like vendre use -s, -s, nothing, -ons, -ez, -ent: je vends, il vend."
+     },
+     {
+      "h": "Useful verbs",
+      "b": "Learn aimer (to like), habiter (to live), travailler (to work), manger (to eat), choisir (to choose) and attendre (to wait). For manger, nous writes mangeons, with an e."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Nous ___ français. (parler)",
+      "o": [
+       "parlez",
+       "parlons",
+       "parlent",
+       "parle"
+      ],
+      "a": 1,
+      "why": "Nous ends in -ons."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Tu ___ tôt ? (finir)",
+      "o": [
+       "finit",
+       "finissons",
+       "finis",
+       "finir"
+      ],
+      "a": 2,
+      "why": "Tu takes -is for -ir verbs."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ils ___ le bus. (attendre)",
+      "o": [
+       "attend",
+       "attendons",
+       "attendez",
+       "attendent"
+      ],
+      "a": 3,
+      "why": "Ils ends in -ent."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I live in Paris'?",
+      "o": [
+       "J'habite à Paris",
+       "Je habite à Paris",
+       "J'habites à Paris",
+       "Nous habite à Paris"
+      ],
+      "a": 0,
+      "why": "Je becomes j' before a vowel sound."
+     },
+     {
+      "t": "tf",
+      "q": "'Elle vend' means 'she sells'.",
+      "a": true,
+      "why": "Vendre is a regular -re verb."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb form to its meaning",
+      "pairs": [
+       [
+        "je parle",
+        "I speak"
+       ],
+       [
+        "tu finis",
+        "you finish"
+       ],
+       [
+        "il vend",
+        "he sells"
+       ],
+       [
+        "nous mangeons",
+        "we eat"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'She lives in Lyon'",
+      "items": [
+       [
+        "Elle",
+        1
+       ],
+       [
+        "habite",
+        2
+       ],
+       [
+        "à",
+        3
+       ],
+       [
+        "Lyon",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Vous ___ (parler) anglais.",
+      "a": [
+       "parlez"
+      ],
+      "hint": "Vous ends in -ez.",
+      "why": "Vous parlez."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Tu ___ (choisir) un gâteau.",
+      "a": [
+       "choisis"
+      ],
+      "hint": "Tu form of an -ir verb.",
+      "why": "Tu choisis."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'We sell books' into French.",
+      "a": [
+       "nous vendons des livres",
+       "on vend des livres"
+      ],
+      "hint": "Use vendre with nous.",
+      "why": "Nous vendons des livres."
+     }
+    ]
+   },
+   {
+    "title": "Negation and Questions",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Saying no",
+      "b": "Put ne ... pas around the verb: Je ne parle pas anglais. Before a vowel, ne becomes n': Je n'aime pas le poisson. After a negative, un, une and des become de: Je n'ai pas de frère."
+     },
+     {
+      "h": "Yes/no questions",
+      "b": "There are three ways. Raise your voice: Tu parles français ? Add est-ce que: Est-ce que tu parles français ? Or flip the verb and pronoun: Parles-tu français ? The second one is the easiest."
+     },
+     {
+      "h": "Question words",
+      "b": "Learn où (where), quand (when), pourquoi (why), comment (how), qui (who), combien (how much) and qu'est-ce que (what). Où habites-tu ? means Where do you live?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I don't speak English'?",
+      "o": [
+       "Je parle ne pas anglais",
+       "Je ne pas parle anglais",
+       "Je ne parle pas anglais",
+       "Je parle pas ne anglais"
+      ],
+      "a": 2,
+      "why": "Ne goes before the verb and pas after it."
+     },
+     {
+      "t": "mc",
+      "q": "Which phrase starts a yes/no question?",
+      "o": [
+       "Parce que",
+       "Peut-être",
+       "Ne ... pas",
+       "Est-ce que"
+      ],
+      "a": 3,
+      "why": "Est-ce que turns a statement into a question."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Je n'ai pas ___ frère.",
+      "o": [
+       "de",
+       "un",
+       "des",
+       "le"
+      ],
+      "a": 0,
+      "why": "After a negative, un becomes de."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'pourquoi' mean?",
+      "o": [
+       "where",
+       "why",
+       "when",
+       "how"
+      ],
+      "a": 1,
+      "why": "Pourquoi means why."
+     },
+     {
+      "t": "tf",
+      "q": "'Où' asks about a place.",
+      "a": true,
+      "why": "Où means where."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "où",
+        "where"
+       ],
+       [
+        "quand",
+        "when"
+       ],
+       [
+        "comment",
+        "how"
+       ],
+       [
+        "combien",
+        "how much"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Do you speak French?'",
+      "items": [
+       [
+        "Est-ce que",
+        1
+       ],
+       [
+        "tu",
+        2
+       ],
+       [
+        "parles",
+        3
+       ],
+       [
+        "français",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I don't like fish' into French.",
+      "a": [
+       "je n'aime pas le poisson",
+       "je naime pas le poisson"
+      ],
+      "hint": "Use ne ... pas around aime.",
+      "why": "Je n'aime pas le poisson."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'why' in French.",
+      "a": [
+       "pourquoi"
+      ],
+      "hint": "One word starting with pour.",
+      "why": "Pourquoi."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Je n'ai pas ___ chat. (a)",
+      "a": [
+       "de",
+       "d'"
+      ],
+      "hint": "After a negative, un becomes de.",
+      "why": "Je n'ai pas de chat."
+     }
+    ]
+   },
+   {
+    "title": "Aller, Faire and Places",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "The verb aller",
+      "b": "Aller means to go: je vais, tu vas, il va, nous allons, vous allez, ils vont. Say aller à + place: Je vais à l'école. Remember à + le = au and à + les = aux: Je vais au parc."
+     },
+     {
+      "h": "The verb faire",
+      "b": "Faire means to do or to make: je fais, tu fais, il fait, nous faisons, vous faites, ils font. Use it for activities: faire du sport, faire la cuisine, faire des courses (to go shopping)."
+     },
+     {
+      "h": "Places in town",
+      "b": "Learn la banque (bank), le marché (market), la gare (station), la bibliothèque (library), le parc (park) and la ville (city). Use à for cities (à Paris), en for feminine countries (en France) and au for masculine ones (au Canada)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Nous ___ au marché. (aller)",
+      "o": [
+       "allez",
+       "vont",
+       "vais",
+       "allons"
+      ],
+      "a": 3,
+      "why": "Nous goes with allons."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Je vais ___ parc.",
+      "o": [
+       "au",
+       "à le",
+       "à la",
+       "aux"
+      ],
+      "a": 0,
+      "why": "À + le becomes au."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Vous ___ du sport. (faire)",
+      "o": [
+       "faisons",
+       "faites",
+       "font",
+       "fais"
+      ],
+      "a": 1,
+      "why": "Vous goes with faites."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'She goes to the library'?",
+      "o": [
+       "Elle va au bibliothèque",
+       "Elle allez à la bibliothèque",
+       "Elle va à la bibliothèque",
+       "Elle vais à la bibliothèque"
+      ],
+      "a": 2,
+      "why": "Elle uses va, and bibliothèque is feminine."
+     },
+     {
+      "t": "tf",
+      "q": "'À + les' becomes 'aux'.",
+      "a": true,
+      "why": "Je parle aux amis."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb form to its meaning",
+      "pairs": [
+       [
+        "je vais",
+        "I go"
+       ],
+       [
+        "ils font",
+        "they do"
+       ],
+       [
+        "nous faisons",
+        "we do"
+       ],
+       [
+        "vous allez",
+        "you go"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I go to the market'",
+      "items": [
+       [
+        "Je",
+        1
+       ],
+       [
+        "vais",
+        2
+       ],
+       [
+        "au",
+        3
+       ],
+       [
+        "marché",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Tu ___ à l'école. (aller)",
+      "a": [
+       "vas"
+      ],
+      "hint": "Tu form of aller.",
+      "why": "Tu vas à l'école."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Ils ___ la cuisine. (faire)",
+      "a": [
+       "font"
+      ],
+      "hint": "Ils form of faire.",
+      "why": "Ils font la cuisine."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'We go to the park' into French.",
+      "a": [
+       "nous allons au parc",
+       "on va au parc"
+      ],
+      "hint": "À + le = au.",
+      "why": "Nous allons au parc."
+     }
+    ]
+   },
+   {
+    "title": "Time, Months and Seasons",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Telling the time",
+      "b": "Ask Quelle heure est-il ? Say Il est une heure for one o'clock and Il est trois heures for three o'clock. Add et quart (quarter past), et demie (half past) or moins le quart (quarter to). Midi is noon and minuit is midnight."
+     },
+     {
+      "h": "Months",
+      "b": "The months are janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre and décembre. They are not written with a capital letter."
+     },
+     {
+      "h": "Seasons and dates",
+      "b": "The seasons are le printemps, l'été, l'automne and l'hiver. Say au printemps, en été, en automne, en hiver. For dates, say C'est le cinq mai. For the first day, say le premier mai."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'It is three o'clock'?",
+      "o": [
+       "Il est trois heures",
+       "Il est trois heure",
+       "Je suis trois heures",
+       "Il a trois heures"
+      ],
+      "a": 0,
+      "why": "Use il est + number + heures."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'et demie' mean?",
+      "o": [
+       "quarter past",
+       "half past",
+       "quarter to",
+       "o'clock"
+      ],
+      "a": 1,
+      "why": "Demie means half."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'juin' mean?",
+      "o": [
+       "July",
+       "March",
+       "June",
+       "May"
+      ],
+      "a": 2,
+      "why": "Juin is June."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'l'hiver' mean?",
+      "o": [
+       "summer",
+       "autumn",
+       "spring",
+       "winter"
+      ],
+      "a": 3,
+      "why": "L'hiver is winter."
+     },
+     {
+      "t": "tf",
+      "q": "'Midi' means 'midnight'.",
+      "a": false,
+      "why": "Midi is noon. Midnight is minuit."
+     },
+     {
+      "t": "match",
+      "q": "Match each season to its meaning",
+      "pairs": [
+       [
+        "le printemps",
+        "spring"
+       ],
+       [
+        "l'été",
+        "summer"
+       ],
+       [
+        "l'automne",
+        "autumn"
+       ],
+       [
+        "l'hiver",
+        "winter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the months in order",
+      "items": [
+       [
+        "janvier",
+        1
+       ],
+       [
+        "février",
+        2
+       ],
+       [
+        "mars",
+        3
+       ],
+       [
+        "avril",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'July' in French.",
+      "a": [
+       "juillet"
+      ],
+      "hint": "It starts with juil.",
+      "why": "Juillet is July."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'It is two thirty' into French.",
+      "a": [
+       "il est deux heures et demie",
+       "il est deux heures trente"
+      ],
+      "hint": "Use et demie.",
+      "why": "Il est deux heures et demie."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'noon' in French.",
+      "a": [
+       "midi"
+      ],
+      "hint": "A four-letter word.",
+      "why": "Midi is noon."
+     }
+    ]
+   },
+   {
+    "title": "Home, Clothes and Weather",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Rooms in the house",
+      "b": "Learn la maison (house), la cuisine (kitchen), la chambre (bedroom), la salle de bains (bathroom), le salon (living room) and le jardin (garden). Use dans for in: Je suis dans la cuisine."
+     },
+     {
+      "h": "Clothes",
+      "b": "Learn la chemise (shirt), le pantalon (trousers), la robe (dress), les chaussures (shoes) and la veste (jacket). Use porter for to wear: Je porte une chemise bleue."
+     },
+     {
+      "h": "Weather",
+      "b": "Ask Quel temps fait-il ? Say Il fait beau (nice), Il fait chaud (hot) or Il fait froid (cold). For rain and snow use these verbs: Il pleut (it rains), Il neige (it snows)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'It is cold'?",
+      "o": [
+       "Il fait chaud",
+       "Il fait froid",
+       "Il pleut",
+       "Il neige"
+      ],
+      "a": 1,
+      "why": "Froid means cold."
+     },
+     {
+      "t": "mc",
+      "q": "What are 'les chaussures'?",
+      "o": [
+       "shirts",
+       "trousers",
+       "shoes",
+       "jackets"
+      ],
+      "a": 2,
+      "why": "Chaussures means shoes."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'la chambre'?",
+      "o": [
+       "the kitchen",
+       "the bathroom",
+       "the living room",
+       "the bedroom"
+      ],
+      "a": 3,
+      "why": "Chambre means bedroom."
+     },
+     {
+      "t": "mc",
+      "q": "Where do you usually cook?",
+      "o": [
+       "Dans la cuisine",
+       "Dans la chambre",
+       "Dans la salle de bains",
+       "Dans le jardin"
+      ],
+      "a": 0,
+      "why": "La cuisine is the kitchen."
+     },
+     {
+      "t": "tf",
+      "q": "'Il pleut' means 'It is raining'.",
+      "a": true,
+      "why": "Pleuvoir is the verb for rain."
+     },
+     {
+      "t": "match",
+      "q": "Match each clothing word to its meaning",
+      "pairs": [
+       [
+        "la chemise",
+        "shirt"
+       ],
+       [
+        "le pantalon",
+        "trousers"
+       ],
+       [
+        "la robe",
+        "dress"
+       ],
+       [
+        "la veste",
+        "jacket"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Today it is hot'",
+      "items": [
+       [
+        "Aujourd'hui",
+        1
+       ],
+       [
+        "il",
+        2
+       ],
+       [
+        "fait",
+        3
+       ],
+       [
+        "chaud",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'It is raining' into French.",
+      "a": [
+       "il pleut"
+      ],
+      "hint": "Use the verb pleuvoir.",
+      "why": "Il pleut."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'kitchen' in French.",
+      "a": [
+       "la cuisine",
+       "cuisine"
+      ],
+      "hint": "It starts with c.",
+      "why": "La cuisine."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the dress' into French.",
+      "a": [
+       "la robe",
+       "robe"
+      ],
+      "hint": "It is feminine.",
+      "why": "La robe."
+     }
+    ]
+   }
+  ]
+ },
+ "fr-2": {
+  "name": "French · Intermediate",
+  "units": [
+   {
+    "title": "The Past Tense",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Passé composé with avoir",
+      "b": "Most verbs use avoir plus a past participle. J'ai mangé means I ate. Nous avons parlé means we spoke. For -er verbs, the participle ends in -é."
+     },
+     {
+      "h": "Verbs with être",
+      "b": "Some verbs of movement, like aller (to go) and arriver (to arrive), use être. Je suis allé au cinéma means I went to the cinema. A girl writes allée."
+     },
+     {
+      "h": "Past time words",
+      "b": "Use hier (yesterday), ce matin (this morning), la semaine dernière (last week) and l'année dernière (last year). They show the action is finished."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Hier, j'___ une pizza. (I ate)",
+      "o": [
+       "mange",
+       "ai mangé",
+       "mangerai",
+       "mangeais"
+      ],
+      "a": 1,
+      "why": "J'ai mangé is the passé composé of manger."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Nous avons parlé' mean?",
+      "o": [
+       "We speak",
+       "We will speak",
+       "We spoke",
+       "They spoke"
+      ],
+      "a": 2,
+      "why": "Nous avons parlé is the past tense: we spoke."
+     },
+     {
+      "t": "mc",
+      "q": "Which helper verb does 'aller' use in the passé composé?",
+      "o": [
+       "avoir",
+       "être",
+       "faire",
+       "pouvoir"
+      ],
+      "a": 1,
+      "why": "Aller is a verb of movement and takes être."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'hier' mean?",
+      "o": [
+       "Tomorrow",
+       "Today",
+       "Yesterday",
+       "Tonight"
+      ],
+      "a": 2,
+      "why": "Hier means yesterday."
+     },
+     {
+      "t": "tf",
+      "q": "'Je suis allé au cinéma' means 'I went to the cinema'.",
+      "a": true,
+      "why": "Je suis allé is the past tense of aller: I went."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "hier",
+        "yesterday"
+       ],
+       [
+        "ce matin",
+        "this morning"
+       ],
+       [
+        "la semaine dernière",
+        "last week"
+       ],
+       [
+        "l'année dernière",
+        "last year"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yesterday I ate a pizza'",
+      "items": [
+       [
+        "Hier",
+        1
+       ],
+       [
+        "j'ai",
+        2
+       ],
+       [
+        "mangé",
+        3
+       ],
+       [
+        "une pizza",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete in the passé composé: J'___ (manger) une pizza.",
+      "a": [
+       "ai mangé",
+       "ai mange"
+      ],
+      "hint": "Use avoir + participle.",
+      "why": "J'ai mangé."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'We spoke' into French.",
+      "a": [
+       "nous avons parlé",
+       "on a parlé",
+       "nous avons parle"
+      ],
+      "hint": "Use avoir + parlé.",
+      "why": "Nous avons parlé."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Elle est ___ à Paris. (aller)",
+      "a": [
+       "allée",
+       "allee"
+      ],
+      "hint": "Aller uses être and agrees with elle.",
+      "why": "Elle est allée."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Travel",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Use à gauche (to the left), à droite (to the right) and tout droit (straight ahead). Au coin means at the corner."
+     },
+     {
+      "h": "Near and far",
+      "b": "Près de means near and loin de means far from. To ask the way, say Comment aller à la gare ? (How do I get to the station?)."
+     },
+     {
+      "h": "Travel words",
+      "b": "Learn la gare (train station), l'aéroport (airport), le billet (ticket) and la chambre (room). Use réserver for to book."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'à gauche' mean?",
+      "o": [
+       "to the right",
+       "straight ahead",
+       "to the left",
+       "behind"
+      ],
+      "a": 2,
+      "why": "Gauche means left."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'tout droit' mean?",
+      "o": [
+       "straight ahead",
+       "turn around",
+       "at the corner",
+       "far away"
+      ],
+      "a": 0,
+      "why": "Tout droit means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask 'How do I get to the station?'",
+      "o": [
+       "Qui est la gare ?",
+       "Comment aller à la gare ?",
+       "Quand la gare est ?",
+       "Combien est la gare ?"
+      ],
+      "a": 1,
+      "why": "Comment aller à...? is the usual way to ask for directions."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'la chambre' in a hotel?",
+      "o": [
+       "The bill",
+       "The key",
+       "The pool",
+       "The room"
+      ],
+      "a": 3,
+      "why": "La chambre means the room."
+     },
+     {
+      "t": "tf",
+      "q": "'Près de' means 'far from'.",
+      "a": false,
+      "why": "Près de means near; loin de means far from."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "près de",
+        "near"
+       ],
+       [
+        "l'aéroport",
+        "airport"
+       ],
+       [
+        "le billet",
+        "ticket"
+       ],
+       [
+        "au coin",
+        "at the corner"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these travel steps in a logical order",
+      "items": [
+       [
+        "J'achète un billet",
+        1
+       ],
+       [
+        "Je vais à l'aéroport",
+        2
+       ],
+       [
+        "Je prends l'avion",
+        3
+       ],
+       [
+        "J'arrive à l'hôtel",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'to the left' in French.",
+      "a": [
+       "à gauche",
+       "a gauche"
+      ],
+      "hint": "Two words.",
+      "why": "À gauche."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'straight ahead' in French.",
+      "a": [
+       "tout droit"
+      ],
+      "hint": "Two words starting with tout.",
+      "why": "Tout droit."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'The station is far' into French.",
+      "a": [
+       "la gare est loin"
+      ],
+      "hint": "Use loin.",
+      "why": "La gare est loin."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Preferences",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Liking things",
+      "b": "Use j'aime (I like), j'adore (I love) and je déteste (I hate). J'aime le cinéma means I like cinema. Add ne...pas for the negative: je n'aime pas."
+     },
+     {
+      "h": "Giving your opinion",
+      "b": "Say je pense que or à mon avis to mean I think that or in my opinion. Say je suis d'accord for I agree and je ne suis pas d'accord for I disagree."
+     },
+     {
+      "h": "Preferring and explaining",
+      "b": "Je préfère means I prefer. Parce que means because, and plus...que means more than. Le film est plus long que le livre means the film is longer than the book."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Je suis d'accord' mean?",
+      "o": [
+       "I'm late",
+       "I disagree",
+       "I agree",
+       "I'm hungry"
+      ],
+      "a": 2,
+      "why": "Je suis d'accord means I agree."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I think that it is good'?",
+      "o": [
+       "Je pense que c'est bon",
+       "Je pense c'est que bon",
+       "Je pense de bon",
+       "Je suis bon que"
+      ],
+      "a": 0,
+      "why": "Je pense que + a sentence means 'I think that...'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'parce que' mean?",
+      "o": [
+       "but",
+       "so",
+       "because",
+       "although"
+      ],
+      "a": 2,
+      "why": "Parce que introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'à mon avis' mean?",
+      "o": [
+       "on my way",
+       "in my opinion",
+       "at my age",
+       "in my house"
+      ],
+      "a": 1,
+      "why": "Avis means opinion, so à mon avis is 'in my opinion'."
+     },
+     {
+      "t": "tf",
+      "q": "'Je déteste' means 'I love'.",
+      "a": false,
+      "why": "Je déteste means I hate."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "j'adore",
+        "I love"
+       ],
+       [
+        "je préfère",
+        "I prefer"
+       ],
+       [
+        "je pense que",
+        "I think that"
+       ],
+       [
+        "plus que",
+        "more than"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I think that cinema is fun'",
+      "items": [
+       [
+        "Je pense que",
+        1
+       ],
+       [
+        "le cinéma",
+        2
+       ],
+       [
+        "est",
+        3
+       ],
+       [
+        "amusant",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I love cinema' into French.",
+      "a": [
+       "j'adore le cinéma",
+       "jadore le cinema",
+       "j'adore le cinema"
+      ],
+      "hint": "Use j'adore.",
+      "why": "J'adore le cinéma."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I think that it is good' into French.",
+      "a": [
+       "je pense que c'est bon",
+       "je pense que c'est bien",
+       "je crois que c'est bon",
+       "je crois que c'est bien"
+      ],
+      "hint": "Use je pense que.",
+      "why": "Je pense que c'est bon."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I prefer tea' into French.",
+      "a": [
+       "je préfère le thé",
+       "je prefere le the",
+       "je préfère thé"
+      ],
+      "hint": "Use je préfère.",
+      "why": "Je préfère le thé."
+     }
+    ]
+   },
+   {
+    "title": "Plans and Routines",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Future plans with aller",
+      "b": "Use aller + a verb to talk about plans: je vais voyager means I am going to travel. Add words like demain (tomorrow) or l'année prochaine (next year)."
+     },
+     {
+      "h": "Daily routine verbs",
+      "b": "Reflexive verbs use me: je me lève (I get up), je me douche (I shower) and je me couche (I go to bed). Add the time with à sept heures."
+     },
+     {
+      "h": "Past habits",
+      "b": "The imparfait talks about habits in the past. Je jouais means I used to play. Use words like toujours (always) and quand j'étais petit (when I was little)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Demain, je ___ voyager. (I'm going to travel)",
+      "o": [
+       "vais",
+       "suis",
+       "ai",
+       "fais"
+      ],
+      "a": 0,
+      "why": "Je vais + verb expresses a plan for the future."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Je me lève à sept heures' mean?",
+      "o": [
+       "I go to bed at seven",
+       "I get up at seven",
+       "I eat at seven",
+       "I left at seven"
+      ],
+      "a": 1,
+      "why": "Je me lève means 'I get up'."
+     },
+     {
+      "t": "mc",
+      "q": "Which form means 'I used to play'?",
+      "o": [
+       "j'ai joué",
+       "je jouerai",
+       "je jouais",
+       "je joue"
+      ],
+      "a": 2,
+      "why": "Je jouais is the imparfait, used for past habits."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'l'année prochaine' mean?",
+      "o": [
+       "last year",
+       "every year",
+       "this year",
+       "next year"
+      ],
+      "a": 3,
+      "why": "Prochaine means next."
+     },
+     {
+      "t": "tf",
+      "q": "'Je me couche' means 'I wake up'.",
+      "a": false,
+      "why": "Je me couche means I go to bed."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "je me douche",
+        "I shower"
+       ],
+       [
+        "je me couche",
+        "I go to bed"
+       ],
+       [
+        "demain",
+        "tomorrow"
+       ],
+       [
+        "toujours",
+        "always"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this morning routine in a logical order",
+      "items": [
+       [
+        "Je me lève",
+        1
+       ],
+       [
+        "Je me douche",
+        2
+       ],
+       [
+        "Je prends le petit déjeuner",
+        3
+       ],
+       [
+        "Je vais à l'école",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I am going to travel' into French.",
+      "a": [
+       "je vais voyager"
+      ],
+      "hint": "Use aller + infinitive.",
+      "why": "Je vais voyager."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Nous ___ manger. (aller)",
+      "a": [
+       "allons"
+      ],
+      "hint": "Nous form of aller.",
+      "why": "Nous allons manger."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Je ___ à sept heures. (se lever)",
+      "a": [
+       "me lève",
+       "me leve"
+      ],
+      "hint": "Reflexive: me + verb.",
+      "why": "Je me lève."
+     }
+    ]
+   },
+   {
+    "title": "The Imparfait",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Imparfait endings",
+      "b": "Take the nous form of the present, drop -ons, and add -ais, -ais, -ait, -ions, -iez, -aient. Parlons gives je parlais, nous parlions, ils parlaient."
+     },
+     {
+      "h": "Irregular stem: être",
+      "b": "Only être has a special stem: j'étais, tu étais, il était, nous étions, vous étiez, ils étaient. Avoir and faire are regular: j'avais, je faisais."
+     },
+     {
+      "h": "When to use it",
+      "b": "Use the imparfait for habits, descriptions and background: Quand j'étais petit, je jouais au foot. Use the passé composé for a finished event: Hier, j'ai joué au foot."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Quand j'étais petit, je ___ au foot. (jouer)",
+      "o": [
+       "jouais",
+       "ai joué",
+       "joue",
+       "jouerai"
+      ],
+      "a": 0,
+      "why": "A past habit uses the imparfait."
+     },
+     {
+      "t": "mc",
+      "q": "What is the imparfait of 'avoir' for nous?",
+      "o": [
+       "avons",
+       "avions",
+       "aurons",
+       "ont eu"
+      ],
+      "a": 1,
+      "why": "Nous avons becomes avions."
+     },
+     {
+      "t": "mc",
+      "q": "What is the imparfait of 'être' for ils?",
+      "o": [
+       "sont",
+       "ont été",
+       "étaient",
+       "seront"
+      ],
+      "a": 2,
+      "why": "Être uses the stem ét-."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence describes a habit in the past?",
+      "o": [
+       "Hier, nous sommes allés à la mer",
+       "Demain, nous irons à la mer",
+       "Nous allons à la mer maintenant",
+       "Chaque été, nous allions à la mer"
+      ],
+      "a": 3,
+      "why": "Chaque été shows a repeated habit."
+     },
+     {
+      "t": "tf",
+      "q": "The imparfait is used for a single finished event.",
+      "a": false,
+      "why": "A single finished event uses the passé composé."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "j'étais",
+        "I was"
+       ],
+       [
+        "tu avais",
+        "you had"
+       ],
+       [
+        "elle faisait",
+        "she used to do"
+       ],
+       [
+        "nous parlions",
+        "we used to speak"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'When I was little I played'",
+      "items": [
+       [
+        "Quand",
+        1
+       ],
+       [
+        "j'étais",
+        2
+       ],
+       [
+        "petit",
+        3
+       ],
+       [
+        "je jouais",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Je ___ (habiter) à Rome.",
+      "a": [
+       "habitais"
+      ],
+      "hint": "Imparfait, je form ends in -ais.",
+      "why": "J'habitais = I used to live."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete with être: Nous ___ amis.",
+      "a": [
+       "étions",
+       "etions"
+      ],
+      "hint": "Imparfait of être, nous.",
+      "why": "Nous étions."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'She used to read every night' into French.",
+      "a": [
+       "elle lisait tous les soirs",
+       "elle lisait chaque soir",
+       "lisait tous les soirs",
+       "lisait chaque soir"
+      ],
+      "hint": "Use the imparfait of lire.",
+      "why": "Elle lisait chaque soir."
+     }
+    ]
+   },
+   {
+    "title": "Irregular Participles and Past Stories",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Irregular participles",
+      "b": "Many common verbs have irregular participles: avoir becomes eu, être becomes été, faire becomes fait, prendre becomes pris, voir becomes vu, boire becomes bu, dire becomes dit, écrire becomes écrit, mettre becomes mis, lire becomes lu."
+     },
+     {
+      "h": "Negative and time words",
+      "b": "In the passé composé, ne ... pas goes around the helper verb: Je n'ai pas mangé. Use déjà (already) and jamais (never): Tu as déjà visité Paris ? Je n'ai jamais pris le train."
+     },
+     {
+      "h": "Telling a story",
+      "b": "Use the imparfait for the background and the passé composé for events. Il pleuvait quand je suis sorti means It was raining when I went out."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the past participle of 'faire'?",
+      "o": [
+       "faisé",
+       "fait",
+       "fais",
+       "faisant"
+      ],
+      "a": 1,
+      "why": "Faire has the irregular participle fait."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past participle of 'prendre'?",
+      "o": [
+       "prendu",
+       "prenu",
+       "pris",
+       "prenant"
+      ],
+      "a": 2,
+      "why": "Prendre has the irregular participle pris."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I haven't seen the film'?",
+      "o": [
+       "Je n'ai vu pas le film",
+       "Je ne vu pas le film",
+       "Je pas ai vu le film",
+       "Je n'ai pas vu le film"
+      ],
+      "a": 3,
+      "why": "Ne ... pas goes around ai."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Il ___ quand je suis sorti. (pleuvoir)",
+      "o": [
+       "pleuvait",
+       "pleut",
+       "pleuvra",
+       "pleuvrait"
+      ],
+      "a": 0,
+      "why": "Background in the past uses the imparfait."
+     },
+     {
+      "t": "tf",
+      "q": "The past participle of 'voir' is 'vu'.",
+      "a": true,
+      "why": "Voir becomes vu."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "j'ai eu",
+        "I had"
+       ],
+       [
+        "il a dit",
+        "he said"
+       ],
+       [
+        "nous avons bu",
+        "we drank"
+       ],
+       [
+        "elle a écrit",
+        "she wrote"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I did not eat'",
+      "items": [
+       [
+        "Je",
+        1
+       ],
+       [
+        "n'ai",
+        2
+       ],
+       [
+        "pas",
+        3
+       ],
+       [
+        "mangé",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the past participle of 'boire'.",
+      "a": [
+       "bu"
+      ],
+      "hint": "It is only two letters.",
+      "why": "Bu."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I have never taken the train' into French.",
+      "a": [
+       "je n'ai jamais pris le train",
+       "je nai jamais pris le train"
+      ],
+      "hint": "Use ne ... jamais and pris.",
+      "why": "Je n'ai jamais pris le train."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Hier, j'ai ___ un film. (voir)",
+      "a": [
+       "vu"
+      ],
+      "hint": "Irregular participle of voir.",
+      "why": "J'ai vu un film."
+     }
+    ]
+   },
+   {
+    "title": "Comparisons",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "More, less and as",
+      "b": "Use plus + adjective + que (more than), moins + adjective + que (less than) and aussi + adjective + que (as ... as). Elle est plus grande que lui. Il est aussi sympa qu'elle."
+     },
+     {
+      "h": "Better and worse",
+      "b": "Bon becomes meilleur (better) as an adjective: ce gâteau est meilleur. Bien becomes mieux (better) as an adverb: elle chante mieux. Mauvais can become pire (worse)."
+     },
+     {
+      "h": "Superlatives and amounts",
+      "b": "For the most or the least, add le, la or les: le plus grand, la plus grande, le moins cher, le meilleur. For amounts use plus de, moins de, autant de: J'ai plus de livres que toi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Ana est ___ grande que Luc. (taller)",
+      "o": [
+       "moins",
+       "très",
+       "plus",
+       "assez"
+      ],
+      "a": 2,
+      "why": "Taller means more tall, so plus."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'meilleur' mean?",
+      "o": [
+       "worse",
+       "bigger",
+       "cheaper",
+       "better"
+      ],
+      "a": 3,
+      "why": "Meilleur is the comparative of bon."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'as tall as'?",
+      "o": [
+       "aussi grand que",
+       "plus grand que",
+       "aussi grand comme",
+       "autant grand que"
+      ],
+      "a": 0,
+      "why": "Equal comparisons use aussi ... que."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'the biggest' (masculine)?",
+      "o": [
+       "le plus grande",
+       "le plus grand",
+       "la plus grand",
+       "plus le grand"
+      ],
+      "a": 1,
+      "why": "Le agrees with a masculine noun."
+     },
+     {
+      "t": "tf",
+      "q": "'Mieux' is the comparative of 'bien'.",
+      "a": true,
+      "why": "Bien becomes mieux."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "moins ... que",
+        "less ... than"
+       ],
+       [
+        "aussi ... que",
+        "as ... as"
+       ],
+       [
+        "le plus",
+        "the most"
+       ],
+       [
+        "pire",
+        "worse"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'She is taller than him'",
+      "items": [
+       [
+        "Elle",
+        1
+       ],
+       [
+        "est",
+        2
+       ],
+       [
+        "plus grande",
+        3
+       ],
+       [
+        "que lui",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'better' (adjective) in French.",
+      "a": [
+       "meilleur",
+       "meilleure"
+      ],
+      "hint": "It comes from bon.",
+      "why": "Meilleur."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Il est ___ grand que moi. (as tall as)",
+      "a": [
+       "aussi"
+      ],
+      "hint": "Equal comparison.",
+      "why": "Aussi grand que."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'the most expensive' (masculine) into French.",
+      "a": [
+       "le plus cher"
+      ],
+      "hint": "Le plus + adjective.",
+      "why": "Le plus cher."
+     }
+    ]
+   },
+   {
+    "title": "Object Pronouns",
+    "period": "A2",
+    "learn": [
+     {
+      "h": "Direct object pronouns",
+      "b": "These replace the thing or person: me, te, le, la, l', nous, vous, les. Je lis le livre becomes Je le lis. They go before the verb: Je les vois. With an infinitive, they go before the infinitive: Je veux le voir."
+     },
+     {
+      "h": "Indirect object pronouns",
+      "b": "Use me, te, lui, nous, vous, leur for to someone: Je parle à Marie becomes Je lui parle. Je parle à mes amis becomes Je leur parle. Lui means to him or to her."
+     },
+     {
+      "h": "Y and en",
+      "b": "Y replaces à + a place or thing: Tu vas à Paris ? Oui, j'y vais. En replaces de + noun or an amount: Tu veux du pain ? Oui, j'en veux. They also go before the verb."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Replace 'le livre': Je lis le livre. Je ___ lis.",
+      "o": [
+       "la",
+       "les",
+       "lui",
+       "le"
+      ],
+      "a": 3,
+      "why": "Livre is masculine singular."
+     },
+     {
+      "t": "mc",
+      "q": "Replace 'à Marie': Je parle à Marie. Je ___ parle.",
+      "o": [
+       "lui",
+       "la",
+       "leur",
+       "le"
+      ],
+      "a": 0,
+      "why": "Lui means to her or to him."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Tu vas à Paris ? Oui, j'___ vais.",
+      "o": [
+       "en",
+       "y",
+       "le",
+       "lui"
+      ],
+      "a": 1,
+      "why": "Y replaces a place."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Tu veux du pain ? Oui, j'___ veux.",
+      "o": [
+       "y",
+       "le",
+       "en",
+       "lui"
+      ],
+      "a": 2,
+      "why": "En replaces du + noun."
+     },
+     {
+      "t": "tf",
+      "q": "'Leur' replaces 'à eux' or 'à elles' (to them).",
+      "a": true,
+      "why": "Leur is the indirect pronoun for they."
+     },
+     {
+      "t": "match",
+      "q": "Match each pronoun to its meaning",
+      "pairs": [
+       [
+        "le",
+        "him or it (m.)"
+       ],
+       [
+        "la",
+        "her or it (f.)"
+       ],
+       [
+        "lui",
+        "to him or her"
+       ],
+       [
+        "les",
+        "them"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I want to see him'",
+      "items": [
+       [
+        "Je",
+        1
+       ],
+       [
+        "veux",
+        2
+       ],
+       [
+        "le",
+        3
+       ],
+       [
+        "voir",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: replace the noun: Je mange la pomme. Je ___ mange.",
+      "a": [
+       "la",
+       "l'"
+      ],
+      "hint": "Pomme is feminine singular.",
+      "why": "Je la mange."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate 'I am going there' into French.",
+      "a": [
+       "j'y vais",
+       "jy vais"
+      ],
+      "hint": "Use y before the verb.",
+      "why": "J'y vais."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Elle ___ parle. (She speaks to him.)",
+      "a": [
+       "lui"
+      ],
+      "hint": "Indirect pronoun, singular.",
+      "why": "Elle lui parle."
+     }
+    ]
+   },
+   {
+    "title": "Future and Conditional",
+    "period": "B1",
+    "learn": [
+     {
+      "h": "The futur simple",
+      "b": "Add -ai, -as, -a, -ons, -ez, -ont to the whole infinitive: je parlerai, tu finiras, nous vendrons (drop the final e). Demain, j'irai à Paris means Tomorrow I will go to Paris."
+     },
+     {
+      "h": "Irregular stems",
+      "b": "Some verbs have a special stem but the same endings: être ser-, avoir aur-, aller ir-, faire fer-, voir verr-, venir viendr-, pouvoir pourr-, vouloir voudr-. Je serai, il aura, nous ferons."
+     },
+     {
+      "h": "The conditional",
+      "b": "For would, use the same stem plus -ais, -ais, -ait, -ions, -iez, -aient: je parlerais, j'irais, je voudrais. Use it for politeness: Je voudrais un café. For imagined situations use si + imparfait: Si j'avais de l'argent, je voyagerais."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the futur of 'parler' for je?",
+      "o": [
+       "parlerai",
+       "parlais",
+       "parle",
+       "parlerais"
+      ],
+      "a": 0,
+      "why": "Futur: infinitive + ai."
+     },
+     {
+      "t": "mc",
+      "q": "What is the futur of 'aller' for nous?",
+      "o": [
+       "allerons",
+       "irons",
+       "allons",
+       "irions"
+      ],
+      "a": 1,
+      "why": "Aller has the stem ir-."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Si j'avais un million, je ___ le monde. (voyager)",
+      "o": [
+       "voyagerai",
+       "voyageais",
+       "voyagerais",
+       "voyage"
+      ],
+      "a": 2,
+      "why": "Si + imparfait leads to the conditional."
+     },
+     {
+      "t": "mc",
+      "q": "How do you politely say 'I would like a coffee'?",
+      "o": [
+       "Je voudrai un café",
+       "Je voulais un café",
+       "Je voulu un café",
+       "Je voudrais un café"
+      ],
+      "a": 3,
+      "why": "Voudrais is the conditional of vouloir."
+     },
+     {
+      "t": "tf",
+      "q": "The futur and conditional use the same stem for 'aller' (ir-).",
+      "a": true,
+      "why": "J'irai and j'irais share the stem ir-."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "je serai",
+        "I will be"
+       ],
+       [
+        "il aura",
+        "he will have"
+       ],
+       [
+        "nous ferons",
+        "we will do"
+       ],
+       [
+        "ils viendront",
+        "they will come"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Tomorrow I will go to Paris'",
+      "items": [
+       [
+        "Demain",
+        1
+       ],
+       [
+        "j'irai",
+        2
+       ],
+       [
+        "à",
+        3
+       ],
+       [
+        "Paris",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete in the futur: Je ___ (finir) demain.",
+      "a": [
+       "finirai"
+      ],
+      "hint": "Infinitive + ai.",
+      "why": "Je finirai demain."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'we will have' in French (avoir).",
+      "a": [
+       "nous aurons",
+       "aurons"
+      ],
+      "hint": "Stem aur- + ons.",
+      "why": "Nous aurons."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete in the conditional: Je ___ (vouloir) un thé.",
+      "a": [
+       "voudrais"
+      ],
+      "hint": "Stem voudr- + ais.",
+      "why": "Je voudrais un thé."
+     }
+    ]
+   },
+   {
+    "title": "Imperative and Subjunctive",
+    "period": "B1",
+    "learn": [
+     {
+      "h": "The imperative",
+      "b": "Use the tu, nous and vous forms without the pronoun: Parle ! Parlons ! Parlez ! For -er verbs, drop the -s in tu: Mange ! Irregular: être gives sois, soyons, soyez; avoir gives aie, ayons, ayez; aller gives va."
+     },
+     {
+      "h": "Negative commands and pronouns",
+      "b": "For a negative command, put ne ... pas around the verb: Ne mange pas ! With a pronoun, it goes after in a positive command: Mange-le ! It goes before in a negative one: Ne le mange pas !"
+     },
+     {
+      "h": "The subjonctif présent",
+      "b": "Take the ils form of the present, drop -ent and add -e, -es, -e, -ions, -iez, -ent: que tu finisses. Use it after il faut que, je veux que and bien que. Irregular: que je sois, que j'aie, que j'aille, que je fasse."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'Speak!' (tu)?",
+      "o": [
+       "Parles !",
+       "Parle !",
+       "Parler !",
+       "Parlé !"
+      ],
+      "a": 1,
+      "why": "For -er verbs the tu imperative drops the -s."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'Don't eat it!' (tu, le gâteau)?",
+      "o": [
+       "Ne mange le pas !",
+       "Mange-le pas !",
+       "Ne le mange pas !",
+       "Ne mange pas le !"
+      ],
+      "a": 2,
+      "why": "In a negative command, the pronoun goes before the verb."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Il faut que tu ___ tes devoirs. (finir)",
+      "o": [
+       "finis",
+       "finir",
+       "finiras",
+       "finisses"
+      ],
+      "a": 3,
+      "why": "Il faut que is followed by the subjonctif."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Il faut que je ___ à la banque. (aller)",
+      "o": [
+       "aille",
+       "vais",
+       "irai",
+       "allais"
+      ],
+      "a": 0,
+      "why": "Aller has the irregular subjonctif aille."
+     },
+     {
+      "t": "tf",
+      "q": "After 'je veux que', French uses the subjonctif.",
+      "a": true,
+      "why": "Wishes about other people trigger the subjonctif."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "sois",
+        "be (tu)"
+       ],
+       [
+        "ayez",
+        "have (vous)"
+       ],
+       [
+        "allons",
+        "let's go"
+       ],
+       [
+        "que je fasse",
+        "that I do"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I want you to come'",
+      "items": [
+       [
+        "Je veux",
+        1
+       ],
+       [
+        "que",
+        2
+       ],
+       [
+        "tu",
+        3
+       ],
+       [
+        "viennes",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: give the tu command of 'manger'.",
+      "a": [
+       "mange"
+      ],
+      "hint": "Drop the -s for -er verbs.",
+      "why": "Mange !"
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Il faut que nous ___ (finir) tôt.",
+      "a": [
+       "finissions"
+      ],
+      "hint": "Ils finissent gives the stem finiss-.",
+      "why": "Il faut que nous finissions tôt."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Il faut que tu ___ (faire) tes devoirs.",
+      "a": [
+       "fasses"
+      ],
+      "hint": "Faire has the irregular stem fass-.",
+      "why": "Il faut que tu fasses tes devoirs."
+     }
+    ]
+   }
+  ]
+ }
+}
