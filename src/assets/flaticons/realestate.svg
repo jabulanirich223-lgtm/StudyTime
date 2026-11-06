@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><ellipse cx="64" cy="116" rx="40" ry="6" fill="#000" opacity=".08"/>
+<rect x="100" y="64" width="7" height="46" rx="3" fill="#7c4a22"/>
+<rect x="56" y="26" width="10" height="20" rx="3" fill="#e03a3a"/>
+<rect x="14" y="58" width="58" height="50" rx="5" fill="#e6d4a8"/><rect x="14" y="58" width="53" height="48" rx="5" fill="#fff4d6"/>
+<polygon points="8,60 43,26 78,60" fill="#ff4b4b" stroke="#ff4b4b" stroke-width="6" stroke-linejoin="round"/>
+<polygon points="43,26 78,60 43,60" fill="#e03a3a" stroke="#e03a3a" stroke-width="6" stroke-linejoin="round" opacity="0"/>
+<rect x="34" y="76" width="16" height="32" rx="5" fill="#1899d6"/><rect x="34" y="76" width="13" height="30" rx="5" fill="#1cb0f6"/>
+<rect x="20" y="66" width="10" height="10" rx="3" fill="#ffc800"/><rect x="56" y="70" width="10" height="10" rx="3" fill="#ffc800"/>
+<rect x="82" y="34" width="42" height="34" rx="8" fill="#46a302"/><rect x="82" y="34" width="38" height="30" rx="8" fill="#58cc02"/>
+<path d="M92 50L101 58L114 41" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="38" width="12" height="3" rx="1.5" fill="#fff" opacity=".5"/></svg>

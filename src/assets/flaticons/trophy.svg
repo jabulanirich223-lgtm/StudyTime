@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><ellipse cx="64" cy="116" rx="40" ry="6" fill="#000" opacity=".08"/>
+<path d="M34 24H22Q15 24 15 32Q15 54 38 60" fill="none" stroke="#e6a800" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M94 24H106Q113 24 113 32Q113 54 90 60" fill="none" stroke="#e6a800" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="55" y="78" width="18" height="18" rx="4" fill="#e6a800"/>
+<rect x="38" y="92" width="52" height="10" rx="5" fill="#e6a800"/>
+<rect x="28" y="100" width="72" height="12" rx="6" fill="#e6a800"/><rect x="28" y="100" width="68" height="8" rx="4" fill="#ffc800"/>
+<path d="M32 12H96V48C96 70 82 82 64 82C46 82 32 70 32 48Z" fill="#e6a800" stroke="#e6a800" stroke-width="4" stroke-linejoin="round"/>
+<path d="M32 12H92V48C92 66 80 78 62 78C46 76 32 68 32 48Z" fill="#ffc800" stroke="#ffc800" stroke-width="4" stroke-linejoin="round"/>
+<polygon points="62.0,31.0 65.5,39.1 74.4,40.0 67.7,45.9 69.6,54.5 62.0,50.0 54.4,54.5 56.3,45.9 49.6,40.0 58.5,39.1" fill="#fff4d6" stroke="#fff4d6" stroke-width="2.5" stroke-linejoin="round"/>
+<rect x="40" y="22" width="7" height="26" rx="3.5" fill="#fff" opacity=".5"/></svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><ellipse cx="64" cy="116" rx="40" ry="6" fill="#000" opacity=".08"/>
+<g transform="translate(64 64) rotate(45) scale(.92) translate(-64 -64)">
+<path d="M64 88Q50 100 56 124Q64 114 64 114Q64 114 72 124Q78 100 64 88Z" fill="#ff9600"/>
+<path d="M64 88Q57 98 60 112Q64 106 68 112Q71 98 64 88Z" fill="#ffc800"/>
+<path d="M46 60L24 88Q22 98 32 96L48 88Z" fill="#e03a3a" stroke="#e03a3a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M82 60L104 88Q106 98 96 96L80 88Z" fill="#e03a3a" stroke="#e03a3a" stroke-width="3" stroke-linejoin="round"/>
+<path d="M64 6C86 22 90 52 84 84H44C38 52 42 22 64 6Z" fill="#f3f3f3"/>
+<path d="M70 12C86 28 90 56 84 84H72C78 56 76 32 70 12Z" fill="#d4d4d4"/>
+<path d="M64 6C73 13 79 22 82 34H46C49 22 55 13 64 6Z" fill="#ff4b4b"/>
+<path d="M70 12C76 18 80 26 82 34H70Z" fill="#e03a3a"/>
+<rect x="44" y="80" width="40" height="8" rx="4" fill="#8a8a8a"/>
+<circle cx="64" cy="58" r="12" fill="#1899d6"/><circle cx="63" cy="57" r="9.5" fill="#1cb0f6"/><circle cx="59" cy="53" r="3" fill="#fff" opacity=".5"/>
+<rect x="46" y="38" width="5" height="12" rx="2.5" fill="#fff" opacity=".5" transform="rotate(8 48 44)"/></g></svg>

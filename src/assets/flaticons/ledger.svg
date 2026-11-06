@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><ellipse cx="64" cy="116" rx="40" ry="6" fill="#000" opacity=".08"/>
+<rect x="30" y="22" width="70" height="90" rx="8" fill="#fff4d6"/>
+<rect x="22" y="12" width="66" height="94" rx="9" fill="#46a302"/><rect x="22" y="12" width="62" height="89" rx="9" fill="#58cc02"/>
+<rect x="22" y="12" width="10" height="89" rx="5" fill="#46a302"/>
+<rect x="40" y="26" width="38" height="26" rx="5" fill="#fff4d6"/>
+<rect x="46" y="33" width="26" height="4.5" rx="2.2" fill="#afafaf"/><rect x="46" y="42" width="16" height="4.5" rx="2.2" fill="#afafaf"/>
+<rect x="40" y="62" width="34" height="5" rx="2.5" fill="#fff" opacity=".5"/><rect x="40" y="73" width="24" height="5" rx="2.5" fill="#fff" opacity=".5"/>
+<g transform="rotate(35 92 82)">
+<rect x="85" y="52" width="16" height="52" rx="4" fill="#e6a800"/><rect x="85" y="52" width="11" height="52" rx="4" fill="#ffc800"/>
+<polygon points="85,102 101,102 93,116" fill="#ffe0b0"/><polygon points="90,110.5 96,110.5 93,116" fill="#4b4b4b"/>
+<rect x="85" y="43" width="16" height="12" rx="5" fill="#ff86d0"/><rect x="85" y="54" width="16" height="6" fill="#afafaf"/>
+<rect x="88" y="58" width="3" height="38" rx="1.5" fill="#fff" opacity=".5"/></g></svg>

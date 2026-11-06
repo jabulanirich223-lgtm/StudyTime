@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><ellipse cx="64" cy="116" rx="40" ry="6" fill="#000" opacity=".08"/>
+<circle cx="42" cy="10" r="6" fill="#afafaf" opacity=".7"/><circle cx="52" cy="4" r="4" fill="#afafaf" opacity=".5"/>
+<rect x="36" y="22" width="14" height="26" rx="3" fill="#4b4b4b"/><rect x="32" y="16" width="22" height="9" rx="4.5" fill="#4b4b4b"/>
+<rect x="26" y="44" width="66" height="36" rx="13" fill="#e03a3a"/><rect x="26" y="44" width="66" height="28" rx="13" fill="#ff4b4b"/>
+<rect x="58" y="34" width="16" height="14" rx="7" fill="#e6a800"/><rect x="58" y="34" width="13" height="11" rx="5.5" fill="#ffc800"/>
+<rect x="82" y="24" width="38" height="60" rx="7" fill="#1899d6"/><rect x="82" y="24" width="34" height="56" rx="7" fill="#1cb0f6"/>
+<rect x="78" y="20" width="46" height="10" rx="5" fill="#46a302"/><rect x="78" y="20" width="43" height="8" rx="4" fill="#58cc02"/>
+<rect x="92" y="38" width="18" height="20" rx="5" fill="#fff4d6"/>
+<rect x="10" y="78" width="110" height="12" rx="6" fill="#4b4b4b"/>
+<polygon points="8,92 28,80 28,96" fill="#ffc800" stroke="#ffc800" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="30" cy="56" r="0" fill="#ffc800"/>
+<rect x="31" y="49" width="16" height="4" rx="2" fill="#fff" opacity=".5"/>
+<circle cx="42" cy="98" r="11" fill="#4b4b4b"/><circle cx="42" cy="98" r="5" fill="#afafaf"/>
+<circle cx="66" cy="98" r="11" fill="#4b4b4b"/><circle cx="66" cy="98" r="5" fill="#afafaf"/>
+<circle cx="98" cy="94" r="16" fill="#4b4b4b"/><circle cx="98" cy="94" r="7" fill="#afafaf"/><circle cx="98" cy="94" r="2.5" fill="#4b4b4b"/></svg>

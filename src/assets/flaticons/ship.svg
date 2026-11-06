@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><ellipse cx="64" cy="116" rx="40" ry="6" fill="#000" opacity=".08"/>
+<rect x="60" y="12" width="6" height="68" rx="3" fill="#7c4a22"/>
+<path d="M66 12L86 19L66 26Z" fill="#ff4b4b"/>
+<path d="M58 22Q28 36 30 64H58Z" fill="#fff4d6" stroke="#fff4d6" stroke-width="3" stroke-linejoin="round"/>
+<path d="M68 22Q100 36 98 66H68Z" fill="#fff4d6" stroke="#fff4d6" stroke-width="3" stroke-linejoin="round"/>
+<path d="M68 22Q100 36 98 66H84Q88 40 68 22Z" fill="#e8d3a0"/>
+<rect x="38" y="30" width="12" height="4" rx="2" fill="#fff" opacity=".5" transform="rotate(-25 44 32)"/>
+<path d="M10 76H118Q112 104 86 106H42Q16 104 10 76Z" fill="#7c4a22"/>
+<path d="M10 76H112Q108 98 80 98H38Q16 96 10 76Z" fill="#a0612f"/>
+<circle cx="36" cy="86" r="4.5" fill="#ffc800"/><circle cx="56" cy="86" r="4.5" fill="#ffc800"/><circle cx="76" cy="86" r="4.5" fill="#ffc800"/>
+<rect x="18" y="79" width="22" height="4" rx="2" fill="#fff" opacity=".5"/>
+<path d="M4 106Q16 98 28 106T52 106T76 106T100 106T124 106V112Q124 114 120 114H8Q4 114 4 112Z" fill="#1cb0f6"/>
+<path d="M4 108Q16 102 28 108T52 108T76 108T100 108T124 108" fill="none" stroke="#fff" opacity=".4" stroke-width="2.5" stroke-linecap="round"/></svg>
