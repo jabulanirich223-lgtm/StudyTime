@@ -1,1 +1,5726 @@
-{}
+{
+ "go": {
+  "name": "Go",
+  "units": [
+   {
+    "title": "Go Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Every Go program starts in main",
+      "b": "A Go file begins with `package main`. The program runs the function `main()`. To print text you import the `fmt` package and call `fmt.Println(\"Hello\")`."
+     },
+     {
+      "h": "Variables",
+      "b": "Use `var x int = 5` or the short form `x := 5` inside functions. Go works out the type for you. A variable you declare but never use is a compile error."
+     },
+     {
+      "h": "Basic types",
+      "b": "Common types are int (whole numbers), float64 (decimals), string (text) and bool (true/false). A variable with no value gets a zero value: 0, \"\" or false."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line declares x using Go's short declaration?",
+      "o": [
+       "var x := 5",
+       "x := 5",
+       "int x = 5",
+       "let x = 5"
+      ],
+      "a": 1,
+      "why": "The := operator declares and assigns a variable inside a function."
+     },
+     {
+      "t": "mc",
+      "q": "What does fmt.Println(len(\"hi\")) print?",
+      "o": [
+       "hi",
+       "1",
+       "2",
+       "3"
+      ],
+      "a": 2,
+      "why": "The string \"hi\" has 2 bytes, so len returns 2."
+     },
+     {
+      "t": "mc",
+      "q": "Which function is where a Go program starts running?",
+      "o": [
+       "start",
+       "main",
+       "init_app",
+       "run"
+      ],
+      "a": 1,
+      "why": "Execution begins in func main() of package main."
+     },
+     {
+      "t": "mc",
+      "q": "What is the zero value of an int variable in Go?",
+      "o": [
+       "nil",
+       "-1",
+       "0",
+       "undefined"
+      ],
+      "a": 2,
+      "why": "Numbers default to 0 when declared without a value."
+     },
+     {
+      "t": "tf",
+      "q": "In Go, declaring a local variable and never using it is a compile error.",
+      "a": true,
+      "why": "Go refuses to compile unused local variables."
+     },
+     {
+      "t": "match",
+      "q": "Match each Go type to what it holds",
+      "pairs": [
+       [
+        "int",
+        "whole number"
+       ],
+       [
+        "string",
+        "text"
+       ],
+       [
+        "bool",
+        "true or false"
+       ],
+       [
+        "float64",
+        "decimal number"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the Hello World program in order",
+      "items": [
+       [
+        "package main",
+        1
+       ],
+       [
+        "import \"fmt\"",
+        2
+       ],
+       [
+        "func main() {",
+        3
+       ],
+       [
+        "fmt.Println(\"Hi\")",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Control Flow and Functions",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Only one loop: for",
+      "b": "Go has just `for`. `for i := 0; i < 3; i++ { }` is the classic form. `for cond { }` works like while."
+     },
+     {
+      "h": "if and switch",
+      "b": "`if` needs no parentheses around the condition. A `switch` stops after the matching case, so you do not need `break`."
+     },
+     {
+      "h": "Functions",
+      "b": "Write `func add(a, b int) int { return a + b }`. Go functions can return more than one value, like `(int, error)`."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does this print? for i := 0; i < 3; i++ { fmt.Print(i) }",
+      "o": [
+       "123",
+       "012",
+       "0123",
+       "0 1 2 with spaces"
+      ],
+      "a": 1,
+      "why": "i runs 0, 1, 2 and Print adds no spaces between them."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword is Go's only loop keyword?",
+      "o": [
+       "while",
+       "loop",
+       "for",
+       "repeat"
+      ],
+      "a": 2,
+      "why": "Go uses for for every kind of loop."
+     },
+     {
+      "t": "mc",
+      "q": "If func add(a, b int) int returns a + b, what is add(2, 3)?",
+      "o": [
+       "23",
+       "5",
+       "6",
+       "error"
+      ],
+      "a": 1,
+      "why": "2 + 3 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "After a matching case in a Go switch runs, what happens by default?",
+      "o": [
+       "It falls into the next case",
+       "It stops the switch",
+       "It restarts the switch",
+       "It causes an error"
+      ],
+      "a": 1,
+      "why": "Go does not fall through unless you write fallthrough."
+     },
+     {
+      "t": "tf",
+      "q": "A Go function can return multiple values.",
+      "a": true,
+      "why": "For example func f() (int, error) returns two values."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "choose by a condition"
+       ],
+       [
+        "for",
+        "repeat code"
+       ],
+       [
+        "switch",
+        "pick among many cases"
+       ],
+       [
+        "return",
+        "send a value back"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order what a classic for loop does",
+      "items": [
+       [
+        "Run init statement",
+        1
+       ],
+       [
+        "Check condition",
+        2
+       ],
+       [
+        "Run loop body",
+        3
+       ],
+       [
+        "Run post statement",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Slices, Maps and Structs",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "Arrays and slices",
+      "b": "An array has a fixed size. A slice, like `[]int{1,2,3}`, can grow. Use `append(s, 4)` to add an item and `len(s)` for the size."
+     },
+     {
+      "h": "Maps",
+      "b": "A map stores key-value pairs: `m := map[string]int{\"a\": 1}`. Reading a missing key gives the zero value. `delete(m, \"a\")` removes a key."
+     },
+     {
+      "h": "Structs",
+      "b": "A struct groups fields: `type Person struct { Name string; Age int }`. Create one with `Person{\"Ann\", 20}`."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is len([]int{1, 2, 3}) in Go?",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "0"
+      ],
+      "a": 1,
+      "why": "The slice holds three elements."
+     },
+     {
+      "t": "mc",
+      "q": "x := []int{1, 2, 3}; x = append(x, 4). What is len(x)?",
+      "o": [
+       "3",
+       "4",
+       "5",
+       "It is an error"
+      ],
+      "a": 1,
+      "why": "append adds one element, making 4."
+     },
+     {
+      "t": "mc",
+      "q": "What do you get when you read a key that is missing from a map[string]int?",
+      "o": [
+       "A panic",
+       "nil",
+       "0",
+       "-1"
+      ],
+      "a": 2,
+      "why": "A missing key returns the zero value of the value type, which is 0 for int."
+     },
+     {
+      "t": "mc",
+      "q": "Which line starts a struct definition?",
+      "o": [
+       "struct Person {",
+       "class Person {",
+       "type Person struct {",
+       "def Person {"
+      ],
+      "a": 2,
+      "why": "Go uses type Name struct { ... }."
+     },
+     {
+      "t": "tf",
+      "q": "Arrays in Go have a fixed length, but slices can grow with append.",
+      "a": true,
+      "why": "The array size is part of its type; slices are flexible views."
+     },
+     {
+      "t": "match",
+      "q": "Match each built-in to what it does",
+      "pairs": [
+       [
+        "append",
+        "add to a slice"
+       ],
+       [
+        "len",
+        "get the size"
+       ],
+       [
+        "delete",
+        "remove a map key"
+       ],
+       [
+        "make",
+        "create a slice or map"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of using a map",
+      "items": [
+       [
+        "Create it with make",
+        1
+       ],
+       [
+        "Set a key and value",
+        2
+       ],
+       [
+        "Read a value by key",
+        3
+       ],
+       [
+        "Delete the key",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Errors and Concurrency",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Errors are values",
+      "b": "Functions return an `error` as the last value. A nil error means success. You check it with `if err != nil { ... }`."
+     },
+     {
+      "h": "defer",
+      "b": "`defer` delays a function call until the surrounding function returns. It is often used to close files."
+     },
+     {
+      "h": "Goroutines and channels",
+      "b": "Start a goroutine with `go f()`. Goroutines talk through channels: `ch <- v` sends and `v := <-ch` receives. A WaitGroup waits for goroutines to finish."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword starts a new goroutine?",
+      "o": [
+       "async",
+       "thread",
+       "go",
+       "spawn"
+      ],
+      "a": 2,
+      "why": "Writing go before a function call runs it concurrently."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print? defer fmt.Println(\"b\") then fmt.Println(\"a\") in the same function",
+      "o": [
+       "b then a",
+       "a then b",
+       "only a",
+       "only b"
+      ],
+      "a": 1,
+      "why": "The deferred call runs when the function ends, after a is printed."
+     },
+     {
+      "t": "mc",
+      "q": "What does a nil error mean in Go?",
+      "o": [
+       "Something failed",
+       "No error happened",
+       "The program crashed",
+       "The error is unknown"
+      ],
+      "a": 1,
+      "why": "nil means there is no error."
+     },
+     {
+      "t": "mc",
+      "q": "Which type from the sync package waits for goroutines to finish?",
+      "o": [
+       "Mutex",
+       "WaitGroup",
+       "Pool",
+       "Once"
+      ],
+      "a": 1,
+      "why": "WaitGroup counts goroutines and Wait blocks until they are done."
+     },
+     {
+      "t": "tf",
+      "q": "Sending on an unbuffered channel blocks until another goroutine receives.",
+      "a": true,
+      "why": "An unbuffered channel needs a sender and receiver ready together."
+     },
+     {
+      "t": "match",
+      "q": "Match each Go word to its meaning",
+      "pairs": [
+       [
+        "go",
+        "start a goroutine"
+       ],
+       [
+        "chan",
+        "channel type"
+       ],
+       [
+        "defer",
+        "run at function end"
+       ],
+       [
+        "select",
+        "wait on many channels"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the usual Go error handling",
+      "items": [
+       [
+        "Call the function",
+        1
+       ],
+       [
+        "Check err != nil",
+        2
+       ],
+       [
+        "Handle or return the error",
+        3
+       ],
+       [
+        "Continue with the result",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "rust": {
+  "name": "Rust",
+  "units": [
+   {
+    "title": "Rust Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Variables are immutable",
+      "b": "`let x = 5;` cannot change later. Write `let mut x = 5;` if you want to change it."
+     },
+     {
+      "h": "Printing and shadowing",
+      "b": "`println!(\"{}\", x)` prints a value. The `!` means it is a macro. You can shadow a name: `let x = x + 1;` makes a new variable."
+     },
+     {
+      "h": "Types and Cargo",
+      "b": "Common types: i32, f64, bool, char and &str. Cargo is Rust's tool: `cargo new`, `cargo build`, `cargo run`."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does this print? let x = 5; let x = x + 1; println!(\"{}\", x);",
+      "o": [
+       "5",
+       "6",
+       "51",
+       "It is an error"
+      ],
+      "a": 1,
+      "why": "The second let shadows the first with x + 1, which is 6."
+     },
+     {
+      "t": "mc",
+      "q": "Which macro prints a line of text in Rust?",
+      "o": [
+       "print()",
+       "echo!",
+       "println!",
+       "console.log!"
+      ],
+      "a": 2,
+      "why": "println! is the standard printing macro."
+     },
+     {
+      "t": "mc",
+      "q": "What is the default type of the literal 3.14?",
+      "o": [
+       "f32",
+       "f64",
+       "i32",
+       "double"
+      ],
+      "a": 1,
+      "why": "Rust infers floating literals as f64 unless told otherwise."
+     },
+     {
+      "t": "mc",
+      "q": "Which tool builds and runs a Rust project?",
+      "o": [
+       "npm",
+       "pip",
+       "cargo",
+       "make only"
+      ],
+      "a": 2,
+      "why": "Cargo is Rust's build tool and package manager."
+     },
+     {
+      "t": "tf",
+      "q": "Writing let mut x = 1; lets you change x later.",
+      "a": true,
+      "why": "The mut keyword makes a variable mutable."
+     },
+     {
+      "t": "match",
+      "q": "Match each Rust type to what it holds",
+      "pairs": [
+       [
+        "i32",
+        "whole number"
+       ],
+       [
+        "bool",
+        "true or false"
+       ],
+       [
+        "&str",
+        "text slice"
+       ],
+       [
+        "char",
+        "one character"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a basic Cargo workflow",
+      "items": [
+       [
+        "cargo new app",
+        1
+       ],
+       [
+        "Write code in main.rs",
+        2
+       ],
+       [
+        "cargo build",
+        3
+       ],
+       [
+        "cargo run",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Ownership and Borrowing",
+    "period": "Core idea",
+    "learn": [
+     {
+      "h": "One owner",
+      "b": "Each value has one owner. When the owner goes out of scope, the value is dropped (freed). There is no garbage collector."
+     },
+     {
+      "h": "Moves",
+      "b": "`let b = a;` for a String moves ownership to b. After that, a cannot be used."
+     },
+     {
+      "h": "Borrowing",
+      "b": "`&x` borrows a value without taking it. `&mut x` is a mutable borrow. You can have many `&` borrows or just one `&mut` at a time."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "let a = String::from(\"hi\"); let b = a; What happens if you then print a?",
+      "o": [
+       "It prints hi",
+       "Compile error: a was moved",
+       "It prints empty text",
+       "It prints b"
+      ],
+      "a": 1,
+      "why": "Ownership moved to b, so a is no longer valid."
+     },
+     {
+      "t": "mc",
+      "q": "What does &x create?",
+      "o": [
+       "A copy",
+       "A reference (borrow)",
+       "A pointer to free",
+       "A new owner"
+      ],
+      "a": 1,
+      "why": "The & operator borrows a value."
+     },
+     {
+      "t": "mc",
+      "q": "How many mutable references to the same value can exist at once?",
+      "o": [
+       "One",
+       "Two",
+       "Unlimited",
+       "Zero"
+      ],
+      "a": 0,
+      "why": "Rust allows only one &mut at a time to prevent data races."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to an owned value when its owner goes out of scope?",
+      "o": [
+       "It leaks",
+       "It is dropped",
+       "It is moved to main",
+       "It becomes null"
+      ],
+      "a": 1,
+      "why": "Rust calls drop automatically at the end of the scope."
+     },
+     {
+      "t": "tf",
+      "q": "Rust uses a garbage collector to free memory.",
+      "a": false,
+      "why": "Rust uses ownership rules checked at compile time."
+     },
+     {
+      "t": "match",
+      "q": "Match each idea to its meaning",
+      "pairs": [
+       [
+        "&",
+        "immutable borrow"
+       ],
+       [
+        "&mut",
+        "mutable borrow"
+       ],
+       [
+        "move",
+        "ownership transfer"
+       ],
+       [
+        "drop",
+        "value is freed"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order what happens to a String",
+      "items": [
+       [
+        "Create the String",
+        1
+       ],
+       [
+        "Move it to another variable",
+        2
+       ],
+       [
+        "Old variable becomes invalid",
+        3
+       ],
+       [
+        "New owner leaves scope and it is freed",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Structs, Enums and Matching",
+    "period": "Data types",
+    "learn": [
+     {
+      "h": "Structs and impl",
+      "b": "`struct Point { x: i32, y: i32 }` groups data. An `impl` block adds methods to it."
+     },
+     {
+      "h": "Enums",
+      "b": "An `enum` is one of several variants. `Option` is either `Some(value)` or `None`. `Result` is `Ok(value)` or `Err(error)`."
+     },
+     {
+      "h": "match",
+      "b": "`match` checks a value against patterns. It must cover every case, so you cannot forget `None` or `Err`."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which two variants does Option have?",
+      "o": [
+       "Yes and No",
+       "Some and None",
+       "Ok and Err",
+       "True and False"
+      ],
+      "a": 1,
+      "why": "Option is Some(value) or None."
+     },
+     {
+      "t": "mc",
+      "q": "Which two variants does Result have?",
+      "o": [
+       "Some and None",
+       "Ok and Err",
+       "Left and Right",
+       "Pass and Fail"
+      ],
+      "a": 1,
+      "why": "Result is Ok(value) or Err(error)."
+     },
+     {
+      "t": "mc",
+      "q": "What happens if you call unwrap() on None?",
+      "o": [
+       "Returns 0",
+       "Returns an empty value",
+       "The program panics",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "unwrap on None causes a panic."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword defines a type with several possible variants?",
+      "o": [
+       "struct",
+       "enum",
+       "union only",
+       "trait"
+      ],
+      "a": 1,
+      "why": "enum lists the possible variants."
+     },
+     {
+      "t": "tf",
+      "q": "A Rust match expression must handle every possible case.",
+      "a": true,
+      "why": "The compiler checks that matches are exhaustive."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "struct",
+        "group data fields"
+       ],
+       [
+        "enum",
+        "one of several variants"
+       ],
+       [
+        "impl",
+        "add methods"
+       ],
+       [
+        "match",
+        "branch by pattern"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of handling an Option",
+      "items": [
+       [
+        "Call a function returning Option",
+        1
+       ],
+       [
+        "Use match on the result",
+        2
+       ],
+       [
+        "Handle Some(value)",
+        3
+       ],
+       [
+        "Handle None",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Traits and Collections",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Vec and HashMap",
+      "b": "`Vec<T>` is a growable list: `let mut v = vec![1,2,3]; v.push(4);`. `HashMap` lives in `std::collections` and stores key-value pairs."
+     },
+     {
+      "h": "Traits",
+      "b": "A trait describes behavior types can share, like an interface. You write `impl Trait for Type`."
+     },
+     {
+      "h": "Lifetimes",
+      "b": "Lifetimes like `'a` tell the compiler how long references live, so no reference can outlive its data."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does vec![1, 2, 3].len() return?",
+      "o": [
+       "2",
+       "3",
+       "1",
+       "6"
+      ],
+      "a": 1,
+      "why": "The vector has three items."
+     },
+     {
+      "t": "mc",
+      "q": "Which module contains HashMap?",
+      "o": [
+       "std::collections",
+       "std::maps",
+       "std::io",
+       "core::list"
+      ],
+      "a": 0,
+      "why": "HashMap is in std::collections."
+     },
+     {
+      "t": "mc",
+      "q": "In Rust, what is a trait most like?",
+      "o": [
+       "A loop",
+       "An interface describing shared behavior",
+       "A variable",
+       "A macro"
+      ],
+      "a": 1,
+      "why": "Traits define behavior that types can implement."
+     },
+     {
+      "t": "mc",
+      "q": "What does a lifetime like 'a describe?",
+      "o": [
+       "How fast code runs",
+       "How long a reference is valid",
+       "How many threads exist",
+       "The file size"
+      ],
+      "a": 1,
+      "why": "Lifetimes track how long references stay valid."
+     },
+     {
+      "t": "tf",
+      "q": "You can implement a trait for your own struct with impl Trait for Struct.",
+      "a": true,
+      "why": "That is the standard syntax."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "Vec",
+        "growable list"
+       ],
+       [
+        "HashMap",
+        "key-value store"
+       ],
+       [
+        "trait",
+        "shared behavior"
+       ],
+       [
+        "lifetime",
+        "reference validity span"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to define and use a trait",
+      "items": [
+       [
+        "Define the trait",
+        1
+       ],
+       [
+        "Create a struct",
+        2
+       ],
+       [
+        "impl the trait for the struct",
+        3
+       ],
+       [
+        "Call the trait method",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "swift": {
+  "name": "Swift",
+  "units": [
+   {
+    "title": "Swift Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "let and var",
+      "b": "`let` makes a constant that cannot change. `var` makes a variable that can change. Swift infers types for you."
+     },
+     {
+      "h": "Printing",
+      "b": "`print(\"Hi\")` prints text. Put values inside text with interpolation: `print(\"Total: \\(2 + 3)\")` prints `Total: 5`."
+     },
+     {
+      "h": "Basic types",
+      "b": "Int is a whole number, Double is a decimal, String is text and Bool is true or false. Swift is type safe, so you cannot mix them by accident."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword declares a constant in Swift?",
+      "o": [
+       "var",
+       "const",
+       "let",
+       "final"
+      ],
+      "a": 2,
+      "why": "let declares a constant."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(\"Hi \\(2 + 3)\") output?",
+      "o": [
+       "Hi 2 + 3",
+       "Hi 5",
+       "Hi \\(5)",
+       "Hi 23"
+      ],
+      "a": 1,
+      "why": "Interpolation evaluates 2 + 3 to 5."
+     },
+     {
+      "t": "mc",
+      "q": "What is the inferred type of var x = 3.5?",
+      "o": [
+       "Int",
+       "Float only",
+       "Double",
+       "String"
+      ],
+      "a": 2,
+      "why": "Swift infers decimal literals as Double."
+     },
+     {
+      "t": "mc",
+      "q": "var x = 10; x += 5; print(x) outputs what?",
+      "o": [
+       "10",
+       "5",
+       "15",
+       "105"
+      ],
+      "a": 2,
+      "why": "10 + 5 = 15."
+     },
+     {
+      "t": "tf",
+      "q": "In Swift you can change the value of a variable declared with let.",
+      "a": false,
+      "why": "let creates a constant."
+     },
+     {
+      "t": "match",
+      "q": "Match each Swift type to what it holds",
+      "pairs": [
+       [
+        "Int",
+        "whole number"
+       ],
+       [
+        "Double",
+        "decimal number"
+       ],
+       [
+        "String",
+        "text"
+       ],
+       [
+        "Bool",
+        "true or false"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a simple Swift program",
+      "items": [
+       [
+        "Declare var score = 0",
+        1
+       ],
+       [
+        "Add 10 to score",
+        2
+       ],
+       [
+        "Print the score",
+        3
+       ],
+       [
+        "Program ends",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Optionals and Control Flow",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Optionals",
+      "b": "A type with `?`, like `Int?`, may hold a value or `nil`. Swift forces you to deal with the missing case."
+     },
+     {
+      "h": "Unwrapping",
+      "b": "`if let n = value { }` safely opens an optional. `value ?? 7` gives 7 if value is nil. `value!` force unwraps and crashes on nil."
+     },
+     {
+      "h": "Loops and guard",
+      "b": "`for i in 1...3` runs for 1, 2, 3. `1..<3` stops before 3. `guard condition else { return }` exits early."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "var n: Int? = nil; print(n ?? 7) prints what?",
+      "o": [
+       "nil",
+       "7",
+       "0",
+       "It crashes"
+      ],
+      "a": 1,
+      "why": "The ?? operator gives the default 7 when n is nil."
+     },
+     {
+      "t": "mc",
+      "q": "What does for i in 1..<3 { print(i) } print?",
+      "o": [
+       "1 2 3",
+       "1 2",
+       "0 1 2",
+       "2 3"
+      ],
+      "a": 1,
+      "why": "The half-open range 1..<3 includes 1 and 2 only."
+     },
+     {
+      "t": "mc",
+      "q": "What must the else block of a guard statement do?",
+      "o": [
+       "Print a message",
+       "Exit the current scope",
+       "Loop again",
+       "Create a variable"
+      ],
+      "a": 1,
+      "why": "guard else must leave the scope with return, break, throw and so on."
+     },
+     {
+      "t": "mc",
+      "q": "What does the ? in the type String? mean?",
+      "o": [
+       "It is a question",
+       "The value may be nil",
+       "It is private",
+       "It is a constant"
+      ],
+      "a": 1,
+      "why": "A question mark marks an optional."
+     },
+     {
+      "t": "tf",
+      "q": "Force unwrapping an optional that is nil crashes the program.",
+      "a": true,
+      "why": "value! on nil causes a runtime error."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its meaning",
+      "pairs": [
+       [
+        "?",
+        "optional type"
+       ],
+       [
+        "??",
+        "default if nil"
+       ],
+       [
+        "!",
+        "force unwrap"
+       ],
+       [
+        "...",
+        "closed range"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the safe way to use an optional",
+      "items": [
+       [
+        "Declare var name: String?",
+        1
+       ],
+       [
+        "Check with if let",
+        2
+       ],
+       [
+        "Use the unwrapped value",
+        3
+       ],
+       [
+        "Else handle nil",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Collections and Closures",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Arrays and dictionaries",
+      "b": "`let a = [1,2,3]` is an array and `a.count` is 3. A dictionary uses keys: `[\"a\": 1]`. A `let` collection cannot be changed."
+     },
+     {
+      "h": "Functions",
+      "b": "Write `func add(_ a: Int, _ b: Int) -> Int { return a + b }`. The `->` shows what the function returns."
+     },
+     {
+      "h": "Closures and map",
+      "b": "A closure is a small function in braces. `[1,2,3].map { $0 * 2 }` gives `[2, 4, 6]`. `filter` keeps items, `reduce` combines them."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does [1, 2, 3].map { $0 * 2 } return?",
+      "o": [
+       "[1, 2, 3]",
+       "[2, 4, 6]",
+       "12",
+       "[3, 4, 5]"
+      ],
+      "a": 1,
+      "why": "map doubles each element."
+     },
+     {
+      "t": "mc",
+      "q": "What is [1, 2, 3].count in Swift?",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "0"
+      ],
+      "a": 1,
+      "why": "The array has three items."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword declares a function in Swift?",
+      "o": [
+       "def",
+       "fn",
+       "func",
+       "function"
+      ],
+      "a": 2,
+      "why": "Swift uses func."
+     },
+     {
+      "t": "mc",
+      "q": "What does [1, 2, 3, 4].filter { $0 > 2 } return?",
+      "o": [
+       "[1, 2]",
+       "[3, 4]",
+       "[4]",
+       "[2, 3, 4]"
+      ],
+      "a": 1,
+      "why": "Only 3 and 4 are greater than 2."
+     },
+     {
+      "t": "tf",
+      "q": "An array declared with let can have items appended later.",
+      "a": false,
+      "why": "let makes the array immutable."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "map",
+        "transform each item"
+       ],
+       [
+        "filter",
+        "keep matching items"
+       ],
+       [
+        "reduce",
+        "combine into one value"
+       ],
+       [
+        "sorted",
+        "return ordered copy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to double then total numbers",
+      "items": [
+       [
+        "Start with [1, 2, 3]",
+        1
+       ],
+       [
+        "Call map to double",
+        2
+       ],
+       [
+        "Call reduce to add",
+        3
+       ],
+       [
+        "Get 12",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Structs, Classes and Protocols",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Structs vs classes",
+      "b": "Structs are value types: copying makes an independent copy. Classes are reference types: copies share the same object. Only classes can inherit."
+     },
+     {
+      "h": "Protocols",
+      "b": "A protocol is a contract listing required properties and methods. A type that conforms must provide them."
+     },
+     {
+      "h": "Extensions and SwiftUI",
+      "b": "An `extension` adds new methods to an existing type. SwiftUI is Apple's modern framework for building user interfaces."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a value type in Swift?",
+      "o": [
+       "class",
+       "struct",
+       "closure only",
+       "protocol"
+      ],
+      "a": 1,
+      "why": "Structs are copied when assigned."
+     },
+     {
+      "t": "mc",
+      "q": "What is a Swift protocol most like?",
+      "o": [
+       "A contract of required members",
+       "A loop",
+       "A constant",
+       "A database"
+      ],
+      "a": 0,
+      "why": "A protocol lists what conforming types must provide."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword adds new methods to an existing type?",
+      "o": [
+       "append",
+       "extension",
+       "inherit",
+       "mixin"
+      ],
+      "a": 1,
+      "why": "extension adds functionality to a type."
+     },
+     {
+      "t": "mc",
+      "q": "What is SwiftUI used for?",
+      "o": [
+       "Building user interfaces",
+       "Database queries",
+       "Web servers only",
+       "Image compression"
+      ],
+      "a": 0,
+      "why": "SwiftUI is a declarative UI framework."
+     },
+     {
+      "t": "tf",
+      "q": "In Swift, classes can inherit from other classes but structs cannot.",
+      "a": true,
+      "why": "Inheritance is a class-only feature."
+     },
+     {
+      "t": "match",
+      "q": "Match each Swift term to its meaning",
+      "pairs": [
+       [
+        "struct",
+        "value type"
+       ],
+       [
+        "class",
+        "reference type"
+       ],
+       [
+        "protocol",
+        "required members"
+       ],
+       [
+        "extension",
+        "add to a type"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to use a protocol",
+      "items": [
+       [
+        "Declare the protocol",
+        1
+       ],
+       [
+        "Create a type",
+        2
+       ],
+       [
+        "Conform the type to it",
+        3
+       ],
+       [
+        "Call the required method",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "kotlin": {
+  "name": "Kotlin",
+  "units": [
+   {
+    "title": "Kotlin Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "val and var",
+      "b": "`val` makes a read-only variable. `var` makes one you can change. Kotlin works out the type, so `val name = \"Ann\"` is a String."
+     },
+     {
+      "h": "Printing and templates",
+      "b": "`println(\"Hi\")` prints a line. Use `$name` or `${2 + 3}` inside a string to insert values."
+     },
+     {
+      "h": "Types and main",
+      "b": "Common types are Int, Double, String and Boolean. A program starts in `fun main()`. Kotlin runs on the JVM and on Android."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword declares a variable that cannot be reassigned?",
+      "o": [
+       "var",
+       "val",
+       "let",
+       "const var"
+      ],
+      "a": 1,
+      "why": "val creates a read-only reference."
+     },
+     {
+      "t": "mc",
+      "q": "What does println(\"Sum: ${2 + 3}\") print?",
+      "o": [
+       "Sum: 2 + 3",
+       "Sum: 5",
+       "Sum: ${5}",
+       "Sum: 23"
+      ],
+      "a": 1,
+      "why": "The template ${2 + 3} is evaluated to 5."
+     },
+     {
+      "t": "mc",
+      "q": "What type does Kotlin infer for val s = \"hi\"?",
+      "o": [
+       "Char",
+       "String",
+       "Any only",
+       "Text"
+      ],
+      "a": 1,
+      "why": "Text in double quotes is a String."
+     },
+     {
+      "t": "mc",
+      "q": "Which function is the usual start of a Kotlin program?",
+      "o": [
+       "fun start()",
+       "fun main()",
+       "fun run()",
+       "fun begin()"
+      ],
+      "a": 1,
+      "why": "Execution begins in main."
+     },
+     {
+      "t": "tf",
+      "q": "Kotlin code can run on the Java Virtual Machine.",
+      "a": true,
+      "why": "Kotlin compiles to JVM bytecode."
+     },
+     {
+      "t": "match",
+      "q": "Match each Kotlin type to what it holds",
+      "pairs": [
+       [
+        "Int",
+        "whole number"
+       ],
+       [
+        "Double",
+        "decimal number"
+       ],
+       [
+        "String",
+        "text"
+       ],
+       [
+        "Boolean",
+        "true or false"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a small Kotlin program",
+      "items": [
+       [
+        "fun main() {",
+        1
+       ],
+       [
+        "val x = 5",
+        2
+       ],
+       [
+        "println(x)",
+        3
+       ],
+       [
+        "}",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Null Safety",
+    "period": "Core idea",
+    "learn": [
+     {
+      "h": "Nullable types",
+      "b": "A normal `String` can never be null. `String?` can hold null. This stops many crashes."
+     },
+     {
+      "h": "Safe call and Elvis",
+      "b": "`s?.length` gives null if s is null. `s ?: \"none\"` gives a default when s is null."
+     },
+     {
+      "h": "The !! operator",
+      "b": "`s!!` says it is definitely not null. If it is null, the program throws an exception. Use it rarely."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "val s: String? = null; println(s?.length) prints what?",
+      "o": [
+       "0",
+       "null",
+       "It crashes",
+       "Empty line"
+      ],
+      "a": 1,
+      "why": "A safe call on null returns null."
+     },
+     {
+      "t": "mc",
+      "q": "val s: String? = null; println(s ?: \"none\") prints what?",
+      "o": [
+       "null",
+       "none",
+       "s",
+       "It crashes"
+      ],
+      "a": 1,
+      "why": "The Elvis operator supplies the default when the left side is null."
+     },
+     {
+      "t": "mc",
+      "q": "What does !! do on a null value?",
+      "o": [
+       "Returns null",
+       "Returns empty text",
+       "Throws an exception",
+       "Does nothing"
+      ],
+      "a": 2,
+      "why": "!! throws NullPointerException on null."
+     },
+     {
+      "t": "mc",
+      "q": "Which type can hold null?",
+      "o": [
+       "Int",
+       "String",
+       "String?",
+       "Boolean"
+      ],
+      "a": 2,
+      "why": "A question mark makes a type nullable."
+     },
+     {
+      "t": "tf",
+      "q": "A regular String variable in Kotlin cannot be assigned null.",
+      "a": true,
+      "why": "Only nullable types such as String? can hold null."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its meaning",
+      "pairs": [
+       [
+        "?",
+        "nullable type"
+       ],
+       [
+        "?.",
+        "safe call"
+       ],
+       [
+        "?:",
+        "default if null"
+       ],
+       [
+        "!!",
+        "assert not null"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the safe way to read a nullable length",
+      "items": [
+       [
+        "Declare val s: String?",
+        1
+       ],
+       [
+        "Use s?.length",
+        2
+       ],
+       [
+        "Add ?: 0 as default",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Functions and Collections",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Functions",
+      "b": "`fun add(a: Int, b: Int = 10) = a + b`. Parameters can have default values, so `add(5)` returns 15."
+     },
+     {
+      "h": "Lists",
+      "b": "`listOf(1,2,3)` makes a read-only list. `mutableListOf` makes one you can change with add."
+     },
+     {
+      "h": "Lambdas",
+      "b": "A lambda is a short function in braces. `it` is the single parameter. `map` transforms and `filter` keeps items."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does println(listOf(1, 2, 3).map { it * 2 }) print?",
+      "o": [
+       "[1, 2, 3]",
+       "[2, 4, 6]",
+       "6",
+       "[2, 3, 4]"
+      ],
+      "a": 1,
+      "why": "map doubles each item and lists print as [2, 4, 6]."
+     },
+     {
+      "t": "mc",
+      "q": "Given fun add(a: Int, b: Int = 10) = a + b, what is add(5)?",
+      "o": [
+       "5",
+       "10",
+       "15",
+       "It is an error"
+      ],
+      "a": 2,
+      "why": "b defaults to 10, so 5 + 10 = 15."
+     },
+     {
+      "t": "mc",
+      "q": "What does listOf(1, 2, 3, 4).filter { it % 2 == 0 } return?",
+      "o": [
+       "[1, 3]",
+       "[2, 4]",
+       "[4]",
+       "[1, 2]"
+      ],
+      "a": 1,
+      "why": "Only 2 and 4 are even."
+     },
+     {
+      "t": "mc",
+      "q": "What is (1..3).sum() in Kotlin?",
+      "o": [
+       "3",
+       "5",
+       "6",
+       "123"
+      ],
+      "a": 2,
+      "why": "1 + 2 + 3 = 6."
+     },
+     {
+      "t": "tf",
+      "q": "A list created with listOf cannot have items added to it.",
+      "a": true,
+      "why": "listOf returns a read-only list; use mutableListOf to add."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "map",
+        "transform items"
+       ],
+       [
+        "filter",
+        "keep matching items"
+       ],
+       [
+        "listOf",
+        "read-only list"
+       ],
+       [
+        "mutableListOf",
+        "changeable list"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to keep even numbers then double them",
+      "items": [
+       [
+        "Start with a list",
+        1
+       ],
+       [
+        "filter evens",
+        2
+       ],
+       [
+        "map to double",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Classes and Coroutines",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Classes and data classes",
+      "b": "`class Dog(val name: String)` has a constructor in its header. A `data class` automatically gets toString, equals and copy."
+     },
+     {
+      "h": "when and object",
+      "b": "`when` is a stronger version of switch and can return a value. `object` declares a single instance (a singleton)."
+     },
+     {
+      "h": "Coroutines",
+      "b": "Coroutines let you write async code in a simple way. A `suspend` function can pause without blocking a thread."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "With data class Point(val x: Int, val y: Int), what does println(Point(1, 2)) print?",
+      "o": [
+       "Point",
+       "Point(x=1, y=2)",
+       "(1, 2)",
+       "1 2"
+      ],
+      "a": 1,
+      "why": "Data classes generate toString in the form Point(x=1, y=2)."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword replaces the traditional switch in Kotlin?",
+      "o": [
+       "match",
+       "when",
+       "case",
+       "select"
+      ],
+      "a": 1,
+      "why": "Kotlin uses when."
+     },
+     {
+      "t": "mc",
+      "q": "What does the object keyword declare?",
+      "o": [
+       "A singleton",
+       "An array",
+       "A loop",
+       "A lambda"
+      ],
+      "a": 0,
+      "why": "object creates a class with exactly one instance."
+     },
+     {
+      "t": "mc",
+      "q": "What does the suspend modifier mark?",
+      "o": [
+       "A private function",
+       "A function that can pause in a coroutine",
+       "A constant",
+       "A thread"
+      ],
+      "a": 1,
+      "why": "suspend functions can be paused and resumed by coroutines."
+     },
+     {
+      "t": "tf",
+      "q": "A data class automatically provides equals, toString and copy.",
+      "a": true,
+      "why": "The compiler generates them from the primary constructor."
+     },
+     {
+      "t": "match",
+      "q": "Match each Kotlin feature to its use",
+      "pairs": [
+       [
+        "data class",
+        "holds data"
+       ],
+       [
+        "object",
+        "singleton"
+       ],
+       [
+        "when",
+        "multi-way branch"
+       ],
+       [
+        "suspend",
+        "coroutine function"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to use a data class",
+      "items": [
+       [
+        "Declare the data class",
+        1
+       ],
+       [
+        "Create an instance",
+        2
+       ],
+       [
+        "Use copy to change one field",
+        3
+       ],
+       [
+        "Print it",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "php": {
+  "name": "PHP",
+  "units": [
+   {
+    "title": "PHP Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "PHP runs on the server",
+      "b": "PHP code goes inside `<?php ... ?>`. The server runs it and sends plain HTML to the browser."
+     },
+     {
+      "h": "Variables and echo",
+      "b": "Every variable starts with `$`, like `$name = \"Ann\";`. `echo` prints text. The dot `.` joins strings."
+     },
+     {
+      "h": "Types and operators",
+      "b": "Common types are string, int, float, bool and array. Math follows normal order: `2 + 3 * 2` is 8. `strlen(\"hello\")` gives 5."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a PHP variable name start with?",
+      "o": [
+       "@",
+       "$",
+       "#",
+       "&"
+      ],
+      "a": 1,
+      "why": "All PHP variables begin with a dollar sign."
+     },
+     {
+      "t": "mc",
+      "q": "What does echo \"Hi\" . \" there\"; print?",
+      "o": [
+       "Hi there",
+       "Hi . there",
+       "Hithere",
+       "Hi+there"
+      ],
+      "a": 0,
+      "why": "The dot joins the two strings."
+     },
+     {
+      "t": "mc",
+      "q": "What does echo strlen(\"hello\"); print?",
+      "o": [
+       "4",
+       "5",
+       "6",
+       "hello"
+      ],
+      "a": 1,
+      "why": "\"hello\" has 5 characters."
+     },
+     {
+      "t": "mc",
+      "q": "What does echo 2 + 3 * 2; print?",
+      "o": [
+       "10",
+       "8",
+       "12",
+       "7"
+      ],
+      "a": 1,
+      "why": "Multiplication first: 3 * 2 = 6, then 2 + 6 = 8."
+     },
+     {
+      "t": "tf",
+      "q": "PHP code is executed on the server before the page reaches the browser.",
+      "a": true,
+      "why": "The browser only receives the output."
+     },
+     {
+      "t": "match",
+      "q": "Match each PHP piece to its job",
+      "pairs": [
+       [
+        "echo",
+        "print output"
+       ],
+       [
+        "$x",
+        "a variable"
+       ],
+       [
+        ".",
+        "join strings"
+       ],
+       [
+        "<?php",
+        "start PHP code"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a tiny PHP script",
+      "items": [
+       [
+        "<?php",
+        1
+       ],
+       [
+        "$name = \"Ann\";",
+        2
+       ],
+       [
+        "echo $name;",
+        3
+       ],
+       [
+        "?>",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Control Flow and Functions",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Loops",
+      "b": "`for ($i = 1; $i <= 3; $i++) { echo $i; }` prints 123. `foreach ($list as $item)` loops over an array."
+     },
+     {
+      "h": "Comparing values",
+      "b": "`==` compares values loosely. `===` compares value and type, so `5 === \"5\"` is false."
+     },
+     {
+      "h": "Functions",
+      "b": "`function add($a, $b) { return $a + $b; }`. Conditions use if, elseif and else."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does for ($i = 1; $i <= 3; $i++) { echo $i; } print?",
+      "o": [
+       "012",
+       "123",
+       "1 2 3",
+       "3"
+      ],
+      "a": 1,
+      "why": "i is 1, 2, 3 and echo adds no spaces."
+     },
+     {
+      "t": "mc",
+      "q": "What is the result of 5 === \"5\" in PHP?",
+      "o": [
+       "true",
+       "false",
+       "an error",
+       "null"
+      ],
+      "a": 1,
+      "why": "=== also compares types, and int is not string."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword defines a function in PHP?",
+      "o": [
+       "def",
+       "func",
+       "function",
+       "fn only"
+      ],
+      "a": 2,
+      "why": "PHP uses the function keyword."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop goes through every item of an array?",
+      "o": [
+       "foreach",
+       "repeat",
+       "loopall",
+       "each only"
+      ],
+      "a": 0,
+      "why": "foreach is made for arrays."
+     },
+     {
+      "t": "tf",
+      "q": "PHP supports elseif for extra conditions in an if statement.",
+      "a": true,
+      "why": "if, elseif and else can be chained."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "==",
+        "equal value"
+       ],
+       [
+        "===",
+        "equal value and type"
+       ],
+       [
+        "&&",
+        "and"
+       ],
+       [
+        "||",
+        "or"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a function call works",
+      "items": [
+       [
+        "Define the function",
+        1
+       ],
+       [
+        "Call it with arguments",
+        2
+       ],
+       [
+        "The body runs",
+        3
+       ],
+       [
+        "A value is returned",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Arrays",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "Indexed arrays",
+      "b": "`$a = [1, 2, 3];` The first item is `$a[0]`. `count($a)` gives 3. Add with `$a[] = 4;`."
+     },
+     {
+      "h": "Associative arrays",
+      "b": "Use keys: `$p = [\"name\" => \"Ann\"];` and read it with `$p[\"name\"]`."
+     },
+     {
+      "h": "Array functions",
+      "b": "`sort()` orders items, `in_array()` checks if a value exists, and `array_merge()` joins arrays."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "$a = [1, 2, 3]; echo count($a); prints what?",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "123"
+      ],
+      "a": 1,
+      "why": "The array has 3 items."
+     },
+     {
+      "t": "mc",
+      "q": "$a = [\"x\" => 1]; echo $a[\"x\"]; prints what?",
+      "o": [
+       "x",
+       "1",
+       "0",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "The key x holds the value 1."
+     },
+     {
+      "t": "mc",
+      "q": "What index does the first item of $a = [5, 6, 7] have?",
+      "o": [
+       "0",
+       "1",
+       "-1",
+       "5"
+      ],
+      "a": 0,
+      "why": "PHP arrays are zero-indexed."
+     },
+     {
+      "t": "mc",
+      "q": "Which function checks if a value exists in an array?",
+      "o": [
+       "has_value()",
+       "in_array()",
+       "find()",
+       "exists()"
+      ],
+      "a": 1,
+      "why": "in_array() searches for a value."
+     },
+     {
+      "t": "tf",
+      "q": "In PHP, $a[] = 4; adds 4 to the end of the array $a.",
+      "a": true,
+      "why": "Empty brackets append a new item."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "count",
+        "number of items"
+       ],
+       [
+        "sort",
+        "order items"
+       ],
+       [
+        "array_merge",
+        "join arrays"
+       ],
+       [
+        "in_array",
+        "search a value"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to use an array",
+      "items": [
+       [
+        "Create the array",
+        1
+       ],
+       [
+        "Add an item",
+        2
+       ],
+       [
+        "Sort it",
+        3
+       ],
+       [
+        "Loop with foreach",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Forms, OOP and Security",
+    "period": "Web PHP",
+    "learn": [
+     {
+      "h": "Form data",
+      "b": "PHP reads form input from `$_GET` and `$_POST`. These are superglobals, available everywhere. `session_start()` begins a session."
+     },
+     {
+      "h": "Classes",
+      "b": "`class User { public $name; }` and `new User()` create an object. Inside a class, `$this` means the current object."
+     },
+     {
+      "h": "Staying safe",
+      "b": "Use PDO prepared statements to stop SQL injection. Use `htmlspecialchars()` against XSS and `password_hash()` to store passwords."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which superglobal holds data sent by a form using method POST?",
+      "o": [
+       "$_GET",
+       "$_POST",
+       "$_FORM",
+       "$_DATA"
+      ],
+      "a": 1,
+      "why": "$_POST contains POST request data."
+     },
+     {
+      "t": "mc",
+      "q": "What helps prevent SQL injection?",
+      "o": [
+       "Prepared statements",
+       "Longer variable names",
+       "echo",
+       "Sessions"
+      ],
+      "a": 0,
+      "why": "Prepared statements keep user input separate from SQL code."
+     },
+     {
+      "t": "mc",
+      "q": "Inside a class method, what does $this refer to?",
+      "o": [
+       "The parent file",
+       "The current object",
+       "The server",
+       "A global array"
+      ],
+      "a": 1,
+      "why": "$this is the object the method was called on."
+     },
+     {
+      "t": "mc",
+      "q": "Which function should you use to store a password safely?",
+      "o": [
+       "md5()",
+       "password_hash()",
+       "strrev()",
+       "base64_encode()"
+      ],
+      "a": 1,
+      "why": "password_hash() applies a strong, salted hash."
+     },
+     {
+      "t": "tf",
+      "q": "htmlspecialchars() helps protect against XSS when printing user input.",
+      "a": true,
+      "why": "It converts special characters so they are not run as HTML."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its use",
+      "pairs": [
+       [
+        "$_GET",
+        "URL query data"
+       ],
+       [
+        "session_start",
+        "begin a session"
+       ],
+       [
+        "PDO",
+        "database access"
+       ],
+       [
+        "new",
+        "create an object"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order handling a login form safely",
+      "items": [
+       [
+        "User submits form",
+        1
+       ],
+       [
+        "Read $_POST",
+        2
+       ],
+       [
+        "Check with password_verify",
+        3
+       ],
+       [
+        "Start a session",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ruby": {
+  "name": "Ruby",
+  "units": [
+   {
+    "title": "Ruby Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "puts and variables",
+      "b": "`puts \"Hi\"` prints a line. Variables need no keyword: `name = \"Ann\"`. Put values in text with `\"Hi #{name}\"`."
+     },
+     {
+      "h": "Numbers",
+      "b": "Whole numbers divide as whole numbers: `7 / 2` is 3. Use a decimal for a decimal result: `7.0 / 2` is 3.5."
+     },
+     {
+      "h": "Everything is an object",
+      "b": "Even numbers and strings have methods: `\"hi\".length` is 2. A symbol like `:name` is a light-weight name. `nil` means nothing."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does puts \"Hi #{2 + 3}\" print?",
+      "o": [
+       "Hi 2 + 3",
+       "Hi 5",
+       "Hi #{5}",
+       "Hi 23"
+      ],
+      "a": 1,
+      "why": "Interpolation evaluates 2 + 3 to 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does puts 7 / 2 print in Ruby?",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "2"
+      ],
+      "a": 1,
+      "why": "Integer division drops the remainder, giving 3."
+     },
+     {
+      "t": "mc",
+      "q": "What does puts 7.0 / 2 print?",
+      "o": [
+       "3",
+       "3.5",
+       "4.0",
+       "3.0"
+      ],
+      "a": 1,
+      "why": "Using a float gives 3.5."
+     },
+     {
+      "t": "mc",
+      "q": "What does puts \"hi\".length print?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "hi"
+      ],
+      "a": 1,
+      "why": "The string has 2 characters."
+     },
+     {
+      "t": "tf",
+      "q": "In Ruby, everything, including numbers, is an object.",
+      "a": true,
+      "why": "Numbers and strings have methods like any object."
+     },
+     {
+      "t": "match",
+      "q": "Match each Ruby item to its meaning",
+      "pairs": [
+       [
+        "puts",
+        "print a line"
+       ],
+       [
+        ":name",
+        "a symbol"
+       ],
+       [
+        "nil",
+        "nothing"
+       ],
+       [
+        "#{}",
+        "string interpolation"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a tiny Ruby script",
+      "items": [
+       [
+        "name = \"Ann\"",
+        1
+       ],
+       [
+        "age = 15",
+        2
+       ],
+       [
+        "puts name",
+        3
+       ],
+       [
+        "puts age",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Methods and Control Flow",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Defining methods",
+      "b": "`def greet(name)` starts a method and `end` closes it. The last expression is returned automatically, so `return` is optional."
+     },
+     {
+      "h": "Conditions",
+      "b": "`if`, `elsif`, `else` and `unless` all end with `end`. `10 % 3` gives the remainder, 1."
+     },
+     {
+      "h": "Loops",
+      "b": "`3.times { print \"a\" }` prints aaa. `while` and `until` also exist. `for` is rare in Ruby."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 3.times { print \"a\" } print?",
+      "o": [
+       "a",
+       "aaa",
+       "3a",
+       "a a a"
+      ],
+      "a": 1,
+      "why": "The block runs 3 times with no separators."
+     },
+     {
+      "t": "mc",
+      "q": "What does puts 10 % 3 print?",
+      "o": [
+       "3",
+       "1",
+       "0",
+       "10"
+      ],
+      "a": 1,
+      "why": "10 divided by 3 leaves remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword ends a Ruby method definition?",
+      "o": [
+       "}",
+       "end",
+       "stop",
+       "done"
+      ],
+      "a": 1,
+      "why": "Ruby blocks and methods close with end."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword runs code when a condition is false?",
+      "o": [
+       "unless",
+       "except",
+       "never",
+       "ifnot"
+      ],
+      "a": 0,
+      "why": "unless is the opposite of if."
+     },
+     {
+      "t": "tf",
+      "q": "In Ruby a method returns the value of its last expression even without return.",
+      "a": true,
+      "why": "Implicit return is standard Ruby style."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "def",
+        "define a method"
+       ],
+       [
+        "elsif",
+        "extra condition"
+       ],
+       [
+        "unless",
+        "if not"
+       ],
+       [
+        "end",
+        "close a block"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a method call works",
+      "items": [
+       [
+        "Define with def",
+        1
+       ],
+       [
+        "Call the method",
+        2
+       ],
+       [
+        "Body runs",
+        3
+       ],
+       [
+        "Last value is returned",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Arrays, Hashes and Blocks",
+    "period": "Collections",
+    "learn": [
+     {
+      "h": "Arrays",
+      "b": "`[3, 1, 2].sort` gives `[1, 2, 3]`. `each` loops over items. `map` transforms and `select` filters."
+     },
+     {
+      "h": "Hashes",
+      "b": "A hash stores pairs: `h = {a: 1}`. Read with `h[:a]`, which gives 1."
+     },
+     {
+      "h": "Blocks",
+      "b": "A block is code in `{ |x| ... }` or `do ... end`. `[1,2,3].map { |x| x * 2 }` gives `[2, 4, 6]`."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the result of [1, 2, 3].map { |x| x * 2 }?",
+      "o": [
+       "[1, 2, 3]",
+       "[2, 4, 6]",
+       "12",
+       "[3, 4, 5]"
+      ],
+      "a": 1,
+      "why": "map applies the block to each item."
+     },
+     {
+      "t": "mc",
+      "q": "With h = {a: 1}, what is h[:a]?",
+      "o": [
+       "a",
+       "1",
+       "nil",
+       ":a"
+      ],
+      "a": 1,
+      "why": "The key :a holds 1."
+     },
+     {
+      "t": "mc",
+      "q": "What is [3, 1, 2].sort?",
+      "o": [
+       "[3, 2, 1]",
+       "[1, 2, 3]",
+       "[1, 3, 2]",
+       "[2, 1, 3]"
+      ],
+      "a": 1,
+      "why": "sort orders ascending."
+     },
+     {
+      "t": "mc",
+      "q": "What is [1, 2, 3, 4].select { |x| x.even? }?",
+      "o": [
+       "[1, 3]",
+       "[2, 4]",
+       "[4]",
+       "[1, 2]"
+      ],
+      "a": 1,
+      "why": "select keeps items where the block is true: 2 and 4."
+     },
+     {
+      "t": "tf",
+      "q": "Ruby's each method runs a block once for every item in a collection.",
+      "a": true,
+      "why": "That is exactly what each does."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "each",
+        "loop over items"
+       ],
+       [
+        "map",
+        "transform items"
+       ],
+       [
+        "select",
+        "keep matching items"
+       ],
+       [
+        "sort",
+        "order items"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of a data pipeline",
+      "items": [
+       [
+        "Start with an array",
+        1
+       ],
+       [
+        "select some items",
+        2
+       ],
+       [
+        "map them",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Classes, Modules and Gems",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Classes",
+      "b": "`class Dog` with `def initialize(name)` sets up new objects. `@name` is an instance variable. `attr_accessor :name` creates getter and setter methods."
+     },
+     {
+      "h": "Modules",
+      "b": "A module groups methods. Use `include` to mix it into a class, which gives Ruby a kind of multiple inheritance."
+     },
+     {
+      "h": "Gems and Rails",
+      "b": "Gems are Ruby libraries installed with `gem` and managed by Bundler. Rails is a popular web framework written in Ruby."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method runs when you call Dog.new?",
+      "o": [
+       "start",
+       "initialize",
+       "build",
+       "create"
+      ],
+      "a": 1,
+      "why": "new calls initialize on the new object."
+     },
+     {
+      "t": "mc",
+      "q": "What does an @ at the start of a name, like @name, mean?",
+      "o": [
+       "A global variable",
+       "An instance variable",
+       "A constant",
+       "A method"
+      ],
+      "a": 1,
+      "why": "@name belongs to one object."
+     },
+     {
+      "t": "mc",
+      "q": "What does attr_accessor :name create?",
+      "o": [
+       "Only a getter",
+       "A getter and a setter",
+       "A class",
+       "A loop"
+      ],
+      "a": 1,
+      "why": "It defines both reading and writing methods."
+     },
+     {
+      "t": "mc",
+      "q": "What is a gem?",
+      "o": [
+       "A Ruby library package",
+       "A syntax error",
+       "A type of loop",
+       "A database"
+      ],
+      "a": 0,
+      "why": "Gems are packaged Ruby libraries."
+     },
+     {
+      "t": "tf",
+      "q": "A module can be mixed into a class using include.",
+      "a": true,
+      "why": "include adds the module's methods to the class."
+     },
+     {
+      "t": "match",
+      "q": "Match each Ruby term to its meaning",
+      "pairs": [
+       [
+        "class",
+        "blueprint for objects"
+       ],
+       [
+        "module",
+        "shared group of methods"
+       ],
+       [
+        "gem",
+        "library package"
+       ],
+       [
+        "Rails",
+        "web framework"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to make and use a class",
+      "items": [
+       [
+        "Define the class",
+        1
+       ],
+       [
+        "Write initialize",
+        2
+       ],
+       [
+        "Create an object with new",
+        3
+       ],
+       [
+        "Call a method on it",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "sql": {
+  "name": "SQL",
+  "units": [
+   {
+    "title": "Reading Data",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Tables and SELECT",
+      "b": "A database stores data in tables made of rows and columns. `SELECT name FROM users;` reads the name column. `SELECT *` reads every column."
+     },
+     {
+      "h": "WHERE",
+      "b": "`WHERE` filters rows: `SELECT * FROM users WHERE age > 18;`. Text values use single quotes, like `'Ann'`."
+     },
+     {
+      "h": "DISTINCT and LIMIT",
+      "b": "`SELECT DISTINCT city` removes repeated values. `LIMIT 5` returns only the first 5 rows."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which clause names the table you read from?",
+      "o": [
+       "SELECT",
+       "FROM",
+       "WHERE",
+       "LIMIT"
+      ],
+      "a": 1,
+      "why": "FROM tells SQL which table to use."
+     },
+     {
+      "t": "mc",
+      "q": "What does SELECT * FROM users; return?",
+      "o": [
+       "Only the first row",
+       "All columns of all rows",
+       "Only the column names",
+       "The row count"
+      ],
+      "a": 1,
+      "why": "The star means every column."
+     },
+     {
+      "t": "mc",
+      "q": "Which query returns only users older than 18?",
+      "o": [
+       "SELECT * FROM users HAVING age > 18;",
+       "SELECT * FROM users WHERE age > 18;",
+       "SELECT age > 18 FROM users;",
+       "FROM users SELECT age > 18;"
+      ],
+      "a": 1,
+      "why": "WHERE filters rows before they are returned."
+     },
+     {
+      "t": "mc",
+      "q": "What does SELECT DISTINCT city FROM users do?",
+      "o": [
+       "Sorts the cities",
+       "Counts the cities",
+       "Returns each city only once",
+       "Deletes duplicates"
+      ],
+      "a": 2,
+      "why": "DISTINCT removes duplicate values from the result."
+     },
+     {
+      "t": "tf",
+      "q": "SQL keywords like SELECT and select work the same way.",
+      "a": true,
+      "why": "SQL keywords are not case-sensitive."
+     },
+     {
+      "t": "match",
+      "q": "Match each clause to its job",
+      "pairs": [
+       [
+        "SELECT",
+        "choose columns"
+       ],
+       [
+        "FROM",
+        "choose table"
+       ],
+       [
+        "WHERE",
+        "filter rows"
+       ],
+       [
+        "LIMIT",
+        "cap row count"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the parts of a basic query",
+      "items": [
+       [
+        "SELECT name",
+        1
+       ],
+       [
+        "FROM users",
+        2
+       ],
+       [
+        "WHERE age > 18",
+        3
+       ],
+       [
+        "LIMIT 10",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Sorting and Summarizing",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "ORDER BY",
+      "b": "`ORDER BY price` sorts from small to large (ASC is the default). `ORDER BY price DESC` sorts from large to small."
+     },
+     {
+      "h": "Aggregate functions",
+      "b": "`COUNT(*)` counts rows, `SUM` adds, `AVG` averages, `MIN` and `MAX` find extremes. The average of 2, 4, 6 is 4."
+     },
+     {
+      "h": "GROUP BY and HAVING",
+      "b": "`GROUP BY city` makes one result row per city. `HAVING` filters those groups after counting, while `WHERE` filters rows before."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A table has 5 rows. What does SELECT COUNT(*) FROM t; return?",
+      "o": [
+       "1",
+       "4",
+       "5",
+       "The column count"
+      ],
+      "a": 2,
+      "why": "COUNT(*) counts all rows."
+     },
+     {
+      "t": "mc",
+      "q": "What is AVG of the values 2, 4 and 6?",
+      "o": [
+       "3",
+       "4",
+       "6",
+       "12"
+      ],
+      "a": 1,
+      "why": "(2 + 4 + 6) / 3 = 4."
+     },
+     {
+      "t": "mc",
+      "q": "What is the default order of ORDER BY?",
+      "o": [
+       "Descending",
+       "Random",
+       "Ascending",
+       "By insertion time"
+      ],
+      "a": 2,
+      "why": "ASC is the default."
+     },
+     {
+      "t": "mc",
+      "q": "Which clause filters groups after GROUP BY?",
+      "o": [
+       "WHERE",
+       "HAVING",
+       "FROM",
+       "LIMIT"
+      ],
+      "a": 1,
+      "why": "HAVING filters aggregated groups."
+     },
+     {
+      "t": "tf",
+      "q": "ORDER BY price DESC puts the highest price first.",
+      "a": true,
+      "why": "DESC means descending order."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "COUNT",
+        "number of rows"
+       ],
+       [
+        "SUM",
+        "total of values"
+       ],
+       [
+        "MAX",
+        "largest value"
+       ],
+       [
+        "AVG",
+        "mean value"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the clauses in a grouped query",
+      "items": [
+       [
+        "SELECT city, COUNT(*)",
+        1
+       ],
+       [
+        "FROM users",
+        2
+       ],
+       [
+        "GROUP BY city",
+        3
+       ],
+       [
+        "ORDER BY COUNT(*) DESC",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Joins and Keys",
+    "period": "Relational",
+    "learn": [
+     {
+      "h": "Primary and foreign keys",
+      "b": "A primary key uniquely identifies each row. A foreign key in another table points to it, linking the tables."
+     },
+     {
+      "h": "INNER JOIN",
+      "b": "`INNER JOIN` returns only rows that match in both tables: `FROM orders JOIN users ON orders.user_id = users.id`."
+     },
+     {
+      "h": "LEFT JOIN",
+      "b": "`LEFT JOIN` keeps every row from the left table. If nothing matches on the right, those columns are NULL."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a primary key do?",
+      "o": [
+       "Encrypts a table",
+       "Uniquely identifies each row",
+       "Sorts the rows",
+       "Deletes duplicates"
+      ],
+      "a": 1,
+      "why": "Each primary key value is unique per row."
+     },
+     {
+      "t": "mc",
+      "q": "Which join keeps all rows from the left table even with no match?",
+      "o": [
+       "INNER JOIN",
+       "LEFT JOIN",
+       "CROSS only",
+       "MATCH JOIN"
+      ],
+      "a": 1,
+      "why": "LEFT JOIN keeps all left rows and fills missing right values with NULL."
+     },
+     {
+      "t": "mc",
+      "q": "Which join returns only rows that match in both tables?",
+      "o": [
+       "INNER JOIN",
+       "LEFT JOIN",
+       "OUTER ONLY",
+       "UNION"
+      ],
+      "a": 0,
+      "why": "INNER JOIN keeps matching rows only."
+     },
+     {
+      "t": "mc",
+      "q": "A foreign key in orders.user_id usually points to what?",
+      "o": [
+       "A column in users, often its id",
+       "The orders table itself",
+       "A text file",
+       "The database name"
+      ],
+      "a": 0,
+      "why": "A foreign key references a key in another table."
+     },
+     {
+      "t": "tf",
+      "q": "In a LEFT JOIN, unmatched right-side columns are returned as NULL.",
+      "a": true,
+      "why": "No matching row means no values, shown as NULL."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Primary key",
+        "unique row ID"
+       ],
+       [
+        "Foreign key",
+        "link to another table"
+       ],
+       [
+        "INNER JOIN",
+        "matching rows only"
+       ],
+       [
+        "LEFT JOIN",
+        "all left rows"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the parts of a join query",
+      "items": [
+       [
+        "SELECT columns",
+        1
+       ],
+       [
+        "FROM orders",
+        2
+       ],
+       [
+        "JOIN users",
+        3
+       ],
+       [
+        "ON orders.user_id = users.id",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Changing Data and Design",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "INSERT, UPDATE, DELETE",
+      "b": "`INSERT INTO t (a) VALUES (1)` adds a row. `UPDATE t SET a = 2 WHERE id = 1` changes rows. `DELETE FROM t WHERE id = 1` removes rows. Without WHERE, they affect every row!"
+     },
+     {
+      "h": "CREATE TABLE and indexes",
+      "b": "`CREATE TABLE` defines columns and types. An index makes searches on a column faster."
+     },
+     {
+      "h": "Transactions",
+      "b": "A transaction groups changes so they all succeed or all fail. `COMMIT` saves them and `ROLLBACK` undoes them."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does UPDATE users SET age = 20; do without a WHERE clause?",
+      "o": [
+       "Updates nothing",
+       "Updates every row",
+       "Updates the first row",
+       "Causes an error"
+      ],
+      "a": 1,
+      "why": "Without WHERE the change applies to all rows."
+     },
+     {
+      "t": "mc",
+      "q": "Which statement adds a new row?",
+      "o": [
+       "ADD ROW",
+       "INSERT INTO",
+       "NEW INTO",
+       "UPDATE INTO"
+      ],
+      "a": 1,
+      "why": "INSERT INTO adds rows."
+     },
+     {
+      "t": "mc",
+      "q": "What is an index for?",
+      "o": [
+       "Making searches faster",
+       "Encrypting data",
+       "Naming a table",
+       "Deleting rows"
+      ],
+      "a": 0,
+      "why": "Indexes speed up lookups on a column."
+     },
+     {
+      "t": "mc",
+      "q": "Which command undoes the changes of a transaction?",
+      "o": [
+       "COMMIT",
+       "ROLLBACK",
+       "REVERT ALL",
+       "DROP"
+      ],
+      "a": 1,
+      "why": "ROLLBACK cancels uncommitted changes."
+     },
+     {
+      "t": "tf",
+      "q": "DELETE FROM users; with no WHERE removes all rows from the table.",
+      "a": true,
+      "why": "No filter means every row is deleted."
+     },
+     {
+      "t": "match",
+      "q": "Match each statement to its job",
+      "pairs": [
+       [
+        "INSERT",
+        "add rows"
+       ],
+       [
+        "UPDATE",
+        "change rows"
+       ],
+       [
+        "DELETE",
+        "remove rows"
+       ],
+       [
+        "CREATE TABLE",
+        "define a new table"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of a safe transaction",
+      "items": [
+       [
+        "BEGIN",
+        1
+       ],
+       [
+        "Run the changes",
+        2
+       ],
+       [
+        "Check the result",
+        3
+       ],
+       [
+        "COMMIT",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "bash": {
+  "name": "Bash & Linux",
+  "units": [
+   {
+    "title": "Moving Around",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "The shell",
+      "b": "The terminal runs a shell, such as Bash. You type commands and press Enter. `pwd` shows where you are."
+     },
+     {
+      "h": "Look and move",
+      "b": "`ls` lists files and `ls -a` also shows hidden files that start with a dot. `cd folder` enters a folder and `cd ..` goes up one level."
+     },
+     {
+      "h": "Make folders",
+      "b": "`mkdir name` creates a folder. `~` means your home folder and `/` is the root of the whole system."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command shows your current directory?",
+      "o": [
+       "pwd",
+       "cwd",
+       "where",
+       "ls -d"
+      ],
+      "a": 0,
+      "why": "pwd means print working directory."
+     },
+     {
+      "t": "mc",
+      "q": "What does cd .. do?",
+      "o": [
+       "Goes to the home folder",
+       "Goes up one folder",
+       "Lists files",
+       "Deletes the folder"
+      ],
+      "a": 1,
+      "why": "Two dots mean the parent folder."
+     },
+     {
+      "t": "mc",
+      "q": "Which command lists hidden files too?",
+      "o": [
+       "ls -h",
+       "ls -a",
+       "ls -x",
+       "ls --all-files"
+      ],
+      "a": 1,
+      "why": "-a shows all entries, including those starting with a dot."
+     },
+     {
+      "t": "mc",
+      "q": "Which command creates a folder named docs?",
+      "o": [
+       "newdir docs",
+       "mkdir docs",
+       "touch docs/",
+       "md docs only"
+      ],
+      "a": 1,
+      "why": "mkdir makes directories."
+     },
+     {
+      "t": "tf",
+      "q": "In Linux, a file whose name starts with a dot is hidden by default in ls.",
+      "a": true,
+      "why": "Plain ls does not show dotfiles."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "pwd",
+        "show current folder"
+       ],
+       [
+        "ls",
+        "list files"
+       ],
+       [
+        "cd",
+        "change folder"
+       ],
+       [
+        "mkdir",
+        "make a folder"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to create and enter a folder",
+      "items": [
+       [
+        "pwd to see where you are",
+        1
+       ],
+       [
+        "mkdir project",
+        2
+       ],
+       [
+        "cd project",
+        3
+       ],
+       [
+        "ls to check it is empty",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Working with Files",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Create and read",
+      "b": "`touch a.txt` creates an empty file. `cat a.txt` prints it. `echo hi` prints text."
+     },
+     {
+      "h": "Copy, move, delete",
+      "b": "`cp a b` copies, `mv a b` moves or renames, and `rm a` deletes. There is no trash in the terminal, so be careful with rm."
+     },
+     {
+      "h": "Permissions and search",
+      "b": "`chmod +x file` makes a file executable. `grep word file` finds lines that contain a word."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command renames a.txt to b.txt?",
+      "o": [
+       "cp a.txt b.txt",
+       "mv a.txt b.txt",
+       "rn a.txt b.txt",
+       "rename-only a.txt"
+      ],
+      "a": 1,
+      "why": "mv moves a file, which renames it when the folder is the same."
+     },
+     {
+      "t": "mc",
+      "q": "Which command searches for the word hello inside notes.txt?",
+      "o": [
+       "find hello notes.txt",
+       "grep hello notes.txt",
+       "cat hello notes.txt",
+       "look hello notes.txt"
+      ],
+      "a": 1,
+      "why": "grep prints lines that match a pattern."
+     },
+     {
+      "t": "mc",
+      "q": "What does chmod +x script.sh do?",
+      "o": [
+       "Deletes the script",
+       "Makes it executable",
+       "Hides it",
+       "Copies it"
+      ],
+      "a": 1,
+      "why": "+x adds the execute permission."
+     },
+     {
+      "t": "mc",
+      "q": "Which command creates an empty file?",
+      "o": [
+       "touch",
+       "make",
+       "new",
+       "cat -e"
+      ],
+      "a": 0,
+      "why": "touch creates an empty file if it does not exist."
+     },
+     {
+      "t": "tf",
+      "q": "Files removed with rm go to a recycle bin and can be restored easily.",
+      "a": false,
+      "why": "rm deletes immediately; there is no trash."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "cp",
+        "copy"
+       ],
+       [
+        "mv",
+        "move or rename"
+       ],
+       [
+        "rm",
+        "delete"
+       ],
+       [
+        "cat",
+        "print file contents"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to back up then delete a file",
+      "items": [
+       [
+        "touch a.txt",
+        1
+       ],
+       [
+        "cp a.txt backup.txt",
+        2
+       ],
+       [
+        "ls to check both exist",
+        3
+       ],
+       [
+        "rm a.txt",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Pipes and Redirects",
+    "period": "Power tools",
+    "learn": [
+     {
+      "h": "Redirects",
+      "b": "`>` sends output to a file and replaces its contents. `>>` adds to the end of the file."
+     },
+     {
+      "h": "Pipes",
+      "b": "The pipe `|` sends the output of one command into the next. `ls | wc -l` counts how many files are listed."
+     },
+     {
+      "h": "Useful filters",
+      "b": "`sort` orders lines, `wc -l` counts lines, `head` shows the first lines, and `echo \"hi\" | wc -c` gives 3 because it counts h, i and the newline."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which symbol sends one command's output into another command?",
+      "o": [
+       ">",
+       "|",
+       "&",
+       ";"
+      ],
+      "a": 1,
+      "why": "The pipe connects output to input."
+     },
+     {
+      "t": "mc",
+      "q": "What does echo \"hi\" | wc -c print?",
+      "o": [
+       "2",
+       "3",
+       "1",
+       "hi"
+      ],
+      "a": 1,
+      "why": "echo adds a newline, so there are 3 bytes: h, i and newline."
+     },
+     {
+      "t": "mc",
+      "q": "What does echo a > f; echo b >> f; cat f show?",
+      "o": [
+       "Only a",
+       "Only b",
+       "a then b on two lines",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "> writes a, then >> appends b."
+     },
+     {
+      "t": "mc",
+      "q": "Which command counts lines of input?",
+      "o": [
+       "wc -l",
+       "count",
+       "lines",
+       "sort -n"
+      ],
+      "a": 0,
+      "why": "wc -l prints the number of lines."
+     },
+     {
+      "t": "tf",
+      "q": "The > redirect adds to the end of a file without removing what is already there.",
+      "a": false,
+      "why": "> overwrites; >> appends."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol or tool to its job",
+      "pairs": [
+       [
+        ">",
+        "overwrite a file"
+       ],
+       [
+        ">>",
+        "append to a file"
+       ],
+       [
+        "|",
+        "pipe output onward"
+       ],
+       [
+        "sort",
+        "order lines"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the stages of: cat names | sort | head -3",
+      "items": [
+       [
+        "cat prints the file",
+        1
+       ],
+       [
+        "sort orders the lines",
+        2
+       ],
+       [
+        "head takes the first 3",
+        3
+       ],
+       [
+        "Result shows in terminal",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Shell Scripting",
+    "period": "Automation",
+    "learn": [
+     {
+      "h": "Your first script",
+      "b": "A script starts with `#!/bin/bash`. Save it, run `chmod +x script.sh`, then run `./script.sh`."
+     },
+     {
+      "h": "Variables and math",
+      "b": "Set `x=4` with no spaces around =, and read it with `$x`. `echo $((2+3))` prints 5."
+     },
+     {
+      "h": "if, for and exit codes",
+      "b": "`if [ \"$x\" -gt 3 ]; then ... fi` makes decisions. `for f in *.txt; do ... done` loops. `$?` holds the last exit code, and 0 means success."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does echo $((2+3)) print?",
+      "o": [
+       "2+3",
+       "5",
+       "23",
+       "$((5))"
+      ],
+      "a": 1,
+      "why": "$(( )) does arithmetic."
+     },
+     {
+      "t": "mc",
+      "q": "After x=4, what does echo $x print?",
+      "o": [
+       "x",
+       "$x",
+       "4",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "$x expands to the value of x."
+     },
+     {
+      "t": "mc",
+      "q": "What does an exit code of 0 mean?",
+      "o": [
+       "Failure",
+       "Success",
+       "Timeout",
+       "Unknown command"
+      ],
+      "a": 1,
+      "why": "By convention 0 means the command succeeded."
+     },
+     {
+      "t": "mc",
+      "q": "What is the first line of a Bash script called, as in #!/bin/bash?",
+      "o": [
+       "Comment only",
+       "Shebang",
+       "Header guard",
+       "Import line"
+      ],
+      "a": 1,
+      "why": "The shebang tells the system which interpreter to use."
+     },
+     {
+      "t": "tf",
+      "q": "In Bash you should write variable assignments without spaces around =, like x=4.",
+      "a": true,
+      "why": "Spaces around = break the assignment."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "#!/bin/bash",
+        "choose the interpreter"
+       ],
+       [
+        "$?",
+        "last exit code"
+       ],
+       [
+        "fi",
+        "ends an if block"
+       ],
+       [
+        "done",
+        "ends a loop"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to run a new script",
+      "items": [
+       [
+        "Write the script with a shebang",
+        1
+       ],
+       [
+        "Save it as script.sh",
+        2
+       ],
+       [
+        "chmod +x script.sh",
+        3
+       ],
+       [
+        "./script.sh",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "git": {
+  "name": "Git & GitHub",
+  "units": [
+   {
+    "title": "Git Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "What is Git?",
+      "b": "Git is a tool that saves versions of your project. Each saved version is called a commit. It works on your own computer."
+     },
+     {
+      "h": "The basic cycle",
+      "b": "`git init` starts a repository. `git add file` stages a change. `git commit -m \"message\"` saves it. `git status` shows what is going on."
+     },
+     {
+      "h": "History",
+      "b": "`git log` lists past commits. `git diff` shows changes you have not staged yet."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command starts a new Git repository?",
+      "o": [
+       "git start",
+       "git init",
+       "git new",
+       "git create"
+      ],
+      "a": 1,
+      "why": "git init creates a new repository."
+     },
+     {
+      "t": "mc",
+      "q": "What does git add file.txt do?",
+      "o": [
+       "Saves a commit",
+       "Stages the file for the next commit",
+       "Uploads the file",
+       "Deletes the file"
+      ],
+      "a": 1,
+      "why": "Adding stages changes to be committed."
+     },
+     {
+      "t": "mc",
+      "q": "Which command shows the list of past commits?",
+      "o": [
+       "git history",
+       "git log",
+       "git list",
+       "git past"
+      ],
+      "a": 1,
+      "why": "git log prints the commit history."
+     },
+     {
+      "t": "mc",
+      "q": "Which command shows which files are changed or staged?",
+      "o": [
+       "git status",
+       "git info",
+       "git check",
+       "git show-all"
+      ],
+      "a": 0,
+      "why": "git status summarizes the working tree."
+     },
+     {
+      "t": "tf",
+      "q": "A commit in Git is a saved snapshot of your project.",
+      "a": true,
+      "why": "Commits record versions with a message."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "git init",
+        "start a repo"
+       ],
+       [
+        "git add",
+        "stage changes"
+       ],
+       [
+        "git commit",
+        "save a snapshot"
+       ],
+       [
+        "git log",
+        "view history"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the basic Git workflow",
+      "items": [
+       [
+        "git init",
+        1
+       ],
+       [
+        "Edit files",
+        2
+       ],
+       [
+        "git add .",
+        3
+       ],
+       [
+        "git commit -m \"msg\"",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Branches and Merging",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Branches",
+      "b": "A branch is a separate line of work. `git branch name` creates one and `git switch name` moves to it. `git switch -c name` does both."
+     },
+     {
+      "h": "Merging",
+      "b": "`git merge feature` brings the changes of the feature branch into the branch you are on. The main branch is often called main."
+     },
+     {
+      "h": "Conflicts",
+      "b": "If two branches change the same lines, Git asks you to fix a merge conflict by editing the file, then adding and committing."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command creates a branch and switches to it?",
+      "o": [
+       "git switch -c feature",
+       "git branch -d feature",
+       "git merge feature",
+       "git new feature"
+      ],
+      "a": 0,
+      "why": "switch -c creates and switches in one step."
+     },
+     {
+      "t": "mc",
+      "q": "You are on main and run git merge feature. What happens?",
+      "o": [
+       "main changes go into feature",
+       "feature changes come into main",
+       "Both branches are deleted",
+       "A new repo is created"
+      ],
+      "a": 1,
+      "why": "Merge brings the other branch into the current branch."
+     },
+     {
+      "t": "mc",
+      "q": "When does a merge conflict happen?",
+      "o": [
+       "When branches change the same lines",
+       "When you commit too often",
+       "When a file is empty",
+       "When you use git log"
+      ],
+      "a": 0,
+      "why": "Git cannot choose between competing edits to the same lines."
+     },
+     {
+      "t": "mc",
+      "q": "What is a branch in Git?",
+      "o": [
+       "A backup folder",
+       "A separate line of development",
+       "A remote server",
+       "A commit message"
+      ],
+      "a": 1,
+      "why": "Branches let you work in isolation."
+     },
+     {
+      "t": "tf",
+      "q": "After you resolve a merge conflict in a file, you must stage and commit the fix.",
+      "a": true,
+      "why": "The resolution is finished with git add and a commit."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "git branch",
+        "list or create branches"
+       ],
+       [
+        "git switch",
+        "change branch"
+       ],
+       [
+        "git merge",
+        "combine branches"
+       ],
+       [
+        "git status",
+        "see current state"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of a feature branch workflow",
+      "items": [
+       [
+        "Create the branch",
+        1
+       ],
+       [
+        "Commit your work",
+        2
+       ],
+       [
+        "Switch to main",
+        3
+       ],
+       [
+        "Merge the branch",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Remotes and GitHub",
+    "period": "Sharing code",
+    "learn": [
+     {
+      "h": "Remotes",
+      "b": "A remote is a copy of your repository on a server, like GitHub. The usual name is `origin`."
+     },
+     {
+      "h": "Clone, push, pull",
+      "b": "`git clone url` copies a repo. `git push` uploads your commits. `git pull` downloads and merges new commits. `git fetch` downloads without merging."
+     },
+     {
+      "h": "GitHub",
+      "b": "GitHub is a website that hosts Git repositories. Git is the tool; GitHub is a service that uses it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command copies a remote repository to your computer?",
+      "o": [
+       "git copy",
+       "git clone",
+       "git pull",
+       "git download"
+      ],
+      "a": 1,
+      "why": "git clone copies a whole repository."
+     },
+     {
+      "t": "mc",
+      "q": "Which command uploads your local commits to the remote?",
+      "o": [
+       "git push",
+       "git pull",
+       "git fetch",
+       "git send"
+      ],
+      "a": 0,
+      "why": "git push sends commits to the remote."
+     },
+     {
+      "t": "mc",
+      "q": "What is the usual default name of the main remote?",
+      "o": [
+       "server",
+       "origin",
+       "remote1",
+       "main"
+      ],
+      "a": 1,
+      "why": "origin is the conventional name."
+     },
+     {
+      "t": "mc",
+      "q": "How is git fetch different from git pull?",
+      "o": [
+       "Fetch downloads but does not merge",
+       "Fetch deletes commits",
+       "Fetch uploads",
+       "They are exactly the same"
+      ],
+      "a": 0,
+      "why": "pull is fetch plus a merge."
+     },
+     {
+      "t": "tf",
+      "q": "Git and GitHub are the same thing.",
+      "a": false,
+      "why": "Git is the version control tool; GitHub is a hosting service."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "origin",
+        "default remote name"
+       ],
+       [
+        "clone",
+        "copy a repo"
+       ],
+       [
+        "push",
+        "upload commits"
+       ],
+       [
+        "pull",
+        "download and merge"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order sharing a change to GitHub",
+      "items": [
+       [
+        "Edit files",
+        1
+       ],
+       [
+        "git add and git commit",
+        2
+       ],
+       [
+        "git push",
+        3
+       ],
+       [
+        "Change appears on GitHub",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Teamwork and Undoing",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Pull requests",
+      "b": "A pull request (PR) asks the team to review and merge your branch on GitHub. A fork is your own copy of someone else's repo."
+     },
+     {
+      "h": "Ignoring and undoing",
+      "b": "List files Git should skip in `.gitignore`, such as secrets. `git restore file` discards unstaged edits. `git revert` makes a new commit that undoes an old one."
+     },
+     {
+      "h": "Rebase and conflicts",
+      "b": "`git rebase main` replays your commits on top of main for a cleaner history. Do not rebase commits that others already use."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a pull request?",
+      "o": [
+       "A request to review and merge a branch",
+       "A command that downloads code",
+       "A type of commit",
+       "A bug report"
+      ],
+      "a": 0,
+      "why": "PRs let teammates review changes before merging."
+     },
+     {
+      "t": "mc",
+      "q": "Which file lists paths Git should not track?",
+      "o": [
+       ".gitignore",
+       ".gitskip",
+       "ignore.txt",
+       ".gitconfig"
+      ],
+      "a": 0,
+      "why": ".gitignore tells Git which files to ignore."
+     },
+     {
+      "t": "mc",
+      "q": "What does git revert do?",
+      "o": [
+       "Deletes all history",
+       "Creates a new commit that undoes an earlier one",
+       "Switches branches",
+       "Clones a repo"
+      ],
+      "a": 1,
+      "why": "Revert safely undoes a commit by adding a new one."
+     },
+     {
+      "t": "mc",
+      "q": "What is a fork on GitHub?",
+      "o": [
+       "A merge conflict",
+       "Your own copy of another repo",
+       "A commit message",
+       "A deleted branch"
+      ],
+      "a": 1,
+      "why": "Forking copies a repo to your account."
+     },
+     {
+      "t": "tf",
+      "q": "You should avoid rebasing commits that other people have already pulled.",
+      "a": true,
+      "why": "Rebase rewrites history, which confuses collaborators."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "PR",
+        "review request"
+       ],
+       [
+        "fork",
+        "your copy of a repo"
+       ],
+       [
+        ".gitignore",
+        "files to skip"
+       ],
+       [
+        "rebase",
+        "replay commits"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a typical open source contribution",
+      "items": [
+       [
+        "Fork the repo",
+        1
+       ],
+       [
+        "Make a branch and commit",
+        2
+       ],
+       [
+        "Push the branch",
+        3
+       ],
+       [
+        "Open a pull request",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "luau": {
+  "name": "Lua & Roblox Luau",
+  "units": [
+   {
+    "title": "Lua Basics",
+    "period": "Lua basics",
+    "learn": [
+     {
+      "h": "print and local",
+      "b": "`print(\"Hi\")` shows text in the Output window. `local x = 5` makes a variable that only exists in its block. Always use `local` unless you need a global. Comments start with `--`."
+     },
+     {
+      "h": "Operators",
+      "b": "`..` joins strings, so `\"a\"..\"b\"` is `ab`. `#` gives length, so `#\"hello\"` is 5. `%` is the remainder: `7 % 3` is 1. `^` is power: `2^3` is 8."
+     },
+     {
+      "h": "Truthiness",
+      "b": "Only `nil` and `false` count as false. Everything else is true, even `0` and the empty string. This is different from many other languages."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does print(#\"hello\") print?",
+      "o": [
+       "4",
+       "5",
+       "6",
+       "hello"
+      ],
+      "a": 1,
+      "why": "The # operator returns the length of the string, which is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(\"a\" .. \"b\") print?",
+      "o": [
+       "a b",
+       "a..b",
+       "ab",
+       "ba"
+      ],
+      "a": 2,
+      "why": "Two dots join strings with nothing between them."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(7 % 3) print?",
+      "o": [
+       "2",
+       "1",
+       "2.33",
+       "0"
+      ],
+      "a": 1,
+      "why": "7 divided by 3 leaves remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does print(2 ^ 3) print?",
+      "o": [
+       "6",
+       "5",
+       "8",
+       "23"
+      ],
+      "a": 2,
+      "why": "The ^ operator is power, and 2 to the power 3 is 8."
+     },
+     {
+      "t": "tf",
+      "q": "In Luau, the number 0 counts as true in an if condition.",
+      "a": true,
+      "why": "Only nil and false are falsy."
+     },
+     {
+      "t": "match",
+      "q": "Match each Lua symbol to its use",
+      "pairs": [
+       [
+        "local",
+        "make a variable"
+       ],
+       [
+        "--",
+        "start a comment"
+       ],
+       [
+        "..",
+        "join strings"
+       ],
+       [
+        "#",
+        "get length"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a tiny Luau script",
+      "items": [
+       [
+        "local score = 0",
+        1
+       ],
+       [
+        "score = score + 10",
+        2
+       ],
+       [
+        "print(score)",
+        3
+       ],
+       [
+        "Output shows 10",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Functions, Loops and Tables",
+    "period": "Core Luau",
+    "learn": [
+     {
+      "h": "Functions",
+      "b": "`local function add(a, b) return a + b end` defines a function. `add(2, 3)` gives 5. Blocks end with the word `end`."
+     },
+     {
+      "h": "Loops and conditions",
+      "b": "`for i = 1, 5, 2 do ... end` counts 1, 3, 5. `while` and `repeat` also exist. Use `if`, `elseif`, `else`. Not-equal is `~=`."
+     },
+     {
+      "h": "Tables",
+      "b": "Tables are Lua's only collection. Lists start at index 1, not 0: `local t = {10, 20, 30}` and `t[1]` is 10. `#t` gives the size and `table.insert(t, x)` adds an item."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does for i = 1, 5, 2 do print(i) end print?",
+      "o": [
+       "1, 3, 5 (one per line)",
+       "1, 2, 3, 4, 5",
+       "2, 4",
+       "1, 3"
+      ],
+      "a": 0,
+      "why": "The loop starts at 1 and steps by 2 up to 5."
+     },
+     {
+      "t": "mc",
+      "q": "With local t = {10, 20, 30}, what does print(t[1]) print?",
+      "o": [
+       "nil",
+       "10",
+       "20",
+       "30"
+      ],
+      "a": 1,
+      "why": "Lua tables are 1-indexed, so t[1] is the first item."
+     },
+     {
+      "t": "mc",
+      "q": "local t = {1, 2}; table.insert(t, 3); print(#t) prints what?",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "nil"
+      ],
+      "a": 1,
+      "why": "After inserting, the table has 3 items."
+     },
+     {
+      "t": "mc",
+      "q": "If function add(a, b) return a + b end, what does print(add(2, 3)) print?",
+      "o": [
+       "23",
+       "5",
+       "6",
+       "nil"
+      ],
+      "a": 1,
+      "why": "2 + 3 = 5."
+     },
+     {
+      "t": "tf",
+      "q": "In Lua, the first item of a list table is at index 1.",
+      "a": true,
+      "why": "Lua arrays are one-based."
+     },
+     {
+      "t": "match",
+      "q": "Match each Luau piece to its job",
+      "pairs": [
+       [
+        "function",
+        "define reusable code"
+       ],
+       [
+        "for",
+        "repeat with a counter"
+       ],
+       [
+        "table.insert",
+        "add to a list"
+       ],
+       [
+        "~=",
+        "not equal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a function is used",
+      "items": [
+       [
+        "Define the function",
+        1
+       ],
+       [
+        "Call it with arguments",
+        2
+       ],
+       [
+        "Body runs",
+        3
+       ],
+       [
+        "Value is returned",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Roblox Instances and Events",
+    "period": "Roblox scripting",
+    "learn": [
+     {
+      "h": "Instances and Parents",
+      "b": "Everything in Roblox is an Instance, such as a Part. `Instance.new(\"Part\")` makes one, but it only appears after you set `part.Parent = workspace`. Useful properties: `Anchored`, `Position`, `Color`."
+     },
+     {
+      "h": "Events",
+      "b": "An event tells your code something happened. Connect a function with `part.Touched:Connect(function(hit) ... end)`. Wait with `task.wait(1)`."
+     },
+     {
+      "h": "Finding a player",
+      "b": "When a Part is touched, `hit` is the part that touched it. Check `hit.Parent:FindFirstChild(\"Humanoid\")`. If found, a character touched it, and you can set `humanoid.Health = 0`."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "After Instance.new(\"Part\"), what makes the part appear in the game world?",
+      "o": [
+       "Setting its Parent to workspace",
+       "Calling print on it",
+       "Setting Anchored to true",
+       "Nothing, it appears at once"
+      ],
+      "a": 0,
+      "why": "An instance only shows in the world once it is parented to something in the workspace."
+     },
+     {
+      "t": "mc",
+      "q": "Which event fires when something touches a Part?",
+      "o": [
+       "Clicked",
+       "Touched",
+       "Collided",
+       "Hit"
+      ],
+      "a": 1,
+      "why": "BasePart.Touched fires when another part touches it."
+     },
+     {
+      "t": "mc",
+      "q": "Which property stops a Part from falling or moving with physics?",
+      "o": [
+       "CanCollide",
+       "Anchored",
+       "Locked",
+       "Static"
+      ],
+      "a": 1,
+      "why": "Anchored = true freezes the part in place."
+     },
+     {
+      "t": "mc",
+      "q": "What does the :Connect method do on an event?",
+      "o": [
+       "Deletes the event",
+       "Runs a function each time the event fires",
+       "Joins two parts",
+       "Connects to the internet"
+      ],
+      "a": 1,
+      "why": "Connect links a function that is called whenever the event happens."
+     },
+     {
+      "t": "tf",
+      "q": "A common way to tell if a Touched hit belongs to a character is to look for a Humanoid in hit.Parent.",
+      "a": true,
+      "why": "Character models contain a Humanoid, so FindFirstChild(\"Humanoid\") finds it."
+     },
+     {
+      "t": "match",
+      "q": "Match each Roblox item to its use",
+      "pairs": [
+       [
+        "Instance.new",
+        "create an object"
+       ],
+       [
+        "Anchored",
+        "freeze a part"
+       ],
+       [
+        "Touched",
+        "event on contact"
+       ],
+       [
+        "task.wait",
+        "pause the script"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of a kill brick script",
+      "items": [
+       [
+        "Get the Part",
+        1
+       ],
+       [
+        "Connect to Touched",
+        2
+       ],
+       [
+        "Find Humanoid in hit.Parent",
+        3
+       ],
+       [
+        "Set Health to 0",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Client, Server and Modules",
+    "period": "Roblox systems",
+    "learn": [
+     {
+      "h": "Server vs client",
+      "b": "A `Script` runs on the server for everyone. A `LocalScript` runs on one player's device, for things like UI and input. Changes a LocalScript makes to the world usually do not appear to other players."
+     },
+     {
+      "h": "RemoteEvents",
+      "b": "A RemoteEvent in `ReplicatedStorage` lets client and server talk. The client calls `remote:FireServer(data)`. The server listens with `remote.OnServerEvent:Connect(function(player, data) ... end)`. The server can use `FireClient` to answer. Never trust data from the client without checking it."
+     },
+     {
+      "h": "ModuleScripts",
+      "b": "A ModuleScript holds code you can reuse. It returns a value, usually a table. Other scripts load it with `require(module)`. The code runs once and the result is shared."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which call sends a message from a LocalScript to the server using a RemoteEvent?",
+      "o": [
+       "remote:FireClient()",
+       "remote:FireServer()",
+       "remote:Send()",
+       "remote:Invoke()"
+      ],
+      "a": 1,
+      "why": "FireServer is called on the client to reach the server."
+     },
+     {
+      "t": "mc",
+      "q": "What is the first argument of a server function connected to OnServerEvent?",
+      "o": [
+       "The data",
+       "The player who fired it",
+       "The RemoteEvent",
+       "The server time"
+      ],
+      "a": 1,
+      "why": "Roblox automatically passes the player first."
+     },
+     {
+      "t": "mc",
+      "q": "What must a ModuleScript do to share code with other scripts?",
+      "o": [
+       "Print the module",
+       "Return a value such as a table",
+       "Be placed in Workspace only",
+       "Use a LocalScript"
+      ],
+      "a": 1,
+      "why": "require gives back whatever the ModuleScript returns."
+     },
+     {
+      "t": "mc",
+      "q": "Where do RemoteEvents usually live so both client and server can see them?",
+      "o": [
+       "ServerScriptService",
+       "ReplicatedStorage",
+       "ServerStorage",
+       "Lighting"
+      ],
+      "a": 1,
+      "why": "ReplicatedStorage is visible to both the server and clients."
+     },
+     {
+      "t": "tf",
+      "q": "A LocalScript that changes a Part's color usually does not change it for other players.",
+      "a": true,
+      "why": "Client changes are not replicated to the server or to other players."
+     },
+     {
+      "t": "match",
+      "q": "Match each Roblox script type to its role",
+      "pairs": [
+       [
+        "Script",
+        "runs on the server"
+       ],
+       [
+        "LocalScript",
+        "runs on a player's client"
+       ],
+       [
+        "ModuleScript",
+        "reusable code via require"
+       ],
+       [
+        "RemoteEvent",
+        "client-server messages"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a safe shop purchase",
+      "items": [
+       [
+        "Player clicks Buy button",
+        1
+       ],
+       [
+        "LocalScript calls FireServer",
+        2
+       ],
+       [
+        "Server checks the player can afford it",
+        3
+       ],
+       [
+        "Server gives the item",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "r": {
+  "name": "R",
+  "units": [
+   {
+    "title": "R Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Assigning and printing",
+      "b": "R uses `<-` to store values: `x <- 5`. Typing a name or calling `print(x)` shows the value. Comments start with `#`."
+     },
+     {
+      "h": "Vectors",
+      "b": "`c(1, 2, 3)` makes a vector. `length(x)` counts items, `sum(x)` adds, and `mean(x)` averages. `1:4` is the numbers 1 to 4."
+     },
+     {
+      "h": "Indexing starts at 1",
+      "b": "`x[1]` is the first item, not `x[0]`. A vector holds one type; `c(1, \"a\")` turns everything into text."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is mean(c(2, 4, 6)) in R?",
+      "o": [
+       "3",
+       "4",
+       "6",
+       "12"
+      ],
+      "a": 1,
+      "why": "(2 + 4 + 6) / 3 = 4."
+     },
+     {
+      "t": "mc",
+      "q": "What is sum(1:4)?",
+      "o": [
+       "4",
+       "10",
+       "24",
+       "6"
+      ],
+      "a": 1,
+      "why": "1 + 2 + 3 + 4 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "Which symbol is the usual way to assign a value in R?",
+      "o": [
+       "<-",
+       ":=",
+       "=>",
+       "=="
+      ],
+      "a": 0,
+      "why": "x <- 5 is the standard R assignment."
+     },
+     {
+      "t": "mc",
+      "q": "What does length(c(5, 6, 7)) return?",
+      "o": [
+       "2",
+       "3",
+       "7",
+       "18"
+      ],
+      "a": 1,
+      "why": "The vector has 3 items."
+     },
+     {
+      "t": "tf",
+      "q": "In R, the first element of a vector is x[1].",
+      "a": true,
+      "why": "R indexing starts at 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each R function to its job",
+      "pairs": [
+       [
+        "c()",
+        "make a vector"
+       ],
+       [
+        "length()",
+        "count items"
+       ],
+       [
+        "sum()",
+        "add values"
+       ],
+       [
+        "mean()",
+        "average"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a tiny R script",
+      "items": [
+       [
+        "x <- c(1, 2, 3)",
+        1
+       ],
+       [
+        "m <- mean(x)",
+        2
+       ],
+       [
+        "print(m)",
+        3
+       ],
+       [
+        "Output shows 2",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Vectors and Data Frames",
+    "period": "Core ideas",
+    "learn": [
+     {
+      "h": "Vector math",
+      "b": "R does math on whole vectors at once. `c(1,2,3) * 2` gives `2 4 6`. `c(1,2,3) + c(10,20,30)` gives `11 22 33`."
+     },
+     {
+      "h": "Data frames",
+      "b": "A data frame is a table of rows and columns. Get a column with `$`, like `df$age`. `nrow(df)` counts rows and `ncol(df)` counts columns."
+     },
+     {
+      "h": "Types",
+      "b": "Main types are numeric, character, logical (TRUE/FALSE) and factor (categories). `class(x)` tells you the type."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does c(1, 2, 3) + c(10, 20, 30) give?",
+      "o": [
+       "c(11, 22, 33)",
+       "c(10, 20, 30, 1, 2, 3)",
+       "66",
+       "c(1, 2, 3)"
+      ],
+      "a": 0,
+      "why": "R adds vectors element by element."
+     },
+     {
+      "t": "mc",
+      "q": "How do you get the column age from a data frame df?",
+      "o": [
+       "df.age",
+       "df$age",
+       "df->age",
+       "df::age"
+      ],
+      "a": 1,
+      "why": "The $ operator extracts a column."
+     },
+     {
+      "t": "mc",
+      "q": "What does c(1, 2, 3) * 2 return?",
+      "o": [
+       "c(2, 4, 6)",
+       "c(1, 2, 3, 1, 2, 3)",
+       "12",
+       "c(3, 4, 5)"
+      ],
+      "a": 0,
+      "why": "Each element is multiplied by 2."
+     },
+     {
+      "t": "mc",
+      "q": "What type is c(1, \"a\")?",
+      "o": [
+       "numeric",
+       "character",
+       "logical",
+       "list"
+      ],
+      "a": 1,
+      "why": "R converts everything to character when types are mixed."
+     },
+     {
+      "t": "tf",
+      "q": "A normal R vector can hold both numbers and text as separate types at once.",
+      "a": false,
+      "why": "Vectors have one type; mixed values are converted to a common type."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "data frame",
+        "table of columns"
+       ],
+       [
+        "factor",
+        "categorical data"
+       ],
+       [
+        "logical",
+        "TRUE or FALSE"
+       ],
+       [
+        "nrow()",
+        "count rows"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps to inspect a data frame",
+      "items": [
+       [
+        "Load or create df",
+        1
+       ],
+       [
+        "Run head(df)",
+        2
+       ],
+       [
+        "Run str(df)",
+        3
+       ],
+       [
+        "Run summary(df)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Data Wrangling",
+    "period": "Tidyverse",
+    "learn": [
+     {
+      "h": "Reading data",
+      "b": "`read.csv(\"file.csv\")` loads a table. `head(df)` shows the first rows and `summary(df)` gives quick statistics."
+     },
+     {
+      "h": "dplyr verbs",
+      "b": "`filter()` keeps rows, `select()` keeps columns, `mutate()` adds a column, `group_by()` groups and `summarise()` calculates."
+     },
+     {
+      "h": "The pipe",
+      "b": "The pipe `|>` (or `%>%`) passes the result forward: `df |> filter(age > 18) |> select(name)` reads like steps."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which dplyr function keeps only rows that meet a condition?",
+      "o": [
+       "select()",
+       "filter()",
+       "mutate()",
+       "arrange()"
+      ],
+      "a": 1,
+      "why": "filter() subsets rows."
+     },
+     {
+      "t": "mc",
+      "q": "Which dplyr function adds a new column?",
+      "o": [
+       "mutate()",
+       "summarise()",
+       "filter()",
+       "group_by()"
+      ],
+      "a": 0,
+      "why": "mutate() creates or changes columns."
+     },
+     {
+      "t": "mc",
+      "q": "What does the pipe |> do?",
+      "o": [
+       "Divides numbers",
+       "Passes a result into the next function",
+       "Deletes data",
+       "Starts a loop"
+      ],
+      "a": 1,
+      "why": "It feeds the left result into the next call."
+     },
+     {
+      "t": "mc",
+      "q": "Which function loads a CSV file into a data frame?",
+      "o": [
+       "load.csv()",
+       "read.csv()",
+       "open.table()",
+       "get.csv()"
+      ],
+      "a": 1,
+      "why": "read.csv() reads a CSV file."
+     },
+     {
+      "t": "tf",
+      "q": "select() in dplyr chooses which columns to keep.",
+      "a": true,
+      "why": "select() picks columns by name."
+     },
+     {
+      "t": "match",
+      "q": "Match each dplyr verb to its job",
+      "pairs": [
+       [
+        "filter",
+        "keep rows"
+       ],
+       [
+        "select",
+        "keep columns"
+       ],
+       [
+        "mutate",
+        "add a column"
+       ],
+       [
+        "summarise",
+        "compute a summary"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a typical wrangling pipeline",
+      "items": [
+       [
+        "read.csv",
+        1
+       ],
+       [
+        "filter rows",
+        2
+       ],
+       [
+        "group_by a column",
+        3
+       ],
+       [
+        "summarise",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Statistics and Plots",
+    "period": "Analysis",
+    "learn": [
+     {
+      "h": "Summary statistics",
+      "b": "`mean()` is the average. `median()` is the middle value and is not hurt by outliers: `median(c(1, 3, 100))` is 3. `sd()` measures spread."
+     },
+     {
+      "h": "Plotting",
+      "b": "`hist(x)` draws a histogram and `plot(x, y)` draws a scatter plot. ggplot2 builds plots in layers added with `+`, like `ggplot(df, aes(x, y)) + geom_point()`."
+     },
+     {
+      "h": "Models",
+      "b": "`cor(x, y)` gives correlation from -1 to 1. `lm(y ~ x)` fits a linear model. `t.test()` compares group means."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is median(c(1, 3, 100))?",
+      "o": [
+       "1",
+       "3",
+       "34.67",
+       "100"
+      ],
+      "a": 1,
+      "why": "The middle value of the sorted numbers is 3."
+     },
+     {
+      "t": "mc",
+      "q": "Which function fits a linear regression model?",
+      "o": [
+       "lm()",
+       "cor()",
+       "hist()",
+       "mean()"
+      ],
+      "a": 0,
+      "why": "lm() fits linear models, such as lm(y ~ x)."
+     },
+     {
+      "t": "mc",
+      "q": "How do you add layers to a ggplot?",
+      "o": [
+       "With |",
+       "With +",
+       "With &",
+       "With ::"
+      ],
+      "a": 1,
+      "why": "ggplot2 layers are combined using +."
+     },
+     {
+      "t": "mc",
+      "q": "What range of values can a correlation coefficient take?",
+      "o": [
+       "0 to 1",
+       "-1 to 1",
+       "0 to 100",
+       "-100 to 100"
+      ],
+      "a": 1,
+      "why": "Correlation runs from -1 (perfect negative) to 1 (perfect positive)."
+     },
+     {
+      "t": "tf",
+      "q": "The median is less affected by extreme outliers than the mean.",
+      "a": true,
+      "why": "Only the middle position matters for the median."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "hist",
+        "histogram"
+       ],
+       [
+        "sd",
+        "standard deviation"
+       ],
+       [
+        "cor",
+        "correlation"
+       ],
+       [
+        "t.test",
+        "compare means"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order a simple analysis",
+      "items": [
+       [
+        "Load the data",
+        1
+       ],
+       [
+        "Plot it",
+        2
+       ],
+       [
+        "Fit lm(y ~ x)",
+        3
+       ],
+       [
+        "Read the summary",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "dsa": {
+  "name": "Algorithms & Data Structures",
+  "units": [
+   {
+    "title": "Big O and Arrays",
+    "period": "Foundations",
+    "learn": [
+     {
+      "h": "Big O notation",
+      "b": "Big O describes how work grows as the input n grows. O(1) is constant, O(log n) grows slowly, O(n) grows in step with n, and O(n^2) grows very fast."
+     },
+     {
+      "h": "Arrays",
+      "b": "An array stores items in order. Reading by index is O(1). Searching an unsorted array one by one (linear search) is O(n)."
+     },
+     {
+      "h": "Binary search",
+      "b": "On a sorted array, binary search checks the middle and throws away half each step. It is O(log n), so 1000 items need only about 10 steps."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the time to read an array item by index?",
+      "o": [
+       "O(n)",
+       "O(1)",
+       "O(log n)",
+       "O(n^2)"
+      ],
+      "a": 1,
+      "why": "Index access jumps straight to the item."
+     },
+     {
+      "t": "mc",
+      "q": "What is the time of linear search in an unsorted array?",
+      "o": [
+       "O(1)",
+       "O(log n)",
+       "O(n)",
+       "O(n^2)"
+      ],
+      "a": 2,
+      "why": "In the worst case every item is checked."
+     },
+     {
+      "t": "mc",
+      "q": "About how many steps does binary search need for 1000 sorted items?",
+      "o": [
+       "10",
+       "100",
+       "500",
+       "1000"
+      ],
+      "a": 0,
+      "why": "log2(1000) is about 10."
+     },
+     {
+      "t": "mc",
+      "q": "Which growth is slowest for large n?",
+      "o": [
+       "O(n^2)",
+       "O(n)",
+       "O(log n)",
+       "O(2^n)"
+      ],
+      "a": 2,
+      "why": "Logarithmic growth is much slower than the others."
+     },
+     {
+      "t": "tf",
+      "q": "Binary search only works correctly on sorted data.",
+      "a": true,
+      "why": "It relies on order to discard half the items."
+     },
+     {
+      "t": "match",
+      "q": "Match each Big O to its name",
+      "pairs": [
+       [
+        "O(1)",
+        "constant"
+       ],
+       [
+        "O(log n)",
+        "logarithmic"
+       ],
+       [
+        "O(n)",
+        "linear"
+       ],
+       [
+        "O(n^2)",
+        "quadratic"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from fastest to slowest growth",
+      "items": [
+       [
+        "O(1)",
+        1
+       ],
+       [
+        "O(log n)",
+        2
+       ],
+       [
+        "O(n)",
+        3
+       ],
+       [
+        "O(n^2)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Stacks, Queues and Hashing",
+    "period": "Core structures",
+    "learn": [
+     {
+      "h": "Stack",
+      "b": "A stack is last in, first out (LIFO), like a pile of plates. `push` adds on top and `pop` removes the top."
+     },
+     {
+      "h": "Queue",
+      "b": "A queue is first in, first out (FIFO), like a line at a shop. `enqueue` adds at the back and `dequeue` removes from the front."
+     },
+     {
+      "h": "Linked lists and hash tables",
+      "b": "A linked list is nodes that point to the next node, so inserting at the head is O(1). A hash table finds a value by its key in O(1) on average."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Push 1, 2, 3 onto a stack, then pop once. What comes out?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "A stack is LIFO, so the last item pushed (3) comes out first."
+     },
+     {
+      "t": "mc",
+      "q": "Enqueue 1, 2, 3 into a queue, then dequeue once. What comes out?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "A queue is FIFO, so the first item (1) leaves first."
+     },
+     {
+      "t": "mc",
+      "q": "What is the average lookup time in a good hash table?",
+      "o": [
+       "O(n)",
+       "O(1)",
+       "O(n^2)",
+       "O(log n) always"
+      ],
+      "a": 1,
+      "why": "Hashing jumps almost directly to the item."
+     },
+     {
+      "t": "mc",
+      "q": "What does each node of a singly linked list store?",
+      "o": [
+       "Only a number",
+       "A value and a pointer to the next node",
+       "An index",
+       "A hash"
+      ],
+      "a": 1,
+      "why": "Nodes hold data and a link to the next node."
+     },
+     {
+      "t": "tf",
+      "q": "A queue removes the most recently added item first.",
+      "a": false,
+      "why": "That is a stack; queues remove the oldest item first."
+     },
+     {
+      "t": "match",
+      "q": "Match each structure to its rule",
+      "pairs": [
+       [
+        "Stack",
+        "LIFO"
+       ],
+       [
+        "Queue",
+        "FIFO"
+       ],
+       [
+        "Hash table",
+        "lookup by key"
+       ],
+       [
+        "Linked list",
+        "nodes with pointers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Push 1, 2, 3, 4 onto a stack. Order the pops",
+      "items": [
+       [
+        "4",
+        1
+       ],
+       [
+        "3",
+        2
+       ],
+       [
+        "2",
+        3
+       ],
+       [
+        "1",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Sorting and Recursion",
+    "period": "Algorithms",
+    "learn": [
+     {
+      "h": "Sorting",
+      "b": "Bubble sort swaps neighbors and is O(n^2). Merge sort splits the list, sorts the halves and merges them in O(n log n). Quicksort picks a pivot and splits around it."
+     },
+     {
+      "h": "Recursion",
+      "b": "A recursive function calls itself on a smaller problem. It needs a base case to stop. For example factorial(4) = 4 * 3 * 2 * 1 = 24."
+     },
+     {
+      "h": "Divide and conquer",
+      "b": "Merge sort and binary search both split a problem into smaller parts. The Fibonacci sequence 0, 1, 1, 2, 3, 5, 8 adds the previous two numbers."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is factorial(4)?",
+      "o": [
+       "10",
+       "16",
+       "24",
+       "12"
+      ],
+      "a": 2,
+      "why": "4 * 3 * 2 * 1 = 24."
+     },
+     {
+      "t": "mc",
+      "q": "With fib(0) = 0 and fib(1) = 1, what is fib(6)?",
+      "o": [
+       "5",
+       "8",
+       "13",
+       "6"
+      ],
+      "a": 1,
+      "why": "The sequence is 0, 1, 1, 2, 3, 5, 8, so fib(6) = 8."
+     },
+     {
+      "t": "mc",
+      "q": "What is the typical time complexity of merge sort?",
+      "o": [
+       "O(n)",
+       "O(n log n)",
+       "O(n^2)",
+       "O(log n)"
+      ],
+      "a": 1,
+      "why": "It splits log n times and merges n items each level."
+     },
+     {
+      "t": "mc",
+      "q": "In sorted [1, 3, 5, 7, 9] (indexes from 0), where is 7 found by binary search?",
+      "o": [
+       "Index 2",
+       "Index 3",
+       "Index 4",
+       "Index 1"
+      ],
+      "a": 1,
+      "why": "The items are 1, 3, 5, 7, 9 at indexes 0 to 4, so 7 is at index 3."
+     },
+     {
+      "t": "tf",
+      "q": "A recursive function needs a base case so it eventually stops.",
+      "a": true,
+      "why": "Without a base case it would call itself forever."
+     },
+     {
+      "t": "match",
+      "q": "Match each algorithm to its note",
+      "pairs": [
+       [
+        "Bubble sort",
+        "O(n^2)"
+       ],
+       [
+        "Merge sort",
+        "O(n log n)"
+       ],
+       [
+        "Quicksort",
+        "uses a pivot"
+       ],
+       [
+        "Binary search",
+        "halves a sorted range"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps of binary search",
+      "items": [
+       [
+        "Start with a sorted range",
+        1
+       ],
+       [
+        "Check the middle item",
+        2
+       ],
+       [
+        "Discard the wrong half",
+        3
+       ],
+       [
+        "Repeat until found",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Trees and Graphs",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Binary search trees",
+      "b": "In a BST every left child is smaller and every right child is larger than its parent. An in-order traversal visits the values in sorted order."
+     },
+     {
+      "h": "Graph traversal",
+      "b": "A graph is nodes connected by edges. Breadth-first search (BFS) uses a queue and explores level by level. Depth-first search (DFS) uses a stack or recursion and goes deep first."
+     },
+     {
+      "h": "Shortest paths and DP",
+      "b": "Dijkstra's algorithm finds shortest paths in graphs with non-negative edge weights. Dynamic programming saves answers to small problems so they are not recomputed."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which traversal visits the values of a BST in sorted order?",
+      "o": [
+       "Pre-order",
+       "In-order",
+       "Post-order",
+       "Level-order"
+      ],
+      "a": 1,
+      "why": "In-order visits left, node, right, giving sorted values."
+     },
+     {
+      "t": "mc",
+      "q": "Which data structure does BFS use?",
+      "o": [
+       "Stack",
+       "Queue",
+       "Hash table",
+       "Heap only"
+      ],
+      "a": 1,
+      "why": "A queue makes BFS explore level by level."
+     },
+     {
+      "t": "mc",
+      "q": "What does Dijkstra's algorithm find?",
+      "o": [
+       "Shortest paths with non-negative weights",
+       "A sorted list",
+       "The largest number",
+       "A hash key"
+      ],
+      "a": 0,
+      "why": "It computes shortest paths from a start node."
+     },
+     {
+      "t": "mc",
+      "q": "What does dynamic programming mainly avoid?",
+      "o": [
+       "Using variables",
+       "Recomputing the same subproblems",
+       "Using loops",
+       "Using arrays"
+      ],
+      "a": 1,
+      "why": "It stores results of subproblems for reuse."
+     },
+     {
+      "t": "tf",
+      "q": "In a binary search tree, a left child is smaller than its parent.",
+      "a": true,
+      "why": "That is the BST ordering rule."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "BFS",
+        "queue, level by level"
+       ],
+       [
+        "DFS",
+        "goes deep first"
+       ],
+       [
+        "BST",
+        "left smaller, right larger"
+       ],
+       [
+        "Dijkstra",
+        "shortest weighted path"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the in-order visit of a BST containing 5, 3, 8, 1",
+      "items": [
+       [
+        "1",
+        1
+       ],
+       [
+        "3",
+        2
+       ],
+       [
+        "5",
+        3
+       ],
+       [
+        "8",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
