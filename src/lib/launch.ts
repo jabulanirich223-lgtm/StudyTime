@@ -18,6 +18,7 @@ export function nodeItems(ui: number, k: NodeKind): Item[] {
   if (k === 'p1') return u.qs.slice(0, half);
   if (k === 'p2') return u.qs.slice(half);
   if (k === 'test') return shuffle(u.qs);
+  if (k === 'lab') return u.lab || [];
   const quick = u.qs.filter((q) => q.t === 'mc' || q.t === 'tf').slice(0, 3);
   return [...u.learn.map((c) => ({ t: 'card' as const, ...c })), ...quick];
 }

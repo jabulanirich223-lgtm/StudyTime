@@ -6,6 +6,8 @@ import { speakSegs, stopSpeak, itemSegs, onSpeaking, courseLang, type Seg } from
 import { confetti } from '../lib/fx';
 import { shuffle, fmtTime, fmtYear, pick } from '../lib/util';
 import { CAST, face, type CastMember } from '../data/cast';
+import { runCode, norm } from '../lib/run';
+import type { Code } from '../lib/types';
 import { Tock } from '../components/Tock';
 import { Svg, SVG } from '../components/Icons';
 import type { Item, Mood, Question } from '../lib/types';
@@ -24,6 +26,9 @@ function answerText(it: Question) {
   if (it.t === 'mc' || it.t === 'year') return it.o[it.a];
   if (it.t === 'tf') return it.a ? 'True' : 'False';
   if (it.t === 'order') return it.items.map((x) => (Math.abs(x[1]) > 100 ? `${x[0]} (${fmtYear(x[1])})` : x[0])).join(' → ');
+  if (it.t === 'parsons') return it.lines.join('  /  ');
+  if (it.t === 'input') return it.a[0];
+  if (it.t === 'code') return 'See the example solution below.';
   return it.pairs.map((p) => `${p[0]} = ${p[1]}`).join('; ');
 }
 
@@ -71,7 +76,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     return ords.current.get(i)!;
   }, [i, it]);
   const matchCols = useMemo(() => (it?.t === 'match' ? { L: shuffle(it.pairs.map((_, k) => k)), R: shuffle(it.pairs.map((_, k) => k)) } : null), [i, it]);
-  const pool = useMemo(() => (it?.t === 'order' ? shuffle(it.items.map((_, k) => k)) : []), [i, it]);
+  const pool = useMemo(() => (it?.t === 'order' ? shuffle(it.items.map((_, k) => k)) : it?.t === 'parsons' ? shuffle(it.lines.map((_, k) => k)) : []), [i, it]);
 
   // ----- finishing -----
   const finish = useCallback((outHearts = false) => {
@@ -100,7 +105,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     const best = { ...game.best, ap: { ...game.best.ap } };
     if (!outHearts) {
       if (cfg.kind === 'lesson') {
-        xp = cfg.nodeK === 'test' ? 20 : 10; gems = cfg.nodeK === 'test' ? 15 : 5;
+        xp = cfg.nodeK === 'test' ? 20 : cfg.nodeK === 'lab' ? 15 : 10; gems = cfg.nodeK === 'test' ? 15 : 5;
         if (perfect) { xp += 5; gems += 5; stats.perfect++; }
         patch.done = { ...game.done, [cfg.nodeId!]: true };
         daily.lessons++; stats.lessons++;
@@ -163,7 +168,9 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     if (!it || it.t === 'card') return true;
     if (it.t === 'mc' || it.t === 'year') return v != null && Number(v) === it.a;
     if (it.t === 'tf') return (v === '1') === it.a;
-    if (it.t === 'order') return order.every((v, k) => v === k);
+    if (it.t === 'order' || it.t === 'parsons') return order.every((v, k) => v === k);
+    if (it.t === 'input') return v != null && it.a.some((x) => normAns(x) === normAns(v));
+    if (it.t === 'code') return v === 'pass';
     return !st.current.err;
   };
   const mineText = (v: string | null = sel): string => {
@@ -171,6 +178,9 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     if (it.t === 'mc' || it.t === 'year') return v == null ? '—' : it.o[Number(v)];
     if (it.t === 'tf') return v === '1' ? 'True' : 'False';
     if (it.t === 'order') return order.map((k) => it.items[k][0]).join(' → ');
+    if (it.t === 'parsons') return order.map((k) => it.lines[k]).join(' / ');
+    if (it.t === 'input') return v || '—';
+    if (it.t === 'code') return v === 'pass' ? 'All tests passed' : v === 'fail' ? 'Tests did not pass' : '(skipped)';
     return st.current.err ? 'Some pairs wrong' : 'All pairs right';
   };
 
@@ -210,7 +220,8 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (result) { if (e.key === 'Enter') ui.endSession(); return; }
-      if ((e.key === 'r' || e.key === 'R') && !e.ctrlKey && !e.metaKey) { (document.querySelector('.lesson [data-speak]') as HTMLButtonElement | null)?.click(); return; }
+      if ((e.target as HTMLElement)?.tagName === 'TEXTAREA') return;
+      if ((e.key === 'r' || e.key === 'R') && !e.ctrlKey && !e.metaKey && (e.target as HTMLElement)?.tagName !== 'INPUT') { (document.querySelector('.lesson [data-speak]') as HTMLButtonElement | null)?.click(); return; }
       if (phase === 'answer') {
         const n = Number(e.key);
         if (n >= 1 && n <= 4) (document.querySelectorAll('.lesson .opt')[n - 1] as HTMLButtonElement | undefined)?.click();
@@ -231,6 +242,8 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     if (!it) return false;
     if (it.t === 'mc' || it.t === 'year' || it.t === 'tf') return sel != null;
     if (it.t === 'order') return order.length === it.items.length;
+    if (it.t === 'parsons') return order.length === it.lines.length;
+    if (it.t === 'input') return !!sel && sel.trim().length > 0;
     return false;
   };
 
@@ -257,7 +270,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
   const left = cfg.timer ? st.current.end - now : 0;
   const pct = cfg.timer ? Math.max(0, (left / (cfg.timer * 1000)) * 100) : (i / total) * 100;
   const asker = askerFor(i);
-  const kind = it.t === 'card' ? 'New idea' : it.t === 'mc' ? ('ap' in it && it.ap ? 'AP source question' : 'Choose the answer') : it.t === 'tf' ? 'True or false?' : it.t === 'match' ? 'Tap the matching pairs' : it.t === 'order' ? 'Put in order' : 'Date Dash';
+  const kind = it.t === 'card' ? 'New idea' : it.t === 'mc' ? ('ap' in it && it.ap ? 'AP source question' : 'Choose the answer') : it.t === 'tf' ? 'True or false?' : it.t === 'match' ? 'Tap the matching pairs' : it.t === 'order' ? 'Put in order' : it.t === 'parsons' ? 'Arrange the code' : it.t === 'input' ? 'Type the answer' : it.t === 'code' ? 'Code challenge' : 'Date Dash';
   const footMood: Mood = lastOk ? (combo >= 5 ? 'fire' : 'cheer') : 'sad';
 
   return (
@@ -279,6 +292,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
                 <div className="qhead"><span className="qkind"><i />{cfg.title}</span><SpeakBtn segs={() => itemSegs(it)} /></div>
                 <h3>{it.h}</h3>
                 <p>{it.b}</p>
+                {it.code && <pre className="snippet">{it.code}</pre>}
               </div>
             </div>
           ) : (
@@ -289,6 +303,23 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
                 <div className="asker"><Face c={asker} mood={phase === 'feedback' ? (lastOk ? 'happy' : 'sad') : 'neutral'} /><div className="speech"><span className="who">{asker.name}</span><h2 className="qtext">{it.q}</h2></div></div>
               ) : <h2 className="qtext">{it.q}</h2>}
 
+              {'code' in it && typeof it.code === 'string' && it.code && <pre className="snippet">{it.code}</pre>}
+              {it.t === 'input' && (
+                <div className="typein">
+                  <input autoFocus className={phase === 'feedback' ? (lastOk ? 'right' : 'wrong') : ''} value={sel || ''} disabled={phase !== 'answer'} placeholder="Type your answer"
+                    onChange={(e) => setSel(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' && sel?.trim()) check(); }} aria-label="Your answer" />
+                  {it.hint && phase === 'answer' && <details><summary>Hint</summary>{it.hint}</details>}
+                </div>
+              )}
+              {it.t === 'parsons' && (
+                <>
+                  <div className="slots code">{order.length ? order.map((k, n) => (
+                    <button key={k} className="mt" disabled={phase !== 'answer'} onClick={() => setOrder(order.filter((x) => x !== k))}><span className="n">{n + 1}</span><code>{it.lines[k]}</code></button>
+                  )) : <span className="muted small">Tap the lines below in the order the program should run</span>}</div>
+                  <div className="pool code">{pool.map((k) => <button key={k} className={`mt ${order.includes(k) ? 'used' : ''}`} onClick={() => { if (phase === 'answer') { setOrder([...order, k]); snd('tap'); } }}><code>{it.lines[k]}</code></button>)}</div>
+                </>
+              )}
+              {it.t === 'code' && <CodeTask key={i} task={it} locked={phase !== 'answer'} onDone={(pass) => check(false, pass ? 'pass' : 'fail')} />}
               {(it.t === 'mc' || it.t === 'year') && (
                 <div className="opts">{ord.map((oi, n) => {
                   const cls = phase === 'feedback' ? (oi === it.a ? 'right' : String(oi) === sel ? 'wrong' : '') : String(oi) === sel ? 'sel' : '';
@@ -327,10 +358,11 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
           : phase === 'feedback' ? (
             <>
               <div className="fb"><Tock mood={footMood} /><div><b>{lastOk ? (combo >= 5 ? pick(FIRE) : combo >= 3 ? `${combo} in a row!` : PRAISE[i % PRAISE.length]) : 'Correct answer:'}</b>
-                <span>{lastOk ? ('why' in it ? it.why : '') : answerText(it)}{!lastOk && 'why' in it && it.why ? <><br />{it.why}</> : null}</span></div></div>
+                <span>{lastOk ? ('why' in it ? it.why : '') : answerText(it)}{!lastOk && it.t === 'code' && <pre className="snippet small-pre">{it.solution}</pre>}{!lastOk && 'why' in it && it.why ? <><br />{it.why}</> : null}</span></div></div>
               <div className="foot-btns">{!cfg.fast && <SpeakBtn icon segs={() => [{ text: st.current.fb }]} who={asker?.id || 'tock'} />}<button className="btn" onClick={next}>Continue</button></div>
             </>
-          ) : it.t === 'match' ? (<><span className="muted small">Pairs check themselves as you go.</span><button className="btn" disabled>Check</button></>)
+          ) : it.t === 'code' ? (<><button className="btn ghost" onClick={() => check(true)}>Skip challenge</button><span className="muted small">Write your code, then press Check code.</span></>)
+          : it.t === 'match' ? (<><span className="muted small">Pairs check themselves as you go.</span><button className="btn" disabled>Check</button></>)
           : (<><button className="btn ghost" onClick={() => check(true)}>Skip</button><button className="btn green" disabled={!ready()} onClick={() => check()}>{cfg.exam ? 'Next' : 'Check'}</button></>)}
         </div>
       </div>
@@ -382,4 +414,54 @@ export function Face({ c, mood, size }: { c: CastMember; mood: 'neutral' | 'happ
   }, [talk]);
   const src = talk && frame ? face(c, 'talk') : face(c, mood);
   return <img className={`face ${talk ? 'talking' : ''}`} src={src} alt={c.name} style={size ? { width: size } : undefined} />;
+}
+
+const normAns = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^\p{L}\p{N}.\-]+/gu, ' ').replace(/\s+/g, ' ').trim();
+
+/** A real coding challenge: write code, run it, and pass every test. */
+function CodeTask({ task, locked, onDone }: { task: Code; locked: boolean; onDone: (pass: boolean) => void }) {
+  const [code, setCode] = useState(task.starter || '');
+  const [out, setOut] = useState<{ text: string; err?: string; ok?: boolean } | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [fails, setFails] = useState(0);
+  const label = { python: 'Python', javascript: 'JavaScript', lua: 'Lua', sql: 'SQL' }[task.lang];
+  const run = async () => {
+    setBusy(true);
+    const r = await runCode(task.lang, task.lang === 'sql' ? code : (task.tests[0]?.pre || '') + '\n' + code + '\n' + (task.tests[0]?.post || ''), task.setup);
+    setOut({ text: r.out, err: r.error }); setBusy(false);
+  };
+  const checkAll = async () => {
+    setBusy(true);
+    for (const t of task.tests) {
+      const r = await runCode(task.lang, task.lang === 'sql' ? code : (t.pre || '') + '\n' + code + '\n' + (t.post || ''), task.setup);
+      if (r.error || norm(r.out) !== norm(t.expect)) {
+        setOut({ text: r.out, err: r.error || `Expected output:\n${t.expect}`, ok: false }); setBusy(false);
+        setFails((f) => f + 1); snd('bad');
+        if (fails + 1 >= 3) onDone(false);
+        return;
+      }
+    }
+    setOut({ text: 'All tests passed!', ok: true }); setBusy(false); onDone(true);
+  };
+  const onKey = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === 'Tab') { e.preventDefault(); const el = e.currentTarget, a = el.selectionStart, b = el.selectionEnd; const v = code.slice(0, a) + '    ' + code.slice(b); setCode(v); requestAnimationFrame(() => { el.selectionStart = el.selectionEnd = a + 4; }); }
+    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); void checkAll(); }
+  };
+  return (
+    <div className="codetask">
+      <div className="ide">
+        <div className="ide-bar"><span className="dot r" /><span className="dot y" /><span className="dot g" /><b>{label}</b>{task.lang === 'python' && <span className="muted small">First run downloads Python (one time)</span>}</div>
+        <textarea spellCheck={false} value={code} disabled={locked} onChange={(e) => setCode(e.target.value)} onKeyDown={onKey} aria-label="Code editor" rows={Math.max(6, code.split('\n').length + 1)} />
+      </div>
+      {out && <pre className={`console ${out.ok ? 'pass' : out.err ? 'fail' : ''}`}>{out.text}{out.err ? (out.text ? '\n' : '') + out.err : ''}</pre>}
+      {!locked && (
+        <div className="row">
+          <button className="btn ghost" disabled={busy} onClick={run}>{busy ? 'Running…' : 'Run'}</button>
+          <button className="btn green" disabled={busy} onClick={checkAll}>Check code</button>
+          {task.hint && <details className="hint"><summary>Hint</summary>{task.hint}</details>}
+          {fails > 0 && <span className="muted small">{3 - fails} tr{3 - fails === 1 ? 'y' : 'ies'} left before the answer is shown</span>}
+        </div>
+      )}
+    </div>
+  );
 }

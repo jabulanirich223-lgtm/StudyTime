@@ -10,14 +10,17 @@ import { Svg, SVG, iconUrl, CourseIcon } from '../components/Icons';
 import type { NodeKind } from '../lib/types';
 
 const NODES: NodeKind[] = ['learn', 'p1', 'p2', 'test'];
-const NODE_NAME: Record<NodeKind, string> = { learn: 'Learn', p1: 'Practice 1', p2: 'Practice 2', test: 'Unit Test' };
+const nodesOf = (u: { lab?: unknown[] }): NodeKind[] => (u.lab?.length ? ['learn', 'p1', 'lab', 'p2', 'test'] : NODES);
+const XP_OF = (k: NodeKind) => (k === 'test' ? 20 : k === 'lab' ? 15 : 10);
+const NODE_NAME: Record<NodeKind, string> = { learn: 'Learn', p1: 'Practice 1', p2: 'Practice 2', lab: 'Challenge', test: 'Unit Test' };
 const NODE_DESC: Record<NodeKind, string> = {
   learn: 'Read short notes on the big ideas, then answer a few quick checks.',
   p1: "Practice the first half of this unit's questions.",
   p2: "Practice the second half of this unit's questions.",
+  lab: 'A hands-on challenge: write real code or type your own answers. You can skip any task.',
   test: 'Every question in the unit, shuffled.',
 };
-const NODE_ICON: Record<NodeKind, string> = { learn: SVG.scroll, p1: SVG.star, p2: SVG.dumbbell, test: SVG.trophy };
+const NODE_ICON: Record<NodeKind, string> = { learn: SVG.scroll, p1: SVG.star, p2: SVG.dumbbell, lab: SVG.bolt, test: SVG.trophy };
 const OFFS = [0, 52, 78, 52, 0, -52, -78, -52];
 const ROW = 112;
 
@@ -27,7 +30,7 @@ export function Guidebook({ ui: idx }: { ui: number }) {
   return (
     <div style={{ ['--u' as string]: st.c }}>
       <div className="row" style={{ gap: 14 }}><CourseIcon icon={st.icon} size={64} /><div><div className="muted small">{unitName(s, idx)} · {u.period}</div><h2>{u.title}</h2></div></div>
-      {u.learn.map((c) => <div className="gb" key={c.h}><h4>{c.h}</h4><p>{c.b}</p></div>)}
+      {u.learn.map((c) => <div className="gb" key={c.h}><h4>{c.h}</h4><p>{c.b}</p>{c.code && <pre className="snippet">{c.code}</pre>}</div>)}
       <button className="btn wide" style={{ marginTop: 16 }} onClick={() => useUI.getState().close()}>Got it</button>
     </div>
   );
@@ -40,7 +43,7 @@ export function Learn() {
   const s = SUBJECTS[g.subject];
   useEffect(() => { const c = () => setOpen(null); window.addEventListener('scroll', c); return () => window.removeEventListener('scroll', c); }, []);
   let first: string | null = null;
-  s.units.forEach((_, ui2) => NODES.forEach((k) => { if (!first && !g.done[nid(ui2, k)]) first = nid(ui2, k); }));
+  s.units.forEach((u0, ui2) => nodesOf(u0).forEach((k) => { if (!first && !g.done[nid(ui2, k)]) first = nid(ui2, k); }));
   const atRisk = g.streak > 0 && g.lastDay !== today();
 
   const go = (ui2: number, k: NodeKind) => {
@@ -70,7 +73,8 @@ export function Learn() {
       </div>
       {s.units.map((u, ui2) => {
         const st = unitStyle(g.subject, ui2);
-        const offs = [0, 1, 2, 3, 4].map((k) => OFFS[(ui2 * 5 + k) % 8]);
+        const ns = nodesOf(u), n = ns.length + 1;
+        const offs = Array.from({ length: n }, (_, k) => OFFS[(ui2 * 5 + k) % 8]);
         const pts = offs.map((o, k) => [150 + o, 26 + ROW / 2 + k * ROW]);
         let d = `M${pts[0][0]} ${pts[0][1]}`;
         for (let k = 1; k < pts.length; k++) d += ` C${pts[k - 1][0]} ${pts[k - 1][1] + ROW / 2} ${pts[k][0]} ${pts[k][1] - ROW / 2} ${pts[k][0]} ${pts[k][1]}`;
@@ -83,26 +87,26 @@ export function Learn() {
               <button className="guide" onClick={() => ui.open(<Guidebook ui={ui2} />)}><Svg html={SVG.book} /><span>Guidebook</span></button>
             </div>
             <div className="path">
-              <svg className="trail" viewBox={`0 0 300 ${26 + 5 * ROW}`} style={{ height: 26 + 5 * ROW }} aria-hidden="true"><path d={d} /></svg>
-              {NODES.map((k, ki) => {
+              <svg className="trail" viewBox={`0 0 300 ${26 + n * ROW}`} style={{ height: 26 + n * ROW }} aria-hidden="true"><path d={d} /></svg>
+              {ns.map((k, ki) => {
                 const id = nid(ui2, k), done = g.done[id], cur = id === first, off = offs[ki];
                 return (
                   <div className="stop" key={k} style={{ transform: `translateX(${off}px)`, zIndex: open === id ? 9 : undefined }}>
                     {cur && <div className="start">{done ? 'AGAIN' : 'START'}</div>}
                     {cur && <div className={`side-masc ${off > 0 ? 'left' : 'right'}`}><Tock mood={atRisk ? 'sleepy' : 'idle'} /></div>}
-                    <button className={`node ${done ? 'done' : cur ? 'cur' : 'later'}`} aria-label={`${unitName(s, ui2)} ${NODE_NAME[k]}${done ? ', completed' : ''}`}
+                    <button className={`node ${k === 'lab' ? 'lab ' : ''}${done ? 'done' : cur ? 'cur' : 'later'}`} aria-label={`${unitName(s, ui2)} ${NODE_NAME[k]}${done ? ', completed' : ''}`}
                       onClick={() => { snd('tap'); setOpen(open === id ? null : id); }}><Svg html={NODE_ICON[k]} /></button>
                     <span className="stop-label">{NODE_NAME[k]}</span>
                     {open === id && (
                       <div className="pop" style={{ ['--pb' as string]: done ? '#eab308' : st.c, ['--ax' as string]: `${off}px`, translate: `calc(-50% - ${off}px) 0` }}>
                         <b>{NODE_NAME[k]} · {u.title}</b><p>{NODE_DESC[k]}</p>
-                        <button className="btn white wide" onClick={() => go(ui2, k)}>{done ? 'Practice again' : 'Start'} +{k === 'test' ? 20 : 10} XP</button>
+                        <button className="btn white wide" onClick={() => go(ui2, k)}>{done ? 'Practice again' : 'Start'} +{XP_OF(k)} XP</button>
                       </div>
                     )}
                   </div>
                 );
               })}
-              <div className="stop" style={{ transform: `translateX(${offs[4]}px)` }}>
+              <div className="stop" style={{ transform: `translateX(${offs[n - 1]}px)` }}>
                 <button className={`chest ${opened ? 'opened' : ready ? 'ready' : 'locked'}`} onClick={() => openChest(ui2)}
                   aria-label={`${unitName(s, ui2)} treasure chest${opened ? ', opened' : ready ? ', ready to open' : ', locked'}`}>
                   <img src={iconUrl(opened ? 'chestopen' : 'chest')} alt="" />

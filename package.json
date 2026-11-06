@@ -15,14 +15,17 @@
   "dependencies": {
     "@fontsource/fredoka": "^5.2.8",
     "@fontsource/nunito": "^5.2.6",
+    "fengari-web": "^0.1.4",
     "kokoro-js": "^1.2.1",
     "react": "19.1.1",
     "react-dom": "19.1.1",
+    "sql.js": "^1.13.0",
     "zustand": "5.0.8"
   },
   "devDependencies": {
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
+    "@types/sql.js": "^1.4.9",
     "@vitejs/plugin-react": "5.0.2",
     "electron": "38.1.2",
     "electron-builder": "26.0.12",
