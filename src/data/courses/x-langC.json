@@ -1,0 +1,6024 @@
+{
+ "pt-1": {
+  "name": "Portuguese · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "Say Olá for hello. Use Bom dia in the morning, Boa tarde in the afternoon and Boa noite in the evening or at night. To say goodbye, use Tchau."
+     },
+     {
+      "h": "Your name and feelings",
+      "b": "Say Meu nome é and your name: Meu nome é Ana means My name is Ana. Ask Tudo bem? to say How are you? or Is everything good? and answer Tudo bem."
+     },
+     {
+      "h": "Polite words",
+      "b": "Men say obrigado and women say obrigada for thank you. De nada means you're welcome. Por favor means please."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'good morning' in Portuguese?",
+      "o": [
+       "Boa noite",
+       "Bom dia",
+       "Boa tarde",
+       "Tchau"
+      ],
+      "a": 1,
+      "why": "Bom dia is used to greet people in the morning."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Meu nome é Ana' mean?",
+      "o": [
+       "I like Ana",
+       "I am from Ana",
+       "My name is Ana",
+       "Where is Ana"
+      ],
+      "a": 2,
+      "why": "Meu nome é means 'my name is'."
+     },
+     {
+      "t": "mc",
+      "q": "A woman wants to say 'thank you'. Which word does she use?",
+      "o": [
+       "Por favor",
+       "De nada",
+       "Desculpa",
+       "Obrigada"
+      ],
+      "a": 3,
+      "why": "Women say obrigada and men say obrigado."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Tudo bem?' ask?",
+      "o": [
+       "How are you? / Is everything good?",
+       "What is your name?",
+       "Where are you from?",
+       "How old are you?"
+      ],
+      "a": 0,
+      "why": "Tudo bem? is a common way to ask how someone is."
+     },
+     {
+      "t": "tf",
+      "q": "'Tchau' means 'goodbye'.",
+      "a": true,
+      "why": "Tchau is a common way to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each Portuguese word to its meaning",
+      "pairs": [
+       [
+        "Olá",
+        "Hello"
+       ],
+       [
+        "Obrigado",
+        "Thank you"
+       ],
+       [
+        "Por favor",
+        "Please"
+       ],
+       [
+        "De nada",
+        "You're welcome"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Hello, my name is Pedro'",
+      "items": [
+       [
+        "Olá",
+        1
+       ],
+       [
+        "meu nome",
+        2
+       ],
+       [
+        "é",
+        3
+       ],
+       [
+        "Pedro",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Portuguese: Good morning.",
+      "a": [
+       "Bom dia"
+      ],
+      "hint": "Use bom for morning.",
+      "why": "Bom dia is the morning greeting."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how does a man say 'thank you'?",
+      "a": [
+       "obrigado"
+      ],
+      "hint": "Men and women use different endings.",
+      "why": "A man says obrigado; a woman says obrigada."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Portuguese: My name is Lucas.",
+      "a": [
+       "Meu nome é Lucas",
+       "Meu nome e Lucas"
+      ],
+      "hint": "Start with Meu nome.",
+      "why": "Meu nome é means My name is."
+     }
+    ]
+   },
+   {
+    "title": "Numbers, Colors and Food",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "Count like this: um, dois, três, quatro, cinco, seis, sete, oito, nove, dez. Use them for ages, prices and phone numbers."
+     },
+     {
+      "h": "Colors",
+      "b": "Vermelho is red, azul is blue, verde is green and amarelo is yellow. Colors usually come after the noun: a maçã vermelha means the red apple."
+     },
+     {
+      "h": "Food and wants",
+      "b": "Learn o pão (bread), a água (water), a maçã (apple) and o leite (milk). To ask for something, say Eu quero and then the thing. Eu quero água means I want water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'cinco' in English?",
+      "o": [
+       "Four",
+       "Six",
+       "Five",
+       "Fifteen"
+      ],
+      "a": 2,
+      "why": "Cinco is the number five."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'green'?",
+      "o": [
+       "vermelho",
+       "azul",
+       "amarelo",
+       "verde"
+      ],
+      "a": 3,
+      "why": "Verde means green."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'a maçã' mean?",
+      "o": [
+       "The pear",
+       "The apple",
+       "The bread",
+       "The milk"
+      ],
+      "a": 1,
+      "why": "A maçã is the apple."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want water'?",
+      "o": [
+       "Eu quero água",
+       "Eu sou água",
+       "Eu vou água",
+       "Eu tenho quero água"
+      ],
+      "a": 0,
+      "why": "Eu quero means 'I want'."
+     },
+     {
+      "t": "tf",
+      "q": "'Sete' means seven.",
+      "a": true,
+      "why": "Sete is the number seven."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its meaning",
+      "pairs": [
+       [
+        "um",
+        "one"
+       ],
+       [
+        "três",
+        "three"
+       ],
+       [
+        "oito",
+        "eight"
+       ],
+       [
+        "dez",
+        "ten"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "dois",
+        1
+       ],
+       [
+        "três",
+        2
+       ],
+       [
+        "cinco",
+        3
+       ],
+       [
+        "sete",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'seven'.",
+      "a": [
+       "sete"
+      ],
+      "hint": "It starts with s.",
+      "why": "Sete is seven."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: the red apple.",
+      "a": [
+       "a maçã vermelha",
+       "maçã vermelha"
+      ],
+      "hint": "The color comes after the noun.",
+      "why": "Colors usually follow the noun: a maçã vermelha."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I want milk.",
+      "a": [
+       "Eu quero leite",
+       "Quero leite"
+      ],
+      "hint": "Use Eu quero.",
+      "why": "Eu quero means I want, and leite is milk."
+     }
+    ]
+   },
+   {
+    "title": "Family and Key Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Family words",
+      "b": "Learn a mãe (mother), o pai (father), o irmão (brother) and a irmã (sister). O goes with masculine words and a with feminine words."
+     },
+     {
+      "h": "The verb ser (to be)",
+      "b": "Ser has the forms eu sou (I am) and você é (you are) or ele é (he is). Eu sou estudante means I am a student."
+     },
+     {
+      "h": "The verb ter (to have)",
+      "b": "Ter has the forms eu tenho (I have) and você tem (you have) or ela tem (she has). Eu tenho um irmão means I have a brother."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'a irmã' mean?",
+      "o": [
+       "The mother",
+       "The aunt",
+       "The sister",
+       "The daughter"
+      ],
+      "a": 2,
+      "why": "A irmã means the sister."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Eu ___ estudante. (I am a student)",
+      "o": [
+       "é",
+       "sou",
+       "tenho",
+       "vou"
+      ],
+      "a": 1,
+      "why": "Sou is the 'I' form of ser (to be)."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a brother'?",
+      "o": [
+       "Eu sou um irmão",
+       "Você tem um irmão",
+       "Ela é um irmão",
+       "Eu tenho um irmão"
+      ],
+      "a": 3,
+      "why": "Tenho is the 'I' form of ter (to have)."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ela ___ dois gatos. (She has two cats)",
+      "o": [
+       "tenho",
+       "sou",
+       "tem",
+       "é"
+      ],
+      "a": 2,
+      "why": "Tem is the 'he or she' form of ter."
+     },
+     {
+      "t": "tf",
+      "q": "'O pai' means 'the father'.",
+      "a": true,
+      "why": "O pai is the father."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "a mãe",
+        "mother"
+       ],
+       [
+        "o avô",
+        "grandfather"
+       ],
+       [
+        "o filho",
+        "son"
+       ],
+       [
+        "a tia",
+        "aunt"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I have two brothers'",
+      "items": [
+       [
+        "Eu",
+        1
+       ],
+       [
+        "tenho",
+        2
+       ],
+       [
+        "dois",
+        3
+       ],
+       [
+        "irmãos",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: the sister.",
+      "a": [
+       "a irmã",
+       "irmã"
+      ],
+      "hint": "Sister is feminine.",
+      "why": "A irmã means the sister."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the verb ter: Eu ___ um irmão. (I have a brother)",
+      "a": [
+       "tenho"
+      ],
+      "hint": "Ter: eu tenho.",
+      "why": "Eu tenho is I have."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I am a student.",
+      "a": [
+       "Eu sou estudante",
+       "Sou estudante",
+       "Eu sou um estudante"
+      ],
+      "hint": "Use ser: eu sou.",
+      "why": "Eu sou estudante means I am a student."
+     }
+    ]
+   },
+   {
+    "title": "Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Articles and plurals",
+      "b": "Use o or a for 'the' with one thing and os or as for many. Um and uma mean 'a'. Most plurals add -s: livro becomes livros. Words ending in -l change, like animal to animais."
+     },
+     {
+      "h": "Days of the week",
+      "b": "Monday to Friday end in -feira: segunda-feira, terça-feira, quarta-feira, quinta-feira and sexta-feira. Then come sábado and domingo."
+     },
+     {
+      "h": "Asking where",
+      "b": "Use Onde fica...? to ask where a place is. Onde fica a escola? means Where is the school? A casa (house) and a escola (school) are both feminine."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which article goes with 'casa' (house)?",
+      "o": [
+       "o",
+       "a",
+       "os",
+       "um"
+      ],
+      "a": 1,
+      "why": "Casa is feminine, so it uses a."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'livro'?",
+      "o": [
+       "livros",
+       "livra",
+       "livres",
+       "os livro"
+      ],
+      "a": 0,
+      "why": "Add -s to words that end in a vowel: livros."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'quarta-feira' mean?",
+      "o": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday"
+      ],
+      "a": 2,
+      "why": "Quarta-feira is Wednesday, the fourth day in the Portuguese count."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Onde fica a escola?' ask?",
+      "o": [
+       "What is the school?",
+       "Who is at school?",
+       "When is school?",
+       "Where is the school?"
+      ],
+      "a": 3,
+      "why": "Onde means 'where'."
+     },
+     {
+      "t": "tf",
+      "q": "'Sábado' means Sunday.",
+      "a": false,
+      "why": "Sábado is Saturday; Sunday is domingo."
+     },
+     {
+      "t": "match",
+      "q": "Match each day to its meaning",
+      "pairs": [
+       [
+        "segunda-feira",
+        "Monday"
+       ],
+       [
+        "sexta-feira",
+        "Friday"
+       ],
+       [
+        "domingo",
+        "Sunday"
+       ],
+       [
+        "quinta-feira",
+        "Thursday"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order, starting from Monday",
+      "items": [
+       [
+        "segunda-feira",
+        1
+       ],
+       [
+        "terça-feira",
+        2
+       ],
+       [
+        "quinta-feira",
+        3
+       ],
+       [
+        "sábado",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the plural of 'livro'.",
+      "a": [
+       "livros",
+       "os livros"
+      ],
+      "hint": "Add -s.",
+      "why": "Most plurals add -s: livros."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'Wednesday'.",
+      "a": [
+       "quarta-feira",
+       "quarta feira",
+       "quarta"
+      ],
+      "hint": "It is the fourth day counting from domingo.",
+      "why": "Quarta-feira is Wednesday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: Where is the school?",
+      "a": [
+       "Onde fica a escola",
+       "Onde é a escola",
+       "Onde está a escola"
+      ],
+      "hint": "Use Onde fica.",
+      "why": "Onde fica a escola? asks where the school is."
+     }
+    ]
+   },
+   {
+    "title": "Questions and Where You're From",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Question words",
+      "b": "Put the question word first. Quem is who, O que is what, Onde is where, Quando is when, Como is how, Por que is why and Quanto is how much. Onde você mora? means Where do you live?"
+     },
+     {
+      "h": "Where are you from?",
+      "b": "Ask De onde você é? to say Where are you from? Answer Eu sou da Itália (I am from Italy) or Eu sou do Brasil. With a city, use de: Eu sou de Roma."
+     },
+     {
+      "h": "Nationalities",
+      "b": "Say brasileiro or brasileira, italiano or italiana, americano or americana. The ending changes for a woman. Eu moro em Roma means I live in Rome."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you ask 'Where are you from?'",
+      "o": [
+       "Onde você é de?",
+       "Quem você é?",
+       "De onde você é?",
+       "Como você é de?"
+      ],
+      "a": 2,
+      "why": "De onde você é? is the standard question."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Por que' mean in a question?",
+      "o": [
+       "Why",
+       "When",
+       "Who",
+       "How much"
+      ],
+      "a": 0,
+      "why": "Por que means why."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Eu moro ___ Roma. (I live in Rome)",
+      "o": [
+       "de",
+       "da",
+       "com",
+       "em"
+      ],
+      "a": 3,
+      "why": "Em means in, so Eu moro em Roma."
+     },
+     {
+      "t": "mc",
+      "q": "A woman from Italy says: Eu sou ___.",
+      "o": [
+       "italiano",
+       "italiana",
+       "italianos",
+       "italianas"
+      ],
+      "a": 1,
+      "why": "A woman uses the feminine ending -a."
+     },
+     {
+      "t": "tf",
+      "q": "'Quando' means 'where'.",
+      "a": false,
+      "why": "Quando means when; onde means where."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "Quem",
+        "Who"
+       ],
+       [
+        "Onde",
+        "Where"
+       ],
+       [
+        "Quando",
+        "When"
+       ],
+       [
+        "Como",
+        "How"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Where are you from?'",
+      "items": [
+       [
+        "De",
+        1
+       ],
+       [
+        "onde",
+        2
+       ],
+       [
+        "você",
+        3
+       ],
+       [
+        "é",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Portuguese: Where do you live? (use você)",
+      "a": [
+       "Onde você mora"
+      ],
+      "hint": "Onde is where; morar is to live.",
+      "why": "Onde você mora? asks where you live."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Portuguese: I am from Brazil.",
+      "a": [
+       "Eu sou do Brasil",
+       "Sou do Brasil"
+      ],
+      "hint": "Use sou do for masculine countries.",
+      "why": "Eu sou do Brasil means I am from Brazil."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'when'.",
+      "a": [
+       "quando"
+      ],
+      "hint": "It starts with qu.",
+      "why": "Quando means when."
+     }
+    ]
+   },
+   {
+    "title": "Present Tense Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "-ar verbs",
+      "b": "Falar (to speak) goes eu falo, você fala, nós falamos. Trabalhar, morar and estudar work the same way. Eu falo inglês means I speak English."
+     },
+     {
+      "h": "-er and -ir verbs",
+      "b": "Comer (to eat) goes eu como, você come, nós comemos. Beber (to drink) goes eu bebo. Abrir (to open) goes eu abro, você abre, nós abrimos."
+     },
+     {
+      "h": "Negatives and questions",
+      "b": "Put não before the verb: Eu não falo russo. To ask a question, raise your voice: Você fala inglês? You can answer Sim, falo."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Eu ___ inglês. (I speak English)",
+      "o": [
+       "fala",
+       "falamos",
+       "falo",
+       "falar"
+      ],
+      "a": 2,
+      "why": "Eu goes with the -o form: falo."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'nós comemos' mean?",
+      "o": [
+       "We eat",
+       "I eat",
+       "They eat",
+       "You eat"
+      ],
+      "a": 0,
+      "why": "Nós is we and comemos is the nós form of comer."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I don't speak Russian'?",
+      "o": [
+       "Eu falo não russo",
+       "Não eu falo russo",
+       "Eu não falamos russo",
+       "Eu não falo russo"
+      ],
+      "a": 3,
+      "why": "Não goes right before the verb."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ela ___ água. (She drinks water)",
+      "o": [
+       "bebo",
+       "bebe",
+       "bebemos",
+       "beber"
+      ],
+      "a": 1,
+      "why": "Ela goes with the -e form: bebe."
+     },
+     {
+      "t": "tf",
+      "q": "'Estudar' is an -er verb.",
+      "a": false,
+      "why": "Estudar ends in -ar, so it is an -ar verb."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "falar",
+        "to speak"
+       ],
+       [
+        "comer",
+        "to eat"
+       ],
+       [
+        "beber",
+        "to drink"
+       ],
+       [
+        "trabalhar",
+        "to work"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I don't eat bread'",
+      "items": [
+       [
+        "Eu",
+        1
+       ],
+       [
+        "não",
+        2
+       ],
+       [
+        "como",
+        3
+       ],
+       [
+        "pão",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: conjugate trabalhar for 'eu' (I work).",
+      "a": [
+       "trabalho",
+       "eu trabalho"
+      ],
+      "hint": "-ar verbs: eu ends in -o.",
+      "why": "Eu trabalho means I work."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: We eat bread.",
+      "a": [
+       "Nós comemos pão",
+       "Comemos pão"
+      ],
+      "hint": "Nós form of comer.",
+      "why": "Nós comemos pão means We eat bread."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: She drinks milk.",
+      "a": [
+       "Ela bebe leite",
+       "Ela toma leite"
+      ],
+      "hint": "Beber: ela bebe.",
+      "why": "Ela bebe leite means She drinks milk."
+     }
+    ]
+   },
+   {
+    "title": "Time, Days and Months",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Telling the time",
+      "b": "Ask Que horas são? for What time is it? Say São duas horas for It is two o'clock. For one o'clock, say É uma hora. Meio-dia is noon and meia-noite is midnight."
+     },
+     {
+      "h": "The months",
+      "b": "Learn janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro and dezembro. Months are not written with capital letters in Portuguese."
+     },
+     {
+      "h": "Today, tomorrow and seasons",
+      "b": "Hoje is today and amanhã is tomorrow. Eu acordo às sete means I wake up at seven. The seasons are verão (summer), outono (autumn), inverno (winter) and primavera (spring)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'It is two o'clock'?",
+      "o": [
+       "É duas horas",
+       "São dois horas",
+       "São duas horas",
+       "Tem duas horas"
+      ],
+      "a": 2,
+      "why": "For two or more hours use São and the feminine duas."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'meio-dia' mean?",
+      "o": [
+       "Noon",
+       "Midnight",
+       "Morning",
+       "Afternoon"
+      ],
+      "a": 0,
+      "why": "Meio-dia is half-day, so noon."
+     },
+     {
+      "t": "mc",
+      "q": "Which month is 'março'?",
+      "o": [
+       "May",
+       "June",
+       "August",
+       "March"
+      ],
+      "a": 3,
+      "why": "Março is March; maio is May."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'inverno' mean?",
+      "o": [
+       "Summer",
+       "Winter",
+       "Spring",
+       "Autumn"
+      ],
+      "a": 1,
+      "why": "Inverno is winter."
+     },
+     {
+      "t": "tf",
+      "q": "'Amanhã' means 'yesterday'.",
+      "a": false,
+      "why": "Amanhã is tomorrow; ontem is yesterday."
+     },
+     {
+      "t": "match",
+      "q": "Match each month to its meaning",
+      "pairs": [
+       [
+        "janeiro",
+        "January"
+       ],
+       [
+        "abril",
+        "April"
+       ],
+       [
+        "julho",
+        "July"
+       ],
+       [
+        "dezembro",
+        "December"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these months in order",
+      "items": [
+       [
+        "março",
+        1
+       ],
+       [
+        "junho",
+        2
+       ],
+       [
+        "setembro",
+        3
+       ],
+       [
+        "dezembro",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type in Portuguese: What time is it?",
+      "a": [
+       "Que horas são"
+      ],
+      "hint": "Start with Que horas.",
+      "why": "Que horas são? asks the time."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'summer'.",
+      "a": [
+       "verão"
+      ],
+      "hint": "It starts with v.",
+      "why": "Verão is summer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: It is one o'clock.",
+      "a": [
+       "É uma hora",
+       "E uma hora"
+      ],
+      "hint": "One o'clock is singular.",
+      "why": "É uma hora is the form for one o'clock."
+     }
+    ]
+   },
+   {
+    "title": "Home and Town",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Rooms at home",
+      "b": "Learn a sala (living room), a cozinha (kitchen), o banheiro (bathroom) and o quarto (bedroom). A casa is a house and o apartamento is an apartment."
+     },
+     {
+      "h": "Places in town",
+      "b": "Learn o banco (bank), o mercado (market), a farmácia (pharmacy), o parque (park) and a rua (street). Em + o becomes no and em + a becomes na: Eu estou no parque means I am in the park."
+     },
+     {
+      "h": "Being and going",
+      "b": "Use estar for where you are: Eu estou na cozinha. Use ir + a for where you go: Eu vou ao banco means I go to the bank. Ao is a + o."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'a cozinha'?",
+      "o": [
+       "The bedroom",
+       "The bathroom",
+       "The kitchen",
+       "The living room"
+      ],
+      "a": 2,
+      "why": "A cozinha is the kitchen."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Eu estou ___ parque. (in the park)",
+      "o": [
+       "no",
+       "na",
+       "ao",
+       "de"
+      ],
+      "a": 0,
+      "why": "Parque is masculine, so em + o = no."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'a farmácia' mean?",
+      "o": [
+       "The school",
+       "The bank",
+       "The market",
+       "The pharmacy"
+      ],
+      "a": 3,
+      "why": "A farmácia is the pharmacy."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am going to the bank'?",
+      "o": [
+       "Eu vou banco",
+       "Eu vou ao banco",
+       "Eu estou ao banco",
+       "Eu sou ao banco"
+      ],
+      "a": 1,
+      "why": "Ir + a + o gives vou ao."
+     },
+     {
+      "t": "tf",
+      "q": "'O quarto' can mean 'the bedroom'.",
+      "a": true,
+      "why": "O quarto is the bedroom, and also a room in a hotel."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "a sala",
+        "living room"
+       ],
+       [
+        "o banheiro",
+        "bathroom"
+       ],
+       [
+        "o mercado",
+        "market"
+       ],
+       [
+        "a rua",
+        "street"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I am in the kitchen'",
+      "items": [
+       [
+        "Eu",
+        1
+       ],
+       [
+        "estou",
+        2
+       ],
+       [
+        "na",
+        3
+       ],
+       [
+        "cozinha",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: the kitchen.",
+      "a": [
+       "a cozinha",
+       "cozinha"
+      ],
+      "hint": "It is feminine.",
+      "why": "A cozinha is the kitchen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in one word: Eu estou ___ cozinha. (in the)",
+      "a": [
+       "na"
+      ],
+      "hint": "Em + a.",
+      "why": "Em + a becomes na."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I am going to the market.",
+      "a": [
+       "Eu vou ao mercado",
+       "Vou ao mercado"
+      ],
+      "hint": "Use vou + ao.",
+      "why": "Eu vou ao mercado means I am going to the market."
+     }
+    ]
+   },
+   {
+    "title": "Describing People and Feelings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Adjectives match the noun",
+      "b": "Alto (tall), baixo (short), bonito (pretty) and simpático (nice) change for a woman: alta, baixa, bonita, simpática. Ele é alto, ela é alta. For many, add -s: eles são altos."
+     },
+     {
+      "h": "Ser or estar?",
+      "b": "Use ser for lasting traits: Ela é simpática. Use estar for feelings and states: Eu estou cansado (tired), feliz (happy), triste (sad). Estou com fome means I am hungry and estou com sede means I am thirsty."
+     },
+     {
+      "h": "Asking and age",
+      "b": "Ask Como ele é? for What is he like? Ask Como você está? for How are you feeling now? Use muito for very. For age, use ter: Eu tenho dezesseis anos means I am sixteen."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Maria é ___. (Maria is tall)",
+      "o": [
+       "alto",
+       "altos",
+       "alta",
+       "altas"
+      ],
+      "a": 2,
+      "why": "Maria is a woman, so use the feminine alta."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Eu ___ cansado. (I am tired right now)",
+      "o": [
+       "estou",
+       "sou",
+       "tenho",
+       "vou"
+      ],
+      "a": 0,
+      "why": "Feelings use estar: estou."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Estou com fome' mean?",
+      "o": [
+       "I am thirsty",
+       "I am tired",
+       "I am sad",
+       "I am hungry"
+      ],
+      "a": 3,
+      "why": "Fome is hunger."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am fifteen years old'?",
+      "o": [
+       "Eu sou quinze anos",
+       "Eu tenho quinze anos",
+       "Eu estou quinze anos",
+       "Eu tenho quinze ano"
+      ],
+      "a": 1,
+      "why": "Portuguese uses ter for age."
+     },
+     {
+      "t": "tf",
+      "q": "'Triste' means 'happy'.",
+      "a": false,
+      "why": "Triste means sad; feliz means happy."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "feliz",
+        "happy"
+       ],
+       [
+        "triste",
+        "sad"
+       ],
+       [
+        "cansado",
+        "tired"
+       ],
+       [
+        "com sede",
+        "thirsty"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'She is very nice'",
+      "items": [
+       [
+        "Ela",
+        1
+       ],
+       [
+        "é",
+        2
+       ],
+       [
+        "muito",
+        3
+       ],
+       [
+        "simpática",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: He is tall.",
+      "a": [
+       "Ele é alto"
+      ],
+      "hint": "Use ser with alto.",
+      "why": "Ele é alto means He is tall."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in estar: Ela ___ triste hoje. (She is sad today)",
+      "a": [
+       "está",
+       "esta"
+      ],
+      "hint": "Estar: ela está.",
+      "why": "Feelings use está for ela."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I am hungry.",
+      "a": [
+       "Estou com fome",
+       "Eu estou com fome"
+      ],
+      "hint": "Use estar com.",
+      "why": "Estou com fome means I am hungry."
+     }
+    ]
+   },
+   {
+    "title": "Clothes, Shopping and Weather",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Clothes and prices",
+      "b": "Learn a camisa (shirt), a calça (pants), o vestido (dress), o sapato (shoe) and o casaco (coat). Ask Quanto custa? for How much is it? Answer Custa vinte reais."
+     },
+     {
+      "h": "Buying things",
+      "b": "Brazil's money is the real, plural reais. Say Quero comprar uma camisa for I want to buy a shirt. Está caro means it is expensive and está barato means it is cheap. Learn onze (11), doze (12), quinze (15), vinte (20) and trinta (30)."
+     },
+     {
+      "h": "The weather",
+      "b": "Say Faz sol (it is sunny), Faz calor (it is hot) and Faz frio (it is cold). Está chovendo means it is raining and está nublado means it is cloudy."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Quanto custa?' mean?",
+      "o": [
+       "What time is it?",
+       "Where is it?",
+       "How much does it cost?",
+       "How are you?"
+      ],
+      "a": 2,
+      "why": "Quanto custa? asks the price."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'o casaco'?",
+      "o": [
+       "The coat",
+       "The shirt",
+       "The dress",
+       "The shoe"
+      ],
+      "a": 0,
+      "why": "O casaco is the coat."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'It is cold'?",
+      "o": [
+       "Faz calor",
+       "Faz sol",
+       "Está chovendo",
+       "Faz frio"
+      ],
+      "a": 3,
+      "why": "Faz frio means it is cold."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'barato' mean?",
+      "o": [
+       "Expensive",
+       "Cheap",
+       "Big",
+       "Small"
+      ],
+      "a": 1,
+      "why": "Barato is cheap; caro is expensive."
+     },
+     {
+      "t": "tf",
+      "q": "'Vinte' means twenty.",
+      "a": true,
+      "why": "Vinte is 20."
+     },
+     {
+      "t": "match",
+      "q": "Match each clothing word to its meaning",
+      "pairs": [
+       [
+        "a camisa",
+        "shirt"
+       ],
+       [
+        "o vestido",
+        "dress"
+       ],
+       [
+        "o sapato",
+        "shoe"
+       ],
+       [
+        "a calça",
+        "pants"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I want to buy a shirt'",
+      "items": [
+       [
+        "Eu",
+        1
+       ],
+       [
+        "quero",
+        2
+       ],
+       [
+        "comprar",
+        3
+       ],
+       [
+        "uma camisa",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type in Portuguese: How much is it?",
+      "a": [
+       "Quanto custa",
+       "Quanto é"
+      ],
+      "hint": "Use Quanto.",
+      "why": "Quanto custa? asks the price."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: It is hot (weather).",
+      "a": [
+       "Faz calor"
+      ],
+      "hint": "Weather uses faz.",
+      "why": "Faz calor means it is hot."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'dress'.",
+      "a": [
+       "vestido",
+       "o vestido"
+      ],
+      "hint": "It starts with v.",
+      "why": "O vestido is the dress."
+     }
+    ]
+   }
+  ]
+ },
+ "pt-2": {
+  "name": "Portuguese · Intermediate",
+  "units": [
+   {
+    "title": "The Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Regular past endings",
+      "b": "For -ar verbs, use -ei, -ou, -amos: falei (I spoke), falou (he or she spoke). For -er verbs, use -i, -eu, -emos: comi (I ate), comeu (he or she ate)."
+     },
+     {
+      "h": "Ir and ser in the past",
+      "b": "Ir (to go) and ser (to be) share the same past forms: fui, foi, fomos. Context tells you which one is meant. Fui ao cinema means I went to the cinema."
+     },
+     {
+      "h": "Past time words",
+      "b": "Use ontem (yesterday), ontem à noite (last night), semana passada (last week) and ano passado (last year). They show that the action is finished."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Ontem eu ___ pizza. (I ate)",
+      "o": [
+       "como",
+       "comi",
+       "comerei",
+       "comia"
+      ],
+      "a": 1,
+      "why": "Comi is the past 'I' form of comer."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Falei com ela' mean?",
+      "o": [
+       "I speak with her",
+       "She spoke with me",
+       "I will speak with her",
+       "I spoke with her"
+      ],
+      "a": 3,
+      "why": "Falei is the past 'I' form of falar."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Fui ao cinema ontem' mean?",
+      "o": [
+       "I went to the cinema yesterday",
+       "I go to the cinema every day",
+       "I will go to the cinema tomorrow",
+       "I was a cinema yesterday"
+      ],
+      "a": 0,
+      "why": "Fui is 'I went' and ontem is 'yesterday'."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'yesterday'?",
+      "o": [
+       "amanhã",
+       "hoje",
+       "ontem",
+       "agora"
+      ],
+      "a": 2,
+      "why": "Ontem means yesterday."
+     },
+     {
+      "t": "tf",
+      "q": "'Ele comeu' means 'He ate'.",
+      "a": true,
+      "why": "Comeu is the past 'he or she' form of comer."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "ontem",
+        "yesterday"
+       ],
+       [
+        "ontem à noite",
+        "last night"
+       ],
+       [
+        "semana passada",
+        "last week"
+       ],
+       [
+        "ano passado",
+        "last year"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yesterday I ate pizza'",
+      "items": [
+       [
+        "Ontem",
+        1
+       ],
+       [
+        "eu",
+        2
+       ],
+       [
+        "comi",
+        3
+       ],
+       [
+        "pizza",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: past tense of falar for 'eu' (I spoke).",
+      "a": [
+       "falei"
+      ],
+      "hint": "-ar verbs: eu ends in -ei.",
+      "why": "Falei means I spoke."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: He ate.",
+      "a": [
+       "Ele comeu",
+       "Comeu"
+      ],
+      "hint": "Past of comer for ele: -eu.",
+      "why": "Ele comeu means He ate."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I went to the cinema.",
+      "a": [
+       "Fui ao cinema",
+       "Eu fui ao cinema"
+      ],
+      "hint": "Ir in the past: fui.",
+      "why": "Fui ao cinema means I went to the cinema."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Travel",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Use à esquerda (to the left), à direita (to the right) and siga em frente (go straight ahead). Na esquina means on the corner."
+     },
+     {
+      "h": "Near and far",
+      "b": "Perto de means near and longe de means far from. To ask the way, say Como chego à estação? (How do I get to the station?)."
+     },
+     {
+      "h": "Travel words",
+      "b": "Learn o aeroporto (airport), o ônibus (bus), a estação (station) and o quarto (room). Use reservar for to book."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'à esquerda' mean?",
+      "o": [
+       "to the right",
+       "to the left",
+       "straight ahead",
+       "behind"
+      ],
+      "a": 1,
+      "why": "Esquerda means left."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'siga em frente' mean?",
+      "o": [
+       "turn back",
+       "on the corner",
+       "far away",
+       "go straight ahead"
+      ],
+      "a": 3,
+      "why": "Siga em frente means go straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask 'How do I get to the station?'",
+      "o": [
+       "Quem é a estação?",
+       "Onde você estação?",
+       "Como chego à estação?",
+       "Quanto a estação?"
+      ],
+      "a": 2,
+      "why": "Como chego a...? is the usual way to ask for directions."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'o quarto' at a hotel?",
+      "o": [
+       "The bill",
+       "The room",
+       "The key",
+       "The pool"
+      ],
+      "a": 1,
+      "why": "O quarto means the room."
+     },
+     {
+      "t": "tf",
+      "q": "'Perto de' means 'far from'.",
+      "a": false,
+      "why": "Perto de means near; longe de means far from."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "perto de",
+        "near"
+       ],
+       [
+        "o aeroporto",
+        "airport"
+       ],
+       [
+        "o ônibus",
+        "bus"
+       ],
+       [
+        "a esquina",
+        "corner"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these travel steps in a logical order",
+      "items": [
+       [
+        "Compro a passagem",
+        1
+       ],
+       [
+        "Vou ao aeroporto",
+        2
+       ],
+       [
+        "Subo no avião",
+        3
+       ],
+       [
+        "Chego ao hotel",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'to the left' in Portuguese.",
+      "a": [
+       "à esquerda",
+       "a esquerda"
+      ],
+      "hint": "Starts with à.",
+      "why": "À esquerda means to the left."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: How do I get to the station?",
+      "a": [
+       "Como chego à estação",
+       "Como chego a estação"
+      ],
+      "hint": "Start with Como chego.",
+      "why": "Como chego à estação? asks the way to the station."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'airport'.",
+      "a": [
+       "aeroporto",
+       "o aeroporto"
+      ],
+      "hint": "It starts with aero.",
+      "why": "Aeroporto is airport."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Preferences",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Liking things",
+      "b": "Use eu gosto de (I like) and eu adoro (I love). Eu gosto de música means I like music. Say eu não gosto de for I don't like."
+     },
+     {
+      "h": "Giving your opinion",
+      "b": "Say eu acho que to mean I think that. Say eu concordo for I agree and eu não concordo for I disagree."
+     },
+     {
+      "h": "Preferring and comparing",
+      "b": "Eu prefiro means I prefer. Porque means because, and mais...do que means more than. O filme é mais longo do que o livro means the film is longer than the book."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Eu gosto de livros' mean?",
+      "o": [
+       "I have books",
+       "I like books",
+       "I read books",
+       "I sell books"
+      ],
+      "a": 1,
+      "why": "Eu gosto de means 'I like'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Eu concordo' mean?",
+      "o": [
+       "I'm tired",
+       "I disagree",
+       "I agree",
+       "I'm late"
+      ],
+      "a": 2,
+      "why": "Concordo means I agree."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I think that it is good'?",
+      "o": [
+       "Eu acho que é bom",
+       "Eu acho é que bom",
+       "Eu acho de bom",
+       "Eu sou bom que"
+      ],
+      "a": 0,
+      "why": "Eu acho que + a sentence means 'I think that...'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'mais ... do que' mean?",
+      "o": [
+       "less than",
+       "as ... as",
+       "instead of",
+       "more than"
+      ],
+      "a": 3,
+      "why": "Mais do que is used to compare: more than."
+     },
+     {
+      "t": "tf",
+      "q": "'Não concordo' means 'I disagree'.",
+      "a": true,
+      "why": "Não turns 'I agree' into 'I do not agree'."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "eu adoro",
+        "I love"
+       ],
+       [
+        "eu prefiro",
+        "I prefer"
+       ],
+       [
+        "eu acho que",
+        "I think that"
+       ],
+       [
+        "mais do que",
+        "more than"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I think cinema is fun'",
+      "items": [
+       [
+        "Eu acho que",
+        1
+       ],
+       [
+        "o cinema",
+        2
+       ],
+       [
+        "é",
+        3
+       ],
+       [
+        "divertido",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: I like music.",
+      "a": [
+       "Eu gosto de música",
+       "Gosto de música"
+      ],
+      "hint": "Use gostar de.",
+      "why": "Eu gosto de música means I like music."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'I prefer' in Portuguese.",
+      "a": [
+       "eu prefiro",
+       "prefiro"
+      ],
+      "hint": "Verb: preferir.",
+      "why": "Eu prefiro means I prefer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I agree.",
+      "a": [
+       "Eu concordo",
+       "Concordo"
+      ],
+      "hint": "The verb is concordar.",
+      "why": "Eu concordo means I agree."
+     }
+    ]
+   },
+   {
+    "title": "Plans and Routines",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Future plans with ir",
+      "b": "Use ir + a verb to talk about plans: eu vou viajar means I am going to travel. Add words like amanhã (tomorrow) or ano que vem (next year)."
+     },
+     {
+      "h": "Daily routine verbs",
+      "b": "Reflexive verbs use me: eu me levanto (I get up). Other useful phrases are tomar banho (to shower), tomar café (to have breakfast or coffee) and ir dormir (to go to sleep)."
+     },
+     {
+      "h": "Past habits",
+      "b": "The imperfect tense talks about habits in the past. Eu jogava means I used to play. Use words like sempre (always) and quando eu era criança (when I was a child)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Amanhã eu ___ viajar. (I'm going to travel)",
+      "o": [
+       "vou",
+       "fui",
+       "era",
+       "sou"
+      ],
+      "a": 0,
+      "why": "Vou + verb expresses a plan for the future."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Eu me levanto às sete' mean?",
+      "o": [
+       "I go to bed at seven",
+       "I eat at seven",
+       "I get up at seven",
+       "I left at seven"
+      ],
+      "a": 2,
+      "why": "Eu me levanto means 'I get up'."
+     },
+     {
+      "t": "mc",
+      "q": "Which form means 'I used to play'?",
+      "o": [
+       "joguei",
+       "jogava",
+       "jogarei",
+       "jogo"
+      ],
+      "a": 1,
+      "why": "Jogava is the imperfect, used for past habits."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'ano que vem' mean?",
+      "o": [
+       "last year",
+       "every year",
+       "this year",
+       "next year"
+      ],
+      "a": 3,
+      "why": "Que vem means 'that is coming', so ano que vem is next year."
+     },
+     {
+      "t": "tf",
+      "q": "'Eu vou dormir' means 'I wake up'.",
+      "a": false,
+      "why": "Eu vou dormir means I'm going to sleep."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "tomar banho",
+        "to shower"
+       ],
+       [
+        "dormir",
+        "to sleep"
+       ],
+       [
+        "amanhã",
+        "tomorrow"
+       ],
+       [
+        "sempre",
+        "always"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this morning routine in a logical order",
+      "items": [
+       [
+        "Eu me levanto",
+        1
+       ],
+       [
+        "Eu tomo banho",
+        2
+       ],
+       [
+        "Eu tomo café",
+        3
+       ],
+       [
+        "Eu vou à escola",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill in: Amanhã eu ___ viajar. (I am going to travel)",
+      "a": [
+       "vou"
+      ],
+      "hint": "Use ir + infinitive.",
+      "why": "Eu vou viajar means I am going to travel."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: imperfect of jogar for 'eu' (I used to play).",
+      "a": [
+       "jogava",
+       "eu jogava"
+      ],
+      "hint": "-ar verbs: -ava.",
+      "why": "Eu jogava means I used to play."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'next year' in Portuguese.",
+      "a": [
+       "ano que vem",
+       "o ano que vem"
+      ],
+      "hint": "Think: year that comes.",
+      "why": "Ano que vem means next year."
+     }
+    ]
+   },
+   {
+    "title": "Health and the Body",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Parts of the body",
+      "b": "Learn a cabeça (head), o braço (arm), a perna (leg), a mão (hand) and o estômago (stomach). Say Estou com dor de cabeça for I have a headache. You can also say Minha cabeça dói."
+     },
+     {
+      "h": "At the doctor",
+      "b": "O médico is the doctor, o remédio is medicine and a febre is fever. Say Estou doente (I am sick), Tenho febre (I have a fever) and Preciso de um médico (I need a doctor)."
+     },
+     {
+      "h": "Advice",
+      "b": "Doctors say Você deve descansar (You should rest) and Beba muita água (Drink a lot of water). Use há for how long: Estou doente há dois dias means I have been sick for two days."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Estou com dor de cabeça' mean?",
+      "o": [
+       "I have a stomachache",
+       "I am tired",
+       "I have a headache",
+       "I have a fever"
+      ],
+      "a": 2,
+      "why": "Dor de cabeça is a headache."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'o remédio'?",
+      "o": [
+       "The medicine",
+       "The doctor",
+       "The fever",
+       "The hand"
+      ],
+      "a": 0,
+      "why": "O remédio is medicine."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I need a doctor'?",
+      "o": [
+       "Eu sou um médico",
+       "Preciso de um remédio",
+       "Tenho um médico",
+       "Preciso de um médico"
+      ],
+      "a": 3,
+      "why": "Precisar de means to need."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Você deve descansar' mean?",
+      "o": [
+       "You want to rest",
+       "You should rest",
+       "You rested",
+       "You can't rest"
+      ],
+      "a": 1,
+      "why": "Deve is should."
+     },
+     {
+      "t": "tf",
+      "q": "'A perna' means 'the arm'.",
+      "a": false,
+      "why": "A perna is the leg; o braço is the arm."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "a cabeça",
+        "head"
+       ],
+       [
+        "a mão",
+        "hand"
+       ],
+       [
+        "o braço",
+        "arm"
+       ],
+       [
+        "a febre",
+        "fever"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in a logical order",
+      "items": [
+       [
+        "You feel sick",
+        1
+       ],
+       [
+        "You see the doctor",
+        2
+       ],
+       [
+        "You buy the medicine",
+        3
+       ],
+       [
+        "You rest at home",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: I have a fever.",
+      "a": [
+       "Tenho febre",
+       "Eu tenho febre",
+       "Estou com febre"
+      ],
+      "hint": "Use ter or estar com.",
+      "why": "Tenho febre means I have a fever."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type in Portuguese: the head.",
+      "a": [
+       "a cabeça",
+       "cabeça"
+      ],
+      "hint": "It is feminine.",
+      "why": "A cabeça is the head."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I need a doctor.",
+      "a": [
+       "Preciso de um médico",
+       "Eu preciso de um médico"
+      ],
+      "hint": "Use precisar de.",
+      "why": "Preciso de um médico means I need a doctor."
+     }
+    ]
+   },
+   {
+    "title": "Comparing Things",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Less and equal",
+      "b": "Use menos ... do que for less than and tão ... quanto for as ... as. Ele é tão alto quanto ela means He is as tall as her. Ela é mais alta do que eu means She is taller than me."
+     },
+     {
+      "h": "Irregular forms",
+      "b": "Some words change completely: bom becomes melhor (better), ruim becomes pior (worse), grande becomes maior (bigger) and pequeno becomes menor (smaller). Never say mais bom."
+     },
+     {
+      "h": "The most",
+      "b": "Use o mais + adjective for the most: Ele é o mais alto da turma means He is the tallest in the class. Use o melhor or a melhor for the best: Ela é a melhor aluna."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Meu irmão é ___ alto do que eu. (taller)",
+      "o": [
+       "menos",
+       "tão",
+       "mais",
+       "pior"
+      ],
+      "a": 2,
+      "why": "Mais ... do que means more than."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'better'?",
+      "o": [
+       "melhor",
+       "mais bom",
+       "bom mais",
+       "mais melhor"
+      ],
+      "a": 0,
+      "why": "Melhor is already the comparative of bom."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'the tallest in the class'?",
+      "o": [
+       "o alto mais da turma",
+       "mais alto o da turma",
+       "o tão alto da turma",
+       "o mais alto da turma"
+      ],
+      "a": 3,
+      "why": "O mais + adjective gives the superlative."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ele é tão alto ___ ela. (as tall as her)",
+      "o": [
+       "mais",
+       "quanto",
+       "menos",
+       "muito"
+      ],
+      "a": 1,
+      "why": "Tão ... quanto means as ... as."
+     },
+     {
+      "t": "tf",
+      "q": "'Menor' means 'bigger'.",
+      "a": false,
+      "why": "Menor means smaller; maior means bigger."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "pior",
+        "worse"
+       ],
+       [
+        "maior",
+        "bigger"
+       ],
+       [
+        "menor",
+        "smaller"
+       ],
+       [
+        "melhor",
+        "better"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'She is taller than me'",
+      "items": [
+       [
+        "Ela",
+        1
+       ],
+       [
+        "é",
+        2
+       ],
+       [
+        "mais alta",
+        3
+       ],
+       [
+        "do que eu",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'better'.",
+      "a": [
+       "melhor"
+      ],
+      "hint": "Irregular form of bom.",
+      "why": "Melhor is better."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: She is taller than me.",
+      "a": [
+       "Ela é mais alta do que eu",
+       "Ela é mais alta que eu"
+      ],
+      "hint": "Use mais ... do que.",
+      "why": "Ela é mais alta do que eu means She is taller than me."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Ele é tão alto ___ ela. (as tall as)",
+      "a": [
+       "quanto"
+      ],
+      "hint": "Tão ... quanto.",
+      "why": "Tão ... quanto means as ... as."
+     }
+    ]
+   },
+   {
+    "title": "Right Now: Progressive and Recent Past",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Happening now",
+      "b": "Use estar + gerund (-ndo) for what is happening now. Eu estou comendo means I am eating. Falar becomes falando, comer becomes comendo and partir becomes partindo."
+     },
+     {
+      "h": "More examples",
+      "b": "Estou estudando (I am studying), ele está trabalhando (he is working) and nós estamos jogando (we are playing). Add agora (now) if you like. Está chovendo means it is raining."
+     },
+     {
+      "h": "Just and not yet",
+      "b": "Use acabar de + infinitive for just: Acabei de comer means I just ate. Já means already: Já comi. Ainda não means not yet: Ainda não comi means I haven't eaten yet."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I am eating'?",
+      "o": [
+       "Eu estou comer",
+       "Eu sou comendo",
+       "Eu estou comendo",
+       "Eu vou comendo"
+      ],
+      "a": 2,
+      "why": "Estar + gerund shows an action in progress."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ele está trabalhando' mean?",
+      "o": [
+       "He is working",
+       "He worked",
+       "He will work",
+       "He used to work"
+      ],
+      "a": 0,
+      "why": "Está + gerund is is working."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Acabei de comer' mean?",
+      "o": [
+       "I am about to eat",
+       "I will eat",
+       "I never eat",
+       "I just ate"
+      ],
+      "a": 3,
+      "why": "Acabar de means to have just done."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'ainda não' mean?",
+      "o": [
+       "Already",
+       "Not yet",
+       "Never",
+       "Always"
+      ],
+      "a": 1,
+      "why": "Ainda não is not yet."
+     },
+     {
+      "t": "tf",
+      "q": "'Já comi' means 'I have not eaten yet'.",
+      "a": false,
+      "why": "Já comi means I already ate."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "agora",
+        "now"
+       ],
+       [
+        "já",
+        "already"
+       ],
+       [
+        "ainda não",
+        "not yet"
+       ],
+       [
+        "acabar de",
+        "to have just"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'We are studying now'",
+      "items": [
+       [
+        "Nós",
+        1
+       ],
+       [
+        "estamos",
+        2
+       ],
+       [
+        "estudando",
+        3
+       ],
+       [
+        "agora",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the gerund (-ndo form) of 'falar'.",
+      "a": [
+       "falando"
+      ],
+      "hint": "Replace -ar with -ando.",
+      "why": "Falando means speaking."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I am working now.",
+      "a": [
+       "Estou trabalhando agora",
+       "Eu estou trabalhando agora"
+      ],
+      "hint": "Estar + trabalhando.",
+      "why": "Estou trabalhando agora means I am working now."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I just ate.",
+      "a": [
+       "Acabei de comer",
+       "Eu acabei de comer"
+      ],
+      "hint": "Use acabar de.",
+      "why": "Acabei de comer means I just ate."
+     }
+    ]
+   },
+   {
+    "title": "Object Pronouns",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Me, you and us",
+      "b": "Object pronouns replace a noun: me (me), te (you) and nos (us). In Brazil they usually go before the verb: Ele me viu means He saw me. Ela te ligou means She called you."
+     },
+     {
+      "h": "Him, her and it",
+      "b": "Use o for him or it and a for her or it: Eu o vejo (I see him) and Eu a conheço (I know her). The plurals are os and as. The pronoun matches the gender of the noun."
+     },
+     {
+      "h": "Giving and loving",
+      "b": "Me also means to me: Ela me deu um presente means She gave me a present. Eu te amo means I love you. Eu lhe disse means I told him or her."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Ele me viu' mean?",
+      "o": [
+       "I saw him",
+       "He will see me",
+       "He saw me",
+       "I saw you"
+      ],
+      "a": 2,
+      "why": "Me is the object, so he saw me."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'She called you'?",
+      "o": [
+       "Ela te ligou",
+       "Ela eu ligou",
+       "Te ela ligou",
+       "Ela ligou te"
+      ],
+      "a": 0,
+      "why": "Te goes before the verb."
+     },
+     {
+      "t": "mc",
+      "q": "Which pronoun means 'her' as an object?",
+      "o": [
+       "o",
+       "me",
+       "te",
+       "a"
+      ],
+      "a": 3,
+      "why": "A is her; o is him."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Eu ___ amo. (I love you)",
+      "o": [
+       "me",
+       "te",
+       "o",
+       "nos"
+      ],
+      "a": 1,
+      "why": "Te means you."
+     },
+     {
+      "t": "tf",
+      "q": "'Nos' means 'us'.",
+      "a": true,
+      "why": "Nos is the object pronoun for us."
+     },
+     {
+      "t": "match",
+      "q": "Match each pronoun to its meaning",
+      "pairs": [
+       [
+        "me",
+        "me"
+       ],
+       [
+        "te",
+        "you"
+       ],
+       [
+        "nos",
+        "us"
+       ],
+       [
+        "a",
+        "her or it"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'She gave me a present'",
+      "items": [
+       [
+        "Ela",
+        1
+       ],
+       [
+        "me",
+        2
+       ],
+       [
+        "deu",
+        3
+       ],
+       [
+        "um presente",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Ele ___ viu. (He saw me)",
+      "a": [
+       "me"
+      ],
+      "hint": "Which pronoun means me?",
+      "why": "Ele me viu means He saw me."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I love you.",
+      "a": [
+       "Eu te amo",
+       "Amo você",
+       "Eu amo você"
+      ],
+      "hint": "Use te before the verb.",
+      "why": "Eu te amo means I love you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: She gave me a book.",
+      "a": [
+       "Ela me deu um livro"
+      ],
+      "hint": "Dar in the past: deu.",
+      "why": "Ela me deu um livro means She gave me a book."
+     }
+    ]
+   },
+   {
+    "title": "Work, School and Technology",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "At work",
+      "b": "O trabalho is work and o emprego is a job. Learn o chefe (boss), a reunião (meeting) and o colega (colleague). Eu trabalho em uma empresa means I work in a company."
+     },
+     {
+      "h": "At school",
+      "b": "A aula is a class, a prova is a test, a matéria is a subject and o dever de casa is homework. Tenho uma prova amanhã means I have a test tomorrow."
+     },
+     {
+      "h": "Technology",
+      "b": "Learn o computador, o celular (cell phone), a internet, o e-mail and a senha (password). Baixar means to download. Preciso carregar o celular means I need to charge my phone."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'a reunião'?",
+      "o": [
+       "The boss",
+       "The test",
+       "The meeting",
+       "The job"
+      ],
+      "a": 2,
+      "why": "A reunião is a meeting."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Tenho uma prova amanhã' mean?",
+      "o": [
+       "I have a test tomorrow",
+       "I had a test yesterday",
+       "I have a class today",
+       "I am a teacher"
+      ],
+      "a": 0,
+      "why": "Prova is test and amanhã is tomorrow."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'a senha'?",
+      "o": [
+       "The phone",
+       "The email",
+       "The screen",
+       "The password"
+      ],
+      "a": 3,
+      "why": "A senha is the password."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'celular' mean?",
+      "o": [
+       "Computer",
+       "Cell phone",
+       "Charger",
+       "Message"
+      ],
+      "a": 1,
+      "why": "Celular is a cell phone."
+     },
+     {
+      "t": "tf",
+      "q": "'O chefe' means 'the colleague'.",
+      "a": false,
+      "why": "O chefe is the boss; o colega is the colleague."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "o emprego",
+        "job"
+       ],
+       [
+        "a aula",
+        "class"
+       ],
+       [
+        "o dever de casa",
+        "homework"
+       ],
+       [
+        "o computador",
+        "computer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I send an email to my boss'",
+      "items": [
+       [
+        "Eu",
+        1
+       ],
+       [
+        "envio",
+        2
+       ],
+       [
+        "um e-mail",
+        3
+       ],
+       [
+        "ao meu chefe",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type in Portuguese: the password.",
+      "a": [
+       "a senha",
+       "senha"
+      ],
+      "hint": "It starts with s.",
+      "why": "A senha is the password."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I have a test tomorrow.",
+      "a": [
+       "Tenho uma prova amanhã",
+       "Eu tenho uma prova amanhã"
+      ],
+      "hint": "Use ter and prova.",
+      "why": "Tenho uma prova amanhã means I have a test tomorrow."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'homework' in Portuguese (three words).",
+      "a": [
+       "dever de casa",
+       "o dever de casa",
+       "lição de casa"
+      ],
+      "hint": "Duty of house.",
+      "why": "O dever de casa is homework."
+     }
+    ]
+   },
+   {
+    "title": "Future, Conditional and Wishes",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Simple future",
+      "b": "Add endings to the infinitive: falarei (I will speak), falará (he or she will speak), falaremos (we will speak). In speech Brazilians often use ir + verb, but the simple future is common in writing."
+     },
+     {
+      "h": "Conditional",
+      "b": "Add -ia to the infinitive for would: eu falaria means I would speak and eu iria means I would go. Eu gostaria de um café is a polite way to say I would like a coffee."
+     },
+     {
+      "h": "Wishes",
+      "b": "After espero que (I hope that) and quero que (I want), the verb changes form: Espero que você venha means I hope you come. Talvez means maybe: Talvez eu vá."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Eu falarei' mean?",
+      "o": [
+       "I spoke",
+       "I speak",
+       "I will speak",
+       "I would speak"
+      ],
+      "a": 2,
+      "why": "The -ei ending on the infinitive is the future."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is a polite way to say 'I would like a coffee'?",
+      "o": [
+       "Eu gostaria de um café",
+       "Eu gosto um café",
+       "Eu gostei de café",
+       "Eu gosto de um café"
+      ],
+      "a": 0,
+      "why": "Gostaria is the conditional of gostar."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Espero que você venha' mean?",
+      "o": [
+       "I know you come",
+       "I hoped you came",
+       "I want you to leave",
+       "I hope you come"
+      ],
+      "a": 3,
+      "why": "Espero que means I hope that."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'talvez' mean?",
+      "o": [
+       "Never",
+       "Maybe",
+       "Always",
+       "Soon"
+      ],
+      "a": 1,
+      "why": "Talvez is maybe."
+     },
+     {
+      "t": "tf",
+      "q": "'Eu iria' means 'I would go'.",
+      "a": true,
+      "why": "Iria is the conditional of ir."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "falarei",
+        "I will speak"
+       ],
+       [
+        "falaria",
+        "I would speak"
+       ],
+       [
+        "espero que",
+        "I hope that"
+       ],
+       [
+        "talvez",
+        "maybe"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Maybe I will go tomorrow'",
+      "items": [
+       [
+        "Talvez",
+        1
+       ],
+       [
+        "eu",
+        2
+       ],
+       [
+        "vá",
+        3
+       ],
+       [
+        "amanhã",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'I will speak' in Portuguese (one word).",
+      "a": [
+       "falarei"
+      ],
+      "hint": "Infinitive + ei.",
+      "why": "Falarei means I will speak."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'I would like' in Portuguese (one word, from gostar).",
+      "a": [
+       "gostaria",
+       "eu gostaria"
+      ],
+      "hint": "Infinitive + ia.",
+      "why": "Gostaria means I would like."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Portuguese word for 'maybe'.",
+      "a": [
+       "talvez"
+      ],
+      "hint": "It starts with t.",
+      "why": "Talvez is maybe."
+     }
+    ]
+   }
+  ]
+ },
+ "ru-1": {
+  "name": "Russian · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "Say Привет (Privet) to a friend and Здравствуйте (Zdravstvuyte) to be polite. Use Доброе утро (Dobroye utro) in the morning and Добрый вечер (Dobry vecher) in the evening. To say goodbye, use До свидания (Do svidaniya)."
+     },
+     {
+      "h": "Your name and feelings",
+      "b": "Say Меня зовут (Menya zovut) and your name: Меня зовут Анна means My name is Anna. Ask Как дела? (Kak dela?) to say How are you?"
+     },
+     {
+      "h": "Polite words",
+      "b": "Спасибо (Spasibo) means thank you. Пожалуйста (Pozhaluysta) means please and also you're welcome."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'good morning' in Russian?",
+      "o": [
+       "Спокойной ночи (Spokoynoy nochi)",
+       "Доброе утро (Dobroye utro)",
+       "Добрый вечер (Dobry vecher)",
+       "До свидания (Do svidaniya)"
+      ],
+      "a": 1,
+      "why": "Доброе утро is used to greet people in the morning."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Меня зовут Анна (Menya zovut Anna)' mean?",
+      "o": [
+       "I like Anna",
+       "I am from Anna",
+       "Where is Anna",
+       "My name is Anna"
+      ],
+      "a": 3,
+      "why": "Меня зовут means 'my name is' (literally 'they call me')."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'thank you'?",
+      "o": [
+       "Привет (Privet)",
+       "Пока (Poka)",
+       "Спасибо (Spasibo)",
+       "Да (Da)"
+      ],
+      "a": 2,
+      "why": "Спасибо is the Russian word for thank you."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Как дела? (Kak dela?)' ask?",
+      "o": [
+       "What is your name?",
+       "How are you?",
+       "Where are you from?",
+       "How old are you?"
+      ],
+      "a": 1,
+      "why": "Как дела? means 'How are you?'."
+     },
+     {
+      "t": "tf",
+      "q": "'До свидания (Do svidaniya)' means 'goodbye'.",
+      "a": true,
+      "why": "До свидания is the standard way to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each Russian word to its meaning",
+      "pairs": [
+       [
+        "Привет (Privet)",
+        "Hi"
+       ],
+       [
+        "Спасибо (Spasibo)",
+        "Thank you"
+       ],
+       [
+        "Пожалуйста (Pozhaluysta)",
+        "Please"
+       ],
+       [
+        "До свидания (Do svidaniya)",
+        "Goodbye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Hi, my name is Ivan'",
+      "items": [
+       [
+        "Привет (Privet)",
+        1
+       ],
+       [
+        "меня (menya)",
+        2
+       ],
+       [
+        "зовут (zovut)",
+        3
+       ],
+       [
+        "Иван (Ivan)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: say hello to a friend in Russian (romanized is fine).",
+      "a": [
+       "Привет",
+       "Privet"
+      ],
+      "hint": "Starts with Pri-.",
+      "why": "Привет (Privet) is informal hello."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: Thank you.",
+      "a": [
+       "Спасибо",
+       "Spasibo"
+      ],
+      "hint": "Starts with Spa-.",
+      "why": "Спасибо (Spasibo) means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: My name is Lena.",
+      "a": [
+       "Меня зовут Лена",
+       "Menya zovut Lena"
+      ],
+      "hint": "Use Меня зовут.",
+      "why": "Меня зовут Лена (Menya zovut Lena) means My name is Lena."
+     }
+    ]
+   },
+   {
+    "title": "Numbers, Colors and Food",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "Count like this: один (odin), два (dva), три (tri), четыре (chetyre), пять (pyat), шесть (shest), семь (sem), восемь (vosem), девять (devyat), десять (desyat)."
+     },
+     {
+      "h": "Colors",
+      "b": "Красный (krasny) is red, синий (siniy) is blue, зелёный (zelyony) is green and жёлтый (zhyolty) is yellow. Colors change their ending to match the noun."
+     },
+     {
+      "h": "Food and wants",
+      "b": "Learn хлеб (khleb) bread, вода (voda) water, яблоко (yabloko) apple and молоко (moloko) milk. Say Я хочу (Ya khochu) for I want. Я хочу воду means I want water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'пять (pyat)' in English?",
+      "o": [
+       "Four",
+       "Five",
+       "Six",
+       "Fifteen"
+      ],
+      "a": 1,
+      "why": "Пять is the number five."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'green'?",
+      "o": [
+       "красный (krasny)",
+       "синий (siniy)",
+       "зелёный (zelyony)",
+       "жёлтый (zhyolty)"
+      ],
+      "a": 2,
+      "why": "Зелёный means green."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'яблоко (yabloko)' mean?",
+      "o": [
+       "Pear",
+       "Bread",
+       "Milk",
+       "Apple"
+      ],
+      "a": 3,
+      "why": "Яблоко is an apple."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Я хочу воду (Ya khochu vodu)' mean?",
+      "o": [
+       "I want water",
+       "I have water",
+       "I drink water",
+       "I see water"
+      ],
+      "a": 0,
+      "why": "Я хочу means 'I want' and вода is water."
+     },
+     {
+      "t": "tf",
+      "q": "'молоко (moloko)' means 'milk'.",
+      "a": true,
+      "why": "Молоко is milk."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its meaning",
+      "pairs": [
+       [
+        "один (odin)",
+        "one"
+       ],
+       [
+        "три (tri)",
+        "three"
+       ],
+       [
+        "восемь (vosem)",
+        "eight"
+       ],
+       [
+        "десять (desyat)",
+        "ten"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "два (dva)",
+        1
+       ],
+       [
+        "три (tri)",
+        2
+       ],
+       [
+        "пять (pyat)",
+        3
+       ],
+       [
+        "семь (sem)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'five' in Russian (romanized is fine).",
+      "a": [
+       "пять",
+       "pyat"
+      ],
+      "hint": "Between четыре and шесть.",
+      "why": "Пять (pyat) is five."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: water.",
+      "a": [
+       "вода",
+       "voda"
+      ],
+      "hint": "Starts with vo-.",
+      "why": "Вода (voda) is water."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I want bread.",
+      "a": [
+       "Я хочу хлеб",
+       "Ya khochu khleb",
+       "Ya hochu hleb"
+      ],
+      "hint": "Use Я хочу.",
+      "why": "Я хочу хлеб (Ya khochu khleb) means I want bread."
+     }
+    ]
+   },
+   {
+    "title": "Family and Key Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Family words",
+      "b": "Learn мама (mama) mom, папа (papa) dad, брат (brat) brother and сестра (sestra) sister. Also бабушка (babushka) is grandmother and дедушка (dedushka) is grandfather."
+     },
+     {
+      "h": "No 'to be' in the present",
+      "b": "Russian leaves out am, is and are in the present tense. Say Я студент (Ya student) for I am a student. Do not add a word for 'am'."
+     },
+     {
+      "h": "Saying what you have",
+      "b": "Use У меня есть (U menya yest) for I have. У меня есть брат means I have a brother. To ask a friend, say У тебя есть сестра? (U tebya yest sestra?)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'сестра (sestra)' mean?",
+      "o": [
+       "Mother",
+       "Sister",
+       "Aunt",
+       "Daughter"
+      ],
+      "a": 1,
+      "why": "Сестра means sister."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am a student'?",
+      "o": [
+       "Я студент (Ya student)",
+       "Я есть студент (Ya yest student)",
+       "Я быть студент (Ya byt student)",
+       "Меня студент (Menya student)"
+      ],
+      "a": 0,
+      "why": "Russian has no word for 'am' in the present tense."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a brother'?",
+      "o": [
+       "Я брат (Ya brat)",
+       "Брат меня есть (Brat menya yest)",
+       "У меня есть брат (U menya yest brat)",
+       "Мой брат я (Moy brat ya)"
+      ],
+      "a": 2,
+      "why": "У меня есть + noun is the way to say 'I have'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'У тебя есть сестра? (U tebya yest sestra?)' ask?",
+      "o": [
+       "Who is your sister?",
+       "Where is your sister?",
+       "Is she your sister?",
+       "Do you have a sister?"
+      ],
+      "a": 3,
+      "why": "У тебя есть...? means 'Do you have...?'."
+     },
+     {
+      "t": "tf",
+      "q": "'папа (papa)' means 'father'.",
+      "a": true,
+      "why": "Папа is dad or father."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "мама (mama)",
+        "mom"
+       ],
+       [
+        "бабушка (babushka)",
+        "grandmother"
+       ],
+       [
+        "дедушка (dedushka)",
+        "grandfather"
+       ],
+       [
+        "сын (syn)",
+        "son"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yes, I have a brother'",
+      "items": [
+       [
+        "Да (Da)",
+        1
+       ],
+       [
+        "у меня (u menya)",
+        2
+       ],
+       [
+        "есть (yest)",
+        3
+       ],
+       [
+        "брат (brat)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: sister.",
+      "a": [
+       "сестра",
+       "sestra"
+      ],
+      "hint": "Starts with se-.",
+      "why": "Сестра (sestra) is sister."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I am a student.",
+      "a": [
+       "Я студент",
+       "Ya student",
+       "Я студентка",
+       "Ya studentka"
+      ],
+      "hint": "No word for am.",
+      "why": "Russian drops am: Я студент (Ya student)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I have a brother.",
+      "a": [
+       "У меня есть брат",
+       "U menya yest brat",
+       "U menya est brat"
+      ],
+      "hint": "Use У меня есть.",
+      "why": "У меня есть брат (U menya yest brat) means I have a brother."
+     }
+    ]
+   },
+   {
+    "title": "Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Noun gender",
+      "b": "Russian nouns are masculine, feminine or neuter. Most masculine nouns end in a consonant, like стол (stol) table. Feminine nouns often end in -а or -я, like книга (kniga) book. Neuter nouns end in -о or -е, like окно (okno) window."
+     },
+     {
+      "h": "My and days of the week",
+      "b": "My changes with gender: мой стол (moy stol), моя книга (moya kniga), моё окно (moyo okno). The days are понедельник (ponedelnik), вторник (vtornik), среда (sreda), четверг (chetverg), пятница (pyatnitsa), суббота (subbota) and воскресенье (voskresenye)."
+     },
+     {
+      "h": "Asking where",
+      "b": "Use Где...? (Gde...?) to ask where something is. Где школа? (Gde shkola?) means Where is the school?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the gender of 'книга (kniga)'?",
+      "o": [
+       "Masculine",
+       "Feminine",
+       "Neuter",
+       "Plural"
+      ],
+      "a": 1,
+      "why": "Nouns ending in -а are usually feminine."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'среда (sreda)' mean as a day?",
+      "o": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday"
+      ],
+      "a": 2,
+      "why": "Среда is Wednesday."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Где школа? (Gde shkola?)' ask?",
+      "o": [
+       "What is the school?",
+       "Who is at school?",
+       "When is school?",
+       "Where is the school?"
+      ],
+      "a": 3,
+      "why": "Где means 'where'."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'my book'?",
+      "o": [
+       "моя книга (moya kniga)",
+       "мой книга (moy kniga)",
+       "моё книга (moyo kniga)",
+       "мои книга (moi kniga)"
+      ],
+      "a": 0,
+      "why": "Книга is feminine, so it takes моя."
+     },
+     {
+      "t": "tf",
+      "q": "'суббота (subbota)' means Sunday.",
+      "a": false,
+      "why": "Суббота is Saturday; Sunday is воскресенье."
+     },
+     {
+      "t": "match",
+      "q": "Match each day to its meaning",
+      "pairs": [
+       [
+        "понедельник (ponedelnik)",
+        "Monday"
+       ],
+       [
+        "пятница (pyatnitsa)",
+        "Friday"
+       ],
+       [
+        "воскресенье (voskresenye)",
+        "Sunday"
+       ],
+       [
+        "четверг (chetverg)",
+        "Thursday"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order, starting from Monday",
+      "items": [
+       [
+        "понедельник (ponedelnik)",
+        1
+       ],
+       [
+        "вторник (vtornik)",
+        2
+       ],
+       [
+        "четверг (chetverg)",
+        3
+       ],
+       [
+        "суббота (subbota)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: Where is the school?",
+      "a": [
+       "Где школа",
+       "Gde shkola"
+      ],
+      "hint": "Use Где.",
+      "why": "Где школа? (Gde shkola?) asks where the school is."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: my book.",
+      "a": [
+       "моя книга",
+       "moya kniga"
+      ],
+      "hint": "Книга is feminine.",
+      "why": "Feminine nouns take моя (moya)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'Friday' in Russian (romanized is fine).",
+      "a": [
+       "пятница",
+       "pyatnitsa"
+      ],
+      "hint": "It comes from пять.",
+      "why": "Пятница (pyatnitsa) is Friday."
+     }
+    ]
+   },
+   {
+    "title": "The Cyrillic Alphabet",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Friendly letters",
+      "b": "Some letters look and sound like English: А (a), К (k), М (m), О (o), Т (t). Some look the same but sound different: В is v, Н is n, Р is r, С is s and У is oo. Try мама (mama) mom, кот (kot) cat and дом (dom) house."
+     },
+     {
+      "h": "New letters",
+      "b": "Б (b), Г (g), Д (d), З (z), Л (l), П (p) and Ф (f) are easy. Special ones are Ж (zh like the s in measure), Ш (sh), Ч (ch), Щ (shch), Ц (ts), Х (kh), Я (ya), Ю (yu), Ё (yo), Э (e) and Ы (a hard i sound)."
+     },
+     {
+      "h": "Signs and stress",
+      "b": "The soft sign ь makes no sound; it softens the letter before it. The hard sign ъ is rare. An unstressed О sounds like a, so молоко (moloko) sounds like malako. Russian has 33 letters."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What sound does the letter В make in Russian?",
+      "o": [
+       "b",
+       "r",
+       "v",
+       "n"
+      ],
+      "a": 2,
+      "why": "Russian В sounds like English v."
+     },
+     {
+      "t": "mc",
+      "q": "Which letter sounds like 'sh'?",
+      "o": [
+       "Ш",
+       "Ц",
+       "Ч",
+       "Х"
+      ],
+      "a": 0,
+      "why": "Ш is sh; Ч is ch; Ц is ts; Х is kh."
+     },
+     {
+      "t": "mc",
+      "q": "How many letters are in the Russian alphabet?",
+      "o": [
+       "26",
+       "28",
+       "30",
+       "33"
+      ],
+      "a": 3,
+      "why": "The Russian alphabet has 33 letters."
+     },
+     {
+      "t": "mc",
+      "q": "What does the letter Р sound like?",
+      "o": [
+       "p",
+       "r",
+       "d",
+       "f"
+      ],
+      "a": 1,
+      "why": "Russian Р is a rolled r."
+     },
+     {
+      "t": "tf",
+      "q": "The soft sign ь makes its own sound.",
+      "a": false,
+      "why": "The soft sign only softens the letter before it."
+     },
+     {
+      "t": "match",
+      "q": "Match each letter to its sound",
+      "pairs": [
+       [
+        "Ж",
+        "zh"
+       ],
+       [
+        "Ч",
+        "ch"
+       ],
+       [
+        "Я",
+        "ya"
+       ],
+       [
+        "Х",
+        "kh"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these letters in alphabet order",
+      "items": [
+       [
+        "А (a)",
+        1
+       ],
+       [
+        "Б (b)",
+        2
+       ],
+       [
+        "В (v)",
+        3
+       ],
+       [
+        "Г (g)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what sound does Ч make? Type it in English letters.",
+      "a": [
+       "ch"
+      ],
+      "hint": "Like the start of 'chair'.",
+      "why": "Ч sounds like ch."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of 'кот (kot)'.",
+      "a": [
+       "cat",
+       "the cat"
+      ],
+      "hint": "A pet that says meow.",
+      "why": "Кот (kot) is a cat."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of 'дом (dom)'.",
+      "a": [
+       "house",
+       "home",
+       "the house"
+      ],
+      "hint": "Where you live.",
+      "why": "Дом (dom) is a house."
+     }
+    ]
+   },
+   {
+    "title": "Questions and Where You're From",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Question words",
+      "b": "Кто (Kto) is who, Что (Chto) is what, Где (Gde) is where, Когда (Kogda) is when, Почему (Pochemu) is why, Как (Kak) is how and Сколько (Skolko) is how much. Что это? (Chto eto?) means What is this?"
+     },
+     {
+      "h": "Where are you from?",
+      "b": "Ask Откуда ты? (Otkuda ty?) for Where are you from? Answer Я из Италии (Ya iz Italii) or Я из России (Ya iz Rossii). Use ты (ty) with friends and вы (vy) with adults and strangers."
+     },
+     {
+      "h": "Language and home",
+      "b": "Я говорю по-русски (Ya govoryu po-russki) means I speak Russian. Я живу в Риме (Ya zhivu v Rime) means I live in Rome. Add не (ne) before the verb to say no: Я не говорю по-английски."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Где (Gde)' mean?",
+      "o": [
+       "Who",
+       "When",
+       "Where",
+       "Why"
+      ],
+      "a": 2,
+      "why": "Где means where."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask a friend 'Where are you from?'",
+      "o": [
+       "Откуда ты? (Otkuda ty?)",
+       "Кто ты? (Kto ty?)",
+       "Когда ты? (Kogda ty?)",
+       "Что ты? (Chto ty?)"
+      ],
+      "a": 0,
+      "why": "Откуда asks where from."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Я говорю по-русски (Ya govoryu po-russki)' mean?",
+      "o": [
+       "I read Russian",
+       "I live in Russia",
+       "I am from Russia",
+       "I speak Russian"
+      ],
+      "a": 3,
+      "why": "Говорю is I speak."
+     },
+     {
+      "t": "mc",
+      "q": "Which word do you use for 'you' with an adult stranger?",
+      "o": [
+       "ты (ty)",
+       "вы (vy)",
+       "я (ya)",
+       "он (on)"
+      ],
+      "a": 1,
+      "why": "Вы is the polite you."
+     },
+     {
+      "t": "tf",
+      "q": "'Почему (Pochemu)' means 'why'.",
+      "a": true,
+      "why": "Почему is why."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "Кто (Kto)",
+        "Who"
+       ],
+       [
+        "Что (Chto)",
+        "What"
+       ],
+       [
+        "Когда (Kogda)",
+        "When"
+       ],
+       [
+        "Как (Kak)",
+        "How"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I live in Rome'",
+      "items": [
+       [
+        "Я (Ya)",
+        1
+       ],
+       [
+        "живу (zhivu)",
+        2
+       ],
+       [
+        "в (v)",
+        3
+       ],
+       [
+        "Риме (Rime)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of 'Когда (Kogda)'.",
+      "a": [
+       "when"
+      ],
+      "hint": "Think: a time question.",
+      "why": "Когда means when."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I speak Russian.",
+      "a": [
+       "Я говорю по-русски",
+       "Ya govoryu po-russki",
+       "Я говорю по русски",
+       "Ya govoryu po russki"
+      ],
+      "hint": "Use говорить.",
+      "why": "Я говорю по-русски means I speak Russian."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'Where?' in Russian (romanized is fine).",
+      "a": [
+       "Где",
+       "Gde"
+      ],
+      "hint": "Three letters.",
+      "why": "Где (Gde) means where."
+     }
+    ]
+   },
+   {
+    "title": "Present Tense Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Verb endings",
+      "b": "Russian verbs change by person. Читать (chitat, to read): я читаю (ya chitayu), ты читаешь (ty chitayesh), он читает (on chitayet), мы читаем (my chitayem), вы читаете (vy chitayete), они читают (oni chitayut)."
+     },
+     {
+      "h": "Other patterns",
+      "b": "Говорить (govorit, to speak): я говорю, ты говоришь, он говорит, мы говорим, они говорят. Жить (zhit, to live): я живу (ya zhivu), ты живёшь (ty zhivyosh), он живёт (on zhivyot)."
+     },
+     {
+      "h": "Useful verbs",
+      "b": "Работать (rabotat) is to work, любить (lyubit) to love, знать (znat) to know and пить (pit) to drink. Я пью воду (Ya pyu vodu) means I drink water. Я не знаю (Ya ne znayu) means I don't know."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Я ___ книгу. (I read a book)",
+      "o": [
+       "читает",
+       "читаем",
+       "читаю",
+       "читаешь"
+      ],
+      "a": 2,
+      "why": "Я goes with the -ю form."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Они работают (Oni rabotayut)' mean?",
+      "o": [
+       "They work",
+       "We work",
+       "He works",
+       "I work"
+      ],
+      "a": 0,
+      "why": "Они is they."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I don't know'?",
+      "o": [
+       "Я нет знаю (Ya net znayu)",
+       "Я не знать (Ya ne znat)",
+       "Я знаю не (Ya znayu ne)",
+       "Я не знаю (Ya ne znayu)"
+      ],
+      "a": 3,
+      "why": "Put не before the verb."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Он ___ в Москве. (He lives in Moscow)",
+      "o": [
+       "живу (zhivu)",
+       "живёт (zhivyot)",
+       "живёшь (zhivyosh)",
+       "живут (zhivut)"
+      ],
+      "a": 1,
+      "why": "Он goes with the он form."
+     },
+     {
+      "t": "tf",
+      "q": "'Мы говорим (My govorim)' means 'we speak'.",
+      "a": true,
+      "why": "Мы говорим is the we form of говорить."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "читать (chitat)",
+        "to read"
+       ],
+       [
+        "жить (zhit)",
+        "to live"
+       ],
+       [
+        "пить (pit)",
+        "to drink"
+       ],
+       [
+        "знать (znat)",
+        "to know"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I don't drink milk'",
+      "items": [
+       [
+        "Я (Ya)",
+        1
+       ],
+       [
+        "не (ne)",
+        2
+       ],
+       [
+        "пью (pyu)",
+        3
+       ],
+       [
+        "молоко (moloko)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the 'я' form of работать (rabotat).",
+      "a": [
+       "работаю",
+       "rabotayu"
+      ],
+      "hint": "Replace -ать with -аю.",
+      "why": "Я работаю (Ya rabotayu) means I work."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I live in Moscow.",
+      "a": [
+       "Я живу в Москве",
+       "Ya zhivu v Moskve"
+      ],
+      "hint": "Москва becomes Москве after в.",
+      "why": "Я живу в Москве means I live in Moscow."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: We read.",
+      "a": [
+       "Мы читаем",
+       "My chitayem",
+       "My chitaem"
+      ],
+      "hint": "Мы form ends in -ем.",
+      "why": "Мы читаем (My chitayem) means We read."
+     }
+    ]
+   },
+   {
+    "title": "Time and Months",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Telling the time",
+      "b": "Ask Который час? (Kotory chas?) or Сколько времени? (Skolko vremeni?). Say Сейчас три часа (Seychas tri chasa) for It is three o'clock. Use час for 1, часа for 2 to 4 and часов for 5 and more."
+     },
+     {
+      "h": "The months",
+      "b": "Learn январь (yanvar), февраль (fevral), март (mart), апрель (aprel), май (may), июнь (iyun), июль (iyul), август (avgust), сентябрь (sentyabr), октябрь (oktyabr), ноябрь (noyabr) and декабрь (dekabr)."
+     },
+     {
+      "h": "Seasons and parts of the day",
+      "b": "Зима (zima) is winter, весна (vesna) spring, лето (leto) summer and осень (osen) autumn. Утро (utro) is morning, день (den) day, вечер (vecher) evening and ночь (noch) night. В понедельник (v ponedelnik) means on Monday."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you ask 'What time is it?'",
+      "o": [
+       "Где час? (Gde chas?)",
+       "Кто час? (Kto chas?)",
+       "Который час? (Kotory chas?)",
+       "Почему час? (Pochemu chas?)"
+      ],
+      "a": 2,
+      "why": "Который час? is the standard question."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Сейчас пять часов (Seychas pyat chasov)' mean?",
+      "o": [
+       "It is five o'clock now",
+       "It is five days now",
+       "It is six o'clock now",
+       "I worked five hours"
+      ],
+      "a": 0,
+      "why": "Сейчас is now and пять часов is five o'clock."
+     },
+     {
+      "t": "mc",
+      "q": "Which month is 'март (mart)'?",
+      "o": [
+       "May",
+       "June",
+       "August",
+       "March"
+      ],
+      "a": 3,
+      "why": "Март is March; май is May."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'зима (zima)' mean?",
+      "o": [
+       "Summer",
+       "Winter",
+       "Spring",
+       "Autumn"
+      ],
+      "a": 1,
+      "why": "Зима is winter."
+     },
+     {
+      "t": "tf",
+      "q": "'Лето (leto)' means 'summer'.",
+      "a": true,
+      "why": "Лето is summer."
+     },
+     {
+      "t": "match",
+      "q": "Match each month to its meaning",
+      "pairs": [
+       [
+        "январь (yanvar)",
+        "January"
+       ],
+       [
+        "май (may)",
+        "May"
+       ],
+       [
+        "июль (iyul)",
+        "July"
+       ],
+       [
+        "декабрь (dekabr)",
+        "December"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these months in order",
+      "items": [
+       [
+        "март (mart)",
+        1
+       ],
+       [
+        "июнь (iyun)",
+        2
+       ],
+       [
+        "сентябрь (sentyabr)",
+        3
+       ],
+       [
+        "декабрь (dekabr)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'summer' in Russian (romanized is fine).",
+      "a": [
+       "лето",
+       "leto"
+      ],
+      "hint": "Starts with le-.",
+      "why": "Лето (leto) is summer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of 'ночь (noch)'.",
+      "a": [
+       "night",
+       "the night"
+      ],
+      "hint": "Opposite of day.",
+      "why": "Ночь (noch) is night."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: on Monday.",
+      "a": [
+       "в понедельник",
+       "v ponedelnik"
+      ],
+      "hint": "Use в + понедельник.",
+      "why": "В понедельник (v ponedelnik) means on Monday."
+     }
+    ]
+   },
+   {
+    "title": "Home and Town",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "At home",
+      "b": "Дом (dom) is a house, квартира (kvartira) an apartment, комната (komnata) a room, кухня (kukhnya) a kitchen, ванная (vannaya) a bathroom and спальня (spalnya) a bedroom."
+     },
+     {
+      "h": "In town",
+      "b": "Магазин (magazin) is a shop, банк (bank) a bank, аптека (apteka) a pharmacy, парк (park) a park, улица (ulitsa) a street and город (gorod) a city."
+     },
+     {
+      "h": "In and there is",
+      "b": "Use в (v) for in, and the noun usually adds -е: Я в магазине (Ya v magazine) means I am in the shop. Дом becomes в доме and парк becomes в парке. Use есть (yest) for there is: В городе есть парк means There is a park in the city."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'кухня (kukhnya)'?",
+      "o": [
+       "Bedroom",
+       "Bathroom",
+       "Kitchen",
+       "Room"
+      ],
+      "a": 2,
+      "why": "Кухня is the kitchen."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'аптека (apteka)' mean?",
+      "o": [
+       "Pharmacy",
+       "Shop",
+       "Bank",
+       "Park"
+      ],
+      "a": 0,
+      "why": "Аптека is a pharmacy."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am in the park'?",
+      "o": [
+       "Я в парк (Ya v park)",
+       "Я из парке (Ya iz parke)",
+       "Парк я в (Park ya v)",
+       "Я в парке (Ya v parke)"
+      ],
+      "a": 3,
+      "why": "After в, парк becomes парке."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'В городе есть парк (V gorode yest park)' mean?",
+      "o": [
+       "The park is far from the city",
+       "There is a park in the city",
+       "I live in a park",
+       "There is no park"
+      ],
+      "a": 1,
+      "why": "Есть means there is."
+     },
+     {
+      "t": "tf",
+      "q": "'Улица (ulitsa)' means 'street'.",
+      "a": true,
+      "why": "Улица is a street."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "квартира (kvartira)",
+        "apartment"
+       ],
+       [
+        "комната (komnata)",
+        "room"
+       ],
+       [
+        "магазин (magazin)",
+        "shop"
+       ],
+       [
+        "город (gorod)",
+        "city"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I live in an apartment'",
+      "items": [
+       [
+        "Я (Ya)",
+        1
+       ],
+       [
+        "живу (zhivu)",
+        2
+       ],
+       [
+        "в (v)",
+        3
+       ],
+       [
+        "квартире (kvartire)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of 'аптека (apteka)'.",
+      "a": [
+       "pharmacy",
+       "drugstore",
+       "chemist"
+      ],
+      "hint": "You buy medicine there.",
+      "why": "Аптека (apteka) is a pharmacy."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I am in the park.",
+      "a": [
+       "Я в парке",
+       "Ya v parke"
+      ],
+      "hint": "After в, add -е.",
+      "why": "Я в парке means I am in the park."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'kitchen' in Russian (romanized is fine).",
+      "a": [
+       "кухня",
+       "kukhnya",
+       "kuhnya"
+      ],
+      "hint": "Starts with ku-.",
+      "why": "Кухня (kukhnya) is a kitchen."
+     }
+    ]
+   },
+   {
+    "title": "Describing Things, Shopping and Weather",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Adjectives",
+      "b": "Adjectives match the noun: большой дом (bolshoy dom) big house, большая комната (bolshaya komnata) big room, большое окно (bolshoye okno) big window. Also маленький (malenky) small, красивый (krasivy) beautiful, новый (novy) new and старый (stary) old."
+     },
+     {
+      "h": "Shopping",
+      "b": "Сколько стоит? (Skolko stoit?) means How much is it? Это дорого (Eto dorogo) means it is expensive and это дёшево (Eto dyoshevo) means it is cheap. Russian money is the рубль (rubl). Clothes: рубашка (rubashka) shirt, платье (platye) dress, куртка (kurtka) jacket, ботинки (botinki) shoes."
+     },
+     {
+      "h": "Weather",
+      "b": "Сегодня холодно (Segodnya kholodno) is it is cold today, тепло (teplo) warm and жарко (zharko) hot. Идёт дождь (Idyot dozhd) means it is raining and идёт снег (Idyot sneg) means it is snowing."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'a big house'?",
+      "o": [
+       "большая дом (bolshaya dom)",
+       "большое дом (bolshoye dom)",
+       "большой дом (bolshoy dom)",
+       "большие дом (bolshiye dom)"
+      ],
+      "a": 2,
+      "why": "Дом is masculine, so use большой."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Сколько стоит? (Skolko stoit?)' mean?",
+      "o": [
+       "How much is it?",
+       "What time is it?",
+       "Where is it?",
+       "Who is it?"
+      ],
+      "a": 0,
+      "why": "Сколько стоит? asks the price."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Идёт снег (Idyot sneg)' mean?",
+      "o": [
+       "It is raining",
+       "It is hot",
+       "It is sunny",
+       "It is snowing"
+      ],
+      "a": 3,
+      "why": "Снег is snow."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'платье (platye)'?",
+      "o": [
+       "Shirt",
+       "Dress",
+       "Jacket",
+       "Shoes"
+      ],
+      "a": 1,
+      "why": "Платье is a dress."
+     },
+     {
+      "t": "tf",
+      "q": "'Это дёшево (Eto dyoshevo)' means 'it is expensive'.",
+      "a": false,
+      "why": "Дёшево means cheap; дорого means expensive."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "холодно (kholodno)",
+        "cold"
+       ],
+       [
+        "жарко (zharko)",
+        "hot"
+       ],
+       [
+        "дорого (dorogo)",
+        "expensive"
+       ],
+       [
+        "маленький (malenky)",
+        "small"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'How much is the new jacket?'",
+      "items": [
+       [
+        "Сколько (Skolko)",
+        1
+       ],
+       [
+        "стоит (stoit)",
+        2
+       ],
+       [
+        "новая (novaya)",
+        3
+       ],
+       [
+        "куртка (kurtka)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the English meaning of 'дорого (dorogo)'.",
+      "a": [
+       "expensive"
+      ],
+      "hint": "Not cheap.",
+      "why": "Дорого (dorogo) means expensive."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: How much is it?",
+      "a": [
+       "Сколько стоит",
+       "Skolko stoit"
+      ],
+      "hint": "Use Сколько.",
+      "why": "Сколько стоит? asks the price."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'cold' (weather) in Russian (romanized is fine).",
+      "a": [
+       "холодно",
+       "kholodno",
+       "holodno"
+      ],
+      "hint": "Starts with khol-.",
+      "why": "Холодно (kholodno) means it is cold."
+     }
+    ]
+   }
+  ]
+ },
+ "ru-2": {
+  "name": "Russian · Intermediate",
+  "units": [
+   {
+    "title": "The Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Past endings",
+      "b": "Russian past verbs change by gender, not by person. Add -л (-l) for masculine, -ла (-la) for feminine and -ли (-li) for plural. A boy says я читал (ya chital) and a girl says я читала (ya chitala)."
+     },
+     {
+      "h": "Plural past",
+      "b": "For we, you (plural) and they, use -ли: мы работали (my rabotali) means we worked. For the past of to be, use был (byl), была (byla), было (bylo) and были (byli)."
+     },
+     {
+      "h": "Time words",
+      "b": "Use вчера (vchera) for yesterday, сегодня (segodnya) for today, завтра (zavtra) for tomorrow and на прошлой неделе (na proshloy nedele) for last week."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A girl says: Вчера я ___ книгу. (I read)",
+      "o": [
+       "читаю (chitayu)",
+       "читала (chitala)",
+       "читал (chital)",
+       "буду читать (budu chitat)"
+      ],
+      "a": 1,
+      "why": "A girl uses the feminine past ending -ла."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Мы работали (My rabotali)' mean?",
+      "o": [
+       "We work",
+       "We will work",
+       "We worked",
+       "They worked"
+      ],
+      "a": 2,
+      "why": "The ending -ли is the plural past, and мы means we."
+     },
+     {
+      "t": "mc",
+      "q": "Which ending shows a masculine past verb?",
+      "o": [
+       "-л (-l)",
+       "-ла (-la)",
+       "-ли (-li)",
+       "-ть (-t)"
+      ],
+      "a": 0,
+      "why": "Masculine past verbs end in -л."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'вчера (vchera)' mean?",
+      "o": [
+       "tomorrow",
+       "today",
+       "tonight",
+       "yesterday"
+      ],
+      "a": 3,
+      "why": "Вчера means yesterday."
+     },
+     {
+      "t": "tf",
+      "q": "'Он написал письмо (On napisal pismo)' means 'He wrote a letter'.",
+      "a": true,
+      "why": "Написал is the masculine past of написать (to write)."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "вчера (vchera)",
+        "yesterday"
+       ],
+       [
+        "сегодня (segodnya)",
+        "today"
+       ],
+       [
+        "завтра (zavtra)",
+        "tomorrow"
+       ],
+       [
+        "на прошлой неделе (na proshloy nedele)",
+        "last week"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yesterday I read a book'",
+      "items": [
+       [
+        "Вчера (Vchera)",
+        1
+       ],
+       [
+        "я (ya)",
+        2
+       ],
+       [
+        "читал (chital)",
+        3
+       ],
+       [
+        "книгу (knigu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a man says 'I read' in the past: Я ___ (читать).",
+      "a": [
+       "читал",
+       "chital"
+      ],
+      "hint": "Masculine past ends in -л.",
+      "why": "Я читал (Ya chital) is a man's past tense."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: yesterday.",
+      "a": [
+       "вчера",
+       "vchera"
+      ],
+      "hint": "Starts with vch-.",
+      "why": "Вчера (vchera) is yesterday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: We worked.",
+      "a": [
+       "Мы работали",
+       "My rabotali"
+      ],
+      "hint": "Plural past ends in -ли.",
+      "why": "Мы работали (My rabotali) means We worked."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Travel",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Use налево (nalevo) for to the left, направо (napravo) for to the right and прямо (pryamo) for straight ahead."
+     },
+     {
+      "h": "Near and far",
+      "b": "Рядом (ryadom) means nearby and далеко (daleko) means far. To ask the way, say Как пройти на вокзал? (Kak proyti na vokzal?), meaning How do I get to the station?"
+     },
+     {
+      "h": "Travel words",
+      "b": "Learn вокзал (vokzal) station, аэропорт (aeroport) airport, билет (bilet) ticket and гостиница (gostinitsa) hotel."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'налево (nalevo)' mean?",
+      "o": [
+       "to the right",
+       "to the left",
+       "straight ahead",
+       "behind"
+      ],
+      "a": 1,
+      "why": "Налево means to the left."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'прямо (pryamo)' mean?",
+      "o": [
+       "to the left",
+       "to the right",
+       "straight ahead",
+       "far away"
+      ],
+      "a": 2,
+      "why": "Прямо means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask 'How do I get to the station?'",
+      "o": [
+       "Кто вокзал? (Kto vokzal?)",
+       "Сколько вокзал? (Skolko vokzal?)",
+       "Когда вокзал? (Kogda vokzal?)",
+       "Как пройти на вокзал? (Kak proyti na vokzal?)"
+      ],
+      "a": 3,
+      "why": "Как пройти на...? is the usual way to ask for directions."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'гостиница (gostinitsa)'?",
+      "o": [
+       "Hotel",
+       "Station",
+       "Airport",
+       "Ticket"
+      ],
+      "a": 0,
+      "why": "Гостиница means hotel."
+     },
+     {
+      "t": "tf",
+      "q": "'далеко (daleko)' means 'near'.",
+      "a": false,
+      "why": "Далеко means far; near is рядом."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "аэропорт (aeroport)",
+        "airport"
+       ],
+       [
+        "билет (bilet)",
+        "ticket"
+       ],
+       [
+        "направо (napravo)",
+        "to the right"
+       ],
+       [
+        "рядом (ryadom)",
+        "nearby"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these travel steps in a logical order",
+      "items": [
+       [
+        "Я купил билет (Ya kupil bilet)",
+        1
+       ],
+       [
+        "Я еду в аэропорт (Ya yedu v aeroport)",
+        2
+       ],
+       [
+        "Я сажусь в самолёт (Ya sazhus v samolyot)",
+        3
+       ],
+       [
+        "Я приезжаю в гостиницу (Ya priezzhayu v gostinitsu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: to the left.",
+      "a": [
+       "налево",
+       "nalevo"
+      ],
+      "hint": "Starts with na-.",
+      "why": "Налево (nalevo) means to the left."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: ticket.",
+      "a": [
+       "билет",
+       "bilet"
+      ],
+      "hint": "Starts with bi-.",
+      "why": "Билет (bilet) is ticket."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: How do I get to the station?",
+      "a": [
+       "Как пройти на вокзал",
+       "Kak proyti na vokzal"
+      ],
+      "hint": "Start with Как пройти.",
+      "why": "Как пройти на вокзал? asks the way to the station."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Preferences",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Liking things",
+      "b": "Use Мне нравится (Mne nravitsya) to say I like. Мне нравится музыка means I like music. For many things, say Мне нравятся (Mne nravyatsya). Say Мне не нравится for I don't like."
+     },
+     {
+      "h": "Giving your opinion",
+      "b": "Say Я думаю, что (Ya dumayu, chto) for I think that. A man says Я согласен (Ya soglasen) for I agree and a woman says Я согласна (Ya soglasna)."
+     },
+     {
+      "h": "Preferring and explaining",
+      "b": "Я предпочитаю (Ya predpochitayu) means I prefer. Потому что (potomu chto) means because. Use it to give a reason: Я люблю кино, потому что оно интересное."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Мне нравится музыка (Mne nravitsya muzyka)' mean?",
+      "o": [
+       "I play music",
+       "I like music",
+       "I hear music",
+       "I write music"
+      ],
+      "a": 1,
+      "why": "Мне нравится means 'I like'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Я согласен (Ya soglasen)' mean?",
+      "o": [
+       "I'm tired",
+       "I disagree",
+       "I agree",
+       "I'm late"
+      ],
+      "a": 2,
+      "why": "Согласен means in agreement."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'потому что (potomu chto)' mean?",
+      "o": [
+       "because",
+       "but",
+       "or",
+       "although"
+      ],
+      "a": 0,
+      "why": "Потому что introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I think that it is good'?",
+      "o": [
+       "Я думаю хорошо что (Ya dumayu khorosho chto)",
+       "Я хорошо думаю это (Ya khorosho dumayu eto)",
+       "Думаю я что хорошо (Dumayu ya chto khorosho)",
+       "Я думаю, что это хорошо (Ya dumayu, chto eto khorosho)"
+      ],
+      "a": 3,
+      "why": "Я думаю, что + a sentence means 'I think that...'."
+     },
+     {
+      "t": "tf",
+      "q": "'Я не согласен (Ya ne soglasen)' means 'I disagree'.",
+      "a": true,
+      "why": "Не turns 'I agree' into 'I do not agree'."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "мне нравится (mne nravitsya)",
+        "I like"
+       ],
+       [
+        "я думаю (ya dumayu)",
+        "I think"
+       ],
+       [
+        "потому что (potomu chto)",
+        "because"
+       ],
+       [
+        "я предпочитаю (ya predpochitayu)",
+        "I prefer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I think that cinema is interesting'",
+      "items": [
+       [
+        "Я думаю (Ya dumayu)",
+        1
+       ],
+       [
+        "что (chto)",
+        2
+       ],
+       [
+        "кино (kino)",
+        3
+       ],
+       [
+        "интересно (interesno)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate: I like music.",
+      "a": [
+       "Мне нравится музыка",
+       "Mne nravitsya muzyka"
+      ],
+      "hint": "Use Мне нравится.",
+      "why": "Мне нравится музыка (Mne nravitsya muzyka) means I like music."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'because' in Russian (two words).",
+      "a": [
+       "потому что",
+       "potomu chto"
+      ],
+      "hint": "Starts with потому.",
+      "why": "Потому что (potomu chto) means because."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a woman says 'I agree'.",
+      "a": [
+       "Я согласна",
+       "Ya soglasna",
+       "согласна",
+       "soglasna"
+      ],
+      "hint": "Women use -а.",
+      "why": "A woman says согласна (soglasna)."
+     }
+    ]
+   },
+   {
+    "title": "Plans and Routines",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "The future with быть",
+      "b": "Use буду (budu) plus an infinitive for the future. Завтра я буду работать (Zavtra ya budu rabotat) means Tomorrow I will work. Other forms are будешь, будет, будем."
+     },
+     {
+      "h": "Daily routine verbs",
+      "b": "Many routine verbs are reflexive and end in -ся or -сь: я умываюсь (ya umyvayus) I wash up. Others are я встаю (ya vstayu) I get up and я ложусь спать (ya lozhus spat) I go to bed."
+     },
+     {
+      "h": "Frequency and time",
+      "b": "Use каждый день (kazhdy den) for every day, всегда (vsegda) for always and в следующем году (v sleduyushchem godu) for next year."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Завтра я ___ работать. (I will work)",
+      "o": [
+       "буду (budu)",
+       "был (byl)",
+       "есть (yest)",
+       "иду (idu)"
+      ],
+      "a": 0,
+      "why": "Буду + infinitive forms the future."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Я встаю в семь часов (Ya vstayu v sem chasov)' mean?",
+      "o": [
+       "I go to bed at seven",
+       "I eat at seven",
+       "I get up at seven",
+       "I came at seven"
+      ],
+      "a": 2,
+      "why": "Я встаю means 'I get up'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'каждый день (kazhdy den)' mean?",
+      "o": [
+       "last day",
+       "every day",
+       "one day",
+       "this day"
+      ],
+      "a": 1,
+      "why": "Каждый means every."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'в следующем году (v sleduyushchem godu)' mean?",
+      "o": [
+       "last year",
+       "every year",
+       "this year",
+       "next year"
+      ],
+      "a": 3,
+      "why": "Следующем means next."
+     },
+     {
+      "t": "tf",
+      "q": "'Я ложусь спать (Ya lozhus spat)' means 'I wake up'.",
+      "a": false,
+      "why": "Я ложусь спать means I go to bed."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "завтра (zavtra)",
+        "tomorrow"
+       ],
+       [
+        "всегда (vsegda)",
+        "always"
+       ],
+       [
+        "я умываюсь (ya umyvayus)",
+        "I wash up"
+       ],
+       [
+        "спать (spat)",
+        "to sleep"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this morning routine in a logical order",
+      "items": [
+       [
+        "Я встаю (Ya vstayu)",
+        1
+       ],
+       [
+        "Я умываюсь (Ya umyvayus)",
+        2
+       ],
+       [
+        "Я завтракаю (Ya zavtrakayu)",
+        3
+       ],
+       [
+        "Я иду в школу (Ya idu v shkolu)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Завтра я ___ работать. (I will work)",
+      "a": [
+       "буду",
+       "budu"
+      ],
+      "hint": "Future of быть.",
+      "why": "Я буду работать (Ya budu rabotat) means I will work."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'every day' in Russian (two words).",
+      "a": [
+       "каждый день",
+       "kazhdy den",
+       "kazhdyi den"
+      ],
+      "hint": "каждый + день.",
+      "why": "Каждый день (kazhdy den) means every day."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: always.",
+      "a": [
+       "всегда",
+       "vsegda"
+      ],
+      "hint": "Starts with vs-.",
+      "why": "Всегда (vsegda) means always."
+     }
+    ]
+   },
+   {
+    "title": "Accusative and Prepositional Cases",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Objects take the accusative",
+      "b": "Russian nouns change their endings (cases). A direct object takes the accusative. Feminine -а becomes -у: Я читаю книгу (Ya chitayu knigu) means I read a book. Lifeless masculine nouns stay the same: Я вижу дом. A male person adds -а: Я вижу брата (Ya vizhu brata)."
+     },
+     {
+      "h": "Saying where",
+      "b": "Use в (v) for inside places and на (na) for open places and events, plus the prepositional case, usually ending in -е: в Москве (v Moskve), в школе (v shkole), на улице (na ulitse), на работе (na rabote) at work."
+     },
+     {
+      "h": "Talking about",
+      "b": "Use о (o) to say about: Я думаю о маме (Ya dumayu o mame) means I think about mom. Мы говорим о фильме means We talk about the film. A few words end in -у: в аэропорту (v aeroportu) at the airport."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Я читаю ___. (I read a book)",
+      "o": [
+       "книга (kniga)",
+       "книге (knige)",
+       "книгу (knigu)",
+       "книги (knigi)"
+      ],
+      "a": 2,
+      "why": "Feminine objects take -у."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'in Moscow'?",
+      "o": [
+       "в Москве (v Moskve)",
+       "в Москва (v Moskva)",
+       "в Москву (v Moskvu)",
+       "в Москвой (v Moskvoy)"
+      ],
+      "a": 0,
+      "why": "The prepositional case adds -е."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Я вижу брата (Ya vizhu brata)' mean?",
+      "o": [
+       "I am the brother",
+       "I see the sister",
+       "The brother sees me",
+       "I see the brother"
+      ],
+      "a": 3,
+      "why": "Брата is the accusative of брат."
+     },
+     {
+      "t": "mc",
+      "q": "Which phrase means 'at work'?",
+      "o": [
+       "на работа (na rabota)",
+       "на работе (na rabote)",
+       "на работу (na rabotu)",
+       "на работой (na rabotoy)"
+      ],
+      "a": 1,
+      "why": "На + prepositional gives at."
+     },
+     {
+      "t": "tf",
+      "q": "In 'Я люблю маму (Ya lyublyu mamu)', мама is in the accusative case.",
+      "a": true,
+      "why": "The object of a verb takes the accusative: маму."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "книгу (knigu)",
+        "a book (object)"
+       ],
+       [
+        "в школе (v shkole)",
+        "in school"
+       ],
+       [
+        "на улице (na ulitse)",
+        "on the street"
+       ],
+       [
+        "о маме (o mame)",
+        "about mom"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I read a book at school'",
+      "items": [
+       [
+        "Я (Ya)",
+        1
+       ],
+       [
+        "читаю (chitayu)",
+        2
+       ],
+       [
+        "книгу (knigu)",
+        3
+       ],
+       [
+        "в школе (v shkole)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Я люблю ___. (mom: мама)",
+      "a": [
+       "маму",
+       "mamu"
+      ],
+      "hint": "Feminine -а becomes -у.",
+      "why": "Я люблю маму (Ya lyublyu mamu) means I love mom."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: in school.",
+      "a": [
+       "в школе",
+       "v shkole"
+      ],
+      "hint": "Use в + prepositional.",
+      "why": "В школе (v shkole) means in school."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I see the house.",
+      "a": [
+       "Я вижу дом",
+       "Ya vizhu dom"
+      ],
+      "hint": "Lifeless masculine stays the same.",
+      "why": "Я вижу дом (Ya vizhu dom) means I see the house."
+     }
+    ]
+   },
+   {
+    "title": "Genitive: No, Of and Numbers",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Having nothing",
+      "b": "To say you do not have something, use нет (net) plus the genitive: У меня нет брата (U menya net brata) means I have no brother. Feminine -а becomes -ы or -и: У меня нет книги (U menya net knigi)."
+     },
+     {
+      "h": "Of and without",
+      "b": "The genitive shows who owns something: книга брата (kniga brata) is the brother's book and дом мамы (dom mamy) is mom's house. It also follows из (iz) from and без (bez) without: кофе без сахара (kofe bez sakhara)."
+     },
+     {
+      "h": "Numbers",
+      "b": "One uses the basic form: один стол. Two to four use the genitive singular: два стола (dva stola), три книги (tri knigi). Five and more use the genitive plural: пять столов (pyat stolov), пять книг (pyat knig)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I have no brother'?",
+      "o": [
+       "У меня нет брат (U menya net brat)",
+       "У меня не брата (U menya ne brata)",
+       "У меня нет брата (U menya net brata)",
+       "Я нет брата (Ya net brata)"
+      ],
+      "a": 2,
+      "why": "Нет takes the genitive: брата."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'книга брата (kniga brata)' mean?",
+      "o": [
+       "The brother's book",
+       "The brother and the book",
+       "The brother has no book",
+       "A book without a brother"
+      ],
+      "a": 0,
+      "why": "The genitive брата shows possession."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: У меня два ___. (I have two brothers)",
+      "o": [
+       "брат (brat)",
+       "братов (bratov)",
+       "братом (bratom)",
+       "брата (brata)"
+      ],
+      "a": 3,
+      "why": "Two to four uses the genitive singular."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: У меня пять ___. (I have five books)",
+      "o": [
+       "книги (knigi)",
+       "книг (knig)",
+       "книга (kniga)",
+       "книгу (knigu)"
+      ],
+      "a": 1,
+      "why": "Five and more use the genitive plural."
+     },
+     {
+      "t": "tf",
+      "q": "After the number 'пять (pyat)' we use the genitive plural.",
+      "a": true,
+      "why": "Five and more take the genitive plural."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "нет (net)",
+        "there is no"
+       ],
+       [
+        "без (bez)",
+        "without"
+       ],
+       [
+        "из (iz)",
+        "from"
+       ],
+       [
+        "два стола (dva stola)",
+        "two tables"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I have no brother'",
+      "items": [
+       [
+        "У (U)",
+        1
+       ],
+       [
+        "меня (menya)",
+        2
+       ],
+       [
+        "нет (net)",
+        3
+       ],
+       [
+        "брата (brata)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: У меня нет ___. (sister: сестра)",
+      "a": [
+       "сестры",
+       "sestry"
+      ],
+      "hint": "Feminine -а becomes -ы.",
+      "why": "У меня нет сестры (U menya net sestry) means I have no sister."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'three books' in Russian (romanized is fine).",
+      "a": [
+       "три книги",
+       "tri knigi"
+      ],
+      "hint": "Three uses genitive singular.",
+      "why": "Три книги (tri knigi) means three books."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'five tables' in Russian (romanized is fine).",
+      "a": [
+       "пять столов",
+       "pyat stolov"
+      ],
+      "hint": "Five uses genitive plural.",
+      "why": "Пять столов (pyat stolov) means five tables."
+     }
+    ]
+   },
+   {
+    "title": "Verbs of Motion",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Going on foot",
+      "b": "Идти (idti) is one direction, right now. Ходить (khodit) is a habit or a round trip. Я иду в школу (Ya idu v shkolu) means I am going to school now. Я хожу в школу каждый день (Ya khozhu v shkolu kazhdy den) means I go to school every day."
+     },
+     {
+      "h": "Going by vehicle",
+      "b": "Ехать (yekhat) is going by vehicle now and ездить (yezdit) is a habit. Я еду в Москву на поезде (Ya yedu v Moskvu na poezde) means I am going to Moscow by train. Мы ездим на море каждое лето means We go to the sea every summer."
+     },
+     {
+      "h": "Where to?",
+      "b": "Ask Куда? (Kuda?) for where to: Куда ты идёшь? (Kuda ty idyosh?) means Where are you going? Use в + accusative for going to a place: в школу, в магазин, в Москву. Лететь (letet) is to fly: Я лечу в Рим."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which phrase means 'I am going on foot right now'?",
+      "o": [
+       "Я хожу (Ya khozhu)",
+       "Я еду (Ya yedu)",
+       "Я иду (Ya idu)",
+       "Я лечу (Ya lechu)"
+      ],
+      "a": 2,
+      "why": "Идти is on foot, one direction, now."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Куда ты идёшь? (Kuda ty idyosh?)' ask?",
+      "o": [
+       "Where are you going?",
+       "Where are you from?",
+       "Who are you?",
+       "Where are you?"
+      ],
+      "a": 0,
+      "why": "Куда asks where to."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Я ___ в школу каждый день. (I go to school every day)",
+      "o": [
+       "иду (idu)",
+       "еду (yedu)",
+       "идёт (idyot)",
+       "хожу (khozhu)"
+      ],
+      "a": 3,
+      "why": "Every day is a habit, so ходить."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am going to Moscow by train'?",
+      "o": [
+       "Я иду в Москву на поезде (Ya idu v Moskvu na poezde)",
+       "Я еду в Москву на поезде (Ya yedu v Moskvu na poezde)",
+       "Я еду в Москве на поезде (Ya yedu v Moskve na poezde)",
+       "Я еду из Москву на поезде (Ya yedu iz Moskvu na poezde)"
+      ],
+      "a": 1,
+      "why": "A train needs ехать, and going to takes в + accusative."
+     },
+     {
+      "t": "tf",
+      "q": "'Куда (kuda)' means 'where from'.",
+      "a": false,
+      "why": "Куда means where to; откуда means where from."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "идти (idti)",
+        "to go on foot (now)"
+       ],
+       [
+        "ходить (khodit)",
+        "to go on foot (habit)"
+       ],
+       [
+        "ехать (yekhat)",
+        "to go by vehicle (now)"
+       ],
+       [
+        "куда (kuda)",
+        "where to"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I go to school every day'",
+      "items": [
+       [
+        "Я (Ya)",
+        1
+       ],
+       [
+        "хожу (khozhu)",
+        2
+       ],
+       [
+        "в школу (v shkolu)",
+        3
+       ],
+       [
+        "каждый день (kazhdy den)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the 'я' form of идти (idti), I am going on foot.",
+      "a": [
+       "иду",
+       "idu"
+      ],
+      "hint": "Starts with id-.",
+      "why": "Я иду (Ya idu) means I am going."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to a friend: Where are you going?",
+      "a": [
+       "Куда ты идёшь",
+       "Куда ты идешь",
+       "Kuda ty idyosh",
+       "Kuda ty idesh"
+      ],
+      "hint": "Start with Куда.",
+      "why": "Куда ты идёшь? asks where you are going."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Я ___ в Москву на поезде. (ехать, I am going now)",
+      "a": [
+       "еду",
+       "yedu",
+       "edu"
+      ],
+      "hint": "Я form of ехать.",
+      "why": "Я еду (Ya yedu) means I am going by vehicle."
+     }
+    ]
+   },
+   {
+    "title": "Health, Body and Comparisons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Body and pain",
+      "b": "Голова (golova) is head, рука (ruka) hand or arm, нога (noga) leg or foot, спина (spina) back and живот (zhivot) stomach. Say У меня болит голова (U menya bolit golova) for I have a headache. For many things use болят: У меня болят ноги."
+     },
+     {
+      "h": "At the doctor",
+      "b": "Врач (vrach) is a doctor, лекарство (lekarstvo) medicine and температура (temperatura) fever. Say Я болею (Ya boleyu) for I am ill, У меня температура for I have a fever and Мне нужен врач (Mne nuzhen vrach) for I need a doctor."
+     },
+     {
+      "h": "Comparing",
+      "b": "Many comparisons end in -ее: быстрее (bystreye) faster, интереснее (interesneye) more interesting. Чем (chem) means than. Irregular ones are лучше (luchshe) better, хуже (khuzhe) worse, больше (bolshe) more and меньше (menshe) less."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'У меня болит голова (U menya bolit golova)' mean?",
+      "o": [
+       "I have a fever",
+       "My back hurts",
+       "I have a headache",
+       "I need a doctor"
+      ],
+      "a": 2,
+      "why": "Голова is head and болит is hurts."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a fever'?",
+      "o": [
+       "У меня температура (U menya temperatura)",
+       "Я температура (Ya temperatura)",
+       "У меня лекарство (U menya lekarstvo)",
+       "Мне врач (Mne vrach)"
+      ],
+      "a": 0,
+      "why": "Use У меня + температура."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'лучше (luchshe)' mean?",
+      "o": [
+       "Worse",
+       "More",
+       "Less",
+       "Better"
+      ],
+      "a": 3,
+      "why": "Лучше is better."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'than' in comparisons?",
+      "o": [
+       "что (chto)",
+       "чем (chem)",
+       "как (kak)",
+       "когда (kogda)"
+      ],
+      "a": 1,
+      "why": "Чем means than."
+     },
+     {
+      "t": "tf",
+      "q": "'Хуже (khuzhe)' means 'better'.",
+      "a": false,
+      "why": "Хуже means worse; лучше means better."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "врач (vrach)",
+        "doctor"
+       ],
+       [
+        "спина (spina)",
+        "back"
+       ],
+       [
+        "лекарство (lekarstvo)",
+        "medicine"
+       ],
+       [
+        "больше (bolshe)",
+        "more"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in a logical order",
+      "items": [
+       [
+        "I feel bad",
+        1
+       ],
+       [
+        "I go to the doctor",
+        2
+       ],
+       [
+        "I take medicine",
+        3
+       ],
+       [
+        "I feel better",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type 'doctor' in Russian (romanized is fine).",
+      "a": [
+       "врач",
+       "vrach"
+      ],
+      "hint": "Starts with vr-.",
+      "why": "Врач (vrach) is a doctor."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I have a headache.",
+      "a": [
+       "У меня болит голова",
+       "U menya bolit golova"
+      ],
+      "hint": "Use болит.",
+      "why": "У меня болит голова means I have a headache."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'better' in Russian (romanized is fine).",
+      "a": [
+       "лучше",
+       "luchshe"
+      ],
+      "hint": "Irregular comparative.",
+      "why": "Лучше (luchshe) is better."
+     }
+    ]
+   },
+   {
+    "title": "Aspects: Imperfective and Perfective",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Two kinds of verbs",
+      "b": "Most Russian verbs come in pairs. The imperfective shows a process or habit: Я читал книгу (Ya chital knigu) means I was reading a book. The perfective shows a finished result: Я прочитал книгу (Ya prochital knigu) means I finished reading the book."
+     },
+     {
+      "h": "Common pairs",
+      "b": "Делать and сделать (delat, sdelat) mean to do. Писать and написать (pisat, napisat) mean to write. Покупать and купить (pokupat, kupit) mean to buy. Говорить and сказать (govorit, skazat) mean to speak and to say. The first is imperfective and the second is perfective."
+     },
+     {
+      "h": "In the future",
+      "b": "The imperfective future uses буду + infinitive: Я буду читать (Ya budu chitat) means I will be reading. The perfective future uses simple endings: Я куплю хлеб (Ya kuplyu khleb) means I will buy bread. Perfective verbs have no present tense."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence says you FINISHED the book?",
+      "o": [
+       "Я читал книгу (Ya chital knigu)",
+       "Я читаю книгу (Ya chitayu knigu)",
+       "Я прочитал книгу (Ya prochital knigu)",
+       "Я буду читать книгу (Ya budu chitat knigu)"
+      ],
+      "a": 2,
+      "why": "The perfective прочитал shows a completed action."
+     },
+     {
+      "t": "mc",
+      "q": "What is the perfective of писать (pisat)?",
+      "o": [
+       "написать (napisat)",
+       "писал (pisal)",
+       "пишу (pishu)",
+       "будет писать (budet pisat)"
+      ],
+      "a": 0,
+      "why": "Написать is the perfective of to write."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Я куплю хлеб (Ya kuplyu khleb)' mean?",
+      "o": [
+       "I bought bread",
+       "I buy bread every day",
+       "I am buying bread now",
+       "I will buy bread"
+      ],
+      "a": 3,
+      "why": "Купить is perfective, so куплю is future."
+     },
+     {
+      "t": "mc",
+      "q": "Which form means 'I will be working' as a process?",
+      "o": [
+       "Я работал (Ya rabotal)",
+       "Я буду работать (Ya budu rabotat)",
+       "Я работаю (Ya rabotayu)",
+       "Я сделаю (Ya sdelayu)"
+      ],
+      "a": 1,
+      "why": "Буду + infinitive is the imperfective future."
+     },
+     {
+      "t": "tf",
+      "q": "Perfective verbs have a present tense.",
+      "a": false,
+      "why": "Perfective forms with present endings mean the future."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "купить (kupit)",
+        "to buy (complete)"
+       ],
+       [
+        "писать (pisat)",
+        "to write (process)"
+       ],
+       [
+        "сказать (skazat)",
+        "to say (once)"
+       ],
+       [
+        "прочитать (prochitat)",
+        "to finish reading"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yesterday I wrote a letter'",
+      "items": [
+       [
+        "Вчера (Vchera)",
+        1
+       ],
+       [
+        "я (ya)",
+        2
+       ],
+       [
+        "написал (napisal)",
+        3
+       ],
+       [
+        "письмо (pismo)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a man says 'I did it' with the perfective of делать: Я ___.",
+      "a": [
+       "сделал",
+       "sdelal",
+       "Я сделал",
+       "Ya sdelal"
+      ],
+      "hint": "Prefix с- + делал.",
+      "why": "Я сделал (Ya sdelal) means I did it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate: I will buy bread.",
+      "a": [
+       "Я куплю хлеб",
+       "Ya kuplyu khleb"
+      ],
+      "hint": "Perfective купить.",
+      "why": "Я куплю хлеб means I will buy bread."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the perfective infinitive of писать (pisat).",
+      "a": [
+       "написать",
+       "napisat"
+      ],
+      "hint": "Prefix на-.",
+      "why": "Написать (napisat) is the perfective."
+     }
+    ]
+   },
+   {
+    "title": "Dative, Instrumental and Wishes",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Dative: to and need",
+      "b": "The dative shows who receives or needs something. Feminine -а becomes -е: Я даю книгу маме (Ya dayu knigu mame) means I give a book to mom. Мне нужно (Mne nuzhno) means I need. Age uses the dative: Мне пятнадцать лет (Mne pyatnadtsat let) means I am fifteen."
+     },
+     {
+      "h": "Instrumental: with",
+      "b": "The instrumental shows with or by means of: с другом (s drugom) with a friend, с мамой (s mamoy) with mom. Я пишу ручкой (Ya pishu ruchkoy) means I write with a pen. Masculine ends in -ом and feminine in -ой. Он работает врачом means He works as a doctor."
+     },
+     {
+      "h": "Wishes",
+      "b": "Я хотел бы (Ya khotel by) means I would like, said by a man. A woman says Я хотела бы (Ya khotela by). Я хотел бы кофе means I would like a coffee. Хочу, чтобы ты пришёл (Khochu, chtoby ty prishyol) means I want you to come; чтобы is followed by the past form."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Я иду в кино с ___. (with a friend)",
+      "o": [
+       "друг (drug)",
+       "друга (druga)",
+       "другом (drugom)",
+       "другу (drugu)"
+      ],
+      "a": 2,
+      "why": "С takes the instrumental: другом."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Мне нужно (Mne nuzhno)' mean?",
+      "o": [
+       "I need",
+       "I have",
+       "I see",
+       "I give"
+      ],
+      "a": 0,
+      "why": "Мне нужно means I need."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Я даю книгу ___. (to mom)",
+      "o": [
+       "мама (mama)",
+       "маму (mamu)",
+       "мамой (mamoy)",
+       "маме (mame)"
+      ],
+      "a": 3,
+      "why": "The receiver takes the dative: маме."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Я хотела бы кофе (Ya khotela by kofe)' mean?",
+      "o": [
+       "A man says he would like a coffee",
+       "A woman says she would like a coffee",
+       "A woman wanted coffee yesterday",
+       "A woman drinks coffee every day"
+      ],
+      "a": 1,
+      "why": "Хотела бы is the feminine would like."
+     },
+     {
+      "t": "tf",
+      "q": "'Я пишу ручкой (Ya pishu ruchkoy)' uses the instrumental case.",
+      "a": true,
+      "why": "Ручкой is the instrumental of ручка and means with a pen."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "с другом (s drugom)",
+        "with a friend"
+       ],
+       [
+        "маме (mame)",
+        "to mom"
+       ],
+       [
+        "мне нужно (mne nuzhno)",
+        "I need"
+       ],
+       [
+        "хотел бы (khotel by)",
+        "would like"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I go to the cinema with a friend'",
+      "items": [
+       [
+        "Я (Ya)",
+        1
+       ],
+       [
+        "иду (idu)",
+        2
+       ],
+       [
+        "в кино (v kino)",
+        3
+       ],
+       [
+        "с другом (s drugom)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Я иду в парк с ___. (мама)",
+      "a": [
+       "мамой",
+       "mamoy"
+      ],
+      "hint": "Feminine instrumental ends in -ой.",
+      "why": "С мамой (s mamoy) means with mom."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type 'I need' in Russian (two words, romanized is fine).",
+      "a": [
+       "мне нужно",
+       "mne nuzhno"
+      ],
+      "hint": "Dative мне + нужно.",
+      "why": "Мне нужно (mne nuzhno) means I need."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Я даю книгу ___. (брат)",
+      "a": [
+       "брату",
+       "bratu"
+      ],
+      "hint": "Masculine dative ends in -у.",
+      "why": "Я даю книгу брату means I give the book to my brother."
+     }
+    ]
+   }
+  ]
+ }
+}
