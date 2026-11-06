@@ -54,7 +54,7 @@ export function Learn() {
     const cid = nid(ui2, 'chest');
     if (g.chests[cid]) return;
     if (!g.done[nid(ui2, 'test')]) { snd('bad'); ui.toast('Chest locked', `Pass the ${unitName(s, ui2)} test to open it`, SVG.medal); return; }
-    const gems = 15 + Math.floor(Math.random() * 26);
+    const gems = Math.round((15 + Math.floor(Math.random() * 26)) * (g.pro ? 1.5 : 1));
     const bonus = Math.random() < 0.4 ? g.addXP(10) : 0;
     useGame.getState().set({ chests: { ...useGame.getState().chests, [cid]: today() }, gems: useGame.getState().gems + gems });
     snd('chest'); confetti(); burst(document.querySelector(`[aria-label^="${unitName(s, ui2)} treasure chest"]`), ['#ffc800', '#ff9600', '#ffffff'], 40);
@@ -129,6 +129,7 @@ export function OutOfHearts() {
         <button className="btn purple" onClick={() => { ui.close(); import('../lib/launch').then((m) => m.startReview()); }}>Review mistakes</button>
         <button className="btn ghost" onClick={() => ui.close()}>Close</button>
       </div>
+      {!useGame.getState().pro && <button className="btn wide pro-btn" style={{ marginTop: 12 }} onClick={() => { ui.close(); ui.go('pro'); }}>Get unlimited hearts with Pro</button>}
     </div>
   );
 }

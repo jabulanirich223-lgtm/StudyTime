@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import type { ReactNode } from 'react';
 import type { Item, NodeKind } from './types';
 
-export type View = 'learn' | 'ap' | 'cram' | 'league' | 'shop' | 'review' | 'profile' | 'courses';
+export type View = 'learn' | 'ap' | 'cram' | 'league' | 'shop' | 'review' | 'profile' | 'courses' | 'pro';
 
 export type SessionKind = 'lesson' | 'drill' | 'apsim' | 'lightning' | 'date' | 'review' | 'flash';
 export type SessionCfg = {

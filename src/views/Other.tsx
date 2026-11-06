@@ -9,7 +9,7 @@ import { speak, enVoices, pickVoice, voiceScore, canSpeak, CHARACTER_VOICE, onVo
 import { Tock } from '../components/Tock';
 import { Svg, SVG, CourseIcon } from '../components/Icons';
 import { CAST } from '../data/cast';
-import { Buddy } from '../components/Buddy';
+import { Buddy, Avatar } from '../components/Buddy';
 import { Guidebook } from './Learn';
 
 function Mode({ color, icon, title, text, tag, btn, onGo, children }: { color: string; icon: string; title: string; text: string; tag?: string; btn: string; onGo: () => void; children?: React.ReactNode }) {
@@ -153,7 +153,14 @@ export function ProfileView() {
   const voices = enVoices(), cur = pickVoice();
   return (
     <>
-      <h1 className="view-h">Profile</h1>
+      <div className="prof-head">
+        <button className="prof-av" onClick={() => ui.open(<AvatarPicker />)} aria-label="Change profile picture"><Avatar who={g.avatar} bg={g.avatarBg} size={120} pro={g.pro} /><span className="prof-edit">✎</span></button>
+        <div style={{ minWidth: 0 }}>
+          <input className="prof-name" value={g.name} maxLength={24} onChange={(e) => g.set({ name: e.target.value })} aria-label="Your name" />
+          <div className="row" style={{ gap: 8, marginTop: 6 }}>{g.pro ? <span className="pro-badge">PRO</span> : <button className="pro-badge ghosty" onClick={() => ui.go('pro')}>GET PRO</button>}<span className="muted small">Level {levelOf(g.xp)} · {g.stats.lessons} lessons</span></div>
+          <button className="btn ghost" style={{ marginTop: 10 }} onClick={() => ui.open(<AvatarPicker />)}>Change avatar</button>
+        </div>
+      </div>
       <div className="tiles" style={{ maxWidth: 'none', gridTemplateColumns: 'repeat(auto-fit,minmax(130px,1fr))', marginTop: 12 }}>
         <div className="tile" style={{ ['--c' as string]: '#f97316', ['--cd' as string]: '#c2410c' }}><div className="t">Streak</div><div className="v">{g.streak}</div></div>
         <div className="tile" style={{ ['--c' as string]: '#eab308', ['--cd' as string]: '#a16207' }}><div className="t">Total XP</div><div className="v">{g.xp}</div></div>
@@ -186,7 +193,6 @@ export function ProfileView() {
         </span>) : <span className="muted small">No voices found</span>}</div>}
       <div className="toggle-row"><span>Reading speed</span><select value={g.ttsRate} onChange={(e) => { g.set({ ttsRate: Number(e.target.value) }); setTimeout(() => speak('This is how fast I will read.'), 50); }}>{[[0.8, 'Slow'], [1, 'Normal'], [1.2, 'Fast'], [1.5, 'Very fast']].map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
       <div className="toggle-row"><span>Voice pitch</span><select value={g.ttsPitch} onChange={(e) => { g.set({ ttsPitch: Number(e.target.value) }); setTimeout(() => speak("Hi, I'm Tock. How does this sound?"), 50); }}>{[[0.8, 'Lower'], [1, 'Normal'], [1.15, 'Higher']].map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
-      <Toggle on={g.unlimited} label="Unlimited hearts" onClick={() => g.set({ unlimited: !g.unlimited })} />
       <div className="toggle-row"><span>Reset all progress</span><button className="btn ghost" onClick={() => ui.open(
         <div className="center"><Tock mood="sad" size={120} /><h2>Reset all progress?</h2><p className="muted">This clears XP, streak, finished lessons and saved mistakes on this computer.</p>
           <div className="row" style={{ justifyContent: 'center' }}><button className="btn red" onClick={() => { g.reset(); ui.close(); ui.go('learn'); }}>Reset everything</button><button className="btn ghost" onClick={() => ui.close()}>Cancel</button></div></div>)}>Reset</button></div>
@@ -200,4 +206,24 @@ function VoiceState() {
   useEffect(() => onVoiceStatus(setSt), []);
   const msg = { off: '', idle: 'Downloads once (about 90 MB) the first time someone speaks.', loading: 'Downloading voices… (one time only)', ready: 'Voices ready', failed: "Couldn't download voices. Check your internet; using your computer's voice for now." }[st];
   return <div className="toggle-row"><span className="muted small">{msg}</span>{st !== 'ready' && st !== 'loading' && <button className="btn ghost" onClick={() => void loadVoices()}>Download now</button>}</div>;
+}
+
+const AV_WHO = ['tock', 'malik', 'sophie', 'leo', 'imani', 'kenji', 'amira', 'ms-hart'];
+const AV_BG: [string, boolean][] = [['#ddf4ff', false], ['#d7ffb8', false], ['#ffe7b3', false], ['#ffd6e7', false], ['#eadcff', false], ['#ffdfd6', false],
+  ['linear-gradient(135deg,#ffd84d,#ff9600)', true], ['linear-gradient(135deg,#7c5cff,#1cb0f6)', true], ['linear-gradient(135deg,#ff4b8b,#ffb84d)', true], ['linear-gradient(135deg,#1f2433,#4f46e5)', true]];
+function AvatarPicker() {
+  const g = useGame();
+  const ui = useUI();
+  return (
+    <div>
+      <h2>Your avatar</h2>
+      <div className="center" style={{ margin: '14px 0' }}><Avatar who={g.avatar} bg={g.avatarBg} size={130} pro={g.pro} /></div>
+      <div className="av-grid">{AV_WHO.map((w) => <button key={w} className={`av-opt ${g.avatar === w ? 'on' : ''}`} onClick={() => { snd('tap'); g.set({ avatar: w }); }}><Avatar who={w} bg={g.avatarBg} size={64} /></button>)}</div>
+      <h3 style={{ margin: '16px 0 8px' }}>Background</h3>
+      <div className="bg-grid">{AV_BG.map(([c, pro]) => (
+        <button key={c} className={`bg-opt ${g.avatarBg === c ? 'on' : ''}`} style={{ background: c }} aria-label={pro ? 'Pro background' : 'Background colour'}
+          onClick={() => { if (pro && !g.pro) { snd('bad'); ui.close(); ui.go('pro'); return; } snd('tap'); g.set({ avatarBg: c }); }}>{pro && !g.pro && <span className="lock">PRO</span>}</button>))}</div>
+      <button className="btn wide" style={{ marginTop: 18 }} onClick={() => ui.close()}>Done</button>
+    </div>
+  );
 }

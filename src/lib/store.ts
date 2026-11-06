@@ -36,6 +36,8 @@ export type State = {
   stats: { lessons: number; perfect: number; maxCombo: number; fixed: number };
   sound: boolean; autoRead: boolean; charVoices: boolean; ttsRate: number; ttsPitch: number; voiceName: string;
   frozeUsed?: boolean;
+  pro: boolean; proPlan: string | null; proSince: number; proWeek: string;
+  name: string; avatar: string; avatarBg: string;
 };
 
 type Actions = {
@@ -57,6 +59,7 @@ const fresh = (): State => ({
   done: {}, chests: {}, badges: {}, mistakes: [],
   best: { lightning: 0, ap: {} },
   stats: { lessons: 0, perfect: 0, maxCombo: 0, fixed: 0 },
+  pro: false, proPlan: null, proSince: 0, proWeek: '', name: 'Learner', avatar: 'tock', avatarBg: '#ddf4ff',
   sound: true, autoRead: false, charVoices: true, ttsRate: 1, ttsPitch: 1, voiceName: '',
 });
 
@@ -70,6 +73,7 @@ export const useGame = create<State & Actions>()(
         const patch: Partial<State> = {};
         if (s.daily.day !== today()) patch.daily = { day: today(), xp: 0, lessons: 0, crams: 0 };
         if (s.week !== weekId()) { patch.week = weekId(); patch.weekXP = 0; }
+        if (s.pro && s.proWeek !== weekId()) { patch.proWeek = weekId(); patch.freezes = Math.min(5, s.freezes + 1); }
         if (s.lastDay && s.lastDay !== today() && s.lastDay !== yesterday()) {
           if (s.freezes > 0 && s.streak > 0) { patch.freezes = s.freezes - 1; patch.lastDay = yesterday(); patch.frozeUsed = true; }
           else patch.streak = 0;
@@ -84,7 +88,7 @@ export const useGame = create<State & Actions>()(
       },
       loseHeart: () => {
         const s = get();
-        if (s.unlimited) return;
+        if (s.unlimited || s.pro) return;
         set({ hearts: Math.max(0, s.hearts - 1), heartTs: s.hearts === 5 ? Date.now() : s.heartTs });
       },
       addXP: (n) => {

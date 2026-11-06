@@ -13,19 +13,23 @@ import { APView, CramView, LeagueView, ShopView, ReviewView, ProfileView } from 
 import { Lesson } from './views/Lesson';
 import { Flashcards } from './views/Flashcards';
 import { Onboarding } from './views/Onboarding';
+import { ProView, ProCard } from './views/Pro';
+import { Avatar } from './components/Buddy';
 
 const NAV: [View, string][] = [['learn', 'Learn'], ['ap', 'Test Prep'], ['cram', 'Cram'], ['league', 'Leagues'], ['shop', 'Shop'], ['review', 'Review'], ['profile', 'Profile']];
 
 function Side() {
   const ui = useUI();
+  const g = useGame();
   return (
     <nav className="side" aria-label="Main">
       <div className="logo"><span className="logo-mark"><Tock mood="idle" /></span><span>Study<b>Time</b></span></div>
       {NAV.map(([v, l]) => (
         <button key={v} className={`nav ${ui.view === v ? 'on' : ''}`} aria-label={l} aria-current={ui.view === v ? 'page' : undefined} onClick={() => ui.go(v)}>
-          <Svg html={NAV_ICON[v === 'league' ? 'league' : v]} /><span>{l}</span>
+          {v === 'profile' ? <Avatar who={g.avatar} bg={g.avatarBg} size={32} pro={g.pro} /> : <Svg html={NAV_ICON[v === 'league' ? 'league' : v]} />}<span>{l}</span>
         </button>
       ))}
+      <button className={`nav nav-pro ${ui.view === 'pro' ? 'on' : ''}`} onClick={() => ui.go('pro')}><span className="pro-gem">PRO</span><span>{g.pro ? 'Pro' : 'Get Pro'}</span></button>
       <div className="side-foot"><Tock mood="think" /><span>Press <b>R</b> in a lesson to hear it read aloud.</span></div>
     </nav>
   );
@@ -46,7 +50,8 @@ function TopBar() {
       <div className="pills">
         <span className="pill fire" title="Day streak"><Svg html={g.lastDay === today() ? SVG.fire : SVG.fireGrey} />{g.streak}</span>
         <span className={`pill gem ${shine ? 'shine' : ''}`} title="Gems" key={g.gems}><Svg html={SVG.gem} />{g.gems}</span>
-        <span className="pill heart" title="Hearts"><Svg html={SVG.heart} />{g.unlimited ? '∞' : g.hearts}</span>
+        <span className="pill heart" title="Hearts"><Svg html={SVG.heart} />{g.unlimited || g.pro ? '∞' : g.hearts}</span>
+        {g.pro && <span className="pro-badge" title="StudyTime Pro">PRO</span>}
         <button className="iconbtn" aria-label={g.sound ? 'Mute sounds' : 'Turn sounds on'} onClick={() => g.set({ sound: !g.sound })}><Svg html={g.sound ? SVG.speaker : SVG.mute} /></button>
       </div>
     </div>
@@ -65,6 +70,7 @@ function Rail() {
       <div className="card"><div className="masc-row"><Tock mood={risk ? 'sleepy' : doneToday ? 'cheer' : 'idle'} />
         <div><h3 style={{ margin: 0 }}>{g.streak}-day streak</h3><p className="muted small" style={{ margin: '4px 0 0' }}>
           {risk ? 'Tock is dozing off. Do one lesson today to keep it going.' : doneToday ? 'Done for today. See you tomorrow!' : 'Finish a lesson to start a streak.'}{g.freezes ? ` ${g.freezes} freeze${g.freezes > 1 ? 's' : ''} ready.` : ''}</p></div></div></div>
+      <ProCard />
       <div className="card"><div className="row" style={{ gap: 14, flexWrap: 'nowrap' }}><div className="lvl-badge">{L}</div>
         <div style={{ flex: 1, minWidth: 0 }}><div className="spread"><b>Level {L}</b>{Date.now() < g.dblUntil && <span className="tag" style={{ background: '#fef3c7', color: '#a16207' }}>2× XP</span>}</div>
           <div className="bar lvl" style={{ margin: '6px 0 4px' }}><i style={{ width: `${((g.xp - lo) / (hi - lo)) * 100}%` }} /></div>
@@ -124,6 +130,7 @@ function Main() {
           {ui.view === 'shop' && <ShopView />}
           {ui.view === 'review' && <ReviewView />}
           {ui.view === 'profile' && <ProfileView />}
+          {ui.view === 'pro' && <ProView />}
           {ui.view === 'courses' && <><h1 className="view-h">What do you want to learn?</h1><p className="muted">Pick a subject, then a level. Your progress in every course is kept.</p><div style={{ marginTop: 16 }}><CoursePicker current={g.subject} onPick={(id) => { g.set({ subject: id }); ui.go('learn'); }} /></div></>}
         </div></main>
         <Rail />
