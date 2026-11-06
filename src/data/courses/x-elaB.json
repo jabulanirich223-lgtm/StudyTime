@@ -1,0 +1,7381 @@
+{
+ "ela-g8": {
+  "name": "Grade 8 English",
+  "units": [
+   {
+    "title": "Punctuation and Conventions",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Commas",
+      "b": "Use commas to separate items in a series: 'We bought apples, pears, and plums.' Put a comma after an introductory phrase: 'After lunch, we left.' Use a comma before a conjunction that joins two complete sentences."
+     },
+     {
+      "h": "Semicolons and colons",
+      "b": "A semicolon joins two related complete sentences: 'I was tired; I went to bed.' A colon introduces a list or an explanation: 'Pack three things: a hat, a map, and water.'"
+     },
+     {
+      "h": "Dashes, ellipses and apostrophes",
+      "b": "A dash shows a sudden break: 'My uncle - the funny one - arrived.' An ellipsis (...) shows missing words or a pause. An apostrophe shows possession ('Maya's book') or a missing letter in a contraction ('it's' = 'it is')."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence uses commas in a series correctly?",
+      "o": [
+       "We packed tents, snacks, and water.",
+       "We packed, tents snacks and water.",
+       "We packed tents snacks, and, water.",
+       "We, packed tents, snacks and water."
+      ],
+      "a": 0,
+      "why": "Commas separate each item in a list."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence punctuates an introductory phrase correctly?",
+      "o": [
+       "After the game we, went home.",
+       "After, the game we went home.",
+       "After the game, we went home.",
+       "After the game we went, home."
+      ],
+      "a": 2,
+      "why": "A comma follows the introductory phrase."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is correct?",
+      "o": [
+       "Its time to feed the dog; its bowl is empty.",
+       "It's time to feed the dog; its bowl is empty.",
+       "It's time to feed the dog; it's bowl is empty.",
+       "Its time to feed the dog; it's bowl is empty."
+      ],
+      "a": 1,
+      "why": "'It's' means 'it is'; 'its' shows possession."
+     },
+     {
+      "t": "mc",
+      "q": "Which mark shows a sudden break or interruption in a sentence?",
+      "o": [
+       "A colon",
+       "A period",
+       "A semicolon",
+       "A dash"
+      ],
+      "a": 3,
+      "why": "Dashes set off sudden breaks in thought."
+     },
+     {
+      "t": "tf",
+      "q": "An ellipsis can show that words were left out of a quotation.",
+      "a": true,
+      "why": "Three dots mark omitted words."
+     },
+     {
+      "t": "match",
+      "q": "Match each mark to its job",
+      "pairs": [
+       [
+        "comma",
+        "separates items in a list"
+       ],
+       [
+        "semicolon",
+        "joins two related sentences"
+       ],
+       [
+        "colon",
+        "introduces a list"
+       ],
+       [
+        "apostrophe",
+        "shows possession"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for checking commas in order",
+      "items": [
+       [
+        "Read the sentence aloud",
+        1
+       ],
+       [
+        "Find lists and introductory phrases",
+        2
+       ],
+       [
+        "Add commas where you paused",
+        3
+       ],
+       [
+        "Reread to check it makes sense",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the mark that introduces a list: 'You need three things: a pen, paper, and a ruler.'",
+      "a": [
+       "colon"
+      ],
+      "hint": "It has two dots, one above the other.",
+      "why": "A colon introduces a list."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 'It's' is short for which two words?",
+      "a": [
+       "it is",
+       "it has"
+      ],
+      "hint": "A contraction replaces missing letters.",
+      "why": "'It's' stands for 'it is' (or 'it has')."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the three-dot mark that shows words were left out.",
+      "a": [
+       "ellipsis",
+       "an ellipsis"
+      ],
+      "hint": "It sounds like 'eh-LIP-sis'.",
+      "why": "An ellipsis marks omitted words or a trailing pause."
+     }
+    ]
+   },
+   {
+    "title": "Vocabulary and Word Roots",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Context clues",
+      "b": "When you meet a new word, read the words around it. The sentence may give a definition, a synonym, an example, or a contrast: 'The arid desert had almost no water.'"
+     },
+     {
+      "h": "Prefixes, roots and suffixes",
+      "b": "A prefix comes before a root (re- = again, un- = not). A suffix comes after (-less = without). Roots carry the main meaning: spect = look, port = carry, dict = say."
+     },
+     {
+      "h": "Denotation and connotation",
+      "b": "Denotation is the dictionary meaning. Connotation is the feeling a word carries. 'Slender' and 'scrawny' both mean thin, but 'slender' feels positive and 'scrawny' feels negative."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "'The arid desert had almost no water, so nothing grew.' What does 'arid' mean?",
+      "o": [
+       "very cold",
+       "very dry",
+       "full of animals",
+       "quiet"
+      ],
+      "a": 1,
+      "why": "The clue 'almost no water' shows it means dry."
+     },
+     {
+      "t": "mc",
+      "q": "The prefix 'un-' in 'unhappy' means",
+      "o": [
+       "again",
+       "before",
+       "not",
+       "under"
+      ],
+      "a": 2,
+      "why": "Un- means not."
+     },
+     {
+      "t": "mc",
+      "q": "The root 'spect' means look. A 'spectator' is someone who",
+      "o": [
+       "watches",
+       "speaks",
+       "runs",
+       "writes"
+      ],
+      "a": 0,
+      "why": "A spectator looks at an event."
+     },
+     {
+      "t": "mc",
+      "q": "Which word has the most positive connotation?",
+      "o": [
+       "scrawny",
+       "skinny",
+       "bony",
+       "slender"
+      ],
+      "a": 3,
+      "why": "The other words suggest unhealthy thinness."
+     },
+     {
+      "t": "tf",
+      "q": "Denotation is the feeling a word suggests.",
+      "a": false,
+      "why": "That is connotation; denotation is the dictionary meaning."
+     },
+     {
+      "t": "match",
+      "q": "Match each prefix to its meaning",
+      "pairs": [
+       [
+        "pre-",
+        "before"
+       ],
+       [
+        "re-",
+        "again"
+       ],
+       [
+        "mis-",
+        "wrongly"
+       ],
+       [
+        "sub-",
+        "under"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for figuring out a new word in order",
+      "items": [
+       [
+        "Read the sentence around the word",
+        1
+       ],
+       [
+        "Look for a clue",
+        2
+       ],
+       [
+        "Guess the meaning",
+        3
+       ],
+       [
+        "Check it makes sense in the sentence",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The prefix 'bi-' means two. How many wheels does a bicycle have? Type the number.",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "Bi- means two.",
+      "why": "A bicycle has two wheels."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a word's literal dictionary meaning.",
+      "a": [
+       "denotation",
+       "denotation meaning"
+      ],
+      "hint": "The other term is connotation.",
+      "why": "Denotation is the literal dictionary meaning."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In 'hopeless', the suffix means 'without'. Type the suffix.",
+      "a": [
+       "less",
+       "-less"
+      ],
+      "hint": "It comes at the end of the word.",
+      "why": "The suffix -less means without."
+     }
+    ]
+   },
+   {
+    "title": "Advanced Grammar",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Verbals",
+      "b": "Verbals look like verbs but act as other parts of speech. A gerund ends in -ing and acts as a noun: 'Swimming is fun.' An infinitive is to plus a verb: 'I want to swim.' A participle acts as an adjective: 'the broken window'."
+     },
+     {
+      "h": "Active and passive voice",
+      "b": "In active voice the subject does the action: 'Maya threw the ball.' In passive voice the subject receives it: 'The ball was thrown by Maya.' Active voice is usually clearer."
+     },
+     {
+      "h": "Verb mood",
+      "b": "Indicative mood states facts: 'She is here.' Imperative gives commands: 'Sit down.' Subjunctive shows wishes or unreal things: 'If I were you, I would wait.'"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word is a gerund in: Reading improves your mind?",
+      "o": [
+       "improves",
+       "mind",
+       "your",
+       "Reading"
+      ],
+      "a": 3,
+      "why": "Reading is an -ing word acting as a noun."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is in passive voice?",
+      "o": [
+       "The chef cooked dinner.",
+       "Dinner was cooked by the chef.",
+       "The chef is cooking.",
+       "Cook dinner."
+      ],
+      "a": 1,
+      "why": "The subject, dinner, receives the action."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses the subjunctive mood?",
+      "o": [
+       "I am tall.",
+       "Close the door.",
+       "She walks to school.",
+       "If I were rich, I would travel."
+      ],
+      "a": 3,
+      "why": "'If I were' expresses a wish or unreal situation."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an infinitive?",
+      "o": [
+       "to dance",
+       "danced",
+       "dancing",
+       "dances"
+      ],
+      "a": 0,
+      "why": "An infinitive is to plus the base verb."
+     },
+     {
+      "t": "tf",
+      "q": "'Close the window' is in the imperative mood.",
+      "a": true,
+      "why": "Imperative sentences give commands."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to an example",
+      "pairs": [
+       [
+        "gerund",
+        "Running is healthy"
+       ],
+       [
+        "infinitive",
+        "to run"
+       ],
+       [
+        "participle",
+        "a running dog"
+       ],
+       [
+        "passive voice",
+        "The race was won"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to turn passive into active in order",
+      "items": [
+       [
+        "Find the action",
+        1
+       ],
+       [
+        "Find who does it",
+        2
+       ],
+       [
+        "Make the doer the subject",
+        3
+       ],
+       [
+        "Reread for sense",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In 'To err is human,' the phrase 'to err' is a gerund, an infinitive, or a participle. Type the answer.",
+      "a": [
+       "infinitive",
+       "an infinitive"
+      ],
+      "hint": "It is 'to' plus a base verb.",
+      "why": "'To err' is to plus the verb err, so it is an infinitive."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Rewrite 'The cake was eaten by Sam' in active voice. Which word comes first?",
+      "a": [
+       "Sam"
+      ],
+      "hint": "Who did the eating?",
+      "why": "The active sentence is 'Sam ate the cake.'"
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 'Please close the door' is in which mood? Type one word.",
+      "a": [
+       "imperative",
+       "imperative mood"
+      ],
+      "hint": "It gives a command or request.",
+      "why": "Imperative mood gives commands or requests."
+     }
+    ]
+   },
+   {
+    "title": "Reading Literature and Poetry",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Poetry elements",
+      "b": "Poems use stanzas (groups of lines), rhyme, rhythm, and imagery. Free verse has no regular rhyme or meter. Imagery uses the senses to paint a picture."
+     },
+     {
+      "h": "Irony",
+      "b": "Verbal irony says the opposite of what is meant: 'Great weather!' during a storm. Situational irony is when the outcome is opposite to what is expected. Dramatic irony is when readers know something a character does not."
+     },
+     {
+      "h": "Mood, tone and symbolism",
+      "b": "Mood is the feeling the reader gets. Tone is the author's attitude. A symbol is an object that stands for an idea, like a dove for peace."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A fire station burns down. What kind of irony is this?",
+      "o": [
+       "Verbal",
+       "Dramatic",
+       "Situational",
+       "Poetic"
+      ],
+      "a": 2,
+      "why": "The outcome is the opposite of what we expect."
+     },
+     {
+      "t": "mc",
+      "q": "What is a stanza?",
+      "o": [
+       "A rhyme",
+       "A group of lines in a poem",
+       "A kind of metaphor",
+       "A title"
+      ],
+      "a": 1,
+      "why": "Stanzas are like paragraphs in poetry."
+     },
+     {
+      "t": "mc",
+      "q": "A dove often symbolizes",
+      "o": [
+       "War",
+       "Hunger",
+       "Peace",
+       "Speed"
+      ],
+      "a": 2,
+      "why": "Doves are a common symbol of peace."
+     },
+     {
+      "t": "mc",
+      "q": "What is free verse?",
+      "o": [
+       "Poetry with no regular rhyme or rhythm",
+       "A rhyming poem",
+       "A song",
+       "A short story"
+      ],
+      "a": 0,
+      "why": "Free verse does not follow set patterns."
+     },
+     {
+      "t": "tf",
+      "q": "Mood is the feeling a reader gets from a text.",
+      "a": true,
+      "why": "Mood describes the atmosphere, such as eerie or cheerful."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "imagery",
+        "words that appeal to senses"
+       ],
+       [
+        "symbol",
+        "object standing for an idea"
+       ],
+       [
+        "stanza",
+        "group of lines"
+       ],
+       [
+        "verbal irony",
+        "saying the opposite"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for analyzing a poem in order",
+      "items": [
+       [
+        "Read it aloud",
+        1
+       ],
+       [
+        "Note imagery and devices",
+        2
+       ],
+       [
+        "Decide on the tone",
+        3
+       ],
+       [
+        "State the theme",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the feeling a reader gets from a text.",
+      "a": [
+       "mood"
+      ],
+      "hint": "It is not the author's attitude (that is tone).",
+      "why": "Mood is the feeling the text creates in the reader."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A character feels safe, but the reader knows a danger is hidden nearby. Type the kind of irony.",
+      "a": [
+       "dramatic",
+       "dramatic irony"
+      ],
+      "hint": "The reader knows more than the character.",
+      "why": "Dramatic irony means readers know something a character does not."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a group of lines in a poem.",
+      "a": [
+       "stanza",
+       "a stanza"
+      ],
+      "hint": "It works like a paragraph in poetry.",
+      "why": "A stanza is a group of lines in a poem."
+     }
+    ]
+   },
+   {
+    "title": "Informational Text Analysis",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Central idea and claims",
+      "b": "The central idea is the main point of a text. Authors support it with claims and evidence. Ask whether the evidence is relevant and enough."
+     },
+     {
+      "h": "Rhetorical appeals",
+      "b": "Ethos appeals to credibility, logos to logic and facts, and pathos to emotions. A doctor citing studies uses ethos and logos. A touching story about a sad puppy uses pathos."
+     },
+     {
+      "h": "Bias and fallacies",
+      "b": "Bias is a one-sided view. A logical fallacy is faulty reasoning, like a bandwagon claim: 'Everyone buys it, so it must be good.' Always check if the evidence really proves the point."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "An ad uses a sad puppy to get donations. Which appeal is this?",
+      "o": [
+       "Logos",
+       "Pathos",
+       "Ethos",
+       "Syntax"
+      ],
+      "a": 1,
+      "why": "Pathos appeals to emotions."
+     },
+     {
+      "t": "mc",
+      "q": "A speaker lists statistics to prove a point. Which appeal is this?",
+      "o": [
+       "Logos",
+       "Pathos",
+       "Ethos",
+       "Irony"
+      ],
+      "a": 0,
+      "why": "Logos appeals to logic and data."
+     },
+     {
+      "t": "mc",
+      "q": "'Everyone is buying it, so it must be great' is an example of",
+      "o": [
+       "Evidence",
+       "Bandwagon fallacy",
+       "Fact",
+       "Summary"
+      ],
+      "a": 1,
+      "why": "Popularity does not prove quality."
+     },
+     {
+      "t": "mc",
+      "q": "What does ethos rely on?",
+      "o": [
+       "Humor",
+       "Statistics only",
+       "Rhyme",
+       "Credibility of the speaker"
+      ],
+      "a": 3,
+      "why": "Ethos builds trust through credentials or character."
+     },
+     {
+      "t": "tf",
+      "q": "A biased text presents only one side of an issue.",
+      "a": true,
+      "why": "Bias means leaning unfairly toward one view."
+     },
+     {
+      "t": "match",
+      "q": "Match each appeal to its focus",
+      "pairs": [
+       [
+        "ethos",
+        "credibility"
+       ],
+       [
+        "logos",
+        "logic"
+       ],
+       [
+        "pathos",
+        "emotion"
+       ],
+       [
+        "bias",
+        "one-sided view"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to evaluate an argument in order",
+      "items": [
+       [
+        "Find the claim",
+        1
+       ],
+       [
+        "List the evidence",
+        2
+       ],
+       [
+        "Judge if it is reliable",
+        3
+       ],
+       [
+        "Decide if it convinces you",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which appeal uses statistics and facts: ethos, pathos or logos?",
+      "a": [
+       "logos"
+      ],
+      "hint": "Think of logic.",
+      "why": "Logos appeals to logic and evidence."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the appeal that tries to make you feel an emotion such as pity or fear.",
+      "a": [
+       "pathos"
+      ],
+      "hint": "It starts with p.",
+      "why": "Pathos appeals to emotion."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a text that shows only one side of an issue.",
+      "a": [
+       "biased",
+       "bias",
+       "one-sided",
+       "one sided"
+      ],
+      "hint": "The writer leans to one side.",
+      "why": "A biased text presents only one side."
+     }
+    ]
+   },
+   {
+    "title": "Research and Evidence",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Judging sources",
+      "b": "A credible source has an expert author, a clear date, and a fair purpose. Websites ending in .gov or .edu and respected publishers are usually more reliable than anonymous posts."
+     },
+     {
+      "h": "Primary and secondary sources",
+      "b": "A primary source is a firsthand record, like a diary, photo or speech. A secondary source explains or discusses primary sources, like a textbook or documentary."
+     },
+     {
+      "h": "Using evidence honestly",
+      "b": "Quote exact words with quotation marks. Paraphrase by restating an idea in your own words. Either way, give credit. Copying without credit is plagiarism."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which source is most credible for facts about space?",
+      "o": [
+       "An anonymous blog",
+       "A NASA website",
+       "A friend's social media post",
+       "An ad for a telescope"
+      ],
+      "a": 1,
+      "why": "NASA is an expert organization with a factual purpose."
+     },
+     {
+      "t": "mc",
+      "q": "A letter written by a soldier in 1944 is",
+      "o": [
+       "a secondary source",
+       "an opinion essay",
+       "a primary source",
+       "a textbook"
+      ],
+      "a": 2,
+      "why": "It is a firsthand record from the time."
+     },
+     {
+      "t": "mc",
+      "q": "Using someone else's words without credit is called",
+      "o": [
+       "plagiarism",
+       "paraphrasing",
+       "citing",
+       "revising"
+      ],
+      "a": 0,
+      "why": "Plagiarism means presenting another person's work as yours."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a correct paraphrase?",
+      "o": [
+       "Copying a sentence with no quotation marks",
+       "Changing one word in a sentence",
+       "Leaving out the source",
+       "Restating the idea in your own words and citing the source"
+      ],
+      "a": 3,
+      "why": "A paraphrase uses new wording but still gives credit."
+     },
+     {
+      "t": "tf",
+      "q": "A source's date can matter when you research a fast-changing topic.",
+      "a": true,
+      "why": "Old information may be out of date."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "primary source",
+        "firsthand account"
+       ],
+       [
+        "secondary source",
+        "explains other sources"
+       ],
+       [
+        "quotation",
+        "exact words in quote marks"
+       ],
+       [
+        "citation",
+        "credit given to a source"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the research steps in order",
+      "items": [
+       [
+        "Ask a question",
+        1
+       ],
+       [
+        "Find reliable sources",
+        2
+       ],
+       [
+        "Take notes",
+        3
+       ],
+       [
+        "Write and cite your sources",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the one word for using someone's work as your own without credit.",
+      "a": [
+       "plagiarism"
+      ],
+      "hint": "It starts with p.",
+      "why": "That is plagiarism."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A history textbook is a primary source or a secondary source?",
+      "a": [
+       "secondary",
+       "secondary source",
+       "a secondary source"
+      ],
+      "hint": "It explains events written by others.",
+      "why": "Textbooks discuss and explain other sources."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What do you put around someone's exact words in your writing?",
+      "a": [
+       "quotation marks",
+       "quotes",
+       "quotation mark",
+       "quote marks"
+      ],
+      "hint": "Two small marks before and after.",
+      "why": "Quotation marks show the words are copied exactly."
+     }
+    ]
+   },
+   {
+    "title": "Speaking, Listening and Media",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Discussion skills",
+      "b": "In a group discussion, listen closely, wait your turn, and build on others' ideas. Support your points with evidence and disagree politely."
+     },
+     {
+      "h": "Delivering a talk",
+      "b": "A strong speaker uses eye contact, a steady pace, a clear voice, and notes (not a full script). Practice aloud before you present."
+     },
+     {
+      "h": "Understanding media",
+      "b": "Every media message has a purpose and a target audience. Creators use images, music, and loaded language (words chosen to stir feelings) to shape how you react. Ask: who made this, and why?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In a group discussion, a good listener",
+      "o": [
+       "interrupts to win",
+       "never speaks",
+       "builds on others' ideas politely",
+       "only repeats their own point"
+      ],
+      "a": 2,
+      "why": "Good discussion means listening and adding to ideas."
+     },
+     {
+      "t": "mc",
+      "q": "Which shows a strong presentation?",
+      "o": [
+       "Eye contact and a clear, steady pace",
+       "Reading fast from a script",
+       "Facing the board",
+       "Whispering"
+      ],
+      "a": 0,
+      "why": "Eye contact and pace keep the audience engaged."
+     },
+     {
+      "t": "mc",
+      "q": "A news site calls a plan 'a disaster' with no proof. This is an example of",
+      "o": [
+       "a primary source",
+       "loaded language",
+       "a citation",
+       "a counterclaim"
+      ],
+      "a": 1,
+      "why": "The word 'disaster' is chosen to stir feelings."
+     },
+     {
+      "t": "mc",
+      "q": "Why might a video use sad, slow music?",
+      "o": [
+       "To teach grammar",
+       "To save money",
+       "To hide the speaker",
+       "To shape the audience's feelings"
+      ],
+      "a": 3,
+      "why": "Music is a media technique that sets emotion."
+     },
+     {
+      "t": "tf",
+      "q": "Media messages are always neutral and have no purpose.",
+      "a": false,
+      "why": "Every media message is made for a reason."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "loaded language",
+        "words that stir feelings"
+       ],
+       [
+        "eye contact",
+        "connects speaker and audience"
+       ],
+       [
+        "bias",
+        "unfair lean to one side"
+       ],
+       [
+        "target audience",
+        "group a message is made for"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for preparing a talk in order",
+      "items": [
+       [
+        "Choose a topic and purpose",
+        1
+       ],
+       [
+        "Organize your main points",
+        2
+       ],
+       [
+        "Practice aloud",
+        3
+       ],
+       [
+        "Deliver with eye contact",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for the group of people a media message is made for (two words).",
+      "a": [
+       "target audience",
+       "audience"
+      ],
+      "hint": "Advertisers aim at it.",
+      "why": "The target audience is who the message is made for."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Wording chosen to stir strong feelings is called loaded ___. Type the missing word.",
+      "a": [
+       "language",
+       "words",
+       "wording"
+      ],
+      "hint": "It is what you speak or write.",
+      "why": "Loaded language uses emotional words."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Complete: To connect with listeners, a speaker should use eye ___.",
+      "a": [
+       "contact"
+      ],
+      "hint": "Look at your audience.",
+      "why": "Eye contact connects speaker and audience."
+     }
+    ]
+   },
+   {
+    "title": "Argument and Narrative Writing",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Writing arguments",
+      "b": "A strong argument has a clear claim, reasons backed by evidence, and a response to the opposing view (a counterclaim). End by restating your claim."
+     },
+     {
+      "h": "Narrative techniques",
+      "b": "Narratives use dialogue, pacing, description, and reflection. Slow down important moments with detail, and speed through unimportant ones."
+     },
+     {
+      "h": "Revising and editing",
+      "b": "Revising improves ideas, order, and word choice. Editing fixes spelling, grammar, and punctuation. Do revising first, then editing."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a counterclaim?",
+      "o": [
+       "A spelling mistake",
+       "A summary",
+       "An opposing view",
+       "A title"
+      ],
+      "a": 2,
+      "why": "A counterclaim is the other side's argument, which you answer."
+     },
+     {
+      "t": "mc",
+      "q": "Which should you do first?",
+      "o": [
+       "Edit commas",
+       "Revise ideas and organization",
+       "Print the paper",
+       "Fix spelling"
+      ],
+      "a": 1,
+      "why": "Revise big ideas before fixing small errors."
+     },
+     {
+      "t": "mc",
+      "q": "Which technique slows down a key moment in a narrative?",
+      "o": [
+       "Skipping the scene",
+       "Using one sentence",
+       "Adding sensory detail",
+       "Removing dialogue"
+      ],
+      "a": 2,
+      "why": "Detail stretches time and builds tension."
+     },
+     {
+      "t": "mc",
+      "q": "A strong argument ends with",
+      "o": [
+       "A new topic",
+       "A restated claim and closing thought",
+       "A joke only",
+       "A list of sources only"
+      ],
+      "a": 1,
+      "why": "The conclusion reinforces the claim."
+     },
+     {
+      "t": "tf",
+      "q": "Editing means fixing spelling, grammar, and punctuation.",
+      "a": true,
+      "why": "Editing deals with surface errors."
+     },
+     {
+      "t": "match",
+      "q": "Match each writing job to its type",
+      "pairs": [
+       [
+        "add a stronger reason",
+        "revising"
+       ],
+       [
+        "fix a comma",
+        "editing"
+       ],
+       [
+        "write a hook",
+        "drafting"
+       ],
+       [
+        "answer other side",
+        "counterclaim"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing process in order",
+      "items": [
+       [
+        "Plan",
+        1
+       ],
+       [
+        "Draft",
+        2
+       ],
+       [
+        "Revise",
+        3
+       ],
+       [
+        "Edit",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for an opposing view that a strong writer answers.",
+      "a": [
+       "counterclaim",
+       "counter claim",
+       "counterargument",
+       "counter argument"
+      ],
+      "hint": "It starts with counter.",
+      "why": "A counterclaim is an opposing view."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: Put the writing process in order",
+      "lines": [
+       "Brainstorm ideas",
+       "Write a first draft",
+       "Revise ideas and organization",
+       "Edit spelling and grammar",
+       "Publish the final copy"
+      ],
+      "why": "Big changes come before small fixes, so revising comes before editing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which stage fixes spelling, grammar and punctuation: revising or editing?",
+      "a": [
+       "editing",
+       "edit"
+      ],
+      "hint": "Revising changes ideas.",
+      "why": "Editing fixes conventions such as spelling and punctuation."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g9": {
+  "name": "Grade 9 English",
+  "units": [
+   {
+    "title": "Vocabulary and Word Study",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "Greek and Latin roots",
+      "b": "Many English words are built from Greek and Latin roots. bio = life, graph = write, tele = far, auto = self, port = carry, struct = build, ject = throw."
+     },
+     {
+      "h": "Breaking words apart",
+      "b": "To decode a word, find its prefix, root and suffix. 'Reconstruct' = re- (again) + struct (build): to build again."
+     },
+     {
+      "h": "Precise word choice",
+      "b": "Synonyms have similar meanings but different shades. 'Frugal' means careful with money and feels positive, while 'stingy' feels negative. Use a dictionary or thesaurus to check."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The root 'bio' means life. A 'biography' is a written account of someone's",
+      "o": [
+       "life",
+       "travels",
+       "money",
+       "dreams"
+      ],
+      "a": 0,
+      "why": "Bio means life and graph means write."
+     },
+     {
+      "t": "mc",
+      "q": "The root 'tele' means far. A telescope helps you see things that are",
+      "o": [
+       "very small",
+       "underwater",
+       "far away",
+       "in the past"
+      ],
+      "a": 2,
+      "why": "Tele means far."
+     },
+     {
+      "t": "mc",
+      "q": "The root 'struct' means build. To 'construct' something is to",
+      "o": [
+       "destroy it",
+       "build it",
+       "paint it",
+       "hide it"
+      ],
+      "a": 1,
+      "why": "Con- plus struct means build together."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is the closest synonym of 'frugal'?",
+      "o": [
+       "generous",
+       "wasteful",
+       "lazy",
+       "thrifty"
+      ],
+      "a": 3,
+      "why": "Frugal means careful with money, like thrifty."
+     },
+     {
+      "t": "tf",
+      "q": "Words that share a root often share part of their meaning.",
+      "a": true,
+      "why": "Knowing a root helps you guess related words."
+     },
+     {
+      "t": "match",
+      "q": "Match each root to its meaning",
+      "pairs": [
+       [
+        "auto",
+        "self"
+       ],
+       [
+        "graph",
+        "write"
+       ],
+       [
+        "port",
+        "carry"
+       ],
+       [
+        "ject",
+        "throw"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for decoding 'reconstruct' in order",
+      "items": [
+       [
+        "Spot the prefix re-",
+        1
+       ],
+       [
+        "Find the root struct (build)",
+        2
+       ],
+       [
+        "Combine the parts: build again",
+        3
+       ],
+       [
+        "Check it fits the sentence",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the meaning of the root 'graph' in one word.",
+      "a": [
+       "write",
+       "writing"
+      ],
+      "hint": "Think of autograph or paragraph.",
+      "why": "Graph means write."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The root 'ject' means throw. To 'eject' something is to throw it ___ (in or out).",
+      "a": [
+       "out"
+      ],
+      "hint": "The prefix e- means out.",
+      "why": "Eject means to throw out."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The prefix 'anti-' means against. Antifreeze works against what? Type one word.",
+      "a": [
+       "freezing",
+       "freeze",
+       "ice",
+       "freezes"
+      ],
+      "hint": "Think of a car's engine in winter.",
+      "why": "Antifreeze stops liquid from freezing."
+     }
+    ]
+   },
+   {
+    "title": "Literary Elements",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "Plot, conflict and character",
+      "b": "Stories are built from plot, conflict, setting, and characters. A round character is complex, while a flat character has few traits. A dynamic character changes over time; a static one does not."
+     },
+     {
+      "h": "Symbolism and motif",
+      "b": "A symbol is an object or image that stands for a larger idea, like a green light meaning hope. A motif is a repeated element, such as recurring images of darkness, that supports the theme."
+     },
+     {
+      "h": "Archetypes and allusion",
+      "b": "An archetype is a pattern found in many stories, such as the hero's journey or the wise mentor. An allusion is a brief reference to a well-known work, person, or event."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A character who changes significantly during a story is called",
+      "o": [
+       "Static",
+       "Flat",
+       "Dynamic",
+       "Minor"
+      ],
+      "a": 2,
+      "why": "Dynamic characters undergo real change."
+     },
+     {
+      "t": "mc",
+      "q": "A repeated image that supports the theme is a",
+      "o": [
+       "Motif",
+       "Stanza",
+       "Pun",
+       "Caption"
+      ],
+      "a": 0,
+      "why": "A motif is a recurring element that builds meaning."
+     },
+     {
+      "t": "mc",
+      "q": "Calling a traitor 'a Judas' is an example of",
+      "o": [
+       "Simile",
+       "Allusion",
+       "Alliteration",
+       "Onomatopoeia"
+      ],
+      "a": 1,
+      "why": "It refers to the biblical figure Judas."
+     },
+     {
+      "t": "mc",
+      "q": "A wise old mentor who guides a young hero is an example of a(n)",
+      "o": [
+       "Pun",
+       "Setting",
+       "Archetype",
+       "Stanza"
+      ],
+      "a": 2,
+      "why": "Mentors appear in many stories as an archetype."
+     },
+     {
+      "t": "tf",
+      "q": "A static character stays basically the same throughout a story.",
+      "a": true,
+      "why": "Static means unchanging."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "protagonist",
+        "main character"
+       ],
+       [
+        "antagonist",
+        "opposing force"
+       ],
+       [
+        "motif",
+        "repeated element"
+       ],
+       [
+        "symbol",
+        "stands for an idea"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of plot in order",
+      "items": [
+       [
+        "Exposition",
+        1
+       ],
+       [
+        "Rising action",
+        2
+       ],
+       [
+        "Climax",
+        3
+       ],
+       [
+        "Falling action",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a character who changes a lot during a story.",
+      "a": [
+       "dynamic",
+       "dynamic character"
+      ],
+      "hint": "The opposite is static.",
+      "why": "A dynamic character changes significantly."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for an image, sound or idea that repeats in a work and supports the theme.",
+      "a": [
+       "motif",
+       "a motif"
+      ],
+      "hint": "It starts with m.",
+      "why": "A motif is a repeated element that supports the theme."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Calling a traitor 'a Judas' is a reference to a famous person. Type the device.",
+      "a": [
+       "allusion",
+       "an allusion"
+      ],
+      "hint": "It starts with a.",
+      "why": "An allusion is a brief reference to a well-known person, event or work."
+     }
+    ]
+   },
+   {
+    "title": "Mythology and the Epic",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "Myths and archetypes",
+      "b": "Myths are traditional stories that explain beliefs, nature or heroes. Greek myths gave us archetypes such as the hero, the trickster and the monster, which still appear in books and films."
+     },
+     {
+      "h": "Features of an epic",
+      "b": "An epic is a long narrative poem about a hero. It often begins in medias res (in the middle of the action), uses epithets like 'rosy-fingered dawn', and includes epic similes (long comparisons)."
+     },
+     {
+      "h": "The Odyssey",
+      "b": "Homer's Odyssey follows Odysseus, king of Ithaca, on his ten-year voyage home after the Trojan War. He meets the Cyclops Polyphemus, the sorceress Circe and the Sirens, while his wife Penelope and son Telemachus wait."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who is traditionally said to have written the Odyssey?",
+      "o": [
+       "Virgil",
+       "Sophocles",
+       "Plato",
+       "Homer"
+      ],
+      "a": 3,
+      "why": "Homer is credited with both the Iliad and the Odyssey."
+     },
+     {
+      "t": "mc",
+      "q": "What name does Odysseus give the Cyclops?",
+      "o": [
+       "Nobody",
+       "Zeus",
+       "Telemachus",
+       "Ithaca"
+      ],
+      "a": 0,
+      "why": "The trick lets Odysseus escape: 'Nobody is hurting me.'"
+     },
+     {
+      "t": "mc",
+      "q": "A repeated descriptive phrase like 'rosy-fingered dawn' is called an",
+      "o": [
+       "allusion",
+       "epithet",
+       "aside",
+       "stanza"
+      ],
+      "a": 1,
+      "why": "Epithets are fixed descriptive phrases."
+     },
+     {
+      "t": "mc",
+      "q": "Beginning an epic in the middle of the action is called",
+      "o": [
+       "foreshadowing",
+       "flashback",
+       "in medias res",
+       "deus ex machina"
+      ],
+      "a": 2,
+      "why": "In medias res means 'in the middle of things'."
+     },
+     {
+      "t": "tf",
+      "q": "The Odyssey is mostly about battles during the Trojan War.",
+      "a": false,
+      "why": "That is the Iliad; the Odyssey is about the journey home."
+     },
+     {
+      "t": "match",
+      "q": "Match each character to who they are",
+      "pairs": [
+       [
+        "Penelope",
+        "Odysseus's wife"
+       ],
+       [
+        "Telemachus",
+        "Odysseus's son"
+       ],
+       [
+        "Polyphemus",
+        "one-eyed Cyclops"
+       ],
+       [
+        "Circe",
+        "sorceress who changes men to pigs"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events from the Odyssey in order",
+      "items": [
+       [
+        "Blinds the Cyclops",
+        1
+       ],
+       [
+        "Stays with Circe",
+        2
+       ],
+       [
+        "Passes the Sirens",
+        3
+       ],
+       [
+        "Returns to Ithaca",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the island kingdom that is Odysseus's home.",
+      "a": [
+       "Ithaca"
+      ],
+      "hint": "It starts with I.",
+      "why": "Odysseus is the king of Ithaca."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of Odysseus's son.",
+      "a": [
+       "Telemachus"
+      ],
+      "hint": "It starts with T.",
+      "why": "Telemachus is Odysseus and Penelope's son."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name Odysseus tells the Cyclops.",
+      "a": [
+       "nobody",
+       "no one",
+       "noman"
+      ],
+      "hint": "It means 'no person'.",
+      "why": "Odysseus says his name is Nobody, so the Cyclops's cries for help fail."
+     }
+    ]
+   },
+   {
+    "title": "Reading Poetry and Drama",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "Sonnets and meter",
+      "b": "A Shakespearean sonnet has 14 lines and rhymes ABAB CDCD EFEF GG. Iambic pentameter has five pairs of syllables per line, unstressed then stressed, like da-DUM da-DUM."
+     },
+     {
+      "h": "Soliloquy and aside",
+      "b": "In a soliloquy a character speaks thoughts aloud while alone on stage. An aside is a short remark to the audience that other characters do not hear. Both reveal hidden feelings."
+     },
+     {
+      "h": "Tragedy",
+      "b": "A tragedy is a drama in which the main character, often with a flaw, suffers a downfall or death. Romeo and Juliet and Macbeth are Shakespearean tragedies."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many lines are in a Shakespearean sonnet?",
+      "o": [
+       "10",
+       "12",
+       "14",
+       "16"
+      ],
+      "a": 2,
+      "why": "Sonnets always have 14 lines."
+     },
+     {
+      "t": "mc",
+      "q": "A character alone on stage speaks his thoughts aloud. This is a",
+      "o": [
+       "Soliloquy",
+       "Aside",
+       "Prologue",
+       "Stanza"
+      ],
+      "a": 0,
+      "why": "A soliloquy reveals inner thoughts to the audience."
+     },
+     {
+      "t": "mc",
+      "q": "Iambic pentameter has how many stressed syllables per line?",
+      "o": [
+       "Three",
+       "Four",
+       "Six",
+       "Five"
+      ],
+      "a": 3,
+      "why": "Penta means five feet, each with one stress."
+     },
+     {
+      "t": "mc",
+      "q": "Which play is a Shakespearean tragedy?",
+      "o": [
+       "A Midsummer Night's Dream",
+       "Much Ado About Nothing",
+       "Hamlet",
+       "Twelfth Night"
+      ],
+      "a": 2,
+      "why": "Hamlet ends with the downfall and death of its hero."
+     },
+     {
+      "t": "tf",
+      "q": "An aside is a remark that the other characters on stage cannot hear.",
+      "a": true,
+      "why": "It is aimed at the audience."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "sonnet",
+        "14-line poem"
+       ],
+       [
+        "soliloquy",
+        "speech alone on stage"
+       ],
+       [
+        "aside",
+        "remark to audience"
+       ],
+       [
+        "tragedy",
+        "play with a downfall"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for analyzing a poem in order",
+      "items": [
+       [
+        "Read it aloud",
+        1
+       ],
+       [
+        "Find the speaker and situation",
+        2
+       ],
+       [
+        "Identify devices",
+        3
+       ],
+       [
+        "Explain the theme",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many lines does a Shakespearean sonnet have? Type the number.",
+      "a": [
+       "14",
+       "fourteen"
+      ],
+      "hint": "Three quatrains and a couplet.",
+      "why": "A sonnet has 14 lines."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many syllables are in a line of iambic pentameter? Type the number.",
+      "a": [
+       "10",
+       "ten"
+      ],
+      "hint": "Five feet, two syllables each.",
+      "why": "Penta means five feet of two syllables each, so ten."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a speech where a character alone on stage speaks their thoughts aloud.",
+      "a": [
+       "soliloquy",
+       "a soliloquy"
+      ],
+      "hint": "Hamlet's 'To be or not to be' is one.",
+      "why": "A soliloquy reveals a character's private thoughts."
+     }
+    ]
+   },
+   {
+    "title": "Shakespeare's Romeo and Juliet",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "The story",
+      "b": "In Verona, Italy, two families, the Montagues and the Capulets, are enemies. Romeo (a Montague) and Juliet (a Capulet) fall in love at a party and marry in secret with the help of Friar Laurence."
+     },
+     {
+      "h": "What goes wrong",
+      "b": "Juliet's cousin Tybalt kills Romeo's friend Mercutio, and Romeo kills Tybalt. Romeo is banished. A plan with a sleeping potion fails, and both lovers die. Their deaths finally end the feud."
+     },
+     {
+      "h": "Themes and tools",
+      "b": "Themes include love versus hate, fate, and the danger of haste. The play opens with a Prologue written as a sonnet that tells the ending in advance. Shakespeare also uses puns, soliloquies and asides."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In what city is Romeo and Juliet set?",
+      "o": [
+       "Venice",
+       "Rome",
+       "Verona",
+       "Padua"
+      ],
+      "a": 2,
+      "why": "The families live in Verona."
+     },
+     {
+      "t": "mc",
+      "q": "Who kills Mercutio?",
+      "o": [
+       "Tybalt",
+       "Paris",
+       "Benvolio",
+       "Romeo"
+      ],
+      "a": 0,
+      "why": "Tybalt's sword kills Mercutio, which leads Romeo to kill Tybalt."
+     },
+     {
+      "t": "mc",
+      "q": "What does Friar Laurence hope the marriage will do?",
+      "o": [
+       "Make Romeo king",
+       "Move Juliet to Rome",
+       "Punish the Capulets",
+       "End the feud between the families"
+      ],
+      "a": 3,
+      "why": "He hopes love will reconcile the two houses."
+     },
+     {
+      "t": "mc",
+      "q": "The play's Prologue is written as a",
+      "o": [
+       "limerick",
+       "sonnet",
+       "haiku",
+       "free verse poem"
+      ],
+      "a": 1,
+      "why": "The Prologue is a 14-line sonnet."
+     },
+     {
+      "t": "tf",
+      "q": "Romeo and Juliet come from the same family.",
+      "a": false,
+      "why": "Romeo is a Montague and Juliet is a Capulet."
+     },
+     {
+      "t": "match",
+      "q": "Match each character to their role",
+      "pairs": [
+       [
+        "Mercutio",
+        "Romeo's witty friend"
+       ],
+       [
+        "Tybalt",
+        "Juliet's hot-tempered cousin"
+       ],
+       [
+        "Nurse",
+        "Juliet's confidante"
+       ],
+       [
+        "Friar Laurence",
+        "marries the couple"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Romeo and Juliet meet at a party",
+        1
+       ],
+       [
+        "They marry in secret",
+        2
+       ],
+       [
+        "Romeo is banished",
+        3
+       ],
+       [
+        "Juliet takes the potion",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of Juliet's family.",
+      "a": [
+       "Capulet",
+       "Capulets",
+       "the Capulets"
+      ],
+      "hint": "It starts with C.",
+      "why": "Juliet is a Capulet."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of Romeo's family.",
+      "a": [
+       "Montague",
+       "Montagues",
+       "the Montagues"
+      ],
+      "hint": "It starts with M.",
+      "why": "Romeo is a Montague."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the 14-line poem form used for the play's Prologue.",
+      "a": [
+       "sonnet",
+       "a sonnet"
+      ],
+      "hint": "Shakespeare wrote 154 of them.",
+      "why": "The Prologue is a sonnet."
+     }
+    ]
+   },
+   {
+    "title": "Grammar and Style",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "Parallel structure",
+      "b": "Items in a list should have the same form. Write 'I like swimming, running, and hiking', not 'swimming, to run, and hikes'. Parallel structure makes writing smooth."
+     },
+     {
+      "h": "Modifiers",
+      "b": "A modifier should be next to what it describes. 'Running down the street, the bus hit him' is a dangling modifier because the bus was not running. Fix: 'Running down the street, he was hit by the bus.'"
+     },
+     {
+      "h": "Punctuating clauses",
+      "b": "Use a semicolon between two related independent clauses. Use a colon after a complete sentence to introduce a list or explanation. Use commas around nonessential phrases."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence has parallel structure?",
+      "o": [
+       "She likes to read, writing, and to swim.",
+       "She likes reading, writing, and swimming.",
+       "She likes read, write, and swimming.",
+       "She likes reading, to write, and swim."
+      ],
+      "a": 1,
+      "why": "All three items use the -ing form."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses a colon correctly?",
+      "o": [
+       "I need: eggs and milk.",
+       "I need to buy: eggs, milk.",
+       "I bought three things: eggs, milk, and bread.",
+       "I: bought eggs."
+      ],
+      "a": 2,
+      "why": "A colon follows a complete sentence before a list."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence contains a dangling modifier?",
+      "o": [
+       "Walking home, I saw a fox.",
+       "Walking home, the fox was seen.",
+       "I saw a fox walking home.",
+       "While I walked home, a fox appeared."
+      ],
+      "a": 1,
+      "why": "The fox was not the one walking home, so the modifier dangles."
+     },
+     {
+      "t": "mc",
+      "q": "Which is correct?",
+      "o": [
+       "My brother, who lives in Rome, is a chef.",
+       "My brother who lives in Rome, is a chef.",
+       "My brother, who lives in Rome is a chef.",
+       "My, brother who lives in Rome, is a chef."
+      ],
+      "a": 0,
+      "why": "Commas surround the nonessential clause."
+     },
+     {
+      "t": "tf",
+      "q": "A semicolon can join two related independent clauses.",
+      "a": true,
+      "why": "Example: It rained; we stayed in."
+     },
+     {
+      "t": "match",
+      "q": "Match each punctuation mark to its use",
+      "pairs": [
+       [
+        "semicolon",
+        "joins related clauses"
+       ],
+       [
+        "colon",
+        "introduces a list"
+       ],
+       [
+        "comma",
+        "separates items"
+       ],
+       [
+        "apostrophe",
+        "shows possession"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to edit a sentence in order",
+      "items": [
+       [
+        "Check subject and verb",
+        1
+       ],
+       [
+        "Check modifiers",
+        2
+       ],
+       [
+        "Fix punctuation",
+        3
+       ],
+       [
+        "Proofread the whole text",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Complete in parallel form: 'She likes reading, writing, and ___.' (swim)",
+      "a": [
+       "swimming"
+      ],
+      "hint": "Match the -ing pattern.",
+      "why": "Parallel structure keeps the same form: reading, writing, swimming."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which mark can join two related complete sentences: a semicolon or a comma? Type the name.",
+      "a": [
+       "semicolon",
+       "a semicolon"
+      ],
+      "hint": "A comma alone causes a comma splice.",
+      "why": "A semicolon joins two related independent clauses."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In 'Walking home, the rain started,' the opening phrase is an error called a dangling ___. Type the missing word.",
+      "a": [
+       "modifier",
+       "modifier error"
+      ],
+      "hint": "It describes nothing in the sentence.",
+      "why": "Walking home has no logical subject, so it dangles."
+     }
+    ]
+   },
+   {
+    "title": "Research and MLA Citation",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "Finding and judging sources",
+      "b": "Start with a research question. Use library databases and trustworthy sites. Check the author, date and purpose, and use more than one source."
+     },
+     {
+      "h": "MLA in-text citations",
+      "b": "MLA is a common style for English papers. After a quotation or paraphrase, add the author and page in parentheses: (Smith 45). A signal phrase like 'According to Smith,' introduces the source."
+     },
+     {
+      "h": "Works Cited",
+      "b": "At the end, a Works Cited page lists every source, in alphabetical order by author's last name. An entry usually gives author, title, publisher and year. Common knowledge does not need a citation."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In MLA, an in-text citation looks like",
+      "o": [
+       "(Smith, 2020)",
+       "(Smith 45)",
+       "[1]",
+       "Smith - 45"
+      ],
+      "a": 1,
+      "why": "MLA uses author and page, with no comma."
+     },
+     {
+      "t": "mc",
+      "q": "The MLA page listing all sources is called",
+      "o": [
+       "Works Cited",
+       "References",
+       "Appendix",
+       "Index"
+      ],
+      "a": 0,
+      "why": "MLA uses Works Cited; APA uses References."
+     },
+     {
+      "t": "mc",
+      "q": "Works Cited entries are arranged",
+      "o": [
+       "by date, newest first",
+       "by length",
+       "alphabetically by author's last name",
+       "in the order you used them"
+      ],
+      "a": 2,
+      "why": "Alphabetical order makes sources easy to find."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a signal phrase?",
+      "o": [
+       "In conclusion,",
+       "Page 45",
+       "Works Cited",
+       "According to Jones,"
+      ],
+      "a": 3,
+      "why": "A signal phrase introduces a source."
+     },
+     {
+      "t": "tf",
+      "q": "Common knowledge usually does not need a citation.",
+      "a": true,
+      "why": "Facts everyone knows, like Earth orbits the Sun, need no source."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "paraphrase",
+        "ideas in your own words"
+       ],
+       [
+        "direct quotation",
+        "exact words from a source"
+       ],
+       [
+        "Works Cited",
+        "list of all sources"
+       ],
+       [
+        "in-text citation",
+        "short credit in parentheses"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Find credible sources",
+        1
+       ],
+       [
+        "Take notes with source details",
+        2
+       ],
+       [
+        "Write with in-text citations",
+        3
+       ],
+       [
+        "Build the Works Cited page",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which style uses a 'Works Cited' page, MLA or APA?",
+      "a": [
+       "MLA"
+      ],
+      "hint": "It is the style for English papers.",
+      "why": "MLA uses Works Cited."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the MLA in-text citation for author Lee, page 12.",
+      "a": [
+       "(Lee 12)",
+       "Lee 12"
+      ],
+      "hint": "Author, space, page number, in parentheses.",
+      "why": "MLA gives the author's last name and page with no comma."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for an author's exact words placed in quotation marks.",
+      "a": [
+       "quotation",
+       "quote",
+       "direct quotation",
+       "a quotation",
+       "direct quote"
+      ],
+      "hint": "You copy the words exactly.",
+      "why": "A direct quotation uses the exact words and a citation."
+     }
+    ]
+   },
+   {
+    "title": "Writing Arguments and Analysis",
+    "period": "Grade 9",
+    "learn": [
+     {
+      "h": "Thesis and evidence",
+      "b": "A literary analysis begins with a thesis about how the author uses a technique to create meaning. Support it with quotes and explain each one."
+     },
+     {
+      "h": "Integrating quotations",
+      "b": "Introduce a quote with a short lead-in, put the exact words in quotation marks, and explain it afterward. This 'quote sandwich' keeps your analysis clear."
+     },
+     {
+      "h": "Rhetoric and audience",
+      "b": "Think about audience and purpose. Persuasive writing uses ethos, pathos, and logos. Academic writing uses formal tone and avoids slang."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the purpose of a thesis in an analysis?",
+      "o": [
+       "To state the main argument",
+       "To list sources",
+       "To retell the plot",
+       "To end the essay"
+      ],
+      "a": 0,
+      "why": "The thesis is the central claim the essay proves."
+     },
+     {
+      "t": "mc",
+      "q": "What should come right after a quotation in an analysis?",
+      "o": [
+       "A new topic",
+       "A blank line",
+       "Your explanation of it",
+       "Another quote"
+      ],
+      "a": 2,
+      "why": "You must explain how the quote supports your point."
+     },
+     {
+      "t": "mc",
+      "q": "Which tone fits an academic essay?",
+      "o": [
+       "Slangy",
+       "Formal",
+       "Sarcastic",
+       "Chatty"
+      ],
+      "a": 1,
+      "why": "Academic writing uses a formal tone."
+     },
+     {
+      "t": "mc",
+      "q": "Which appeal uses facts and logic?",
+      "o": [
+       "Pathos",
+       "Ethos",
+       "Kairos",
+       "Logos"
+      ],
+      "a": 3,
+      "why": "Logos is the appeal to reason."
+     },
+     {
+      "t": "tf",
+      "q": "A literary analysis should mainly retell the plot.",
+      "a": false,
+      "why": "Analysis explains how and why, not just what happens."
+     },
+     {
+      "t": "match",
+      "q": "Match each part of a quote sandwich to its job",
+      "pairs": [
+       [
+        "lead-in",
+        "introduces the quote"
+       ],
+       [
+        "quotation",
+        "exact words from text"
+       ],
+       [
+        "explanation",
+        "ties it to your claim"
+       ],
+       [
+        "citation",
+        "credits the source"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of an analysis essay in order",
+      "items": [
+       [
+        "Introduction with thesis",
+        1
+       ],
+       [
+        "Body paragraph with evidence",
+        2
+       ],
+       [
+        "Second body paragraph",
+        3
+       ],
+       [
+        "Conclusion",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the main argument statement of an essay.",
+      "a": [
+       "thesis",
+       "thesis statement",
+       "a thesis"
+      ],
+      "hint": "It usually ends the introduction.",
+      "why": "The thesis states the essay's main argument."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: After you quote evidence in an analysis, you add your own ___. Type the word.",
+      "a": [
+       "commentary",
+       "explanation",
+       "analysis",
+       "interpretation"
+      ],
+      "hint": "You explain what the quote shows.",
+      "why": "Commentary explains how the evidence supports the thesis."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: Put the parts of an argument essay in order",
+      "lines": [
+       "Introduction with a thesis",
+       "Body paragraph with evidence",
+       "Counterclaim and response",
+       "Conclusion that restates the claim"
+      ],
+      "why": "An essay moves from claim to support to opposing view to closing."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g10": {
+  "name": "Grade 10 English",
+  "units": [
+   {
+    "title": "Sentence Structure and Syntax",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "Clauses",
+      "b": "An independent clause has a subject and verb and can stand alone: 'The bell rang.' A dependent clause cannot: 'when the bell rang.'"
+     },
+     {
+      "h": "Four sentence types",
+      "b": "Simple: one independent clause. Compound: two or more independent clauses. Complex: one independent plus a dependent clause. Compound-complex: two independents plus a dependent."
+     },
+     {
+      "h": "Syntax with purpose",
+      "b": "Writers choose structure for effect. A short sentence after long ones adds emphasis. A periodic sentence saves the main idea for the end to build suspense. Parallel structure adds rhythm."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a complex sentence?",
+      "o": [
+       "We stayed inside.",
+       "It rained, and we stayed inside.",
+       "Because it rained, we stayed inside.",
+       "Rain fell; we stayed inside."
+      ],
+      "a": 2,
+      "why": "It has a dependent clause plus an independent clause."
+     },
+     {
+      "t": "mc",
+      "q": "A very short sentence after several long ones usually creates",
+      "o": [
+       "emphasis",
+       "confusion",
+       "a list",
+       "a question"
+      ],
+      "a": 0,
+      "why": "The contrast makes the short sentence stand out."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a periodic sentence?",
+      "o": [
+       "She won.",
+       "She finally won after years of struggle, doubt, and sacrifice.",
+       "Everyone cheered when she won.",
+       "After years of struggle, doubt, and sacrifice, she finally won."
+      ],
+      "a": 3,
+      "why": "The main idea comes at the end."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a dependent clause?",
+      "o": [
+       "the bell rang",
+       "when the bell rang",
+       "He left.",
+       "Run home."
+      ],
+      "a": 1,
+      "why": "'When' makes it unable to stand alone."
+     },
+     {
+      "t": "tf",
+      "q": "A dependent clause can stand alone as a complete sentence.",
+      "a": false,
+      "why": "It depends on an independent clause."
+     },
+     {
+      "t": "match",
+      "q": "Match each sentence type to its structure",
+      "pairs": [
+       [
+        "simple",
+        "one independent clause"
+       ],
+       [
+        "compound",
+        "two independent clauses"
+       ],
+       [
+        "complex",
+        "independent plus dependent clause"
+       ],
+       [
+        "compound-complex",
+        "two independents plus a dependent"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for naming a sentence type in order",
+      "items": [
+       [
+        "Find the verbs",
+        1
+       ],
+       [
+        "Mark each clause",
+        2
+       ],
+       [
+        "Decide independent or dependent",
+        3
+       ],
+       [
+        "Name the sentence type",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A clause that can stand alone as a sentence is an ___ clause. Type the missing word.",
+      "a": [
+       "independent"
+      ],
+      "hint": "The opposite is dependent.",
+      "why": "An independent clause is a complete thought."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many independent clauses are in 'I like tea, but she likes coffee'? Type the number.",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "Count the subject-verb pairs that can stand alone.",
+      "why": "'I like tea' and 'she likes coffee' are both independent."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Name the type of sentence: 'Although I was tired, I finished my essay.'",
+      "a": [
+       "complex",
+       "complex sentence",
+       "a complex sentence"
+      ],
+      "hint": "It has one dependent and one independent clause.",
+      "why": "'Although I was tired' is dependent, so the sentence is complex."
+     }
+    ]
+   },
+   {
+    "title": "Language and Vocabulary",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "Word roots and affixes",
+      "b": "Knowing roots helps decode hard words. Bene means good (benefit), mal means bad (malice), and spec means look (inspect). Prefixes and suffixes change meaning and part of speech."
+     },
+     {
+      "h": "Connotation and diction",
+      "b": "Diction is the author's word choice. Words with similar meanings can feel different: 'thrifty' sounds good, 'stingy' sounds bad. Careful diction shapes tone."
+     },
+     {
+      "h": "Syntax and sentence variety",
+      "b": "Syntax is how words are arranged in sentences. Mixing short and long sentences keeps writing lively. A short sentence after a long one can create emphasis."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The root 'bene' means good. What does 'benefit' most likely mean?",
+      "o": [
+       "A harm",
+       "A good result",
+       "A rule",
+       "A fear"
+      ],
+      "a": 1,
+      "why": "Bene points to something good."
+     },
+     {
+      "t": "mc",
+      "q": "Which word has a negative connotation?",
+      "o": [
+       "frugal",
+       "thrifty",
+       "stingy",
+       "careful"
+      ],
+      "a": 2,
+      "why": "Stingy suggests selfishness with money."
+     },
+     {
+      "t": "mc",
+      "q": "What is diction?",
+      "o": [
+       "Sentence length",
+       "An author's word choice",
+       "A kind of rhyme",
+       "A plot twist"
+      ],
+      "a": 1,
+      "why": "Diction means the words an author selects."
+     },
+     {
+      "t": "mc",
+      "q": "The root 'mal' means bad. What is a 'malfunction'?",
+      "o": [
+       "A good job",
+       "A bad or failed working",
+       "A small change",
+       "A repeat"
+      ],
+      "a": 1,
+      "why": "Mal means bad, so it is a failure to work properly."
+     },
+     {
+      "t": "tf",
+      "q": "Syntax refers to how words are arranged in sentences.",
+      "a": true,
+      "why": "Syntax covers sentence structure and word order."
+     },
+     {
+      "t": "match",
+      "q": "Match each root to its meaning",
+      "pairs": [
+       [
+        "spec",
+        "look"
+       ],
+       [
+        "bene",
+        "good"
+       ],
+       [
+        "mal",
+        "bad"
+       ],
+       [
+        "dict",
+        "say"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from most positive to most negative",
+      "items": [
+       [
+        "admired",
+        1
+       ],
+       [
+        "noticed",
+        2
+       ],
+       [
+        "ignored",
+        3
+       ],
+       [
+        "despised",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for an author's word choice.",
+      "a": [
+       "diction"
+      ],
+      "hint": "It starts with d.",
+      "why": "Diction is an author's choice of words."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for how words are arranged in sentences.",
+      "a": [
+       "syntax"
+      ],
+      "hint": "It starts with s.",
+      "why": "Syntax is sentence structure."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the feeling a word carries beyond its dictionary meaning.",
+      "a": [
+       "connotation"
+      ],
+      "hint": "The dictionary meaning is denotation.",
+      "why": "Connotation is a word's emotional association."
+     }
+    ]
+   },
+   {
+    "title": "Rhetoric and Persuasion",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "The rhetorical situation",
+      "b": "Every text has an author, an audience, and a purpose. Good writers adjust word choice and tone to fit them. A letter to a principal sounds different from a text to a friend."
+     },
+     {
+      "h": "Ethos, pathos, logos",
+      "b": "Ethos builds trust, pathos stirs emotion, and logos uses logic and evidence. Strong arguments often combine all three."
+     },
+     {
+      "h": "Rhetorical devices",
+      "b": "Repetition stresses an idea. Parallelism gives rhythm. A rhetorical question makes the audience think, and antithesis sets up contrast: 'Ask not what your country can do for you.'"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A speaker lists her medical degrees to gain trust. Which appeal is this?",
+      "o": [
+       "Pathos",
+       "Logos",
+       "Ethos",
+       "Antithesis"
+      ],
+      "a": 2,
+      "why": "Credentials build credibility, which is ethos."
+     },
+     {
+      "t": "mc",
+      "q": "'It was the best of times, it was the worst of times' uses",
+      "o": [
+       "Antithesis",
+       "Onomatopoeia",
+       "Alliteration",
+       "Hyperbole"
+      ],
+      "a": 0,
+      "why": "It sets two opposite ideas side by side."
+     },
+     {
+      "t": "mc",
+      "q": "A question asked for effect, not an answer, is a",
+      "o": [
+       "Fallacy",
+       "Simile",
+       "Rhetorical question",
+       "Motif"
+      ],
+      "a": 2,
+      "why": "It makes the audience think."
+     },
+     {
+      "t": "mc",
+      "q": "Which three elements make up the rhetorical situation?",
+      "o": [
+       "Plot, theme, setting",
+       "Rhyme, rhythm, meter",
+       "Author, audience, purpose",
+       "Claim, fact, quote"
+      ],
+      "a": 2,
+      "why": "Writers always consider who writes, who reads, and why."
+     },
+     {
+      "t": "tf",
+      "q": "Pathos is an appeal to the audience's emotions.",
+      "a": true,
+      "why": "Pathos aims at feelings such as pity or fear."
+     },
+     {
+      "t": "match",
+      "q": "Match each device to its effect",
+      "pairs": [
+       [
+        "repetition",
+        "stresses an idea"
+       ],
+       [
+        "antithesis",
+        "contrasts ideas"
+       ],
+       [
+        "rhetorical question",
+        "provokes thought"
+       ],
+       [
+        "parallelism",
+        "creates rhythm"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for analyzing a speech in order",
+      "items": [
+       [
+        "Identify the speaker and audience",
+        1
+       ],
+       [
+        "Find the claim",
+        2
+       ],
+       [
+        "Spot the appeals and devices",
+        3
+       ],
+       [
+        "Judge how effective it is",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which appeal builds the speaker's credibility? Type it.",
+      "a": [
+       "ethos"
+      ],
+      "hint": "It comes from the Greek word for character.",
+      "why": "Ethos is the appeal to credibility."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A question asked for effect, not for an answer, is called a rhetorical ___. Type the missing word.",
+      "a": [
+       "question"
+      ],
+      "hint": "Think of 'Who doesn't want to be happy?'",
+      "why": "It is a rhetorical question."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 'It was the best of times, it was the worst of times' uses which device of contrast? Type it.",
+      "a": [
+       "antithesis"
+      ],
+      "hint": "It starts with anti.",
+      "why": "Antithesis places opposite ideas side by side."
+     }
+    ]
+   },
+   {
+    "title": "Satire and Irony",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "What is satire?",
+      "b": "Satire uses humor, irony and exaggeration to criticize people or society and push for change. Horatian satire is gentle and playful. Juvenalian satire is harsh and bitter."
+     },
+     {
+      "h": "Swift and Orwell",
+      "b": "In 'A Modest Proposal' (1729), Jonathan Swift pretends to suggest that poor Irish families sell their children as food. He does not mean it. He wants to shock readers about neglect of the poor. George Orwell's Animal Farm satirizes the Russian Revolution."
+     },
+     {
+      "h": "Techniques",
+      "b": "Satirists use verbal irony (saying the opposite), situational irony (unexpected outcomes), exaggeration, understatement and parody (imitating a work to mock it). To analyze satire, ask what is being criticized and what the author wants to change."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote 'A Modest Proposal'?",
+      "o": [
+       "Jonathan Swift",
+       "Mark Twain",
+       "George Orwell",
+       "Voltaire"
+      ],
+      "a": 0,
+      "why": "Swift published it in 1729."
+     },
+     {
+      "t": "mc",
+      "q": "Why does Swift make his shocking suggestion?",
+      "o": [
+       "To give cooking advice",
+       "To really recommend cruelty",
+       "To criticize society's neglect of the poor",
+       "To praise landlords"
+      ],
+      "a": 2,
+      "why": "The idea is meant to shock readers into seeing a real problem."
+     },
+     {
+      "t": "mc",
+      "q": "Which technique makes something seem much less important than it is?",
+      "o": [
+       "Hyperbole",
+       "Understatement",
+       "Allusion",
+       "Imagery"
+      ],
+      "a": 1,
+      "why": "Understatement downplays a serious matter."
+     },
+     {
+      "t": "mc",
+      "q": "In Animal Farm, the pigs' rise to power mirrors",
+      "o": [
+       "the American Revolution",
+       "the French court",
+       "a medieval feast",
+       "Soviet leaders after the Russian Revolution"
+      ],
+      "a": 3,
+      "why": "Orwell used animals to represent figures from Soviet history."
+     },
+     {
+      "t": "tf",
+      "q": "A satirist usually wants to change society, not only to entertain.",
+      "a": true,
+      "why": "Satire aims to expose and correct faults."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "parody",
+        "imitates a work to mock it"
+       ],
+       [
+        "understatement",
+        "makes a big thing seem small"
+       ],
+       [
+        "verbal irony",
+        "says the opposite of what is meant"
+       ],
+       [
+        "situational irony",
+        "outcome opposite of expected"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for analyzing satire in order",
+      "items": [
+       [
+        "Identify what is being criticized",
+        1
+       ],
+       [
+        "Find exaggeration or irony",
+        2
+       ],
+       [
+        "Decide what the author wants changed",
+        3
+       ],
+       [
+        "Explain the effect on the reader",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of 'A Modest Proposal'.",
+      "a": [
+       "Swift",
+       "Jonathan Swift"
+      ],
+      "hint": "His first name is Jonathan.",
+      "why": "Jonathan Swift wrote it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Imitating a work in order to mock it is called ___. Type the word.",
+      "a": [
+       "parody",
+       "a parody"
+      ],
+      "hint": "A funny film that copies a serious film is one.",
+      "why": "That is parody."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author who wrote the satire Animal Farm.",
+      "a": [
+       "Orwell",
+       "George Orwell"
+      ],
+      "hint": "He also wrote 1984.",
+      "why": "George Orwell wrote Animal Farm."
+     }
+    ]
+   },
+   {
+    "title": "World and American Literature",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "Theme across texts",
+      "b": "Authors from many cultures explore the same big ideas: power, identity, justice, and survival. Comparing texts shows how different writers treat one theme."
+     },
+     {
+      "h": "Satire and irony",
+      "b": "Satire uses humor and exaggeration to criticize people or society. Jonathan Swift's A Modest Proposal and George Orwell's Animal Farm are famous satires."
+     },
+     {
+      "h": "Allegory and dystopia",
+      "b": "An allegory is a story whose characters and events stand for deeper meanings. A dystopia shows a frightening society, as in Orwell's 1984."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which technique uses humor and exaggeration to criticize society?",
+      "o": [
+       "Satire",
+       "Haiku",
+       "Flashback",
+       "Soliloquy"
+      ],
+      "a": 0,
+      "why": "Satire mocks faults to encourage change."
+     },
+     {
+      "t": "mc",
+      "q": "Animal Farm is best described as",
+      "o": [
+       "A sonnet",
+       "An allegory",
+       "A memoir",
+       "An essay"
+      ],
+      "a": 1,
+      "why": "Its animals stand for people and events in Russian history."
+     },
+     {
+      "t": "mc",
+      "q": "A dystopia is a society that is",
+      "o": [
+       "Perfect",
+       "Ancient",
+       "Frightening or oppressive",
+       "Very small"
+      ],
+      "a": 2,
+      "why": "Dystopias show worlds where things have gone badly wrong."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote 1984?",
+      "o": [
+       "Aldous Huxley",
+       "Ray Bradbury",
+       "Mark Twain",
+       "George Orwell"
+      ],
+      "a": 3,
+      "why": "George Orwell wrote 1984 in 1949."
+     },
+     {
+      "t": "tf",
+      "q": "In an allegory, characters and events often stand for larger ideas.",
+      "a": true,
+      "why": "Allegory has a deeper symbolic meaning."
+     },
+     {
+      "t": "match",
+      "q": "Match each work to its author",
+      "pairs": [
+       [
+        "Animal Farm",
+        "George Orwell"
+       ],
+       [
+        "Romeo and Juliet",
+        "William Shakespeare"
+       ],
+       [
+        "To Kill a Mockingbird",
+        "Harper Lee"
+       ],
+       [
+        "Of Mice and Men",
+        "John Steinbeck"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for comparing two texts in order",
+      "items": [
+       [
+        "Read both texts",
+        1
+       ],
+       [
+        "Find a shared theme",
+        2
+       ],
+       [
+        "Note differences in treatment",
+        3
+       ],
+       [
+        "Write your comparison",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author who wrote 1984.",
+      "a": [
+       "Orwell",
+       "George Orwell"
+      ],
+      "hint": "He also wrote Animal Farm.",
+      "why": "George Orwell wrote 1984."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A story in which characters and events stand for larger ideas is called an ___. Type it.",
+      "a": [
+       "allegory",
+       "an allegory"
+      ],
+      "hint": "Animal Farm is one.",
+      "why": "An allegory carries a deeper meaning."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for an oppressive, frightening imagined society.",
+      "a": [
+       "dystopia",
+       "a dystopia"
+      ],
+      "hint": "The opposite of utopia.",
+      "why": "A dystopia is a nightmare society."
+     }
+    ]
+   },
+   {
+    "title": "Shakespearean Tragedy: Macbeth",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "Tragic hero",
+      "b": "A tragedy follows a noble hero whose downfall comes from a tragic flaw (hamartia). The audience feels pity and fear, then catharsis, a release of emotion."
+     },
+     {
+      "h": "The plot of Macbeth",
+      "b": "Three witches tell the Scottish general Macbeth he will be king. Urged on by Lady Macbeth, he murders King Duncan. He then kills more people to stay in power, is haunted by guilt, and is finally killed by Macduff."
+     },
+     {
+      "h": "Themes and language",
+      "b": "Key themes are ambition, guilt, and fate versus free will. The witches say 'Fair is foul, and foul is fair,' hinting that appearances deceive. Blood is a repeated image of guilt."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Macbeth's tragic flaw?",
+      "o": [
+       "Jealousy of his friend",
+       "Laziness",
+       "Too much honesty",
+       "Unchecked ambition"
+      ],
+      "a": 3,
+      "why": "His ambition leads him to murder."
+     },
+     {
+      "t": "mc",
+      "q": "Who urges Macbeth to murder King Duncan?",
+      "o": [
+       "Lady Macbeth",
+       "Banquo",
+       "Macduff",
+       "Malcolm"
+      ],
+      "a": 0,
+      "why": "She pushes him to act on the prophecy."
+     },
+     {
+      "t": "mc",
+      "q": "Who finally kills Macbeth?",
+      "o": [
+       "Banquo",
+       "Macduff",
+       "Malcolm",
+       "Duncan"
+      ],
+      "a": 1,
+      "why": "Macduff avenges his family and Scotland."
+     },
+     {
+      "t": "mc",
+      "q": "'Fair is foul, and foul is fair' suggests that",
+      "o": [
+       "the weather is bad",
+       "Macbeth is honest",
+       "appearances can be deceiving",
+       "the witches are friendly"
+      ],
+      "a": 2,
+      "why": "Good and evil are mixed up in the play."
+     },
+     {
+      "t": "tf",
+      "q": "In a tragedy, the hero's downfall is partly caused by their own flaw.",
+      "a": true,
+      "why": "The flaw links character to fate."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "tragic hero",
+        "noble character who falls"
+       ],
+       [
+        "hamartia",
+        "tragic flaw"
+       ],
+       [
+        "catharsis",
+        "audience's emotional release"
+       ],
+       [
+        "foil",
+        "character who contrasts another"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events from Macbeth in order",
+      "items": [
+       [
+        "Witches give the prophecy",
+        1
+       ],
+       [
+        "Macbeth murders Duncan",
+        2
+       ],
+       [
+        "Banquo's ghost appears at a feast",
+        3
+       ],
+       [
+        "Macduff kills Macbeth",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of Macbeth's wife (two words).",
+      "a": [
+       "Lady Macbeth"
+      ],
+      "hint": "She has a title and her husband's name.",
+      "why": "Lady Macbeth drives the plot."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a tragic hero's fatal flaw (Greek term) or its English name.",
+      "a": [
+       "hamartia",
+       "tragic flaw",
+       "flaw"
+      ],
+      "hint": "It starts with h in Greek.",
+      "why": "Hamartia is the tragic flaw."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the Scottish nobleman who kills Macbeth.",
+      "a": [
+       "Macduff"
+      ],
+      "hint": "He starts with Mac.",
+      "why": "Macduff kills Macbeth."
+     }
+    ]
+   },
+   {
+    "title": "Memoir and Narrative Nonfiction",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "Types of life writing",
+      "b": "A biography is a life story written by someone else. An autobiography is a whole life story written by the person. A memoir focuses on certain experiences and reflects on what they mean."
+     },
+     {
+      "h": "Narrative nonfiction",
+      "b": "Narrative nonfiction tells true stories using story techniques: scenes, characters, dialogue and suspense. Examples include Anne Frank's diary, written while hiding in Amsterdam, and Elie Wiesel's Night, a memoir of the Holocaust."
+     },
+     {
+      "h": "Reflection and voice",
+      "b": "Good memoir does more than list events. The writer reflects on what they learned, and a strong voice makes the story personal. Memoirs are usually told in first person."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A memoir is",
+      "o": [
+       "a life story by someone else",
+       "a writer's account of important experiences from their own life",
+       "a made-up story",
+       "a news report"
+      ],
+      "a": 1,
+      "why": "Memoirs mix experience and reflection."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote Night, a memoir about the Holocaust?",
+      "o": [
+       "Elie Wiesel",
+       "Anne Frank",
+       "George Orwell",
+       "Mark Twain"
+      ],
+      "a": 0,
+      "why": "Wiesel survived the camps and wrote Night."
+     },
+     {
+      "t": "mc",
+      "q": "Anne Frank wrote her diary while",
+      "o": [
+       "traveling in Italy",
+       "studying in London",
+       "hiding from the Nazis in Amsterdam",
+       "working on a farm"
+      ],
+      "a": 2,
+      "why": "Her family hid in a secret annex."
+     },
+     {
+      "t": "mc",
+      "q": "What separates memoir from a simple list of events?",
+      "o": [
+       "It has no real events",
+       "It is always funny",
+       "It is told in third person",
+       "The writer reflects on what the events mean"
+      ],
+      "a": 3,
+      "why": "Reflection gives memoir its insight."
+     },
+     {
+      "t": "tf",
+      "q": "A biography is written by the person whose life it describes.",
+      "a": false,
+      "why": "That is an autobiography; a biography is by someone else."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "memoir",
+        "personal experiences with reflection"
+       ],
+       [
+        "biography",
+        "life story by someone else"
+       ],
+       [
+        "autobiography",
+        "whole life story by the person"
+       ],
+       [
+        "narrative nonfiction",
+        "true story told with story techniques"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for writing a memoir in order",
+      "items": [
+       [
+        "Choose a meaningful event",
+        1
+       ],
+       [
+        "Tell it with vivid detail",
+        2
+       ],
+       [
+        "Reflect on its meaning",
+        3
+       ],
+       [
+        "Revise for voice",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Night.",
+      "a": [
+       "Wiesel",
+       "Elie Wiesel"
+      ],
+      "hint": "His first name is Elie.",
+      "why": "Elie Wiesel wrote Night."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A life story written by someone other than its subject is a ___. Type the word.",
+      "a": [
+       "biography",
+       "a biography"
+      ],
+      "hint": "It starts with bio.",
+      "why": "That is a biography."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the city where Anne Frank's family hid.",
+      "a": [
+       "Amsterdam"
+      ],
+      "hint": "It is the capital of the Netherlands.",
+      "why": "The family hid in Amsterdam."
+     }
+    ]
+   },
+   {
+    "title": "Research and Argument Writing",
+    "period": "Grade 10",
+    "learn": [
+     {
+      "h": "Writing an argument essay",
+      "b": "State a debatable claim, support it with reasons and evidence, answer counterarguments, and finish with a conclusion. Use credible sources and cite them."
+     },
+     {
+      "h": "Evaluating credibility",
+      "b": "Check the author's expertise, the publisher, the date, and whether other sources agree. Primary sources are first-hand records, like letters. Secondary sources interpret them."
+     },
+     {
+      "h": "Citation and style",
+      "b": "MLA and APA are common citation styles. A works cited or reference list gives full details of each source. In-text citations point readers to it. Always credit borrowed ideas."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a primary source?",
+      "o": [
+       "A diary written during World War II",
+       "A textbook about the war",
+       "An encyclopedia article",
+       "A documentary about the war"
+      ],
+      "a": 0,
+      "why": "A diary is a first-hand record from the time."
+     },
+     {
+      "t": "mc",
+      "q": "What is a counterargument?",
+      "o": [
+       "A spelling error",
+       "An opposing viewpoint",
+       "A conclusion",
+       "A quotation"
+      ],
+      "a": 1,
+      "why": "Good writers address the other side."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a common citation style?",
+      "o": [
+       "PDF",
+       "MLA",
+       "HTML",
+       "GPS"
+      ],
+      "a": 1,
+      "why": "MLA and APA are standard citation styles."
+     },
+     {
+      "t": "mc",
+      "q": "Which clue best suggests a source is credible?",
+      "o": [
+       "Bright colors",
+       "Many ads",
+       "An expert author and cited sources",
+       "Anonymous author"
+      ],
+      "a": 2,
+      "why": "Expertise and evidence support credibility."
+     },
+     {
+      "t": "tf",
+      "q": "You should cite a source even when you paraphrase it.",
+      "a": true,
+      "why": "The ideas belong to the original author."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "primary source",
+        "first-hand record"
+       ],
+       [
+        "secondary source",
+        "interprets events"
+       ],
+       [
+        "works cited",
+        "list of sources"
+       ],
+       [
+        "plagiarism",
+        "using work without credit"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the research steps in order",
+      "items": [
+       [
+        "Ask a question",
+        1
+       ],
+       [
+        "Gather sources",
+        2
+       ],
+       [
+        "Evaluate and take notes",
+        3
+       ],
+       [
+        "Write and cite",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A diary written during World War II is a primary or secondary source?",
+      "a": [
+       "primary",
+       "primary source",
+       "a primary source"
+      ],
+      "hint": "It is firsthand.",
+      "why": "A diary from the time is a primary source."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for an opposing viewpoint that a strong writer answers.",
+      "a": [
+       "counterargument",
+       "counter argument",
+       "counterclaim",
+       "counter claim"
+      ],
+      "hint": "It starts with counter.",
+      "why": "A counterargument is an opposing view."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the one-word action you must do for a source even when you paraphrase it.",
+      "a": [
+       "cite",
+       "citing",
+       "citation",
+       "cite it"
+      ],
+      "hint": "Give credit.",
+      "why": "You must cite sources even when you paraphrase."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g11": {
+  "name": "Grade 11 English",
+  "units": [
+   {
+    "title": "Early American Literature",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Puritans and Colonial writing",
+      "b": "Early American writers like William Bradford and Anne Bradstreet wrote plain, religious works. Jonathan Edwards preached the famous sermon 'Sinners in the Hands of an Angry God'. Themes were faith, duty, and God's judgment."
+     },
+     {
+      "h": "Rationalism and the Revolution",
+      "b": "The Enlightenment valued reason. Benjamin Franklin wrote practical essays and an autobiography. Thomas Paine's Common Sense and Thomas Jefferson's Declaration of Independence used clear arguments to support revolution."
+     },
+     {
+      "h": "Romanticism and Transcendentalism",
+      "b": "Romantic writers like Poe and Hawthorne explored emotion and the dark side of human nature. Transcendentalists such as Emerson and Thoreau valued nature, individualism, and intuition."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote 'Common Sense' to urge American independence?",
+      "o": [
+       "Benjamin Franklin",
+       "Thomas Paine",
+       "Jonathan Edwards",
+       "Ralph Waldo Emerson"
+      ],
+      "a": 1,
+      "why": "Thomas Paine's 1776 pamphlet argued for independence."
+     },
+     {
+      "t": "mc",
+      "q": "Which writer wrote Walden, about living simply in nature?",
+      "o": [
+       "Henry David Thoreau",
+       "Edgar Allan Poe",
+       "Nathaniel Hawthorne",
+       "Walt Whitman"
+      ],
+      "a": 0,
+      "why": "Thoreau lived near Walden Pond and wrote about it."
+     },
+     {
+      "t": "mc",
+      "q": "Which idea is central to Transcendentalism?",
+      "o": [
+       "Blind obedience",
+       "Individualism and nature",
+       "Industrial progress",
+       "Strict social rules"
+      ],
+      "a": 1,
+      "why": "Transcendentalists trusted the individual and valued nature."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote 'The Raven'?",
+      "o": [
+       "Herman Melville",
+       "Mark Twain",
+       "Washington Irving",
+       "Edgar Allan Poe"
+      ],
+      "a": 3,
+      "why": "Poe published 'The Raven' in 1845."
+     },
+     {
+      "t": "tf",
+      "q": "The Declaration of Independence was mainly written by Thomas Jefferson.",
+      "a": true,
+      "why": "Jefferson was its principal author."
+     },
+     {
+      "t": "match",
+      "q": "Match each author to a work",
+      "pairs": [
+       [
+        "Nathaniel Hawthorne",
+        "The Scarlet Letter"
+       ],
+       [
+        "Herman Melville",
+        "Moby-Dick"
+       ],
+       [
+        "Ralph Waldo Emerson",
+        "Self-Reliance"
+       ],
+       [
+        "Jonathan Edwards",
+        "Sinners in the Hands"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these literary movements in order of time",
+      "items": [
+       [
+        "Puritan writing",
+        1
+       ],
+       [
+        "Revolutionary writing",
+        2
+       ],
+       [
+        "Romanticism",
+        3
+       ],
+       [
+        "Realism",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of 'Common Sense'.",
+      "a": [
+       "Paine",
+       "Thomas Paine"
+      ],
+      "hint": "His first name is Thomas.",
+      "why": "Thomas Paine wrote Common Sense in 1776."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Walden.",
+      "a": [
+       "Thoreau",
+       "Henry David Thoreau",
+       "Henry Thoreau"
+      ],
+      "hint": "He lived by a pond.",
+      "why": "Henry David Thoreau wrote Walden."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of 'The Raven'.",
+      "a": [
+       "Poe",
+       "Edgar Allan Poe"
+      ],
+      "hint": "His first name is Edgar.",
+      "why": "Edgar Allan Poe wrote 'The Raven'."
+     }
+    ]
+   },
+   {
+    "title": "Poetry of Whitman, Dickinson and Frost",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Walt Whitman",
+      "b": "Whitman's Leaves of Grass (1855) is written in free verse, with long flowing lines and no regular rhyme. In 'Song of Myself' he celebrates the individual and American democracy."
+     },
+     {
+      "h": "Emily Dickinson",
+      "b": "Dickinson wrote short poems with dashes, unusual capital letters and slant rhyme (words that nearly rhyme). She often wrote about death, nature and the mind. Few poems were published in her lifetime."
+     },
+     {
+      "h": "Robert Frost",
+      "b": "Frost wrote about New England farms and woods in simple language, often in traditional meter and rhyme. Poems like 'The Road Not Taken' and 'Stopping by Woods on a Snowy Evening' seem simple but hold deeper meaning."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote 'Song of Myself' in Leaves of Grass?",
+      "o": [
+       "Robert Frost",
+       "Emily Dickinson",
+       "Walt Whitman",
+       "Edgar Allan Poe"
+      ],
+      "a": 2,
+      "why": "Whitman published Leaves of Grass in 1855."
+     },
+     {
+      "t": "mc",
+      "q": "Emily Dickinson is known for",
+      "o": [
+       "short poems with dashes and slant rhyme",
+       "long epic poems",
+       "strict sonnets",
+       "plays"
+      ],
+      "a": 0,
+      "why": "Her style is compact and unusual."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote 'The Road Not Taken'?",
+      "o": [
+       "Walt Whitman",
+       "Robert Frost",
+       "Langston Hughes",
+       "T. S. Eliot"
+      ],
+      "a": 1,
+      "why": "Frost wrote it in 1916."
+     },
+     {
+      "t": "mc",
+      "q": "What is slant rhyme?",
+      "o": [
+       "A perfect rhyme",
+       "A repeated line",
+       "Rhyme at the start of a line",
+       "Rhyme that is close but not exact"
+      ],
+      "a": 3,
+      "why": "Slant rhyme uses similar, not identical, sounds."
+     },
+     {
+      "t": "tf",
+      "q": "Whitman wrote mostly in strict rhymed meter.",
+      "a": false,
+      "why": "Whitman pioneered free verse."
+     },
+     {
+      "t": "match",
+      "q": "Match each poet to a feature",
+      "pairs": [
+       [
+        "Whitman",
+        "free verse, long lines"
+       ],
+       [
+        "Dickinson",
+        "dashes and slant rhyme"
+       ],
+       [
+        "Frost",
+        "New England settings"
+       ],
+       [
+        "Leaves of Grass",
+        "Whitman's poetry collection"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for reading a poem in order",
+      "items": [
+       [
+        "Read it aloud",
+        1
+       ],
+       [
+        "Identify the speaker and situation",
+        2
+       ],
+       [
+        "Mark images and sound devices",
+        3
+       ],
+       [
+        "State the theme",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the poet who wrote 'The Road Not Taken'.",
+      "a": [
+       "Frost",
+       "Robert Frost"
+      ],
+      "hint": "His first name is Robert.",
+      "why": "Robert Frost wrote it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the poet who wrote Leaves of Grass.",
+      "a": [
+       "Whitman",
+       "Walt Whitman"
+      ],
+      "hint": "His first name is Walt.",
+      "why": "Walt Whitman wrote Leaves of Grass."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A rhyme that is close but not exact is a ___ rhyme. Type the missing word.",
+      "a": [
+       "slant",
+       "near",
+       "half",
+       "off"
+      ],
+      "hint": "Dickinson used it often.",
+      "why": "Slant rhyme (also called near or half rhyme) is not exact."
+     }
+    ]
+   },
+   {
+    "title": "Realism, Modernism and the 20th Century",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Realism and Naturalism",
+      "b": "After the Civil War, writers like Mark Twain and Stephen Crane showed ordinary life and regional speech. Realism describes life as it is. Naturalism adds that nature and environment control people's fate."
+     },
+     {
+      "h": "The Modernists",
+      "b": "After World War I, writers like F. Scott Fitzgerald, Ernest Hemingway, and T. S. Eliot broke old forms. Fitzgerald's The Great Gatsby critiques the American Dream. Hemingway used short, plain sentences."
+     },
+     {
+      "h": "Harlem Renaissance and beyond",
+      "b": "In the 1920s, Langston Hughes, Zora Neale Hurston, and Claude McKay celebrated Black culture and voices. Later writers like Arthur Miller and Harper Lee explored justice and society."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote The Great Gatsby?",
+      "o": [
+       "Ernest Hemingway",
+       "F. Scott Fitzgerald",
+       "John Steinbeck",
+       "William Faulkner"
+      ],
+      "a": 1,
+      "why": "F. Scott Fitzgerald published it in 1925."
+     },
+     {
+      "t": "mc",
+      "q": "Which author is known for short, plain sentences?",
+      "o": [
+       "Henry James",
+       "Edith Wharton",
+       "Ernest Hemingway",
+       "Herman Melville"
+      ],
+      "a": 2,
+      "why": "Hemingway's sparse style is famous."
+     },
+     {
+      "t": "mc",
+      "q": "Which writer was a leader of the Harlem Renaissance?",
+      "o": [
+       "Langston Hughes",
+       "Jack London",
+       "Robert Frost",
+       "Mark Twain"
+      ],
+      "a": 0,
+      "why": "Hughes was a central poet of the movement."
+     },
+     {
+      "t": "mc",
+      "q": "Realism in literature focuses on",
+      "o": [
+       "Fantasy worlds",
+       "Ordinary life as it is",
+       "Ancient myths",
+       "Pure rhyme"
+      ],
+      "a": 1,
+      "why": "Realists wrote about believable people and settings."
+     },
+     {
+      "t": "tf",
+      "q": "Mark Twain wrote The Adventures of Huckleberry Finn.",
+      "a": true,
+      "why": "Twain published it in 1884."
+     },
+     {
+      "t": "match",
+      "q": "Match each work to its author",
+      "pairs": [
+       [
+        "The Crucible",
+        "Arthur Miller"
+       ],
+       [
+        "The Grapes of Wrath",
+        "John Steinbeck"
+       ],
+       [
+        "Their Eyes Were Watching God",
+        "Zora Neale Hurston"
+       ],
+       [
+        "The Red Badge of Courage",
+        "Stephen Crane"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order of publication",
+      "items": [
+       [
+        "Huckleberry Finn (1884)",
+        1
+       ],
+       [
+        "The Great Gatsby (1925)",
+        2
+       ],
+       [
+        "The Crucible (1953)",
+        3
+       ],
+       [
+        "To Kill a Mockingbird (1960)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of The Great Gatsby.",
+      "a": [
+       "Fitzgerald",
+       "F. Scott Fitzgerald",
+       "Scott Fitzgerald"
+      ],
+      "hint": "His first name is F. Scott.",
+      "why": "F. Scott Fitzgerald wrote The Great Gatsby."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Langston Hughes was a leader of the Harlem ___. Type the missing word.",
+      "a": [
+       "renaissance"
+      ],
+      "hint": "It means a rebirth.",
+      "why": "The Harlem Renaissance was a 1920s Black cultural movement."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the movement that shows ordinary life as it really is.",
+      "a": [
+       "realism"
+      ],
+      "hint": "It starts with r.",
+      "why": "Realism portrays everyday life truthfully."
+     }
+    ]
+   },
+   {
+    "title": "The American Dream in Literature",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "What is the American Dream?",
+      "b": "The American Dream is the belief that anyone can succeed through hard work and a better life. Writers often test this idea to see whether it is true for everyone."
+     },
+     {
+      "h": "Gatsby and Salesman",
+      "b": "In The Great Gatsby (1925) by F. Scott Fitzgerald, narrator Nick Carraway watches Jay Gatsby chase wealth and Daisy Buchanan. The green light on her dock symbolizes his hope. In Death of a Salesman (1949), Arthur Miller shows Willy Loman believing being 'well-liked' will bring success."
+     },
+     {
+      "h": "A Raisin in the Sun",
+      "b": "Lorraine Hansberry's play (1959) follows the Younger family, a Black family in Chicago who dream of a better life. The title comes from Langston Hughes's poem 'Harlem,' which asks what happens to a dream deferred."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In The Great Gatsby, the green light symbolizes",
+      "o": [
+       "money Gatsby owes",
+       "Daisy's husband",
+       "a warning of danger",
+       "Gatsby's hopes and dreams"
+      ],
+      "a": 3,
+      "why": "It marks the dream Gatsby reaches for."
+     },
+     {
+      "t": "mc",
+      "q": "Who narrates The Great Gatsby?",
+      "o": [
+       "Nick Carraway",
+       "Jay Gatsby",
+       "Tom Buchanan",
+       "Willy Loman"
+      ],
+      "a": 0,
+      "why": "Nick tells the story as an observer."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote Death of a Salesman?",
+      "o": [
+       "Tennessee Williams",
+       "Lorraine Hansberry",
+       "Arthur Miller",
+       "Eugene O'Neill"
+      ],
+      "a": 2,
+      "why": "Miller wrote it in 1949."
+     },
+     {
+      "t": "mc",
+      "q": "A Raisin in the Sun takes its title from a poem by",
+      "o": [
+       "Robert Frost",
+       "Langston Hughes",
+       "Walt Whitman",
+       "Maya Angelou"
+      ],
+      "a": 1,
+      "why": "The poem 'Harlem' asks what happens to a dream deferred."
+     },
+     {
+      "t": "tf",
+      "q": "Willy Loman's dream comes true at the end of Death of a Salesman.",
+      "a": false,
+      "why": "His dream collapses and the play ends in tragedy."
+     },
+     {
+      "t": "match",
+      "q": "Match each character to their work",
+      "pairs": [
+       [
+        "Jay Gatsby",
+        "mysterious millionaire who loves Daisy"
+       ],
+       [
+        "Nick Carraway",
+        "narrator of Gatsby"
+       ],
+       [
+        "Willy Loman",
+        "salesman chasing success"
+       ],
+       [
+        "Younger family",
+        "Chicago family in Hansberry's play"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these works in order of publication",
+      "items": [
+       [
+        "The Great Gatsby (1925)",
+        1925
+       ],
+       [
+        "Death of a Salesman (1949)",
+        1949
+       ],
+       [
+        "A Raisin in the Sun (1959)",
+        1959
+       ],
+       [
+        "The Joy Luck Club (1989)",
+        1989
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In Gatsby, what color is the light at the end of Daisy's dock?",
+      "a": [
+       "green"
+      ],
+      "hint": "The color is in the symbol's name.",
+      "why": "The green light symbolizes Gatsby's dream."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the narrator of The Great Gatsby.",
+      "a": [
+       "Nick Carraway",
+       "Nick",
+       "Carraway"
+      ],
+      "hint": "His first name is Nick.",
+      "why": "Nick Carraway narrates."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Death of a Salesman.",
+      "a": [
+       "Miller",
+       "Arthur Miller"
+      ],
+      "hint": "His first name is Arthur.",
+      "why": "Arthur Miller wrote it."
+     }
+    ]
+   },
+   {
+    "title": "Civil Rights and Protest Writing",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Letter from Birmingham Jail",
+      "b": "In April 1963, Martin Luther King Jr. wrote this letter from jail to answer clergymen who called his protests unwise and untimely. He argues that people have a moral duty to disobey unjust laws peacefully, and that 'injustice anywhere is a threat to justice everywhere.'"
+     },
+     {
+      "h": "I Have a Dream",
+      "b": "King gave this speech on August 28, 1963, at the March on Washington, from the Lincoln Memorial. He repeats 'I have a dream' (anaphora), uses allusions to the Declaration of Independence and the Bible, and appeals to ethos, pathos and logos."
+     },
+     {
+      "h": "Why these texts last",
+      "b": "Both texts show kairos, speaking at exactly the right moment, and a clear purpose and audience. Protest writing often uses repetition, vivid images and moral appeals to move people to act."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where was Martin Luther King Jr. when he wrote his 1963 letter?",
+      "o": [
+       "At the Lincoln Memorial",
+       "In a Birmingham jail",
+       "In the White House",
+       "On a bus"
+      ],
+      "a": 1,
+      "why": "The letter is named for where it was written."
+     },
+     {
+      "t": "mc",
+      "q": "Where was the 'I Have a Dream' speech delivered?",
+      "o": [
+       "At the Lincoln Memorial",
+       "On the Capitol steps",
+       "At the Supreme Court",
+       "At Independence Hall"
+      ],
+      "a": 0,
+      "why": "It closed the March on Washington."
+     },
+     {
+      "t": "mc",
+      "q": "Repeating 'I have a dream' at the start of sentences is called",
+      "o": [
+       "metaphor",
+       "irony",
+       "hyperbole",
+       "anaphora"
+      ],
+      "a": 3,
+      "why": "Anaphora repeats words at the start of lines."
+     },
+     {
+      "t": "mc",
+      "q": "In his letter, King argues people have a duty to",
+      "o": [
+       "ignore all laws",
+       "wait for change",
+       "disobey unjust laws peacefully",
+       "avoid the protests"
+      ],
+      "a": 2,
+      "why": "He defends nonviolent civil disobedience."
+     },
+     {
+      "t": "tf",
+      "q": "King wrote the Letter to answer clergymen who called the protests unwise and untimely.",
+      "a": true,
+      "why": "The letter is a reply to eight clergymen."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "anaphora",
+        "repeated opening words"
+       ],
+       [
+        "civil disobedience",
+        "peaceful refusal to obey an unjust law"
+       ],
+       [
+        "kairos",
+        "the right moment"
+       ],
+       [
+        "allusion",
+        "reference to a known work or person"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Brown v. Board of Education",
+        1954
+       ],
+       [
+        "Montgomery bus boycott begins",
+        1955
+       ],
+       [
+        "March on Washington",
+        1963
+       ],
+       [
+        "Voting Rights Act",
+        1965
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year was the 'I Have a Dream' speech given?",
+      "a": [
+       "1963"
+      ],
+      "hint": "It was the March on Washington year.",
+      "why": "King spoke on August 28, 1963."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the man who delivered 'I Have a Dream'.",
+      "a": [
+       "King",
+       "Martin Luther King",
+       "Martin Luther King Jr",
+       "Martin Luther King Jr."
+      ],
+      "hint": "His first name is Martin.",
+      "why": "Martin Luther King Jr. gave the speech."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Repeating words at the start of successive sentences is called ___. Type the term.",
+      "a": [
+       "anaphora"
+      ],
+      "hint": "It starts with an a.",
+      "why": "That repetition is anaphora."
+     }
+    ]
+   },
+   {
+    "title": "Contemporary and Multicultural American Voices",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Many voices",
+      "b": "Since World War II, American writers from many backgrounds have explored identity, family heritage and belonging. Their work shows what it means to live between cultures."
+     },
+     {
+      "h": "Key writers",
+      "b": "Sandra Cisneros wrote The House on Mango Street in short vignettes about a Latina girl in Chicago. Toni Morrison won the Nobel Prize in Literature in 1993 and wrote Beloved. Tim O'Brien's The Things They Carried mixes fact and fiction about the Vietnam War. Amy Tan wrote The Joy Luck Club."
+     },
+     {
+      "h": "Techniques",
+      "b": "A vignette is a short, focused scene. Code-switching moves between languages or dialects. Writers also use memory, shifting time, and narrators whose voice shows their culture."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote The House on Mango Street, told in short vignettes?",
+      "o": [
+       "Sandra Cisneros",
+       "Toni Morrison",
+       "Amy Tan",
+       "Maya Angelou"
+      ],
+      "a": 0,
+      "why": "Cisneros wrote it in 1984."
+     },
+     {
+      "t": "mc",
+      "q": "In what year did Toni Morrison win the Nobel Prize in Literature?",
+      "o": [
+       "1963",
+       "1975",
+       "1993",
+       "2003"
+      ],
+      "a": 2,
+      "why": "Morrison won in 1993."
+     },
+     {
+      "t": "mc",
+      "q": "The Things They Carried is about soldiers in",
+      "o": [
+       "World War I",
+       "the Vietnam War",
+       "the Civil War",
+       "the Korean War"
+      ],
+      "a": 1,
+      "why": "Tim O'Brien draws on his Vietnam experience."
+     },
+     {
+      "t": "mc",
+      "q": "Code-switching in literature means",
+      "o": [
+       "changing the plot",
+       "rewriting an ending",
+       "using secret codes",
+       "shifting between languages or dialects"
+      ],
+      "a": 3,
+      "why": "Characters move between ways of speaking."
+     },
+     {
+      "t": "tf",
+      "q": "A vignette is a short, focused scene or sketch.",
+      "a": true,
+      "why": "Mango Street is made of vignettes."
+     },
+     {
+      "t": "match",
+      "q": "Match each author to a work",
+      "pairs": [
+       [
+        "Cisneros",
+        "The House on Mango Street"
+       ],
+       [
+        "Morrison",
+        "Beloved"
+       ],
+       [
+        "O'Brien",
+        "The Things They Carried"
+       ],
+       [
+        "Amy Tan",
+        "The Joy Luck Club"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for analyzing an identity theme in order",
+      "items": [
+       [
+        "Note the narrator's background",
+        1
+       ],
+       [
+        "Find cultural details and language",
+        2
+       ],
+       [
+        "Trace how conflicts shape the narrator",
+        3
+       ],
+       [
+        "State the theme",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Beloved.",
+      "a": [
+       "Morrison",
+       "Toni Morrison"
+      ],
+      "hint": "She won the 1993 Nobel Prize.",
+      "why": "Toni Morrison wrote Beloved."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the war that is the setting of The Things They Carried.",
+      "a": [
+       "Vietnam",
+       "Vietnam War",
+       "the Vietnam War"
+      ],
+      "hint": "It was fought in Southeast Asia.",
+      "why": "The book is about soldiers in the Vietnam War."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A short, focused sketch, like each chapter of Mango Street, is called a ___. Type the term.",
+      "a": [
+       "vignette",
+       "vignettes"
+      ],
+      "hint": "It sounds like 'vin-YET'.",
+      "why": "A vignette is a brief descriptive scene."
+     }
+    ]
+   },
+   {
+    "title": "Rhetoric and Language Analysis",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Analyzing an argument",
+      "b": "Find the claim, the reasons, and the evidence. Then judge the author's choices: how appeals, tone, and organization help persuade the audience."
+     },
+     {
+      "h": "Logical fallacies",
+      "b": "A straw man misstates the other side to attack it. An ad hominem attacks the person, not the argument. A false dilemma offers only two choices when more exist. A slippery slope claims one step will lead to disaster."
+     },
+     {
+      "h": "Style and tone",
+      "b": "Diction, syntax, and imagery create tone. Short sentences can feel urgent, long ones thoughtful. Notice shifts in tone, which often signal a change in the author's argument."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Attacking a speaker's character instead of their argument is called",
+      "o": [
+       "Ad hominem",
+       "Straw man",
+       "Slippery slope",
+       "Bandwagon"
+      ],
+      "a": 0,
+      "why": "Ad hominem means against the person."
+     },
+     {
+      "t": "mc",
+      "q": "Presenting only two options when more exist is a",
+      "o": [
+       "Hasty generalization",
+       "Straw man",
+       "False dilemma",
+       "Red herring"
+      ],
+      "a": 2,
+      "why": "It falsely limits the choices."
+     },
+     {
+      "t": "mc",
+      "q": "Misrepresenting an opponent's view to attack it easily is a",
+      "o": [
+       "Appeal to emotion",
+       "Straw man",
+       "Circular reasoning",
+       "Testimonial"
+      ],
+      "a": 1,
+      "why": "The weak 'straw' version is easy to knock down."
+     },
+     {
+      "t": "mc",
+      "q": "A series of short, sharp sentences most likely creates a feeling of",
+      "o": [
+       "Calm",
+       "Humor",
+       "Urgency",
+       "Confusion"
+      ],
+      "a": 2,
+      "why": "Short sentences move fast and feel tense."
+     },
+     {
+      "t": "tf",
+      "q": "A shift in tone can signal a change in the author's argument.",
+      "a": true,
+      "why": "Tone changes often mark a turning point."
+     },
+     {
+      "t": "match",
+      "q": "Match each fallacy to its description",
+      "pairs": [
+       [
+        "ad hominem",
+        "attacks the person"
+       ],
+       [
+        "slippery slope",
+        "predicts a chain of disasters"
+       ],
+       [
+        "bandwagon",
+        "everyone does it"
+       ],
+       [
+        "straw man",
+        "misstates the opposing view"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for analyzing an argument in order",
+      "items": [
+       [
+        "Find the claim",
+        1
+       ],
+       [
+        "Note the evidence",
+        2
+       ],
+       [
+        "Identify appeals and devices",
+        3
+       ],
+       [
+        "Evaluate effectiveness",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Attacking the speaker instead of the argument is called ad ___. Type the Latin phrase (two words).",
+      "a": [
+       "ad hominem"
+      ],
+      "hint": "It means 'to the person'.",
+      "why": "Ad hominem attacks the person, not the idea."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Misrepresenting an opponent's view to attack it is a ___ man fallacy. Type the missing word.",
+      "a": [
+       "straw",
+       "straw man"
+      ],
+      "hint": "It is made of hay.",
+      "why": "A straw man is an easy-to-knock-down version of an argument."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A change in the author's attitude partway through a text is a tone ___. Type the missing word.",
+      "a": [
+       "shift"
+      ],
+      "hint": "It means change.",
+      "why": "A tone shift can signal a turn in the argument."
+     }
+    ]
+   },
+   {
+    "title": "College-Ready Writing",
+    "period": "Grade 11",
+    "learn": [
+     {
+      "h": "Synthesis",
+      "b": "Synthesis means combining ideas from several sources to support your own argument. Do not just summarize each source one by one. Use them together to build a point."
+     },
+     {
+      "h": "Personal and college essays",
+      "b": "A college essay tells a true story about you, shows who you are, and reflects on what you learned. Use specific details and a natural voice. Avoid cliches."
+     },
+     {
+      "h": "Revising for style",
+      "b": "Cut wordiness, use strong verbs, and vary sentence length. Replace 'is' and 'are' with active verbs where you can. Read your work aloud to hear awkward spots."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does synthesis mean in writing?",
+      "o": [
+       "Copying a source",
+       "Combining ideas from several sources",
+       "Fixing spelling",
+       "Writing a title"
+      ],
+      "a": 1,
+      "why": "Synthesis blends sources to support your argument."
+     },
+     {
+      "t": "mc",
+      "q": "Which makes a college essay stronger?",
+      "o": [
+       "Specific personal details",
+       "Long vague statements",
+       "Cliches",
+       "Copied quotes"
+      ],
+      "a": 0,
+      "why": "Specific details show who you are."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses the stronger verb?",
+      "o": [
+       "The dog was running fast.",
+       "The dog is a fast runner.",
+       "The dog went fast.",
+       "The dog sprinted across the yard."
+      ],
+      "a": 3,
+      "why": "Sprinted is vivid and active."
+     },
+     {
+      "t": "mc",
+      "q": "A good way to catch awkward sentences is to",
+      "o": [
+       "Read aloud",
+       "Ignore them",
+       "Add more words",
+       "Use all caps"
+      ],
+      "a": 0,
+      "why": "Hearing your writing reveals clunky spots."
+     },
+     {
+      "t": "tf",
+      "q": "A synthesis essay should summarize each source separately without connecting them.",
+      "a": false,
+      "why": "Synthesis connects sources to build an argument."
+     },
+     {
+      "t": "match",
+      "q": "Match each tip to its goal",
+      "pairs": [
+       [
+        "cut wordiness",
+        "be concise"
+       ],
+       [
+        "use strong verbs",
+        "add energy"
+       ],
+       [
+        "vary sentences",
+        "improve rhythm"
+       ],
+       [
+        "cite sources",
+        "give credit"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing process in order",
+      "items": [
+       [
+        "Brainstorm",
+        1
+       ],
+       [
+        "Outline",
+        2
+       ],
+       [
+        "Draft",
+        3
+       ],
+       [
+        "Revise and proofread",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for combining ideas from several sources into one argument.",
+      "a": [
+       "synthesis"
+      ],
+      "hint": "It starts with s.",
+      "why": "Synthesis blends sources to support your own claim."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: Put the steps of writing a synthesis essay in order",
+      "lines": [
+       "Read and annotate the sources",
+       "Write a thesis with your position",
+       "Support it with evidence from the sources",
+       "Explain how the sources connect",
+       "Write a conclusion"
+      ],
+      "why": "You plan and form a position before supporting it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: To catch awkward sentences, read your draft ___. Type one word.",
+      "a": [
+       "aloud"
+      ],
+      "hint": "Use your voice.",
+      "why": "Reading aloud helps you hear awkward phrasing."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g12": {
+  "name": "Grade 12 English",
+  "units": [
+   {
+    "title": "Poetic Form and Meter",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Meter and feet",
+      "b": "Meter is the rhythm of a poem. A foot is a group of syllables. An iamb is unstressed then stressed (da-DUM), a trochee is stressed then unstressed (DUM-da). Pentameter means five feet in a line."
+     },
+     {
+      "h": "Forms",
+      "b": "Blank verse is unrhymed iambic pentameter, used by Shakespeare and Milton. A sonnet has 14 lines: Petrarchan (octave plus sestet) or Shakespearean (three quatrains plus a couplet). A villanelle has 19 lines with repeating refrains."
+     },
+     {
+      "h": "Sound and pause",
+      "b": "A caesura is a pause in the middle of a line. Enjambment is when a thought runs on past the end of a line without punctuation. Poets use these to control speed and emphasis."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "An iamb is",
+      "o": [
+       "an unstressed syllable followed by a stressed one",
+       "a stressed syllable followed by an unstressed one",
+       "three stressed syllables",
+       "a pause in a line"
+      ],
+      "a": 0,
+      "why": "Iambic rhythm is da-DUM."
+     },
+     {
+      "t": "mc",
+      "q": "Blank verse is",
+      "o": [
+       "rhymed couplets",
+       "free verse",
+       "unrhymed iambic pentameter",
+       "a 19-line form"
+      ],
+      "a": 2,
+      "why": "Blank verse has meter but no rhyme."
+     },
+     {
+      "t": "mc",
+      "q": "A Petrarchan sonnet is divided into",
+      "o": [
+       "three quatrains and a couplet",
+       "an octave and a sestet",
+       "two stanzas of five lines",
+       "four tercets"
+      ],
+      "a": 1,
+      "why": "Eight lines plus six lines."
+     },
+     {
+      "t": "mc",
+      "q": "When a thought runs over the end of a line with no pause, it is called",
+      "o": [
+       "caesura",
+       "refrain",
+       "stanza break",
+       "enjambment"
+      ],
+      "a": 3,
+      "why": "Enjambment carries the sentence onward."
+     },
+     {
+      "t": "tf",
+      "q": "A trochee is a stressed syllable followed by an unstressed syllable.",
+      "a": true,
+      "why": "Trochaic rhythm is DUM-da."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "caesura",
+        "pause in the middle of a line"
+       ],
+       [
+        "enjambment",
+        "thought runs to the next line"
+       ],
+       [
+        "couplet",
+        "two rhyming lines"
+       ],
+       [
+        "villanelle",
+        "19-line form with refrains"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for scanning a line in order",
+      "items": [
+       [
+        "Read the line aloud",
+        1
+       ],
+       [
+        "Mark the stressed syllables",
+        2
+       ],
+       [
+        "Group syllables into feet",
+        3
+       ],
+       [
+        "Name the meter",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many lines does a villanelle have? Type the number.",
+      "a": [
+       "19",
+       "nineteen"
+      ],
+      "hint": "It is an odd number just under 20.",
+      "why": "A villanelle has 19 lines."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the two-word term for unrhymed iambic pentameter.",
+      "a": [
+       "blank verse"
+      ],
+      "hint": "Shakespeare used it for much of his drama.",
+      "why": "Blank verse is unrhymed iambic pentameter."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many feet are in a line of pentameter? Type the number.",
+      "a": [
+       "5",
+       "five"
+      ],
+      "hint": "Penta means five.",
+      "why": "Pentameter has five feet."
+     }
+    ]
+   },
+   {
+    "title": "British Literature to 1800",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Anglo-Saxon and Medieval",
+      "b": "Beowulf is an Old English epic poem about a hero fighting monsters. Geoffrey Chaucer's The Canterbury Tales (about 1400) tells stories of pilgrims traveling to Canterbury in Middle English."
+     },
+     {
+      "h": "Renaissance",
+      "b": "Shakespeare wrote plays like Hamlet and Macbeth and many sonnets. Writers like Christopher Marlowe and John Donne also thrived. English began to look more like the language we use today."
+     },
+     {
+      "h": "Epic and Enlightenment",
+      "b": "John Milton wrote the epic Paradise Lost. In the 1700s, Jonathan Swift wrote satires like Gulliver's Travels, and Alexander Pope used witty verse. Satire criticized society."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Beowulf is an example of what kind of work?",
+      "o": [
+       "Novel",
+       "Sonnet",
+       "Epic poem",
+       "Essay"
+      ],
+      "a": 2,
+      "why": "Beowulf is an Old English epic poem."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote The Canterbury Tales?",
+      "o": [
+       "John Milton",
+       "Geoffrey Chaucer",
+       "William Shakespeare",
+       "Jonathan Swift"
+      ],
+      "a": 1,
+      "why": "Chaucer wrote it around 1400."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote Paradise Lost?",
+      "o": [
+       "John Milton",
+       "John Donne",
+       "Alexander Pope",
+       "Ben Jonson"
+      ],
+      "a": 0,
+      "why": "Milton's epic retells the fall of Adam and Eve."
+     },
+     {
+      "t": "mc",
+      "q": "Gulliver's Travels is best known as a",
+      "o": [
+       "Sonnet sequence",
+       "Tragedy",
+       "Satire",
+       "Diary"
+      ],
+      "a": 2,
+      "why": "Swift used fantasy to mock human society."
+     },
+     {
+      "t": "tf",
+      "q": "Hamlet was written by William Shakespeare.",
+      "a": true,
+      "why": "It is one of his best-known tragedies."
+     },
+     {
+      "t": "match",
+      "q": "Match each author to a work",
+      "pairs": [
+       [
+        "Chaucer",
+        "The Canterbury Tales"
+       ],
+       [
+        "Shakespeare",
+        "Macbeth"
+       ],
+       [
+        "Milton",
+        "Paradise Lost"
+       ],
+       [
+        "Swift",
+        "Gulliver's Travels"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these works in order of time, earliest first",
+      "items": [
+       [
+        "Beowulf",
+        1
+       ],
+       [
+        "The Canterbury Tales",
+        2
+       ],
+       [
+        "Hamlet",
+        3
+       ],
+       [
+        "Gulliver's Travels",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Beowulf is what kind of long narrative poem about a hero? Type the one-word type.",
+      "a": [
+       "epic",
+       "epic poem",
+       "an epic poem",
+       "an epic"
+      ],
+      "hint": "It starts with e.",
+      "why": "Beowulf is an epic poem."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of The Canterbury Tales.",
+      "a": [
+       "Chaucer",
+       "Geoffrey Chaucer"
+      ],
+      "hint": "His first name is Geoffrey.",
+      "why": "Geoffrey Chaucer wrote it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Paradise Lost.",
+      "a": [
+       "Milton",
+       "John Milton"
+      ],
+      "hint": "His first name is John.",
+      "why": "John Milton wrote Paradise Lost."
+     }
+    ]
+   },
+   {
+    "title": "Hamlet and Shakespearean Tragedy",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "The plot",
+      "b": "Hamlet, Prince of Denmark, learns from his father's ghost that his uncle Claudius murdered the king and married Queen Gertrude. Hamlet pretends to be mad and plans revenge."
+     },
+     {
+      "h": "Key events",
+      "b": "Hamlet stages a play, 'The Mousetrap,' that mirrors the murder to test Claudius's guilt. He kills Polonius by mistake, Ophelia goes mad and drowns, and a final duel with Laertes leaves almost everyone dead. Fortinbras takes the throne."
+     },
+     {
+      "h": "Themes",
+      "b": "The play explores revenge, madness, mortality and corruption ('Something is rotten in the state of Denmark'). Hamlet's tragic flaw is often said to be indecision. His soliloquies, like 'To be, or not to be,' reveal his thoughts."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who murdered Hamlet's father?",
+      "o": [
+       "Laertes",
+       "Polonius",
+       "Claudius",
+       "Fortinbras"
+      ],
+      "a": 2,
+      "why": "Claudius poisoned the king."
+     },
+     {
+      "t": "mc",
+      "q": "How does Hamlet test Claudius's guilt?",
+      "o": [
+       "With a play that mirrors the murder",
+       "With a duel",
+       "With a letter",
+       "With a spy in Norway"
+      ],
+      "a": 0,
+      "why": "Claudius's reaction to the play reveals his guilt."
+     },
+     {
+      "t": "mc",
+      "q": "Hamlet's tragic flaw is often said to be",
+      "o": [
+       "greed",
+       "indecision",
+       "jealousy",
+       "cowardice in battle"
+      ],
+      "a": 1,
+      "why": "He delays his revenge."
+     },
+     {
+      "t": "mc",
+      "q": "Who is Ophelia's father?",
+      "o": [
+       "Claudius",
+       "Horatio",
+       "Laertes",
+       "Polonius"
+      ],
+      "a": 3,
+      "why": "Polonius is a royal advisor; Laertes is her brother."
+     },
+     {
+      "t": "tf",
+      "q": "Hamlet is set in Scotland.",
+      "a": false,
+      "why": "It is set in Denmark; Macbeth is set in Scotland."
+     },
+     {
+      "t": "match",
+      "q": "Match each character to their role",
+      "pairs": [
+       [
+        "Gertrude",
+        "Hamlet's mother"
+       ],
+       [
+        "Laertes",
+        "Ophelia's brother"
+       ],
+       [
+        "Horatio",
+        "Hamlet's loyal friend"
+       ],
+       [
+        "Fortinbras",
+        "Norwegian prince who ends up in charge"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "The ghost reveals the murder",
+        1
+       ],
+       [
+        "Hamlet stages the play",
+        2
+       ],
+       [
+        "Hamlet kills Polonius",
+        3
+       ],
+       [
+        "The duel with Laertes",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of Hamlet's uncle who becomes king.",
+      "a": [
+       "Claudius"
+      ],
+      "hint": "He murdered Hamlet's father.",
+      "why": "Claudius is Hamlet's uncle and the new king."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the country in which Hamlet is set.",
+      "a": [
+       "Denmark"
+      ],
+      "hint": "Hamlet is its prince.",
+      "why": "Hamlet is Prince of Denmark."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 'To be, or not to be' is a speech where a character alone on stage speaks his thoughts. Type the term.",
+      "a": [
+       "soliloquy",
+       "a soliloquy"
+      ],
+      "hint": "It starts with s.",
+      "why": "A soliloquy reveals private thoughts."
+     }
+    ]
+   },
+   {
+    "title": "Gothic and Victorian Fiction",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Gothic fiction",
+      "b": "Gothic stories use gloomy settings, mystery, the supernatural and strong emotion. Frankenstein (1818) by Mary Shelley and Dracula (1897) by Bram Stoker are famous examples."
+     },
+     {
+      "h": "The Bronte sisters",
+      "b": "Charlotte Bronte wrote Jane Eyre (1847), about an independent governess. Emily Bronte wrote Wuthering Heights (1847), a dark story of love and revenge on the Yorkshire moors."
+     },
+     {
+      "h": "Victorian novels",
+      "b": "The Victorian era (1837-1901) was named for Queen Victoria. Writers like Charles Dickens, in Great Expectations (1861), criticized poverty and class inequality during the Industrial Revolution."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a feature of Gothic fiction?",
+      "o": [
+       "A gloomy setting with mystery and fear",
+       "A sunny comic setting",
+       "A plain factual report",
+       "A rhymed love poem"
+      ],
+      "a": 0,
+      "why": "Gothic stories create dread and suspense."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote Dracula?",
+      "o": [
+       "Mary Shelley",
+       "Charles Dickens",
+       "Thomas Hardy",
+       "Bram Stoker"
+      ],
+      "a": 3,
+      "why": "Stoker published it in 1897."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote Jane Eyre?",
+      "o": [
+       "Emily Bronte",
+       "Charlotte Bronte",
+       "Jane Austen",
+       "George Eliot"
+      ],
+      "a": 1,
+      "why": "Emily wrote Wuthering Heights."
+     },
+     {
+      "t": "mc",
+      "q": "Victorian novels often criticized",
+      "o": [
+       "travel costs",
+       "space exploration",
+       "poverty and class inequality",
+       "medieval knights"
+      ],
+      "a": 2,
+      "why": "Writers such as Dickens exposed social problems."
+     },
+     {
+      "t": "tf",
+      "q": "Frankenstein was published in 1818.",
+      "a": true,
+      "why": "Mary Shelley published it when she was 20."
+     },
+     {
+      "t": "match",
+      "q": "Match each novel to its author",
+      "pairs": [
+       [
+        "Frankenstein",
+        "Mary Shelley"
+       ],
+       [
+        "Dracula",
+        "Bram Stoker"
+       ],
+       [
+        "Wuthering Heights",
+        "Emily Bronte"
+       ],
+       [
+        "Great Expectations",
+        "Charles Dickens"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these novels in order of publication",
+      "items": [
+       [
+        "Frankenstein",
+        1818
+       ],
+       [
+        "Jane Eyre",
+        1847
+       ],
+       [
+        "Great Expectations",
+        1861
+       ],
+       [
+        "Dracula",
+        1897
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Dracula.",
+      "a": [
+       "Stoker",
+       "Bram Stoker"
+      ],
+      "hint": "His first name is Bram.",
+      "why": "Bram Stoker wrote Dracula."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the family name of the sisters who wrote Jane Eyre and Wuthering Heights.",
+      "a": [
+       "Bronte",
+       "Brontë",
+       "the Brontes"
+      ],
+      "hint": "It starts with B.",
+      "why": "Charlotte and Emily Bronte wrote them."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The Victorian era is named for Queen ___. Type her name.",
+      "a": [
+       "Victoria",
+       "Queen Victoria"
+      ],
+      "hint": "It is the era's name.",
+      "why": "Queen Victoria reigned from 1837 to 1901."
+     }
+    ]
+   },
+   {
+    "title": "British Literature since 1800",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Romantics",
+      "b": "Romantic poets like Wordsworth, Coleridge, Keats, and Shelley valued emotion, imagination, and nature. Mary Shelley's Frankenstein (1818) is a Gothic Romantic novel about the dangers of unchecked science."
+     },
+     {
+      "h": "Victorian era",
+      "b": "Under Queen Victoria, Charles Dickens (Great Expectations) exposed poverty and injustice. The Bronte sisters wrote Jane Eyre and Wuthering Heights. Many novels were published in serial parts."
+     },
+     {
+      "h": "Modern and contemporary",
+      "b": "Modernists like Virginia Woolf used stream of consciousness to show a character's thoughts. George Orwell wrote 1984 about totalitarian control. Post-war writers explored identity, empire, and society."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote Frankenstein?",
+      "o": [
+       "Jane Austen",
+       "Charlotte Bronte",
+       "Virginia Woolf",
+       "Mary Shelley"
+      ],
+      "a": 3,
+      "why": "Mary Shelley published it in 1818."
+     },
+     {
+      "t": "mc",
+      "q": "Which author wrote Great Expectations?",
+      "o": [
+       "Charles Dickens",
+       "Thomas Hardy",
+       "George Eliot",
+       "Oscar Wilde"
+      ],
+      "a": 0,
+      "why": "Dickens published it in 1860-61."
+     },
+     {
+      "t": "mc",
+      "q": "Stream of consciousness is a technique used by",
+      "o": [
+       "Wordsworth",
+       "Chaucer",
+       "Virginia Woolf",
+       "Alexander Pope"
+      ],
+      "a": 2,
+      "why": "Woolf showed the flow of characters' thoughts."
+     },
+     {
+      "t": "mc",
+      "q": "Romantic poets mainly valued",
+      "o": [
+       "Strict reason",
+       "Emotion and nature",
+       "Factory work",
+       "Politics only"
+      ],
+      "a": 1,
+      "why": "Romanticism celebrated feeling and nature."
+     },
+     {
+      "t": "tf",
+      "q": "Wuthering Heights was written by Emily Bronte.",
+      "a": true,
+      "why": "Emily Bronte published it in 1847."
+     },
+     {
+      "t": "match",
+      "q": "Match each author to a work",
+      "pairs": [
+       [
+        "Dickens",
+        "Oliver Twist"
+       ],
+       [
+        "Emily Bronte",
+        "Wuthering Heights"
+       ],
+       [
+        "Orwell",
+        "1984"
+       ],
+       [
+        "Keats",
+        "Ode to a Nightingale"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these works in order of publication",
+      "items": [
+       [
+        "Frankenstein (1818)",
+        1
+       ],
+       [
+        "Jane Eyre (1847)",
+        2
+       ],
+       [
+        "Mrs Dalloway (1925)",
+        3
+       ],
+       [
+        "1984 (1949)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Mary Shelley wrote which novel about a scientist and his creature? Type the title.",
+      "a": [
+       "Frankenstein"
+      ],
+      "hint": "It is the scientist's name.",
+      "why": "Mary Shelley wrote Frankenstein (1818)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Virginia Woolf used a technique called stream of ___. Type the missing word.",
+      "a": [
+       "consciousness"
+      ],
+      "hint": "It follows a character's thoughts.",
+      "why": "Stream of consciousness shows a character's flowing thoughts."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Great Expectations.",
+      "a": [
+       "Dickens",
+       "Charles Dickens"
+      ],
+      "hint": "His first name is Charles.",
+      "why": "Charles Dickens wrote Great Expectations."
+     }
+    ]
+   },
+   {
+    "title": "Dystopian and Postcolonial Voices",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Dystopian fiction",
+      "b": "A dystopia warns about a possible future. In Brave New World (1932) Aldous Huxley shows people controlled by pleasure, conditioning and a drug called soma. In 1984 (1949), George Orwell shows a government (Big Brother) watching everyone."
+     },
+     {
+      "h": "Imperialism and response",
+      "b": "In Heart of Darkness (1899), Joseph Conrad criticizes European imperialism in Africa through a journey up the Congo River. Chinua Achebe's Things Fall Apart (1958) answers from an African view, showing Igbo society and its main character Okonkwo before and after colonial rule."
+     },
+     {
+      "h": "Postcolonial literature",
+      "b": "Postcolonial literature explores the effects of colonial rule on people, culture and identity, and gives voice to those once silenced. Look for questions of power, language and who tells the story."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In Brave New World, which drug keeps people content?",
+      "o": [
+       "soma",
+       "opium",
+       "thought-serum",
+       "nectar"
+      ],
+      "a": 0,
+      "why": "Soma numbs people to unhappiness."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote Things Fall Apart?",
+      "o": [
+       "Joseph Conrad",
+       "Wole Soyinka",
+       "Chinua Achebe",
+       "Salman Rushdie"
+      ],
+      "a": 2,
+      "why": "Achebe was a Nigerian author."
+     },
+     {
+      "t": "mc",
+      "q": "Postcolonial literature mainly explores",
+      "o": [
+       "life in space",
+       "the effects of colonial rule on people and cultures",
+       "medieval courts",
+       "detective crimes"
+      ],
+      "a": 1,
+      "why": "It examines power and identity after colonialism."
+     },
+     {
+      "t": "mc",
+      "q": "In 1984, 'Big Brother' stands for",
+      "o": [
+       "a friendly neighbor",
+       "a rebel leader",
+       "a school principal",
+       "a government that watches everyone"
+      ],
+      "a": 3,
+      "why": "Big Brother is the all-seeing ruler."
+     },
+     {
+      "t": "tf",
+      "q": "Heart of Darkness was written by Joseph Conrad.",
+      "a": true,
+      "why": "Conrad published it in 1899."
+     },
+     {
+      "t": "match",
+      "q": "Match each work to a clue",
+      "pairs": [
+       [
+        "Brave New World",
+        "Aldous Huxley"
+       ],
+       [
+        "1984",
+        "thoughtcrime"
+       ],
+       [
+        "Things Fall Apart",
+        "Okonkwo"
+       ],
+       [
+        "Heart of Darkness",
+        "Joseph Conrad"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these works in order of publication",
+      "items": [
+       [
+        "Heart of Darkness",
+        1899
+       ],
+       [
+        "Brave New World",
+        1932
+       ],
+       [
+        "1984",
+        1949
+       ],
+       [
+        "Things Fall Apart",
+        1958
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the last name of the author of Brave New World.",
+      "a": [
+       "Huxley",
+       "Aldous Huxley"
+      ],
+      "hint": "His first name is Aldous.",
+      "why": "Aldous Huxley wrote it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the main character of Things Fall Apart.",
+      "a": [
+       "Okonkwo"
+      ],
+      "hint": "He is an Igbo wrestler and leader.",
+      "why": "Okonkwo is the novel's protagonist."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Literature about the effects of colonial rule is called ___ literature. Type the missing word.",
+      "a": [
+       "postcolonial",
+       "post-colonial",
+       "post colonial"
+      ],
+      "hint": "It starts with post.",
+      "why": "Postcolonial literature explores colonial effects."
+     }
+    ]
+   },
+   {
+    "title": "Critical Theory and Close Reading",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Literary lenses",
+      "b": "A critical lens is a way of reading a text. A historical lens looks at the time it was written. A feminist lens looks at gender roles. A psychological lens looks at the characters' minds and motives."
+     },
+     {
+      "h": "Close reading",
+      "b": "Close reading means reading slowly and noticing details: word choice, imagery, structure, and tone. Ask why the author made each choice and what effect it has."
+     },
+     {
+      "h": "Unreliable narrators and structure",
+      "b": "An unreliable narrator cannot be fully trusted, which makes readers question the story. Structure choices like flashbacks, frame stories, and nonlinear time shape meaning."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Reading a text by studying the era it was written in uses a",
+      "o": [
+       "Psychological lens",
+       "Feminist lens",
+       "Historical lens",
+       "Formal lens"
+      ],
+      "a": 2,
+      "why": "A historical lens focuses on the context of the time."
+     },
+     {
+      "t": "mc",
+      "q": "A narrator who cannot be fully trusted is",
+      "o": [
+       "Omniscient",
+       "Unreliable",
+       "Objective",
+       "Static"
+      ],
+      "a": 1,
+      "why": "Unreliable narrators distort or hide the truth."
+     },
+     {
+      "t": "mc",
+      "q": "Studying how gender roles shape a text uses a",
+      "o": [
+       "Feminist lens",
+       "Marxist lens",
+       "Historical lens",
+       "Formal lens"
+      ],
+      "a": 0,
+      "why": "A feminist lens examines gender."
+     },
+     {
+      "t": "mc",
+      "q": "What does close reading focus on?",
+      "o": [
+       "Skimming the plot",
+       "Counting pages",
+       "Reading the ending first",
+       "Careful attention to words and details"
+      ],
+      "a": 3,
+      "why": "Close reading analyzes the author's specific choices."
+     },
+     {
+      "t": "tf",
+      "q": "A frame story is a story told inside another story.",
+      "a": true,
+      "why": "The outer story frames the inner one."
+     },
+     {
+      "t": "match",
+      "q": "Match each lens to its focus",
+      "pairs": [
+       [
+        "historical",
+        "time and context"
+       ],
+       [
+        "feminist",
+        "gender roles"
+       ],
+       [
+        "psychological",
+        "minds and motives"
+       ],
+       [
+        "formal",
+        "text structure"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for a close reading in order",
+      "items": [
+       [
+        "Read the passage once",
+        1
+       ],
+       [
+        "Annotate key details",
+        2
+       ],
+       [
+        "Find patterns",
+        3
+       ],
+       [
+        "Interpret meaning",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A narrator who cannot be fully trusted is called ___. Type the word.",
+      "a": [
+       "unreliable",
+       "an unreliable narrator",
+       "unreliable narrator"
+      ],
+      "hint": "It starts with un.",
+      "why": "An unreliable narrator may mislead the reader."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Studying how gender roles shape a text uses a ___ lens. Type the missing word.",
+      "a": [
+       "feminist"
+      ],
+      "hint": "It starts with f.",
+      "why": "A feminist lens examines gender roles and power."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Careful attention to a text's words and details is called close ___. Type the missing word.",
+      "a": [
+       "reading"
+      ],
+      "hint": "You do it with a book.",
+      "why": "Close reading examines words, details and structure."
+     }
+    ]
+   },
+   {
+    "title": "Senior Writing and Communication",
+    "period": "Grade 12",
+    "learn": [
+     {
+      "h": "Research papers",
+      "b": "A research paper asks a focused question, gathers credible sources, and builds an argument with evidence. Use a consistent citation style and a works cited page."
+     },
+     {
+      "h": "Professional writing",
+      "b": "Resumes list skills and experience briefly. Cover letters explain why you fit a job. Emails should have a clear subject, a polite tone, and be short and specific."
+     },
+     {
+      "h": "Speaking and presenting",
+      "b": "Good speakers know their audience, organize points clearly, make eye contact, and speak at a steady pace. Visuals should support, not replace, what you say."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A cover letter is mainly used to",
+      "o": [
+       "List every class taken",
+       "Explain why you fit a job",
+       "Replace a resume",
+       "Ask for a loan"
+      ],
+      "a": 1,
+      "why": "It connects your skills to the job."
+     },
+     {
+      "t": "mc",
+      "q": "A strong research paper begins with",
+      "o": [
+       "A focused research question",
+       "A long quotation",
+       "A bibliography only",
+       "A conclusion"
+      ],
+      "a": 0,
+      "why": "A focused question guides all the research."
+     },
+     {
+      "t": "mc",
+      "q": "Which is best for a professional email?",
+      "o": [
+       "No subject line",
+       "All capital letters",
+       "Slang and emojis",
+       "A clear subject and polite tone"
+      ],
+      "a": 3,
+      "why": "Clarity and politeness are professional."
+     },
+     {
+      "t": "mc",
+      "q": "Slides in a presentation should",
+      "o": [
+       "Contain your whole script",
+       "Support your spoken points",
+       "Be hard to read",
+       "Replace speaking"
+      ],
+      "a": 1,
+      "why": "Visuals should help the audience follow along."
+     },
+     {
+      "t": "tf",
+      "q": "A research paper should use credible sources and cite them.",
+      "a": true,
+      "why": "Credible, cited sources make an argument trustworthy."
+     },
+     {
+      "t": "match",
+      "q": "Match each document to its purpose",
+      "pairs": [
+       [
+        "resume",
+        "summarizes experience"
+       ],
+       [
+        "cover letter",
+        "pitches you for a job"
+       ],
+       [
+        "works cited",
+        "lists sources"
+       ],
+       [
+        "thesis",
+        "states main argument"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of writing a research paper in order",
+      "items": [
+       [
+        "Choose a question",
+        1
+       ],
+       [
+        "Gather sources",
+        2
+       ],
+       [
+        "Draft the paper",
+        3
+       ],
+       [
+        "Cite and proofread",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A document that explains why you fit a job is a cover ___. Type the missing word.",
+      "a": [
+       "letter"
+      ],
+      "hint": "You send it with a resume.",
+      "why": "A cover letter explains your fit for the job."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A strong research paper begins with a focused research ___. Type the missing word.",
+      "a": [
+       "question"
+      ],
+      "hint": "It guides your search.",
+      "why": "A focused question guides the research."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: Put the parts of a professional email in order",
+      "lines": [
+       "Write a clear subject line",
+       "Greet the reader politely",
+       "State your purpose",
+       "Close with thanks and your name"
+      ],
+      "why": "A clear subject and greeting come first, then purpose, then a polite close."
+     }
+    ]
+   }
+  ]
+ },
+ "ap-lang": {
+  "name": "AP English Language",
+  "units": [
+   {
+    "title": "Rhetorical Situation and Appeals",
+    "period": "Rhetoric",
+    "learn": [
+     {
+      "h": "The rhetorical situation",
+      "b": "Every text has a speaker, an audience, a purpose, and a context. To analyze a text, ask who is speaking, to whom, and why."
+     },
+     {
+      "h": "The appeals",
+      "b": "Ethos appeals to credibility and character. Pathos appeals to emotion. Logos appeals to logic and evidence. Writers often use all three together."
+     },
+     {
+      "h": "Kairos",
+      "b": "Kairos is the right moment. A message may work better because it arrives at a timely moment."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which appeal builds trust in the speaker's credibility?",
+      "o": [
+       "Pathos",
+       "Logos",
+       "Kairos",
+       "Ethos"
+      ],
+      "a": 3,
+      "why": "Ethos shows the speaker is trustworthy or knowledgeable."
+     },
+     {
+      "t": "mc",
+      "q": "A charity ad shows a sad puppy in the rain. Which appeal is mainly used?",
+      "o": [
+       "Pathos",
+       "Ethos",
+       "Logos",
+       "Kairos"
+      ],
+      "a": 0,
+      "why": "The image aims at the audience's emotions."
+     },
+     {
+      "t": "mc",
+      "q": "Using statistics and clear reasons is mostly an appeal to what?",
+      "o": [
+       "Ethos",
+       "Pathos",
+       "Logos",
+       "Kairos"
+      ],
+      "a": 2,
+      "why": "Logos relies on logic and evidence."
+     },
+     {
+      "t": "mc",
+      "q": "Which list names the parts of a rhetorical situation?",
+      "o": [
+       "Title, font, layout, length",
+       "Speaker, audience, purpose, context",
+       "Plot, setting, theme, character",
+       "Grammar, spelling, tone, rhyme"
+      ],
+      "a": 1,
+      "why": "These four elements shape every text."
+     },
+     {
+      "t": "tf",
+      "q": "Kairos refers to the timeliness of an argument, or the right moment.",
+      "a": true,
+      "why": "Kairos is Greek for the opportune moment."
+     },
+     {
+      "t": "match",
+      "q": "Match each appeal to its meaning",
+      "pairs": [
+       [
+        "Ethos",
+        "Credibility"
+       ],
+       [
+        "Pathos",
+        "Emotion"
+       ],
+       [
+        "Logos",
+        "Logic"
+       ],
+       [
+        "Kairos",
+        "Right time"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of rhetorical analysis in order",
+      "items": [
+       [
+        "Identify speaker and audience",
+        1
+       ],
+       [
+        "Determine the purpose",
+        2
+       ],
+       [
+        "Note the appeals and devices",
+        3
+       ],
+       [
+        "Explain how they achieve the purpose",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the appeal that builds the speaker's credibility.",
+      "a": [
+       "ethos"
+      ],
+      "hint": "It comes from the Greek word for character.",
+      "why": "Ethos appeals to credibility and trust."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the Greek term for the timeliness of an argument, the right moment.",
+      "a": [
+       "kairos"
+      ],
+      "hint": "It starts with k.",
+      "why": "Kairos is the timeliness of a message."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The parts of a rhetorical situation are speaker, audience, purpose and ___. Type the missing word.",
+      "a": [
+       "context"
+      ],
+      "hint": "It covers time and place.",
+      "why": "Context is the setting and moment of the message."
+     }
+    ]
+   },
+   {
+    "title": "Claims, Evidence, and Reasoning",
+    "period": "Argument",
+    "learn": [
+     {
+      "h": "Building an argument",
+      "b": "A claim is the main point a writer wants you to accept. Reasons explain it, and evidence supports the reasons. Strong evidence is relevant, specific, and from a reliable source."
+     },
+     {
+      "h": "Fallacies",
+      "b": "Ad hominem attacks the person instead of the argument. A straw man misrepresents an opponent's view so it is easy to attack. A false dilemma pretends there are only two options. Bandwagon says something is right because everyone does it."
+     },
+     {
+      "h": "Other viewpoints",
+      "b": "A concession admits a fair point from the other side. A counterargument is an opposing viewpoint, and a rebuttal answers it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a claim in an argument?",
+      "o": [
+       "A summary of the plot",
+       "A list of facts only",
+       "A main point the writer wants you to accept",
+       "A quotation from a source"
+      ],
+      "a": 2,
+      "why": "A claim is the position the argument defends."
+     },
+     {
+      "t": "mc",
+      "q": "Attacking the speaker instead of the argument is called what?",
+      "o": [
+       "Concession",
+       "Rebuttal",
+       "Syllogism",
+       "Ad hominem"
+      ],
+      "a": 3,
+      "why": "Ad hominem means 'to the person.'"
+     },
+     {
+      "t": "mc",
+      "q": "Which is the strongest evidence?",
+      "o": [
+       "A friend's rumor",
+       "Reliable data from an expert source",
+       "An angry comment",
+       "A vague generalization"
+      ],
+      "a": 1,
+      "why": "Strong evidence is reliable, relevant, and specific."
+     },
+     {
+      "t": "mc",
+      "q": "What is a straw man fallacy?",
+      "o": [
+       "Admitting the other side has a point",
+       "Quoting experts",
+       "Misrepresenting an opponent's view to attack it easily",
+       "Giving a statistic"
+      ],
+      "a": 2,
+      "why": "The arguer attacks a weaker version of the real argument."
+     },
+     {
+      "t": "tf",
+      "q": "A concession acknowledges a fair point from the opposing side.",
+      "a": true,
+      "why": "Concessions can make an argument more credible."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Counterargument",
+        "Opposing viewpoint"
+       ],
+       [
+        "Rebuttal",
+        "Response to a counterargument"
+       ],
+       [
+        "Bandwagon",
+        "Everyone is doing it"
+       ],
+       [
+        "False dilemma",
+        "Only two options shown"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of an argument in order",
+      "items": [
+       [
+        "State a claim",
+        1
+       ],
+       [
+        "Give reasons",
+        2
+       ],
+       [
+        "Support with evidence",
+        3
+       ],
+       [
+        "Explain how the evidence proves the claim",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a main point the writer wants you to accept.",
+      "a": [
+       "claim",
+       "a claim"
+      ],
+      "hint": "Arguments are built on it.",
+      "why": "A claim is the main point of an argument."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for acknowledging a fair point from the opposing side.",
+      "a": [
+       "concession",
+       "a concession",
+       "concede"
+      ],
+      "hint": "It starts with c.",
+      "why": "A concession admits a fair opposing point."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Attacking the speaker instead of the argument is called ad ___. Type the Latin phrase.",
+      "a": [
+       "ad hominem"
+      ],
+      "hint": "It means 'to the person'.",
+      "why": "Ad hominem attacks the person, not the idea."
+     }
+    ]
+   },
+   {
+    "title": "Organization and Line of Reasoning",
+    "period": "Organization",
+    "learn": [
+     {
+      "h": "Line of reasoning",
+      "b": "A line of reasoning is the logical path that connects your claims, so each idea leads to the next. Each body paragraph should make a claim, give evidence, add commentary, and link back to the thesis."
+     },
+     {
+      "h": "Inductive and deductive",
+      "b": "Inductive reasoning moves from specific examples to a general conclusion. Deductive reasoning starts with a general principle and applies it: 'All humans are mortal; Socrates is human; so Socrates is mortal.'"
+     },
+     {
+      "h": "Patterns and transitions",
+      "b": "Writers organize by time (chronological), cause and effect, comparison, or problem and solution. Transitions show links: 'however' shows contrast, 'therefore' shows result, 'for example' adds an example."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Reasoning that moves from specific examples to a general conclusion is",
+      "o": [
+       "deductive",
+       "inductive",
+       "circular",
+       "chronological"
+      ],
+      "a": 1,
+      "why": "Induction builds from particular cases."
+     },
+     {
+      "t": "mc",
+      "q": "A line of reasoning is",
+      "o": [
+       "the logical path connecting the claims in an argument",
+       "a list of sources",
+       "the last line of an essay",
+       "a type of evidence"
+      ],
+      "a": 0,
+      "why": "Each claim should lead to the next."
+     },
+     {
+      "t": "mc",
+      "q": "Which transition shows contrast?",
+      "o": [
+       "Therefore,",
+       "Moreover,",
+       "However,",
+       "For example,"
+      ],
+      "a": 2,
+      "why": "However introduces an opposing idea."
+     },
+     {
+      "t": "mc",
+      "q": "Starting with a general principle and applying it to a case is",
+      "o": [
+       "inductive",
+       "anecdotal",
+       "chronological",
+       "deductive"
+      ],
+      "a": 3,
+      "why": "Deduction moves from general to specific."
+     },
+     {
+      "t": "tf",
+      "q": "In a well-organized argument, each paragraph should connect back to the thesis.",
+      "a": true,
+      "why": "Links to the thesis keep the line of reasoning clear."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "inductive",
+        "specific to general"
+       ],
+       [
+        "deductive",
+        "general to specific"
+       ],
+       [
+        "chronological",
+        "time order"
+       ],
+       [
+        "cause and effect",
+        "explains why things happen"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a body paragraph in order",
+      "items": [
+       [
+        "Topic sentence (claim)",
+        1
+       ],
+       [
+        "Evidence",
+        2
+       ],
+       [
+        "Commentary",
+        3
+       ],
+       [
+        "Link back to the thesis",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Reasoning from specific examples to a general conclusion is called ___. Type the word.",
+      "a": [
+       "inductive",
+       "induction",
+       "inductive reasoning"
+      ],
+      "hint": "The other kind is deductive.",
+      "why": "Induction moves from specific to general."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: All humans are mortal. Socrates is human. Therefore Socrates is ___. Type the word.",
+      "a": [
+       "mortal"
+      ],
+      "hint": "Apply the general rule.",
+      "why": "This deductive syllogism ends: Socrates is mortal."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The sentence that states the main point of a body paragraph is the ___ sentence. Type the missing word.",
+      "a": [
+       "topic"
+      ],
+      "hint": "It comes first in the paragraph.",
+      "why": "The topic sentence states the paragraph's claim."
+     }
+    ]
+   },
+   {
+    "title": "Style and Rhetorical Devices",
+    "period": "Language",
+    "learn": [
+     {
+      "h": "Figurative language",
+      "b": "A metaphor compares two things without 'like' or 'as,' for example 'Time is a thief.' A simile uses 'like' or 'as.' Hyperbole is deliberate exaggeration. An oxymoron joins contradictory words, like 'deafening silence.'"
+     },
+     {
+      "h": "Repetition and irony",
+      "b": "Anaphora repeats words at the start of successive clauses, as in Churchill's 'We shall fight...' speech. Verbal irony means saying the opposite of what you mean."
+     },
+     {
+      "h": "Tone and choices",
+      "b": "Tone is the writer's attitude toward the subject. Diction is word choice and syntax is sentence structure. Both help create tone."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "'Time is a thief.' Which device is this?",
+      "o": [
+       "Simile",
+       "Metaphor",
+       "Hyperbole",
+       "Irony"
+      ],
+      "a": 1,
+      "why": "It compares time to a thief without using like or as."
+     },
+     {
+      "t": "mc",
+      "q": "'We shall fight on the beaches, we shall fight on the landing grounds...' uses which device?",
+      "o": [
+       "Alliteration",
+       "Hyperbole",
+       "Anaphora",
+       "Oxymoron"
+      ],
+      "a": 2,
+      "why": "Repeating 'we shall fight' at the start of each clause is anaphora."
+     },
+     {
+      "t": "mc",
+      "q": "What is verbal irony?",
+      "o": [
+       "Exaggeration for effect",
+       "Comparing using like or as",
+       "Repeating sounds",
+       "Saying the opposite of what you mean"
+      ],
+      "a": 3,
+      "why": "Saying 'Great weather!' during a storm is verbal irony."
+     },
+     {
+      "t": "mc",
+      "q": "What is tone?",
+      "o": [
+       "The writer's attitude toward the subject",
+       "A summary of the plot",
+       "The setting of a story",
+       "The rhyme scheme"
+      ],
+      "a": 0,
+      "why": "Tone shows how the writer feels, such as angry or hopeful."
+     },
+     {
+      "t": "tf",
+      "q": "Hyperbole is deliberate exaggeration.",
+      "a": true,
+      "why": "Example: 'I've told you a million times.'"
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Simile",
+        "Comparison using like or as"
+       ],
+       [
+        "Oxymoron",
+        "Contradictory pair of words"
+       ],
+       [
+        "Syntax",
+        "Sentence structure"
+       ],
+       [
+        "Diction",
+        "Word choice"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of an analysis paragraph in order",
+      "items": [
+       [
+        "Topic sentence",
+        1
+       ],
+       [
+        "Evidence from the text",
+        2
+       ],
+       [
+        "Explain the device used",
+        3
+       ],
+       [
+        "Link to the writer's purpose",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 'Time is a thief.' Type the device (one word).",
+      "a": [
+       "metaphor",
+       "a metaphor"
+      ],
+      "hint": "It compares without 'like' or 'as'.",
+      "why": "A metaphor compares directly."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 'We shall fight on the beaches, we shall fight on the landing grounds...' repeats opening words. Type the device.",
+      "a": [
+       "anaphora"
+      ],
+      "hint": "It starts with an a.",
+      "why": "Anaphora repeats words at the start of clauses."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for deliberate exaggeration.",
+      "a": [
+       "hyperbole"
+      ],
+      "hint": "It starts with h.",
+      "why": "Hyperbole is deliberate exaggeration."
+     }
+    ]
+   },
+   {
+    "title": "Tone, Diction and Syntax",
+    "period": "Style",
+    "learn": [
+     {
+      "h": "Diction and tone",
+      "b": "Diction is word choice. It can be formal ('commence'), informal ('start') or colloquial ('kick off'). Tone is the writer's attitude. Use precise tone words: sardonic (mocking and bitter), earnest (sincere), didactic (teaching), nostalgic (longing for the past)."
+     },
+     {
+      "h": "Syntax",
+      "b": "Syntax is how sentences are built. A periodic sentence delays the main clause until the end. A cumulative sentence starts with the main clause and adds details. Parallelism repeats a structure. Juxtaposition places contrasting ideas side by side."
+     },
+     {
+      "h": "Shifts",
+      "b": "A shift in tone, diction or syntax often signals a turn in the argument. Notice where the writer moves from praise to criticism, or from long sentences to a short one, and ask why."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A sardonic tone is",
+      "o": [
+       "warm and cheerful",
+       "calm and neutral",
+       "mocking and bitter",
+       "shy and uncertain"
+      ],
+      "a": 2,
+      "why": "Sardonic means scornfully mocking."
+     },
+     {
+      "t": "mc",
+      "q": "A sentence that delays its main clause until the end is",
+      "o": [
+       "periodic",
+       "cumulative",
+       "parallel",
+       "a fragment"
+      ],
+      "a": 0,
+      "why": "Periodic sentences build toward the main idea."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is formal diction?",
+      "o": [
+       "start",
+       "commence",
+       "kick off",
+       "get going"
+      ],
+      "a": 1,
+      "why": "Commence is the formal word for begin."
+     },
+     {
+      "t": "mc",
+      "q": "Placing two contrasting ideas side by side is",
+      "o": [
+       "allusion",
+       "anaphora",
+       "concession",
+       "juxtaposition"
+      ],
+      "a": 3,
+      "why": "Juxtaposition highlights differences."
+     },
+     {
+      "t": "tf",
+      "q": "Informal diction always weakens an argument.",
+      "a": false,
+      "why": "Informal diction can build connection with an audience."
+     },
+     {
+      "t": "match",
+      "q": "Match each tone word to its meaning",
+      "pairs": [
+       [
+        "sardonic",
+        "mocking, bitter"
+       ],
+       [
+        "earnest",
+        "sincere, serious"
+       ],
+       [
+        "didactic",
+        "meant to teach"
+       ],
+       [
+        "nostalgic",
+        "longing for the past"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for analyzing tone in order",
+      "items": [
+       [
+        "Read for diction and imagery",
+        1
+       ],
+       [
+        "Identify patterns and shifts",
+        2
+       ],
+       [
+        "Name the tone with a precise word",
+        3
+       ],
+       [
+        "Link the tone to the writer's purpose",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for a writer's word choice.",
+      "a": [
+       "diction"
+      ],
+      "hint": "It starts with d.",
+      "why": "Diction is word choice."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Placing contrasting ideas side by side is called ___. Type the term.",
+      "a": [
+       "juxtaposition"
+      ],
+      "hint": "It starts with j.",
+      "why": "Juxtaposition sets contrasts next to each other."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the tone word for a longing for the past.",
+      "a": [
+       "nostalgic",
+       "nostalgia"
+      ],
+      "hint": "It starts with n.",
+      "why": "A nostalgic tone looks back with longing."
+     }
+    ]
+   },
+   {
+    "title": "Writing the Essays",
+    "period": "Synthesis and Analysis",
+    "learn": [
+     {
+      "h": "Thesis and commentary",
+      "b": "A thesis is the main claim that guides the whole essay. After each piece of evidence, add commentary, your own explanation of why the evidence supports your thesis."
+     },
+     {
+      "h": "The three essays",
+      "b": "The synthesis essay asks you to build an argument using at least three of the provided sources. The rhetorical analysis essay asks how the writer's choices achieve a purpose. The argument essay asks you to defend a position."
+     },
+     {
+      "h": "Using sources well",
+      "b": "Blend quotes into your own sentences and explain them. Use transitions to link ideas. Do not just summarize the passage."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a thesis?",
+      "o": [
+       "The last sentence",
+       "The main claim that guides the essay",
+       "A quotation",
+       "A title"
+      ],
+      "a": 1,
+      "why": "Everything in the essay supports the thesis."
+     },
+     {
+      "t": "mc",
+      "q": "A synthesis essay requires you to use how many provided sources at minimum?",
+      "o": [
+       "One",
+       "All of them",
+       "At least three",
+       "None"
+      ],
+      "a": 2,
+      "why": "You must combine at least three sources to support your own argument."
+     },
+     {
+      "t": "mc",
+      "q": "What is the best way to use a quotation?",
+      "o": [
+       "Drop it in with no comment",
+       "Use only very long block quotes",
+       "Let it replace your own ideas",
+       "Blend it into your sentence and explain it"
+      ],
+      "a": 3,
+      "why": "Commentary connects the quote to your claim."
+     },
+     {
+      "t": "mc",
+      "q": "What does a rhetorical analysis essay ask you to do?",
+      "o": [
+       "Explain how the writer's choices achieve a purpose",
+       "Say whether you agree with the writer",
+       "Summarize the passage",
+       "Retell the plot"
+      ],
+      "a": 0,
+      "why": "It focuses on how, not just what, the author writes."
+     },
+     {
+      "t": "tf",
+      "q": "In a rhetorical analysis essay, you should mostly summarize the passage.",
+      "a": false,
+      "why": "You should analyze the writer's choices and their effects."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Thesis",
+        "Main claim of the essay"
+       ],
+       [
+        "Synthesis",
+        "Combining sources for your argument"
+       ],
+       [
+        "Commentary",
+        "Your explanation of evidence"
+       ],
+       [
+        "Transition",
+        "Word or phrase linking ideas"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing process in order",
+      "items": [
+       [
+        "Read the prompt carefully",
+        1
+       ],
+       [
+        "Plan a thesis and outline",
+        2
+       ],
+       [
+        "Write the draft",
+        3
+       ],
+       [
+        "Revise and proofread",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the main claim that guides an essay.",
+      "a": [
+       "thesis",
+       "a thesis",
+       "thesis statement"
+      ],
+      "hint": "It usually ends the introduction.",
+      "why": "The thesis is the guiding claim."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the minimum number of provided sources you must use in the synthesis essay? Type the number.",
+      "a": [
+       "3",
+       "three"
+      ],
+      "hint": "More than two.",
+      "why": "You must use at least three sources."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Explaining how evidence supports your claim is called ___. Type one word.",
+      "a": [
+       "commentary",
+       "analysis",
+       "explanation"
+      ],
+      "hint": "You add it after each quote.",
+      "why": "Commentary links evidence to the thesis."
+     }
+    ]
+   },
+   {
+    "title": "Rhetorical Analysis Essay",
+    "period": "Free Response",
+    "learn": [
+     {
+      "h": "The task",
+      "b": "In the rhetorical analysis question you read a passage and write an essay explaining how the writer's choices help achieve a purpose. You are not judging whether you agree, and you should not just summarize."
+     },
+     {
+      "h": "Scoring",
+      "b": "Each AP Lang essay is worth 6 points: Thesis (1 point), Evidence and Commentary (up to 4 points), and Sophistication (1 point). A strong thesis makes a defensible claim about the writer's choices and their purpose."
+     },
+     {
+      "h": "Good commentary",
+      "b": "Weak: 'The author uses a metaphor.' Strong: 'The metaphor frames debt as a cage, making readers feel trapped and ready to act.' Always explain how and why a choice works, not only what it is."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many points is each AP Lang free-response essay worth?",
+      "o": [
+       "6",
+       "9",
+       "4",
+       "10"
+      ],
+      "a": 0,
+      "why": "Thesis 1, evidence and commentary 4, sophistication 1."
+     },
+     {
+      "t": "mc",
+      "q": "What should a rhetorical analysis thesis do?",
+      "o": [
+       "Summarize the passage",
+       "Say whether you agree",
+       "List every device",
+       "State how the writer's choices achieve a purpose"
+      ],
+      "a": 3,
+      "why": "The thesis links choices to purpose."
+     },
+     {
+      "t": "mc",
+      "q": "Which commentary is strongest?",
+      "o": [
+       "The author uses a metaphor.",
+       "The metaphor frames debt as a cage, making readers feel trapped",
+       "The metaphor is very good.",
+       "A metaphor is a comparison."
+      ],
+      "a": 1,
+      "why": "It explains the effect on the audience."
+     },
+     {
+      "t": "mc",
+      "q": "A rhetorical analysis should focus on",
+      "o": [
+       "whether you like the text",
+       "the writer's biography",
+       "how and why the writer's choices work",
+       "the plot only"
+      ],
+      "a": 2,
+      "why": "Analysis explains effects and purpose."
+     },
+     {
+      "t": "tf",
+      "q": "Listing devices without explaining their effect earns high evidence scores.",
+      "a": false,
+      "why": "Commentary must explain how choices create meaning."
+     },
+     {
+      "t": "match",
+      "q": "Match each scoring term to its meaning",
+      "pairs": [
+       [
+        "thesis",
+        "defensible claim about choices and purpose"
+       ],
+       [
+        "evidence",
+        "specific details from the passage"
+       ],
+       [
+        "commentary",
+        "explains how evidence supports the thesis"
+       ],
+       [
+        "sophistication",
+        "nuanced view of the rhetorical situation"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Read the prompt and passage",
+        1
+       ],
+       [
+        "Identify speaker, audience and purpose",
+        2
+       ],
+       [
+        "Mark choices that serve the purpose",
+        3
+       ],
+       [
+        "Write the thesis and body paragraphs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many points is each AP Lang essay worth? Type the number.",
+      "a": [
+       "6",
+       "six"
+      ],
+      "hint": "Thesis plus evidence plus sophistication.",
+      "why": "1 + 4 + 1 = 6 points."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many points can the Evidence and Commentary row earn at most? Type the number.",
+      "a": [
+       "4",
+       "four"
+      ],
+      "hint": "It is the biggest row.",
+      "why": "Evidence and Commentary is worth up to 4 points."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A rhetorical analysis explains how and ___ a writer's choices work. Type the missing word.",
+      "a": [
+       "why"
+      ],
+      "hint": "It asks for the reason.",
+      "why": "Analysis explains both how and why choices work."
+     }
+    ]
+   },
+   {
+    "title": "Synthesis Essay",
+    "period": "Free Response",
+    "learn": [
+     {
+      "h": "The task",
+      "b": "In the synthesis question you get a prompt and about six or seven sources, including at least one visual such as a chart or cartoon. You take a defensible position on the issue and support it with the sources."
+     },
+     {
+      "h": "Using sources",
+      "b": "You must use at least three sources. Cite them by name or label, such as (Source A). Do not just summarize each source in turn. Combine them to build your own argument."
+     },
+     {
+      "h": "Planning",
+      "b": "You get a 15-minute reading period. Annotate sources, form a position, decide which sources support it, and plan how to respond to opposing views. Your voice should lead, and the sources should support."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many sources must you use in the synthesis essay?",
+      "o": [
+       "All of them",
+       "At least 3",
+       "Exactly 1",
+       "At least 6"
+      ],
+      "a": 1,
+      "why": "Use at least three sources."
+     },
+     {
+      "t": "mc",
+      "q": "In a synthesis essay, sources should be",
+      "o": [
+       "used to support your own argument",
+       "summarized one by one",
+       "ignored",
+       "copied in full"
+      ],
+      "a": 0,
+      "why": "The argument is yours; sources support it."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an acceptable way to cite a source?",
+      "o": [
+       "(Anonymous)",
+       "[Google]",
+       "(Source A)",
+       "No citation is needed"
+      ],
+      "a": 2,
+      "why": "Labels like Source A credit the source."
+     },
+     {
+      "t": "mc",
+      "q": "What is wrong with summarizing each source in turn?",
+      "o": [
+       "It is too short",
+       "It uses too many sources",
+       "It cites sources",
+       "It does not build your own argument"
+      ],
+      "a": 3,
+      "why": "Synthesis means combining sources to argue."
+     },
+     {
+      "t": "tf",
+      "q": "One of the sources in the synthesis prompt may be a visual such as a chart or cartoon.",
+      "a": true,
+      "why": "Prompts usually include at least one visual source."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "synthesis",
+        "combining sources into your argument"
+       ],
+       [
+        "position",
+        "your defensible stance"
+       ],
+       [
+        "citation",
+        "crediting a source"
+       ],
+       [
+        "counterargument",
+        "an opposing view"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Read the prompt",
+        1
+       ],
+       [
+        "Annotate the sources",
+        2
+       ],
+       [
+        "Form a position and thesis",
+        3
+       ],
+       [
+        "Write using the sources to support you",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the minimum number of sources to use in the synthesis essay? Type the number.",
+      "a": [
+       "3",
+       "three"
+      ],
+      "hint": "More than two.",
+      "why": "At least three sources are required."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: To cite the first source in a synthesis essay, you write (Source ___). Type the letter.",
+      "a": [
+       "A",
+       "a"
+      ],
+      "hint": "It is the first letter.",
+      "why": "The first source is Source A."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Combining several sources into your own argument is called ___. Type the word.",
+      "a": [
+       "synthesis"
+      ],
+      "hint": "It names the essay.",
+      "why": "Synthesis blends sources to support your claim."
+     }
+    ]
+   },
+   {
+    "title": "Argument Essay and Exam Strategy",
+    "period": "Free Response",
+    "learn": [
+     {
+      "h": "The argument essay",
+      "b": "The argument question gives a statement about an issue. You take a defensible position and support it with evidence from reading, observation and experience. You need your own thesis, not a summary of the prompt."
+     },
+     {
+      "h": "Handling complexity",
+      "b": "Strong arguments acknowledge nuance. Offer a concession (admit a fair opposing point), then a rebuttal (answer it). Qualify claims with words like 'often' or 'in most cases' instead of overstating."
+     },
+     {
+      "h": "The exam",
+      "b": "The AP Lang exam has two parts. Section I has 45 multiple-choice questions in 60 minutes (45% of the score). Section II has three essays in 135 minutes, including a 15-minute reading period (55% of the score)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many multiple-choice questions are on the AP Lang exam?",
+      "o": [
+       "45",
+       "30",
+       "55",
+       "60"
+      ],
+      "a": 0,
+      "why": "Section I has 45 questions in 60 minutes."
+     },
+     {
+      "t": "mc",
+      "q": "What share of the exam score comes from the free-response section?",
+      "o": [
+       "45%",
+       "25%",
+       "55%",
+       "70%"
+      ],
+      "a": 2,
+      "why": "Free response is 55 percent."
+     },
+     {
+      "t": "mc",
+      "q": "In the argument essay, evidence may come from",
+      "o": [
+       "only the passage",
+       "reading, observation and experience",
+       "only statistics",
+       "only your teacher"
+      ],
+      "a": 1,
+      "why": "You choose varied evidence to support your thesis."
+     },
+     {
+      "t": "mc",
+      "q": "What is the best way to handle a counterargument?",
+      "o": [
+       "Ignore it",
+       "Insult those who hold it",
+       "Repeat your thesis",
+       "Acknowledge it and respond with a rebuttal"
+      ],
+      "a": 3,
+      "why": "Concession plus rebuttal shows complexity."
+     },
+     {
+      "t": "tf",
+      "q": "The argument essay requires you to take a defensible position.",
+      "a": true,
+      "why": "A clear, defensible thesis is the core of the essay."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "concession",
+        "admits a fair opposing point"
+       ],
+       [
+        "rebuttal",
+        "answers an opposing view"
+       ],
+       [
+        "qualification",
+        "limits a claim, e.g. 'often'"
+       ],
+       [
+        "complexity",
+        "acknowledges nuance and tension"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the argument essay in order",
+      "items": [
+       [
+        "Read the prompt",
+        1
+       ],
+       [
+        "Choose a position",
+        2
+       ],
+       [
+        "Plan evidence and a counterargument",
+        3
+       ],
+       [
+        "Write and review",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many multiple-choice questions are on the AP Lang exam? Type the number.",
+      "a": [
+       "45",
+       "forty-five",
+       "forty five"
+      ],
+      "hint": "Section I, 60 minutes.",
+      "why": "There are 45 multiple-choice questions."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What percent of the AP Lang exam score is free response? Type the number.",
+      "a": [
+       "55",
+       "55%",
+       "fifty-five",
+       "fifty five"
+      ],
+      "hint": "It is more than half.",
+      "why": "Free response is 55% of the score."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Admitting a fair point from the opposing side is called a ___. Type the term.",
+      "a": [
+       "concession",
+       "concede"
+      ],
+      "hint": "It starts with c.",
+      "why": "A concession acknowledges a fair opposing point."
+     }
+    ]
+   }
+  ]
+ }
+}
