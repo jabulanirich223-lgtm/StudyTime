@@ -6,7 +6,7 @@ import { flashDeck } from '../lib/launch';
 import { shuffle } from '../lib/util';
 import { snd } from '../lib/sound';
 import { confetti } from '../lib/fx';
-import { stopSpeak } from '../lib/speech';
+import { stopSpeak, courseLang } from '../lib/speech';
 import { Tock } from '../components/Tock';
 import { Svg, SVG } from '../components/Icons';
 import { SpeakBtn } from './Lesson';
@@ -46,7 +46,7 @@ export function Flashcards() {
       <div className="l-body"><div className="l-inner">
         {c ? (
           <>
-            <div className="qhead"><span className="qkind"><i />Flashcards · {unitName(s, c.u)}</span><SpeakBtn text={() => (flip ? c.b : c.f)} /></div>
+            <div className="qhead"><span className="qkind"><i />Flashcards · {unitName(s, c.u)}</span><SpeakBtn segs={() => [{ text: flip ? c.b : c.f, lang: courseLang(useGame.getState().subject) }]} /></div>
             <div className={`flip ${flip ? 'on' : ''}`} role="button" tabIndex={0} aria-label="Flip card" onClick={() => { setFlip(!flip); snd('flip'); }}>
               <div className="flip-in"><div className="face"><div className="big">{c.f}</div><div className="hint">Tap or press space to flip</div></div><div className="face back"><div className="big">{c.b}</div></div></div>
             </div>

@@ -17,3 +17,10 @@ export const CAST = [
   { id: 'ms-hart', name: 'Ms. Hart', img: msHart, line: 'This one is on the test.' },
 ];
 export type CastMember = (typeof CAST)[number];
+
+/** Expressions made in ComfyUI from each character: src/assets/characters/faces/<id>-<happy|sad|talk>.png */
+const FACES = import.meta.glob('../assets/characters/faces/*.png', { eager: true, import: 'default' }) as Record<string, string>;
+export function face(c: CastMember, mood: 'neutral' | 'happy' | 'sad' | 'talk') {
+  if (mood === 'neutral') return c.img;
+  return FACES[`../assets/characters/faces/${c.id}-${mood}.png`] || c.img;
+}

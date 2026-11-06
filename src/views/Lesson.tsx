@@ -2,10 +2,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useGame, levelOf, checkBadges } from '../lib/store';
 import { useUI, type SessionCfg } from '../lib/ui';
 import { snd } from '../lib/sound';
-import { speak, stopSpeak, itemText, onSpeaking } from '../lib/speech';
+import { speakSegs, stopSpeak, itemSegs, onSpeaking, courseLang, type Seg } from '../lib/speech';
 import { confetti } from '../lib/fx';
 import { shuffle, fmtTime, fmtYear, pick } from '../lib/util';
-import { CAST } from '../data/cast';
+import { CAST, face, type CastMember } from '../data/cast';
 import { Tock } from '../components/Tock';
 import { Svg, SVG } from '../components/Icons';
 import type { Item, Mood, Question } from '../lib/types';
@@ -27,12 +27,12 @@ function answerText(it: Question) {
   return it.pairs.map((p) => `${p[0]} = ${p[1]}`).join('; ');
 }
 
-export function SpeakBtn({ text, icon }: { text: () => string; icon?: boolean }) {
+export function SpeakBtn({ segs, who = 'tock', icon }: { segs: () => Seg[]; who?: string; icon?: boolean }) {
   const [on, setOn] = useState(false);
-  useEffect(() => onSpeaking(setOn), []);
+  useEffect(() => onSpeaking((s) => setOn(s.on)), []);
   return (
     <button className="speak" aria-label={on ? 'Stop reading' : 'Read aloud'} title="Read aloud (R)" data-speak
-      onClick={() => (on ? stopSpeak() : speak(text()))}>
+      onClick={() => (on ? stopSpeak() : void speakSegs(segs(), who))}>
       <Svg html={SVG.speaker} />{!icon && <span>{on ? 'Stop' : 'Read aloud'}</span>}
     </button>
   );
@@ -55,6 +55,13 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
   const [result, setResult] = useState<Result | null>(null);
   const st = useRef({ correct: 0, wrong: [] as Question[], log: [] as Log[], bonus: 0, start: Date.now(), err: false, fb: '', end: cfg.timer ? Date.now() + cfg.timer * 1000 : 0, lastSec: 0, finished: false });
   const castSeed = useRef(Math.floor(Math.random() * CAST.length));
+  const lang = courseLang(useGame.getState().subject);
+  const askerFor = (k: number): CastMember | null => {
+    const x = items[k];
+    return x && x.t !== 'card' && !('stim' in x && x.stim) && !cfg.fast && cfg.kind !== 'apsim' ? CAST[(k + castSeed.current) % CAST.length] : null;
+  };
+  const askerRef = useRef<CastMember | null>(null);
+  askerRef.current = askerFor(i);
 
   const it = items[i];
   const ords = useRef(new Map<number, number[]>());
@@ -147,7 +154,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
   useEffect(() => {
     stopSpeak();
     if (it && useGame.getState().autoRead && !cfg.fast && phase === 'answer') {
-      const t = setTimeout(() => speak(itemText(it, ord)), 250);
+      const t = setTimeout(() => void speakSegs(itemSegs(it, ord, lang), askerRef.current?.id || 'tock'), 250);
       return () => clearTimeout(t);
     }
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -194,7 +201,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     snd(ok ? (c && c % 5 === 0 ? 'combo' : 'ok') : 'bad');
     setLastOk(ok); setPhase('feedback');
     s.fb = (ok ? 'Correct! ' : `Not quite. The correct answer is: ${answerText(it)}. `) + ('why' in it && it.why ? it.why : '');
-    if (useGame.getState().autoRead && !cfg.fast) speak(s.fb); else stopSpeak();
+    if (useGame.getState().autoRead && !cfg.fast) void speakSegs([{ text: s.fb }], askerRef.current?.id || 'tock'); else stopSpeak();
     if (cfg.fast && ok) setTimeout(() => { if (!st.current.finished) nextRef.current(); }, 650);
   }, [it, phase, combo, cfg, next, sel]); // eslint-disable-line react-hooks/exhaustive-deps
   const nextRef = useRef(next); nextRef.current = next;
@@ -249,7 +256,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
   const total = items.length;
   const left = cfg.timer ? st.current.end - now : 0;
   const pct = cfg.timer ? Math.max(0, (left / (cfg.timer * 1000)) * 100) : (i / total) * 100;
-  const asker = it.t !== 'card' && !('stim' in it && it.stim) && !cfg.fast && cfg.kind !== 'apsim' ? CAST[(i + castSeed.current) % CAST.length] : null;
+  const asker = askerFor(i);
   const kind = it.t === 'card' ? 'New idea' : it.t === 'mc' ? ('ap' in it && it.ap ? 'AP source question' : 'Choose the answer') : it.t === 'tf' ? 'True or false?' : it.t === 'match' ? 'Tap the matching pairs' : it.t === 'order' ? 'Put in order' : 'Date Dash';
   const footMood: Mood = lastOk ? (combo >= 5 ? 'fire' : 'cheer') : 'sad';
 
@@ -269,17 +276,17 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
             <div className="learncard">
               <Tock mood="think" />
               <div className="qcard">
-                <div className="qhead"><span className="qkind"><i />{cfg.title}</span><SpeakBtn text={() => itemText(it)} /></div>
+                <div className="qhead"><span className="qkind"><i />{cfg.title}</span><SpeakBtn segs={() => itemSegs(it)} /></div>
                 <h3>{it.h}</h3>
                 <p>{it.b}</p>
               </div>
             </div>
           ) : (
             <div className="qcard">
-              <div className="qhead"><span className="qkind"><i />{kind}</span>{!cfg.fast && <SpeakBtn text={() => itemText(it, ord)} />}</div>
+              <div className="qhead"><span className="qkind"><i />{kind}</span>{!cfg.fast && <SpeakBtn segs={() => itemSegs(it, ord, lang)} who={asker?.id || 'tock'} />}</div>
               {'stim' in it && it.stim && <div className="stim">{it.stim}<span className="src">Source: {it.src}</span></div>}
               {asker ? (
-                <div className="asker"><img src={asker.img} alt={asker.name} /><div className="speech"><span className="who">{asker.name}</span><h2 className="qtext">{it.q}</h2></div></div>
+                <div className="asker"><Face c={asker} mood={phase === 'feedback' ? (lastOk ? 'happy' : 'sad') : 'neutral'} /><div className="speech"><span className="who">{asker.name}</span><h2 className="qtext">{it.q}</h2></div></div>
               ) : <h2 className="qtext">{it.q}</h2>}
 
               {(it.t === 'mc' || it.t === 'year') && (
@@ -321,7 +328,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
             <>
               <div className="fb"><Tock mood={footMood} /><div><b>{lastOk ? (combo >= 5 ? pick(FIRE) : combo >= 3 ? `${combo} in a row!` : PRAISE[i % PRAISE.length]) : 'Correct answer:'}</b>
                 <span>{lastOk ? ('why' in it ? it.why : '') : answerText(it)}{!lastOk && 'why' in it && it.why ? <><br />{it.why}</> : null}</span></div></div>
-              <div className="foot-btns">{!cfg.fast && <SpeakBtn icon text={() => st.current.fb} />}<button className="btn" onClick={next}>Continue</button></div>
+              <div className="foot-btns">{!cfg.fast && <SpeakBtn icon segs={() => [{ text: st.current.fb }]} who={asker?.id || 'tock'} />}<button className="btn" onClick={next}>Continue</button></div>
             </>
           ) : it.t === 'match' ? (<><span className="muted small">Pairs check themselves as you go.</span><button className="btn" disabled>Check</button></>)
           : (<><button className="btn ghost" onClick={() => check(true)}>Skip</button><button className="btn green" disabled={!ready()} onClick={() => check()}>{cfg.exam ? 'Next' : 'Check'}</button></>)}
@@ -361,4 +368,18 @@ function Results({ r, cfg }: { r: Result; cfg: SessionCfg }) {
       </div></div>
     </div>
   );
+}
+
+/** A crew member whose face reacts: neutral while asking, happy/sad after you answer, and a talking mouth while their voice plays. */
+export function Face({ c, mood, size }: { c: CastMember; mood: 'neutral' | 'happy' | 'sad'; size?: number }) {
+  const [talk, setTalk] = useState(false);
+  const [frame, setFrame] = useState(false);
+  useEffect(() => onSpeaking((s) => setTalk(s.on && s.who === c.id)), [c.id]);
+  useEffect(() => {
+    if (!talk) { setFrame(false); return; }
+    const iv = setInterval(() => setFrame((f) => !f), 170);
+    return () => clearInterval(iv);
+  }, [talk]);
+  const src = talk && frame ? face(c, 'talk') : face(c, mood);
+  return <img className={`face ${talk ? 'talking' : ''}`} src={src} alt={c.name} style={size ? { width: size } : undefined} />;
 }

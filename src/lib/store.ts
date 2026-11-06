@@ -34,7 +34,7 @@ export type State = {
   mistakes: { s: SubjectId; q: Question }[];
   best: { lightning: number; ap: Partial<Record<SubjectId, number>> };
   stats: { lessons: number; perfect: number; maxCombo: number; fixed: number };
-  sound: boolean; autoRead: boolean; ttsRate: number; ttsPitch: number; voiceName: string;
+  sound: boolean; autoRead: boolean; charVoices: boolean; ttsRate: number; ttsPitch: number; voiceName: string;
   frozeUsed?: boolean;
 };
 
@@ -57,7 +57,7 @@ const fresh = (): State => ({
   done: {}, chests: {}, badges: {}, mistakes: [],
   best: { lightning: 0, ap: {} },
   stats: { lessons: 0, perfect: 0, maxCombo: 0, fixed: 0 },
-  sound: true, autoRead: false, ttsRate: 1, ttsPitch: 1, voiceName: '',
+  sound: true, autoRead: false, charVoices: true, ttsRate: 1, ttsPitch: 1, voiceName: '',
 });
 
 export const useGame = create<State & Actions>()(
