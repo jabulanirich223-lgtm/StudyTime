@@ -1,0 +1,5993 @@
+{
+ "de-1": {
+  "name": "German · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "Say Hallo for hello. Use Guten Morgen in the morning, Guten Tag during the day, Guten Abend in the evening and Gute Nacht before bed. To say goodbye, use Tschüss or Auf Wiedersehen."
+     },
+     {
+      "h": "Your name and feelings",
+      "b": "Say Ich heiße and your name: Ich heiße Anna means My name is Anna. Ask Wie geht's? to say How are you? and answer Gut, danke."
+     },
+     {
+      "h": "Polite words",
+      "b": "Danke means thank you and Bitte means please or you're welcome. All German nouns start with a capital letter."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'good morning' in German?",
+      "o": [
+       "Guten Abend",
+       "Gute Nacht",
+       "Guten Morgen",
+       "Tschüss"
+      ],
+      "a": 2,
+      "why": "Guten Morgen is used to greet people in the morning."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich heiße Anna' mean?",
+      "o": [
+       "I like Anna",
+       "My name is Anna",
+       "I am from Anna",
+       "Where is Anna"
+      ],
+      "a": 1,
+      "why": "Ich heiße means 'my name is'."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'thank you'?",
+      "o": [
+       "Bitte",
+       "Tschüss",
+       "Hallo",
+       "Danke"
+      ],
+      "a": 3,
+      "why": "Danke is the German word for thank you."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Wie geht's?' ask?",
+      "o": [
+       "What is your name?",
+       "How are you?",
+       "Where are you?",
+       "How old are you?"
+      ],
+      "a": 1,
+      "why": "Wie geht's? means 'How are you?'."
+     },
+     {
+      "t": "tf",
+      "q": "'Tschüss' means 'goodbye'.",
+      "a": true,
+      "why": "Tschüss is a casual way to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each German phrase to its meaning",
+      "pairs": [
+       [
+        "Hallo",
+        "Hello"
+       ],
+       [
+        "Danke",
+        "Thank you"
+       ],
+       [
+        "Auf Wiedersehen",
+        "Goodbye"
+       ],
+       [
+        "Gute Nacht",
+        "Good night"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Hello, my name is Max'",
+      "items": [
+       [
+        "Hallo",
+        1
+       ],
+       [
+        "ich",
+        2
+       ],
+       [
+        "heiße",
+        3
+       ],
+       [
+        "Max",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: thank you",
+      "a": [
+       "Danke"
+      ],
+      "hint": "One short word.",
+      "why": "Danke means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Guten Abend",
+      "a": [
+       "Good evening",
+       "evening"
+      ],
+      "hint": "Abend is evening.",
+      "why": "Guten Abend is used in the evening."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: My name is Lena",
+      "a": [
+       "Ich heiße Lena",
+       "Ich heisse Lena"
+      ],
+      "hint": "Use Ich heiße.",
+      "why": "Ich heiße plus the name means my name is."
+     }
+    ]
+   },
+   {
+    "title": "Numbers, Colors and Food",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "Count like this: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn. Use them for ages, prices and phone numbers."
+     },
+     {
+      "h": "Colors",
+      "b": "Rot is red, blau is blue, grün is green and gelb is yellow. Learn them together with the nouns, like der Apfel (the apple)."
+     },
+     {
+      "h": "Food and wishes",
+      "b": "Learn das Brot (bread), das Wasser (water), der Apfel (apple) and die Milch (milk). To ask politely, say Ich möchte. Ich möchte Wasser means I would like water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'sieben' in English?",
+      "o": [
+       "Five",
+       "Six",
+       "Seven",
+       "Eight"
+      ],
+      "a": 2,
+      "why": "Sieben is the number seven."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'green'?",
+      "o": [
+       "rot",
+       "blau",
+       "gelb",
+       "grün"
+      ],
+      "a": 3,
+      "why": "Grün means green."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'der Apfel' mean?",
+      "o": [
+       "The pear",
+       "The apple",
+       "The bread",
+       "The milk"
+      ],
+      "a": 1,
+      "why": "Der Apfel is the apple."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I would like water'?",
+      "o": [
+       "Ich möchte Wasser",
+       "Ich bin Wasser",
+       "Ich gehe Wasser",
+       "Ich habe möchte Wasser"
+      ],
+      "a": 0,
+      "why": "Ich möchte means 'I would like'."
+     },
+     {
+      "t": "tf",
+      "q": "'Die Milch' means 'milk'.",
+      "a": true,
+      "why": "Die Milch is milk."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its meaning",
+      "pairs": [
+       [
+        "eins",
+        "one"
+       ],
+       [
+        "drei",
+        "three"
+       ],
+       [
+        "acht",
+        "eight"
+       ],
+       [
+        "zehn",
+        "ten"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "zwei",
+        1
+       ],
+       [
+        "drei",
+        2
+       ],
+       [
+        "fünf",
+        3
+       ],
+       [
+        "sieben",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the number 5 in German",
+      "a": [
+       "fünf",
+       "funf",
+       "fuenf"
+      ],
+      "hint": "It comes after vier.",
+      "why": "Fünf is five."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: red",
+      "a": [
+       "rot"
+      ],
+      "hint": "Colors are written with a small letter.",
+      "why": "Rot is red."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: I would like water",
+      "a": [
+       "Ich möchte Wasser",
+       "Ich mochte Wasser",
+       "Ich moechte Wasser"
+      ],
+      "hint": "Use Ich möchte.",
+      "why": "Ich möchte plus a noun is a polite request."
+     }
+    ]
+   },
+   {
+    "title": "Family and Key Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Family words",
+      "b": "Learn die Mutter (mother), der Vater (father), der Bruder (brother) and die Schwester (sister). Der, die and das all mean 'the'."
+     },
+     {
+      "h": "The verb sein (to be)",
+      "b": "Sein has the forms ich bin (I am), du bist (you are) and er ist (he is). Ich bin Schüler means I am a pupil."
+     },
+     {
+      "h": "The verb haben (to have)",
+      "b": "Haben has the forms ich habe (I have), du hast (you have) and er hat (he has). Ich habe einen Bruder means I have a brother."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'die Schwester' mean?",
+      "o": [
+       "The mother",
+       "The aunt",
+       "The sister",
+       "The daughter"
+      ],
+      "a": 2,
+      "why": "Die Schwester means the sister."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ich ___ Schüler. (I am a pupil)",
+      "o": [
+       "bist",
+       "bin",
+       "ist",
+       "habe"
+      ],
+      "a": 1,
+      "why": "Bin is the 'I' form of sein (to be)."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a brother'?",
+      "o": [
+       "Ich bin einen Bruder",
+       "Ich habe einen Bruder",
+       "Er hat einen Bruder",
+       "Du hast einen Bruder"
+      ],
+      "a": 1,
+      "why": "Habe is the 'I' form of haben (to have)."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Sie ___ zwei Katzen. (She has two cats)",
+      "o": [
+       "habe",
+       "hast",
+       "hat",
+       "ist"
+      ],
+      "a": 2,
+      "why": "Hat is the 'he or she' form of haben."
+     },
+     {
+      "t": "tf",
+      "q": "'Der Vater' means 'the father'.",
+      "a": true,
+      "why": "Der Vater is the father."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "die Mutter",
+        "mother"
+       ],
+       [
+        "der Opa",
+        "grandfather"
+       ],
+       [
+        "der Sohn",
+        "son"
+       ],
+       [
+        "die Tante",
+        "aunt"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'My mother has two brothers'",
+      "items": [
+       [
+        "Meine Mutter",
+        1
+       ],
+       [
+        "hat",
+        2
+       ],
+       [
+        "zwei",
+        3
+       ],
+       [
+        "Brüder",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich ___ Schüler. (sein)",
+      "a": [
+       "bin"
+      ],
+      "hint": "Use the ich form of sein.",
+      "why": "Ich bin means I am."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Er ___ einen Bruder. (haben)",
+      "a": [
+       "hat"
+      ],
+      "hint": "Use the er form of haben.",
+      "why": "Er hat means he has."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: the mother",
+      "a": [
+       "die Mutter",
+       "Mutter"
+      ],
+      "hint": "Mother is feminine.",
+      "why": "Die Mutter is the mother."
+     }
+    ]
+   },
+   {
+    "title": "Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Articles and plurals",
+      "b": "German has three words for 'the': der, die and das. The plural is always die. Plurals change in different ways: das Buch becomes die Bücher."
+     },
+     {
+      "h": "Days of the week",
+      "b": "The days are Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag and Sonntag. They are written with a capital letter."
+     },
+     {
+      "h": "Asking where",
+      "b": "Use Wo ist...? to ask where something is. Wo ist die Schule? means Where is the school? Das Haus (house) uses das."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which article goes with 'Haus' (house)?",
+      "o": [
+       "der",
+       "die",
+       "das",
+       "den"
+      ],
+      "a": 2,
+      "why": "Haus is neuter, so it uses das."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'Buch' (book)?",
+      "o": [
+       "Buchs",
+       "Bücher",
+       "Büche",
+       "Buchen"
+      ],
+      "a": 1,
+      "why": "The plural of das Buch is die Bücher."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Mittwoch' mean?",
+      "o": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday"
+      ],
+      "a": 2,
+      "why": "Mittwoch means Wednesday (literally 'mid-week')."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Wo ist die Schule?' ask?",
+      "o": [
+       "What is the school?",
+       "Where is the school?",
+       "Who is at school?",
+       "When is school?"
+      ],
+      "a": 1,
+      "why": "Wo means 'where'."
+     },
+     {
+      "t": "tf",
+      "q": "'Samstag' means Sunday.",
+      "a": false,
+      "why": "Samstag is Saturday; Sunday is Sonntag."
+     },
+     {
+      "t": "match",
+      "q": "Match each day to its meaning",
+      "pairs": [
+       [
+        "Montag",
+        "Monday"
+       ],
+       [
+        "Freitag",
+        "Friday"
+       ],
+       [
+        "Sonntag",
+        "Sunday"
+       ],
+       [
+        "Donnerstag",
+        "Thursday"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order, starting from Monday",
+      "items": [
+       [
+        "Montag",
+        1
+       ],
+       [
+        "Dienstag",
+        2
+       ],
+       [
+        "Donnerstag",
+        3
+       ],
+       [
+        "Samstag",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: Monday",
+      "a": [
+       "Montag"
+      ],
+      "hint": "Days start with a capital letter.",
+      "why": "Montag is Monday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Wo ist die Schule?",
+      "a": [
+       "Where is the school"
+      ],
+      "hint": "Wo means where.",
+      "why": "Wo ist...? asks where something is."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the plural of das Buch (with the article)",
+      "a": [
+       "die Bücher",
+       "Bücher",
+       "die Bucher",
+       "Bucher",
+       "die Buecher",
+       "Buecher"
+      ],
+      "hint": "The plural article is die and the vowel changes.",
+      "why": "Das Buch becomes die Bücher."
+     }
+    ]
+   },
+   {
+    "title": "Regular Verbs and Word Order",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Present tense endings",
+      "b": "Regular verbs drop -en and add endings. Wohnen (to live): ich wohne, du wohnst, er/sie wohnt, wir wohnen, ihr wohnt, sie wohnen. Lernen (to learn) works the same way."
+     },
+     {
+      "h": "Where are you from?",
+      "b": "Ask Woher kommst du? (Where do you come from?). Answer Ich komme aus Italien (I come from Italy). Say Ich wohne in Berlin for where you live."
+     },
+     {
+      "h": "Verb in second place",
+      "b": "In a German statement the verb is always the second idea. Ich lerne Deutsch. Heute lerne ich Deutsch. The verb stays second even when a time word comes first."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Ich ___ in Berlin.",
+      "o": [
+       "wohnst",
+       "wohnt",
+       "wohne",
+       "wohnen"
+      ],
+      "a": 2,
+      "why": "With ich the verb ends in -e."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Du ___ Deutsch. (lernen)",
+      "o": [
+       "lernst",
+       "lerne",
+       "lernt",
+       "lernen"
+      ],
+      "a": 0,
+      "why": "With du the ending is -st."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Woher kommst du?' mean?",
+      "o": [
+       "Where are you going?",
+       "How are you?",
+       "What is your name?",
+       "Where do you come from?"
+      ],
+      "a": 3,
+      "why": "Woher means from where."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Er ___ Fußball. (spielen)",
+      "o": [
+       "spiele",
+       "spielt",
+       "spielst",
+       "spielen"
+      ],
+      "a": 1,
+      "why": "With er the ending is -t."
+     },
+     {
+      "t": "tf",
+      "q": "In 'Heute spiele ich Tennis' the verb is in second place.",
+      "a": true,
+      "why": "The verb stays second even after a time word."
+     },
+     {
+      "t": "match",
+      "q": "Match each German phrase to its meaning",
+      "pairs": [
+       [
+        "ich wohne",
+        "I live"
+       ],
+       [
+        "du lernst",
+        "you learn"
+       ],
+       [
+        "wir spielen",
+        "we play"
+       ],
+       [
+        "sie kommt",
+        "she comes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I live in Munich'",
+      "items": [
+       [
+        "Ich",
+        1
+       ],
+       [
+        "wohne",
+        2
+       ],
+       [
+        "in",
+        3
+       ],
+       [
+        "München",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: I live in Berlin",
+      "a": [
+       "Ich wohne in Berlin"
+      ],
+      "hint": "Verb second: Ich wohne...",
+      "why": "Wohnen with ich becomes wohne."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Du ___ gern. (spielen)",
+      "a": [
+       "spielst"
+      ],
+      "hint": "Add -st to the stem spiel.",
+      "why": "Du spielst means you play."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Ich komme aus Italien",
+      "a": [
+       "I come from Italy",
+       "I am from Italy",
+       "I'm from Italy"
+      ],
+      "hint": "Aus means from.",
+      "why": "Ich komme aus means I come from."
+     }
+    ]
+   },
+   {
+    "title": "Numbers to 100 and Time",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Eleven to twenty",
+      "b": "Elf is 11 and zwölf is 12. Then add -zehn: dreizehn (13), vierzehn (14), fünfzehn (15). Zwanzig is 20."
+     },
+     {
+      "h": "Tens and hundred",
+      "b": "The tens are zwanzig, dreißig, vierzig, fünfzig and hundert is 100. German says the one first: einundzwanzig means one-and-twenty (21). Age: Ich bin zwanzig Jahre alt."
+     },
+     {
+      "h": "Telling the time",
+      "b": "Ask Wie spät ist es? Answer Es ist drei Uhr (It is three o'clock). Uhr means o'clock or clock. Months are Januar, Februar, März, April and so on."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 12 in German?",
+      "o": [
+       "elf",
+       "zwanzig",
+       "zwölf",
+       "zehn"
+      ],
+      "a": 2,
+      "why": "Zwölf is 12; elf is 11."
+     },
+     {
+      "t": "mc",
+      "q": "What number is 'dreißig'?",
+      "o": [
+       "30",
+       "13",
+       "3",
+       "300"
+      ],
+      "a": 0,
+      "why": "Dreißig is 30."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 21 in German?",
+      "o": [
+       "zwanzigeins",
+       "zweiundzwanzig",
+       "einsundzwanzig",
+       "einundzwanzig"
+      ],
+      "a": 3,
+      "why": "German says one-and-twenty."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Wie spät ist es?' mean?",
+      "o": [
+       "How old are you?",
+       "What time is it?",
+       "How are you?",
+       "Where is it?"
+      ],
+      "a": 1,
+      "why": "Spät means late, and the phrase asks the time."
+     },
+     {
+      "t": "tf",
+      "q": "'Vierzig' means 14.",
+      "a": false,
+      "why": "Vierzig is 40; 14 is vierzehn."
+     },
+     {
+      "t": "match",
+      "q": "Match each number word to its digits",
+      "pairs": [
+       [
+        "elf",
+        "11"
+       ],
+       [
+        "fünfzehn",
+        "15"
+       ],
+       [
+        "fünfzig",
+        "50"
+       ],
+       [
+        "hundert",
+        "100"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers from smallest to largest",
+      "items": [
+       [
+        "drei",
+        1
+       ],
+       [
+        "elf",
+        2
+       ],
+       [
+        "zwanzig",
+        3
+       ],
+       [
+        "hundert",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write 13 in German",
+      "a": [
+       "dreizehn"
+      ],
+      "hint": "Three plus -zehn.",
+      "why": "Dreizehn is 13."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Es ist fünf Uhr",
+      "a": [
+       "It is five o'clock",
+       "It's five o'clock",
+       "It is 5 o'clock",
+       "It is five",
+       "It's five",
+       "Its five oclock"
+      ],
+      "hint": "Uhr means o'clock.",
+      "why": "Es ist fünf Uhr means it is five o'clock."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write 'vierzig' as digits",
+      "a": [
+       "40"
+      ],
+      "hint": "Vier means four, zig means ten times.",
+      "why": "Vierzig is 40."
+     }
+    ]
+   },
+   {
+    "title": "Home and City",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Rooms",
+      "b": "Das Haus is the house and die Wohnung is the apartment. Rooms: die Küche (kitchen), das Bad (bathroom), das Schlafzimmer (bedroom), das Wohnzimmer (living room)."
+     },
+     {
+      "h": "In the city",
+      "b": "Die Stadt is the city and die Straße is the street. Learn der Park (park) and der Supermarkt (supermarket). Der Supermarkt is where you buy food."
+     },
+     {
+      "h": "Saying where you live",
+      "b": "Say Ich wohne in einer Wohnung (I live in an apartment) or Ich wohne in einem Haus. Describe a room with ist: Das Zimmer ist groß (The room is big)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'die Küche' mean?",
+      "o": [
+       "the bathroom",
+       "the bedroom",
+       "the kitchen",
+       "the street"
+      ],
+      "a": 2,
+      "why": "Die Küche is the kitchen."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'das Schlafzimmer'?",
+      "o": [
+       "the bedroom",
+       "the living room",
+       "the kitchen",
+       "the garden"
+      ],
+      "a": 0,
+      "why": "Schlaf means sleep and Zimmer means room."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'die Stadt' mean?",
+      "o": [
+       "the street",
+       "the park",
+       "the house",
+       "the city"
+      ],
+      "a": 3,
+      "why": "Die Stadt is the city or town."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich wohne in einem Haus' mean?",
+      "o": [
+       "I buy a house",
+       "I live in a house",
+       "I see a house",
+       "I like the house"
+      ],
+      "a": 1,
+      "why": "Wohnen means to live."
+     },
+     {
+      "t": "tf",
+      "q": "Der Supermarkt is a place to buy food.",
+      "a": true,
+      "why": "A Supermarkt is a supermarket."
+     },
+     {
+      "t": "match",
+      "q": "Match each German word to its meaning",
+      "pairs": [
+       [
+        "die Küche",
+        "kitchen"
+       ],
+       [
+        "das Bad",
+        "bathroom"
+       ],
+       [
+        "der Park",
+        "park"
+       ],
+       [
+        "die Straße",
+        "street"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'The room is big'",
+      "items": [
+       [
+        "Das",
+        1
+       ],
+       [
+        "Zimmer",
+        2
+       ],
+       [
+        "ist",
+        3
+       ],
+       [
+        "groß",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: the kitchen",
+      "a": [
+       "die Küche",
+       "Küche",
+       "die Kuche",
+       "Kuche",
+       "die Kueche"
+      ],
+      "hint": "Feminine noun with die.",
+      "why": "Die Küche is the kitchen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: das Wohnzimmer",
+      "a": [
+       "the living room",
+       "living room"
+      ],
+      "hint": "Wohnen means to live.",
+      "why": "Das Wohnzimmer is the living room."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: The city is big",
+      "a": [
+       "Die Stadt ist groß",
+       "Die Stadt ist gross"
+      ],
+      "hint": "Stadt is feminine.",
+      "why": "Die Stadt ist groß."
+     }
+    ]
+   },
+   {
+    "title": "Questions and Negation",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Question words",
+      "b": "Wer is who, was is what, wo is where, wann is when, warum is why and wie is how. Wo wohnst du? means Where do you live? The question word comes first and the verb second."
+     },
+     {
+      "h": "Yes or no questions",
+      "b": "For a yes or no question the verb goes first: Hast du einen Bruder? (Do you have a brother?). Answer Ja or Nein."
+     },
+     {
+      "h": "Nicht and kein",
+      "b": "Use kein for nouns with ein or no article: Ich habe kein Auto, Ich habe keinen Bruder. Use nicht for verbs and adjectives: Ich bin nicht müde (I am not tired)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'was' mean?",
+      "o": [
+       "who",
+       "where",
+       "what",
+       "when"
+      ],
+      "a": 2,
+      "why": "Was means what."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Wo wohnst du?' mean?",
+      "o": [
+       "Where do you live?",
+       "Who lives here?",
+       "When do you live?",
+       "How are you?"
+      ],
+      "a": 0,
+      "why": "Wo means where."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ich habe ___ Auto.",
+      "o": [
+       "nicht",
+       "nein",
+       "keine",
+       "kein"
+      ],
+      "a": 3,
+      "why": "Kein negates a noun: kein Auto."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ich bin ___ müde.",
+      "o": [
+       "kein",
+       "nicht",
+       "keine",
+       "nein"
+      ],
+      "a": 1,
+      "why": "Nicht negates an adjective."
+     },
+     {
+      "t": "tf",
+      "q": "'Hast du Hunger?' is a yes or no question, so the verb comes first.",
+      "a": true,
+      "why": "Yes or no questions start with the verb."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "wer",
+        "who"
+       ],
+       [
+        "wo",
+        "where"
+       ],
+       [
+        "wann",
+        "when"
+       ],
+       [
+        "warum",
+        "why"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Do you have a sister?'",
+      "items": [
+       [
+        "Hast",
+        1
+       ],
+       [
+        "du",
+        2
+       ],
+       [
+        "eine",
+        3
+       ],
+       [
+        "Schwester",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: Where do you live?",
+      "a": [
+       "Wo wohnst du"
+      ],
+      "hint": "Question word first, then the verb.",
+      "why": "Wo wohnst du? asks where you live."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich habe ___ Bruder. (I have no brother)",
+      "a": [
+       "keinen"
+      ],
+      "hint": "Der Bruder is masculine, so kein gets -en.",
+      "why": "Ich habe keinen Bruder."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Ich bin nicht müde",
+      "a": [
+       "I am not tired",
+       "I'm not tired"
+      ],
+      "hint": "Nicht means not.",
+      "why": "Müde means tired."
+     }
+    ]
+   },
+   {
+    "title": "Shopping, Clothes and Weather",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Clothes",
+      "b": "Die Hose is the trousers, das T-Shirt is the T-shirt, der Pullover is the sweater and die Jacke is the jacket. Die Schuhe means the shoes and is always plural."
+     },
+     {
+      "h": "Prices",
+      "b": "Ask Wie viel kostet das? (How much does that cost?). Answer Das kostet zehn Euro. Use the numbers you know for the price."
+     },
+     {
+      "h": "Weather",
+      "b": "Es regnet means it is raining and es schneit means it is snowing. Die Sonne scheint means the sun is shining. Es ist kalt, warm or heiß describes the temperature."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'die Hose'?",
+      "o": [
+       "the jacket",
+       "the shoes",
+       "the trousers",
+       "the sweater"
+      ],
+      "a": 2,
+      "why": "Die Hose is the trousers."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Es regnet' mean?",
+      "o": [
+       "It is raining",
+       "It is snowing",
+       "It is cold",
+       "It is sunny"
+      ],
+      "a": 0,
+      "why": "Regnen means to rain."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Wie viel kostet das?' mean?",
+      "o": [
+       "What is that?",
+       "Where is that?",
+       "Who is that?",
+       "How much does that cost?"
+      ],
+      "a": 3,
+      "why": "Kosten means to cost."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'kalt' mean?",
+      "o": [
+       "hot",
+       "cold",
+       "warm",
+       "wet"
+      ],
+      "a": 1,
+      "why": "Kalt is cold."
+     },
+     {
+      "t": "tf",
+      "q": "'Es schneit' means 'It is windy'.",
+      "a": false,
+      "why": "Es schneit means it is snowing."
+     },
+     {
+      "t": "match",
+      "q": "Match each German word to its meaning",
+      "pairs": [
+       [
+        "die Jacke",
+        "jacket"
+       ],
+       [
+        "heiß",
+        "hot"
+       ],
+       [
+        "die Sonne",
+        "sun"
+       ],
+       [
+        "der Pullover",
+        "sweater"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'How much does that cost?'",
+      "items": [
+       [
+        "Wie",
+        1
+       ],
+       [
+        "viel",
+        2
+       ],
+       [
+        "kostet",
+        3
+       ],
+       [
+        "das",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: It is raining",
+      "a": [
+       "Es regnet"
+      ],
+      "hint": "Use the verb regnen.",
+      "why": "Es regnet means it is raining."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: the shoes",
+      "a": [
+       "die Schuhe",
+       "Schuhe"
+      ],
+      "hint": "Plural, so use die.",
+      "why": "Die Schuhe is the shoes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Das kostet zwanzig Euro. How many euros? (digits)",
+      "a": [
+       "20"
+      ],
+      "hint": "Zwanzig is 20.",
+      "why": "Zwanzig is 20."
+     }
+    ]
+   },
+   {
+    "title": "Hobbies and Modal Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hobbies",
+      "b": "Ich spiele Gitarre (I play guitar), ich höre Musik (I listen to music), ich lese Bücher (I read books). Add gern to say you like doing it: Ich schwimme gern."
+     },
+     {
+      "h": "Can, want, must",
+      "b": "Können means can: ich kann, du kannst. Möchten means would like: ich möchte. Müssen means must: ich muss."
+     },
+     {
+      "h": "Modal verb order",
+      "b": "A modal verb is second and the other verb goes to the end in the infinitive. Ich kann gut schwimmen means I can swim well. Ich muss lernen means I have to study."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Ich schwimme gern' mean?",
+      "o": [
+       "I can swim",
+       "I must swim",
+       "I like swimming",
+       "I do not swim"
+      ],
+      "a": 2,
+      "why": "Gern means gladly, so it shows you like it."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich kann Gitarre spielen' mean?",
+      "o": [
+       "I can play guitar",
+       "I like guitar",
+       "I want a guitar",
+       "I must play guitar"
+      ],
+      "a": 0,
+      "why": "Können means can."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ich ___ schwimmen. (can)",
+      "o": [
+       "kannst",
+       "können",
+       "kanne",
+       "kann"
+      ],
+      "a": 3,
+      "why": "Ich kann is the correct form."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'lesen' mean?",
+      "o": [
+       "to write",
+       "to read",
+       "to listen",
+       "to learn"
+      ],
+      "a": 1,
+      "why": "Lesen is to read."
+     },
+     {
+      "t": "tf",
+      "q": "In 'Ich kann Deutsch sprechen' the verb sprechen goes to the end.",
+      "a": true,
+      "why": "After a modal verb the infinitive goes to the end."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "hören",
+        "to listen"
+       ],
+       [
+        "lesen",
+        "to read"
+       ],
+       [
+        "schwimmen",
+        "to swim"
+       ],
+       [
+        "tanzen",
+        "to dance"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I can swim well'",
+      "items": [
+       [
+        "Ich",
+        1
+       ],
+       [
+        "kann",
+        2
+       ],
+       [
+        "gut",
+        3
+       ],
+       [
+        "schwimmen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: I like to dance",
+      "a": [
+       "Ich tanze gern"
+      ],
+      "hint": "Use tanzen and gern.",
+      "why": "Gern shows you like doing it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Du ___ gut singen. (können)",
+      "a": [
+       "kannst"
+      ],
+      "hint": "Use the du form.",
+      "why": "Du kannst means you can."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Ich muss lernen",
+      "a": [
+       "I have to study",
+       "I must study",
+       "I have to learn",
+       "I must learn"
+      ],
+      "hint": "Müssen means must.",
+      "why": "Ich muss lernen means I have to study."
+     }
+    ]
+   }
+  ]
+ },
+ "de-2": {
+  "name": "German · Intermediate",
+  "units": [
+   {
+    "title": "The Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Perfekt with haben",
+      "b": "Most verbs use haben plus a past participle at the end. Ich habe Pizza gegessen means I ate pizza. Wir haben gespielt means we played."
+     },
+     {
+      "h": "Verbs with sein",
+      "b": "Verbs of movement and change, like gehen (to go) and fahren (to drive), use sein. Ich bin ins Kino gegangen means I went to the cinema."
+     },
+     {
+      "h": "Past time words",
+      "b": "Use gestern (yesterday), heute Morgen (this morning), letzte Woche (last week) and letztes Jahr (last year). They show the action is finished."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Gestern ___ ich Pizza gegessen. (I ate)",
+      "o": [
+       "bin",
+       "habe",
+       "hat",
+       "hast"
+      ],
+      "a": 1,
+      "why": "Essen uses haben: ich habe gegessen."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Wir haben gespielt' mean?",
+      "o": [
+       "We play",
+       "We will play",
+       "We played",
+       "They played"
+      ],
+      "a": 2,
+      "why": "Wir haben gespielt is the Perfekt: we played."
+     },
+     {
+      "t": "mc",
+      "q": "Which helper verb does 'gehen' use in the Perfekt?",
+      "o": [
+       "haben",
+       "sein",
+       "werden",
+       "müssen"
+      ],
+      "a": 1,
+      "why": "Gehen is a verb of movement and takes sein."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'gestern' mean?",
+      "o": [
+       "Yesterday",
+       "Tomorrow",
+       "Today",
+       "Tonight"
+      ],
+      "a": 0,
+      "why": "Gestern means yesterday."
+     },
+     {
+      "t": "tf",
+      "q": "'Ich bin ins Kino gegangen' means 'I went to the cinema'.",
+      "a": true,
+      "why": "Ich bin gegangen is the Perfekt of gehen: I went."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "gestern",
+        "yesterday"
+       ],
+       [
+        "heute Morgen",
+        "this morning"
+       ],
+       [
+        "letzte Woche",
+        "last week"
+       ],
+       [
+        "letztes Jahr",
+        "last year"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yesterday I ate pizza'",
+      "items": [
+       [
+        "Gestern",
+        1
+       ],
+       [
+        "habe",
+        2
+       ],
+       [
+        "ich",
+        3
+       ],
+       [
+        "Pizza gegessen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich habe Pizza ___. (essen)",
+      "a": [
+       "gegessen"
+      ],
+      "hint": "ge- plus the verb.",
+      "why": "Gegessen is the participle of essen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: gestern",
+      "a": [
+       "yesterday"
+      ],
+      "hint": "It shows a finished action.",
+      "why": "Gestern means yesterday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich ___ ins Kino gegangen. (haben or sein)",
+      "a": [
+       "bin"
+      ],
+      "hint": "Gehen is a movement verb.",
+      "why": "Movement verbs use sein."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Travel",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Use links (left), rechts (right) and geradeaus (straight ahead). An der Ecke means at the corner."
+     },
+     {
+      "h": "Near and far",
+      "b": "In der Nähe von means near and weit weg means far away. To ask the way, say Wie komme ich zum Bahnhof? (How do I get to the station?)."
+     },
+     {
+      "h": "Travel words",
+      "b": "Learn der Bahnhof (station), der Flughafen (airport), die Fahrkarte (ticket) and das Zimmer (room). Use buchen for to book."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'links' mean?",
+      "o": [
+       "right",
+       "left",
+       "straight",
+       "back"
+      ],
+      "a": 1,
+      "why": "Links means left; rechts means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'geradeaus' mean?",
+      "o": [
+       "turn around",
+       "at the corner",
+       "straight ahead",
+       "far away"
+      ],
+      "a": 2,
+      "why": "Geradeaus means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask 'How do I get to the station?'",
+      "o": [
+       "Wer ist der Bahnhof?",
+       "Wo ist du Bahnhof?",
+       "Was kostet der Bahnhof?",
+       "Wie komme ich zum Bahnhof?"
+      ],
+      "a": 3,
+      "why": "Wie komme ich zu...? is the usual way to ask for directions."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'das Zimmer' at a hotel?",
+      "o": [
+       "The room",
+       "The bill",
+       "The key",
+       "The pool"
+      ],
+      "a": 0,
+      "why": "Das Zimmer means the room."
+     },
+     {
+      "t": "tf",
+      "q": "'In der Nähe von' means 'far from'.",
+      "a": false,
+      "why": "In der Nähe von means near; weit weg means far away."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "der Flughafen",
+        "airport"
+       ],
+       [
+        "die Fahrkarte",
+        "ticket"
+       ],
+       [
+        "rechts",
+        "right"
+       ],
+       [
+        "die Ecke",
+        "corner"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these travel steps in a logical order",
+      "items": [
+       [
+        "Ich kaufe eine Fahrkarte",
+        1
+       ],
+       [
+        "Ich fahre zum Flughafen",
+        2
+       ],
+       [
+        "Ich steige ins Flugzeug",
+        3
+       ],
+       [
+        "Ich komme im Hotel an",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: links",
+      "a": [
+       "left",
+       "to the left",
+       "on the left"
+      ],
+      "hint": "It is the opposite of rechts.",
+      "why": "Links is left."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Wie komme ich zum Bahnhof?",
+      "a": [
+       "How do I get to the station",
+       "How do I get to the train station"
+      ],
+      "hint": "Bahnhof is the station.",
+      "why": "It asks how to get to the station."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: the ticket",
+      "a": [
+       "die Fahrkarte",
+       "Fahrkarte"
+      ],
+      "hint": "It starts with Fahr-.",
+      "why": "Die Fahrkarte is the ticket."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Preferences",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Liking things",
+      "b": "Use ich mag (I like) and ich finde...gut (I think...is good). Ich mag Musik means I like music. Say ich mag nicht or ich finde...schlecht for the negative."
+     },
+     {
+      "h": "Giving your opinion",
+      "b": "Say ich denke, dass... for I think that... The verb goes to the end after dass: Ich denke, dass es gut ist. Say ich bin einverstanden for I agree."
+     },
+     {
+      "h": "Preferring and explaining",
+      "b": "Use lieber to say you prefer something: Ich spiele lieber Fußball. Weil means because and besser als means better than. The verb also goes to the end after weil."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Ich bin einverstanden' mean?",
+      "o": [
+       "I'm tired",
+       "I disagree",
+       "I agree",
+       "I'm late"
+      ],
+      "a": 2,
+      "why": "Einverstanden means in agreement."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I think that it is good'?",
+      "o": [
+       "Ich denke, dass es gut ist",
+       "Ich denke, dass ist es gut",
+       "Ich denke es dass gut ist",
+       "Ich bin gut dass es"
+      ],
+      "a": 0,
+      "why": "After dass, the verb goes to the end of the clause."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'weil' mean?",
+      "o": [
+       "but",
+       "because",
+       "or",
+       "although"
+      ],
+      "a": 1,
+      "why": "Weil introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich spiele lieber Fußball' mean?",
+      "o": [
+       "I never play soccer",
+       "I played soccer yesterday",
+       "I hate soccer",
+       "I prefer playing soccer"
+      ],
+      "a": 3,
+      "why": "Lieber shows a preference."
+     },
+     {
+      "t": "tf",
+      "q": "'Ich finde das schlecht' means 'I think that is bad'.",
+      "a": true,
+      "why": "Schlecht means bad."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "ich mag",
+        "I like"
+       ],
+       [
+        "besser als",
+        "better than"
+       ],
+       [
+        "ich denke, dass",
+        "I think that"
+       ],
+       [
+        "lieber",
+        "rather, prefer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I find the film very good'",
+      "items": [
+       [
+        "Ich finde",
+        1
+       ],
+       [
+        "den Film",
+        2
+       ],
+       [
+        "sehr",
+        3
+       ],
+       [
+        "gut",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Ich mag Musik",
+      "a": [
+       "I like music"
+      ],
+      "hint": "Mögen means to like.",
+      "why": "Ich mag means I like."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich denke, ___ es gut ist.",
+      "a": [
+       "dass"
+      ],
+      "hint": "It means that.",
+      "why": "Dass sends the verb to the end."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: because",
+      "a": [
+       "weil"
+      ],
+      "hint": "The verb goes to the end after it.",
+      "why": "Weil means because."
+     }
+    ]
+   },
+   {
+    "title": "Plans and Routines",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Talking about the future",
+      "b": "Use werden plus a verb for the future: Ich werde reisen means I will travel. You can also use the present with a time word: Morgen fahre ich nach Berlin."
+     },
+     {
+      "h": "Daily routine verbs",
+      "b": "Many routine verbs split in two: ich stehe um sieben auf (I get up at seven). Others are reflexive: ich ziehe mich an (I get dressed). Ich gehe ins Bett means I go to bed."
+     },
+     {
+      "h": "Past of sein",
+      "b": "In the simple past, ich bin becomes ich war (I was). It is often used instead of the Perfekt. Time words include nächstes Jahr (next year) and immer (always)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Morgen ___ ich nach Berlin reisen. (I will travel)",
+      "o": [
+       "werde",
+       "wurde",
+       "bin",
+       "habe"
+      ],
+      "a": 0,
+      "why": "Werden + a verb at the end forms the future."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich stehe um sieben auf' mean?",
+      "o": [
+       "I go to bed at seven",
+       "I get up at seven",
+       "I eat at seven",
+       "I left at seven"
+      ],
+      "a": 1,
+      "why": "Aufstehen means to get up."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'ich war' mean?",
+      "o": [
+       "I will be",
+       "I am",
+       "I was",
+       "I have"
+      ],
+      "a": 2,
+      "why": "War is the simple past of sein."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'nächstes Jahr' mean?",
+      "o": [
+       "last year",
+       "every year",
+       "this year",
+       "next year"
+      ],
+      "a": 3,
+      "why": "Nächstes means next."
+     },
+     {
+      "t": "tf",
+      "q": "'Ich gehe ins Bett' means 'I get up'.",
+      "a": false,
+      "why": "Ich gehe ins Bett means I go to bed."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "ich dusche",
+        "I shower"
+       ],
+       [
+        "ins Bett gehen",
+        "to go to bed"
+       ],
+       [
+        "morgen",
+        "tomorrow"
+       ],
+       [
+        "immer",
+        "always"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this morning routine in a logical order",
+      "items": [
+       [
+        "Ich stehe auf",
+        1
+       ],
+       [
+        "Ich dusche",
+        2
+       ],
+       [
+        "Ich frühstücke",
+        3
+       ],
+       [
+        "Ich gehe zur Schule",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: I will travel",
+      "a": [
+       "Ich werde reisen"
+      ],
+      "hint": "Use werden plus the infinitive.",
+      "why": "Werden forms the future."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich ___ um sieben auf. (aufstehen)",
+      "a": [
+       "stehe"
+      ],
+      "hint": "The prefix auf goes to the end.",
+      "why": "Ich stehe um sieben auf."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the simple past of 'ich bin' (two words)",
+      "a": [
+       "ich war",
+       "war"
+      ],
+      "hint": "Sein becomes war in the past.",
+      "why": "Ich war means I was."
+     }
+    ]
+   },
+   {
+    "title": "Permission and Obligation",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Modal verbs",
+      "b": "Dürfen means to be allowed to: ich darf, du darfst. Sollen means should: ich soll, du sollst. Wollen means to want to: ich will, du willst. Müssen means must: ich muss."
+     },
+     {
+      "h": "Sentence order",
+      "b": "The modal verb is second and the main verb goes to the end: Ich darf hier parken. Du sollst mehr Wasser trinken. Wir wollen nach Spanien fahren."
+     },
+     {
+      "h": "Two negatives",
+      "b": "Ich darf nicht means I am not allowed to. Ich muss nicht means I do not have to. They are different, so be careful."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Ich darf hier nicht rauchen' mean?",
+      "o": [
+       "I do not want to smoke here",
+       "I cannot smoke here today",
+       "I am not allowed to smoke here",
+       "I do not have to smoke here"
+      ],
+      "a": 2,
+      "why": "Dürfen nicht means not allowed."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Du ___ mehr Wasser trinken. (should)",
+      "o": [
+       "sollst",
+       "darfst",
+       "willst",
+       "kannst"
+      ],
+      "a": 0,
+      "why": "Sollen means should."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich muss nicht arbeiten' mean?",
+      "o": [
+       "I am not allowed to work",
+       "I do not want to work",
+       "I cannot work",
+       "I do not have to work"
+      ],
+      "a": 3,
+      "why": "Muss nicht means no need to."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'wollen' mean?",
+      "o": [
+       "to be allowed to",
+       "to want to",
+       "to have to",
+       "should"
+      ],
+      "a": 1,
+      "why": "Wollen is to want."
+     },
+     {
+      "t": "tf",
+      "q": "In 'Ich will nach Spanien fahren' the verb fahren goes to the end.",
+      "a": true,
+      "why": "The main verb goes to the end with a modal."
+     },
+     {
+      "t": "match",
+      "q": "Match each modal verb to its meaning",
+      "pairs": [
+       [
+        "dürfen",
+        "to be allowed to"
+       ],
+       [
+        "sollen",
+        "should"
+       ],
+       [
+        "wollen",
+        "to want to"
+       ],
+       [
+        "müssen",
+        "to have to"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'We must go now'",
+      "items": [
+       [
+        "Wir",
+        1
+       ],
+       [
+        "müssen",
+        2
+       ],
+       [
+        "jetzt",
+        3
+       ],
+       [
+        "gehen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich ___ heute arbeiten. (I have to)",
+      "a": [
+       "muss"
+      ],
+      "hint": "Use the ich form of müssen.",
+      "why": "Ich muss means I must."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Du darfst hier parken",
+      "a": [
+       "You are allowed to park here",
+       "You may park here",
+       "You can park here"
+      ],
+      "hint": "Dürfen means to be allowed.",
+      "why": "Darfst is the du form of dürfen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Wir ___ Pizza essen. (we want to)",
+      "a": [
+       "wollen"
+      ],
+      "hint": "Use the wir form of wollen.",
+      "why": "Wir wollen means we want."
+     }
+    ]
+   },
+   {
+    "title": "The Dative Case",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Dative articles",
+      "b": "In the dative, der and das become dem, die becomes der, and plural die becomes den (and the noun adds -n). Ich gebe dem Mann das Buch (I give the man the book)."
+     },
+     {
+      "h": "Dative prepositions",
+      "b": "Mit, nach, bei, zu, von, aus and seit always take the dative. Ich fahre mit dem Bus. Ich wohne bei meiner Tante (with my aunt). Zu der becomes zur and zu dem becomes zum."
+     },
+     {
+      "h": "Using them",
+      "b": "Say Ich gehe zur Schule or Er kommt aus der Schweiz. After each of these prepositions look for the dative form."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Ich fahre mit ___ Bus.",
+      "o": [
+       "der",
+       "den",
+       "dem",
+       "die"
+      ],
+      "a": 2,
+      "why": "Mit takes the dative; der Bus becomes dem Bus."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Ich gehe zu ___ Ärztin. (die Ärztin)",
+      "o": [
+       "der",
+       "dem",
+       "den",
+       "die"
+      ],
+      "a": 0,
+      "why": "Feminine dative is der."
+     },
+     {
+      "t": "mc",
+      "q": "Which case does 'mit' always take?",
+      "o": [
+       "accusative",
+       "nominative",
+       "genitive",
+       "dative"
+      ],
+      "a": 3,
+      "why": "Mit always takes the dative."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich wohne bei meiner Tante' mean?",
+      "o": [
+       "I live near my aunt",
+       "I live with my aunt",
+       "I visit my aunt",
+       "I call my aunt"
+      ],
+      "a": 1,
+      "why": "Bei means at or with someone's place."
+     },
+     {
+      "t": "tf",
+      "q": "'Nach' always takes the accusative case.",
+      "a": false,
+      "why": "Nach takes the dative."
+     },
+     {
+      "t": "match",
+      "q": "Match each preposition to its meaning",
+      "pairs": [
+       [
+        "mit",
+        "with"
+       ],
+       [
+        "nach",
+        "after, to"
+       ],
+       [
+        "bei",
+        "at, with"
+       ],
+       [
+        "von",
+        "from, of"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'She lives with Grandma'",
+      "items": [
+       [
+        "Sie",
+        1
+       ],
+       [
+        "wohnt",
+        2
+       ],
+       [
+        "bei",
+        3
+       ],
+       [
+        "Oma",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich fahre mit ___ Auto. (das Auto)",
+      "a": [
+       "dem"
+      ],
+      "hint": "Dative of das is dem.",
+      "why": "Mit dem Auto means by car."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich gehe zu ___ Bäckerei. (die Bäckerei)",
+      "a": [
+       "der",
+       "zur"
+      ],
+      "hint": "Dative of die is der.",
+      "why": "Zu der Bäckerei or zur Bäckerei."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: I live with my aunt",
+      "a": [
+       "Ich wohne bei meiner Tante"
+      ],
+      "hint": "Use bei and the dative.",
+      "why": "Bei meiner Tante means with my aunt."
+     }
+    ]
+   },
+   {
+    "title": "Health and the Body",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Body parts",
+      "b": "Der Kopf is the head, der Bauch the stomach, der Arm the arm, das Bein the leg, die Hand the hand, der Fuß the foot, das Auge the eye."
+     },
+     {
+      "h": "Saying what hurts",
+      "b": "Say Ich habe Kopfschmerzen (I have a headache) or Ich habe Bauchschmerzen (stomachache). Say Ich bin krank for I am sick. Mir geht es nicht gut means I do not feel well."
+     },
+     {
+      "h": "At the doctor",
+      "b": "Der Arzt or die Ärztin is the doctor. Say Ich brauche einen Termin (I need an appointment). Buy medicine in die Apotheke (the pharmacy)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'der Kopf' mean?",
+      "o": [
+       "the hand",
+       "the foot",
+       "the head",
+       "the leg"
+      ],
+      "a": 2,
+      "why": "Der Kopf is the head."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich bin krank' mean?",
+      "o": [
+       "I am sick",
+       "I am tired",
+       "I am hungry",
+       "I am late"
+      ],
+      "a": 0,
+      "why": "Krank is sick."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich habe Kopfschmerzen' mean?",
+      "o": [
+       "I have a cold",
+       "I have a stomachache",
+       "I have a fever",
+       "I have a headache"
+      ],
+      "a": 3,
+      "why": "Schmerzen means pains."
+     },
+     {
+      "t": "mc",
+      "q": "Where do you buy medicine?",
+      "o": [
+       "in der Bäckerei",
+       "in der Apotheke",
+       "im Park",
+       "am Bahnhof"
+      ],
+      "a": 1,
+      "why": "Die Apotheke is the pharmacy."
+     },
+     {
+      "t": "tf",
+      "q": "Der Arzt is the German word for the doctor.",
+      "a": true,
+      "why": "Arzt is doctor; the woman is die Ärztin."
+     },
+     {
+      "t": "match",
+      "q": "Match each body part to its meaning",
+      "pairs": [
+       [
+        "der Arm",
+        "arm"
+       ],
+       [
+        "das Bein",
+        "leg"
+       ],
+       [
+        "die Hand",
+        "hand"
+       ],
+       [
+        "das Auge",
+        "eye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I need an appointment'",
+      "items": [
+       [
+        "Ich",
+        1
+       ],
+       [
+        "brauche",
+        2
+       ],
+       [
+        "einen",
+        3
+       ],
+       [
+        "Termin",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: the head",
+      "a": [
+       "der Kopf",
+       "Kopf"
+      ],
+      "hint": "Masculine noun.",
+      "why": "Der Kopf is the head."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Ich habe Bauchschmerzen",
+      "a": [
+       "I have a stomachache",
+       "I have stomach pain",
+       "I have a stomach ache",
+       "I have stomach ache",
+       "I have stomach pains"
+      ],
+      "hint": "Bauch is stomach.",
+      "why": "Bauchschmerzen is a stomachache."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the German word for pharmacy",
+      "a": [
+       "Apotheke",
+       "die Apotheke"
+      ],
+      "hint": "It starts with A.",
+      "why": "Die Apotheke is the pharmacy."
+     }
+    ]
+   },
+   {
+    "title": "Jobs and School",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Jobs",
+      "b": "Der Lehrer is the teacher, der Koch the cook, der Arzt the doctor, der Ingenieur the engineer. Women add -in: die Lehrerin. Ask Was bist du von Beruf? (What is your job?)."
+     },
+     {
+      "h": "Talking about work",
+      "b": "Say Ich bin Lehrer with no article. Or Ich arbeite als Koch (I work as a cook). Der Beruf is the profession."
+     },
+     {
+      "h": "School and study",
+      "b": "Die Schule is school, die Universität is university and das Fach is the school subject. Studieren means to study at university: Ich studiere Medizin. Lernen is to learn."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Was bist du von Beruf?' mean?",
+      "o": [
+       "Where do you live?",
+       "How old are you?",
+       "What is your job?",
+       "What do you like?"
+      ],
+      "a": 2,
+      "why": "Beruf means profession."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich arbeite als Koch' mean?",
+      "o": [
+       "I work as a cook",
+       "I eat with a cook",
+       "I like cooks",
+       "I study cooking"
+      ],
+      "a": 0,
+      "why": "Als means as."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'das Fach' mean?",
+      "o": [
+       "school bag",
+       "teacher",
+       "exam",
+       "school subject"
+      ],
+      "a": 3,
+      "why": "Das Fach is a subject."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'studieren' mean?",
+      "o": [
+       "to teach",
+       "to study at university",
+       "to work",
+       "to rest"
+      ],
+      "a": 1,
+      "why": "Studieren is for university study."
+     },
+     {
+      "t": "tf",
+      "q": "You usually say 'Ich bin Lehrer' without 'ein'.",
+      "a": true,
+      "why": "Jobs normally have no article after sein."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "der Lehrer",
+        "teacher"
+       ],
+       [
+        "der Koch",
+        "cook"
+       ],
+       [
+        "die Universität",
+        "university"
+       ],
+       [
+        "der Beruf",
+        "profession"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I work as a teacher'",
+      "items": [
+       [
+        "Ich",
+        1
+       ],
+       [
+        "arbeite",
+        2
+       ],
+       [
+        "als",
+        3
+       ],
+       [
+        "Lehrer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Ich bin Lehrer",
+      "a": [
+       "I am a teacher",
+       "I'm a teacher"
+      ],
+      "hint": "Add a in English.",
+      "why": "Lehrer is teacher."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to German: the profession",
+      "a": [
+       "der Beruf",
+       "Beruf"
+      ],
+      "hint": "Starts with B.",
+      "why": "Der Beruf is the profession."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich ___ als Koch. (arbeiten)",
+      "a": [
+       "arbeite"
+      ],
+      "hint": "Use the ich form.",
+      "why": "Ich arbeite als Koch."
+     }
+    ]
+   },
+   {
+    "title": "Comparing Things",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Comparative",
+      "b": "Add -er to make the comparative: groß becomes größer, schnell becomes schneller, klein becomes kleiner. Use als for than: Er ist größer als ich."
+     },
+     {
+      "h": "Superlative",
+      "b": "Use am plus -sten: am schnellsten (fastest). Gut is irregular: gut, besser, am besten. Viel is viel, mehr, am meisten. Gern is gern, lieber, am liebsten."
+     },
+     {
+      "h": "As ... as",
+      "b": "Use so ... wie for equal things: Er ist so groß wie ich (He is as tall as me). Use nicht so ... wie for less: Sie ist nicht so alt wie er."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'größer' mean?",
+      "o": [
+       "biggest",
+       "small",
+       "bigger",
+       "very big"
+      ],
+      "a": 2,
+      "why": "Größer is the comparative of groß."
+     },
+     {
+      "t": "mc",
+      "q": "What is the comparative of 'gut'?",
+      "o": [
+       "besser",
+       "guter",
+       "am besten",
+       "gutter"
+      ],
+      "a": 0,
+      "why": "Gut is irregular: besser."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Mein Bruder ist älter ___ ich.",
+      "o": [
+       "wie",
+       "dass",
+       "so",
+       "als"
+      ],
+      "a": 3,
+      "why": "Als means than."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Er ist so groß wie ich' mean?",
+      "o": [
+       "He is taller than me",
+       "He is as tall as me",
+       "He is smaller than me",
+       "He is the tallest"
+      ],
+      "a": 1,
+      "why": "So ... wie means as ... as."
+     },
+     {
+      "t": "tf",
+      "q": "'Am besten' is the superlative of 'gut'.",
+      "a": true,
+      "why": "Gut, besser, am besten."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "schneller",
+        "faster"
+       ],
+       [
+        "kleiner",
+        "smaller"
+       ],
+       [
+        "am besten",
+        "best"
+       ],
+       [
+        "mehr",
+        "more"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'The car is faster'",
+      "items": [
+       [
+        "Das",
+        1
+       ],
+       [
+        "Auto",
+        2
+       ],
+       [
+        "ist",
+        3
+       ],
+       [
+        "schneller",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the comparative of klein",
+      "a": [
+       "kleiner"
+      ],
+      "hint": "Add -er.",
+      "why": "Klein becomes kleiner."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Er ist älter ___ ich.",
+      "a": [
+       "als"
+      ],
+      "hint": "It means than.",
+      "why": "Als is used for than."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Das ist am ___. (gut, best)",
+      "a": [
+       "besten"
+      ],
+      "hint": "Superlative of gut.",
+      "why": "Am besten is best."
+     }
+    ]
+   },
+   {
+    "title": "Conditions and Wishes",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Subordinate clauses",
+      "b": "Weil (because), dass (that), wenn (if, when) and obwohl (although) send the verb to the end. Ich bleibe zu Hause, weil ich krank bin. Ich gehe spazieren, obwohl es kalt ist."
+     },
+     {
+      "h": "If clauses",
+      "b": "Start with wenn: Wenn es regnet, bleibe ich zu Hause. After the comma the verb comes first in the main clause."
+     },
+     {
+      "h": "Wishes",
+      "b": "Use würde plus an infinitive: Ich würde gern reisen (I would like to travel). Use hätte and wäre for would have and would be: Wenn ich reich wäre, würde ich ein Haus kaufen."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Ich bleibe zu Hause, ___ ich krank bin.",
+      "o": [
+       "obwohl",
+       "wenn",
+       "weil",
+       "aber"
+      ],
+      "a": 2,
+      "why": "Weil gives the reason."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'obwohl' mean?",
+      "o": [
+       "although",
+       "because",
+       "if",
+       "that"
+      ],
+      "a": 0,
+      "why": "Obwohl is although."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Wenn es regnet, bleibe ich zu Hause' mean?",
+      "o": [
+       "Because it rains, I go out",
+       "It rained, so I stayed",
+       "It never rains at home",
+       "If it rains, I stay home"
+      ],
+      "a": 3,
+      "why": "Wenn means if or when."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ich würde gern reisen' mean?",
+      "o": [
+       "I traveled a lot",
+       "I would like to travel",
+       "I like to travel often",
+       "I must travel"
+      ],
+      "a": 1,
+      "why": "Würde plus gern shows a wish."
+     },
+     {
+      "t": "tf",
+      "q": "In a clause with 'obwohl' the conjugated verb goes to the end.",
+      "a": true,
+      "why": "Subordinate clauses put the verb last."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "wenn",
+        "if, when"
+       ],
+       [
+        "obwohl",
+        "although"
+       ],
+       [
+        "weil",
+        "because"
+       ],
+       [
+        "dass",
+        "that"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts in order: 'If it rains, I stay at home'",
+      "items": [
+       [
+        "Wenn es regnet,",
+        1
+       ],
+       [
+        "bleibe",
+        2
+       ],
+       [
+        "ich",
+        3
+       ],
+       [
+        "zu Hause",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich gehe spazieren, ___ es kalt ist. (although)",
+      "a": [
+       "obwohl"
+      ],
+      "hint": "It means although.",
+      "why": "Obwohl introduces a contrast."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich ___ gern reisen. (would)",
+      "a": [
+       "würde",
+       "wurde",
+       "wuerde"
+      ],
+      "hint": "Use würde.",
+      "why": "Ich würde gern reisen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ich weiß, ___ du müde bist. (that)",
+      "a": [
+       "dass"
+      ],
+      "hint": "It means that.",
+      "why": "Dass sends the verb to the end."
+     }
+    ]
+   }
+  ]
+ },
+ "it-1": {
+  "name": "Italian · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "Say Ciao for a casual hi or bye. Use Buongiorno in the morning, Buonasera in the evening and Buonanotte before bed. To say goodbye politely, use Arrivederci."
+     },
+     {
+      "h": "Your name and feelings",
+      "b": "Say Mi chiamo and your name: Mi chiamo Marco means My name is Marco. Ask Come stai? to say How are you? and answer Sto bene (I am well)."
+     },
+     {
+      "h": "Polite words",
+      "b": "Grazie means thank you and Prego means you're welcome. Per favore means please."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'good evening' in Italian?",
+      "o": [
+       "Buongiorno",
+       "Buonanotte",
+       "Buonasera",
+       "Ciao"
+      ],
+      "a": 2,
+      "why": "Buonasera is used to greet people in the evening."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Mi chiamo Marco' mean?",
+      "o": [
+       "My name is Marco",
+       "I like Marco",
+       "I am from Marco",
+       "Where is Marco"
+      ],
+      "a": 0,
+      "why": "Mi chiamo means 'my name is'."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'thank you'?",
+      "o": [
+       "Prego",
+       "Per favore",
+       "Scusa",
+       "Grazie"
+      ],
+      "a": 3,
+      "why": "Grazie is the Italian word for thank you."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Come stai?' ask?",
+      "o": [
+       "What is your name?",
+       "How are you?",
+       "Where are you from?",
+       "How old are you?"
+      ],
+      "a": 1,
+      "why": "Come stai? means 'How are you?'."
+     },
+     {
+      "t": "tf",
+      "q": "'Arrivederci' means 'goodbye'.",
+      "a": true,
+      "why": "Arrivederci is a polite way to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each Italian word to its meaning",
+      "pairs": [
+       [
+        "Ciao",
+        "Hi or bye"
+       ],
+       [
+        "Grazie",
+        "Thank you"
+       ],
+       [
+        "Per favore",
+        "Please"
+       ],
+       [
+        "Prego",
+        "You're welcome"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Hi, my name is Luca'",
+      "items": [
+       [
+        "Ciao",
+        1
+       ],
+       [
+        "mi",
+        2
+       ],
+       [
+        "chiamo",
+        3
+       ],
+       [
+        "Luca",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: thank you",
+      "a": [
+       "Grazie"
+      ],
+      "hint": "One short word.",
+      "why": "Grazie means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Buonasera",
+      "a": [
+       "Good evening",
+       "evening"
+      ],
+      "hint": "Sera is evening.",
+      "why": "Buonasera is used in the evening."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: My name is Lucia",
+      "a": [
+       "Mi chiamo Lucia"
+      ],
+      "hint": "Use Mi chiamo.",
+      "why": "Mi chiamo plus a name means my name is."
+     }
+    ]
+   },
+   {
+    "title": "Numbers, Colors and Food",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "Count like this: uno, due, tre, quattro, cinque, sei, sette, otto, nove, dieci. Use them for ages, prices and phone numbers."
+     },
+     {
+      "h": "Colors",
+      "b": "Rosso is red, blu is blue, verde is green and giallo is yellow. Colors usually come after the noun: la mela rossa means the red apple."
+     },
+     {
+      "h": "Food and wishes",
+      "b": "Learn il pane (bread), l'acqua (water), la mela (apple) and il latte (milk). To ask politely, say Vorrei. Vorrei acqua means I would like water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 'cinque' in English?",
+      "o": [
+       "Four",
+       "Five",
+       "Six",
+       "Fifteen"
+      ],
+      "a": 1,
+      "why": "Cinque is the number five."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'green'?",
+      "o": [
+       "rosso",
+       "blu",
+       "verde",
+       "giallo"
+      ],
+      "a": 2,
+      "why": "Verde means green."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'la mela' mean?",
+      "o": [
+       "The pear",
+       "The bread",
+       "The milk",
+       "The apple"
+      ],
+      "a": 3,
+      "why": "La mela is the apple."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I would like water'?",
+      "o": [
+       "Vorrei acqua",
+       "Sono acqua",
+       "Vado acqua",
+       "Ho vorrei acqua"
+      ],
+      "a": 0,
+      "why": "Vorrei means 'I would like'."
+     },
+     {
+      "t": "tf",
+      "q": "'Sette' means seven.",
+      "a": true,
+      "why": "Sette is the number seven."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its meaning",
+      "pairs": [
+       [
+        "uno",
+        "one"
+       ],
+       [
+        "tre",
+        "three"
+       ],
+       [
+        "otto",
+        "eight"
+       ],
+       [
+        "dieci",
+        "ten"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "due",
+        1
+       ],
+       [
+        "tre",
+        2
+       ],
+       [
+        "cinque",
+        3
+       ],
+       [
+        "sette",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the number 5 in Italian",
+      "a": [
+       "cinque"
+      ],
+      "hint": "It comes after quattro.",
+      "why": "Cinque is five."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: red",
+      "a": [
+       "rosso"
+      ],
+      "hint": "Colors are written with a small letter.",
+      "why": "Rosso is red."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: I would like water",
+      "a": [
+       "Vorrei acqua",
+       "Vorrei l'acqua",
+       "Vorrei lacqua"
+      ],
+      "hint": "Use Vorrei.",
+      "why": "Vorrei plus a noun is a polite request."
+     }
+    ]
+   },
+   {
+    "title": "Family and Key Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Family words",
+      "b": "Learn la madre (mother), il padre (father), il fratello (brother) and la sorella (sister). Il goes with most masculine words and la with feminine words."
+     },
+     {
+      "h": "The verb essere (to be)",
+      "b": "Essere has the forms io sono (I am), tu sei (you are) and lui è (he is). Io sono studente means I am a student."
+     },
+     {
+      "h": "The verb avere (to have)",
+      "b": "Avere has the forms io ho (I have), tu hai (you have) and lui ha (he has). Ho un fratello means I have a brother."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'la sorella' mean?",
+      "o": [
+       "The mother",
+       "The aunt",
+       "The sister",
+       "The daughter"
+      ],
+      "a": 2,
+      "why": "La sorella means the sister."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Io ___ studente. (I am a student)",
+      "o": [
+       "sei",
+       "sono",
+       "è",
+       "ho"
+      ],
+      "a": 1,
+      "why": "Sono is the 'I' form of essere (to be)."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a brother'?",
+      "o": [
+       "Sono un fratello",
+       "Hai un fratello",
+       "Ha un fratello",
+       "Ho un fratello"
+      ],
+      "a": 3,
+      "why": "Ho is the 'I' form of avere (to have)."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Lei ___ due gatti. (She has two cats)",
+      "o": [
+       "ho",
+       "hai",
+       "ha",
+       "è"
+      ],
+      "a": 2,
+      "why": "Ha is the 'he or she' form of avere."
+     },
+     {
+      "t": "tf",
+      "q": "'Il padre' means 'the father'.",
+      "a": true,
+      "why": "Il padre is the father."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "la madre",
+        "mother"
+       ],
+       [
+        "il nonno",
+        "grandfather"
+       ],
+       [
+        "il figlio",
+        "son"
+       ],
+       [
+        "la zia",
+        "aunt"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'My mother has two brothers'",
+      "items": [
+       [
+        "Mia madre",
+        1
+       ],
+       [
+        "ha",
+        2
+       ],
+       [
+        "due",
+        3
+       ],
+       [
+        "fratelli",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Io ___ studente. (essere)",
+      "a": [
+       "sono"
+      ],
+      "hint": "Use the io form of essere.",
+      "why": "Io sono means I am."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Lui ___ un fratello. (avere)",
+      "a": [
+       "ha"
+      ],
+      "hint": "Use the lui form of avere.",
+      "why": "Lui ha means he has."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: the mother",
+      "a": [
+       "la madre",
+       "madre"
+      ],
+      "hint": "Mother is feminine.",
+      "why": "La madre is the mother."
+     }
+    ]
+   },
+   {
+    "title": "Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Articles and plurals",
+      "b": "Use il or la for 'the' with one thing, and i or le for many. Un and una mean 'a'. Plurals change the ending: libro becomes libri and casa becomes case."
+     },
+     {
+      "h": "Days of the week",
+      "b": "The days are lunedì, martedì, mercoledì, giovedì, venerdì, sabato and domenica. They are written with a small first letter."
+     },
+     {
+      "h": "Asking where",
+      "b": "Use Dov'è...? to ask where something is. Dov'è la scuola? means Where is the school? La casa (house) and la scuola (school) are both feminine."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which article goes with 'casa' (house)?",
+      "o": [
+       "il",
+       "la",
+       "i",
+       "un"
+      ],
+      "a": 1,
+      "why": "Casa is feminine, so it uses la."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'libro'?",
+      "o": [
+       "libri",
+       "libre",
+       "libros",
+       "libra"
+      ],
+      "a": 0,
+      "why": "Masculine words ending in -o change to -i in the plural."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'mercoledì' mean?",
+      "o": [
+       "Monday",
+       "Tuesday",
+       "Wednesday",
+       "Thursday"
+      ],
+      "a": 2,
+      "why": "Mercoledì is Wednesday."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Dov'è la scuola?' ask?",
+      "o": [
+       "What is the school?",
+       "Who is at school?",
+       "When is school?",
+       "Where is the school?"
+      ],
+      "a": 3,
+      "why": "Dov'è means 'where is'."
+     },
+     {
+      "t": "tf",
+      "q": "'Sabato' means Sunday.",
+      "a": false,
+      "why": "Sabato is Saturday; Sunday is domenica."
+     },
+     {
+      "t": "match",
+      "q": "Match each day to its meaning",
+      "pairs": [
+       [
+        "lunedì",
+        "Monday"
+       ],
+       [
+        "venerdì",
+        "Friday"
+       ],
+       [
+        "domenica",
+        "Sunday"
+       ],
+       [
+        "giovedì",
+        "Thursday"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order, starting from Monday",
+      "items": [
+       [
+        "lunedì",
+        1
+       ],
+       [
+        "martedì",
+        2
+       ],
+       [
+        "giovedì",
+        3
+       ],
+       [
+        "sabato",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: Monday",
+      "a": [
+       "lunedì",
+       "lunedi"
+      ],
+      "hint": "Days use a small first letter.",
+      "why": "Lunedì is Monday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the plural of casa",
+      "a": [
+       "case"
+      ],
+      "hint": "Feminine -a becomes -e.",
+      "why": "Casa becomes case."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the plural of libro",
+      "a": [
+       "libri"
+      ],
+      "hint": "Masculine -o becomes -i.",
+      "why": "Libro becomes libri."
+     }
+    ]
+   },
+   {
+    "title": "Regular Verbs and Origin",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Three verb groups",
+      "b": "Italian verbs end in -are, -ere or -ire. Parlare (to speak): parlo, parli, parla, parliamo, parlate, parlano. Abitare (to live) works the same way: io abito, tu abiti."
+     },
+     {
+      "h": "Where are you from?",
+      "b": "Ask Di dove sei? (Where are you from?). Answer Sono di Milano. Say Abito a Roma for where you live."
+     },
+     {
+      "h": "Dropping the pronoun",
+      "b": "Italian often drops io, tu and lui because the ending shows the person. Parlo italiano means I speak Italian. Leggo is I read and dormo is I sleep."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Io ___ a Roma. (abitare)",
+      "o": [
+       "abiti",
+       "abita",
+       "abito",
+       "abitano"
+      ],
+      "a": 2,
+      "why": "With io the ending is -o."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Noi ___ italiano. (parlare)",
+      "o": [
+       "parliamo",
+       "parlo",
+       "parlate",
+       "parla"
+      ],
+      "a": 0,
+      "why": "With noi the ending is -iamo."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Di dove sei?' mean?",
+      "o": [
+       "How are you?",
+       "What is your name?",
+       "Where are you going?",
+       "Where are you from?"
+      ],
+      "a": 3,
+      "why": "Di dove asks about origin."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Tu ___ la pizza. (mangiare)",
+      "o": [
+       "mangio",
+       "mangi",
+       "mangia",
+       "mangiamo"
+      ],
+      "a": 1,
+      "why": "With tu the ending is -i."
+     },
+     {
+      "t": "tf",
+      "q": "'Parlo italiano' means 'I speak Italian'.",
+      "a": true,
+      "why": "The ending -o shows io, so the pronoun can be dropped."
+     },
+     {
+      "t": "match",
+      "q": "Match each Italian verb form to its meaning",
+      "pairs": [
+       [
+        "abito",
+        "I live"
+       ],
+       [
+        "mangi",
+        "you eat"
+       ],
+       [
+        "parla",
+        "he speaks"
+       ],
+       [
+        "dormiamo",
+        "we sleep"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I live in Milan'",
+      "items": [
+       [
+        "Io",
+        1
+       ],
+       [
+        "abito",
+        2
+       ],
+       [
+        "a",
+        3
+       ],
+       [
+        "Milano",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Abito a Roma",
+      "a": [
+       "I live in Rome"
+      ],
+      "hint": "Abitare means to live.",
+      "why": "Abito a Roma means I live in Rome."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Tu ___ italiano. (parlare)",
+      "a": [
+       "parli"
+      ],
+      "hint": "Use the tu ending -i.",
+      "why": "Tu parli means you speak."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Sono di Napoli",
+      "a": [
+       "I am from Naples",
+       "I'm from Naples",
+       "I am from Napoli",
+       "I'm from Napoli"
+      ],
+      "hint": "Di shows origin.",
+      "why": "Sono di means I am from."
+     }
+    ]
+   },
+   {
+    "title": "Numbers to 100 and Time",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Eleven to twenty",
+      "b": "Undici is 11 and dodici is 12. Then tredici (13), quattordici (14), quindici (15). Venti is 20."
+     },
+     {
+      "h": "Tens and hundred",
+      "b": "The tens are venti, trenta, quaranta, cinquanta. Cento is 100. Ventuno is 21. Say your age with Ho venti anni (I have twenty years)."
+     },
+     {
+      "h": "Telling the time",
+      "b": "Ask Che ore sono? (What time is it?). Answer Sono le tre (It is three o'clock). For one o'clock say È l'una. Months are gennaio, febbraio, marzo and so on, with a small letter."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 12 in Italian?",
+      "o": [
+       "undici",
+       "venti",
+       "dodici",
+       "dieci"
+      ],
+      "a": 2,
+      "why": "Dodici is 12; undici is 11."
+     },
+     {
+      "t": "mc",
+      "q": "What number is 'trenta'?",
+      "o": [
+       "30",
+       "13",
+       "3",
+       "300"
+      ],
+      "a": 0,
+      "why": "Trenta is 30."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 21 in Italian?",
+      "o": [
+       "venti uno",
+       "ventidue",
+       "unoventi",
+       "ventuno"
+      ],
+      "a": 3,
+      "why": "Ventuno is 21."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Che ore sono?' mean?",
+      "o": [
+       "How old are you?",
+       "What time is it?",
+       "How are you?",
+       "Where is it?"
+      ],
+      "a": 1,
+      "why": "It asks the time."
+     },
+     {
+      "t": "tf",
+      "q": "'Quaranta' means 14.",
+      "a": false,
+      "why": "Quaranta is 40; 14 is quattordici."
+     },
+     {
+      "t": "match",
+      "q": "Match each number word to its digits",
+      "pairs": [
+       [
+        "undici",
+        "11"
+       ],
+       [
+        "quindici",
+        "15"
+       ],
+       [
+        "cinquanta",
+        "50"
+       ],
+       [
+        "cento",
+        "100"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers from smallest to largest",
+      "items": [
+       [
+        "tre",
+        1
+       ],
+       [
+        "undici",
+        2
+       ],
+       [
+        "venti",
+        3
+       ],
+       [
+        "cento",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write 13 in Italian",
+      "a": [
+       "tredici"
+      ],
+      "hint": "Three plus -dici.",
+      "why": "Tredici is 13."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Sono le cinque",
+      "a": [
+       "It is five o'clock",
+       "It's five o'clock",
+       "It is 5 o'clock",
+       "It's 5 o'clock",
+       "It is five",
+       "It's five"
+      ],
+      "hint": "Ore means hours.",
+      "why": "Sono le cinque means it is five o'clock."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write 'quaranta' as digits",
+      "a": [
+       "40"
+      ],
+      "hint": "Quattro means four.",
+      "why": "Quaranta is 40."
+     }
+    ]
+   },
+   {
+    "title": "Home and City",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Rooms",
+      "b": "La casa is the house and l'appartamento is the apartment. Rooms: la cucina (kitchen), il bagno (bathroom), la camera da letto (bedroom), il soggiorno (living room)."
+     },
+     {
+      "h": "In the city",
+      "b": "La città is the city, la strada is the street and la piazza is the square. Learn il parco (park) and il supermercato (supermarket)."
+     },
+     {
+      "h": "Saying where you live",
+      "b": "Say Abito in un appartamento (I live in an apartment) or Abito in una casa. Describe a room with è: La camera è grande (The room is big)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'la cucina' mean?",
+      "o": [
+       "the bathroom",
+       "the bedroom",
+       "the kitchen",
+       "the street"
+      ],
+      "a": 2,
+      "why": "La cucina is the kitchen."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'la camera da letto'?",
+      "o": [
+       "the bedroom",
+       "the living room",
+       "the kitchen",
+       "the garden"
+      ],
+      "a": 0,
+      "why": "Letto means bed."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'la piazza' mean?",
+      "o": [
+       "the park",
+       "the street",
+       "the house",
+       "the square"
+      ],
+      "a": 3,
+      "why": "La piazza is the town square."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Abito in una casa' mean?",
+      "o": [
+       "I buy a house",
+       "I live in a house",
+       "I see a house",
+       "I like the house"
+      ],
+      "a": 1,
+      "why": "Abitare means to live."
+     },
+     {
+      "t": "tf",
+      "q": "Il supermercato is a place to buy food.",
+      "a": true,
+      "why": "A supermercato is a supermarket."
+     },
+     {
+      "t": "match",
+      "q": "Match each Italian word to its meaning",
+      "pairs": [
+       [
+        "la cucina",
+        "kitchen"
+       ],
+       [
+        "il bagno",
+        "bathroom"
+       ],
+       [
+        "il parco",
+        "park"
+       ],
+       [
+        "la strada",
+        "street"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'The room is big'",
+      "items": [
+       [
+        "La",
+        1
+       ],
+       [
+        "camera",
+        2
+       ],
+       [
+        "è",
+        3
+       ],
+       [
+        "grande",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: the kitchen",
+      "a": [
+       "la cucina",
+       "cucina"
+      ],
+      "hint": "Feminine noun with la.",
+      "why": "La cucina is the kitchen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: il soggiorno",
+      "a": [
+       "the living room",
+       "living room"
+      ],
+      "hint": "It is a room for sitting.",
+      "why": "Il soggiorno is the living room."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: The city is big",
+      "a": [
+       "La città è grande",
+       "La citta e grande"
+      ],
+      "hint": "Città is feminine.",
+      "why": "La città è grande."
+     }
+    ]
+   },
+   {
+    "title": "Questions and Negation",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Question words",
+      "b": "Chi is who, che cosa or cosa is what, dove is where, quando is when, perché is why or because and come is how. Dove abiti? means Where do you live?"
+     },
+     {
+      "h": "Yes or no questions",
+      "b": "Keep the same word order and raise your voice: Hai un fratello? (Do you have a brother?). Answer Sì or No."
+     },
+     {
+      "h": "Making it negative",
+      "b": "Put non before the verb: Non ho fame (I am not hungry), Non sono stanco (I am not tired). Non ho un fratello means I do not have a brother."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'dove' mean?",
+      "o": [
+       "who",
+       "when",
+       "where",
+       "why"
+      ],
+      "a": 2,
+      "why": "Dove means where."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'perché' mean?",
+      "o": [
+       "why or because",
+       "where",
+       "how",
+       "when"
+      ],
+      "a": 0,
+      "why": "Perché is used for both."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Non ho fame' mean?",
+      "o": [
+       "I am hungry",
+       "I am not tired",
+       "I have no brother",
+       "I am not hungry"
+      ],
+      "a": 3,
+      "why": "Non makes it negative."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Dove abiti?' mean?",
+      "o": [
+       "Who lives here?",
+       "Where do you live?",
+       "When do you live?",
+       "How are you?"
+      ],
+      "a": 1,
+      "why": "Dove means where."
+     },
+     {
+      "t": "tf",
+      "q": "To make an Italian sentence negative you put 'non' before the verb.",
+      "a": true,
+      "why": "Non goes before the verb."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "chi",
+        "who"
+       ],
+       [
+        "dove",
+        "where"
+       ],
+       [
+        "quando",
+        "when"
+       ],
+       [
+        "perché",
+        "why"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Do you have a sister?'",
+      "items": [
+       [
+        "Tu",
+        1
+       ],
+       [
+        "hai",
+        2
+       ],
+       [
+        "una",
+        3
+       ],
+       [
+        "sorella",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: Where do you live?",
+      "a": [
+       "Dove abiti"
+      ],
+      "hint": "Dove plus abiti.",
+      "why": "Dove abiti? asks where you live."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: ___ sono stanco. (I am not tired)",
+      "a": [
+       "Non",
+       "non"
+      ],
+      "hint": "Put it before the verb.",
+      "why": "Non sono stanco."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: quando",
+      "a": [
+       "when"
+      ],
+      "hint": "It asks about time.",
+      "why": "Quando means when."
+     }
+    ]
+   },
+   {
+    "title": "Shopping, Clothes and Weather",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Clothes",
+      "b": "I pantaloni is the trousers, la maglietta is the T-shirt, il maglione is the sweater and la giacca is the jacket. Le scarpe means the shoes."
+     },
+     {
+      "h": "Prices",
+      "b": "Ask Quanto costa? (How much does it cost?). Answer Costa dieci euro. Use the numbers you know for the price."
+     },
+     {
+      "h": "Weather",
+      "b": "Piove means it is raining and nevica means it is snowing. Say C'è il sole for it is sunny. Italian uses fa for temperature: fa freddo (it is cold) and fa caldo (it is hot)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are 'i pantaloni'?",
+      "o": [
+       "the jacket",
+       "the shoes",
+       "the trousers",
+       "the sweater"
+      ],
+      "a": 2,
+      "why": "I pantaloni is the trousers."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Piove' mean?",
+      "o": [
+       "It is raining",
+       "It is snowing",
+       "It is cold",
+       "It is sunny"
+      ],
+      "a": 0,
+      "why": "Piovere means to rain."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Quanto costa?' mean?",
+      "o": [
+       "What is it?",
+       "Where is it?",
+       "Who is it?",
+       "How much does it cost?"
+      ],
+      "a": 3,
+      "why": "Costare means to cost."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'fa freddo' mean?",
+      "o": [
+       "it is hot",
+       "it is cold",
+       "it is warm",
+       "it is wet"
+      ],
+      "a": 1,
+      "why": "Freddo is cold."
+     },
+     {
+      "t": "tf",
+      "q": "'Nevica' means 'It is windy'.",
+      "a": false,
+      "why": "Nevica means it is snowing."
+     },
+     {
+      "t": "match",
+      "q": "Match each Italian word to its meaning",
+      "pairs": [
+       [
+        "la giacca",
+        "jacket"
+       ],
+       [
+        "fa caldo",
+        "it is hot"
+       ],
+       [
+        "il sole",
+        "sun"
+       ],
+       [
+        "il maglione",
+        "sweater"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'How much does the jacket cost?'",
+      "items": [
+       [
+        "Quanto",
+        1
+       ],
+       [
+        "costa",
+        2
+       ],
+       [
+        "la",
+        3
+       ],
+       [
+        "giacca",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: It is raining",
+      "a": [
+       "Piove"
+      ],
+      "hint": "One word.",
+      "why": "Piove means it is raining."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: the shoes",
+      "a": [
+       "le scarpe",
+       "scarpe"
+      ],
+      "hint": "Plural feminine uses le.",
+      "why": "Le scarpe is the shoes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Costa venti euro. How many euros? (digits)",
+      "a": [
+       "20"
+      ],
+      "hint": "Venti is 20.",
+      "why": "Venti is 20."
+     }
+    ]
+   },
+   {
+    "title": "Hobbies and Modal Verbs",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hobbies",
+      "b": "Suono la chitarra (I play guitar), ascolto la musica (I listen to music), leggo libri (I read books), ballo (I dance). Say Mi piace nuotare for I like swimming."
+     },
+     {
+      "h": "Can, want, must",
+      "b": "Potere means can: posso, puoi. Volere means want: voglio, vuoi. Dovere means must: devo, devi. Vorrei means I would like."
+     },
+     {
+      "h": "Verb after a modal",
+      "b": "The second verb stays in the infinitive: Posso nuotare (I can swim). Devo studiare (I have to study). Voglio ballare (I want to dance)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Mi piace nuotare' mean?",
+      "o": [
+       "I can swim",
+       "I must swim",
+       "I like swimming",
+       "I do not swim"
+      ],
+      "a": 2,
+      "why": "Mi piace means I like."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Posso suonare la chitarra' mean?",
+      "o": [
+       "I can play the guitar",
+       "I like the guitar",
+       "I want a guitar",
+       "I must play the guitar"
+      ],
+      "a": 0,
+      "why": "Potere means can."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Io ___ studiare. (I must)",
+      "o": [
+       "devi",
+       "dovere",
+       "deve",
+       "devo"
+      ],
+      "a": 3,
+      "why": "Io devo is correct."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'leggere' mean?",
+      "o": [
+       "to write",
+       "to read",
+       "to listen",
+       "to learn"
+      ],
+      "a": 1,
+      "why": "Leggere is to read."
+     },
+     {
+      "t": "tf",
+      "q": "After 'posso' the next verb stays in the infinitive.",
+      "a": true,
+      "why": "Modal verbs are followed by an infinitive."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "ascoltare",
+        "to listen"
+       ],
+       [
+        "leggere",
+        "to read"
+       ],
+       [
+        "nuotare",
+        "to swim"
+       ],
+       [
+        "ballare",
+        "to dance"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I can swim well'",
+      "items": [
+       [
+        "Io",
+        1
+       ],
+       [
+        "posso",
+        2
+       ],
+       [
+        "nuotare",
+        3
+       ],
+       [
+        "bene",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: I like to dance",
+      "a": [
+       "Mi piace ballare"
+      ],
+      "hint": "Use mi piace plus an infinitive.",
+      "why": "Mi piace ballare."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Tu ___ cantare bene. (potere)",
+      "a": [
+       "puoi"
+      ],
+      "hint": "Use the tu form.",
+      "why": "Tu puoi means you can."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Devo studiare",
+      "a": [
+       "I have to study",
+       "I must study"
+      ],
+      "hint": "Dovere means must.",
+      "why": "Devo studiare means I have to study."
+     }
+    ]
+   }
+  ]
+ },
+ "it-2": {
+  "name": "Italian · Intermediate",
+  "units": [
+   {
+    "title": "The Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Passato prossimo with avere",
+      "b": "Most verbs use avere plus a past participle. Ho mangiato means I ate. Abbiamo parlato means we spoke. For -are verbs, the participle ends in -ato."
+     },
+     {
+      "h": "Verbs with essere",
+      "b": "Verbs of movement, like andare (to go) and arrivare (to arrive), use essere. Sono andato al cinema means I went to the cinema. A girl writes andata."
+     },
+     {
+      "h": "Past time words",
+      "b": "Use ieri (yesterday), ieri sera (last night), la settimana scorsa (last week) and l'anno scorso (last year). They show the action is finished."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Ieri ___ una pizza. (I ate)",
+      "o": [
+       "mangio",
+       "ho mangiato",
+       "mangerò",
+       "mangiavo"
+      ],
+      "a": 1,
+      "why": "Ho mangiato is the passato prossimo of mangiare."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Abbiamo parlato' mean?",
+      "o": [
+       "We speak",
+       "We will speak",
+       "We spoke",
+       "They spoke"
+      ],
+      "a": 2,
+      "why": "Abbiamo parlato is the past tense: we spoke."
+     },
+     {
+      "t": "mc",
+      "q": "Which helper verb does 'andare' use in the passato prossimo?",
+      "o": [
+       "essere",
+       "avere",
+       "fare",
+       "potere"
+      ],
+      "a": 0,
+      "why": "Andare is a verb of movement and takes essere."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'ieri' mean?",
+      "o": [
+       "Tomorrow",
+       "Today",
+       "Tonight",
+       "Yesterday"
+      ],
+      "a": 3,
+      "why": "Ieri means yesterday."
+     },
+     {
+      "t": "tf",
+      "q": "'Sono andato al cinema' means 'I went to the cinema'.",
+      "a": true,
+      "why": "Sono andato is the past tense of andare: I went."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "ieri",
+        "yesterday"
+       ],
+       [
+        "ieri sera",
+        "last night"
+       ],
+       [
+        "la settimana scorsa",
+        "last week"
+       ],
+       [
+        "l'anno scorso",
+        "last year"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'Yesterday I ate a pizza'",
+      "items": [
+       [
+        "Ieri",
+        1
+       ],
+       [
+        "ho",
+        2
+       ],
+       [
+        "mangiato",
+        3
+       ],
+       [
+        "una pizza",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ieri ho ___ la pizza. (mangiare)",
+      "a": [
+       "mangiato"
+      ],
+      "hint": "-are becomes -ato.",
+      "why": "Mangiato is the participle of mangiare."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: ieri",
+      "a": [
+       "yesterday"
+      ],
+      "hint": "It shows a finished action.",
+      "why": "Ieri means yesterday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Ieri ___ andato al cinema. (io, male)",
+      "a": [
+       "sono"
+      ],
+      "hint": "Andare uses essere.",
+      "why": "Sono andato means I went."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Travel",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Use a sinistra (to the left), a destra (to the right) and sempre dritto (straight ahead). All'angolo means at the corner."
+     },
+     {
+      "h": "Near and far",
+      "b": "Vicino a means near and lontano da means far from. To ask the way, say Come arrivo alla stazione? (How do I get to the station?)."
+     },
+     {
+      "h": "Travel words",
+      "b": "Learn la stazione (station), l'aeroporto (airport), il biglietto (ticket) and la camera (room). Use prenotare for to book."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'a sinistra' mean?",
+      "o": [
+       "to the right",
+       "to the left",
+       "straight ahead",
+       "behind"
+      ],
+      "a": 1,
+      "why": "Sinistra means left."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'sempre dritto' mean?",
+      "o": [
+       "turn around",
+       "at the corner",
+       "straight ahead",
+       "far away"
+      ],
+      "a": 2,
+      "why": "Sempre dritto means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask 'How do I get to the station?'",
+      "o": [
+       "Chi è la stazione?",
+       "Dov'è tu stazione?",
+       "Quanto la stazione?",
+       "Come arrivo alla stazione?"
+      ],
+      "a": 3,
+      "why": "Come arrivo a...? is the usual way to ask for directions."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'la camera' at a hotel?",
+      "o": [
+       "The room",
+       "The bill",
+       "The key",
+       "The pool"
+      ],
+      "a": 0,
+      "why": "La camera means the room."
+     },
+     {
+      "t": "tf",
+      "q": "'Vicino a' means 'far from'.",
+      "a": false,
+      "why": "Vicino a means near; lontano da means far from."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "vicino a",
+        "near"
+       ],
+       [
+        "l'aeroporto",
+        "airport"
+       ],
+       [
+        "il biglietto",
+        "ticket"
+       ],
+       [
+        "l'angolo",
+        "corner"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these travel steps in a logical order",
+      "items": [
+       [
+        "Compro il biglietto",
+        1
+       ],
+       [
+        "Vado all'aeroporto",
+        2
+       ],
+       [
+        "Salgo sull'aereo",
+        3
+       ],
+       [
+        "Arrivo in albergo",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: a destra",
+      "a": [
+       "to the right",
+       "right",
+       "on the right"
+      ],
+      "hint": "It is the opposite of a sinistra.",
+      "why": "A destra is to the right."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Come arrivo alla stazione?",
+      "a": [
+       "How do I get to the station",
+       "How do I get to the train station"
+      ],
+      "hint": "Stazione is the station.",
+      "why": "It asks how to reach the station."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: the ticket",
+      "a": [
+       "il biglietto",
+       "biglietto"
+      ],
+      "hint": "It starts with b.",
+      "why": "Il biglietto is the ticket."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Preferences",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Liking things",
+      "b": "Use mi piace with one thing and mi piacciono with many things. Mi piace il cinema means I like cinema. Mi piacciono i libri means I like books. Say non mi piace for I don't like."
+     },
+     {
+      "h": "Giving your opinion",
+      "b": "Say penso che or secondo me to mean I think that or in my opinion. Say sono d'accordo for I agree and non sono d'accordo for I disagree."
+     },
+     {
+      "h": "Preferring and comparing",
+      "b": "Preferisco means I prefer. Più...di means more than. After penso che, Italian uses the subjunctive, like sia (is): Penso che sia bello."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence means 'I like the books'?",
+      "o": [
+       "Mi piace i libri",
+       "Mi piacciono i libri",
+       "Mi piaccio i libri",
+       "Piace i libri"
+      ],
+      "a": 1,
+      "why": "Books are plural, so use mi piacciono."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Sono d'accordo' mean?",
+      "o": [
+       "I'm tired",
+       "I disagree",
+       "I agree",
+       "I'm late"
+      ],
+      "a": 2,
+      "why": "Sono d'accordo means I agree."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'secondo me' mean?",
+      "o": [
+       "on my way",
+       "in my opinion",
+       "by myself",
+       "second to me"
+      ],
+      "a": 1,
+      "why": "Secondo me means 'in my opinion'."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Preferisco il tè al caffè' express?",
+      "o": [
+       "A preference for tea over coffee",
+       "A dislike of tea",
+       "A question about coffee",
+       "A wish to buy tea"
+      ],
+      "a": 0,
+      "why": "Preferisco means 'I prefer'."
+     },
+     {
+      "t": "tf",
+      "q": "'Non sono d'accordo' means 'I disagree'.",
+      "a": true,
+      "why": "Non turns 'I agree' into 'I do not agree'."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "mi piace",
+        "I like"
+       ],
+       [
+        "non sono d'accordo",
+        "I disagree"
+       ],
+       [
+        "penso che",
+        "I think that"
+       ],
+       [
+        "preferisco",
+        "I prefer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I think cinema is fun'",
+      "items": [
+       [
+        "Penso che",
+        1
+       ],
+       [
+        "il cinema",
+        2
+       ],
+       [
+        "sia",
+        3
+       ],
+       [
+        "divertente",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Mi piace il cinema",
+      "a": [
+       "I like cinema",
+       "I like the cinema",
+       "I like movies",
+       "I like the movies"
+      ],
+      "hint": "Mi piace means I like.",
+      "why": "Mi piace is used with one thing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: ___ me, è bello. (in my opinion)",
+      "a": [
+       "Secondo",
+       "secondo"
+      ],
+      "hint": "It starts with s.",
+      "why": "Secondo me means in my opinion."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Sono d'accordo",
+      "a": [
+       "I agree",
+       "I am in agreement"
+      ],
+      "hint": "Accordo means agreement.",
+      "why": "Sono d'accordo means I agree."
+     }
+    ]
+   },
+   {
+    "title": "Plans and Routines",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Future plans with andare a",
+      "b": "Use andare a + a verb to talk about plans: vado a viaggiare means I am going to travel. Add words like domani (tomorrow) or l'anno prossimo (next year)."
+     },
+     {
+      "h": "Daily routine verbs",
+      "b": "Reflexive verbs use mi: mi alzo (I get up), mi lavo (I wash) and mi sveglio (I wake up). Vado a letto means I go to bed."
+     },
+     {
+      "h": "Past habits",
+      "b": "The imperfetto talks about habits in the past. Giocavo means I used to play. Use words like sempre (always) and da piccolo (as a child)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Domani ___ a viaggiare. (I'm going to travel)",
+      "o": [
+       "vado",
+       "sono",
+       "ho",
+       "faccio"
+      ],
+      "a": 0,
+      "why": "Vado a + verb expresses a plan for the future."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Mi alzo alle sette' mean?",
+      "o": [
+       "I go to bed at seven",
+       "I get up at seven",
+       "I eat at seven",
+       "I left at seven"
+      ],
+      "a": 1,
+      "why": "Mi alzo means 'I get up'."
+     },
+     {
+      "t": "mc",
+      "q": "Which form means 'I used to play'?",
+      "o": [
+       "ho giocato",
+       "giocherò",
+       "giocavo",
+       "gioco"
+      ],
+      "a": 2,
+      "why": "Giocavo is the imperfetto, used for past habits."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'l'anno prossimo' mean?",
+      "o": [
+       "last year",
+       "every year",
+       "this year",
+       "next year"
+      ],
+      "a": 3,
+      "why": "Prossimo means next."
+     },
+     {
+      "t": "tf",
+      "q": "'Vado a letto' means 'I wake up'.",
+      "a": false,
+      "why": "Vado a letto means I go to bed."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "mi lavo",
+        "I wash"
+       ],
+       [
+        "vado a letto",
+        "I go to bed"
+       ],
+       [
+        "domani",
+        "tomorrow"
+       ],
+       [
+        "sempre",
+        "always"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this morning routine in a logical order",
+      "items": [
+       [
+        "Mi alzo",
+        1
+       ],
+       [
+        "Mi lavo",
+        2
+       ],
+       [
+        "Faccio colazione",
+        3
+       ],
+       [
+        "Vado a scuola",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Vado a viaggiare",
+      "a": [
+       "I am going to travel",
+       "I'm going to travel"
+      ],
+      "hint": "Andare a plus a verb is a plan.",
+      "why": "It expresses a plan."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Io ___ alzo alle sette. (reflexive)",
+      "a": [
+       "mi"
+      ],
+      "hint": "Reflexive pronoun for io.",
+      "why": "Mi alzo means I get up."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Da piccolo io ___ a calcio. (giocare, imperfetto)",
+      "a": [
+       "giocavo"
+      ],
+      "hint": "Imperfetto of -are ends in -avo.",
+      "why": "Giocavo means I used to play."
+     }
+    ]
+   },
+   {
+    "title": "Can, Want, Must",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Three modal verbs",
+      "b": "Potere (can): posso, puoi, può, possiamo. Volere (want): voglio, vuoi, vuole, vogliamo. Dovere (must): devo, devi, deve, dobbiamo."
+     },
+     {
+      "h": "Using them",
+      "b": "Follow the modal with an infinitive: Posso entrare? (May I come in?). Voglio mangiare (I want to eat). Devi studiare (You must study)."
+     },
+     {
+      "h": "Refusing and excusing",
+      "b": "Say Mi dispiace, non posso venire (Sorry, I cannot come). Non voglio means I do not want to. Dobbiamo partire means we have to leave."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Posso entrare?' mean?",
+      "o": [
+       "Do I have to enter?",
+       "Can you enter?",
+       "May I come in?",
+       "I want to enter."
+      ],
+      "a": 2,
+      "why": "Potere asks permission."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Voglio mangiare' mean?",
+      "o": [
+       "I want to eat",
+       "I can eat",
+       "I must eat",
+       "I like eating"
+      ],
+      "a": 0,
+      "why": "Volere means to want."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Tu ___ studiare di più. (must)",
+      "o": [
+       "devo",
+       "deve",
+       "dovete",
+       "devi"
+      ],
+      "a": 3,
+      "why": "Tu devi is the correct form."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Non posso venire' mean?",
+      "o": [
+       "I do not want to come",
+       "I cannot come",
+       "I did not come",
+       "I must come"
+      ],
+      "a": 1,
+      "why": "Non posso means I cannot."
+     },
+     {
+      "t": "tf",
+      "q": "After 'devo' the next verb is in the infinitive.",
+      "a": true,
+      "why": "Modal verbs take the infinitive."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "potere",
+        "to be able to"
+       ],
+       [
+        "volere",
+        "to want to"
+       ],
+       [
+        "dovere",
+        "to have to"
+       ],
+       [
+        "vorrei",
+        "I would like"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'We must leave now'",
+      "items": [
+       [
+        "Noi",
+        1
+       ],
+       [
+        "dobbiamo",
+        2
+       ],
+       [
+        "partire",
+        3
+       ],
+       [
+        "ora",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Io ___ partire adesso. (I must)",
+      "a": [
+       "devo"
+      ],
+      "hint": "Use the io form of dovere.",
+      "why": "Io devo means I must."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Non posso venire",
+      "a": [
+       "I can't come",
+       "I cannot come",
+       "I can not come"
+      ],
+      "hint": "Non means not.",
+      "why": "Non posso venire means I cannot come."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Noi ___ mangiare una pizza. (we want)",
+      "a": [
+       "vogliamo"
+      ],
+      "hint": "Use the noi form of volere.",
+      "why": "Noi vogliamo means we want."
+     }
+    ]
+   },
+   {
+    "title": "Prepositions with Articles",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Joining words",
+      "b": "When a, di, in, da or su meet il, la or l', they often join. A + il becomes al, a + la becomes alla, di + il becomes del, in + la becomes nella, da + il becomes dal."
+     },
+     {
+      "h": "Examples",
+      "b": "Vado al mercato (I go to the market). Sono nella cucina (I am in the kitchen). Il libro del ragazzo (the boy's book). Vengo dalla Francia (I come from France)."
+     },
+     {
+      "h": "Going to people",
+      "b": "Use da for people and places of work: Vado dal medico (I go to the doctor). Vado dal dentista. Use a for most places: Vado a Roma."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Complete: Vado ___ cinema. (a + il)",
+      "o": [
+       "alla",
+       "del",
+       "al",
+       "nel"
+      ],
+      "a": 2,
+      "why": "A + il becomes al."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Sono ___ cucina. (in + la)",
+      "o": [
+       "nella",
+       "nel",
+       "alla",
+       "della"
+      ],
+      "a": 0,
+      "why": "In + la becomes nella."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Il libro del ragazzo' mean?",
+      "o": [
+       "the book for the boy",
+       "the boy and the book",
+       "the book in the boy",
+       "the boy's book"
+      ],
+      "a": 3,
+      "why": "Di + il becomes del, meaning of the."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Vado dal medico' mean?",
+      "o": [
+       "I come from the doctor",
+       "I go to the doctor's",
+       "I am the doctor",
+       "I call the doctor"
+      ],
+      "a": 1,
+      "why": "Da is used to go to a person."
+     },
+     {
+      "t": "tf",
+      "q": "A + la becomes alla.",
+      "a": true,
+      "why": "Alla is the joined form of a la."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its meaning",
+      "pairs": [
+       [
+        "al",
+        "to the (masc.)"
+       ],
+       [
+        "alla",
+        "to the (fem.)"
+       ],
+       [
+        "nel",
+        "in the (masc.)"
+       ],
+       [
+        "dalla",
+        "from the (fem.)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I go to the station'",
+      "items": [
+       [
+        "Io",
+        1
+       ],
+       [
+        "vado",
+        2
+       ],
+       [
+        "alla",
+        3
+       ],
+       [
+        "stazione",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Vado ___ mercato. (a + il)",
+      "a": [
+       "al"
+      ],
+      "hint": "Join a and il.",
+      "why": "Al mercato means to the market."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Il gatto è ___ giardino. (in + il)",
+      "a": [
+       "nel"
+      ],
+      "hint": "Join in and il.",
+      "why": "Nel giardino means in the garden."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Vengo dalla Spagna",
+      "a": [
+       "I come from Spain",
+       "I am from Spain",
+       "I'm from Spain"
+      ],
+      "hint": "Dalla is da + la.",
+      "why": "Dalla means from the."
+     }
+    ]
+   },
+   {
+    "title": "Health and the Body",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Body parts",
+      "b": "La testa is the head, il braccio the arm, la gamba the leg, la mano the hand and l'occhio the eye. La mano is feminine even though it ends in -o."
+     },
+     {
+      "h": "Saying what hurts",
+      "b": "Say Ho mal di testa (I have a headache) or Ho mal di pancia (I have a stomachache). Sono malato means I am sick. Non sto bene means I do not feel well."
+     },
+     {
+      "h": "At the doctor",
+      "b": "Il medico is the doctor. Say Ho bisogno di un appuntamento (I need an appointment). Buy medicine at la farmacia (the pharmacy)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'la testa' mean?",
+      "o": [
+       "the hand",
+       "the foot",
+       "the head",
+       "the leg"
+      ],
+      "a": 2,
+      "why": "La testa is the head."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Ho mal di testa' mean?",
+      "o": [
+       "I have a headache",
+       "I have a cold",
+       "I have a stomachache",
+       "I have a fever"
+      ],
+      "a": 0,
+      "why": "Mal di means pain in."
+     },
+     {
+      "t": "mc",
+      "q": "Where do you buy medicine?",
+      "o": [
+       "in panetteria",
+       "al parco",
+       "in stazione",
+       "in farmacia"
+      ],
+      "a": 3,
+      "why": "La farmacia is the pharmacy."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Sono malato' mean?",
+      "o": [
+       "I am tired",
+       "I am sick",
+       "I am hungry",
+       "I am late"
+      ],
+      "a": 1,
+      "why": "Malato is sick."
+     },
+     {
+      "t": "tf",
+      "q": "Il medico is the Italian word for the doctor.",
+      "a": true,
+      "why": "Medico means doctor."
+     },
+     {
+      "t": "match",
+      "q": "Match each body part to its meaning",
+      "pairs": [
+       [
+        "il braccio",
+        "arm"
+       ],
+       [
+        "la gamba",
+        "leg"
+       ],
+       [
+        "la mano",
+        "hand"
+       ],
+       [
+        "l'occhio",
+        "eye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I need help'",
+      "items": [
+       [
+        "Ho",
+        1
+       ],
+       [
+        "bisogno",
+        2
+       ],
+       [
+        "di",
+        3
+       ],
+       [
+        "aiuto",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: the head",
+      "a": [
+       "la testa",
+       "testa"
+      ],
+      "hint": "Feminine noun.",
+      "why": "La testa is the head."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Ho mal di pancia",
+      "a": [
+       "I have a stomachache",
+       "I have a stomach ache",
+       "I have stomach ache",
+       "I have stomach pain",
+       "I have a stomach pain"
+      ],
+      "hint": "Pancia is stomach.",
+      "why": "Mal di pancia is a stomachache."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the Italian word for pharmacy",
+      "a": [
+       "farmacia",
+       "la farmacia"
+      ],
+      "hint": "It starts with f.",
+      "why": "La farmacia is the pharmacy."
+     }
+    ]
+   },
+   {
+    "title": "Jobs and School",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Jobs",
+      "b": "L'insegnante is the teacher, il medico the doctor, il cuoco the cook, l'ingegnere the engineer. Ask Che lavoro fai? (What is your job?)."
+     },
+     {
+      "h": "Talking about work",
+      "b": "Say Sono insegnante with no article. Or Lavoro come cuoco (I work as a cook). Il lavoro is the job. Faccio il medico also means I am a doctor."
+     },
+     {
+      "h": "School and study",
+      "b": "La scuola is school, l'università is university and la materia is the school subject. Studio medicina means I study medicine."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Che lavoro fai?' mean?",
+      "o": [
+       "Where do you live?",
+       "How old are you?",
+       "What is your job?",
+       "What do you like?"
+      ],
+      "a": 2,
+      "why": "Lavoro means work or job."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Lavoro come cuoco' mean?",
+      "o": [
+       "I work as a cook",
+       "I eat with a cook",
+       "I like cooks",
+       "I study cooking"
+      ],
+      "a": 0,
+      "why": "Come means as."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'la materia' mean?",
+      "o": [
+       "school bag",
+       "teacher",
+       "exam",
+       "school subject"
+      ],
+      "a": 3,
+      "why": "La materia is a subject."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'l'università' mean?",
+      "o": [
+       "school",
+       "university",
+       "library",
+       "office"
+      ],
+      "a": 1,
+      "why": "L'università is university."
+     },
+     {
+      "t": "tf",
+      "q": "You usually say 'Sono insegnante' without 'un'.",
+      "a": true,
+      "why": "Jobs normally have no article after essere."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "l'insegnante",
+        "teacher"
+       ],
+       [
+        "il cuoco",
+        "cook"
+       ],
+       [
+        "l'università",
+        "university"
+       ],
+       [
+        "il lavoro",
+        "job"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'I work as a cook'",
+      "items": [
+       [
+        "Io",
+        1
+       ],
+       [
+        "lavoro",
+        2
+       ],
+       [
+        "come",
+        3
+       ],
+       [
+        "cuoco",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Sono insegnante",
+      "a": [
+       "I am a teacher",
+       "I'm a teacher"
+      ],
+      "hint": "Add a in English.",
+      "why": "Insegnante is teacher."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: the job",
+      "a": [
+       "il lavoro",
+       "lavoro"
+      ],
+      "hint": "Starts with l.",
+      "why": "Il lavoro is the job."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Io ___ come cuoco. (lavorare)",
+      "a": [
+       "lavoro"
+      ],
+      "hint": "Use the io form.",
+      "why": "Io lavoro come cuoco."
+     }
+    ]
+   },
+   {
+    "title": "Comparing Things",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "More and less",
+      "b": "Use più for more and meno for less. Marco è più alto di Luca (Marco is taller than Luca). Use di before a noun or pronoun and che between two adjectives or verbs."
+     },
+     {
+      "h": "Superlative",
+      "b": "Add the article: il più alto (the tallest). Buono becomes migliore and bene becomes meglio: Sto meglio oggi (I feel better today). Add -issimo for very: bellissimo means very beautiful."
+     },
+     {
+      "h": "As ... as",
+      "b": "Use (così) ... come for equal things: Sono alto come te (I am as tall as you). Use meno ... di for less than."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'più grande' mean?",
+      "o": [
+       "biggest",
+       "small",
+       "bigger",
+       "very big"
+      ],
+      "a": 2,
+      "why": "Più plus an adjective is the comparative."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Lui è più alto ___ me.",
+      "o": [
+       "di",
+       "che",
+       "come",
+       "a"
+      ],
+      "a": 0,
+      "why": "Di means than before a pronoun."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'bellissimo' mean?",
+      "o": [
+       "beautiful",
+       "less beautiful",
+       "ugly",
+       "very beautiful"
+      ],
+      "a": 3,
+      "why": "-issimo means very."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Oggi sto ___. (better)",
+      "o": [
+       "migliore",
+       "meglio",
+       "più bene",
+       "buono"
+      ],
+      "a": 1,
+      "why": "Meglio is the comparative of bene."
+     },
+     {
+      "t": "tf",
+      "q": "'Il più alto' means 'the tallest'.",
+      "a": true,
+      "why": "Article plus più plus adjective is the superlative."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "più veloce",
+        "faster"
+       ],
+       [
+        "meno",
+        "less"
+       ],
+       [
+        "migliore",
+        "better (adjective)"
+       ],
+       [
+        "bellissimo",
+        "very beautiful"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: 'He is taller'",
+      "items": [
+       [
+        "Lui",
+        1
+       ],
+       [
+        "è",
+        2
+       ],
+       [
+        "più",
+        3
+       ],
+       [
+        "alto",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Lei è più alta ___ me.",
+      "a": [
+       "di"
+      ],
+      "hint": "It means than.",
+      "why": "Di is used for than before a pronoun."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write 'very beautiful' in Italian (one word, masculine)",
+      "a": [
+       "bellissimo"
+      ],
+      "hint": "Add -issimo to bello.",
+      "why": "Bellissimo means very beautiful."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to Italian: faster",
+      "a": [
+       "più veloce"
+      ],
+      "hint": "Use più plus the adjective.",
+      "why": "Più veloce means faster."
+     }
+    ]
+   },
+   {
+    "title": "Conditions and Wishes",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "If clauses",
+      "b": "Use se (if) with the present for real conditions: Se piove, resto a casa (If it rains, I stay home). Anche se means even if or although. Mentre means while."
+     },
+     {
+      "h": "The conditional",
+      "b": "The conditional says would. Mangiare becomes mangerei (I would eat), andare becomes andrei (I would go), volere becomes vorrei (I would like)."
+     },
+     {
+      "h": "Polite wishes",
+      "b": "Mi piacerebbe viaggiare means I would like to travel. Vorrei un caffè is a polite order. Use perché for because."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'Se piove, resto a casa' mean?",
+      "o": [
+       "Because it rains, I go out",
+       "It rained, so I stayed",
+       "If it rains, I stay home",
+       "It never rains at home"
+      ],
+      "a": 2,
+      "why": "Se means if."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'anche se' mean?",
+      "o": [
+       "even though",
+       "because",
+       "while",
+       "that"
+      ],
+      "a": 0,
+      "why": "Anche se is even if or although."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Mi piacerebbe viaggiare' mean?",
+      "o": [
+       "I traveled a lot",
+       "I like to travel often",
+       "I must travel",
+       "I would like to travel"
+      ],
+      "a": 3,
+      "why": "Piacerebbe is the conditional."
+     },
+     {
+      "t": "mc",
+      "q": "Complete: Io ___ andare in Italia. (would like)",
+      "o": [
+       "voglio",
+       "vorrei",
+       "volevo",
+       "vorrai"
+      ],
+      "a": 1,
+      "why": "Vorrei is the conditional of volere."
+     },
+     {
+      "t": "tf",
+      "q": "'Mangerei' is a conditional form meaning 'I would eat'.",
+      "a": true,
+      "why": "The -erei ending marks the conditional."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "se",
+        "if"
+       ],
+       [
+        "anche se",
+        "even if"
+       ],
+       [
+        "mentre",
+        "while"
+       ],
+       [
+        "perché",
+        "because"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts in order: 'If it rains, I stay at home'",
+      "items": [
+       [
+        "Se piove,",
+        1
+       ],
+       [
+        "resto",
+        2
+       ],
+       [
+        "a",
+        3
+       ],
+       [
+        "casa",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: ___ piove, resto a casa. (if)",
+      "a": [
+       "Se",
+       "se"
+      ],
+      "hint": "Two letters.",
+      "why": "Se means if."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: translate to English: Vorrei viaggiare",
+      "a": [
+       "I would like to travel",
+       "I'd like to travel"
+      ],
+      "hint": "Vorrei means I would like.",
+      "why": "Vorrei is the conditional of volere."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill the missing word: Io ___ in Italia. (andare, conditional)",
+      "a": [
+       "andrei"
+      ],
+      "hint": "Irregular stem andr-.",
+      "why": "Andrei means I would go."
+     }
+    ]
+   }
+  ]
+ }
+}

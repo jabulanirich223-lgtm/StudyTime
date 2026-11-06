@@ -1,0 +1,4455 @@
+{
+ "math-g7": {
+  "name": "Grade 7 Math",
+  "units": [
+   {
+    "title": "Integers and Rational Numbers",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Adding integers",
+      "b": "Same signs: add and keep the sign. Different signs: subtract and keep the sign of the bigger absolute value. -5 + 8 = 3."
+     },
+     {
+      "h": "Subtracting",
+      "b": "Subtracting a number is the same as adding its opposite. -4 - (-9) = -4 + 9 = 5."
+     },
+     {
+      "h": "Multiplying and dividing",
+      "b": "Same signs give a positive answer. Different signs give a negative answer. (-6)(-7) = 42 and -48 / 6 = -8."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is -5 + 8?",
+      "o": [
+       "-3",
+       "13",
+       "-13",
+       "3"
+      ],
+      "a": 3,
+      "why": "8 is bigger, so the answer is positive: 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is -4 - (-9)?",
+      "o": [
+       "-13",
+       "5",
+       "-5",
+       "13"
+      ],
+      "a": 1,
+      "why": "-4 + 9 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "What is (-6) x (-7)?",
+      "o": [
+       "-42",
+       "13",
+       "42",
+       "-13"
+      ],
+      "a": 2,
+      "why": "Negative times negative is positive: 42."
+     },
+     {
+      "t": "mc",
+      "q": "What is -48 / 6?",
+      "o": [
+       "-8",
+       "8",
+       "-42",
+       "-54"
+      ],
+      "a": 0,
+      "why": "Different signs give a negative answer: -8."
+     },
+     {
+      "t": "tf",
+      "q": "A negative number times a negative number is positive.",
+      "a": true,
+      "why": "For example (-3)(-2) = 6."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its value",
+      "pairs": [
+       [
+        "|-7|",
+        "7"
+       ],
+       [
+        "opposite of 4",
+        "-4"
+       ],
+       [
+        "|3|",
+        "3"
+       ],
+       [
+        "opposite of -2",
+        "2"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers from smallest to largest",
+      "items": [
+       [
+        "-3",
+        1
+       ],
+       [
+        "-1/2",
+        2
+       ],
+       [
+        "0.4",
+        3
+       ],
+       [
+        "2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: -7 + (-12) = ?",
+      "a": [
+       "-19"
+      ],
+      "hint": "Same signs: add and keep the sign.",
+      "why": "7 + 12 = 19, so the answer is -19."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: -4 - (-11) = ?",
+      "a": [
+       "7"
+      ],
+      "hint": "Subtracting a negative means adding.",
+      "why": "-4 + 11 = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The temperature is -3 degrees and drops 9 degrees. What is the new temperature?",
+      "a": [
+       "-12"
+      ],
+      "hint": "Start at -3 and subtract 9.",
+      "why": "-3 - 9 = -12."
+     }
+    ]
+   },
+   {
+    "title": "Fractions and Decimals",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Adding and subtracting fractions",
+      "b": "Use a common denominator, then add the tops. 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Negative fractions follow the same sign rules as integers."
+     },
+     {
+      "h": "Multiplying and dividing fractions",
+      "b": "To multiply, multiply tops and bottoms: 2/3 x 3/4 = 6/12 = 1/2. To divide, multiply by the reciprocal: 1/2 / 1/4 = 1/2 x 4 = 2."
+     },
+     {
+      "h": "Fractions and decimals",
+      "b": "Divide the top by the bottom: 3/4 = 0.75. Some decimals repeat, like 1/3 = 0.333... Every decimal that ends or repeats is a rational number."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 1/2 + 1/3?",
+      "o": [
+       "2/5",
+       "1/6",
+       "5/6",
+       "3/6"
+      ],
+      "a": 2,
+      "why": "The common denominator is 6: 3/6 + 2/6 = 5/6."
+     },
+     {
+      "t": "mc",
+      "q": "What is 2/3 x 3/4?",
+      "o": [
+       "1/2",
+       "5/12",
+       "8/9",
+       "1/6"
+      ],
+      "a": 0,
+      "why": "Multiply across: 6/12, which simplifies to 1/2."
+     },
+     {
+      "t": "mc",
+      "q": "What is 3/4 / 1/2?",
+      "o": [
+       "3/8",
+       "2/3",
+       "5/4",
+       "3/2"
+      ],
+      "a": 3,
+      "why": "Multiply by the reciprocal: 3/4 x 2 = 6/4 = 3/2."
+     },
+     {
+      "t": "mc",
+      "q": "Write 7/8 as a decimal.",
+      "o": [
+       "0.78",
+       "0.875",
+       "1.14",
+       "0.7"
+      ],
+      "a": 1,
+      "why": "7 divided by 8 is 0.875."
+     },
+     {
+      "t": "tf",
+      "q": "The repeating decimal 0.333... is a rational number.",
+      "a": true,
+      "why": "It equals 1/3, a fraction of two integers."
+     },
+     {
+      "t": "match",
+      "q": "Match each fraction to its decimal",
+      "pairs": [
+       [
+        "1/2",
+        "0.5"
+       ],
+       [
+        "1/4",
+        "0.25"
+       ],
+       [
+        "1/5",
+        "0.2"
+       ],
+       [
+        "3/4",
+        "0.75"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers from smallest to largest",
+      "items": [
+       [
+        "-1.5",
+        1
+       ],
+       [
+        "-3/4",
+        2
+       ],
+       [
+        "1/5",
+        3
+       ],
+       [
+        "1/2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 3/5 + 1/10 = ? Give the answer as a decimal.",
+      "a": [
+       "0.7",
+       ".7"
+      ],
+      "hint": "3/5 = 0.6 and 1/10 = 0.1.",
+      "why": "0.6 + 0.1 = 0.7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 1/2 divided by 1/8 = ?",
+      "a": [
+       "4"
+      ],
+      "hint": "Multiply 1/2 by the reciprocal 8.",
+      "why": "1/2 x 8 = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A recipe needs 3/4 cup of flour. You make 2/3 of the recipe. How many cups of flour? Give a decimal.",
+      "a": [
+       "0.5",
+       ".5"
+      ],
+      "hint": "Multiply 3/4 x 2/3.",
+      "why": "3/4 x 2/3 = 6/12 = 1/2 = 0.5."
+     }
+    ]
+   },
+   {
+    "title": "Ratios, Proportions and Percent",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Proportions",
+      "b": "A proportion says two ratios are equal. 3/4 = x/20. Cross multiply: 4x = 60, so x = 15."
+     },
+     {
+      "h": "Percent change",
+      "b": "Find the change, then divide by the original. $50 up 20% is 50 + 10 = $60."
+     },
+     {
+      "h": "Tips, tax and discounts",
+      "b": "Percent of a number: multiply by the decimal. 15% of $40 = 0.15 x 40 = $6. A 10% discount on $80 takes off $8, leaving $72."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A $50 shirt goes up in price by 20%. What is the new price?",
+      "o": [
+       "$55",
+       "$70",
+       "$62",
+       "$60"
+      ],
+      "a": 3,
+      "why": "20% of 50 is 10, and 50 + 10 = 60."
+     },
+     {
+      "t": "mc",
+      "q": "What is a 15% tip on a $40 bill?",
+      "o": [
+       "$6",
+       "$4",
+       "$15",
+       "$0.60"
+      ],
+      "a": 0,
+      "why": "0.15 x 40 = 6."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 3/4 = x/20.",
+      "o": [
+       "12",
+       "15",
+       "16",
+       "5"
+      ],
+      "a": 1,
+      "why": "20 is 5 times 4, so x = 5 x 3 = 15."
+     },
+     {
+      "t": "mc",
+      "q": "12 oz of juice costs $3. What is the price per ounce?",
+      "o": [
+       "$4",
+       "$0.36",
+       "$0.25",
+       "$0.30"
+      ],
+      "a": 2,
+      "why": "3 / 12 = 0.25."
+     },
+     {
+      "t": "tf",
+      "q": "A 10% discount on an $80 item makes the price $72.",
+      "a": true,
+      "why": "10% of 80 is 8, and 80 - 8 = 72."
+     },
+     {
+      "t": "match",
+      "q": "Match each percent problem to its answer",
+      "pairs": [
+       [
+        "8% of 50",
+        "4"
+       ],
+       [
+        "25% of 200",
+        "50"
+       ],
+       [
+        "10% of 35",
+        "3.5"
+       ],
+       [
+        "50% of 18",
+        "9"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "10% of 50",
+        1
+       ],
+       [
+        "20% of 50",
+        2
+       ],
+       [
+        "50% of 50",
+        3
+       ],
+       [
+        "100% of 50",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Solve 3/5 = x/35. x = ?",
+      "a": [
+       "21"
+      ],
+      "hint": "35 is 7 times 5.",
+      "why": "3 x 7 = 21."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is 35% of 80?",
+      "a": [
+       "28"
+      ],
+      "hint": "Multiply 0.35 x 80.",
+      "why": "0.35 x 80 = 28."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A $80 item goes up 15%. What is the new price in dollars?",
+      "a": [
+       "92",
+       "$92",
+       "92.00"
+      ],
+      "hint": "15% of 80 is 12.",
+      "why": "80 + 12 = 92."
+     }
+    ]
+   },
+   {
+    "title": "Proportional Relationships",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "The constant of proportionality",
+      "b": "In a proportional relationship y = kx, k = y / x is always the same. If 3 pizzas cost $24, then k = 8 dollars per pizza and y = 8x."
+     },
+     {
+      "h": "Tables and graphs",
+      "b": "In a table of a proportional relationship, y / x is the same in every row. The graph is a straight line through (0, 0)."
+     },
+     {
+      "h": "Unit rates and scale",
+      "b": "A unit rate is a rate for 1 unit: 150 miles in 3 hours is 50 miles per hour. On a map with scale 1 cm : 5 km, 3 cm stands for 15 km."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In y = kx, y = 20 when x = 4. What is k?",
+      "o": [
+       "16",
+       "5",
+       "24",
+       "80"
+      ],
+      "a": 1,
+      "why": "k = y / x = 20 / 4 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "A table has x = 2, 4, 6 and y = 6, 12, 18. Which equation fits?",
+      "o": [
+       "y = x + 4",
+       "y = 6x",
+       "y = x/3",
+       "y = 3x"
+      ],
+      "a": 3,
+      "why": "y / x = 3 in every row."
+     },
+     {
+      "t": "mc",
+      "q": "A map scale is 1 cm = 5 km. What distance do 7 cm show?",
+      "o": [
+       "35 km",
+       "12 km",
+       "1.4 km",
+       "70 km"
+      ],
+      "a": 0,
+      "why": "7 x 5 = 35."
+     },
+     {
+      "t": "mc",
+      "q": "A car goes 150 miles in 3 hours. What is the unit rate?",
+      "o": [
+       "450 miles per hour",
+       "0.02 miles per hour",
+       "50 miles per hour",
+       "153 miles per hour"
+      ],
+      "a": 2,
+      "why": "150 / 3 = 50."
+     },
+     {
+      "t": "tf",
+      "q": "The graph of a proportional relationship is a straight line through the origin.",
+      "a": true,
+      "why": "When x = 0, y = kx = 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each equation to its meaning",
+      "pairs": [
+       [
+        "y = 5x",
+        "k = 5"
+       ],
+       [
+        "y = x/2",
+        "k = 1/2"
+       ],
+       [
+        "y = x + 3",
+        "not proportional"
+       ],
+       [
+        "y = 9x",
+        "k = 9"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these prices from lowest to highest unit price",
+      "items": [
+       [
+        "$3 for 6 lb",
+        1
+       ],
+       [
+        "$6 for 8 lb",
+        2
+       ],
+       [
+        "$5 for 4 lb",
+        3
+       ],
+       [
+        "$9 for 6 lb",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 5 notebooks cost $12.50 at a constant rate. What do 8 notebooks cost, in dollars?",
+      "a": [
+       "20",
+       "20.00",
+       "$20"
+      ],
+      "hint": "First find the price of 1 notebook.",
+      "why": "12.50 / 5 = 2.50 per notebook, and 8 x 2.50 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In y = kx, y = 42 when x = 6. k = ?",
+      "a": [
+       "7"
+      ],
+      "hint": "k = y / x.",
+      "why": "42 / 6 = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A map scale is 2 cm = 3 km. How many km do 10 cm show?",
+      "a": [
+       "15",
+       "15 km"
+      ],
+      "hint": "10 cm is 5 times 2 cm.",
+      "why": "5 x 3 = 15 km."
+     }
+    ]
+   },
+   {
+    "title": "Interest, Markup and Percent Error",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Simple interest",
+      "b": "Simple interest is I = P x r x t. For $200 at 5% for 3 years: 200 x 0.05 x 3 = $30."
+     },
+     {
+      "h": "Markup, discount and tax",
+      "b": "A markup adds to a price and a discount takes away. Price with 8% tax: multiply by 1.08, so $50 becomes $54. A 25% discount means you pay 75%."
+     },
+     {
+      "h": "Percent error",
+      "b": "Percent error = |estimate - actual| / actual x 100. If you guess 45 and the real value is 50, the error is 5 / 50 = 10%."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the simple interest on $400 at 3% for 2 years?",
+      "o": [
+       "$12",
+       "$1,200",
+       "$24",
+       "$2.40"
+      ],
+      "a": 2,
+      "why": "400 x 0.03 x 2 = 24."
+     },
+     {
+      "t": "mc",
+      "q": "A $60 jacket is 25% off. What is the sale price?",
+      "o": [
+       "$45",
+       "$15",
+       "$35",
+       "$75"
+      ],
+      "a": 0,
+      "why": "25% of 60 is 15, and 60 - 15 = 45."
+     },
+     {
+      "t": "mc",
+      "q": "What is the price of a $50 item after 8% sales tax?",
+      "o": [
+       "$4",
+       "$58",
+       "$50.40",
+       "$54"
+      ],
+      "a": 3,
+      "why": "50 x 1.08 = 54."
+     },
+     {
+      "t": "mc",
+      "q": "You guess 45 but the actual value is 50. What is the percent error?",
+      "o": [
+       "5%",
+       "10%",
+       "11%",
+       "50%"
+      ],
+      "a": 1,
+      "why": "|45 - 50| / 50 = 5/50 = 10%."
+     },
+     {
+      "t": "tf",
+      "q": "The percent change from 40 to 50 is 25%.",
+      "a": true,
+      "why": "The change is 10 and 10 / 40 = 25%."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Principal",
+        "starting amount of money"
+       ],
+       [
+        "Rate",
+        "percent charged per year"
+       ],
+       [
+        "Markup",
+        "amount added to the cost"
+       ],
+       [
+        "Discount",
+        "amount taken off the price"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these final prices of a $100 item from lowest to highest",
+      "items": [
+       [
+        "20% off",
+        1
+       ],
+       [
+        "10% off",
+        2
+       ],
+       [
+        "no change",
+        3
+       ],
+       [
+        "plus 10% tax",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How much simple interest does $500 earn at 4% for 3 years, in dollars?",
+      "a": [
+       "60",
+       "$60",
+       "60.00"
+      ],
+      "hint": "I = P x r x t.",
+      "why": "500 x 0.04 x 3 = 60."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A store buys a toy for $12 and marks it up 50%. What is the selling price in dollars?",
+      "a": [
+       "18",
+       "$18",
+       "18.00"
+      ],
+      "hint": "The markup is 50% of 12.",
+      "why": "12 + 6 = 18."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A scale reads 48 pounds but the true weight is 40. What is the percent error?",
+      "a": [
+       "20",
+       "20%"
+      ],
+      "hint": "Divide the difference by the actual value.",
+      "why": "8 / 40 = 0.20 = 20%."
+     }
+    ]
+   },
+   {
+    "title": "Expressions, Equations and Inequalities",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Combining like terms",
+      "b": "Add or subtract terms with the same variable. 3x + 5x = 8x."
+     },
+     {
+      "h": "Two-step equations",
+      "b": "Undo addition first, then multiplication. 2x + 5 = 17 gives 2x = 12, so x = 6."
+     },
+     {
+      "h": "Inequalities",
+      "b": "They work like equations, but the answer is a range. 2x < 10 gives x < 5. If you multiply or divide by a negative, flip the sign."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Simplify 3x + 5x.",
+      "o": [
+       "15x",
+       "8x",
+       "8x^2",
+       "35x"
+      ],
+      "a": 1,
+      "why": "Add the coefficients: 3 + 5 = 8."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 2x + 5 = 17.",
+      "o": [
+       "11",
+       "4",
+       "12",
+       "6"
+      ],
+      "a": 3,
+      "why": "Subtract 5 to get 2x = 12, then divide by 2."
+     },
+     {
+      "t": "mc",
+      "q": "Solve x/3 - 2 = 4.",
+      "o": [
+       "18",
+       "6",
+       "2",
+       "10"
+      ],
+      "a": 0,
+      "why": "Add 2 to get x/3 = 6, then multiply by 3."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 2x < 10.",
+      "o": [
+       "x > 5",
+       "x < 20",
+       "x < 5",
+       "x < 8"
+      ],
+      "a": 2,
+      "why": "Divide both sides by 2: x < 5."
+     },
+     {
+      "t": "tf",
+      "q": "When you divide both sides of an inequality by a negative number, you flip the inequality sign.",
+      "a": true,
+      "why": "For example -2x < 6 becomes x > -3."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its simplest form",
+      "pairs": [
+       [
+        "2(x + 4)",
+        "2x + 8"
+       ],
+       [
+        "4x - x",
+        "3x"
+       ],
+       [
+        "3(2x)",
+        "6x"
+       ],
+       [
+        "x + 4x",
+        "5x"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for 2x + 5 = 17 in order",
+      "items": [
+       [
+        "Subtract 5 from both sides",
+        1
+       ],
+       [
+        "Now 2x = 12",
+        2
+       ],
+       [
+        "Divide both sides by 2",
+        3
+       ],
+       [
+        "x = 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Solve 4x - 7 = 21. x = ?",
+      "a": [
+       "7"
+      ],
+      "hint": "Add 7, then divide by 4.",
+      "why": "4x = 28, so x = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Simplify 7x - 2x. What is the coefficient of x?",
+      "a": [
+       "5"
+      ],
+      "hint": "Subtract the coefficients.",
+      "why": "7x - 2x = 5x."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the largest whole number x with 3x < 20?",
+      "a": [
+       "6"
+      ],
+      "hint": "Divide by 3: x < 6.67.",
+      "why": "x < 6.67, so the largest whole number is 6."
+     }
+    ]
+   },
+   {
+    "title": "Angles and Triangles",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Angle pairs",
+      "b": "Complementary angles add to 90. Supplementary angles add to 180. Vertical angles (opposite each other where two lines cross) are equal."
+     },
+     {
+      "h": "Angles in a triangle",
+      "b": "The three angles of a triangle add to 180. If two angles are 50 and 60, the third is 180 - 110 = 70."
+     },
+     {
+      "h": "Can these sides make a triangle?",
+      "b": "The two shorter sides must add to more than the longest side. 3, 4, 8 fails because 3 + 4 = 7 is less than 8. 3, 4, 5 works."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the complement of a 35 degree angle?",
+      "o": [
+       "145 degrees",
+       "55 degrees",
+       "65 degrees",
+       "35 degrees"
+      ],
+      "a": 1,
+      "why": "90 - 35 = 55."
+     },
+     {
+      "t": "mc",
+      "q": "What is the supplement of a 110 degree angle?",
+      "o": [
+       "80 degrees",
+       "250 degrees",
+       "20 degrees",
+       "70 degrees"
+      ],
+      "a": 3,
+      "why": "180 - 110 = 70."
+     },
+     {
+      "t": "mc",
+      "q": "Two angles of a triangle are 50 and 60 degrees. What is the third?",
+      "o": [
+       "70 degrees",
+       "80 degrees",
+       "110 degrees",
+       "90 degrees"
+      ],
+      "a": 0,
+      "why": "180 - 50 - 60 = 70."
+     },
+     {
+      "t": "mc",
+      "q": "Which side lengths can form a triangle?",
+      "o": [
+       "3, 4, 8",
+       "2, 2, 5",
+       "5, 6, 10",
+       "1, 2, 3"
+      ],
+      "a": 2,
+      "why": "5 + 6 = 11 is greater than 10. In the others the two short sides do not add to more than the longest."
+     },
+     {
+      "t": "tf",
+      "q": "Vertical angles are always equal.",
+      "a": true,
+      "why": "Opposite angles formed by two crossing lines have the same measure."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Complementary angles",
+        "add to 90"
+       ],
+       [
+        "Supplementary angles",
+        "add to 180"
+       ],
+       [
+        "Vertical angles",
+        "are equal"
+       ],
+       [
+        "Full turn",
+        "360 degrees"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these angles from smallest to largest",
+      "items": [
+       [
+        "Acute angle (40)",
+        1
+       ],
+       [
+        "Right angle (90)",
+        2
+       ],
+       [
+        "Obtuse angle (120)",
+        3
+       ],
+       [
+        "Straight angle (180)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the complement of a 28 degree angle? Answer in degrees.",
+      "a": [
+       "62",
+       "62 degrees"
+      ],
+      "hint": "Subtract from 90.",
+      "why": "90 - 28 = 62."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The angles of a triangle are x, 2x and 3x degrees. What is x?",
+      "a": [
+       "30",
+       "30 degrees"
+      ],
+      "hint": "They add to 180, so 6x = 180.",
+      "why": "6x = 180 gives x = 30."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Two supplementary angles: one is 3 times the other. How big is the smaller one, in degrees?",
+      "a": [
+       "45",
+       "45 degrees"
+      ],
+      "hint": "The smaller is a, the larger is 3a, and a + 3a = 180.",
+      "why": "4a = 180, so a = 45."
+     }
+    ]
+   },
+   {
+    "title": "Area, Surface Area and Volume",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Area of flat shapes",
+      "b": "Rectangle: l x w. Parallelogram: b x h. Triangle: 1/2 x b x h. A triangle with base 10 and height 6 has area 30."
+     },
+     {
+      "h": "Volume of prisms",
+      "b": "Volume = area of the base x height. A box 4 by 3 by 5 has base area 12 and volume 12 x 5 = 60."
+     },
+     {
+      "h": "Surface area",
+      "b": "Surface area is the total area of all faces. A cube with side 3 has 6 faces of area 9, so the surface area is 54."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the area of a triangle with base 10 and height 6?",
+      "o": [
+       "60",
+       "16",
+       "30",
+       "15"
+      ],
+      "a": 2,
+      "why": "1/2 x 10 x 6 = 30."
+     },
+     {
+      "t": "mc",
+      "q": "What is the volume of a box that is 4 by 3 by 5?",
+      "o": [
+       "60",
+       "12",
+       "47",
+       "120"
+      ],
+      "a": 0,
+      "why": "4 x 3 x 5 = 60."
+     },
+     {
+      "t": "mc",
+      "q": "What is the surface area of a cube with side 3?",
+      "o": [
+       "27",
+       "18",
+       "36",
+       "54"
+      ],
+      "a": 3,
+      "why": "6 faces x 9 = 54."
+     },
+     {
+      "t": "mc",
+      "q": "What is the area of a parallelogram with base 8 and height 5?",
+      "o": [
+       "13",
+       "40",
+       "20",
+       "80"
+      ],
+      "a": 1,
+      "why": "b x h = 8 x 5 = 40."
+     },
+     {
+      "t": "tf",
+      "q": "The volume of a prism is the area of its base times its height.",
+      "a": true,
+      "why": "That rule works for any prism."
+     },
+     {
+      "t": "match",
+      "q": "Match each shape to its area formula",
+      "pairs": [
+       [
+        "Rectangle",
+        "l x w"
+       ],
+       [
+        "Triangle",
+        "1/2 x b x h"
+       ],
+       [
+        "Parallelogram",
+        "b x h"
+       ],
+       [
+        "Circle",
+        "pi x r^2"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these boxes from smallest to largest volume",
+      "items": [
+       [
+        "2 x 2 x 2",
+        1
+       ],
+       [
+        "2 x 3 x 2",
+        2
+       ],
+       [
+        "3 x 3 x 2",
+        3
+       ],
+       [
+        "3 x 3 x 3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A triangle has base 14 and height 9. What is its area?",
+      "a": [
+       "63"
+      ],
+      "hint": "Use 1/2 x b x h.",
+      "why": "1/2 x 14 x 9 = 63."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A prism has a base area of 12 and a height of 7. What is its volume?",
+      "a": [
+       "84"
+      ],
+      "hint": "Multiply base area by height.",
+      "why": "12 x 7 = 84."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the surface area of a box that is 2 by 3 by 4?",
+      "a": [
+       "52"
+      ],
+      "hint": "Add the 3 pairs of faces: 2(2x3 + 2x4 + 3x4).",
+      "why": "2(6 + 8 + 12) = 52."
+     }
+    ]
+   },
+   {
+    "title": "Geometry and Probability",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Circles",
+      "b": "Circumference = 2 x pi x r. Area = pi x r^2. With r = 5, circumference is 10 pi. With r = 3, area is 9 pi."
+     },
+     {
+      "h": "Probability",
+      "b": "Probability = favorable outcomes / total outcomes. Rolling an even number on a die: 3 / 6 = 1/2."
+     },
+     {
+      "h": "Probability scale",
+      "b": "Probability goes from 0 (impossible) to 1 (certain). Two independent events: multiply. Two heads in a row: 1/2 x 1/2 = 1/4."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the circumference of a circle with radius 5?",
+      "o": [
+       "5 pi",
+       "25 pi",
+       "10 pi",
+       "20 pi"
+      ],
+      "a": 2,
+      "why": "2 x pi x 5 = 10 pi."
+     },
+     {
+      "t": "mc",
+      "q": "What is the area of a circle with radius 3?",
+      "o": [
+       "9 pi",
+       "6 pi",
+       "3 pi",
+       "18 pi"
+      ],
+      "a": 0,
+      "why": "pi x 3^2 = 9 pi."
+     },
+     {
+      "t": "mc",
+      "q": "What is the probability of rolling an even number on a fair die?",
+      "o": [
+       "1/6",
+       "1/3",
+       "2/3",
+       "1/2"
+      ],
+      "a": 3,
+      "why": "There are 3 even numbers out of 6."
+     },
+     {
+      "t": "mc",
+      "q": "You flip a fair coin twice. What is the probability of two heads?",
+      "o": [
+       "1/2",
+       "1/4",
+       "1/3",
+       "1/8"
+      ],
+      "a": 1,
+      "why": "1/2 x 1/2 = 1/4."
+     },
+     {
+      "t": "tf",
+      "q": "A probability can be greater than 1.",
+      "a": false,
+      "why": "Probability is always between 0 and 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each probability to its meaning",
+      "pairs": [
+       [
+        "0",
+        "impossible"
+       ],
+       [
+        "1",
+        "certain"
+       ],
+       [
+        "1/2",
+        "equally likely either way"
+       ],
+       [
+        "0.9",
+        "very likely"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events from least to most likely",
+      "items": [
+       [
+        "Rolling a 7 on a die",
+        1
+       ],
+       [
+        "Rolling a 6 on a die",
+        2
+       ],
+       [
+        "Rolling an even number",
+        3
+       ],
+       [
+        "Rolling a number from 1 to 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the area of a circle with radius 4? Write it with pi, like 5pi.",
+      "a": [
+       "16pi",
+       "16 pi"
+      ],
+      "hint": "Area = pi x r^2.",
+      "why": "pi x 16 = 16 pi."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the circumference of a circle with radius 7? Write it with pi.",
+      "a": [
+       "14pi",
+       "14 pi"
+      ],
+      "hint": "Circumference = 2 x pi x r.",
+      "why": "2 x pi x 7 = 14 pi."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: You flip a coin and roll a die. How many different outcomes are there?",
+      "a": [
+       "12"
+      ],
+      "hint": "Multiply the outcomes: 2 x 6.",
+      "why": "2 x 6 = 12."
+     }
+    ]
+   },
+   {
+    "title": "Statistics and Sampling",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Mean, median, mode, range",
+      "b": "For 2, 4, 4, 6, 9: the mean is 25 / 5 = 5, the median (middle) is 4, the mode (most common) is 4, and the range is 9 - 2 = 7."
+     },
+     {
+      "h": "Good and bad samples",
+      "b": "A random sample represents the whole population. A biased sample does not: asking only basketball players about favorite sports gives a biased answer."
+     },
+     {
+      "h": "Predicting from a sample",
+      "b": "If 20 of 50 sampled students like pizza, that is 40%. So in a school of 500 students we expect about 0.40 x 500 = 200 to like pizza."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the mean of 2, 4, 4, 6, 9?",
+      "o": [
+       "4",
+       "5",
+       "6",
+       "7"
+      ],
+      "a": 1,
+      "why": "The sum is 25 and 25 / 5 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "What is the median of 3, 7, 1, 9, 5?",
+      "o": [
+       "7",
+       "3",
+       "4",
+       "5"
+      ],
+      "a": 3,
+      "why": "Sorted: 1, 3, 5, 7, 9. The middle is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What is the range of 12, 5, 20, 9?",
+      "o": [
+       "15",
+       "14",
+       "8",
+       "20"
+      ],
+      "a": 0,
+      "why": "20 - 5 = 15."
+     },
+     {
+      "t": "mc",
+      "q": "In a sample, 40 of 200 students like soccer. About how many of 1000 students would you expect to like it?",
+      "o": [
+       "40",
+       "400",
+       "200",
+       "20"
+      ],
+      "a": 2,
+      "why": "40/200 = 20%, and 20% of 1000 = 200."
+     },
+     {
+      "t": "tf",
+      "q": "A biased sample is a good way to predict a whole population.",
+      "a": false,
+      "why": "A biased sample over-represents some group, so predictions are unreliable."
+     },
+     {
+      "t": "match",
+      "q": "Match each statistic to its meaning",
+      "pairs": [
+       [
+        "Mean",
+        "sum divided by count"
+       ],
+       [
+        "Median",
+        "middle value"
+       ],
+       [
+        "Mode",
+        "most common value"
+       ],
+       [
+        "Range",
+        "largest minus smallest"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for finding a median in order",
+      "items": [
+       [
+        "List the numbers",
+        1
+       ],
+       [
+        "Sort from least to greatest",
+        2
+       ],
+       [
+        "Find the middle value",
+        3
+       ],
+       [
+        "If two middles, average them",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the mean of 6, 8, 10, 12, 14?",
+      "a": [
+       "10"
+      ],
+      "hint": "Add them up, then divide by 5.",
+      "why": "50 / 5 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the median of 4, 9, 2, 7?",
+      "a": [
+       "5.5"
+      ],
+      "hint": "Sort first: 2, 4, 7, 9. Then average the two middle numbers.",
+      "why": "(4 + 7) / 2 = 5.5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In a random sample of 60 students, 18 prefer cats. About how many of 900 students prefer cats?",
+      "a": [
+       "270"
+      ],
+      "hint": "18 out of 60 is 30%.",
+      "why": "0.30 x 900 = 270."
+     }
+    ]
+   }
+  ]
+ },
+ "math-g8": {
+  "name": "Grade 8 Math",
+  "units": [
+   {
+    "title": "Exponents and Real Numbers",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Exponent rules",
+      "b": "2^5 = 2 x 2 x 2 x 2 x 2 = 32. When you multiply same bases, add exponents: 3^2 x 3^3 = 3^5 = 243. Any nonzero number to the power 0 is 1."
+     },
+     {
+      "h": "Square roots",
+      "b": "A number that cannot be written as a fraction is irrational, like sqrt(2). sqrt(9) = 3 is rational."
+     },
+     {
+      "h": "Scientific notation",
+      "b": "Write big numbers as a number from 1 to 10 times a power of 10. 5,000,000 = 5 x 10^6."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 2^5?",
+      "o": [
+       "10",
+       "25",
+       "32",
+       "16"
+      ],
+      "a": 2,
+      "why": "2 x 2 x 2 x 2 x 2 = 32."
+     },
+     {
+      "t": "mc",
+      "q": "What is 3^2 x 3^3?",
+      "o": [
+       "3^5",
+       "3^6",
+       "9^5",
+       "6^5"
+      ],
+      "a": 0,
+      "why": "Add the exponents: 2 + 3 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Which number is irrational?",
+      "o": [
+       "0.5",
+       "sqrt(2)",
+       "sqrt(9)",
+       "1/3"
+      ],
+      "a": 1,
+      "why": "sqrt(2) cannot be written as a fraction."
+     },
+     {
+      "t": "mc",
+      "q": "Write 5,000,000 in scientific notation.",
+      "o": [
+       "5 x 10^5",
+       "50 x 10^5",
+       "5 x 10^7",
+       "5 x 10^6"
+      ],
+      "a": 3,
+      "why": "5,000,000 has 6 zeros, so it is 5 x 10^6."
+     },
+     {
+      "t": "tf",
+      "q": "Any nonzero number raised to the power 0 equals 1.",
+      "a": true,
+      "why": "For example 5^0 = 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each power to its value",
+      "pairs": [
+       [
+        "2^3",
+        "8"
+       ],
+       [
+        "10^2",
+        "100"
+       ],
+       [
+        "4^2",
+        "16"
+       ],
+       [
+        "5^0",
+        "1"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "sqrt(4)",
+        1
+       ],
+       [
+        "sqrt(10)",
+        2
+       ],
+       [
+        "sqrt(25)",
+        3
+       ],
+       [
+        "sqrt(50)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 2^3 x 2^4 = 2^n. n = ?",
+      "a": [
+       "7"
+      ],
+      "hint": "Add the exponents.",
+      "why": "3 + 4 = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is 5^3?",
+      "a": [
+       "125"
+      ],
+      "hint": "5 x 5 x 5.",
+      "why": "25 x 5 = 125."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Write 10^-2 as a decimal.",
+      "a": [
+       "0.01",
+       ".01"
+      ],
+      "hint": "A negative exponent means dividing: 1 / 10^2.",
+      "why": "1 / 100 = 0.01."
+     }
+    ]
+   },
+   {
+    "title": "Roots and Irrational Numbers",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Square roots and cube roots",
+      "b": "A square root undoes squaring: sqrt(49) = 7. A cube root undoes cubing: the cube root of 27 is 3 because 3 x 3 x 3 = 27. Cube roots of negatives are negative: the cube root of -8 is -2."
+     },
+     {
+      "h": "Estimating roots",
+      "b": "sqrt(20) is between 4 and 5 because 16 < 20 < 25. Since 20 is closer to 16 than to 25, it is a bit more than 4 (about 4.47)."
+     },
+     {
+      "h": "Rational or irrational?",
+      "b": "Decimals that end or repeat are rational. Decimals that never end or repeat are irrational, like pi and sqrt(2). To solve x^2 = 36, x = 6 or x = -6."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the cube root of 64?",
+      "o": [
+       "8",
+       "16",
+       "4",
+       "32"
+      ],
+      "a": 2,
+      "why": "4 x 4 x 4 = 64."
+     },
+     {
+      "t": "mc",
+      "q": "sqrt(50) is between which two whole numbers?",
+      "o": [
+       "7 and 8",
+       "5 and 6",
+       "6 and 7",
+       "8 and 9"
+      ],
+      "a": 0,
+      "why": "49 < 50 < 64, so sqrt(50) is between 7 and 8."
+     },
+     {
+      "t": "mc",
+      "q": "Solve x^2 = 81.",
+      "o": [
+       "x = 9 only",
+       "x = 40.5",
+       "x = 81",
+       "x = 9 or x = -9"
+      ],
+      "a": 3,
+      "why": "Both 9 and -9 square to 81."
+     },
+     {
+      "t": "mc",
+      "q": "Which number is irrational?",
+      "o": [
+       "0.25",
+       "sqrt(7)",
+       "22/7",
+       "0.666..."
+      ],
+      "a": 1,
+      "why": "7 is not a perfect square, so sqrt(7) never ends or repeats."
+     },
+     {
+      "t": "tf",
+      "q": "Every integer is a rational number.",
+      "a": true,
+      "why": "Any integer n can be written as the fraction n/1."
+     },
+     {
+      "t": "match",
+      "q": "Match each root to its value",
+      "pairs": [
+       [
+        "sqrt(144)",
+        "12"
+       ],
+       [
+        "cube root of 125",
+        "5"
+       ],
+       [
+        "sqrt(1/4)",
+        "1/2"
+       ],
+       [
+        "cube root of -8",
+        "-2"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "sqrt(5)",
+        1
+       ],
+       [
+        "2.5",
+        2
+       ],
+       [
+        "sqrt(8)",
+        3
+       ],
+       [
+        "sqrt(10)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: sqrt(196) = ?",
+      "a": [
+       "14"
+      ],
+      "hint": "Think 14 x 14.",
+      "why": "14 x 14 = 196."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the cube root of 343?",
+      "a": [
+       "7"
+      ],
+      "hint": "Try 7 x 7 x 7.",
+      "why": "7 x 7 x 7 = 343."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve x^2 = 169. What is the positive solution?",
+      "a": [
+       "13"
+      ],
+      "hint": "Take the square root of 169.",
+      "why": "13 x 13 = 169."
+     }
+    ]
+   },
+   {
+    "title": "Scientific Notation",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Writing in scientific notation",
+      "b": "Write a number as a x 10^n with a from 1 up to (but not including) 10. 45,000 = 4.5 x 10^4. Small numbers use negative powers: 0.0003 = 3 x 10^-4."
+     },
+     {
+      "h": "Multiplying and dividing",
+      "b": "Multiply: multiply the front numbers and add the exponents. (2 x 10^3)(3 x 10^4) = 6 x 10^7. Divide: divide the front numbers and subtract the exponents."
+     },
+     {
+      "h": "Fixing the form",
+      "b": "If the front number ends up 10 or more, adjust: (5 x 10^3)(4 x 10^2) = 20 x 10^5 = 2 x 10^6. To add numbers, first give them the same power of 10."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Write 45,000 in scientific notation.",
+      "o": [
+       "4.5 x 10^3",
+       "4.5 x 10^4",
+       "45 x 10^3",
+       "0.45 x 10^5"
+      ],
+      "a": 1,
+      "why": "Move the decimal 4 places: 4.5 x 10^4."
+     },
+     {
+      "t": "mc",
+      "q": "Write 0.0007 in scientific notation.",
+      "o": [
+       "7 x 10^-3",
+       "7 x 10^4",
+       "0.7 x 10^-3",
+       "7 x 10^-4"
+      ],
+      "a": 3,
+      "why": "Move the decimal 4 places right, so the exponent is -4."
+     },
+     {
+      "t": "mc",
+      "q": "What is (2 x 10^3)(3 x 10^4)?",
+      "o": [
+       "6 x 10^7",
+       "6 x 10^12",
+       "5 x 10^7",
+       "5 x 10^12"
+      ],
+      "a": 0,
+      "why": "2 x 3 = 6 and 3 + 4 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "What is (8 x 10^6) / (4 x 10^2)?",
+      "o": [
+       "2 x 10^8",
+       "4 x 10^4",
+       "2 x 10^4",
+       "2 x 10^3"
+      ],
+      "a": 2,
+      "why": "8 / 4 = 2 and 6 - 2 = 4."
+     },
+     {
+      "t": "tf",
+      "q": "12 x 10^3 is written correctly in scientific notation.",
+      "a": false,
+      "why": "The front number must be less than 10. It should be 1.2 x 10^4."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its value",
+      "pairs": [
+       [
+        "3 x 10^2",
+        "300"
+       ],
+       [
+        "3 x 10^-2",
+        "0.03"
+       ],
+       [
+        "3 x 10^0",
+        "3"
+       ],
+       [
+        "3 x 10^4",
+        "30,000"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "3 x 10^-5",
+        1
+       ],
+       [
+        "2 x 10^-3",
+        2
+       ],
+       [
+        "5 x 10^-3",
+        3
+       ],
+       [
+        "1 x 10^2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 6,200,000 = 6.2 x 10^n. n = ?",
+      "a": [
+       "6"
+      ],
+      "hint": "Count how many places the decimal moves.",
+      "why": "6,200,000 has the decimal 6 places from 6.2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 0.00045 = 4.5 x 10^n. n = ?",
+      "a": [
+       "-4"
+      ],
+      "hint": "The decimal moves 4 places to the right.",
+      "why": "Small numbers have a negative exponent: n = -4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: (3 x 10^5)(2 x 10^4) = 6 x 10^n. n = ?",
+      "a": [
+       "9"
+      ],
+      "hint": "Add the exponents.",
+      "why": "5 + 4 = 9."
+     }
+    ]
+   },
+   {
+    "title": "Solving Equations",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Distribute and combine",
+      "b": "Use the distributive property, then collect like terms. 2(x + 3) = 14 becomes 2x + 6 = 14, so 2x = 8 and x = 4."
+     },
+     {
+      "h": "Equations with fractions",
+      "b": "Multiply both sides by the denominator to clear a fraction. x/2 + 3 = 7 gives x/2 = 4, so x = 8."
+     },
+     {
+      "h": "One, none or infinitely many",
+      "b": "Most equations have one solution. x + 1 = x + 2 is never true, so it has no solution. 2x + 2 = 2(x + 1) is always true, so it has infinitely many solutions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve 3(x - 4) = 2x + 5.",
+      "o": [
+       "1",
+       "9",
+       "17",
+       "-17"
+      ],
+      "a": 2,
+      "why": "3x - 12 = 2x + 5, so x = 17."
+     },
+     {
+      "t": "mc",
+      "q": "Solve x/4 + 3 = 8.",
+      "o": [
+       "20",
+       "5",
+       "44",
+       "2"
+      ],
+      "a": 0,
+      "why": "x/4 = 5, so x = 20."
+     },
+     {
+      "t": "mc",
+      "q": "Which equation has no solution?",
+      "o": [
+       "x + 4 = x + 4",
+       "x + 4 = 9",
+       "2x + 4 = 9",
+       "x + 4 = x + 9"
+      ],
+      "a": 3,
+      "why": "Subtracting x gives 4 = 9, which is false."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 5x - 2(x - 1) = 11.",
+      "o": [
+       "13/7",
+       "3",
+       "9",
+       "-3"
+      ],
+      "a": 1,
+      "why": "5x - 2x + 2 = 11, so 3x = 9 and x = 3."
+     },
+     {
+      "t": "tf",
+      "q": "4x + 8 = 4(x + 2) has infinitely many solutions.",
+      "a": true,
+      "why": "Both sides are the same expression, so every x works."
+     },
+     {
+      "t": "match",
+      "q": "Match each equation to its result",
+      "pairs": [
+       [
+        "2x = 2x",
+        "all numbers work"
+       ],
+       [
+        "2x = 2x + 1",
+        "no solution"
+       ],
+       [
+        "2x = 6",
+        "x = 3"
+       ],
+       [
+        "x/2 = 6",
+        "x = 12"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for 3(x + 1) = 2x + 7 in order",
+      "items": [
+       [
+        "Distribute: 3x + 3 = 2x + 7",
+        1
+       ],
+       [
+        "Subtract 2x: x + 3 = 7",
+        2
+       ],
+       [
+        "Subtract 3: x = 4",
+        3
+       ],
+       [
+        "Check: 3(5) = 15 and 2(4) + 7 = 15",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Solve 4(x + 2) = 3x + 11. x = ?",
+      "a": [
+       "3"
+      ],
+      "hint": "Distribute, then subtract 3x.",
+      "why": "4x + 8 = 3x + 11, so x = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve x/3 + 5 = 9. x = ?",
+      "a": [
+       "12"
+      ],
+      "hint": "Subtract 5, then multiply by 3.",
+      "why": "x/3 = 4, so x = 12."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps of solving 5x - 3 = 2x + 12 in order",
+      "lines": [
+       "5x - 3 = 2x + 12",
+       "3x - 3 = 12",
+       "3x = 15",
+       "x = 5"
+      ],
+      "why": "Subtract 2x, add 3, then divide by 3."
+     }
+    ]
+   },
+   {
+    "title": "Linear Equations and Functions",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Multi-step equations",
+      "b": "Collect x terms on one side. 5x + 3 = 2x + 15 gives 3x = 12, so x = 4."
+     },
+     {
+      "h": "Slope",
+      "b": "Slope = rise / run = (y2 - y1) / (x2 - x1). From (0, 1) to (2, 5): (5 - 1) / (2 - 0) = 2."
+     },
+     {
+      "h": "y = mx + b",
+      "b": "m is the slope and b is the y-intercept. In y = 2x + 3, the slope is 2 and the line crosses the y-axis at 3."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve 3x - 7 = 11.",
+      "o": [
+       "4",
+       "6",
+       "18",
+       "5"
+      ],
+      "a": 1,
+      "why": "Add 7 to get 3x = 18, then divide by 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the slope of the line through (0, 1) and (2, 5)?",
+      "o": [
+       "2",
+       "4",
+       "1/2",
+       "3"
+      ],
+      "a": 0,
+      "why": "(5 - 1) / (2 - 0) = 4/2 = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the y-intercept of y = 2x + 3?",
+      "o": [
+       "2",
+       "5",
+       "1",
+       "3"
+      ],
+      "a": 3,
+      "why": "In y = mx + b, b = 3."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 5x + 3 = 2x + 15.",
+      "o": [
+       "6",
+       "4",
+       "3",
+       "5"
+      ],
+      "a": 1,
+      "why": "Subtract 2x and 3: 3x = 12, so x = 4."
+     },
+     {
+      "t": "tf",
+      "q": "The slope of a horizontal line is 0.",
+      "a": true,
+      "why": "A horizontal line does not rise, so rise / run = 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each part of y = mx + b",
+      "pairs": [
+       [
+        "m",
+        "slope"
+       ],
+       [
+        "b",
+        "y-intercept"
+       ],
+       [
+        "x",
+        "input"
+       ],
+       [
+        "y",
+        "output"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for 5x + 3 = 2x + 15 in order",
+      "items": [
+       [
+        "Start with 5x + 3 = 2x + 15",
+        1
+       ],
+       [
+        "Subtract 2x to get 3x + 3 = 15",
+        2
+       ],
+       [
+        "Subtract 3 to get 3x = 12",
+        3
+       ],
+       [
+        "Divide by 3 to get x = 4",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Solve 7x - 5 = 4x + 10. x = ?",
+      "a": [
+       "5"
+      ],
+      "hint": "Subtract 4x, add 5, then divide by 3.",
+      "why": "3x = 15, so x = 5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the slope of the line through (1, 3) and (4, 12)?",
+      "a": [
+       "3"
+      ],
+      "hint": "Rise over run.",
+      "why": "(12 - 3) / (4 - 1) = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the y-intercept of y = -4x + 9?",
+      "a": [
+       "9"
+      ],
+      "hint": "The y-intercept is b in y = mx + b.",
+      "why": "b = 9."
+     }
+    ]
+   },
+   {
+    "title": "Functions and Rate of Change",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "What is a function?",
+      "b": "A function gives exactly one output for each input. For y = 2x + 1, the input 3 gives the output 7. You can show a function as a rule, a table or a graph."
+     },
+     {
+      "h": "Linear functions",
+      "b": "A linear function has a constant rate of change. In y = mx + b, m is the rate and b is the starting value. A taxi with a $3 fee and $2 per mile has y = 2x + 3."
+     },
+     {
+      "h": "Linear or not?",
+      "b": "If the points lie on a straight line, the rate of change is constant. x = 1, 2, 3 with y = 2, 4, 6 is linear. y = 1, 4, 9 is not, because the jumps grow."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If f(x) = 3x - 2, what is f(4)?",
+      "o": [
+       "14",
+       "10",
+       "1",
+       "12"
+      ],
+      "a": 1,
+      "why": "3 x 4 - 2 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "A taxi charges $3 plus $2 per mile. What is the cost for 5 miles?",
+      "o": [
+       "$10",
+       "$15",
+       "$8",
+       "$13"
+      ],
+      "a": 3,
+      "why": "2 x 5 + 3 = 13."
+     },
+     {
+      "t": "mc",
+      "q": "Which set of (input, output) pairs is NOT a function?",
+      "o": [
+       "(1, 2), (1, 5), (2, 3)",
+       "(1, 2), (2, 2), (3, 2)",
+       "(0, 1), (1, 2), (2, 3)",
+       "(4, 1), (5, 2), (6, 3)"
+      ],
+      "a": 0,
+      "why": "The input 1 has two different outputs."
+     },
+     {
+      "t": "mc",
+      "q": "Which equation is nonlinear?",
+      "o": [
+       "y = 2x + 1",
+       "y = -x",
+       "y = x^2",
+       "y = 5"
+      ],
+      "a": 2,
+      "why": "x^2 makes a curve, not a straight line."
+     },
+     {
+      "t": "tf",
+      "q": "In y = mx + b, b is the value of y when x = 0.",
+      "a": true,
+      "why": "Put x = 0 and you get y = b."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Input",
+        "the x-value"
+       ],
+       [
+        "Output",
+        "the y-value"
+       ],
+       [
+        "Rate of change",
+        "slope"
+       ],
+       [
+        "Initial value",
+        "y when x = 0"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest output for f(x) = 2x + 1",
+      "items": [
+       [
+        "f(-1)",
+        1
+       ],
+       [
+        "f(0)",
+        2
+       ],
+       [
+        "f(2)",
+        3
+       ],
+       [
+        "f(5)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = 5x - 3. What is f(6)?",
+      "a": [
+       "27"
+      ],
+      "hint": "Put 6 in for x.",
+      "why": "5 x 6 - 3 = 27."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A plan costs $10 to join plus $4 per month. What is the cost after 6 months, in dollars?",
+      "a": [
+       "34",
+       "$34"
+      ],
+      "hint": "Cost = 4 x months + 10.",
+      "why": "4 x 6 + 10 = 34."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A linear table has y = 7, 10, 13 for x = 0, 1, 2. What is the rate of change?",
+      "a": [
+       "3"
+      ],
+      "hint": "How much does y go up each time x goes up by 1?",
+      "why": "10 - 7 = 3."
+     }
+    ]
+   },
+   {
+    "title": "Systems and the Pythagorean Theorem",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Pythagorean theorem",
+      "b": "In a right triangle, a^2 + b^2 = c^2, where c is the hypotenuse (longest side). Legs 3 and 4: 9 + 16 = 25, so c = 5."
+     },
+     {
+      "h": "Systems by substitution",
+      "b": "Two equations, two unknowns. y = x + 1 and y = 2x - 1: set equal, x + 1 = 2x - 1, so x = 2 and y = 3."
+     },
+     {
+      "h": "Systems by adding",
+      "b": "x + y = 10 and x - y = 2. Add them: 2x = 12, so x = 6. Then y = 4."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A right triangle has legs 3 and 4. How long is the hypotenuse?",
+      "o": [
+       "5",
+       "7",
+       "6",
+       "25"
+      ],
+      "a": 0,
+      "why": "9 + 16 = 25, and sqrt(25) = 5."
+     },
+     {
+      "t": "mc",
+      "q": "A right triangle has legs 5 and 12. How long is the hypotenuse?",
+      "o": [
+       "17",
+       "11",
+       "13",
+       "15"
+      ],
+      "a": 2,
+      "why": "25 + 144 = 169, and sqrt(169) = 13."
+     },
+     {
+      "t": "mc",
+      "q": "What is the solution of y = x + 1 and y = 2x - 1?",
+      "o": [
+       "(1, 2)",
+       "(3, 2)",
+       "(2, 1)",
+       "(2, 3)"
+      ],
+      "a": 3,
+      "why": "x + 1 = 2x - 1 gives x = 2, then y = 3."
+     },
+     {
+      "t": "mc",
+      "q": "Solve x + y = 10 and x - y = 2. What is x?",
+      "o": [
+       "4",
+       "6",
+       "8",
+       "2"
+      ],
+      "a": 1,
+      "why": "Add the equations: 2x = 12, so x = 6."
+     },
+     {
+      "t": "tf",
+      "q": "The Pythagorean theorem works for every triangle.",
+      "a": false,
+      "why": "It works only for right triangles."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Hypotenuse",
+        "side across from the right angle"
+       ],
+       [
+        "Legs",
+        "two sides forming the right angle"
+       ],
+       [
+        "Right angle",
+        "90 degrees"
+       ],
+       [
+        "Pythagorean triple",
+        "whole numbers like 3, 4, 5"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these right triangles by hypotenuse, shortest first",
+      "items": [
+       [
+        "legs 3 and 4",
+        1
+       ],
+       [
+        "legs 6 and 8",
+        2
+       ],
+       [
+        "legs 5 and 12",
+        3
+       ],
+       [
+        "legs 8 and 15",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A right triangle has legs 8 and 15. How long is the hypotenuse?",
+      "a": [
+       "17"
+      ],
+      "hint": "64 + 225 = c^2.",
+      "why": "289 = 17^2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A right triangle has hypotenuse 13 and one leg 5. How long is the other leg?",
+      "a": [
+       "12"
+      ],
+      "hint": "5^2 + b^2 = 13^2.",
+      "why": "b^2 = 169 - 25 = 144, so b = 12."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve x + y = 9 and x - y = 3. x = ?",
+      "a": [
+       "6"
+      ],
+      "hint": "Add the equations.",
+      "why": "2x = 12, so x = 6."
+     }
+    ]
+   },
+   {
+    "title": "Angles, Parallel Lines and Similarity",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Parallel lines and a transversal",
+      "b": "When a line crosses two parallel lines, corresponding angles are equal and alternate interior angles are equal. Same-side interior angles add to 180."
+     },
+     {
+      "h": "Triangle angles",
+      "b": "The angles of a triangle add to 180. An exterior angle equals the sum of the two remote interior angles: 40 + 60 = 100."
+     },
+     {
+      "h": "Similar figures",
+      "b": "Similar figures have the same shape and equal angles, and their sides are in proportion. If sides 3 and 6 match, the scale factor is 2, so a side of 4 matches 8."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Two parallel lines are cut by a transversal. One angle is 65 degrees. What is its corresponding angle?",
+      "o": [
+       "115 degrees",
+       "25 degrees",
+       "65 degrees",
+       "90 degrees"
+      ],
+      "a": 2,
+      "why": "Corresponding angles are equal."
+     },
+     {
+      "t": "mc",
+      "q": "A triangle has remote interior angles of 40 and 60 degrees. What is the exterior angle?",
+      "o": [
+       "100 degrees",
+       "80 degrees",
+       "140 degrees",
+       "20 degrees"
+      ],
+      "a": 0,
+      "why": "40 + 60 = 100."
+     },
+     {
+      "t": "mc",
+      "q": "Two triangles are similar. Sides 3 and 6 match. What side matches 5?",
+      "o": [
+       "8",
+       "15",
+       "11",
+       "10"
+      ],
+      "a": 3,
+      "why": "The scale factor is 2, and 5 x 2 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "Same-side interior angles between parallel lines: one is 70 degrees. What is the other?",
+      "o": [
+       "70 degrees",
+       "110 degrees",
+       "20 degrees",
+       "290 degrees"
+      ],
+      "a": 1,
+      "why": "They add to 180: 180 - 70 = 110."
+     },
+     {
+      "t": "tf",
+      "q": "Corresponding angles of similar triangles are equal.",
+      "a": true,
+      "why": "That is part of the definition of similar."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Scale factor",
+        "ratio of matching side lengths"
+       ],
+       [
+        "Transversal",
+        "line crossing two parallel lines"
+       ],
+       [
+        "Same-side interior angles",
+        "add to 180"
+       ],
+       [
+        "Similar figures",
+        "same shape, sides proportional"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the third angle (50 and 70 given) in order",
+      "items": [
+       [
+        "Know the angles add to 180",
+        1
+       ],
+       [
+        "Add the known angles: 50 + 70 = 120",
+        2
+       ],
+       [
+        "Subtract: 180 - 120 = 60",
+        3
+       ],
+       [
+        "The third angle is 60 degrees",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Two angles of a triangle are 35 and 80 degrees. What is the third angle?",
+      "a": [
+       "65",
+       "65 degrees"
+      ],
+      "hint": "Subtract the sum from 180.",
+      "why": "180 - 115 = 65."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: An exterior angle of a triangle is 125 degrees. One remote interior angle is 50. What is the other remote angle?",
+      "a": [
+       "75",
+       "75 degrees"
+      ],
+      "hint": "Exterior = sum of the two remote angles.",
+      "why": "125 - 50 = 75."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A 4 by 6 rectangle is similar to a larger rectangle with a short side of 10. What is the long side?",
+      "a": [
+       "15"
+      ],
+      "hint": "The scale factor is 10 / 4 = 2.5.",
+      "why": "6 x 2.5 = 15."
+     }
+    ]
+   },
+   {
+    "title": "Transformations and Volume",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Transformations",
+      "b": "Translation slides, reflection flips, rotation turns, dilation resizes. Translations, reflections and rotations keep the size the same."
+     },
+     {
+      "h": "Moving points",
+      "b": "Translate (2, 3) by 4 right and 1 down: (6, 2). Reflect (3, 5) across the x-axis: (3, -5)."
+     },
+     {
+      "h": "Volume",
+      "b": "Cylinder: pi x r^2 x h. Sphere: 4/3 x pi x r^3. A cylinder with r = 3 and h = 5 has volume 45 pi. A sphere with r = 3 has volume 36 pi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the volume of a cylinder with r = 3 and h = 5?",
+      "o": [
+       "15 pi",
+       "30 pi",
+       "45 pi",
+       "90 pi"
+      ],
+      "a": 2,
+      "why": "pi x 9 x 5 = 45 pi."
+     },
+     {
+      "t": "mc",
+      "q": "What is the volume of a sphere with radius 3?",
+      "o": [
+       "36 pi",
+       "12 pi",
+       "27 pi",
+       "108 pi"
+      ],
+      "a": 0,
+      "why": "4/3 x pi x 27 = 36 pi."
+     },
+     {
+      "t": "mc",
+      "q": "Translate (2, 3) 4 units right and 1 unit down. Where is the point?",
+      "o": [
+       "(6, 4)",
+       "(-2, 2)",
+       "(6, 2)",
+       "(3, 7)"
+      ],
+      "a": 2,
+      "why": "x: 2 + 4 = 6. y: 3 - 1 = 2."
+     },
+     {
+      "t": "mc",
+      "q": "Reflect (3, 5) across the x-axis. Where is the point?",
+      "o": [
+       "(-3, 5)",
+       "(3, -5)",
+       "(-3, -5)",
+       "(5, 3)"
+      ],
+      "a": 1,
+      "why": "A reflection across the x-axis changes the sign of y."
+     },
+     {
+      "t": "tf",
+      "q": "A rotation changes the size of a shape.",
+      "a": false,
+      "why": "Rotations keep the size and shape the same."
+     },
+     {
+      "t": "match",
+      "q": "Match each transformation to its action",
+      "pairs": [
+       [
+        "Translation",
+        "slide"
+       ],
+       [
+        "Reflection",
+        "flip"
+       ],
+       [
+        "Rotation",
+        "turn"
+       ],
+       [
+        "Dilation",
+        "resize"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cubes by volume, smallest first",
+      "items": [
+       [
+        "cube with side 2",
+        1
+       ],
+       [
+        "cube with side 3",
+        2
+       ],
+       [
+        "cube with side 4",
+        3
+       ],
+       [
+        "cube with side 5",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Translate (-2, 4) 5 units right and 3 units down. What is the new x-coordinate?",
+      "a": [
+       "3"
+      ],
+      "hint": "Moving right adds to x.",
+      "why": "-2 + 5 = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Reflect (4, -7) across the x-axis. What is the new y-coordinate?",
+      "a": [
+       "7"
+      ],
+      "hint": "Reflecting across the x-axis changes the sign of y.",
+      "why": "-7 becomes 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the volume of a cylinder with r = 2 and h = 10? Write it with pi, like 5pi.",
+      "a": [
+       "40pi",
+       "40 pi"
+      ],
+      "hint": "V = pi x r^2 x h.",
+      "why": "pi x 4 x 10 = 40 pi."
+     }
+    ]
+   },
+   {
+    "title": "Scatter Plots and Two-Way Tables",
+    "period": "Grade 8",
+    "learn": [
+     {
+      "h": "Scatter plots",
+      "b": "A scatter plot shows pairs of data as points. Positive association: y goes up as x goes up (hours studied and test score). Negative association: y goes down as x goes up. A point far from the pattern is an outlier."
+     },
+     {
+      "h": "Line of best fit",
+      "b": "A line of best fit follows the trend of the points. Use its equation to predict. If y = 2x + 40 and x = 5 hours, the prediction is y = 50."
+     },
+     {
+      "h": "Two-way tables",
+      "b": "A two-way table counts people in two categories at once. To get a percent, divide a count by the total: 12 of 30 students is 12 / 30 = 40%."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "As temperature rises, hot cocoa sales fall. What kind of association is this?",
+      "o": [
+       "positive",
+       "negative",
+       "none",
+       "constant"
+      ],
+      "a": 1,
+      "why": "One variable goes up while the other goes down."
+     },
+     {
+      "t": "mc",
+      "q": "A line of best fit is y = 2x + 40. What does it predict for x = 5?",
+      "o": [
+       "45",
+       "52",
+       "25",
+       "50"
+      ],
+      "a": 3,
+      "why": "2 x 5 + 40 = 50."
+     },
+     {
+      "t": "mc",
+      "q": "Of 40 students, 10 play soccer. What percent play soccer?",
+      "o": [
+       "25%",
+       "10%",
+       "40%",
+       "4%"
+      ],
+      "a": 0,
+      "why": "10 / 40 = 0.25 = 25%."
+     },
+     {
+      "t": "mc",
+      "q": "A point far away from the rest of the data is called what?",
+      "o": [
+       "a cluster",
+       "a slope",
+       "an outlier",
+       "an intercept"
+      ],
+      "a": 2,
+      "why": "Outliers do not follow the pattern."
+     },
+     {
+      "t": "tf",
+      "q": "A negative association means the points trend downward from left to right.",
+      "a": true,
+      "why": "As x increases, y decreases."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Positive association",
+        "both increase together"
+       ],
+       [
+        "Negative association",
+        "one rises, the other falls"
+       ],
+       [
+        "Outlier",
+        "point far from the pattern"
+       ],
+       [
+        "Line of best fit",
+        "line that models the trend"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for making a scatter plot in order",
+      "items": [
+       [
+        "Collect pairs of data",
+        1
+       ],
+       [
+        "Draw and label the axes",
+        2
+       ],
+       [
+        "Plot each pair as a point",
+        3
+       ],
+       [
+        "Look for a pattern",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A line of best fit is y = 3x + 10. What does it predict when x = 6?",
+      "a": [
+       "28"
+      ],
+      "hint": "Put 6 in for x.",
+      "why": "3 x 6 + 10 = 28."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Of 50 students, 35 have a pet. What percent have a pet?",
+      "a": [
+       "70",
+       "70%"
+      ],
+      "hint": "Divide 35 by 50.",
+      "why": "35 / 50 = 0.70 = 70%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In a two-way table, 24 of 60 students prefer tea. What percent prefer tea?",
+      "a": [
+       "40",
+       "40%"
+      ],
+      "hint": "Divide 24 by 60.",
+      "why": "24 / 60 = 0.40 = 40%."
+     }
+    ]
+   }
+  ]
+ },
+ "math-alg1": {
+  "name": "Algebra 1",
+  "units": [
+   {
+    "title": "Expressions and Properties",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Order of operations",
+      "b": "Do parentheses first, then exponents, then multiply and divide left to right, then add and subtract. 3 + 4 x 2^2 = 3 + 4 x 4 = 3 + 16 = 19."
+     },
+     {
+      "h": "Distributing and combining",
+      "b": "Distributive property: a(b + c) = ab + ac, so 3(x - 4) = 3x - 12. Combine like terms: 4x + 3 - x + 7 = 3x + 10."
+     },
+     {
+      "h": "Evaluating and properties",
+      "b": "To evaluate, replace the variable by its value. If x = -2, then x^2 + 3x = 4 - 6 = -2. Addition and multiplication are commutative (a + b = b + a) and associative."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 3 + 4 x 2^2?",
+      "o": [
+       "28",
+       "49",
+       "19",
+       "196"
+      ],
+      "a": 2,
+      "why": "Exponent first: 4. Then 4 x 4 = 16, and 3 + 16 = 19."
+     },
+     {
+      "t": "mc",
+      "q": "Simplify 3(x - 4).",
+      "o": [
+       "3x - 12",
+       "3x - 4",
+       "3x + 12",
+       "x - 12"
+      ],
+      "a": 0,
+      "why": "Multiply both terms by 3."
+     },
+     {
+      "t": "mc",
+      "q": "Simplify 4x + 3 - x + 7.",
+      "o": [
+       "5x + 10",
+       "3x + 4",
+       "4x + 10",
+       "3x + 10"
+      ],
+      "a": 3,
+      "why": "4x - x = 3x and 3 + 7 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "Evaluate x^2 + 3x when x = -2.",
+      "o": [
+       "10",
+       "-2",
+       "2",
+       "-10"
+      ],
+      "a": 1,
+      "why": "(-2)^2 = 4 and 3(-2) = -6, so 4 - 6 = -2."
+     },
+     {
+      "t": "tf",
+      "q": "a + b = b + a is the commutative property of addition.",
+      "a": true,
+      "why": "Order does not matter when you add."
+     },
+     {
+      "t": "match",
+      "q": "Match each property to its rule",
+      "pairs": [
+       [
+        "Commutative",
+        "a + b = b + a"
+       ],
+       [
+        "Associative",
+        "(a + b) + c = a + (b + c)"
+       ],
+       [
+        "Distributive",
+        "a(b + c) = ab + ac"
+       ],
+       [
+        "Identity (addition)",
+        "a + 0 = a"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for 2 + 3(4 - 1)^2 in order",
+      "items": [
+       [
+        "Parentheses: 4 - 1 = 3",
+        1
+       ],
+       [
+        "Exponent: 3^2 = 9",
+        2
+       ],
+       [
+        "Multiply: 3 x 9 = 27",
+        3
+       ],
+       [
+        "Add: 2 + 27 = 29",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 5 + 2 x 3^2 = ?",
+      "a": [
+       "23"
+      ],
+      "hint": "Exponent, then multiply, then add.",
+      "why": "3^2 = 9, 2 x 9 = 18, 5 + 18 = 23."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Evaluate 3x^2 - x when x = -3.",
+      "a": [
+       "30"
+      ],
+      "hint": "(-3)^2 = 9.",
+      "why": "3 x 9 + 3 = 30."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 4(x + 5) = 4x + ?",
+      "a": [
+       "20"
+      ],
+      "hint": "Distribute the 4 to both terms.",
+      "why": "4 x 5 = 20."
+     }
+    ]
+   },
+   {
+    "title": "Equations and Inequalities",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Solving equations",
+      "b": "Do the same operation to both sides until x is alone. 3(x - 2) = 15: divide by 3 to get x - 2 = 5, so x = 7."
+     },
+     {
+      "h": "Variables on both sides",
+      "b": "Move the x terms to one side. 2x + 3 = 5x - 9 gives 12 = 3x, so x = 4."
+     },
+     {
+      "h": "Inequalities and absolute value",
+      "b": "Flip the sign when you multiply or divide by a negative. -2x > 8 gives x < -4. An equation like |x| = 5 has two solutions: 5 and -5."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve 3(x - 2) = 15.",
+      "o": [
+       "5",
+       "3",
+       "9",
+       "7"
+      ],
+      "a": 3,
+      "why": "Divide by 3: x - 2 = 5, so x = 7."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 2x + 3 = 5x - 9.",
+      "o": [
+       "4",
+       "2",
+       "-4",
+       "12"
+      ],
+      "a": 0,
+      "why": "Subtract 2x and add 9: 12 = 3x, so x = 4."
+     },
+     {
+      "t": "mc",
+      "q": "Solve -2x > 8.",
+      "o": [
+       "x > -4",
+       "x < 4",
+       "x < -4",
+       "x > 4"
+      ],
+      "a": 2,
+      "why": "Dividing by -2 flips the sign: x < -4."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 2x + y = 7 for y.",
+      "o": [
+       "y = 7 + 2x",
+       "y = 2x - 7",
+       "y = 7/2x",
+       "y = 7 - 2x"
+      ],
+      "a": 3,
+      "why": "Subtract 2x from both sides."
+     },
+     {
+      "t": "tf",
+      "q": "The equation |x| = 5 has two solutions.",
+      "a": true,
+      "why": "Both x = 5 and x = -5 work."
+     },
+     {
+      "t": "match",
+      "q": "Match each equation to its solution",
+      "pairs": [
+       [
+        "x + 4 = 9",
+        "x = 5"
+       ],
+       [
+        "3x = 21",
+        "x = 7"
+       ],
+       [
+        "x/2 = 6",
+        "x = 12"
+       ],
+       [
+        "5x - 3 = 2",
+        "x = 1"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for 3(x - 2) = 15 in order",
+      "items": [
+       [
+        "Start with 3(x - 2) = 15",
+        1
+       ],
+       [
+        "Divide both sides by 3: x - 2 = 5",
+        2
+       ],
+       [
+        "Add 2 to both sides: x = 7",
+        3
+       ],
+       [
+        "Check: 3(7 - 2) = 15",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Solve 5(x - 1) = 2x + 10. x = ?",
+      "a": [
+       "5"
+      ],
+      "hint": "Distribute, then collect x terms.",
+      "why": "5x - 5 = 2x + 10, so 3x = 15 and x = 5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve 3x + 4 = 25. x = ?",
+      "a": [
+       "7"
+      ],
+      "hint": "Subtract 4, then divide by 3.",
+      "why": "3x = 21, so x = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the smallest integer x that satisfies -2x < 9?",
+      "a": [
+       "-4"
+      ],
+      "hint": "Divide by -2 and flip the sign.",
+      "why": "x > -4.5, so the smallest integer is -4."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Relations and functions",
+      "b": "A relation pairs inputs with outputs. It is a function if each input has exactly one output. On a graph, the vertical line test checks this."
+     },
+     {
+      "h": "Function notation",
+      "b": "f(x) means the output of f for input x. If f(x) = 2x - 3, then f(5) = 2(5) - 3 = 7. If g(x) = x^2 + 1, then g(-1) = 2."
+     },
+     {
+      "h": "Domain and range",
+      "b": "The domain is the set of allowed inputs and the range is the set of outputs. For {(1, 3), (2, 5), (3, 7)} the domain is {1, 2, 3} and the range is {3, 5, 7}."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If f(x) = 2x - 3, what is f(5)?",
+      "o": [
+       "13",
+       "7",
+       "10",
+       "-7"
+      ],
+      "a": 1,
+      "why": "2(5) - 3 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "If g(x) = x^2 + 1, what is g(-3)?",
+      "o": [
+       "-8",
+       "8",
+       "2",
+       "10"
+      ],
+      "a": 3,
+      "why": "(-3)^2 = 9 and 9 + 1 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "What is the domain of {(1, 3), (2, 5), (3, 7)}?",
+      "o": [
+       "{1, 2, 3}",
+       "{3, 5, 7}",
+       "{1, 3, 5}",
+       "{2, 5}"
+      ],
+      "a": 0,
+      "why": "The domain is the set of x-values."
+     },
+     {
+      "t": "mc",
+      "q": "Inputs 1, 2, 2, 3 give outputs 5, 6, 7, 8. Is this a function?",
+      "o": [
+       "Yes, all outputs differ",
+       "Yes, there are four pairs",
+       "No, input 2 has two outputs",
+       "No, the outputs are consecutive"
+      ],
+      "a": 2,
+      "why": "A function needs exactly one output per input."
+     },
+     {
+      "t": "tf",
+      "q": "The vertical line test checks whether a graph is a function.",
+      "a": true,
+      "why": "If a vertical line hits the graph twice, one input has two outputs."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Domain",
+        "set of inputs"
+       ],
+       [
+        "Range",
+        "set of outputs"
+       ],
+       [
+        "f(3)",
+        "output when x = 3"
+       ],
+       [
+        "Function",
+        "one output per input"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "For f(x) = x^2 - 4, put these from smallest to largest output",
+      "items": [
+       [
+        "f(0)",
+        1
+       ],
+       [
+        "f(1)",
+        2
+       ],
+       [
+        "f(3)",
+        3
+       ],
+       [
+        "f(-4)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = 4x + 1. What is f(6)?",
+      "a": [
+       "25"
+      ],
+      "hint": "Put 6 in for x.",
+      "why": "4 x 6 + 1 = 25."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: g(x) = x^2 - 5x. What is g(4)?",
+      "a": [
+       "-4"
+      ],
+      "hint": "16 - 20.",
+      "why": "16 - 20 = -4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many different numbers are in the range of {(1, 2), (2, 2), (3, 5)}?",
+      "a": [
+       "2"
+      ],
+      "hint": "List the y-values without repeats.",
+      "why": "The range is {2, 5}, which has 2 numbers."
+     }
+    ]
+   },
+   {
+    "title": "Linear Functions and Graphs",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Slope",
+      "b": "Slope = (y2 - y1) / (x2 - x1). From (1, 2) to (3, 8): (8 - 2) / (3 - 1) = 3."
+     },
+     {
+      "h": "Slope-intercept form",
+      "b": "y = mx + b. The slope is m and the y-intercept is b. The line y = -2x + 5 has slope -2."
+     },
+     {
+      "h": "Intercepts and special lines",
+      "b": "For the x-intercept, set y = 0. For y = 2x - 6: 0 = 2x - 6, so x = 3. Parallel lines have equal slopes. Perpendicular slopes are negative reciprocals."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the slope through (1, 2) and (3, 8)?",
+      "o": [
+       "3",
+       "6",
+       "2",
+       "1/3"
+      ],
+      "a": 0,
+      "why": "(8 - 2) / (3 - 1) = 6/2 = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the slope of y = -2x + 5?",
+      "o": [
+       "5",
+       "2",
+       "-5",
+       "-2"
+      ],
+      "a": 3,
+      "why": "The slope is the number multiplying x."
+     },
+     {
+      "t": "mc",
+      "q": "Which line has slope 3 and passes through (0, -4)?",
+      "o": [
+       "y = 3x + 4",
+       "y = -4x + 3",
+       "y = 3x - 4",
+       "y = x - 12"
+      ],
+      "a": 2,
+      "why": "The y-intercept is -4, so y = 3x - 4."
+     },
+     {
+      "t": "mc",
+      "q": "What is the x-intercept of y = 2x - 6?",
+      "o": [
+       "-6",
+       "3",
+       "6",
+       "-3"
+      ],
+      "a": 1,
+      "why": "Set y = 0: 2x = 6, so x = 3."
+     },
+     {
+      "t": "tf",
+      "q": "Perpendicular lines have the same slope.",
+      "a": false,
+      "why": "Parallel lines have the same slope. Perpendicular slopes are negative reciprocals."
+     },
+     {
+      "t": "match",
+      "q": "Match each question about y = 3x + 1 or y = -x + 4",
+      "pairs": [
+       [
+        "slope of y = 3x + 1",
+        "3"
+       ],
+       [
+        "y-intercept of y = 3x + 1",
+        "1"
+       ],
+       [
+        "slope of y = -x + 4",
+        "-1"
+       ],
+       [
+        "y-intercept of y = -x + 4",
+        "4"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these slopes from smallest to largest",
+      "items": [
+       [
+        "-3",
+        1
+       ],
+       [
+        "-1/2",
+        2
+       ],
+       [
+        "0",
+        3
+       ],
+       [
+        "2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the slope of the line through (2, 3) and (5, 12)?",
+      "a": [
+       "3"
+      ],
+      "hint": "Rise over run.",
+      "why": "(12 - 3) / (5 - 2) = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A line has slope 4 and passes through (1, 7). What is its y-intercept?",
+      "a": [
+       "3"
+      ],
+      "hint": "7 = 4(1) + b.",
+      "why": "b = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the x-intercept of y = 3x - 12?",
+      "a": [
+       "4"
+      ],
+      "hint": "Set y = 0.",
+      "why": "3x = 12, so x = 4."
+     }
+    ]
+   },
+   {
+    "title": "Writing Linear Equations and Inequalities",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Writing an equation of a line",
+      "b": "From a slope and a point, find b in y = mx + b. Slope 2 through (1, 5): 5 = 2(1) + b, so b = 3 and y = 2x + 3. Point-slope form is y - y1 = m(x - x1)."
+     },
+     {
+      "h": "Standard form",
+      "b": "Standard form is Ax + By = C. For 2x + 3y = 12, set y = 0 to get the x-intercept 6, and set x = 0 to get the y-intercept 4."
+     },
+     {
+      "h": "Graphing inequalities",
+      "b": "y > 2x - 1: draw the line y = 2x - 1 dashed and shade above. For y ≥ or y ≤, draw a solid line. Test a point like (0, 0) to choose the side."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A line has slope 2 and passes through (1, 5). What is its equation?",
+      "o": [
+       "y = 2x + 5",
+       "y = 5x + 2",
+       "y = 2x + 3",
+       "y = 2x - 3"
+      ],
+      "a": 2,
+      "why": "5 = 2(1) + b gives b = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the equation of the line through (0, 1) and (2, 5)?",
+      "o": [
+       "y = 2x + 1",
+       "y = 4x + 1",
+       "y = x + 1",
+       "y = 2x + 5"
+      ],
+      "a": 0,
+      "why": "Slope = 4/2 = 2 and the y-intercept is 1."
+     },
+     {
+      "t": "mc",
+      "q": "What is the x-intercept of 2x + 3y = 12?",
+      "o": [
+       "4",
+       "12",
+       "3",
+       "6"
+      ],
+      "a": 3,
+      "why": "Set y = 0: 2x = 12, so x = 6."
+     },
+     {
+      "t": "mc",
+      "q": "Which is point-slope form for slope 3 through (2, 4)?",
+      "o": [
+       "y - 2 = 3(x - 4)",
+       "y - 4 = 3(x - 2)",
+       "y + 4 = 3(x + 2)",
+       "y = 3x + 4"
+      ],
+      "a": 1,
+      "why": "Use y - y1 = m(x - x1) with (2, 4)."
+     },
+     {
+      "t": "tf",
+      "q": "The graph of y < 2x + 1 uses a dashed boundary line.",
+      "a": true,
+      "why": "A strict inequality does not include the line."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its name",
+      "pairs": [
+       [
+        "y = mx + b",
+        "slope-intercept form"
+       ],
+       [
+        "y - y1 = m(x - x1)",
+        "point-slope form"
+       ],
+       [
+        "Ax + By = C",
+        "standard form"
+       ],
+       [
+        "y ≥ 3x",
+        "solid line, shade above"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the line through (1, 2) with slope 3 in order",
+      "items": [
+       [
+        "Slope: m = 3",
+        1
+       ],
+       [
+        "Use y = mx + b: 2 = 3(1) + b",
+        2
+       ],
+       [
+        "Solve: b = -1",
+        3
+       ],
+       [
+        "Write y = 3x - 1",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the slope of the line through (2, 1) and (6, 9)?",
+      "a": [
+       "2"
+      ],
+      "hint": "Rise over run.",
+      "why": "(9 - 1) / (6 - 2) = 8/4 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The line y = -3x + b passes through (2, 0). b = ?",
+      "a": [
+       "6"
+      ],
+      "hint": "Put x = 2 and y = 0 in.",
+      "why": "0 = -6 + b, so b = 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the x-intercept of 4x + 2y = 16?",
+      "a": [
+       "4"
+      ],
+      "hint": "Set y = 0.",
+      "why": "4x = 16, so x = 4."
+     }
+    ]
+   },
+   {
+    "title": "Systems and Exponents",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Systems of equations",
+      "b": "Find the point where two lines meet. Substitution: y = x + 2 and y = 3x - 4 gives x + 2 = 3x - 4, so x = 3 and y = 5."
+     },
+     {
+      "h": "Elimination",
+      "b": "Add the equations to cancel a variable. 2x + y = 8 and x - y = 1: add to get 3x = 9, so x = 3, then y = 2."
+     },
+     {
+      "h": "Exponent rules",
+      "b": "Multiply same bases: add exponents (x^3 x^4 = x^7). Power of a power: multiply exponents ((x^2)^3 = x^6). Divide: subtract (x^6 / x^2 = x^4)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve 2x + y = 8 and x - y = 1. What is x?",
+      "o": [
+       "2",
+       "4",
+       "3",
+       "5"
+      ],
+      "a": 2,
+      "why": "Add the equations: 3x = 9, so x = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the solution of y = x + 2 and y = 3x - 4?",
+      "o": [
+       "(3, 5)",
+       "(2, 4)",
+       "(5, 3)",
+       "(1, 3)"
+      ],
+      "a": 0,
+      "why": "x + 2 = 3x - 4 gives x = 3, so y = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Simplify x^3 times x^4.",
+      "o": [
+       "x^12",
+       "x^7",
+       "2x^7",
+       "x^1"
+      ],
+      "a": 1,
+      "why": "Add the exponents: 3 + 4 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "Simplify (2x^2)^3.",
+      "o": [
+       "6x^5",
+       "2x^6",
+       "8x^5",
+       "8x^6"
+      ],
+      "a": 3,
+      "why": "2^3 = 8 and (x^2)^3 = x^6."
+     },
+     {
+      "t": "tf",
+      "q": "(x^2)^3 equals x^5.",
+      "a": false,
+      "why": "Multiply the exponents: (x^2)^3 = x^6."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its simplified form",
+      "pairs": [
+       [
+        "x^0 (x not 0)",
+        "1"
+       ],
+       [
+        "x^2 times x^3",
+        "x^5"
+       ],
+       [
+        "x^6 / x^2",
+        "x^4"
+       ],
+       [
+        "(x^3)^2",
+        "x^6"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for x + y = 10 and x - y = 2 in order",
+      "items": [
+       [
+        "Add the equations: 2x = 12",
+        1
+       ],
+       [
+        "Divide by 2: x = 6",
+        2
+       ],
+       [
+        "Put into x + y = 10: 6 + y = 10",
+        3
+       ],
+       [
+        "Solve: y = 4",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Solve x + y = 7 and x - y = 1. x = ?",
+      "a": [
+       "4"
+      ],
+      "hint": "Add the equations.",
+      "why": "2x = 8, so x = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve y = 2x and y = x + 5. x = ?",
+      "a": [
+       "5"
+      ],
+      "hint": "Set 2x = x + 5.",
+      "why": "x = 5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: (x^3)^4 = x^n. n = ?",
+      "a": [
+       "12"
+      ],
+      "hint": "Multiply the exponents.",
+      "why": "3 x 4 = 12."
+     }
+    ]
+   },
+   {
+    "title": "Polynomials",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Types of polynomials",
+      "b": "A monomial has one term, a binomial two, a trinomial three. The degree is the highest exponent. 5x^3 - 2x + 7 has degree 3."
+     },
+     {
+      "h": "Adding and multiplying",
+      "b": "Add by combining like terms: (3x^2 + 2x) + (x^2 - 5x) = 4x^2 - 3x. Multiply with FOIL: (x + 3)(x + 4) = x^2 + 4x + 3x + 12 = x^2 + 7x + 12."
+     },
+     {
+      "h": "Special products",
+      "b": "(x + 5)^2 = x^2 + 10x + 25. Careful: it is not x^2 + 25. And (x + 4)(x - 4) = x^2 - 16, a difference of squares."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is (3x^2 + 2x) + (x^2 - 5x)?",
+      "o": [
+       "4x^4 - 3x",
+       "4x^2 - 3x",
+       "4x^2 + 7x",
+       "3x^3"
+      ],
+      "a": 1,
+      "why": "3x^2 + x^2 = 4x^2 and 2x - 5x = -3x."
+     },
+     {
+      "t": "mc",
+      "q": "Multiply (x + 3)(x + 4).",
+      "o": [
+       "x^2 + 12",
+       "x^2 + 7x + 7",
+       "2x + 7",
+       "x^2 + 7x + 12"
+      ],
+      "a": 3,
+      "why": "x^2 + 4x + 3x + 12."
+     },
+     {
+      "t": "mc",
+      "q": "Expand (x + 5)^2.",
+      "o": [
+       "x^2 + 10x + 25",
+       "x^2 + 25",
+       "x^2 + 5x + 25",
+       "x^2 + 10x + 10"
+      ],
+      "a": 0,
+      "why": "(x + 5)(x + 5) = x^2 + 5x + 5x + 25."
+     },
+     {
+      "t": "mc",
+      "q": "What is the degree of 5x^3 - 2x + 7?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "7"
+      ],
+      "a": 2,
+      "why": "The highest exponent is 3."
+     },
+     {
+      "t": "tf",
+      "q": "(x + 4)(x - 4) = x^2 - 16.",
+      "a": true,
+      "why": "The middle terms cancel: -4x + 4x = 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Monomial",
+        "one term"
+       ],
+       [
+        "Binomial",
+        "two terms"
+       ],
+       [
+        "Trinomial",
+        "three terms"
+       ],
+       [
+        "Degree",
+        "highest exponent"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the FOIL steps for (x + 2)(x + 5) in order",
+      "items": [
+       [
+        "First: x times x = x^2",
+        1
+       ],
+       [
+        "Outer: x times 5 = 5x",
+        2
+       ],
+       [
+        "Inner: 2 times x = 2x, then Last: 2 times 5 = 10",
+        3
+       ],
+       [
+        "Combine: x^2 + 7x + 10",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: (x + 6)(x + 2) = x^2 + bx + 12. b = ?",
+      "a": [
+       "8"
+      ],
+      "hint": "Add the outer and inner products: 2x + 6x.",
+      "why": "6 + 2 = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: (5x^2 + 3x) + (2x^2 - x) = ax^2 + bx. What is a?",
+      "a": [
+       "7"
+      ],
+      "hint": "Add the x^2 coefficients.",
+      "why": "5 + 2 = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: (x - 7)^2 = x^2 - 14x + c. c = ?",
+      "a": [
+       "49"
+      ],
+      "hint": "The last term is (-7)(-7).",
+      "why": "(-7)^2 = 49."
+     }
+    ]
+   },
+   {
+    "title": "Exponential Functions and Sequences",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Arithmetic sequences",
+      "b": "An arithmetic sequence adds the same number d each time. 3, 7, 11, 15 has d = 4. The nth term is a_n = a_1 + (n - 1)d, so the 10th term is 3 + 9 x 4 = 39."
+     },
+     {
+      "h": "Geometric sequences and exponentials",
+      "b": "A geometric sequence multiplies by the same ratio r: 2, 6, 18, 54 has r = 3. An exponential function is y = a x b^x. It grows if b > 1 and decays if 0 < b < 1."
+     },
+     {
+      "h": "Growth and decay",
+      "b": "$100 growing 10% a year is y = 100(1.10)^x. After 2 years: 100 x 1.21 = $121. A value that halves each step is y = 80(1/2)^x."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the 10th term of 3, 7, 11, 15, ...?",
+      "o": [
+       "43",
+       "30",
+       "39",
+       "36"
+      ],
+      "a": 2,
+      "why": "3 + 9 x 4 = 39."
+     },
+     {
+      "t": "mc",
+      "q": "What is the common ratio of 2, 6, 18, 54?",
+      "o": [
+       "3",
+       "4",
+       "2",
+       "6"
+      ],
+      "a": 0,
+      "why": "6 / 2 = 3, and 18 / 6 = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is y = 5(2)^x when x = 3?",
+      "o": [
+       "30",
+       "1000",
+       "15",
+       "40"
+      ],
+      "a": 3,
+      "why": "2^3 = 8 and 5 x 8 = 40."
+     },
+     {
+      "t": "mc",
+      "q": "Which equation models exponential decay?",
+      "o": [
+       "y = 3(2)^x",
+       "y = 3(0.5)^x",
+       "y = 3x + 2",
+       "y = 0.5x"
+      ],
+      "a": 1,
+      "why": "The base 0.5 is between 0 and 1."
+     },
+     {
+      "t": "tf",
+      "q": "In y = a x b^x with b > 1, the function shows exponential growth.",
+      "a": true,
+      "why": "Each step multiplies by a number greater than 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each pattern to its type",
+      "pairs": [
+       [
+        "3, 6, 9, 12",
+        "arithmetic, d = 3"
+       ],
+       [
+        "3, 6, 12, 24",
+        "geometric, r = 2"
+       ],
+       [
+        "y = 100(1.05)^x",
+        "5% growth"
+       ],
+       [
+        "y = 100(0.9)^x",
+        "10% decay"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these values of y = 2^x from smallest to largest",
+      "items": [
+       [
+        "x = 1",
+        1
+       ],
+       [
+        "x = 3",
+        2
+       ],
+       [
+        "x = 4",
+        3
+       ],
+       [
+        "x = 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the 5th term of the arithmetic sequence 4, 9, 14, ...?",
+      "a": [
+       "24"
+      ],
+      "hint": "Use 4 + (n - 1) x 5.",
+      "why": "4 + 4 x 5 = 24."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is y = 3(2)^x when x = 4?",
+      "a": [
+       "48"
+      ],
+      "hint": "2^4 = 16.",
+      "why": "3 x 16 = 48."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: $200 grows 10% per year. How many dollars after 2 years?",
+      "a": [
+       "242",
+       "$242",
+       "242.00"
+      ],
+      "hint": "Multiply by 1.10 twice.",
+      "why": "200 x 1.21 = 242."
+     }
+    ]
+   },
+   {
+    "title": "Quadratics",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "Factoring",
+      "b": "Find two numbers that multiply to c and add to b. x^2 + 5x + 6 = (x + 2)(x + 3)."
+     },
+     {
+      "h": "Solving by factoring",
+      "b": "Set each factor to zero. x^2 - 5x + 6 = (x - 2)(x - 3) = 0, so x = 2 or x = 3. Also x^2 - 9 = 0 gives x = 3 or x = -3."
+     },
+     {
+      "h": "Parabolas",
+      "b": "The graph of y = ax^2 + bx + c is a parabola. The vertex has x = -b / (2a). If a is negative it opens down."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Factor x^2 + 5x + 6.",
+      "o": [
+       "(x + 1)(x + 6)",
+       "(x + 5)(x + 1)",
+       "(x - 2)(x - 3)",
+       "(x + 2)(x + 3)"
+      ],
+      "a": 3,
+      "why": "2 x 3 = 6 and 2 + 3 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Solve x^2 - 9 = 0.",
+      "o": [
+       "x = 3 only",
+       "x = 3 or x = -3",
+       "x = 9",
+       "x = 81"
+      ],
+      "a": 1,
+      "why": "x^2 = 9, so x = 3 or x = -3."
+     },
+     {
+      "t": "mc",
+      "q": "Solve x^2 - 5x + 6 = 0.",
+      "o": [
+       "x = 1 or x = 6",
+       "x = -2 or x = -3",
+       "x = 2 or x = 3",
+       "x = 5 or x = 6"
+      ],
+      "a": 2,
+      "why": "(x - 2)(x - 3) = 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is the x-coordinate of the vertex of y = x^2 - 4x + 1?",
+      "o": [
+       "2",
+       "-2",
+       "4",
+       "1"
+      ],
+      "a": 0,
+      "why": "x = -b / (2a) = 4 / 2 = 2."
+     },
+     {
+      "t": "tf",
+      "q": "The parabola y = -x^2 opens downward.",
+      "a": true,
+      "why": "The coefficient of x^2 is negative."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its factored form",
+      "pairs": [
+       [
+        "x^2 - 1",
+        "(x - 1)(x + 1)"
+       ],
+       [
+        "x^2 + 4x + 4",
+        "(x + 2)^2"
+       ],
+       [
+        "x^2 + 7x + 12",
+        "(x + 3)(x + 4)"
+       ],
+       [
+        "x^2 - 3x + 2",
+        "(x - 1)(x - 2)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for x^2 + 5x + 6 = 0 in order",
+      "items": [
+       [
+        "Write x^2 + 5x + 6 = 0",
+        1
+       ],
+       [
+        "Factor: (x + 2)(x + 3) = 0",
+        2
+       ],
+       [
+        "Set each factor to 0",
+        3
+       ],
+       [
+        "Solutions: x = -2 and x = -3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Solve x^2 - 7x + 10 = 0. What is the larger solution?",
+      "a": [
+       "5"
+      ],
+      "hint": "Factor: (x - 2)(x - 5).",
+      "why": "The solutions are 2 and 5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the x-coordinate of the vertex of y = x^2 + 6x - 1?",
+      "a": [
+       "-3"
+      ],
+      "hint": "x = -b / (2a).",
+      "why": "-6 / 2 = -3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve x^2 - 49 = 0. What is the positive solution?",
+      "a": [
+       "7"
+      ],
+      "hint": "x^2 = 49.",
+      "why": "x = 7 or x = -7."
+     }
+    ]
+   },
+   {
+    "title": "The Quadratic Formula",
+    "period": "Algebra 1",
+    "learn": [
+     {
+      "h": "The formula",
+      "b": "For ax^2 + bx + c = 0, x = (-b ± sqrt(b^2 - 4ac)) / (2a). For x^2 - 2x - 3 = 0: a = 1, b = -2, c = -3. The square root part is sqrt(4 + 12) = 4, so x = (2 ± 4) / 2 = 3 or -1."
+     },
+     {
+      "h": "The discriminant",
+      "b": "The discriminant is b^2 - 4ac. Positive: two real solutions. Zero: one real solution. Negative: no real solutions. For x^2 + 2x + 5: 4 - 20 = -16, so none."
+     },
+     {
+      "h": "Completing the square",
+      "b": "Turn x^2 + 6x = 7 into (x + 3)^2 = 16 by adding 9 to both sides. Then x + 3 = 4 or -4, so x = 1 or x = -7. Real solutions are where the parabola crosses the x-axis."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve x^2 - 2x - 3 = 0.",
+      "o": [
+       "x = -3 or x = 1",
+       "x = 3 or x = -1",
+       "x = 2 or x = -3",
+       "x = 6 or x = -1"
+      ],
+      "a": 1,
+      "why": "(x - 3)(x + 1) = 0, or use the formula."
+     },
+     {
+      "t": "mc",
+      "q": "What is the discriminant of x^2 + 2x + 5?",
+      "o": [
+       "24",
+       "16",
+       "-24",
+       "-16"
+      ],
+      "a": 3,
+      "why": "b^2 - 4ac = 4 - 20 = -16."
+     },
+     {
+      "t": "mc",
+      "q": "x^2 + 4x + 4 = 0 has a discriminant of 0. How many real solutions does it have?",
+      "o": [
+       "one",
+       "none",
+       "two",
+       "three"
+      ],
+      "a": 0,
+      "why": "A zero discriminant gives one repeated solution, x = -2."
+     },
+     {
+      "t": "mc",
+      "q": "Solve (x + 3)^2 = 16.",
+      "o": [
+       "x = 13 or x = -19",
+       "x = 4 or x = -4",
+       "x = 1 or x = -7",
+       "x = 7 or x = -1"
+      ],
+      "a": 2,
+      "why": "x + 3 = 4 or x + 3 = -4."
+     },
+     {
+      "t": "tf",
+      "q": "If the discriminant is negative, the parabola does not cross the x-axis.",
+      "a": true,
+      "why": "There are no real solutions, so there are no x-intercepts."
+     },
+     {
+      "t": "match",
+      "q": "Match each case to its result",
+      "pairs": [
+       [
+        "b^2 - 4ac",
+        "the discriminant"
+       ],
+       [
+        "positive discriminant",
+        "two real solutions"
+       ],
+       [
+        "zero discriminant",
+        "one real solution"
+       ],
+       [
+        "negative discriminant",
+        "no real solutions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for using the quadratic formula in order",
+      "items": [
+       [
+        "Write the equation as ax^2 + bx + c = 0",
+        1
+       ],
+       [
+        "Identify a, b and c",
+        2
+       ],
+       [
+        "Substitute into the formula",
+        3
+       ],
+       [
+        "Simplify to find x",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the discriminant of x^2 - 6x + 5?",
+      "a": [
+       "16"
+      ],
+      "hint": "b^2 - 4ac with a = 1, b = -6, c = 5.",
+      "why": "36 - 20 = 16."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve x^2 - 2x - 8 = 0. What is the positive solution?",
+      "a": [
+       "4"
+      ],
+      "hint": "Factor: (x - 4)(x + 2).",
+      "why": "The solutions are 4 and -2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Solve x^2 + 8x + 16 = 0. x = ?",
+      "a": [
+       "-4"
+      ],
+      "hint": "It factors as (x + 4)^2.",
+      "why": "x + 4 = 0, so x = -4."
+     }
+    ]
+   }
+  ]
+ }
+}

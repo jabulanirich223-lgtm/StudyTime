@@ -1,0 +1,7199 @@
+{
+ "tech-internet": {
+  "name": "How the Internet Works",
+  "units": [
+   {
+    "title": "What Is the Internet?",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "A network of networks",
+      "b": "The internet is a huge group of connected computer networks around the world. Computers on it share information with each other."
+     },
+     {
+      "h": "Internet vs. the Web",
+      "b": "The internet is the network itself. The World Wide Web is one service that runs on it: websites you open in a browser. Email is another service."
+     },
+     {
+      "h": "Clients and servers",
+      "b": "Your device is a client that asks for information. A server is a computer that stores websites and sends them to you when you ask."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the internet?",
+      "o": [
+       "A single big computer",
+       "A search engine",
+       "A global network of networks",
+       "A web browser"
+      ],
+      "a": 2,
+      "why": "The internet connects many networks around the world."
+     },
+     {
+      "t": "mc",
+      "q": "What is a web browser?",
+      "o": [
+       "A program used to view websites",
+       "A type of cable",
+       "A kind of server",
+       "A search company"
+      ],
+      "a": 0,
+      "why": "Browsers like Chrome and Firefox open and show websites."
+     },
+     {
+      "t": "mc",
+      "q": "Which one is a server's job?",
+      "o": [
+       "Print your homework",
+       "Charge your phone",
+       "Store websites and send them to users",
+       "Make your screen brighter"
+      ],
+      "a": 2,
+      "why": "Servers hold website data and send it when a client asks."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these uses the internet but is not the web?",
+      "o": [
+       "Email",
+       "A website",
+       "A web page",
+       "A blog"
+      ],
+      "a": 0,
+      "why": "Email is a separate service that runs on the internet."
+     },
+     {
+      "t": "tf",
+      "q": "The World Wide Web and the internet are exactly the same thing.",
+      "a": false,
+      "why": "The web is just one service that runs on the internet."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Browser",
+        "Shows websites"
+       ],
+       [
+        "Server",
+        "Sends web content"
+       ],
+       [
+        "Client",
+        "Asks for content"
+       ],
+       [
+        "Website",
+        "Group of web pages"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order when you open a website",
+      "items": [
+       [
+        "Type the address",
+        1
+       ],
+       [
+        "Browser sends a request",
+        2
+       ],
+       [
+        "Server sends the page back",
+        3
+       ],
+       [
+        "Browser shows the page",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do we call a computer that stores websites and sends them to you?",
+      "a": [
+       "server",
+       "a server"
+      ],
+      "hint": "It serves pages to clients.",
+      "why": "A server stores and sends web content."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Your phone asks a website for a page. Is your phone the client or the server?",
+      "a": [
+       "client",
+       "the client",
+       "a client"
+      ],
+      "hint": "It is the one asking.",
+      "why": "The device that asks is the client."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the name of the service made of websites that you open in a browser? (3 letters)",
+      "a": [
+       "web",
+       "the web",
+       "www",
+       "world wide web"
+      ],
+      "hint": "World Wide ...",
+      "why": "The web is one service on the internet."
+     }
+    ]
+   },
+   {
+    "title": "Addresses and Data",
+    "period": "IP and DNS",
+    "learn": [
+     {
+      "h": "IP addresses",
+      "b": "Every device on the internet has an IP address, like 192.168.1.1. It works like a home address so data knows where to go."
+     },
+     {
+      "h": "DNS: the phone book",
+      "b": "People remember names like example.com, but computers use numbers. DNS translates a website name into its IP address."
+     },
+     {
+      "h": "Packets",
+      "b": "Data is split into small pieces called packets. Each packet travels on its own path and the pieces are put back together at the end."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does DNS do?",
+      "o": [
+       "Blocks viruses",
+       "Speeds up your screen",
+       "Stores your emails",
+       "Turns website names into IP addresses"
+      ],
+      "a": 3,
+      "why": "DNS translates names into the numbers computers use."
+     },
+     {
+      "t": "mc",
+      "q": "What is an IP address?",
+      "o": [
+       "A number that identifies a device on a network",
+       "A password",
+       "A website title",
+       "A kind of browser"
+      ],
+      "a": 0,
+      "why": "An IP address identifies a device so data can reach it."
+     },
+     {
+      "t": "mc",
+      "q": "What are packets?",
+      "o": [
+       "Types of viruses",
+       "Small pieces of data sent across a network",
+       "Paper letters",
+       "Large video files only"
+      ],
+      "a": 1,
+      "why": "Data is split into packets for travel across the network."
+     },
+     {
+      "t": "mc",
+      "q": "Which one looks like an IPv4 address?",
+      "o": [
+       "www.google.com",
+       "hello@mail.com",
+       "192.168.0.1",
+       "https://"
+      ],
+      "a": 2,
+      "why": "IPv4 addresses are four numbers separated by dots."
+     },
+     {
+      "t": "tf",
+      "q": "DNS is often compared to a phone book for the internet.",
+      "a": true,
+      "why": "It looks up a name and gives back the matching number."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to what it does",
+      "pairs": [
+       [
+        "IP address",
+        "Identifies a device"
+       ],
+       [
+        "DNS",
+        "Translates names"
+       ],
+       [
+        "Packet",
+        "Piece of data"
+       ],
+       [
+        "Domain name",
+        "Website's readable name"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order when you visit a website by name",
+      "items": [
+       [
+        "Type the domain name",
+        1
+       ],
+       [
+        "DNS finds the IP address",
+        2
+       ],
+       [
+        "Request goes to the server",
+        3
+       ],
+       [
+        "Page loads on your screen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does IP stand for in IP address? (2 words, first is Internet)",
+      "a": [
+       "internet protocol"
+      ],
+      "hint": "Protocol = set of rules.",
+      "why": "IP means Internet Protocol."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Big files are cut into small pieces before sending. What are these pieces called?",
+      "a": [
+       "packets",
+       "packet",
+       "data packets"
+      ],
+      "hint": "Think of small parcels.",
+      "why": "Data travels in packets."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What system turns a name like example.com into an IP address? (3 letters)",
+      "a": [
+       "dns",
+       "domain name system"
+      ],
+      "hint": "Phone book of the internet.",
+      "why": "DNS translates names to IP addresses."
+     }
+    ]
+   },
+   {
+    "title": "Websites and Browsers",
+    "period": "The Web",
+    "learn": [
+     {
+      "h": "HTML, CSS, JavaScript",
+      "b": "HTML builds the structure of a page. CSS makes it look nice with colors and layout. JavaScript makes it interactive."
+     },
+     {
+      "h": "URLs and HTTP",
+      "b": "A URL is a web address, like https://example.com/page. HTTP is the set of rules browsers and servers use to talk. HTTPS is the secure version."
+     },
+     {
+      "h": "Search engines and cookies",
+      "b": "A search engine like Google helps you find pages. Cookies are small files a site saves in your browser to remember things, such as your login."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which language builds the structure of a web page?",
+      "o": [
+       "CSS",
+       "HTML",
+       "SQL",
+       "JPEG"
+      ],
+      "a": 1,
+      "why": "HTML defines headings, paragraphs, links and other page structure."
+     },
+     {
+      "t": "mc",
+      "q": "What is CSS mainly used for?",
+      "o": [
+       "Storing passwords",
+       "Sending email",
+       "Styling how a page looks",
+       "Connecting to Wi-Fi"
+      ],
+      "a": 2,
+      "why": "CSS controls colors, fonts and layout."
+     },
+     {
+      "t": "mc",
+      "q": "What does the S in HTTPS stand for?",
+      "o": [
+       "Secure",
+       "Speed",
+       "Server",
+       "Search"
+      ],
+      "a": 0,
+      "why": "HTTPS is HTTP with security, which encrypts the connection."
+     },
+     {
+      "t": "mc",
+      "q": "What is a cookie in a browser?",
+      "o": [
+       "A virus",
+       "A kind of ad blocker",
+       "A search result",
+       "A small file a website saves to remember you"
+      ],
+      "a": 3,
+      "why": "Cookies store small bits of data, like a login or settings."
+     },
+     {
+      "t": "tf",
+      "q": "JavaScript is commonly used to make web pages interactive.",
+      "a": true,
+      "why": "JavaScript runs in the browser to react to clicks and more."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "HTML",
+        "Page structure"
+       ],
+       [
+        "CSS",
+        "Page style"
+       ],
+       [
+        "JavaScript",
+        "Page behavior"
+       ],
+       [
+        "URL",
+        "Web address"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from the start of a URL to the end",
+      "items": [
+       [
+        "https://",
+        1
+       ],
+       [
+        "www.",
+        2
+       ],
+       [
+        "example.com",
+        3
+       ],
+       [
+        "/page",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do the letters HTML stand for? (first word: HyperText)",
+      "a": [
+       "hypertext markup language",
+       "hyper text markup language"
+      ],
+      "hint": "Language used to build web pages.",
+      "why": "HTML = HyperText Markup Language."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which program do you use to open websites? (one word)",
+      "a": [
+       "browser",
+       "web browser",
+       "a browser"
+      ],
+      "hint": "Chrome and Firefox are examples.",
+      "why": "A browser requests and shows pages."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In the address https://www.school.org/news, what is the domain name? (www included)",
+      "a": [
+       "www.school.org",
+       "school.org"
+      ],
+      "hint": "It is between // and the next /.",
+      "why": "The domain is the site's name part."
+     }
+    ]
+   },
+   {
+    "title": "Internet Services and Email",
+    "period": "Everyday internet",
+    "learn": [
+     {
+      "h": "More than websites",
+      "b": "The internet carries many services: email, video calls, streaming, online games and file sharing. Each service uses its own rules, called a protocol, to send data."
+     },
+     {
+      "h": "How email works",
+      "b": "You write a message and your email program sends it to a mail server. That server passes it on to the receiver's mail server. The receiver then reads it from their own mailbox."
+     },
+     {
+      "h": "Streaming and downloads",
+      "b": "Downloading copies a whole file to your device. Streaming plays the data while it arrives, so you can watch right away. Streaming needs a steady connection."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which part of an email address comes after the @ symbol?",
+      "o": [
+       "The domain of the mail provider",
+       "The password",
+       "The subject",
+       "The attachment"
+      ],
+      "a": 0,
+      "why": "In name@gmail.com, gmail.com is the domain of the mail service."
+     },
+     {
+      "t": "mc",
+      "q": "What is an email attachment?",
+      "o": [
+       "A spam filter",
+       "A type of server",
+       "The sender's password",
+       "A file sent along with the message"
+      ],
+      "a": 3,
+      "why": "Attachments are files such as photos or documents added to an email."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main difference between streaming and downloading?",
+      "o": [
+       "Streaming is always free",
+       "Streaming plays while data arrives",
+       "Downloading needs no internet",
+       "Streaming deletes the file"
+      ],
+      "a": 1,
+      "why": "Streaming plays data as it arrives instead of saving the whole file first."
+     },
+     {
+      "t": "mc",
+      "q": "Which service lets people see and talk to each other live over the internet?",
+      "o": [
+       "Text editing",
+       "Disk cleanup",
+       "Video calling",
+       "Screen saving"
+      ],
+      "a": 2,
+      "why": "Video calls send audio and video over the internet in real time."
+     },
+     {
+      "t": "tf",
+      "q": "Email travels through mail servers before reaching the receiver.",
+      "a": true,
+      "why": "Mail servers store and forward messages."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Email",
+        "Messages between people"
+       ],
+       [
+        "Streaming",
+        "Play while receiving"
+       ],
+       [
+        "Download",
+        "Save a copy locally"
+       ],
+       [
+        "Attachment",
+        "File sent with a message"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of sending an email in order",
+      "items": [
+       [
+        "Write the message",
+        1
+       ],
+       [
+        "Press send",
+        2
+       ],
+       [
+        "Mail servers pass it on",
+        3
+       ],
+       [
+        "Receiver opens it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In the email address anna@mail.com, what is the domain? ",
+      "a": [
+       "mail.com"
+      ],
+      "hint": "Everything after @.",
+      "why": "The domain follows the @ sign."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A video that plays while it is still arriving is being ... (one word ending in -ing)",
+      "a": [
+       "streaming",
+       "streamed"
+      ],
+      "hint": "Not saved first.",
+      "why": "Streaming plays data as it arrives."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A file sent together with an email is called an ...",
+      "a": [
+       "attachment",
+       "an attachment"
+      ],
+      "hint": "You attach it with a paperclip icon.",
+      "why": "That is an email attachment."
+     }
+    ]
+   },
+   {
+    "title": "Packets, Routing and TCP/IP",
+    "period": "Inside the network",
+    "learn": [
+     {
+      "h": "Data in packets",
+      "b": "Before sending, the internet cuts data into small packets. Each packet has a piece of the data plus a label with the sender and receiver addresses. Packets can take different paths."
+     },
+     {
+      "h": "Routers",
+      "b": "A router is a device that reads the destination address and passes each packet toward its goal. Many routers in a row carry packets across the world, hop by hop."
+     },
+     {
+      "h": "TCP and IP",
+      "b": "IP handles addressing and delivery. TCP checks that all packets arrive, puts them in the right order and asks again for lost ones. Together they are called TCP/IP."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a router do?",
+      "o": [
+       "Forwards packets toward their destination",
+       "Stores websites",
+       "Cleans viruses",
+       "Draws web pages"
+      ],
+      "a": 0,
+      "why": "Routers decide the next hop for each packet."
+     },
+     {
+      "t": "mc",
+      "q": "Which protocol makes sure packets arrive complete and in order?",
+      "o": [
+       "HTML",
+       "USB",
+       "JPEG",
+       "TCP"
+      ],
+      "a": 3,
+      "why": "TCP checks, orders and re-requests lost packets."
+     },
+     {
+      "t": "mc",
+      "q": "Why is data split into packets?",
+      "o": [
+       "To make files bigger",
+       "To share the network and resend only lost pieces",
+       "To hide the sender",
+       "To save paper"
+      ],
+      "a": 1,
+      "why": "Small packets share lines fairly and a lost one can be sent again alone."
+     },
+     {
+      "t": "mc",
+      "q": "What is one 'hop'?",
+      "o": [
+       "A website click",
+       "A password try",
+       "A packet passing one router",
+       "A reboot"
+      ],
+      "a": 2,
+      "why": "Each router a packet passes is one hop."
+     },
+     {
+      "t": "tf",
+      "q": "All packets of one message must travel the same path.",
+      "a": false,
+      "why": "Packets can take different routes and are put in order at the end."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Packet",
+        "Small piece of data"
+       ],
+       [
+        "Router",
+        "Forwards packets"
+       ],
+       [
+        "TCP",
+        "Checks delivery order"
+       ],
+       [
+        "IP",
+        "Addresses packets"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order",
+      "items": [
+       [
+        "Data is split into packets",
+        1
+       ],
+       [
+        "Routers forward the packets",
+        2
+       ],
+       [
+        "Packets arrive at the receiver",
+        3
+       ],
+       [
+        "TCP puts them in order",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do we call a small piece of data sent over the internet?",
+      "a": [
+       "packet",
+       "a packet"
+      ],
+      "hint": "Think parcel.",
+      "why": "Data is sent as packets."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which protocol checks that packets arrive in the right order? (3 letters)",
+      "a": [
+       "tcp"
+      ],
+      "hint": "It is the first half of TCP/IP.",
+      "why": "TCP handles reliable delivery."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A packet passes 5 routers on its way. How many hops is that?",
+      "a": [
+       "5",
+       "five"
+      ],
+      "hint": "One hop per router.",
+      "why": "Each router is one hop, so 5."
+     }
+    ]
+   },
+   {
+    "title": "HTTP, HTTPS and Cookies",
+    "period": "How the web talks",
+    "learn": [
+     {
+      "h": "HTTP requests",
+      "b": "The web uses HTTP. Your browser sends a request, such as GET, and the server sends back a response with a status code. Code 200 means OK and 404 means page not found."
+     },
+     {
+      "h": "HTTPS",
+      "b": "HTTPS is HTTP with encryption (TLS). It stops other people on the network from reading or changing your data. A site should use HTTPS especially for logins and payments."
+     },
+     {
+      "h": "Cookies",
+      "b": "A cookie is a small text file a website saves in your browser. It can remember that you are logged in or what is in your cart. Some cookies are used to track you across sites."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the status code 404 mean?",
+      "o": [
+       "Page not found",
+       "Everything is fine",
+       "Server is busy",
+       "Access granted"
+      ],
+      "a": 0,
+      "why": "404 means the server could not find that page."
+     },
+     {
+      "t": "mc",
+      "q": "What does the S in HTTPS stand for?",
+      "o": [
+       "Speed",
+       "Server",
+       "Search",
+       "Secure"
+      ],
+      "a": 3,
+      "why": "HTTPS means HTTP Secure."
+     },
+     {
+      "t": "mc",
+      "q": "What is a cookie?",
+      "o": [
+       "A virus",
+       "A small file a site stores in your browser",
+       "A kind of router",
+       "A search result"
+      ],
+      "a": 1,
+      "why": "Cookies let sites remember information about you."
+     },
+     {
+      "t": "mc",
+      "q": "Which status code means the request worked?",
+      "o": [
+       "500",
+       "404",
+       "200",
+       "301"
+      ],
+      "a": 2,
+      "why": "200 means OK."
+     },
+     {
+      "t": "tf",
+      "q": "HTTP without the S encrypts all your data.",
+      "a": false,
+      "why": "Plain HTTP sends data readable by others; HTTPS adds encryption."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "GET",
+        "Ask for a page"
+       ],
+       [
+        "200",
+        "Request OK"
+       ],
+       [
+        "404",
+        "Not found"
+       ],
+       [
+        "Cookie",
+        "Saved by the browser"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order",
+      "items": [
+       [
+        "Browser sends a request",
+        1
+       ],
+       [
+        "Server receives it",
+        2
+       ],
+       [
+        "Server sends a response with a code",
+        3
+       ],
+       [
+        "Browser shows the page",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What status code means 'page not found'?",
+      "a": [
+       "404"
+      ],
+      "hint": "Famous error number.",
+      "why": "404 is Not Found."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does the S mean in HTTPS? (one word)",
+      "a": [
+       "secure"
+      ],
+      "hint": "It is about safety.",
+      "why": "HTTPS is HTTP Secure."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What small file does a website save in your browser to remember you?",
+      "a": [
+       "cookie",
+       "a cookie",
+       "cookies"
+      ],
+      "hint": "Sounds like a snack.",
+      "why": "A cookie stores small bits of data."
+     }
+    ]
+   },
+   {
+    "title": "Staying Safe Online",
+    "period": "Safe use",
+    "learn": [
+     {
+      "h": "Strong passwords",
+      "b": "Use long passwords with different words, numbers and symbols. Use a different password for each site. A password manager can remember them for you."
+     },
+     {
+      "h": "Spotting fake messages",
+      "b": "Scam emails and texts often rush you or ask for passwords. Do not click strange links. Check who really sent the message."
+     },
+     {
+      "h": "Your digital footprint",
+      "b": "Everything you post leaves a trail. Think before sharing personal details like your address, school or phone number, because the internet can keep it for a long time."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which password is the strongest?",
+      "o": [
+       "password",
+       "12345678",
+       "myname",
+       "Blue-Tiger-Moon-47!"
+      ],
+      "a": 3,
+      "why": "It is long and mixes words, numbers and symbols."
+     },
+     {
+      "t": "mc",
+      "q": "You get an email that says click now or lose your account. What should you do?",
+      "o": [
+       "Be careful and check if it is real",
+       "Click it quickly",
+       "Send it your password",
+       "Forward it to everyone"
+      ],
+      "a": 0,
+      "why": "Rushing you is a common scam sign, so verify first."
+     },
+     {
+      "t": "mc",
+      "q": "What is a digital footprint?",
+      "o": [
+       "A shoe print on a keyboard",
+       "The trail of information you leave online",
+       "A computer virus",
+       "A type of cable"
+      ],
+      "a": 1,
+      "why": "Your posts and activity online make up your footprint."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best way to handle many passwords?",
+      "o": [
+       "Use one password everywhere",
+       "Write them on a public site",
+       "Use a password manager",
+       "Share them with friends"
+      ],
+      "a": 2,
+      "why": "A password manager stores unique passwords safely."
+     },
+     {
+      "t": "tf",
+      "q": "It is safe to share your home address with anyone online.",
+      "a": false,
+      "why": "Personal details can be misused, so share them only with people you trust."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Password manager",
+        "Stores passwords safely"
+       ],
+       [
+        "Scam message",
+        "Tries to trick you"
+       ],
+       [
+        "HTTPS",
+        "Secure connection"
+       ],
+       [
+        "Privacy",
+        "Control of personal info"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order when you get a strange link",
+      "items": [
+       [
+        "Stop and do not click",
+        1
+       ],
+       [
+        "Check who sent it",
+        2
+       ],
+       [
+        "Ask a trusted person",
+        3
+       ],
+       [
+        "Delete or report it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does the lock icon and the S in HTTPS tell you? One word: the connection is ...",
+      "a": [
+       "encrypted",
+       "secure",
+       "protected"
+      ],
+      "hint": "Others cannot read it.",
+      "why": "HTTPS encrypts data between you and the site."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: An email pretends to be your bank and asks for your password. What is this attack called?",
+      "a": [
+       "phishing"
+      ],
+      "hint": "It sounds like fishing.",
+      "why": "Phishing tricks people into giving information."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What kind of password is better: long or short?",
+      "a": [
+       "long",
+       "longer",
+       "a long one"
+      ],
+      "hint": "Length makes guessing harder.",
+      "why": "Longer passwords are harder to guess."
+     }
+    ]
+   },
+   {
+    "title": "Web Building Blocks and Search",
+    "period": "Behind the page",
+    "learn": [
+     {
+      "h": "HTML, CSS, JavaScript",
+      "b": "HTML builds the structure of a page: headings, text, images, links. CSS controls the look: colors, fonts, layout. JavaScript adds behavior, like buttons that react when you click."
+     },
+     {
+      "h": "Front end and back end",
+      "b": "The front end is what you see and use in the browser. The back end is the server side that runs code and stores data in databases. Both work together when you log in or buy something."
+     },
+     {
+      "h": "Search engines",
+      "b": "A search engine sends bots called crawlers to follow links and read pages. It saves them in an index. When you search, it finds matching pages in the index and ranks them."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which language gives a web page its structure?",
+      "o": [
+       "HTML",
+       "CSS",
+       "SQL",
+       "Python"
+      ],
+      "a": 0,
+      "why": "HTML defines headings, paragraphs, images and links."
+     },
+     {
+      "t": "mc",
+      "q": "Which one controls colors and fonts?",
+      "o": [
+       "JavaScript",
+       "HTML",
+       "HTTP",
+       "CSS"
+      ],
+      "a": 3,
+      "why": "CSS styles the page."
+     },
+     {
+      "t": "mc",
+      "q": "What is a web crawler?",
+      "o": [
+       "A virus",
+       "A bot that follows links to read pages",
+       "A cable",
+       "A browser tab"
+      ],
+      "a": 1,
+      "why": "Crawlers explore the web so search engines can index pages."
+     },
+     {
+      "t": "mc",
+      "q": "Where does back-end code run?",
+      "o": [
+       "Only in your eyes",
+       "In the monitor",
+       "On the server",
+       "In the mouse"
+      ],
+      "a": 2,
+      "why": "The back end runs on servers and handles data."
+     },
+     {
+      "t": "tf",
+      "q": "JavaScript is used to make pages react to clicks.",
+      "a": true,
+      "why": "JavaScript adds interactive behavior."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "HTML",
+        "Page structure"
+       ],
+       [
+        "CSS",
+        "Page style"
+       ],
+       [
+        "JavaScript",
+        "Page behavior"
+       ],
+       [
+        "Index",
+        "Search engine's page list"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these search engine steps in order",
+      "items": [
+       [
+        "Crawler finds pages",
+        1
+       ],
+       [
+        "Pages are saved in an index",
+        2
+       ],
+       [
+        "You type a search",
+        3
+       ],
+       [
+        "Results are ranked and shown",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which language styles a web page with colors and fonts? (3 letters)",
+      "a": [
+       "css"
+      ],
+      "hint": "Cascading Style Sheets.",
+      "why": "CSS controls appearance."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which language adds interactive behavior to pages? (one word)",
+      "a": [
+       "javascript",
+       "js"
+      ],
+      "hint": "Not Java!",
+      "why": "JavaScript makes pages interactive."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which language builds the structure of a page? (4 letters)",
+      "a": [
+       "html"
+      ],
+      "hint": "HyperText Markup Language.",
+      "why": "HTML gives structure."
+     }
+    ]
+   }
+  ]
+ },
+ "tech-cyber": {
+  "name": "Cybersecurity",
+  "units": [
+   {
+    "title": "Why Security Matters",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "What is cybersecurity?",
+      "b": "Cybersecurity means protecting computers, accounts and data from people who should not have access. It keeps your private information safe."
+     },
+     {
+      "h": "The CIA triad",
+      "b": "Security has three goals. Confidentiality: only the right people see data. Integrity: data is not changed by mistake or by attackers. Availability: data and systems work when you need them."
+     },
+     {
+      "h": "Layers of defense",
+      "b": "No single tool is perfect, so we use many layers: strong passwords, updates, firewalls, backups and careful habits. If one layer fails, another can still help."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does confidentiality mean in security?",
+      "o": [
+       "Data is deleted often",
+       "Only authorized people can see the data",
+       "Data is always online",
+       "Data is very large"
+      ],
+      "a": 1,
+      "why": "Confidentiality keeps information private from people who should not see it."
+     },
+     {
+      "t": "mc",
+      "q": "What does availability mean in security?",
+      "o": [
+       "Data is free for everyone",
+       "Data is copied to a phone",
+       "Data is hidden",
+       "Systems and data work when needed"
+      ],
+      "a": 3,
+      "why": "Availability means you can use the system and data when you need them."
+     },
+     {
+      "t": "mc",
+      "q": "Why do we use many layers of defense?",
+      "o": [
+       "If one fails, others still protect",
+       "It makes computers faster",
+       "It is required by law in every home",
+       "It removes all risk forever"
+      ],
+      "a": 0,
+      "why": "Layers give backup protection when one measure fails."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a goal of cybersecurity?",
+      "o": [
+       "Make websites slower",
+       "Protect data and accounts",
+       "Share passwords widely",
+       "Delete all backups"
+      ],
+      "a": 1,
+      "why": "Cybersecurity exists to protect systems, accounts and data."
+     },
+     {
+      "t": "tf",
+      "q": "Integrity means data stays correct and is not changed without permission.",
+      "a": true,
+      "why": "Integrity protects data from unwanted changes."
+     },
+     {
+      "t": "match",
+      "q": "Match each security goal to its meaning",
+      "pairs": [
+       [
+        "Confidentiality",
+        "Keep data private"
+       ],
+       [
+        "Integrity",
+        "Keep data unchanged"
+       ],
+       [
+        "Availability",
+        "Keep systems usable"
+       ],
+       [
+        "Backup",
+        "Extra copy of data"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from weakest to strongest protection",
+      "items": [
+       [
+        "No password",
+        1
+       ],
+       [
+        "Simple password",
+        2
+       ],
+       [
+        "Strong password",
+        3
+       ],
+       [
+        "Strong password plus 2-step login",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What three-letter model guards Confidentiality, Integrity and Availability?",
+      "a": [
+       "cia",
+       "cia triad"
+      ],
+      "hint": "Not the spy agency.",
+      "why": "The CIA triad is the base of security."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Someone who breaks into computers to steal or damage is called a ... (one word)",
+      "a": [
+       "hacker",
+       "attacker",
+       "cybercriminal",
+       "criminal"
+      ],
+      "hint": "Bad actor.",
+      "why": "Attackers (criminal hackers) break into systems."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: If data is kept secret from outsiders, which CIA property is protected?",
+      "a": [
+       "confidentiality"
+      ],
+      "hint": "Think secret.",
+      "why": "Confidentiality means only allowed people see data."
+     }
+    ]
+   },
+   {
+    "title": "Passwords and Accounts",
+    "period": "Protect your login",
+    "learn": [
+     {
+      "h": "Strong passwords",
+      "b": "A strong password is long, such as a phrase of several random words, and is not a name or birthday. Never reuse the same password on different sites."
+     },
+     {
+      "h": "Two-factor authentication",
+      "b": "Two-factor authentication (2FA) asks for something more than a password, like a code from your phone. Even if someone learns your password, they still need the second step."
+     },
+     {
+      "h": "Password managers",
+      "b": "A password manager is an app that creates and stores a different strong password for each account. You only need to remember one main password."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which password is the best choice?",
+      "o": [
+       "qwerty",
+       "Sam2010",
+       "River-Lamp-Cloud-Seven-82",
+       "abc123"
+      ],
+      "a": 2,
+      "why": "It is long, random and hard to guess."
+     },
+     {
+      "t": "mc",
+      "q": "What is two-factor authentication?",
+      "o": [
+       "Using two passwords that are the same",
+       "A second step to prove it is you",
+       "Logging in twice a day",
+       "Two people sharing one account"
+      ],
+      "a": 1,
+      "why": "2FA adds a second proof, like a code, besides the password."
+     },
+     {
+      "t": "mc",
+      "q": "Why should you not reuse one password everywhere?",
+      "o": [
+       "It is slow to type",
+       "Sites do not allow it",
+       "If one site leaks it, all accounts are at risk",
+       "It uses too much memory"
+      ],
+      "a": 2,
+      "why": "A leaked reused password lets others try it on your other accounts."
+     },
+     {
+      "t": "mc",
+      "q": "What does a password manager do?",
+      "o": [
+       "Stores strong unique passwords for you",
+       "Makes your internet faster",
+       "Blocks all ads",
+       "Deletes old accounts"
+      ],
+      "a": 0,
+      "why": "It saves and fills in unique passwords so you do not have to remember them."
+     },
+     {
+      "t": "tf",
+      "q": "It is safe to tell your password to a friend.",
+      "a": false,
+      "why": "Passwords should be kept private to protect your account."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Password",
+        "Secret used to log in"
+       ],
+       [
+        "2FA",
+        "Extra login step"
+       ],
+       [
+        "Passphrase",
+        "Long password of words"
+       ],
+       [
+        "Account",
+        "Your profile on a service"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to set up a safer account",
+      "items": [
+       [
+        "Create an account",
+        1
+       ],
+       [
+        "Choose a long unique password",
+        2
+       ],
+       [
+        "Turn on two-factor login",
+        3
+       ],
+       [
+        "Save recovery options",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What extra login step, besides a password, is called in short? (3 letters)",
+      "a": [
+       "2fa",
+       "mfa"
+      ],
+      "hint": "Two-factor ...",
+      "why": "2FA adds a second proof of identity."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A tool that stores all your passwords safely is a password ...",
+      "a": [
+       "manager",
+       "a manager"
+      ],
+      "hint": "It manages them.",
+      "why": "A password manager keeps strong unique passwords."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Should you reuse the same password on many sites? Answer yes or no.",
+      "a": [
+       "no"
+      ],
+      "hint": "One leak would hurt everywhere.",
+      "why": "Reused passwords let one breach open many accounts."
+     }
+    ]
+   },
+   {
+    "title": "Phishing and Malware",
+    "period": "Common threats",
+    "learn": [
+     {
+      "h": "Phishing",
+      "b": "Phishing is a trick message that pretends to be a bank, a game or a friend to make you share a password or click a bad link. Signs are urgency, spelling mistakes and odd sender addresses."
+     },
+     {
+      "h": "Malware",
+      "b": "Malware is harmful software. A virus attaches to files and spreads. Ransomware locks your files and demands money. Spyware secretly watches what you do."
+     },
+     {
+      "h": "Staying safe",
+      "b": "Do not click unknown links or open surprise attachments. Download apps only from trusted stores. Use antivirus software and keep it updated."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is phishing?",
+      "o": [
+       "A fast way to download games",
+       "A type of firewall",
+       "A trick message that tries to steal information",
+       "A backup method"
+      ],
+      "a": 2,
+      "why": "Phishing tries to fool you into giving up private data or clicking bad links."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a common warning sign of a phishing email?",
+      "o": [
+       "It comes from a known friend and has no link",
+       "It uses your correct full name only",
+       "It shows a proper padlock",
+       "It creates urgency, like act now or lose access"
+      ],
+      "a": 3,
+      "why": "Pressure to act quickly is a classic sign of a scam."
+     },
+     {
+      "t": "mc",
+      "q": "What does ransomware do?",
+      "o": [
+       "Locks your files and demands payment",
+       "Speeds up your PC",
+       "Blocks pop-up ads",
+       "Updates your apps"
+      ],
+      "a": 0,
+      "why": "Ransomware locks files and asks for money to unlock them."
+     },
+     {
+      "t": "mc",
+      "q": "Where should you download apps from?",
+      "o": [
+       "Any link in a message",
+       "Trusted official app stores",
+       "Random pop-ups",
+       "Unknown email attachments"
+      ],
+      "a": 1,
+      "why": "Official stores check apps, which lowers the risk of malware."
+     },
+     {
+      "t": "tf",
+      "q": "Spyware secretly collects information about what you do.",
+      "a": true,
+      "why": "Spyware is made to watch activity without your knowledge."
+     },
+     {
+      "t": "match",
+      "q": "Match each threat to its description",
+      "pairs": [
+       [
+        "Phishing",
+        "Fake message to trick you"
+       ],
+       [
+        "Ransomware",
+        "Locks files for money"
+       ],
+       [
+        "Spyware",
+        "Secretly watches you"
+       ],
+       [
+        "Virus",
+        "Spreads through files"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order when you get a suspicious message",
+      "items": [
+       [
+        "Do not click anything",
+        1
+       ],
+       [
+        "Check the sender",
+        2
+       ],
+       [
+        "Confirm with the real company",
+        3
+       ],
+       [
+        "Report and delete it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A fake message that tricks you into giving private information is called ...",
+      "a": [
+       "phishing"
+      ],
+      "hint": "Like fishing for data.",
+      "why": "This is phishing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Malware that locks your files and demands money is called ...",
+      "a": [
+       "ransomware"
+      ],
+      "hint": "Ransom + software.",
+      "why": "Ransomware holds files hostage."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Software that secretly watches what you do is called ... (one word)",
+      "a": [
+       "spyware"
+      ],
+      "hint": "Spy + software.",
+      "why": "Spyware spies on users."
+     }
+    ]
+   },
+   {
+    "title": "Types of Threats and Attackers",
+    "period": "Know the enemy",
+    "learn": [
+     {
+      "h": "Who attacks?",
+      "b": "Attackers have different goals. Criminals want money. Hacktivists want to make a political point. Insiders are people inside a company who misuse access. White-hat hackers are the good ones who test security with permission."
+     },
+     {
+      "h": "Common attacks",
+      "b": "Malware is harmful software. A DDoS attack floods a site with traffic until it crashes. Social engineering tricks people instead of machines. A brute-force attack tries many passwords."
+     },
+     {
+      "h": "Vulnerabilities and exploits",
+      "b": "A vulnerability is a weakness in software or people. An exploit is the method used to take advantage of it. Fixing weaknesses early lowers risk."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a white-hat hacker?",
+      "o": [
+       "Someone who tests security with permission",
+       "A virus",
+       "A thief",
+       "A router"
+      ],
+      "a": 0,
+      "why": "White hats help by finding problems legally."
+     },
+     {
+      "t": "mc",
+      "q": "What does a DDoS attack do?",
+      "o": [
+       "Steals one password",
+       "Fixes bugs",
+       "Encrypts files for good",
+       "Floods a service with traffic"
+      ],
+      "a": 3,
+      "why": "It overloads a service so real users cannot use it."
+     },
+     {
+      "t": "mc",
+      "q": "What is social engineering?",
+      "o": [
+       "Building social networks",
+       "Tricking people to get access",
+       "Fixing servers",
+       "Writing code"
+      ],
+      "a": 1,
+      "why": "It attacks human trust, not computers."
+     },
+     {
+      "t": "mc",
+      "q": "What is a vulnerability?",
+      "o": [
+       "A strong password",
+       "A backup",
+       "A weakness that can be attacked",
+       "A firewall rule"
+      ],
+      "a": 2,
+      "why": "Vulnerabilities are weak points."
+     },
+     {
+      "t": "tf",
+      "q": "An exploit is a way to take advantage of a vulnerability.",
+      "a": true,
+      "why": "That is the definition of an exploit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "DDoS",
+        "Traffic flood"
+       ],
+       [
+        "Insider",
+        "Misuses inside access"
+       ],
+       [
+        "Brute force",
+        "Guessing many passwords"
+       ],
+       [
+        "Exploit",
+        "Uses a weakness"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of a simple attack in order",
+      "items": [
+       [
+        "Find a vulnerability",
+        1
+       ],
+       [
+        "Build an exploit",
+        2
+       ],
+       [
+        "Launch the attack",
+        3
+       ],
+       [
+        "Steal or damage data",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does the first D in DDoS stand for? (one word)",
+      "a": [
+       "distributed"
+      ],
+      "hint": "Many computers at once.",
+      "why": "DDoS = Distributed Denial of Service."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A weakness in software that attackers can use is a ...",
+      "a": [
+       "vulnerability",
+       "a vulnerability",
+       "vuln"
+      ],
+      "hint": "Starts with V.",
+      "why": "That is a vulnerability."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Tricking a person instead of hacking a machine is called social ...",
+      "a": [
+       "engineering"
+      ],
+      "hint": "Social + ?",
+      "why": "Social engineering."
+     }
+    ]
+   },
+   {
+    "title": "Encryption, Firewalls and Updates",
+    "period": "Defensive tools",
+    "learn": [
+     {
+      "h": "Encryption",
+      "b": "Encryption scrambles data so only someone with the right key can read it. HTTPS uses encryption, so people on the same Wi-Fi cannot read what you send to a secure site."
+     },
+     {
+      "h": "Firewalls",
+      "b": "A firewall is like a guard at the door of a network. It checks incoming and outgoing traffic and blocks what breaks its rules."
+     },
+     {
+      "h": "Updates and backups",
+      "b": "Updates fix security holes, so install them quickly. Backups keep a copy of your files, so you can recover them after a problem. A common rule is to keep copies in more than one place."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does encryption do to data?",
+      "o": [
+       "Makes it unreadable without the key",
+       "Makes it larger",
+       "Deletes it",
+       "Makes it public"
+      ],
+      "a": 0,
+      "why": "Encryption scrambles data so only key holders can read it."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of a firewall?",
+      "o": [
+       "Store passwords",
+       "Filter network traffic using rules",
+       "Make websites look better",
+       "Speed up downloads"
+      ],
+      "a": 1,
+      "why": "A firewall allows or blocks traffic based on security rules."
+     },
+     {
+      "t": "mc",
+      "q": "Why are software updates important for security?",
+      "o": [
+       "They change your wallpaper",
+       "They make the battery bigger",
+       "They fix security holes",
+       "They add more ads"
+      ],
+      "a": 2,
+      "why": "Updates patch weaknesses that attackers could use."
+     },
+     {
+      "t": "mc",
+      "q": "Which sign in the browser shows a site uses an encrypted connection?",
+      "o": [
+       "A red banner",
+       "A very long address",
+       "A pop-up",
+       "HTTPS and a padlock icon"
+      ],
+      "a": 3,
+      "why": "HTTPS and the padlock show the connection is encrypted."
+     },
+     {
+      "t": "tf",
+      "q": "A backup helps you recover files if your device is lost or locked by malware.",
+      "a": true,
+      "why": "A separate copy lets you restore your data."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its purpose",
+      "pairs": [
+       [
+        "Encryption",
+        "Scrambles data"
+       ],
+       [
+        "Firewall",
+        "Filters traffic"
+       ],
+       [
+        "Update",
+        "Fixes security holes"
+       ],
+       [
+        "Backup",
+        "Spare copy of files"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order for a safe update routine",
+      "items": [
+       [
+        "Notice an update is available",
+        1
+       ],
+       [
+        "Back up important files",
+        2
+       ],
+       [
+        "Install the update",
+        3
+       ],
+       [
+        "Restart the device",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Turning readable data into secret code is called ...",
+      "a": [
+       "encryption",
+       "encrypting"
+      ],
+      "hint": "Opposite is decryption.",
+      "why": "Encryption scrambles data."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What network guard blocks unwanted traffic? (one word)",
+      "a": [
+       "firewall",
+       "a firewall"
+      ],
+      "hint": "A wall of fire.",
+      "why": "A firewall filters traffic."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Installing patches that fix security holes is called doing software ...",
+      "a": [
+       "updates",
+       "update",
+       "updating"
+      ],
+      "hint": "Keep it current.",
+      "why": "Updates fix known vulnerabilities."
+     }
+    ]
+   },
+   {
+    "title": "Safe Browsing and Privacy",
+    "period": "Protecting yourself",
+    "learn": [
+     {
+      "h": "Your digital footprint",
+      "b": "Everything you post, search and click leaves a trail called your digital footprint. Employers and strangers can sometimes find it. Think before you share."
+     },
+     {
+      "h": "Privacy settings and permissions",
+      "b": "Apps ask for permissions like camera, location or contacts. Give only what the app really needs. Check privacy settings on social media so that only friends see your posts."
+     },
+     {
+      "h": "Public Wi-Fi and VPNs",
+      "b": "Public Wi-Fi can be watched by others. A VPN encrypts your traffic and hides your IP address from sites. Avoid banking on open Wi-Fi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a digital footprint?",
+      "o": [
+       "The data trail of your online activity",
+       "A shoe size",
+       "A virus",
+       "A type of cable"
+      ],
+      "a": 0,
+      "why": "It is everything you leave behind online."
+     },
+     {
+      "t": "mc",
+      "q": "What should you do with app permissions?",
+      "o": [
+       "Allow everything",
+       "Never read them",
+       "Share them with friends",
+       "Allow only what is needed"
+      ],
+      "a": 3,
+      "why": "Less access means less risk."
+     },
+     {
+      "t": "mc",
+      "q": "What does a VPN do?",
+      "o": [
+       "Speeds up the CPU",
+       "Encrypts your traffic",
+       "Deletes viruses",
+       "Cleans the screen"
+      ],
+      "a": 1,
+      "why": "A VPN protects traffic on the network."
+     },
+     {
+      "t": "mc",
+      "q": "Which is safest for a bank login?",
+      "o": [
+       "Open cafe Wi-Fi",
+       "Any link in an email",
+       "Your home network with HTTPS",
+       "A shared computer"
+      ],
+      "a": 2,
+      "why": "Trusted network plus HTTPS reduces risk."
+     },
+     {
+      "t": "tf",
+      "q": "Anything you post online can be copied and may stay forever.",
+      "a": true,
+      "why": "Others can screenshot or save it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "VPN",
+        "Encrypted tunnel"
+       ],
+       [
+        "Permission",
+        "App access to a feature"
+       ],
+       [
+        "Footprint",
+        "Your online trail"
+       ],
+       [
+        "Privacy setting",
+        "Controls who sees posts"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for installing a new app safely in order",
+      "items": [
+       [
+        "Download from the official store",
+        1
+       ],
+       [
+        "Read the permissions",
+        2
+       ],
+       [
+        "Allow only needed ones",
+        3
+       ],
+       [
+        "Keep it updated",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does the P in VPN stand for? (one word)",
+      "a": [
+       "private"
+      ],
+      "hint": "Virtual ___ Network.",
+      "why": "VPN = Virtual Private Network."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The trail of data you leave online is your digital ...",
+      "a": [
+       "footprint"
+      ],
+      "hint": "Like steps in sand.",
+      "why": "That is your digital footprint."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A flashlight app asks for your contacts. Should you allow it? yes or no",
+      "a": [
+       "no"
+      ],
+      "hint": "It does not need them.",
+      "why": "Apps should get only needed permissions."
+     }
+    ]
+   },
+   {
+    "title": "Network and Web Security",
+    "period": "Defending systems",
+    "learn": [
+     {
+      "h": "Securing a network",
+      "b": "Change the default router password, use WPA2 or WPA3 Wi-Fi encryption and a firewall. Separate guests on a guest network. Turn off features you do not use."
+     },
+     {
+      "h": "Common web attacks",
+      "b": "SQL injection puts database commands into a form to read hidden data. XSS runs a bad script in other users' browsers. A man-in-the-middle attack secretly listens between two parties."
+     },
+     {
+      "h": "Defense in depth",
+      "b": "No single tool is perfect, so use many layers: firewall, antivirus, updates, strong passwords, backups and trained users. If one layer fails, another still protects."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which Wi-Fi security is better?",
+      "o": [
+       "WPA3",
+       "No password",
+       "WEP",
+       "Open network"
+      ],
+      "a": 0,
+      "why": "WPA3 is the newest and strongest of these."
+     },
+     {
+      "t": "mc",
+      "q": "What is SQL injection?",
+      "o": [
+       "Cooling a server",
+       "Installing updates",
+       "Cleaning a mouse",
+       "Sending database commands through a form"
+      ],
+      "a": 3,
+      "why": "Attackers insert SQL code where text is expected."
+     },
+     {
+      "t": "mc",
+      "q": "What is defense in depth?",
+      "o": [
+       "Using one strong password only",
+       "Using many layers of protection",
+       "Deleting the network",
+       "Ignoring updates"
+      ],
+      "a": 1,
+      "why": "Layers mean one failure is not the end."
+     },
+     {
+      "t": "mc",
+      "q": "What should you change first on a new router?",
+      "o": [
+       "The color",
+       "The cable",
+       "The default admin password",
+       "The font"
+      ],
+      "a": 2,
+      "why": "Default passwords are public knowledge."
+     },
+     {
+      "t": "tf",
+      "q": "A guest network keeps visitors away from your own devices.",
+      "a": true,
+      "why": "It separates guest traffic from the main network."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "WPA3",
+        "Wi-Fi encryption"
+       ],
+       [
+        "SQL injection",
+        "Attack on databases"
+       ],
+       [
+        "MITM",
+        "Secretly listens in"
+       ],
+       [
+        "Firewall",
+        "Filters traffic"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for securing a router in order",
+      "items": [
+       [
+        "Log in to settings",
+        1
+       ],
+       [
+        "Change admin password",
+        2
+       ],
+       [
+        "Turn on WPA3 or WPA2",
+        3
+       ],
+       [
+        "Update the firmware",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do the letters MITM stand for in 'MITM attack'? Type the middle word.",
+      "a": [
+       "middle",
+       "the middle"
+      ],
+      "hint": "Man in the ...",
+      "why": "Man-in-the-middle."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which attack puts database commands in a web form? (2 words: SQL ...)",
+      "a": [
+       "sql injection",
+       "injection"
+      ],
+      "hint": "SQL ___.",
+      "why": "That is SQL injection."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Using many layers of protection is called defense in ...",
+      "a": [
+       "depth"
+      ],
+      "hint": "Not width.",
+      "why": "Defense in depth."
+     }
+    ]
+   },
+   {
+    "title": "Cryptography, Hashing and Backups",
+    "period": "Advanced basics",
+    "learn": [
+     {
+      "h": "Symmetric and asymmetric",
+      "b": "Symmetric encryption uses one secret key to lock and unlock. Asymmetric encryption uses a pair: a public key anyone can use to lock, and a private key only you keep to unlock."
+     },
+     {
+      "h": "Hashing",
+      "b": "A hash turns data into a short fixed-size code. It cannot be turned back. Websites store hashes of passwords, not the passwords. Changing one letter gives a totally different hash."
+     },
+     {
+      "h": "Backups and the 3-2-1 rule",
+      "b": "Backups save you from ransomware and failures. The 3-2-1 rule: keep 3 copies, on 2 different types of storage, with 1 copy off-site, for example in the cloud."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In asymmetric encryption, which key do you keep secret?",
+      "o": [
+       "The private key",
+       "The public key",
+       "Both",
+       "Neither"
+      ],
+      "a": 0,
+      "why": "The private key must never be shared."
+     },
+     {
+      "t": "mc",
+      "q": "Which is true about a hash?",
+      "o": [
+       "It can be decrypted with a key",
+       "It is always longer than the data",
+       "It never changes",
+       "It cannot easily be reversed"
+      ],
+      "a": 3,
+      "why": "Hashing is one-way."
+     },
+     {
+      "t": "mc",
+      "q": "What does the 3-2-1 backup rule say about off-site copies?",
+      "o": [
+       "Keep 3 off-site",
+       "Keep 1 copy off-site",
+       "Keep none",
+       "Keep 2 off-site"
+      ],
+      "a": 1,
+      "why": "3 copies, 2 media, 1 off-site."
+     },
+     {
+      "t": "mc",
+      "q": "What do websites ideally store instead of your password?",
+      "o": [
+       "The plain text",
+       "Your email",
+       "A hash of it",
+       "A photo"
+      ],
+      "a": 2,
+      "why": "Hashes protect passwords if data leaks."
+     },
+     {
+      "t": "tf",
+      "q": "Symmetric encryption uses the same key to lock and unlock.",
+      "a": true,
+      "why": "One shared secret key does both."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Public key",
+        "Anyone can use to lock"
+       ],
+       [
+        "Private key",
+        "Kept secret"
+       ],
+       [
+        "Hash",
+        "One-way fixed code"
+       ],
+       [
+        "Backup",
+        "Spare copy of data"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of sending a locked message in order",
+      "items": [
+       [
+        "Get the receiver's public key",
+        1
+       ],
+       [
+        "Encrypt the message",
+        2
+       ],
+       [
+        "Send it",
+        3
+       ],
+       [
+        "Receiver unlocks with private key",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In the 3-2-1 rule, how many copies of data should you keep?",
+      "a": [
+       "3",
+       "three"
+      ],
+      "hint": "The first number.",
+      "why": "Keep 3 copies."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A one-way code made from data is called a ...",
+      "a": [
+       "hash",
+       "a hash"
+      ],
+      "hint": "Used for stored passwords.",
+      "why": "That is a hash."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which key do you never share: public or private?",
+      "a": [
+       "private",
+       "the private key",
+       "private key"
+      ],
+      "hint": "Keep it secret.",
+      "why": "The private key stays secret."
+     }
+    ]
+   }
+  ]
+ },
+ "tech-ai": {
+  "name": "AI & Machine Learning",
+  "units": [
+   {
+    "title": "What Is AI?",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Artificial intelligence",
+      "b": "AI is when computers do tasks that usually need human thinking, like understanding speech, recognizing pictures or making decisions."
+     },
+     {
+      "h": "AI is all around us",
+      "b": "You use AI when a phone unlocks with your face, when a map finds the fastest route, or when a video app suggests what to watch."
+     },
+     {
+      "h": "Narrow AI",
+      "b": "Today's AI is narrow: it is good at one kind of task. A chess AI plays chess very well but cannot cook or drive. It does not think like a person."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is AI?",
+      "o": [
+       "Computers doing tasks that usually need human thinking",
+       "A type of screen",
+       "A kind of cable",
+       "A programming mistake"
+      ],
+      "a": 0,
+      "why": "AI covers computers doing tasks like understanding language or images."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an everyday example of AI?",
+      "o": [
+       "A paper map",
+       "A light switch",
+       "A calculator button",
+       "Face unlock on a phone"
+      ],
+      "a": 3,
+      "why": "Face unlock uses AI to recognize your face."
+     },
+     {
+      "t": "mc",
+      "q": "What does narrow AI mean?",
+      "o": [
+       "AI that is very small",
+       "AI that is good at one specific kind of task",
+       "AI that can do every task",
+       "AI that is old"
+      ],
+      "a": 1,
+      "why": "Narrow AI is built for specific tasks only."
+     },
+     {
+      "t": "mc",
+      "q": "A video app suggests videos you may like. This is mostly an example of:",
+      "o": [
+       "A firewall",
+       "A keyboard",
+       "A recommendation system",
+       "A printer"
+      ],
+      "a": 2,
+      "why": "Recommendation systems use AI to predict what you may enjoy."
+     },
+     {
+      "t": "tf",
+      "q": "Today's AI systems think and feel exactly like humans.",
+      "a": false,
+      "why": "Current AI finds patterns in data but does not think or feel like people."
+     },
+     {
+      "t": "match",
+      "q": "Match each AI use to its example",
+      "pairs": [
+       [
+        "Speech recognition",
+        "Voice assistant"
+       ],
+       [
+        "Image recognition",
+        "Photo face tagging"
+       ],
+       [
+        "Recommendations",
+        "Video suggestions"
+       ],
+       [
+        "Translation",
+        "Language app"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from simplest to most complex",
+      "items": [
+       [
+        "A fixed rule",
+        1
+       ],
+       [
+        "A calculator",
+        2
+       ],
+       [
+        "A spam filter",
+        3
+       ],
+       [
+        "A chatbot",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do the letters AI stand for? (2 words)",
+      "a": [
+       "artificial intelligence"
+      ],
+      "hint": "Machines acting smart.",
+      "why": "AI = Artificial Intelligence."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Netflix suggesting a show you may like is an example of an AI ... system (one word)",
+      "a": [
+       "recommendation",
+       "recommender"
+      ],
+      "hint": "It recommends.",
+      "why": "Recommendation systems use AI."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Software that does only one narrow task, like chess, is called ... AI (one word)",
+      "a": [
+       "narrow",
+       "weak"
+      ],
+      "hint": "Opposite of general.",
+      "why": "Narrow AI does a specific task."
+     }
+    ]
+   },
+   {
+    "title": "History and Types of AI",
+    "period": "Where AI came from",
+    "learn": [
+     {
+      "h": "Early AI",
+      "b": "The term artificial intelligence was first used in 1956 at a meeting at Dartmouth. In 1950, Alan Turing proposed a test: if you cannot tell a machine from a human in conversation, the machine shows intelligence."
+     },
+     {
+      "h": "Milestones",
+      "b": "In 1997 IBM's Deep Blue beat chess champion Garry Kasparov. In 2011 IBM Watson won the quiz show Jeopardy. In 2016 AlphaGo beat Go champion Lee Sedol. Chatbots like ChatGPT arrived in 2022."
+     },
+     {
+      "h": "Narrow vs general",
+      "b": "All AI today is narrow AI: very good at one kind of task. General AI, which could do any human mental task, does not exist yet. Machines that learn from data are called machine learning systems."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who proposed the Turing Test?",
+      "o": [
+       "Alan Turing",
+       "Bill Gates",
+       "Steve Jobs",
+       "Elon Musk"
+      ],
+      "a": 0,
+      "why": "Turing described it in 1950."
+     },
+     {
+      "t": "mc",
+      "q": "Which game did Deep Blue win against a world champion in 1997?",
+      "o": [
+       "Go",
+       "Poker",
+       "Tennis",
+       "Chess"
+      ],
+      "a": 3,
+      "why": "Deep Blue beat Kasparov at chess."
+     },
+     {
+      "t": "mc",
+      "q": "What kind of AI exists today?",
+      "o": [
+       "General AI",
+       "Narrow AI",
+       "Conscious AI",
+       "Human AI"
+      ],
+      "a": 1,
+      "why": "Today's systems are specialized."
+     },
+     {
+      "t": "mc",
+      "q": "In which year was the term 'artificial intelligence' first used at Dartmouth?",
+      "o": [
+       "1999",
+       "1980",
+       "1956",
+       "2010"
+      ],
+      "a": 2,
+      "why": "The Dartmouth workshop was in 1956."
+     },
+     {
+      "t": "tf",
+      "q": "AlphaGo beat a top human player at the game Go.",
+      "a": true,
+      "why": "AlphaGo defeated Lee Sedol in 2016."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Turing Test",
+        "Can a machine pass as human?"
+       ],
+       [
+        "Deep Blue",
+        "Chess computer"
+       ],
+       [
+        "AlphaGo",
+        "Go-playing AI"
+       ],
+       [
+        "Narrow AI",
+        "Does one task well"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these AI milestones in order",
+      "items": [
+       [
+        "Turing Test proposed",
+        1
+       ],
+       [
+        "Deep Blue beats Kasparov",
+        2
+       ],
+       [
+        "AlphaGo beats Lee Sedol",
+        3
+       ],
+       [
+        "ChatGPT released",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year did Deep Blue beat Kasparov?",
+      "a": [
+       "1997"
+      ],
+      "hint": "Late 1990s.",
+      "why": "It was 1997."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which game did AlphaGo master? (one word)",
+      "a": [
+       "go"
+      ],
+      "hint": "A board game with black and white stones.",
+      "why": "AlphaGo played Go."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Whose test asks if a machine can pass as a human in conversation? (last name)",
+      "a": [
+       "turing",
+       "alan turing"
+      ],
+      "hint": "Alan ...",
+      "why": "The Turing Test."
+     }
+    ]
+   },
+   {
+    "title": "How Machines Learn",
+    "period": "Machine learning",
+    "learn": [
+     {
+      "h": "Learning from data",
+      "b": "In machine learning, a computer is not given every rule. It learns patterns from many examples. For instance, it sees thousands of cat photos and learns what a cat looks like."
+     },
+     {
+      "h": "Training and testing",
+      "b": "Training is when the model learns from data. Testing checks it on new examples it has not seen. Good results on new data show it really learned."
+     },
+     {
+      "h": "Types of learning",
+      "b": "Supervised learning uses examples with correct labels. Unsupervised learning finds groups in data without labels. Reinforcement learning learns by trying actions and getting rewards."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does machine learning mainly use to learn?",
+      "o": [
+       "Magic",
+       "Data and examples",
+       "A battery",
+       "A bigger screen"
+      ],
+      "a": 1,
+      "why": "Models learn patterns from lots of data."
+     },
+     {
+      "t": "mc",
+      "q": "Why do we test a model on new data?",
+      "o": [
+       "To make it bigger",
+       "To save electricity",
+       "To check it learned well, not just memorized",
+       "To delete the training data"
+      ],
+      "a": 2,
+      "why": "New data shows whether the model works beyond its training examples."
+     },
+     {
+      "t": "mc",
+      "q": "Which type of learning uses data with correct labels?",
+      "o": [
+       "Supervised learning",
+       "Unsupervised learning",
+       "Random learning",
+       "Hardware learning"
+      ],
+      "a": 0,
+      "why": "Supervised learning learns from labeled examples."
+     },
+     {
+      "t": "mc",
+      "q": "A game agent learns by trying moves and getting points. This is:",
+      "o": [
+       "Supervised learning",
+       "Data deletion",
+       "Clustering",
+       "Reinforcement learning"
+      ],
+      "a": 3,
+      "why": "Reinforcement learning uses rewards for good actions."
+     },
+     {
+      "t": "tf",
+      "q": "More good quality data can often help a model learn better.",
+      "a": true,
+      "why": "Good, varied examples help the model find true patterns."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Training",
+        "Model learns from data"
+       ],
+       [
+        "Testing",
+        "Check on new data"
+       ],
+       [
+        "Label",
+        "The correct answer"
+       ],
+       [
+        "Model",
+        "What the AI learns"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these machine learning steps in order",
+      "items": [
+       [
+        "Collect data",
+        1
+       ],
+       [
+        "Train the model",
+        2
+       ],
+       [
+        "Test the model",
+        3
+       ],
+       [
+        "Use the model",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The examples a model learns from are called training ...",
+      "a": [
+       "data"
+      ],
+      "hint": "Information.",
+      "why": "Models learn from training data."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Learning from examples that have correct labels is called ... learning (one word)",
+      "a": [
+       "supervised"
+      ],
+      "hint": "A teacher gives answers.",
+      "why": "Supervised learning uses labeled data."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A model that does great on training data but badly on new data is said to ... (one word, starts with o)",
+      "a": [
+       "overfit",
+       "overfitting",
+       "overfitted"
+      ],
+      "hint": "Memorized too much.",
+      "why": "That is overfitting."
+     }
+    ]
+   },
+   {
+    "title": "Data and Training Models",
+    "period": "Fuel for AI",
+    "learn": [
+     {
+      "h": "Data is the fuel",
+      "b": "A model learns patterns from data, so more and better data usually means a better model. Bad or biased data leads to bad or unfair answers: garbage in, garbage out."
+     },
+     {
+      "h": "Splitting the data",
+      "b": "Data is split into a training set to learn from and a test set the model has never seen. The test set shows how well the model works on new examples, which is what matters."
+     },
+     {
+      "h": "Features and labels",
+      "b": "A feature is an input fact, like a house's size. A label is the answer we want to predict, like its price. Cleaning data means fixing errors and missing values before training."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a label in machine learning?",
+      "o": [
+       "The correct answer for an example",
+       "A product sticker",
+       "A computer part",
+       "A website name"
+      ],
+      "a": 0,
+      "why": "Labels are the target answers."
+     },
+     {
+      "t": "mc",
+      "q": "Why use a separate test set?",
+      "o": [
+       "To make training slower",
+       "To hide data",
+       "To save space",
+       "To check performance on new data"
+      ],
+      "a": 3,
+      "why": "Test data shows real-world accuracy."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'garbage in, garbage out' mean?",
+      "o": [
+       "Delete old files",
+       "Bad data gives bad results",
+       "Use fewer computers",
+       "Recycle hardware"
+      ],
+      "a": 1,
+      "why": "Quality of output depends on input quality."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a feature when predicting a house price?",
+      "o": [
+       "The predicted price",
+       "The test score",
+       "Number of rooms",
+       "The model name"
+      ],
+      "a": 2,
+      "why": "Features are the inputs."
+     },
+     {
+      "t": "tf",
+      "q": "A model should be tested on data it has already seen.",
+      "a": false,
+      "why": "Testing must use new, unseen data."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Feature",
+        "Input fact"
+       ],
+       [
+        "Label",
+        "Answer to predict"
+       ],
+       [
+        "Training set",
+        "Data to learn from"
+       ],
+       [
+        "Test set",
+        "Unseen data to check"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order",
+      "items": [
+       [
+        "Collect data",
+        1
+       ],
+       [
+        "Clean the data",
+        2
+       ],
+       [
+        "Train the model",
+        3
+       ],
+       [
+        "Test the model",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In a dataset of 100 pictures, 80 are used for training. How many are in the test set?",
+      "a": [
+       "20",
+       "twenty"
+      ],
+      "hint": "100 minus 80.",
+      "why": "100 - 80 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The answer we want a model to predict is called the ...",
+      "a": [
+       "label",
+       "target",
+       "a label"
+      ],
+      "hint": "Opposite of features.",
+      "why": "The label is the target answer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Complete the saying: garbage in, ... out",
+      "a": [
+       "garbage"
+      ],
+      "hint": "Same word.",
+      "why": "Bad input gives bad output."
+     }
+    ]
+   },
+   {
+    "title": "Types of Machine Learning",
+    "period": "Learning styles",
+    "learn": [
+     {
+      "h": "Supervised learning",
+      "b": "In supervised learning the data has labels, like photos marked cat or dog. The model learns to predict labels. Two main jobs: classification (pick a category) and regression (predict a number)."
+     },
+     {
+      "h": "Unsupervised learning",
+      "b": "Here the data has no labels. The model finds patterns by itself, such as grouping similar customers. Grouping is called clustering."
+     },
+     {
+      "h": "Reinforcement learning",
+      "b": "An agent learns by trying actions and getting rewards or penalties. Over time it learns what earns the most reward. It is used for game-playing AI and robots."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Predicting tomorrow's temperature is which supervised task?",
+      "o": [
+       "Regression",
+       "Classification",
+       "Clustering",
+       "Reward"
+      ],
+      "a": 0,
+      "why": "Predicting a number is regression."
+     },
+     {
+      "t": "mc",
+      "q": "Sorting emails into spam or not spam is ...",
+      "o": [
+       "Regression",
+       "Clustering",
+       "Compression",
+       "Classification"
+      ],
+      "a": 3,
+      "why": "Choosing a category is classification."
+     },
+     {
+      "t": "mc",
+      "q": "Which learning type uses rewards and penalties?",
+      "o": [
+       "Supervised",
+       "Reinforcement",
+       "Unsupervised",
+       "Manual"
+      ],
+      "a": 1,
+      "why": "An agent learns from rewards."
+     },
+     {
+      "t": "mc",
+      "q": "Grouping customers with no labels is called ...",
+      "o": [
+       "Labeling",
+       "Testing",
+       "Clustering",
+       "Encrypting"
+      ],
+      "a": 2,
+      "why": "Clustering is unsupervised."
+     },
+     {
+      "t": "tf",
+      "q": "Unsupervised learning needs labeled examples.",
+      "a": false,
+      "why": "It works on unlabeled data."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Supervised",
+        "Learns from labels"
+       ],
+       [
+        "Unsupervised",
+        "Finds hidden groups"
+       ],
+       [
+        "Reinforcement",
+        "Learns from rewards"
+       ],
+       [
+        "Regression",
+        "Predicts a number"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these reinforcement learning steps in order",
+      "items": [
+       [
+        "Agent takes an action",
+        1
+       ],
+       [
+        "Environment gives a reward",
+        2
+       ],
+       [
+        "Agent updates its strategy",
+        3
+       ],
+       [
+        "Agent tries again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Predicting a number, like a price, is called ... (one word)",
+      "a": [
+       "regression"
+      ],
+      "hint": "Not classification.",
+      "why": "Regression predicts numbers."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Grouping similar items without labels is called ... (one word)",
+      "a": [
+       "clustering"
+      ],
+      "hint": "Cluster means group.",
+      "why": "Clustering is unsupervised."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which learning type uses rewards? (one word)",
+      "a": [
+       "reinforcement"
+      ],
+      "hint": "Learn by trial and reward.",
+      "why": "Reinforcement learning."
+     }
+    ]
+   },
+   {
+    "title": "Neural Networks and Chatbots",
+    "period": "Modern AI",
+    "learn": [
+     {
+      "h": "Neural networks",
+      "b": "A neural network is a model loosely inspired by the brain. It has layers of small connected units. Data goes in, passes through the layers, and an answer comes out. Deep learning uses many layers."
+     },
+     {
+      "h": "Language models",
+      "b": "A large language model, or LLM, is trained on huge amounts of text. It learns to predict the next word, which lets it write answers, summarize and translate."
+     },
+     {
+      "h": "Limits of chatbots",
+      "b": "Chatbots can make mistakes and sometimes state wrong things with confidence. This is called a hallucination. Always check important facts with a reliable source."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a neural network inspired by?",
+      "o": [
+       "The brain",
+       "A printer",
+       "A spreadsheet",
+       "A router"
+      ],
+      "a": 0,
+      "why": "Neural networks are loosely inspired by how brain cells connect."
+     },
+     {
+      "t": "mc",
+      "q": "What does deep learning mean?",
+      "o": [
+       "Studying at night",
+       "Using many layers in a neural network",
+       "Learning without data",
+       "Deleting old models"
+      ],
+      "a": 1,
+      "why": "Deep learning uses neural networks with many layers."
+     },
+     {
+      "t": "mc",
+      "q": "What does an LLM mainly learn to do?",
+      "o": [
+       "Print pages",
+       "Cool the CPU",
+       "Predict the next word in text",
+       "Charge a phone"
+      ],
+      "a": 2,
+      "why": "Large language models learn patterns in text to predict what comes next."
+     },
+     {
+      "t": "mc",
+      "q": "What is a hallucination in AI?",
+      "o": [
+       "A video effect",
+       "A screen glitch",
+       "A new app",
+       "A confident answer that is actually wrong"
+      ],
+      "a": 3,
+      "why": "AI can produce made-up or incorrect information that sounds sure."
+     },
+     {
+      "t": "tf",
+      "q": "You should always check important facts from a chatbot with a reliable source.",
+      "a": true,
+      "why": "Chatbots can be wrong, so verification is important."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Neural network",
+        "Layers of connected units"
+       ],
+       [
+        "LLM",
+        "Text-trained language model"
+       ],
+       [
+        "Deep learning",
+        "Many-layer networks"
+       ],
+       [
+        "Prompt",
+        "Your input to the AI"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order when you ask a chatbot a question",
+      "items": [
+       [
+        "You type a prompt",
+        1
+       ],
+       [
+        "The model reads it",
+        2
+       ],
+       [
+        "The model predicts words",
+        3
+       ],
+       [
+        "You get an answer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A neural network is made of connected layers of ... (one word)",
+      "a": [
+       "neurons",
+       "nodes",
+       "neuron",
+       "node"
+      ],
+      "hint": "Brain-inspired units.",
+      "why": "Layers of neurons (nodes)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What do the letters GPT stand for in the middle? Type the word that starts with P.",
+      "a": [
+       "pretrained",
+       "pre-trained",
+       "pre trained"
+      ],
+      "hint": "Generative P___ Transformer.",
+      "why": "GPT = Generative Pre-trained Transformer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The text you type to ask a chatbot something is called a ...",
+      "a": [
+       "prompt",
+       "a prompt"
+      ],
+      "hint": "You prompt it.",
+      "why": "Your input to a chatbot is a prompt."
+     }
+    ]
+   },
+   {
+    "title": "Applications, Evaluation and AI Ethics",
+    "period": "AI in the real world",
+    "learn": [
+     {
+      "h": "Where AI is used",
+      "b": "AI helps in medicine (spotting diseases in scans), cars (self-driving), phones (face unlock, voice assistants), translation, and fraud detection. Computer vision lets machines understand images; NLP means natural language processing."
+     },
+     {
+      "h": "Measuring a model",
+      "b": "Accuracy is the percent of correct predictions. A model can be accurate overall but still fail on rare cases. Overfitting means it memorized training data and fails on new data."
+     },
+     {
+      "h": "Ethics and the future",
+      "b": "Questions include fairness, privacy, job changes, deepfakes and who is responsible when AI makes mistakes. Many countries are writing rules, like the EU AI Act, to keep AI safe and fair."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does NLP stand for?",
+      "o": [
+       "Natural language processing",
+       "New logic program",
+       "Network line protocol",
+       "Neural lane planner"
+      ],
+      "a": 0,
+      "why": "NLP helps computers work with human language."
+     },
+     {
+      "t": "mc",
+      "q": "A model gets 90 of 100 test answers right. Its accuracy is ...",
+      "o": [
+       "9%",
+       "10%",
+       "100%",
+       "90%"
+      ],
+      "a": 3,
+      "why": "90 / 100 = 90%."
+     },
+     {
+      "t": "mc",
+      "q": "What is a deepfake?",
+      "o": [
+       "A type of battery",
+       "Fake media made by AI",
+       "A secure password",
+       "A web browser"
+      ],
+      "a": 1,
+      "why": "Deepfakes imitate faces or voices."
+     },
+     {
+      "t": "mc",
+      "q": "What is computer vision?",
+      "o": [
+       "A better monitor",
+       "A camera lens",
+       "AI that understands images",
+       "Eye surgery"
+      ],
+      "a": 2,
+      "why": "It lets machines interpret pictures."
+     },
+     {
+      "t": "tf",
+      "q": "A model with high accuracy never makes mistakes.",
+      "a": false,
+      "why": "Accuracy is not 100% and rare cases can still fail."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "NLP",
+        "Understands language"
+       ],
+       [
+        "Computer vision",
+        "Understands images"
+       ],
+       [
+        "Overfitting",
+        "Memorizing training data"
+       ],
+       [
+        "EU AI Act",
+        "Rules for AI in Europe"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of using an AI model in order",
+      "items": [
+       [
+        "Define the problem",
+        1
+       ],
+       [
+        "Train on data",
+        2
+       ],
+       [
+        "Evaluate on test data",
+        3
+       ],
+       [
+        "Deploy and monitor",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A model answers 45 of 50 test questions correctly. What is its accuracy in percent? (number only)",
+      "a": [
+       "90",
+       "90%"
+      ],
+      "hint": "45/50.",
+      "why": "45/50 = 0.9 = 90%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: AI that works with images is called computer ... (one word)",
+      "a": [
+       "vision"
+      ],
+      "hint": "Machines can 'see'.",
+      "why": "Computer vision."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What do the letters NLP stand for? Type the first word.",
+      "a": [
+       "natural"
+      ],
+      "hint": "___ Language Processing.",
+      "why": "Natural Language Processing."
+     }
+    ]
+   },
+   {
+    "title": "Using AI Responsibly",
+    "period": "Ethics and skills",
+    "learn": [
+     {
+      "h": "Bias in AI",
+      "b": "AI learns from data made by people. If the data is unfair or missing some groups, the AI can be unfair too. This is called bias, and builders must work to reduce it."
+     },
+     {
+      "h": "Privacy and honesty",
+      "b": "Do not share private details like passwords or your address with an AI tool. Also be honest: if you use AI for school work, follow your teacher's rules and say so."
+     },
+     {
+      "h": "Writing good prompts",
+      "b": "A good prompt is clear and gives details: what you want, who it is for, and the format. You can ask follow-up questions to improve the answer."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Why can AI be biased?",
+      "o": [
+       "Its screen is too small",
+       "It learns from data that may be unfair or incomplete",
+       "It is too fast",
+       "It uses too little power"
+      ],
+      "a": 1,
+      "why": "Biased or missing data can lead to unfair results."
+     },
+     {
+      "t": "mc",
+      "q": "What should you avoid sharing with an AI tool?",
+      "o": [
+       "A favorite color",
+       "A homework topic",
+       "Your passwords and private details",
+       "A general question"
+      ],
+      "a": 2,
+      "why": "Private details could be stored or misused, so keep them to yourself."
+     },
+     {
+      "t": "mc",
+      "q": "Which prompt is clearer?",
+      "o": [
+       "Help",
+       "Write 3 simple tips for a school talk on recycling",
+       "Do it",
+       "Stuff about things"
+      ],
+      "a": 1,
+      "why": "It says the task, the topic, the audience and the amount."
+     },
+     {
+      "t": "mc",
+      "q": "If AI is used on school work, what is the best action?",
+      "o": [
+       "Hide it always",
+       "Copy it without reading",
+       "Follow your teacher's rules and be honest",
+       "Ask it to cheat"
+      ],
+      "a": 2,
+      "why": "Honesty and following the rules are part of responsible AI use."
+     },
+     {
+      "t": "tf",
+      "q": "AI answers are always correct and never need checking.",
+      "a": false,
+      "why": "AI can make mistakes, so important answers should be checked."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Bias",
+        "Unfair pattern from data"
+       ],
+       [
+        "Privacy",
+        "Keeping personal info safe"
+       ],
+       [
+        "Prompt",
+        "Instruction to an AI"
+       ],
+       [
+        "Fact-check",
+        "Verify with a source"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to use AI for research well",
+      "items": [
+       [
+        "Ask a clear question",
+        1
+       ],
+       [
+        "Read the answer carefully",
+        2
+       ],
+       [
+        "Check facts in reliable sources",
+        3
+       ],
+       [
+        "Write in your own words",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: When AI treats groups unfairly because of its data, this is called ... (one word)",
+      "a": [
+       "bias"
+      ],
+      "hint": "Unfair tilt.",
+      "why": "Biased data makes biased AI."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: An AI answer that sounds confident but is made up is called a ... (one word)",
+      "a": [
+       "hallucination",
+       "hallucinations"
+      ],
+      "hint": "Seeing things that are not there.",
+      "why": "That is an AI hallucination."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Should you share your passwords with a chatbot? yes or no",
+      "a": [
+       "no"
+      ],
+      "hint": "Keep private data private.",
+      "why": "Never share private data with AI tools."
+     }
+    ]
+   }
+  ]
+ },
+ "tech-network": {
+  "name": "Networking",
+  "units": [
+   {
+    "title": "Network Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "What is a network?",
+      "b": "A network is two or more devices connected so they can share data. A home network might connect phones, laptops and a printer."
+     },
+     {
+      "h": "LAN and WAN",
+      "b": "A LAN (local area network) covers a small place like a home or school. A WAN (wide area network) covers a big area. The internet is the biggest WAN."
+     },
+     {
+      "h": "Network devices",
+      "b": "A router connects your network to the internet and sends data in the right direction. A switch connects devices inside a LAN. A modem links your home to your internet provider."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a network?",
+      "o": [
+       "A type of battery",
+       "Connected devices that share data",
+       "A kind of software bug",
+       "A single computer"
+      ],
+      "a": 1,
+      "why": "A network links devices so they can exchange data."
+     },
+     {
+      "t": "mc",
+      "q": "Which network usually covers a home or school?",
+      "o": [
+       "WAN",
+       "MAN",
+       "LAN",
+       "SAN"
+      ],
+      "a": 2,
+      "why": "A LAN covers a small local area."
+     },
+     {
+      "t": "mc",
+      "q": "Which device connects your home network to the internet and directs data?",
+      "o": [
+       "Router",
+       "Monitor",
+       "Keyboard",
+       "Speaker"
+      ],
+      "a": 0,
+      "why": "A router sends data between your network and the internet."
+     },
+     {
+      "t": "mc",
+      "q": "What is the biggest WAN in the world?",
+      "o": [
+       "A school Wi-Fi",
+       "A home hotspot",
+       "A Bluetooth link",
+       "The internet"
+      ],
+      "a": 3,
+      "why": "The internet connects networks across the entire world."
+     },
+     {
+      "t": "tf",
+      "q": "A switch connects multiple devices inside a local network.",
+      "a": true,
+      "why": "Switches link wired devices within a LAN."
+     },
+     {
+      "t": "match",
+      "q": "Match each device to its job",
+      "pairs": [
+       [
+        "Router",
+        "Connects to the internet"
+       ],
+       [
+        "Switch",
+        "Links devices in a LAN"
+       ],
+       [
+        "Modem",
+        "Links to the provider"
+       ],
+       [
+        "Access point",
+        "Provides Wi-Fi"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from smallest to largest network",
+      "items": [
+       [
+        "Two phones sharing by Bluetooth",
+        1
+       ],
+       [
+        "Home LAN",
+        2
+       ],
+       [
+        "City network",
+        3
+       ],
+       [
+        "The internet",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does LAN stand for? Type the first word.",
+      "a": [
+       "local"
+      ],
+      "hint": "___ Area Network.",
+      "why": "LAN = Local Area Network."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The internet is a WAN. What does the W stand for?",
+      "a": [
+       "wide"
+      ],
+      "hint": "Opposite of local.",
+      "why": "WAN = Wide Area Network."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What device connects your home network to the internet? (one word)",
+      "a": [
+       "router",
+       "a router"
+      ],
+      "hint": "It routes traffic.",
+      "why": "The router links your LAN to the internet."
+     }
+    ]
+   },
+   {
+    "title": "Network Devices",
+    "period": "Hardware that connects",
+    "learn": [
+     {
+      "h": "Hub, switch, router",
+      "b": "A hub sends data to every device. A switch is smarter: it sends data only to the device that needs it, inside one LAN. A router connects different networks, like your home LAN and the internet."
+     },
+     {
+      "h": "Other devices",
+      "b": "A modem turns the signal from your internet provider into data your router understands. An access point adds Wi-Fi. A network interface card (NIC) lets a device join a network."
+     },
+     {
+      "h": "MAC addresses",
+      "b": "Every network card has a unique hardware address called a MAC address, like 00:1A:2B:3C:4D:5E. Switches use MAC addresses inside a LAN."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which device connects different networks?",
+      "o": [
+       "Router",
+       "Hub",
+       "Cable",
+       "Monitor"
+      ],
+      "a": 0,
+      "why": "Routers link separate networks."
+     },
+     {
+      "t": "mc",
+      "q": "What does a switch do better than a hub?",
+      "o": [
+       "Cools the room",
+       "Stores files",
+       "Makes Wi-Fi",
+       "Sends data only to the right device"
+      ],
+      "a": 3,
+      "why": "Switches forward to the target port only."
+     },
+     {
+      "t": "mc",
+      "q": "What is a MAC address?",
+      "o": [
+       "A website",
+       "A unique hardware address of a network card",
+       "A password",
+       "An Apple computer"
+      ],
+      "a": 1,
+      "why": "It identifies the network interface."
+     },
+     {
+      "t": "mc",
+      "q": "What does a modem do?",
+      "o": [
+       "Prints pages",
+       "Stores games",
+       "Connects you to your ISP's line",
+       "Plays sound"
+      ],
+      "a": 2,
+      "why": "It converts the ISP signal for your network."
+     },
+     {
+      "t": "tf",
+      "q": "A hub sends data only to the intended device.",
+      "a": false,
+      "why": "A hub repeats data to all ports; a switch targets one."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Switch",
+        "Connects devices in a LAN"
+       ],
+       [
+        "Router",
+        "Links networks"
+       ],
+       [
+        "Modem",
+        "Talks to the ISP"
+       ],
+       [
+        "NIC",
+        "Network card"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from the internet to your laptop",
+      "items": [
+       [
+        "ISP line",
+        1
+       ],
+       [
+        "Modem",
+        2
+       ],
+       [
+        "Router",
+        3
+       ],
+       [
+        "Laptop",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which device connects your LAN to other networks? (one word)",
+      "a": [
+       "router"
+      ],
+      "hint": "Starts with R.",
+      "why": "Router."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which unique hardware address does every network card have? (3 letters)",
+      "a": [
+       "mac",
+       "mac address"
+      ],
+      "hint": "Not Apple's computer.",
+      "why": "MAC address."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which device forwards data only to the right device in a LAN? (one word)",
+      "a": [
+       "switch",
+       "a switch"
+      ],
+      "hint": "Smarter than a hub.",
+      "why": "A switch."
+     }
+    ]
+   },
+   {
+    "title": "Wired and Wireless",
+    "period": "Connections",
+    "learn": [
+     {
+      "h": "Ethernet cables",
+      "b": "Ethernet uses cables to connect devices. Wired links are usually fast, stable and secure. Common cables are Cat5e and Cat6."
+     },
+     {
+      "h": "Wi-Fi",
+      "b": "Wi-Fi sends data through radio waves, so devices can connect without cables. It is convenient, but walls and distance can make the signal weaker."
+     },
+     {
+      "h": "Speed and bandwidth",
+      "b": "Bandwidth is how much data can move per second, measured in Mbps. Latency, or ping, is the delay before data starts arriving. Low latency matters for gaming."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which type of connection is usually the most stable?",
+      "o": [
+       "Wi-Fi far from the router",
+       "Ethernet cable",
+       "Weak hotspot",
+       "Bluetooth"
+      ],
+      "a": 1,
+      "why": "Wired Ethernet has fewer interruptions than wireless."
+     },
+     {
+      "t": "mc",
+      "q": "What does Wi-Fi use to send data?",
+      "o": [
+       "Sound",
+       "Paper",
+       "Radio waves",
+       "Water pipes"
+      ],
+      "a": 2,
+      "why": "Wi-Fi uses radio waves in the air."
+     },
+     {
+      "t": "mc",
+      "q": "What does bandwidth measure?",
+      "o": [
+       "How much data can move per second",
+       "How loud a speaker is",
+       "How hot a router gets",
+       "How big a screen is"
+      ],
+      "a": 0,
+      "why": "Bandwidth is the data capacity of a connection, such as Mbps."
+     },
+     {
+      "t": "mc",
+      "q": "What is latency?",
+      "o": [
+       "Screen brightness",
+       "Battery life",
+       "Storage size",
+       "The delay before data arrives"
+      ],
+      "a": 3,
+      "why": "Latency is the time delay, often called ping."
+     },
+     {
+      "t": "tf",
+      "q": "Walls and long distance can weaken a Wi-Fi signal.",
+      "a": true,
+      "why": "Obstacles and distance reduce radio signal strength."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Ethernet",
+        "Wired connection"
+       ],
+       [
+        "Wi-Fi",
+        "Wireless connection"
+       ],
+       [
+        "Mbps",
+        "Speed unit"
+       ],
+       [
+        "Ping",
+        "Delay time"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these speed units in order from smallest to largest",
+      "items": [
+       [
+        "Kbps",
+        1
+       ],
+       [
+        "Mbps",
+        2
+       ],
+       [
+        "Gbps",
+        3
+       ],
+       [
+        "Tbps",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What cable type is common for wired Ethernet? (hint: twisted pair, Cat...)",
+      "a": [
+       "cat5e",
+       "cat6",
+       "cat5",
+       "cat 5e",
+       "cat 6",
+       "ethernet",
+       "cat5e cable",
+       "cat6 cable"
+      ],
+      "hint": "Cat5e or Cat6.",
+      "why": "Ethernet uses twisted pair cables like Cat5e/Cat6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which Wi-Fi band travels farther: 2.4 GHz or 5 GHz? Type the number.",
+      "a": [
+       "2.4",
+       "2.4 ghz"
+      ],
+      "hint": "Lower frequency goes farther.",
+      "why": "2.4 GHz covers more distance, 5 GHz is faster."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What do we call the device that gives Wi-Fi access in a building? (2 words, initials AP)",
+      "a": [
+       "access point",
+       "wireless access point"
+      ],
+      "hint": "AP.",
+      "why": "An access point provides Wi-Fi."
+     }
+    ]
+   },
+   {
+    "title": "The OSI and TCP/IP Models",
+    "period": "Layers of networking",
+    "learn": [
+     {
+      "h": "Why layers?",
+      "b": "Networking is split into layers. Each layer does one job and talks only to the layers next to it. This makes it easier to build, fix and change parts without breaking everything."
+     },
+     {
+      "h": "The OSI model",
+      "b": "OSI has 7 layers, from top to bottom: Application, Presentation, Session, Transport, Network, Data Link, Physical. A memory trick: All People Seem To Need Data Processing."
+     },
+     {
+      "h": "TCP/IP model",
+      "b": "The real internet uses 4 layers: Application, Transport, Internet, Link. Examples: HTTP is Application, TCP is Transport, IP is Internet, Ethernet is Link."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many layers does the OSI model have?",
+      "o": [
+       "7",
+       "4",
+       "5",
+       "9"
+      ],
+      "a": 0,
+      "why": "OSI has seven layers."
+     },
+     {
+      "t": "mc",
+      "q": "Which OSI layer deals with cables and signals?",
+      "o": [
+       "Application",
+       "Transport",
+       "Session",
+       "Physical"
+      ],
+      "a": 3,
+      "why": "Layer 1 is Physical."
+     },
+     {
+      "t": "mc",
+      "q": "At which layer does IP work in the OSI model?",
+      "o": [
+       "Transport",
+       "Network",
+       "Application",
+       "Physical"
+      ],
+      "a": 1,
+      "why": "IP is Layer 3, the Network layer."
+     },
+     {
+      "t": "mc",
+      "q": "Which TCP/IP layer does TCP belong to?",
+      "o": [
+       "Link",
+       "Application",
+       "Transport",
+       "Internet"
+      ],
+      "a": 2,
+      "why": "TCP is a transport protocol."
+     },
+     {
+      "t": "tf",
+      "q": "In OSI, the Application layer is layer 7.",
+      "a": true,
+      "why": "Application is the top layer, layer 7."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Layer 1",
+        "Physical"
+       ],
+       [
+        "Layer 3",
+        "Network"
+       ],
+       [
+        "Layer 4",
+        "Transport"
+       ],
+       [
+        "Layer 7",
+        "Application"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put OSI layers in order from bottom to top",
+      "items": [
+       [
+        "Physical",
+        1
+       ],
+       [
+        "Data Link",
+        2
+       ],
+       [
+        "Network",
+        3
+       ],
+       [
+        "Transport",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many layers does the OSI model have?",
+      "a": [
+       "7",
+       "seven"
+      ],
+      "hint": "Seven.",
+      "why": "7 layers."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is Layer 1 of the OSI model called? (one word)",
+      "a": [
+       "physical"
+      ],
+      "hint": "Cables and signals.",
+      "why": "Layer 1 is Physical."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which layer is Layer 4 in OSI? (one word)",
+      "a": [
+       "transport"
+      ],
+      "hint": "TCP and UDP live here.",
+      "why": "Layer 4 is Transport."
+     }
+    ]
+   },
+   {
+    "title": "Protocols and Addresses",
+    "period": "How data moves",
+    "learn": [
+     {
+      "h": "What is a protocol?",
+      "b": "A protocol is a set of rules that devices follow to talk to each other. TCP/IP is the main family of rules for the internet."
+     },
+     {
+      "h": "TCP, UDP and HTTP",
+      "b": "TCP sends data carefully and checks that it arrives, which is good for web pages. UDP is faster but does not check, which is good for live video and games. HTTP is used for web pages and SMTP for sending email."
+     },
+     {
+      "h": "IP and MAC addresses",
+      "b": "An IP address can change and shows where a device is on a network. A MAC address is a unique ID built into the network hardware. DHCP automatically gives devices an IP address."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a protocol?",
+      "o": [
+       "A set of rules for communication",
+       "A kind of cable",
+       "A type of monitor",
+       "A password"
+      ],
+      "a": 0,
+      "why": "Protocols define how devices send and understand data."
+     },
+     {
+      "t": "mc",
+      "q": "Which protocol checks that data arrives correctly?",
+      "o": [
+       "UDP",
+       "TCP",
+       "Ping",
+       "Wi-Fi"
+      ],
+      "a": 1,
+      "why": "TCP confirms delivery and resends missing data."
+     },
+     {
+      "t": "mc",
+      "q": "What does DHCP do?",
+      "o": [
+       "Encrypts email",
+       "Draws web pages",
+       "Automatically gives devices IP addresses",
+       "Cools the router"
+      ],
+      "a": 2,
+      "why": "DHCP hands out IP addresses on a network."
+     },
+     {
+      "t": "mc",
+      "q": "A MAC address is:",
+      "o": [
+       "A website name",
+       "A temporary password",
+       "A web page",
+       "A unique ID built into network hardware"
+      ],
+      "a": 3,
+      "why": "Each network adapter has a unique hardware address."
+     },
+     {
+      "t": "tf",
+      "q": "UDP is often used for live video and games because it is fast.",
+      "a": true,
+      "why": "UDP skips delivery checks, which lowers delay."
+     },
+     {
+      "t": "match",
+      "q": "Match each protocol to its use",
+      "pairs": [
+       [
+        "HTTP",
+        "Web pages"
+       ],
+       [
+        "SMTP",
+        "Sending email"
+       ],
+       [
+        "DHCP",
+        "Assigning IP addresses"
+       ],
+       [
+        "DNS",
+        "Name lookup"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order when your device joins a Wi-Fi network",
+      "items": [
+       [
+        "Select the network",
+        1
+       ],
+       [
+        "Enter the password",
+        2
+       ],
+       [
+        "Router assigns an IP address",
+        3
+       ],
+       [
+        "Device can use the internet",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What protocol assigns IP addresses automatically? (4 letters)",
+      "a": [
+       "dhcp"
+      ],
+      "hint": "Dynamic Host Configuration Protocol.",
+      "why": "DHCP hands out IP addresses."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many bits are in an IPv4 address?",
+      "a": [
+       "32",
+       "32 bits"
+      ],
+      "hint": "Four numbers, 8 bits each.",
+      "why": "IPv4 = 4 x 8 = 32 bits."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What protocol translates domain names to IP addresses? (3 letters)",
+      "a": [
+       "dns"
+      ],
+      "hint": "Phone book of the internet.",
+      "why": "DNS does name lookup."
+     }
+    ]
+   },
+   {
+    "title": "IP Addressing and Subnets",
+    "period": "Numbers that route",
+    "learn": [
+     {
+      "h": "IPv4 and IPv6",
+      "b": "IPv4 addresses have 4 numbers from 0 to 255, such as 192.168.1.10 (32 bits). They are running out, so IPv6 uses 128 bits and looks like 2001:db8::1, giving a nearly endless supply."
+     },
+     {
+      "h": "Public and private",
+      "b": "Private ranges are used inside homes and offices: 10.x.x.x, 172.16-31.x.x and 192.168.x.x. They cannot be reached directly from the internet. NAT lets many private devices share one public IP."
+     },
+     {
+      "h": "Subnet masks",
+      "b": "A subnet mask splits an address into the network part and the device part. 255.255.255.0 (written /24) means the first 3 numbers name the network. A /24 network has 256 addresses, 254 usable for devices."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many bits is an IPv6 address?",
+      "o": [
+       "128",
+       "32",
+       "64",
+       "256"
+      ],
+      "a": 0,
+      "why": "IPv6 has 128 bits."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a private IPv4 address?",
+      "o": [
+       "8.8.8.8",
+       "1.1.1.1",
+       "200.10.10.10",
+       "192.168.0.5"
+      ],
+      "a": 3,
+      "why": "192.168.x.x is a private range."
+     },
+     {
+      "t": "mc",
+      "q": "What does NAT do?",
+      "o": [
+       "Encrypts email",
+       "Lets many private devices share one public IP",
+       "Makes cables faster",
+       "Stores websites"
+      ],
+      "a": 1,
+      "why": "NAT translates private addresses to a public one."
+     },
+     {
+      "t": "mc",
+      "q": "A /24 network has how many usable device addresses?",
+      "o": [
+       "256",
+       "255",
+       "254",
+       "24"
+      ],
+      "a": 2,
+      "why": "256 total minus network and broadcast = 254."
+     },
+     {
+      "t": "tf",
+      "q": "The address 300.1.1.1 is a valid IPv4 address.",
+      "a": false,
+      "why": "Each IPv4 number can be at most 255."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "IPv4",
+        "32 bits"
+       ],
+       [
+        "IPv6",
+        "128 bits"
+       ],
+       [
+        "NAT",
+        "Shares a public IP"
+       ],
+       [
+        "255.255.255.0",
+        "Common subnet mask"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these address sizes from smallest to largest",
+      "items": [
+       [
+        "8 bits",
+        1
+       ],
+       [
+        "32 bits",
+        2
+       ],
+       [
+        "64 bits",
+        3
+       ],
+       [
+        "128 bits",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many bits does an IPv6 address have?",
+      "a": [
+       "128"
+      ],
+      "hint": "Four times IPv4.",
+      "why": "IPv6 has 128 bits."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the largest number allowed in one part of an IPv4 address?",
+      "a": [
+       "255"
+      ],
+      "hint": "8 bits.",
+      "why": "8 bits give 0 to 255."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In 192.168.1.10 with mask 255.255.255.0, what is the network part? (like a.b.c)",
+      "a": [
+       "192.168.1",
+       "192.168.1.0"
+      ],
+      "hint": "First three numbers.",
+      "why": "Mask /24 keeps the first three numbers."
+     }
+    ]
+   },
+   {
+    "title": "Network Services and Troubleshooting",
+    "period": "Keeping networks running",
+    "learn": [
+     {
+      "h": "Common services",
+      "b": "DNS finds IP addresses for names. DHCP gives devices an address. A firewall filters traffic. A VPN builds an encrypted tunnel over the internet. A proxy sits between you and a website."
+     },
+     {
+      "h": "Ports",
+      "b": "A port number says which service on a computer should get the data. HTTP uses port 80, HTTPS 443, SSH 22, SMTP (sending email) 25. The IP address finds the computer; the port finds the program."
+     },
+     {
+      "h": "Troubleshooting tools",
+      "b": "ping tests if a host answers. ipconfig (Windows) or ip a (Linux) shows your IP. tracert or traceroute shows the path of routers. nslookup tests DNS. Start simple: check cables, restart, then test step by step."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which port does HTTPS normally use?",
+      "o": [
+       "443",
+       "80",
+       "22",
+       "25"
+      ],
+      "a": 0,
+      "why": "HTTPS uses port 443."
+     },
+     {
+      "t": "mc",
+      "q": "Which command shows the path packets take to a host?",
+      "o": [
+       "ping",
+       "copy",
+       "dir",
+       "traceroute"
+      ],
+      "a": 3,
+      "why": "traceroute (tracert) lists each hop."
+     },
+     {
+      "t": "mc",
+      "q": "What does ping test?",
+      "o": [
+       "Your screen size",
+       "Whether a host replies",
+       "Disk space",
+       "Battery health"
+      ],
+      "a": 1,
+      "why": "Ping checks reachability and delay."
+     },
+     {
+      "t": "mc",
+      "q": "What does a port number identify?",
+      "o": [
+       "Your house",
+       "The screen",
+       "Which service gets the data",
+       "The brand"
+      ],
+      "a": 2,
+      "why": "It selects the program on the computer."
+     },
+     {
+      "t": "tf",
+      "q": "SSH normally uses port 22.",
+      "a": true,
+      "why": "Secure Shell uses port 22."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Port 80",
+        "HTTP"
+       ],
+       [
+        "Port 443",
+        "HTTPS"
+       ],
+       [
+        "Port 22",
+        "SSH"
+       ],
+       [
+        "Port 25",
+        "SMTP email sending"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these troubleshooting steps in order",
+      "items": [
+       [
+        "Check cables and Wi-Fi",
+        1
+       ],
+       [
+        "Restart the router",
+        2
+       ],
+       [
+        "Ping the router",
+        3
+       ],
+       [
+        "Ping a website",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which port number does HTTP use?",
+      "a": [
+       "80"
+      ],
+      "hint": "Plain web traffic.",
+      "why": "HTTP uses port 80."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which command tests if a host answers? (4 letters)",
+      "a": [
+       "ping"
+      ],
+      "hint": "Sonar-like.",
+      "why": "ping."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which service gives your device an IP address automatically? (4 letters)",
+      "a": [
+       "dhcp"
+      ],
+      "hint": "D... H... C... P.",
+      "why": "DHCP."
+     }
+    ]
+   },
+   {
+    "title": "Home Network Setup",
+    "period": "Practical",
+    "learn": [
+     {
+      "h": "Your home setup",
+      "b": "Most homes have a modem from the provider and a router that creates the Wi-Fi. Often both are in one box. Place the router in a central, open spot for the best signal."
+     },
+     {
+      "h": "Secure Wi-Fi",
+      "b": "Change the default router password, use WPA2 or WPA3 security, and choose a strong Wi-Fi password. Keep the router firmware updated. Use a separate guest network for visitors."
+     },
+     {
+      "h": "Troubleshooting",
+      "b": "If the internet stops working, first check the cables and lights. Then restart the router and modem. Test another device to see if the problem is one device or the whole network."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where is a good place for a Wi-Fi router?",
+      "o": [
+       "Inside a metal box",
+       "In a central, open spot",
+       "In a basement corner",
+       "Behind a thick wall"
+      ],
+      "a": 1,
+      "why": "A central open place spreads the signal better."
+     },
+     {
+      "t": "mc",
+      "q": "Which Wi-Fi security setting is recommended?",
+      "o": [
+       "No security",
+       "WEP only",
+       "Open network",
+       "WPA3 or WPA2"
+      ],
+      "a": 3,
+      "why": "WPA2 and WPA3 are modern, stronger security methods."
+     },
+     {
+      "t": "mc",
+      "q": "What is a good first step when the internet stops working?",
+      "o": [
+       "Check cables and restart the router",
+       "Buy a new computer",
+       "Delete all apps",
+       "Change the monitor"
+      ],
+      "a": 0,
+      "why": "Simple checks and a restart solve many problems."
+     },
+     {
+      "t": "mc",
+      "q": "Why use a guest network?",
+      "o": [
+       "It makes Wi-Fi louder",
+       "It is required for gaming",
+       "It keeps visitors apart from your main devices",
+       "It removes the password"
+      ],
+      "a": 2,
+      "why": "A guest network protects your own devices and files."
+     },
+     {
+      "t": "tf",
+      "q": "You should keep the default router password unchanged.",
+      "a": false,
+      "why": "Default passwords are widely known, so change them."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "WPA3",
+        "Wi-Fi security"
+       ],
+       [
+        "Firmware",
+        "Router's built-in software"
+       ],
+       [
+        "Guest network",
+        "Separate Wi-Fi for visitors"
+       ],
+       [
+        "Restart",
+        "Common quick fix"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to fix a no-internet problem",
+      "items": [
+       [
+        "Check cables and lights",
+        1
+       ],
+       [
+        "Restart the router",
+        2
+       ],
+       [
+        "Test another device",
+        3
+       ],
+       [
+        "Call the provider",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the name of your Wi-Fi network called? (acronym, 4 letters)",
+      "a": [
+       "ssid"
+      ],
+      "hint": "Service Set Identifier.",
+      "why": "SSID is the Wi-Fi network name."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which Wi-Fi security is recommended today: WPA3 or WEP?",
+      "a": [
+       "wpa3"
+      ],
+      "hint": "Newest and strongest.",
+      "why": "WPA3 is the strongest."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What should you change on a new router: the default admin ...",
+      "a": [
+       "password"
+      ],
+      "hint": "Default ones are known.",
+      "why": "Change the default admin password."
+     }
+    ]
+   }
+  ]
+ },
+ "tech-hardware": {
+  "name": "PC Hardware",
+  "units": [
+   {
+    "title": "Main Components",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "The inside of a PC",
+      "b": "A desktop PC has a motherboard, CPU, RAM, storage, power supply and often a graphics card. All of them sit in the case."
+     },
+     {
+      "h": "Motherboard and power",
+      "b": "The motherboard is the main board that all parts plug into. The power supply unit (PSU) changes the electricity from the wall into the power each part needs."
+     },
+     {
+      "h": "Cooling",
+      "b": "CPUs and GPUs get hot when they work. Fans, heatsinks or liquid coolers move heat away. If a PC gets too hot, it slows down to protect itself."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which part do all other components plug into?",
+      "o": [
+       "Fan",
+       "Motherboard",
+       "Mouse",
+       "Case"
+      ],
+      "a": 1,
+      "why": "The motherboard connects every component."
+     },
+     {
+      "t": "mc",
+      "q": "What does the PSU do?",
+      "o": [
+       "Stores files",
+       "Draws graphics",
+       "Supplies power to the parts",
+       "Connects to Wi-Fi"
+      ],
+      "a": 2,
+      "why": "The power supply unit converts wall power for the computer's parts."
+     },
+     {
+      "t": "mc",
+      "q": "Why does a PC need cooling?",
+      "o": [
+       "To remove heat from hot parts",
+       "To make it quieter only",
+       "To store more data",
+       "To change the screen color"
+      ],
+      "a": 0,
+      "why": "Heat can slow or damage parts, so it must be moved away."
+     },
+     {
+      "t": "mc",
+      "q": "Which part holds all the components inside a desktop PC?",
+      "o": [
+       "Keyboard",
+       "Mouse",
+       "Monitor",
+       "Case"
+      ],
+      "a": 3,
+      "why": "The case houses the motherboard and other parts."
+     },
+     {
+      "t": "tf",
+      "q": "A heatsink helps take heat away from a CPU.",
+      "a": true,
+      "why": "Heatsinks spread heat so fans can blow it away."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its job",
+      "pairs": [
+       [
+        "CPU",
+        "Processes instructions"
+       ],
+       [
+        "PSU",
+        "Supplies power"
+       ],
+       [
+        "Fan",
+        "Moves air"
+       ],
+       [
+        "Motherboard",
+        "Connects parts"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order of how power reaches the CPU",
+      "items": [
+       [
+        "Wall outlet",
+        1
+       ],
+       [
+        "Power supply",
+        2
+       ],
+       [
+        "Motherboard",
+        3
+       ],
+       [
+        "CPU",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the 'brain' of the computer called? (3 letters)",
+      "a": [
+       "cpu",
+       "processor"
+      ],
+      "hint": "Central Processing Unit.",
+      "why": "The CPU runs instructions."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which board connects all the parts of a PC? (one word)",
+      "a": [
+       "motherboard",
+       "mainboard"
+      ],
+      "hint": "Mother of all boards.",
+      "why": "The motherboard links components."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What part supplies electricity to the PC? (3 letters)",
+      "a": [
+       "psu",
+       "power supply"
+      ],
+      "hint": "Power Supply Unit.",
+      "why": "The PSU powers the computer."
+     }
+    ]
+   },
+   {
+    "title": "Motherboard, Ports and Power",
+    "period": "Connecting parts",
+    "learn": [
+     {
+      "h": "Motherboard",
+      "b": "The motherboard has the CPU socket, RAM slots, expansion slots (PCIe) and connectors for storage. The chipset decides which features it supports. Form factors like ATX and Micro-ATX set the size."
+     },
+     {
+      "h": "Ports",
+      "b": "USB connects many devices. HDMI and DisplayPort carry video and sound to monitors. Ethernet is for wired networks. USB-C is a small reversible connector used for data, video and power."
+     },
+     {
+      "h": "Power supply",
+      "b": "The PSU turns wall AC power into the low DC power the parts need. Its power is measured in watts (W). A gaming PC with a strong graphics card needs a higher-wattage PSU."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What kind of power does a PSU deliver to the PC parts?",
+      "o": [
+       "DC",
+       "AC only",
+       "Wi-Fi",
+       "Solar"
+      ],
+      "a": 0,
+      "why": "The PSU converts AC from the wall to DC."
+     },
+     {
+      "t": "mc",
+      "q": "Which port carries video and audio to a TV?",
+      "o": [
+       "Ethernet",
+       "PS/2",
+       "Audio jack only",
+       "HDMI"
+      ],
+      "a": 3,
+      "why": "HDMI carries both."
+     },
+     {
+      "t": "mc",
+      "q": "What are ATX and Micro-ATX?",
+      "o": [
+       "CPU brands",
+       "Motherboard sizes",
+       "Cable types",
+       "Operating systems"
+      ],
+      "a": 1,
+      "why": "They are form factors."
+     },
+     {
+      "t": "mc",
+      "q": "PSU power is measured in ...",
+      "o": [
+       "Pixels",
+       "Bytes",
+       "Watts",
+       "Hertz"
+      ],
+      "a": 2,
+      "why": "Watts show how much power it can supply."
+     },
+     {
+      "t": "tf",
+      "q": "PCIe slots are used for adding cards such as a graphics card.",
+      "a": true,
+      "why": "PCIe is the expansion slot type."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "HDMI",
+        "Video and audio"
+       ],
+       [
+        "Ethernet",
+        "Wired network"
+       ],
+       [
+        "PCIe",
+        "Expansion slot"
+       ],
+       [
+        "USB-C",
+        "Reversible connector"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put power's path in order",
+      "items": [
+       [
+        "Wall socket",
+        1
+       ],
+       [
+        "PSU",
+        2
+       ],
+       [
+        "Motherboard",
+        3
+       ],
+       [
+        "CPU",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: PSU power is measured in ... (one word)",
+      "a": [
+       "watts",
+       "watt",
+       "w"
+      ],
+      "hint": "Light bulbs use them too.",
+      "why": "Watts."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which cable carries video and audio to a monitor or TV? (4 letters)",
+      "a": [
+       "hdmi"
+      ],
+      "hint": "High-Definition Multimedia Interface.",
+      "why": "HDMI."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which board has the CPU socket and RAM slots? (one word)",
+      "a": [
+       "motherboard"
+      ],
+      "hint": "Main board.",
+      "why": "Motherboard."
+     }
+    ]
+   },
+   {
+    "title": "CPU and Memory",
+    "period": "Performance",
+    "learn": [
+     {
+      "h": "CPU speed and cores",
+      "b": "CPU speed is measured in GHz. A core is a part of the CPU that can do work. More cores help with doing many tasks at once. Intel and AMD are two main CPU makers."
+     },
+     {
+      "h": "RAM",
+      "b": "RAM is fast, temporary memory for running programs. More RAM lets you keep more apps and browser tabs open. Typical sizes are 8 GB, 16 GB or 32 GB."
+     },
+     {
+      "h": "Cache",
+      "b": "Cache is a tiny, very fast memory inside the CPU. It keeps data the CPU is using often so it does not need to wait for RAM."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is CPU clock speed measured in?",
+      "o": [
+       "Pixels",
+       "Watts",
+       "Gigahertz (GHz)",
+       "Decibels"
+      ],
+      "a": 2,
+      "why": "GHz tells how many billions of cycles a CPU does per second."
+     },
+     {
+      "t": "mc",
+      "q": "What can having more CPU cores help with?",
+      "o": [
+       "Making the screen larger",
+       "Handling many tasks at the same time",
+       "Using Wi-Fi",
+       "Changing file types"
+      ],
+      "a": 1,
+      "why": "Multiple cores can work on different tasks together."
+     },
+     {
+      "t": "mc",
+      "q": "What is RAM used for?",
+      "o": [
+       "Holding data for running programs",
+       "Permanent file storage",
+       "Cooling the CPU",
+       "Displaying images"
+      ],
+      "a": 0,
+      "why": "RAM is the working memory for active programs."
+     },
+     {
+      "t": "mc",
+      "q": "Where is cache memory located?",
+      "o": [
+       "In the monitor",
+       "In the mouse",
+       "In the power supply",
+       "Inside the CPU"
+      ],
+      "a": 3,
+      "why": "Cache is very fast memory built into the CPU."
+     },
+     {
+      "t": "tf",
+      "q": "RAM keeps your files after the computer is turned off.",
+      "a": false,
+      "why": "RAM is temporary, so its content is lost when power is off."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Core",
+        "Work unit inside a CPU"
+       ],
+       [
+        "GHz",
+        "Clock speed unit"
+       ],
+       [
+        "RAM",
+        "Working memory"
+       ],
+       [
+        "Cache",
+        "Tiny fast CPU memory"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from fastest to slowest memory",
+      "items": [
+       [
+        "CPU cache",
+        1
+       ],
+       [
+        "RAM",
+        2
+       ],
+       [
+        "SSD",
+        3
+       ],
+       [
+        "Hard drive",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: CPU speed is measured in ... (short unit, 3 letters)",
+      "a": [
+       "ghz",
+       "gigahertz"
+      ],
+      "hint": "Giga + hertz.",
+      "why": "CPU clock speed is in GHz."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What temporary memory is cleared when the PC turns off? (3 letters)",
+      "a": [
+       "ram"
+      ],
+      "hint": "Random Access Memory.",
+      "why": "RAM is volatile."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A CPU with 4 cores can work on how many tasks at the same time (at least)?",
+      "a": [
+       "4",
+       "four"
+      ],
+      "hint": "One per core.",
+      "why": "Each core handles one task."
+     }
+    ]
+   },
+   {
+    "title": "Binary, Bits and Bytes",
+    "period": "How computers count",
+    "learn": [
+     {
+      "h": "Bits and bytes",
+      "b": "A bit is 0 or 1. 8 bits make 1 byte. A byte can store one character like the letter A. Kilobyte, megabyte, gigabyte and terabyte are bigger units, each about 1000 times the one before."
+     },
+     {
+      "h": "Binary numbers",
+      "b": "Computers count in binary (base 2). Place values are 1, 2, 4, 8, 16... So 101 in binary is 4+0+1 = 5. Each extra bit doubles how many values you can store."
+     },
+     {
+      "h": "Hex and colors",
+      "b": "Hexadecimal (base 16) uses 0-9 and A-F. It is a short way to write binary: 4 bits make 1 hex digit. Web colors like #FF0000 (red) use hex."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many bits are in a byte?",
+      "o": [
+       "8",
+       "4",
+       "16",
+       "10"
+      ],
+      "a": 0,
+      "why": "1 byte = 8 bits."
+     },
+     {
+      "t": "mc",
+      "q": "What is binary 101 in decimal?",
+      "o": [
+       "3",
+       "6",
+       "7",
+       "5"
+      ],
+      "a": 3,
+      "why": "4 + 0 + 1 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "How many different values can 3 bits store?",
+      "o": [
+       "6",
+       "8",
+       "3",
+       "9"
+      ],
+      "a": 1,
+      "why": "2 x 2 x 2 = 8."
+     },
+     {
+      "t": "mc",
+      "q": "Which digits can hexadecimal use?",
+      "o": [
+       "0 and 1 only",
+       "0-7",
+       "0-9 and A-F",
+       "A-Z"
+      ],
+      "a": 2,
+      "why": "Base 16 uses 16 symbols."
+     },
+     {
+      "t": "tf",
+      "q": "One hex digit equals 4 bits.",
+      "a": true,
+      "why": "16 values need exactly 4 bits."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Bit",
+        "0 or 1"
+       ],
+       [
+        "Byte",
+        "8 bits"
+       ],
+       [
+        "Binary",
+        "Base 2"
+       ],
+       [
+        "Hex",
+        "Base 16"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these units from smallest to largest",
+      "items": [
+       [
+        "Byte",
+        1
+       ],
+       [
+        "Kilobyte",
+        2
+       ],
+       [
+        "Megabyte",
+        3
+       ],
+       [
+        "Gigabyte",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Convert binary 110 to decimal.",
+      "a": [
+       "6"
+      ],
+      "hint": "4 + 2 + 0.",
+      "why": "110 = 4+2 = 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Convert decimal 9 to binary.",
+      "a": [
+       "1001"
+      ],
+      "hint": "8 + 1.",
+      "why": "9 = 8+1 = 1001."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many bits are in 3 bytes?",
+      "a": [
+       "24"
+      ],
+      "hint": "3 x 8.",
+      "why": "3 x 8 = 24."
+     }
+    ]
+   },
+   {
+    "title": "Storage and Graphics",
+    "period": "Drives and GPUs",
+    "learn": [
+     {
+      "h": "HDD vs SSD",
+      "b": "A hard disk drive (HDD) stores data on spinning disks. It is cheap and big but slower. A solid-state drive (SSD) has no moving parts, so it is faster, quieter and uses less power."
+     },
+     {
+      "h": "Storage sizes",
+      "b": "Storage is measured in gigabytes (GB) and terabytes (TB). 1 TB equals about 1,000 GB. A game or video can take many GB, so choose enough space."
+     },
+     {
+      "h": "Graphics cards",
+      "b": "A GPU makes images for the screen and is very good at doing many small jobs at once. Gamers and video editors want a strong GPU. Many CPUs also include basic built-in graphics."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which drive type has no moving parts?",
+      "o": [
+       "HDD",
+       "Floppy disk",
+       "SSD",
+       "CD"
+      ],
+      "a": 2,
+      "why": "SSDs store data on chips, with no spinning disks."
+     },
+     {
+      "t": "mc",
+      "q": "Which is usually faster?",
+      "o": [
+       "HDD",
+       "SSD",
+       "Both are identical",
+       "A USB cable"
+      ],
+      "a": 1,
+      "why": "SSDs read and write much faster than HDDs."
+     },
+     {
+      "t": "mc",
+      "q": "About how many GB are in 1 TB?",
+      "o": [
+       "1,000",
+       "10",
+       "100",
+       "1"
+      ],
+      "a": 0,
+      "why": "1 terabyte is about 1,000 gigabytes."
+     },
+     {
+      "t": "mc",
+      "q": "What is a GPU mainly used for?",
+      "o": [
+       "Storing files",
+       "Powering the PC",
+       "Cooling the case",
+       "Creating images and graphics"
+      ],
+      "a": 3,
+      "why": "The graphics processing unit renders images, video and games."
+     },
+     {
+      "t": "tf",
+      "q": "An HDD uses spinning disks to store data.",
+      "a": true,
+      "why": "A hard disk drive has spinning platters inside."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its feature",
+      "pairs": [
+       [
+        "HDD",
+        "Spinning disks"
+       ],
+       [
+        "SSD",
+        "Fast, no moving parts"
+       ],
+       [
+        "GPU",
+        "Graphics power"
+       ],
+       [
+        "TB",
+        "About 1,000 GB"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from smallest to largest storage size",
+      "items": [
+       [
+        "Kilobyte",
+        1
+       ],
+       [
+        "Megabyte",
+        2
+       ],
+       [
+        "Gigabyte",
+        3
+       ],
+       [
+        "Terabyte",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which storage has no moving parts: SSD or HDD?",
+      "a": [
+       "ssd"
+      ],
+      "hint": "Solid state.",
+      "why": "SSDs have no moving parts."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which part draws the images on your screen? (3 letters)",
+      "a": [
+       "gpu",
+       "graphics card",
+       "video card"
+      ],
+      "hint": "Graphics Processing Unit.",
+      "why": "The GPU renders graphics."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 1 GB equals how many MB? (decimal)",
+      "a": [
+       "1000",
+       "1024"
+      ],
+      "hint": "Giga to mega.",
+      "why": "1 GB = 1000 MB (or 1024 MiB)."
+     }
+    ]
+   },
+   {
+    "title": "Operating Systems, BIOS and Drivers",
+    "period": "Software meets hardware",
+    "learn": [
+     {
+      "h": "BIOS and UEFI",
+      "b": "When you press power, firmware called BIOS or UEFI starts first. It checks the hardware (POST, power-on self-test) and then loads the operating system from storage. You can change boot order in its settings."
+     },
+     {
+      "h": "Operating system",
+      "b": "The OS manages memory, files, programs and devices, and gives you the screen you use. Examples: Windows, macOS, Linux, Android. Programs talk to hardware through the OS."
+     },
+     {
+      "h": "Drivers",
+      "b": "A driver is a small program that tells the OS how to use a piece of hardware like a printer or graphics card. Without the right driver the device may not work well. Keep drivers updated."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What starts first when you power on a PC?",
+      "o": [
+       "Firmware (BIOS/UEFI)",
+       "A web browser",
+       "A game",
+       "An email app"
+      ],
+      "a": 0,
+      "why": "The firmware does POST and loads the OS."
+     },
+     {
+      "t": "mc",
+      "q": "What does POST do?",
+      "o": [
+       "Posts on social media",
+       "Plays music",
+       "Cleans disks",
+       "Checks hardware at startup"
+      ],
+      "a": 3,
+      "why": "Power-On Self-Test checks parts."
+     },
+     {
+      "t": "mc",
+      "q": "What is a driver?",
+      "o": [
+       "A person",
+       "Software that lets the OS use a device",
+       "A screwdriver",
+       "A cable"
+      ],
+      "a": 1,
+      "why": "Drivers translate OS commands to hardware."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an operating system?",
+      "o": [
+       "Intel",
+       "HDMI",
+       "Linux",
+       "SSD"
+      ],
+      "a": 2,
+      "why": "Linux is an OS."
+     },
+     {
+      "t": "tf",
+      "q": "The OS manages memory and files.",
+      "a": true,
+      "why": "That is a core OS job."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "UEFI",
+        "Startup firmware"
+       ],
+       [
+        "Driver",
+        "Device software"
+       ],
+       [
+        "OS",
+        "Manages resources"
+       ],
+       [
+        "POST",
+        "Startup hardware test"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the boot process in order",
+      "items": [
+       [
+        "Press power",
+        1
+       ],
+       [
+        "Firmware runs POST",
+        2
+       ],
+       [
+        "OS loads",
+        3
+       ],
+       [
+        "Desktop appears",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does the first P in POST stand for? (one word)",
+      "a": [
+       "power"
+      ],
+      "hint": "Power-On Self-Test.",
+      "why": "Power-On Self-Test."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Software that lets the OS control a device is a ...",
+      "a": [
+       "driver",
+       "a driver"
+      ],
+      "hint": "Printer ___.",
+      "why": "A driver."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Name an OS made by Microsoft. (one word)",
+      "a": [
+       "windows"
+      ],
+      "hint": "Not Office.",
+      "why": "Windows."
+     }
+    ]
+   },
+   {
+    "title": "Troubleshooting and Upgrades",
+    "period": "Fix and improve",
+    "learn": [
+     {
+      "h": "Troubleshooting steps",
+      "b": "Stay calm and go step by step. Identify the problem, test one change at a time, check cables and power first, then try a restart. Beep codes and error messages give clues. Write down what you try."
+     },
+     {
+      "h": "Common problems",
+      "b": "No power: check the cable, switch and PSU. Overheating: clean dust, check fans and thermal paste. Slow PC: too little RAM, a full drive or malware. No display: check the monitor cable and the graphics card."
+     },
+     {
+      "h": "Upgrades",
+      "b": "The easiest upgrades are more RAM and replacing an HDD with an SSD. Check compatibility first: socket type for the CPU, RAM type (DDR4 or DDR5) and PSU power. Always unplug the PC and use anti-static care."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What should you check first when a PC won't turn on?",
+      "o": [
+       "Power cable and switch",
+       "The wallpaper",
+       "The keyboard color",
+       "The mouse speed"
+      ],
+      "a": 0,
+      "why": "Check the simplest cause first."
+     },
+     {
+      "t": "mc",
+      "q": "Which upgrade often makes an old PC feel much faster?",
+      "o": [
+       "A bigger mouse",
+       "Longer cable",
+       "New wallpaper",
+       "HDD to SSD"
+      ],
+      "a": 3,
+      "why": "SSDs load much faster than HDDs."
+     },
+     {
+      "t": "mc",
+      "q": "What can cause overheating?",
+      "o": [
+       "Too much RAM",
+       "Dust and bad fans",
+       "A large monitor",
+       "USB mouse"
+      ],
+      "a": 1,
+      "why": "Poor airflow raises temperatures."
+     },
+     {
+      "t": "mc",
+      "q": "Before upgrading RAM you must check ...",
+      "o": [
+       "Wallpaper",
+       "Browser",
+       "RAM type compatibility",
+       "Speakers"
+      ],
+      "a": 2,
+      "why": "DDR4 and DDR5 are not interchangeable."
+     },
+     {
+      "t": "tf",
+      "q": "You should change many things at once when troubleshooting.",
+      "a": false,
+      "why": "Change one thing at a time to find the cause."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Overheating",
+        "Clean dust and fans"
+       ],
+       [
+        "No power",
+        "Check cable and PSU"
+       ],
+       [
+        "Slow PC",
+        "Add RAM or SSD"
+       ],
+       [
+        "No display",
+        "Check monitor cable"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these troubleshooting steps in order",
+      "items": [
+       [
+        "Identify the problem",
+        1
+       ],
+       [
+        "Check cables and power",
+        2
+       ],
+       [
+        "Change one thing and test",
+        3
+       ],
+       [
+        "Document the fix",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which storage upgrade makes an old PC faster? (3 letters)",
+      "a": [
+       "ssd"
+      ],
+      "hint": "Solid state.",
+      "why": "SSD."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A PC suddenly shuts off and is very hot. What buildup inside should you clean? (one word)",
+      "a": [
+       "dust"
+      ],
+      "hint": "Gray fluff.",
+      "why": "Dust blocks airflow."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: You have 2 RAM sticks of 8 GB each. How many GB total?",
+      "a": [
+       "16",
+       "16 gb"
+      ],
+      "hint": "2 x 8.",
+      "why": "2 x 8 = 16 GB."
+     }
+    ]
+   },
+   {
+    "title": "Building and Caring for a PC",
+    "period": "Practical",
+    "learn": [
+     {
+      "h": "Building a PC",
+      "b": "Building a PC means fitting the CPU, RAM and storage onto the motherboard, putting it in the case, adding the power supply and connecting the cables. Check that parts are compatible, such as the CPU socket fitting the motherboard."
+     },
+     {
+      "h": "Staying safe",
+      "b": "Turn off and unplug the PC before opening it. Static electricity can harm parts, so touch a metal part of the case first or use an anti-static wristband. Do not force parts into place."
+     },
+     {
+      "h": "Maintenance",
+      "b": "Dust slows airflow and makes PCs hot. Clean the fans gently with compressed air. Keep vents clear, and keep drivers and system updates current."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What should you check before buying a CPU and motherboard together?",
+      "o": [
+       "Case color",
+       "Desk size",
+       "Socket compatibility",
+       "Mouse brand"
+      ],
+      "a": 2,
+      "why": "The CPU must fit the motherboard's socket type."
+     },
+     {
+      "t": "mc",
+      "q": "What should you do before opening a PC case?",
+      "o": [
+       "Spray it with water",
+       "Turn off and unplug it",
+       "Run a game",
+       "Hit it gently"
+      ],
+      "a": 1,
+      "why": "Removing power protects you and the parts."
+     },
+     {
+      "t": "mc",
+      "q": "Why is dust a problem inside a PC?",
+      "o": [
+       "It blocks airflow and causes heat",
+       "It makes the screen blurry",
+       "It deletes files",
+       "It speeds up the CPU"
+      ],
+      "a": 0,
+      "why": "Dust blocks fans and vents, so parts overheat."
+     },
+     {
+      "t": "mc",
+      "q": "What is a safe way to clean dust from fans?",
+      "o": [
+       "Use a wet cloth on live parts",
+       "Use a hammer",
+       "Pour water inside",
+       "Use compressed air gently"
+      ],
+      "a": 3,
+      "why": "Compressed air removes dust without touching delicate parts."
+     },
+     {
+      "t": "tf",
+      "q": "You should force a part into its slot if it does not fit at first.",
+      "a": false,
+      "why": "Forcing parts can break them; check the direction and compatibility instead."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Socket",
+        "Where the CPU fits"
+       ],
+       [
+        "Anti-static wristband",
+        "Prevents static damage"
+       ],
+       [
+        "Compressed air",
+        "Cleans dust"
+       ],
+       [
+        "Compatibility",
+        "Parts work together"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to build a basic PC",
+      "items": [
+       [
+        "Install CPU on the motherboard",
+        1
+       ],
+       [
+        "Add RAM and storage",
+        2
+       ],
+       [
+        "Mount the board in the case",
+        3
+       ],
+       [
+        "Connect the power supply cables",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What paste goes between the CPU and its cooler? (2 words)",
+      "a": [
+       "thermal paste",
+       "thermal compound"
+      ],
+      "hint": "It moves heat.",
+      "why": "Thermal paste helps heat transfer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What should you touch or wear to avoid static damage? Short: anti-static ...",
+      "a": [
+       "wrist strap",
+       "wristband",
+       "strap",
+       "wrist band"
+      ],
+      "hint": "On your wrist.",
+      "why": "An anti-static wrist strap prevents ESD."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What compressed air-like job removes dust from fans? One word: ...ing",
+      "a": [
+       "cleaning",
+       "blowing",
+       "dusting"
+      ],
+      "hint": "Keep it dust free.",
+      "why": "Regular cleaning prevents overheating."
+     }
+    ]
+   }
+  ]
+ },
+ "tech-cloud": {
+  "name": "Cloud Computing",
+  "units": [
+   {
+    "title": "What Is the Cloud?",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "The cloud is other people's computers",
+      "b": "The cloud means using computers and storage in big data centers over the internet, instead of only on your own device. Companies like Amazon, Microsoft and Google run them."
+     },
+     {
+      "h": "Everyday cloud use",
+      "b": "When you store photos online, stream a movie, or edit a document in a browser with friends, you use the cloud. Your files can be reached from any device with a login."
+     },
+     {
+      "h": "Why use it?",
+      "b": "The cloud can be cheap to start, easy to share and quick to grow. You pay only for what you use. Remember you need internet access to reach it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the cloud?",
+      "o": [
+       "A weather tool",
+       "A type of screen",
+       "Computers and storage you use over the internet",
+       "A kind of cable"
+      ],
+      "a": 2,
+      "why": "The cloud is remote computing and storage reached through the internet."
+     },
+     {
+      "t": "mc",
+      "q": "Where does cloud data live?",
+      "o": [
+       "In the air",
+       "In data centers",
+       "In your keyboard",
+       "In a router only"
+      ],
+      "a": 1,
+      "why": "Cloud services run on servers inside data centers."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an everyday example of cloud use?",
+      "o": [
+       "Storing photos online and opening them on any device",
+       "Typing offline in Notepad",
+       "Printing a page",
+       "Using a calculator"
+      ],
+      "a": 0,
+      "why": "Online photo storage keeps files on remote servers."
+     },
+     {
+      "t": "mc",
+      "q": "What do you usually need to reach cloud files?",
+      "o": [
+       "A printer",
+       "A floppy disk",
+       "A new keyboard",
+       "An internet connection"
+      ],
+      "a": 3,
+      "why": "Cloud services are reached over the internet."
+     },
+     {
+      "t": "tf",
+      "q": "In cloud computing, you often pay only for what you use.",
+      "a": true,
+      "why": "Many cloud services are billed by usage."
+     },
+     {
+      "t": "match",
+      "q": "Match each cloud service to its example",
+      "pairs": [
+       [
+        "Cloud storage",
+        "Online photo backup"
+       ],
+       [
+        "Streaming",
+        "Watching movies online"
+       ],
+       [
+        "Web apps",
+        "Docs in a browser"
+       ],
+       [
+        "Data center",
+        "Building full of servers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order when you save a file to cloud storage",
+      "items": [
+       [
+        "Choose Upload",
+        1
+       ],
+       [
+        "File travels over the internet",
+        2
+       ],
+       [
+        "Server stores the file",
+        3
+       ],
+       [
+        "Open it on another device",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The cloud really means using computers of other companies over the ... (one word)",
+      "a": [
+       "internet",
+       "web"
+      ],
+      "hint": "Not in the sky.",
+      "why": "Cloud services run on remote servers via the internet."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A building full of servers is called a data ... (one word)",
+      "a": [
+       "center",
+       "centre"
+      ],
+      "hint": "Where servers live.",
+      "why": "A data center."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Name one big cloud provider that starts with A and is part of Amazon. (3 letters)",
+      "a": [
+       "aws",
+       "amazon web services"
+      ],
+      "hint": "Amazon Web Services.",
+      "why": "AWS is Amazon's cloud."
+     }
+    ]
+   },
+   {
+    "title": "Cloud Service Types",
+    "period": "IaaS, PaaS, SaaS",
+    "learn": [
+     {
+      "h": "SaaS",
+      "b": "Software as a Service gives you a ready-to-use app in a browser, like Gmail or Google Docs. The company runs everything; you just use it."
+     },
+     {
+      "h": "PaaS and IaaS",
+      "b": "Platform as a Service gives developers a place to build and run apps without managing servers. Infrastructure as a Service gives you basic building blocks, like virtual servers and storage, and you manage more of it."
+     },
+     {
+      "h": "Cloud types",
+      "b": "A public cloud is shared and owned by a provider. A private cloud is used by one organization only. A hybrid cloud mixes both."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is an example of SaaS?",
+      "o": [
+       "A raw virtual server",
+       "A web email service",
+       "A power cable",
+       "A hard drive"
+      ],
+      "a": 1,
+      "why": "SaaS delivers finished apps like web email."
+     },
+     {
+      "t": "mc",
+      "q": "What does IaaS provide?",
+      "o": [
+       "Finished apps only",
+       "Printed manuals",
+       "Basic computing resources like virtual servers",
+       "Free laptops"
+      ],
+      "a": 2,
+      "why": "Infrastructure as a Service rents servers, storage and networking."
+     },
+     {
+      "t": "mc",
+      "q": "What does PaaS mainly help developers do?",
+      "o": [
+       "Build and run apps without managing servers",
+       "Repair laptops",
+       "Make cables",
+       "Browse social media"
+      ],
+      "a": 0,
+      "why": "PaaS provides a platform so developers focus on code."
+     },
+     {
+      "t": "mc",
+      "q": "What is a hybrid cloud?",
+      "o": [
+       "Only a local hard drive",
+       "A mix of public and private cloud",
+       "A type of cable",
+       "A weather forecast"
+      ],
+      "a": 1,
+      "why": "Hybrid cloud combines public and private cloud resources."
+     },
+     {
+      "t": "tf",
+      "q": "A private cloud is used by a single organization.",
+      "a": true,
+      "why": "Private clouds are dedicated to one group."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "SaaS",
+        "Ready-to-use software"
+       ],
+       [
+        "PaaS",
+        "Platform to build apps"
+       ],
+       [
+        "IaaS",
+        "Rented servers and storage"
+       ],
+       [
+        "Public cloud",
+        "Shared provider cloud"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from most managed by you to least managed by you",
+      "items": [
+       [
+        "IaaS",
+        1
+       ],
+       [
+        "PaaS",
+        2
+       ],
+       [
+        "SaaS",
+        3
+       ],
+       [
+        "Just using the app's features",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does SaaS stand for? Type the first word.",
+      "a": [
+       "software"
+      ],
+      "hint": "___ as a Service.",
+      "why": "Software as a Service."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Gmail is an example of which model (3-4 letters)?",
+      "a": [
+       "saas"
+      ],
+      "hint": "You just use the app.",
+      "why": "Gmail is SaaS."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which model gives virtual servers and storage: IaaS or SaaS?",
+      "a": [
+       "iaas"
+      ],
+      "hint": "Infrastructure.",
+      "why": "IaaS provides infrastructure."
+     }
+    ]
+   },
+   {
+    "title": "Cloud Deployment Models",
+    "period": "Public, private, hybrid",
+    "learn": [
+     {
+      "h": "Public cloud",
+      "b": "In a public cloud, a provider like AWS, Microsoft Azure or Google Cloud shares its servers with many customers over the internet. You pay for what you use and need no hardware of your own."
+     },
+     {
+      "h": "Private cloud",
+      "b": "A private cloud is used by only one organization. It can be in the company's own data center. It gives more control and privacy but costs more to run."
+     },
+     {
+      "h": "Hybrid and multi-cloud",
+      "b": "A hybrid cloud mixes private and public clouds, for example keeping private data inside and using public servers for peaks. Multi-cloud means using more than one provider."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which cloud is shared by many customers over the internet?",
+      "o": [
+       "Public cloud",
+       "Private cloud",
+       "Offline cloud",
+       "Local drive"
+      ],
+      "a": 0,
+      "why": "Public clouds serve many customers."
+     },
+     {
+      "t": "mc",
+      "q": "Which cloud is used by only one organization?",
+      "o": [
+       "Public cloud",
+       "Multi-tenant cloud",
+       "Shared cloud",
+       "Private cloud"
+      ],
+      "a": 3,
+      "why": "Private clouds are single-organization."
+     },
+     {
+      "t": "mc",
+      "q": "What is a hybrid cloud?",
+      "o": [
+       "Two public clouds",
+       "Private and public clouds combined",
+       "A broken cloud",
+       "A small file"
+      ],
+      "a": 1,
+      "why": "It mixes both types."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a major public cloud provider?",
+      "o": [
+       "Wi-Fi",
+       "USB",
+       "Microsoft Azure",
+       "HDMI"
+      ],
+      "a": 2,
+      "why": "Azure is Microsoft's cloud."
+     },
+     {
+      "t": "tf",
+      "q": "A private cloud usually gives more control than a public one.",
+      "a": true,
+      "why": "The organization controls its own environment."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Public",
+        "Shared provider servers"
+       ],
+       [
+        "Private",
+        "One organization"
+       ],
+       [
+        "Hybrid",
+        "Public + private"
+       ],
+       [
+        "Multi-cloud",
+        "Several providers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from most shared to most private",
+      "items": [
+       [
+        "Public cloud",
+        1
+       ],
+       [
+        "Hybrid cloud",
+        2
+       ],
+       [
+        "Private cloud",
+        3
+       ],
+       [
+        "Own server at home",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A cloud mixing private and public parts is called ... (one word)",
+      "a": [
+       "hybrid"
+      ],
+      "hint": "Like a hybrid car.",
+      "why": "Hybrid cloud."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which cloud type is used by only one company? (one word)",
+      "a": [
+       "private"
+      ],
+      "hint": "Not public.",
+      "why": "Private cloud."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which company runs Azure? (one word)",
+      "a": [
+       "microsoft"
+      ],
+      "hint": "Windows makers.",
+      "why": "Microsoft."
+     }
+    ]
+   },
+   {
+    "title": "Cloud Technology",
+    "period": "How it works",
+    "learn": [
+     {
+      "h": "Virtualization",
+      "b": "Virtualization lets one physical server run many virtual machines (VMs). Each VM acts like its own computer. This lets providers share hardware and save money."
+     },
+     {
+      "h": "Scalability",
+      "b": "Scalability means adding or removing resources as needed. If a website suddenly gets many visitors, the cloud can add servers quickly, then remove them when traffic drops."
+     },
+     {
+      "h": "Regions and reliability",
+      "b": "Providers have data centers in many regions. Copying data to more than one place, called redundancy, helps keep services running if one place has a problem."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does virtualization allow?",
+      "o": [
+       "Printing on a screen",
+       "Running many virtual machines on one physical server",
+       "Faster typing",
+       "Charging a phone"
+      ],
+      "a": 1,
+      "why": "One physical server can host many separate virtual computers."
+     },
+     {
+      "t": "mc",
+      "q": "What does scalability mean in the cloud?",
+      "o": [
+       "Making a screen bigger",
+       "Weighing servers",
+       "Adding or removing resources as needed",
+       "Using only one server"
+      ],
+      "a": 2,
+      "why": "Cloud resources can grow or shrink with demand."
+     },
+     {
+      "t": "mc",
+      "q": "Why do providers keep copies of data in more than one place?",
+      "o": [
+       "Redundancy keeps services working after a failure",
+       "To use more electricity",
+       "To slow things down",
+       "To hide data from users"
+      ],
+      "a": 0,
+      "why": "Redundancy protects against loss or outages."
+     },
+     {
+      "t": "mc",
+      "q": "A site gets a sudden rush of visitors. What helps in the cloud?",
+      "o": [
+       "Turn off the internet",
+       "Delete the site",
+       "Wait a week",
+       "Automatically add more servers"
+      ],
+      "a": 3,
+      "why": "Cloud scaling can add capacity quickly."
+     },
+     {
+      "t": "tf",
+      "q": "A virtual machine acts like a separate computer.",
+      "a": true,
+      "why": "A VM has its own OS and apps, even though it shares hardware."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "VM",
+        "Virtual computer"
+       ],
+       [
+        "Scalability",
+        "Grow or shrink resources"
+       ],
+       [
+        "Region",
+        "Location of data centers"
+       ],
+       [
+        "Redundancy",
+        "Extra copies for safety"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order when traffic grows and then falls",
+      "items": [
+       [
+        "Traffic increases",
+        1
+       ],
+       [
+        "Cloud adds servers",
+        2
+       ],
+       [
+        "Traffic drops",
+        3
+       ],
+       [
+        "Cloud removes extra servers",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Software that creates virtual computers on one physical machine is a ... (one word)",
+      "a": [
+       "hypervisor"
+      ],
+      "hint": "Runs VMs.",
+      "why": "A hypervisor."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does VM stand for? Type the first word.",
+      "a": [
+       "virtual"
+      ],
+      "hint": "___ Machine.",
+      "why": "Virtual Machine."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Adding more servers to handle more users is called ... (one word, starts with s)",
+      "a": [
+       "scaling",
+       "scaling out",
+       "scale",
+       "scale out"
+      ],
+      "hint": "Grow with demand.",
+      "why": "Scaling."
+     }
+    ]
+   },
+   {
+    "title": "Cloud Storage and Databases",
+    "period": "Keeping data in the cloud",
+    "learn": [
+     {
+      "h": "Storage types",
+      "b": "Object storage keeps files as objects, like photos and backups (example: Amazon S3). File storage works like shared folders. Block storage acts like a hard drive for a virtual machine."
+     },
+     {
+      "h": "Cloud databases",
+      "b": "Cloud databases store data you can search quickly. SQL databases use tables with rows and columns. NoSQL databases are more flexible and handle huge or varied data. Managed databases are updated and backed up for you."
+     },
+     {
+      "h": "Durability and availability",
+      "b": "Providers copy your data to several places so it survives failures. Availability means how often the service is up; 99.9% uptime still allows about 8.8 hours of downtime a year."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which storage type is best for photos and backups?",
+      "o": [
+       "Object storage",
+       "Cache",
+       "RAM",
+       "Register"
+      ],
+      "a": 0,
+      "why": "Object storage holds files at large scale."
+     },
+     {
+      "t": "mc",
+      "q": "SQL databases store data in ...",
+      "o": [
+       "Photos",
+       "Video",
+       "Packets",
+       "Tables"
+      ],
+      "a": 3,
+      "why": "Rows and columns."
+     },
+     {
+      "t": "mc",
+      "q": "Why do providers copy data to several places?",
+      "o": [
+       "To make files smaller",
+       "To survive failures",
+       "To slow it down",
+       "To hide it"
+      ],
+      "a": 1,
+      "why": "Replication gives durability."
+     },
+     {
+      "t": "mc",
+      "q": "What does a managed database mean?",
+      "o": [
+       "You build the hardware",
+       "It has no data",
+       "The provider handles updates and backups",
+       "It is offline"
+      ],
+      "a": 2,
+      "why": "Maintenance is done for you."
+     },
+     {
+      "t": "tf",
+      "q": "Block storage acts like a hard drive for a virtual machine.",
+      "a": true,
+      "why": "It is attached to a VM as a disk."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Object storage",
+        "Files like photos"
+       ],
+       [
+        "Block storage",
+        "Disk for a VM"
+       ],
+       [
+        "SQL",
+        "Tables"
+       ],
+       [
+        "Uptime",
+        "How often it works"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of saving a photo to the cloud in order",
+      "items": [
+       [
+        "Pick the photo",
+        1
+       ],
+       [
+        "Upload it",
+        2
+       ],
+       [
+        "Provider copies it",
+        3
+       ],
+       [
+        "You open it from another device",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: SQL databases store data in rows and columns inside ... (one word)",
+      "a": [
+       "tables",
+       "table"
+      ],
+      "hint": "Like a spreadsheet.",
+      "why": "Tables."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A service that is up 99.9% of the time has 0.1% downtime. Out of 1000 hours, how many hours down?",
+      "a": [
+       "1",
+       "1 hour",
+       "1.0"
+      ],
+      "hint": "0.1% of 1000.",
+      "why": "0.001 x 1000 = 1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Amazon's object storage service is called S... (type the letter and number)",
+      "a": [
+       "s3",
+       "amazon s3"
+      ],
+      "hint": "Simple Storage Service.",
+      "why": "Amazon S3."
+     }
+    ]
+   },
+   {
+    "title": "Containers, Serverless and DevOps",
+    "period": "Modern cloud tools",
+    "learn": [
+     {
+      "h": "Containers",
+      "b": "A container packages an app with everything it needs so it runs the same everywhere. Containers are lighter than virtual machines because they share the host's OS. Docker is a popular tool; Kubernetes manages many containers."
+     },
+     {
+      "h": "Serverless",
+      "b": "In serverless computing you upload small functions and the provider runs them only when needed. You do not manage servers and pay per use. Example: AWS Lambda."
+     },
+     {
+      "h": "DevOps and CI/CD",
+      "b": "DevOps joins developers and operations to release software faster. CI/CD means code is tested and delivered automatically after each change. Infrastructure as code builds servers from text files."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a container?",
+      "o": [
+       "An app packaged with what it needs",
+       "A shipping box",
+       "A hard drive",
+       "A cable"
+      ],
+      "a": 0,
+      "why": "It runs the same on any host."
+     },
+     {
+      "t": "mc",
+      "q": "Which tool manages many containers?",
+      "o": [
+       "Excel",
+       "Paint",
+       "Notepad",
+       "Kubernetes"
+      ],
+      "a": 3,
+      "why": "Kubernetes orchestrates containers."
+     },
+     {
+      "t": "mc",
+      "q": "In serverless computing, you pay ...",
+      "o": [
+       "For idle servers all year",
+       "Only when your code runs",
+       "Nothing ever",
+       "For electricity yourself"
+      ],
+      "a": 1,
+      "why": "Billing is per execution."
+     },
+     {
+      "t": "mc",
+      "q": "What does CI/CD automate?",
+      "o": [
+       "Printing",
+       "Cleaning data",
+       "Testing and delivering code",
+       "Charging phones"
+      ],
+      "a": 2,
+      "why": "It builds, tests and releases code."
+     },
+     {
+      "t": "tf",
+      "q": "Containers are usually lighter than full virtual machines.",
+      "a": true,
+      "why": "They share the host OS kernel."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Docker",
+        "Container tool"
+       ],
+       [
+        "Kubernetes",
+        "Manages containers"
+       ],
+       [
+        "Lambda",
+        "Serverless functions"
+       ],
+       [
+        "CI/CD",
+        "Automatic test and release"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the delivery steps in order",
+      "items": [
+       [
+        "Write code",
+        1
+       ],
+       [
+        "Automatic tests run",
+        2
+       ],
+       [
+        "Build is created",
+        3
+       ],
+       [
+        "Release to users",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which tool is popular for creating containers? (6 letters)",
+      "a": [
+       "docker"
+      ],
+      "hint": "Whale logo.",
+      "why": "Docker."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does the D in CI/CD stand for? (delivery or deployment)",
+      "a": [
+       "delivery",
+       "deployment"
+      ],
+      "hint": "Continuous ___.",
+      "why": "Continuous Delivery/Deployment."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Running code without managing servers is called ... computing (one word)",
+      "a": [
+       "serverless"
+      ],
+      "hint": "No server to manage.",
+      "why": "Serverless."
+     }
+    ]
+   },
+   {
+    "title": "Cloud Cost, Reliability and Security",
+    "period": "Running in the cloud",
+    "learn": [
+     {
+      "h": "Pay as you go",
+      "b": "Cloud usually bills for what you use: compute time, storage and data transfer. It turns big upfront costs (CapEx) into running costs (OpEx). Without watching, costs can grow, so set budgets and alerts."
+     },
+     {
+      "h": "Reliability",
+      "b": "Regions are areas of the world with data centers; availability zones are separate data centers inside a region. Spreading an app across zones keeps it running if one fails. Load balancers share traffic between servers."
+     },
+     {
+      "h": "Shared responsibility",
+      "b": "Security is shared. The provider secures the data centers and hardware. You secure your data, accounts and settings. Many leaks happen from misconfigured storage left public."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In the shared responsibility model, who secures the physical data center?",
+      "o": [
+       "The provider",
+       "You",
+       "Your school",
+       "The user's phone"
+      ],
+      "a": 0,
+      "why": "The provider protects hardware and buildings."
+     },
+     {
+      "t": "mc",
+      "q": "What do load balancers do?",
+      "o": [
+       "Store passwords",
+       "Print documents",
+       "Cool servers",
+       "Share traffic between servers"
+      ],
+      "a": 3,
+      "why": "They spread requests."
+     },
+     {
+      "t": "mc",
+      "q": "What is an availability zone?",
+      "o": [
+       "A Wi-Fi area",
+       "A separate data center in a region",
+       "A password rule",
+       "A phone plan"
+      ],
+      "a": 1,
+      "why": "Zones isolate failures."
+     },
+     {
+      "t": "mc",
+      "q": "A common cause of cloud data leaks is ...",
+      "o": [
+       "Too many zones",
+       "Fast internet",
+       "Misconfigured public storage",
+       "Blue screens"
+      ],
+      "a": 2,
+      "why": "Wrong settings expose data."
+     },
+     {
+      "t": "tf",
+      "q": "With the cloud you only pay for what you use, in most services.",
+      "a": true,
+      "why": "That is pay-as-you-go."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "OpEx",
+        "Running cost"
+       ],
+       [
+        "Region",
+        "Area with data centers"
+       ],
+       [
+        "Load balancer",
+        "Spreads traffic"
+       ],
+       [
+        "Shared responsibility",
+        "Provider and you both secure"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from smallest to largest",
+      "items": [
+       [
+        "Server",
+        1
+       ],
+       [
+        "Data center",
+        2
+       ],
+       [
+        "Availability zone group (region)",
+        3
+       ],
+       [
+        "All the provider's regions",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A server costs $0.10 per hour. How much for 24 hours? (number only, e.g. 1.5)",
+      "a": [
+       "2.4",
+       "2.40",
+       "$2.4",
+       "$2.40"
+      ],
+      "hint": "0.10 x 24.",
+      "why": "0.10 x 24 = 2.40."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who secures your own data and settings in the cloud: the provider or you?",
+      "a": [
+       "you",
+       "me",
+       "the customer",
+       "user"
+      ],
+      "hint": "Shared responsibility.",
+      "why": "You are responsible for your data and settings."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Something that spreads traffic across servers is a load ... (one word)",
+      "a": [
+       "balancer"
+      ],
+      "hint": "It balances.",
+      "why": "Load balancer."
+     }
+    ]
+   },
+   {
+    "title": "Using the Cloud Safely",
+    "period": "Security and cost",
+    "learn": [
+     {
+      "h": "Shared responsibility",
+      "b": "The provider protects the data centers and hardware. You are responsible for your own account, passwords and settings. Use strong passwords and two-factor login."
+     },
+     {
+      "h": "Privacy and sharing",
+      "b": "Check who can see your files. Share links only with the people who need them, and use view-only access when possible. Do not store secrets in public places."
+     },
+     {
+      "h": "Costs and backups",
+      "b": "Many services have a free amount and charge after that. Watch your storage and usage so there are no surprise bills. Keep a backup of important files, as the cloud is not a magic guarantee."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who is responsible for your cloud account password?",
+      "o": [
+       "The data center guard",
+       "The internet",
+       "You",
+       "Your router"
+      ],
+      "a": 2,
+      "why": "Users must protect their own login details."
+     },
+     {
+      "t": "mc",
+      "q": "Which setting adds safety to a cloud account?",
+      "o": [
+       "Using no password",
+       "Two-factor login",
+       "Sharing it with friends",
+       "Using the same weak password"
+      ],
+      "a": 1,
+      "why": "Two-factor login adds a second proof beyond the password."
+     },
+     {
+      "t": "mc",
+      "q": "When sharing a cloud file, what is a good practice?",
+      "o": [
+       "Share only with needed people, view-only when possible",
+       "Make everything public",
+       "Post the link in a public chat",
+       "Give edit access to strangers"
+      ],
+      "a": 0,
+      "why": "Limit access to what is necessary."
+     },
+     {
+      "t": "mc",
+      "q": "How can you avoid surprise cloud bills?",
+      "o": [
+       "Ignore usage",
+       "Delete the password",
+       "Buy a faster mouse",
+       "Monitor your storage and usage"
+      ],
+      "a": 3,
+      "why": "Tracking usage helps you stay within free or planned limits."
+     },
+     {
+      "t": "tf",
+      "q": "Keeping a backup of important files is still a good idea when using the cloud.",
+      "a": true,
+      "why": "Services can fail or accounts can be lost, so extra copies help."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "2FA",
+        "Extra login step"
+       ],
+       [
+        "View-only",
+        "Cannot edit the file"
+       ],
+       [
+        "Provider",
+        "Company running the cloud"
+       ],
+       [
+        "Usage bill",
+        "Cost of what you use"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to share a file safely",
+      "items": [
+       [
+        "Upload the file",
+        1
+       ],
+       [
+        "Choose who can access it",
+        2
+       ],
+       [
+        "Set view-only permission",
+        3
+       ],
+       [
+        "Send the link to that person",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Copying your files to another place in case of loss is a ...",
+      "a": [
+       "backup",
+       "back up",
+       "a backup"
+      ],
+      "hint": "Spare copy.",
+      "why": "A backup."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What extra login step makes cloud accounts safer? (3 letters)",
+      "a": [
+       "2fa",
+       "mfa"
+      ],
+      "hint": "Two-factor.",
+      "why": "2FA/MFA."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Should you use the same password for all cloud accounts? yes or no",
+      "a": [
+       "no"
+      ],
+      "hint": "One leak, all lost.",
+      "why": "No, use unique passwords."
+     }
+    ]
+   }
+  ]
+ }
+}

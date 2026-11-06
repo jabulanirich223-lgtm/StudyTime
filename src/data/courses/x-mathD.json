@@ -1,0 +1,4441 @@
+{
+ "math-calc": {
+  "name": "Calculus",
+  "units": [
+   {
+    "title": "Limits",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "Idea of a limit",
+      "b": "A limit asks what value f(x) gets close to as x gets close to a number. For f(x) = x^2, the limit as x goes to 2 is 4."
+     },
+     {
+      "h": "Factoring trick",
+      "b": "If plugging in gives 0/0, factor and cancel. (x^2 - 9)/(x - 3) = x + 3, so the limit as x goes to 3 is 6."
+     },
+     {
+      "h": "Important limits",
+      "b": "The limit of 1/x as x grows without bound is 0. The limit of sin(x)/x as x goes to 0 is 1. A function is continuous at a if its limit equals f(a)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the limit of x^2 as x goes to 2?",
+      "o": [
+       "2",
+       "8",
+       "4",
+       "0"
+      ],
+      "a": 2,
+      "why": "Plug in x = 2: 4."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit of (x^2 - 9)/(x - 3) as x goes to 3?",
+      "o": [
+       "0",
+       "6",
+       "3",
+       "does not exist"
+      ],
+      "a": 1,
+      "why": "It simplifies to x + 3, which is 6 at x = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit of 1/x as x goes to infinity?",
+      "o": [
+       "0",
+       "1",
+       "infinity",
+       "-1"
+      ],
+      "a": 0,
+      "why": "1/x gets closer to 0 as x grows."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit of sin(x)/x as x goes to 0?",
+      "o": [
+       "0",
+       "undefined",
+       "infinity",
+       "1"
+      ],
+      "a": 3,
+      "why": "This is a standard limit equal to 1."
+     },
+     {
+      "t": "tf",
+      "q": "A function is continuous at a if its limit as x goes to a equals f(a).",
+      "a": true,
+      "why": "This is the definition of continuity at a point."
+     },
+     {
+      "t": "match",
+      "q": "Match each limit to its value",
+      "pairs": [
+       [
+        "x goes to 1 of 3x",
+        "3"
+       ],
+       [
+        "x goes to 4 of sqrt(x)",
+        "2"
+       ],
+       [
+        "x goes to 0 of x + 5",
+        "5"
+       ],
+       [
+        "x goes to infinity of 1/x",
+        "0"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the limit of (x^2 - 9)/(x - 3) in order",
+      "items": [
+       [
+        "Plug in x = 3 and get 0/0",
+        1
+       ],
+       [
+        "Factor: (x - 3)(x + 3)/(x - 3)",
+        2
+       ],
+       [
+        "Cancel x - 3 to get x + 3",
+        3
+       ],
+       [
+        "Plug in 3 to get 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the limit of (x^2 - 4)/(x - 2) as x goes to 2.",
+      "a": [
+       "4"
+      ],
+      "hint": "Factor the top as (x - 2)(x + 2) and cancel.",
+      "why": "(x - 2)(x + 2)/(x - 2) = x + 2, which is 4 at x = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the limit of x^2 + x as x goes to 5.",
+      "a": [
+       "30"
+      ],
+      "hint": "This one is smooth, so plug in x = 5.",
+      "why": "25 + 5 = 30."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the limit of 3 + 5/x as x goes to infinity.",
+      "a": [
+       "3"
+      ],
+      "hint": "5/x goes to 0 when x is huge.",
+      "why": "5/x goes to 0, so the limit is 3."
+     }
+    ]
+   },
+   {
+    "title": "Continuity and Infinite Limits",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "One-sided limits",
+      "b": "The left limit comes from smaller x, the right limit from larger x. A limit exists only if both sides agree. For |x|/x at 0, the left side gives -1 and the right side gives 1, so there is no limit."
+     },
+     {
+      "h": "Limits at infinity",
+      "b": "For a fraction of polynomials with the same degree, the limit at infinity is the ratio of the leading coefficients. So (3x^2 + 1)/(x^2 + 5) goes to 3. If the bottom has a higher degree, the limit is 0."
+     },
+     {
+      "h": "Asymptotes and the IVT",
+      "b": "If the bottom goes to 0 but the top does not, the function blows up, so 1/(x - 2) has a vertical asymptote at x = 2. The Intermediate Value Theorem says a continuous function on [a, b] hits every value between f(a) and f(b)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the limit of (3x^2 + 1)/(x^2 + 5) as x goes to infinity?",
+      "o": [
+       "1",
+       "3",
+       "0",
+       "infinity"
+      ],
+      "a": 1,
+      "why": "Same degree, so divide the leading coefficients: 3/1 = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit of (2x + 1)/(x^2 + 1) as x goes to infinity?",
+      "o": [
+       "2",
+       "1",
+       "infinity",
+       "0"
+      ],
+      "a": 3,
+      "why": "The bottom has a higher degree, so the fraction goes to 0."
+     },
+     {
+      "t": "mc",
+      "q": "Where does f(x) = 1/(x - 2) have a vertical asymptote?",
+      "o": [
+       "x = 2",
+       "x = 0",
+       "x = -2",
+       "x = 1"
+      ],
+      "a": 0,
+      "why": "The bottom is 0 at x = 2 while the top is 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does 1/x approach as x goes to 0 from the right?",
+      "o": [
+       "0",
+       "1",
+       "infinity",
+       "-infinity"
+      ],
+      "a": 2,
+      "why": "For small positive x, 1/x is a huge positive number."
+     },
+     {
+      "t": "tf",
+      "q": "A limit at a exists only if the left and right limits are equal.",
+      "a": true,
+      "why": "Both one-sided limits must agree for the two-sided limit to exist."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Left-hand limit",
+        "Approach from smaller x"
+       ],
+       [
+        "Right-hand limit",
+        "Approach from larger x"
+       ],
+       [
+        "Jump discontinuity",
+        "One-sided limits differ"
+       ],
+       [
+        "Intermediate Value Theorem",
+        "Continuous f hits every middle value"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the limit of (4x^2 + 3x)/(2x^2 - 1) at infinity in order",
+      "items": [
+       [
+        "Divide top and bottom by x^2",
+        1
+       ],
+       [
+        "Get (4 + 3/x)/(2 - 1/x^2)",
+        2
+       ],
+       [
+        "Let the 1/x terms go to 0",
+        3
+       ],
+       [
+        "Read the answer: 4/2 = 2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the limit of (6x^2 + x)/(3x^2 - 4) as x goes to infinity.",
+      "a": [
+       "2"
+      ],
+      "hint": "Divide the leading coefficients.",
+      "why": "6/3 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the limit of (x^2 - 16)/(x - 4) as x goes to 4.",
+      "a": [
+       "8"
+      ],
+      "hint": "Factor x^2 - 16 as (x - 4)(x + 4).",
+      "why": "The limit is x + 4 = 8 at x = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = x + 1 for x < 2 and f(x) = kx - 1 for x >= 2. Which k makes f continuous at 2? k = ?",
+      "a": [
+       "2"
+      ],
+      "hint": "The left limit is 2 + 1 = 3. Set 2k - 1 equal to 3.",
+      "why": "2k - 1 = 3 gives k = 2."
+     }
+    ]
+   },
+   {
+    "title": "Derivatives",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "What a derivative is",
+      "b": "The derivative f'(x) is the slope of the tangent line, or the rate of change. It tells how fast f is changing."
+     },
+     {
+      "h": "Power rule",
+      "b": "d/dx of x^n = n x^(n-1). So d/dx x^5 = 5x^4. The derivative of a constant is 0. d/dx (3x^2 + 2x) = 6x + 2."
+     },
+     {
+      "h": "Common derivatives",
+      "b": "d/dx sin x = cos x. d/dx cos x = -sin x. d/dx e^x = e^x. d/dx ln x = 1/x."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the derivative of x^5?",
+      "o": [
+       "x^4",
+       "5x^4",
+       "5x^5",
+       "4x^5"
+      ],
+      "a": 1,
+      "why": "Power rule: bring down 5 and subtract 1 from the exponent."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of 3x^2 + 2x?",
+      "o": [
+       "3x + 2",
+       "6x^2 + 2",
+       "6x + 2",
+       "6x"
+      ],
+      "a": 2,
+      "why": "The derivative of 3x^2 is 6x, and of 2x is 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of the constant 7?",
+      "o": [
+       "7",
+       "1",
+       "0",
+       "x"
+      ],
+      "a": 2,
+      "why": "A constant does not change, so its rate of change is 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of sin x?",
+      "o": [
+       "-cos x",
+       "cos x",
+       "sin x",
+       "-sin x"
+      ],
+      "a": 1,
+      "why": "d/dx sin x = cos x."
+     },
+     {
+      "t": "tf",
+      "q": "The derivative at a point gives the slope of the tangent line there.",
+      "a": true,
+      "why": "That is the geometric meaning of the derivative."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its derivative",
+      "pairs": [
+       [
+        "x^3",
+        "3x^2"
+       ],
+       [
+        "e^x",
+        "e^x"
+       ],
+       [
+        "ln x",
+        "1/x"
+       ],
+       [
+        "cos x",
+        "-sin x"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the derivative of 3x^4 in order",
+      "items": [
+       [
+        "Bring down the exponent 4",
+        1
+       ],
+       [
+        "Multiply by the coefficient 3 to get 12",
+        2
+       ],
+       [
+        "Lower the exponent to 3",
+        3
+       ],
+       [
+        "Result: 12x^3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find f'(2) for f(x) = 4x^3.",
+      "a": [
+       "48"
+      ],
+      "hint": "f'(x) = 12x^2.",
+      "why": "12 times 4 = 48."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find f'(1) for f(x) = 5x^2 - 3x.",
+      "a": [
+       "7"
+      ],
+      "hint": "f'(x) = 10x - 3.",
+      "why": "10 - 3 = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the slope of the tangent line to y = x^3 at x = -1?",
+      "a": [
+       "3"
+      ],
+      "hint": "Use 3x^2.",
+      "why": "3(-1)^2 = 3."
+     }
+    ]
+   },
+   {
+    "title": "Derivative Rules and Applications",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "Product and chain rules",
+      "b": "Product rule: (uv)' = u'v + uv'. So d/dx (x sin x) = sin x + x cos x. Chain rule: d/dx (x^2 + 1)^3 = 3(x^2 + 1)^2 x 2x = 6x(x^2 + 1)^2."
+     },
+     {
+      "h": "Increasing and decreasing",
+      "b": "If f'(x) is positive, f is increasing. If f'(x) is negative, f is decreasing. If f'(x) = 0, it is a critical point (possible max or min)."
+     },
+     {
+      "h": "Finding extremes",
+      "b": "For f(x) = x^2 - 6x, f'(x) = 2x - 6 = 0 at x = 3. The slope of y = x^2 at x = 3 is 2(3) = 6."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is d/dx of (x sin x)?",
+      "o": [
+       "cos x",
+       "sin x + x cos x",
+       "x cos x",
+       "sin x - x cos x"
+      ],
+      "a": 1,
+      "why": "Product rule: (1)(sin x) + (x)(cos x)."
+     },
+     {
+      "t": "mc",
+      "q": "What is d/dx of (x^2 + 1)^3?",
+      "o": [
+       "3(x^2 + 1)^2",
+       "6x(x^2 + 1)^2",
+       "3x(x^2 + 1)^2",
+       "6(x^2 + 1)^2"
+      ],
+      "a": 1,
+      "why": "Chain rule: 3(x^2 + 1)^2 times 2x."
+     },
+     {
+      "t": "mc",
+      "q": "Where does f(x) = x^2 - 6x have a critical point?",
+      "o": [
+       "x = 6",
+       "x = 0",
+       "x = -3",
+       "x = 3"
+      ],
+      "a": 3,
+      "why": "f'(x) = 2x - 6 = 0 gives x = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the slope of the tangent to y = x^2 at x = 3?",
+      "o": [
+       "6",
+       "3",
+       "9",
+       "2"
+      ],
+      "a": 0,
+      "why": "The derivative is 2x, which is 6 at x = 3."
+     },
+     {
+      "t": "tf",
+      "q": "If f'(x) is positive on an interval, then f is increasing there.",
+      "a": true,
+      "why": "A positive slope means the function rises."
+     },
+     {
+      "t": "match",
+      "q": "Match each condition to its meaning",
+      "pairs": [
+       [
+        "f'(x) > 0",
+        "increasing"
+       ],
+       [
+        "f'(x) < 0",
+        "decreasing"
+       ],
+       [
+        "f'(x) = 0",
+        "critical point"
+       ],
+       [
+        "f''(x) > 0",
+        "concave up"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "For f(x) = x^2, put the slope f'(x) at these x-values from smallest to largest",
+      "items": [
+       [
+        "x = -2",
+        1
+       ],
+       [
+        "x = 0",
+        2
+       ],
+       [
+        "x = 1",
+        3
+       ],
+       [
+        "x = 3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the derivative of x e^x at x = 0.",
+      "a": [
+       "1"
+      ],
+      "hint": "Product rule: e^x + x e^x.",
+      "why": "At 0: 1 + 0 = 1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the derivative of (x^2 + 1)^3 at x = 1.",
+      "a": [
+       "24"
+      ],
+      "hint": "Chain rule: 6x(x^2 + 1)^2.",
+      "why": "6 x 1 x 4 = 24."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Where does f(x) = x^2 - 8x + 3 have its critical point? x = ?",
+      "a": [
+       "4"
+      ],
+      "hint": "Solve 2x - 8 = 0.",
+      "why": "2x - 8 = 0 gives x = 4."
+     }
+    ]
+   },
+   {
+    "title": "Chain, Quotient and Implicit Derivatives",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "The chain rule more",
+      "b": "Differentiate the outside, keep the inside, then multiply by the derivative of the inside. d/dx sin(3x) = 3cos(3x). d/dx e^(x^2) = 2x e^(x^2). d/dx ln(x^2 + 1) = 2x/(x^2 + 1)."
+     },
+     {
+      "h": "Quotient rule",
+      "b": "(u/v)' = (u'v - uv')/v^2. For x/(x + 1) this gives ((x + 1) - x)/(x + 1)^2 = 1/(x + 1)^2. Also d/dx tan x = sec^2 x."
+     },
+     {
+      "h": "Implicit differentiation",
+      "b": "When y is mixed with x, differentiate both sides and write dy/dx whenever you differentiate y. For x^2 + y^2 = 25 you get 2x + 2y(dy/dx) = 0, so dy/dx = -x/y."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is d/dx of sin(3x)?",
+      "o": [
+       "cos(3x)",
+       "3cos(3x)",
+       "-3cos(3x)",
+       "3sin(3x)"
+      ],
+      "a": 1,
+      "why": "Outside gives cos(3x), inside gives 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is d/dx of e^(x^2)?",
+      "o": [
+       "e^(x^2)",
+       "x^2 e^(x^2)",
+       "2x e^(2x)",
+       "2x e^(x^2)"
+      ],
+      "a": 3,
+      "why": "Keep e^(x^2) and multiply by the inner derivative 2x."
+     },
+     {
+      "t": "mc",
+      "q": "What is d/dx of x/(x + 1)?",
+      "o": [
+       "1/(x + 1)^2",
+       "1/(x + 1)",
+       "x/(x + 1)^2",
+       "(2x + 1)/(x + 1)^2"
+      ],
+      "a": 0,
+      "why": "Quotient rule: ((x + 1) - x)/(x + 1)^2."
+     },
+     {
+      "t": "mc",
+      "q": "For x^2 + y^2 = 25, what is dy/dx?",
+      "o": [
+       "x/y",
+       "-y/x",
+       "-x/y",
+       "2x + 2y"
+      ],
+      "a": 2,
+      "why": "2x + 2y(dy/dx) = 0 gives dy/dx = -x/y."
+     },
+     {
+      "t": "tf",
+      "q": "The derivative of tan x is sec^2 x.",
+      "a": true,
+      "why": "This is a standard derivative."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its derivative",
+      "pairs": [
+       [
+        "tan x",
+        "sec^2 x"
+       ],
+       [
+        "ln(x^2 + 1)",
+        "2x/(x^2 + 1)"
+       ],
+       [
+        "sin(x^2)",
+        "2x cos(x^2)"
+       ],
+       [
+        "e^(5x)",
+        "5e^(5x)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of implicit differentiation of x^2 + y^2 = 25 in order",
+      "items": [
+       [
+        "Differentiate both sides with respect to x",
+        1
+       ],
+       [
+        "Write 2x + 2y(dy/dx) = 0",
+        2
+       ],
+       [
+        "Move 2x over: 2y(dy/dx) = -2x",
+        3
+       ],
+       [
+        "Divide by 2y: dy/dx = -x/y",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the derivative of (x^2 + 1)^4 at x = 1.",
+      "a": [
+       "64"
+      ],
+      "hint": "Chain rule: 4(x^2 + 1)^3 times 2x.",
+      "why": "4 x 8 x 2 = 64."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the derivative of x/(x + 1) at x = 1. Answer as a fraction or decimal.",
+      "a": [
+       "1/4",
+       "0.25"
+      ],
+      "hint": "The derivative is 1/(x + 1)^2.",
+      "why": "1/2^2 = 1/4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: On x^2 + y^2 = 25, what is the slope dy/dx at the point (3, 4)?",
+      "a": [
+       "-3/4",
+       "-0.75"
+      ],
+      "hint": "Use dy/dx = -x/y.",
+      "why": "-3/4."
+     }
+    ]
+   },
+   {
+    "title": "Related Rates and Optimization",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "Related rates",
+      "b": "When quantities are linked by an equation and both change over time, differentiate with respect to t. For a circle A = pi r^2, so dA/dt = 2 pi r (dr/dt)."
+     },
+     {
+      "h": "Related rates steps",
+      "b": "Write the equation, differentiate with respect to t, and only then plug in numbers. A square with side s: A = s^2, so dA/dt = 2s(ds/dt). At s = 5 and ds/dt = 3, dA/dt = 30."
+     },
+     {
+      "h": "Optimization",
+      "b": "Write the quantity to maximize or minimize, use the constraint to leave one variable, set the derivative to 0, and check. A rectangle with perimeter 20 has area x(10 - x), largest at x = 5, area 25."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A circle has r = 4 cm growing at 0.5 cm/s. How fast is the area growing?",
+      "o": [
+       "2 pi cm^2/s",
+       "4 pi cm^2/s",
+       "8 pi cm^2/s",
+       "16 pi cm^2/s"
+      ],
+      "a": 1,
+      "why": "dA/dt = 2 pi r dr/dt = 2 pi (4)(0.5) = 4 pi."
+     },
+     {
+      "t": "mc",
+      "q": "A square's side is 5 cm and grows at 3 cm/s. How fast is the area growing?",
+      "o": [
+       "15 cm^2/s",
+       "25 cm^2/s",
+       "75 cm^2/s",
+       "30 cm^2/s"
+      ],
+      "a": 3,
+      "why": "dA/dt = 2s(ds/dt) = 2(5)(3) = 30."
+     },
+     {
+      "t": "mc",
+      "q": "A rectangle has perimeter 20. What is its largest possible area?",
+      "o": [
+       "25",
+       "20",
+       "24",
+       "100"
+      ],
+      "a": 0,
+      "why": "A = x(10 - x) is largest at x = 5, giving 25."
+     },
+     {
+      "t": "mc",
+      "q": "In a related rates problem, when do you plug in the changing numbers?",
+      "o": [
+       "Before differentiating",
+       "Never",
+       "After differentiating",
+       "Only at the end of the year"
+      ],
+      "a": 2,
+      "why": "Plugging in first would turn changing variables into constants."
+     },
+     {
+      "t": "tf",
+      "q": "A critical point where f' = 0 still has to be checked to see if it is a maximum or minimum.",
+      "a": true,
+      "why": "It could be a max, a min, or neither."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "dr/dt",
+        "Rate the radius changes with time"
+       ],
+       [
+        "Constraint",
+        "Equation linking the variables"
+       ],
+       [
+        "Objective function",
+        "Quantity to maximize or minimize"
+       ],
+       [
+        "Critical point",
+        "Derivative is zero or undefined"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an optimization problem in order",
+      "items": [
+       [
+        "Write the objective and the constraint",
+        1
+       ],
+       [
+        "Reduce to one variable",
+        2
+       ],
+       [
+        "Set the derivative to 0 and solve",
+        3
+       ],
+       [
+        "Check it is a max or min and answer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A cube's edge is 3 cm and grows at 2 cm/s. How fast is the volume growing in cm^3/s?",
+      "a": [
+       "54"
+      ],
+      "hint": "V = s^3, so dV/dt = 3s^2 (ds/dt).",
+      "why": "3 x 9 x 2 = 54."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: For x > 0, which x makes x + 16/x smallest? x = ?",
+      "a": [
+       "4"
+      ],
+      "hint": "Set 1 - 16/x^2 = 0.",
+      "why": "x^2 = 16, so x = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the smallest value of x + 16/x for x > 0?",
+      "a": [
+       "8"
+      ],
+      "hint": "Plug the best x into x + 16/x.",
+      "why": "4 + 16/4 = 8."
+     }
+    ]
+   },
+   {
+    "title": "Curve Sketching and the Mean Value Theorem",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "Second derivative test",
+      "b": "If f'' > 0 the graph is concave up, and if f'' < 0 it is concave down. At a critical point c, f''(c) > 0 means a local minimum and f''(c) < 0 a local maximum. For f = x^3 - 3x, f'' = 6x, so x = 1 is a min and x = -1 is a max."
+     },
+     {
+      "h": "Inflection points",
+      "b": "An inflection point is where f'' changes sign. For f = x^3, f'' = 6x changes sign at 0, so there is an inflection point at x = 0. Just f'' = 0 is not enough: the sign must change."
+     },
+     {
+      "h": "MVT and closed intervals",
+      "b": "Mean Value Theorem: if f is continuous on [a, b] and differentiable inside, some c has f'(c) = (f(b) - f(a))/(b - a). For x^2 on [0, 2], 2c = 2, so c = 1. On a closed interval, compare f at the critical points and at both endpoints to find absolute extremes."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "For f = x^3 - 3x, what is f''(1) and what does it show?",
+      "o": [
+       "6, a local maximum",
+       "6, a local minimum",
+       "-6, a local minimum",
+       "0, an inflection point"
+      ],
+      "a": 1,
+      "why": "f'' = 6x, so f''(1) = 6 > 0: local min."
+     },
+     {
+      "t": "mc",
+      "q": "Where does f = x^3 have an inflection point?",
+      "o": [
+       "x = 1",
+       "x = -1",
+       "There is none",
+       "x = 0"
+      ],
+      "a": 3,
+      "why": "f'' = 6x changes sign at 0."
+     },
+     {
+      "t": "mc",
+      "q": "By the MVT, which c in (0, 2) has f'(c) equal to the average slope of f = x^2?",
+      "o": [
+       "1",
+       "0",
+       "2",
+       "4"
+      ],
+      "a": 0,
+      "why": "Average slope is (4 - 0)/2 = 2, and 2c = 2 gives c = 1."
+     },
+     {
+      "t": "mc",
+      "q": "What is the absolute maximum of f = x^2 on [-1, 2]?",
+      "o": [
+       "1",
+       "2",
+       "4",
+       "0"
+      ],
+      "a": 2,
+      "why": "f(-1) = 1 and f(2) = 4, and the critical point 0 gives 0."
+     },
+     {
+      "t": "tf",
+      "q": "If f''(c) = 0, then f must have an inflection point at c.",
+      "a": false,
+      "why": "For f = x^4, f''(0) = 0 but concavity does not change."
+     },
+     {
+      "t": "match",
+      "q": "Match each condition to its meaning",
+      "pairs": [
+       [
+        "f'' > 0",
+        "Concave up"
+       ],
+       [
+        "f'' < 0",
+        "Concave down"
+       ],
+       [
+        "Inflection point",
+        "f'' changes sign"
+       ],
+       [
+        "Closed-interval test",
+        "Compare endpoints and critical points"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the second derivative test in order",
+      "items": [
+       [
+        "Find f'",
+        1
+       ],
+       [
+        "Solve f' = 0 for the critical points",
+        2
+       ],
+       [
+        "Find f'' and plug each critical point in",
+        3
+       ],
+       [
+        "Positive means min, negative means max",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = x^3 - 12x has a local minimum at which x? x = ?",
+      "a": [
+       "2"
+      ],
+      "hint": "f' = 3x^2 - 12 = 0 gives x = 2 or -2. Use f'' = 6x.",
+      "why": "f''(2) = 12 > 0, so the min is at x = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the absolute maximum value of f(x) = x^3 - 3x on [0, 2]?",
+      "a": [
+       "2"
+      ],
+      "hint": "Compare f(0), f(1) and f(2).",
+      "why": "f(0) = 0, f(1) = -2, f(2) = 2, so the max is 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: By the MVT, find c in (1, 5) for f(x) = x^2. c = ?",
+      "a": [
+       "3"
+      ],
+      "hint": "Average slope is (25 - 1)/4.",
+      "why": "Average slope is 6, and 2c = 6 gives c = 3."
+     }
+    ]
+   },
+   {
+    "title": "Integrals",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "Antiderivatives",
+      "b": "An antiderivative undoes a derivative. The integral of 2x dx is x^2 + C. The integral of x^3 dx is x^4/4 + C."
+     },
+     {
+      "h": "Common integrals",
+      "b": "Integral of 1 dx = x + C. Integral of e^x dx = e^x + C. Integral of sin x dx = -cos x + C. Integral of 1/x dx = ln|x| + C."
+     },
+     {
+      "h": "Definite integrals",
+      "b": "Find the antiderivative F, then compute F(b) - F(a). The integral of x dx from 0 to 2 is 2^2/2 - 0 = 2. The integral of 2x dx from 1 to 3 is 9 - 1 = 8."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the integral of 2x dx?",
+      "o": [
+       "2x^2 + C",
+       "x^2 + C",
+       "x + C",
+       "2 + C"
+      ],
+      "a": 1,
+      "why": "The derivative of x^2 is 2x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of x^3 dx?",
+      "o": [
+       "3x^2 + C",
+       "x^4 + C",
+       "x^4/4 + C",
+       "x^3/3 + C"
+      ],
+      "a": 2,
+      "why": "Add 1 to the exponent and divide by the new exponent."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of x dx from 0 to 2?",
+      "o": [
+       "2",
+       "4",
+       "1",
+       "8"
+      ],
+      "a": 0,
+      "why": "x^2/2 at 2 is 2, and at 0 is 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of 2x dx from 1 to 3?",
+      "o": [
+       "6",
+       "10",
+       "4",
+       "8"
+      ],
+      "a": 3,
+      "why": "F(x) = x^2, so 9 - 1 = 8."
+     },
+     {
+      "t": "tf",
+      "q": "The integral of cos x dx is sin x + C.",
+      "a": true,
+      "why": "The derivative of sin x is cos x."
+     },
+     {
+      "t": "match",
+      "q": "Match each integral to its answer",
+      "pairs": [
+       [
+        "integral of 1 dx",
+        "x + C"
+       ],
+       [
+        "integral of e^x dx",
+        "e^x + C"
+       ],
+       [
+        "integral of sin x dx",
+        "-cos x + C"
+       ],
+       [
+        "integral of 1/x dx",
+        "ln|x| + C"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the integral of 3x^2 dx from 0 to 2 in order",
+      "items": [
+       [
+        "Find the antiderivative x^3",
+        1
+       ],
+       [
+        "Evaluate at 2: 8",
+        2
+       ],
+       [
+        "Evaluate at 0: 0",
+        3
+       ],
+       [
+        "Subtract: 8 - 0 = 8",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the integral of 6x^2 dx from 0 to 2.",
+      "a": [
+       "16"
+      ],
+      "hint": "Antiderivative is 2x^3.",
+      "why": "2(8) - 0 = 16."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the integral of (x + 1) dx from 0 to 4.",
+      "a": [
+       "12"
+      ],
+      "hint": "Antiderivative is x^2/2 + x.",
+      "why": "8 + 4 = 12."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the integral of 1/x dx from 1 to e.",
+      "a": [
+       "1"
+      ],
+      "hint": "Antiderivative is ln x.",
+      "why": "ln e - ln 1 = 1 - 0 = 1."
+     }
+    ]
+   },
+   {
+    "title": "Integration Techniques",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "u-substitution",
+      "b": "Let u be the inside part and replace its derivative with du. For the integral of 2x(x^2 + 1)^3 dx, let u = x^2 + 1, so du = 2x dx. The integral becomes u^4/4 + C = (x^2 + 1)^4/4 + C."
+     },
+     {
+      "h": "More substitutions",
+      "b": "For a simple inside like kx, divide by k: the integral of e^(3x) dx is e^(3x)/3 + C, and the integral of cos(2x) dx is sin(2x)/2 + C. In a definite integral, you can also change the limits to u-values."
+     },
+     {
+      "h": "Integration by parts",
+      "b": "Integration by parts undoes the product rule: integral of u dv = uv - integral of v du. For x e^x, pick u = x and dv = e^x dx. The answer is x e^x - e^x + C."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the integral of e^(3x) dx?",
+      "o": [
+       "3e^(3x) + C",
+       "e^(3x)/3 + C",
+       "e^(3x) + C",
+       "e^(3x)/x + C"
+      ],
+      "a": 1,
+      "why": "Divide by the inner derivative 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of cos(2x) dx?",
+      "o": [
+       "2 sin(2x) + C",
+       "-sin(2x)/2 + C",
+       "sin(2x) + C",
+       "sin(2x)/2 + C"
+      ],
+      "a": 3,
+      "why": "Divide by 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of 2x(x^2 + 1)^3 dx?",
+      "o": [
+       "(x^2 + 1)^4/4 + C",
+       "(x^2 + 1)^4 + C",
+       "2x(x^2 + 1)^4/4 + C",
+       "(x^2 + 1)^3/3 + C"
+      ],
+      "a": 0,
+      "why": "With u = x^2 + 1 it becomes the integral of u^3 du."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of x e^x dx?",
+      "o": [
+       "x e^x + C",
+       "x^2 e^x/2 + C",
+       "x e^x - e^x + C",
+       "e^x + C"
+      ],
+      "a": 2,
+      "why": "By parts with u = x, dv = e^x dx."
+     },
+     {
+      "t": "tf",
+      "q": "The by-parts formula is the integral of u dv = uv - the integral of v du.",
+      "a": true,
+      "why": "This is the standard formula."
+     },
+     {
+      "t": "match",
+      "q": "Match each technique or fact to its meaning",
+      "pairs": [
+       [
+        "u-substitution",
+        "Replace the inside with u"
+       ],
+       [
+        "Integration by parts",
+        "Undoes the product rule"
+       ],
+       [
+        "Integral of 1/x",
+        "ln|x| + C"
+       ],
+       [
+        "Integral of e^(kx)",
+        "e^(kx)/k + C"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the integral of 2x(x^2 + 1)^3 dx in order",
+      "items": [
+       [
+        "Let u = x^2 + 1",
+        1
+       ],
+       [
+        "Find du = 2x dx",
+        2
+       ],
+       [
+        "Rewrite as the integral of u^3 du",
+        3
+       ],
+       [
+        "Integrate and put x back: (x^2 + 1)^4/4 + C",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the integral of 2x(x^2 + 1)^3 dx from 0 to 2.",
+      "a": [
+       "156"
+      ],
+      "hint": "Antiderivative is (x^2 + 1)^4/4.",
+      "why": "625/4 - 1/4 = 156."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the integral of x e^x dx from 0 to 1.",
+      "a": [
+       "1"
+      ],
+      "hint": "Use by parts: x e^x - e^x.",
+      "why": "(e - e) - (0 - 1) = 1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the integral of sin x cos x dx from 0 to pi/2. Answer as a fraction or decimal.",
+      "a": [
+       "1/2",
+       "0.5"
+      ],
+      "hint": "Let u = sin x.",
+      "why": "u goes from 0 to 1, so the integral of u du = 1/2."
+     }
+    ]
+   },
+   {
+    "title": "Applications of Integrals",
+    "period": "Calculus",
+    "learn": [
+     {
+      "h": "Area between curves",
+      "b": "The area between two curves is the integral of (top - bottom). Between y = x and y = x^2 from 0 to 1: the integral of (x - x^2) is 1/2 - 1/3 = 1/6."
+     },
+     {
+      "h": "Average value and net change",
+      "b": "The average value of f on [a, b] is (1/(b - a)) times the integral of f. For x^2 on [0, 3], the integral is 9, so the average is 3. The integral of a rate gives the total change, such as displacement from velocity."
+     },
+     {
+      "h": "Volume by disks",
+      "b": "Spin a region around the x-axis and slice it into disks: V = pi times the integral of [R(x)]^2 dx. For y = x on [0, 2], V = pi times the integral of x^2 dx = 8 pi/3."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the area between y = x and y = x^2 from 0 to 1?",
+      "o": [
+       "1/2",
+       "1/6",
+       "1/3",
+       "1/12"
+      ],
+      "a": 1,
+      "why": "The integral of (x - x^2) is 1/2 - 1/3 = 1/6."
+     },
+     {
+      "t": "mc",
+      "q": "What is the average value of x^2 on [0, 3]?",
+      "o": [
+       "9",
+       "1",
+       "27",
+       "3"
+      ],
+      "a": 3,
+      "why": "The integral is 9, divided by the length 3."
+     },
+     {
+      "t": "mc",
+      "q": "A particle has v = 2t. What is its displacement from t = 0 to t = 4?",
+      "o": [
+       "16",
+       "8",
+       "4",
+       "32"
+      ],
+      "a": 0,
+      "why": "The integral of 2t is t^2, so 16 - 0."
+     },
+     {
+      "t": "mc",
+      "q": "Spin y = x on [0, 2] around the x-axis. What is the volume?",
+      "o": [
+       "4 pi",
+       "2 pi",
+       "8 pi/3",
+       "16 pi/3"
+      ],
+      "a": 2,
+      "why": "V = pi times the integral of x^2 from 0 to 2 = 8 pi/3."
+     },
+     {
+      "t": "tf",
+      "q": "To find the area between two curves, integrate top minus bottom.",
+      "a": true,
+      "why": "This always gives a positive area."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Average value",
+        "(1/(b - a)) times the integral"
+       ],
+       [
+        "Disk method",
+        "Volume of a solid of revolution"
+       ],
+       [
+        "Net change",
+        "Integral of a rate"
+       ],
+       [
+        "Area between curves",
+        "Integral of top minus bottom"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the area between two curves in order",
+      "items": [
+       [
+        "Find where the curves meet",
+        1
+       ],
+       [
+        "Decide which curve is on top",
+        2
+       ],
+       [
+        "Set up the integral of (top - bottom)",
+        3
+       ],
+       [
+        "Evaluate the integral",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the average value of f(x) = 3x^2 on [0, 2].",
+      "a": [
+       "4"
+      ],
+      "hint": "The integral is x^3 from 0 to 2, then divide by 2.",
+      "why": "8/2 = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the area between y = 2x and y = x^2 from 0 to 2. Answer as a fraction.",
+      "a": [
+       "4/3"
+      ],
+      "hint": "Integrate (2x - x^2).",
+      "why": "4 - 8/3 = 4/3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Water flows in at 3t liters/min. How many liters come in from t = 0 to t = 4?",
+      "a": [
+       "24"
+      ],
+      "hint": "Integrate 3t.",
+      "why": "(3/2)(16) = 24."
+     }
+    ]
+   }
+  ]
+ },
+ "math-stats": {
+  "name": "Statistics",
+  "units": [
+   {
+    "title": "Describing Data",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Center",
+      "b": "The mean is the sum divided by the count. For 4, 8, 6, 5, 7 the sum is 30, so the mean is 6. The median is the middle value in order."
+     },
+     {
+      "h": "Spread",
+      "b": "Range = max - min. Standard deviation tells how far values are from the mean, on average. The IQR = Q3 - Q1."
+     },
+     {
+      "h": "Outliers",
+      "b": "A very large or small value is an outlier. It pulls the mean, but the median barely changes. The median is \"resistant\"."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the mean of 4, 8, 6, 5, 7?",
+      "o": [
+       "5",
+       "7",
+       "6",
+       "30"
+      ],
+      "a": 2,
+      "why": "The sum is 30 and 30 / 5 = 6."
+     },
+     {
+      "t": "mc",
+      "q": "What is the median of 3, 5, 7, 9?",
+      "o": [
+       "6",
+       "5",
+       "7",
+       "8"
+      ],
+      "a": 0,
+      "why": "The middle two are 5 and 7, so the median is 6."
+     },
+     {
+      "t": "mc",
+      "q": "Which measure tells how spread out the data is?",
+      "o": [
+       "mean",
+       "median",
+       "mode",
+       "standard deviation"
+      ],
+      "a": 3,
+      "why": "Standard deviation measures spread."
+     },
+     {
+      "t": "mc",
+      "q": "Q1 is 4 and Q3 is 10. What is the IQR?",
+      "o": [
+       "14",
+       "7",
+       "6",
+       "3"
+      ],
+      "a": 2,
+      "why": "10 - 4 = 6."
+     },
+     {
+      "t": "tf",
+      "q": "The median is resistant to outliers.",
+      "a": true,
+      "why": "An extreme value does not change the middle value much."
+     },
+     {
+      "t": "match",
+      "q": "Match each statistic to its meaning",
+      "pairs": [
+       [
+        "Mean",
+        "the average"
+       ],
+       [
+        "Median",
+        "the middle value"
+       ],
+       [
+        "Mode",
+        "most frequent value"
+       ],
+       [
+        "IQR",
+        "Q3 minus Q1"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for finding a median in order",
+      "items": [
+       [
+        "Put the data in order",
+        1
+       ],
+       [
+        "Count the values",
+        2
+       ],
+       [
+        "Find the middle position",
+        3
+       ],
+       [
+        "Read the middle value",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the mean of 3, 7, 8, 10, 12.",
+      "a": [
+       "8"
+      ],
+      "hint": "Add them and divide by 5.",
+      "why": "40/5 = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the median of 2, 9, 4, 7, 12, 5.",
+      "a": [
+       "6"
+      ],
+      "hint": "Sort first, then average the two middle values.",
+      "why": "Sorted: 2, 4, 5, 7, 9, 12. The middle two are 5 and 7, so the median is 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the population standard deviation of 2, 4, 4, 4, 5, 5, 7, 9.",
+      "a": [
+       "2"
+      ],
+      "hint": "The mean is 5. Average the squared distances, then take the square root.",
+      "why": "The squared distances sum to 32, 32/8 = 4, and sqrt(4) = 2."
+     }
+    ]
+   },
+   {
+    "title": "Graphs and Distributions",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Five-number summary",
+      "b": "The five-number summary is the minimum, Q1, median, Q3 and maximum. A box plot draws it. A value is an outlier if it is below Q1 - 1.5 x IQR or above Q3 + 1.5 x IQR. If Q1 = 10 and Q3 = 20, the fences are -5 and 35."
+     },
+     {
+      "h": "Shape of a distribution",
+      "b": "A histogram shows how often values fall in each bin. If the long tail is on the right, the data is skewed right and the mean is bigger than the median. If the tail is on the left, the mean is smaller."
+     },
+     {
+      "h": "Choosing a graph",
+      "b": "Use a bar chart for categories, a histogram or dotplot for one numeric variable, and a scatterplot for two numeric variables. Pick the graph that matches the data type."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Q1 = 10 and Q3 = 20. What is the upper outlier fence?",
+      "o": [
+       "30",
+       "35",
+       "25",
+       "40"
+      ],
+      "a": 1,
+      "why": "IQR = 10, so 20 + 1.5(10) = 35."
+     },
+     {
+      "t": "mc",
+      "q": "For data skewed right, how do the mean and median compare?",
+      "o": [
+       "Mean is less than median",
+       "They are equal",
+       "Mean is always 0",
+       "Mean is greater than median"
+      ],
+      "a": 3,
+      "why": "The long right tail pulls the mean up."
+     },
+     {
+      "t": "mc",
+      "q": "Which graph shows the relationship between two numeric variables?",
+      "o": [
+       "Scatterplot",
+       "Bar chart",
+       "Pie chart",
+       "Box plot"
+      ],
+      "a": 0,
+      "why": "A scatterplot plots pairs of numbers as points."
+     },
+     {
+      "t": "mc",
+      "q": "Which is NOT part of the five-number summary?",
+      "o": [
+       "Minimum",
+       "Median",
+       "Mean",
+       "Maximum"
+      ],
+      "a": 2,
+      "why": "The five numbers are min, Q1, median, Q3 and max."
+     },
+     {
+      "t": "tf",
+      "q": "A bar chart is used for categorical data.",
+      "a": true,
+      "why": "Bars show counts or amounts for categories."
+     },
+     {
+      "t": "match",
+      "q": "Match each graph or term to its meaning",
+      "pairs": [
+       [
+        "Box plot",
+        "Shows the five-number summary"
+       ],
+       [
+        "Histogram",
+        "Bars for how often values fall in bins"
+       ],
+       [
+        "Skewed right",
+        "Long tail on the high side"
+       ],
+       [
+        "Scatterplot",
+        "Pairs of numbers as points"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for checking outliers in order",
+      "items": [
+       [
+        "Find Q1 and Q3",
+        1
+       ],
+       [
+        "Compute the IQR",
+        2
+       ],
+       [
+        "Compute the two fences",
+        3
+       ],
+       [
+        "Flag values outside the fences",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Q1 = 12 and Q3 = 20. What is the upper outlier fence?",
+      "a": [
+       "32"
+      ],
+      "hint": "IQR = 8. Fence = Q3 + 1.5 x IQR.",
+      "why": "20 + 12 = 32."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Q1 = 14 and Q3 = 26. What is the lower outlier fence?",
+      "a": [
+       "-4"
+      ],
+      "hint": "IQR = 12. Fence = Q1 - 1.5 x IQR.",
+      "why": "14 - 18 = -4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Q1 = 20 and Q3 = 40. Is 75 an outlier? Answer yes or no.",
+      "a": [
+       "yes",
+       "Yes"
+      ],
+      "hint": "IQR = 20, so the upper fence is 40 + 30.",
+      "why": "The upper fence is 70 and 75 is above it."
+     }
+    ]
+   },
+   {
+    "title": "Probability",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Basic probability",
+      "b": "P(event) = favorable outcomes / total outcomes. P(not A) = 1 - P(A). If P(A) = 0.3, then P(not A) = 0.7."
+     },
+     {
+      "h": "Independent events",
+      "b": "If A and B do not affect each other, P(A and B) = P(A) x P(B). With 0.5 and 0.4, the answer is 0.2."
+     },
+     {
+      "h": "Counting",
+      "b": "Two dice add to 7 in 6 of 36 ways, so the probability is 1/6. Combinations: C(5, 2) = (5 x 4) / (2 x 1) = 10."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "P(A) = 0.3. What is P(not A)?",
+      "o": [
+       "0.7",
+       "0.3",
+       "0.03",
+       "1.3"
+      ],
+      "a": 0,
+      "why": "1 - 0.3 = 0.7."
+     },
+     {
+      "t": "mc",
+      "q": "A and B are independent with P(A) = 0.5 and P(B) = 0.4. What is P(A and B)?",
+      "o": [
+       "0.9",
+       "0.1",
+       "0.45",
+       "0.2"
+      ],
+      "a": 3,
+      "why": "0.5 x 0.4 = 0.2."
+     },
+     {
+      "t": "mc",
+      "q": "You roll two fair dice. What is the probability the sum is 7?",
+      "o": [
+       "1/12",
+       "1/6",
+       "1/9",
+       "1/36"
+      ],
+      "a": 1,
+      "why": "There are 6 ways out of 36, so 1/6."
+     },
+     {
+      "t": "mc",
+      "q": "What is C(5, 2), the number of ways to pick 2 from 5?",
+      "o": [
+       "20",
+       "5",
+       "10",
+       "25"
+      ],
+      "a": 2,
+      "why": "(5 x 4) / 2 = 10."
+     },
+     {
+      "t": "tf",
+      "q": "For independent events, P(A and B) = P(A) x P(B).",
+      "a": true,
+      "why": "This is the multiplication rule for independent events."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Complement",
+        "event does not happen"
+       ],
+       [
+        "Independent",
+        "one does not affect the other"
+       ],
+       [
+        "Mutually exclusive",
+        "cannot both happen"
+       ],
+       [
+        "Sample space",
+        "all possible outcomes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these probabilities from smallest to largest",
+      "items": [
+       [
+        "1/10",
+        1
+       ],
+       [
+        "1/4",
+        2
+       ],
+       [
+        "1/2",
+        3
+       ],
+       [
+        "3/4",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Two fair dice are rolled. What is the probability that the sum is 8? Answer as a fraction.",
+      "a": [
+       "5/36"
+      ],
+      "hint": "Count the pairs: (2,6), (3,5), (4,4), (5,3), (6,2).",
+      "why": "5 ways out of 36."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is C(6, 3)?",
+      "a": [
+       "20"
+      ],
+      "hint": "(6 x 5 x 4)/(3 x 2 x 1).",
+      "why": "120/6 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A fair coin is flipped 3 times. What is the probability of 3 heads? Answer as a fraction or decimal.",
+      "a": [
+       "1/8",
+       "0.125"
+      ],
+      "hint": "Multiply 1/2 three times.",
+      "why": "(1/2)^3 = 1/8."
+     }
+    ]
+   },
+   {
+    "title": "Conditional Probability",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Addition rule",
+      "b": "P(A or B) = P(A) + P(B) - P(A and B). The overlap is subtracted so it is not counted twice. With 0.5, 0.4 and an overlap of 0.2, P(A or B) = 0.7. If A and B are mutually exclusive, the overlap is 0."
+     },
+     {
+      "h": "Conditional probability",
+      "b": "P(A given B) = P(A and B)/P(B). It is the chance of A when you already know B happened. If P(A and B) = 0.2 and P(B) = 0.5, then P(A given B) = 0.4. If A and B are independent, P(A given B) = P(A)."
+     },
+     {
+      "h": "Without replacement",
+      "b": "When you draw without putting back, the odds change after each draw. A bag has 3 red and 2 blue. P(two reds) = 3/5 x 2/4 = 3/10."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "P(A) = 0.5, P(B) = 0.4 and P(A and B) = 0.2. What is P(A or B)?",
+      "o": [
+       "0.9",
+       "0.7",
+       "0.2",
+       "0.5"
+      ],
+      "a": 1,
+      "why": "0.5 + 0.4 - 0.2 = 0.7."
+     },
+     {
+      "t": "mc",
+      "q": "P(A and B) = 0.2 and P(B) = 0.5. What is P(A given B)?",
+      "o": [
+       "0.1",
+       "0.7",
+       "2.5",
+       "0.4"
+      ],
+      "a": 3,
+      "why": "0.2/0.5 = 0.4."
+     },
+     {
+      "t": "mc",
+      "q": "A bag has 3 red and 2 blue. You draw 2 without replacement. What is P(both red)?",
+      "o": [
+       "3/10",
+       "9/25",
+       "2/5",
+       "3/5"
+      ],
+      "a": 0,
+      "why": "3/5 x 2/4 = 6/20 = 3/10."
+     },
+     {
+      "t": "mc",
+      "q": "A and B are mutually exclusive with P(A) = 0.25 and P(B) = 0.5. What is P(A or B)?",
+      "o": [
+       "0.125",
+       "0.25",
+       "0.75",
+       "0.5"
+      ],
+      "a": 2,
+      "why": "The overlap is 0, so just add."
+     },
+     {
+      "t": "tf",
+      "q": "If A and B are independent, then P(A given B) = P(A).",
+      "a": true,
+      "why": "Knowing B does not change the chance of A."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "P(A given B)",
+        "Chance of A if B happened"
+       ],
+       [
+        "Union",
+        "A or B"
+       ],
+       [
+        "Intersection",
+        "A and B"
+       ],
+       [
+        "Without replacement",
+        "Each draw changes the odds"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for P(A given B) from a table in order",
+      "items": [
+       [
+        "Find the count that is in both A and B",
+        1
+       ],
+       [
+        "Find the total count in B",
+        2
+       ],
+       [
+        "Divide the first by the second",
+        3
+       ],
+       [
+        "Write the answer as a fraction or decimal",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: P(A) = 0.6, P(B) = 0.3 and P(A and B) = 0.1. What is P(A or B)?",
+      "a": [
+       "0.8"
+      ],
+      "hint": "Add and subtract the overlap.",
+      "why": "0.6 + 0.3 - 0.1 = 0.8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: P(A and B) = 0.12 and P(B) = 0.3. What is P(A given B)?",
+      "a": [
+       "0.4"
+      ],
+      "hint": "Divide.",
+      "why": "0.12/0.3 = 0.4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A bag has 4 red and 6 blue marbles. You draw 2 without replacement. P(both blue) = ? (fraction)",
+      "a": [
+       "1/3",
+       "0.33",
+       "0.333"
+      ],
+      "hint": "Multiply 6/10 by 5/9.",
+      "why": "30/90 = 1/3."
+     }
+    ]
+   },
+   {
+    "title": "Random Variables and the Binomial",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Expected value",
+      "b": "A random variable is a number that comes from a chance outcome. Its expected value is the long-run average: E(X) = sum of x times P(x). A fair die has E = 3.5. A game that pays $10 with probability 0.1 and $0 otherwise has E = $1."
+     },
+     {
+      "h": "Binomial probability",
+      "b": "Use a binomial when there are n fixed trials, two outcomes, independent trials and the same chance p each time. P(X = k) = C(n, k) p^k (1 - p)^(n - k). For n = 3, p = 0.5, k = 2: 3 x 0.25 x 0.5 = 0.375."
+     },
+     {
+      "h": "Mean and SD of a binomial",
+      "b": "The mean is np and the SD is sqrt(np(1 - p)). For n = 100 and p = 0.3, the mean is 30 and the SD is sqrt(21), about 4.58."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A game pays $10 with probability 0.1 and $0 otherwise. What is the expected payout?",
+      "o": [
+       "$10",
+       "$1",
+       "$0.10",
+       "$9"
+      ],
+      "a": 1,
+      "why": "10 x 0.1 = 1."
+     },
+     {
+      "t": "mc",
+      "q": "What is the expected value of one roll of a fair die?",
+      "o": [
+       "3",
+       "4",
+       "6",
+       "3.5"
+      ],
+      "a": 3,
+      "why": "(1 + 2 + 3 + 4 + 5 + 6)/6 = 3.5."
+     },
+     {
+      "t": "mc",
+      "q": "A fair coin is flipped 3 times. What is P(exactly 2 heads)?",
+      "o": [
+       "0.375",
+       "0.25",
+       "0.5",
+       "0.125"
+      ],
+      "a": 0,
+      "why": "C(3, 2) x 0.5^3 = 3/8 = 0.375."
+     },
+     {
+      "t": "mc",
+      "q": "A binomial has n = 50 and p = 0.2. What is its mean?",
+      "o": [
+       "0.2",
+       "25",
+       "10",
+       "40"
+      ],
+      "a": 2,
+      "why": "np = 50 x 0.2 = 10."
+     },
+     {
+      "t": "tf",
+      "q": "In a binomial setting the trials must be independent with the same chance of success.",
+      "a": true,
+      "why": "These are the binomial conditions."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Expected value",
+        "Long-run average"
+       ],
+       [
+        "Binomial",
+        "Count of successes in n trials"
+       ],
+       [
+        "np",
+        "Mean of a binomial"
+       ],
+       [
+        "Random variable",
+        "Number from a chance outcome"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for a binomial probability in order",
+      "items": [
+       [
+        "Check the binomial conditions",
+        1
+       ],
+       [
+        "Identify n, p and k",
+        2
+       ],
+       [
+        "Plug into C(n, k) p^k (1 - p)^(n - k)",
+        3
+       ],
+       [
+        "Calculate the answer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: X is 1, 2 or 3 with probabilities 0.2, 0.5 and 0.3. What is E(X)?",
+      "a": [
+       "2.1"
+      ],
+      "hint": "Multiply each value by its probability and add.",
+      "why": "0.2 + 1.0 + 0.9 = 2.1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A fair coin is flipped 4 times. What is P(exactly 1 head)? Fraction or decimal.",
+      "a": [
+       "0.25",
+       "1/4"
+      ],
+      "hint": "C(4, 1) x 0.5^4.",
+      "why": "4/16 = 0.25."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A binomial has n = 200 and p = 0.15. What is its mean?",
+      "a": [
+       "30"
+      ],
+      "hint": "Mean = np.",
+      "why": "200 x 0.15 = 30."
+     }
+    ]
+   },
+   {
+    "title": "Distributions and Sampling",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Normal distribution",
+      "b": "The normal curve is bell-shaped and symmetric. About 68% of data is within 1 standard deviation of the mean, 95% within 2, and 99.7% within 3."
+     },
+     {
+      "h": "Z-scores",
+      "b": "z = (value - mean) / standard deviation. If x = 85, mean = 75 and SD = 5, then z = 10 / 5 = 2."
+     },
+     {
+      "h": "Sampling",
+      "b": "A sample is part of a population. Random samples avoid bias. A bigger sample gives a sample mean that varies less."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In a normal distribution, about what percent is within 2 standard deviations of the mean?",
+      "o": [
+       "68%",
+       "99.7%",
+       "50%",
+       "95%"
+      ],
+      "a": 3,
+      "why": "The empirical rule says about 95%."
+     },
+     {
+      "t": "mc",
+      "q": "A score is 85, the mean is 75 and the SD is 5. What is the z-score?",
+      "o": [
+       "2",
+       "10",
+       "0.5",
+       "5"
+      ],
+      "a": 0,
+      "why": "(85 - 75) / 5 = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to the variability of the sample mean when the sample size grows?",
+      "o": [
+       "It grows",
+       "It gets smaller",
+       "It stays the same",
+       "It becomes zero"
+      ],
+      "a": 1,
+      "why": "Larger samples give more stable averages."
+     },
+     {
+      "t": "mc",
+      "q": "You ask only gym members how much people exercise. This sample is...",
+      "o": [
+       "random",
+       "unbiased",
+       "biased",
+       "a census"
+      ],
+      "a": 2,
+      "why": "Gym members exercise more than most people, so the sample is biased."
+     },
+     {
+      "t": "tf",
+      "q": "A normal distribution is symmetric around its mean.",
+      "a": true,
+      "why": "The two halves are mirror images."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Population",
+        "the whole group"
+       ],
+       [
+        "Sample",
+        "part of the group"
+       ],
+       [
+        "Parameter",
+        "number describing a population"
+       ],
+       [
+        "Statistic",
+        "number describing a sample"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these z-scores from smallest to largest",
+      "items": [
+       [
+        "z = -2",
+        1
+       ],
+       [
+        "z = -0.5",
+        2
+       ],
+       [
+        "z = 0",
+        3
+       ],
+       [
+        "z = 1.5",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A score is 68, the mean is 60 and the SD is 4. What is the z-score?",
+      "a": [
+       "2"
+      ],
+      "hint": "z = (68 - 60)/4.",
+      "why": "8/4 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The mean is 100 and the SD is 15. What is the z-score of 85?",
+      "a": [
+       "-1"
+      ],
+      "hint": "(85 - 100)/15.",
+      "why": "-15/15 = -1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Data is normal with mean 50 and SD 10. About what percent is between 30 and 70?",
+      "a": [
+       "95",
+       "95%"
+      ],
+      "hint": "30 and 70 are 2 SDs from the mean.",
+      "why": "Within 2 SDs is about 95%."
+     }
+    ]
+   },
+   {
+    "title": "Confidence Intervals",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Standard error",
+      "b": "For large samples, the sample mean is roughly normal with SD sigma/sqrt(n), called the standard error. If sigma = 20 and n = 100, SE = 20/10 = 2. A bigger n makes the SE smaller."
+     },
+     {
+      "h": "Building an interval",
+      "b": "A confidence interval is estimate +/- margin of error. For 95% confidence, margin = 1.96 x SE. With a mean of 50 and SE = 2, the margin is 3.92 and the interval is 46.08 to 53.92."
+     },
+     {
+      "h": "Reading an interval",
+      "b": "95% confidence means the method captures the true value in 95% of repeated samples. More data gives a narrower interval. Higher confidence, like 99%, gives a wider interval."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "sigma = 20 and n = 100. What is the standard error of the mean?",
+      "o": [
+       "0.2",
+       "2",
+       "20",
+       "200"
+      ],
+      "a": 1,
+      "why": "20/sqrt(100) = 2."
+     },
+     {
+      "t": "mc",
+      "q": "The mean is 50 and SE = 2. What is the 95% margin of error?",
+      "o": [
+       "About 1.96",
+       "About 2",
+       "About 100",
+       "About 3.92"
+      ],
+      "a": 3,
+      "why": "1.96 x 2 = 3.92."
+     },
+     {
+      "t": "mc",
+      "q": "How can you make a 95% interval narrower?",
+      "o": [
+       "Use a bigger sample",
+       "Use a smaller sample",
+       "Ask only friends",
+       "Raise the confidence to 99%"
+      ],
+      "a": 0,
+      "why": "A bigger n lowers the standard error."
+     },
+     {
+      "t": "mc",
+      "q": "Going from 95% to 99% confidence makes the interval...",
+      "o": [
+       "narrower",
+       "the same",
+       "wider",
+       "a single point"
+      ],
+      "a": 2,
+      "why": "You need a bigger margin to be more sure."
+     },
+     {
+      "t": "tf",
+      "q": "A 95% confidence interval contains 95% of the individual data values.",
+      "a": false,
+      "why": "It is about the true mean, not the individual values."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Standard error",
+        "SD of a sample statistic"
+       ],
+       [
+        "Margin of error",
+        "Half the width of the interval"
+       ],
+       [
+        "Point estimate",
+        "Single best guess"
+       ],
+       [
+        "Confidence level",
+        "How often the method captures the truth"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for a confidence interval in order",
+      "items": [
+       [
+        "Compute the sample mean",
+        1
+       ],
+       [
+        "Compute the standard error",
+        2
+       ],
+       [
+        "Multiply by z* to get the margin",
+        3
+       ],
+       [
+        "Add and subtract the margin",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: sigma = 15 and n = 225. What is the standard error?",
+      "a": [
+       "1"
+      ],
+      "hint": "SE = sigma/sqrt(n).",
+      "why": "15/15 = 1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The SE is 2.5. What is the 95% margin of error using 1.96?",
+      "a": [
+       "4.9"
+      ],
+      "hint": "Multiply 1.96 by 2.5.",
+      "why": "1.96 x 2.5 = 4.9."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The mean is 80 and the margin of error is 4. What is the upper end of the interval?",
+      "a": [
+       "84"
+      ],
+      "hint": "Add the margin.",
+      "why": "80 + 4 = 84."
+     }
+    ]
+   },
+   {
+    "title": "Hypothesis Tests",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Null and alternative",
+      "b": "The null hypothesis H0 is the default claim of no effect, like a fair coin with p = 0.5. The alternative Ha is what you look for evidence of, like p is not 0.5. You test by assuming H0 is true."
+     },
+     {
+      "h": "Test statistic and p-value",
+      "b": "z = (estimate - null value)/SE. If the sample mean is 52, the null mean is 50 and SE = 1, then z = 2. The p-value is the chance of a result this extreme if H0 is true. If p < alpha, reject H0."
+     },
+     {
+      "h": "Errors",
+      "b": "A Type I error means rejecting a true H0, and its chance is alpha. A Type II error means failing to reject a false H0. A large p-value never proves H0 true, it only means you lack evidence against it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The sample mean is 52, the null mean is 50 and SE = 1. What is z?",
+      "o": [
+       "1",
+       "2",
+       "50",
+       "0.5"
+      ],
+      "a": 1,
+      "why": "(52 - 50)/1 = 2."
+     },
+     {
+      "t": "mc",
+      "q": "The p-value is 0.03 and alpha = 0.05. What is the decision?",
+      "o": [
+       "Fail to reject H0",
+       "Accept H0",
+       "Collect no data",
+       "Reject H0"
+      ],
+      "a": 3,
+      "why": "0.03 is below 0.05."
+     },
+     {
+      "t": "mc",
+      "q": "What is a Type I error?",
+      "o": [
+       "Rejecting a true null",
+       "Rejecting a false null",
+       "Keeping a true null",
+       "Keeping a false null"
+      ],
+      "a": 0,
+      "why": "It is a false alarm."
+     },
+     {
+      "t": "mc",
+      "q": "The chance of a Type I error equals...",
+      "o": [
+       "the p-value always",
+       "1 - alpha",
+       "the significance level alpha",
+       "the sample size"
+      ],
+      "a": 2,
+      "why": "Alpha is the false alarm rate you choose."
+     },
+     {
+      "t": "tf",
+      "q": "A large p-value proves the null hypothesis is true.",
+      "a": false,
+      "why": "It only shows a lack of evidence against H0."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Null hypothesis",
+        "Default claim of no effect"
+       ],
+       [
+        "Alternative",
+        "What we look for evidence of"
+       ],
+       [
+        "p-value",
+        "Chance of this result if H0 is true"
+       ],
+       [
+        "Type II error",
+        "Missing a real effect"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a z-test in order",
+      "items": [
+       [
+        "State H0 and Ha and choose alpha",
+        1
+       ],
+       [
+        "Compute the z statistic",
+        2
+       ],
+       [
+        "Find the p-value",
+        3
+       ],
+       [
+        "Compare to alpha and conclude",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The sample mean is 105, the null mean is 100 and SE = 2.5. What is z?",
+      "a": [
+       "2"
+      ],
+      "hint": "z = (105 - 100)/2.5.",
+      "why": "5/2.5 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The sample mean is 47, the null mean is 50 and SE = 1.5. What is z?",
+      "a": [
+       "-2"
+      ],
+      "hint": "z = (47 - 50)/1.5.",
+      "why": "-3/1.5 = -2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The p-value is 0.2 and alpha = 0.05. Do we reject H0? Answer yes or no.",
+      "a": [
+       "no",
+       "No"
+      ],
+      "hint": "Compare p to alpha.",
+      "why": "0.2 is bigger than 0.05, so we do not reject."
+     }
+    ]
+   },
+   {
+    "title": "Inference and Regression",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Correlation",
+      "b": "The correlation r is between -1 and 1. r near 1 is a strong positive link, r near -1 is a strong negative link, and r near 0 means no linear link. Correlation does not prove causation."
+     },
+     {
+      "h": "Regression line",
+      "b": "A regression line predicts y from x. If y = 2x + 1, then x = 4 predicts y = 9."
+     },
+     {
+      "h": "Hypothesis tests",
+      "b": "A p-value is the chance of getting a result this extreme if nothing is going on. A p-value below 0.05 is usually called statistically significant."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A correlation of r = -0.9 means...",
+      "o": [
+       "a strong negative link",
+       "a weak positive link",
+       "no link",
+       "a perfect link"
+      ],
+      "a": 0,
+      "why": "-0.9 is close to -1, so it is a strong negative link."
+     },
+     {
+      "t": "mc",
+      "q": "A regression line is y = 2x + 1. What does it predict for x = 4?",
+      "o": [
+       "8",
+       "10",
+       "7",
+       "9"
+      ],
+      "a": 3,
+      "why": "2(4) + 1 = 9."
+     },
+     {
+      "t": "mc",
+      "q": "A study has a p-value of 0.01. At the 0.05 level, the result is...",
+      "o": [
+       "not significant",
+       "statistically significant",
+       "impossible",
+       "proof of causation"
+      ],
+      "a": 1,
+      "why": "0.01 is below 0.05."
+     },
+     {
+      "t": "mc",
+      "q": "Ice cream sales and sunburns are strongly correlated. What is the best conclusion?",
+      "o": [
+       "Ice cream causes sunburn",
+       "Sunburn causes ice cream sales",
+       "Hot weather may affect both",
+       "There is no relationship"
+      ],
+      "a": 2,
+      "why": "A third factor, hot sunny weather, can explain both."
+     },
+     {
+      "t": "tf",
+      "q": "A correlation of r = 0.9 proves that x causes y.",
+      "a": false,
+      "why": "Correlation does not prove causation."
+     },
+     {
+      "t": "match",
+      "q": "Match each value to its meaning",
+      "pairs": [
+       [
+        "r = 1",
+        "perfect positive link"
+       ],
+       [
+        "r = -1",
+        "perfect negative link"
+       ],
+       [
+        "r = 0",
+        "no linear link"
+       ],
+       [
+        "Slope",
+        "change in y per 1 of x"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a hypothesis test in order",
+      "items": [
+       [
+        "State the hypotheses",
+        1
+       ],
+       [
+        "Collect data and compute a statistic",
+        2
+       ],
+       [
+        "Find the p-value",
+        3
+       ],
+       [
+        "Make a conclusion",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A regression line is y = 3x - 2. What y does it predict for x = 5?",
+      "a": [
+       "13"
+      ],
+      "hint": "Plug in x = 5.",
+      "why": "3(5) - 2 = 13."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The line is y = 2x + 1. At x = 5 the actual y is 12. What is the residual (actual - predicted)?",
+      "a": [
+       "1"
+      ],
+      "hint": "Predicted y is 11.",
+      "why": "12 - 11 = 1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A correlation is r = -0.8. What is r^2?",
+      "a": [
+       "0.64"
+      ],
+      "hint": "Square it.",
+      "why": "(-0.8)^2 = 0.64."
+     }
+    ]
+   },
+   {
+    "title": "Comparing Groups and Chi-Square",
+    "period": "Statistics",
+    "learn": [
+     {
+      "h": "Comparing two groups",
+      "b": "To compare two means, look at the difference and build an interval for it. If the 95% interval for the difference is (1.2, 5.0), it does not include 0, so the groups differ significantly."
+     },
+     {
+      "h": "Chi-square test",
+      "b": "The chi-square test checks counts in categories. chi^2 = sum of (O - E)^2/E, where O is observed and E is expected. If O = 30 and E = 20, the term is 100/20 = 5. In a table, E = row total x column total / grand total."
+     },
+     {
+      "h": "Experiments",
+      "b": "A randomized experiment uses a control group and random assignment, so it can show cause and effect. An observational study cannot, because other factors may differ between groups."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A 95% interval for a difference of means is (1.2, 5.0). What can you say?",
+      "o": [
+       "No difference exists",
+       "The difference is significant",
+       "The interval is too wide",
+       "The means are equal"
+      ],
+      "a": 1,
+      "why": "The interval does not contain 0."
+     },
+     {
+      "t": "mc",
+      "q": "An observed count is 30 and the expected count is 20. What is (O - E)^2/E?",
+      "o": [
+       "10",
+       "2",
+       "0.5",
+       "5"
+      ],
+      "a": 3,
+      "why": "(10)^2/20 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Row total 40, column total 50, grand total 200. What is the expected count?",
+      "o": [
+       "10",
+       "20",
+       "45",
+       "4"
+      ],
+      "a": 0,
+      "why": "40 x 50/200 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "Which design can show cause and effect?",
+      "o": [
+       "Observational study",
+       "Voluntary survey",
+       "Randomized experiment",
+       "Anecdote"
+      ],
+      "a": 2,
+      "why": "Random assignment balances other factors."
+     },
+     {
+      "t": "tf",
+      "q": "A chi-square test uses counts of categorical data.",
+      "a": true,
+      "why": "It compares observed and expected counts."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Control group",
+        "Gets no treatment or a placebo"
+       ],
+       [
+        "Random assignment",
+        "Makes the groups alike"
+       ],
+       [
+        "Observed count",
+        "What we actually see"
+       ],
+       [
+        "Expected count",
+        "What we see if H0 is true"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a chi-square test in order",
+      "items": [
+       [
+        "State the hypotheses",
+        1
+       ],
+       [
+        "Compute the expected counts",
+        2
+       ],
+       [
+        "Compute the sum of (O - E)^2/E",
+        3
+       ],
+       [
+        "Find the p-value and conclude",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Row total 60, column total 30, grand total 120. What is the expected count?",
+      "a": [
+       "15"
+      ],
+      "hint": "E = row x column / grand.",
+      "why": "60 x 30/120 = 15."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: O = 18 and E = 15. What is (O - E)^2/E?",
+      "a": [
+       "0.6",
+       "3/5"
+      ],
+      "hint": "(3)^2/15.",
+      "why": "9/15 = 0.6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Two cells have O = 25, E = 20 and O = 15, E = 20. What is chi-square?",
+      "a": [
+       "2.5"
+      ],
+      "hint": "Add (O - E)^2/E for both.",
+      "why": "25/20 + 25/20 = 2.5."
+     }
+    ]
+   }
+  ]
+ },
+ "ap-calc": {
+  "name": "AP Calculus AB/BC",
+  "units": [
+   {
+    "title": "Limits and Continuity",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "What is a limit?",
+      "b": "A limit is the value a function approaches as x gets close to a number. For example, the limit as x goes to 3 of 2x + 1 is 7. The limit does not depend on the value at the point itself."
+     },
+     {
+      "h": "Hard-looking limits",
+      "b": "If plugging in gives 0/0, simplify first. For (x^2 - 4)/(x - 2), factor to get x + 2, so the limit as x goes to 2 is 4."
+     },
+     {
+      "h": "Continuity",
+      "b": "A function is continuous at a if the limit as x goes to a exists and equals f(a). A removable discontinuity is a hole. As x goes to infinity, 1/x goes to 0."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 2 of (x^2 - 4)/(x - 2)?",
+      "o": [
+       "0",
+       "2",
+       "4",
+       "It does not exist"
+      ],
+      "a": 2,
+      "why": "It simplifies to x + 2, which is 4 at x = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 3 of (2x + 1)?",
+      "o": [
+       "6",
+       "7",
+       "8",
+       "9"
+      ],
+      "a": 1,
+      "why": "Plug in 3: 2(3) + 1 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "What does continuity at x = a require?",
+      "o": [
+       "The graph has a hole at a",
+       "f(a) equals zero",
+       "The function is increasing at a",
+       "The limit exists and equals f(a)"
+      ],
+      "a": 3,
+      "why": "The limit and the function value must exist and match."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches infinity of 1/x?",
+      "o": [
+       "0",
+       "1",
+       "Infinity",
+       "It does not exist"
+      ],
+      "a": 0,
+      "why": "As x grows, 1/x gets closer to 0."
+     },
+     {
+      "t": "tf",
+      "q": "If the limit of f(x) as x approaches a exists, then f(a) must be defined.",
+      "a": false,
+      "why": "A function can have a hole at a and still have a limit there."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Limit",
+        "Value a function approaches"
+       ],
+       [
+        "Asymptote",
+        "Line the graph nears"
+       ],
+       [
+        "Continuous",
+        "No breaks or jumps"
+       ],
+       [
+        "Removable discontinuity",
+        "A hole in the graph"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these limits in order from smallest to largest value",
+      "items": [
+       [
+        "lim x->0 of cos(x)",
+        1
+       ],
+       [
+        "lim x->2 of x^2",
+        2
+       ],
+       [
+        "lim x->3 of 2x",
+        3
+       ],
+       [
+        "lim x->1 of 10x",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the limit of (x^2 - 9)/(x - 3) as x goes to 3.",
+      "a": [
+       "6"
+      ],
+      "hint": "Factor the top.",
+      "why": "x + 3 at x = 3 is 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the limit of (4x + 1)/(2x - 3) as x goes to infinity.",
+      "a": [
+       "2"
+      ],
+      "hint": "Divide the leading coefficients.",
+      "why": "4/2 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = 3x + 1 for x < 2 and f(x) = kx - 1 for x >= 2. Which k makes f continuous? k = ?",
+      "a": [
+       "4"
+      ],
+      "hint": "The left limit is 7. Set 2k - 1 = 7.",
+      "why": "2k - 1 = 7 gives k = 4."
+     }
+    ]
+   },
+   {
+    "title": "Differentiation: Definition and Rules",
+    "period": "Unit 2",
+    "learn": [
+     {
+      "h": "The derivative",
+      "b": "The derivative is the instantaneous rate of change, or the slope of the tangent line. The power rule says d/dx of x^n is n x^(n-1). The derivative of a constant is 0."
+     },
+     {
+      "h": "Common derivatives",
+      "b": "d/dx of sin x is cos x. d/dx of cos x is -sin x. d/dx of e^x is e^x. d/dx of ln x is 1/x."
+     },
+     {
+      "h": "Rules",
+      "b": "The product rule says (fg)' = f'g + fg'. The chain rule handles composite functions: differentiate the outside, keep the inside, then multiply by the derivative of the inside."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the derivative of x^3?",
+      "o": [
+       "x^2",
+       "3x^2",
+       "3x",
+       "x^4/4"
+      ],
+      "a": 1,
+      "why": "Power rule: bring down 3 and subtract 1 from the exponent."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of cos x?",
+      "o": [
+       "-cos x",
+       "tan x",
+       "cos x",
+       "-sin x"
+      ],
+      "a": 3,
+      "why": "The derivative of cos x is -sin x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of e^x?",
+      "o": [
+       "x e^(x-1)",
+       "ln x",
+       "e^x",
+       "1/x"
+      ],
+      "a": 2,
+      "why": "e^x is its own derivative."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the product rule for (fg)'?",
+      "o": [
+       "f'g + fg'",
+       "f'g'",
+       "f'g - fg'",
+       "f' + g'"
+      ],
+      "a": 0,
+      "why": "Differentiate each factor in turn and add."
+     },
+     {
+      "t": "tf",
+      "q": "The derivative of a constant function is 0.",
+      "a": true,
+      "why": "A constant has a flat graph with slope 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Derivative",
+        "Instantaneous rate of change"
+       ],
+       [
+        "Chain rule",
+        "For composite functions"
+       ],
+       [
+        "Tangent line",
+        "Touches curve, slope f'(a)"
+       ],
+       [
+        "Power rule",
+        "d/dx of x^n is n x^(n-1)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for d/dx of (x^2 + 1)^3 in order",
+      "items": [
+       [
+        "Identify outer u^3 and inner x^2 + 1",
+        1
+       ],
+       [
+        "Differentiate outer: 3(x^2 + 1)^2",
+        2
+       ],
+       [
+        "Differentiate inner: 2x",
+        3
+       ],
+       [
+        "Multiply to get 6x(x^2 + 1)^2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find f'(2) for f(x) = x^4.",
+      "a": [
+       "32"
+      ],
+      "hint": "f'(x) = 4x^3.",
+      "why": "4 x 8 = 32."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Use the limit definition: what is f'(3) for f(x) = x^2?",
+      "a": [
+       "6"
+      ],
+      "hint": "The limit of ((3 + h)^2 - 9)/h is the limit of 6 + h.",
+      "why": "6 + h goes to 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the derivative of (3x + 1)^2 at x = 1.",
+      "a": [
+       "24"
+      ],
+      "hint": "Chain rule: 2(3x + 1) times 3.",
+      "why": "2(4)(3) = 24."
+     }
+    ]
+   },
+   {
+    "title": "Differentiation: Composite, Implicit, and Inverse Functions",
+    "period": "Unit 3",
+    "learn": [
+     {
+      "h": "Chain rule patterns",
+      "b": "Differentiate the outside and multiply by the derivative of the inside. d/dx e^(2x) = 2e^(2x). d/dx ln(x^2 + 1) = 2x/(x^2 + 1). d/dx sin(x^2) = 2x cos(x^2)."
+     },
+     {
+      "h": "Implicit differentiation",
+      "b": "When x and y are mixed, differentiate both sides with respect to x and attach dy/dx to every y term. For x^2 + y^2 = 25, 2x + 2y(dy/dx) = 0, so dy/dx = -x/y. For xy = 6, y + x(dy/dx) = 0."
+     },
+     {
+      "h": "Inverse functions",
+      "b": "If f(a) = b, then (f^-1)'(b) = 1/f'(a). For f = x^3 + x, f(1) = 2 and f'(1) = 4, so (f^-1)'(2) = 1/4. Also d/dx arctan x = 1/(1 + x^2) and d/dx arcsin x = 1/sqrt(1 - x^2)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is d/dx of ln(x^2 + 1)?",
+      "o": [
+       "1/(x^2 + 1)",
+       "2x/(x^2 + 1)",
+       "2x",
+       "ln(2x)"
+      ],
+      "a": 1,
+      "why": "Outside gives 1/(x^2 + 1), inside gives 2x."
+     },
+     {
+      "t": "mc",
+      "q": "What is d/dx of arctan x?",
+      "o": [
+       "1/sqrt(1 - x^2)",
+       "sec^2 x",
+       "-1/(1 + x^2)",
+       "1/(1 + x^2)"
+      ],
+      "a": 3,
+      "why": "This is the standard inverse trig derivative."
+     },
+     {
+      "t": "mc",
+      "q": "For x^2 + y^2 = 25, what is dy/dx?",
+      "o": [
+       "-x/y",
+       "x/y",
+       "-y/x",
+       "y/x"
+      ],
+      "a": 0,
+      "why": "2x + 2y(dy/dx) = 0."
+     },
+     {
+      "t": "mc",
+      "q": "f = x^3 + x. What is (f^-1)'(2)?",
+      "o": [
+       "4",
+       "1/2",
+       "1/4",
+       "2"
+      ],
+      "a": 2,
+      "why": "f(1) = 2 and f'(1) = 4, so the answer is 1/4."
+     },
+     {
+      "t": "tf",
+      "q": "d/dx arcsin x = 1/sqrt(1 - x^2).",
+      "a": true,
+      "why": "This is a standard derivative."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its derivative",
+      "pairs": [
+       [
+        "e^(2x)",
+        "2e^(2x)"
+       ],
+       [
+        "arctan x",
+        "1/(1 + x^2)"
+       ],
+       [
+        "sin(x^2)",
+        "2x cos(x^2)"
+       ],
+       [
+        "ln x",
+        "1/x"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for (f^-1)'(b) in order",
+      "items": [
+       [
+        "Find a with f(a) = b",
+        1
+       ],
+       [
+        "Compute f'(a)",
+        2
+       ],
+       [
+        "Take the reciprocal 1/f'(a)",
+        3
+       ],
+       [
+        "State this as (f^-1)'(b)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the derivative of e^(2x) at x = 0.",
+      "a": [
+       "2"
+      ],
+      "hint": "Chain rule gives 2e^(2x).",
+      "why": "2e^0 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: On xy = 6, what is dy/dx at (2, 3)? Fraction or decimal.",
+      "a": [
+       "-3/2",
+       "-1.5"
+      ],
+      "hint": "y + x(dy/dx) = 0, so dy/dx = -y/x.",
+      "why": "-3/2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = 2x + x^3. Find (f^-1)'(3). Fraction or decimal.",
+      "a": [
+       "1/5",
+       "0.2"
+      ],
+      "hint": "f(1) = 3, and f'(x) = 2 + 3x^2.",
+      "why": "f'(1) = 5, so the answer is 1/5."
+     }
+    ]
+   },
+   {
+    "title": "Contextual Applications of Differentiation",
+    "period": "Unit 4",
+    "learn": [
+     {
+      "h": "Motion along a line",
+      "b": "Velocity is v = x'(t) and acceleration is a = v'(t). A particle is at rest when v = 0. If x = t^2 - 4t, then v = 2t - 4, so it rests at t = 2. It speeds up when v and a have the same sign."
+     },
+     {
+      "h": "Linearization and L'Hopital",
+      "b": "The tangent line approximates a function nearby: L(x) = f(a) + f'(a)(x - a). For sqrt(x) at 4, L(x) = 2 + (x - 4)/4, so sqrt(4.2) is about 2.05. L'Hopital's rule: for 0/0, the limit equals the limit of f'/g'."
+     },
+     {
+      "h": "Related rates",
+      "b": "Link the changing quantities with an equation, differentiate with respect to t, then plug in. A circle has A = pi r^2, so dA/dt = 2 pi r (dr/dt). With r = 5 and dr/dt = 2, dA/dt = 20 pi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "x(t) = t^2 - 4t. When is the particle at rest?",
+      "o": [
+       "t = 0",
+       "t = 2",
+       "t = 4",
+       "t = 1"
+      ],
+      "a": 1,
+      "why": "v = 2t - 4 = 0 at t = 2."
+     },
+     {
+      "t": "mc",
+      "q": "Using the tangent line of sqrt(x) at x = 4, what is the estimate of sqrt(4.2)?",
+      "o": [
+       "2.2",
+       "2.1",
+       "2.01",
+       "2.05"
+      ],
+      "a": 3,
+      "why": "2 + 0.2/4 = 2.05."
+     },
+     {
+      "t": "mc",
+      "q": "By L'Hopital, what is the limit of (e^x - 1)/x as x goes to 0?",
+      "o": [
+       "1",
+       "0",
+       "e",
+       "infinity"
+      ],
+      "a": 0,
+      "why": "The derivatives give e^x/1 = 1 at 0."
+     },
+     {
+      "t": "mc",
+      "q": "A circle's radius is 5 and grows at 2 per second. How fast does the area grow?",
+      "o": [
+       "10 pi",
+       "25 pi",
+       "20 pi",
+       "50 pi"
+      ],
+      "a": 2,
+      "why": "dA/dt = 2 pi (5)(2) = 20 pi."
+     },
+     {
+      "t": "tf",
+      "q": "A particle is speeding up when its velocity and acceleration have the same sign.",
+      "a": true,
+      "why": "Both push in the same direction."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Velocity",
+        "x'(t)"
+       ],
+       [
+        "Acceleration",
+        "v'(t)"
+       ],
+       [
+        "Linearization",
+        "Tangent line approximation"
+       ],
+       [
+        "L'Hopital's rule",
+        "Use f'/g' for 0/0"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for a related rates problem in order",
+      "items": [
+       [
+        "Draw and write an equation linking the variables",
+        1
+       ],
+       [
+        "Differentiate with respect to t",
+        2
+       ],
+       [
+        "Plug in the given values",
+        3
+       ],
+       [
+        "Solve for the unknown rate",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: x(t) = t^3 - 12t. What is the velocity at t = 3?",
+      "a": [
+       "15"
+      ],
+      "hint": "v = 3t^2 - 12.",
+      "why": "27 - 12 = 15."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Use the tangent line of f(x) = x^2 at a = 3 to estimate f(3.1).",
+      "a": [
+       "9.6"
+      ],
+      "hint": "L(3.1) = 9 + 6(0.1).",
+      "why": "9 + 0.6 = 9.6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Use L'Hopital to find the limit of sin(3x)/x as x goes to 0.",
+      "a": [
+       "3"
+      ],
+      "hint": "Differentiate top and bottom: 3cos(3x)/1.",
+      "why": "At 0 that is 3."
+     }
+    ]
+   },
+   {
+    "title": "Analytical Applications of Differentiation",
+    "period": "Unit 5",
+    "learn": [
+     {
+      "h": "Shape of a graph",
+      "b": "If f'(x) > 0 the function is increasing; if f'(x) < 0 it is decreasing. If f''(x) > 0 the graph is concave up. An inflection point is where concavity changes."
+     },
+     {
+      "h": "Extrema",
+      "b": "Critical points occur where f' is zero or undefined. If f' changes from positive to negative at c, f has a local maximum at c. If it changes from negative to positive, it has a local minimum."
+     },
+     {
+      "h": "Motion and optimization",
+      "b": "Velocity is the derivative of position, and acceleration is the derivative of velocity. Optimization uses derivatives to find the largest or smallest value."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If f'(c) = 0 and f' changes from positive to negative at c, what does f have at c?",
+      "o": [
+       "Local minimum",
+       "Local maximum",
+       "Inflection point",
+       "Vertical asymptote"
+      ],
+      "a": 1,
+      "why": "The function rises, then falls, so c is a peak."
+     },
+     {
+      "t": "mc",
+      "q": "If f'(x) > 0 on an interval, what is f doing there?",
+      "o": [
+       "Decreasing",
+       "Constant",
+       "Increasing",
+       "Undefined"
+      ],
+      "a": 2,
+      "why": "A positive slope means the function is going up."
+     },
+     {
+      "t": "mc",
+      "q": "What is velocity in terms of position?",
+      "o": [
+       "The integral of position",
+       "The second derivative of position",
+       "The derivative of acceleration",
+       "The derivative of position"
+      ],
+      "a": 3,
+      "why": "Velocity is the rate of change of position."
+     },
+     {
+      "t": "mc",
+      "q": "Where does f(x) = -x^2 + 4x have its maximum?",
+      "o": [
+       "x = 1",
+       "x = 2",
+       "x = 4",
+       "x = 0"
+      ],
+      "a": 1,
+      "why": "f'(x) = -2x + 4 = 0 gives x = 2."
+     },
+     {
+      "t": "tf",
+      "q": "If f''(x) > 0 on an interval, the graph is concave up there.",
+      "a": true,
+      "why": "A positive second derivative means the slope is increasing."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Critical point",
+        "f' is zero or undefined"
+       ],
+       [
+        "Inflection point",
+        "Concavity changes"
+       ],
+       [
+        "Related rates",
+        "Rates that change together"
+       ],
+       [
+        "Optimization",
+        "Finding a maximum or minimum"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the first derivative test in order",
+      "items": [
+       [
+        "Find f'(x)",
+        1
+       ],
+       [
+        "Set f'(x) = 0 and solve for x",
+        2
+       ],
+       [
+        "Check the sign of f' on each side",
+        3
+       ],
+       [
+        "Classify each point as max or min",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = x^3 - 3x^2. What is the larger critical number? x = ?",
+      "a": [
+       "2"
+      ],
+      "hint": "Solve 3x^2 - 6x = 0.",
+      "why": "x = 0 or 2, and the larger is 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = x^3 - 6x^2 has an inflection point at which x? x = ?",
+      "a": [
+       "2"
+      ],
+      "hint": "Solve f'' = 0.",
+      "why": "f'' = 6x - 12 = 0 gives x = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the absolute maximum value of f(x) = -x^2 + 4x on [0, 3]?",
+      "a": [
+       "4"
+      ],
+      "hint": "The vertex is at x = 2.",
+      "why": "f(2) = -4 + 8 = 4."
+     }
+    ]
+   },
+   {
+    "title": "Integration and Accumulation of Change",
+    "period": "Unit 6",
+    "learn": [
+     {
+      "h": "Antiderivatives",
+      "b": "An antiderivative of f is a function whose derivative is f. The integral of x^n is x^(n+1)/(n+1) + C. For example, the integral of 2x dx is x^2 + C, and the integral of cos x dx is sin x + C."
+     },
+     {
+      "h": "Definite integrals",
+      "b": "A definite integral gives the net area under a curve between two limits. Riemann sums approximate it with rectangles."
+     },
+     {
+      "h": "Fundamental Theorem",
+      "b": "The Fundamental Theorem of Calculus links derivatives and integrals: the integral from a to b of f(x) dx equals F(b) - F(a), where F is an antiderivative of f."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the integral of 2x dx?",
+      "o": [
+       "2x^2 + C",
+       "x^2 + C",
+       "x + C",
+       "2 + C"
+      ],
+      "a": 1,
+      "why": "The derivative of x^2 is 2x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral from 0 to 3 of 2x dx?",
+      "o": [
+       "6",
+       "12",
+       "9",
+       "3"
+      ],
+      "a": 2,
+      "why": "x^2 evaluated from 0 to 3 is 9 - 0 = 9."
+     },
+     {
+      "t": "mc",
+      "q": "The Fundamental Theorem of Calculus connects which two ideas?",
+      "o": [
+       "Derivatives and integrals",
+       "Limits and sequences",
+       "Slopes and angles",
+       "Series and sums"
+      ],
+      "a": 0,
+      "why": "It shows integration and differentiation are inverse processes."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of cos x dx?",
+      "o": [
+       "-sin x + C",
+       "cos x + C",
+       "-cos x + C",
+       "sin x + C"
+      ],
+      "a": 3,
+      "why": "The derivative of sin x is cos x."
+     },
+     {
+      "t": "tf",
+      "q": "The integral of x^2 dx equals 2x + C.",
+      "a": false,
+      "why": "It equals x^3/3 + C."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Antiderivative",
+        "Function whose derivative is f"
+       ],
+       [
+        "Definite integral",
+        "Net area between two limits"
+       ],
+       [
+        "Riemann sum",
+        "Rectangles that approximate area"
+       ],
+       [
+        "+ C",
+        "Constant of integration"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the integral from 0 to 2 of x dx in order",
+      "items": [
+       [
+        "Find the antiderivative: x^2/2",
+        1
+       ],
+       [
+        "Plug in the upper limit: 2",
+        2
+       ],
+       [
+        "Plug in the lower limit: 0",
+        3
+       ],
+       [
+        "Subtract: 2 - 0 = 2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the integral of (2x + 1) dx from 0 to 3.",
+      "a": [
+       "12"
+      ],
+      "hint": "Antiderivative is x^2 + x.",
+      "why": "9 + 3 = 12."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the left Riemann sum of f(x) = x on [0, 4] with 4 equal subintervals.",
+      "a": [
+       "6"
+      ],
+      "hint": "Each width is 1. Use f(0), f(1), f(2), f(3).",
+      "why": "(0 + 1 + 2 + 3)(1) = 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find d/dx of the integral from 1 to x of t^2 dt at x = 3.",
+      "a": [
+       "9"
+      ],
+      "hint": "By the Fundamental Theorem, it is x^2.",
+      "why": "3^2 = 9."
+     }
+    ]
+   },
+   {
+    "title": "Differential Equations",
+    "period": "Unit 7",
+    "learn": [
+     {
+      "h": "Slope fields",
+      "b": "A differential equation links y and dy/dx. A slope field draws a small tangent segment at each point. For dy/dx = x + y at the point (1, 2), the slope is 3."
+     },
+     {
+      "h": "Separation of variables",
+      "b": "Move all y terms to one side and all x terms to the other, then integrate. For dy/dx = ky, you get y = Ce^(kx). For dy/dx = 2xy, dy/y = 2x dx, so ln|y| = x^2 + C and y = Ce^(x^2)."
+     },
+     {
+      "h": "Particular solutions",
+      "b": "An initial condition fixes the constant C. For dy/dx = 2x with y(0) = 1, y = x^2 + C and C = 1, so y(3) = 10. Exponential growth dy/dt = ky gives y = y0 e^(kt)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "For dy/dx = x + y, what is the slope at (1, 2)?",
+      "o": [
+       "1",
+       "3",
+       "2",
+       "-1"
+      ],
+      "a": 1,
+      "why": "1 + 2 = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the general solution of dy/dx = 3y?",
+      "o": [
+       "y = 3e^x",
+       "y = Ce^x + 3",
+       "y = 3x + C",
+       "y = Ce^(3x)"
+      ],
+      "a": 3,
+      "why": "Separate and integrate: ln|y| = 3x + C."
+     },
+     {
+      "t": "mc",
+      "q": "dy/dx = 2x and y(0) = 1. What is y(3)?",
+      "o": [
+       "10",
+       "9",
+       "6",
+       "7"
+      ],
+      "a": 0,
+      "why": "y = x^2 + 1, so y(3) = 10."
+     },
+     {
+      "t": "mc",
+      "q": "dy/dx = 0.5y and y(0) = 4. What is y(2)?",
+      "o": [
+       "2e",
+       "4e^2",
+       "4e",
+       "8"
+      ],
+      "a": 2,
+      "why": "y = 4e^(0.5x), so y(2) = 4e."
+     },
+     {
+      "t": "tf",
+      "q": "To find a particular solution, you need an initial condition.",
+      "a": true,
+      "why": "It tells you the value of C."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Slope field",
+        "Tiny tangent segments at points"
+       ],
+       [
+        "Separation of variables",
+        "y on one side, x on the other"
+       ],
+       [
+        "Initial condition",
+        "Fixes the constant C"
+       ],
+       [
+        "General solution",
+        "Includes the constant C"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for solving dy/dx = 2xy in order",
+      "items": [
+       [
+        "Separate: dy/y = 2x dx",
+        1
+       ],
+       [
+        "Integrate: ln|y| = x^2 + C",
+        2
+       ],
+       [
+        "Exponentiate both sides",
+        3
+       ],
+       [
+        "Write y = Ce^(x^2)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: dy/dx = 3x^2 and y(0) = 2. What is y(2)?",
+      "a": [
+       "10"
+      ],
+      "hint": "y = x^3 + C and C = 2.",
+      "why": "8 + 2 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: dy/dx = 2y and y(0) = 5. What is y(ln 2)?",
+      "a": [
+       "20"
+      ],
+      "hint": "y = 5e^(2x).",
+      "why": "5e^(2 ln 2) = 5 x 4 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: For dy/dx = x y, what is the slope at the point (2, -1)?",
+      "a": [
+       "-2"
+      ],
+      "hint": "Multiply x and y.",
+      "why": "2 x (-1) = -2."
+     }
+    ]
+   },
+   {
+    "title": "Applications of Integration",
+    "period": "Unit 8",
+    "learn": [
+     {
+      "h": "Motion and average value",
+      "b": "Displacement is the integral of v dt. Total distance is the integral of |v| dt. The average value of f on [a, b] is (1/(b - a)) times the integral of f. For x^3 on [0, 2], the integral is 4, so the average is 2."
+     },
+     {
+      "h": "Area between curves",
+      "b": "Area = integral of (top - bottom). Find where the curves meet to get the limits. Between y = 2x and y = x^2 from 0 to 2, the area is the integral of (2x - x^2) = 4/3."
+     },
+     {
+      "h": "Volumes",
+      "b": "Disks: V = pi times the integral of R(x)^2 dx. Washers subtract the hole. Cross sections: V = integral of A(x) dx. For y = sqrt(x) on [0, 4] spun about the x-axis, V = pi times the integral of x dx = 8 pi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "v(t) = 3t^2. What is the displacement from t = 0 to t = 2?",
+      "o": [
+       "4",
+       "8",
+       "12",
+       "6"
+      ],
+      "a": 1,
+      "why": "The integral of 3t^2 is t^3, so 8."
+     },
+     {
+      "t": "mc",
+      "q": "What is the average value of x^3 on [0, 2]?",
+      "o": [
+       "4",
+       "1",
+       "8",
+       "2"
+      ],
+      "a": 3,
+      "why": "The integral is 4, divided by 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the area between y = 2x and y = x^2 from 0 to 2?",
+      "o": [
+       "4/3",
+       "8/3",
+       "2",
+       "4"
+      ],
+      "a": 0,
+      "why": "4 - 8/3 = 4/3."
+     },
+     {
+      "t": "mc",
+      "q": "Spin y = sqrt(x) on [0, 4] about the x-axis. What is the volume?",
+      "o": [
+       "16 pi",
+       "4 pi",
+       "8 pi",
+       "8 pi/3"
+      ],
+      "a": 2,
+      "why": "V = pi times the integral of x from 0 to 4 = 8 pi."
+     },
+     {
+      "t": "tf",
+      "q": "Total distance traveled is the integral of |v(t)| dt.",
+      "a": true,
+      "why": "Absolute value stops backward motion from canceling."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Displacement",
+        "Integral of v"
+       ],
+       [
+        "Total distance",
+        "Integral of |v|"
+       ],
+       [
+        "Washer method",
+        "Disk with a hole"
+       ],
+       [
+        "Cross-section method",
+        "Integrate area slices A(x)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for a volume by disks in order",
+      "items": [
+       [
+        "Sketch the region and find the radius R(x)",
+        1
+       ],
+       [
+        "Square it and multiply by pi",
+        2
+       ],
+       [
+        "Integrate over the interval",
+        3
+       ],
+       [
+        "Evaluate the integral",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: v(t) = 4 - 2t. What is the total distance from t = 0 to t = 4?",
+      "a": [
+       "8"
+      ],
+      "hint": "v changes sign at t = 2. Add the two parts as positives.",
+      "why": "The first part gives 4 and the second part has size 4, so 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Find the area between y = x and y = x^3 from 0 to 1. Fraction or decimal.",
+      "a": [
+       "1/4",
+       "0.25"
+      ],
+      "hint": "Integrate (x - x^3).",
+      "why": "1/2 - 1/4 = 1/4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The base is the region under y = x on [0, 3]. Cross sections are squares perpendicular to the x-axis. What is the volume?",
+      "a": [
+       "9"
+      ],
+      "hint": "Each square has area x^2.",
+      "why": "The integral of x^2 from 0 to 3 is 9."
+     }
+    ]
+   },
+   {
+    "title": "Parametric, Polar, and Vector Functions",
+    "period": "Unit 9 (BC)",
+    "learn": [
+     {
+      "h": "Parametric curves",
+      "b": "A parametric curve has x = f(t) and y = g(t). The slope is dy/dx = (dy/dt)/(dx/dt). For x = t^2 and y = t^3, dy/dx = 3t^2/2t = 3t/2, which is 3 at t = 2."
+     },
+     {
+      "h": "Vector motion",
+      "b": "The velocity vector is <x'(t), y'(t)>. The speed is its length, sqrt(x'^2 + y'^2). If x = 3t and y = 4t, the speed is sqrt(9 + 16) = 5."
+     },
+     {
+      "h": "Polar coordinates",
+      "b": "A polar point (r, theta) has x = r cos(theta) and y = r sin(theta). The area inside a polar curve is (1/2) times the integral of r^2 d(theta). For the circle r = 2, the area is (1/2)(4)(2 pi) = 4 pi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "For x = t^2 and y = t^3, what is dy/dx at t = 2?",
+      "o": [
+       "6",
+       "3",
+       "12",
+       "2"
+      ],
+      "a": 1,
+      "why": "dy/dx = 3t/2, which is 3 at t = 2."
+     },
+     {
+      "t": "mc",
+      "q": "x = 3t and y = 4t. What is the speed?",
+      "o": [
+       "7",
+       "12",
+       "25",
+       "5"
+      ],
+      "a": 3,
+      "why": "sqrt(9 + 16) = 5."
+     },
+     {
+      "t": "mc",
+      "q": "What are the Cartesian coordinates of the polar point (2, 0)?",
+      "o": [
+       "(2, 0)",
+       "(0, 2)",
+       "(2, 2)",
+       "(0, 0)"
+      ],
+      "a": 0,
+      "why": "x = 2 cos 0 = 2 and y = 2 sin 0 = 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is the area of the full circle r = 2 using polar area?",
+      "o": [
+       "2 pi",
+       "8 pi",
+       "4 pi",
+       "pi"
+      ],
+      "a": 2,
+      "why": "(1/2) times the integral of 4 from 0 to 2 pi = 4 pi."
+     },
+     {
+      "t": "tf",
+      "q": "The area in polar form is (1/2) times the integral of r^2 d(theta).",
+      "a": true,
+      "why": "This is the standard polar area formula."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Parametric curve",
+        "x and y both depend on t"
+       ],
+       [
+        "Speed",
+        "Length of the velocity vector"
+       ],
+       [
+        "Polar point (r, theta)",
+        "Distance and angle"
+       ],
+       [
+        "dy/dx parametric",
+        "(dy/dt)/(dx/dt)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for dy/dx of a parametric curve in order",
+      "items": [
+       [
+        "Find dx/dt",
+        1
+       ],
+       [
+        "Find dy/dt",
+        2
+       ],
+       [
+        "Divide dy/dt by dx/dt",
+        3
+       ],
+       [
+        "Plug in the value of t",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: x = t^2 and y = t^3 - t. What is dy/dx at t = 1?",
+      "a": [
+       "1"
+      ],
+      "hint": "Divide (3t^2 - 1) by 2t.",
+      "why": "2/2 = 1."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: x = 3t^2 and y = 8t. What is the speed at t = 1?",
+      "a": [
+       "10"
+      ],
+      "hint": "x' = 6t and y' = 8.",
+      "why": "sqrt(36 + 64) = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the x-coordinate of the polar point (4, pi/3)?",
+      "a": [
+       "2"
+      ],
+      "hint": "x = r cos(theta).",
+      "why": "4 cos(pi/3) = 4(1/2) = 2."
+     }
+    ]
+   },
+   {
+    "title": "Infinite Sequences and Series",
+    "period": "Unit 10 (BC)",
+    "learn": [
+     {
+      "h": "Geometric and p-series",
+      "b": "A geometric series a + ar + ar^2 + ... adds up to a/(1 - r) if |r| < 1. So 3 + 1.5 + 0.75 + ... = 3/0.5 = 6. A p-series, the sum of 1/n^p, converges only if p > 1, so the harmonic series (p = 1) diverges."
+     },
+     {
+      "h": "Taylor and Maclaurin series",
+      "b": "A Maclaurin series is a Taylor series centered at 0. e^x = 1 + x + x^2/2! + x^3/3! + ... and sin x = x - x^3/3! + x^5/5! - .... A Taylor polynomial gives a good estimate near the center."
+     },
+     {
+      "h": "Ratio test",
+      "b": "Compute L = the limit of |a(n+1)/a(n)|. If L < 1 the series converges, and if L > 1 it diverges. For the sum of x^n/2^n, L = |x|/2, so it converges for |x| < 2 and the radius is 2."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 3 + 1.5 + 0.75 + ... ?",
+      "o": [
+       "4.5",
+       "6",
+       "9",
+       "It diverges"
+      ],
+      "a": 1,
+      "why": "3/(1 - 0.5) = 6."
+     },
+     {
+      "t": "mc",
+      "q": "What does the sum of 1/n^2 do?",
+      "o": [
+       "Diverges",
+       "Equals 1 exactly",
+       "Alternates",
+       "Converges"
+      ],
+      "a": 3,
+      "why": "It is a p-series with p = 2 > 1."
+     },
+     {
+      "t": "mc",
+      "q": "What is the coefficient of x^3 in the Maclaurin series of e^x?",
+      "o": [
+       "1/6",
+       "1/3",
+       "1",
+       "1/2"
+      ],
+      "a": 0,
+      "why": "x^3/3! has coefficient 1/6."
+     },
+     {
+      "t": "mc",
+      "q": "What is the radius of convergence of the sum of x^n/2^n?",
+      "o": [
+       "1/2",
+       "1",
+       "2",
+       "Infinity"
+      ],
+      "a": 2,
+      "why": "The ratio test gives |x|/2 < 1, so |x| < 2."
+     },
+     {
+      "t": "tf",
+      "q": "The harmonic series, the sum of 1/n, converges.",
+      "a": false,
+      "why": "It is a p-series with p = 1, which diverges."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Geometric series",
+        "Constant ratio between terms"
+       ],
+       [
+        "p-series",
+        "Sum of 1/n^p"
+       ],
+       [
+        "Maclaurin series",
+        "Taylor series centered at 0"
+       ],
+       [
+        "Ratio test",
+        "Compare consecutive terms"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the ratio test in order",
+      "items": [
+       [
+        "Write a(n) and a(n+1)",
+        1
+       ],
+       [
+        "Compute |a(n+1)/a(n)|",
+        2
+       ],
+       [
+        "Take the limit as n goes to infinity",
+        3
+       ],
+       [
+        "Compare the limit L to 1",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Find the sum of 8 + 4 + 2 + 1 + ... .",
+      "a": [
+       "16"
+      ],
+      "hint": "Use a/(1 - r) with a = 8 and r = 1/2.",
+      "why": "8/0.5 = 16."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the coefficient of x^2 in the Maclaurin series of e^(2x)?",
+      "a": [
+       "2"
+      ],
+      "hint": "Replace x by 2x in 1 + x + x^2/2.",
+      "why": "(2x)^2/2 = 2x^2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Use the degree 2 Maclaurin polynomial of e^x to estimate e^0.2.",
+      "a": [
+       "1.22"
+      ],
+      "hint": "1 + x + x^2/2 with x = 0.2.",
+      "why": "1 + 0.2 + 0.02 = 1.22."
+     }
+    ]
+   }
+  ]
+ }
+}

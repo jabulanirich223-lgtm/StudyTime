@@ -1,0 +1,6093 @@
+{
+ "hi-1": {
+  "name": "Hindi · Beginner",
+  "units": [
+   {
+    "title": "Greetings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "नमस्ते (namaste) means hello. अलविदा (alvidā) means goodbye. Both are polite and common."
+     },
+     {
+      "h": "Thanks and sorry",
+      "b": "धन्यवाद (dhanyavād) means thank you. शुक्रिया (shukriyā) is a friendly way to say thanks. माफ़ कीजिए (māf kījiye) means excuse me or sorry."
+     },
+     {
+      "h": "Names and yes or no",
+      "b": "हाँ (hāṃ) means yes and नहीं (nahīṃ) means no. Say मेरा नाम रवि है (merā nām Ravi hai) for My name is Ravi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does नमस्ते (namaste) mean?",
+      "o": [
+       "Goodbye",
+       "Sorry",
+       "Hello",
+       "Thank you"
+      ],
+      "a": 2,
+      "why": "नमस्ते (namaste) is the common Hindi hello."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'thank you' in Hindi?",
+      "o": [
+       "अलविदा (alvidā)",
+       "धन्यवाद (dhanyavād)",
+       "नहीं (nahīṃ)",
+       "नमस्ते (namaste)"
+      ],
+      "a": 1,
+      "why": "धन्यवाद (dhanyavād) means thank you."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'yes'?",
+      "o": [
+       "हाँ (hāṃ)",
+       "नहीं (nahīṃ)",
+       "अलविदा (alvidā)",
+       "माफ़ (māf)"
+      ],
+      "a": 0,
+      "why": "हाँ (hāṃ) means yes."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'My name is Ravi'?",
+      "o": [
+       "मेरा घर रवि है (merā ghar Ravi hai)",
+       "रवि को धन्यवाद (Ravi ko dhanyavād)",
+       "रवि नहीं है (Ravi nahīṃ hai)",
+       "मेरा नाम रवि है (merā nām Ravi hai)"
+      ],
+      "a": 3,
+      "why": "नाम (nām) means name."
+     },
+     {
+      "t": "tf",
+      "q": "नहीं (nahīṃ) means no.",
+      "a": true,
+      "why": "नहीं (nahīṃ) is the Hindi word for no."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "हाँ (hāṃ)",
+        "Yes"
+       ],
+       [
+        "नहीं (nahīṃ)",
+        "No"
+       ],
+       [
+        "अलविदा (alvidā)",
+        "Goodbye"
+       ],
+       [
+        "धन्यवाद (dhanyavād)",
+        "Thank you"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this short conversation in order",
+      "items": [
+       [
+        "नमस्ते (namaste)",
+        1
+       ],
+       [
+        "मेरा नाम रवि है (merā nām Ravi hai)",
+        2
+       ],
+       [
+        "आपसे मिलकर खुशी हुई (āpse milkar khushī huī)",
+        3
+       ],
+       [
+        "अलविदा (alvidā)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'thank you' (Devanagari or romanized).",
+      "a": [
+       "धन्यवाद",
+       "dhanyavad",
+       "dhanyavaad"
+      ],
+      "hint": "It starts with dh.",
+      "why": "धन्यवाद (dhanyavād) means thank you."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'goodbye'.",
+      "a": [
+       "अलविदा",
+       "alvida",
+       "alvidaa"
+      ],
+      "hint": "It starts with al.",
+      "why": "अलविदा (alvidā) means goodbye."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does नहीं (nahīṃ) mean in English?",
+      "a": [
+       "no"
+      ],
+      "hint": "It is the opposite of yes.",
+      "why": "नहीं (nahīṃ) means no."
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 5",
+      "b": "एक (ek) is 1, दो (do) is 2, तीन (tīn) is 3, चार (chār) is 4, and पाँच (pāṃch) is 5."
+     },
+     {
+      "h": "Numbers 6 to 10",
+      "b": "छह (chheh) is 6, सात (sāt) is 7, आठ (āṭh) is 8, नौ (nau) is 9, and दस (das) is 10."
+     },
+     {
+      "h": "Family words",
+      "b": "माँ (māṃ) is mother and पिता (pitā) is father. भाई (bhāī) is brother and बहन (bahan) is sister. परिवार (parivār) means family."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number is तीन (tīn)?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "तीन (tīn) is 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'five' in Hindi?",
+      "o": [
+       "चार (chār)",
+       "छह (chheh)",
+       "सात (sāt)",
+       "पाँच (pāṃch)"
+      ],
+      "a": 3,
+      "why": "पाँच (pāṃch) is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does माँ (māṃ) mean?",
+      "o": [
+       "Mother",
+       "Father",
+       "Sister",
+       "Brother"
+      ],
+      "a": 0,
+      "why": "माँ (māṃ) means mother."
+     },
+     {
+      "t": "mc",
+      "q": "What does बहन (bahan) mean?",
+      "o": [
+       "Brother",
+       "Sister",
+       "Family",
+       "Friend"
+      ],
+      "a": 1,
+      "why": "बहन (bahan) means sister."
+     },
+     {
+      "t": "tf",
+      "q": "दस (das) means ten.",
+      "a": true,
+      "why": "दस (das) is 10."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "भाई (bhāī)",
+        "Brother"
+       ],
+       [
+        "पिता (pitā)",
+        "Father"
+       ],
+       [
+        "परिवार (parivār)",
+        "Family"
+       ],
+       [
+        "माँ (māṃ)",
+        "Mother"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "एक (ek)",
+        1
+       ],
+       [
+        "तीन (tīn)",
+        2
+       ],
+       [
+        "पाँच (pāṃch)",
+        3
+       ],
+       [
+        "आठ (āṭh)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'five' (Devanagari or romanized).",
+      "a": [
+       "पाँच",
+       "पांच",
+       "paanch",
+       "panch",
+       "paach"
+      ],
+      "hint": "It starts with p.",
+      "why": "पाँच (pāṅch) is five."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'ten'.",
+      "a": [
+       "दस",
+       "das"
+      ],
+      "hint": "It is a short word starting with d.",
+      "why": "दस (das) is ten."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does भाई (bhāī) mean in English?",
+      "a": [
+       "brother",
+       "a brother"
+      ],
+      "hint": "A male family member.",
+      "why": "भाई (bhāī) means brother."
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Food words",
+      "b": "रोटी (roṭī) is flatbread and चावल (chāval) is rice. सेब (seb) is apple and फल (phal) is fruit."
+     },
+     {
+      "h": "Drinks and verbs",
+      "b": "पानी (pānī) is water, चाय (chāy) is tea, and दूध (dūdh) is milk. खाना (khānā) means to eat and पीना (pīnā) means to drink."
+     },
+     {
+      "h": "Wanting and tasting",
+      "b": "स्वादिष्ट (svādiṣṭ) means delicious. मुझे पानी चाहिए (mujhe pānī chāhiye) means I need water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does पानी (pānī) mean?",
+      "o": [
+       "Tea",
+       "Water",
+       "Milk",
+       "Rice"
+      ],
+      "a": 1,
+      "why": "पानी (pānī) means water."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I drink tea'?",
+      "o": [
+       "मैं चाय खाता हूँ (maiṃ chāy khātā hūṃ)",
+       "मैं रोटी पीता हूँ (maiṃ roṭī pītā hūṃ)",
+       "मैं पानी नहीं (maiṃ pānī nahīṃ)",
+       "मैं चाय पीता हूँ (maiṃ chāy pītā hūṃ)"
+      ],
+      "a": 3,
+      "why": "पीना (pīnā) is the verb for drinking."
+     },
+     {
+      "t": "mc",
+      "q": "What does स्वादिष्ट (svādiṣṭ) mean?",
+      "o": [
+       "Delicious",
+       "Hungry",
+       "Hot",
+       "Cold"
+      ],
+      "a": 0,
+      "why": "स्वादिष्ट (svādiṣṭ) means tasty or delicious."
+     },
+     {
+      "t": "mc",
+      "q": "Which food is सेब (seb)?",
+      "o": [
+       "Rice",
+       "Milk",
+       "Apple",
+       "Bread"
+      ],
+      "a": 2,
+      "why": "सेब (seb) means apple."
+     },
+     {
+      "t": "tf",
+      "q": "दूध (dūdh) means milk.",
+      "a": true,
+      "why": "दूध (dūdh) is the Hindi word for milk."
+     },
+     {
+      "t": "match",
+      "q": "Match each food word to its meaning",
+      "pairs": [
+       [
+        "चावल (chāval)",
+        "Rice"
+       ],
+       [
+        "रोटी (roṭī)",
+        "Flatbread"
+       ],
+       [
+        "चाय (chāy)",
+        "Tea"
+       ],
+       [
+        "पानी (pānī)",
+        "Water"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat rice every day",
+      "items": [
+       [
+        "मैं (maiṃ)",
+        1
+       ],
+       [
+        "रोज़ (roz)",
+        2
+       ],
+       [
+        "चावल (chāval)",
+        3
+       ],
+       [
+        "खाता हूँ (khātā hūṃ)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'water'.",
+      "a": [
+       "पानी",
+       "paani",
+       "pani"
+      ],
+      "hint": "It starts with p.",
+      "why": "पानी (pānī) means water."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'milk'.",
+      "a": [
+       "दूध",
+       "doodh",
+       "dudh"
+      ],
+      "hint": "It starts with d.",
+      "why": "दूध (dūdh) means milk."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does चाय (chāy) mean in English?",
+      "a": [
+       "tea",
+       "chai"
+      ],
+      "hint": "A hot drink.",
+      "why": "चाय (chāy) means tea."
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "To be",
+      "b": "मैं (maiṃ) is I and तुम (tum) is you. हूँ (hūṃ) is am and है (hai) is is. मैं छात्र हूँ (maiṃ chhātra hūṃ) means I am a student."
+     },
+     {
+      "h": "Questions",
+      "b": "क्या (kyā) at the start makes a yes or no question. It also means what. कहाँ (kahāṃ) means where."
+     },
+     {
+      "h": "Going and having",
+      "b": "जाना (jānā) means to go and आना (ānā) means to come. स्कूल (skūl) means school. मेरे पास एक बिल्ली है (mere pās ek billī hai) means I have a cat."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does क्या (kyā) mean at the start of a sentence?",
+      "o": [
+       "It makes a question",
+       "It means thank you",
+       "It makes it past tense",
+       "It means goodbye"
+      ],
+      "a": 0,
+      "why": "क्या (kyā) starts a yes or no question and also means what."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am a student'?",
+      "o": [
+       "मैं छात्र नहीं (maiṃ chhātra nahīṃ)",
+       "मैं जाता हूँ (maiṃ jātā hūṃ)",
+       "मैं छात्र हूँ (maiṃ chhātra hūṃ)",
+       "तुम छात्र है (tum chhātra hai)"
+      ],
+      "a": 2,
+      "why": "हूँ (hūṃ) goes with मैं (maiṃ) and means am."
+     },
+     {
+      "t": "mc",
+      "q": "What does कहाँ (kahāṃ) mean?",
+      "o": [
+       "What",
+       "Who",
+       "Why",
+       "Where"
+      ],
+      "a": 3,
+      "why": "कहाँ (kahāṃ) means where."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a cat'?",
+      "o": [
+       "मैं एक बिल्ली हूँ (maiṃ ek billī hūṃ)",
+       "मेरे पास एक बिल्ली है (mere pās ek billī hai)",
+       "मैं बिल्ली जाता हूँ (maiṃ billī jātā hūṃ)",
+       "बिल्ली कहाँ नहीं (billī kahāṃ nahīṃ)"
+      ],
+      "a": 1,
+      "why": "मेरे पास (mere pās) is the way to say I have."
+     },
+     {
+      "t": "tf",
+      "q": "है (hai) means 'is'.",
+      "a": true,
+      "why": "है (hai) is the present tense of to be for he, she, and it."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "मैं (maiṃ)",
+        "I"
+       ],
+       [
+        "तुम (tum)",
+        "You"
+       ],
+       [
+        "जाना (jānā)",
+        "To go"
+       ],
+       [
+        "आना (ānā)",
+        "To come"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I go to school every day",
+      "items": [
+       [
+        "मैं (maiṃ)",
+        1
+       ],
+       [
+        "रोज़ (roz)",
+        2
+       ],
+       [
+        "स्कूल (skūl)",
+        3
+       ],
+       [
+        "जाता हूँ (jātā hūṃ)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi verb meaning 'to go'.",
+      "a": [
+       "जाना",
+       "jaana",
+       "jana"
+      ],
+      "hint": "It ends in -ना (nā).",
+      "why": "जाना (jānā) means to go."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does क्या (kyā) mean in English?",
+      "a": [
+       "what"
+      ],
+      "hint": "It starts questions.",
+      "why": "क्या (kyā) means what."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the missing word: मैं छात्र ___ (I am a student).",
+      "a": [
+       "हूँ",
+       "हूं",
+       "hoon",
+       "hun",
+       "hum",
+       "hu",
+       "huun"
+      ],
+      "hint": "It goes with मैं (I).",
+      "why": "हूँ (hūṃ) is am, used with मैं."
+     }
+    ]
+   },
+   {
+    "title": "Question Words",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Who, what, where",
+      "b": "क्या (kyā) means what. कौन (kaun) means who. कहाँ (kahāṃ) means where. आप कौन हैं? (āp kaun haiṃ) means Who are you?"
+     },
+     {
+      "h": "When, why, how",
+      "b": "कब (kab) means when. क्यों (kyoṃ) means why. कैसे (kaise) means how. कितना (kitnā) means how much or how many."
+     },
+     {
+      "h": "Useful questions",
+      "b": "आपका नाम क्या है? (āpkā nām kyā hai) means What is your name? आप कैसे हैं? (āp kaise haiṃ) means How are you?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does कौन (kaun) mean?",
+      "o": [
+       "Who",
+       "What",
+       "Where",
+       "When"
+      ],
+      "a": 0,
+      "why": "कौन (kaun) means who."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'where' in Hindi?",
+      "o": [
+       "कब (kab)",
+       "कहाँ (kahāṃ)",
+       "क्यों (kyoṃ)",
+       "कैसे (kaise)"
+      ],
+      "a": 1,
+      "why": "कहाँ (kahāṃ) means where."
+     },
+     {
+      "t": "mc",
+      "q": "What does आप कैसे हैं? (āp kaise haiṃ) ask?",
+      "o": [
+       "What is your name?",
+       "Where are you?",
+       "How are you?",
+       "Who are you?"
+      ],
+      "a": 2,
+      "why": "कैसे (kaise) means how."
+     },
+     {
+      "t": "mc",
+      "q": "Which question means 'What is your name?'",
+      "o": [
+       "आपका घर कहाँ है? (āpkā ghar kahāṃ hai)",
+       "आप कौन हैं? (āp kaun haiṃ)",
+       "आप कैसे हैं? (āp kaise haiṃ)",
+       "आपका नाम क्या है? (āpkā nām kyā hai)"
+      ],
+      "a": 3,
+      "why": "नाम (nām) is name and क्या (kyā) is what."
+     },
+     {
+      "t": "tf",
+      "q": "कब (kab) means when.",
+      "a": true,
+      "why": "कब (kab) is the Hindi word for when."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to its meaning",
+      "pairs": [
+       [
+        "कौन (kaun)",
+        "Who"
+       ],
+       [
+        "कब (kab)",
+        "When"
+       ],
+       [
+        "क्यों (kyoṃ)",
+        "Why"
+       ],
+       [
+        "कितना (kitnā)",
+        "How much"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: What is your name?",
+      "items": [
+       [
+        "आपका (āpkā)",
+        1
+       ],
+       [
+        "नाम (nām)",
+        2
+       ],
+       [
+        "क्या (kyā)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'who' (Devanagari or romanized).",
+      "a": [
+       "कौन",
+       "kaun",
+       "kaon"
+      ],
+      "hint": "It starts with k.",
+      "why": "कौन (kaun) means who."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does कब (kab) mean in English?",
+      "a": [
+       "when"
+      ],
+      "hint": "It asks about time.",
+      "why": "कब (kab) means when."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the missing word: आप ___ हैं? (How are you?)",
+      "a": [
+       "कैसे",
+       "kaise",
+       "kaisey"
+      ],
+      "hint": "The word for how.",
+      "why": "कैसे (kaise) means how."
+     }
+    ]
+   },
+   {
+    "title": "Colors and Adjectives",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Colors",
+      "b": "लाल (lāl) is red. नीला (nīlā) is blue. हरा (harā) is green. पीला (pīlā) is yellow. काला (kālā) is black. सफ़ेद (safed) is white."
+     },
+     {
+      "h": "Size and quality",
+      "b": "बड़ा (baṛā) means big and छोटा (chhoṭā) means small. अच्छा (achchhā) means good and बुरा (burā) means bad. नया (nayā) is new and पुराना (purānā) is old."
+     },
+     {
+      "h": "Adjectives before nouns",
+      "b": "The adjective comes before the noun. बड़ा घर (baṛā ghar) is a big house. For a girl or woman, -ā changes to -ī: बड़ी लड़की (baṛī laṛkī). मुझे नीला पसंद है (mujhe nīlā pasand hai) means I like blue."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does लाल (lāl) mean?",
+      "o": [
+       "Red",
+       "Blue",
+       "Green",
+       "White"
+      ],
+      "a": 0,
+      "why": "लाल (lāl) means red."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'a big house'?",
+      "o": [
+       "छोटा घर (chhoṭā ghar)",
+       "बड़ा घर (baṛā ghar)",
+       "नया घर (nayā ghar)",
+       "बुरा घर (burā ghar)"
+      ],
+      "a": 1,
+      "why": "बड़ा (baṛā) means big."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'a big girl'?",
+      "o": [
+       "बड़ा लड़की (baṛā laṛkī)",
+       "छोटी लड़की (chhoṭī laṛkī)",
+       "बड़ी लड़की (baṛī laṛkī)",
+       "लड़की नीली (laṛkī nīlī)"
+      ],
+      "a": 2,
+      "why": "With a girl, बड़ा (baṛā) becomes बड़ी (baṛī)."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'white'?",
+      "o": [
+       "काला (kālā)",
+       "पीला (pīlā)",
+       "हरा (harā)",
+       "सफ़ेद (safed)"
+      ],
+      "a": 3,
+      "why": "सफ़ेद (safed) is white and काला (kālā) is black."
+     },
+     {
+      "t": "tf",
+      "q": "पुराना (purānā) means new.",
+      "a": false,
+      "why": "पुराना (purānā) means old. New is नया (nayā)."
+     },
+     {
+      "t": "match",
+      "q": "Match each color to its meaning",
+      "pairs": [
+       [
+        "नीला (nīlā)",
+        "Blue"
+       ],
+       [
+        "हरा (harā)",
+        "Green"
+       ],
+       [
+        "पीला (pīlā)",
+        "Yellow"
+       ],
+       [
+        "काला (kālā)",
+        "Black"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I like blue.",
+      "items": [
+       [
+        "मुझे (mujhe)",
+        1
+       ],
+       [
+        "नीला (nīlā)",
+        2
+       ],
+       [
+        "पसंद (pasand)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'red' (Devanagari or romanized).",
+      "a": [
+       "लाल",
+       "lal",
+       "laal"
+      ],
+      "hint": "It starts with l.",
+      "why": "लाल (lāl) means red."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does सफ़ेद (safed) mean in English?",
+      "a": [
+       "white"
+      ],
+      "hint": "The color of milk.",
+      "why": "सफ़ेद (safed) means white."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'big' (masculine).",
+      "a": [
+       "बड़ा",
+       "बडा",
+       "bada",
+       "baada",
+       "barha",
+       "bara"
+      ],
+      "hint": "It starts with b.",
+      "why": "बड़ा (baṛā) means big."
+     }
+    ]
+   },
+   {
+    "title": "Days, Months and Time",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Days of the week",
+      "b": "सोमवार (somvār) is Monday, मंगलवार (maṅgalvār) is Tuesday, बुधवार (budhvār) is Wednesday, गुरुवार (guruvār) is Thursday. शुक्रवार (shukravār) is Friday, शनिवार (shanivār) is Saturday, रविवार (ravivār) is Sunday."
+     },
+     {
+      "h": "Parts of the day",
+      "b": "सुबह (subah) is morning, दोपहर (dopahar) is afternoon, शाम (shām) is evening and रात (rāt) is night. आज रविवार है (āj ravivār hai) means Today is Sunday."
+     },
+     {
+      "h": "Telling time",
+      "b": "बजे (baje) means o'clock. तीन बजे (tīn baje) means at three o'clock. अभी क्या समय है? (abhī kyā samay hai) means What time is it now?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does सोमवार (somvār) mean?",
+      "o": [
+       "Monday",
+       "Sunday",
+       "Friday",
+       "Tuesday"
+      ],
+      "a": 0,
+      "why": "सोमवार (somvār) is Monday."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'Sunday'?",
+      "o": [
+       "शनिवार (shanivār)",
+       "रविवार (ravivār)",
+       "बुधवार (budhvār)",
+       "मंगलवार (maṅgalvār)"
+      ],
+      "a": 1,
+      "why": "रविवार (ravivār) is Sunday."
+     },
+     {
+      "t": "mc",
+      "q": "What does शाम (shām) mean?",
+      "o": [
+       "Morning",
+       "Night",
+       "Evening",
+       "Afternoon"
+      ],
+      "a": 2,
+      "why": "शाम (shām) is evening."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'at five o'clock'?",
+      "o": [
+       "पाँच दिन (pāṅch din)",
+       "पाँच सुबह (pāṅch subah)",
+       "पाँच रात (pāṅch rāt)",
+       "पाँच बजे (pāṅch baje)"
+      ],
+      "a": 3,
+      "why": "बजे (baje) means o'clock."
+     },
+     {
+      "t": "tf",
+      "q": "रात (rāt) means morning.",
+      "a": false,
+      "why": "रात (rāt) means night. Morning is सुबह (subah)."
+     },
+     {
+      "t": "match",
+      "q": "Match each Hindi word to its meaning",
+      "pairs": [
+       [
+        "सुबह (subah)",
+        "Morning"
+       ],
+       [
+        "दोपहर (dopahar)",
+        "Afternoon"
+       ],
+       [
+        "शाम (shām)",
+        "Evening"
+       ],
+       [
+        "रात (rāt)",
+        "Night"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these days in order, starting with Monday",
+      "items": [
+       [
+        "सोमवार (somvār)",
+        1
+       ],
+       [
+        "मंगलवार (maṅgalvār)",
+        2
+       ],
+       [
+        "बुधवार (budhvār)",
+        3
+       ],
+       [
+        "गुरुवार (guruvār)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'Monday' (Devanagari or romanized).",
+      "a": [
+       "सोमवार",
+       "somvar",
+       "somvaar",
+       "somwar",
+       "somavar"
+      ],
+      "hint": "It starts with som.",
+      "why": "सोमवार (somvār) is Monday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does रात (rāt) mean in English?",
+      "a": [
+       "night"
+      ],
+      "hint": "It is dark.",
+      "why": "रात (rāt) means night."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'morning'.",
+      "a": [
+       "सुबह",
+       "subah",
+       "subaha",
+       "subha"
+      ],
+      "hint": "It starts with su.",
+      "why": "सुबह (subah) means morning."
+     }
+    ]
+   },
+   {
+    "title": "Home and Objects",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Rooms and furniture",
+      "b": "घर (ghar) is house and कमरा (kamrā) is room. रसोई (rasoī) is kitchen. मेज़ (mez) is table, कुर्सी (kursī) is chair and बिस्तर (bistar) is bed."
+     },
+     {
+      "h": "Doors and things",
+      "b": "दरवाज़ा (darvāzā) is door and खिड़की (khiṛkī) is window. किताब (kitāb) is book."
+     },
+     {
+      "h": "In and my",
+      "b": "में (meṃ) means in. कमरे में एक मेज़ है (kamre meṃ ek mez hai) means There is a table in the room. मेरा (merā) means my and तुम्हारा (tumhārā) means your."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does रसोई (rasoī) mean?",
+      "o": [
+       "Kitchen",
+       "Bedroom",
+       "Window",
+       "Door"
+      ],
+      "a": 0,
+      "why": "रसोई (rasoī) is the kitchen."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'chair'?",
+      "o": [
+       "मेज़ (mez)",
+       "कुर्सी (kursī)",
+       "बिस्तर (bistar)",
+       "किताब (kitāb)"
+      ],
+      "a": 1,
+      "why": "कुर्सी (kursī) is chair."
+     },
+     {
+      "t": "mc",
+      "q": "What does में (meṃ) mean?",
+      "o": [
+       "On",
+       "With",
+       "In",
+       "From"
+      ],
+      "a": 2,
+      "why": "में (meṃ) means in."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'my house'?",
+      "o": [
+       "तुम्हारा घर (tumhārā ghar)",
+       "मेरी किताब (merī kitāb)",
+       "बड़ा घर (baṛā ghar)",
+       "मेरा घर (merā ghar)"
+      ],
+      "a": 3,
+      "why": "मेरा (merā) means my."
+     },
+     {
+      "t": "tf",
+      "q": "खिड़की (khiṛkī) means window.",
+      "a": true,
+      "why": "खिड़की (khiṛkī) is a window."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "दरवाज़ा (darvāzā)",
+        "Door"
+       ],
+       [
+        "मेज़ (mez)",
+        "Table"
+       ],
+       [
+        "बिस्तर (bistar)",
+        "Bed"
+       ],
+       [
+        "किताब (kitāb)",
+        "Book"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: This is my house.",
+      "items": [
+       [
+        "यह (yah)",
+        1
+       ],
+       [
+        "मेरा (merā)",
+        2
+       ],
+       [
+        "घर (ghar)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'table' (Devanagari or romanized).",
+      "a": [
+       "मेज़",
+       "मेज",
+       "mez",
+       "mej",
+       "maiz"
+      ],
+      "hint": "It is a short word starting with m.",
+      "why": "मेज़ (mez) means table."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does दरवाज़ा (darvāzā) mean in English?",
+      "a": [
+       "door",
+       "the door",
+       "a door"
+      ],
+      "hint": "You open it to enter.",
+      "why": "दरवाज़ा (darvāzā) means door."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'kitchen'.",
+      "a": [
+       "रसोई",
+       "rasoi",
+       "rasoee",
+       "rasoi ghar",
+       "रसोईघर"
+      ],
+      "hint": "It starts with ra.",
+      "why": "रसोई (rasoī) means kitchen."
+     }
+    ]
+   },
+   {
+    "title": "Daily Routine",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "The habit verb",
+      "b": "Add -ता (-tā) to the verb stem, then हूँ (hūṃ). मैं जाता हूँ (maiṃ jātā hūṃ) means I go. A woman says -ती: मैं जाती हूँ (maiṃ jātī hūṃ)."
+     },
+     {
+      "h": "Daily verbs",
+      "b": "उठना (uṭhnā) is to get up, नहाना (nahānā) is to bathe, पढ़ना (paṛhnā) is to read or study, सोना (sonā) is to sleep. मैं सोता हूँ (maiṃ sotā hūṃ) means I sleep."
+     },
+     {
+      "h": "How often",
+      "b": "रोज़ (roz) means every day. हमेशा (hamesha) means always. कभी-कभी (kabhī-kabhī) means sometimes. मैं रोज़ स्कूल जाता हूँ (maiṃ roz skūl jātā hūṃ) means I go to school every day."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does रोज़ (roz) mean?",
+      "o": [
+       "Every day",
+       "Never",
+       "Yesterday",
+       "Tonight"
+      ],
+      "a": 0,
+      "why": "रोज़ (roz) means every day."
+     },
+     {
+      "t": "mc",
+      "q": "How does a man say 'I sleep'?",
+      "o": [
+       "मैं सोती हूँ (maiṃ sotī hūṃ)",
+       "मैं सोता हूँ (maiṃ sotā hūṃ)",
+       "मैं सोया (maiṃ soyā)",
+       "मैं सोना (maiṃ sonā)"
+      ],
+      "a": 1,
+      "why": "A man adds -ता (-tā) to the stem."
+     },
+     {
+      "t": "mc",
+      "q": "How does a woman say 'I read'?",
+      "o": [
+       "मैं पढ़ता हूँ (maiṃ paṛhtā hūṃ)",
+       "मैं पढ़ा (maiṃ paṛhā)",
+       "मैं पढ़ती हूँ (maiṃ paṛhtī hūṃ)",
+       "मैं पढ़ना (maiṃ paṛhnā)"
+      ],
+      "a": 2,
+      "why": "A woman uses -ती (-tī)."
+     },
+     {
+      "t": "mc",
+      "q": "What does हमेशा (hamesha) mean?",
+      "o": [
+       "Sometimes",
+       "Never",
+       "Often",
+       "Always"
+      ],
+      "a": 3,
+      "why": "हमेशा (hamesha) means always."
+     },
+     {
+      "t": "tf",
+      "q": "मैं रोज़ स्कूल जाता हूँ means I go to school every day.",
+      "a": true,
+      "why": "रोज़ (roz) is every day and जाता हूँ (jātā hūṃ) is I go."
+     },
+     {
+      "t": "match",
+      "q": "Match each Hindi verb to its meaning",
+      "pairs": [
+       [
+        "उठना (uṭhnā)",
+        "To get up"
+       ],
+       [
+        "नहाना (nahānā)",
+        "To bathe"
+       ],
+       [
+        "पढ़ना (paṛhnā)",
+        "To read"
+       ],
+       [
+        "सोना (sonā)",
+        "To sleep"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the day in order",
+      "items": [
+       [
+        "मैं उठता हूँ (maiṃ uṭhtā hūṃ)",
+        1
+       ],
+       [
+        "मैं नहाता हूँ (maiṃ nahātā hūṃ)",
+        2
+       ],
+       [
+        "मैं स्कूल जाता हूँ (maiṃ skūl jātā hūṃ)",
+        3
+       ],
+       [
+        "मैं सोता हूँ (maiṃ sotā hūṃ)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'every day' (Devanagari or romanized).",
+      "a": [
+       "रोज़",
+       "रोज",
+       "roz",
+       "roj",
+       "rozz"
+      ],
+      "hint": "A short word starting with r.",
+      "why": "रोज़ (roz) means every day."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the missing word: मैं रोज़ स्कूल ___ हूँ (I go to school every day, man).",
+      "a": [
+       "जाता",
+       "jaata",
+       "jata",
+       "jaataa"
+      ],
+      "hint": "जाना (jānā) with -ता.",
+      "why": "जाता (jātā) is the habit form of go for a man."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi verb meaning 'to sleep'.",
+      "a": [
+       "सोना",
+       "sona",
+       "sonaa"
+      ],
+      "hint": "It ends in -ना (nā).",
+      "why": "सोना (sonā) means to sleep."
+     }
+    ]
+   },
+   {
+    "title": "Weather and Clothes",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Weather words",
+      "b": "मौसम (mausam) is weather. बारिश (bārish) is rain, धूप (dhūp) is sunshine, हवा (havā) is wind and बर्फ़ (barf) is snow. गरमी (garmī) is heat and सर्दी (sardī) is cold."
+     },
+     {
+      "h": "Talking about weather",
+      "b": "आज मौसम अच्छा है (āj mausam achchhā hai) means Today the weather is good. बारिश हो रही है (bārish ho rahī hai) means It is raining."
+     },
+     {
+      "h": "Clothes",
+      "b": "कपड़े (kapṛe) means clothes. कमीज़ (kamīz) is shirt, जूते (jūte) are shoes and टोपी (ṭopī) is hat. मैं टोपी पहनता हूँ (maiṃ ṭopī pahantā hūṃ) means I wear a hat."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does बारिश (bārish) mean?",
+      "o": [
+       "Rain",
+       "Snow",
+       "Wind",
+       "Sunshine"
+      ],
+      "a": 0,
+      "why": "बारिश (bārish) is rain."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'weather'?",
+      "o": [
+       "कपड़े (kapṛe)",
+       "मौसम (mausam)",
+       "हवा (havā)",
+       "धूप (dhūp)"
+      ],
+      "a": 1,
+      "why": "मौसम (mausam) means weather."
+     },
+     {
+      "t": "mc",
+      "q": "What does जूते (jūte) mean?",
+      "o": [
+       "Shirt",
+       "Hat",
+       "Shoes",
+       "Clothes"
+      ],
+      "a": 2,
+      "why": "जूते (jūte) means shoes."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'It is raining'?",
+      "o": [
+       "धूप निकली है (dhūp nikalī hai)",
+       "मौसम अच्छा है (mausam achchhā hai)",
+       "बर्फ़ गिरती है (barf girtī hai)",
+       "बारिश हो रही है (bārish ho rahī hai)"
+      ],
+      "a": 3,
+      "why": "बारिश (bārish) is rain."
+     },
+     {
+      "t": "tf",
+      "q": "धूप (dhūp) means snow.",
+      "a": false,
+      "why": "धूप (dhūp) is sunshine. Snow is बर्फ़ (barf)."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "हवा (havā)",
+        "Wind"
+       ],
+       [
+        "बर्फ़ (barf)",
+        "Snow"
+       ],
+       [
+        "टोपी (ṭopī)",
+        "Hat"
+       ],
+       [
+        "कमीज़ (kamīz)",
+        "Shirt"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Today the weather is good.",
+      "items": [
+       [
+        "आज (āj)",
+        1
+       ],
+       [
+        "मौसम (mausam)",
+        2
+       ],
+       [
+        "अच्छा (achchhā)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'rain' (Devanagari or romanized).",
+      "a": [
+       "बारिश",
+       "barish",
+       "baarish",
+       "baarisha"
+      ],
+      "hint": "It starts with b.",
+      "why": "बारिश (bārish) means rain."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does धूप (dhūp) mean in English?",
+      "a": [
+       "sunshine",
+       "sun",
+       "sunlight",
+       "sunny"
+      ],
+      "hint": "Think of a sunny day.",
+      "why": "धूप (dhūp) means sunshine."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'shoes'.",
+      "a": [
+       "जूते",
+       "jute",
+       "joote",
+       "juute",
+       "जूता",
+       "juta",
+       "jootaa"
+      ],
+      "hint": "It starts with j.",
+      "why": "जूते (jūte) means shoes."
+     }
+    ]
+   }
+  ]
+ },
+ "hi-2": {
+  "name": "Hindi · Intermediate",
+  "units": [
+   {
+    "title": "Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Simple past",
+      "b": "गया (gayā) means went and खाया (khāyā) means ate. मैं स्कूल गया (maiṃ skūl gayā) means I went to school. था (thā) means was."
+     },
+     {
+      "h": "Past negative",
+      "b": "Put नहीं (nahīṃ) before the past verb. मैं नहीं गया (maiṃ nahīṃ gayā) means I did not go."
+     },
+     {
+      "h": "Time words",
+      "b": "आज (āj) means today and अभी (abhī) means now. पिछले हफ़्ते (pichhle hafte) means last week. कल (kal) means both yesterday and tomorrow, so the verb tells you which one."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I ate food'?",
+      "o": [
+       "मैं खाना जाऊँगा (maiṃ khānā jāūṅgā)",
+       "मैं खाना नहीं हूँ (maiṃ khānā nahīṃ hūṃ)",
+       "मैंने खाना खाया (maiṃne khānā khāyā)",
+       "मैं खाना पीता हूँ (maiṃ khānā pītā hūṃ)"
+      ],
+      "a": 2,
+      "why": "खाया (khāyā) is the past of eat."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I went to school'?",
+      "o": [
+       "मैं स्कूल जाऊँगा (maiṃ skūl jāūṅgā)",
+       "मैं स्कूल गया (maiṃ skūl gayā)",
+       "मैं स्कूल खाया (maiṃ skūl khāyā)",
+       "मैं स्कूल कहाँ (maiṃ skūl kahāṃ)"
+      ],
+      "a": 1,
+      "why": "गया (gayā) means went."
+     },
+     {
+      "t": "mc",
+      "q": "What does था (thā) mean?",
+      "o": [
+       "Was",
+       "Will be",
+       "Is",
+       "Are"
+      ],
+      "a": 0,
+      "why": "था (thā) is the past of to be."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not go'?",
+      "o": [
+       "मैं जाता हूँ (maiṃ jātā hūṃ)",
+       "मैं गया हूँ (maiṃ gayā hūṃ)",
+       "मैं स्कूल है (maiṃ skūl hai)",
+       "मैं नहीं गया (maiṃ nahīṃ gayā)"
+      ],
+      "a": 3,
+      "why": "नहीं (nahīṃ) before the past verb makes it negative."
+     },
+     {
+      "t": "tf",
+      "q": "कल (kal) can mean both 'yesterday' and 'tomorrow'.",
+      "a": true,
+      "why": "Hindi uses the same word कल (kal) for both, and the verb tense shows which."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "आज (āj)",
+        "Today"
+       ],
+       [
+        "पिछले हफ़्ते (pichhle hafte)",
+        "Last week"
+       ],
+       [
+        "अगले हफ़्ते (agle hafte)",
+        "Next week"
+       ],
+       [
+        "अभी (abhī)",
+        "Now"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these time words in order from past to future",
+      "items": [
+       [
+        "पिछले हफ़्ते (pichhle hafte)",
+        1
+       ],
+       [
+        "आज (āj)",
+        2
+       ],
+       [
+        "अगले हफ़्ते (agle hafte)",
+        3
+       ],
+       [
+        "अगले महीने (agle mahīne)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'went' (masculine, Devanagari or romanized).",
+      "a": [
+       "गया",
+       "gaya",
+       "gayaa"
+      ],
+      "hint": "It starts with g.",
+      "why": "गया (gayā) means went."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'ate' (masculine).",
+      "a": [
+       "खाया",
+       "khaya",
+       "khaaya",
+       "khayaa"
+      ],
+      "hint": "It is the past of खाना (khānā).",
+      "why": "खाया (khāyā) means ate."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'today'.",
+      "a": [
+       "आज",
+       "aaj",
+       "aj"
+      ],
+      "hint": "A short word starting with ā.",
+      "why": "आज (āj) means today."
+     }
+    ]
+   },
+   {
+    "title": "Future Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Future endings",
+      "b": "Add -ūṅgā, -oge, -egā to the verb stem. मैं जाऊँगा (maiṃ jāūṅgā) means I will go. A woman says जाऊँगी (jāūṅgī). तुम जाओगे (tum jāoge) is you will go and वह जाएगा (vah jāegā) is he will go."
+     },
+     {
+      "h": "No and time words",
+      "b": "Put नहीं (nahīṃ) before the verb: मैं नहीं जाऊँगा (maiṃ nahīṃ jāūṅgā) means I will not go. कल (kal) means tomorrow here. अगले हफ़्ते (agle hafte) means next week."
+     },
+     {
+      "h": "Making plans",
+      "b": "मैं कल फ़िल्म देखूँगा (maiṃ kal film dekhūṅgā) means I will watch a film tomorrow. हम खाना खाएँगे (ham khānā khāeṅge) means we will eat food."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How does a man say 'I will go'?",
+      "o": [
+       "मैं जाऊँगा (maiṃ jāūṅgā)",
+       "मैं गया (maiṃ gayā)",
+       "मैं जाता हूँ (maiṃ jātā hūṃ)",
+       "मैं जाओगे (maiṃ jāoge)"
+      ],
+      "a": 0,
+      "why": "मैं जाऊँगा (maiṃ jāūṅgā) is the future."
+     },
+     {
+      "t": "mc",
+      "q": "How does a woman say 'I will go'?",
+      "o": [
+       "मैं जाऊँगा (maiṃ jāūṅgā)",
+       "मैं जाऊँगी (maiṃ jāūṅgī)",
+       "मैं गई (maiṃ gaī)",
+       "मैं जाती हूँ (maiṃ jātī hūṃ)"
+      ],
+      "a": 1,
+      "why": "A woman uses -ī at the end."
+     },
+     {
+      "t": "mc",
+      "q": "What does अगले हफ़्ते (agle hafte) mean?",
+      "o": [
+       "Last week",
+       "This week",
+       "Next week",
+       "Every week"
+      ],
+      "a": 2,
+      "why": "अगले (agle) means next."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'I will not go'?",
+      "o": [
+       "मैं नहीं गया (maiṃ nahīṃ gayā)",
+       "मैं जाऊँगा नहीं गया (maiṃ jāūṅgā nahīṃ gayā)",
+       "मैं जा रहा हूँ (maiṃ jā rahā hūṃ)",
+       "मैं नहीं जाऊँगा (maiṃ nahīṃ jāūṅgā)"
+      ],
+      "a": 3,
+      "why": "नहीं (nahīṃ) goes before the future verb."
+     },
+     {
+      "t": "tf",
+      "q": "तुम जाओगे (tum jāoge) means you will go.",
+      "a": true,
+      "why": "-oge is the future ending for तुम (tum)."
+     },
+     {
+      "t": "match",
+      "q": "Match each Hindi phrase to its meaning",
+      "pairs": [
+       [
+        "मैं जाऊँगा (maiṃ jāūṅgā)",
+        "I will go"
+       ],
+       [
+        "वह जाएगा (vah jāegā)",
+        "He will go"
+       ],
+       [
+        "तुम जाओगे (tum jāoge)",
+        "You will go"
+       ],
+       [
+        "हम जाएँगे (ham jāeṅge)",
+        "We will go"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I will not go to school.",
+      "items": [
+       [
+        "मैं (maiṃ)",
+        1
+       ],
+       [
+        "स्कूल (skūl)",
+        2
+       ],
+       [
+        "नहीं (nahīṃ)",
+        3
+       ],
+       [
+        "जाऊँगा (jāūṅgā)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'will go' (I, man; Devanagari or romanized).",
+      "a": [
+       "जाऊँगा",
+       "जाऊंगा",
+       "jaunga",
+       "jaaunga",
+       "jaoonga",
+       "jaoongaa"
+      ],
+      "hint": "Start from जाना (jānā).",
+      "why": "जाऊँगा (jāūṅgā) is I will go."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'will eat' (I, man).",
+      "a": [
+       "खाऊँगा",
+       "खाऊंगा",
+       "khaunga",
+       "khaaunga",
+       "khaoonga"
+      ],
+      "hint": "Start from खाना (khānā).",
+      "why": "खाऊँगा (khāūṅgā) is I will eat."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi for 'next week'.",
+      "a": [
+       "अगले हफ़्ते",
+       "अगले हफ्ते",
+       "agle hafte",
+       "agle haphte",
+       "agley hafte"
+      ],
+      "hint": "अगले means next.",
+      "why": "अगले हफ़्ते (agle hafte) is next week."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Asking where",
+      "b": "कहाँ (kahāṃ) means where. बैंक कहाँ है (baiṅk kahāṃ hai) means Where is the bank?"
+     },
+     {
+      "h": "Directions",
+      "b": "दाएँ (dāeṃ) is right and बाएँ (bāeṃ) is left. सीधे (sīdhe) means straight. मुड़िए (muṛiye) means please turn."
+     },
+     {
+      "h": "Places and distance",
+      "b": "स्टेशन (sṭeshan) is station, अस्पताल (aspatāl) is hospital, and बैंक (baiṅk) is bank. पास (pās) means near and दूर (dūr) means far."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does बैंक कहाँ है (baiṅk kahāṃ hai) mean?",
+      "o": [
+       "The bank is big",
+       "I go to the bank",
+       "I like the bank",
+       "Where is the bank?"
+      ],
+      "a": 3,
+      "why": "कहाँ (kahāṃ) means where."
+     },
+     {
+      "t": "mc",
+      "q": "What does दाएँ (dāeṃ) mean?",
+      "o": [
+       "Left",
+       "Right",
+       "Straight",
+       "Back"
+      ],
+      "a": 1,
+      "why": "दाएँ (dāeṃ) means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does सीधे (sīdhe) mean?",
+      "o": [
+       "Turn",
+       "Stop",
+       "Straight",
+       "Far"
+      ],
+      "a": 2,
+      "why": "सीधे (sīdhe) means straight."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'turn left'?",
+      "o": [
+       "बाएँ मुड़िए (bāeṃ muṛiye)",
+       "दाएँ मुड़िए (dāeṃ muṛiye)",
+       "सीधे जाइए (sīdhe jāiye)",
+       "बाएँ कहाँ है (bāeṃ kahāṃ hai)"
+      ],
+      "a": 0,
+      "why": "बाएँ (bāeṃ) is left and मुड़िए (muṛiye) is turn."
+     },
+     {
+      "t": "tf",
+      "q": "दूर (dūr) means far.",
+      "a": true,
+      "why": "दूर (dūr) means far away."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "अस्पताल (aspatāl)",
+        "Hospital"
+       ],
+       [
+        "स्टेशन (sṭeshan)",
+        "Station"
+       ],
+       [
+        "बैंक (baiṅk)",
+        "Bank"
+       ],
+       [
+        "स्कूल (skūl)",
+        "School"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, where is the hospital?",
+      "items": [
+       [
+        "माफ़ कीजिए (māf kījiye)",
+        1
+       ],
+       [
+        "अस्पताल (aspatāl)",
+        2
+       ],
+       [
+        "कहाँ (kahāṃ)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'where'.",
+      "a": [
+       "कहाँ",
+       "कहां",
+       "kahan",
+       "kahaan",
+       "kaha"
+      ],
+      "hint": "It starts with k.",
+      "why": "कहाँ (kahāṃ) means where."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'far'.",
+      "a": [
+       "दूर",
+       "door",
+       "dur",
+       "duur"
+      ],
+      "hint": "It starts with d.",
+      "why": "दूर (dūr) means far."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'near'.",
+      "a": [
+       "पास",
+       "paas",
+       "pas",
+       "nazdeek",
+       "करीब"
+      ],
+      "hint": "A short word starting with p.",
+      "why": "पास (pās) means near."
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Prices",
+      "b": "कितने का है (kitne kā hai) means How much is it? महँगा (mahaṅgā) means expensive and सस्ता (sastā) means cheap."
+     },
+     {
+      "h": "Travel words",
+      "b": "टिकट (ṭikaṭ) is ticket, होटल (hoṭal) is hotel, and पासपोर्ट (pāsporṭ) is passport. ट्रेन (ṭren) is train and यात्रा (yātrā) means journey."
+     },
+     {
+      "h": "Needing things",
+      "b": "Say मुझे ... चाहिए (mujhe ... chāhiye) for I need or want. मुझे एक टिकट चाहिए (mujhe ek ṭikaṭ chāhiye) means I need a ticket."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does कितने का है (kitne kā hai) mean?",
+      "o": [
+       "Where is it?",
+       "How much is it?",
+       "What is it?",
+       "Who is it?"
+      ],
+      "a": 1,
+      "why": "कितने का (kitne kā) asks the price."
+     },
+     {
+      "t": "mc",
+      "q": "What does महँगा (mahaṅgā) mean?",
+      "o": [
+       "Cheap",
+       "Free",
+       "Small",
+       "Expensive"
+      ],
+      "a": 3,
+      "why": "महँगा (mahaṅgā) means expensive."
+     },
+     {
+      "t": "mc",
+      "q": "What is पासपोर्ट (pāsporṭ)?",
+      "o": [
+       "Ticket",
+       "Hotel",
+       "Passport",
+       "Train"
+      ],
+      "a": 2,
+      "why": "पासपोर्ट (pāsporṭ) means passport."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I need a ticket'?",
+      "o": [
+       "मुझे एक टिकट चाहिए (mujhe ek ṭikaṭ chāhiye)",
+       "मैं एक टिकट खाता हूँ (maiṃ ek ṭikaṭ khātā hūṃ)",
+       "टिकट कहाँ नहीं (ṭikaṭ kahāṃ nahīṃ)",
+       "मैं टिकट गया (maiṃ ṭikaṭ gayā)"
+      ],
+      "a": 0,
+      "why": "मुझे ... चाहिए (mujhe ... chāhiye) means I need."
+     },
+     {
+      "t": "tf",
+      "q": "सस्ता (sastā) means expensive.",
+      "a": false,
+      "why": "सस्ता (sastā) means cheap."
+     },
+     {
+      "t": "match",
+      "q": "Match each travel word to its meaning",
+      "pairs": [
+       [
+        "होटल (hoṭal)",
+        "Hotel"
+       ],
+       [
+        "ट्रेन (ṭren)",
+        "Train"
+       ],
+       [
+        "टिकट (ṭikaṭ)",
+        "Ticket"
+       ],
+       [
+        "यात्रा (yātrā)",
+        "Journey"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: How much is this ticket?",
+      "items": [
+       [
+        "यह (yah)",
+        1
+       ],
+       [
+        "टिकट (ṭikaṭ)",
+        2
+       ],
+       [
+        "कितने का (kitne kā)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: fill in the missing word: यह ___ का है? (How much is this?)",
+      "a": [
+       "कितने",
+       "kitne",
+       "kitney"
+      ],
+      "hint": "It means how much.",
+      "why": "कितने (kitne) asks how much."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the missing word: मुझे पानी ___ (I need water).",
+      "a": [
+       "चाहिए",
+       "chahiye",
+       "chaahiye",
+       "chahiy"
+      ],
+      "hint": "The word for need or want.",
+      "why": "चाहिए (chāhiye) means need."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'ticket'.",
+      "a": [
+       "टिकट",
+       "tikat",
+       "ticket",
+       "tikit"
+      ],
+      "hint": "It sounds like the English word.",
+      "why": "टिकट (ṭikaṭ) means ticket."
+     }
+    ]
+   },
+   {
+    "title": "Health and Body",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Body words",
+      "b": "सिर (sir) is head, आँख (āṅkh) is eye, कान (kān) is ear, नाक (nāk) is nose and मुँह (muṅh) is mouth. हाथ (hāth) is hand, पैर (pair) is foot and पेट (peṭ) is stomach."
+     },
+     {
+      "h": "Pain and illness",
+      "b": "दर्द (dard) means pain. बुखार (bukhār) means fever. मेरे सिर में दर्द है (mere sir meṃ dard hai) means I have a headache. मुझे बुखार है (mujhe bukhār hai) means I have a fever."
+     },
+     {
+      "h": "At the doctor",
+      "b": "डॉक्टर (ḍākṭar) is doctor, दवा (davā) is medicine and बीमार (bīmār) is sick. मुझे डॉक्टर के पास जाना है (mujhe ḍākṭar ke pās jānā hai) means I need to go to the doctor."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does बुखार (bukhār) mean?",
+      "o": [
+       "Fever",
+       "Medicine",
+       "Stomach",
+       "Pain"
+      ],
+      "a": 0,
+      "why": "बुखार (bukhār) is fever."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a headache'?",
+      "o": [
+       "मुझे बुखार है (mujhe bukhār hai)",
+       "मेरे सिर में दर्द है (mere sir meṃ dard hai)",
+       "मेरे पेट में दर्द है (mere peṭ meṃ dard hai)",
+       "मैं डॉक्टर हूँ (maiṃ ḍākṭar hūṃ)"
+      ],
+      "a": 1,
+      "why": "सिर (sir) is head and दर्द (dard) is pain."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'stomach'?",
+      "o": [
+       "पैर (pair)",
+       "हाथ (hāth)",
+       "पेट (peṭ)",
+       "कान (kān)"
+      ],
+      "a": 2,
+      "why": "पेट (peṭ) means stomach."
+     },
+     {
+      "t": "mc",
+      "q": "What does दवा (davā) mean?",
+      "o": [
+       "Doctor",
+       "Sick",
+       "Hospital",
+       "Medicine"
+      ],
+      "a": 3,
+      "why": "दवा (davā) is medicine."
+     },
+     {
+      "t": "tf",
+      "q": "आँख (āṅkh) means ear.",
+      "a": false,
+      "why": "आँख (āṅkh) means eye. Ear is कान (kān)."
+     },
+     {
+      "t": "match",
+      "q": "Match each body word to its meaning",
+      "pairs": [
+       [
+        "सिर (sir)",
+        "Head"
+       ],
+       [
+        "हाथ (hāth)",
+        "Hand"
+       ],
+       [
+        "नाक (nāk)",
+        "Nose"
+       ],
+       [
+        "दाँत (dāṅt)",
+        "Tooth"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I have a stomach ache.",
+      "items": [
+       [
+        "मेरे (mere)",
+        1
+       ],
+       [
+        "पेट में (peṭ meṃ)",
+        2
+       ],
+       [
+        "दर्द (dard)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'head' (Devanagari or romanized).",
+      "a": [
+       "सिर",
+       "sir",
+       "sar"
+      ],
+      "hint": "A short word starting with s.",
+      "why": "सिर (sir) means head."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'fever'.",
+      "a": [
+       "बुखार",
+       "bukhar",
+       "bukhaar"
+      ],
+      "hint": "It starts with bu.",
+      "why": "बुखार (bukhār) means fever."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does दवा (davā) mean in English?",
+      "a": [
+       "medicine",
+       "medication",
+       "drug",
+       "a medicine"
+      ],
+      "hint": "You take it when you are sick.",
+      "why": "दवा (davā) means medicine."
+     }
+    ]
+   },
+   {
+    "title": "Work and Jobs",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Jobs",
+      "b": "डॉक्टर (ḍākṭar) is doctor, शिक्षक (shikṣak) is teacher and किसान (kisān) is farmer. इंजीनियर (injīniyar) is engineer and दुकानदार (dukāndār) is shopkeeper."
+     },
+     {
+      "h": "Asking about work",
+      "b": "काम (kām) means work and नौकरी (naukarī) means job. आप क्या काम करते हैं? (āp kyā kām karte haiṃ) means What work do you do? Answer: मैं शिक्षक हूँ (maiṃ shikṣak hūṃ)."
+     },
+     {
+      "h": "Where you work",
+      "b": "दफ़्तर (daftar) means office. मैं एक दफ़्तर में काम करता हूँ (maiṃ ek daftar meṃ kām kartā hūṃ) means I work in an office."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does शिक्षक (shikṣak) mean?",
+      "o": [
+       "Teacher",
+       "Farmer",
+       "Doctor",
+       "Engineer"
+      ],
+      "a": 0,
+      "why": "शिक्षक (shikṣak) means teacher."
+     },
+     {
+      "t": "mc",
+      "q": "What does किसान (kisān) mean?",
+      "o": [
+       "Shopkeeper",
+       "Farmer",
+       "Student",
+       "Driver"
+      ],
+      "a": 1,
+      "why": "किसान (kisān) means farmer."
+     },
+     {
+      "t": "mc",
+      "q": "Which question means 'What work do you do?'",
+      "o": [
+       "आप कहाँ रहते हैं? (āp kahāṃ rahte haiṃ)",
+       "आपका नाम क्या है? (āpkā nām kyā hai)",
+       "आप क्या काम करते हैं? (āp kyā kām karte haiṃ)",
+       "आप कैसे हैं? (āp kaise haiṃ)"
+      ],
+      "a": 2,
+      "why": "काम (kām) is work."
+     },
+     {
+      "t": "mc",
+      "q": "What does दफ़्तर (daftar) mean?",
+      "o": [
+       "House",
+       "School",
+       "Shop",
+       "Office"
+      ],
+      "a": 3,
+      "why": "दफ़्तर (daftar) is office."
+     },
+     {
+      "t": "tf",
+      "q": "नौकरी (naukarī) means job.",
+      "a": true,
+      "why": "नौकरी (naukarī) is a job."
+     },
+     {
+      "t": "match",
+      "q": "Match each job to its meaning",
+      "pairs": [
+       [
+        "डॉक्टर (ḍākṭar)",
+        "Doctor"
+       ],
+       [
+        "शिक्षक (shikṣak)",
+        "Teacher"
+       ],
+       [
+        "किसान (kisān)",
+        "Farmer"
+       ],
+       [
+        "दुकानदार (dukāndār)",
+        "Shopkeeper"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: What work do you do?",
+      "items": [
+       [
+        "आप (āp)",
+        1
+       ],
+       [
+        "क्या (kyā)",
+        2
+       ],
+       [
+        "काम (kām)",
+        3
+       ],
+       [
+        "करते हैं (karte haiṃ)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'farmer' (Devanagari or romanized).",
+      "a": [
+       "किसान",
+       "kisan",
+       "kisaan"
+      ],
+      "hint": "It starts with ki.",
+      "why": "किसान (kisān) means farmer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'job'.",
+      "a": [
+       "नौकरी",
+       "naukri",
+       "naukari",
+       "naukree"
+      ],
+      "hint": "It starts with nau.",
+      "why": "नौकरी (naukarī) means job."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does दफ़्तर (daftar) mean in English?",
+      "a": [
+       "office",
+       "an office",
+       "the office"
+      ],
+      "hint": "A place where people work at desks.",
+      "why": "दफ़्तर (daftar) means office."
+     }
+    ]
+   },
+   {
+    "title": "Hobbies and Free Time",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Hobbies",
+      "b": "शौक़ (shauq) means hobby. खेलना (khelnā) is to play, तैरना (tairnā) is to swim, घूमना (ghūmnā) is to walk around, फ़िल्म देखना (film dekhnā) is to watch a film."
+     },
+     {
+      "h": "Liking an activity",
+      "b": "Say मुझे ... पसंद है (mujhe ... pasand hai). मुझे क्रिकेट खेलना पसंद है (mujhe cricket khelnā pasand hai) means I like playing cricket. तुम्हारा शौक़ क्या है? (tumhārā shauq kyā hai) means What is your hobby?"
+     },
+     {
+      "h": "Free time and how often",
+      "b": "ख़ाली समय में (khālī samay meṃ) means in free time. अक्सर (aksar) means often and कभी नहीं (kabhī nahīṃ) means never."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does शौक़ (shauq) mean?",
+      "o": [
+       "Hobby",
+       "Work",
+       "Sport",
+       "Game"
+      ],
+      "a": 0,
+      "why": "शौक़ (shauq) means hobby."
+     },
+     {
+      "t": "mc",
+      "q": "What does तैरना (tairnā) mean?",
+      "o": [
+       "To run",
+       "To swim",
+       "To sing",
+       "To read"
+      ],
+      "a": 1,
+      "why": "तैरना (tairnā) is to swim."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I like playing cricket'?",
+      "o": [
+       "मैं क्रिकेट नहीं खेलता (maiṃ cricket nahīṃ kheltā)",
+       "मेरा क्रिकेट है (merā cricket hai)",
+       "मुझे क्रिकेट खेलना पसंद है (mujhe cricket khelnā pasand hai)",
+       "मैं क्रिकेट गया (maiṃ cricket gayā)"
+      ],
+      "a": 2,
+      "why": "पसंद है (pasand hai) means like."
+     },
+     {
+      "t": "mc",
+      "q": "What does कभी नहीं (kabhī nahīṃ) mean?",
+      "o": [
+       "Always",
+       "Often",
+       "Sometimes",
+       "Never"
+      ],
+      "a": 3,
+      "why": "कभी नहीं (kabhī nahīṃ) means never."
+     },
+     {
+      "t": "tf",
+      "q": "अक्सर (aksar) means often.",
+      "a": true,
+      "why": "अक्सर (aksar) is often."
+     },
+     {
+      "t": "match",
+      "q": "Match each Hindi word to its meaning",
+      "pairs": [
+       [
+        "खेलना (khelnā)",
+        "To play"
+       ],
+       [
+        "घूमना (ghūmnā)",
+        "To walk around"
+       ],
+       [
+        "अक्सर (aksar)",
+        "Often"
+       ],
+       [
+        "शौक़ (shauq)",
+        "Hobby"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I like playing cricket.",
+      "items": [
+       [
+        "मुझे (mujhe)",
+        1
+       ],
+       [
+        "क्रिकेट (cricket)",
+        2
+       ],
+       [
+        "खेलना (khelnā)",
+        3
+       ],
+       [
+        "पसंद है (pasand hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'hobby' (Devanagari or romanized).",
+      "a": [
+       "शौक़",
+       "शौक",
+       "shauq",
+       "shauk",
+       "shouk"
+      ],
+      "hint": "It starts with sh.",
+      "why": "शौक़ (shauq) means hobby."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi verb meaning 'to swim'.",
+      "a": [
+       "तैरना",
+       "tairna",
+       "tairnaa",
+       "tairana"
+      ],
+      "hint": "It ends in -ना (nā).",
+      "why": "तैरना (tairnā) means to swim."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does अक्सर (aksar) mean in English?",
+      "a": [
+       "often",
+       "frequently"
+      ],
+      "hint": "It is between always and sometimes.",
+      "why": "अक्सर (aksar) means often."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Reasons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Describing things",
+      "b": "मज़ेदार (mazedār) means fun and उबाऊ (ubāū) means boring. आसान (āsān) means easy and मुश्किल (mushkil) means difficult."
+     },
+     {
+      "h": "Giving an opinion",
+      "b": "मुझे लगता है (mujhe lagtā hai) means I think or I feel. मुझे हिंदी पसंद है (mujhe hindī pasand hai) means I like Hindi."
+     },
+     {
+      "h": "Why and because",
+      "b": "क्यों (kyoṃ) means why and क्योंकि (kyoṃki) means because. लेकिन (lekin) means but."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does क्यों (kyoṃ) mean?",
+      "o": [
+       "Where",
+       "Who",
+       "Why",
+       "When"
+      ],
+      "a": 2,
+      "why": "क्यों (kyoṃ) means why."
+     },
+     {
+      "t": "mc",
+      "q": "What does क्योंकि (kyoṃki) mean?",
+      "o": [
+       "But",
+       "Because",
+       "Maybe",
+       "Also"
+      ],
+      "a": 1,
+      "why": "क्योंकि (kyoṃki) introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "What does आसान (āsān) mean?",
+      "o": [
+       "Easy",
+       "Difficult",
+       "Boring",
+       "Far"
+      ],
+      "a": 0,
+      "why": "आसान (āsān) means easy."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I like Hindi'?",
+      "o": [
+       "मुझे हिंदी कहाँ है (mujhe hindī kahāṃ hai)",
+       "मैं हिंदी गया (maiṃ hindī gayā)",
+       "हिंदी नहीं चाहिए (hindī nahīṃ chāhiye)",
+       "मुझे हिंदी पसंद है (mujhe hindī pasand hai)"
+      ],
+      "a": 3,
+      "why": "पसंद (pasand) means like."
+     },
+     {
+      "t": "tf",
+      "q": "लेकिन (lekin) means 'but'.",
+      "a": true,
+      "why": "लेकिन (lekin) shows contrast."
+     },
+     {
+      "t": "match",
+      "q": "Match each describing word to its meaning",
+      "pairs": [
+       [
+        "मज़ेदार (mazedār)",
+        "Fun"
+       ],
+       [
+        "उबाऊ (ubāū)",
+        "Boring"
+       ],
+       [
+        "मुश्किल (mushkil)",
+        "Difficult"
+       ],
+       [
+        "आसान (āsān)",
+        "Easy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I think Hindi is fun",
+      "items": [
+       [
+        "मुझे लगता है (mujhe lagtā hai)",
+        1
+       ],
+       [
+        "कि (ki)",
+        2
+       ],
+       [
+        "हिंदी (hindī)",
+        3
+       ],
+       [
+        "मज़ेदार है (mazedār hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'because'.",
+      "a": [
+       "क्योंकि",
+       "क्योकि",
+       "kyonki",
+       "kyoki",
+       "kyonkii"
+      ],
+      "hint": "It sounds like क्यों plus कि.",
+      "why": "क्योंकि (kyoṃki) means because."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'but'.",
+      "a": [
+       "लेकिन",
+       "lekin",
+       "lekeen",
+       "परंतु",
+       "magar",
+       "मगर"
+      ],
+      "hint": "It starts with l.",
+      "why": "लेकिन (lekin) means but."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does आसान (āsān) mean in English?",
+      "a": [
+       "easy"
+      ],
+      "hint": "The opposite of difficult.",
+      "why": "आसान (āsān) means easy."
+     }
+    ]
+   },
+   {
+    "title": "Comparisons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Bigger than",
+      "b": "से (se) means than. ज़्यादा (zyādā) means more and कम (kam) means less. हाथी चूहे से बड़ा है (hāthī chūhe se baṛā hai) means The elephant is bigger than the mouse."
+     },
+     {
+      "h": "The most",
+      "b": "सबसे (sabse) means most or the -est. चीता सबसे तेज़ जानवर है (chītā sabse tez jānvar hai) means The cheetah is the fastest animal. तेज़ (tez) is fast and धीरे (dhīre) is slow."
+     },
+     {
+      "h": "Equal",
+      "b": "बराबर (barābar) means equal. यह उसके बराबर है (yah uske barābar hai) means This is equal to that."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does से (se) mean in a comparison?",
+      "o": [
+       "Than",
+       "And",
+       "With",
+       "Because"
+      ],
+      "a": 0,
+      "why": "से (se) means than."
+     },
+     {
+      "t": "mc",
+      "q": "What does सबसे (sabse) mean?",
+      "o": [
+       "Less",
+       "Most",
+       "Equal",
+       "Never"
+      ],
+      "a": 1,
+      "why": "सबसे (sabse) means most."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'The elephant is bigger than the mouse'?",
+      "o": [
+       "चूहा हाथी से बड़ा है (chūhā hāthī se baṛā hai)",
+       "हाथी सबसे छोटा है (hāthī sabse chhoṭā hai)",
+       "हाथी चूहे से बड़ा है (hāthī chūhe se baṛā hai)",
+       "हाथी और चूहा है (hāthī aur chūhā hai)"
+      ],
+      "a": 2,
+      "why": "से (se) goes after the thing you compare to."
+     },
+     {
+      "t": "mc",
+      "q": "What does तेज़ (tez) mean?",
+      "o": [
+       "Slow",
+       "Small",
+       "Cold",
+       "Fast"
+      ],
+      "a": 3,
+      "why": "तेज़ (tez) means fast."
+     },
+     {
+      "t": "tf",
+      "q": "बराबर (barābar) means equal.",
+      "a": true,
+      "why": "बराबर (barābar) is equal."
+     },
+     {
+      "t": "match",
+      "q": "Match each Hindi word to its meaning",
+      "pairs": [
+       [
+        "ज़्यादा (zyādā)",
+        "More"
+       ],
+       [
+        "कम (kam)",
+        "Less"
+       ],
+       [
+        "सबसे (sabse)",
+        "Most"
+       ],
+       [
+        "बराबर (barābar)",
+        "Equal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: The elephant is bigger than the mouse.",
+      "items": [
+       [
+        "हाथी (hāthī)",
+        1
+       ],
+       [
+        "चूहे से (chūhe se)",
+        2
+       ],
+       [
+        "बड़ा (baṛā)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'than' (Devanagari or romanized).",
+      "a": [
+       "से",
+       "se",
+       "say"
+      ],
+      "hint": "A tiny word with two letters.",
+      "why": "से (se) means than."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'most' (as in the fastest).",
+      "a": [
+       "सबसे",
+       "sabse",
+       "sabsay"
+      ],
+      "hint": "It starts with sab.",
+      "why": "सबसे (sabse) means most."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'fast'.",
+      "a": [
+       "तेज़",
+       "तेज",
+       "tez",
+       "tej",
+       "tezz"
+      ],
+      "hint": "It starts with t.",
+      "why": "तेज़ (tez) means fast."
+     }
+    ]
+   },
+   {
+    "title": "Advice and Conditions",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Should",
+      "b": "चाहिए (chāhiye) means should or need. तुम्हें आराम करना चाहिए (tumheṃ ārām karnā chāhiye) means You should rest. आराम (ārām) means rest."
+     },
+     {
+      "h": "If and then",
+      "b": "अगर (agar) means if and तो (to) means then. अगर बारिश होगी तो मैं घर पर रहूँगा (agar bārish hogī to maiṃ ghar par rahūṅgā) means If it rains, I will stay at home."
+     },
+     {
+      "h": "Maybe and certainly",
+      "b": "शायद (shāyad) means maybe. ज़रूर (zarūr) means certainly. ज़रूरी (zarūrī) means necessary."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does अगर (agar) mean?",
+      "o": [
+       "If",
+       "Because",
+       "But",
+       "When"
+      ],
+      "a": 0,
+      "why": "अगर (agar) means if."
+     },
+     {
+      "t": "mc",
+      "q": "What does शायद (shāyad) mean?",
+      "o": [
+       "Certainly",
+       "Maybe",
+       "Never",
+       "Always"
+      ],
+      "a": 1,
+      "why": "शायद (shāyad) means maybe."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'You should rest'?",
+      "o": [
+       "तुम आराम करते हो (tum ārām karte ho)",
+       "तुमने आराम किया (tumne ārām kiyā)",
+       "तुम्हें आराम करना चाहिए (tumheṃ ārām karnā chāhiye)",
+       "तुम्हें आराम नहीं है (tumheṃ ārām nahīṃ hai)"
+      ],
+      "a": 2,
+      "why": "चाहिए (chāhiye) gives advice."
+     },
+     {
+      "t": "mc",
+      "q": "What does ज़रूर (zarūr) mean?",
+      "o": [
+       "Maybe",
+       "Hardly",
+       "Later",
+       "Certainly"
+      ],
+      "a": 3,
+      "why": "ज़रूर (zarūr) means certainly."
+     },
+     {
+      "t": "tf",
+      "q": "तो (to) can mean 'then' in an if-sentence.",
+      "a": true,
+      "why": "अगर ... तो ... (agar ... to ...) means if ... then ..."
+     },
+     {
+      "t": "match",
+      "q": "Match each Hindi word to its meaning",
+      "pairs": [
+       [
+        "अगर (agar)",
+        "If"
+       ],
+       [
+        "तो (to)",
+        "Then"
+       ],
+       [
+        "शायद (shāyad)",
+        "Maybe"
+       ],
+       [
+        "चाहिए (chāhiye)",
+        "Should"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: If it rains...",
+      "items": [
+       [
+        "अगर (agar)",
+        1
+       ],
+       [
+        "बारिश (bārish)",
+        2
+       ],
+       [
+        "होगी (hogī)",
+        3
+       ],
+       [
+        "तो (to)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'if' (Devanagari or romanized).",
+      "a": [
+       "अगर",
+       "agar",
+       "agr"
+      ],
+      "hint": "It starts with a.",
+      "why": "अगर (agar) means if."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Hindi word for 'maybe'.",
+      "a": [
+       "शायद",
+       "shayad",
+       "shaayad"
+      ],
+      "hint": "It starts with sh.",
+      "why": "शायद (shāyad) means maybe."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the missing word: तुम्हें आराम करना ___ (You should rest).",
+      "a": [
+       "चाहिए",
+       "chahiye",
+       "chaahiye"
+      ],
+      "hint": "The word for should.",
+      "why": "चाहिए (chāhiye) means should."
+     }
+    ]
+   }
+  ]
+ },
+ "en-1": {
+  "name": "English · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Introductions",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Saying hello",
+      "b": "Say Hello or Hi when you meet someone. Say Good morning before noon and Good evening at night. Say Goodbye when you leave."
+     },
+     {
+      "h": "Polite words",
+      "b": "Say Please when you ask for something. Say Thank you when someone helps you. The answer is You're welcome. Say Sorry after a mistake."
+     },
+     {
+      "h": "Introducing yourself",
+      "b": "Say My name is Ana. Then say Nice to meet you. To ask how someone is, say How are you? A common answer is I'm fine, thanks."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which greeting do you use in the morning?",
+      "o": [
+       "Good night",
+       "Good evening",
+       "Good morning",
+       "Goodbye"
+      ],
+      "a": 2,
+      "why": "Good morning is the greeting for the morning."
+     },
+     {
+      "t": "mc",
+      "q": "Someone says 'Thank you.' What do you answer?",
+      "o": [
+       "Sorry",
+       "You're welcome",
+       "Good morning",
+       "My name is Ana"
+      ],
+      "a": 1,
+      "why": "You're welcome is the polite answer to thank you."
+     },
+     {
+      "t": "mc",
+      "q": "How do you tell someone your name?",
+      "o": [
+       "My name is Ana.",
+       "I am hungry Ana.",
+       "Ana is goodbye.",
+       "Please Ana."
+      ],
+      "a": 0,
+      "why": "My name is ... is the standard way to give your name."
+     },
+     {
+      "t": "mc",
+      "q": "Which word makes a request polite?",
+      "o": [
+       "Sorry",
+       "Hello",
+       "Goodbye",
+       "Please"
+      ],
+      "a": 3,
+      "why": "Please makes a request polite."
+     },
+     {
+      "t": "tf",
+      "q": "You say 'Goodbye' when you leave.",
+      "a": true,
+      "why": "Goodbye is used when you are leaving."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to when you use it",
+      "pairs": [
+       [
+        "Hello",
+        "When you meet someone"
+       ],
+       [
+        "Goodbye",
+        "When you leave"
+       ],
+       [
+        "Sorry",
+        "After a mistake"
+       ],
+       [
+        "Thank you",
+        "When someone helps"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this short conversation in order",
+      "items": [
+       [
+        "Hello!",
+        1
+       ],
+       [
+        "My name is Ana.",
+        2
+       ],
+       [
+        "Nice to meet you.",
+        3
+       ],
+       [
+        "Goodbye!",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: My ___ is Anna. (what people call you)",
+      "a": [
+       "name"
+      ],
+      "hint": "It is what you are called.",
+      "why": "My name is Anna introduces yourself."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the opposite of 'hello' when you leave?",
+      "a": [
+       "goodbye",
+       "bye",
+       "good bye"
+      ],
+      "hint": "You say it when you go.",
+      "why": "Goodbye is what we say when we leave."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: ___ you! (after someone gives you a gift)",
+      "a": [
+       "thank",
+       "thanks"
+      ],
+      "hint": "A polite word.",
+      "why": "Thank you is the polite way to show you are grateful."
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "The numbers are one, two, three, four, five, six, seven, eight, nine, and ten. We write them as 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10."
+     },
+     {
+      "h": "Family words",
+      "b": "Your mother and father are your parents. Your brother is a boy in your family and your sister is a girl in your family. Family means the people who are related to you."
+     },
+     {
+      "h": "Talking about family",
+      "b": "Say I have two brothers. For more than one, add s: one brother, two brothers. Use have with I, you, we, and they."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which number is 'seven'?",
+      "o": [
+       "5",
+       "7",
+       "9",
+       "17"
+      ],
+      "a": 1,
+      "why": "Seven is the number 7."
+     },
+     {
+      "t": "mc",
+      "q": "Your father's wife is usually your ...",
+      "o": [
+       "Sister",
+       "Brother",
+       "Mother",
+       "Cousin"
+      ],
+      "a": 2,
+      "why": "Your father's wife is usually your mother."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ two sisters.",
+      "o": [
+       "have",
+       "has",
+       "am",
+       "is"
+      ],
+      "a": 0,
+      "why": "Use have with I."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'brother'?",
+      "o": [
+       "Brother",
+       "Brothers",
+       "Brothes",
+       "Brotheren"
+      ],
+      "a": 1,
+      "why": "Add s to make most nouns plural."
+     },
+     {
+      "t": "tf",
+      "q": "'Sister' is a male family member.",
+      "a": false,
+      "why": "A sister is a female family member."
+     },
+     {
+      "t": "match",
+      "q": "Match each number word to its number",
+      "pairs": [
+       [
+        "one",
+        "1"
+       ],
+       [
+        "five",
+        "5"
+       ],
+       [
+        "eight",
+        "8"
+       ],
+       [
+        "ten",
+        "10"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "two",
+        1
+       ],
+       [
+        "four",
+        2
+       ],
+       [
+        "seven",
+        3
+       ],
+       [
+        "nine",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the word for 3 + 4.",
+      "a": [
+       "seven",
+       "7"
+      ],
+      "hint": "Count up from four.",
+      "why": "3 + 4 = 7, seven."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Your mother's mother is your ___.",
+      "a": [
+       "grandmother",
+       "grandma",
+       "granny",
+       "nan",
+       "nana"
+      ],
+      "hint": "A family word starting with grand.",
+      "why": "Your mother's mother is your grandmother."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the word for 6 + 4.",
+      "a": [
+       "ten",
+       "10"
+      ],
+      "hint": "Count up from six.",
+      "why": "6 + 4 = 10, ten."
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Meals",
+      "b": "Breakfast is the morning meal. Lunch is the meal in the middle of the day. Dinner is the evening meal. A snack is a small bite between meals."
+     },
+     {
+      "h": "Food and drink words",
+      "b": "Common foods are bread, rice, and apples. Common drinks are water and milk. We eat food and we drink drinks."
+     },
+     {
+      "h": "Ordering and liking",
+      "b": "To order politely, say I'd like some tea, please. To say what you enjoy, say I like pizza. To say the opposite, say I don't like fish."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ water every day.",
+      "o": [
+       "eat",
+       "drink",
+       "read",
+       "wear"
+      ],
+      "a": 1,
+      "why": "We drink water. We eat food."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is a polite way to order?",
+      "o": [
+       "Give me tea.",
+       "Tea now.",
+       "I'd like some tea, please.",
+       "I tea."
+      ],
+      "a": 2,
+      "why": "I'd like ..., please is a polite way to order."
+     },
+     {
+      "t": "mc",
+      "q": "Which meal do you eat in the morning?",
+      "o": [
+       "Breakfast",
+       "Lunch",
+       "Dinner",
+       "Midnight"
+      ],
+      "a": 0,
+      "why": "Breakfast is the first meal of the day."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a fruit?",
+      "o": [
+       "Bread",
+       "Rice",
+       "Milk",
+       "Apple"
+      ],
+      "a": 3,
+      "why": "An apple is a fruit."
+     },
+     {
+      "t": "tf",
+      "q": "'Delicious' means the food tastes very good.",
+      "a": true,
+      "why": "Delicious means very tasty."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Breakfast",
+        "Morning meal"
+       ],
+       [
+        "Lunch",
+        "Midday meal"
+       ],
+       [
+        "Dinner",
+        "Evening meal"
+       ],
+       [
+        "Snack",
+        "Small food between meals"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a sentence",
+      "items": [
+       [
+        "I",
+        1
+       ],
+       [
+        "eat",
+        2
+       ],
+       [
+        "rice",
+        3
+       ],
+       [
+        "every day.",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: A white drink from cows is ___.",
+      "a": [
+       "milk"
+      ],
+      "hint": "You can put it in cereal.",
+      "why": "Milk comes from cows."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Breakfast, lunch and ___.",
+      "a": [
+       "dinner",
+       "supper"
+      ],
+      "hint": "The last meal of the day.",
+      "why": "Dinner is the evening meal."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: I'd like a glass of ___. (a clear drink)",
+      "a": [
+       "water"
+      ],
+      "hint": "You drink it every day.",
+      "why": "Water is a clear drink."
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "To be",
+      "b": "Use am with I, is with he, she, and it, and are with you, we, and they. For example: I am a student. She is a teacher."
+     },
+     {
+      "h": "To have and present simple",
+      "b": "Use have with I, you, we, and they. Use has with he, she, and it. For daily actions, add s for he, she, and it: He goes to school."
+     },
+     {
+      "h": "Negatives",
+      "b": "Use don't with I, you, we, and they. Use doesn't with he, she, and it. For example: I don't like fish. She doesn't eat meat."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct word: She ___ a student.",
+      "o": [
+       "am",
+       "is",
+       "are",
+       "be"
+      ],
+      "a": 1,
+      "why": "Use is with she."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: They ___ a dog.",
+      "o": [
+       "has",
+       "is",
+       "have",
+       "does"
+      ],
+      "a": 2,
+      "why": "Use have with they."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: He ___ to school every day.",
+      "o": [
+       "go",
+       "goes",
+       "going",
+       "gone"
+      ],
+      "a": 1,
+      "why": "Add es to go for he, she, and it."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ like fish.",
+      "o": [
+       "doesn't",
+       "isn't",
+       "am not",
+       "don't"
+      ],
+      "a": 3,
+      "why": "Use don't with I."
+     },
+     {
+      "t": "tf",
+      "q": "'He have a cat' is a correct sentence.",
+      "a": false,
+      "why": "It should be 'He has a cat.'"
+     },
+     {
+      "t": "match",
+      "q": "Match each pronoun to the correct verb",
+      "pairs": [
+       [
+        "I",
+        "am"
+       ],
+       [
+        "She",
+        "is"
+       ],
+       [
+        "We",
+        "are"
+       ],
+       [
+        "He",
+        "has"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a sentence",
+      "items": [
+       [
+        "She",
+        1
+       ],
+       [
+        "goes",
+        2
+       ],
+       [
+        "to",
+        3
+       ],
+       [
+        "school.",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: I ___ a student. (be)",
+      "a": [
+       "am"
+      ],
+      "hint": "Use it with I.",
+      "why": "I am is the correct form."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: She ___ a dog. (have)",
+      "a": [
+       "has"
+      ],
+      "hint": "Use it with she.",
+      "why": "She has is the correct form."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: He ___ like fish. (negative)",
+      "a": [
+       "does not",
+       "doesn't",
+       "doesnt"
+      ],
+      "hint": "Use do + not with he.",
+      "why": "He does not like fish is the negative."
+     }
+    ]
+   },
+   {
+    "title": "Colors and Describing",
+    "period": "A1",
+    "learn": [
+     {
+      "h": "Colors",
+      "b": "Red, blue, green, yellow, black and white are colors. The sky is blue. Grass is green. A banana is yellow."
+     },
+     {
+      "h": "Describing words",
+      "b": "Big and small, hot and cold, new and old, happy and sad are describing words. They are adjectives."
+     },
+     {
+      "h": "Where to put them",
+      "b": "An adjective comes before the noun: a red car. After is or are it comes after: The car is red. Adjectives never add -s: two red cars."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence is correct?",
+      "o": [
+       "She has a green bag.",
+       "She has a bag green.",
+       "She has a greens bag.",
+       "She have a green bag."
+      ],
+      "a": 0,
+      "why": "The adjective goes before the noun."
+     },
+     {
+      "t": "mc",
+      "q": "What color is a banana?",
+      "o": [
+       "Blue",
+       "Yellow",
+       "Black",
+       "Green"
+      ],
+      "a": 1,
+      "why": "Ripe bananas are yellow."
+     },
+     {
+      "t": "mc",
+      "q": "What is the opposite of 'hot'?",
+      "o": [
+       "Big",
+       "New",
+       "Cold",
+       "Happy"
+      ],
+      "a": 2,
+      "why": "Hot and cold are opposites."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct plural: 'two ___ cars'",
+      "o": [
+       "reds",
+       "redes",
+       "red's",
+       "red"
+      ],
+      "a": 3,
+      "why": "Adjectives do not take -s."
+     },
+     {
+      "t": "tf",
+      "q": "In English, we say 'a car red'.",
+      "a": false,
+      "why": "The adjective comes before the noun: a red car."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its opposite",
+      "pairs": [
+       [
+        "big",
+        "small"
+       ],
+       [
+        "new",
+        "old"
+       ],
+       [
+        "happy",
+        "sad"
+       ],
+       [
+        "hot",
+        "cold"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "She",
+        1
+       ],
+       [
+        "has",
+        2
+       ],
+       [
+        "a green",
+        3
+       ],
+       [
+        "bag",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what color is the sky on a sunny day?",
+      "a": [
+       "blue"
+      ],
+      "hint": "It is also the color of the sea.",
+      "why": "The sky is blue on a sunny day."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the opposite of 'big'.",
+      "a": [
+       "small",
+       "little",
+       "tiny"
+      ],
+      "hint": "It starts with s.",
+      "why": "The opposite of big is small."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: The sun is ___. (a bright color like a banana)",
+      "a": [
+       "yellow"
+      ],
+      "hint": "Think of a banana.",
+      "why": "The sun looks yellow."
+     }
+    ]
+   },
+   {
+    "title": "Days, Months and Time",
+    "period": "A1",
+    "learn": [
+     {
+      "h": "Days of the week",
+      "b": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. There are seven days in a week. Saturday and Sunday are the weekend."
+     },
+     {
+      "h": "Months",
+      "b": "January, February, March, April, May, June, July, August, September, October, November, December. There are twelve months in a year."
+     },
+     {
+      "h": "Telling the time",
+      "b": "Say It's three o'clock. Use on with days (on Monday), in with months (in July) and at with time (at five o'clock)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which day comes after Monday?",
+      "o": [
+       "Tuesday",
+       "Sunday",
+       "Wednesday",
+       "Friday"
+      ],
+      "a": 0,
+      "why": "Tuesday follows Monday."
+     },
+     {
+      "t": "mc",
+      "q": "Which month comes after March?",
+      "o": [
+       "May",
+       "April",
+       "February",
+       "June"
+      ],
+      "a": 1,
+      "why": "April follows March."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "I have English in Monday.",
+       "I have English at Monday.",
+       "I have English on Monday.",
+       "I have English Monday on."
+      ],
+      "a": 2,
+      "why": "Use on with days."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "The party is on July.",
+       "The party is at July.",
+       "The party is July in.",
+       "The party is in July."
+      ],
+      "a": 3,
+      "why": "Use in with months."
+     },
+     {
+      "t": "tf",
+      "q": "There are seven days in a week.",
+      "a": true,
+      "why": "A week has seven days."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Saturday",
+        "Part of the weekend"
+       ],
+       [
+        "July",
+        "A month"
+       ],
+       [
+        "o'clock",
+        "Used when telling time"
+       ],
+       [
+        "year",
+        "Twelve months"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the days in order, starting with Monday",
+      "items": [
+       [
+        "Monday",
+        1
+       ],
+       [
+        "Tuesday",
+        2
+       ],
+       [
+        "Wednesday",
+        3
+       ],
+       [
+        "Thursday",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which day comes after Monday?",
+      "a": [
+       "tuesday"
+      ],
+      "hint": "It starts with T.",
+      "why": "Tuesday comes after Monday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how many months are there in a year? (write the word or number)",
+      "a": [
+       "twelve",
+       "12"
+      ],
+      "hint": "A dozen.",
+      "why": "A year has twelve months."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which month comes after March?",
+      "a": [
+       "april"
+      ],
+      "hint": "It starts with A.",
+      "why": "April comes after March."
+     }
+    ]
+   },
+   {
+    "title": "Home and Places in a House",
+    "period": "A1",
+    "learn": [
+     {
+      "h": "Rooms",
+      "b": "A house has a kitchen, a bedroom, a bathroom and a living room. You cook in the kitchen and sleep in the bedroom."
+     },
+     {
+      "h": "Furniture",
+      "b": "A table, a chair, a bed and a sofa are furniture. There is a lamp on the table."
+     },
+     {
+      "h": "Prepositions of place",
+      "b": "In, on, under, next to and behind say where something is. The cat is under the table. The book is on the chair."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where do you sleep?",
+      "o": [
+       "In the bedroom",
+       "In the kitchen",
+       "In the bathroom",
+       "In the garden"
+      ],
+      "a": 0,
+      "why": "A bedroom is for sleeping."
+     },
+     {
+      "t": "mc",
+      "q": "Where do you usually cook?",
+      "o": [
+       "In the bedroom",
+       "In the kitchen",
+       "In the bathroom",
+       "In the hall"
+      ],
+      "a": 1,
+      "why": "A kitchen is for cooking."
+     },
+     {
+      "t": "mc",
+      "q": "The cat is under the table. Where is the cat?",
+      "o": [
+       "On the table",
+       "Next to the table",
+       "Below the table",
+       "Behind the table"
+      ],
+      "a": 2,
+      "why": "Under means below."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "There is a book in the chair.",
+       "There are a book on the chair.",
+       "There is book chair on.",
+       "There is a book on the chair."
+      ],
+      "a": 3,
+      "why": "Use there is with one thing."
+     },
+     {
+      "t": "tf",
+      "q": "A sofa is furniture.",
+      "a": true,
+      "why": "A sofa is a piece of furniture."
+     },
+     {
+      "t": "match",
+      "q": "Match each room to its use",
+      "pairs": [
+       [
+        "kitchen",
+        "Cook food"
+       ],
+       [
+        "bedroom",
+        "Sleep"
+       ],
+       [
+        "bathroom",
+        "Take a shower"
+       ],
+       [
+        "living room",
+        "Watch TV"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "The cat",
+        1
+       ],
+       [
+        "is",
+        2
+       ],
+       [
+        "under",
+        3
+       ],
+       [
+        "the table",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: You cook in the ___.",
+      "a": [
+       "kitchen"
+      ],
+      "hint": "It starts with k.",
+      "why": "You cook in the kitchen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: The pen is ___ the box. (inside)",
+      "a": [
+       "in",
+       "inside"
+      ],
+      "hint": "A two-letter word.",
+      "why": "In means inside."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: You sleep on a ___. (furniture)",
+      "a": [
+       "bed"
+      ],
+      "hint": "It has a mattress.",
+      "why": "You sleep on a bed."
+     }
+    ]
+   },
+   {
+    "title": "Question Words",
+    "period": "A1",
+    "learn": [
+     {
+      "h": "Who, what, where",
+      "b": "What asks about things: What is this? Who asks about people: Who is she? Where asks about places: Where do you live?"
+     },
+     {
+      "h": "When, why, how",
+      "b": "When asks about time: When is the class? Why asks for a reason: Why are you sad? How asks about the way: How are you? How old are you?"
+     },
+     {
+      "h": "Yes or no questions",
+      "b": "Use Do or Does at the start: Do you like pizza? Does she play football? Answer Yes, I do or No, she doesn't."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word asks about a person?",
+      "o": [
+       "Who",
+       "Where",
+       "When",
+       "Why"
+      ],
+      "a": 0,
+      "why": "Who asks about people."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct question.",
+      "o": [
+       "Where you live?",
+       "Where do you live?",
+       "Where lives you?",
+       "Where do you lives?"
+      ],
+      "a": 1,
+      "why": "Use do before you."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct question.",
+      "o": [
+       "How age are you?",
+       "How many old are you?",
+       "How old are you?",
+       "What old are you?"
+      ],
+      "a": 2,
+      "why": "Ask age with How old."
+     },
+     {
+      "t": "mc",
+      "q": "Which question asks for a reason?",
+      "o": [
+       "When are you late?",
+       "Who are you late?",
+       "Where are you late?",
+       "Why are you late?"
+      ],
+      "a": 3,
+      "why": "Why asks for a reason."
+     },
+     {
+      "t": "tf",
+      "q": "Does she play football? is a correct question.",
+      "a": true,
+      "why": "Use Does with she."
+     },
+     {
+      "t": "match",
+      "q": "Match each question word to what it asks",
+      "pairs": [
+       [
+        "Who",
+        "A person"
+       ],
+       [
+        "Where",
+        "A place"
+       ],
+       [
+        "When",
+        "A time"
+       ],
+       [
+        "Why",
+        "A reason"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "Where",
+        1
+       ],
+       [
+        "do",
+        2
+       ],
+       [
+        "you",
+        3
+       ],
+       [
+        "live?",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: ___ is your teacher? (asks about a person)",
+      "a": [
+       "who"
+      ],
+      "hint": "It starts with w and asks about people.",
+      "why": "Who asks about a person."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: ___ old are you?",
+      "a": [
+       "how"
+      ],
+      "hint": "Used to ask age.",
+      "why": "How old are you? asks age."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: ___ do you live? (asks about a place)",
+      "a": [
+       "where"
+      ],
+      "hint": "It starts with wh and asks about place.",
+      "why": "Where asks about a place."
+     }
+    ]
+   },
+   {
+    "title": "Clothes and Weather",
+    "period": "A1",
+    "learn": [
+     {
+      "h": "Clothes",
+      "b": "A shirt, trousers, a dress, shoes, a hat and a coat are clothes. You wear shoes on your feet and a hat on your head."
+     },
+     {
+      "h": "Weather words",
+      "b": "Sunny, rainy, cloudy, windy and snowy describe the weather. Ask What's the weather like? Answer It's sunny."
+     },
+     {
+      "h": "Wear and put on",
+      "b": "We use wear for clothes: I wear a coat when it is cold. Say It's raining for rain happening now."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What do you wear on your feet?",
+      "o": [
+       "Shoes",
+       "A hat",
+       "A shirt",
+       "A coat"
+      ],
+      "a": 0,
+      "why": "Shoes go on your feet."
+     },
+     {
+      "t": "mc",
+      "q": "What is a good answer to 'What's the weather like?'",
+      "o": [
+       "I'm fine.",
+       "It's sunny.",
+       "It's Monday.",
+       "It's a coat."
+      ],
+      "a": 1,
+      "why": "Weather answers use words like sunny."
+     },
+     {
+      "t": "mc",
+      "q": "When it is cold, you wear...",
+      "o": [
+       "Shorts",
+       "Sunglasses",
+       "A coat",
+       "A swimsuit"
+      ],
+      "a": 2,
+      "why": "A coat keeps you warm."
+     },
+     {
+      "t": "mc",
+      "q": "Which word describes weather with water falling from clouds?",
+      "o": [
+       "Sunny",
+       "Windy",
+       "Hot",
+       "Rainy"
+      ],
+      "a": 3,
+      "why": "Rainy means it rains."
+     },
+     {
+      "t": "tf",
+      "q": "You wear a hat on your feet.",
+      "a": false,
+      "why": "You wear a hat on your head."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "sunny",
+        "Bright sun"
+       ],
+       [
+        "windy",
+        "Lots of wind"
+       ],
+       [
+        "cloudy",
+        "Many clouds"
+       ],
+       [
+        "snowy",
+        "White snow falls"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "What's",
+        1
+       ],
+       [
+        "the weather",
+        2
+       ],
+       [
+        "like",
+        3
+       ],
+       [
+        "today?",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: You wear ___ on your feet.",
+      "a": [
+       "shoes",
+       "socks",
+       "boots",
+       "trainers",
+       "sneakers"
+      ],
+      "hint": "Think about walking.",
+      "why": "You wear shoes on your feet."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: It's cold, so I wear a ___.",
+      "a": [
+       "coat",
+       "jacket",
+       "sweater",
+       "jumper",
+       "hat",
+       "scarf"
+      ],
+      "hint": "Something warm.",
+      "why": "A coat keeps you warm."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: When water falls from clouds, the weather is ___.",
+      "a": [
+       "rainy",
+       "raining",
+       "wet"
+      ],
+      "hint": "It starts with r.",
+      "why": "Rainy means it is raining."
+     }
+    ]
+   },
+   {
+    "title": "Present Continuous",
+    "period": "A1",
+    "learn": [
+     {
+      "h": "What is happening now",
+      "b": "Use am, is or are plus a verb with -ing. I am reading. She is playing. They are eating."
+     },
+     {
+      "h": "Spelling -ing",
+      "b": "Most verbs just add -ing: play, playing. If a verb ends in -e, drop it: make, making. Short verbs double the last letter: run, running."
+     },
+     {
+      "h": "Negatives and questions",
+      "b": "Add not after am, is or are: He is not sleeping. For questions, swap the order: Are you working? Yes, I am."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "She is reading a book now.",
+       "She reading a book now.",
+       "She is read a book now.",
+       "She are reading a book now."
+      ],
+      "a": 0,
+      "why": "Use is plus verb-ing."
+     },
+     {
+      "t": "mc",
+      "q": "What is the -ing form of 'run'?",
+      "o": [
+       "Runing",
+       "Running",
+       "Runming",
+       "Runned"
+      ],
+      "a": 1,
+      "why": "Double the n."
+     },
+     {
+      "t": "mc",
+      "q": "What is the -ing form of 'make'?",
+      "o": [
+       "Makeing",
+       "Makking",
+       "Making",
+       "Maked"
+      ],
+      "a": 2,
+      "why": "Drop the e, add -ing."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct question.",
+      "o": [
+       "You are working?",
+       "Do you working?",
+       "Is you working?",
+       "Are you working?"
+      ],
+      "a": 3,
+      "why": "Put are before you."
+     },
+     {
+      "t": "tf",
+      "q": "They are play football is correct.",
+      "a": false,
+      "why": "The correct sentence is They are playing football."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its -ing form",
+      "pairs": [
+       [
+        "play",
+        "playing"
+       ],
+       [
+        "make",
+        "making"
+       ],
+       [
+        "run",
+        "running"
+       ],
+       [
+        "eat",
+        "eating"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "I",
+        1
+       ],
+       [
+        "am",
+        2
+       ],
+       [
+        "reading",
+        3
+       ],
+       [
+        "now",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: She is ___ lunch now. (eat)",
+      "a": [
+       "eating"
+      ],
+      "hint": "Add -ing.",
+      "why": "Is plus eating is present continuous."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: They ___ playing football. (be)",
+      "a": [
+       "are"
+      ],
+      "hint": "Use it with they.",
+      "why": "They are playing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the -ing form of 'run'.",
+      "a": [
+       "running"
+      ],
+      "hint": "Double the n.",
+      "why": "Run becomes running."
+     }
+    ]
+   }
+  ]
+ },
+ "en-2": {
+  "name": "English · Intermediate",
+  "units": [
+   {
+    "title": "Past Simple",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Regular past",
+      "b": "For regular verbs, add ed to talk about the past. Play becomes played and walk becomes walked. We often use words like yesterday and last week."
+     },
+     {
+      "h": "Irregular past",
+      "b": "Some common verbs change form. Go becomes went, eat becomes ate, see becomes saw, and have becomes had. You need to learn these."
+     },
+     {
+      "h": "Past negatives",
+      "b": "Use didn't plus the base verb. I didn't go to school. Do not add ed after didn't."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct word: Yesterday I ___ pizza.",
+      "o": [
+       "eat",
+       "eaten",
+       "ate",
+       "eating"
+      ],
+      "a": 2,
+      "why": "Ate is the past simple of eat."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past simple of 'go'?",
+      "o": [
+       "Goed",
+       "Went",
+       "Gone",
+       "Going"
+      ],
+      "a": 1,
+      "why": "Go is irregular, and its past simple is went."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "She didn't came to school.",
+       "She didn't came to schools.",
+       "She not come to school.",
+       "She didn't come to school."
+      ],
+      "a": 3,
+      "why": "After didn't, use the base verb: come."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past simple of 'play'?",
+      "o": [
+       "Played",
+       "Plaid",
+       "Plays",
+       "Playing"
+      ],
+      "a": 0,
+      "why": "Regular verbs add ed."
+     },
+     {
+      "t": "tf",
+      "q": "'I goed to the park' is correct English.",
+      "a": false,
+      "why": "The correct form is 'I went to the park.'"
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its past form",
+      "pairs": [
+       [
+        "go",
+        "went"
+       ],
+       [
+        "eat",
+        "ate"
+       ],
+       [
+        "see",
+        "saw"
+       ],
+       [
+        "have",
+        "had"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these times in order from earliest to latest",
+      "items": [
+       [
+        "last year",
+        1
+       ],
+       [
+        "last month",
+        2
+       ],
+       [
+        "last week",
+        3
+       ],
+       [
+        "yesterday",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the past simple of 'go'.",
+      "a": [
+       "went"
+      ],
+      "hint": "It is irregular.",
+      "why": "Go becomes went."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the past simple of 'buy'.",
+      "a": [
+       "bought"
+      ],
+      "hint": "It is irregular.",
+      "why": "Buy becomes bought."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the past simple of 'have'.",
+      "a": [
+       "had"
+      ],
+      "hint": "It is irregular.",
+      "why": "Have becomes had."
+     }
+    ]
+   },
+   {
+    "title": "Present Perfect",
+    "period": "A2-B1",
+    "learn": [
+     {
+      "h": "Form",
+      "b": "Use have or has plus the past participle. I have seen that film. She has finished. Irregular participles: go-gone, see-seen, eat-eaten, do-done, write-written."
+     },
+     {
+      "h": "Life experience",
+      "b": "Use the present perfect for experiences without a time: I have been to Paris. Have you ever eaten sushi? I have never flown."
+     },
+     {
+      "h": "Just, already, yet, for, since",
+      "b": "Just means a short time ago, already means earlier than expected and yet is for negatives and questions. For is a length of time (for two years). Since is a starting point (since 2020)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "She has finished her homework.",
+       "She have finished her homework.",
+       "She finished her homework yesterday ago.",
+       "She has finish her homework."
+      ],
+      "a": 0,
+      "why": "Use has plus the past participle."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past participle of 'write'?",
+      "o": [
+       "Wrote",
+       "Written",
+       "Writed",
+       "Writen"
+      ],
+      "a": 1,
+      "why": "Write, wrote, written."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: 'I have lived here ___ 2019.'",
+      "o": [
+       "for",
+       "ago",
+       "since",
+       "during"
+      ],
+      "a": 2,
+      "why": "Since goes with a starting point."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: 'I have lived here ___ five years.'",
+      "o": [
+       "since",
+       "from",
+       "at",
+       "for"
+      ],
+      "a": 3,
+      "why": "For goes with a length of time."
+     },
+     {
+      "t": "tf",
+      "q": "'Have you ever eaten sushi?' asks about life experience.",
+      "a": true,
+      "why": "Ever with the present perfect asks about experience."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its past participle",
+      "pairs": [
+       [
+        "see",
+        "seen"
+       ],
+       [
+        "eat",
+        "eaten"
+       ],
+       [
+        "go",
+        "gone"
+       ],
+       [
+        "do",
+        "done"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "I",
+        1
+       ],
+       [
+        "have",
+        2
+       ],
+       [
+        "never",
+        3
+       ],
+       [
+        "flown",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the past participle of 'see'.",
+      "a": [
+       "seen"
+      ],
+      "hint": "See, saw, ...",
+      "why": "The past participle of see is seen."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: She has ___ here for five years. (live)",
+      "a": [
+       "lived"
+      ],
+      "hint": "Add -d.",
+      "why": "Has lived is present perfect."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: I ___ never eaten sushi.",
+      "a": [
+       "have"
+      ],
+      "hint": "Use it with I.",
+      "why": "I have never eaten is correct."
+     }
+    ]
+   },
+   {
+    "title": "Past Continuous",
+    "period": "A2-B1",
+    "learn": [
+     {
+      "h": "Form",
+      "b": "Use was or were plus the -ing form. I was sleeping. They were playing. Use was with I, he, she, it and were with you, we, they."
+     },
+     {
+      "h": "An action in progress",
+      "b": "The past continuous shows what was happening at a moment: At 8 pm I was watching TV. It was raining all day."
+     },
+     {
+      "h": "While and when",
+      "b": "Use while with the long action and when with the short one: I was cooking when the phone rang. While I was cooking, he was reading."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "They were playing football.",
+       "They was playing football.",
+       "They were play football.",
+       "They played playing football."
+      ],
+      "a": 0,
+      "why": "Use were with they."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "I was read when she called.",
+       "I was reading when she called.",
+       "I reading when she called.",
+       "I were reading when she called."
+      ],
+      "a": 1,
+      "why": "Use was with I."
+     },
+     {
+      "t": "mc",
+      "q": "Which action was the longer one? 'I was cooking when the phone rang.'",
+      "o": [
+       "The phone ringing",
+       "Both were the same",
+       "Cooking",
+       "Neither"
+      ],
+      "a": 2,
+      "why": "The past continuous shows the longer action."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: '___ I was walking, it started to rain.'",
+      "o": [
+       "Since",
+       "If",
+       "Until",
+       "While"
+      ],
+      "a": 3,
+      "why": "While goes with a long action."
+     },
+     {
+      "t": "tf",
+      "q": "We use 'were' with 'I' in the past continuous.",
+      "a": false,
+      "why": "We use was with I."
+     },
+     {
+      "t": "match",
+      "q": "Match each subject to the correct form",
+      "pairs": [
+       [
+        "I",
+        "was"
+       ],
+       [
+        "She",
+        "was"
+       ],
+       [
+        "We",
+        "were"
+       ],
+       [
+        "They",
+        "were"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "I",
+        1
+       ],
+       [
+        "was",
+        2
+       ],
+       [
+        "watching",
+        3
+       ],
+       [
+        "TV",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: They ___ playing football at five. (was or were)",
+      "a": [
+       "were"
+      ],
+      "hint": "Use it with they.",
+      "why": "They were playing is correct."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: I ___ reading when the phone rang. (was or were)",
+      "a": [
+       "was"
+      ],
+      "hint": "Use it with I.",
+      "why": "I was reading is correct."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: She was ___ dinner. (cook)",
+      "a": [
+       "cooking"
+      ],
+      "hint": "Add -ing.",
+      "why": "Was cooking is past continuous."
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Say Turn left or Turn right. Say Go straight to keep walking forward. Say Stop at the corner when you must stop."
+     },
+     {
+      "h": "Place words",
+      "b": "Next to means beside. Opposite means on the other side. Between means in the middle of two things. Near means close and far means a long way away."
+     },
+     {
+      "h": "Asking politely",
+      "b": "Start with Excuse me. Then ask Where is the bank? or How do I get to the station? These questions are polite and clear."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word is the opposite of 'left'?",
+      "o": [
+       "Straight",
+       "Right",
+       "Back",
+       "Between"
+      ],
+      "a": 1,
+      "why": "Left and right are opposite directions."
+     },
+     {
+      "t": "mc",
+      "q": "Which question asks for directions politely?",
+      "o": [
+       "Station now!",
+       "Where station?",
+       "Give me station.",
+       "Excuse me, how do I get to the station?"
+      ],
+      "a": 3,
+      "why": "It uses Excuse me and a full question."
+     },
+     {
+      "t": "mc",
+      "q": "'The bank is next to the post office' means the bank is ...",
+      "o": [
+       "Beside the post office",
+       "Far from the post office",
+       "Inside the post office",
+       "Behind the city"
+      ],
+      "a": 0,
+      "why": "Next to means beside."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Go straight' mean?",
+      "o": [
+       "Turn around",
+       "Turn left",
+       "Keep going forward without turning",
+       "Stop walking"
+      ],
+      "a": 2,
+      "why": "Go straight means keep going forward."
+     },
+     {
+      "t": "tf",
+      "q": "'Far' means a short distance away.",
+      "a": false,
+      "why": "Far means a long distance away. Near means a short distance."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "Turn left",
+        "Go to the left side"
+       ],
+       [
+        "Go straight",
+        "Keep walking forward"
+       ],
+       [
+        "Opposite",
+        "On the other side of"
+       ],
+       [
+        "Between",
+        "In the middle of two things"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a question",
+      "items": [
+       [
+        "Excuse me,",
+        1
+       ],
+       [
+        "where",
+        2
+       ],
+       [
+        "is",
+        3
+       ],
+       [
+        "the bank?",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: Turn ___ at the corner. (opposite of right)",
+      "a": [
+       "left"
+      ],
+      "hint": "Opposite of right.",
+      "why": "Left is the opposite of right."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Go ___ ahead and do not turn. (one word)",
+      "a": [
+       "straight"
+      ],
+      "hint": "It starts with s.",
+      "why": "Go straight ahead means do not turn."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: Could you tell me ___ the station is?",
+      "a": [
+       "where"
+      ],
+      "hint": "It asks about a place.",
+      "why": "Where asks about a place."
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Travel words",
+      "b": "A passport lets you travel to other countries. A ticket lets you take a train or plane. An airport is where planes land. A hotel is where you sleep on a trip."
+     },
+     {
+      "h": "Prices",
+      "b": "Ask How much is this? to learn the price. Expensive means it costs a lot. Cheap means it costs little. A receipt is paper that shows what you paid."
+     },
+     {
+      "h": "Useful phrases",
+      "b": "Say I'd like to buy this, please. Say I'd like to book a room for two nights. You can also ask Can I pay by card?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word means 'costs a lot of money'?",
+      "o": [
+       "Cheap",
+       "Free",
+       "Expensive",
+       "Small"
+      ],
+      "a": 2,
+      "why": "Expensive means it costs a lot."
+     },
+     {
+      "t": "mc",
+      "q": "You show this at the airport to travel to another country.",
+      "o": [
+       "Receipt",
+       "Passport",
+       "Menu",
+       "Map"
+      ],
+      "a": 1,
+      "why": "A passport proves who you are when you travel abroad."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask the price of something?",
+      "o": [
+       "How much is this?",
+       "How many is this?",
+       "Where is this?",
+       "What is this for?"
+      ],
+      "a": 0,
+      "why": "How much is this? asks about the price."
+     },
+     {
+      "t": "mc",
+      "q": "Where do you sleep when you travel?",
+      "o": [
+       "Airport",
+       "Station",
+       "Bank",
+       "Hotel"
+      ],
+      "a": 3,
+      "why": "A hotel is a place to sleep on a trip."
+     },
+     {
+      "t": "tf",
+      "q": "'Cheap' means something costs a lot.",
+      "a": false,
+      "why": "Cheap means it costs very little."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Ticket",
+        "Lets you travel"
+       ],
+       [
+        "Receipt",
+        "Shows what you paid"
+       ],
+       [
+        "Airport",
+        "Where planes land"
+       ],
+       [
+        "Suitcase",
+        "Bag for travel clothes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a question",
+      "items": [
+       [
+        "How much",
+        1
+       ],
+       [
+        "is",
+        2
+       ],
+       [
+        "this",
+        3
+       ],
+       [
+        "ticket?",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: How ___ is this jacket? (asks the price)",
+      "a": [
+       "much"
+      ],
+      "hint": "It goes with money.",
+      "why": "How much asks the price."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: You need a ___ to fly to another country.",
+      "a": [
+       "passport"
+      ],
+      "hint": "A travel document.",
+      "why": "A passport is needed to travel abroad."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the word for the money you get back when you pay too much.",
+      "a": [
+       "change"
+      ],
+      "hint": "It starts with c.",
+      "why": "Change is the money you get back."
+     }
+    ]
+   },
+   {
+    "title": "Comparatives and Superlatives",
+    "period": "A2-B1",
+    "learn": [
+     {
+      "h": "Comparatives",
+      "b": "Add -er to short adjectives: tall, taller. Use more with long adjectives: more interesting. Then use than: My brother is taller than me."
+     },
+     {
+      "h": "Superlatives",
+      "b": "Add -est to short adjectives: the tallest. Use the most with long adjectives: the most expensive. Say the best city in the world."
+     },
+     {
+      "h": "Irregular forms and as...as",
+      "b": "Good, better, best. Bad, worse, worst. Use as ... as for equal things: She is as tall as me."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the comparative of 'big'?",
+      "o": [
+       "Bigger",
+       "More big",
+       "Biger",
+       "Bigest"
+      ],
+      "a": 0,
+      "why": "Double the g and add -er."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "This book is interestinger than that one.",
+       "This book is more interesting than that one.",
+       "This book is most interesting than that one.",
+       "This book is more interesting that that one."
+      ],
+      "a": 1,
+      "why": "Use more plus than for long adjectives."
+     },
+     {
+      "t": "mc",
+      "q": "What is the superlative of 'bad'?",
+      "o": [
+       "Baddest",
+       "Most bad",
+       "Worst",
+       "Worse"
+      ],
+      "a": 2,
+      "why": "Bad, worse, worst."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "She is as taller as me.",
+       "She is more tall as me.",
+       "She is as tall than me.",
+       "She is as tall as me."
+      ],
+      "a": 3,
+      "why": "Use as ... as with the basic adjective."
+     },
+     {
+      "t": "tf",
+      "q": "The superlative of 'good' is 'goodest'.",
+      "a": false,
+      "why": "The superlative of good is best."
+     },
+     {
+      "t": "match",
+      "q": "Match each adjective to its comparative",
+      "pairs": [
+       [
+        "good",
+        "better"
+       ],
+       [
+        "bad",
+        "worse"
+       ],
+       [
+        "tall",
+        "taller"
+       ],
+       [
+        "expensive",
+        "more expensive"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "He",
+        1
+       ],
+       [
+        "is",
+        2
+       ],
+       [
+        "taller",
+        3
+       ],
+       [
+        "than me",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the comparative of 'good'.",
+      "a": [
+       "better"
+      ],
+      "hint": "It is irregular.",
+      "why": "Good, better, best."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the comparative of 'big'.",
+      "a": [
+       "bigger"
+      ],
+      "hint": "Double the g.",
+      "why": "Big becomes bigger."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the superlative of 'expensive' with 'the'.",
+      "a": [
+       "the most expensive",
+       "most expensive"
+      ],
+      "hint": "Use most.",
+      "why": "The most expensive is correct."
+     }
+    ]
+   },
+   {
+    "title": "Health and Advice",
+    "period": "A2-B1",
+    "learn": [
+     {
+      "h": "Health problems",
+      "b": "A headache is pain in your head. A cold, a cough, a fever and a sore throat are common problems. Ask What's the matter? Answer I have a headache."
+     },
+     {
+      "h": "Giving advice with should",
+      "b": "Use should plus the base verb. You should see a doctor. You shouldn't eat so much sugar. Should I take this medicine?"
+     },
+     {
+      "h": "At the doctor",
+      "b": "A doctor works in a hospital or surgery. A pharmacy sells medicine. A prescription is a paper from the doctor for medicine."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct advice.",
+      "o": [
+       "You should drink more water.",
+       "You should to drink more water.",
+       "You should drinking more water.",
+       "You should drinks more water."
+      ],
+      "a": 0,
+      "why": "Use should plus the base verb."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'sore throat' mean?",
+      "o": [
+       "A cold hand",
+       "Pain in the throat",
+       "A hurt foot",
+       "A tired eye"
+      ],
+      "a": 1,
+      "why": "Sore means painful."
+     },
+     {
+      "t": "mc",
+      "q": "Where can you buy medicine?",
+      "o": [
+       "At a bakery",
+       "At a library",
+       "At a pharmacy",
+       "At a cinema"
+      ],
+      "a": 2,
+      "why": "A pharmacy sells medicine."
+     },
+     {
+      "t": "mc",
+      "q": "Which question asks about a health problem?",
+      "o": [
+       "What's the time?",
+       "What's the weather?",
+       "What's the price?",
+       "What's the matter?"
+      ],
+      "a": 3,
+      "why": "What's the matter? asks about a problem."
+     },
+     {
+      "t": "tf",
+      "q": "A prescription is a paper from the doctor for medicine.",
+      "a": true,
+      "why": "A doctor writes a prescription."
+     },
+     {
+      "t": "match",
+      "q": "Match each problem to its meaning",
+      "pairs": [
+       [
+        "headache",
+        "Pain in the head"
+       ],
+       [
+        "fever",
+        "High body temperature"
+       ],
+       [
+        "cough",
+        "Noise from your throat"
+       ],
+       [
+        "toothache",
+        "Pain in a tooth"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "You",
+        1
+       ],
+       [
+        "should",
+        2
+       ],
+       [
+        "see",
+        3
+       ],
+       [
+        "a doctor",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: You ___ drink more water. (advice)",
+      "a": [
+       "should"
+      ],
+      "hint": "Use it to give advice.",
+      "why": "Should gives advice."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the word for pain in your head.",
+      "a": [
+       "headache",
+       "a headache"
+      ],
+      "hint": "Head + ache.",
+      "why": "A headache is pain in the head."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: I have a sore ___. (it hurts when you swallow)",
+      "a": [
+       "throat"
+      ],
+      "hint": "It starts with th.",
+      "why": "A sore throat hurts when you swallow."
+     }
+    ]
+   },
+   {
+    "title": "Work and Jobs",
+    "period": "A2-B1",
+    "learn": [
+     {
+      "h": "Jobs",
+      "b": "A nurse, an engineer, a lawyer, a chef and a mechanic are jobs. A chef cooks in a restaurant. A mechanic repairs cars."
+     },
+     {
+      "h": "Talking about your job",
+      "b": "Ask What do you do? Answer I'm a nurse or I work as a nurse. Say I work for a company or I work in a hospital."
+     },
+     {
+      "h": "Work words",
+      "b": "A boss is the person in charge. A colleague is a person you work with. A salary is the money you get each month. You apply for a job and go to an interview."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who repairs cars?",
+      "o": [
+       "A mechanic",
+       "A chef",
+       "A lawyer",
+       "A nurse"
+      ],
+      "a": 0,
+      "why": "A mechanic fixes cars."
+     },
+     {
+      "t": "mc",
+      "q": "Which question asks about someone's job?",
+      "o": [
+       "What are you doing?",
+       "What do you do?",
+       "What do you like?",
+       "Where do you do?"
+      ],
+      "a": 1,
+      "why": "What do you do? asks about work."
+     },
+     {
+      "t": "mc",
+      "q": "What is a colleague?",
+      "o": [
+       "Your boss",
+       "Your teacher",
+       "A person you work with",
+       "Your neighbor"
+      ],
+      "a": 2,
+      "why": "A colleague works with you."
+     },
+     {
+      "t": "mc",
+      "q": "What is a salary?",
+      "o": [
+       "A work meeting",
+       "A holiday",
+       "A job test",
+       "Money you get for work"
+      ],
+      "a": 3,
+      "why": "A salary is pay for work."
+     },
+     {
+      "t": "tf",
+      "q": "A chef cooks in a restaurant.",
+      "a": true,
+      "why": "A chef is a professional cook."
+     },
+     {
+      "t": "match",
+      "q": "Match each job to what the person does",
+      "pairs": [
+       [
+        "nurse",
+        "Helps patients"
+       ],
+       [
+        "chef",
+        "Cooks food"
+       ],
+       [
+        "mechanic",
+        "Repairs cars"
+       ],
+       [
+        "lawyer",
+        "Gives legal advice"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the job steps in order",
+      "items": [
+       [
+        "Apply for the job",
+        1
+       ],
+       [
+        "Go to an interview",
+        2
+       ],
+       [
+        "Get the job",
+        3
+       ],
+       [
+        "Receive your first salary",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: write the word for a person who cooks in a restaurant.",
+      "a": [
+       "chef",
+       "a chef",
+       "cook"
+      ],
+      "hint": "It starts with ch.",
+      "why": "A chef cooks in a restaurant."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: write the word for the money you get each month for work.",
+      "a": [
+       "salary",
+       "wage",
+       "pay"
+      ],
+      "hint": "It starts with s.",
+      "why": "A salary is paid for work."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: You ___ for a job by sending your CV.",
+      "a": [
+       "apply"
+      ],
+      "hint": "It starts with ap.",
+      "why": "You apply for a job."
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Plans",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving opinions",
+      "b": "Start with I think, I believe, or In my opinion. Say I agree if you think the same. Say I disagree if you think differently."
+     },
+     {
+      "h": "Connecting ideas",
+      "b": "Because gives a reason. But shows a contrast. So shows a result. For example: I was tired, so I went to bed."
+     },
+     {
+      "h": "Future and comparing",
+      "b": "Use am, is, or are going to plus a verb for a plan: I am going to travel next year. Use more before long adjectives: more interesting. Use er for short ones: bigger."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'I agree' mean?",
+      "o": [
+       "I think the same",
+       "I think differently",
+       "I don't know",
+       "I am leaving"
+      ],
+      "a": 0,
+      "why": "To agree is to think the same as someone."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ going to travel next year.",
+      "o": [
+       "is",
+       "are",
+       "be",
+       "am"
+      ],
+      "a": 3,
+      "why": "Use am with I in the going to future."
+     },
+     {
+      "t": "mc",
+      "q": "Which word gives a reason?",
+      "o": [
+       "But",
+       "Because",
+       "Maybe",
+       "Also"
+      ],
+      "a": 1,
+      "why": "Because introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "What is the comparative of 'interesting'?",
+      "o": [
+       "Interestinger",
+       "Most interesting",
+       "More interesting",
+       "Interesting more"
+      ],
+      "a": 2,
+      "why": "Long adjectives use more in the comparative."
+     },
+     {
+      "t": "tf",
+      "q": "'Disagree' means you think the same.",
+      "a": false,
+      "why": "Disagree means you think differently."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its job",
+      "pairs": [
+       [
+        "because",
+        "Gives a reason"
+       ],
+       [
+        "but",
+        "Shows contrast"
+       ],
+       [
+        "so",
+        "Shows a result"
+       ],
+       [
+        "I think",
+        "Starts an opinion"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a sentence",
+      "items": [
+       [
+        "In my opinion,",
+        1
+       ],
+       [
+        "this",
+        2
+       ],
+       [
+        "book",
+        3
+       ],
+       [
+        "is better.",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: In my ___, it is a great film.",
+      "a": [
+       "opinion"
+      ],
+      "hint": "It means what you think.",
+      "why": "In my opinion introduces your view."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: I'm ___ to visit Rome next summer. (a plan)",
+      "a": [
+       "going"
+      ],
+      "hint": "Use be going to.",
+      "why": "I'm going to talks about plans."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: I like tea, ___ I don't like coffee. (contrast)",
+      "a": [
+       "but"
+      ],
+      "hint": "A short word.",
+      "why": "But shows contrast."
+     }
+    ]
+   },
+   {
+    "title": "Future and First Conditional",
+    "period": "A2-B1",
+    "learn": [
+     {
+      "h": "Will and going to",
+      "b": "Use going to for plans: I'm going to study tonight. Use will for quick decisions and predictions: I'll help you. It will rain tomorrow."
+     },
+     {
+      "h": "First conditional",
+      "b": "Use if plus the present simple, then will plus a base verb. If it rains, we will stay home. This talks about real future possibilities."
+     },
+     {
+      "h": "Unless and negatives",
+      "b": "Unless means if not. Unless you hurry, you will be late. Negative: If you don't study, you won't pass."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "If it rains, we will stay at home.",
+       "If it will rain, we will stay at home.",
+       "If it rains, we stay will at home.",
+       "If it rained, we will stay at home."
+      ],
+      "a": 0,
+      "why": "First conditional: if + present, will + verb."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence talks about a plan?",
+      "o": [
+       "I'll help you.",
+       "I'm going to visit my aunt.",
+       "It will rain.",
+       "If I see her, I will say hello."
+      ],
+      "a": 1,
+      "why": "Going to is used for plans."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'unless' mean?",
+      "o": [
+       "Because",
+       "After",
+       "If not",
+       "Always"
+      ],
+      "a": 2,
+      "why": "Unless means if not."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "If you won't study, you don't pass.",
+       "If you don't study, you don't pass.",
+       "If you didn't study, you won't pass.",
+       "If you don't study, you won't pass."
+      ],
+      "a": 3,
+      "why": "Use present simple in the if part."
+     },
+     {
+      "t": "tf",
+      "q": "In the first conditional, we use 'will' in the if part.",
+      "a": false,
+      "why": "The if part uses the present simple."
+     },
+     {
+      "t": "match",
+      "q": "Match each use to the form",
+      "pairs": [
+       [
+        "Plan",
+        "going to"
+       ],
+       [
+        "Quick decision",
+        "will"
+       ],
+       [
+        "Real condition",
+        "if + present"
+       ],
+       [
+        "If not",
+        "unless"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order",
+      "items": [
+       [
+        "If",
+        1
+       ],
+       [
+        "it",
+        2
+       ],
+       [
+        "rains,",
+        3
+       ],
+       [
+        "we will stay home",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: complete: If it rains, we ___ stay at home.",
+      "a": [
+       "will",
+       "'ll",
+       "ll"
+      ],
+      "hint": "Use it for the result.",
+      "why": "The result part uses will."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: ___ you hurry, you will be late. (if not)",
+      "a": [
+       "unless"
+      ],
+      "hint": "It starts with un.",
+      "why": "Unless means if not."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: I'm ___ to study tonight. (a plan)",
+      "a": [
+       "going"
+      ],
+      "hint": "Use be going to.",
+      "why": "I'm going to is for plans."
+     }
+    ]
+   }
+  ]
+ }
+}

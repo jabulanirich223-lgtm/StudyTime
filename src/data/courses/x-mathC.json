@@ -1,0 +1,4473 @@
+{
+ "math-geo": {
+  "name": "Geometry",
+  "units": [
+   {
+    "title": "Points, Lines and Segments",
+    "period": "Geometry basics",
+    "learn": [
+     {
+      "h": "Building blocks",
+      "b": "A point is an exact spot with no size. A line is straight and goes on forever both ways. A segment is a piece of a line with two endpoints. A ray has one endpoint and goes on forever."
+     },
+     {
+      "h": "Length and midpoint",
+      "b": "If B is between A and C, then AB + BC = AC. The midpoint M of a segment splits it into two equal parts, so AM = MB. If AM = 9, the whole segment is 18."
+     },
+     {
+      "h": "Parallel lines and a transversal",
+      "b": "When a line crosses two parallel lines, corresponding angles are equal and alternate interior angles are equal. Angles on the same side between the lines add up to 180."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Point B is between A and C. AB = 7 and BC = 5. What is AC?",
+      "o": [
+       "2",
+       "35",
+       "12",
+       "10"
+      ],
+      "a": 2,
+      "why": "AB + BC = AC, so 7 + 5 = 12."
+     },
+     {
+      "t": "mc",
+      "q": "M is the midpoint of segment PQ and PM = 9. What is PQ?",
+      "o": [
+       "18",
+       "9",
+       "4.5",
+       "81"
+      ],
+      "a": 0,
+      "why": "The midpoint splits PQ into two equal parts, so PQ = 2 x 9 = 18."
+     },
+     {
+      "t": "mc",
+      "q": "Two parallel lines are cut by a transversal. One angle is 70 degrees. Its corresponding angle is?",
+      "o": [
+       "110",
+       "20",
+       "290",
+       "70"
+      ],
+      "a": 3,
+      "why": "Corresponding angles on parallel lines are equal."
+     },
+     {
+      "t": "mc",
+      "q": "Which figure has one endpoint and goes on forever in one direction?",
+      "o": [
+       "Segment",
+       "Ray",
+       "Line",
+       "Point"
+      ],
+      "a": 1,
+      "why": "A ray starts at one point and continues forever."
+     },
+     {
+      "t": "tf",
+      "q": "A line has two endpoints.",
+      "a": false,
+      "why": "A line goes on forever in both directions. A segment has two endpoints."
+     },
+     {
+      "t": "match",
+      "q": "Match each figure to its description",
+      "pairs": [
+       [
+        "Point",
+        "exact location, no size"
+       ],
+       [
+        "Line",
+        "straight, endless both ways"
+       ],
+       [
+        "Segment",
+        "two endpoints"
+       ],
+       [
+        "Ray",
+        "one endpoint, endless"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Find AC when AB = 4 and BC = 9, in order",
+      "items": [
+       [
+        "Note that B is between A and C",
+        1
+       ],
+       [
+        "Write AB + BC = AC",
+        2
+       ],
+       [
+        "Substitute: 4 + 9",
+        3
+       ],
+       [
+        "AC = 13",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: M is the midpoint of AB. AM = 3x + 2 and MB = 5x - 6. x = ?",
+      "a": [
+       "4"
+      ],
+      "hint": "The two halves are equal: 3x + 2 = 5x - 6.",
+      "why": "8 = 2x, so x = 4. Check: both halves are 14."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: B is between A and C. AB = 2x + 1, BC = x + 5 and AC = 21. x = ?",
+      "a": [
+       "5"
+      ],
+      "hint": "AB + BC = AC, so 3x + 6 = 21.",
+      "why": "3x = 15, so x = 5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: parallel lines are cut by a transversal. Alternate interior angles are 3x + 10 and 5x - 20 degrees. x = ?",
+      "a": [
+       "15"
+      ],
+      "hint": "Alternate interior angles are equal.",
+      "why": "3x + 10 = 5x - 20 gives 30 = 2x, so x = 15."
+     }
+    ]
+   },
+   {
+    "title": "Angles, Lines and Triangles",
+    "period": "Geometry",
+    "learn": [
+     {
+      "h": "Angle pairs",
+      "b": "Complementary angles add to 90 degrees. Supplementary angles add to 180. Vertical angles (across from each other) are equal."
+     },
+     {
+      "h": "Triangle angle sum",
+      "b": "The three angles of a triangle always add to 180 degrees. If two angles are 50 and 60, the third is 70."
+     },
+     {
+      "h": "Isosceles triangles",
+      "b": "Two sides are equal, and the angles opposite them are equal. With a vertex angle of 40, the two base angles share 140, so each is 70."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Two angles are complementary. One is 35 degrees. What is the other?",
+      "o": [
+       "145",
+       "65",
+       "55",
+       "35"
+      ],
+      "a": 2,
+      "why": "90 - 35 = 55."
+     },
+     {
+      "t": "mc",
+      "q": "A triangle has angles of 50 and 60 degrees. What is the third angle?",
+      "o": [
+       "70",
+       "80",
+       "60",
+       "90"
+      ],
+      "a": 0,
+      "why": "180 - 50 - 60 = 70."
+     },
+     {
+      "t": "mc",
+      "q": "An isosceles triangle has a vertex angle of 40 degrees. What is each base angle?",
+      "o": [
+       "40",
+       "80",
+       "60",
+       "70"
+      ],
+      "a": 3,
+      "why": "(180 - 40) / 2 = 70."
+     },
+     {
+      "t": "mc",
+      "q": "Two angles on a straight line are 65 and x. What is x?",
+      "o": [
+       "25",
+       "115",
+       "125",
+       "295"
+      ],
+      "a": 1,
+      "why": "Angles on a line add to 180: 180 - 65 = 115."
+     },
+     {
+      "t": "tf",
+      "q": "Supplementary angles add up to 90 degrees.",
+      "a": false,
+      "why": "Supplementary angles add to 180. Complementary angles add to 90."
+     },
+     {
+      "t": "match",
+      "q": "Match each angle type to its measure",
+      "pairs": [
+       [
+        "Acute",
+        "less than 90"
+       ],
+       [
+        "Right",
+        "exactly 90"
+       ],
+       [
+        "Obtuse",
+        "between 90 and 180"
+       ],
+       [
+        "Straight",
+        "exactly 180"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these angles from smallest to largest",
+      "items": [
+       [
+        "acute angle of 30",
+        1
+       ],
+       [
+        "right angle",
+        2
+       ],
+       [
+        "obtuse angle of 120",
+        3
+       ],
+       [
+        "straight angle",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: the angles of a triangle are x, 2x and 3x degrees. x = ?",
+      "a": [
+       "30"
+      ],
+      "hint": "They add to 180.",
+      "why": "6x = 180, so x = 30."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: an exterior angle of a triangle is 120 degrees. One remote interior angle is 45 degrees. What is the other remote interior angle?",
+      "a": [
+       "75"
+      ],
+      "hint": "An exterior angle equals the sum of the two remote interior angles.",
+      "why": "120 - 45 = 75."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: two angles are supplementary and one is 4 times the other. What is the smaller angle?",
+      "a": [
+       "36"
+      ],
+      "hint": "x + 4x = 180.",
+      "why": "5x = 180, so x = 36."
+     }
+    ]
+   },
+   {
+    "title": "Reasoning and Proof",
+    "period": "Logic",
+    "learn": [
+     {
+      "h": "If-then statements",
+      "b": "A conditional says 'If p, then q'. The converse swaps them: 'If q, then p'. The contrapositive flips and negates: 'If not q, then not p'. A conditional and its contrapositive are always both true or both false."
+     },
+     {
+      "h": "Inductive and deductive",
+      "b": "Inductive reasoning finds a pattern from examples, like 2, 4, 6, 8 so next is 10. It gives a guess. Deductive reasoning uses facts and rules to prove something for sure. One counterexample is enough to show a guess is false."
+     },
+     {
+      "h": "Writing a proof",
+      "b": "A proof starts with the Given (what you know) and the Prove (what you want). Then you write statements, each with a reason such as a definition, postulate or theorem. The last statement is the Prove."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the converse of: If it rains, the ground is wet?",
+      "o": [
+       "If it does not rain, the ground is not wet.",
+       "If the ground is wet, it rains.",
+       "If the ground is not wet, it does not rain.",
+       "It rains and the ground is wet."
+      ],
+      "a": 1,
+      "why": "The converse swaps the two parts."
+     },
+     {
+      "t": "mc",
+      "q": "What is the contrapositive of: If a shape is a square, it is a rectangle?",
+      "o": [
+       "If it is a rectangle, it is a square.",
+       "If it is not a square, it is not a rectangle.",
+       "A square is a rectangle.",
+       "If it is not a rectangle, it is not a square."
+      ],
+      "a": 3,
+      "why": "Flip the parts and negate both."
+     },
+     {
+      "t": "mc",
+      "q": "You see 3, 6, 9, 12 and say the next number is 15. What kind of reasoning is this?",
+      "o": [
+       "Inductive",
+       "Deductive",
+       "Proof by theorem",
+       "Contrapositive"
+      ],
+      "a": 0,
+      "why": "Using a pattern from examples is inductive reasoning."
+     },
+     {
+      "t": "mc",
+      "q": "Which number is a counterexample to 'all prime numbers are odd'?",
+      "o": [
+       "3",
+       "9",
+       "2",
+       "15"
+      ],
+      "a": 2,
+      "why": "2 is prime and even."
+     },
+     {
+      "t": "tf",
+      "q": "A conditional statement and its contrapositive are always both true or both false.",
+      "a": true,
+      "why": "They are logically equivalent."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Conjecture",
+        "guess based on a pattern"
+       ],
+       [
+        "Counterexample",
+        "example that shows a claim is false"
+       ],
+       [
+        "Theorem",
+        "statement that has been proven"
+       ],
+       [
+        "Postulate",
+        "accepted without proof"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a proof in order",
+      "items": [
+       [
+        "Write the Given and the Prove",
+        1
+       ],
+       [
+        "Draw and mark a diagram",
+        2
+       ],
+       [
+        "Write statements with reasons",
+        3
+       ],
+       [
+        "Finish with the statement you wanted to prove",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 'If n is prime, then n is odd.' Which prime number is a counterexample?",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "Think of the smallest prime.",
+      "why": "2 is prime but even."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: vertical angles are equal. Two vertical angles are 4x + 5 and 6x - 15 degrees. x = ?",
+      "a": [
+       "10"
+      ],
+      "hint": "Set the two angles equal.",
+      "why": "4x + 5 = 6x - 15 gives 20 = 2x, so x = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: use inductive reasoning. What is the next number in 1, 4, 9, 16, 25, ...?",
+      "a": [
+       "36"
+      ],
+      "hint": "These are square numbers.",
+      "why": "1^2, 2^2, 3^2, 4^2, 5^2, so next is 6^2 = 36."
+     }
+    ]
+   },
+   {
+    "title": "Polygons and Quadrilaterals",
+    "period": "Polygons",
+    "learn": [
+     {
+      "h": "Angle sums",
+      "b": "The interior angles of a polygon with n sides add to (n - 2) x 180. A hexagon has (6 - 2) x 180 = 720. The exterior angles of any convex polygon always add to 360."
+     },
+     {
+      "h": "Regular polygons",
+      "b": "All sides and angles are equal. Each exterior angle is 360 / n. For a regular octagon that is 360 / 8 = 45, so each interior angle is 180 - 45 = 135."
+     },
+     {
+      "h": "Quadrilaterals",
+      "b": "A parallelogram has opposite sides parallel and equal, and opposite angles equal. A rectangle has four right angles. A rhombus has four equal sides and perpendicular diagonals. A square is both. A trapezoid has one pair of parallel sides."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the sum of the interior angles of a hexagon?",
+      "o": [
+       "540",
+       "360",
+       "720",
+       "1080"
+      ],
+      "a": 2,
+      "why": "(6 - 2) x 180 = 720."
+     },
+     {
+      "t": "mc",
+      "q": "What is each exterior angle of a regular octagon?",
+      "o": [
+       "45",
+       "135",
+       "60",
+       "30"
+      ],
+      "a": 0,
+      "why": "360 / 8 = 45."
+     },
+     {
+      "t": "mc",
+      "q": "In a parallelogram, one angle is 65 degrees. What is an adjacent angle?",
+      "o": [
+       "65",
+       "25",
+       "295",
+       "115"
+      ],
+      "a": 3,
+      "why": "Adjacent angles add to 180: 180 - 65 = 115."
+     },
+     {
+      "t": "mc",
+      "q": "Which quadrilateral always has perpendicular diagonals?",
+      "o": [
+       "Rectangle",
+       "Rhombus",
+       "Parallelogram",
+       "Isosceles trapezoid"
+      ],
+      "a": 1,
+      "why": "The diagonals of a rhombus cross at 90 degrees."
+     },
+     {
+      "t": "tf",
+      "q": "The exterior angles of any convex polygon add up to 360 degrees.",
+      "a": true,
+      "why": "This is true for every convex polygon, whatever the number of sides."
+     },
+     {
+      "t": "match",
+      "q": "Match each shape to its property",
+      "pairs": [
+       [
+        "Rectangle",
+        "four right angles"
+       ],
+       [
+        "Rhombus",
+        "four equal sides"
+       ],
+       [
+        "Trapezoid",
+        "exactly one pair of parallel sides"
+       ],
+       [
+        "Square",
+        "equal sides and right angles"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these by interior angle sum, smallest first",
+      "items": [
+       [
+        "triangle",
+        1
+       ],
+       [
+        "quadrilateral",
+        2
+       ],
+       [
+        "pentagon",
+        3
+       ],
+       [
+        "hexagon",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is each interior angle of a regular decagon (10 sides), in degrees?",
+      "a": [
+       "144"
+      ],
+      "hint": "Sum = (10 - 2) x 180, then divide by 10.",
+      "why": "1440 / 10 = 144."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the interior angles of a polygon add to 1260 degrees. How many sides does it have?",
+      "a": [
+       "9",
+       "nine"
+      ],
+      "hint": "Divide 1260 by 180, then add 2.",
+      "why": "1260 / 180 = 7, and n - 2 = 7 so n = 9."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in parallelogram ABCD, angle A = 2x + 10 and adjacent angle B = 3x - 20. x = ?",
+      "a": [
+       "38"
+      ],
+      "hint": "Adjacent angles add to 180.",
+      "why": "5x - 10 = 180 so x = 38. Check: A = 86 and B = 94."
+     }
+    ]
+   },
+   {
+    "title": "Transformations",
+    "period": "Transformations",
+    "learn": [
+     {
+      "h": "Rigid motions",
+      "b": "A translation slides a figure, a reflection flips it over a line, and a rotation turns it around a point. These keep size and shape the same. A dilation changes the size."
+     },
+     {
+      "h": "Coordinate rules",
+      "b": "Reflect over the x-axis: (x, y) becomes (x, -y). Reflect over the y-axis: (-x, y). Rotate 90 degrees counterclockwise about the origin: (-y, x). Translate by <a, b>: (x + a, y + b)."
+     },
+     {
+      "h": "Dilations",
+      "b": "A dilation from the origin with scale factor k turns (x, y) into (kx, ky). Lengths are multiplied by k, and areas are multiplied by k^2. A scale factor of 2 makes the area 4 times bigger."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Reflect the point (3, 5) over the x-axis. Where does it land?",
+      "o": [
+       "(-3, 5)",
+       "(3, -5)",
+       "(-3, -5)",
+       "(5, 3)"
+      ],
+      "a": 1,
+      "why": "Over the x-axis, only the y-coordinate changes sign."
+     },
+     {
+      "t": "mc",
+      "q": "Rotate (2, 1) by 90 degrees counterclockwise about the origin. What is the new point?",
+      "o": [
+       "(1, -2)",
+       "(-2, -1)",
+       "(2, -1)",
+       "(-1, 2)"
+      ],
+      "a": 3,
+      "why": "(x, y) becomes (-y, x), so (-1, 2)."
+     },
+     {
+      "t": "mc",
+      "q": "Translate (4, -2) by <-3, 5>. What is the new point?",
+      "o": [
+       "(1, 3)",
+       "(7, -7)",
+       "(1, -7)",
+       "(-1, 3)"
+      ],
+      "a": 0,
+      "why": "4 - 3 = 1 and -2 + 5 = 3."
+     },
+     {
+      "t": "mc",
+      "q": "Dilate (2, -3) from the origin with scale factor 3. What is the image?",
+      "o": [
+       "(5, 0)",
+       "(6, 9)",
+       "(6, -9)",
+       "(2/3, -1)"
+      ],
+      "a": 2,
+      "why": "Multiply both coordinates by 3."
+     },
+     {
+      "t": "tf",
+      "q": "A dilation with scale factor 2 makes the area 4 times as large.",
+      "a": true,
+      "why": "Area is multiplied by k^2 = 4."
+     },
+     {
+      "t": "match",
+      "q": "Match each transformation to what it does",
+      "pairs": [
+       [
+        "Translation",
+        "slides the figure"
+       ],
+       [
+        "Reflection",
+        "flips over a line"
+       ],
+       [
+        "Rotation",
+        "turns about a point"
+       ],
+       [
+        "Dilation",
+        "enlarges or shrinks"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Apply these moves to (1, 2) in order",
+      "items": [
+       [
+        "Start at (1, 2)",
+        1
+       ],
+       [
+        "Translate right 3: (4, 2)",
+        2
+       ],
+       [
+        "Reflect over x-axis: (4, -2)",
+        3
+       ],
+       [
+        "Dilate by 2: (8, -4)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: reflect (-4, 7) over the y-axis. What is the image?",
+      "a": [
+       "(4,7)",
+       "(4, 7)",
+       "4,7",
+       "4, 7",
+       "4 7"
+      ],
+      "hint": "Only the x-coordinate changes sign.",
+      "why": "(x, y) becomes (-x, y), so (4, 7)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: rotate (3, -1) by 90 degrees counterclockwise about the origin. What is the image?",
+      "a": [
+       "(1,3)",
+       "(1, 3)",
+       "1,3",
+       "1, 3",
+       "1 3"
+      ],
+      "hint": "Use (x, y) becomes (-y, x).",
+      "why": "(-(-1), 3) = (1, 3)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a triangle has area 12. It is dilated with scale factor 3. What is the new area?",
+      "a": [
+       "108"
+      ],
+      "hint": "Area is multiplied by the scale factor squared.",
+      "why": "12 x 3^2 = 12 x 9 = 108."
+     }
+    ]
+   },
+   {
+    "title": "Congruence, Similarity and Right Triangles",
+    "period": "Geometry",
+    "learn": [
+     {
+      "h": "Congruent triangles",
+      "b": "Congruent triangles have the same size and shape. You can prove it with SSS, SAS, ASA or AAS. AAA is not enough."
+     },
+     {
+      "h": "Similar triangles",
+      "b": "Similar triangles have the same shape, but different size. Their sides are in the same ratio. A 3-4-5 triangle scaled by 3 becomes 9-12-15."
+     },
+     {
+      "h": "Right triangles",
+      "b": "Pythagorean theorem: a^2 + b^2 = c^2. Trig ratios: sin = opposite / hypotenuse, cos = adjacent / hypotenuse, tan = opposite / adjacent."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A 3-4-5 triangle is similar to a triangle with shortest side 9. What is the longest side?",
+      "o": [
+       "12",
+       "15",
+       "18",
+       "20"
+      ],
+      "a": 1,
+      "why": "The scale factor is 3, so 5 x 3 = 15."
+     },
+     {
+      "t": "mc",
+      "q": "A right triangle has legs 6 and 8. What is the hypotenuse?",
+      "o": [
+       "14",
+       "12",
+       "10",
+       "9"
+      ],
+      "a": 2,
+      "why": "36 + 64 = 100, and sqrt(100) = 10."
+     },
+     {
+      "t": "mc",
+      "q": "Which is NOT enough to prove triangles congruent?",
+      "o": [
+       "SSS",
+       "SAS",
+       "ASA",
+       "AAA"
+      ],
+      "a": 3,
+      "why": "AAA gives similar triangles, not necessarily congruent ones."
+     },
+     {
+      "t": "mc",
+      "q": "In a right triangle, the opposite side is 3 and the hypotenuse is 5. What is sin of the angle?",
+      "o": [
+       "3/5",
+       "5/3",
+       "4/5",
+       "3/4"
+      ],
+      "a": 0,
+      "why": "sin = opposite / hypotenuse = 3/5."
+     },
+     {
+      "t": "tf",
+      "q": "Similar figures have the same shape but not always the same size.",
+      "a": true,
+      "why": "That is the definition of similar."
+     },
+     {
+      "t": "match",
+      "q": "Match each ratio to its meaning",
+      "pairs": [
+       [
+        "sin",
+        "opposite / hypotenuse"
+       ],
+       [
+        "cos",
+        "adjacent / hypotenuse"
+       ],
+       [
+        "tan",
+        "opposite / adjacent"
+       ],
+       [
+        "hypotenuse",
+        "side across from the right angle"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "sin 30",
+        1
+       ],
+       [
+        "sin 45",
+        2
+       ],
+       [
+        "sin 60",
+        3
+       ],
+       [
+        "sin 90",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: triangles are similar. A side of 6 in the small triangle matches a side of 9 in the large one. A side of 10 in the small triangle matches what length in the large one?",
+      "a": [
+       "15"
+      ],
+      "hint": "The scale factor is 9/6 = 1.5.",
+      "why": "10 x 1.5 = 15."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a right triangle has hypotenuse 17 and one leg 8. What is the other leg?",
+      "a": [
+       "15"
+      ],
+      "hint": "b^2 = 17^2 - 8^2.",
+      "why": "289 - 64 = 225 and sqrt(225) = 15."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps for the hypotenuse of a right triangle with legs 5 and 12 in order",
+      "lines": [
+       "a^2 + b^2 = c^2",
+       "5^2 + 12^2 = c^2",
+       "25 + 144 = c^2",
+       "169 = c^2",
+       "c = 13"
+      ],
+      "why": "Substitute the legs, add the squares, then take the square root."
+     }
+    ]
+   },
+   {
+    "title": "Right Triangle Trigonometry",
+    "period": "Trigonometry",
+    "learn": [
+     {
+      "h": "Finding sides and angles",
+      "b": "SOH CAH TOA: sin = opposite / hypotenuse, cos = adjacent / hypotenuse, tan = opposite / adjacent. To find a side, set up the ratio and solve. To find an angle, use an inverse: if sin A = 1/2 then A = 30."
+     },
+     {
+      "h": "Special right triangles",
+      "b": "A 45-45-90 triangle has sides in the ratio 1 : 1 : sqrt(2). A 30-60-90 triangle has sides 1 : sqrt(3) : 2, so the hypotenuse is twice the shorter leg."
+     },
+     {
+      "h": "Triples and real problems",
+      "b": "Common Pythagorean triples are 3-4-5, 5-12-13, 8-15-17 and 7-24-25. For an angle of elevation, draw a right triangle: if you stand 20 m from a tree and the angle to the top is 45, the height is 20 tan 45 = 20 m."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A 45-45-90 triangle has legs of 7. What is the hypotenuse?",
+      "o": [
+       "14",
+       "7",
+       "7 sqrt(2)",
+       "7 sqrt(3)"
+      ],
+      "a": 2,
+      "why": "The hypotenuse is leg x sqrt(2)."
+     },
+     {
+      "t": "mc",
+      "q": "In a 30-60-90 triangle the shorter leg is 5. What is the hypotenuse?",
+      "o": [
+       "10",
+       "5 sqrt(3)",
+       "15",
+       "7.5"
+      ],
+      "a": 0,
+      "why": "The hypotenuse is twice the shorter leg."
+     },
+     {
+      "t": "mc",
+      "q": "A right triangle has legs 5 and 12. What is the hypotenuse?",
+      "o": [
+       "17",
+       "15",
+       "11",
+       "13"
+      ],
+      "a": 3,
+      "why": "25 + 144 = 169 and sqrt(169) = 13."
+     },
+     {
+      "t": "mc",
+      "q": "A 10 m ramp rises at 30 degrees. How high does it rise?",
+      "o": [
+       "10 m",
+       "5 m",
+       "8.7 m",
+       "20 m"
+      ],
+      "a": 1,
+      "why": "Height = 10 x sin 30 = 10 x 1/2 = 5."
+     },
+     {
+      "t": "tf",
+      "q": "In a 30-60-90 triangle, the hypotenuse is twice the shorter leg.",
+      "a": true,
+      "why": "The sides are in the ratio 1 : sqrt(3) : 2."
+     },
+     {
+      "t": "match",
+      "q": "Match each pair of legs to the hypotenuse",
+      "pairs": [
+       [
+        "legs 3 and 4",
+        "5"
+       ],
+       [
+        "legs 5 and 12",
+        "13"
+       ],
+       [
+        "legs 8 and 15",
+        "17"
+       ],
+       [
+        "legs 7 and 24",
+        "25"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Find a tree's height from 20 m away at a 45 degree angle, in order",
+      "items": [
+       [
+        "Draw a right triangle",
+        1
+       ],
+       [
+        "Choose tan = opposite / adjacent",
+        2
+       ],
+       [
+        "Write tan 45 = h / 20",
+        3
+       ],
+       [
+        "h = 20 m",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a right triangle has a 30 degree angle and a hypotenuse of 14. How long is the side opposite the 30 degree angle?",
+      "a": [
+       "7"
+      ],
+      "hint": "Use sin 30 = 1/2.",
+      "why": "Opposite = 14 x sin 30 = 14 x 1/2 = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a right triangle has legs 9 and 40. What is the hypotenuse?",
+      "a": [
+       "41"
+      ],
+      "hint": "Add the squares: 81 + 1600.",
+      "why": "81 + 1600 = 1681 and sqrt(1681) = 41."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in a right triangle the side opposite angle A is 6 and the hypotenuse is 12. What is angle A in degrees?",
+      "a": [
+       "30"
+      ],
+      "hint": "sin A = 6/12 = 1/2.",
+      "why": "sin A = 1/2 so A = 30 degrees."
+     }
+    ]
+   },
+   {
+    "title": "Circles, Area and Volume",
+    "period": "Geometry",
+    "learn": [
+     {
+      "h": "Circle formulas",
+      "b": "Circumference = 2 pi r. Area = pi r^2. A radius of 6 gives an area of 36 pi."
+     },
+     {
+      "h": "Arcs and angles",
+      "b": "A central angle equals its arc. A 90 degree central angle takes up 90/360 = 1/4 of the circle. An inscribed angle is half of its arc."
+     },
+     {
+      "h": "3D shapes",
+      "b": "Cylinder: pi r^2 h. Cone: 1/3 pi r^2 h. Sphere: 4/3 pi r^3. Trapezoid area = 1/2 (b1 + b2) h."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the area of a circle with radius 6?",
+      "o": [
+       "12 pi",
+       "36 pi",
+       "6 pi",
+       "72 pi"
+      ],
+      "a": 1,
+      "why": "pi x 6^2 = 36 pi."
+     },
+     {
+      "t": "mc",
+      "q": "A central angle of 90 degrees takes up what fraction of a circle?",
+      "o": [
+       "1/2",
+       "1/3",
+       "1/4",
+       "1/8"
+      ],
+      "a": 2,
+      "why": "90 / 360 = 1/4."
+     },
+     {
+      "t": "mc",
+      "q": "What is the volume of a cone with r = 3 and h = 4?",
+      "o": [
+       "36 pi",
+       "48 pi",
+       "24 pi",
+       "12 pi"
+      ],
+      "a": 3,
+      "why": "1/3 x pi x 9 x 4 = 12 pi."
+     },
+     {
+      "t": "mc",
+      "q": "A trapezoid has bases 6 and 10 and height 4. What is its area?",
+      "o": [
+       "32",
+       "64",
+       "40",
+       "24"
+      ],
+      "a": 0,
+      "why": "1/2 x (6 + 10) x 4 = 32."
+     },
+     {
+      "t": "tf",
+      "q": "An inscribed angle is equal to the central angle on the same arc.",
+      "a": false,
+      "why": "An inscribed angle is half of the central angle."
+     },
+     {
+      "t": "match",
+      "q": "Match each formula to its shape",
+      "pairs": [
+       [
+        "2 pi r",
+        "circle circumference"
+       ],
+       [
+        "pi r^2",
+        "circle area"
+       ],
+       [
+        "4/3 pi r^3",
+        "sphere volume"
+       ],
+       [
+        "pi r^2 h",
+        "cylinder volume"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put circles by area, smallest first",
+      "items": [
+       [
+        "radius 1",
+        1
+       ],
+       [
+        "radius 2",
+        2
+       ],
+       [
+        "radius 3",
+        3
+       ],
+       [
+        "radius 4",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the circumference of a circle with radius 7? Answer in terms of pi.",
+      "a": [
+       "14pi",
+       "14 pi",
+       "14π"
+      ],
+      "hint": "C = 2 pi r.",
+      "why": "2 x pi x 7 = 14 pi."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the volume of a cylinder with r = 3 and h = 5? Answer in terms of pi.",
+      "a": [
+       "45pi",
+       "45 pi",
+       "45π"
+      ],
+      "hint": "V = pi r^2 h.",
+      "why": "pi x 9 x 5 = 45 pi."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the volume of a sphere with radius 3? Answer in terms of pi.",
+      "a": [
+       "36pi",
+       "36 pi",
+       "36π"
+      ],
+      "hint": "V = 4/3 pi r^3.",
+      "why": "4/3 x 27 x pi = 36 pi."
+     }
+    ]
+   },
+   {
+    "title": "Circle Theorems and Equations",
+    "period": "Circles",
+    "learn": [
+     {
+      "h": "Tangents and chords",
+      "b": "A tangent touches a circle at one point and is perpendicular to the radius there. Two tangents from the same outside point have equal length. If two chords cross, the products of their pieces are equal: a x b = c x d."
+     },
+     {
+      "h": "Arc length and sectors",
+      "b": "For a central angle t: arc length = t/360 x 2 pi r, and sector area = t/360 x pi r^2. With r = 6 and t = 60, the arc length is 1/6 x 12 pi = 2 pi."
+     },
+     {
+      "h": "Circle equations",
+      "b": "A circle with center (h, k) and radius r has the equation (x - h)^2 + (y - k)^2 = r^2. The circle (x - 3)^2 + (y + 2)^2 = 49 has center (3, -2) and radius 7."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A tangent touches a circle. What angle does it make with the radius at the point of contact?",
+      "o": [
+       "45 degrees",
+       "90 degrees",
+       "60 degrees",
+       "180 degrees"
+      ],
+      "a": 1,
+      "why": "A tangent is perpendicular to the radius."
+     },
+     {
+      "t": "mc",
+      "q": "What is the arc length for a central angle of 60 degrees in a circle with radius 6?",
+      "o": [
+       "6 pi",
+       "12 pi",
+       "pi",
+       "2 pi"
+      ],
+      "a": 3,
+      "why": "1/6 x 2 pi x 6 = 2 pi."
+     },
+     {
+      "t": "mc",
+      "q": "What is the area of a 90 degree sector in a circle with radius 4?",
+      "o": [
+       "4 pi",
+       "16 pi",
+       "8 pi",
+       "2 pi"
+      ],
+      "a": 0,
+      "why": "1/4 x pi x 16 = 4 pi."
+     },
+     {
+      "t": "mc",
+      "q": "What are the center and radius of (x - 3)^2 + (y + 2)^2 = 49?",
+      "o": [
+       "center (-3, 2), radius 7",
+       "center (3, -2), radius 49",
+       "center (3, -2), radius 7",
+       "center (3, 2), radius 7"
+      ],
+      "a": 2,
+      "why": "The center is (h, k) = (3, -2) and r^2 = 49, so r = 7."
+     },
+     {
+      "t": "tf",
+      "q": "Two tangent segments drawn to a circle from the same outside point have equal length.",
+      "a": true,
+      "why": "This is the tangent segment theorem."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Chord",
+        "segment with both endpoints on the circle"
+       ],
+       [
+        "Tangent",
+        "touches the circle at one point"
+       ],
+       [
+        "Secant",
+        "line that crosses the circle twice"
+       ],
+       [
+        "Diameter",
+        "chord through the center"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Write the circle with center (1, 2) through (4, 6), in order",
+      "items": [
+       [
+        "Find the distance from (1, 2) to (4, 6)",
+        1
+       ],
+       [
+        "The distance is sqrt(9 + 16) = 5",
+        2
+       ],
+       [
+        "Square it: r^2 = 25",
+        3
+       ],
+       [
+        "Write (x - 1)^2 + (y - 2)^2 = 25",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: two chords cross inside a circle. The pieces of one chord are 4 and 6. One piece of the other chord is 3. How long is its other piece?",
+      "a": [
+       "8"
+      ],
+      "hint": "Use a x b = c x d.",
+      "why": "4 x 6 = 24 and 24 / 3 = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: find the arc length (in terms of pi) for a 120 degree central angle in a circle with radius 9.",
+      "a": [
+       "6pi",
+       "6 pi",
+       "6π"
+      ],
+      "hint": "Use 120/360 x 2 pi r.",
+      "why": "1/3 x 18 pi = 6 pi."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a tangent from point P touches a circle with radius 5 at T. The center O is 13 from P. How long is PT?",
+      "a": [
+       "12"
+      ],
+      "hint": "Triangle OTP has a right angle at T.",
+      "why": "PT^2 = 13^2 - 5^2 = 144, so PT = 12."
+     }
+    ]
+   },
+   {
+    "title": "Coordinate Geometry",
+    "period": "Geometry",
+    "learn": [
+     {
+      "h": "Distance and midpoint",
+      "b": "Distance = sqrt((x2 - x1)^2 + (y2 - y1)^2). From (0, 0) to (6, 8): sqrt(36 + 64) = 10. Midpoint: average the coordinates."
+     },
+     {
+      "h": "Slopes of lines",
+      "b": "Parallel lines have equal slopes. Perpendicular lines have slopes that are negative reciprocals. If one slope is 2, the other is -1/2."
+     },
+     {
+      "h": "Equation of a circle",
+      "b": "A circle with center (0, 0) and radius r is x^2 + y^2 = r^2. With r = 5: x^2 + y^2 = 25."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the distance from (0, 0) to (6, 8)?",
+      "o": [
+       "14",
+       "10",
+       "12",
+       "7"
+      ],
+      "a": 1,
+      "why": "sqrt(36 + 64) = sqrt(100) = 10."
+     },
+     {
+      "t": "mc",
+      "q": "What is the midpoint of (2, 4) and (8, 10)?",
+      "o": [
+       "(6, 6)",
+       "(10, 14)",
+       "(3, 3)",
+       "(5, 7)"
+      ],
+      "a": 3,
+      "why": "(2 + 8)/2 = 5 and (4 + 10)/2 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "A line has slope 2. What is the slope of a perpendicular line?",
+      "o": [
+       "-1/2",
+       "1/2",
+       "-2",
+       "2"
+      ],
+      "a": 0,
+      "why": "The negative reciprocal of 2 is -1/2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the equation of a circle with center (0, 0) and radius 5?",
+      "o": [
+       "x + y = 5",
+       "x^2 + y^2 = 5",
+       "x^2 + y^2 = 25",
+       "x^2 + y^2 = 10"
+      ],
+      "a": 2,
+      "why": "x^2 + y^2 = r^2 = 25."
+     },
+     {
+      "t": "tf",
+      "q": "Lines with slopes 2 and -1/2 are perpendicular.",
+      "a": true,
+      "why": "The slopes are negative reciprocals."
+     },
+     {
+      "t": "match",
+      "q": "Match each idea to its meaning",
+      "pairs": [
+       [
+        "Parallel lines",
+        "same slope"
+       ],
+       [
+        "Perpendicular lines",
+        "negative reciprocal slopes"
+       ],
+       [
+        "Midpoint",
+        "average of the endpoints"
+       ],
+       [
+        "Distance formula",
+        "based on the Pythagorean theorem"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the distance from (1, 2) to (4, 6) in order",
+      "items": [
+       [
+        "x difference is 3",
+        1
+       ],
+       [
+        "y difference is 4",
+        2
+       ],
+       [
+        "Add squares: 9 + 16 = 25",
+        3
+       ],
+       [
+        "Square root gives 5",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the distance between (1, 1) and (7, 9)?",
+      "a": [
+       "10"
+      ],
+      "hint": "Differences are 6 and 8.",
+      "why": "sqrt(36 + 64) = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the midpoint of (-2, 6) and (4, -2)?",
+      "a": [
+       "(1,2)",
+       "(1, 2)",
+       "1,2",
+       "1, 2",
+       "1 2"
+      ],
+      "hint": "Average the x values and the y values.",
+      "why": "(-2 + 4)/2 = 1 and (6 - 2)/2 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a line passes through (0, 0) and (4, 2). What is the slope of a line perpendicular to it?",
+      "a": [
+       "-2"
+      ],
+      "hint": "The slope is 1/2. Take the negative reciprocal.",
+      "why": "The negative reciprocal of 1/2 is -2."
+     }
+    ]
+   }
+  ]
+ },
+ "math-alg2": {
+  "name": "Algebra 2",
+  "units": [
+   {
+    "title": "Linear Equations, Systems and Inequalities",
+    "period": "Algebra 1 review",
+    "learn": [
+     {
+      "h": "Solving equations",
+      "b": "Do the same thing to both sides until x is alone. 4(x - 2) = 3x + 1 becomes 4x - 8 = 3x + 1, then x = 9. Always check by putting x back in."
+     },
+     {
+      "h": "Inequalities",
+      "b": "Solve like an equation, but flip the sign when you multiply or divide by a negative. -2x > 8 gives x < -4."
+     },
+     {
+      "h": "Systems of equations",
+      "b": "Two equations, two unknowns. Elimination: add x + y = 10 and x - y = 4 to get 2x = 14, so x = 7 and y = 3. A line y = mx + b has slope m and y-intercept b."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve 4(x - 2) = 3x + 1.",
+      "o": [
+       "x = 3",
+       "x = 7",
+       "x = 9",
+       "x = -9"
+      ],
+      "a": 2,
+      "why": "4x - 8 = 3x + 1, so x = 9."
+     },
+     {
+      "t": "mc",
+      "q": "Solve -2x > 8.",
+      "o": [
+       "x < -4",
+       "x > -4",
+       "x < 4",
+       "x > 4"
+      ],
+      "a": 0,
+      "why": "Dividing by -2 flips the sign: x < -4."
+     },
+     {
+      "t": "mc",
+      "q": "Solve the system x + y = 10 and x - y = 4.",
+      "o": [
+       "x = 6, y = 4",
+       "x = 3, y = 7",
+       "x = 14, y = -4",
+       "x = 7, y = 3"
+      ],
+      "a": 3,
+      "why": "Adding gives 2x = 14, so x = 7 and y = 3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the equation of the line with slope 2 and y-intercept 3?",
+      "o": [
+       "y = 3x + 2",
+       "y = 2x + 3",
+       "y = 2x - 3",
+       "y = -2x + 3"
+      ],
+      "a": 1,
+      "why": "y = mx + b with m = 2 and b = 3."
+     },
+     {
+      "t": "tf",
+      "q": "When you multiply both sides of an inequality by a negative number, the sign stays the same.",
+      "a": false,
+      "why": "You must flip the inequality sign."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Slope",
+        "rise over run"
+       ],
+       [
+        "y-intercept",
+        "where the line crosses the y-axis"
+       ],
+       [
+        "Parallel lines",
+        "same slope"
+       ],
+       [
+        "Inconsistent system",
+        "no solution"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Solve 2x + 6 = 14 in order",
+      "items": [
+       [
+        "2x + 6 = 14",
+        1
+       ],
+       [
+        "Subtract 6: 2x = 8",
+        2
+       ],
+       [
+        "Divide by 2: x = 4",
+        3
+       ],
+       [
+        "Check: 2(4) + 6 = 14",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: solve 5x - 7 = 3x + 9. x = ?",
+      "a": [
+       "8"
+      ],
+      "hint": "Get the x terms on one side.",
+      "why": "2x = 16, so x = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: solve the system 2x + y = 11 and x - y = 1. y = ?",
+      "a": [
+       "3"
+      ],
+      "hint": "Add the equations to remove y.",
+      "why": "3x = 12 so x = 4, then y = 4 - 1 = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the largest whole number x that satisfies 3x - 4 < 11?",
+      "a": [
+       "4"
+      ],
+      "hint": "Solve 3x < 15 first.",
+      "why": "x < 5, so the largest whole number is 4."
+     }
+    ]
+   },
+   {
+    "title": "Functions and Complex Numbers",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Function notation",
+      "b": "f(x) = 2x^2 - 3 means \"put x into the rule\". f(3) = 2(9) - 3 = 15."
+     },
+     {
+      "h": "The imaginary unit",
+      "b": "i is defined by i^2 = -1. Powers repeat: i, -1, -i, 1. So i^3 = -i and i^4 = 1."
+     },
+     {
+      "h": "Complex arithmetic",
+      "b": "Add real and imaginary parts separately: (2 + 3i) + (1 - 4i) = 3 - i. Multiply with FOIL and use i^2 = -1: (1 + i)(1 - i) = 1 - i^2 = 2."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If f(x) = 2x^2 - 3, what is f(3)?",
+      "o": [
+       "15",
+       "3",
+       "21",
+       "9"
+      ],
+      "a": 0,
+      "why": "2(9) - 3 = 15."
+     },
+     {
+      "t": "mc",
+      "q": "What is i^3?",
+      "o": [
+       "i",
+       "-1",
+       "1",
+       "-i"
+      ],
+      "a": 3,
+      "why": "i^3 = i^2 x i = -i."
+     },
+     {
+      "t": "mc",
+      "q": "What is (2 + 3i) + (1 - 4i)?",
+      "o": [
+       "3 + 7i",
+       "1 + i",
+       "3 - i",
+       "3 + i"
+      ],
+      "a": 2,
+      "why": "Real: 2 + 1 = 3. Imaginary: 3i - 4i = -i."
+     },
+     {
+      "t": "mc",
+      "q": "What is (1 + i)(1 - i)?",
+      "o": [
+       "0",
+       "2",
+       "1 - 2i",
+       "2i"
+      ],
+      "a": 1,
+      "why": "1 - i^2 = 1 + 1 = 2."
+     },
+     {
+      "t": "tf",
+      "q": "The square root of -1 is a real number.",
+      "a": false,
+      "why": "It is the imaginary unit i, not a real number."
+     },
+     {
+      "t": "match",
+      "q": "Match each power of i to its value",
+      "pairs": [
+       [
+        "i^1",
+        "i"
+       ],
+       [
+        "i^2",
+        "-1"
+       ],
+       [
+        "i^3",
+        "-i"
+       ],
+       [
+        "i^4",
+        "1"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "For f(x) = 2x + 1, put these in order from smallest to largest",
+      "items": [
+       [
+        "f(0)",
+        1
+       ],
+       [
+        "f(1)",
+        2
+       ],
+       [
+        "f(2)",
+        3
+       ],
+       [
+        "f(4)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = x^2 - 2x + 3. What is f(-2)?",
+      "a": [
+       "11"
+      ],
+      "hint": "Substitute -2 for x.",
+      "why": "4 + 4 + 3 = 11."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: multiply (3 + 2i)(1 - i). Write a + bi.",
+      "a": [
+       "5-i",
+       "5 - i",
+       "5+-1i"
+      ],
+      "hint": "FOIL, then use i^2 = -1.",
+      "why": "3 - 3i + 2i - 2i^2 = 3 - i + 2 = 5 - i."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is i^27?",
+      "a": [
+       "-i"
+      ],
+      "hint": "27 divided by 4 leaves remainder 3.",
+      "why": "i^27 = i^3 = -i."
+     }
+    ]
+   },
+   {
+    "title": "Radicals and Rational Exponents",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Simplifying radicals",
+      "b": "Pull out perfect squares. sqrt(72) = sqrt(36 x 2) = 6 sqrt(2). In general sqrt(a x b) = sqrt(a) x sqrt(b)."
+     },
+     {
+      "h": "Rational exponents",
+      "b": "x^(1/2) means sqrt(x) and x^(1/3) is the cube root. x^(m/n) = (n-th root of x)^m. So 27^(2/3) = 3^2 = 9. A negative exponent flips: 16^(-1/2) = 1/4."
+     },
+     {
+      "h": "Radical equations",
+      "b": "Isolate the root, then square both sides. sqrt(x + 3) = 5 gives x + 3 = 25, so x = 22. Always check, because squaring can create fake (extraneous) solutions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Simplify sqrt(72).",
+      "o": [
+       "8 sqrt(3)",
+       "6 sqrt(2)",
+       "36 sqrt(2)",
+       "6 sqrt(3)"
+      ],
+      "a": 1,
+      "why": "sqrt(36 x 2) = 6 sqrt(2)."
+     },
+     {
+      "t": "mc",
+      "q": "What is 27^(2/3)?",
+      "o": [
+       "18",
+       "3",
+       "81",
+       "9"
+      ],
+      "a": 3,
+      "why": "The cube root of 27 is 3, and 3^2 = 9."
+     },
+     {
+      "t": "mc",
+      "q": "Solve sqrt(x + 3) = 5.",
+      "o": [
+       "x = 22",
+       "x = 2",
+       "x = 28",
+       "x = 25"
+      ],
+      "a": 0,
+      "why": "Square both sides: x + 3 = 25."
+     },
+     {
+      "t": "mc",
+      "q": "What is 16^(-1/2)?",
+      "o": [
+       "-4",
+       "4",
+       "1/4",
+       "-1/4"
+      ],
+      "a": 2,
+      "why": "16^(1/2) = 4 and the negative exponent gives 1/4."
+     },
+     {
+      "t": "tf",
+      "q": "sqrt(x^2) always equals x.",
+      "a": false,
+      "why": "sqrt(x^2) = |x|. For x = -3 it equals 3, not -3."
+     },
+     {
+      "t": "match",
+      "q": "Match each exponent to its meaning",
+      "pairs": [
+       [
+        "x^(1/2)",
+        "square root of x"
+       ],
+       [
+        "x^(1/3)",
+        "cube root of x"
+       ],
+       [
+        "x^(-1)",
+        "1 / x"
+       ],
+       [
+        "x^(2/3)",
+        "cube root of x, squared"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these by value, smallest first",
+      "items": [
+       [
+        "4^(1/2)",
+        1
+       ],
+       [
+        "27^(1/3)",
+        2
+       ],
+       [
+        "16^(1/2)",
+        3
+       ],
+       [
+        "125^(1/3)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is 4^(3/2)?",
+      "a": [
+       "8"
+      ],
+      "hint": "Take the square root first, then cube.",
+      "why": "sqrt(4) = 2 and 2^3 = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: solve sqrt(2x - 1) = 7. x = ?",
+      "a": [
+       "25"
+      ],
+      "hint": "Square both sides.",
+      "why": "2x - 1 = 49, so x = 25."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: sqrt(48) = a x sqrt(3). What is a?",
+      "a": [
+       "4"
+      ],
+      "hint": "48 = 16 x 3.",
+      "why": "sqrt(48) = sqrt(16) x sqrt(3) = 4 sqrt(3)."
+     }
+    ]
+   },
+   {
+    "title": "Quadratics and Polynomials",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Quadratic formula",
+      "b": "For ax^2 + bx + c = 0, x = (-b +/- sqrt(b^2 - 4ac)) / (2a). x^2 + 6x + 8 = 0 has solutions x = -2 and x = -4."
+     },
+     {
+      "h": "Discriminant",
+      "b": "The discriminant is b^2 - 4ac. Positive: two real solutions. Zero: one real solution. Negative: no real solutions (two complex)."
+     },
+     {
+      "h": "Polynomials",
+      "b": "Multiply by distributing. (x + 2)(x^2 - 2x + 4) = x^3 + 8. For x^2 - 7x + 10 = 0, the roots add up to 7 (-b/a)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve x^2 + 6x + 8 = 0.",
+      "o": [
+       "x = 2 or x = 4",
+       "x = -2 or x = -4",
+       "x = -1 or x = -8",
+       "x = 2 or x = -4"
+      ],
+      "a": 1,
+      "why": "(x + 2)(x + 4) = 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is the discriminant of x^2 - 4x + 4?",
+      "o": [
+       "8",
+       "16",
+       "-16",
+       "0"
+      ],
+      "a": 3,
+      "why": "(-4)^2 - 4(1)(4) = 16 - 16 = 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is (x + 2)(x^2 - 2x + 4)?",
+      "o": [
+       "x^3 + 8",
+       "x^3 - 8",
+       "x^3 + 4x",
+       "x^3 + 2x^2 + 8"
+      ],
+      "a": 0,
+      "why": "The middle terms cancel, leaving x^3 + 8."
+     },
+     {
+      "t": "mc",
+      "q": "What is the sum of the roots of x^2 - 7x + 10 = 0?",
+      "o": [
+       "10",
+       "-7",
+       "7",
+       "3"
+      ],
+      "a": 2,
+      "why": "The roots are 2 and 5, which add to 7."
+     },
+     {
+      "t": "tf",
+      "q": "If the discriminant is negative, the quadratic has two real solutions.",
+      "a": false,
+      "why": "A negative discriminant means no real solutions."
+     },
+     {
+      "t": "match",
+      "q": "Match each discriminant to its meaning",
+      "pairs": [
+       [
+        "Greater than 0",
+        "two real solutions"
+       ],
+       [
+        "Equal to 0",
+        "one real solution"
+       ],
+       [
+        "Less than 0",
+        "no real solutions"
+       ],
+       [
+        "b^2 - 4ac",
+        "the discriminant"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for x^2 + 6x + 8 = 0 in order",
+      "items": [
+       [
+        "Write x^2 + 6x + 8 = 0",
+        1
+       ],
+       [
+        "Factor: (x + 2)(x + 4) = 0",
+        2
+       ],
+       [
+        "Set each factor to 0",
+        3
+       ],
+       [
+        "Solutions: x = -2 and x = -4",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: solve x^2 - 5x + 6 = 0. What is the larger solution?",
+      "a": [
+       "3"
+      ],
+      "hint": "Factor into (x - 2)(x - 3).",
+      "why": "The solutions are 2 and 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the discriminant of 2x^2 + 3x - 5?",
+      "a": [
+       "49"
+      ],
+      "hint": "b^2 - 4ac.",
+      "why": "9 - 4(2)(-5) = 9 + 40 = 49."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps to find the remainder when x^3 - 2x + 4 is divided by x - 2 in order",
+      "lines": [
+       "Remainder theorem: remainder = P(2)",
+       "P(2) = 2^3 - 2(2) + 4",
+       "P(2) = 8 - 4 + 4",
+       "The remainder is 8"
+      ],
+      "why": "By the remainder theorem, plug in x = 2."
+     }
+    ]
+   },
+   {
+    "title": "Absolute Value and Piecewise Functions",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Absolute value equations",
+      "b": "|x| is the distance from 0. |x - 3| = 5 means x is 5 away from 3, so x = 8 or x = -2. Split into two cases, positive and negative."
+     },
+     {
+      "h": "Absolute value inequalities",
+      "b": "|x| < 4 means -4 < x < 4 (one connected piece). |x| > 4 means x < -4 or x > 4 (two pieces)."
+     },
+     {
+      "h": "Piecewise functions",
+      "b": "A piecewise function uses different rules for different inputs. If f(x) = x + 1 for x < 0 and f(x) = x^2 for x >= 0, then f(-4) = -3 and f(3) = 9. First check which rule applies."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve |x - 3| = 5.",
+      "o": [
+       "x = 8 only",
+       "x = 2 or x = -8",
+       "x = 8 or x = -2",
+       "x = 5 or x = -5"
+      ],
+      "a": 2,
+      "why": "x - 3 = 5 or x - 3 = -5."
+     },
+     {
+      "t": "mc",
+      "q": "Solve |2x + 1| < 7.",
+      "o": [
+       "-4 < x < 3",
+       "x < -4 or x > 3",
+       "-3 < x < 4",
+       "-4 < x < -3"
+      ],
+      "a": 0,
+      "why": "-7 < 2x + 1 < 7, so -8 < 2x < 6."
+     },
+     {
+      "t": "mc",
+      "q": "f(x) = x + 1 when x < 0 and x^2 when x >= 0. What is f(-4)?",
+      "o": [
+       "16",
+       "-5",
+       "5",
+       "-3"
+      ],
+      "a": 3,
+      "why": "-4 is less than 0, so use x + 1 = -3."
+     },
+     {
+      "t": "mc",
+      "q": "What is the solution of |x| > 2?",
+      "o": [
+       "-2 < x < 2",
+       "x < -2 or x > 2",
+       "x > 2 only",
+       "x < -2 only"
+      ],
+      "a": 1,
+      "why": "Distance from 0 greater than 2 gives two pieces."
+     },
+     {
+      "t": "tf",
+      "q": "The absolute value of a number can never be negative.",
+      "a": true,
+      "why": "Absolute value is a distance, so it is 0 or more."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its value",
+      "pairs": [
+       [
+        "|-8|",
+        "8"
+       ],
+       [
+        "|3 - 10|",
+        "7"
+       ],
+       [
+        "-|4|",
+        "-4"
+       ],
+       [
+        "|0|",
+        "0"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these by value, smallest first",
+      "items": [
+       [
+        "-|5|",
+        1
+       ],
+       [
+        "|0|",
+        2
+       ],
+       [
+        "|-3|",
+        3
+       ],
+       [
+        "|2 - 9|",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: solve |x + 2| = 9. What is the larger solution?",
+      "a": [
+       "7"
+      ],
+      "hint": "x + 2 = 9 or x + 2 = -9.",
+      "why": "x = 7 or x = -11. The larger is 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = 2x if x <= 1 and f(x) = x + 5 if x > 1. What is f(4) + f(1)?",
+      "a": [
+       "11"
+      ],
+      "hint": "Check which rule applies to each input.",
+      "why": "f(4) = 9 and f(1) = 2, so the sum is 11."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: solve |3x - 6| = 12. What is the smaller solution?",
+      "a": [
+       "-2"
+      ],
+      "hint": "3x - 6 = 12 or 3x - 6 = -12.",
+      "why": "x = 6 or x = -2. The smaller is -2."
+     }
+    ]
+   },
+   {
+    "title": "Exponentials and Logarithms",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Exponential equations",
+      "b": "Write both sides with the same base. 2^x = 32 = 2^5, so x = 5."
+     },
+     {
+      "h": "Logarithms",
+      "b": "log base b of N asks \"what power of b gives N?\". log2(8) = 3 because 2^3 = 8. log10(1000) = 3."
+     },
+     {
+      "h": "Growth and log rules",
+      "b": "Compound growth: A = P(1 + r)^t. $1,000 at 10% for 2 years: 1000 x 1.1^2 = 1,210. Log rule: log(ab) = log a + log b."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Solve 2^x = 32.",
+      "o": [
+       "4",
+       "16",
+       "5",
+       "6"
+      ],
+      "a": 2,
+      "why": "2^5 = 32."
+     },
+     {
+      "t": "mc",
+      "q": "What is log base 2 of 8?",
+      "o": [
+       "3",
+       "4",
+       "2",
+       "8"
+      ],
+      "a": 0,
+      "why": "2^3 = 8."
+     },
+     {
+      "t": "mc",
+      "q": "What is log base 10 of 1000?",
+      "o": [
+       "2",
+       "10",
+       "4",
+       "3"
+      ],
+      "a": 3,
+      "why": "10^3 = 1000."
+     },
+     {
+      "t": "mc",
+      "q": "You invest $1,000 at 10% interest, compounded yearly, for 2 years. What is the total?",
+      "o": [
+       "$1,200",
+       "$1,210",
+       "$1,100",
+       "$1,020"
+      ],
+      "a": 1,
+      "why": "1000 x 1.1 x 1.1 = 1,210."
+     },
+     {
+      "t": "tf",
+      "q": "log(ab) = log a + log b.",
+      "a": true,
+      "why": "This is the product rule for logarithms."
+     },
+     {
+      "t": "match",
+      "q": "Match each logarithm to its value",
+      "pairs": [
+       [
+        "log2(1)",
+        "0"
+       ],
+       [
+        "log2(2)",
+        "1"
+       ],
+       [
+        "log2(4)",
+        "2"
+       ],
+       [
+        "log2(16)",
+        "4"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "2^0",
+        1
+       ],
+       [
+        "2^3",
+        2
+       ],
+       [
+        "2^5",
+        3
+       ],
+       [
+        "2^7",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: solve 3^(x + 1) = 81. x = ?",
+      "a": [
+       "3"
+      ],
+      "hint": "81 = 3^4.",
+      "why": "x + 1 = 4, so x = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is log base 2 of 64?",
+      "a": [
+       "6"
+      ],
+      "hint": "2 to what power is 64?",
+      "why": "2^6 = 64."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you invest $2000 at 5% interest, compounded yearly, for 2 years. How many dollars do you have? (number only)",
+      "a": [
+       "2205",
+       "2205.00"
+      ],
+      "hint": "2000 x 1.05 x 1.05.",
+      "why": "2000 x 1.1025 = 2205."
+     }
+    ]
+   },
+   {
+    "title": "Sequences and Rational Expressions",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Arithmetic sequences",
+      "b": "Add the same number each time. For 3, 7, 11, 15, ... the nth term is 3 + (n - 1)4. The 10th term is 3 + 36 = 39."
+     },
+     {
+      "h": "Geometric sequences and sums",
+      "b": "Multiply by the same number each time. 2, 6, 18, 54, ... The sum 1 + 2 + ... + 10 = 10 x 11 / 2 = 55."
+     },
+     {
+      "h": "Rational expressions",
+      "b": "Factor and cancel. (x^2 - 4)/(x - 2) = (x - 2)(x + 2)/(x - 2) = x + 2. A zero in the denominator gives a vertical asymptote."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the 10th term of 3, 7, 11, 15, ...?",
+      "o": [
+       "39",
+       "43",
+       "40",
+       "35"
+      ],
+      "a": 0,
+      "why": "3 + 9 x 4 = 39."
+     },
+     {
+      "t": "mc",
+      "q": "What comes next in 2, 6, 18, ...?",
+      "o": [
+       "24",
+       "36",
+       "72",
+       "54"
+      ],
+      "a": 3,
+      "why": "Multiply by 3 each time: 18 x 3 = 54."
+     },
+     {
+      "t": "mc",
+      "q": "What is 1 + 2 + 3 + ... + 10?",
+      "o": [
+       "50",
+       "55",
+       "45",
+       "100"
+      ],
+      "a": 1,
+      "why": "10 x 11 / 2 = 55."
+     },
+     {
+      "t": "mc",
+      "q": "Simplify (x^2 - 4)/(x - 2).",
+      "o": [
+       "x - 2",
+       "x^2 + 2",
+       "x + 2",
+       "x + 4"
+      ],
+      "a": 2,
+      "why": "Factor the top as (x - 2)(x + 2) and cancel."
+     },
+     {
+      "t": "tf",
+      "q": "The function 1/(x - 3) has a vertical asymptote at x = 3.",
+      "a": true,
+      "why": "The denominator is zero at x = 3."
+     },
+     {
+      "t": "match",
+      "q": "Match each sequence to its type",
+      "pairs": [
+       [
+        "2, 4, 6, 8",
+        "arithmetic"
+       ],
+       [
+        "2, 4, 8, 16",
+        "geometric"
+       ],
+       [
+        "1, 1, 2, 3, 5",
+        "Fibonacci"
+       ],
+       [
+        "5, 5, 5, 5",
+        "constant"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the geometric sequence that starts at 3 and doubles in order",
+      "items": [
+       [
+        "3",
+        1
+       ],
+       [
+        "6",
+        2
+       ],
+       [
+        "12",
+        3
+       ],
+       [
+        "24",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the 20th term of 5, 8, 11, 14, ...?",
+      "a": [
+       "62"
+      ],
+      "hint": "a + (n - 1)d.",
+      "why": "5 + 19 x 3 = 62."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the sum of the first 5 terms of 3, 6, 12, 24, ...?",
+      "a": [
+       "93"
+      ],
+      "hint": "3 + 6 + 12 + 24 + 48.",
+      "why": "3 + 6 + 12 + 24 + 48 = 93."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: (x^2 - 9)/(x + 3) simplifies to x - a. What is a?",
+      "a": [
+       "3"
+      ],
+      "hint": "Factor x^2 - 9.",
+      "why": "(x - 3)(x + 3)/(x + 3) = x - 3."
+     }
+    ]
+   },
+   {
+    "title": "Conic Sections",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Parabolas and circles",
+      "b": "A parabola y = a(x - h)^2 + k has vertex (h, k). A circle (x - h)^2 + (y - k)^2 = r^2 has center (h, k) and radius r."
+     },
+     {
+      "h": "Ellipses",
+      "b": "x^2/a^2 + y^2/b^2 = 1 is an ellipse centered at the origin. It crosses the x-axis at +/- a and the y-axis at +/- b. x^2/25 + y^2/9 = 1 reaches 5 along x and 3 along y. A circle is a special ellipse."
+     },
+     {
+      "h": "Hyperbolas",
+      "b": "x^2/a^2 - y^2/b^2 = 1 has a minus sign and two separate branches. x^2/9 - y^2/4 = 1 is a hyperbola. Its branches get close to two slanted asymptote lines."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the vertex of y = (x - 2)^2 + 5?",
+      "o": [
+       "(-2, 5)",
+       "(2, 5)",
+       "(2, -5)",
+       "(5, 2)"
+      ],
+      "a": 1,
+      "why": "The vertex is (h, k) = (2, 5)."
+     },
+     {
+      "t": "mc",
+      "q": "What is the radius of (x + 1)^2 + (y - 4)^2 = 36?",
+      "o": [
+       "36",
+       "18",
+       "4",
+       "6"
+      ],
+      "a": 3,
+      "why": "r^2 = 36, so r = 6."
+     },
+     {
+      "t": "mc",
+      "q": "How far does x^2/25 + y^2/9 = 1 reach along the x-axis from the center?",
+      "o": [
+       "5",
+       "25",
+       "3",
+       "9"
+      ],
+      "a": 0,
+      "why": "a^2 = 25, so a = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Which equation is a hyperbola?",
+      "o": [
+       "x^2/9 + y^2/4 = 1",
+       "x^2 + y^2 = 9",
+       "x^2/9 - y^2/4 = 1",
+       "y = x^2 - 4"
+      ],
+      "a": 2,
+      "why": "The minus sign between the squared terms gives a hyperbola."
+     },
+     {
+      "t": "tf",
+      "q": "A circle is a special kind of ellipse.",
+      "a": true,
+      "why": "When a = b, the ellipse is a circle."
+     },
+     {
+      "t": "match",
+      "q": "Match each conic to an example equation",
+      "pairs": [
+       [
+        "Parabola",
+        "y = x^2"
+       ],
+       [
+        "Circle",
+        "x^2 + y^2 = 16"
+       ],
+       [
+        "Ellipse",
+        "x^2/16 + y^2/4 = 1"
+       ],
+       [
+        "Hyperbola",
+        "x^2/16 - y^2/4 = 1"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the circles by radius, smallest first",
+      "items": [
+       [
+        "x^2 + y^2 = 4",
+        1
+       ],
+       [
+        "x^2 + y^2 = 9",
+        2
+       ],
+       [
+        "x^2 + y^2 = 25",
+        3
+       ],
+       [
+        "x^2 + y^2 = 49",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the radius of the circle x^2 + y^2 = 81?",
+      "a": [
+       "9"
+      ],
+      "hint": "r^2 = 81.",
+      "why": "r = sqrt(81) = 9."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the x-coordinate of the vertex of y = (x + 3)^2 - 1?",
+      "a": [
+       "-3"
+      ],
+      "hint": "Write it as (x - h)^2 + k.",
+      "why": "x + 3 = x - (-3), so h = -3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the ellipse x^2/49 + y^2/16 = 1 crosses the positive y-axis at what y value?",
+      "a": [
+       "4"
+      ],
+      "hint": "Set x = 0.",
+      "why": "y^2 = 16, so y = 4."
+     }
+    ]
+   },
+   {
+    "title": "Trigonometric Functions",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Radians",
+      "b": "Radians measure an angle by arc length on a unit circle. 180 degrees = pi radians. So 2 pi/3 radians is 120 degrees, and 90 degrees is pi/2."
+     },
+     {
+      "h": "Sine and cosine graphs",
+      "b": "y = sin x and y = cos x are waves. In y = A sin(Bx), the amplitude is |A| and the period is 2 pi / B. The graph of y = 3 sin x reaches 3 and -3. cos 0 = 1, so cosine starts at its peak."
+     },
+     {
+      "h": "Shifts",
+      "b": "y = A sin(x) + D moves the middle line up D units. The maximum is D + |A| and the minimum is D - |A|. For y = 2 sin x + 3 the maximum is 5."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many degrees is 2 pi/3 radians?",
+      "o": [
+       "60",
+       "90",
+       "120",
+       "240"
+      ],
+      "a": 2,
+      "why": "2/3 x 180 = 120."
+     },
+     {
+      "t": "mc",
+      "q": "What is the amplitude of y = 3 sin x?",
+      "o": [
+       "3",
+       "1",
+       "6",
+       "pi"
+      ],
+      "a": 0,
+      "why": "The amplitude is the number in front of sin."
+     },
+     {
+      "t": "mc",
+      "q": "What is the period of y = sin(2x)?",
+      "o": [
+       "2 pi",
+       "pi/2",
+       "4 pi",
+       "pi"
+      ],
+      "a": 3,
+      "why": "2 pi / 2 = pi."
+     },
+     {
+      "t": "mc",
+      "q": "What is sin(pi/2)?",
+      "o": [
+       "0",
+       "1",
+       "-1",
+       "1/2"
+      ],
+      "a": 1,
+      "why": "pi/2 is 90 degrees, the top of the unit circle."
+     },
+     {
+      "t": "tf",
+      "q": "The graph of y = cos x starts at its maximum value when x = 0.",
+      "a": true,
+      "why": "cos 0 = 1, the highest value."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Amplitude",
+        "half the distance from max to min"
+       ],
+       [
+        "Period",
+        "length of one full cycle"
+       ],
+       [
+        "Midline",
+        "horizontal center line of the wave"
+       ],
+       [
+        "Radian",
+        "arc length divided by radius"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these by value, smallest first",
+      "items": [
+       [
+        "sin 210 degrees",
+        1
+       ],
+       [
+        "sin 0 degrees",
+        2
+       ],
+       [
+        "sin 30 degrees",
+        3
+       ],
+       [
+        "sin 90 degrees",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: convert 150 degrees to radians.",
+      "a": [
+       "5pi/6",
+       "5π/6",
+       "5 pi/6",
+       "5pi 6"
+      ],
+      "hint": "Multiply by pi/180.",
+      "why": "150/180 = 5/6, so 5 pi/6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the period of y = cos(4x)? Answer in terms of pi.",
+      "a": [
+       "pi/2",
+       "π/2",
+       "pi 2",
+       "0.5pi",
+       "0.5 pi"
+      ],
+      "hint": "Period = 2 pi / B.",
+      "why": "2 pi / 4 = pi/2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the maximum value of y = 2 sin(x) + 3?",
+      "a": [
+       "5"
+      ],
+      "hint": "Maximum = D + amplitude.",
+      "why": "3 + 2 = 5."
+     }
+    ]
+   },
+   {
+    "title": "Statistics and Probability",
+    "period": "Algebra 2",
+    "learn": [
+     {
+      "h": "Center and spread",
+      "b": "Mean = sum / count. Median = middle value after sorting. Mode = most common. Range = largest - smallest. For 4, 8, 6, 10, 12 the mean is 40/5 = 8."
+     },
+     {
+      "h": "Counting and probability",
+      "b": "Arrangements of n items: n! (4 books can go in 4! = 24 ways). Choosing r from n: nCr = n!/(r!(n-r)!), so 5C2 = 10. For independent events P(A and B) = P(A) x P(B)."
+     },
+     {
+      "h": "Normal distribution",
+      "b": "Data in a bell curve follows the 68-95-99.7 rule: about 68% is within 1 standard deviation of the mean, 95% within 2, and 99.7% within 3."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the mean of 4, 8, 6, 10, 12?",
+      "o": [
+       "6",
+       "8",
+       "10",
+       "40"
+      ],
+      "a": 1,
+      "why": "40 / 5 = 8."
+     },
+     {
+      "t": "mc",
+      "q": "In how many ways can 4 different books be arranged on a shelf?",
+      "o": [
+       "16",
+       "12",
+       "4",
+       "24"
+      ],
+      "a": 3,
+      "why": "4! = 4 x 3 x 2 x 1 = 24."
+     },
+     {
+      "t": "mc",
+      "q": "How many ways can you choose 2 students from 5?",
+      "o": [
+       "10",
+       "20",
+       "25",
+       "7"
+      ],
+      "a": 0,
+      "why": "5C2 = (5 x 4)/(2 x 1) = 10."
+     },
+     {
+      "t": "mc",
+      "q": "In a normal distribution, about what percent of data is within 1 standard deviation of the mean?",
+      "o": [
+       "50",
+       "95",
+       "68",
+       "99.7"
+      ],
+      "a": 2,
+      "why": "The 68-95-99.7 rule."
+     },
+     {
+      "t": "tf",
+      "q": "For independent events, P(A and B) = P(A) x P(B).",
+      "a": true,
+      "why": "Multiply the probabilities of independent events."
+     },
+     {
+      "t": "match",
+      "q": "Match each statistic to its meaning",
+      "pairs": [
+       [
+        "Mean",
+        "sum divided by count"
+       ],
+       [
+        "Median",
+        "middle value"
+       ],
+       [
+        "Mode",
+        "most frequent value"
+       ],
+       [
+        "Range",
+        "largest minus smallest"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these by probability, least likely first",
+      "items": [
+       [
+        "roll a 6 on a die",
+        1
+       ],
+       [
+        "roll 1 or 2 on a die",
+        2
+       ],
+       [
+        "flip heads on a coin",
+        3
+       ],
+       [
+        "roll less than 6 on a die",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the median of 3, 9, 4, 12, 7, 5?",
+      "a": [
+       "6"
+      ],
+      "hint": "Sort the list. With 6 values, average the middle two.",
+      "why": "3, 4, 5, 7, 9, 12: (5 + 7)/2 = 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how many ways can you choose 3 people from 6?",
+      "a": [
+       "20"
+      ],
+      "hint": "6C3 = 6!/(3! x 3!).",
+      "why": "(6 x 5 x 4)/(3 x 2 x 1) = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: two fair coins are flipped. What is the probability of two heads? (fraction)",
+      "a": [
+       "1/4",
+       "0.25"
+      ],
+      "hint": "Multiply 1/2 x 1/2.",
+      "why": "1/2 x 1/2 = 1/4."
+     }
+    ]
+   }
+  ]
+ },
+ "math-precalc": {
+  "name": "Precalculus",
+  "units": [
+   {
+    "title": "Functions and Transformations",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Shifting graphs",
+      "b": "f(x) + 3 moves the graph up 3. f(x - 3) moves it right 3. -f(x) flips it over the x-axis. 2f(x) stretches it vertically."
+     },
+     {
+      "h": "Domain",
+      "b": "The domain is every input that works. For sqrt(x - 4), we need x - 4 to be 0 or more, so x is 4 or more."
+     },
+     {
+      "h": "Composite and inverse",
+      "b": "(f o g)(x) = f(g(x)). If f(x) = x + 1 and g(x) = x^2, then f(g(2)) = f(4) = 5. The inverse of f(x) = 2x + 1 is (x - 1)/2."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which function is y = x^2 shifted 3 units to the right?",
+      "o": [
+       "(x + 3)^2",
+       "x^2 + 3",
+       "x^2 - 3",
+       "(x - 3)^2"
+      ],
+      "a": 3,
+      "why": "Replacing x by x - 3 shifts the graph right."
+     },
+     {
+      "t": "mc",
+      "q": "What is the domain of sqrt(x - 4)?",
+      "o": [
+       "x is 4 or more",
+       "x is 4 or less",
+       "x is more than 0",
+       "all real numbers"
+      ],
+      "a": 0,
+      "why": "The expression under the root must not be negative."
+     },
+     {
+      "t": "mc",
+      "q": "What is the inverse of f(x) = 2x + 1?",
+      "o": [
+       "(x + 1)/2",
+       "2x - 1",
+       "1/(2x + 1)",
+       "(x - 1)/2"
+      ],
+      "a": 3,
+      "why": "Solve x = 2y + 1 for y: y = (x - 1)/2."
+     },
+     {
+      "t": "mc",
+      "q": "If f(x) = x + 1 and g(x) = x^2, what is f(g(2))?",
+      "o": [
+       "9",
+       "5",
+       "4",
+       "7"
+      ],
+      "a": 1,
+      "why": "g(2) = 4, then f(4) = 5."
+     },
+     {
+      "t": "tf",
+      "q": "Composition of functions is always commutative: f(g(x)) = g(f(x)).",
+      "a": false,
+      "why": "With f(x) = x + 1 and g(x) = x^2, f(g(2)) = 5 but g(f(2)) = 9."
+     },
+     {
+      "t": "match",
+      "q": "Match each transformation to its effect",
+      "pairs": [
+       [
+        "f(x) + 3",
+        "up 3"
+       ],
+       [
+        "f(x - 3)",
+        "right 3"
+       ],
+       [
+        "-f(x)",
+        "flip over x-axis"
+       ],
+       [
+        "2f(x)",
+        "vertical stretch"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "For f(x) = (x - 3)^2, put these x-values by output, smallest first",
+      "items": [
+       [
+        "x = 3",
+        1
+       ],
+       [
+        "x = 4",
+        2
+       ],
+       [
+        "x = 5",
+        3
+       ],
+       [
+        "x = 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = 3x - 2. What is the inverse function's value at 4, that is f^-1(4)?",
+      "a": [
+       "2"
+      ],
+      "hint": "Solve 3x - 2 = 4.",
+      "why": "3x = 6, so x = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = x^2 + 1 and g(x) = 2x. What is f(g(3))?",
+      "a": [
+       "37"
+      ],
+      "hint": "Find g(3) first.",
+      "why": "g(3) = 6 and f(6) = 37."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the smallest x in the domain of sqrt(2x - 6)?",
+      "a": [
+       "3"
+      ],
+      "hint": "2x - 6 must be 0 or more.",
+      "why": "2x >= 6, so x >= 3."
+     }
+    ]
+   },
+   {
+    "title": "Polynomial and Rational Functions",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Zeros and end behavior",
+      "b": "A zero is an x where f(x) = 0. A polynomial of degree n has at most n real zeros. The leading term decides the ends: y = -x^3 rises on the left and falls on the right."
+     },
+     {
+      "h": "Remainder and factor theorems",
+      "b": "Dividing P(x) by (x - c) leaves remainder P(c). If P(c) = 0, then (x - c) is a factor. Remainder of x^2 + 2x - 5 divided by x - 1 is 1 + 2 - 5 = -2."
+     },
+     {
+      "h": "Rational functions",
+      "b": "A rational function is a polynomial divided by a polynomial. Zeros of the denominator give vertical asymptotes, unless they cancel, which makes a hole. (x^2 - 1)/(x - 1) = x + 1 with a hole at x = 1."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the zeros of f(x) = x^3 - 4x?",
+      "o": [
+       "2, -2",
+       "0, 4",
+       "0, 2, -2",
+       "0, 4, -4"
+      ],
+      "a": 2,
+      "why": "x(x - 2)(x + 2) = 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is the remainder when x^2 + 2x - 5 is divided by x - 1?",
+      "o": [
+       "-2",
+       "2",
+       "1",
+       "-5"
+      ],
+      "a": 0,
+      "why": "P(1) = 1 + 2 - 5 = -2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the end behavior of y = -x^3?",
+      "o": [
+       "falls left, rises right",
+       "rises on both ends",
+       "falls on both ends",
+       "rises left, falls right"
+      ],
+      "a": 3,
+      "why": "For large positive x, -x^3 is very negative. For large negative x, it is very positive."
+     },
+     {
+      "t": "mc",
+      "q": "Where is the hole in the graph of (x^2 - 1)/(x - 1)?",
+      "o": [
+       "x = -1",
+       "x = 1",
+       "x = 0",
+       "there is no hole"
+      ],
+      "a": 1,
+      "why": "The factor x - 1 cancels, leaving a hole at x = 1."
+     },
+     {
+      "t": "tf",
+      "q": "A polynomial of degree 4 has at most 4 real zeros.",
+      "a": true,
+      "why": "A degree n polynomial has at most n real zeros."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Degree",
+        "highest power of x"
+       ],
+       [
+        "Leading coefficient",
+        "number on the highest power"
+       ],
+       [
+        "Zero",
+        "input that gives output 0"
+       ],
+       [
+        "Vertical asymptote",
+        "denominator zero that does not cancel"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Sketch a polynomial, in order",
+      "items": [
+       [
+        "Find the zeros",
+        1
+       ],
+       [
+        "Mark the y-intercept",
+        2
+       ],
+       [
+        "Check the end behavior",
+        3
+       ],
+       [
+        "Draw a smooth curve through the points",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the remainder when 2x^3 - 3x + 1 is divided by x - 2?",
+      "a": [
+       "11"
+      ],
+      "hint": "Compute P(2).",
+      "why": "16 - 6 + 1 = 11."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the horizontal asymptote of y = (6x^2 + 1)/(2x^2 - 5)? Give y = ...",
+      "a": [
+       "3",
+       "y=3",
+       "y = 3"
+      ],
+      "hint": "Same degrees: divide the leading coefficients.",
+      "why": "6/2 = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(x) = x^2(x - 4)(x + 1). What is the sum of its distinct zeros?",
+      "a": [
+       "3"
+      ],
+      "hint": "The zeros are 0, 4 and -1.",
+      "why": "0 + 4 + (-1) = 3."
+     }
+    ]
+   },
+   {
+    "title": "Exponentials and Logarithms",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Logs undo exponents",
+      "b": "log base b of N is the power of b that gives N. log base 3 of 81 = 4 because 3^4 = 81. ln means log base e."
+     },
+     {
+      "h": "Log rules",
+      "b": "log(ab) = log a + log b. log(a/b) = log a - log b. log(a^n) = n log a. log base b of b = 1."
+     },
+     {
+      "h": "Asymptotes",
+      "b": "y = (2x + 1)/(x - 3) has a vertical asymptote at x = 3. Its horizontal asymptote is the ratio of leading coefficients: y = 2."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is log base 3 of 81?",
+      "o": [
+       "3",
+       "27",
+       "9",
+       "4"
+      ],
+      "a": 3,
+      "why": "3^4 = 81."
+     },
+     {
+      "t": "mc",
+      "q": "What is ln(e^5)?",
+      "o": [
+       "5",
+       "e",
+       "1",
+       "e^5"
+      ],
+      "a": 0,
+      "why": "ln and e^x undo each other."
+     },
+     {
+      "t": "mc",
+      "q": "Solve 5^x = 125.",
+      "o": [
+       "25",
+       "3",
+       "2",
+       "5"
+      ],
+      "a": 1,
+      "why": "5^3 = 125."
+     },
+     {
+      "t": "mc",
+      "q": "What is the horizontal asymptote of y = (2x + 1)/(x - 3)?",
+      "o": [
+       "y = 3",
+       "y = 1/2",
+       "y = 2",
+       "y = 0"
+      ],
+      "a": 2,
+      "why": "The leading coefficients give 2/1 = 2."
+     },
+     {
+      "t": "tf",
+      "q": "ln(1) = 0.",
+      "a": true,
+      "why": "e^0 = 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each log rule",
+      "pairs": [
+       [
+        "log(ab)",
+        "log a + log b"
+       ],
+       [
+        "log(a/b)",
+        "log a - log b"
+       ],
+       [
+        "log(a^n)",
+        "n log a"
+       ],
+       [
+        "log base b of b",
+        "1"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "ln 1",
+        1
+       ],
+       [
+        "ln e",
+        2
+       ],
+       [
+        "ln(e^2)",
+        3
+       ],
+       [
+        "ln(e^3)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is ln(e^7)?",
+      "a": [
+       "7"
+      ],
+      "hint": "ln undoes e^x.",
+      "why": "ln(e^7) = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: solve 2^(x - 1) = 16. x = ?",
+      "a": [
+       "5"
+      ],
+      "hint": "16 = 2^4.",
+      "why": "x - 1 = 4, so x = 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps to solve 5^x = 20 in order",
+      "lines": [
+       "5^x = 20",
+       "ln(5^x) = ln(20)",
+       "x ln 5 = ln 20",
+       "x = ln 20 / ln 5"
+      ],
+      "why": "Take the log of both sides and use the power rule."
+     }
+    ]
+   },
+   {
+    "title": "Trigonometry",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Special angles",
+      "b": "sin 30 = 1/2, cos 60 = 1/2, tan 45 = 1, cos 0 = 1, cos 180 = -1. On the unit circle, cos is the x-coordinate and sin is the y-coordinate."
+     },
+     {
+      "h": "Radians",
+      "b": "180 degrees = pi radians. So 30 = pi/6, 45 = pi/4, 60 = pi/3 and 90 = pi/2."
+     },
+     {
+      "h": "Identity",
+      "b": "The most important identity: sin^2(t) + cos^2(t) = 1. It comes from the Pythagorean theorem on the unit circle."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is sin 30 degrees?",
+      "o": [
+       "1/2",
+       "1",
+       "sqrt(3)/2",
+       "0"
+      ],
+      "a": 0,
+      "why": "sin 30 = 1/2."
+     },
+     {
+      "t": "mc",
+      "q": "How many degrees is pi/3 radians?",
+      "o": [
+       "30",
+       "90",
+       "45",
+       "60"
+      ],
+      "a": 3,
+      "why": "pi radians is 180 degrees, so pi/3 is 60."
+     },
+     {
+      "t": "mc",
+      "q": "What is tan 45 degrees?",
+      "o": [
+       "0",
+       "1",
+       "sqrt(2)",
+       "undefined"
+      ],
+      "a": 1,
+      "why": "sin 45 and cos 45 are equal, so tan 45 = 1."
+     },
+     {
+      "t": "mc",
+      "q": "What is cos 180 degrees?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "-1/2"
+      ],
+      "a": 2,
+      "why": "On the unit circle, 180 degrees is the point (-1, 0)."
+     },
+     {
+      "t": "tf",
+      "q": "sin^2(t) + cos^2(t) = 1 for every angle t.",
+      "a": true,
+      "why": "This is the Pythagorean identity."
+     },
+     {
+      "t": "match",
+      "q": "Match each angle to radians",
+      "pairs": [
+       [
+        "30 degrees",
+        "pi/6"
+       ],
+       [
+        "45 degrees",
+        "pi/4"
+       ],
+       [
+        "60 degrees",
+        "pi/3"
+       ],
+       [
+        "90 degrees",
+        "pi/2"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from smallest to largest",
+      "items": [
+       [
+        "sin 0",
+        1
+       ],
+       [
+        "sin 30",
+        2
+       ],
+       [
+        "sin 60",
+        3
+       ],
+       [
+        "sin 90",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: convert 5 pi/6 radians to degrees.",
+      "a": [
+       "150"
+      ],
+      "hint": "Multiply by 180/pi.",
+      "why": "5/6 x 180 = 150."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is cos(2 pi/3)?",
+      "a": [
+       "-1/2",
+       "-0.5"
+      ],
+      "hint": "2 pi/3 is 120 degrees, in quadrant 2.",
+      "why": "cos 120 = -cos 60 = -1/2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: sin t = 3/5 and t is in quadrant 1. What is cos t?",
+      "a": [
+       "4/5",
+       "0.8"
+      ],
+      "hint": "Use sin^2 + cos^2 = 1.",
+      "why": "cos^2 = 1 - 9/25 = 16/25, so cos t = 4/5."
+     }
+    ]
+   },
+   {
+    "title": "Trig Identities and Equations",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Core identities",
+      "b": "sin^2 x + cos^2 x = 1, so 1 - sin^2 x = cos^2 x. tan x = sin x / cos x, sec x = 1/cos x, csc x = 1/sin x, cot x = cos x / sin x."
+     },
+     {
+      "h": "Double and sum angles",
+      "b": "sin 2x = 2 sin x cos x. cos 2x = cos^2 x - sin^2 x = 1 - 2 sin^2 x = 2 cos^2 x - 1. sin(A + B) = sin A cos B + cos A sin B. It is NOT sin A + sin B."
+     },
+     {
+      "h": "Solving trig equations",
+      "b": "Isolate the trig function, find the reference angle, then use the quadrant. sin x = 1/2 on [0, 2 pi) gives x = pi/6 and x = 5 pi/6 (sine is positive in quadrants 1 and 2)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Simplify 1 - sin^2 x.",
+      "o": [
+       "sin^2 x",
+       "cos^2 x",
+       "tan^2 x",
+       "1"
+      ],
+      "a": 1,
+      "why": "From sin^2 x + cos^2 x = 1."
+     },
+     {
+      "t": "mc",
+      "q": "If sin t = 3/5 and cos t = 4/5, what is sin 2t?",
+      "o": [
+       "12/25",
+       "7/25",
+       "6/5",
+       "24/25"
+      ],
+      "a": 3,
+      "why": "2 x 3/5 x 4/5 = 24/25."
+     },
+     {
+      "t": "mc",
+      "q": "What are the solutions of sin x = 1/2 on [0, 2 pi)?",
+      "o": [
+       "pi/6 and 5 pi/6",
+       "pi/6 and 11 pi/6",
+       "pi/3 and 2 pi/3",
+       "pi/6 only"
+      ],
+      "a": 0,
+      "why": "Sine is positive in quadrants 1 and 2, with reference angle pi/6."
+     },
+     {
+      "t": "mc",
+      "q": "Which expression equals cos 2x?",
+      "o": [
+       "2 sin x cos x",
+       "2 cos x",
+       "1 - 2 sin^2 x",
+       "cos^2 x + sin^2 x"
+      ],
+      "a": 2,
+      "why": "This is one form of the double-angle identity."
+     },
+     {
+      "t": "tf",
+      "q": "sin(A + B) = sin A + sin B.",
+      "a": false,
+      "why": "The correct rule is sin A cos B + cos A sin B."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its identity",
+      "pairs": [
+       [
+        "tan x",
+        "sin x / cos x"
+       ],
+       [
+        "sec x",
+        "1 / cos x"
+       ],
+       [
+        "csc x",
+        "1 / sin x"
+       ],
+       [
+        "cot x",
+        "cos x / sin x"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Solve 2 cos x - 1 = 0 on [0, 2 pi), in order",
+      "items": [
+       [
+        "Isolate: cos x = 1/2",
+        1
+       ],
+       [
+        "Reference angle is pi/3",
+        2
+       ],
+       [
+        "Cosine is positive in quadrants 1 and 4",
+        3
+       ],
+       [
+        "x = pi/3 and 5 pi/3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: sin x = 5/13 and x is in quadrant 1. What is cos x?",
+      "a": [
+       "12/13"
+      ],
+      "hint": "Use sin^2 + cos^2 = 1.",
+      "why": "cos^2 = 1 - 25/169 = 144/169, so cos x = 12/13."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the exact value of 2 sin 15 cos 15 (degrees)?",
+      "a": [
+       "1/2",
+       "0.5"
+      ],
+      "hint": "This is the double-angle formula for sine.",
+      "why": "2 sin 15 cos 15 = sin 30 = 1/2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: cos x = 1/3. What is cos 2x?",
+      "a": [
+       "-7/9"
+      ],
+      "hint": "cos 2x = 2 cos^2 x - 1.",
+      "why": "2/9 - 1 = -7/9."
+     }
+    ]
+   },
+   {
+    "title": "Laws of Sines and Cosines",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Law of Sines",
+      "b": "a / sin A = b / sin B = c / sin C. Use it when you know two angles and a side (AAS or ASA). With two sides and a non-included angle (SSA) there can be two triangles."
+     },
+     {
+      "h": "Law of Cosines",
+      "b": "c^2 = a^2 + b^2 - 2ab cos C. Use it when you know two sides and the included angle (SAS) or all three sides (SSS). If C = 90, cos C = 0 and it becomes the Pythagorean theorem."
+     },
+     {
+      "h": "Area",
+      "b": "Area = 1/2 ab sin C, using two sides and the angle between them. Sides 6 and 8 with a 30 degree angle between give 1/2 x 48 x 1/2 = 12."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A = 30, B = 45 and a = 10. What is b?",
+      "o": [
+       "5 sqrt(2)",
+       "20",
+       "10 sqrt(2)",
+       "10"
+      ],
+      "a": 2,
+      "why": "b = a sin B / sin A = 10 x (sqrt(2)/2) / (1/2) = 10 sqrt(2)."
+     },
+     {
+      "t": "mc",
+      "q": "Sides a = 3 and b = 5 have an included angle C = 60 degrees. What is c?",
+      "o": [
+       "sqrt(19)",
+       "sqrt(34)",
+       "4",
+       "sqrt(49)"
+      ],
+      "a": 0,
+      "why": "c^2 = 9 + 25 - 2(3)(5)(1/2) = 19."
+     },
+     {
+      "t": "mc",
+      "q": "What is the area of a triangle with sides 6 and 8 and a 30 degree angle between them?",
+      "o": [
+       "24",
+       "48",
+       "6",
+       "12"
+      ],
+      "a": 3,
+      "why": "1/2 x 6 x 8 x sin 30 = 12."
+     },
+     {
+      "t": "mc",
+      "q": "You know all three sides of a triangle. Which law finds an angle?",
+      "o": [
+       "Law of Sines",
+       "Law of Cosines",
+       "Pythagorean theorem only",
+       "Area formula"
+      ],
+      "a": 1,
+      "why": "With SSS, rearrange the Law of Cosines to find cos C."
+     },
+     {
+      "t": "tf",
+      "q": "Knowing two sides and a non-included angle (SSA) can sometimes give two different triangles.",
+      "a": true,
+      "why": "This is called the ambiguous case."
+     },
+     {
+      "t": "match",
+      "q": "Match each known information to a method",
+      "pairs": [
+       [
+        "AAS",
+        "Law of Sines"
+       ],
+       [
+        "SAS",
+        "Law of Cosines for the third side"
+       ],
+       [
+        "SSS",
+        "Law of Cosines for an angle"
+       ],
+       [
+        "SSA",
+        "might have two answers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Solve a triangle given two sides and the included angle, in order",
+      "items": [
+       [
+        "Law of Cosines for the third side",
+        1
+       ],
+       [
+        "Law of Sines for the smaller angle",
+        2
+       ],
+       [
+        "Subtract the two angles from 180",
+        3
+       ],
+       [
+        "Check that the sides and angles make sense",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a = 7, b = 8 and C = 60 degrees. What is c^2?",
+      "a": [
+       "57"
+      ],
+      "hint": "c^2 = a^2 + b^2 - 2ab cos C.",
+      "why": "49 + 64 - 2(7)(8)(1/2) = 57."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a triangle has sides 5, 8 and 7. The angle C is opposite the side of length 7. What is C in degrees?",
+      "a": [
+       "60"
+      ],
+      "hint": "cos C = (a^2 + b^2 - c^2) / (2ab).",
+      "why": "(25 + 64 - 49)/80 = 1/2, so C = 60."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the area of a triangle with sides 10 and 12 and a 30 degree angle between them?",
+      "a": [
+       "30"
+      ],
+      "hint": "Area = 1/2 ab sin C.",
+      "why": "1/2 x 10 x 12 x 1/2 = 30."
+     }
+    ]
+   },
+   {
+    "title": "Polar Coordinates and Complex Numbers",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Polar coordinates",
+      "b": "A point can be written as (r, theta): distance r from the origin and angle theta. Convert with x = r cos theta and y = r sin theta. Going back, r = sqrt(x^2 + y^2) and tan theta = y/x. (4, 90 degrees) is (0, 4)."
+     },
+     {
+      "h": "The complex plane",
+      "b": "Plot a + bi at (a, b). The modulus is |a + bi| = sqrt(a^2 + b^2). The modulus of 3 + 4i is 5. The argument is the angle from the positive real axis."
+     },
+     {
+      "h": "Polar form",
+      "b": "z = r(cos theta + i sin theta). To multiply complex numbers, multiply the moduli and add the angles. Modulus 2 at 30 degrees times modulus 3 at 40 degrees gives modulus 6 at 70 degrees."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the rectangular coordinates of the polar point (4, 90 degrees)?",
+      "o": [
+       "(4, 0)",
+       "(0, 4)",
+       "(0, -4)",
+       "(4, 4)"
+      ],
+      "a": 1,
+      "why": "x = 4 cos 90 = 0 and y = 4 sin 90 = 4."
+     },
+     {
+      "t": "mc",
+      "q": "What is the modulus of 3 + 4i?",
+      "o": [
+       "7",
+       "25",
+       "1",
+       "5"
+      ],
+      "a": 3,
+      "why": "sqrt(9 + 16) = 5."
+     },
+     {
+      "t": "mc",
+      "q": "The rectangular point (1, 1) has polar r equal to what?",
+      "o": [
+       "sqrt(2)",
+       "1",
+       "2",
+       "2 sqrt(2)"
+      ],
+      "a": 0,
+      "why": "r = sqrt(1 + 1) = sqrt(2)."
+     },
+     {
+      "t": "mc",
+      "q": "Multiply a number with modulus 2 and angle 30 degrees by one with modulus 3 and angle 40 degrees. What is the result?",
+      "o": [
+       "modulus 5, angle 70 degrees",
+       "modulus 6, angle 1200 degrees",
+       "modulus 6, angle 70 degrees",
+       "modulus 5, angle 10 degrees"
+      ],
+      "a": 2,
+      "why": "Multiply the moduli and add the angles."
+     },
+     {
+      "t": "tf",
+      "q": "The modulus of the complex number -5 is 5.",
+      "a": true,
+      "why": "-5 is 5 units from the origin."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Real axis",
+        "horizontal axis of the complex plane"
+       ],
+       [
+        "Imaginary axis",
+        "vertical axis of the complex plane"
+       ],
+       [
+        "Modulus",
+        "distance from the origin"
+       ],
+       [
+        "Argument",
+        "angle from the positive real axis"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Convert a rectangular point to polar, in order",
+      "items": [
+       [
+        "Start with the point (x, y)",
+        1
+       ],
+       [
+        "Find r = sqrt(x^2 + y^2)",
+        2
+       ],
+       [
+        "Find the angle with tan theta = y/x",
+        3
+       ],
+       [
+        "Write the polar point (r, theta)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the modulus of 5 - 12i?",
+      "a": [
+       "13"
+      ],
+      "hint": "sqrt(a^2 + b^2).",
+      "why": "sqrt(25 + 144) = 13."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the x-coordinate of the polar point (6, 60 degrees)?",
+      "a": [
+       "3"
+      ],
+      "hint": "x = r cos theta.",
+      "why": "6 x cos 60 = 6 x 1/2 = 3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the modulus of (3 + 4i)^2?",
+      "a": [
+       "25"
+      ],
+      "hint": "Moduli multiply when you multiply numbers.",
+      "why": "5 x 5 = 25."
+     }
+    ]
+   },
+   {
+    "title": "Matrices and Systems",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Matrix basics",
+      "b": "A matrix is a grid of numbers. A matrix with 2 rows and 3 columns is 2 x 3. You add matrices entry by entry, and a scalar multiplies every entry."
+     },
+     {
+      "h": "Multiplying",
+      "b": "To multiply, take each row of the first matrix times each column of the second and add the products. [1 2; 3 4] times the column [1; 1] gives [1+2; 3+4] = [3; 7]. Order matters: AB is usually not BA."
+     },
+     {
+      "h": "Determinant and inverse",
+      "b": "For [a b; c d] the determinant is ad - bc. [2 3; 1 4] has determinant 8 - 3 = 5. If it is not 0, the matrix has an inverse A^-1, and A x A^-1 is the identity. A system AX = B is solved by X = A^-1 B."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is [1 2; 3 4] + [5 6; 7 8]?",
+      "o": [
+       "[5 12; 21 32]",
+       "[6 8; 10 11]",
+       "[6 8; 10 12]",
+       "[4 4; 4 4]"
+      ],
+      "a": 2,
+      "why": "Add matching entries."
+     },
+     {
+      "t": "mc",
+      "q": "What is the determinant of [2 3; 1 4]?",
+      "o": [
+       "5",
+       "11",
+       "8",
+       "-5"
+      ],
+      "a": 0,
+      "why": "ad - bc = 8 - 3 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "What is the dimension of a matrix with 2 rows and 3 columns?",
+      "o": [
+       "3 x 2",
+       "2 x 2",
+       "6",
+       "2 x 3"
+      ],
+      "a": 3,
+      "why": "Dimension is rows x columns."
+     },
+     {
+      "t": "mc",
+      "q": "What is [1 2; 3 4] times the column [1; 1]?",
+      "o": [
+       "[4; 6]",
+       "[3; 7]",
+       "[2; 12]",
+       "[7; 3]"
+      ],
+      "a": 1,
+      "why": "Row 1: 1 + 2 = 3. Row 2: 3 + 4 = 7."
+     },
+     {
+      "t": "tf",
+      "q": "Matrix multiplication is always commutative: AB = BA.",
+      "a": false,
+      "why": "The order matters for matrices."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Identity matrix",
+        "leaves a matrix unchanged when multiplied"
+       ],
+       [
+        "Determinant",
+        "ad - bc for a 2 x 2 matrix"
+       ],
+       [
+        "Inverse",
+        "gives the identity when multiplied"
+       ],
+       [
+        "Dimension",
+        "rows by columns"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Solve a system with matrices, in order",
+      "items": [
+       [
+        "Write the system as AX = B",
+        1
+       ],
+       [
+        "Find the inverse A^-1",
+        2
+       ],
+       [
+        "Multiply X = A^-1 B",
+        3
+       ],
+       [
+        "Read off x and y",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the determinant of [4 1; 3 5]?",
+      "a": [
+       "17"
+      ],
+      "hint": "ad - bc.",
+      "why": "20 - 3 = 17."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: multiply [2 0; 1 3] by the column [4; 2]. What is the second entry?",
+      "a": [
+       "10"
+      ],
+      "hint": "Row 2 is 1 and 3.",
+      "why": "1 x 4 + 3 x 2 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: multiply [1 -2; 0 4] by 3. What is the sum of all entries of the result?",
+      "a": [
+       "9"
+      ],
+      "hint": "Multiply every entry by 3, then add.",
+      "why": "The result has 3, -6, 0, 12, which add to 9."
+     }
+    ]
+   },
+   {
+    "title": "Series and Vectors",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "Series",
+      "b": "A series is a sum of terms. 1 + 2 + 4 + 8 + 16 = 31. An infinite geometric series with ratio between -1 and 1 has a sum: 1 + 1/2 + 1/4 + ... = 2."
+     },
+     {
+      "h": "Vectors",
+      "b": "A vector has magnitude and direction. The magnitude of <3, 4> is sqrt(9 + 16) = 5. Add vectors by adding parts: <1, 2> + <3, -1> = <4, 1>."
+     },
+     {
+      "h": "Dot product",
+      "b": "The dot product of <a, b> and <c, d> is ac + bd. It gives a number. If it is 0, the vectors are perpendicular."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 1 + 2 + 4 + 8 + 16?",
+      "o": [
+       "30",
+       "32",
+       "31",
+       "33"
+      ],
+      "a": 2,
+      "why": "1 + 2 + 4 + 8 + 16 = 31."
+     },
+     {
+      "t": "mc",
+      "q": "What is the sum of 1 + 1/2 + 1/4 + 1/8 + ... forever?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "infinite"
+      ],
+      "a": 1,
+      "why": "The sum is a / (1 - r) = 1 / (1/2) = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the magnitude of the vector <3, 4>?",
+      "o": [
+       "7",
+       "25",
+       "5",
+       "12"
+      ],
+      "a": 2,
+      "why": "sqrt(9 + 16) = 5."
+     },
+     {
+      "t": "mc",
+      "q": "What is <1, 2> + <3, -1>?",
+      "o": [
+       "<4, 1>",
+       "<4, 3>",
+       "<2, 3>",
+       "<3, -2>"
+      ],
+      "a": 0,
+      "why": "1 + 3 = 4 and 2 + (-1) = 1."
+     },
+     {
+      "t": "tf",
+      "q": "If the dot product of two vectors is 0, they are perpendicular.",
+      "a": true,
+      "why": "A zero dot product means the angle between them is 90 degrees."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Arithmetic sequence",
+        "constant difference"
+       ],
+       [
+        "Geometric sequence",
+        "constant ratio"
+       ],
+       [
+        "Vector magnitude",
+        "its length"
+       ],
+       [
+        "Dot product",
+        "gives a single number"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the partial sums of 1 + 2 + 4 + 8 in order",
+      "items": [
+       [
+        "1",
+        1
+       ],
+       [
+        "3",
+        2
+       ],
+       [
+        "7",
+        3
+       ],
+       [
+        "15",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the sum of 1 + 1/3 + 1/9 + 1/27 + ... forever? (fraction or decimal)",
+      "a": [
+       "3/2",
+       "1.5"
+      ],
+      "hint": "Use a / (1 - r).",
+      "why": "1 / (1 - 1/3) = 3/2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the magnitude of the vector <5, 12>?",
+      "a": [
+       "13"
+      ],
+      "hint": "sqrt(a^2 + b^2).",
+      "why": "sqrt(25 + 144) = 13."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the dot product of <2, 3> and <4, -1>?",
+      "a": [
+       "5"
+      ],
+      "hint": "Multiply matching parts and add.",
+      "why": "2 x 4 + 3 x (-1) = 5."
+     }
+    ]
+   },
+   {
+    "title": "Introduction to Limits",
+    "period": "Precalculus",
+    "learn": [
+     {
+      "h": "The idea of a limit",
+      "b": "The limit of f(x) as x approaches a is the value f(x) gets close to as x gets close to a. The function does not need to be defined at a. lim x->3 of (2x + 1) = 7."
+     },
+     {
+      "h": "Finding limits",
+      "b": "First try substituting. If you get 0/0, factor and cancel. (x^2 - 4)/(x - 2) = x + 2, so the limit at x = 2 is 4. A hole in the graph is a removable discontinuity."
+     },
+     {
+      "h": "Limits at infinity",
+      "b": "As x grows huge, 1/x gets close to 0. For (3x + 1)/(x - 5), the biggest terms win: 3x/x = 3. So the limit is 3, the horizontal asymptote."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 3 of 2x + 1?",
+      "o": [
+       "6",
+       "7",
+       "3",
+       "does not exist"
+      ],
+      "a": 1,
+      "why": "Substitute x = 3: 7."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 2 of (x^2 - 4)/(x - 2)?",
+      "o": [
+       "0",
+       "2",
+       "does not exist",
+       "4"
+      ],
+      "a": 3,
+      "why": "Cancel x - 2 to get x + 2, which is 4 at x = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches infinity of 1/x?",
+      "o": [
+       "0",
+       "1",
+       "infinity",
+       "-1"
+      ],
+      "a": 0,
+      "why": "1/x gets closer to 0 as x grows."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches infinity of (3x + 1)/(x - 5)?",
+      "o": [
+       "1/5",
+       "0",
+       "3",
+       "infinity"
+      ],
+      "a": 2,
+      "why": "Divide top and bottom by x: 3/1 = 3."
+     },
+     {
+      "t": "tf",
+      "q": "A limit can exist even when the function is undefined at that point.",
+      "a": true,
+      "why": "For example (x^2 - 4)/(x - 2) is undefined at 2 but its limit is 4."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Limit",
+        "value the function approaches"
+       ],
+       [
+        "Continuous",
+        "graph with no breaks or holes"
+       ],
+       [
+        "Removable discontinuity",
+        "a hole in the graph"
+       ],
+       [
+        "Vertical asymptote",
+        "function grows without bound"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Find the limit of (x^2 - 9)/(x - 3) as x approaches 3, in order",
+      "items": [
+       [
+        "Substitute: 0/0, so not enough",
+        1
+       ],
+       [
+        "Factor: (x - 3)(x + 3)/(x - 3)",
+        2
+       ],
+       [
+        "Cancel to get x + 3",
+        3
+       ],
+       [
+        "Substitute x = 3: the limit is 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: find the limit as x approaches 5 of (x^2 - 25)/(x - 5).",
+      "a": [
+       "10"
+      ],
+      "hint": "Factor the top.",
+      "why": "(x - 5)(x + 5)/(x - 5) = x + 5 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: find the limit as x approaches infinity of (4x^2 + 1)/(2x^2 - 7).",
+      "a": [
+       "2"
+      ],
+      "hint": "Compare the leading terms.",
+      "why": "4x^2 / 2x^2 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: find the limit as x approaches 1 of (x^3 - 1)/(x - 1).",
+      "a": [
+       "3"
+      ],
+      "hint": "x^3 - 1 = (x - 1)(x^2 + x + 1).",
+      "why": "The limit is 1 + 1 + 1 = 3."
+     }
+    ]
+   }
+  ]
+ }
+}
