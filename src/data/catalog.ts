@@ -3,7 +3,7 @@
 
 export type CategoryId = 'academics' | 'languages' | 'coding' | 'money' | 'tech';
 export type Level = { id: string; name: string };
-/** icon: a PNG name in src/assets/icons, or "flag:xx" / "tile:Label:#color" drawn as SVG */
+/** icon: an SVG name in src/assets/flaticons, or "flag:xx" / "tile:Label:#color" drawn as SVG */
 export type Track = { id: string; name: string; cat: CategoryId; icon: string; levels: Level[]; unitIcons?: string[] };
 
 export const CATEGORIES: { id: CategoryId; name: string; blurb: string; color: string; icon: string }[] = [

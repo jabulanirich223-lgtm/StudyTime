@@ -38,10 +38,9 @@ export const NAV_ICON: Record<string, string> = {
   profile: F(32, '<circle cx="16" cy="16" r="14" fill="#e0e7ff"/><path d="M7.5 26.5a8.5 8.5 0 0 1 17 0A14 14 0 0 1 7.5 26.5z" fill="#4f46e5"/><circle cx="16" cy="13" r="5.2" fill="#fdba74"/><path d="M10.8 12.5a5.2 5.2 0 0 1 10.4 0c-2-1-4.5-1.6-10.4 0z" fill="#78350f"/>'),
 };
 
-const unitIcons = import.meta.glob('../assets/icons/*.png', { eager: true, import: 'default' }) as Record<string, string>;
 const flatIcons = import.meta.glob('../assets/flaticons/*.svg', { eager: true, import: 'default' }) as Record<string, string>;
-/** Flat vector icon if there is one, otherwise the older painted PNG. */
-export const iconUrl = (name: string) => flatIcons[`../assets/flaticons/${name}.svg`] || unitIcons[`../assets/icons/${name}.png`];
+/** Flat vector icon by name (src/assets/flaticons/<name>.svg). */
+export const iconUrl = (name: string) => flatIcons[`../assets/flaticons/${name}.svg`];
 
 export function Svg({ html, className = '', size }: { html: string; className?: string; size?: number }) {
   return <span className={`svg ${className}`} style={size ? { width: size, height: size } : undefined} dangerouslySetInnerHTML={{ __html: html }} />;
