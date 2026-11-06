@@ -1,0 +1,2262 @@
+{
+ "js-1": {
+  "name": "JavaScript · Beginner",
+  "units": [
+   {
+    "title": "console.log",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Talking to the console",
+      "b": "JavaScript is the language of the web. To see what your program is doing, you print messages with console.log(). The text appears in the console, which is like a notebook where your program writes.",
+      "code": "console.log(\"Hello, World!\");"
+     },
+     {
+      "h": "Strings and numbers",
+      "b": "Text goes inside quotes and is called a string. You can use double quotes or single quotes. Numbers have no quotes, and console.log can print them too.",
+      "code": "console.log(\"I am a string\");\nconsole.log(42);\nconsole.log(3 + 4);"
+     },
+     {
+      "h": "Printing several things",
+      "b": "Give console.log several values separated by commas and it prints them on one line with a space between each. Every console.log call starts a new line.",
+      "code": "console.log(\"Score:\", 10);\nconsole.log(\"a\", \"b\", \"c\");"
+     },
+     {
+      "h": "Comments and semicolons",
+      "b": "A comment starts with // and is ignored by the computer. It is a note for humans. A semicolon at the end of a statement is the full stop of code. It is good habit to add it.",
+      "code": "// this line is only a note\nconsole.log(\"Hi\"); // this prints Hi"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line prints Hello to the console?",
+      "o": [
+       "print(\"Hello\");",
+       "console.log(\"Hello\");",
+       "echo \"Hello\";",
+       "log.console(\"Hello\");"
+      ],
+      "a": 1,
+      "why": "console.log() is the JavaScript way to print."
+     },
+     {
+      "t": "mc",
+      "q": "What does console.log(\"a\", \"b\") print?",
+      "o": [
+       "ab",
+       "a, b",
+       "a b",
+       "\"a\" \"b\""
+      ],
+      "a": 2,
+      "why": "Values separated by commas are printed with one space between them."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log(\"Hi\");\nconsole.log(\"there\");",
+      "o": [
+       "Hi there on one line",
+       "Hi and then there on the next line",
+       "Only there",
+       "An error"
+      ],
+      "a": 1,
+      "why": "Each console.log call prints on a new line."
+     },
+     {
+      "t": "tf",
+      "q": "The computer runs the text after // as code.",
+      "a": false,
+      "why": "Everything after // is a comment and is ignored."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece of code to what it is",
+      "pairs": [
+       [
+        "console.log()",
+        "prints to the console"
+       ],
+       [
+        "// note",
+        "a comment"
+       ],
+       [
+        ";",
+        "ends a statement"
+       ],
+       [
+        "\"text\"",
+        "a string"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the number that console.log(2 + 3) prints.",
+      "a": [
+       "5"
+      ],
+      "why": "2 + 3 is calculated first, then printed."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print three words, one per line",
+      "lines": [
+       "console.log(\"Ready\");",
+       "console.log(\"Set\");",
+       "console.log(\"Go!\");"
+      ],
+      "why": "Code runs from top to bottom."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of running a program in order",
+      "items": [
+       [
+        "Write the code",
+        1
+       ],
+       [
+        "Save the file",
+        2
+       ],
+       [
+        "Run the program",
+        3
+       ],
+       [
+        "Read the output in the console",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: print exactly Hello, World! using console.log.",
+      "starter": "// write your code below\n",
+      "tests": [
+       {
+        "expect": "Hello, World!"
+       }
+      ],
+      "hint": "console.log(\"Hello, World!\");",
+      "solution": "console.log(\"Hello, World!\");",
+      "why": "A string in quotes is printed exactly."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: the variable name is already set. Print Hello, then the name, using one console.log with a comma. Example output: Hello, Mia",
+      "starter": "// name is already set\n",
+      "tests": [
+       {
+        "pre": "let name = \"Mia\";",
+        "expect": "Hello, Mia"
+       },
+       {
+        "pre": "let name = \"Leo\";",
+        "expect": "Hello, Leo"
+       }
+      ],
+      "hint": "Hello, with the comma INSIDE the quotes, then a comma, then name.",
+      "solution": "console.log(\"Hello,\", name);",
+      "why": "Comma-separated values are joined with a space."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the two characters that start a comment.",
+      "a": [
+       "//"
+      ],
+      "why": "// starts a one-line comment."
+     }
+    ]
+   },
+   {
+    "title": "let and const",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Variables are labelled boxes",
+      "b": "A variable stores a value under a name so you can use it later. You create one with let followed by the name, an equals sign and the value.",
+      "code": "let score = 0;\nconsole.log(score);"
+     },
+     {
+      "h": "let can change",
+      "b": "A variable made with let can be given a new value later. Write the name, an equals sign and the new value. You do not write let again.",
+      "code": "let lives = 3;\nlives = lives - 1;\nconsole.log(lives); // 2"
+     },
+     {
+      "h": "const cannot change",
+      "b": "Use const for values that should never be reassigned, like the number of days in a week. If you try to change a const, JavaScript stops with a TypeError. Many programmers use const by default and let only when the value must change.",
+      "code": "const DAYS = 7;\n// DAYS = 8;  // TypeError!"
+     },
+     {
+      "h": "Naming rules",
+      "b": "Names can use letters, digits, _ and $, but cannot start with a digit or contain spaces or dashes. They are case-sensitive. The usual style is camelCase, like highScore, where each new word starts with a capital.",
+      "code": "let highScore = 99;\nlet playerName = \"Ava\";"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword makes a variable that can be reassigned later?",
+      "o": [
+       "const",
+       "let",
+       "fixed",
+       "set"
+      ],
+      "a": 1,
+      "why": "let allows reassignment, const does not."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a valid variable name?",
+      "o": [
+       "2cool",
+       "my-score",
+       "myScore",
+       "my score"
+      ],
+      "a": 2,
+      "why": "Names cannot start with a digit or contain dashes or spaces."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let a = 5;\na = a + 2;\nconsole.log(a);",
+      "o": [
+       "5",
+       "7",
+       "a + 2",
+       "Error"
+      ],
+      "a": 1,
+      "why": "a becomes 5 + 2 = 7."
+     },
+     {
+      "t": "tf",
+      "q": "A variable declared with const can be reassigned to a new value.",
+      "a": false,
+      "why": "Reassigning a const causes a TypeError."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "let",
+        "variable that can change"
+       ],
+       [
+        "const",
+        "variable that cannot be reassigned"
+       ],
+       [
+        "camelCase",
+        "myHighScore"
+       ],
+       [
+        "=",
+        "assigns a value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "After let x = 4; and then x = 9; what does console.log(x) print?",
+      "a": [
+       "9"
+      ],
+      "why": "The last assignment wins, so x is 9."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add 10 to score and print it",
+      "lines": [
+       "let score = 0;",
+       "score = score + 10;",
+       "console.log(score);"
+      ],
+      "why": "Declare first, then change, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for using a variable in order",
+      "items": [
+       [
+        "Choose a clear name",
+        1
+       ],
+       [
+        "Declare it with let or const",
+        2
+       ],
+       [
+        "Give it a value",
+        3
+       ],
+       [
+        "Use it in console.log",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: price and qty are set. Store price * qty in a const named total and print it.",
+      "starter": "// price and qty are already set\n",
+      "tests": [
+       {
+        "pre": "let price = 8; let qty = 3;",
+        "expect": "24"
+       },
+       {
+        "pre": "let price = 10; let qty = 5;",
+        "expect": "50"
+       },
+       {
+        "pre": "let price = 7; let qty = 1;",
+        "expect": "7"
+       }
+      ],
+      "hint": "const total = price * qty; then console.log(total);",
+      "solution": "const total = price * qty;\nconsole.log(total);",
+      "why": "Multiply, save in a const, then print."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: a and b are set. Swap their values with a temporary variable, then print a and then b on separate lines.",
+      "starter": "// a and b are already set\n",
+      "tests": [
+       {
+        "pre": "let a = 1; let b = 2;",
+        "expect": "2\n1"
+       },
+       {
+        "pre": "let a = 4; let b = 9;",
+        "expect": "9\n4"
+       }
+      ],
+      "hint": "Save a in temp, copy b into a, then copy temp into b.",
+      "solution": "let temp = a;\na = b;\nb = temp;\nconsole.log(a);\nconsole.log(b);",
+      "why": "A temporary box lets you swap two values without losing one."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword for a variable that must never be reassigned.",
+      "a": [
+       "const"
+      ],
+      "why": "const locks the variable to its first value."
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Math",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Arithmetic operators",
+      "b": "JavaScript has one number type for whole numbers and decimals. Use + - * / for add, subtract, multiply and divide. Division always gives a decimal when needed, so 10 / 4 is 2.5.",
+      "code": "console.log(7 + 2); // 9\nconsole.log(10 / 4); // 2.5\nconsole.log(3 * 4); // 12"
+     },
+     {
+      "h": "Remainder and power",
+      "b": "The % operator gives the remainder after division, so 7 % 3 is 1. It is great for checking even numbers (n % 2 is 0). The ** operator means to the power of, so 2 ** 3 is 8.",
+      "code": "console.log(7 % 3); // 1\nconsole.log(2 ** 3); // 8"
+     },
+     {
+      "h": "The Math object",
+      "b": "Math has helpful tools. Math.round rounds to the nearest whole number, Math.floor rounds down, Math.ceil rounds up. Math.max and Math.min pick the biggest or smallest, Math.sqrt gives the square root and Math.random gives a random decimal from 0 up to but not including 1.",
+      "code": "console.log(Math.floor(4.9)); // 4\nconsole.log(Math.ceil(4.1)); // 5\nconsole.log(Math.max(3, 8, 5)); // 8"
+     },
+     {
+      "h": "Shortcuts and surprises",
+      "b": "x += 5 means x = x + 5, and x++ adds 1. Decimals are stored in binary, so 0.1 + 0.2 gives 0.30000000000000004, not exactly 0.3. Do not compare decimals for exact equality.",
+      "code": "let n = 7;\nn += 3;\nn++;\nconsole.log(n); // 11"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 7 % 3?",
+      "o": [
+       "2",
+       "1",
+       "2.33",
+       "0"
+      ],
+      "a": 1,
+      "why": "7 divided by 3 is 2 remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does Math.floor(4.9) give?",
+      "o": [
+       "5",
+       "4.9",
+       "4",
+       "0"
+      ],
+      "a": 2,
+      "why": "floor always rounds down."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log(10 / 4);",
+      "o": [
+       "2",
+       "2.5",
+       "3",
+       "Error"
+      ],
+      "a": 1,
+      "why": "Division in JavaScript keeps the decimal part."
+     },
+     {
+      "t": "tf",
+      "q": "In JavaScript, 0.1 + 0.2 is exactly 0.3.",
+      "a": false,
+      "why": "Binary rounding makes it 0.30000000000000004."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator or function to its job",
+      "pairs": [
+       [
+        "%",
+        "remainder"
+       ],
+       [
+        "**",
+        "power"
+       ],
+       [
+        "Math.sqrt",
+        "square root"
+       ],
+       [
+        "Math.max",
+        "biggest value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the number that console.log(2 ** 3) prints.",
+      "a": [
+       "8"
+      ],
+      "why": "2 to the power of 3 is 2 * 2 * 2 = 8."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add 3 to n and print it",
+      "lines": [
+       "let n = 7;",
+       "n += 3;",
+       "console.log(n);"
+      ],
+      "why": "n += 3 means n = n + 3, so n is 10."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in the order they happen",
+      "items": [
+       [
+        "Start with n = 2",
+        1
+       ],
+       [
+        "Multiply n by 5 (n is 10)",
+        2
+       ],
+       [
+        "Add 1 (n is 11)",
+        3
+       ],
+       [
+        "Print 11",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: n is set. Print the remainder when n is divided by 5.",
+      "starter": "// n is already set\n",
+      "tests": [
+       {
+        "pre": "let n = 17;",
+        "expect": "2"
+       },
+       {
+        "pre": "let n = 20;",
+        "expect": "0"
+       },
+       {
+        "pre": "let n = 8;",
+        "expect": "3"
+       }
+      ],
+      "hint": "Use the % operator.",
+      "solution": "console.log(n % 5);",
+      "why": "% gives the remainder."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: a and b are set. Print their average.",
+      "starter": "// a and b are already set\n",
+      "tests": [
+       {
+        "pre": "let a = 4; let b = 6;",
+        "expect": "5"
+       },
+       {
+        "pre": "let a = 3; let b = 8;",
+        "expect": "5.5"
+       },
+       {
+        "pre": "let a = 10; let b = 10;",
+        "expect": "10"
+       }
+      ],
+      "hint": "Add them in brackets, then divide by 2.",
+      "solution": "console.log((a + b) / 2);",
+      "why": "Brackets make the addition happen first."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Math method that rounds a number down (e.g. Math.floor).",
+      "a": [
+       "Math.floor",
+       "floor"
+      ],
+      "why": "Math.floor rounds down to a whole number."
+     }
+    ]
+   },
+   {
+    "title": "Strings and Template Literals",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Length and indexing",
+      "b": "A string is a row of characters. text.length tells how many. Each character has an index starting at 0, so text[0] is the first one. Strings are immutable: you cannot change a character in place, you must make a new string.",
+      "code": "let word = \"hello\";\nconsole.log(word.length); // 5\nconsole.log(word[0]); // h"
+     },
+     {
+      "h": "Joining strings",
+      "b": "The + operator joins strings together, which is called concatenation. Be careful: joining a string with a number gives a string, so \"5\" + 3 is \"53\".",
+      "code": "console.log(\"Hi\" + \" \" + \"Sam\"); // Hi Sam\nconsole.log(\"5\" + 3); // 53"
+     },
+     {
+      "h": "Template literals",
+      "b": "Backticks let you write a template literal. Inside it, ${ } inserts any value or expression. This is cleaner than many + signs. Template literals can also span several lines.",
+      "code": "let name = \"Ava\";\nlet age = 12;\nconsole.log(`${name} is ${age} years old`);\nconsole.log(`Next year: ${age + 1}`);"
+     },
+     {
+      "h": "Handy string tools",
+      "b": "toUpperCase() and toLowerCase() change letter case. Special characters start with a backslash: \\n makes a new line and \\\" puts a quote inside a string. These methods return a new string and leave the old one unchanged.",
+      "code": "let s = \"Cat\";\nconsole.log(s.toUpperCase()); // CAT\nconsole.log(\"line1\\nline2\");"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is \"hello\".length?",
+      "o": [
+       "4",
+       "5",
+       "6",
+       "hello"
+      ],
+      "a": 1,
+      "why": "There are 5 characters."
+     },
+     {
+      "t": "mc",
+      "q": "Which uses a template literal?",
+      "o": [
+       "\"Hi ${name}\"",
+       "'Hi ${name}'",
+       "`Hi ${name}`",
+       "(Hi ${name})"
+      ],
+      "a": 2,
+      "why": "Template literals use backticks."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let s = \"JavaScript\";\nconsole.log(s[0] + s[4]);",
+      "o": [
+       "JS",
+       "Ja",
+       "Jv",
+       "SJ"
+      ],
+      "a": 0,
+      "why": "Index 0 is J and index 4 is S in JavaScript."
+     },
+     {
+      "t": "tf",
+      "q": "You can change a letter in a string with s[0] = \"X\".",
+      "a": false,
+      "why": "Strings are immutable."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to what it does",
+      "pairs": [
+       [
+        ".length",
+        "number of characters"
+       ],
+       [
+        "+",
+        "joins strings"
+       ],
+       [
+        "${ }",
+        "inserts a value in a template"
+       ],
+       [
+        "\\n",
+        "new line"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does console.log(\"5\" + 3) print?",
+      "a": [
+       "53"
+      ],
+      "why": "A string plus a number becomes a joined string."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print: Zed is 12",
+      "lines": [
+       "let name = \"Zed\";",
+       "let age = 12;",
+       "console.log(`${name} is ${age}`);"
+      ],
+      "why": "Variables first, then the template literal."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for building a message in order",
+      "items": [
+       [
+        "Make a variable for the name",
+        1
+       ],
+       [
+        "Make a variable for a number",
+        2
+       ],
+       [
+        "Write a template literal with backticks",
+        3
+       ],
+       [
+        "Print it with console.log",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: name is set. Print Hello, then the name and an exclamation mark using a template literal. Example: Hello, Mia!",
+      "starter": "// name is already set\n",
+      "tests": [
+       {
+        "pre": "let name = \"Mia\";",
+        "expect": "Hello, Mia!"
+       },
+       {
+        "pre": "let name = \"Omar\";",
+        "expect": "Hello, Omar!"
+       }
+      ],
+      "hint": "console.log(`Hello, ${name}!`);",
+      "solution": "console.log(`Hello, ${name}!`);",
+      "why": "${name} inserts the value."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: word is set. Print it in UPPERCASE, then on the next line print its length.",
+      "starter": "// word is already set\n",
+      "tests": [
+       {
+        "pre": "let word = \"cat\";",
+        "expect": "CAT\n3"
+       },
+       {
+        "pre": "let word = \"hello\";",
+        "expect": "HELLO\n5"
+       }
+      ],
+      "hint": "Use word.toUpperCase() and word.length in two console.log calls.",
+      "solution": "console.log(word.toUpperCase());\nconsole.log(word.length);",
+      "why": "Two methods, two lines."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the full name: Ada Lovelace",
+      "lines": [
+       "let first = \"Ada\";",
+       "let last = \"Lovelace\";",
+       "console.log(first + \" \" + last);"
+      ],
+      "why": "Join with a space in the middle."
+     }
+    ]
+   },
+   {
+    "title": "Booleans and Comparison",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "True and false",
+      "b": "A boolean is either true or false (no quotes). Comparison operators give booleans: > < >= <= compare sizes, and === checks equality. Booleans are what if statements use to decide.",
+      "code": "console.log(5 > 3); // true\nconsole.log(2 >= 4); // false"
+     },
+     {
+      "h": "=== versus ==",
+      "b": "=== is strict equality: both the value and the type must match, so 5 === \"5\" is false. == is loose and converts types first, so 5 == \"5\" is true, which can surprise you. Always prefer === and !==.",
+      "code": "console.log(5 === \"5\"); // false\nconsole.log(5 == \"5\"); // true\nconsole.log(5 !== 6); // true"
+     },
+     {
+      "h": "Combining conditions",
+      "b": "&& means AND: both sides must be true. || means OR: at least one side must be true. ! flips a boolean. Use brackets to make the order clear.",
+      "code": "let age = 15;\nconsole.log(age >= 13 && age <= 19); // true\nconsole.log(!true); // false"
+     },
+     {
+      "h": "Truthy and falsy",
+      "b": "When a value is used as a condition, JavaScript treats some values as false: false, 0, \"\" (empty string), null, undefined and NaN. Almost everything else is true, including \"0\" and any non-empty string.",
+      "code": "console.log(Boolean(0)); // false\nconsole.log(Boolean(\"hi\")); // true"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 5 === \"5\" give?",
+      "o": [
+       "true",
+       "false",
+       "5",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The types differ (number vs string), so strict equality is false."
+     },
+     {
+      "t": "mc",
+      "q": "Which operator means strict not equal?",
+      "o": [
+       "!=",
+       "=!",
+       "!==",
+       "<>"
+      ],
+      "a": 2,
+      "why": "!== is the strict version of not equal."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log(5 == \"5\", 5 === \"5\");",
+      "o": [
+       "true true",
+       "false false",
+       "true false",
+       "false true"
+      ],
+      "a": 2,
+      "why": "== converts the string to a number, === does not."
+     },
+     {
+      "t": "tf",
+      "q": "=== checks both the value and the type.",
+      "a": true,
+      "why": "That is why it is safer than ==."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "&&",
+        "and"
+       ],
+       [
+        "||",
+        "or"
+       ],
+       [
+        "!",
+        "not"
+       ],
+       [
+        "!==",
+        "strict not equal"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does console.log(10 > 3 && 2 > 5) print?",
+      "a": [
+       "false"
+      ],
+      "why": "The right side is false, so AND is false."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to check if age is at least 13 and print the result",
+      "lines": [
+       "let age = 15;",
+       "let ok = age >= 13;",
+       "console.log(ok);"
+      ],
+      "why": "The comparison gives a boolean."
+     },
+     {
+      "t": "order",
+      "q": "Put the evaluation of !(3 > 2 || false) in order",
+      "items": [
+       [
+        "3 > 2 becomes true",
+        1
+       ],
+       [
+        "true || false becomes true",
+        2
+       ],
+       [
+        "! flips true to false",
+        3
+       ],
+       [
+        "The final result is false",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: n is set. Print true if n is even, otherwise false.",
+      "starter": "// n is already set\n",
+      "tests": [
+       {
+        "pre": "let n = 4;",
+        "expect": "true"
+       },
+       {
+        "pre": "let n = 7;",
+        "expect": "false"
+       },
+       {
+        "pre": "let n = 0;",
+        "expect": "true"
+       }
+      ],
+      "hint": "Even numbers have remainder 0 when divided by 2.",
+      "solution": "console.log(n % 2 === 0);",
+      "why": "The comparison itself is a boolean you can print."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: age is set. Print true if age is between 13 and 19 inclusive, otherwise false.",
+      "starter": "// age is already set\n",
+      "tests": [
+       {
+        "pre": "let age = 15;",
+        "expect": "true"
+       },
+       {
+        "pre": "let age = 12;",
+        "expect": "false"
+       },
+       {
+        "pre": "let age = 20;",
+        "expect": "false"
+       },
+       {
+        "pre": "let age = 19;",
+        "expect": "true"
+       }
+      ],
+      "hint": "Combine age >= 13 and age <= 19 with &&.",
+      "solution": "console.log(age >= 13 && age <= 19);",
+      "why": "Both conditions must be true."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the operator for strict equality.",
+      "a": [
+       "==="
+      ],
+      "why": "=== compares value and type."
+     }
+    ]
+   },
+   {
+    "title": "if/else and switch",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "if and else",
+      "b": "An if statement runs a block of code only when its condition is true. Add else to run something when it is false. The condition goes in round brackets and the block in curly braces.",
+      "code": "let age = 20;\nif (age >= 18) {\n  console.log(\"adult\");\n} else {\n  console.log(\"kid\");\n}"
+     },
+     {
+      "h": "else if chains",
+      "b": "Use else if to test several conditions in order. JavaScript runs the first block whose condition is true and skips the rest. The final else is the fallback.",
+      "code": "let t = 18;\nif (t >= 30) {\n  console.log(\"hot\");\n} else if (t >= 15) {\n  console.log(\"mild\");\n} else {\n  console.log(\"cold\");\n}"
+     },
+     {
+      "h": "switch",
+      "b": "A switch compares one value against several case labels. Each case should end with break, otherwise the code falls through into the next case. default runs when nothing matches.",
+      "code": "let day = 2;\nswitch (day) {\n  case 1:\n    console.log(\"Mon\");\n    break;\n  case 2:\n    console.log(\"Tue\");\n    break;\n  default:\n    console.log(\"Other\");\n}"
+     },
+     {
+      "h": "The ternary shortcut",
+      "b": "For a simple choice between two values you can use the ternary operator: condition ? valueIfTrue : valueIfFalse. It is an expression, so you can print it or store it.",
+      "code": "let n = 5;\nlet label = n % 2 === 0 ? \"even\" : \"odd\";\nconsole.log(label); // odd"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword runs when none of the if conditions are true?",
+      "o": [
+       "otherwise",
+       "else",
+       "default",
+       "then"
+      ],
+      "a": 1,
+      "why": "else is the fallback branch of an if."
+     },
+     {
+      "t": "mc",
+      "q": "What does break do inside a switch case?",
+      "o": [
+       "Ends the whole program",
+       "Stops it falling through to the next case",
+       "Restarts the switch",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "Without break, execution continues into the next case."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let t = 18;\nif (t >= 30) {\n  console.log(\"hot\");\n} else if (t >= 15) {\n  console.log(\"mild\");\n} else {\n  console.log(\"cold\");\n}",
+      "o": [
+       "hot",
+       "mild",
+       "cold",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "18 is not >= 30, but it is >= 15, so mild runs."
+     },
+     {
+      "t": "tf",
+      "q": "In an if / else if chain, every true branch runs.",
+      "a": false,
+      "why": "Only the first true branch runs."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its role",
+      "pairs": [
+       [
+        "if",
+        "runs when the condition is true"
+       ],
+       [
+        "else",
+        "fallback branch"
+       ],
+       [
+        "case",
+        "one option inside a switch"
+       ],
+       [
+        "default",
+        "switch fallback"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that handles all other values in a switch.",
+      "a": [
+       "default"
+      ],
+      "why": "default is the catch-all case."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines into an if/else that prints pass or fail",
+      "lines": [
+       "let score = 75;",
+       "if (score >= 50) {",
+       "  console.log(\"pass\");",
+       "} else {",
+       "  console.log(\"fail\");",
+       "}"
+      ],
+      "why": "The else block comes after the closing brace of if."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of an if/else in order",
+      "items": [
+       [
+        "Check the if condition",
+        1
+       ],
+       [
+        "If true, run the if block",
+        2
+       ],
+       [
+        "If false, move on to else",
+        3
+       ],
+       [
+        "Continue after the whole block",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: n is set. Print positive, negative or zero.",
+      "starter": "// n is already set\n",
+      "tests": [
+       {
+        "pre": "let n = 5;",
+        "expect": "positive"
+       },
+       {
+        "pre": "let n = -3;",
+        "expect": "negative"
+       },
+       {
+        "pre": "let n = 0;",
+        "expect": "zero"
+       }
+      ],
+      "hint": "Use if, else if and else.",
+      "solution": "if (n > 0) {\n  console.log(\"positive\");\n} else if (n < 0) {\n  console.log(\"negative\");\n} else {\n  console.log(\"zero\");\n}",
+      "why": "Three outcomes need an else if chain."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: day is a number. With a switch print Mon for 1, Tue for 2, Wed for 3 and Other for anything else.",
+      "starter": "// day is already set\n",
+      "tests": [
+       {
+        "pre": "let day = 1;",
+        "expect": "Mon"
+       },
+       {
+        "pre": "let day = 3;",
+        "expect": "Wed"
+       },
+       {
+        "pre": "let day = 9;",
+        "expect": "Other"
+       }
+      ],
+      "hint": "switch (day) with case 1, case 2, case 3 and default, each with a break.",
+      "solution": "switch (day) {\n  case 1:\n    console.log(\"Mon\");\n    break;\n  case 2:\n    console.log(\"Tue\");\n    break;\n  case 3:\n    console.log(\"Wed\");\n    break;\n  default:\n    console.log(\"Other\");\n}",
+      "why": "switch compares day with each case."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that leaves a switch case.",
+      "a": [
+       "break"
+      ],
+      "why": "break stops the switch."
+     }
+    ]
+   },
+   {
+    "title": "while Loops",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Repeating with while",
+      "b": "A while loop repeats its block as long as the condition is true. JavaScript checks the condition before every round. If it is false the very first time, the body never runs.",
+      "code": "let i = 1;\nwhile (i <= 3) {\n  console.log(i);\n  i++;\n}"
+     },
+     {
+      "h": "The counter pattern",
+      "b": "Most loops need a counter: set it before the loop, test it in the condition and change it inside the body. If you forget to change it, the condition stays true forever and you get an infinite loop.",
+      "code": "let count = 3;\nwhile (count > 0) {\n  console.log(count);\n  count--;\n}\nconsole.log(\"Go!\");"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop immediately. continue skips the rest of this round and jumps to the next check. while (true) with a break inside is a common way to loop until something happens.",
+      "code": "let n = 0;\nwhile (true) {\n  n++;\n  if (n === 3) {\n    break;\n  }\n}\nconsole.log(n); // 3"
+     },
+     {
+      "h": "do...while",
+      "b": "A do...while loop runs the body first and checks the condition afterwards, so it always runs at least once. It is less common but useful when you must do something before you can test.",
+      "code": "let x = 10;\ndo {\n  console.log(x);\n  x++;\n} while (x < 5);\n// prints 10 once"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A while loop keeps running as long as its condition is...",
+      "o": [
+       "false",
+       "true",
+       "a number",
+       "a string"
+      ],
+      "a": 1,
+      "why": "The body repeats while the condition is true."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword stops a loop immediately?",
+      "o": [
+       "stop",
+       "exit",
+       "break",
+       "continue"
+      ],
+      "a": 2,
+      "why": "break leaves the loop."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let i = 1;\nwhile (i < 4) {\n  console.log(i);\n  i++;\n}",
+      "o": [
+       "1 2 3 on separate lines",
+       "1 2 3 4",
+       "0 1 2 3",
+       "It never ends"
+      ],
+      "a": 0,
+      "why": "i starts at 1 and the loop stops when i reaches 4."
+     },
+     {
+      "t": "tf",
+      "q": "while (true) with no break runs forever.",
+      "a": true,
+      "why": "The condition is always true, so nothing ends the loop."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "while",
+        "repeat while the condition is true"
+       ],
+       [
+        "break",
+        "leave the loop"
+       ],
+       [
+        "continue",
+        "skip to the next round"
+       ],
+       [
+        "i++",
+        "add 1 to i"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "How many times does the body run? let i = 0; while (i < 3) { i++; }",
+      "a": [
+       "3"
+      ],
+      "why": "i goes 0, 1, 2, so three rounds."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to count down from 3 and then print Go!",
+      "lines": [
+       "let count = 3;",
+       "while (count > 0) {",
+       "  console.log(count);",
+       "  count--;",
+       "}",
+       "console.log(\"Go!\");"
+      ],
+      "why": "The final console.log comes after the loop."
+     },
+     {
+      "t": "order",
+      "q": "Put the loop steps in order",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "Run the body if it was true",
+        2
+       ],
+       [
+        "Change the counter",
+        3
+       ],
+       [
+        "Go back and check again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: n is set. Use a while loop to print the sum of 1 to n.",
+      "starter": "// n is already set\n",
+      "tests": [
+       {
+        "pre": "let n = 3;",
+        "expect": "6"
+       },
+       {
+        "pre": "let n = 5;",
+        "expect": "15"
+       },
+       {
+        "pre": "let n = 1;",
+        "expect": "1"
+       }
+      ],
+      "hint": "Keep a sum variable and a counter i that goes from 1 to n.",
+      "solution": "let sum = 0;\nlet i = 1;\nwhile (i <= n) {\n  sum += i;\n  i++;\n}\nconsole.log(sum);",
+      "why": "The loop adds each i to the running total."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: n is set. Count down from n to 1 (one number per line) and then print Liftoff.",
+      "starter": "// n is already set\n",
+      "tests": [
+       {
+        "pre": "let n = 3;",
+        "expect": "3\n2\n1\nLiftoff"
+       },
+       {
+        "pre": "let n = 1;",
+        "expect": "1\nLiftoff"
+       }
+      ],
+      "hint": "Loop while n > 0, print n, then n--.",
+      "solution": "while (n > 0) {\n  console.log(n);\n  n--;\n}\nconsole.log(\"Liftoff\");",
+      "why": "The last print is outside the loop."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that skips straight to the next loop round.",
+      "a": [
+       "continue"
+      ],
+      "why": "continue skips the rest of the current round."
+     }
+    ]
+   },
+   {
+    "title": "for Loops",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Three parts in one line",
+      "b": "A for loop packs the counter pattern into one line: for (start; condition; update). The start runs once, the condition is checked before each round and the update runs after each round.",
+      "code": "for (let i = 0; i < 3; i++) {\n  console.log(i);\n}\n// 0 1 2"
+     },
+     {
+      "h": "Counting in other ways",
+      "b": "You can start anywhere and step by any amount. Use i-- to count down and i += 2 to jump by two. The variable declared with let inside the loop only exists inside it.",
+      "code": "for (let i = 10; i > 0; i -= 3) {\n  console.log(i);\n}\n// 10 7 4 1"
+     },
+     {
+      "h": "Nested loops",
+      "b": "You can put a loop inside another loop. The inner loop runs completely for every round of the outer loop. This is how you build grids and tables.",
+      "code": "for (let r = 1; r <= 2; r++) {\n  for (let c = 1; c <= 3; c++) {\n    console.log(r + \",\" + c);\n  }\n}\n// 6 lines"
+     },
+     {
+      "h": "for...of for strings",
+      "b": "The for...of loop walks through a string one character at a time, with no counter needed. Use it when you only need the items, and use the normal for loop when you need the index.",
+      "code": "for (const ch of \"cat\") {\n  console.log(ch);\n}\n// c a t"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In what order are the parts of for (a; b; c) used?",
+      "o": [
+       "a is the update, b is the start",
+       "a is the start, b is the condition, c is the update",
+       "a is the condition, b is the update",
+       "All run every round"
+      ],
+      "a": 1,
+      "why": "Start, condition, update."
+     },
+     {
+      "t": "mc",
+      "q": "How many times does for (let i = 0; i < 3; i++) run its body?",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "Forever"
+      ],
+      "a": 1,
+      "why": "i is 0, 1 and 2."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "for (let i = 2; i <= 8; i += 3) {\n  console.log(i);\n}",
+      "o": [
+       "2 5 8 on separate lines",
+       "2 3 4 5 6 7 8",
+       "5 8 11",
+       "2 5"
+      ],
+      "a": 0,
+      "why": "i goes up by 3 while it is 8 or less."
+     },
+     {
+      "t": "tf",
+      "q": "A variable declared with let in the for header can be used after the loop.",
+      "a": false,
+      "why": "It only exists inside the loop."
+     },
+     {
+      "t": "match",
+      "q": "Match each loop part to its job",
+      "pairs": [
+       [
+        "start",
+        "runs once at the beginning"
+       ],
+       [
+        "condition",
+        "checked before every round"
+       ],
+       [
+        "update",
+        "runs after every round"
+       ],
+       [
+        "body",
+        "the code that repeats"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What is the last number printed by for (let i = 1; i < 5; i++) { console.log(i); }?",
+      "a": [
+       "4"
+      ],
+      "why": "The loop stops when i is 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the squares 1, 4, 9",
+      "lines": [
+       "for (let i = 1; i <= 3; i++) {",
+       "  console.log(i * i);",
+       "}"
+      ],
+      "why": "The body goes between the braces."
+     },
+     {
+      "t": "order",
+      "q": "Put the for loop steps in order",
+      "items": [
+       [
+        "Run the start code once",
+        1
+       ],
+       [
+        "Check the condition",
+        2
+       ],
+       [
+        "Run the body",
+        3
+       ],
+       [
+        "Run the update",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: n is set. Print the first 5 multiples of n, one per line (n, 2n, ... 5n).",
+      "starter": "// n is already set\n",
+      "tests": [
+       {
+        "pre": "let n = 3;",
+        "expect": "3\n6\n9\n12\n15"
+       },
+       {
+        "pre": "let n = 7;",
+        "expect": "7\n14\n21\n28\n35"
+       }
+      ],
+      "hint": "for (let i = 1; i <= 5; i++) and print n * i.",
+      "solution": "for (let i = 1; i <= 5; i++) {\n  console.log(n * i);\n}",
+      "why": "i counts 1 to 5."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: word is set. Print each character of word on its own line.",
+      "starter": "// word is already set\n",
+      "tests": [
+       {
+        "pre": "let word = \"cat\";",
+        "expect": "c\na\nt"
+       },
+       {
+        "pre": "let word = \"hi\";",
+        "expect": "h\ni"
+       }
+      ],
+      "hint": "Use for (const ch of word) or loop with an index.",
+      "solution": "for (const ch of word) {\n  console.log(ch);\n}",
+      "why": "for...of visits every character."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: how many lines print? for (let i = 0; i < 2; i++) { for (let j = 0; j < 3; j++) { console.log(i, j); } }",
+      "a": [
+       "6"
+      ],
+      "why": "2 outer rounds times 3 inner rounds is 6."
+     }
+    ]
+   },
+   {
+    "title": "Arrays",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Lists of values",
+      "b": "An array stores many values in one variable. Write them in square brackets separated by commas. The items can be any type, even mixed, and an empty array is just [].",
+      "code": "let fruits = [\"apple\", \"pear\", \"plum\"];\nlet empty = [];"
+     },
+     {
+      "h": "Index and length",
+      "b": "Items are numbered from 0, so fruits[0] is the first. The length property tells how many items there are, so the last item is at index length - 1. You can change an item by assigning to its index.",
+      "code": "let a = [10, 20, 30];\nconsole.log(a[0]); // 10\nconsole.log(a.length); // 3\nconsole.log(a[a.length - 1]); // 30\na[1] = 99;"
+     },
+     {
+      "h": "Looping over arrays",
+      "b": "Use a for loop with an index when you need positions, or for...of when you only need the items. Both visit every item in order.",
+      "code": "let nums = [4, 5, 6];\nfor (let i = 0; i < nums.length; i++) {\n  console.log(nums[i]);\n}\nfor (const n of nums) {\n  console.log(n * 2);\n}"
+     },
+     {
+      "h": "const arrays",
+      "b": "Declaring an array with const only stops you from reassigning the variable to a different array. You can still change the items inside. Arrays can also hold other arrays, which gives a table: grid[1][0] is the first item of the second row.",
+      "code": "const list = [1, 2];\nlist[0] = 50; // allowed\nlet grid = [[1, 2], [3, 4]];\nconsole.log(grid[1][0]); // 3"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first item in an array?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "first"
+      ],
+      "a": 1,
+      "why": "Indexes start at 0."
+     },
+     {
+      "t": "mc",
+      "q": "What is [4, 5, 6].length?",
+      "o": [
+       "2",
+       "3",
+       "6",
+       "4"
+      ],
+      "a": 1,
+      "why": "There are three items."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let a = [\"x\", \"y\", \"z\"];\na[1] = \"Q\";\nconsole.log(a[0] + a[1] + a[2]);",
+      "o": [
+       "xyz",
+       "xQz",
+       "Qxz",
+       "xQ"
+      ],
+      "a": 1,
+      "why": "Index 1 is replaced with Q."
+     },
+     {
+      "t": "tf",
+      "q": "Items inside a const array cannot be changed.",
+      "a": false,
+      "why": "const stops reassignment of the variable, not changes to the contents."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its meaning",
+      "pairs": [
+       [
+        "[]",
+        "an empty array"
+       ],
+       [
+        "arr[0]",
+        "the first item"
+       ],
+       [
+        "arr.length",
+        "how many items"
+       ],
+       [
+        "arr[arr.length - 1]",
+        "the last item"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does console.log([10, 20, 30][2]) print?",
+      "a": [
+       "30"
+      ],
+      "why": "Index 2 is the third item."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add a third fruit and print the length",
+      "lines": [
+       "let fruits = [\"apple\", \"pear\"];",
+       "fruits[2] = \"plum\";",
+       "console.log(fruits.length);"
+      ],
+      "why": "Assigning to index 2 grows the array to 3."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using an array in order",
+      "items": [
+       [
+        "Create the array",
+        1
+       ],
+       [
+        "Read an item by index",
+        2
+       ],
+       [
+        "Change an item by index",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: nums is an array. Print the sum of all its numbers.",
+      "starter": "// nums is already set\n",
+      "tests": [
+       {
+        "pre": "let nums = [1, 2, 3];",
+        "expect": "6"
+       },
+       {
+        "pre": "let nums = [10, 20];",
+        "expect": "30"
+       },
+       {
+        "pre": "let nums = [5];",
+        "expect": "5"
+       }
+      ],
+      "hint": "Start sum at 0 and add each item in a loop.",
+      "solution": "let sum = 0;\nfor (const n of nums) {\n  sum += n;\n}\nconsole.log(sum);",
+      "why": "A loop with a running total."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: nums is a non-empty array. Print the largest number without using Math.max.",
+      "starter": "// nums is already set\n",
+      "tests": [
+       {
+        "pre": "let nums = [3, 9, 2];",
+        "expect": "9"
+       },
+       {
+        "pre": "let nums = [-5, -2, -8];",
+        "expect": "-2"
+       },
+       {
+        "pre": "let nums = [7];",
+        "expect": "7"
+       }
+      ],
+      "hint": "Start with the first item as the best, then compare with each other item.",
+      "solution": "let best = nums[0];\nfor (const n of nums) {\n  if (n > best) {\n    best = n;\n  }\n}\nconsole.log(best);",
+      "why": "Track the biggest value seen so far."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: an array has 5 items. Type the index of its last item.",
+      "a": [
+       "4"
+      ],
+      "why": "Indexes go 0 to 4."
+     }
+    ]
+   },
+   {
+    "title": "Array Basics Methods",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Adding and removing",
+      "b": "push adds an item to the end and pop removes the last item and returns it. unshift adds to the front and shift removes the first item. These methods change the original array.",
+      "code": "let a = [1, 2];\na.push(3); // [1, 2, 3]\nlet last = a.pop(); // 3\na.unshift(0); // [0, 1, 2]"
+     },
+     {
+      "h": "Searching",
+      "b": "indexOf returns the position of an item, or -1 if it is not there. includes returns true or false. Both use strict comparison, so 2 and \"2\" are different.",
+      "code": "let a = [\"x\", \"y\", \"z\"];\nconsole.log(a.indexOf(\"z\")); // 2\nconsole.log(a.indexOf(\"q\")); // -1\nconsole.log(a.includes(\"y\")); // true"
+     },
+     {
+      "h": "slice copies a part",
+      "b": "slice(start, end) returns a new array from start up to but not including end. The original is not changed. Leave out end to go to the finish.",
+      "code": "let a = [1, 2, 3, 4, 5];\nconsole.log(a.slice(1, 3).join(\",\")); // 2,3\nconsole.log(a.slice(3).join(\",\")); // 4,5"
+     },
+     {
+      "h": "join to print",
+      "b": "Printing a whole array shows brackets and spaces that vary by environment. join turns an array into a string using any separator you choose, which makes output predictable.",
+      "code": "let a = [\"a\", \"b\", \"c\"];\nconsole.log(a.join(\"-\")); // a-b-c\nconsole.log(a.join(\"\")); // abc"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does push do?",
+      "o": [
+       "Removes the last item",
+       "Adds an item to the end",
+       "Adds an item to the front",
+       "Sorts the array"
+      ],
+      "a": 1,
+      "why": "push appends to the end."
+     },
+     {
+      "t": "mc",
+      "q": "What does pop return?",
+      "o": [
+       "The new length",
+       "The removed last item",
+       "Nothing",
+       "The first item"
+      ],
+      "a": 1,
+      "why": "pop removes and returns the last item."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let a = [1, 2, 3, 4, 5];\nconsole.log(a.slice(1, 3).join(\",\"));",
+      "o": [
+       "1,2",
+       "2,3",
+       "2,3,4",
+       "1,2,3"
+      ],
+      "a": 1,
+      "why": "slice(1, 3) takes indexes 1 and 2."
+     },
+     {
+      "t": "tf",
+      "q": "indexOf returns -1 when the item is not found.",
+      "a": true,
+      "why": "-1 means not found."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its result",
+      "pairs": [
+       [
+        "push",
+        "add to the end"
+       ],
+       [
+        "pop",
+        "remove the last item"
+       ],
+       [
+        "includes",
+        "true or false"
+       ],
+       [
+        "indexOf",
+        "position or -1"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does console.log([5, 6, 7].indexOf(7)) print?",
+      "a": [
+       "2"
+      ],
+      "why": "7 is at index 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the final text is ab",
+      "lines": [
+       "let q = [\"a\", \"b\"];",
+       "q.push(\"c\");",
+       "q.pop();",
+       "console.log(q.join(\"\"));"
+      ],
+      "why": "c is added then removed again."
+     },
+     {
+      "t": "order",
+      "q": "Put these array changes in order",
+      "items": [
+       [
+        "Start with [1, 2]",
+        1
+       ],
+       [
+        "push(3) gives [1, 2, 3]",
+        2
+       ],
+       [
+        "pop() removes the 3",
+        3
+       ],
+       [
+        "unshift(0) gives [0, 1, 2]",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: arr and item are set. Print found if arr includes item, otherwise missing.",
+      "starter": "// arr and item are already set\n",
+      "tests": [
+       {
+        "pre": "let arr = [\"a\", \"b\"]; let item = \"b\";",
+        "expect": "found"
+       },
+       {
+        "pre": "let arr = [\"a\", \"b\"]; let item = \"z\";",
+        "expect": "missing"
+       },
+       {
+        "pre": "let arr = [1, 2, 3]; let item = 3;",
+        "expect": "found"
+       }
+      ],
+      "hint": "Use arr.includes(item) in an if statement.",
+      "solution": "if (arr.includes(item)) {\n  console.log(\"found\");\n} else {\n  console.log(\"missing\");\n}",
+      "why": "includes gives a boolean."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: nums is set. Push 99 onto the end, then print nums joined with dashes (like 1-2-99).",
+      "starter": "// nums is already set\n",
+      "tests": [
+       {
+        "pre": "let nums = [1, 2];",
+        "expect": "1-2-99"
+       },
+       {
+        "pre": "let nums = [5];",
+        "expect": "5-99"
+       },
+       {
+        "pre": "let nums = [];",
+        "expect": "99"
+       }
+      ],
+      "hint": "nums.push(99); then console.log(nums.join(\"-\"));",
+      "solution": "nums.push(99);\nconsole.log(nums.join(\"-\"));",
+      "why": "push changes the array, join prints it."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the first two items separated by a space: 1 2",
+      "lines": [
+       "let list = [1, 2, 3, 4];",
+       "let firstTwo = list.slice(0, 2);",
+       "console.log(firstTwo.join(\" \"));"
+      ],
+      "why": "slice(0, 2) gives the first two items."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "Reusable blocks",
+      "b": "A function is a named block of code you can run whenever you want. Define it with the function keyword, a name, brackets and a body. Calling it with its name and brackets runs the body.",
+      "code": "function sayHi() {\n  console.log(\"Hi!\");\n}\nsayHi();\nsayHi();"
+     },
+     {
+      "h": "Parameters and arguments",
+      "b": "Parameters are the names listed in the definition, and they act like variables inside the function. Arguments are the actual values you pass when calling it. You can give a parameter a default value with =.",
+      "code": "function greet(name = \"friend\") {\n  console.log(\"Hello, \" + name);\n}\ngreet(\"Sam\");\ngreet(); // Hello, friend"
+     },
+     {
+      "h": "return",
+      "b": "return sends a value back to the place where the function was called and ends the function. A function with no return gives back undefined. Returning is better than printing because you can use the result in more code.",
+      "code": "function add(a, b) {\n  return a + b;\n}\nlet total = add(2, 3);\nconsole.log(total); // 5"
+     },
+     {
+      "h": "Local scope",
+      "b": "Variables created inside a function exist only inside it. Outside code cannot see them, and each call starts fresh. This keeps functions tidy and stops names from clashing.",
+      "code": "function f() {\n  let secret = 1;\n  return secret;\n}\nconsole.log(f()); // 1\n// console.log(secret); // Error"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword sends a value back from a function?",
+      "o": [
+       "give",
+       "return",
+       "send",
+       "output"
+      ],
+      "a": 1,
+      "why": "return hands the value back to the caller."
+     },
+     {
+      "t": "mc",
+      "q": "In function add(a, b), what are a and b called?",
+      "o": [
+       "Arguments",
+       "Parameters",
+       "Returns",
+       "Objects"
+      ],
+      "a": 1,
+      "why": "Names in the definition are parameters; the values passed in are arguments."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "function double(n) {\n  return n * 2;\n}\nconsole.log(double(4) + double(1));",
+      "o": [
+       "5",
+       "10",
+       "8",
+       "2"
+      ],
+      "a": 1,
+      "why": "double(4) is 8 and double(1) is 2, so the sum is 10."
+     },
+     {
+      "t": "tf",
+      "q": "A function with no return statement gives back undefined.",
+      "a": true,
+      "why": "undefined is the default result."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "function",
+        "defines reusable code"
+       ],
+       [
+        "return",
+        "sends a value back"
+       ],
+       [
+        "parameter",
+        "a name in the definition"
+       ],
+       [
+        "call",
+        "runs the function"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Given function f(x) { return x + 1; }, what does console.log(f(f(1))) print?",
+      "a": [
+       "3"
+      ],
+      "why": "f(1) is 2 and f(2) is 3."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define greet and call it",
+      "lines": [
+       "function greet(name) {",
+       "  return \"Hi \" + name;",
+       "}",
+       "console.log(greet(\"Sam\"));"
+      ],
+      "why": "Define first, then call."
+     },
+     {
+      "t": "order",
+      "q": "Put the life of a function call in order",
+      "items": [
+       [
+        "Define the function",
+        1
+       ],
+       [
+        "Call it with an argument",
+        2
+       ],
+       [
+        "The parameter receives the value",
+        3
+       ],
+       [
+        "return sends the result back",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write a function square(n) that returns n times n.",
+      "starter": "// write the function square below\n",
+      "tests": [
+       {
+        "post": "console.log(square(4));",
+        "expect": "16"
+       },
+       {
+        "post": "console.log(square(-3));",
+        "expect": "9"
+       },
+       {
+        "post": "console.log(square(0));",
+        "expect": "0"
+       }
+      ],
+      "hint": "function square(n) { return n * n; }",
+      "solution": "function square(n) {\n  return n * n;\n}",
+      "why": "return gives back the product."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write a function max2(a, b) that returns the bigger of the two numbers (no Math.max).",
+      "starter": "// write the function max2 below\n",
+      "tests": [
+       {
+        "post": "console.log(max2(3, 9));",
+        "expect": "9"
+       },
+       {
+        "post": "console.log(max2(7, 2));",
+        "expect": "7"
+       },
+       {
+        "post": "console.log(max2(5, 5));",
+        "expect": "5"
+       }
+      ],
+      "hint": "Use if (a > b) return a; else return b.",
+      "solution": "function max2(a, b) {\n  if (a > b) {\n    return a;\n  }\n  return b;\n}",
+      "why": "Compare then return."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to define area(w, h) and print area(3, 4)",
+      "lines": [
+       "function area(w, h) {",
+       "  return w * h;",
+       "}",
+       "console.log(area(3, 4));"
+      ],
+      "why": "Return the product, then call it."
+     }
+    ]
+   },
+   {
+    "title": "Arrow Functions",
+    "period": "JavaScript basics",
+    "learn": [
+     {
+      "h": "A shorter syntax",
+      "b": "Arrow functions are a compact way to write functions. They use => between the parameters and the body, and you usually store them in a const. They were added to JavaScript in 2015 and are everywhere in modern code.",
+      "code": "const add = (a, b) => {\n  return a + b;\n};\nconsole.log(add(2, 3)); // 5"
+     },
+     {
+      "h": "Implicit return",
+      "b": "If the body is a single expression and you leave out the curly braces, the value is returned automatically. With braces you must write return yourself. With exactly one parameter the brackets are optional.",
+      "code": "const square = n => n * n;\nconst hello = () => \"hello\";\nconsole.log(square(5)); // 25"
+     },
+     {
+      "h": "Function expressions",
+      "b": "Functions are values, so you can store one in a variable, pass it to another function or return it. A function written as const f = function() {} is a function expression. Arrow functions are the short form of the same idea.",
+      "code": "const f = function (x) {\n  return x + 1;\n};\nconst g = x => x + 1;\nconsole.log(f(1), g(1)); // 2 2"
+     },
+     {
+      "h": "Passing functions around",
+      "b": "Arrow functions shine as short inputs to other functions. For example forEach runs your function once for every array item. You will use this idea a lot with map, filter and event handlers later.",
+      "code": "[1, 2, 3].forEach(n => {\n  console.log(n * 10);\n});\n// 10 20 30"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a valid arrow function?",
+      "o": [
+       "const add = (a, b) => a + b;",
+       "const add = (a, b) -> a + b;",
+       "const add => (a, b) a + b;",
+       "function add(a, b) => a + b;"
+      ],
+      "a": 0,
+      "why": "Arrow functions use =>."
+     },
+     {
+      "t": "mc",
+      "q": "An arrow function body has no braces. What happens to the value?",
+      "o": [
+       "It is ignored",
+       "It is returned automatically",
+       "It causes an error",
+       "It is printed"
+      ],
+      "a": 1,
+      "why": "A single expression body is returned implicitly."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "const f = x => x * 3;\nconsole.log(f(f(2)));",
+      "o": [
+       "6",
+       "12",
+       "18",
+       "9"
+      ],
+      "a": 2,
+      "why": "f(2) is 6, then f(6) is 18."
+     },
+     {
+      "t": "tf",
+      "q": "An arrow function with curly braces returns its last expression automatically.",
+      "a": false,
+      "why": "With braces you must write return."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "=>",
+        "the arrow"
+       ],
+       [
+        "a => a + 1",
+        "implicit return"
+       ],
+       [
+        "{ return a; }",
+        "explicit return needed"
+       ],
+       [
+        "forEach",
+        "runs a function for every item"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Given const sq = n => n * n; what does console.log(sq(6)) print?",
+      "a": [
+       "36"
+      ],
+      "why": "6 times 6 is 36."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define an arrow function add and print add(2, 3)",
+      "lines": [
+       "const add = (a, b) => {",
+       "  return a + b;",
+       "};",
+       "console.log(add(2, 3));"
+      ],
+      "why": "The arrow body has braces so it needs return."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of shortening a function in order",
+      "items": [
+       [
+        "Start with function add(a, b) { return a + b; }",
+        1
+       ],
+       [
+        "Replace function with const add =",
+        2
+       ],
+       [
+        "Add => before the body",
+        3
+       ],
+       [
+        "Remove braces and return: (a, b) => a + b",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write an arrow function triple stored in const triple that returns n times 3.",
+      "starter": "// write: const triple = ...\n",
+      "tests": [
+       {
+        "post": "console.log(triple(4));",
+        "expect": "12"
+       },
+       {
+        "post": "console.log(triple(0));",
+        "expect": "0"
+       },
+       {
+        "post": "console.log(triple(-2));",
+        "expect": "-6"
+       }
+      ],
+      "hint": "const triple = n => n * 3;",
+      "solution": "const triple = n => n * 3;",
+      "why": "A one-expression arrow returns its value."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write an arrow function isAdult(age) that returns true if age is 18 or more, otherwise false.",
+      "starter": "// write: const isAdult = ...\n",
+      "tests": [
+       {
+        "post": "console.log(isAdult(20));",
+        "expect": "true"
+       },
+       {
+        "post": "console.log(isAdult(12));",
+        "expect": "false"
+       },
+       {
+        "post": "console.log(isAdult(18));",
+        "expect": "true"
+       }
+      ],
+      "hint": "const isAdult = age => age >= 18;",
+      "solution": "const isAdult = age => age >= 18;",
+      "why": "The comparison itself is true or false."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print 10, 20, 30 using forEach",
+      "lines": [
+       "const nums = [1, 2, 3];",
+       "nums.forEach(n => {",
+       "  console.log(n * 10);",
+       "});"
+      ],
+      "why": "forEach runs the arrow function for every item."
+     }
+    ]
+   }
+  ]
+ }
+}

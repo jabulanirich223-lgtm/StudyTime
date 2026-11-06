@@ -1,0 +1,1719 @@
+{
+ "go": {
+  "name": "Go",
+  "units": [
+   {
+    "title": "Packages, main and fmt",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "Your first Go program",
+      "b": "Every Go program lives in a package. A runnable program uses package main and has a function called main, which is where Go starts. The fmt package prints text to the screen.",
+      "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}"
+     },
+     {
+      "h": "Packages and imports",
+      "b": "The import line brings in other packages so you can use them. If you import a package and never use it, Go refuses to compile. Names that start with a capital letter, like Println, are exported, which means other packages can use them.",
+      "code": "import (\n    \"fmt\"\n    \"math\"\n)"
+     },
+     {
+      "h": "Printing with fmt",
+      "b": "Println prints its arguments with a space between them and a newline at the end. Print does not add a newline. Printf uses a format string with verbs: %d for integers, %s for strings and %v for any value.",
+      "code": "fmt.Println(\"Go\", 1+2)\nfmt.Printf(\"%d items\\n\", 3)"
+     },
+     {
+      "h": "Running your code",
+      "b": "Save the file as hello.go and run go run hello.go to compile and run it in one step. Use go build to make an executable file. Comments start with // for one line, or sit between /* and */."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which package must a runnable Go program belong to?",
+      "o": [
+       "fmt",
+       "run",
+       "main",
+       "start"
+      ],
+      "a": 2,
+      "why": "An executable program uses package main."
+     },
+     {
+      "t": "mc",
+      "q": "Which command compiles and runs a Go file in one step?",
+      "o": [
+       "go run",
+       "go start",
+       "go exec",
+       "go play"
+      ],
+      "a": 0,
+      "why": "go run compiles and runs the program."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Println(\"Go\", 1+2)\n}",
+      "o": [
+       "Go3",
+       "Go 1+2",
+       "Go, 3",
+       "Go 3"
+      ],
+      "a": 3,
+      "why": "Println puts a space between arguments and evaluates 1+2."
+     },
+     {
+      "t": "tf",
+      "q": "In Go, importing a package you never use is a compile error.",
+      "a": true,
+      "why": "Go rejects unused imports to keep code clean."
+     },
+     {
+      "t": "match",
+      "q": "Match each fmt function to what it does",
+      "pairs": [
+       [
+        "fmt.Println",
+        "Prints and adds a newline"
+       ],
+       [
+        "fmt.Print",
+        "Prints with no newline added"
+       ],
+       [
+        "fmt.Printf",
+        "Prints using a format string"
+       ],
+       [
+        "import",
+        "Brings in a package"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the function where a Go program starts.",
+      "a": [
+       "main"
+      ],
+      "why": "Execution begins at func main."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make a program that prints Hi",
+      "lines": [
+       "package main",
+       "import \"fmt\"",
+       "func main() {",
+       "    fmt.Println(\"Hi\")",
+       "}"
+      ],
+      "why": "Package, import, then func main with the print call."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of running a Go program in order",
+      "items": [
+       [
+        "Write hello.go",
+        1
+       ],
+       [
+        "Run go run hello.go",
+        2
+       ],
+       [
+        "Go compiles the code",
+        3
+       ],
+       [
+        "The output appears",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that prints Hello followed by a newline using fmt.",
+      "a": [
+       "fmt.Println(\"Hello\")"
+      ],
+      "why": "Println adds a newline."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines so the program prints 5 apples",
+      "lines": [
+       "package main",
+       "import \"fmt\"",
+       "func main() {",
+       "    fmt.Printf(\"%d apples\\n\", 5)",
+       "}"
+      ],
+      "why": "Printf fills %d with 5."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    fmt.Printf(\"Total: %d\\n\", 4)\n}",
+      "o": [
+       "Total: %d",
+       "Total: 4",
+       "Total:4",
+       "Total 4"
+      ],
+      "a": 1,
+      "why": "The %d verb is replaced by 4."
+     }
+    ]
+   },
+   {
+    "title": "Variables, Types and :=",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "Declaring variables",
+      "b": "Use var to declare a variable, with a type after the name. A variable you declare without a value gets a zero value: 0 for numbers, an empty string for strings and false for booleans. You can also give a value right away.",
+      "code": "var age int = 16\nvar name string\nvar ok bool\nfmt.Println(age, name, ok)"
+     },
+     {
+      "h": "The short declaration :=",
+      "b": "Inside a function you can write name := value and Go works out the type for you. The := form only works inside functions, not at the top of a file. Go also complains if a local variable is declared but never used.",
+      "code": "score := 10\nprice := 2.5\ngreeting := \"hi\""
+     },
+     {
+      "h": "Basic types",
+      "b": "The main types are int for whole numbers, float64 for decimals, string for text and bool for true or false. Go never mixes number types silently, so you convert by hand with the type name. Use const for values that never change.",
+      "code": "x := 7\ny := 2.0\nfmt.Println(float64(x) / y)\nconst Pi = 3.14"
+     },
+     {
+      "h": "Declaring several at once",
+      "b": "You can declare many variables on one line. Use var a, b = 1, 2 or a, b := 1, 2. You can also group them in a var block. Assigning later uses a plain = sign.",
+      "code": "a, b := 1, 2\na = 5\nfmt.Println(a, b)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the zero value of an int declared with var n int?",
+      "o": [
+       "1",
+       "0",
+       "nil",
+       "-1"
+      ],
+      "a": 1,
+      "why": "Numeric types start at 0."
+     },
+     {
+      "t": "mc",
+      "q": "Where can the := short declaration be used?",
+      "o": [
+       "Only at package level",
+       "Anywhere in a file",
+       "Only in loops",
+       "Only inside functions"
+      ],
+      "a": 3,
+      "why": "Short declarations are allowed only inside functions."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x := 7\ny := 2.0\nfmt.Println(float64(x) / y)",
+      "o": [
+       "3.5",
+       "3",
+       "3.0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "float64(x) converts 7 to 7.0, and 7.0 / 2.0 is 3.5."
+     },
+     {
+      "t": "tf",
+      "q": "Go automatically converts an int to a float64 when you mix them in one expression.",
+      "a": false,
+      "why": "Go needs an explicit conversion like float64(x)."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to what it holds",
+      "pairs": [
+       [
+        "int",
+        "Whole numbers"
+       ],
+       [
+        "float64",
+        "Decimal numbers"
+       ],
+       [
+        "string",
+        "Text"
+       ],
+       [
+        "bool",
+        "true or false"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to declare a value that never changes.",
+      "a": [
+       "const"
+      ],
+      "why": "const declares constants."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to declare a score and print it",
+      "lines": [
+       "package main",
+       "import \"fmt\"",
+       "func main() {",
+       "    score := 10",
+       "    fmt.Println(score)",
+       "}"
+      ],
+      "why": "Declare with := then print inside main."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to divide an int by 2 with decimals",
+      "items": [
+       [
+        "Declare x := 5",
+        1
+       ],
+       [
+        "Convert f := float64(x)",
+        2
+       ],
+       [
+        "Divide f / 2",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an int named score set to 10 using the short form.",
+      "a": [
+       "score := 10"
+      ],
+      "why": "name := value declares and infers the type."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to declare a string, assign it and print it",
+      "lines": [
+       "var name string",
+       "name = \"Go\"",
+       "fmt.Println(name)"
+      ],
+      "why": "Declare first, assign, then print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "var ok bool\nfmt.Println(ok)",
+      "o": [
+       "0",
+       "true",
+       "false",
+       "nil"
+      ],
+      "a": 2,
+      "why": "A bool starts as false."
+     }
+    ]
+   },
+   {
+    "title": "If, For and Switch",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "if and else",
+      "b": "An if in Go has no parentheses around the condition, but the braces are required. You can add a short statement before the condition, and the variable it creates lives only inside the if. Use else if and else for other branches.",
+      "code": "if v := n * 2; v > 10 {\n    fmt.Println(\"big\")\n} else {\n    fmt.Println(\"small\")\n}"
+     },
+     {
+      "h": "for is the only loop",
+      "b": "Go has just one loop keyword: for. The classic form has an init, a condition and a step. If you keep only the condition it works like while, and for with nothing is an infinite loop.",
+      "code": "for i := 0; i < 3; i++ {\n    fmt.Println(i)\n}\nfor n < 10 {\n    n *= 2\n}"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop at once. continue skips to the next round. Both work in every kind of for loop, and an infinite for { } usually ends with a break.",
+      "code": "for i := 0; i < 10; i++ {\n    if i == 3 {\n        continue\n    }\n    if i == 5 {\n        break\n    }\n}"
+     },
+     {
+      "h": "switch",
+      "b": "switch compares a value against several cases. Go stops after the matching case, so you do not write break. A case can list several values, and default runs when nothing matches. A switch with no value acts like a clean if chain.",
+      "code": "switch day {\ncase 1, 7:\n    fmt.Println(\"weekend\")\ndefault:\n    fmt.Println(\"weekday\")\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword is Go's only loop?",
+      "o": [
+       "while",
+       "loop",
+       "for",
+       "repeat"
+      ],
+      "a": 2,
+      "why": "Go uses for for every kind of loop."
+     },
+     {
+      "t": "mc",
+      "q": "After a switch case matches and runs, what happens?",
+      "o": [
+       "The switch ends automatically",
+       "It runs the next case too",
+       "It needs break",
+       "It jumps to default"
+      ],
+      "a": 0,
+      "why": "Go cases do not fall through by default."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "sum := 0\nfor i := 1; i <= 4; i++ {\n    sum += i\n}\nfmt.Println(sum)",
+      "o": [
+       "4",
+       "6",
+       "15",
+       "10"
+      ],
+      "a": 3,
+      "why": "1+2+3+4 is 10."
+     },
+     {
+      "t": "tf",
+      "q": "Go requires parentheses around an if condition.",
+      "a": false,
+      "why": "Go has no parentheses, but braces are required."
+     },
+     {
+      "t": "match",
+      "q": "Match each loop piece to its job",
+      "pairs": [
+       [
+        "for { }",
+        "Infinite loop"
+       ],
+       [
+        "break",
+        "Leaves the loop"
+       ],
+       [
+        "continue",
+        "Skips to the next round"
+       ],
+       [
+        "for x < 5 { }",
+        "While-style loop"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that runs in a switch when no case matches.",
+      "a": [
+       "default"
+      ],
+      "why": "default is the fallback case."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 0, 1 and 2",
+      "lines": [
+       "for i := 0; i < 3; i++ {",
+       "    fmt.Println(i)",
+       "}"
+      ],
+      "why": "Init, condition and step go in the header."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a three-part for loop in the order they run",
+      "items": [
+       [
+        "Init: i := 0",
+        1
+       ],
+       [
+        "Check: i < 3",
+        2
+       ],
+       [
+        "Run the body",
+        3
+       ],
+       [
+        "Step: i++",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the loop header that counts i from 1 to 5 inclusive.",
+      "a": [
+       "for i := 1; i <= 5; i++ {",
+       "for i := 1; i <= 5; i++"
+      ],
+      "why": "Use <= to include 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the switch that prints Mon, Tue or a question mark",
+      "lines": [
+       "switch day {",
+       "case 1:",
+       "    fmt.Println(\"Mon\")",
+       "case 2:",
+       "    fmt.Println(\"Tue\")",
+       "default:",
+       "    fmt.Println(\"?\")",
+       "}"
+      ],
+      "why": "Cases first, default last."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "n := 7\nif r := n % 2; r == 0 {\n    fmt.Println(\"even\")\n} else {\n    fmt.Println(\"odd\")\n}",
+      "o": [
+       "even",
+       "odd",
+       "7",
+       "Error"
+      ],
+      "a": 1,
+      "why": "7 % 2 is 1, so r == 0 is false."
+     }
+    ]
+   },
+   {
+    "title": "Functions and Multiple Returns",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "Writing a function",
+      "b": "A function starts with func, then the name, the parameters with their types, and the return type. When neighbouring parameters share a type you can write the type once. Use return to send a value back.",
+      "code": "func add(a, b int) int {\n    return a + b\n}\nfmt.Println(add(2, 3))"
+     },
+     {
+      "h": "Returning many values",
+      "b": "A Go function can return more than one value by listing the types in parentheses. The caller receives them with a comma list. If you do not need one, throw it away with the blank identifier _.",
+      "code": "func divmod(a, b int) (int, int) {\n    return a / b, a % b\n}\nq, r := divmod(7, 2)\n_, rem := divmod(9, 4)"
+     },
+     {
+      "h": "Named results and variadics",
+      "b": "You can name the results so they act like variables, and a bare return sends them back. A parameter written as nums ...int accepts any number of ints and behaves like a slice inside.",
+      "code": "func sum(nums ...int) int {\n    t := 0\n    for _, n := range nums {\n        t += n\n    }\n    return t\n}"
+     },
+     {
+      "h": "defer and function values",
+      "b": "defer schedules a call to run when the surrounding function ends, which is handy for cleanup. Functions are also values: you can store one in a variable or pass it around.",
+      "code": "func main() {\n    defer fmt.Println(\"bye\")\n    fmt.Println(\"hello\")\n}\nf := func(x int) int { return x * 2 }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line declares a function taking two ints and returning an int?",
+      "o": [
+       "function add(a, b int) int",
+       "func add(a, b int) int",
+       "def add(a, b): int",
+       "func add(int a, int b) int"
+      ],
+      "a": 1,
+      "why": "Go puts types after the names."
+     },
+     {
+      "t": "mc",
+      "q": "What does the blank identifier _ do when receiving results?",
+      "o": [
+       "Stores it as zero",
+       "Makes it private",
+       "Ends the function",
+       "Ignores that value"
+      ],
+      "a": 3,
+      "why": "_ discards a value you do not need."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "func swap(a, b string) (string, string) {\n    return b, a\n}\n\nx, y := swap(\"hi\", \"yo\")\nfmt.Println(x, y)",
+      "o": [
+       "yo hi",
+       "hi yo",
+       "hi hi",
+       "yo yo"
+      ],
+      "a": 0,
+      "why": "swap returns its arguments in reverse order."
+     },
+     {
+      "t": "tf",
+      "q": "A Go function can return more than one value.",
+      "a": true,
+      "why": "Multiple return values are a signature Go feature."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "defer",
+        "Runs when the function ends"
+       ],
+       [
+        "nums ...int",
+        "Accepts any number of ints"
+       ],
+       [
+        "_",
+        "Ignores a value"
+       ],
+       [
+        "return",
+        "Sends results back"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that delays a call until the surrounding function ends.",
+      "a": [
+       "defer"
+      ],
+      "why": "defer runs the call at function exit."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 5",
+      "lines": [
+       "func add(a, b int) int {",
+       "    return a + b",
+       "} // end add",
+       "func main() {",
+       "    fmt.Println(add(2, 3))",
+       "} // end main"
+      ],
+      "why": "Define add, then call it in main."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a function header in order",
+      "items": [
+       [
+        "The func keyword",
+        1
+       ],
+       [
+        "The function name",
+        2
+       ],
+       [
+        "The parameters in parentheses",
+        3
+       ],
+       [
+        "The return type",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header line of a function double that takes an int n and returns an int.",
+      "a": [
+       "func double(n int) int {",
+       "func double(n int) int"
+      ],
+      "why": "Name, parameters, then return type."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines so the program prints 3 1",
+      "lines": [
+       "func divmod(a, b int) (int, int) {",
+       "    return a / b, a % b",
+       "} // end divmod",
+       "func main() {",
+       "    q, r := divmod(7, 2)",
+       "    fmt.Println(q, r)",
+       "} // end main"
+      ],
+      "why": "7 divided by 2 is 3 remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "func sum(nums ...int) int {\n    t := 0\n    for _, n := range nums {\n        t += n\n    }\n    return t\n}\n\nfmt.Println(sum(1, 2, 3))",
+      "o": [
+       "3",
+       "123",
+       "6",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The variadic parameter collects 1, 2 and 3, and they add up to 6."
+     }
+    ]
+   },
+   {
+    "title": "Arrays and Slices",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "Arrays",
+      "b": "An array has a fixed length that is part of its type, so [3]int and [4]int are different types. Elements start at index 0. Arrays are rarely used directly because slices are more flexible.",
+      "code": "var a [3]int\na[0] = 7\nb := [3]int{1, 2, 3}\nfmt.Println(a, b, len(b))"
+     },
+     {
+      "h": "Slices",
+      "b": "A slice is a window onto an array that can grow. Write it without a size: []int{1, 2, 3}. The slice expression s[1:3] takes elements from index 1 up to but not including 3. len gives the number of elements and cap the room available.",
+      "code": "s := []int{10, 20, 30, 40}\nfmt.Println(s[1:3])\nfmt.Println(len(s), cap(s))"
+     },
+     {
+      "h": "append and make",
+      "b": "append adds elements and returns a new slice, so you must keep the result: s = append(s, 4). make creates a slice with a given length filled with zero values. copy copies elements from one slice into another.",
+      "code": "s := make([]int, 3)\ns = append(s, 4)\nfmt.Println(s)"
+     },
+     {
+      "h": "Sharing and range",
+      "b": "Slices that come from the same array share the same data, so changing one can change the other. To loop over a slice use range, which gives the index and the value. Use _ if you do not need one of them.",
+      "code": "a := []int{1, 2, 3}\nb := a[:2]\nb[0] = 99\nfmt.Println(a[0])\nfor i, v := range a {\n    fmt.Println(i, v)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line creates a slice of 3 ints, all zero?",
+      "o": [
+       "new([]int, 3)",
+       "[3]slice{}",
+       "make([]int, 3)",
+       "make(int, 3)"
+      ],
+      "a": 2,
+      "why": "make builds slices with a length."
+     },
+     {
+      "t": "mc",
+      "q": "How do you add a value x to a slice s?",
+      "o": [
+       "s = append(s, x)",
+       "s.add(x)",
+       "append(s, x)",
+       "s.push(x)"
+      ],
+      "a": 0,
+      "why": "append returns the new slice, so assign it."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "s := []int{10, 20, 30, 40}\nfmt.Println(s[1:3])",
+      "o": [
+       "[10 20]",
+       "[20 30 40]",
+       "[10 20 30]",
+       "[20 30]"
+      ],
+      "a": 3,
+      "why": "s[1:3] gives indexes 1 and 2."
+     },
+     {
+      "t": "tf",
+      "q": "The length of an array is part of its type in Go.",
+      "a": true,
+      "why": "[3]int and [4]int are different types."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "len(s)",
+        "Number of elements"
+       ],
+       [
+        "cap(s)",
+        "Room in the underlying array"
+       ],
+       [
+        "append",
+        "Adds elements and returns a slice"
+       ],
+       [
+        "copy",
+        "Copies elements between slices"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the number printed by fmt.Println(len([]int{4, 5, 6})).",
+      "a": [
+       "3"
+      ],
+      "why": "The slice has three elements."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add up the numbers",
+      "lines": [
+       "nums := []int{1, 2, 3}",
+       "total := 0",
+       "for _, n := range nums {",
+       "    total += n",
+       "} // end loop",
+       "fmt.Println(total)"
+      ],
+      "why": "Loop with range, add, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in order to build a slice of two items",
+      "items": [
+       [
+        "s := []int{}",
+        1
+       ],
+       [
+        "s = append(s, 1)",
+        2
+       ],
+       [
+        "s = append(s, 2)",
+        3
+       ],
+       [
+        "fmt.Println(len(s))",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a slice named nums holding 1, 2 and 3.",
+      "a": [
+       "nums := []int{1, 2, 3}"
+      ],
+      "why": "Slice literal with no size."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print each index and value",
+      "lines": [
+       "names := []string{\"a\", \"b\"}",
+       "for i, v := range names {",
+       "    fmt.Println(i, v)",
+       "}"
+      ],
+      "why": "range gives index then value."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "a := []int{1, 2, 3}\nb := a[:2]\nb[0] = 99\nfmt.Println(a[0])",
+      "o": [
+       "1",
+       "99",
+       "0",
+       "Error"
+      ],
+      "a": 1,
+      "why": "b shares the same data as a, so a[0] changes too."
+     }
+    ]
+   },
+   {
+    "title": "Maps",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "Creating a map",
+      "b": "A map stores key and value pairs. Its type is written map[KeyType]ValueType. Create one with a literal or with make, which gives you an empty map ready to use.",
+      "code": "ages := map[string]int{\"Ana\": 20}\nscores := make(map[string]int)"
+     },
+     {
+      "h": "Reading and writing",
+      "b": "Use m[key] to read and m[key] = value to set or update. The built-in len tells you how many keys there are, and delete removes a key. Reading a missing key does not crash, it gives the zero value.",
+      "code": "scores[\"Bo\"] = 7\nfmt.Println(scores[\"Bo\"])\ndelete(scores, \"Bo\")\nfmt.Println(len(scores))"
+     },
+     {
+      "h": "The comma ok idiom",
+      "b": "Because a missing key gives zero, you cannot tell it apart from a stored zero. Ask for two values: the second is true only if the key exists. This is called the comma ok idiom.",
+      "code": "v, ok := ages[\"Bo\"]\nif ok {\n    fmt.Println(v)\n} else {\n    fmt.Println(\"missing\")\n}"
+     },
+     {
+      "h": "Looping over a map",
+      "b": "Use for key, value := range m to go through a map. The order is random on purpose, so never rely on it. A map that was never created is nil, and writing to a nil map crashes the program, so always create it with make or a literal.",
+      "code": "for name, age := range ages {\n    fmt.Println(name, age)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line creates an empty map from strings to ints?",
+      "o": [
+       "map[string]int()",
+       "make(map[string]int)",
+       "new map(string, int)",
+       "make([]string, int)"
+      ],
+      "a": 1,
+      "why": "make with the map type creates a ready map."
+     },
+     {
+      "t": "mc",
+      "q": "What does reading a missing key from a map give?",
+      "o": [
+       "A crash",
+       "nil always",
+       "An error value",
+       "The zero value of the value type"
+      ],
+      "a": 3,
+      "why": "Missing keys give zero, like 0 for ints."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "ages := map[string]int{\"Ana\": 20}\nv, ok := ages[\"Bo\"]\nfmt.Println(v, ok)",
+      "o": [
+       "0 false",
+       "0 true",
+       "20 true",
+       "false 0"
+      ],
+      "a": 0,
+      "why": "Bo is not in the map, so v is 0 and ok is false."
+     },
+     {
+      "t": "tf",
+      "q": "A Go map always loops in the order the keys were inserted.",
+      "a": false,
+      "why": "Map iteration order is random."
+     },
+     {
+      "t": "match",
+      "q": "Match each map operation to what it does",
+      "pairs": [
+       [
+        "delete(m, k)",
+        "Removes a key"
+       ],
+       [
+        "len(m)",
+        "Counts the keys"
+       ],
+       [
+        "v, ok := m[k]",
+        "Checks if a key exists"
+       ],
+       [
+        "make(map[K]V)",
+        "Creates a ready map"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the built-in function that removes a key from a map.",
+      "a": [
+       "delete"
+      ],
+      "why": "delete(m, key) removes the pair."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to store two scores and print how many there are",
+      "lines": [
+       "scores := map[string]int{}",
+       "scores[\"Ana\"] = 5",
+       "scores[\"Bo\"] = 7",
+       "fmt.Println(len(scores))"
+      ],
+      "why": "Create, add two keys, then count."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to look up a name safely",
+      "items": [
+       [
+        "Create the map",
+        1
+       ],
+       [
+        "Ask v, ok := m[name]",
+        2
+       ],
+       [
+        "Check if ok is true",
+        3
+       ],
+       [
+        "Use v",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that sets the key gold to 3 in a map named prizes.",
+      "a": [
+       "prizes[\"gold\"] = 3"
+      ],
+      "why": "Use m[key] = value."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the value or none",
+      "lines": [
+       "if v, ok := m[\"x\"]; ok {",
+       "    fmt.Println(v)",
+       "} else {",
+       "    fmt.Println(\"none\")",
+       "}"
+      ],
+      "why": "Check ok before using v."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "m := map[string]int{\"a\": 1, \"b\": 2}\ndelete(m, \"a\")\nfmt.Println(len(m))",
+      "o": [
+       "2",
+       "0",
+       "1",
+       "Error"
+      ],
+      "a": 2,
+      "why": "One of the two keys was deleted."
+     }
+    ]
+   },
+   {
+    "title": "Structs and Methods",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "Defining a struct",
+      "b": "A struct groups related fields into one type. Define it with type Name struct, then create values with a literal. Read and write fields with a dot. Go has no classes, structs and methods do the same job.",
+      "code": "type Person struct {\n    Name string\n    Age  int\n}\np := Person{Name: \"Ana\", Age: 20}\nfmt.Println(p.Name)"
+     },
+     {
+      "h": "Methods",
+      "b": "A method is a function with a receiver written before its name. With a value receiver the method gets a copy, so changes inside do not affect the original.",
+      "code": "func (p Person) Greet() string {\n    return \"Hi \" + p.Name\n}\nfmt.Println(p.Greet())"
+     },
+     {
+      "h": "Pointer receivers",
+      "b": "If a method must change the original struct, use a pointer receiver such as (p *Person). Go lets you call it directly on a normal variable and handles the pointer for you.",
+      "code": "func (p *Person) Birthday() {\n    p.Age++\n}\np.Birthday()\nfmt.Println(p.Age)"
+     },
+     {
+      "h": "Pointers",
+      "b": "The & operator gives the address of a variable and * follows a pointer to its value. Pointers let functions change data they are given. By convention a function named NewPerson builds and returns a struct, since Go has no constructors.",
+      "code": "x := 5\np := &x\n*p = 9\nfmt.Println(x)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which receiver lets a method change the original struct?",
+      "o": [
+       "A value receiver",
+       "A const receiver",
+       "A pointer receiver like (p *Person)",
+       "Any receiver"
+      ],
+      "a": 2,
+      "why": "A pointer receiver works on the original."
+     },
+     {
+      "t": "mc",
+      "q": "What does the & operator give you?",
+      "o": [
+       "The address of a variable",
+       "The value inside",
+       "A copy of it",
+       "A new type"
+      ],
+      "a": 0,
+      "why": "& creates a pointer."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "type P struct{ X int }\n\nfunc (p *P) Inc() { p.X++ }\n\nfunc main() {\n    a := P{X: 1}\n    a.Inc()\n    fmt.Println(a.X)\n}",
+      "o": [
+       "1",
+       "0",
+       "Error",
+       "2"
+      ],
+      "a": 3,
+      "why": "Inc has a pointer receiver, so X changes on a."
+     },
+     {
+      "t": "tf",
+      "q": "Go has a class keyword for defining classes.",
+      "a": false,
+      "why": "Go uses structs with methods instead of classes."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its meaning",
+      "pairs": [
+       [
+        "struct",
+        "Groups fields into a type"
+       ],
+       [
+        "(p *T)",
+        "Pointer receiver, can change the original"
+       ],
+       [
+        "&x",
+        "Address of x"
+       ],
+       [
+        "*p",
+        "Value the pointer points to"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to define a new type such as a struct.",
+      "a": [
+       "type"
+      ],
+      "why": "type Name struct { ... }"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to create a Dog and print its name",
+      "lines": [
+       "type Dog struct {",
+       "    Name string",
+       "}",
+       "d := Dog{Name: \"Rex\"}",
+       "fmt.Println(d.Name)"
+      ],
+      "why": "Define the type, create a value, print the field."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to use a struct",
+      "items": [
+       [
+        "Define the type",
+        1
+       ],
+       [
+        "Create a value",
+        2
+       ],
+       [
+        "Call a method",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of a method Area on a Rect value receiver r that returns an int.",
+      "a": [
+       "func (r Rect) Area() int {",
+       "func (r Rect) Area() int"
+      ],
+      "why": "Receiver goes between func and the name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines so the program prints 12",
+      "lines": [
+       "func (r Rect) Area() int {",
+       "    return r.W * r.H",
+       "}",
+       "func main() {",
+       "    r := Rect{W: 3, H: 4}",
+       "    fmt.Println(r.Area())",
+       "} // end main"
+      ],
+      "why": "3 times 4 is 12."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "type Counter struct{ N int }\n\nfunc (c Counter) Add() { c.N++ }\n\nfunc main() {\n    c := Counter{N: 5}\n    c.Add()\n    fmt.Println(c.N)\n}",
+      "o": [
+       "6",
+       "5",
+       "0",
+       "Error"
+      ],
+      "a": 1,
+      "why": "A value receiver changes only a copy."
+     }
+    ]
+   },
+   {
+    "title": "Interfaces",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "What an interface is",
+      "b": "An interface is a list of method signatures. Any type that has all those methods automatically satisfies the interface. There is no implements keyword, which is why Go calls it implicit.",
+      "code": "type Shape interface {\n    Area() float64\n}"
+     },
+     {
+      "h": "Using interfaces",
+      "b": "A variable or parameter of an interface type can hold any value whose type has the methods. This lets one function work with many types, like a slice of Shapes.",
+      "code": "type Sq struct{ S float64 }\n\nfunc (s Sq) Area() float64 {\n    return s.S * s.S\n}\n\nvar sh Shape = Sq{3}"
+     },
+     {
+      "h": "The empty interface",
+      "b": "The type any (the same as interface{}) has no methods, so every value fits in it. To get the real value back, use a type assertion v, ok := x.(string). The ok tells you whether it worked.",
+      "code": "var x any = \"hi\"\ns, ok := x.(string)\nfmt.Println(s, ok)"
+     },
+     {
+      "h": "Type switches and Stringer",
+      "b": "A type switch checks the real type of an interface value in each case. The fmt package also looks for a String() string method: if your type has it, Println uses it to print your value.",
+      "code": "switch v := x.(type) {\ncase int:\n    fmt.Println(\"int\", v)\ncase string:\n    fmt.Println(\"string\", v)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How does a Go type satisfy an interface?",
+      "o": [
+       "By writing implements",
+       "By having all the methods",
+       "By inheriting from it",
+       "By registering it"
+      ],
+      "a": 1,
+      "why": "Satisfaction is implicit."
+     },
+     {
+      "t": "mc",
+      "q": "What is the type any?",
+      "o": [
+       "A number type",
+       "A pointer type",
+       "A keyword for loops",
+       "An alias for interface{} that holds any value"
+      ],
+      "a": 3,
+      "why": "Every type satisfies the empty interface."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "type Animal interface{ Sound() string }\ntype Dog struct{}\n\nfunc (Dog) Sound() string { return \"Woof\" }\n\nfunc main() {\n    var a Animal = Dog{}\n    fmt.Println(a.Sound())\n}",
+      "o": [
+       "Woof",
+       "Dog",
+       "Sound",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Dog has a Sound method, so it satisfies Animal."
+     },
+     {
+      "t": "tf",
+      "q": "A Go type must declare with a keyword that it implements an interface.",
+      "a": false,
+      "why": "Interfaces are satisfied implicitly."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "interface",
+        "Set of method signatures"
+       ],
+       [
+        "any",
+        "Holds a value of any type"
+       ],
+       [
+        "x.(T)",
+        "Type assertion"
+       ],
+       [
+        "type switch",
+        "Branches on the real type"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to declare an interface type.",
+      "a": [
+       "interface"
+      ],
+      "why": "type Name interface { ... }"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define Shape and a type that satisfies it",
+      "lines": [
+       "type Shape interface {",
+       "    Area() float64",
+       "}",
+       "type Sq struct{ S float64 }",
+       "func (s Sq) Area() float64 { return s.S * s.S }"
+      ],
+      "why": "Interface first, then a type with the method."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to use an interface",
+      "items": [
+       [
+        "Define the interface",
+        1
+       ],
+       [
+        "Define a type",
+        2
+       ],
+       [
+        "Add the methods",
+        3
+       ],
+       [
+        "Assign the value to an interface variable",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the method line inside an interface Speaker for a method Speak returning a string.",
+      "a": [
+       "Speak() string"
+      ],
+      "why": "Name, parentheses, return type."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the type switch",
+      "lines": [
+       "switch v := x.(type) {",
+       "case int:",
+       "    fmt.Println(\"int\")",
+       "case string:",
+       "    fmt.Println(\"string\")",
+       "}"
+      ],
+      "why": "Cases go inside the switch."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "var x any = \"hi\"\nn, ok := x.(int)\nfmt.Println(n, ok)",
+      "o": [
+       "hi true",
+       "0 true",
+       "0 false",
+       "Error"
+      ],
+      "a": 2,
+      "why": "x holds a string, so asserting int fails and gives the zero value."
+     }
+    ]
+   },
+   {
+    "title": "Errors",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "The error type",
+      "b": "Go has no exceptions for normal problems. Functions that can fail return an extra value of type error. The error interface is just one method, Error() string. A nil error means success.",
+      "code": "type error interface {\n    Error() string\n}"
+     },
+     {
+      "h": "Returning and checking",
+      "b": "Create an error with errors.New or fmt.Errorf. The caller checks if err != nil right after the call and deals with it. This pattern appears everywhere in Go code.",
+      "code": "func div(a, b int) (int, error) {\n    if b == 0 {\n        return 0, errors.New(\"divide by zero\")\n    }\n    return a / b, nil\n}"
+     },
+     {
+      "h": "Wrapping errors",
+      "b": "fmt.Errorf with the %w verb wraps an error and adds context. errors.Is checks whether a specific error is anywhere in the chain, and errors.As pulls out a particular error type.",
+      "code": "err := fmt.Errorf(\"read failed: %w\", ErrNotFound)\nif errors.Is(err, ErrNotFound) {\n    fmt.Println(\"not found\")\n}"
+     },
+     {
+      "h": "Custom errors and panic",
+      "b": "Any type with an Error() string method is an error, so you can make your own with extra fields. panic stops the program for truly unexpected bugs, and recover inside a deferred function can catch it. Normal failures should use error values.",
+      "code": "type MyErr struct{ Code int }\n\nfunc (e MyErr) Error() string {\n    return \"code \" + strconv.Itoa(e.Code)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does an error value of nil mean?",
+      "o": [
+       "An unknown error",
+       "A panic",
+       "No error happened",
+       "The program stopped"
+      ],
+      "a": 2,
+      "why": "nil means success."
+     },
+     {
+      "t": "mc",
+      "q": "Which call builds an error with a formatted message that can wrap another?",
+      "o": [
+       "fmt.Errorf",
+       "errors.Print",
+       "fmt.Wrap",
+       "error.New"
+      ],
+      "a": 0,
+      "why": "fmt.Errorf with %w wraps an error."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "n, err := strconv.Atoi(\"12x\")\nif err != nil {\n    fmt.Println(\"bad\")\n} else {\n    fmt.Println(n)\n}",
+      "o": [
+       "12",
+       "0",
+       "Error",
+       "bad"
+      ],
+      "a": 3,
+      "why": "Atoi cannot convert 12x, so err is not nil."
+     },
+     {
+      "t": "tf",
+      "q": "Go normally handles errors with try and catch blocks.",
+      "a": false,
+      "why": "Go returns error values and checks them with if."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its use",
+      "pairs": [
+       [
+        "errors.New",
+        "Creates a simple error"
+       ],
+       [
+        "fmt.Errorf with %w",
+        "Wraps an error with context"
+       ],
+       [
+        "errors.Is",
+        "Looks for a specific error in the chain"
+       ],
+       [
+        "panic",
+        "Stops on an unrecoverable problem"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the condition that checks whether an error happened.",
+      "a": [
+       "err != nil"
+      ],
+      "why": "A non-nil err means failure."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to call doWork and handle an error",
+      "lines": [
+       "result, err := doWork()",
+       "if err != nil {",
+       "    fmt.Println(\"error:\", err)",
+       "    return",
+       "}",
+       "fmt.Println(result)"
+      ],
+      "why": "Check err before using result."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for handling an error",
+      "items": [
+       [
+        "Call the function",
+        1
+       ],
+       [
+        "Receive the value and err",
+        2
+       ],
+       [
+        "Check err != nil",
+        3
+       ],
+       [
+        "Handle the error or continue",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that returns 0 and a new error with the text bad.",
+      "a": [
+       "return 0, errors.New(\"bad\")"
+      ],
+      "why": "Return the zero value and an error."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the function div that rejects zero",
+      "lines": [
+       "func div(a, b int) (int, error) {",
+       "    if b == 0 {",
+       "        return 0, errors.New(\"divide by zero\")",
+       "    }",
+       "    return a / b, nil",
+       "}"
+      ],
+      "why": "Check b first, otherwise return nil error."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "type MyErr struct{ Code int }\n\nfunc (e MyErr) Error() string {\n    return \"code \" + strconv.Itoa(e.Code)\n}\n\nfunc main() {\n    var err error = MyErr{404}\n    fmt.Println(err)\n}",
+      "o": [
+       "404",
+       "code 404",
+       "MyErr",
+       "Error"
+      ],
+      "a": 1,
+      "why": "Println uses the Error method of an error value."
+     }
+    ]
+   },
+   {
+    "title": "Goroutines and Channels",
+    "period": "Go tour",
+    "learn": [
+     {
+      "h": "Goroutines",
+      "b": "Put the keyword go before a function call and it runs at the same time as the rest of your code. This is a goroutine, a very cheap thread. When main returns the program ends, even if goroutines are still running.",
+      "code": "go fmt.Println(\"in a goroutine\")\ntime.Sleep(100 * time.Millisecond)"
+     },
+     {
+      "h": "WaitGroup",
+      "b": "To wait for goroutines without guessing a sleep time, use sync.WaitGroup. Call Add before starting, Done when each goroutine finishes and Wait to block until all are done.",
+      "code": "var wg sync.WaitGroup\nwg.Add(1)\ngo func() {\n    defer wg.Done()\n    fmt.Println(\"work\")\n}()\nwg.Wait()"
+     },
+     {
+      "h": "Channels",
+      "b": "A channel is a typed pipe between goroutines. ch <- v sends and <-ch receives. On an unbuffered channel a send waits until someone receives. A buffered channel such as make(chan int, 2) holds that many values before it blocks.",
+      "code": "ch := make(chan string)\ngo func() { ch <- \"ping\" }()\nfmt.Println(<-ch)"
+     },
+     {
+      "h": "close, range, select and Mutex",
+      "b": "The sender can close a channel, and for v := range ch reads until it is closed. select waits on several channel operations at once and picks one that is ready. When goroutines share a variable, protect it with sync.Mutex using Lock and Unlock.",
+      "code": "for v := range ch {\n    fmt.Println(v)\n}\nselect {\ncase m := <-a:\n    fmt.Println(m)\ncase m := <-b:\n    fmt.Println(m)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword starts a goroutine?",
+      "o": [
+       "async",
+       "go",
+       "thread",
+       "spawn"
+      ],
+      "a": 1,
+      "why": "go before a call runs it concurrently."
+     },
+     {
+      "t": "mc",
+      "q": "An unbuffered channel send blocks until what happens?",
+      "o": [
+       "The channel is closed",
+       "A timer ends",
+       "Main returns",
+       "Another goroutine receives"
+      ],
+      "a": 3,
+      "why": "Unbuffered channels synchronize sender and receiver."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "ch := make(chan string)\ngo func() { ch <- \"ping\" }()\nfmt.Println(<-ch)",
+      "o": [
+       "ping",
+       "Nothing",
+       "ch",
+       "Deadlock error"
+      ],
+      "a": 0,
+      "why": "The goroutine sends ping and main receives it."
+     },
+     {
+      "t": "tf",
+      "q": "A Go program waits for all goroutines to finish before main returns.",
+      "a": false,
+      "why": "The program exits when main returns."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "go",
+        "Starts a goroutine"
+       ],
+       [
+        "chan",
+        "Typed pipe between goroutines"
+       ],
+       [
+        "sync.WaitGroup",
+        "Waits for goroutines to finish"
+       ],
+       [
+        "select",
+        "Waits on several channel operations"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the built-in function that closes a channel.",
+      "a": [
+       "close"
+      ],
+      "why": "close(ch) tells receivers no more values come."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to send 42 from a goroutine and print it",
+      "lines": [
+       "ch := make(chan int)",
+       "go func() {",
+       "    ch <- 42",
+       "}()",
+       "fmt.Println(<-ch)"
+      ],
+      "why": "Make the channel, send in a goroutine, receive in main."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for passing a value between goroutines",
+      "items": [
+       [
+        "Create the channel with make",
+        1
+       ],
+       [
+        "Start a goroutine with go",
+        2
+       ],
+       [
+        "Send with ch <- value",
+        3
+       ],
+       [
+        "Receive with <-ch",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a buffered channel of ints named ch with room for 3.",
+      "a": [
+       "ch := make(chan int, 3)"
+      ],
+      "why": "The second argument of make is the buffer size."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to send 1, close the channel and print what is received",
+      "lines": [
+       "ch := make(chan int)",
+       "go func() {",
+       "    ch <- 1",
+       "    close(ch)",
+       "}()",
+       "for v := range ch {",
+       "    fmt.Println(v)",
+       "}"
+      ],
+      "why": "range stops once the channel is closed."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "ch := make(chan int, 2)\nch <- 1\nch <- 2\nfmt.Println(len(ch))",
+      "o": [
+       "0",
+       "1",
+       "2",
+       "Error"
+      ],
+      "a": 2,
+      "why": "Two values were sent into the buffer, and len counts values waiting."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,2282 @@
+{
+ "py-2": {
+  "name": "Python · Intermediate",
+  "units": [
+   {
+    "title": "Dictionaries",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Key and value pairs",
+      "b": "A dictionary stores data as key: value pairs inside curly braces. You look up a value by its key, not by a position. Keys must be unique and are usually strings or numbers.",
+      "code": "ages = {'Ana': 12, 'Leo': 9}\nprint(ages['Ana'])"
+     },
+     {
+      "h": "Adding, changing, deleting",
+      "b": "Assigning to a key either adds a new pair or changes the old one. pop(key) removes a pair and returns its value, and del d[key] removes it too. Using a key that is missing with [] causes a KeyError.",
+      "code": "d = {'a': 1}\nd['b'] = 2\nd['a'] = 10\ndel d['b']\nprint(d)"
+     },
+     {
+      "h": "Safe lookups",
+      "b": "d.get(key) returns None when the key is missing, and d.get(key, default) returns your default instead. The in operator checks keys, not values.",
+      "code": "d = {'a': 1}\nprint(d.get('z', 0))\nprint('a' in d)\nprint(1 in d)"
+     },
+     {
+      "h": "Looping over a dictionary",
+      "b": "Looping over a dict gives its keys. Use .values() for values and .items() for both at once. items() gives key, value pairs you can unpack in the for line.",
+      "code": "scores = {'a': 3, 'b': 5}\nfor k, v in scores.items():\n    print(k, v)\nprint(sum(scores.values()))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you read the value for key 'name' in dict d?",
+      "o": [
+       "d.name",
+       "d['name']",
+       "d(name)",
+       "d{name}"
+      ],
+      "a": 1,
+      "why": "Square brackets with the key."
+     },
+     {
+      "t": "mc",
+      "q": "What happens with d['zzz'] if the key is missing?",
+      "o": [
+       "Returns None",
+       "Returns 0",
+       "KeyError",
+       "Adds the key"
+      ],
+      "a": 2,
+      "why": "Missing keys raise KeyError; use get() to be safe."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "d = {'a': 1, 'b': 2}\nd['c'] = 3\nprint(len(d))",
+      "o": [
+       "2",
+       "3",
+       "1",
+       "Error"
+      ],
+      "a": 1,
+      "why": "After adding c there are 3 pairs."
+     },
+     {
+      "t": "tf",
+      "q": "Keys in a dictionary must be unique.",
+      "a": true,
+      "why": "A repeated key just replaces the old value."
+     },
+     {
+      "t": "match",
+      "q": "Match each dictionary tool to what it gives",
+      "pairs": [
+       [
+        "d.keys()",
+        "all the keys"
+       ],
+       [
+        "d.values()",
+        "all the values"
+       ],
+       [
+        "d.items()",
+        "key and value pairs"
+       ],
+       [
+        "d.get(k, 0)",
+        "value or a default"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print({'x': 5}['x'])",
+      "a": [
+       "5"
+      ],
+      "why": "The key 'x' has the value 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Ana and then Leo",
+      "lines": [
+       "ages = {'Ana': 12}",
+       "ages['Leo'] = 9",
+       "for name in ages:",
+       "    print(name)"
+      ],
+      "why": "Create, add, then loop over the keys."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a dictionary in order",
+      "items": [
+       [
+        "Create the dictionary",
+        1
+       ],
+       [
+        "Add a new key",
+        2
+       ],
+       [
+        "Read a value by key",
+        3
+       ],
+       [
+        "Delete a key",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: words is a list. Print how many times target appears in it, using a dictionary of counts.",
+      "starter": "# words and target are set\n",
+      "tests": [
+       {
+        "pre": "words = ['apple', 'pear', 'apple']\ntarget = 'apple'",
+        "expect": "2"
+       },
+       {
+        "pre": "words = ['a', 'b']\ntarget = 'z'",
+        "expect": "0"
+       },
+       {
+        "pre": "words = ['x', 'x', 'x']\ntarget = 'x'",
+        "expect": "3"
+       }
+      ],
+      "hint": "counts[w] = counts.get(w, 0) + 1",
+      "solution": "counts = {}\nfor w in words:\n    counts[w] = counts.get(w, 0) + 1\nprint(counts.get(target, 0))",
+      "why": "get with a default makes counting easy."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: prices is a dictionary of item: price. Print the total of all prices.",
+      "starter": "# prices is set\n",
+      "tests": [
+       {
+        "pre": "prices = {'a': 3, 'b': 4}",
+        "expect": "7"
+       },
+       {
+        "pre": "prices = {'x': 10}",
+        "expect": "10"
+       },
+       {
+        "pre": "prices = {'a': 1, 'b': 2, 'c': 3}",
+        "expect": "6"
+       }
+      ],
+      "hint": "Use sum(prices.values())",
+      "solution": "print(sum(prices.values()))",
+      "why": "values() gives the numbers to add."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does print({'a': 1}.get('z', 0)) show?",
+      "a": [
+       "0"
+      ],
+      "why": "The key z is missing, so the default 0 is returned."
+     }
+    ]
+   },
+   {
+    "title": "Tuples & Sets",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Tuples",
+      "b": "A tuple is like a list but cannot be changed after it is made. It uses parentheses. A tuple with one item needs a trailing comma, like (5,). Tuples are great for fixed groups like coordinates.",
+      "code": "point = (3, 4)\nprint(point[0])\n# point[0] = 9  <- Error"
+     },
+     {
+      "h": "Unpacking",
+      "b": "You can unpack a tuple (or list) into several variables in one line. The number of names must match the number of items. Functions can return several values this way as a tuple.",
+      "code": "point = (3, 4)\nx, y = point\nprint(x + y)\ndef min_max(a):\n    return min(a), max(a)\nlo, hi = min_max([4, 1, 9])\nprint(lo, hi)"
+     },
+     {
+      "h": "Sets",
+      "b": "A set holds unique values with no order and no indexes. Making a set from a list removes duplicates. add() puts one in and remove() takes one out. An empty set must be set(), because {} is an empty dict.",
+      "code": "s = set([1, 2, 2, 3, 3])\nprint(len(s))\ns.add(10)\nprint(10 in s)"
+     },
+     {
+      "h": "Set operations",
+      "b": "a | b is the union, a & b is what both share, and a - b is what is only in a. Sets are fast for checking membership. Use sorted(s) to see a set in a stable order.",
+      "code": "a = {1, 2, 3}\nb = {2, 3, 4}\nprint(sorted(a | b))\nprint(sorted(a & b))\nprint(sorted(a - b))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a tuple?",
+      "o": [
+       "[1, 2, 3]",
+       "{1, 2, 3}",
+       "(1, 2, 3)",
+       "{'a': 1}"
+      ],
+      "a": 2,
+      "why": "Parentheses make a tuple."
+     },
+     {
+      "t": "mc",
+      "q": "Which collection removes duplicates automatically?",
+      "o": [
+       "list",
+       "tuple",
+       "set",
+       "string"
+      ],
+      "a": 2,
+      "why": "A set keeps only unique values."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print(len({1, 2, 2, 3, 3}))",
+      "o": [
+       "5",
+       "3",
+       "2",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The set keeps 1, 2 and 3."
+     },
+     {
+      "t": "tf",
+      "q": "You can change an item of a tuple after creating it.",
+      "a": false,
+      "why": "Tuples are immutable."
+     },
+     {
+      "t": "match",
+      "q": "Match each literal to its type",
+      "pairs": [
+       [
+        "(1, 2)",
+        "tuple"
+       ],
+       [
+        "{1, 2}",
+        "set"
+       ],
+       [
+        "[1, 2]",
+        "list"
+       ],
+       [
+        "{'a': 1}",
+        "dict"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print(len(set([1, 1, 1])))",
+      "a": [
+       "1"
+      ],
+      "why": "Duplicates collapse to one item."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the common values [2, 3]",
+      "lines": [
+       "a = {1, 2, 3}",
+       "b = {2, 3, 4}",
+       "print(sorted(a & b))"
+      ],
+      "why": "Define both sets, then print the intersection."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of removing duplicates in order",
+      "items": [
+       [
+        "Start with a list with repeats",
+        1
+       ],
+       [
+        "Convert it with set()",
+        2
+       ],
+       [
+        "Duplicates vanish",
+        3
+       ],
+       [
+        "Use sorted() to view it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: items is a list. Print how many different (unique) items it has.",
+      "starter": "# items is set\n",
+      "tests": [
+       {
+        "pre": "items = [1, 2, 2, 3, 3]",
+        "expect": "3"
+       },
+       {
+        "pre": "items = ['a', 'a']",
+        "expect": "1"
+       },
+       {
+        "pre": "items = [1, 2, 3, 4]",
+        "expect": "4"
+       }
+      ],
+      "hint": "Use len(set(items))",
+      "solution": "print(len(set(items)))",
+      "why": "set() removes duplicates."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: a and b are lists. Print the values they share as a sorted list.",
+      "starter": "# a and b are set\n",
+      "tests": [
+       {
+        "pre": "a = [1, 2, 3]\nb = [2, 3, 4]",
+        "expect": "[2, 3]"
+       },
+       {
+        "pre": "a = ['x']\nb = ['y']",
+        "expect": "[]"
+       },
+       {
+        "pre": "a = [5, 5, 6]\nb = [5]",
+        "expect": "[5]"
+       }
+      ],
+      "hint": "Use sorted(set(a) & set(b))",
+      "solution": "print(sorted(set(a) & set(b)))",
+      "why": "& keeps what both sets have."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to unpack the point and print 7.",
+      "lines": [
+       "point = (3, 4)",
+       "x, y = point",
+       "print(x + y)"
+      ],
+      "why": "Unpack into x and y, then add."
+     }
+    ]
+   },
+   {
+    "title": "Nested Data",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Lists inside lists",
+      "b": "A list can contain other lists. This is how you make a grid or table. The first index picks the row and the second index picks the item in that row.",
+      "code": "grid = [[1, 2], [3, 4]]\nprint(grid[1])\nprint(grid[1][0])"
+     },
+     {
+      "h": "Lists of dictionaries",
+      "b": "Real data is often a list of dictionaries, like a list of students. First pick the item with an index, then pick the field with a key. Loop over the list to handle every record.",
+      "code": "students = [{'name': 'Ana', 'age': 12}, {'name': 'Bo', 'age': 9}]\nprint(students[0]['name'])\nfor s in students:\n    print(s['age'])"
+     },
+     {
+      "h": "Dictionaries holding lists",
+      "b": "A dictionary value can be a list or another dictionary. Chain the lookups from left to right: first the key, then the index. You can also append to a list stored in a dict.",
+      "code": "data = {'a': [1, 2, 3]}\nprint(data['a'][-1])\ndata['a'].append(4)\nprint(data)"
+     },
+     {
+      "h": "Looping through nested data",
+      "b": "Use a loop inside a loop to visit every value in a grid. The outer loop takes each row and the inner loop takes each item in the row. To build a grid, append lists to a list.",
+      "code": "grid = [[1, 2], [3, 4]]\ntotal = 0\nfor row in grid:\n    for n in row:\n        total += n\nprint(total)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If m = [[1, 2], [3, 4]], what is m[1][0]?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "Row 1 is [3, 4] and item 0 is 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you read the name of the first student in a list of dicts called students?",
+      "o": [
+       "students['name'][0]",
+       "students[0]['name']",
+       "students.name",
+       "students[name]"
+      ],
+      "a": 1,
+      "why": "Index first, then key."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "data = {'a': [1, 2, 3]}\nprint(data['a'][-1])",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "[1, 2, 3]"
+      ],
+      "a": 2,
+      "why": "data['a'] is the list and [-1] is its last item."
+     },
+     {
+      "t": "tf",
+      "q": "In grid = [[1, 2], [3, 4]], grid[0][1] is 2.",
+      "a": true,
+      "why": "The first row is [1, 2] and its item 1 is 2."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression for m = [[1, 2], [3, 4]]",
+      "pairs": [
+       [
+        "m[0]",
+        "[1, 2]"
+       ],
+       [
+        "m[1][1]",
+        "4"
+       ],
+       [
+        "len(m)",
+        "2"
+       ],
+       [
+        "m[0][0]",
+        "1"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print([[1, 2], [3, 4]][0][1])",
+      "a": [
+       "2"
+      ],
+      "why": "Row 0 is [1, 2] and item 1 is 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the sum 10 of the grid",
+      "lines": [
+       "grid = [[1, 2], [3, 4]]",
+       "total = 0",
+       "for row in grid:",
+       "    total += sum(row)",
+       "print(total)"
+      ],
+      "why": "Loop over rows and add each row's sum."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of reading a value from nested data in order",
+      "items": [
+       [
+        "Start with the outer list",
+        1
+       ],
+       [
+        "Pick the row by index",
+        2
+       ],
+       [
+        "Pick the item inside the row",
+        3
+       ],
+       [
+        "Use the value",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: grid is a list of lists of numbers. Print the sum of every number in it.",
+      "starter": "# grid is set\n",
+      "tests": [
+       {
+        "pre": "grid = [[1, 2], [3, 4]]",
+        "expect": "10"
+       },
+       {
+        "pre": "grid = [[5]]",
+        "expect": "5"
+       },
+       {
+        "pre": "grid = [[1, 1, 1], [2, 2, 2]]",
+        "expect": "9"
+       }
+      ],
+      "hint": "Use two loops or sum(row) in a loop.",
+      "solution": "total = 0\nfor row in grid:\n    for n in row:\n        total += n\nprint(total)",
+      "why": "Visit every item of every row."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: people is a list of dicts with name and age. Print the name of each person aged 18 or more, one per line.",
+      "starter": "# people is set\n",
+      "tests": [
+       {
+        "pre": "people = [{'name': 'Ana', 'age': 20}, {'name': 'Bo', 'age': 10}, {'name': 'Cy', 'age': 18}]",
+        "expect": "Ana\nCy"
+       },
+       {
+        "pre": "people = [{'name': 'Dee', 'age': 30}]",
+        "expect": "Dee"
+       }
+      ],
+      "hint": "Loop and check p['age'] >= 18.",
+      "solution": "for p in people:\n    if p['age'] >= 18:\n        print(p['name'])",
+      "why": "Filter records inside the loop."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: for d = {'k': [10, 20, 30]}, what does print(d['k'][1]) show?",
+      "a": [
+       "20"
+      ],
+      "why": "d['k'] is the list and index 1 is 20."
+     }
+    ]
+   },
+   {
+    "title": "String Methods",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Changing case",
+      "b": "upper() makes all letters capital, lower() makes them small, title() capitalizes every word and capitalize() only the first letter. String methods never change the original; they return a new string.",
+      "code": "s = 'hello World'\nprint(s.upper())\nprint(s.lower())\nprint(s.title())\nprint(s)"
+     },
+     {
+      "h": "Cleaning and replacing",
+      "b": "strip() removes spaces at both ends. replace(old, new) swaps every copy of a piece of text. startswith() and endswith() answer True or False.",
+      "code": "s = '  hi there  '\nprint(s.strip())\nprint('a-b-c'.replace('-', '+'))\nprint('python'.startswith('py'))"
+     },
+     {
+      "h": "split and join",
+      "b": "split() cuts a string into a list of pieces. With no argument it splits on any spaces; with an argument it splits on that text. join() does the opposite: the separator string goes first and the list goes inside the parentheses.",
+      "code": "words = 'a b c'.split()\nprint(words)\nprint('-'.join(words))\nprint('1,2,3'.split(','))"
+     },
+     {
+      "h": "Searching and checking",
+      "b": "find() gives the index of the first match, or -1 if there is none. count() counts matches. isdigit() and isalpha() check what kind of characters a string has.",
+      "code": "s = 'banana'\nprint(s.find('n'))\nprint(s.count('a'))\nprint('123'.isdigit())\nprint('ab1'.isalpha())"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'hi'.upper() return?",
+      "o": [
+       "'Hi'",
+       "'HI'",
+       "'hi'",
+       "Error"
+      ],
+      "a": 1,
+      "why": "upper makes every letter a capital."
+     },
+     {
+      "t": "mc",
+      "q": "Which joins ['a', 'b'] into 'a-b'?",
+      "o": [
+       "['a', 'b'].join('-')",
+       "'-'.join(['a', 'b'])",
+       "join('-', ['a', 'b'])",
+       "'a' + '-' + 'b'.join()"
+      ],
+      "a": 1,
+      "why": "The separator calls join and the list is the argument."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print('a-b-c'.split('-'))",
+      "o": [
+       "['a', 'b', 'c']",
+       "'a b c'",
+       "a-b-c",
+       "['abc']"
+      ],
+      "a": 0,
+      "why": "split('-') cuts at each dash into a list."
+     },
+     {
+      "t": "tf",
+      "q": "Calling s.upper() changes the original string s.",
+      "a": false,
+      "why": "Strings are immutable; upper() returns a new string."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "strip",
+        "remove spaces at the ends"
+       ],
+       [
+        "split",
+        "cut into a list"
+       ],
+       [
+        "join",
+        "glue a list together"
+       ],
+       [
+        "replace",
+        "swap text for other text"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print('Hello'.lower())",
+      "a": [
+       "hello"
+      ],
+      "why": "lower makes the letters small."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 2",
+      "lines": [
+       "text = '  hi there  '",
+       "clean = text.strip()",
+       "words = clean.split()",
+       "print(len(words))"
+      ],
+      "why": "Strip, split, then count the words."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of turning ' a b ' into 'a-b' in order",
+      "items": [
+       [
+        "Remove the end spaces with strip()",
+        1
+       ],
+       [
+        "Cut into a list with split()",
+        2
+       ],
+       [
+        "Join the list with '-'",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: sentence is a string. Print how many words it has.",
+      "starter": "# sentence is set\n",
+      "tests": [
+       {
+        "pre": "sentence = 'the quick brown fox'",
+        "expect": "4"
+       },
+       {
+        "pre": "sentence = 'hello'",
+        "expect": "1"
+       },
+       {
+        "pre": "sentence = '  a  b '",
+        "expect": "2"
+       }
+      ],
+      "hint": "len(sentence.split())",
+      "solution": "print(len(sentence.split()))",
+      "why": "split() with no argument ignores extra spaces."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: s is a snake_case name like my_cool_game. Print it with spaces instead of underscores and each word capitalized.",
+      "starter": "# s is set\n",
+      "tests": [
+       {
+        "pre": "s = 'hello_world'",
+        "expect": "Hello World"
+       },
+       {
+        "pre": "s = 'my_cool_game'",
+        "expect": "My Cool Game"
+       }
+      ],
+      "hint": "Use replace and title.",
+      "solution": "print(s.replace('_', ' ').title())",
+      "why": "Chain two methods."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what number does print('banana'.count('a')) show?",
+      "a": [
+       "3"
+      ],
+      "why": "There are 3 letter a's in banana."
+     }
+    ]
+   },
+   {
+    "title": "Comprehensions",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "List comprehensions",
+      "b": "A list comprehension builds a new list in one line. The pattern is [expression for item in source]. It is a short way of writing a for loop that appends to a list.",
+      "code": "squares = [n * n for n in range(1, 5)]\nprint(squares)"
+     },
+     {
+      "h": "Filtering with if",
+      "b": "Add an if at the end to keep only some items. Python checks the condition for each item first, and only builds the expression for items that pass.",
+      "code": "evens = [n for n in range(10) if n % 2 == 0]\nprint(evens)\nwords = ['hi', 'python', 'a']\nprint([w for w in words if len(w) > 1])"
+     },
+     {
+      "h": "Dict and set comprehensions",
+      "b": "Curly braces with key: value make a dict comprehension. Curly braces with a single expression make a set comprehension. They follow the same for and if pattern.",
+      "code": "words = ['hi', 'python']\nprint({w: len(w) for w in words})\nprint({n % 3 for n in range(10)})"
+     },
+     {
+      "h": "Choosing a result and staying readable",
+      "b": "You can pick between two results with a conditional expression placed in front: a if cond else b. If a comprehension gets long or confusing, use a normal loop instead. Clear code beats clever code.",
+      "code": "labels = ['even' if n % 2 == 0 else 'odd' for n in range(4)]\nprint(labels)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does [x * 2 for x in range(3)] give?",
+      "o": [
+       "[0, 2, 4]",
+       "[2, 4, 6]",
+       "[0, 1, 2]",
+       "[1, 2, 3]"
+      ],
+      "a": 0,
+      "why": "range(3) gives 0, 1, 2 and each is doubled."
+     },
+     {
+      "t": "mc",
+      "q": "Which keeps only even numbers from range(10)?",
+      "o": [
+       "[x for x in range(10) if x % 2 == 0]",
+       "[x if x % 2 == 0 for x in range(10)]",
+       "[x for x % 2 == 0 in range(10)]",
+       "[for x in range(10) if x % 2 == 0]"
+      ],
+      "a": 0,
+      "why": "The if goes at the end."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print([n * n for n in [1, 2, 3]])",
+      "o": [
+       "[1, 4, 9]",
+       "[1, 2, 3]",
+       "[2, 4, 6]",
+       "[1, 8, 27]"
+      ],
+      "a": 0,
+      "why": "Each number is squared."
+     },
+     {
+      "t": "tf",
+      "q": "A list comprehension creates a new list.",
+      "a": true,
+      "why": "It builds and returns a brand new list."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its name",
+      "pairs": [
+       [
+        "[x for x in a]",
+        "list comprehension"
+       ],
+       [
+        "{x: x * x for x in a}",
+        "dict comprehension"
+       ],
+       [
+        "{x for x in a}",
+        "set comprehension"
+       ],
+       [
+        "if at the end",
+        "filters the items"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print(len([x for x in range(5)]))",
+      "a": [
+       "5"
+      ],
+      "why": "range(5) gives 5 items."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print [4, 16]",
+      "lines": [
+       "nums = [1, 2, 3, 4]",
+       "squares = [n * n for n in nums if n % 2 == 0]",
+       "print(squares)"
+      ],
+      "why": "Define the source, filter and square, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a comprehension with a filter in order",
+      "items": [
+       [
+        "Take each item from the source",
+        1
+       ],
+       [
+        "Check the if filter",
+        2
+       ],
+       [
+        "Compute the expression",
+        3
+       ],
+       [
+        "Store the result in the new list",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: nums is a list. Print a list of the squares of only the odd numbers.",
+      "starter": "# nums is set\n",
+      "tests": [
+       {
+        "pre": "nums = [1, 2, 3, 4, 5]",
+        "expect": "[1, 9, 25]"
+       },
+       {
+        "pre": "nums = [2, 4]",
+        "expect": "[]"
+       },
+       {
+        "pre": "nums = [7]",
+        "expect": "[49]"
+       }
+      ],
+      "hint": "[n * n for n in nums if n % 2 == 1]",
+      "solution": "print([n * n for n in nums if n % 2 == 1])",
+      "why": "A filter then an expression."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: words is a list. Print a dictionary that maps each word to its length.",
+      "starter": "# words is set\n",
+      "tests": [
+       {
+        "pre": "words = ['hi', 'python']",
+        "expect": "{'hi': 2, 'python': 6}"
+       },
+       {
+        "pre": "words = ['a']",
+        "expect": "{'a': 1}"
+       }
+      ],
+      "hint": "{w: len(w) for w in words}",
+      "solution": "print({w: len(w) for w in words})",
+      "why": "A dict comprehension."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does print([c for c in 'abc'][1]) show?",
+      "a": [
+       "b"
+      ],
+      "why": "The list is ['a', 'b', 'c'] and index 1 is b."
+     }
+    ]
+   },
+   {
+    "title": "Function Arguments",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Default values",
+      "b": "A parameter can have a default value that is used when no argument is given. Parameters with defaults must come after the ones without. This makes functions flexible.",
+      "code": "def greet(name, greeting='Hello'):\n    return f'{greeting}, {name}!'\n\nprint(greet('Ana'))\nprint(greet('Bo', 'Hi'))"
+     },
+     {
+      "h": "Keyword arguments",
+      "b": "When you call a function you can name each argument with name=value. Then order does not matter, and the call is easier to read. You can mix positional arguments first and keyword arguments after.",
+      "code": "def power(base, exp=2):\n    return base ** exp\n\nprint(power(exp=3, base=2))\nprint(power(5))"
+     },
+     {
+      "h": "*args",
+      "b": "A parameter with one star, like *args, collects any extra positional arguments into a tuple. This lets a function accept any number of values. Inside the function you loop over it or use sum() and len().",
+      "code": "def total(*nums):\n    return sum(nums)\n\nprint(total(1, 2, 3))\nprint(total())"
+     },
+     {
+      "h": "**kwargs",
+      "b": "A parameter with two stars, like **kwargs, collects extra keyword arguments into a dictionary. The order is: normal parameters, *args, then **kwargs. You can also unpack a list or dict into a call with * and **.",
+      "code": "def show(**info):\n    for k in sorted(info):\n        print(k, info[k])\n\nshow(b=2, a=1)\nnums = [1, 2]\nprint(max(*nums))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In def f(x, y=5), what is y if you call f(1)?",
+      "o": [
+       "1",
+       "5",
+       "None",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The default 5 is used."
+     },
+     {
+      "t": "mc",
+      "q": "What does *args collect?",
+      "o": [
+       "Extra positional arguments in a tuple",
+       "Keyword arguments in a dict",
+       "A string",
+       "A set"
+      ],
+      "a": 0,
+      "why": "*args gives a tuple of extra positional values."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "def power(base, exp=2):\n    return base ** exp\n\nprint(power(3))",
+      "o": [
+       "9",
+       "6",
+       "3",
+       "Error"
+      ],
+      "a": 0,
+      "why": "exp defaults to 2, so 3 squared is 9."
+     },
+     {
+      "t": "tf",
+      "q": "A parameter with a default value must come after parameters without defaults.",
+      "a": true,
+      "why": "Python requires non-default parameters first."
+     },
+     {
+      "t": "match",
+      "q": "Match each idea to its meaning",
+      "pairs": [
+       [
+        "*args",
+        "tuple of extra positional values"
+       ],
+       [
+        "**kwargs",
+        "dict of keyword values"
+       ],
+       [
+        "default value",
+        "used when no argument is given"
+       ],
+       [
+        "keyword argument",
+        "name=value in the call"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "A function is def f(*args): return len(args). What does f('a', 'b') return? Type the number.",
+      "a": [
+       "2"
+      ],
+      "why": "args is the tuple ('a', 'b'), whose length is 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 6",
+      "lines": [
+       "def total(*nums):",
+       "    return sum(nums)",
+       "print(total(1, 2, 3))"
+      ],
+      "why": "Define with *nums, then call with three values."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of calling greet('Ana') with a default greeting in order",
+      "items": [
+       [
+        "Python matches 'Ana' to name",
+        1
+       ],
+       [
+        "No greeting is given",
+        2
+       ],
+       [
+        "The default fills greeting",
+        3
+       ],
+       [
+        "The function body runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write greet(name, greeting='Hello') that returns greeting, a comma and space, the name and an exclamation mark, like Hello, Ana!",
+      "starter": "def greet(name, greeting='Hello'):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(greet('Ana'))",
+        "expect": "Hello, Ana!"
+       },
+       {
+        "post": "print(greet('Bo', 'Hi'))",
+        "expect": "Hi, Bo!"
+       },
+       {
+        "post": "print(greet('Cy', greeting='Hey'))",
+        "expect": "Hey, Cy!"
+       }
+      ],
+      "hint": "Use an f-string.",
+      "solution": "def greet(name, greeting='Hello'):\n    return f'{greeting}, {name}!'",
+      "why": "Defaults and f-strings."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write average(*nums) that returns the average of any number of values.",
+      "starter": "def average(*nums):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(average(2, 4, 6))",
+        "expect": "4.0"
+       },
+       {
+        "post": "print(average(1, 2))",
+        "expect": "1.5"
+       },
+       {
+        "post": "print(average(5))",
+        "expect": "5.0"
+       }
+      ],
+      "hint": "sum(nums) / len(nums)",
+      "solution": "def average(*nums):\n    return sum(nums) / len(nums)",
+      "why": "*nums is a tuple."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print a 1 then b 2.",
+      "lines": [
+       "def show(**info):",
+       "    for k in sorted(info):",
+       "        print(k, info[k])",
+       "show(b=2, a=1)"
+      ],
+      "why": "Define show, then call it."
+     }
+    ]
+   },
+   {
+    "title": "Scope & Lambdas",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Local scope",
+      "b": "A variable created inside a function is local: it exists only while the function runs. Code outside cannot see it. Parameters are local too. This keeps functions from messing with each other.",
+      "code": "def f():\n    x = 5\n    return x\n\nprint(f())\n# print(x)  <- NameError"
+     },
+     {
+      "h": "Global variables",
+      "b": "A variable created outside all functions is global and can be read anywhere. Assigning to a name inside a function makes a new local variable instead. To change a global, declare it with the global keyword first. Prefer passing values and returning results.",
+      "code": "count = 0\ndef bump():\n    global count\n    count += 1\n\nbump()\nbump()\nprint(count)"
+     },
+     {
+      "h": "Which variable does Python use?",
+      "b": "Python looks for a name in this order: Local, Enclosing (functions around it), Global, then Built-in. This is called the LEGB rule. If two levels share a name, the closest one wins.",
+      "code": "x = 'global'\ndef f():\n    x = 'local'\n    return x\n\nprint(f())\nprint(x)"
+     },
+     {
+      "h": "Lambda functions",
+      "b": "A lambda is a tiny nameless function written in one line: lambda parameters: expression. It returns the expression automatically. Lambdas are handy with map() and filter(), which apply a function to every item or keep some items.",
+      "code": "double = lambda x: x * 2\nprint(double(4))\nprint(list(map(lambda x: x + 1, [1, 2, 3])))\nprint(list(filter(lambda x: x > 1, [1, 2, 3])))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where can a variable created inside a function be used?",
+      "o": [
+       "Anywhere in the program",
+       "Only inside that function",
+       "Only in other functions",
+       "Only in loops"
+      ],
+      "a": 1,
+      "why": "It is local to the function."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword lets a function change a global variable?",
+      "o": [
+       "local",
+       "global",
+       "outer",
+       "static"
+      ],
+      "a": 1,
+      "why": "global x tells Python to use the global x."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x = 10\ndef f():\n    x = 5\n    return x\n\nf()\nprint(x)",
+      "o": [
+       "10",
+       "5",
+       "15",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The x inside f is a separate local variable."
+     },
+     {
+      "t": "tf",
+      "q": "A lambda function can contain several statements.",
+      "a": false,
+      "why": "A lambda holds a single expression."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "local variable",
+        "made inside a function"
+       ],
+       [
+        "global variable",
+        "made outside all functions"
+       ],
+       [
+        "lambda",
+        "small one-line function"
+       ],
+       [
+        "map",
+        "apply a function to every item"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "f = lambda x: x + 1. What does f(4) return? Type the number.",
+      "a": [
+       "5"
+      ],
+      "why": "4 + 1 is 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 1",
+      "lines": [
+       "def counter():",
+       "    count = 0",
+       "    count += 1",
+       "    return count",
+       "print(counter())"
+      ],
+      "why": "Each call creates a fresh local count that goes from 0 to 1."
+     },
+     {
+      "t": "order",
+      "q": "Put the LEGB lookup order in order, first place searched first",
+      "items": [
+       [
+        "Local",
+        1
+       ],
+       [
+        "Enclosing",
+        2
+       ],
+       [
+        "Global",
+        3
+       ],
+       [
+        "Built-in",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a lambda called square that returns the square of its input.",
+      "starter": "square = None\n",
+      "tests": [
+       {
+        "post": "print(square(4))",
+        "expect": "16"
+       },
+       {
+        "post": "print(square(0))",
+        "expect": "0"
+       },
+       {
+        "post": "print(square(-7))",
+        "expect": "49"
+       }
+      ],
+      "hint": "square = lambda n: n * n",
+      "solution": "square = lambda n: n * n",
+      "why": "A lambda returns its expression."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: total is a global variable. Write a function increment() that adds 1 to the global total.",
+      "starter": "# total is already set\n",
+      "tests": [
+       {
+        "pre": "total = 0",
+        "post": "increment()\nincrement()\nprint(total)",
+        "expect": "2"
+       },
+       {
+        "pre": "total = 5",
+        "post": "increment()\nprint(total)",
+        "expect": "6"
+       }
+      ],
+      "hint": "Use the global keyword.",
+      "solution": "def increment():\n    global total\n    total += 1",
+      "why": "global lets you change the outside variable."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does list(map(lambda x: x * 2, [1, 2])) give?",
+      "a": [
+       "[2, 4]",
+       "2, 4",
+       "2 4"
+      ],
+      "why": "Each item is doubled."
+     }
+    ]
+   },
+   {
+    "title": "Errors & try/except",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Reading errors",
+      "b": "When Python hits a problem it stops and shows an error type and a message. SyntaxError means the code is written wrongly. NameError means an unknown name. TypeError means the wrong kind of value, ValueError means the right kind but a bad value, and ZeroDivisionError, IndexError and KeyError mean what they say.",
+      "code": "# int('abc')  -> ValueError\n# 10 / 0      -> ZeroDivisionError\n# [1][5]      -> IndexError\n# {}['a']     -> KeyError"
+     },
+     {
+      "h": "try and except",
+      "b": "Put risky code in a try block. If an error happens, Python jumps to the matching except block instead of crashing. The program then keeps running.",
+      "code": "try:\n    n = int('abc')\nexcept ValueError:\n    print('not a number')\nprint('still running')"
+     },
+     {
+      "h": "else and finally",
+      "b": "Catch specific errors, not everything. else runs only if no error happened. finally always runs, with or without an error, which is useful for clean up.",
+      "code": "try:\n    x = 10 / 2\nexcept ZeroDivisionError:\n    print('bad')\nelse:\n    print('ok', x)\nfinally:\n    print('done')"
+     },
+     {
+      "h": "Raising your own errors",
+      "b": "You can raise an error yourself with raise when something is wrong. Use it to stop bad input early with a clear message. You can catch it with try and use as to name the error.",
+      "code": "def age_check(age):\n    if age < 0:\n        raise ValueError('age cannot be negative')\n    return age\n\ntry:\n    age_check(-1)\nexcept ValueError as e:\n    print(e)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What error does int('abc') raise?",
+      "o": [
+       "TypeError",
+       "ValueError",
+       "NameError",
+       "KeyError"
+      ],
+      "a": 1,
+      "why": "The type is right (text) but the value cannot become an int."
+     },
+     {
+      "t": "mc",
+      "q": "What error does 10 / 0 raise?",
+      "o": [
+       "ValueError",
+       "ZeroDivisionError",
+       "ArithmeticValue",
+       "OverflowError"
+      ],
+      "a": 1,
+      "why": "Dividing by zero raises ZeroDivisionError."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "try:\n    print(1 / 0)\nexcept ZeroDivisionError:\n    print('oops')",
+      "o": [
+       "oops",
+       "1",
+       "Error",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "1/0 fails and the except block runs."
+     },
+     {
+      "t": "tf",
+      "q": "A finally block runs whether or not an error happened.",
+      "a": true,
+      "why": "finally always runs."
+     },
+     {
+      "t": "match",
+      "q": "Match each code to the error it raises",
+      "pairs": [
+       [
+        "int('x')",
+        "ValueError"
+       ],
+       [
+        "[1][5]",
+        "IndexError"
+       ],
+       [
+        "{}['a']",
+        "KeyError"
+       ],
+       [
+        "'a' + 1",
+        "TypeError"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that starts a block of risky code.",
+      "a": [
+       "try"
+      ],
+      "why": "try begins the protected block."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print bad number",
+      "lines": [
+       "try:",
+       "    n = int('x')",
+       "except ValueError:",
+       "    print('bad number')"
+      ],
+      "why": "try comes first, then except."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an error handled by try/except in order",
+      "items": [
+       [
+        "The try block runs",
+        1
+       ],
+       [
+        "An error happens",
+        2
+       ],
+       [
+        "Python jumps to the matching except",
+        3
+       ],
+       [
+        "The program continues",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write safe_int(text) that returns int(text), or 0 if text is not a valid whole number.",
+      "starter": "def safe_int(text):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(safe_int('42'))",
+        "expect": "42"
+       },
+       {
+        "post": "print(safe_int('abc'))",
+        "expect": "0"
+       },
+       {
+        "post": "print(safe_int(''))",
+        "expect": "0"
+       }
+      ],
+      "hint": "try: return int(text) except ValueError: return 0",
+      "solution": "def safe_int(text):\n    try:\n        return int(text)\n    except ValueError:\n        return 0",
+      "why": "Catch the specific error."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write safe_divide(a, b) that returns a / b, or None if b is zero.",
+      "starter": "def safe_divide(a, b):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(safe_divide(10, 2))",
+        "expect": "5.0"
+       },
+       {
+        "post": "print(safe_divide(1, 0))",
+        "expect": "None"
+       },
+       {
+        "post": "print(safe_divide(1, 2))",
+        "expect": "0.5"
+       }
+      ],
+      "hint": "Catch ZeroDivisionError.",
+      "solution": "def safe_divide(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        return None",
+      "why": "Handle the one bad case."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what error does [1, 2, 3][10] raise?",
+      "a": [
+       "IndexError"
+      ],
+      "why": "Index 10 is out of range."
+     }
+    ]
+   },
+   {
+    "title": "Working with Files",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Opening files",
+      "b": "open(name, mode) gives you a file object. Modes: 'r' reads (the default), 'w' writes and erases what was there, 'a' adds to the end. Always close a file when finished, or better, use a with block that closes it for you.",
+      "code": "with open('notes.txt', 'w') as f:\n    f.write('hello\\n')"
+     },
+     {
+      "h": "Reading",
+      "b": "f.read() returns the whole file as one string. f.readline() reads one line, and f.readlines() gives a list of lines. You can also loop over the file object line by line, which is memory friendly.",
+      "code": "with open('notes.txt') as f:\n    for line in f:\n        print(line.strip())"
+     },
+     {
+      "h": "Writing and appending",
+      "b": "f.write(text) writes exactly the text you give; it does not add a newline for you, so add \\n yourself. Mode 'a' keeps old content and adds new text after it. f.writelines() writes a list of strings.",
+      "code": "with open('log.txt', 'a') as f:\n    f.write('new line\\n')"
+     },
+     {
+      "h": "Processing file text",
+      "b": "File text is just a string, so splitlines() and split() work on it. Convert pieces with int() when you need numbers. A line like Ana,10 can be split at the comma into a name and a score.",
+      "code": "text = 'Ana,10\\nBo,7'\nfor line in text.splitlines():\n    name, score = line.split(',')\n    print(name, int(score))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which mode opens a file for writing and erases old content?",
+      "o": [
+       "'r'",
+       "'w'",
+       "'a'",
+       "'x+'"
+      ],
+      "a": 1,
+      "why": "'w' truncates the file."
+     },
+     {
+      "t": "mc",
+      "q": "Why use a with block for files?",
+      "o": [
+       "It makes the file bigger",
+       "It closes the file automatically",
+       "It encrypts the file",
+       "It speeds up Python"
+      ],
+      "a": 1,
+      "why": "with closes the file even if an error happens."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "text = 'a\\nb\\nc'\nprint(len(text.splitlines()))",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "6"
+      ],
+      "a": 2,
+      "why": "splitlines gives 3 lines."
+     },
+     {
+      "t": "tf",
+      "q": "Opening a file in 'w' mode erases its old content.",
+      "a": true,
+      "why": "Use 'a' to keep and add."
+     },
+     {
+      "t": "match",
+      "q": "Match each mode or tool to its meaning",
+      "pairs": [
+       [
+        "'r'",
+        "read"
+       ],
+       [
+        "'w'",
+        "write and erase"
+       ],
+       [
+        "'a'",
+        "add to the end"
+       ],
+       [
+        "with",
+        "closes the file for you"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the file method that reads the entire file as one string.",
+      "a": [
+       "read",
+       "read()"
+      ],
+      "why": "f.read() returns everything."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to write hi and then print it back",
+      "lines": [
+       "with open('notes.txt', 'w') as f:",
+       "    f.write('hi')",
+       "with open('notes.txt') as g:",
+       "    print(g.read())"
+      ],
+      "why": "Write first, then reopen to read."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of reading a file in order",
+      "items": [
+       [
+        "Open the file",
+        1
+       ],
+       [
+        "Read the content",
+        2
+       ],
+       [
+        "Use the data",
+        3
+       ],
+       [
+        "The file closes",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: text holds numbers, one per line. Print their sum. For example 1, 2 and 3 on separate lines give 6.",
+      "starter": "# text is set\n",
+      "tests": [
+       {
+        "pre": "text = '1\\n2\\n3'",
+        "expect": "6"
+       },
+       {
+        "pre": "text = '10'",
+        "expect": "10"
+       },
+       {
+        "pre": "text = '5\\n-5'",
+        "expect": "0"
+       }
+      ],
+      "hint": "Loop over text.splitlines() and use int().",
+      "solution": "total = 0\nfor line in text.splitlines():\n    total += int(line)\nprint(total)",
+      "why": "splitlines then int()."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: text has lines like Ana,10. Print the total of all the scores.",
+      "starter": "# text is set\n",
+      "tests": [
+       {
+        "pre": "text = 'Ana,10\\nBo,7'",
+        "expect": "17"
+       },
+       {
+        "pre": "text = 'Cy,5'",
+        "expect": "5"
+       },
+       {
+        "pre": "text = 'a,10\\nb,10\\nc,10'",
+        "expect": "30"
+       }
+      ],
+      "hint": "line.split(',')[1]",
+      "solution": "total = 0\nfor line in text.splitlines():\n    total += int(line.split(',')[1])\nprint(total)",
+      "why": "Split each line at the comma."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to read a file and print each line without the newline.",
+      "lines": [
+       "with open('notes.txt') as f:",
+       "    for line in f:",
+       "        print(line.strip())"
+      ],
+      "why": "Open, loop, strip, print."
+     }
+    ]
+   },
+   {
+    "title": "Modules & Imports",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Importing",
+      "b": "A module is a file of ready-made code. import math gives you the math module and you write math.sqrt(9). You can also write from math import sqrt to use sqrt directly, or import math as m to give it a short name. Put imports at the top of your file.",
+      "code": "import math\nprint(math.sqrt(9))\nfrom math import pi\nprint(pi)"
+     },
+     {
+      "h": "The math module",
+      "b": "math has sqrt, pi, floor, ceil, pow and more. floor rounds down and ceil rounds up to a whole number. sqrt always gives a float.",
+      "code": "import math\nprint(math.floor(3.7))\nprint(math.ceil(3.2))\nprint(math.sqrt(16))\nprint(round(math.pi, 2))"
+     },
+     {
+      "h": "The random module",
+      "b": "random gives unpredictable values. randint(a, b) includes both ends. choice(list) picks one item, shuffle(list) mixes a list in place, and random() gives a float from 0 up to 1. seed(n) makes the sequence repeatable.",
+      "code": "import random\nprint(random.randint(1, 6))\nprint(random.choice(['a', 'b']))"
+     },
+     {
+      "h": "The datetime module",
+      "b": "datetime lets you work with dates. date(y, m, d) makes a date, date.today() gives today, and you can subtract two dates to get the difference. strftime formats a date as text, for example %A is the weekday name and %Y-%m-%d is the usual format.",
+      "code": "from datetime import date\nd = date(2024, 3, 15)\nprint(d.strftime('%Y/%m/%d'))\nprint((date(2024, 3, 20) - d).days)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is math.sqrt(16)?",
+      "o": [
+       "4",
+       "4.0",
+       "8",
+       "16.0"
+      ],
+      "a": 1,
+      "why": "sqrt always returns a float."
+     },
+     {
+      "t": "mc",
+      "q": "Which values can random.randint(1, 6) return?",
+      "o": [
+       "1 to 5",
+       "1 to 6 including 6",
+       "0 to 6",
+       "2 to 6"
+      ],
+      "a": 1,
+      "why": "randint includes both ends."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "import math\nprint(math.floor(3.7))",
+      "o": [
+       "3",
+       "4",
+       "3.7",
+       "3.0"
+      ],
+      "a": 0,
+      "why": "floor rounds down."
+     },
+     {
+      "t": "tf",
+      "q": "random.randint(1, 6) can return 6.",
+      "a": true,
+      "why": "Both ends are included."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its value",
+      "pairs": [
+       [
+        "math.ceil(2.1)",
+        "3"
+       ],
+       [
+        "math.floor(2.9)",
+        "2"
+       ],
+       [
+        "math.sqrt(9)",
+        "3.0"
+       ],
+       [
+        "round(math.pi, 2)",
+        "3.14"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "After import math, what does print(math.ceil(4.2)) show?",
+      "a": [
+       "5"
+      ],
+      "why": "ceil rounds up."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the area of a circle with radius 3, rounded to 2 places",
+      "lines": [
+       "import math",
+       "r = 3",
+       "area = math.pi * r ** 2",
+       "print(round(area, 2))"
+      ],
+      "why": "Import first, then calculate, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a module in order",
+      "items": [
+       [
+        "Import the module",
+        1
+       ],
+       [
+        "Call a function as module.name()",
+        2
+       ],
+       [
+        "Store the result",
+        3
+       ],
+       [
+        "Print it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: n is set. Import math and print the square root of n.",
+      "starter": "# n is set\n",
+      "tests": [
+       {
+        "pre": "n = 9",
+        "expect": "3.0"
+       },
+       {
+        "pre": "n = 25",
+        "expect": "5.0"
+       },
+       {
+        "pre": "n = 0",
+        "expect": "0.0"
+       }
+      ],
+      "hint": "import math then print(math.sqrt(n))",
+      "solution": "import math\nprint(math.sqrt(n))",
+      "why": "Remember to import first."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: y, m and d are numbers for a date. Print the weekday name of that date, like Monday.",
+      "starter": "# y, m and d are set\n",
+      "tests": [
+       {
+        "pre": "y = 2024\nm = 1\nd = 1",
+        "expect": "Monday"
+       },
+       {
+        "pre": "y = 2000\nm = 1\nd = 1",
+        "expect": "Saturday"
+       },
+       {
+        "pre": "y = 2024\nm = 2\nd = 29",
+        "expect": "Thursday"
+       }
+      ],
+      "hint": "from datetime import date, then strftime('%A')",
+      "solution": "from datetime import date\nprint(date(y, m, d).strftime('%A'))",
+      "why": "strftime with %A gives the weekday."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does random.randint(4, 4) always return?",
+      "a": [
+       "4"
+      ],
+      "why": "Both ends are the same number."
+     }
+    ]
+   },
+   {
+    "title": "Classes & Objects",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Blueprints and objects",
+      "b": "A class is a blueprint and an object is something built from it. For example, Dog is the class and your pet Rex is an object. You create an object by calling the class like a function.",
+      "code": "class Dog:\n    pass\n\nd = Dog()\nprint(type(d))"
+     },
+     {
+      "h": "__init__ and self",
+      "b": "__init__ runs automatically when an object is created and sets it up. The first parameter is always self, which means this very object. Attributes are variables stored on the object with self.name.",
+      "code": "class Dog:\n    def __init__(self, name):\n        self.name = name\n\nd = Dog('Rex')\nprint(d.name)"
+     },
+     {
+      "h": "Methods",
+      "b": "A method is a function inside a class. It always takes self first so it can use the object's attributes. You call it with a dot: object.method(). Methods can change attributes or return values.",
+      "code": "class Counter:\n    def __init__(self):\n        self.n = 0\n    def add(self):\n        self.n += 1\n\nc = Counter()\nc.add()\nc.add()\nprint(c.n)"
+     },
+     {
+      "h": "Each object is separate",
+      "b": "Every object has its own attributes, so changing one does not change another. A class attribute written directly in the class body is shared by all objects. Use clear names and keep one job per class.",
+      "code": "class Dog:\n    species = 'dog'\n    def __init__(self, name):\n        self.name = name\n\na = Dog('A')\nb = Dog('B')\nprint(a.name, b.name, a.species)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "When does __init__ run?",
+      "o": [
+       "When you call a method",
+       "When an object is created",
+       "When the program ends",
+       "When you print the object"
+      ],
+      "a": 1,
+      "why": "It sets up a new object."
+     },
+     {
+      "t": "mc",
+      "q": "What does self refer to inside a method?",
+      "o": [
+       "The class",
+       "The current object",
+       "The parent class",
+       "The module"
+      ],
+      "a": 1,
+      "why": "self is the object the method was called on."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Dog:\n    def __init__(self, name):\n        self.name = name\n    def speak(self):\n        return self.name + ' says woof'\n\nd = Dog('Rex')\nprint(d.speak())",
+      "o": [
+       "Rex says woof",
+       "woof",
+       "Rex",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The method uses self.name."
+     },
+     {
+      "t": "tf",
+      "q": "Each object made from a class has its own attributes.",
+      "a": true,
+      "why": "Changing one object does not change the others."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "class",
+        "blueprint"
+       ],
+       [
+        "object",
+        "thing built from the class"
+       ],
+       [
+        "__init__",
+        "sets up a new object"
+       ],
+       [
+        "self",
+        "the current object"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the special method that sets up a new object.",
+      "a": [
+       "__init__",
+       "init"
+      ],
+      "why": "__init__ is the constructor method."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 1",
+      "lines": [
+       "class Counter:",
+       "    def __init__(self):",
+       "        self.n = 0",
+       "    def add(self):",
+       "        self.n += 1",
+       "c = Counter()",
+       "c.add()",
+       "print(c.n)"
+      ],
+      "why": "Define the class, make an object, call add, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a class in order",
+      "items": [
+       [
+        "Define the class",
+        1
+       ],
+       [
+        "Create an object",
+        2
+       ],
+       [
+        "Call a method",
+        3
+       ],
+       [
+        "Read an attribute",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a class Rectangle with __init__(self, width, height) and a method area() that returns width times height.",
+      "starter": "class Rectangle:\n    pass\n",
+      "tests": [
+       {
+        "post": "r = Rectangle(3, 4)\nprint(r.area())",
+        "expect": "12"
+       },
+       {
+        "post": "r = Rectangle(5, 5)\nprint(r.area())",
+        "expect": "25"
+       },
+       {
+        "post": "r = Rectangle(0, 9)\nprint(r.area())",
+        "expect": "0"
+       }
+      ],
+      "hint": "Store self.width and self.height.",
+      "solution": "class Rectangle:\n    def __init__(self, width, height):\n        self.width = width\n        self.height = height\n    def area(self):\n        return self.width * self.height",
+      "why": "Attributes are used inside methods."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a class BankAccount. A new account has balance 0. deposit(amount) adds to the balance.",
+      "starter": "class BankAccount:\n    pass\n",
+      "tests": [
+       {
+        "post": "a = BankAccount()\na.deposit(50)\na.deposit(25)\nprint(a.balance)",
+        "expect": "75"
+       },
+       {
+        "post": "a = BankAccount()\nprint(a.balance)",
+        "expect": "0"
+       }
+      ],
+      "hint": "Set self.balance = 0 in __init__.",
+      "solution": "class BankAccount:\n    def __init__(self):\n        self.balance = 0\n    def deposit(self, amount):\n        self.balance += amount",
+      "why": "Methods change attributes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the first parameter name of every normal method?",
+      "a": [
+       "self"
+      ],
+      "why": "By convention it is self."
+     }
+    ]
+   },
+   {
+    "title": "Inheritance & Dunder Methods",
+    "period": "Python intermediate",
+    "learn": [
+     {
+      "h": "Inheritance",
+      "b": "A child class can inherit everything from a parent class. Write the parent name in parentheses: class Dog(Animal). The child gets all the parent's methods for free and can add its own. Use it for is-a relationships: a Dog is an Animal.",
+      "code": "class Animal:\n    def __init__(self, name):\n        self.name = name\n\nclass Dog(Animal):\n    def bark(self):\n        return self.name + ' woofs'\n\nprint(Dog('Rex').bark())"
+     },
+     {
+      "h": "Overriding and super()",
+      "b": "A child can override a method by defining one with the same name. super() lets the child call the parent's version, which is common inside __init__. Python looks in the child first, then the parent.",
+      "code": "class Animal:\n    def speak(self):\n        return '...'\n\nclass Cat(Animal):\n    def speak(self):\n        return 'meow'\n\nprint(Cat().speak())"
+     },
+     {
+      "h": "Dunder methods",
+      "b": "Methods with double underscores on both sides, like __init__, are special methods Python calls for you. __str__ controls what print shows, __repr__ is the developer view, and __len__ is used by len().",
+      "code": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    def __str__(self):\n        return f'({self.x}, {self.y})'\n\nprint(Point(1, 2))"
+     },
+     {
+      "h": "Operators with dunders",
+      "b": "__eq__ defines what == means for your objects and __add__ defines +. Without __eq__, two different objects are never equal even if their data matches. Dunder methods make your classes feel like built-in types.",
+      "code": "class Money:\n    def __init__(self, v):\n        self.v = v\n    def __eq__(self, other):\n        return self.v == other.v\n    def __add__(self, other):\n        return Money(self.v + other.v)\n\nprint(Money(2) == Money(2))\nprint((Money(2) + Money(3)).v)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line makes Dog a child of Animal?",
+      "o": [
+       "class Dog[Animal]:",
+       "class Dog(Animal):",
+       "class Dog extends Animal:",
+       "class Dog < Animal:"
+      ],
+      "a": 1,
+      "why": "The parent goes in parentheses."
+     },
+     {
+      "t": "mc",
+      "q": "What is super() used for?",
+      "o": [
+       "To delete a class",
+       "To call the parent class's methods",
+       "To make a method faster",
+       "To import a module"
+      ],
+      "a": 1,
+      "why": "super() reaches the parent class."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class A:\n    def hi(self):\n        return 'A'\n\nclass B(A):\n    def hi(self):\n        return 'B'\n\nprint(B().hi())",
+      "o": [
+       "A",
+       "B",
+       "AB",
+       "Error"
+      ],
+      "a": 1,
+      "why": "B overrides hi()."
+     },
+     {
+      "t": "tf",
+      "q": "print(obj) uses the __str__ method of the object if it has one.",
+      "a": true,
+      "why": "print calls __str__."
+     },
+     {
+      "t": "match",
+      "q": "Match each dunder method to its job",
+      "pairs": [
+       [
+        "__init__",
+        "builds the object"
+       ],
+       [
+        "__str__",
+        "text shown by print"
+       ],
+       [
+        "__len__",
+        "used by len()"
+       ],
+       [
+        "__eq__",
+        "used by =="
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function a child class uses to call its parent's methods.",
+      "a": [
+       "super",
+       "super()"
+      ],
+      "why": "super() refers to the parent class."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Rex woofs",
+      "lines": [
+       "class Animal:",
+       "    def __init__(self, name):",
+       "        self.name = name",
+       "class Dog(Animal):",
+       "    def bark(self):",
+       "        return self.name + ' woofs'",
+       "print(Dog('Rex').bark())"
+      ],
+      "why": "Parent first, then the child, then the print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps Python uses to find a method on a Dog object in order",
+      "items": [
+       [
+        "Look in the Dog class",
+        1
+       ],
+       [
+        "Look in the parent Animal class",
+        2
+       ],
+       [
+        "Look in object, the top class",
+        3
+       ],
+       [
+        "Raise AttributeError if not found",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: Animal is already defined with a name and speak() that returns '...'. Write class Dog(Animal) that overrides speak() to return the name plus ' says Woof'.",
+      "starter": "# Animal is already defined\n",
+      "tests": [
+       {
+        "pre": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    def speak(self):\n        return '...'",
+        "post": "print(Dog('Rex').speak())",
+        "expect": "Rex says Woof"
+       },
+       {
+        "pre": "class Animal:\n    def __init__(self, name):\n        self.name = name\n    def speak(self):\n        return '...'",
+        "post": "print(Dog('Bo').speak())",
+        "expect": "Bo says Woof"
+       }
+      ],
+      "hint": "class Dog(Animal): then define speak.",
+      "solution": "class Dog(Animal):\n    def speak(self):\n        return self.name + ' says Woof'",
+      "why": "The child inherits __init__ and overrides speak."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a class Point with __init__(self, x, y) and a __str__ method so that print(Point(1, 2)) shows (1, 2).",
+      "starter": "class Point:\n    pass\n",
+      "tests": [
+       {
+        "post": "print(Point(1, 2))",
+        "expect": "(1, 2)"
+       },
+       {
+        "post": "print(Point(0, -5))",
+        "expect": "(0, -5)"
+       }
+      ],
+      "hint": "Return an f-string in __str__.",
+      "solution": "class Point:\n    def __init__(self, x, y):\n        self.x = x\n        self.y = y\n    def __str__(self):\n        return f'({self.x}, {self.y})'",
+      "why": "print calls __str__."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which dunder method decides what == does for your objects? Type its name.",
+      "a": [
+       "__eq__",
+       "eq"
+      ],
+      "why": "__eq__ defines equality."
+     }
+    ]
+   }
+  ]
+ }
+}

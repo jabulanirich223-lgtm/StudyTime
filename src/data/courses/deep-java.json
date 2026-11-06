@@ -1,0 +1,2378 @@
+{
+ "java": {
+  "name": "Java",
+  "units": [
+   {
+    "title": "Class and main",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "Everything lives in a class",
+      "b": "In Java all code sits inside a class. The class name usually matches the file name, so class Hello goes in Hello.java. Curly braces { } mark where a class or method starts and ends.",
+      "code": "public class Hello {\n    public static void main(String[] args) {\n        System.out.println(\"Hi\");\n    }\n}"
+     },
+     {
+      "h": "The main method",
+      "b": "When you run a Java program, the JVM looks for a method called main and starts there. Its first line must be exactly public static void main(String[] args). Without it the program has no starting point."
+     },
+     {
+      "h": "Compile, then run",
+      "b": "Java is compiled first. The command javac Hello.java turns your source file into bytecode in Hello.class. Then the command java Hello runs that bytecode on the Java Virtual Machine."
+     },
+     {
+      "h": "Rules to remember",
+      "b": "Java is case sensitive, so main and Main are different names. Every statement ends with a semicolon. Lines inside braces are indented to make the code easy to read."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where does a Java program start running?",
+      "o": [
+       "The main method",
+       "The first class in the file",
+       "The method named start",
+       "The last line of the file"
+      ],
+      "a": 0,
+      "why": "The JVM begins execution in public static void main(String[] args)."
+     },
+     {
+      "t": "mc",
+      "q": "What file name must hold public class Hello?",
+      "o": [
+       "hello.txt",
+       "Main.java",
+       "Hello.java",
+       "Hello.class"
+      ],
+      "a": 2,
+      "why": "A public class must be saved in a file with the same name plus .java."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "public class Test {\n    public static void main(String[] args) {\n        System.out.println(\"Hi\");\n    }\n}",
+      "o": [
+       "Hello",
+       "Hi",
+       "Hi!",
+       "Nothing, it does not compile"
+      ],
+      "a": 1,
+      "why": "println prints the text Hi and moves to a new line."
+     },
+     {
+      "t": "tf",
+      "q": "In Java, main and Main are the same name.",
+      "a": false,
+      "why": "Java is case sensitive, so they are different names."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool or file to what it is",
+      "pairs": [
+       [
+        "javac",
+        "compiles source into bytecode"
+       ],
+       [
+        "java",
+        "runs the compiled program"
+       ],
+       [
+        ".java file",
+        "your source code"
+       ],
+       [
+        ".class file",
+        "compiled bytecode"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that compiles Hello.java",
+      "a": [
+       "javac Hello.java",
+       "javac hello.java"
+      ],
+      "hint": "It starts with javac",
+      "why": "javac is the Java compiler."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make a complete program that prints Hi",
+      "lines": [
+       "public class Hello {",
+       "    public static void main(String[] args) {",
+       "        System.out.println(\"Hi\");",
+       "    }",
+       "}"
+      ],
+      "why": "The class holds main, and main holds the print statement."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Write the code in Hello.java",
+        1
+       ],
+       [
+        "Compile it with javac",
+        2
+       ],
+       [
+        "Run it with java Hello",
+        3
+       ],
+       [
+        "Read the output on screen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword in main's header that means it returns nothing",
+      "a": [
+       "void"
+      ],
+      "why": "void means the method gives back no value."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the program so it prints Go",
+      "lines": [
+       "public class Run {",
+       "    public static void main(String[] args) {",
+       "        System.out.println(\"Go\");",
+       "    }",
+       "}  // end of class"
+      ],
+      "why": "Class, then main, then the print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "public class Demo {\n    public static void main(String[] args) {\n        System.out.println(\"Start\");\n    }\n}",
+      "o": [
+       "Start;",
+       "main",
+       "Start",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "The text inside the quotes is printed without the quotes."
+     }
+    ]
+   },
+   {
+    "title": "println and printing",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "print, println and printf",
+      "b": "System.out.println prints text and then moves to a new line. System.out.print prints text and stays on the same line. Text must be inside double quotes.",
+      "code": "System.out.print(\"A\");\nSystem.out.print(\"B\");\nSystem.out.println(\"C\");\nSystem.out.println(\"D\");"
+     },
+     {
+      "h": "Escape sequences",
+      "b": "A backslash starts a special code inside a string. \\n makes a new line, \\t makes a tab, \\\" prints a double quote and \\\\ prints one backslash.",
+      "code": "System.out.println(\"Line1\\nLine2\");\nSystem.out.println(\"She said \\\"hi\\\"\");"
+     },
+     {
+      "h": "Joining text with +",
+      "b": "The + sign joins strings together. You can also join a string with a number and Java will turn the number into text. This is called concatenation.",
+      "code": "System.out.println(\"Score: \" + 10);\nSystem.out.println(\"Hi \" + \"there\");"
+     },
+     {
+      "h": "Strings use double quotes",
+      "b": "In Java a string is always written with double quotes. Single quotes are for one single character, which you will meet later. Forgetting a closing quote is a very common error."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the difference between print and println?",
+      "o": [
+       "print is faster",
+       "println adds a new line at the end",
+       "println only prints numbers",
+       "print adds a new line, println does not"
+      ],
+      "a": 1,
+      "why": "println moves to the next line after printing; print does not."
+     },
+     {
+      "t": "mc",
+      "q": "How do you put a double quote inside a string?",
+      "o": [
+       "Write '' inside the string",
+       "Write \"\" inside the string",
+       "Write \\\" inside the string",
+       "You cannot do it"
+      ],
+      "a": 2,
+      "why": "The escape sequence \\\" prints a double quote."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "System.out.print(\"A\");\nSystem.out.print(\"B\");\nSystem.out.println(\"C\");\nSystem.out.println(\"D\");",
+      "o": [
+       "ABC, then D on the next line",
+       "A B C D on four lines",
+       "ABCD on one line",
+       "A, B, then CD on the next line"
+      ],
+      "a": 0,
+      "why": "print stays on the line, so A, B and C join; println(C) ends the line, then D is printed."
+     },
+     {
+      "t": "tf",
+      "q": "Java strings are written with single quotes like 'hello'.",
+      "a": false,
+      "why": "Strings use double quotes; single quotes are for one char."
+     },
+     {
+      "t": "match",
+      "q": "Match each escape sequence to what it does",
+      "pairs": [
+       [
+        "\\n",
+        "new line"
+       ],
+       [
+        "\\t",
+        "tab space"
+       ],
+       [
+        "\\\"",
+        "double quote"
+       ],
+       [
+        "\\\\",
+        "one backslash"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  System.out.println(\"Hi \" + \"there\");",
+      "a": [
+       "Hi there"
+      ],
+      "why": "The two strings are joined, keeping the space after Hi."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints Ready then Go",
+      "lines": [
+       "public static void main(String[] args) {",
+       "    System.out.println(\"Ready\");",
+       "    System.out.println(\"Go\");",
+       "}"
+      ],
+      "why": "Lines run top to bottom, so Ready prints first."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a print statement in order",
+      "items": [
+       [
+        "System",
+        1
+       ],
+       [
+        ".out",
+        2
+       ],
+       [
+        ".println",
+        3
+       ],
+       [
+        "(\"Hi\");",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the method name that prints WITHOUT starting a new line",
+      "a": [
+       "print",
+       "System.out.print"
+      ],
+      "why": "print stays on the same line."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print Hello and then World on separate lines",
+      "lines": [
+       "System.out.println(\"Hello\");",
+       "System.out.println(\"World\");",
+       "System.out.print(\"The end\");"
+      ],
+      "why": "Hello comes first, then World, then the last print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what appears on screen?",
+      "code": "System.out.print(\"Hi\\n\");\nSystem.out.println(\"Bye\");",
+      "o": [
+       "Hi, then Bye on the next line",
+       "Hi Bye on one line",
+       "Hi\\nBye on one line",
+       "Bye only"
+      ],
+      "a": 0,
+      "why": "The \\n inside print starts a new line, then Bye is printed."
+     }
+    ]
+   },
+   {
+    "title": "Variables and primitive types",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "Declaring a variable",
+      "b": "A variable is a named box that holds a value. You write the type first, then the name, then = and the value. Java needs to know the type of every variable.",
+      "code": "int age = 15;\ndouble price = 2.5;\nboolean done = false;\nchar grade = 'A';\nString name = \"Sam\";"
+     },
+     {
+      "h": "The main types",
+      "b": "int holds whole numbers. double holds decimals. boolean holds true or false. char holds one character in single quotes. long holds very big whole numbers and needs an L at the end, like 5000000000L."
+     },
+     {
+      "h": "Changing and copying",
+      "b": "After a variable exists you can change it with =, without writing the type again. When you copy a primitive into another variable, you copy the value, so the two stay independent.",
+      "code": "int a = 5;\nint b = a;\na = 9;\nSystem.out.println(b);  // 5"
+     },
+     {
+      "h": "Constants and names",
+      "b": "Put final before a variable to make it a constant that cannot change. Names start with a letter, have no spaces, and by convention use camelCase like playerScore.",
+      "code": "final int MAX = 10;\nint playerScore = 0;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line declares an integer variable?",
+      "o": [
+       "integer age = 15;",
+       "age = int 15;",
+       "int age = 15;",
+       "int = age 15;"
+      ],
+      "a": 2,
+      "why": "The type comes first, then the name, then = and the value."
+     },
+     {
+      "t": "mc",
+      "q": "Which type should hold 3.14?",
+      "o": [
+       "double",
+       "int",
+       "boolean",
+       "char"
+      ],
+      "a": 0,
+      "why": "double stores numbers with a decimal part."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int a = 5;\nint b = a;\na = 9;\nSystem.out.println(b);",
+      "o": [
+       "9",
+       "5",
+       "14",
+       "Error"
+      ],
+      "a": 1,
+      "why": "b got a copy of 5, so changing a later does not change b."
+     },
+     {
+      "t": "tf",
+      "q": "A boolean variable can hold the value 7.",
+      "a": false,
+      "why": "A boolean can only be true or false."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to what it stores",
+      "pairs": [
+       [
+        "int",
+        "whole numbers"
+       ],
+       [
+        "double",
+        "decimal numbers"
+       ],
+       [
+        "boolean",
+        "true or false"
+       ],
+       [
+        "char",
+        "one character in single quotes"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that makes a variable a constant",
+      "a": [
+       "final"
+      ],
+      "why": "final stops the value from being changed."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 2",
+      "lines": [
+       "int lives = 3;",
+       "lives = lives - 1;",
+       "System.out.println(lives);"
+      ],
+      "why": "Set the variable, change it, then print it."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a declaration in order",
+      "items": [
+       [
+        "int",
+        1
+       ],
+       [
+        "score",
+        2
+       ],
+       [
+        "=",
+        3
+       ],
+       [
+        "10;",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an int named score set to 10",
+      "a": [
+       "int score = 10;",
+       "int score = 10",
+       "int score=10;",
+       "int score=10"
+      ],
+      "why": "Type, name, equals, value, semicolon."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the total price 10.0",
+      "lines": [
+       "double price = 2.5;",
+       "int qty = 4;",
+       "System.out.println(price * qty);"
+      ],
+      "why": "price * qty is 2.5 * 4 which is 10.0."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "boolean ok = 5 > 3;\nSystem.out.println(ok);",
+      "o": [
+       "true",
+       "false",
+       "1",
+       "Error"
+      ],
+      "a": 0,
+      "why": "5 > 3 is true, so ok stores true."
+     }
+    ]
+   },
+   {
+    "title": "Operators and casting",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "Math operators",
+      "b": "Java has + - * / and % . The % operator gives the remainder after division. ++ adds 1 and -- subtracts 1. Short forms like += change a variable in place.",
+      "code": "int x = 10;\nx += 5;   // 15\nx++;      // 16\nSystem.out.println(x % 3);  // 1"
+     },
+     {
+      "h": "Integer division",
+      "b": "When both numbers are int, Java divides and throws away the decimal part. So 7 / 2 is 3, not 3.5. If one number is a double, the result is a double.",
+      "code": "System.out.println(7 / 2);    // 3\nSystem.out.println(7 / 2.0);  // 3.5\nSystem.out.println(7 % 2);    // 1"
+     },
+     {
+      "h": "Comparing and combining",
+      "b": "Comparison operators are == != < > <= >= and they give a boolean. Combine booleans with && for and, || for or, and ! for not.",
+      "code": "int age = 14;\nboolean teen = age >= 13 && age <= 19;\nSystem.out.println(teen);  // true"
+     },
+     {
+      "h": "Casting",
+      "b": "Casting converts one type to another. Putting an int into a double happens automatically. Going from double to int needs a cast like (int) and it cuts off the decimals without rounding.",
+      "code": "double d = 3.9;\nint n = (int) d;      // 3\nint a = 7, b = 2;\ndouble r = (double) a / b;  // 3.5"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 7 / 2 when both are ints?",
+      "o": [
+       "3",
+       "3.5",
+       "4",
+       "2"
+      ],
+      "a": 0,
+      "why": "Integer division drops the decimal part."
+     },
+     {
+      "t": "mc",
+      "q": "What does the % operator give?",
+      "o": [
+       "The percentage",
+       "The remainder of a division",
+       "The quotient",
+       "The power"
+      ],
+      "a": 1,
+      "why": "For example 17 % 5 is 2 because 17 = 3*5 + 2."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int x = 10;\nx += 5;\nx++;\nSystem.out.println(x);",
+      "o": [
+       "15",
+       "10",
+       "16",
+       "6"
+      ],
+      "a": 2,
+      "why": "x becomes 15 after += 5, then 16 after x++."
+     },
+     {
+      "t": "tf",
+      "q": "The expression (int) 3.9 evaluates to 4.",
+      "a": false,
+      "why": "Casting to int cuts off the decimals, so the result is 3."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "&&",
+        "and"
+       ],
+       [
+        "||",
+        "or"
+       ],
+       [
+        "!",
+        "not"
+       ],
+       [
+        "==",
+        "is equal to"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  System.out.println(17 % 5);",
+      "a": [
+       "2"
+      ],
+      "why": "17 divided by 5 is 3 with remainder 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 3.5",
+      "lines": [
+       "int total = 7;",
+       "int people = 2;",
+       "double avg = (double) total / people;",
+       "System.out.println(avg);"
+      ],
+      "why": "Cast one operand to double before dividing."
+     },
+     {
+      "t": "order",
+      "q": "Put the evaluation steps of 2 + 3 * 4 / 2 - 1 in order",
+      "items": [
+       [
+        "3 * 4 = 12",
+        1
+       ],
+       [
+        "12 / 2 = 6",
+        2
+       ],
+       [
+        "2 + 6 = 8",
+        3
+       ],
+       [
+        "8 - 1 = 7",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what does 20 / 8 give when both are ints?",
+      "a": [
+       "2"
+      ],
+      "why": "20 / 8 is 2.5, and the decimal is dropped."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the quotient 2 first, then the remainder 1",
+      "lines": [
+       "int a = 9;",
+       "int b = a - 5;",
+       "System.out.println(a / b);",
+       "System.out.println(a % b);"
+      ],
+      "why": "b is 4, so 9 / 4 is 2 and 9 % 4 is 1."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "double d = 5 / 2;\nSystem.out.println(d);",
+      "o": [
+       "2.0",
+       "2.5",
+       "2",
+       "3.0"
+      ],
+      "a": 0,
+      "why": "5 / 2 is integer division (2), which is stored in a double as 2.0."
+     }
+    ]
+   },
+   {
+    "title": "Strings",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "String basics",
+      "b": "A String is a sequence of characters. It is an object, so it has methods you call with a dot. length() gives the number of characters and charAt(i) gives the character at position i, starting from 0.",
+      "code": "String s = \"Java\";\nSystem.out.println(s.length());   // 4\nSystem.out.println(s.charAt(0));  // J"
+     },
+     {
+      "h": "Useful methods",
+      "b": "substring(a, b) returns the part from index a up to but not including b. indexOf finds the first position of text, or -1 if it is missing. toUpperCase and toLowerCase return a changed copy.",
+      "code": "String s = \"banana\";\nSystem.out.println(s.substring(1, 4));  // ana\nSystem.out.println(s.indexOf(\"n\"));     // 2\nSystem.out.println(s.toUpperCase());    // BANANA"
+     },
+     {
+      "h": "Comparing strings",
+      "b": "Never compare strings with ==, because that checks if they are the same object. Use equals to compare the text, or equalsIgnoreCase to ignore capital letters.",
+      "code": "String a = \"hi\";\nSystem.out.println(a.equals(\"hi\"));        // true\nSystem.out.println(a.equalsIgnoreCase(\"HI\")); // true"
+     },
+     {
+      "h": "Strings never change",
+      "b": "Strings are immutable: methods like toUpperCase do not change the original, they return a new String. To keep the result you must store it in a variable.",
+      "code": "String s = \"cat\";\ns.toUpperCase();          // result thrown away\ns = s.toUpperCase();      // now s is CAT"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method compares the text of two strings?",
+      "o": [
+       "==",
+       "equals",
+       "compare",
+       "same"
+      ],
+      "a": 1,
+      "why": "equals checks the characters; == checks if they are the same object."
+     },
+     {
+      "t": "mc",
+      "q": "What does \"Java\".length() return?",
+      "o": [
+       "4",
+       "3",
+       "5",
+       "Java"
+      ],
+      "a": 0,
+      "why": "Java has 4 characters."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "String s = \"banana\";\nSystem.out.println(s.substring(1, 4));",
+      "o": [
+       "anan",
+       "ban",
+       "ana",
+       "nan"
+      ],
+      "a": 2,
+      "why": "substring(1, 4) takes indexes 1, 2 and 3 which are a, n, a."
+     },
+     {
+      "t": "tf",
+      "q": "charAt(0) returns the first character of a string.",
+      "a": true,
+      "why": "Indexes start at 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to what it does",
+      "pairs": [
+       [
+        "length()",
+        "number of characters"
+       ],
+       [
+        "charAt(i)",
+        "character at position i"
+       ],
+       [
+        "toUpperCase()",
+        "copy in CAPITAL letters"
+       ],
+       [
+        "indexOf(x)",
+        "first position of x or -1"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  String s = \"Hello\"; System.out.println(s.charAt(1));",
+      "a": [
+       "e"
+      ],
+      "why": "Index 0 is H and index 1 is e."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints HI ADA",
+      "lines": [
+       "String name = \"Ada\";",
+       "String greet = \"Hi \" + name;",
+       "System.out.println(greet.toUpperCase());"
+      ],
+      "why": "Build the greeting, then print it in capitals."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in order to print the first letter of Java",
+      "items": [
+       [
+        "String s = \"Java\";",
+        1
+       ],
+       [
+        "char c = s.charAt(0);",
+        2
+       ],
+       [
+        "System.out.println(c);",
+        3
+       ],
+       [
+        "Output: J",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what does this print?  System.out.println(\"Hello\".indexOf(\"l\"));",
+      "a": [
+       "2"
+      ],
+      "why": "The first l is at index 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print Rob",
+      "lines": [
+       "String s = \"Roblox\";",
+       "String start = s.substring(0, 3);",
+       "System.out.println(start);"
+      ],
+      "why": "substring(0, 3) gives indexes 0, 1, 2."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "String s = \"Java\";\ns.toUpperCase();\nSystem.out.println(s);",
+      "o": [
+       "Java",
+       "JAVA",
+       "java",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "toUpperCase returns a new String and the result was not stored, so s is unchanged."
+     }
+    ]
+   },
+   {
+    "title": "Scanner input",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "Creating a Scanner",
+      "b": "To read what the user types, import Scanner from java.util at the top of the file, then create a Scanner that reads from System.in (the keyboard).",
+      "code": "import java.util.Scanner;\n\nScanner sc = new Scanner(System.in);"
+     },
+     {
+      "h": "Reading values",
+      "b": "Each type has its own method. nextInt reads a whole number, nextDouble a decimal, next one word, and nextLine a whole line of text.",
+      "code": "System.out.print(\"Age: \");\nint age = sc.nextInt();\ndouble h = sc.nextDouble();\nString word = sc.next();"
+     },
+     {
+      "h": "The nextLine trap",
+      "b": "nextInt reads the number but leaves the Enter key in the input. If you call nextLine right after it, you get an empty line. Fix it by calling sc.nextLine() once to throw the leftover away.",
+      "code": "int n = sc.nextInt();\nsc.nextLine();            // eat the leftover Enter\nString line = sc.nextLine();"
+     },
+     {
+      "h": "A small program",
+      "b": "Print a prompt with print, read the value, then use it. Close the Scanner with sc.close() when you are done with it.",
+      "code": "Scanner sc = new Scanner(System.in);\nSystem.out.print(\"Name: \");\nString name = sc.nextLine();\nSystem.out.println(\"Hi \" + name);\nsc.close();"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line imports Scanner?",
+      "o": [
+       "import java.util.Scanner;",
+       "import Scanner;",
+       "include java.Scanner;",
+       "using java.util.Scanner;"
+      ],
+      "a": 0,
+      "why": "Scanner lives in the java.util package."
+     },
+     {
+      "t": "mc",
+      "q": "Which method reads a whole line of text?",
+      "o": [
+       "next()",
+       "nextLine()",
+       "nextInt()",
+       "readLine()"
+      ],
+      "a": 1,
+      "why": "nextLine returns everything up to the Enter key."
+     },
+     {
+      "t": "mc",
+      "q": "The user types 4 then 6 on separate lines. What is printed?",
+      "code": "Scanner sc = new Scanner(System.in);\nint a = sc.nextInt();\nint b = sc.nextInt();\nSystem.out.println(a + b);",
+      "o": [
+       "46",
+       "24",
+       "10",
+       "Error"
+      ],
+      "a": 2,
+      "why": "nextInt reads 4 and 6 as numbers, so a + b is 10."
+     },
+     {
+      "t": "tf",
+      "q": "nextInt() also consumes the Enter key after the number.",
+      "a": false,
+      "why": "The Enter stays in the input, which is why nextLine can return an empty string."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to what it reads",
+      "pairs": [
+       [
+        "nextInt()",
+        "a whole number"
+       ],
+       [
+        "nextDouble()",
+        "a decimal number"
+       ],
+       [
+        "next()",
+        "one word"
+       ],
+       [
+        "nextLine()",
+        "a whole line"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the line that creates a Scanner named sc that reads the keyboard",
+      "a": [
+       "Scanner sc = new Scanner(System.in);",
+       "Scanner sc = new Scanner(System.in)",
+       "Scanner sc=new Scanner(System.in);"
+      ],
+      "why": "new Scanner(System.in) reads from the keyboard."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program asks for a name and greets it",
+      "lines": [
+       "Scanner sc = new Scanner(System.in);",
+       "System.out.print(\"Name: \");",
+       "String name = sc.nextLine();",
+       "System.out.println(\"Hi \" + name);"
+      ],
+      "why": "Create the Scanner, ask, read, then use the value."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "import java.util.Scanner;",
+        1
+       ],
+       [
+        "Scanner sc = new Scanner(System.in);",
+        2
+       ],
+       [
+        "int age = sc.nextInt();",
+        3
+       ],
+       [
+        "System.out.println(age);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the method name that reads a decimal number",
+      "a": [
+       "nextDouble",
+       "sc.nextDouble",
+       "nextDouble()",
+       "sc.nextDouble()"
+      ],
+      "why": "nextDouble reads a double."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to read two ints and print their product",
+      "lines": [
+       "int a = sc.nextInt();",
+       "int b = sc.nextInt();",
+       "System.out.println(a * b);"
+      ],
+      "why": "Read both numbers before using them."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: the user types Sam Lee. What is printed?",
+      "code": "Scanner sc = new Scanner(System.in);\nString w = sc.next();\nSystem.out.println(w);",
+      "o": [
+       "Sam",
+       "Sam Lee",
+       "Lee",
+       "Error"
+      ],
+      "a": 0,
+      "why": "next reads only one word, stopping at the space."
+     }
+    ]
+   },
+   {
+    "title": "if and switch",
+    "period": "Java basics",
+    "learn": [
+     {
+      "h": "if, else if, else",
+      "b": "An if runs its block only when the condition in parentheses is true. Add else if for more conditions and else for everything left. Java checks them from top to bottom and runs only the first match.",
+      "code": "int score = 85;\nif (score >= 90) {\n    System.out.println(\"A\");\n} else if (score >= 80) {\n    System.out.println(\"B\");\n} else {\n    System.out.println(\"C\");\n}"
+     },
+     {
+      "h": "Conditions",
+      "b": "Use == to compare numbers, not =, because a single = assigns a value. For strings use equals. Join conditions with && and ||.",
+      "code": "if (age >= 13 && age <= 19) { }\nif (name.equals(\"Sam\")) { }"
+     },
+     {
+      "h": "switch",
+      "b": "A switch picks one case by value. Each case ends with break, otherwise Java keeps running into the next case, which is called fall-through. default runs when nothing matches.",
+      "code": "int day = 2;\nswitch (day) {\n    case 1:\n        System.out.println(\"Mon\");\n        break;\n    case 2:\n        System.out.println(\"Tue\");\n        break;\n    default:\n        System.out.println(\"?\");\n}"
+     },
+     {
+      "h": "Fall-through",
+      "b": "Without break, execution continues into the next case even if it does not match. Sometimes that is useful to share code between cases, but usually it is a bug.",
+      "code": "switch (1) {\n    case 1: System.out.print(\"A\");\n    case 2: System.out.print(\"B\"); break;\n    case 3: System.out.print(\"C\");\n}  // prints AB"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which operator checks if two numbers are equal?",
+      "o": [
+       "=",
+       "=>",
+       "==",
+       "equals="
+      ],
+      "a": 2,
+      "why": "A single = assigns; == compares."
+     },
+     {
+      "t": "mc",
+      "q": "What happens if a switch case has no break?",
+      "o": [
+       "Java runs into the next case",
+       "The program crashes",
+       "The switch ends anyway",
+       "Java skips the next case"
+      ],
+      "a": 0,
+      "why": "This is called fall-through."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int n = 15;\nif (n % 3 == 0 && n % 5 == 0) {\n    System.out.println(\"FizzBuzz\");\n} else if (n % 3 == 0) {\n    System.out.println(\"Fizz\");\n} else {\n    System.out.println(n);\n}",
+      "o": [
+       "Fizz",
+       "FizzBuzz",
+       "15",
+       "Buzz"
+      ],
+      "a": 1,
+      "why": "15 is divisible by both 3 and 5, so the first branch runs."
+     },
+     {
+      "t": "tf",
+      "q": "In Java, = compares two values.",
+      "a": false,
+      "why": "= assigns a value; use == to compare."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "runs a block when the condition is true"
+       ],
+       [
+        "else",
+        "runs when no earlier condition matched"
+       ],
+       [
+        "else if",
+        "tests another condition"
+       ],
+       [
+        "default",
+        "switch fallback when no case matches"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that ends a switch case",
+      "a": [
+       "break"
+      ],
+      "why": "break leaves the switch."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints Nice",
+      "lines": [
+       "int temp = 25;",
+       "if (temp > 30) {",
+       "    System.out.println(\"Hot\");",
+       "} else {",
+       "    System.out.println(\"Nice\");",
+       "}"
+      ],
+      "why": "25 is not above 30, so the else branch runs."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a switch in order",
+      "items": [
+       [
+        "switch (day) {",
+        1
+       ],
+       [
+        "case 1: System.out.println(\"Mon\");",
+        2
+       ],
+       [
+        "break;",
+        3
+       ],
+       [
+        "default: System.out.println(\"?\");",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: score is 85. The code prints A if score >= 90, B if score >= 80, otherwise C. What prints?",
+      "a": [
+       "B"
+      ],
+      "why": "85 fails the first test and passes the second."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print Two",
+      "lines": [
+       "int d = 2;",
+       "switch (d) {",
+       "    case 2:",
+       "        System.out.println(\"Two\");",
+       "        break;",
+       "}"
+      ],
+      "why": "d is 2 so case 2 runs and break leaves the switch."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "int d = 1;\nswitch (d) {\n    case 1: System.out.print(\"A\");\n    case 2: System.out.print(\"B\"); break;\n    case 3: System.out.print(\"C\");\n}",
+      "o": [
+       "AB",
+       "A",
+       "ABC",
+       "B"
+      ],
+      "a": 0,
+      "why": "Case 1 has no break, so it falls into case 2, which has a break."
+     }
+    ]
+   },
+   {
+    "title": "Loops",
+    "period": "Java building blocks",
+    "learn": [
+     {
+      "h": "while loop",
+      "b": "A while loop repeats its block as long as the condition is true. The condition is checked before every round, so the body may never run. Make sure something inside changes the condition, or the loop never ends.",
+      "code": "int n = 3;\nwhile (n > 0) {\n    System.out.println(n);\n    n--;\n}"
+     },
+     {
+      "h": "for loop",
+      "b": "A for loop packs three parts into one line: a start, a condition and an update. It is perfect when you know how many times to repeat.",
+      "code": "for (int i = 0; i < 5; i++) {\n    System.out.println(i);\n}  // prints 0 to 4"
+     },
+     {
+      "h": "do-while",
+      "b": "A do-while loop runs the body first and checks the condition afterwards. That means it always runs at least once, which is handy for menus and input checks.",
+      "code": "int x = 10;\ndo {\n    System.out.println(x);\n    x++;\n} while (x < 5);   // prints 10 once"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop immediately. continue skips the rest of the current round and jumps to the next one. Loops can also be placed inside each other, called nested loops.",
+      "code": "for (int i = 1; i <= 5; i++) {\n    if (i == 3) { continue; }\n    if (i == 5) { break; }\n    System.out.print(i);   // 124\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which loop always runs its body at least once?",
+      "o": [
+       "do-while",
+       "while",
+       "for",
+       "if"
+      ],
+      "a": 0,
+      "why": "do-while checks the condition after the body."
+     },
+     {
+      "t": "mc",
+      "q": "How many times does for (int i = 0; i < 5; i++) run?",
+      "o": [
+       "4",
+       "6",
+       "5",
+       "0"
+      ],
+      "a": 2,
+      "why": "i takes the values 0, 1, 2, 3 and 4."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int sum = 0;\nfor (int i = 1; i <= 4; i++) {\n    sum += i;\n}\nSystem.out.println(sum);",
+      "o": [
+       "4",
+       "10",
+       "6",
+       "24"
+      ],
+      "a": 1,
+      "why": "1 + 2 + 3 + 4 = 10."
+     },
+     {
+      "t": "tf",
+      "q": "continue exits the whole loop.",
+      "a": false,
+      "why": "break exits the loop; continue only skips to the next round."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its meaning",
+      "pairs": [
+       [
+        "while",
+        "checks the condition first"
+       ],
+       [
+        "do-while",
+        "runs the body once before checking"
+       ],
+       [
+        "break",
+        "leaves the loop"
+       ],
+       [
+        "continue",
+        "skips to the next round"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  for (int i = 3; i > 0; i--) System.out.print(i);",
+      "a": [
+       "321"
+      ],
+      "why": "i counts down 3, 2, 1 and print stays on one line."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the loop prints 1 2 3 on separate lines",
+      "lines": [
+       "for (int i = 1; i <= 3; i++) {",
+       "    System.out.println(i);",
+       "}"
+      ],
+      "why": "Start at 1, stop after 3."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a for loop round in order",
+      "items": [
+       [
+        "Start: int i = 0",
+        1
+       ],
+       [
+        "Check the condition i < 3",
+        2
+       ],
+       [
+        "Run the body",
+        3
+       ],
+       [
+        "Do the update i++",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: n starts at 1 and the loop is  while (n < 10) { n += 3; }.  How many times does the body run?",
+      "a": [
+       "3"
+      ],
+      "why": "n is 1, 4, 7 at the checks that pass; at 10 it stops."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to count down 3, 2, 1",
+      "lines": [
+       "int n = 3;",
+       "while (n > 0) {",
+       "    System.out.println(n);",
+       "    n--;",
+       "}"
+      ],
+      "why": "Print first, then lower n."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "for (int i = 1; i <= 5; i++) {\n    if (i == 3) {\n        continue;\n    }\n    System.out.print(i);\n}",
+      "o": [
+       "1245",
+       "12345",
+       "124",
+       "345"
+      ],
+      "a": 0,
+      "why": "When i is 3, continue skips the print."
+     }
+    ]
+   },
+   {
+    "title": "Arrays",
+    "period": "Java building blocks",
+    "learn": [
+     {
+      "h": "What is an array",
+      "b": "An array holds many values of the same type in one variable. Its size is fixed when you create it. You reach each item with an index, and the first index is 0.",
+      "code": "int[] nums = {4, 8, 15};\nSystem.out.println(nums[0]);       // 4\nSystem.out.println(nums.length);   // 3"
+     },
+     {
+      "h": "Creating arrays",
+      "b": "Use new with a size to make an empty array. Numbers start as 0, booleans as false and objects as null. The length is a field, so you write nums.length without parentheses.",
+      "code": "int[] a = new int[3];\na[1] = 5;\nSystem.out.println(a[0] + a[1] + a[2]);  // 5"
+     },
+     {
+      "h": "Looping over arrays",
+      "b": "A normal for loop uses the index. The for-each loop gives you each item directly, which is shorter when you do not need the index.",
+      "code": "int[] nums = {2, 4, 6};\nint sum = 0;\nfor (int n : nums) {\n    sum += n;\n}\nSystem.out.println(sum);  // 12"
+     },
+     {
+      "h": "Out of bounds",
+      "b": "Valid indexes go from 0 to length - 1. Using any other index stops the program with an ArrayIndexOutOfBoundsException. Arrays can also have two dimensions, like int[][] grid = new int[3][3].",
+      "code": "int[] a = new int[5];\na[5] = 1;   // error: last index is 4"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first item in an array?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "It depends"
+      ],
+      "a": 1,
+      "why": "Java arrays start counting at 0."
+     },
+     {
+      "t": "mc",
+      "q": "How do you get the size of an array called nums?",
+      "o": [
+       "nums.length",
+       "nums.length()",
+       "nums.size()",
+       "length(nums)"
+      ],
+      "a": 0,
+      "why": "For arrays length is a field, with no parentheses."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int[] a = {4, 8, 15};\nSystem.out.println(a[1] + a.length);",
+      "o": [
+       "12",
+       "8",
+       "11",
+       "3"
+      ],
+      "a": 2,
+      "why": "a[1] is 8 and a.length is 3, so 8 + 3 = 11."
+     },
+     {
+      "t": "tf",
+      "q": "A new int[3] array starts with all elements equal to 0.",
+      "a": true,
+      "why": "Numeric arrays are filled with 0 by default."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "new int[5]",
+        "array of 5 zeros"
+       ],
+       [
+        "a.length",
+        "size of the array"
+       ],
+       [
+        "a[0]",
+        "first element"
+       ],
+       [
+        "ArrayIndexOutOfBoundsException",
+        "index was too big or negative"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  int[] a = {5, 6, 7}; System.out.println(a[a.length - 1]);",
+      "a": [
+       "7"
+      ],
+      "why": "length is 3 so the last index is 2, which holds 7."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints the sum 12",
+      "lines": [
+       "int[] nums = {2, 4, 6};",
+       "int sum = 0;",
+       "for (int n : nums) {",
+       "    sum += n;",
+       "}",
+       "System.out.println(sum);"
+      ],
+      "why": "Add each item to sum inside the loop, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in the order they must be written",
+      "items": [
+       [
+        "int[] a = new int[3];",
+        1
+       ],
+       [
+        "a[0] = 7;",
+        2
+       ],
+       [
+        "a[2] = 9;",
+        3
+       ],
+       [
+        "System.out.println(a[1]);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the last valid index of an array that has 5 elements",
+      "a": [
+       "4"
+      ],
+      "why": "Indexes run from 0 to length - 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the biggest number, 9",
+      "lines": [
+       "int[] a = {3, 9, 4};",
+       "int max = a[0];",
+       "for (int x : a) {",
+       "    if (x > max) max = x;",
+       "}",
+       "System.out.println(max);"
+      ],
+      "why": "Start with the first item, then keep the larger one."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "int[] a = new int[3];\na[1] = 5;\nSystem.out.println(a[0] + a[1] + a[2]);",
+      "o": [
+       "0",
+       "5",
+       "15",
+       "Error"
+      ],
+      "a": 1,
+      "why": "Only a[1] was set; the others are 0, so the sum is 5."
+     }
+    ]
+   },
+   {
+    "title": "Methods",
+    "period": "Java building blocks",
+    "learn": [
+     {
+      "h": "Writing a method",
+      "b": "A method is a named block of code you can run many times. In a simple program write static before it. You give it a return type, a name and parameters in parentheses.",
+      "code": "static int square(int n) {\n    return n * n;\n}\n\nSystem.out.println(square(4));  // 16"
+     },
+     {
+      "h": "void and return",
+      "b": "A method that returns nothing has the return type void. A method with another return type must use return to send a value back, and return also ends the method immediately.",
+      "code": "static void hello() {\n    System.out.println(\"Hi\");\n}\n\nstatic boolean isEven(int n) {\n    return n % 2 == 0;\n}"
+     },
+     {
+      "h": "Parameters and arguments",
+      "b": "Parameters are the variables in the method header. Arguments are the actual values you pass when calling it. Java passes a copy of primitive values, so changing the parameter does not change the caller's variable.",
+      "code": "static int f(int x) {\n    x = x + 1;\n    return x;\n}\nint y = 5;\nf(y);\nSystem.out.println(y);  // 5"
+     },
+     {
+      "h": "Overloading",
+      "b": "Several methods can share a name if their parameter lists are different. Java picks the right one by looking at the arguments you pass. This is called overloading.",
+      "code": "static int add(int a, int b) { return a + b; }\nstatic double add(double a, double b) { return a + b; }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword means a method returns nothing?",
+      "o": [
+       "void",
+       "null",
+       "none",
+       "empty"
+      ],
+      "a": 0,
+      "why": "void is used as the return type when there is no value."
+     },
+     {
+      "t": "mc",
+      "q": "What does return do?",
+      "o": [
+       "Prints a value",
+       "Sends a value back and ends the method",
+       "Repeats the method",
+       "Declares a variable"
+      ],
+      "a": 1,
+      "why": "After return, the method stops."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "static int square(int n) {\n    return n * n;\n}\npublic static void main(String[] args) {\n    System.out.println(square(3) + square(2));\n}",
+      "o": [
+       "10",
+       "25",
+       "13",
+       "5"
+      ],
+      "a": 2,
+      "why": "square(3) is 9 and square(2) is 4, so the total is 13."
+     },
+     {
+      "t": "tf",
+      "q": "Two methods can have the same name if their parameters differ.",
+      "a": true,
+      "why": "This is called overloading."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "void",
+        "returns nothing"
+       ],
+       [
+        "return",
+        "sends a value back"
+       ],
+       [
+        "parameter",
+        "variable in the method header"
+       ],
+       [
+        "argument",
+        "value passed in the call"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  static int add(int a, int b) { return a + b; }  System.out.println(add(2, add(3, 4)));",
+      "a": [
+       "9"
+      ],
+      "why": "add(3, 4) is 7, then add(2, 7) is 9."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 8",
+      "lines": [
+       "static int twice(int n) {",
+       "    return n * 2;",
+       "}  // end of twice",
+       "public static void main(String[] args) {",
+       "    System.out.println(twice(4));",
+       "}  // end of main"
+      ],
+      "why": "Define the method first, then call it from main."
+     },
+     {
+      "t": "order",
+      "q": "Put the events in order when twice(4) is called",
+      "items": [
+       [
+        "main calls twice(4)",
+        1
+       ],
+       [
+        "4 is copied into n",
+        2
+       ],
+       [
+        "The body computes n * 2 = 8",
+        3
+       ],
+       [
+        "8 is returned and printed",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the return type of a method that gives back true or false",
+      "a": [
+       "boolean"
+      ],
+      "why": "boolean holds true or false."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the method that tells if a number is even",
+      "lines": [
+       "static boolean isEven(int n) {",
+       "    return n % 2 == 0;",
+       "}"
+      ],
+      "why": "An even number has remainder 0 when divided by 2."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "static int f(int x) {\n    x = x + 1;\n    return x;\n}\npublic static void main(String[] args) {\n    int y = 5;\n    f(y);\n    System.out.println(y);\n}",
+      "o": [
+       "5",
+       "6",
+       "0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "x inside f is a copy, so y stays 5."
+     }
+    ]
+   },
+   {
+    "title": "Classes and objects",
+    "period": "Object-oriented Java",
+    "learn": [
+     {
+      "h": "Class and object",
+      "b": "A class is a blueprint. An object is one thing built from that blueprint with the new keyword. A class describes fields (data) and methods (actions).",
+      "code": "class Dog {\n    String name;\n    void bark() {\n        System.out.println(name + \" says woof\");\n    }\n}"
+     },
+     {
+      "h": "Creating objects",
+      "b": "Use new to build an object and a variable to hold a reference to it. Use a dot to reach its fields and methods. Each object has its own copy of the fields.",
+      "code": "Dog d = new Dog();\nd.name = \"Rex\";\nd.bark();   // Rex says woof"
+     },
+     {
+      "h": "References",
+      "b": "A variable of a class type holds a reference, like an address, not the object itself. Copying the variable makes two names for the same object, so a change through one shows in the other.",
+      "code": "Dog a = new Dog();\nDog b = a;\nb.name = \"Max\";\nSystem.out.println(a.name);  // Max"
+     },
+     {
+      "h": "Default values and null",
+      "b": "Fields get default values: 0 for numbers, false for boolean and null for objects. null means the variable points to no object, and using a dot on null causes a NullPointerException.",
+      "code": "class Box { int size; }\nBox b = new Box();\nSystem.out.println(b.size);  // 0"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword creates an object?",
+      "o": [
+       "new",
+       "make",
+       "create",
+       "class"
+      ],
+      "a": 0,
+      "why": "new builds a fresh object from a class."
+     },
+     {
+      "t": "mc",
+      "q": "What is the relationship between a class and an object?",
+      "o": [
+       "An object is the blueprint for a class",
+       "A class is the blueprint, objects are built from it",
+       "They are the same thing",
+       "A class is a variable inside an object"
+      ],
+      "a": 1,
+      "why": "One class can produce many objects."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Dog {\n    String name;\n    void bark() {\n        System.out.println(name + \" says woof\");\n    }\n}\n// in main:\nDog d = new Dog();\nd.name = \"Rex\";\nd.bark();",
+      "o": [
+       "null says woof",
+       "woof",
+       "Rex says woof",
+       "Error"
+      ],
+      "a": 2,
+      "why": "name was set to Rex before bark() was called."
+     },
+     {
+      "t": "tf",
+      "q": "Two different objects of the same class always share the same field values.",
+      "a": false,
+      "why": "Each object has its own copy of the fields."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "class",
+        "blueprint for objects"
+       ],
+       [
+        "object",
+        "thing created with new"
+       ],
+       [
+        "field",
+        "variable stored in an object"
+       ],
+       [
+        "method",
+        "action an object can do"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the line that creates a Dog object stored in a variable d",
+      "a": [
+       "Dog d = new Dog();",
+       "Dog d = new Dog()",
+       "Dog d=new Dog();"
+      ],
+      "why": "Type, name, = new, class name with ()."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints Max",
+      "lines": [
+       "Dog a = new Dog();",
+       "a.name = \"Rex\";",
+       "Dog b = a;",
+       "b.name = \"Max\";",
+       "System.out.println(a.name);"
+      ],
+      "why": "b and a point to the same object."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Write the class Dog",
+        1
+       ],
+       [
+        "Create an object with new",
+        2
+       ],
+       [
+        "Set its fields",
+        3
+       ],
+       [
+        "Call its method",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Dog a = new Dog(); Dog b = a; b.name = \"Max\"; What does System.out.println(a.name) print?",
+      "a": [
+       "Max"
+      ],
+      "why": "Both variables refer to one object."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: class Cat has an int field lives. Arrange the lines to print 8",
+      "lines": [
+       "Cat c = new Cat();",
+       "c.lives = 9;",
+       "c.lives--;",
+       "System.out.println(c.lives);"
+      ],
+      "why": "Set 9, subtract 1, print 8."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "class Box {\n    int size;\n}\n// in main:\nBox b = new Box();\nSystem.out.println(b.size);",
+      "o": [
+       "null",
+       "0",
+       "1",
+       "Error"
+      ],
+      "a": 1,
+      "why": "An int field starts at 0."
+     }
+    ]
+   },
+   {
+    "title": "Constructors and encapsulation",
+    "period": "Object-oriented Java",
+    "learn": [
+     {
+      "h": "Constructors",
+      "b": "A constructor is a special method that runs when you use new. It has the same name as the class and no return type. It is the place to give fields their first values.",
+      "code": "class Player {\n    int hp;\n    Player(int hp) {\n        this.hp = hp;\n    }\n}\nPlayer p = new Player(30);"
+     },
+     {
+      "h": "The this keyword",
+      "b": "this means the current object. When a parameter has the same name as a field, the parameter hides the field. Writing this.hp refers to the field, while plain hp refers to the parameter.",
+      "code": "class A {\n    int v;\n    A(int v) {\n        v = v;        // bug: sets the parameter\n    }\n}  // a.v stays 0"
+     },
+     {
+      "h": "private fields",
+      "b": "Marking a field private means only code inside the class can touch it. This is called encapsulation. It protects the data from being changed to wrong values by other code.",
+      "code": "class Player {\n    private int hp;\n    int getHp() {\n        return hp;\n    }\n}"
+     },
+     {
+      "h": "Getters and setters",
+      "b": "A getter returns a private field and a setter changes it. A setter can check the new value first, for example refuse negative ages. Outside code uses these methods instead of the field.",
+      "code": "public void setAge(int age) {\n    if (age >= 0) {\n        this.age = age;\n    }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the name of a constructor?",
+      "o": [
+       "The same as the class",
+       "constructor",
+       "new",
+       "init"
+      ],
+      "a": 0,
+      "why": "A constructor has the class name and no return type."
+     },
+     {
+      "t": "mc",
+      "q": "Why make a field private?",
+      "o": [
+       "To make it faster",
+       "So only the class's own methods can change it",
+       "To make it a constant",
+       "So it prints automatically"
+      ],
+      "a": 1,
+      "why": "Encapsulation protects data from bad changes."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Player {\n    private int hp;\n    Player(int hp) {\n        this.hp = hp;\n    }\n    int getHp() {\n        return hp;\n    }\n}\n// in main:\nPlayer p = new Player(30);\nSystem.out.println(p.getHp());",
+      "o": [
+       "0",
+       "hp",
+       "30",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The constructor stores 30 in the field, and getHp returns it."
+     },
+     {
+      "t": "tf",
+      "q": "A constructor has the return type void.",
+      "a": false,
+      "why": "A constructor has no return type at all, not even void."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "constructor",
+        "runs when an object is created"
+       ],
+       [
+        "this",
+        "the current object"
+       ],
+       [
+        "private",
+        "visible only inside the class"
+       ],
+       [
+        "getter",
+        "method that reads a private field"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that refers to the current object",
+      "a": [
+       "this"
+      ],
+      "why": "this lets you write this.hp to mean the field."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a setter that refuses negative ages",
+      "lines": [
+       "public void setAge(int age) {",
+       "    if (age >= 0) {",
+       "        this.age = age;",
+       "    }",
+       "}"
+      ],
+      "why": "The check goes before the assignment."
+     },
+     {
+      "t": "order",
+      "q": "Put the events of new Player(30) in order",
+      "items": [
+       [
+        "Java creates the empty object",
+        1
+       ],
+       [
+        "The constructor starts with hp = 30",
+        2
+       ],
+       [
+        "this.hp = hp copies the value",
+        3
+       ],
+       [
+        "The reference is stored in the variable",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the access modifier that hides a field from other classes",
+      "a": [
+       "private"
+      ],
+      "why": "private limits access to the same class."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the constructor of class Point",
+      "lines": [
+       "Point(int x, int y) {",
+       "    this.x = x;",
+       "    this.y = y;",
+       "}"
+      ],
+      "why": "Use this. to reach the fields."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "class A {\n    int v;\n    A(int v) {\n        v = v;\n    }\n}\n// in main:\nA a = new A(5);\nSystem.out.println(a.v);",
+      "o": [
+       "5",
+       "0",
+       "null",
+       "Error"
+      ],
+      "a": 1,
+      "why": "v = v sets the parameter to itself, so the field stays 0."
+     }
+    ]
+   },
+   {
+    "title": "Inheritance and interfaces",
+    "period": "Object-oriented Java",
+    "learn": [
+     {
+      "h": "extends",
+      "b": "A class can inherit fields and methods from a parent class using extends. The child gets everything the parent has and can add more. A Java class can have only one parent.",
+      "code": "class Animal {\n    void speak() { System.out.println(\"...\"); }\n}\nclass Dog extends Animal { }"
+     },
+     {
+      "h": "Overriding and super",
+      "b": "A child can replace a parent's method by writing a method with the same name and putting @Override above it. The keyword super refers to the parent, so super.speak() calls the parent's version and super(...) calls its constructor.",
+      "code": "class Dog extends Animal {\n    @Override\n    void speak() {\n        System.out.println(\"Woof\");\n    }\n}"
+     },
+     {
+      "h": "Polymorphism",
+      "b": "A variable of the parent type can hold a child object. When you call a method, Java runs the version of the real object. One call can behave differently for different children.",
+      "code": "Animal a = new Dog();\na.speak();   // Woof"
+     },
+     {
+      "h": "Interfaces",
+      "b": "An interface lists methods without bodies, as a promise. A class that uses implements must provide all of them. A class can implement many interfaces, even though it can extend only one class.",
+      "code": "interface Shape {\n    double area();\n}\nclass Sq implements Shape {\n    public double area() { return 4.0; }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword makes one class inherit from another?",
+      "o": [
+       "extends",
+       "implements",
+       "inherits",
+       "super"
+      ],
+      "a": 0,
+      "why": "class Dog extends Animal inherits from Animal."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword is used when a class follows an interface?",
+      "o": [
+       "extends",
+       "implements",
+       "interface",
+       "override"
+      ],
+      "a": 1,
+      "why": "A class implements an interface."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Animal {\n    void speak() { System.out.println(\"...\"); }\n}\nclass Dog extends Animal {\n    @Override\n    void speak() { System.out.println(\"Woof\"); }\n}\n// in main:\nAnimal a = new Dog();\na.speak();",
+      "o": [
+       "...",
+       "Animal",
+       "Woof",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The object is a Dog, so the Dog version of speak runs."
+     },
+     {
+      "t": "tf",
+      "q": "A Java class can extend two classes at once.",
+      "a": false,
+      "why": "Java allows only one parent class, but many interfaces."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its meaning",
+      "pairs": [
+       [
+        "extends",
+        "inherit from a parent class"
+       ],
+       [
+        "super",
+        "refers to the parent"
+       ],
+       [
+        "@Override",
+        "replaces a parent's method"
+       ],
+       [
+        "implements",
+        "promise to provide an interface's methods"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that calls the parent's constructor or methods",
+      "a": [
+       "super"
+      ],
+      "why": "super refers to the parent class."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define an interface and a class that implements it",
+      "lines": [
+       "interface Shape {",
+       "    double area();",
+       "}  // end Shape",
+       "class Sq implements Shape {",
+       "    public double area() { return 4.0; }",
+       "}  // end Sq"
+      ],
+      "why": "Define the interface first, then the class that implements it."
+     },
+     {
+      "t": "order",
+      "q": "Put the events of new Dog() in order",
+      "items": [
+       [
+        "new Dog() is called",
+        1
+       ],
+       [
+        "The Animal constructor runs first (super)",
+        2
+       ],
+       [
+        "The Dog constructor body runs",
+        3
+       ],
+       [
+        "The object reference is stored in d",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword used to define an interface",
+      "a": [
+       "interface"
+      ],
+      "why": "An interface is declared with the interface keyword."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the class Cat that overrides speak",
+      "lines": [
+       "class Cat extends Animal {",
+       "    @Override",
+       "    void speak() {",
+       "        System.out.println(\"Meow\");",
+       "    }",
+       "}"
+      ],
+      "why": "extends first, then the overriding method."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "class A {\n    A() { System.out.print(\"A\"); }\n}\nclass B extends A {\n    B() { System.out.print(\"B\"); }\n}\n// in main:\nnew B();",
+      "o": [
+       "AB",
+       "BA",
+       "B",
+       "A"
+      ],
+      "a": 0,
+      "why": "The parent constructor runs first, then the child's."
+     }
+    ]
+   },
+   {
+    "title": "ArrayList, HashMap and exceptions",
+    "period": "Object-oriented Java",
+    "learn": [
+     {
+      "h": "ArrayList",
+      "b": "An ArrayList is a resizable list. Import java.util.ArrayList and put the item type in angle brackets. Use add to append, get(i) to read, size() for the length and remove(i) to delete by index.",
+      "code": "import java.util.ArrayList;\n\nArrayList<Integer> nums = new ArrayList<>();\nnums.add(5);\nnums.add(8);\nnums.remove(0);\nSystem.out.println(nums.get(0));  // 8"
+     },
+     {
+      "h": "HashMap",
+      "b": "A HashMap stores key and value pairs. put adds or replaces a pair, get finds the value for a key, containsKey checks a key and size counts the pairs. Putting an existing key again replaces its value.",
+      "code": "import java.util.HashMap;\n\nHashMap<String, Integer> ages = new HashMap<>();\nages.put(\"Ann\", 12);\nages.put(\"Ann\", 13);\nSystem.out.println(ages.get(\"Ann\"));  // 13\nSystem.out.println(ages.size());      // 1"
+     },
+     {
+      "h": "try and catch",
+      "b": "An exception is an error that happens while the program runs. Put risky code in try and handle the problem in catch. When an error happens, Java jumps from the risky line straight to catch.",
+      "code": "try {\n    int x = 10 / 0;\n    System.out.println(\"never\");\n} catch (ArithmeticException e) {\n    System.out.println(\"Oops\");\n}"
+     },
+     {
+      "h": "finally and throw",
+      "b": "A finally block runs whether or not an error happened, which is good for cleanup. You can raise your own error with throw new IllegalArgumentException(\"message\"). Common exceptions are NullPointerException and ArrayIndexOutOfBoundsException.",
+      "code": "try {\n    System.out.println(\"A\");\n} catch (Exception e) {\n    System.out.println(\"B\");\n} finally {\n    System.out.println(\"C\");\n}   // A then C"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method gives the number of items in an ArrayList?",
+      "o": [
+       "size()",
+       "length",
+       "length()",
+       "count()"
+      ],
+      "a": 0,
+      "why": "ArrayList uses size(); arrays use length."
+     },
+     {
+      "t": "mc",
+      "q": "What does a HashMap store?",
+      "o": [
+       "Only numbers in order",
+       "Key and value pairs",
+       "Only strings",
+       "Items sorted by size"
+      ],
+      "a": 1,
+      "why": "Each key maps to one value."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "ArrayList<Integer> nums = new ArrayList<>();\nnums.add(5);\nnums.add(8);\nnums.remove(0);\nSystem.out.println(nums.get(0));",
+      "o": [
+       "5",
+       "0",
+       "8",
+       "13"
+      ],
+      "a": 2,
+      "why": "remove(0) deletes the 5, leaving 8 at index 0."
+     },
+     {
+      "t": "tf",
+      "q": "A finally block runs whether or not an exception happened.",
+      "a": true,
+      "why": "finally always runs after try and catch."
+     },
+     {
+      "t": "match",
+      "q": "Match each method or keyword to its meaning",
+      "pairs": [
+       [
+        "add()",
+        "append an item"
+       ],
+       [
+        "get(i)",
+        "read the item at index i"
+       ],
+       [
+        "put(k, v)",
+        "store a key-value pair"
+       ],
+       [
+        "catch",
+        "handle a thrown exception"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that starts the block of code that might fail",
+      "a": [
+       "try"
+      ],
+      "why": "Risky code goes inside try."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to catch a division by zero",
+      "lines": [
+       "try {",
+       "    int x = 10 / 0;",
+       "} catch (ArithmeticException e) {",
+       "    System.out.println(\"Oops\");",
+       "}"
+      ],
+      "why": "try comes first, then catch."
+     },
+     {
+      "t": "order",
+      "q": "Put the events in order when an error happens in try",
+      "items": [
+       [
+        "The try block starts",
+        1
+       ],
+       [
+        "A line causes an error",
+        2
+       ],
+       [
+        "Java jumps to the catch block",
+        3
+       ],
+       [
+        "The program continues after catch",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a HashMap gets put(\"a\", 1) then put(\"a\", 2). What does size() return?",
+      "a": [
+       "1"
+      ],
+      "why": "The same key is replaced, so there is only one pair."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to store and read an age",
+      "lines": [
+       "HashMap<String, Integer> ages = new HashMap<>();",
+       "ages.put(\"Ann\", 12);",
+       "System.out.println(ages.get(\"Ann\"));"
+      ],
+      "why": "Create the map, put a pair, then get it."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "try {\n    System.out.println(\"A\");\n    int x = 5 / 0;\n    System.out.println(\"B\");\n} catch (ArithmeticException e) {\n    System.out.println(\"C\");\n} finally {\n    System.out.println(\"D\");\n}",
+      "o": [
+       "A, C and D, one per line",
+       "A, B, C and D",
+       "A, B and D",
+       "A and D"
+      ],
+      "a": 0,
+      "why": "The error jumps past B into catch; finally runs last."
+     }
+    ]
+   }
+  ]
+ }
+}

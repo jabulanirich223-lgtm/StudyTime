@@ -5,7 +5,7 @@ import { useGame, TIERS, tierIdx, BADGES, levelOf } from '../lib/store';
 import { useUI } from '../lib/ui';
 import { startAPSim, startDrill, startUnit, startLightning, startDateDash, startReview, hasDates } from '../lib/launch';
 import { snd } from '../lib/sound';
-import { speak, enVoices, pickVoice, voiceScore, canSpeak } from '../lib/speech';
+import { speak, enVoices, pickVoice, voiceScore, canSpeak, CHARACTER_VOICE, onVoiceStatus, voiceStatus, loadVoices, type VoiceStatus } from '../lib/speech';
 import { Tock } from '../components/Tock';
 import { Svg, SVG, CourseIcon } from '../components/Icons';
 import { CAST } from '../data/cast';
@@ -164,19 +164,25 @@ export function ProfileView() {
       <div className="row" style={{ marginTop: 10 }}><CourseIcon icon={courseIcon(g.subject)} size={48} /><b style={{ flex: 1 }}>{SUBJECTS[g.subject]?.name}</b><button className="btn" onClick={() => ui.go('courses')}>Change course</button></div>
 
       <h2 style={{ marginTop: 28, fontSize: 24 }}>Your study crew</h2>
-      <div className="crew">{CAST.map((c) => <img key={c.id} src={c.img} alt={c.name} title={c.name} />)}</div>
+      <p className="muted small">Tap anyone to hear their voice.</p>
+      <div className="crew pick">
+        <button className="crew-mem" onClick={() => speak("Hi, I'm Tock! Let's make every minute count.", 'tock')}><span className="tock-wrap" style={{ width: 70 }}><Tock mood="cheer" /></span><b>Tock</b><span className="muted small">{CHARACTER_VOICE.tock.label}</span></button>
+        {CAST.map((c) => <button key={c.id} className="crew-mem" onClick={() => speak(`Hi, I'm ${c.name}. Ready to study?`, c.id)}><img src={c.img} alt="" /><b>{c.name}</b><span className="muted small">{CHARACTER_VOICE[c.id]?.label}</span></button>)}
+      </div>
 
       <h2 style={{ marginTop: 28, fontSize: 24 }}>Settings</h2>
       <div className="toggle-row"><span>Daily goal</span><select value={g.goal} onChange={(e) => g.set({ goal: Number(e.target.value) })}>{[10, 20, 30, 50, 80].map((n) => <option key={n} value={n}>{n} XP</option>)}</select></div>
       <Toggle on={g.sound} label="Sound effects" onClick={() => g.set({ sound: !g.sound })} />
       <Toggle on={g.autoRead} label="Read questions aloud automatically" onClick={() => { g.set({ autoRead: !g.autoRead }); if (!g.autoRead) speak('Read aloud is on. I will read each question for you.'); }} />
-      <div className="toggle-row"><span>Voice</span>{voices.length ? (
+      <Toggle on={g.charVoices !== false} label="Character voices (natural AI voices, works offline)" onClick={() => { const on = g.charVoices === false; g.set({ charVoices: on }); if (on) void loadVoices(); }} />
+      {g.charVoices !== false && <VoiceState />}
+      {g.charVoices === false && <div className="toggle-row"><span>Voice</span>{voices.length ? (
         <span className="row" style={{ justifyContent: 'flex-end' }}>
           <select aria-label="Voice" value={cur?.name} style={{ maxWidth: 260 }} onChange={(e) => { g.set({ voiceName: e.target.value }); setTimeout(() => speak("Hi, I'm Tock. Is this voice better?"), 50); }}>
             {voices.map((v) => <option key={v.name} value={v.name}>{v.name.replace(/^Microsoft /, '').replace(/ - English.*$/, '').replace(/\s*\(.*?\)\s*$/, '')}{voiceScore(v) >= 10 ? ' ★' : ''} · {v.lang}</option>)}
           </select>
           <button className="speak" onClick={() => speak('The Song dynasty ran its empire with a civil service exam based on Confucian learning.')}><Svg html={SVG.speaker} /><span>Preview</span></button>
-        </span>) : <span className="muted small">No voices found</span>}</div>
+        </span>) : <span className="muted small">No voices found</span>}</div>}
       <div className="toggle-row"><span>Reading speed</span><select value={g.ttsRate} onChange={(e) => { g.set({ ttsRate: Number(e.target.value) }); setTimeout(() => speak('This is how fast I will read.'), 50); }}>{[[0.8, 'Slow'], [1, 'Normal'], [1.2, 'Fast'], [1.5, 'Very fast']].map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
       <div className="toggle-row"><span>Voice pitch</span><select value={g.ttsPitch} onChange={(e) => { g.set({ ttsPitch: Number(e.target.value) }); setTimeout(() => speak("Hi, I'm Tock. How does this sound?"), 50); }}>{[[0.8, 'Lower'], [1, 'Normal'], [1.15, 'Higher']].map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
       <Toggle on={g.unlimited} label="Unlimited hearts" onClick={() => g.set({ unlimited: !g.unlimited })} />
@@ -186,4 +192,11 @@ export function ProfileView() {
       <p className="muted small">★ marks natural-sounding voices. Progress is saved on this computer.</p>
     </>
   );
+}
+
+function VoiceState() {
+  const [st, setSt] = useState<VoiceStatus>(voiceStatus());
+  useEffect(() => onVoiceStatus(setSt), []);
+  const msg = { off: '', idle: 'Downloads once (about 90 MB) the first time someone speaks.', loading: 'Downloading voices… (one time only)', ready: 'Voices ready', failed: "Couldn't download voices. Check your internet; using your computer's voice for now." }[st];
+  return <div className="toggle-row"><span className="muted small">{msg}</span>{st !== 'ready' && st !== 'loading' && <button className="btn ghost" onClick={() => void loadVoices()}>Download now</button>}</div>;
 }

@@ -1,0 +1,2095 @@
+{
+ "sql": {
+  "name": "SQL",
+  "units": [
+   {
+    "title": "SELECT & FROM",
+    "period": "Reading data",
+    "learn": [
+     {
+      "h": "Tables and queries",
+      "b": "A database stores data in tables, like spreadsheets. Each row is one thing, like one student, and each column is one fact about it, like the name. A query is a question you ask the database, and SQL is the language you write it in."
+     },
+     {
+      "h": "SELECT and FROM",
+      "b": "SELECT lists the columns you want and FROM says which table they come from. Separate several columns with commas. A semicolon at the end finishes the statement.",
+      "code": "SELECT name, city\nFROM students;"
+     },
+     {
+      "h": "Star, alias and DISTINCT",
+      "b": "SELECT * means all columns. AS gives a column a nicer name in the result. DISTINCT removes repeated rows so each value shows once.",
+      "code": "SELECT * FROM students;\nSELECT name AS student FROM students;\nSELECT DISTINCT city FROM students;"
+     },
+     {
+      "h": "Row order",
+      "b": "A table does not promise any order unless you ask for one. Adding ORDER BY id at the end gives a fixed order, and a later unit teaches it fully. In the challenges, always add ORDER BY when you get several rows.",
+      "code": "SELECT name FROM students\nORDER BY id;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword chooses the columns to show?",
+      "o": [
+       "FROM",
+       "SELECT",
+       "SHOW",
+       "PICK"
+      ],
+      "a": 1,
+      "why": "SELECT lists the columns."
+     },
+     {
+      "t": "mc",
+      "q": "What does SELECT * FROM students return?",
+      "o": [
+       "All columns of every row",
+       "Only the first row",
+       "Only the names",
+       "The number of rows"
+      ],
+      "a": 0,
+      "why": "The star means all columns."
+     },
+     {
+      "t": "mc",
+      "q": "What does this query return?",
+      "code": "SELECT DISTINCT city\nFROM students;",
+      "o": [
+       "Every city with repeats",
+       "The number of cities",
+       "Each city once",
+       "Only Rome"
+      ],
+      "a": 2,
+      "why": "DISTINCT removes duplicate rows."
+     },
+     {
+      "t": "tf",
+      "q": "In a table, each column is one fact about the things stored, like a name.",
+      "a": true,
+      "why": "Columns are fields, rows are records."
+     },
+     {
+      "t": "match",
+      "q": "Match each SQL word to its job",
+      "pairs": [
+       [
+        "SELECT",
+        "Chooses columns"
+       ],
+       [
+        "FROM",
+        "Names the table"
+       ],
+       [
+        "DISTINCT",
+        "Removes repeated rows"
+       ],
+       [
+        "AS",
+        "Gives a column another name"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that names the table in a query.",
+      "a": [
+       "FROM"
+      ],
+      "why": "SELECT columns FROM table."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query to show names and cities",
+      "lines": [
+       "SELECT name, city",
+       "FROM students",
+       "ORDER BY id;"
+      ],
+      "why": "SELECT, then FROM, then ORDER BY."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a simple query in order",
+      "items": [
+       [
+        "SELECT",
+        1
+       ],
+       [
+        "the column names",
+        2
+       ],
+       [
+        "FROM",
+        3
+       ],
+       [
+        "the table name",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show the name and city of every student, ordered by id.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, grade INTEGER, age INTEGER, city TEXT);\nINSERT INTO students VALUES (1,'Ana',9,14,'Rome'),(2,'Ben',10,15,'Milan'),(3,'Cleo',9,14,'Rome'),(4,'Dev',11,16,'Turin'),(5,'Eli',10,15,'Rome'),(6,'Fay',11,17,'Milan');",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Ana|Rome\nBen|Milan\nCleo|Rome\nDev|Turin\nEli|Rome\nFay|Milan"
+       }
+      ],
+      "hint": "SELECT name, city FROM students ORDER BY id",
+      "solution": "SELECT name, city FROM students ORDER BY id;",
+      "why": "Two columns separated by a comma."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show each city only once, in alphabetical order.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, grade INTEGER, age INTEGER, city TEXT);\nINSERT INTO students VALUES (1,'Ana',9,14,'Rome'),(2,'Ben',10,15,'Milan'),(3,'Cleo',9,14,'Rome'),(4,'Dev',11,16,'Turin'),(5,'Eli',10,15,'Rome'),(6,'Fay',11,17,'Milan');",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Milan\nRome\nTurin"
+       }
+      ],
+      "hint": "Use DISTINCT and ORDER BY city.",
+      "solution": "SELECT DISTINCT city FROM students ORDER BY city;",
+      "why": "DISTINCT removes repeats."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that removes repeated rows from a result.",
+      "a": [
+       "DISTINCT"
+      ],
+      "why": "SELECT DISTINCT column FROM table."
+     }
+    ]
+   },
+   {
+    "title": "WHERE",
+    "period": "Reading data",
+    "learn": [
+     {
+      "h": "Filtering rows",
+      "b": "WHERE keeps only the rows where a condition is true. It goes after FROM. Without it, the query returns every row.",
+      "code": "SELECT name\nFROM students\nWHERE city = 'Rome';"
+     },
+     {
+      "h": "Comparisons",
+      "b": "SQL compares with = for equal, <> or != for not equal, and < > <= >=. Notice that a single = is used for comparing here. You can compare numbers and text.",
+      "code": "SELECT title FROM games\nWHERE price > 5;\nSELECT title FROM games\nWHERE genre <> 'arcade';"
+     },
+     {
+      "h": "Text needs quotes",
+      "b": "Text values go inside single quotes, like 'Rome'. Numbers have no quotes. Double quotes are for column names, so use single quotes for text.",
+      "code": "SELECT * FROM students\nWHERE grade = 10;"
+     },
+     {
+      "h": "Missing values",
+      "b": "A missing value is called NULL. You cannot check it with =. You must write IS NULL or IS NOT NULL.",
+      "code": "SELECT name FROM students\nWHERE city IS NOT NULL;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword filters rows by a condition?",
+      "o": [
+       "FILTER",
+       "IF",
+       "WHERE",
+       "HAVE"
+      ],
+      "a": 2,
+      "why": "WHERE keeps only matching rows."
+     },
+     {
+      "t": "mc",
+      "q": "Which operator means not equal in SQL?",
+      "o": [
+       "<>",
+       "=!",
+       "~=",
+       "=/="
+      ],
+      "a": 0,
+      "why": "<> and != both mean not equal."
+     },
+     {
+      "t": "mc",
+      "q": "How many rows does this return?",
+      "code": "SELECT name FROM students\nWHERE city = 'Rome';",
+      "o": [
+       "2",
+       "3",
+       "6",
+       "1"
+      ],
+      "a": 1,
+      "why": "Ana, Cleo and Eli live in Rome."
+     },
+     {
+      "t": "tf",
+      "q": "To find missing values you write WHERE column = NULL.",
+      "a": false,
+      "why": "You must write IS NULL."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "WHERE",
+        "Filters rows"
+       ],
+       [
+        "<>",
+        "Not equal"
+       ],
+       [
+        "'Rome'",
+        "A text value"
+       ],
+       [
+        "IS NULL",
+        "Checks for a missing value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the two words that test for a missing value in a column (after the column name).",
+      "a": [
+       "IS NULL"
+      ],
+      "why": "IS NULL"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query for students in grade 10",
+      "lines": [
+       "SELECT name",
+       "FROM students",
+       "WHERE grade = 10",
+       "ORDER BY id;"
+      ],
+      "why": "WHERE comes after FROM."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a filtered query in order",
+      "items": [
+       [
+        "SELECT columns",
+        1
+       ],
+       [
+        "FROM table",
+        2
+       ],
+       [
+        "WHERE condition",
+        3
+       ],
+       [
+        "ORDER BY",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show the names of students who live in Rome, ordered by id.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, grade INTEGER, age INTEGER, city TEXT);\nINSERT INTO students VALUES (1,'Ana',9,14,'Rome'),(2,'Ben',10,15,'Milan'),(3,'Cleo',9,14,'Rome'),(4,'Dev',11,16,'Turin'),(5,'Eli',10,15,'Rome'),(6,'Fay',11,17,'Milan');",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Ana\nCleo\nEli"
+       }
+      ],
+      "hint": "WHERE city = 'Rome'",
+      "solution": "SELECT name FROM students WHERE city = 'Rome' ORDER BY id;",
+      "why": "Text goes in single quotes."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show the titles of games that cost more than 5, in alphabetical order.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Cube Farm\nPixel Quest\nSky Racer\nTurbo Kart"
+       }
+      ],
+      "hint": "WHERE price > 5",
+      "solution": "SELECT title FROM games WHERE price > 5 ORDER BY title;",
+      "why": "Numbers need no quotes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that filters rows by a condition.",
+      "a": [
+       "WHERE"
+      ],
+      "why": "WHERE keeps only the matching rows."
+     }
+    ]
+   },
+   {
+    "title": "AND, OR, IN, BETWEEN, LIKE",
+    "period": "Reading data",
+    "learn": [
+     {
+      "h": "AND and OR",
+      "b": "AND needs both conditions to be true. OR needs at least one. Use brackets when mixing them, because AND is checked before OR.",
+      "code": "SELECT title FROM games\nWHERE genre = 'arcade' AND price < 5;"
+     },
+     {
+      "h": "IN",
+      "b": "IN checks if a value is in a list. It is a shorter way to write many ORs. NOT IN does the opposite.",
+      "code": "SELECT title FROM games\nWHERE genre IN ('racing', 'rpg');"
+     },
+     {
+      "h": "BETWEEN",
+      "b": "BETWEEN checks a range and includes both ends. So BETWEEN 15 AND 16 matches 15 and 16. It works for numbers and dates.",
+      "code": "SELECT name FROM students\nWHERE age BETWEEN 15 AND 16;"
+     },
+     {
+      "h": "LIKE",
+      "b": "LIKE searches text with patterns. The percent sign stands for any number of characters. The underscore stands for exactly one character.",
+      "code": "SELECT title FROM games\nWHERE title LIKE 'S%';"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword needs both conditions to be true?",
+      "o": [
+       "OR",
+       "AND",
+       "IN",
+       "LIKE"
+      ],
+      "a": 1,
+      "why": "AND is true only if both sides are."
+     },
+     {
+      "t": "mc",
+      "q": "Does BETWEEN 15 AND 17 include 17?",
+      "o": [
+       "Yes, both ends are included",
+       "No, it stops at 16",
+       "Only if you add EQUAL",
+       "Only for text"
+      ],
+      "a": 0,
+      "why": "BETWEEN includes both ends."
+     },
+     {
+      "t": "mc",
+      "q": "Which titles does this return?",
+      "code": "SELECT title FROM games\nWHERE title LIKE 'S%';",
+      "o": [
+       "Titles that end with S",
+       "Titles that contain only S",
+       "Titles that start with S",
+       "Titles with exactly one letter"
+      ],
+      "a": 2,
+      "why": "The percent sign matches anything after the S."
+     },
+     {
+      "t": "tf",
+      "q": "IN ('racing', 'rpg') matches rows whose genre is racing or rpg.",
+      "a": true,
+      "why": "IN checks against a list of values."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its meaning",
+      "pairs": [
+       [
+        "AND",
+        "Both conditions true"
+       ],
+       [
+        "OR",
+        "At least one true"
+       ],
+       [
+        "IN",
+        "Value is in a list"
+       ],
+       [
+        "%",
+        "Any number of characters"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used with a list of values in brackets.",
+      "a": [
+       "IN"
+      ],
+      "why": "WHERE genre IN ('a', 'b')"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query for games that are racing or rpg",
+      "lines": [
+       "SELECT title",
+       "FROM games",
+       "WHERE genre IN ('racing', 'rpg')",
+       "ORDER BY title;"
+      ],
+      "why": "The list goes after IN."
+     },
+     {
+      "t": "order",
+      "q": "Put these in the order SQL reads a query",
+      "items": [
+       [
+        "SELECT",
+        1
+       ],
+       [
+        "FROM",
+        2
+       ],
+       [
+        "WHERE",
+        3
+       ],
+       [
+        "ORDER BY",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show titles of racing or rpg games with rating 8 or more, in alphabetical order.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Pixel Quest\nTurbo Kart"
+       }
+      ],
+      "hint": "Use IN for the genres and AND for the rating.",
+      "solution": "SELECT title FROM games WHERE genre IN ('racing', 'rpg') AND rating >= 8 ORDER BY title;",
+      "why": "IN plus AND combine a list and a number test."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show titles starting with S, in alphabetical order.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Sky Racer\nSpace Run"
+       }
+      ],
+      "hint": "LIKE 'S%'",
+      "solution": "SELECT title FROM games WHERE title LIKE 'S%' ORDER BY title;",
+      "why": "The percent sign matches anything."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that checks if age is in a range, like age ___ 15 AND 16.",
+      "a": [
+       "BETWEEN"
+      ],
+      "why": "BETWEEN includes both ends."
+     }
+    ]
+   },
+   {
+    "title": "ORDER BY & LIMIT",
+    "period": "Reading data",
+    "learn": [
+     {
+      "h": "Sorting with ORDER BY",
+      "b": "ORDER BY sorts the result by a column. The default is ascending, from small to large or A to Z. Add DESC for the other way.",
+      "code": "SELECT title, price\nFROM games\nORDER BY price DESC;"
+     },
+     {
+      "h": "Several sort columns",
+      "b": "You can sort by more than one column, separated by commas. The second column breaks ties in the first. Each column can have its own ASC or DESC.",
+      "code": "SELECT title, rating FROM games\nORDER BY rating DESC, title ASC;"
+     },
+     {
+      "h": "LIMIT",
+      "b": "LIMIT keeps only the first rows of the result. Together with ORDER BY it finds the top or bottom items, like the 3 best rated games. It always goes at the very end.",
+      "code": "SELECT title FROM games\nORDER BY rating DESC\nLIMIT 3;"
+     },
+     {
+      "h": "OFFSET",
+      "b": "OFFSET skips rows before LIMIT starts counting. It is used for pages: LIMIT 3 OFFSET 3 gives rows four to six. Always sort first so the pages are stable.",
+      "code": "SELECT title FROM games\nORDER BY id\nLIMIT 3 OFFSET 3;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword sorts the result?",
+      "o": [
+       "SORT BY",
+       "GROUP BY",
+       "ARRANGE",
+       "ORDER BY"
+      ],
+      "a": 3,
+      "why": "ORDER BY sorts rows."
+     },
+     {
+      "t": "mc",
+      "q": "How do you sort from largest to smallest?",
+      "o": [
+       "Add DESC",
+       "Add ASC",
+       "Add LIMIT",
+       "Add REVERSE"
+      ],
+      "a": 0,
+      "why": "DESC means descending."
+     },
+     {
+      "t": "mc",
+      "q": "What does this return?",
+      "code": "SELECT title FROM games\nORDER BY price\nLIMIT 2;",
+      "o": [
+       "The 2 most expensive titles",
+       "The 2 cheapest game titles",
+       "All titles",
+       "Two random titles"
+      ],
+      "a": 1,
+      "why": "Ascending price, then only the first 2 rows."
+     },
+     {
+      "t": "tf",
+      "q": "LIMIT 3 OFFSET 3 returns rows four to six.",
+      "a": true,
+      "why": "OFFSET skips the first 3 rows."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "ORDER BY",
+        "Sorts rows"
+       ],
+       [
+        "DESC",
+        "Largest first"
+       ],
+       [
+        "LIMIT",
+        "Keeps only some rows"
+       ],
+       [
+        "OFFSET",
+        "Skips rows at the start"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that keeps only the first few rows.",
+      "a": [
+       "LIMIT"
+      ],
+      "why": "LIMIT 3"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query for the 3 most expensive games",
+      "lines": [
+       "SELECT title",
+       "FROM games",
+       "ORDER BY price DESC",
+       "LIMIT 3;"
+      ],
+      "why": "Sort first, then limit."
+     },
+     {
+      "t": "order",
+      "q": "Put these query parts in order",
+      "items": [
+       [
+        "SELECT",
+        1
+       ],
+       [
+        "FROM",
+        2
+       ],
+       [
+        "ORDER BY",
+        3
+       ],
+       [
+        "LIMIT",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show the title and rating of the top 3 rated games. Ties are broken by title A to Z.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Dino Dash|9\nPixel Quest|9\nSpace Run|8"
+       }
+      ],
+      "hint": "ORDER BY rating DESC, title LIMIT 3",
+      "solution": "SELECT title, rating FROM games ORDER BY rating DESC, title ASC LIMIT 3;",
+      "why": "The second column breaks ties."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show the 2 cheapest games' titles, cheapest first.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Block Tag\nDino Dash"
+       }
+      ],
+      "hint": "ORDER BY price LIMIT 2",
+      "solution": "SELECT title FROM games ORDER BY price ASC LIMIT 2;",
+      "why": "Ascending is the default."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the query for the oldest student name",
+      "lines": [
+       "SELECT name",
+       "FROM students",
+       "ORDER BY age DESC",
+       "LIMIT 1;"
+      ],
+      "why": "Oldest means highest age, so sort DESC."
+     }
+    ]
+   },
+   {
+    "title": "Aggregates: COUNT, SUM, AVG",
+    "period": "Reading data",
+    "learn": [
+     {
+      "h": "What an aggregate does",
+      "b": "An aggregate function turns many rows into one value. The result is a single row. The common ones are COUNT, SUM, AVG, MIN and MAX.",
+      "code": "SELECT COUNT(*) FROM students;"
+     },
+     {
+      "h": "COUNT",
+      "b": "COUNT(*) counts rows. COUNT(column) counts rows where that column is not NULL. Add WHERE first to count only some rows.",
+      "code": "SELECT COUNT(*)\nFROM students\nWHERE city = 'Rome';"
+     },
+     {
+      "h": "SUM and AVG",
+      "b": "SUM adds up a number column. AVG gives the average and may have decimals. Both skip NULL values.",
+      "code": "SELECT SUM(qty) FROM orders;\nSELECT AVG(price) FROM games;"
+     },
+     {
+      "h": "MIN and MAX",
+      "b": "MIN gives the smallest value and MAX the largest. They work on numbers and also on text. You can do math with the results.",
+      "code": "SELECT MAX(price) - MIN(price)\nFROM games;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which function counts rows?",
+      "o": [
+       "TOTAL",
+       "NUMBER",
+       "COUNT",
+       "SIZE"
+      ],
+      "a": 2,
+      "why": "COUNT(*) counts rows."
+     },
+     {
+      "t": "mc",
+      "q": "What does SUM(qty) do?",
+      "o": [
+       "Adds up the qty column",
+       "Counts the qty rows",
+       "Finds the largest qty",
+       "Averages qty"
+      ],
+      "a": 0,
+      "why": "SUM adds the values."
+     },
+     {
+      "t": "mc",
+      "q": "What does this return?",
+      "code": "SELECT COUNT(*)\nFROM students\nWHERE city = 'Rome';",
+      "o": [
+       "6",
+       "3",
+       "1",
+       "Rome"
+      ],
+      "a": 1,
+      "why": "Three students live in Rome."
+     },
+     {
+      "t": "tf",
+      "q": "An aggregate function like MAX turns many rows into one value.",
+      "a": true,
+      "why": "Aggregates summarise rows."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "COUNT(*)",
+        "Counts rows"
+       ],
+       [
+        "SUM",
+        "Adds numbers"
+       ],
+       [
+        "AVG",
+        "Average"
+       ],
+       [
+        "MAX",
+        "Largest value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that gives the smallest value of a column.",
+      "a": [
+       "MIN"
+      ],
+      "why": "MIN(price)"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query that counts racing games",
+      "lines": [
+       "SELECT COUNT(*)",
+       "FROM games",
+       "WHERE genre = 'racing';"
+      ],
+      "why": "Count rows after filtering."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an aggregate query in order",
+      "items": [
+       [
+        "Pick rows with FROM",
+        1
+       ],
+       [
+        "Filter with WHERE",
+        2
+       ],
+       [
+        "Apply the aggregate",
+        3
+       ],
+       [
+        "Get one result value",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: count how many students live in Rome.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, grade INTEGER, age INTEGER, city TEXT);\nINSERT INTO students VALUES (1,'Ana',9,14,'Rome'),(2,'Ben',10,15,'Milan'),(3,'Cleo',9,14,'Rome'),(4,'Dev',11,16,'Turin'),(5,'Eli',10,15,'Rome'),(6,'Fay',11,17,'Milan');",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "3"
+       }
+      ],
+      "hint": "COUNT(*) with WHERE",
+      "solution": "SELECT COUNT(*) FROM students WHERE city = 'Rome';",
+      "why": "Filter first, then count."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show the total qty of all pen orders.",
+      "setup": "CREATE TABLE orders (id INTEGER PRIMARY KEY, customer TEXT, product TEXT, qty INTEGER, price INTEGER);\nINSERT INTO orders VALUES (1,'Ana','pen',3,2),(2,'Ben','book',1,12),(3,'Ana','book',2,12),(4,'Cleo','pen',10,2),(5,'Ben','bag',1,30),(6,'Dev','pen',5,2),(7,'Ana','bag',1,30);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "18"
+       }
+      ],
+      "hint": "SUM(qty) WHERE product = 'pen'",
+      "solution": "SELECT SUM(qty) FROM orders WHERE product = 'pen';",
+      "why": "SUM adds values of the matching rows."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the function that gives the average of a column.",
+      "a": [
+       "AVG"
+      ],
+      "why": "AVG(price)"
+     }
+    ]
+   },
+   {
+    "title": "GROUP BY & HAVING",
+    "period": "Reading data",
+    "learn": [
+     {
+      "h": "Groups",
+      "b": "GROUP BY splits rows into groups with the same value, and an aggregate runs once for each group. For example, one count per genre. Every column in SELECT must be in GROUP BY or be inside an aggregate.",
+      "code": "SELECT genre, COUNT(*)\nFROM games\nGROUP BY genre;"
+     },
+     {
+      "h": "Aggregates per group",
+      "b": "Put SUM, AVG or others next to the group column to get totals per group. The result has one row per group. Add ORDER BY to fix the order.",
+      "code": "SELECT customer, SUM(qty)\nFROM orders\nGROUP BY customer\nORDER BY customer;"
+     },
+     {
+      "h": "WHERE or HAVING",
+      "b": "WHERE filters rows before they are grouped. HAVING filters the groups after the aggregates are calculated. So a test like SUM(qty) > 3 must go in HAVING.",
+      "code": "SELECT customer, SUM(qty)\nFROM orders\nGROUP BY customer\nHAVING SUM(qty) > 3;"
+     },
+     {
+      "h": "Both together",
+      "b": "A query can use both. WHERE removes rows first, then GROUP BY makes groups, then HAVING removes groups. The clause order is fixed: WHERE, GROUP BY, HAVING, ORDER BY.",
+      "code": "SELECT product, COUNT(*)\nFROM orders\nWHERE qty >= 1\nGROUP BY product\nHAVING COUNT(*) >= 2;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does GROUP BY genre do with an aggregate like COUNT(*)?",
+      "o": [
+       "One count for all rows",
+       "One count for each genre",
+       "Sorts by genre only",
+       "Deletes duplicate genres"
+      ],
+      "a": 1,
+      "why": "The aggregate runs once per group."
+     },
+     {
+      "t": "mc",
+      "q": "Which clause filters groups after aggregating?",
+      "o": [
+       "HAVING",
+       "WHERE",
+       "LIMIT",
+       "DISTINCT"
+      ],
+      "a": 0,
+      "why": "HAVING works on aggregate results."
+     },
+     {
+      "t": "mc",
+      "q": "What does this return?",
+      "code": "SELECT customer, SUM(qty)\nFROM orders\nGROUP BY customer;",
+      "o": [
+       "One row in total",
+       "One row per product",
+       "One row per customer with their total qty",
+       "All order rows"
+      ],
+      "a": 2,
+      "why": "It groups by customer and sums qty in each group."
+     },
+     {
+      "t": "tf",
+      "q": "WHERE is used to filter on SUM(qty) after grouping.",
+      "a": false,
+      "why": "HAVING filters on aggregates."
+     },
+     {
+      "t": "match",
+      "q": "Match each clause to its job",
+      "pairs": [
+       [
+        "GROUP BY",
+        "Makes groups"
+       ],
+       [
+        "HAVING",
+        "Filters groups"
+       ],
+       [
+        "WHERE",
+        "Filters rows first"
+       ],
+       [
+        "COUNT(*)",
+        "Counts rows in a group"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that filters groups.",
+      "a": [
+       "HAVING"
+      ],
+      "why": "HAVING SUM(qty) > 3"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query for customers with more than 3 items",
+      "lines": [
+       "SELECT customer, SUM(qty)",
+       "FROM orders",
+       "GROUP BY customer",
+       "HAVING SUM(qty) > 3;"
+      ],
+      "why": "HAVING comes after GROUP BY."
+     },
+     {
+      "t": "order",
+      "q": "Put these clauses in the correct order",
+      "items": [
+       [
+        "WHERE",
+        1
+       ],
+       [
+        "GROUP BY",
+        2
+       ],
+       [
+        "HAVING",
+        3
+       ],
+       [
+        "ORDER BY",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show each genre and how many games it has, ordered by genre.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "arcade|3\nracing|2\nrpg|1\nsim|1"
+       }
+      ],
+      "hint": "GROUP BY genre",
+      "solution": "SELECT genre, COUNT(*) FROM games GROUP BY genre ORDER BY genre;",
+      "why": "One row per genre."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show each customer and total qty, only customers with a total above 3, ordered by customer.",
+      "setup": "CREATE TABLE orders (id INTEGER PRIMARY KEY, customer TEXT, product TEXT, qty INTEGER, price INTEGER);\nINSERT INTO orders VALUES (1,'Ana','pen',3,2),(2,'Ben','book',1,12),(3,'Ana','book',2,12),(4,'Cleo','pen',10,2),(5,'Ben','bag',1,30),(6,'Dev','pen',5,2),(7,'Ana','bag',1,30);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Ana|6\nCleo|10\nDev|5"
+       }
+      ],
+      "hint": "Put the test in HAVING.",
+      "solution": "SELECT customer, SUM(qty) FROM orders GROUP BY customer HAVING SUM(qty) > 3 ORDER BY customer;",
+      "why": "HAVING filters the sums."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the clause that makes groups.",
+      "a": [
+       "GROUP BY"
+      ],
+      "why": "GROUP BY column"
+     }
+    ]
+   },
+   {
+    "title": "INNER JOIN",
+    "period": "Combining data",
+    "learn": [
+     {
+      "h": "Why join",
+      "b": "Real databases split data across tables. Here students holds names and scores holds points, linked by student_id. A JOIN puts matching rows together in one result."
+     },
+     {
+      "h": "INNER JOIN ... ON",
+      "b": "INNER JOIN keeps only rows that have a match in both tables. ON says which columns must be equal. Name columns with the table name, like students.id, when both tables have a column of that name.",
+      "code": "SELECT students.name, scores.points\nFROM students\nINNER JOIN scores\n  ON students.id = scores.student_id;"
+     },
+     {
+      "h": "Aliases",
+      "b": "A short alias after the table name saves typing. Then you write s.name instead of students.name. The alias works everywhere in the query.",
+      "code": "SELECT s.name, sc.points\nFROM students s\nJOIN scores sc ON s.id = sc.student_id;"
+     },
+     {
+      "h": "Join then filter or group",
+      "b": "After joining, you can use WHERE, GROUP BY and aggregates as usual. Students with no match do not appear in an INNER JOIN. Plain JOIN means INNER JOIN.",
+      "code": "SELECT s.name, SUM(sc.points)\nFROM students s\nJOIN scores sc ON s.id = sc.student_id\nGROUP BY s.name;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which clause says how two tables match?",
+      "o": [
+       "WHERE JOIN",
+       "LINK",
+       "ON",
+       "USING TABLE"
+      ],
+      "a": 2,
+      "why": "ON gives the matching condition."
+     },
+     {
+      "t": "mc",
+      "q": "What does INNER JOIN keep?",
+      "o": [
+       "Only rows with a match in both tables",
+       "All rows of the first table",
+       "All rows of both tables",
+       "Only rows without a match"
+      ],
+      "a": 0,
+      "why": "Unmatched rows are dropped."
+     },
+     {
+      "t": "mc",
+      "q": "In this query, what is s?",
+      "code": "SELECT s.name\nFROM students s\nJOIN scores sc\n  ON s.id = sc.student_id;",
+      "o": [
+       "A new table",
+       "A short alias for students",
+       "A column",
+       "A function"
+      ],
+      "a": 1,
+      "why": "The alias is written after the table name."
+     },
+     {
+      "t": "tf",
+      "q": "Plain JOIN without a word before it means INNER JOIN.",
+      "a": true,
+      "why": "JOIN is the same as INNER JOIN."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its job",
+      "pairs": [
+       [
+        "JOIN",
+        "Combines tables"
+       ],
+       [
+        "ON",
+        "Gives the matching condition"
+       ],
+       [
+        "alias",
+        "Short name for a table"
+       ],
+       [
+        "student_id",
+        "Links a score to a student"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that follows JOIN table and gives the matching condition.",
+      "a": [
+       "ON"
+      ],
+      "why": "JOIN scores ON ..."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the join query",
+      "lines": [
+       "SELECT s.name, sc.points",
+       "FROM students s",
+       "JOIN scores sc",
+       "ON s.id = sc.student_id",
+       "ORDER BY s.name, sc.points;"
+      ],
+      "why": "FROM, JOIN, ON, then ORDER BY."
+     },
+     {
+      "t": "order",
+      "q": "Put these parts of a join in order",
+      "items": [
+       [
+        "SELECT columns",
+        1
+       ],
+       [
+        "FROM first table",
+        2
+       ],
+       [
+        "JOIN second table",
+        3
+       ],
+       [
+        "ON matching condition",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show each student's name and points for the math subject, ordered by name.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, city TEXT);\nINSERT INTO students VALUES (1,'Ana','Rome'),(2,'Ben','Milan'),(3,'Cleo','Rome'),(4,'Dev','Turin');\nCREATE TABLE scores (id INTEGER PRIMARY KEY, student_id INTEGER, subject TEXT, points INTEGER);\nINSERT INTO scores VALUES (1,1,'math',90),(2,1,'art',70),(3,2,'math',60),(4,3,'art',85),(5,3,'math',75);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Ana|90\nBen|60\nCleo|75"
+       }
+      ],
+      "hint": "JOIN scores ON students.id = scores.student_id",
+      "solution": "SELECT students.name, scores.points FROM students INNER JOIN scores ON students.id = scores.student_id WHERE scores.subject = 'math' ORDER BY students.name;",
+      "why": "Filter after joining."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show each student with their total points, ordered by name. Students with no scores are not needed.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, city TEXT);\nINSERT INTO students VALUES (1,'Ana','Rome'),(2,'Ben','Milan'),(3,'Cleo','Rome'),(4,'Dev','Turin');\nCREATE TABLE scores (id INTEGER PRIMARY KEY, student_id INTEGER, subject TEXT, points INTEGER);\nINSERT INTO scores VALUES (1,1,'math',90),(2,1,'art',70),(3,2,'math',60),(4,3,'art',85),(5,3,'math',75);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Ana|160\nBen|60\nCleo|160"
+       }
+      ],
+      "hint": "JOIN, then GROUP BY s.name",
+      "solution": "SELECT s.name, SUM(sc.points) FROM students s JOIN scores sc ON s.id = sc.student_id GROUP BY s.name ORDER BY s.name;",
+      "why": "Join first, then sum."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the word before JOIN that keeps only rows that match in both tables.",
+      "a": [
+       "INNER"
+      ],
+      "why": "INNER JOIN keeps matches only."
+     }
+    ]
+   },
+   {
+    "title": "LEFT JOIN",
+    "period": "Combining data",
+    "learn": [
+     {
+      "h": "Keeping everyone",
+      "b": "A LEFT JOIN keeps every row of the left table, the one in FROM, even when it has no match. The columns of the right table are NULL for those rows. Use it when you must not lose rows.",
+      "code": "SELECT s.name, sc.points\nFROM students s\nLEFT JOIN scores sc\n  ON s.id = sc.student_id;"
+     },
+     {
+      "h": "Counting with LEFT JOIN",
+      "b": "Count a column of the right table, not COUNT(*). COUNT(sc.id) skips NULL, so a student with no scores gets 0. COUNT(*) would give 1 for them.",
+      "code": "SELECT s.name, COUNT(sc.id)\nFROM students s\nLEFT JOIN scores sc ON s.id = sc.student_id\nGROUP BY s.name;"
+     },
+     {
+      "h": "Finding missing matches",
+      "b": "To find rows with no match, LEFT JOIN and then keep rows where the right side is NULL. This answers questions like which students have no scores. Use IS NULL for this test.",
+      "code": "SELECT s.name\nFROM students s\nLEFT JOIN scores sc ON s.id = sc.student_id\nWHERE sc.id IS NULL;"
+     },
+     {
+      "h": "Table order matters",
+      "b": "LEFT JOIN depends on which table is on the left. Swapping the tables changes which rows are kept. A RIGHT JOIN does the opposite, but SQLite works well with LEFT JOIN, so write the main table first."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does LEFT JOIN keep?",
+      "o": [
+       "All rows of the left table",
+       "Only matching rows",
+       "All rows of the right table",
+       "No rows without a match"
+      ],
+      "a": 0,
+      "why": "Left rows are always kept."
+     },
+     {
+      "t": "mc",
+      "q": "What do right-table columns show for a left row with no match?",
+      "o": [
+       "0",
+       "NULL",
+       "An empty string",
+       "The last value"
+      ],
+      "a": 1,
+      "why": "Missing matches become NULL."
+     },
+     {
+      "t": "mc",
+      "q": "What does this return for a student with no scores?",
+      "code": "SELECT s.name, COUNT(sc.id)\nFROM students s\nLEFT JOIN scores sc\n  ON s.id = sc.student_id\nGROUP BY s.name;",
+      "o": [
+       "Nothing",
+       "The name and 1",
+       "The name and 0",
+       "An error"
+      ],
+      "a": 2,
+      "why": "COUNT of a column skips NULL, giving 0."
+     },
+     {
+      "t": "tf",
+      "q": "An INNER JOIN would drop students that have no scores.",
+      "a": true,
+      "why": "Only matching rows survive an INNER JOIN."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "LEFT JOIN",
+        "Keeps all left rows"
+       ],
+       [
+        "NULL",
+        "Missing value"
+       ],
+       [
+        "IS NULL",
+        "Tests for no match"
+       ],
+       [
+        "COUNT(col)",
+        "Skips NULL values"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the word that fills in: sc.id ___ NULL (to find students without scores).",
+      "a": [
+       "IS"
+      ],
+      "why": "IS NULL"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query for students with no scores",
+      "lines": [
+       "SELECT s.name",
+       "FROM students s",
+       "LEFT JOIN scores sc ON s.id = sc.student_id",
+       "WHERE sc.id IS NULL;"
+      ],
+      "why": "LEFT JOIN, then keep the NULL side."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of finding unmatched rows in order",
+      "items": [
+       [
+        "Start with the main table",
+        1
+       ],
+       [
+        "LEFT JOIN the other table",
+        2
+       ],
+       [
+        "Keep rows where the right id IS NULL",
+        3
+       ],
+       [
+        "Read the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show each student and how many scores they have, ordered by name. Include students with 0.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, city TEXT);\nINSERT INTO students VALUES (1,'Ana','Rome'),(2,'Ben','Milan'),(3,'Cleo','Rome'),(4,'Dev','Turin');\nCREATE TABLE scores (id INTEGER PRIMARY KEY, student_id INTEGER, subject TEXT, points INTEGER);\nINSERT INTO scores VALUES (1,1,'math',90),(2,1,'art',70),(3,2,'math',60),(4,3,'art',85),(5,3,'math',75);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Ana|2\nBen|1\nCleo|2\nDev|0"
+       }
+      ],
+      "hint": "LEFT JOIN and COUNT(sc.id)",
+      "solution": "SELECT s.name, COUNT(sc.id) FROM students s LEFT JOIN scores sc ON s.id = sc.student_id GROUP BY s.name ORDER BY s.name;",
+      "why": "COUNT of a right column gives 0 for no match."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show the names of students with no scores at all.",
+      "setup": "CREATE TABLE students (id INTEGER PRIMARY KEY, name TEXT, city TEXT);\nINSERT INTO students VALUES (1,'Ana','Rome'),(2,'Ben','Milan'),(3,'Cleo','Rome'),(4,'Dev','Turin');\nCREATE TABLE scores (id INTEGER PRIMARY KEY, student_id INTEGER, subject TEXT, points INTEGER);\nINSERT INTO scores VALUES (1,1,'math',90),(2,1,'art',70),(3,2,'math',60),(4,3,'art',85),(5,3,'math',75);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Dev"
+       }
+      ],
+      "hint": "WHERE sc.id IS NULL",
+      "solution": "SELECT s.name FROM students s LEFT JOIN scores sc ON s.id = sc.student_id WHERE sc.id IS NULL ORDER BY s.name;",
+      "why": "NULL on the right side means no match."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the word before JOIN that keeps every row of the first table.",
+      "a": [
+       "LEFT"
+      ],
+      "why": "LEFT JOIN"
+     }
+    ]
+   },
+   {
+    "title": "Subqueries",
+    "period": "Combining data",
+    "learn": [
+     {
+      "h": "A query inside a query",
+      "b": "A subquery is a SELECT inside brackets, used inside another query. The inner query runs first and its result is used by the outer query. This lets you compare with a value you do not know in advance."
+     },
+     {
+      "h": "A single value",
+      "b": "If the subquery returns one value, use it with a comparison. For example, games that cost more than the average price. The brackets are required.",
+      "code": "SELECT title FROM games\nWHERE price > (SELECT AVG(price) FROM games)\nORDER BY title;"
+     },
+     {
+      "h": "A list of values",
+      "b": "If the subquery returns a column of values, use IN. The outer query keeps rows whose value is in that list. NOT IN keeps those that are not.",
+      "code": "SELECT name FROM students\nWHERE id IN (SELECT student_id FROM scores)\nORDER BY name;"
+     },
+     {
+      "h": "The highest or lowest",
+      "b": "A common pattern is comparing with MAX or MIN. This finds all rows with the best value, even if there is a tie. It is safer than LIMIT 1 for ties.",
+      "code": "SELECT title FROM games\nWHERE rating = (SELECT MAX(rating) FROM games)\nORDER BY title;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a subquery?",
+      "o": [
+       "A table with fewer rows",
+       "A query inside another query",
+       "A second database",
+       "A sorted result"
+      ],
+      "a": 1,
+      "why": "It is a SELECT in brackets."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword compares with a column of values from a subquery?",
+      "o": [
+       "BETWEEN",
+       "LIKE",
+       "IN",
+       "DISTINCT"
+      ],
+      "a": 2,
+      "why": "IN checks if a value is in the list."
+     },
+     {
+      "t": "mc",
+      "q": "What does this return?",
+      "code": "SELECT title FROM games\nWHERE rating = (\n  SELECT MAX(rating) FROM games\n);",
+      "o": [
+       "Games with the highest rating",
+       "The highest rating number",
+       "All games",
+       "The cheapest game"
+      ],
+      "a": 0,
+      "why": "It keeps games whose rating equals the maximum."
+     },
+     {
+      "t": "tf",
+      "q": "The inner query runs first and its result is used by the outer query.",
+      "a": true,
+      "why": "Subqueries are evaluated first."
+     },
+     {
+      "t": "match",
+      "q": "Match each pattern to its use",
+      "pairs": [
+       [
+        "(SELECT AVG(price) ...)",
+        "One value to compare with"
+       ],
+       [
+        "IN (SELECT ...)",
+        "A list of values"
+       ],
+       [
+        "MAX",
+        "Finds the highest value"
+       ],
+       [
+        "NOT IN",
+        "Rows not in the list"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to compare a value with a subquery that returns many values.",
+      "a": [
+       "IN"
+      ],
+      "why": "WHERE id IN (SELECT ...)"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the query for games priced above average",
+      "lines": [
+       "SELECT title",
+       "FROM games",
+       "WHERE price > (SELECT AVG(price) FROM games)",
+       "ORDER BY title;"
+      ],
+      "why": "The subquery goes in brackets in WHERE."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in the order SQL does them",
+      "items": [
+       [
+        "Run the inner query",
+        1
+       ],
+       [
+        "Get its result",
+        2
+       ],
+       [
+        "Run the outer query with it",
+        3
+       ],
+       [
+        "Show the final rows",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show titles of games priced above the average price, in alphabetical order.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Cube Farm\nPixel Quest\nSky Racer\nTurbo Kart"
+       }
+      ],
+      "hint": "WHERE price > (SELECT AVG(price) FROM games)",
+      "solution": "SELECT title FROM games WHERE price > (SELECT AVG(price) FROM games) ORDER BY title;",
+      "why": "Brackets around the subquery."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: show titles of games with the highest rating, in alphabetical order.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write your query here\n",
+      "tests": [
+       {
+        "expect": "Dino Dash\nPixel Quest"
+       }
+      ],
+      "hint": "WHERE rating = (SELECT MAX(rating) ...)",
+      "solution": "SELECT title FROM games WHERE rating = (SELECT MAX(rating) FROM games) ORDER BY title;",
+      "why": "Ties all show up."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the query for students that have at least one score",
+      "lines": [
+       "SELECT name",
+       "FROM students",
+       "WHERE id IN (SELECT student_id FROM scores)",
+       "ORDER BY name;"
+      ],
+      "why": "IN takes the list from the subquery."
+     }
+    ]
+   },
+   {
+    "title": "INSERT, UPDATE, DELETE",
+    "period": "Changing data",
+    "learn": [
+     {
+      "h": "INSERT",
+      "b": "INSERT INTO adds a new row. List the columns, then the values in the same order. Text goes in single quotes.",
+      "code": "INSERT INTO games (id, title, genre, price, rating)\nVALUES (8, 'Star Hop', 'arcade', 4, 7);"
+     },
+     {
+      "h": "UPDATE",
+      "b": "UPDATE changes values in existing rows. SET gives the new values, and WHERE says which rows. If you forget WHERE, every row changes, which is a famous mistake.",
+      "code": "UPDATE games\nSET price = 4\nWHERE title = 'Space Run';"
+     },
+     {
+      "h": "DELETE",
+      "b": "DELETE FROM removes rows that match WHERE. Without WHERE it deletes every row in the table. Always test the WHERE with a SELECT first.",
+      "code": "DELETE FROM games\nWHERE id = 3;"
+     },
+     {
+      "h": "Checking your work",
+      "b": "These statements do not show rows by themselves. Run a SELECT afterwards to see the change. In the challenges, the final SELECT is already written for you, and you write the statement before it.",
+      "code": "UPDATE games SET price = 6 WHERE id = 1;\nSELECT price FROM games WHERE id = 1;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which statement adds a new row?",
+      "o": [
+       "ADD ROW",
+       "UPDATE",
+       "CREATE ROW",
+       "INSERT INTO"
+      ],
+      "a": 3,
+      "why": "INSERT INTO adds rows."
+     },
+     {
+      "t": "mc",
+      "q": "What happens if you run UPDATE without WHERE?",
+      "o": [
+       "Every row is changed",
+       "Nothing changes",
+       "Only the first row changes",
+       "An error always happens"
+      ],
+      "a": 0,
+      "why": "Without WHERE all rows are updated."
+     },
+     {
+      "t": "mc",
+      "q": "Which rows does this remove?",
+      "code": "DELETE FROM games\nWHERE id = 3;",
+      "o": [
+       "All rows",
+       "The row with id 3",
+       "Rows with price 3",
+       "No rows"
+      ],
+      "a": 1,
+      "why": "WHERE id = 3 matches one row."
+     },
+     {
+      "t": "tf",
+      "q": "DELETE FROM games without WHERE removes every row.",
+      "a": true,
+      "why": "No condition means all rows."
+     },
+     {
+      "t": "match",
+      "q": "Match each statement to its job",
+      "pairs": [
+       [
+        "INSERT",
+        "Adds a row"
+       ],
+       [
+        "UPDATE",
+        "Changes existing rows"
+       ],
+       [
+        "DELETE",
+        "Removes rows"
+       ],
+       [
+        "SET",
+        "Gives new values in UPDATE"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword in UPDATE that introduces the new values.",
+      "a": [
+       "SET"
+      ],
+      "why": "UPDATE t SET col = value"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the statement that sets the price of game 1 to 6",
+      "lines": [
+       "UPDATE games",
+       "SET price = 6",
+       "WHERE id = 1;"
+      ],
+      "why": "UPDATE, SET, then WHERE."
+     },
+     {
+      "t": "order",
+      "q": "Put the safe delete steps in order",
+      "items": [
+       [
+        "Write a SELECT with the WHERE",
+        1
+       ],
+       [
+        "Check the rows it returns",
+        2
+       ],
+       [
+        "Change SELECT to DELETE",
+        3
+       ],
+       [
+        "Run it and check again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: add a game with id 8, title 'Star Hop', genre 'arcade', price 4, rating 7. The final SELECT is written for you.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write the INSERT first\nSELECT title, price FROM games WHERE id = 8;",
+      "tests": [
+       {
+        "expect": "Star Hop|4"
+       }
+      ],
+      "hint": "INSERT INTO games (id, title, genre, price, rating) VALUES (...)",
+      "solution": "INSERT INTO games (id, title, genre, price, rating) VALUES (8, 'Star Hop', 'arcade', 4, 7);\nSELECT title, price FROM games WHERE id = 8;",
+      "why": "INSERT adds the row, then SELECT shows it."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: set the price of 'Cube Farm' to 6. Write the UPDATE before the SELECT.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write the UPDATE first\nSELECT title, price FROM games WHERE title = 'Cube Farm';",
+      "tests": [
+       {
+        "expect": "Cube Farm|6"
+       }
+      ],
+      "hint": "UPDATE games SET price = 6 WHERE ...",
+      "solution": "UPDATE games SET price = 6 WHERE title = 'Cube Farm';\nSELECT title, price FROM games WHERE title = 'Cube Farm';",
+      "why": "WHERE limits the change to one game."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the statement that deletes all games with rating below 6",
+      "lines": [
+       "-- remove the weak games",
+       "DELETE FROM games",
+       "WHERE rating < 6;"
+      ],
+      "why": "DELETE FROM, then the WHERE."
+     }
+    ]
+   },
+   {
+    "title": "CREATE TABLE, Keys & Constraints",
+    "period": "Design",
+    "learn": [
+     {
+      "h": "CREATE TABLE",
+      "b": "CREATE TABLE makes a new table. You list each column with a name and a data type. Common types are INTEGER for whole numbers, TEXT for text and REAL for decimals.",
+      "code": "CREATE TABLE pets (\n  id INTEGER,\n  name TEXT,\n  age INTEGER\n);"
+     },
+     {
+      "h": "Primary keys",
+      "b": "A primary key is a column that identifies each row, so no two rows share the same value. It is usually an id. Mark it with PRIMARY KEY.",
+      "code": "CREATE TABLE pets (\n  id INTEGER PRIMARY KEY,\n  name TEXT\n);"
+     },
+     {
+      "h": "Constraints",
+      "b": "Constraints are rules the database checks. NOT NULL means a value is required. UNIQUE means no repeats. DEFAULT gives a value when you do not provide one. CHECK tests a condition.",
+      "code": "CREATE TABLE players (\n  id INTEGER PRIMARY KEY,\n  name TEXT NOT NULL UNIQUE,\n  score INTEGER DEFAULT 0\n);"
+     },
+     {
+      "h": "Foreign keys",
+      "b": "A foreign key is a column that points to the primary key of another table. It links the tables and stops you from pointing to a row that does not exist. It is how scores.student_id is linked to students.id.",
+      "code": "CREATE TABLE scores (\n  id INTEGER PRIMARY KEY,\n  student_id INTEGER,\n  FOREIGN KEY (student_id)\n    REFERENCES students(id)\n);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which statement makes a new table?",
+      "o": [
+       "NEW TABLE",
+       "CREATE TABLE",
+       "MAKE TABLE",
+       "INSERT TABLE"
+      ],
+      "a": 1,
+      "why": "CREATE TABLE defines a table."
+     },
+     {
+      "t": "mc",
+      "q": "What does a PRIMARY KEY do?",
+      "o": [
+       "Identifies each row uniquely",
+       "Sorts the table",
+       "Hides the column",
+       "Allows empty values only"
+      ],
+      "a": 0,
+      "why": "No two rows share a primary key value."
+     },
+     {
+      "t": "mc",
+      "q": "What is the score of a new player added without a score?",
+      "code": "CREATE TABLE players (\n  id INTEGER PRIMARY KEY,\n  name TEXT NOT NULL,\n  score INTEGER DEFAULT 0\n);\nINSERT INTO players (id, name)\nVALUES (1, 'Ann');",
+      "o": [
+       "NULL",
+       "1",
+       "0",
+       "An error"
+      ],
+      "a": 2,
+      "why": "DEFAULT 0 fills the score."
+     },
+     {
+      "t": "tf",
+      "q": "A foreign key points to the primary key of another table.",
+      "a": true,
+      "why": "It links the two tables."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "PRIMARY KEY",
+        "Identifies each row"
+       ],
+       [
+        "NOT NULL",
+        "A value is required"
+       ],
+       [
+        "UNIQUE",
+        "No repeated values"
+       ],
+       [
+        "DEFAULT",
+        "Value used when none is given"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the data type used for whole numbers.",
+      "a": [
+       "INTEGER",
+       "INT"
+      ],
+      "why": "INTEGER"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the statement that creates a pets table",
+      "lines": [
+       "CREATE TABLE pets (",
+       "  id INTEGER PRIMARY KEY,",
+       "  name TEXT",
+       ");"
+      ],
+      "why": "Columns go inside brackets."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of CREATE TABLE in order",
+      "items": [
+       [
+        "CREATE TABLE and a name",
+        1
+       ],
+       [
+        "An opening bracket",
+        2
+       ],
+       [
+        "The columns with types",
+        3
+       ],
+       [
+        "A closing bracket and a semicolon",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: create a table pets with id INTEGER PRIMARY KEY and name TEXT. The INSERT and SELECT are written for you.",
+      "setup": "",
+      "starter": "-- write the CREATE TABLE first\nINSERT INTO pets VALUES (1, 'Rex');\nSELECT id, name FROM pets;",
+      "tests": [
+       {
+        "expect": "1|Rex"
+       }
+      ],
+      "hint": "CREATE TABLE pets (id INTEGER PRIMARY KEY, name TEXT);",
+      "solution": "CREATE TABLE pets (id INTEGER PRIMARY KEY, name TEXT);\nINSERT INTO pets VALUES (1, 'Rex');\nSELECT id, name FROM pets;",
+      "why": "Define the columns, then the rows fit."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: create a table players with id INTEGER PRIMARY KEY, name TEXT and score INTEGER DEFAULT 0.",
+      "setup": "",
+      "starter": "-- write the CREATE TABLE first\nINSERT INTO players (id, name) VALUES (1, 'Ann');\nSELECT name, score FROM players;",
+      "tests": [
+       {
+        "expect": "Ann|0"
+       }
+      ],
+      "hint": "score INTEGER DEFAULT 0",
+      "solution": "CREATE TABLE players (id INTEGER PRIMARY KEY, name TEXT, score INTEGER DEFAULT 0);\nINSERT INTO players (id, name) VALUES (1, 'Ann');\nSELECT name, score FROM players;",
+      "why": "DEFAULT fills the missing score."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the constraint word that forces a column to always have a value.",
+      "a": [
+       "NOT NULL"
+      ],
+      "why": "NOT NULL"
+     }
+    ]
+   },
+   {
+    "title": "Indexes, Normalization & Views",
+    "period": "Design",
+    "learn": [
+     {
+      "h": "Indexes",
+      "b": "An index is like the index of a book. It helps the database find rows fast without reading the whole table. Indexes make reading faster but make writing a little slower, so use them on columns you search often.",
+      "code": "CREATE INDEX idx_games_genre\nON games (genre);"
+     },
+     {
+      "h": "Normalization",
+      "b": "Normalization means organising tables so each fact is stored once. If a city name is copied in many rows, you can get typos and updates become hard. Split the data into tables and link them with keys."
+     },
+     {
+      "h": "The normal forms",
+      "b": "First normal form: each cell holds one value, not a list. Second: every column depends on the whole key. Third: columns do not depend on other non-key columns. The practical idea is one fact, one place."
+     },
+     {
+      "h": "Views",
+      "b": "A view is a saved query that acts like a table. It does not store a copy of the data, it runs the query each time. Views make complex queries simple and can hide columns.",
+      "code": "CREATE VIEW cheap_games AS\nSELECT title, price\nFROM games\nWHERE price < 6;\nSELECT * FROM cheap_games;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does an index do?",
+      "o": [
+       "Deletes duplicates",
+       "Helps find rows faster",
+       "Encrypts the table",
+       "Sorts the table forever"
+      ],
+      "a": 1,
+      "why": "Indexes speed up searches."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main idea of normalization?",
+      "o": [
+       "Copy data everywhere",
+       "Use only one table",
+       "Store each fact once",
+       "Avoid primary keys"
+      ],
+      "a": 2,
+      "why": "Each fact lives in one place."
+     },
+     {
+      "t": "mc",
+      "q": "What is cheap_games here?",
+      "code": "CREATE VIEW cheap_games AS\nSELECT title, price\nFROM games\nWHERE price < 6;",
+      "o": [
+       "A view, which is a saved query",
+       "A new table with copied data",
+       "An index",
+       "A constraint"
+      ],
+      "a": 0,
+      "why": "CREATE VIEW saves a query under a name."
+     },
+     {
+      "t": "tf",
+      "q": "A view stores its own separate copy of the data.",
+      "a": false,
+      "why": "A view runs its query each time."
+     },
+     {
+      "t": "match",
+      "q": "Match each idea to its meaning",
+      "pairs": [
+       [
+        "INDEX",
+        "Speeds up searches"
+       ],
+       [
+        "VIEW",
+        "A saved query"
+       ],
+       [
+        "Normalization",
+        "One fact in one place"
+       ],
+       [
+        "First normal form",
+        "One value per cell"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that creates a saved query you can use like a table (CREATE ___ name AS).",
+      "a": [
+       "VIEW"
+      ],
+      "why": "CREATE VIEW name AS SELECT ..."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the statement that creates an index on genre",
+      "lines": [
+       "-- speed up genre searches",
+       "CREATE INDEX idx_games_genre",
+       "ON games (genre);"
+      ],
+      "why": "Name, ON table, then the column in brackets."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of splitting a messy table in order",
+      "items": [
+       [
+        "Spot a repeated fact",
+        1
+       ],
+       [
+        "Move it to its own table",
+        2
+       ],
+       [
+        "Give it a primary key",
+        3
+       ],
+       [
+        "Link with a foreign key",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: create a view cheap_games with titles of games priced below 6. The SELECT is written for you.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write the CREATE VIEW first\nSELECT title FROM cheap_games ORDER BY title;",
+      "tests": [
+       {
+        "expect": "Block Tag\nDino Dash\nSpace Run"
+       }
+      ],
+      "hint": "CREATE VIEW cheap_games AS SELECT title FROM games WHERE price < 6;",
+      "solution": "CREATE VIEW cheap_games AS SELECT title FROM games WHERE price < 6;\nSELECT title FROM cheap_games ORDER BY title;",
+      "why": "A view is used just like a table."
+     },
+     {
+      "t": "code",
+      "lang": "sql",
+      "q": "Challenge: create an index named idx_games_genre on the genre column of games. The check query is written for you.",
+      "setup": "CREATE TABLE games (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, price INTEGER, rating INTEGER);\nINSERT INTO games VALUES (1,'Space Run','arcade',5,8),(2,'Cube Farm','sim',10,7),(3,'Dino Dash','arcade',3,9),(4,'Sky Racer','racing',8,6),(5,'Pixel Quest','rpg',12,9),(6,'Block Tag','arcade',0,5),(7,'Turbo Kart','racing',7,8);",
+      "starter": "-- write the CREATE INDEX first\nSELECT name FROM sqlite_master WHERE type = 'index' AND name = 'idx_games_genre';",
+      "tests": [
+       {
+        "expect": "idx_games_genre"
+       }
+      ],
+      "hint": "CREATE INDEX idx_games_genre ON games (genre);",
+      "solution": "CREATE INDEX idx_games_genre ON games (genre);\nSELECT name FROM sqlite_master WHERE type = 'index' AND name = 'idx_games_genre';",
+      "why": "The database lists its indexes in sqlite_master."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that starts the statement making an index (CREATE ___ name ON table).",
+      "a": [
+       "INDEX"
+      ],
+      "why": "CREATE INDEX name ON table (column)"
+     }
+    ]
+   }
+  ]
+ }
+}

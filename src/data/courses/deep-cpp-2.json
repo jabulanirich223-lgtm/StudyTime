@@ -1,0 +1,2068 @@
+{
+ "cpp-2": {
+  "name": "C++ · Intermediate",
+  "units": [
+   {
+    "title": "Structs",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "Grouping data",
+      "b": "A struct bundles related variables, called members, under one name. It creates a new type you can use like int. The definition must end with a semicolon after the closing brace.",
+      "code": "struct Point {\n    int x;\n    int y;\n};"
+     },
+     {
+      "h": "Using a struct",
+      "b": "Create a variable of the struct type and fill it with braces in the order of the members. Use the dot operator to read or change a member.",
+      "code": "Point p = {3, 4};\np.x = 10;\nstd::cout << p.x + p.y;  // 14"
+     },
+     {
+      "h": "Copies and functions",
+      "b": "Assigning a struct copies all its members, so the copy is independent of the original. You can pass a struct to a function and return one. For big structs, pass a const reference to avoid copying.",
+      "code": "Point a = {1, 2};\nPoint b = a;\nb.x = 9;  // a.x is still 1"
+     },
+     {
+      "h": "Pointers to structs",
+      "b": "If you have a pointer to a struct, use the arrow operator -> to reach a member. p->x is the short form of (*p).x. Structs also go nicely in vectors, which lets you keep lists of records.",
+      "code": "Point* q = &a;\nstd::cout << q->x;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line declares a struct named Dog with an int member age?",
+      "o": [
+       "struct Dog { int age; };",
+       "class Dog = { int age };",
+       "struct Dog(int age);",
+       "Dog struct { int age; }"
+      ],
+      "a": 0,
+      "why": "struct, then the name, then members in braces and a semicolon."
+     },
+     {
+      "t": "mc",
+      "q": "How do you read member x of struct variable p?",
+      "o": [
+       "p->x",
+       "p.x",
+       "p::x",
+       "p[x]"
+      ],
+      "a": 1,
+      "why": "The dot operator accesses a member of an object."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "struct Point { int x; int y; };\nPoint p = {3, 4};\np.x = p.x + p.y;\nstd::cout << p.x;",
+      "o": [
+       "3",
+       "4",
+       "7",
+       "34"
+      ],
+      "a": 2,
+      "why": "p.x becomes 3 + 4 = 7."
+     },
+     {
+      "t": "tf",
+      "q": "A struct definition must end with a semicolon after the closing brace.",
+      "a": true,
+      "why": "Forgetting it is a classic compile error."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "struct",
+        "Groups related variables"
+       ],
+       [
+        "p.x",
+        "Member through an object"
+       ],
+       [
+        "ptr->x",
+        "Member through a pointer"
+       ],
+       [
+        "Point p = {1, 2};",
+        "Aggregate initialization"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that starts a struct definition.",
+      "a": [
+       "struct"
+      ],
+      "why": "struct introduces the new type."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 3",
+      "lines": [
+       "struct Dog {",
+       "    int age;",
+       "};",
+       "Dog d = {3};",
+       "std::cout << d.age;"
+      ],
+      "why": "Define the type, create the variable, print the member."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a struct in order",
+      "items": [
+       [
+        "Define the struct type",
+        1
+       ],
+       [
+        "Create a variable of that type",
+        2
+       ],
+       [
+        "Set its members",
+        3
+       ],
+       [
+        "Read the members",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that sets member score of variable p to 5.",
+      "a": [
+       "p.score = 5;",
+       "p.score = 5"
+      ],
+      "why": "Use the dot to reach the member."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 5",
+      "lines": [
+       "struct Pt { int x; int y; };",
+       "Pt p = {2, 3};",
+       "p.y = p.x + p.y;",
+       "std::cout << p.y;"
+      ],
+      "why": "p.y becomes 2 + 3."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "struct Box { int w; };\nBox a = {2};\nBox b = a;\nb.w = 9;\nstd::cout << a.w;",
+      "o": [
+       "2",
+       "9",
+       "0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "b is a copy, so changing b does not change a."
+     }
+    ]
+   },
+   {
+    "title": "Classes and Access",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "From struct to class",
+      "b": "A class is like a struct that also holds functions, called methods, and can hide data. Members of a class are private by default, so code outside cannot touch them. Members of a struct are public by default.",
+      "code": "class Counter {\n    int n = 0;      // private\npublic:\n    void inc() { n++; }\n    int get() { return n; }\n};"
+     },
+     {
+      "h": "public and private",
+      "b": "Under public: the members are open to everyone. Under private: only the class's own methods can use them. Hiding data this way is called encapsulation, and it stops other code from putting the object in a bad state."
+     },
+     {
+      "h": "Using objects",
+      "b": "An object is a variable whose type is a class. Call its methods with a dot. Each object keeps its own copy of the data members.",
+      "code": "Counter c;\nc.inc();\nc.inc();\nstd::cout << c.get();  // 2"
+     },
+     {
+      "h": "Getters and setters",
+      "b": "Since the data is private, we give the class public methods to read it (getter) and change it (setter). A setter can check the new value first, for example refusing a negative age. A method that does not change the object can be marked const.",
+      "code": "int get() const { return n; }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the default access in a class?",
+      "o": [
+       "private",
+       "public",
+       "protected",
+       "none"
+      ],
+      "a": 0,
+      "why": "Class members are private unless you say otherwise."
+     },
+     {
+      "t": "mc",
+      "q": "What is encapsulation?",
+      "o": [
+       "Copying a class",
+       "Making all members public",
+       "Hiding data behind public methods",
+       "Writing code in one file"
+      ],
+      "a": 2,
+      "why": "The class controls how its data is used."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Counter {\n    int n = 0;\npublic:\n    void inc() { n++; }\n    int get() { return n; }\n};\nint main() {\n    Counter c;\n    c.inc();\n    c.inc();\n    std::cout << c.get();\n}",
+      "o": [
+       "0",
+       "2",
+       "1",
+       "Error"
+      ],
+      "a": 1,
+      "why": "inc is called twice, so n becomes 2."
+     },
+     {
+      "t": "tf",
+      "q": "Code outside a class can read its private members directly.",
+      "a": false,
+      "why": "Private members are only available inside the class."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "public",
+        "Accessible from anywhere"
+       ],
+       [
+        "private",
+        "Only inside the class"
+       ],
+       [
+        "method",
+        "Function inside a class"
+       ],
+       [
+        "object",
+        "An instance of a class"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that makes class members usable from outside.",
+      "a": [
+       "public"
+      ],
+      "why": "public: opens the members below it."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define a class with one public method",
+      "lines": [
+       "class Dog {",
+       "public:",
+       "    void bark() {",
+       "        std::cout << \"Woof\";",
+       "    }",
+       "};"
+      ],
+      "why": "Class header, public label, then the method."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a class in order",
+      "items": [
+       [
+        "Define the class",
+        1
+       ],
+       [
+        "Create an object",
+        2
+       ],
+       [
+        "Call a method on it",
+        3
+       ],
+       [
+        "See the object's data change",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates an object named c of class Counter.",
+      "a": [
+       "Counter c;",
+       "Counter c"
+      ],
+      "why": "Class name first, then the object name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 3",
+      "lines": [
+       "class Box {",
+       "    int n = 3;",
+       "public:",
+       "    int get() { return n; }",
+       "};",
+       "Box b;",
+       "std::cout << b.get();"
+      ],
+      "why": "Private n is read through the public getter."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "class A {\n    int v = 0;\npublic:\n    void set(int x) { v = x; }\n    int get() { return v; }\n};\nint main() {\n    A a;\n    a.set(4);\n    std::cout << a.get();\n}",
+      "o": [
+       "0",
+       "Error",
+       "a.v",
+       "4"
+      ],
+      "a": 3,
+      "why": "set stores 4 and get returns it."
+     }
+    ]
+   },
+   {
+    "title": "Constructors and Destructors",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "Constructors",
+      "b": "A constructor is a special method that runs automatically when an object is created. It has the same name as the class and no return type. It sets the object up with good starting values.",
+      "code": "class Car {\n    int speed;\npublic:\n    Car(int s) { speed = s; }\n};\nCar c(50);"
+     },
+     {
+      "h": "Initializer lists",
+      "b": "A neater way to set members is an initializer list after a colon. It sets the members before the body runs. It is required for const members and references.",
+      "code": "Car(int s) : speed(s) {}"
+     },
+     {
+      "h": "Default constructor",
+      "b": "A constructor with no parameters is the default constructor. If you write no constructor at all, the compiler gives you one. If you write one with parameters, you must also write a default one if you want to create objects without arguments."
+     },
+     {
+      "h": "Destructors",
+      "b": "A destructor runs when an object is destroyed, for example at the end of its block. Its name is a tilde plus the class name, like ~Car(), and it takes no parameters. Objects in a block are destroyed in reverse order of creation. Destructors clean up things like open files or memory.",
+      "code": "~Car() {\n    std::cout << \"bye\";\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What name does a constructor have?",
+      "o": [
+       "The same as the class",
+       "constructor",
+       "init",
+       "new"
+      ],
+      "a": 0,
+      "why": "The constructor is named after its class."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the destructor of class Cat?",
+      "o": [
+       "Cat~()",
+       "delete Cat()",
+       "~Cat()",
+       "destroy()"
+      ],
+      "a": 2,
+      "why": "A destructor uses a tilde before the class name."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class A {\npublic:\n    A() { std::cout << \"in \"; }\n    ~A() { std::cout << \"out\"; }\n};\nint main() {\n    A a;\n    std::cout << \"mid \";\n}",
+      "o": [
+       "mid in out",
+       "in mid out",
+       "in out mid",
+       "in mid"
+      ],
+      "a": 1,
+      "why": "The constructor runs at creation, then mid, then the destructor at the end of main."
+     },
+     {
+      "t": "tf",
+      "q": "A destructor can take parameters.",
+      "a": false,
+      "why": "A destructor never takes parameters."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Constructor",
+        "Runs when an object is created"
+       ],
+       [
+        "Destructor",
+        "Runs when an object is destroyed"
+       ],
+       [
+        "Initializer list",
+        "Sets members before the body"
+       ],
+       [
+        "Default constructor",
+        "Takes no arguments"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the full name of the destructor for class Cat.",
+      "a": [
+       "~Cat",
+       "~Cat()"
+      ],
+      "why": "A tilde followed by the class name."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define a class with a constructor and a getter",
+      "lines": [
+       "class P {",
+       "    int x;",
+       "public:",
+       "    P(int v) : x(v) {}",
+       "    int get() { return x; }",
+       "};"
+      ],
+      "why": "Private data, then public constructor and getter."
+     },
+     {
+      "t": "order",
+      "q": "Put the life of an object in order",
+      "items": [
+       [
+        "Memory is set aside for it",
+        1
+       ],
+       [
+        "The constructor runs",
+        2
+       ],
+       [
+        "The program uses the object",
+        3
+       ],
+       [
+        "The destructor runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the constructor header for class Car taking an int speed.",
+      "a": [
+       "Car(int speed)",
+       "Car(int speed) {",
+       "Car(int speed) :"
+      ],
+      "why": "No return type, same name as the class."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 5",
+      "lines": [
+       "class Pt {",
+       "public:",
+       "    int x;",
+       "    Pt(int v) : x(v) {}",
+       "};",
+       "Pt a(5);",
+       "std::cout << a.x;"
+      ],
+      "why": "The initializer list sets x to 5."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "struct T {\n    char c;\n    T(char k) : c(k) {}\n    ~T() { std::cout << c; }\n};\nint main() {\n    T a('A');\n    T b('B');\n}",
+      "o": [
+       "BA",
+       "AB",
+       "A",
+       "B"
+      ],
+      "a": 0,
+      "why": "b was created last, so it is destroyed first."
+     }
+    ]
+   },
+   {
+    "title": "Operator Overloading",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "Teaching + new tricks",
+      "b": "Operator overloading lets your own types work with operators like +, == and <<. You write a function whose name is the word operator followed by the symbol. It should do what people expect from that symbol.",
+      "code": "struct V { int x; };\nV operator+(V a, V b) {\n    return V{a.x + b.x};\n}"
+     },
+     {
+      "h": "Using it",
+      "b": "Once defined, the operator is used like with built-in types. V r = V{2} + V{5}; calls your function. This makes code short and readable, but only overload when the meaning is obvious.",
+      "code": "V r = V{2} + V{5};\nstd::cout << r.x;  // 7"
+     },
+     {
+      "h": "Comparison and printing",
+      "b": "Overload == to compare objects and return a bool. To print with cout, overload << as a normal function taking an ostream reference and returning it so chaining works.",
+      "code": "std::ostream& operator<<(std::ostream& os, const V& v) {\n    os << v.x;\n    return os;\n}"
+     },
+     {
+      "h": "Member form and rules",
+      "b": "An operator can also be a member function, where the left operand is the object itself, as in M operator*(int k). You cannot invent new symbols like **, and you cannot change precedence or the number of operands. Cannot overload :: . or sizeof."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword is used in the name of an overloaded operator function?",
+      "o": [
+       "operator",
+       "overload",
+       "define",
+       "custom"
+      ],
+      "a": 0,
+      "why": "The function name is operator followed by the symbol."
+     },
+     {
+      "t": "mc",
+      "q": "Which function lets cout print your own class?",
+      "o": [
+       "operator>>",
+       "print()",
+       "operator<<",
+       "operator()"
+      ],
+      "a": 2,
+      "why": "<< with an ostream reference on the left."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "struct V { int x; };\nV operator+(V a, V b) { return V{a.x + b.x}; }\nint main() {\n    V r = V{2} + V{5};\n    std::cout << r.x;\n}",
+      "o": [
+       "25",
+       "7",
+       "3",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The overloaded + adds the x values, 2 + 5."
+     },
+     {
+      "t": "tf",
+      "q": "You can create a brand new operator symbol like ** in C++.",
+      "a": false,
+      "why": "Only existing operators can be overloaded."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to a typical use",
+      "pairs": [
+       [
+        "operator+",
+        "Add two objects"
+       ],
+       [
+        "operator==",
+        "Compare two objects"
+       ],
+       [
+        "operator<<",
+        "Print with cout"
+       ],
+       [
+        "operator[]",
+        "Index into an object"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that appears in every operator function name.",
+      "a": [
+       "operator"
+      ],
+      "why": "For example operator+."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add two V objects and print the sum",
+      "lines": [
+       "struct V { int x; };",
+       "V operator+(V a, V b) {",
+       "    return V{a.x + b.x};",
+       "}",
+       "V r = V{1} + V{2};",
+       "std::cout << r.x;"
+      ],
+      "why": "Define the type, the operator, then use it."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using an overloaded + in order",
+      "items": [
+       [
+        "Write an operator+ function",
+        1
+       ],
+       [
+        "Write a + b in the code",
+        2
+       ],
+       [
+        "The compiler calls operator+(a, b)",
+        3
+       ],
+       [
+        "The returned object is the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of the free function that overloads == for two Point values a and b.",
+      "a": [
+       "bool operator==(Point a, Point b)",
+       "bool operator==(Point a, Point b) {"
+      ],
+      "why": "It returns a bool."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the output operator for V",
+      "lines": [
+       "std::ostream& operator<<(std::ostream& os, const V& v) {",
+       "    os << v.x;",
+       "    return os;",
+       "}"
+      ],
+      "why": "Print to os then return it for chaining."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "struct M {\n    int n;\n    M operator*(int k) { return M{n * k}; }\n};\nint main() {\n    M m{3};\n    std::cout << (m * 4).n;\n}",
+      "o": [
+       "12",
+       "7",
+       "34",
+       "3"
+      ],
+      "a": 0,
+      "why": "m * 4 calls the member operator and gives n = 12."
+     }
+    ]
+   },
+   {
+    "title": "Inheritance",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "is-a relationships",
+      "b": "Inheritance lets a new class reuse an existing one. A Dog is an Animal, so Dog can inherit from Animal. The class you inherit from is the base class and the new one is the derived class.",
+      "code": "class Animal {\npublic:\n    void eat() { std::cout << \"eat\"; }\n};\nclass Dog : public Animal {};"
+     },
+     {
+      "h": "What you get",
+      "b": "The derived class has all the public and protected members of the base. Private members of the base exist but cannot be used directly by the derived class. protected means visible to the class and its children but not to the outside."
+     },
+     {
+      "h": "Constructor order",
+      "b": "Creating a derived object first runs the base constructor, then the derived one. Destruction goes the other way: derived destructor first, then base. If the base needs arguments, call it in the initializer list.",
+      "code": "class Dog : public Animal {\npublic:\n    Dog(int legs) : Animal(legs) {}\n};"
+     },
+     {
+      "h": "Extending",
+      "b": "A derived class can add new members and new methods. Always write public before the base name for a normal is-a relationship. Use inheritance only when the is-a sentence makes sense, otherwise prefer having one class as a member of another."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line makes Dog inherit publicly from Animal?",
+      "o": [
+       "class Dog : public Animal",
+       "class Dog inherits Animal",
+       "class Dog -> Animal",
+       "class Dog extends Animal"
+      ],
+      "a": 0,
+      "why": "The colon and access keyword come before the base."
+     },
+     {
+      "t": "mc",
+      "q": "What does protected mean?",
+      "o": [
+       "Visible to everyone",
+       "Visible only in the class",
+       "Visible in the class and its derived classes",
+       "Visible only in main"
+      ],
+      "a": 2,
+      "why": "It is between private and public."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class A { public: void hi() { std::cout << \"A\"; } };\nclass B : public A { public: void yo() { std::cout << \"B\"; } };\nint main() {\n    B b;\n    b.hi();\n    b.yo();\n}",
+      "o": [
+       "A",
+       "AB",
+       "B",
+       "BA"
+      ],
+      "a": 1,
+      "why": "B inherits hi from A and adds yo."
+     },
+     {
+      "t": "tf",
+      "q": "A derived class can directly use the private members of its base class.",
+      "a": false,
+      "why": "Private members are hidden even from derived classes."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Base class",
+        "The class inherited from"
+       ],
+       [
+        "Derived class",
+        "The class that inherits"
+       ],
+       [
+        "protected",
+        "Visible to derived classes"
+       ],
+       [
+        "Base(args) in init list",
+        "Calls the base constructor"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Which access keyword goes in class Dog : ___ Animal for a normal is-a relationship?",
+      "a": [
+       "public"
+      ],
+      "why": "Public inheritance keeps the is-a relationship."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints eat",
+      "lines": [
+       "class Animal {",
+       "public:",
+       "    void eat() { std::cout << \"eat\"; }",
+       "};",
+       "class Dog : public Animal {};",
+       "Dog d;",
+       "d.eat();"
+      ],
+      "why": "Define the base, then the derived, then use it."
+     },
+     {
+      "t": "order",
+      "q": "Put the construction and destruction order of a Dog object",
+      "items": [
+       [
+        "Animal constructor runs",
+        1
+       ],
+       [
+        "Dog constructor runs",
+        2
+       ],
+       [
+        "Dog destructor runs",
+        3
+       ],
+       [
+        "Animal destructor runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of class Cat that inherits publicly from Animal.",
+      "a": [
+       "class Cat : public Animal",
+       "class Cat : public Animal {"
+      ],
+      "why": "Colon, public, then the base name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 4",
+      "lines": [
+       "class Animal {",
+       "public:",
+       "    int legs = 4;",
+       "};",
+       "class Dog : public Animal {};",
+       "Dog d;",
+       "std::cout << d.legs;"
+      ],
+      "why": "Dog inherits legs from Animal."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "struct A { A() { std::cout << \"A\"; } };\nstruct B : A { B() { std::cout << \"B\"; } };\nint main() {\n    B b;\n}",
+      "o": [
+       "BA",
+       "B",
+       "A",
+       "AB"
+      ],
+      "a": 3,
+      "why": "The base constructor runs first."
+     }
+    ]
+   },
+   {
+    "title": "Virtual Functions and Polymorphism",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "The problem",
+      "b": "A base class pointer can point to a derived object. But a normal method call through that pointer uses the base version, because the compiler decides by the pointer type. That is usually not what we want.",
+      "code": "Animal* a = &dog;\na->speak();  // base version without virtual"
+     },
+     {
+      "h": "virtual and override",
+      "b": "Mark the base method virtual and the program decides at runtime which version to call, based on the real object. In the derived class write override after the function, so the compiler checks that it really replaces a virtual one.",
+      "code": "struct Animal {\n    virtual void speak() { std::cout << \"...\"; }\n};\nstruct Dog : Animal {\n    void speak() override { std::cout << \"Woof\"; }\n};"
+     },
+     {
+      "h": "Abstract classes",
+      "b": "A pure virtual function is declared with = 0 and has no body. A class with at least one is abstract, and you cannot create objects of it. It works like a contract that derived classes must fulfil.",
+      "code": "struct Shape {\n    virtual double area() = 0;\n};"
+     },
+     {
+      "h": "Virtual destructors",
+      "b": "If you delete a derived object through a base pointer, the base destructor must be virtual, or the derived part is never cleaned up. Any class meant to be a base should have a virtual destructor. This is polymorphism: one interface, many behaviours."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword lets the right derived method run through a base pointer?",
+      "o": [
+       "virtual",
+       "static",
+       "override only",
+       "final"
+      ],
+      "a": 0,
+      "why": "virtual enables runtime lookup."
+     },
+     {
+      "t": "mc",
+      "q": "What does override after a method do?",
+      "o": [
+       "Makes the function private",
+       "Deletes the base function",
+       "Makes the function run twice",
+       "Makes the compiler check it replaces a virtual function"
+      ],
+      "a": 3,
+      "why": "It catches typos and signature mismatches."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "struct S { virtual void f() { std::cout << \"S\"; } };\nstruct C : S { void f() override { std::cout << \"C\"; } };\nint main() {\n    C c;\n    S* p = &c;\n    p->f();\n}",
+      "o": [
+       "S",
+       "C",
+       "SC",
+       "CS"
+      ],
+      "a": 1,
+      "why": "The call is virtual, so the real type C decides."
+     },
+     {
+      "t": "tf",
+      "q": "A class with a pure virtual function cannot be instantiated.",
+      "a": true,
+      "why": "It is an abstract class."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "virtual",
+        "Runtime choice of method"
+       ],
+       [
+        "override",
+        "Checked replacement of a virtual"
+       ],
+       [
+        "= 0",
+        "Pure virtual function"
+       ],
+       [
+        "Abstract class",
+        "Cannot create objects of it"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that asks the compiler to check you really override a virtual function.",
+      "a": [
+       "override"
+      ],
+      "why": "Write it after the parameter list."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define an abstract Shape and a derived class",
+      "lines": [
+       "struct Shape {",
+       "    virtual double area() = 0;",
+       "};  // end of Shape",
+       "struct Sq : Shape {",
+       "    double area() override { return 4.0; }",
+       "};"
+      ],
+      "why": "Base first, then the class that implements it."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a virtual call in order",
+      "items": [
+       [
+        "A base pointer points to a derived object",
+        1
+       ],
+       [
+        "The code calls p->f()",
+        2
+       ],
+       [
+        "The program checks the real type at runtime",
+        3
+       ],
+       [
+        "The derived f() runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration of the pure virtual function void speak() in a base class.",
+      "a": [
+       "virtual void speak() = 0;",
+       "virtual void speak() = 0"
+      ],
+      "why": "virtual, the signature, then = 0."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that call speak through a base pointer",
+      "lines": [
+       "Dog d;",
+       "Animal* a = &d;",
+       "a->speak();"
+      ],
+      "why": "Create the object, point at it, then call."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "struct S { void f() { std::cout << \"S\"; } };\nstruct C : S { void f() { std::cout << \"C\"; } };\nint main() {\n    C c;\n    S* p = &c;\n    p->f();\n}",
+      "o": [
+       "C",
+       "SC",
+       "S",
+       "Error"
+      ],
+      "a": 2,
+      "why": "f is not virtual, so the pointer type S decides."
+     }
+    ]
+   },
+   {
+    "title": "Templates",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "One function, many types",
+      "b": "A function template is a blueprint. You put template <typename T> before it, and T stands for any type. The compiler writes a real version for each type you use.",
+      "code": "template <typename T>\nT twice(T x) {\n    return x + x;\n}"
+     },
+     {
+      "h": "Calling templates",
+      "b": "Usually the compiler works out T from the arguments, so twice(4) uses int and twice(2.5) uses double. You can also write the type yourself, like twice<double>(4). Both arguments of one T must have the same type.",
+      "code": "std::cout << twice(4);    // 8\nstd::cout << twice(1.5);  // 3"
+     },
+     {
+      "h": "Class templates",
+      "b": "Classes can be templates too. std::vector is one. You give the type in angle brackets when you create an object, and each type gives a separate class.",
+      "code": "template <typename T>\nstruct Box {\n    T v;\n};\nBox<int> a{5};"
+     },
+     {
+      "h": "Good to know",
+      "b": "Templates are filled in at compile time, so there is no slowdown at runtime. Template code usually lives completely in header files. Error messages can be long, so read the first line and the line number of your own code."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword starts a template declaration?",
+      "o": [
+       "template",
+       "generic",
+       "typename only",
+       "class only"
+      ],
+      "a": 0,
+      "why": "template <typename T> comes before the function."
+     },
+     {
+      "t": "mc",
+      "q": "What does T mean in template <typename T>?",
+      "o": [
+       "A variable of type int",
+       "A placeholder for a type",
+       "A function name",
+       "A loop counter"
+      ],
+      "a": 1,
+      "why": "The compiler replaces T with a real type."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "template <typename T>\nT bigger(T a, T b) {\n    if (a > b) return a;\n    return b;\n}\nint main() {\n    std::cout << bigger(3, 8) << bigger(2.5, 1.5);\n}",
+      "o": [
+       "8",
+       "5.5",
+       "82.5",
+       "82"
+      ],
+      "a": 2,
+      "why": "bigger(3, 8) is 8, bigger(2.5, 1.5) is 2.5, printed together."
+     },
+     {
+      "t": "tf",
+      "q": "The compiler creates the template versions at compile time.",
+      "a": true,
+      "why": "No work is left for runtime."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "template <typename T>",
+        "Declares a type parameter"
+       ],
+       [
+        "swap<int>",
+        "Explicit type argument"
+       ],
+       [
+        "Class template",
+        "Blueprint for a type like vector"
+       ],
+       [
+        "T",
+        "Placeholder type"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that begins every template declaration.",
+      "a": [
+       "template"
+      ],
+      "why": "It comes before the function or class."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define and use a function template",
+      "lines": [
+       "template <typename T>",
+       "T twice(T x) {",
+       "    return x + x;",
+       "}",
+       "std::cout << twice(4);"
+      ],
+      "why": "Template line, function, then the call prints 8."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a template in order",
+      "items": [
+       [
+        "Write the template with T",
+        1
+       ],
+       [
+        "Call it with a real type",
+        2
+       ],
+       [
+        "The compiler generates that version",
+        3
+       ],
+       [
+        "The program runs it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that starts a function template with type parameter T (use typename).",
+      "a": [
+       "template <typename T>",
+       "template<typename T>"
+      ],
+      "why": "template then angle brackets."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a class template Box and its use",
+      "lines": [
+       "template <typename T>",
+       "struct Box {",
+       "    T v;",
+       "};",
+       "Box<int> b{7};",
+       "std::cout << b.v;"
+      ],
+      "why": "Template line first, then the struct, then the object."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "template <typename T>\nstruct Box { T v; };\nint main() {\n    Box<int> a{5};\n    Box<char> b{'x'};\n    std::cout << a.v << b.v;\n}",
+      "o": [
+       "x5",
+       "5x",
+       "55",
+       "5"
+      ],
+      "a": 1,
+      "why": "Box<int> holds 5 and Box<char> holds x."
+     }
+    ]
+   },
+   {
+    "title": "STL Containers: map, set, unordered_map",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "map",
+      "b": "std::map from <map> stores key and value pairs sorted by key. Use m[key] to read or write a value. If the key does not exist, m[key] creates it with a default value like 0. m.size() counts the pairs.",
+      "code": "std::map<std::string, int> m;\nm[\"a\"] = 1;\nm[\"b\"] = 2;\nstd::cout << m[\"a\"];"
+     },
+     {
+      "h": "set",
+      "b": "std::set from <set> stores unique values in sorted order. Inserting a value that is already there does nothing. s.count(x) tells you whether x is in the set by giving 1 or 0.",
+      "code": "std::set<int> s = {5, 1, 3};\ns.insert(3);\nstd::cout << s.size();  // 3"
+     },
+     {
+      "h": "unordered_map",
+      "b": "std::unordered_map from <unordered_map> works like map but uses hashing. Lookups are usually faster, but the order of the keys is not defined. Choose it when you only need quick lookup and do not care about order."
+     },
+     {
+      "h": "Looping over containers",
+      "b": "A range-based for loop visits every element. For a map each element is a pair with .first for the key and .second for the value. A set gives its values in sorted order.",
+      "code": "for (auto p : m) {\n    std::cout << p.first << p.second;\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does std::set guarantee?",
+      "o": [
+       "Keys and values",
+       "Unique values in sorted order",
+       "Unsorted fast access",
+       "Duplicates allowed"
+      ],
+      "a": 1,
+      "why": "A set never holds duplicates and keeps them sorted."
+     },
+     {
+      "t": "mc",
+      "q": "Which header gives you std::map?",
+      "o": [
+       "<map>",
+       "<dictionary>",
+       "<hash>",
+       "<pairs>"
+      ],
+      "a": 0,
+      "why": "Include <map> to use it."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "std::map<std::string, int> m;\nm[\"a\"] = 1;\nm[\"b\"] = 2;\nm[\"a\"] = 5;\nstd::cout << m.size() << m[\"a\"];",
+      "o": [
+       "35",
+       "15",
+       "25",
+       "22"
+      ],
+      "a": 2,
+      "why": "Three assignments touch only two keys. Size is 2 and m[a] is 5."
+     },
+     {
+      "t": "tf",
+      "q": "std::unordered_map keeps its keys sorted.",
+      "a": false,
+      "why": "Only std::map keeps keys sorted."
+     },
+     {
+      "t": "match",
+      "q": "Match each container to its trait",
+      "pairs": [
+       [
+        "map",
+        "Sorted key and value pairs"
+       ],
+       [
+        "set",
+        "Sorted unique values"
+       ],
+       [
+        "unordered_map",
+        "Hash based fast lookup"
+       ],
+       [
+        "m.count(k)",
+        "1 if the key exists, else 0"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the map method that returns 0 or 1 depending on whether a key exists.",
+      "a": [
+       "count",
+       "m.count",
+       "m.count(k)"
+      ],
+      "why": "count returns the number of matches, 0 or 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 5",
+      "lines": [
+       "std::map<std::string, int> m;",
+       "m[\"a\"] = 1;",
+       "m[\"a\"] += 4;",
+       "std::cout << m[\"a\"];"
+      ],
+      "why": "1 plus 4 is 5."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of counting words with a map in order",
+      "items": [
+       [
+        "Create the map",
+        1
+       ],
+       [
+        "Read a word",
+        2
+       ],
+       [
+        "Add one to m[word]",
+        3
+       ],
+       [
+        "Print the counts",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a map named ages from std::string to int.",
+      "a": [
+       "std::map<std::string, int> ages;",
+       "std::map<std::string,int> ages;",
+       "map<string, int> ages;",
+       "map<string,int> ages;"
+      ],
+      "why": "The key type comes first, then the value type."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 30",
+      "lines": [
+       "std::map<int, int> m = {{1, 10}, {2, 20}};",
+       "int total = 0;",
+       "for (auto p : m) {",
+       "    total += p.second;",
+       "}",
+       "std::cout << total;"
+      ],
+      "why": "Add up every value."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "std::set<int> s = {5, 1, 3};\nfor (int x : s) std::cout << x;",
+      "o": [
+       "135",
+       "531",
+       "153",
+       "513"
+      ],
+      "a": 0,
+      "why": "A set loops in sorted order."
+     }
+    ]
+   },
+   {
+    "title": "Iterators and Algorithms",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "Iterators",
+      "b": "An iterator points to an element of a container. v.begin() points to the first element and v.end() points one past the last. You read the element with * and move on with ++. An iterator equal to end means there is nothing there.",
+      "code": "auto it = v.begin();\nstd::cout << *it;"
+     },
+     {
+      "h": "sort and find",
+      "b": "Include <algorithm>. std::sort(v.begin(), v.end()) sorts ascending. std::find(v.begin(), v.end(), x) returns an iterator to x, or v.end() if x is missing.",
+      "code": "std::sort(v.begin(), v.end());\nauto it = std::find(v.begin(), v.end(), 3);\nif (it != v.end()) std::cout << \"found\";"
+     },
+     {
+      "h": "Lambdas",
+      "b": "A lambda is a small unnamed function written inline. It starts with [ ] for captured variables, then parameters, then the body. Put a variable in the brackets to use its value inside.",
+      "code": "auto f = [](int x) { return x * 2; };\nstd::cout << f(4);  // 8"
+     },
+     {
+      "h": "Algorithms with lambdas",
+      "b": "Many algorithms take a lambda. std::count_if counts elements that pass a test, and std::for_each runs code on each element. You can sort in a custom order by giving sort a lambda that says which of two items goes first.",
+      "code": "int n = std::count_if(v.begin(), v.end(),\n    [](int x) { return x > 2; });"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which header contains std::sort and std::find?",
+      "o": [
+       "<algorithm>",
+       "<sort>",
+       "<utility>",
+       "<iterator>"
+      ],
+      "a": 0,
+      "why": "Algorithms live in <algorithm>."
+     },
+     {
+      "t": "mc",
+      "q": "Where does v.end() point?",
+      "o": [
+       "At the last element",
+       "At the first element",
+       "One past the last element",
+       "At a random element"
+      ],
+      "a": 2,
+      "why": "It marks the stop point and is never dereferenced."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "std::vector<int> v = {4, 1, 3};\nstd::sort(v.begin(), v.end());\nstd::cout << v[0] << v[2];",
+      "o": [
+       "13",
+       "14",
+       "41",
+       "34"
+      ],
+      "a": 1,
+      "why": "Sorted it is 1 3 4, so v[0] is 1 and v[2] is 4."
+     },
+     {
+      "t": "tf",
+      "q": "std::find returns v.end() when the value is not found.",
+      "a": true,
+      "why": "Compare the result with end to check."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "v.begin()",
+        "Iterator to the first element"
+       ],
+       [
+        "v.end()",
+        "One past the last element"
+       ],
+       [
+        "[](int x){...}",
+        "Lambda"
+       ],
+       [
+        "std::sort",
+        "Orders the elements"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the header file needed for std::sort (no brackets needed).",
+      "a": [
+       "algorithm"
+      ],
+      "why": "Include <algorithm>."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 123",
+      "lines": [
+       "std::vector<int> v = {3, 1, 2};",
+       "std::sort(v.begin(), v.end());",
+       "for (int x : v) {",
+       "    std::cout << x;",
+       "}"
+      ],
+      "why": "Sort first, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of searching with std::find in order",
+      "items": [
+       [
+        "Call std::find with begin, end and the value",
+        1
+       ],
+       [
+        "Compare the result with v.end()",
+        2
+       ],
+       [
+        "If different, the value was found",
+        3
+       ],
+       [
+        "Use *it for the element",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that sorts vector v in ascending order.",
+      "a": [
+       "std::sort(v.begin(), v.end());",
+       "sort(v.begin(), v.end());",
+       "std::sort(v.begin(), v.end())",
+       "sort(v.begin(), v.end())"
+      ],
+      "why": "Pass the begin and end iterators."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that counts even numbers and prints 2",
+      "lines": [
+       "std::vector<int> v = {1, 2, 3, 4};",
+       "int n = std::count_if(v.begin(), v.end(), [](int x) {",
+       "    return x % 2 == 0;",
+       "});",
+       "std::cout << n;"
+      ],
+      "why": "The lambda tests for even numbers."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "int k = 3;\nauto f = [k](int x) { return x * k; };\nstd::cout << f(4);",
+      "o": [
+       "7",
+       "3",
+       "4",
+       "12"
+      ],
+      "a": 3,
+      "why": "The lambda captured k = 3, and 4 * 3 is 12."
+     }
+    ]
+   },
+   {
+    "title": "new, delete and Smart Pointers",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "The heap",
+      "b": "Normal variables disappear at the end of their block. For data that must live longer, you ask for memory on the heap with new. new gives you a pointer, and you must free it with delete when you are done. Forgetting is a memory leak.",
+      "code": "int* p = new int(5);\n*p = *p + 2;\nstd::cout << *p;  // 7\ndelete p;"
+     },
+     {
+      "h": "Arrays on the heap",
+      "b": "new int[3] makes an array on the heap, and you free it with delete[] with square brackets. Mixing delete and delete[] is a bug. Never use a pointer after you have deleted it.",
+      "code": "int* a = new int[3];\na[0] = 7;\ndelete[] a;"
+     },
+     {
+      "h": "unique_ptr",
+      "b": "A std::unique_ptr from <memory> owns one heap object and deletes it automatically when it goes out of scope. Create it with std::make_unique. It cannot be copied, because only one owner is allowed.",
+      "code": "auto p = std::make_unique<int>(9);\nstd::cout << *p;"
+     },
+     {
+      "h": "shared_ptr",
+      "b": "A std::shared_ptr lets several owners share one object. It counts the owners with use_count() and deletes the object when the last owner is gone. Make one with std::make_shared. Prefer smart pointers over raw new and delete in modern C++.",
+      "code": "auto a = std::make_shared<int>(1);\nauto b = a;\nstd::cout << a.use_count();  // 2"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does new return?",
+      "o": [
+       "A pointer to the new object",
+       "A reference to it",
+       "A copy of it",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "new gives you the address on the heap."
+     },
+     {
+      "t": "mc",
+      "q": "What must you do for every new?",
+      "o": [
+       "Call free twice",
+       "Use a reference",
+       "Match it with a delete",
+       "Nothing, it is automatic"
+      ],
+      "a": 2,
+      "why": "Otherwise you leak memory."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int* p = new int(5);\n*p = *p + 2;\nstd::cout << *p;\ndelete p;",
+      "o": [
+       "5",
+       "7",
+       "2",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The value changes from 5 to 7 through the pointer."
+     },
+     {
+      "t": "tf",
+      "q": "A std::unique_ptr deletes its object automatically.",
+      "a": true,
+      "why": "The destructor frees the memory."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its meaning",
+      "pairs": [
+       [
+        "new",
+        "Allocate on the heap"
+       ],
+       [
+        "delete",
+        "Free heap memory"
+       ],
+       [
+        "unique_ptr",
+        "Single owner"
+       ],
+       [
+        "shared_ptr",
+        "Shared ownership with a count"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that safely creates a unique_ptr (just its name).",
+      "a": [
+       "make_unique",
+       "std::make_unique"
+      ],
+      "why": "make_unique allocates and wraps in one step."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 7 and frees the array",
+      "lines": [
+       "int* a = new int[3];",
+       "a[0] = 7;",
+       "std::cout << a[0];",
+       "delete[] a;"
+      ],
+      "why": "Allocate, use, then free."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using heap memory in order",
+      "items": [
+       [
+        "Allocate with new",
+        1
+       ],
+       [
+        "Use the memory",
+        2
+       ],
+       [
+        "Free it with delete",
+        3
+       ],
+       [
+        "Do not use the pointer again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates an int on the heap holding 4 and stores it in pointer p.",
+      "a": [
+       "int* p = new int(4);",
+       "int *p = new int(4);",
+       "int* p = new int(4)",
+       "int *p = new int(4)"
+      ],
+      "why": "new int(4) returns an int pointer."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 9 with a smart pointer",
+      "lines": [
+       "#include <memory>",
+       "auto p = std::make_unique<int>(9);",
+       "std::cout << *p;"
+      ],
+      "why": "Include, create, then use."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "auto a = std::make_shared<int>(1);\nauto b = a;\nstd::cout << a.use_count();",
+      "o": [
+       "1",
+       "0",
+       "Error",
+       "2"
+      ],
+      "a": 3,
+      "why": "a and b share the object, so there are two owners."
+     }
+    ]
+   },
+   {
+    "title": "Exceptions",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "try, throw, catch",
+      "b": "An exception is a way for code to signal that something went wrong. You put risky code in a try block. When code runs throw, the rest of the try block is skipped and the matching catch block runs.",
+      "code": "try {\n    throw 1;\n} catch (int e) {\n    std::cout << \"caught \" << e;\n}"
+     },
+     {
+      "h": "Standard exceptions",
+      "b": "Include <stdexcept> and throw objects like std::runtime_error with a message. Catch them by const reference to std::exception and print the message with e.what().",
+      "code": "try {\n    throw std::runtime_error(\"bad\");\n} catch (const std::exception& e) {\n    std::cout << e.what();\n}"
+     },
+     {
+      "h": "Passing the error up",
+      "b": "If a function throws and does not catch, the exception travels up to the caller, then its caller, until a catch matches. If nobody catches it, the program stops. This keeps error handling out of the normal logic.",
+      "code": "void f() { throw 5; }\n// the caller can catch it"
+     },
+     {
+      "h": "Catch order and catch all",
+      "b": "Catch blocks are checked from top to bottom, and the first matching one runs, so put specific types first. catch (...) catches anything and goes last. Use exceptions for real errors, not for normal flow."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword raises an exception?",
+      "o": [
+       "throw",
+       "raise",
+       "error",
+       "except"
+      ],
+      "a": 0,
+      "why": "throw starts the exception."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to the rest of the try block after a throw?",
+      "o": [
+       "It still runs",
+       "It is skipped",
+       "It runs twice",
+       "It runs after catch"
+      ],
+      "a": 1,
+      "why": "Control jumps straight to the matching catch."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "try {\n    std::cout << \"A\";\n    throw 1;\n    std::cout << \"B\";\n} catch (int e) {\n    std::cout << \"C\";\n}",
+      "o": [
+       "ABC",
+       "A",
+       "AC",
+       "AB"
+      ],
+      "a": 2,
+      "why": "B is skipped by the throw, then catch prints C."
+     },
+     {
+      "t": "tf",
+      "q": "catch (...) catches any type of exception.",
+      "a": true,
+      "why": "The ellipsis matches everything."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "try",
+        "Code that may fail"
+       ],
+       [
+        "throw",
+        "Signal an error"
+       ],
+       [
+        "catch",
+        "Handle the error"
+       ],
+       [
+        "e.what()",
+        "Get the error message"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that handles an exception after a try block.",
+      "a": [
+       "catch"
+      ],
+      "why": "catch follows try."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints bad",
+      "lines": [
+       "try {",
+       "    throw std::runtime_error(\"bad\");",
+       "} catch (const std::exception& e) {",
+       "    std::cout << e.what();",
+       "}"
+      ],
+      "why": "Throw inside try, then print the message in catch."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an exception in order",
+      "items": [
+       [
+        "Code in the try block runs",
+        1
+       ],
+       [
+        "A throw happens",
+        2
+       ],
+       [
+        "The rest of the try block is skipped",
+        3
+       ],
+       [
+        "The matching catch runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that throws a std::runtime_error with the message oops.",
+      "a": [
+       "throw std::runtime_error(\"oops\");",
+       "throw runtime_error(\"oops\");",
+       "throw std::runtime_error(\"oops\")",
+       "throw runtime_error(\"oops\")"
+      ],
+      "why": "throw then the error object."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a divide function that refuses zero",
+      "lines": [
+       "double divide(int a, int b) {",
+       "    if (b == 0) throw std::runtime_error(\"div0\");",
+       "    return (double)a / b;",
+       "}"
+      ],
+      "why": "Check first, then divide."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "void f() { throw 5; }\nint main() {\n    try { f(); std::cout << \"x\"; }\n    catch (int n) { std::cout << n; }\n    std::cout << \"!\";\n}",
+      "o": [
+       "5!",
+       "x5!",
+       "5",
+       "x!"
+      ],
+      "a": 0,
+      "why": "f throws 5, so x is skipped. catch prints 5, then ! is printed."
+     }
+    ]
+   },
+   {
+    "title": "File Streams and Multi-file Projects",
+    "period": "C++ intermediate",
+    "learn": [
+     {
+      "h": "Writing and reading files",
+      "b": "Include <fstream>. std::ofstream writes to a file and std::ifstream reads from one. They use << and >> just like cout and cin. The file closes when the object goes out of scope, or when you call close().",
+      "code": "std::ofstream out(\"a.txt\");\nout << \"hi\" << 5;\nout.close();\nstd::ifstream in(\"a.txt\");\nstd::string s;\nin >> s;"
+     },
+     {
+      "h": "Reading lines",
+      "b": "To read a file line by line, loop with while (std::getline(in, line)). The loop stops at the end. Always check that the file opened with if (!in), since it may be missing.",
+      "code": "std::string line;\nwhile (std::getline(in, line)) {\n    std::cout << line;\n}"
+     },
+     {
+      "h": "Headers and sources",
+      "b": "Big programs are split into files. A header file .h holds declarations, like function prototypes and class definitions. A .cpp file holds the definitions. Any file that needs them writes #include \"util.h\" with quotes. Put #pragma once at the top of a header so it is not included twice.",
+      "code": "// util.h\n#pragma once\nint add(int a, int b);"
+     },
+     {
+      "h": "Compiling with g++",
+      "b": "Compile every .cpp file and link them together in one command. g++ main.cpp util.cpp -o app builds a program called app. -o names the output. Add -std=c++17 to choose the language version and -Wall to see more warnings. Run the result with ./app.",
+      "code": "g++ -std=c++17 main.cpp util.cpp -o app\n./app"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which header gives you ifstream and ofstream?",
+      "o": [
+       "<fstream>",
+       "<files>",
+       "<iostream> only",
+       "<stream>"
+      ],
+      "a": 0,
+      "why": "fstream holds the file stream classes."
+     },
+     {
+      "t": "mc",
+      "q": "Which command compiles main.cpp and util.cpp into a program called app?",
+      "o": [
+       "g++ app main.cpp util.cpp",
+       "g++ main.cpp util.cpp -o app",
+       "compile main.cpp util.cpp app",
+       "g++ -o main.cpp util.cpp"
+      ],
+      "a": 1,
+      "why": "List the sources, then -o and the output name."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "std::ofstream out(\"a.txt\");\nout << \"hi\" << 5;\nout.close();\nstd::ifstream in(\"a.txt\");\nstd::string s;\nin >> s;\nstd::cout << s;",
+      "o": [
+       "hi 5",
+       "5hi",
+       "hi5",
+       "Error"
+      ],
+      "a": 2,
+      "why": "hi5 is written without a space, and >> reads up to a space."
+     },
+     {
+      "t": "tf",
+      "q": "Header files normally hold declarations such as function prototypes.",
+      "a": true,
+      "why": "The definitions go in the .cpp files."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "ofstream",
+        "Write to a file"
+       ],
+       [
+        "ifstream",
+        "Read from a file"
+       ],
+       [
+        "#pragma once",
+        "Include a header only once"
+       ],
+       [
+        "-o app",
+        "Name the output program"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the line placed at the top of a header to prevent double inclusion.",
+      "a": [
+       "#pragma once",
+       "pragma once"
+      ],
+      "why": "It is a header guard."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print every line of data.txt",
+      "lines": [
+       "std::ifstream in(\"data.txt\");",
+       "std::string line;",
+       "while (std::getline(in, line)) {",
+       "    std::cout << line;",
+       "}"
+      ],
+      "why": "Open, declare, then loop."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of building a multi-file program in order",
+      "items": [
+       [
+        "Write the .h and .cpp files",
+        1
+       ],
+       [
+        "Compile each .cpp to object code",
+        2
+       ],
+       [
+        "Link the objects into an executable",
+        3
+       ],
+       [
+        "Run the program",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that compiles main.cpp into a program named game.",
+      "a": [
+       "g++ main.cpp -o game",
+       "g++ -o game main.cpp"
+      ],
+      "why": "-o gives the output name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the util.cpp file that defines add",
+      "lines": [
+       "#include \"util.h\"",
+       "int add(int a, int b) {",
+       "    return a + b;",
+       "}"
+      ],
+      "why": "Include the header, then define the function."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "std::ofstream out(\"n.txt\");\nout << \"a\\nb\\nc\\n\";\nout.close();\nstd::ifstream in(\"n.txt\");\nstd::string line;\nint n = 0;\nwhile (std::getline(in, line)) n++;\nstd::cout << n;",
+      "o": [
+       "1",
+       "3",
+       "4",
+       "0"
+      ],
+      "a": 1,
+      "why": "The file has three lines, so the loop runs three times."
+     }
+    ]
+   }
+  ]
+ }
+}

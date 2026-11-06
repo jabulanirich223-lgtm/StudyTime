@@ -1,0 +1,1687 @@
+{
+ "bash": {
+  "name": "Bash & Linux",
+  "units": [
+   {
+    "title": "The Terminal: pwd, ls, cd",
+    "period": "Getting around",
+    "learn": [
+     {
+      "h": "What the terminal is",
+      "b": "The terminal is a text window where you type commands to control the computer. A program called the shell, usually bash, reads each line, runs it, and shows the result. A command is a word followed by options and arguments.",
+      "code": "$ echo hello\nhello"
+     },
+     {
+      "h": "Where am I: pwd",
+      "b": "Every shell session is inside one folder, called the working directory. pwd means print working directory and shows the full path. A path like /home/sam/projects starts at the root, which is just a slash.",
+      "code": "$ pwd\n/home/sam"
+     },
+     {
+      "h": "Listing with ls",
+      "b": "ls shows what is inside a folder. ls -l gives a long list with sizes and permissions, and ls -a also shows hidden files, which start with a dot. You can combine options, like ls -la.",
+      "code": "$ ls\ndocs  notes.txt\n$ ls -a\n.  ..  .secret  docs  notes.txt"
+     },
+     {
+      "h": "Moving with cd",
+      "b": "cd changes the working directory. cd docs goes into docs, cd .. goes up one level, cd ~ or plain cd goes home, and cd / goes to the root. A path starting with / is absolute, and any other path is relative to where you are.",
+      "code": "$ cd docs\n$ pwd\n/home/sam/docs\n$ cd ..\n$ pwd\n/home/sam"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command shows the folder you are currently in?",
+      "o": [
+       "where",
+       "pwd",
+       "dir",
+       "cwd"
+      ],
+      "a": 1,
+      "why": "pwd means print working directory."
+     },
+     {
+      "t": "mc",
+      "q": "Which command goes up one folder?",
+      "o": [
+       "cd ..",
+       "cd .",
+       "cd ~",
+       "cd up"
+      ],
+      "a": 0,
+      "why": "Two dots mean the parent folder."
+     },
+     {
+      "t": "mc",
+      "q": "You are in /home/sam. What does pwd show after these commands?",
+      "code": "$ cd docs\n$ pwd",
+      "o": [
+       "/home/sam",
+       "/docs",
+       "/home/sam/docs",
+       "/home/docs"
+      ],
+      "a": 2,
+      "why": "cd docs moves into the docs folder inside /home/sam."
+     },
+     {
+      "t": "tf",
+      "q": "A file whose name starts with a dot is hidden from a plain ls.",
+      "a": true,
+      "why": "Use ls -a to see hidden files."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "pwd",
+        "Shows the current folder"
+       ],
+       [
+        "ls",
+        "Lists folder contents"
+       ],
+       [
+        "cd",
+        "Changes folder"
+       ],
+       [
+        "ls -a",
+        "Shows hidden files too"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that lists all files including hidden ones.",
+      "a": [
+       "ls -a"
+      ],
+      "hint": "ls and one letter option",
+      "why": "The -a option means all."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the commands to go into docs, check where you are, and go back up",
+      "lines": [
+       "cd docs",
+       "pwd",
+       "cd ..",
+       "pwd # back home"
+      ],
+      "why": "Move in, check, move out, check again."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order",
+      "items": [
+       [
+        "Open the terminal",
+        1
+       ],
+       [
+        "Type a command",
+        2
+       ],
+       [
+        "Press Enter",
+        3
+       ],
+       [
+        "Read the output",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that shows the full path of the folder you are in.",
+      "a": [
+       "pwd"
+      ],
+      "why": "pwd prints the working directory."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands that go into projects, then list everything including hidden files",
+      "lines": [
+       "cd projects",
+       "ls -a",
+       "cd ..",
+       "pwd"
+      ],
+      "why": "Move first, then list, then you can go back up."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: you are in /home/sam/docs. Where does this take you?",
+      "code": "$ cd ..\n$ pwd",
+      "o": [
+       "/home",
+       "/home/sam",
+       "/",
+       "/home/sam/docs"
+      ],
+      "a": 1,
+      "why": "cd .. goes up one folder, from docs to sam."
+     }
+    ]
+   },
+   {
+    "title": "Files: mkdir, touch, cp, mv, rm",
+    "period": "Getting around",
+    "learn": [
+     {
+      "h": "Making things",
+      "b": "mkdir makes a new folder and touch makes a new empty file, or updates the time of an existing one. mkdir -p builds a whole chain of folders at once. You can give several names in one command.",
+      "code": "$ mkdir photos\n$ touch notes.txt\n$ mkdir -p a/b/c"
+     },
+     {
+      "h": "Copying with cp",
+      "b": "cp source destination makes a copy. Use cp -r to copy a whole folder with everything inside. If the destination is a folder, the copy goes inside it with the same name.",
+      "code": "$ cp notes.txt backup.txt\n$ cp -r photos photos2"
+     },
+     {
+      "h": "Moving and renaming with mv",
+      "b": "mv moves a file to another place. If the destination is a new name in the same folder, it renames the file instead. There is no separate rename command in basic bash.",
+      "code": "$ mv notes.txt docs/\n$ mv old.txt new.txt"
+     },
+     {
+      "h": "Removing with rm",
+      "b": "rm deletes a file for good, with no recycle bin. rm -r deletes a folder and everything inside it, and rm -i asks before each delete. Be very careful, especially with rm -rf, and double check the name.",
+      "code": "$ rm old.txt\n$ rm -r photos2\n$ rm -i maybe.txt"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command makes a new folder?",
+      "o": [
+       "touch",
+       "newdir",
+       "mkdir",
+       "mf"
+      ],
+      "a": 2,
+      "why": "mkdir means make directory."
+     },
+     {
+      "t": "mc",
+      "q": "Which command copies a whole folder with its contents?",
+      "o": [
+       "cp -r",
+       "cp",
+       "mv -r",
+       "copy"
+      ],
+      "a": 0,
+      "why": "The -r option means recursive."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "$ mv old.txt new.txt",
+      "o": [
+       "Copies old.txt to new.txt",
+       "Renames old.txt to new.txt",
+       "Deletes old.txt",
+       "Makes both files empty"
+      ],
+      "a": 1,
+      "why": "mv to a new name in the same folder renames the file."
+     },
+     {
+      "t": "tf",
+      "q": "Files deleted with rm go to a recycle bin and can be restored.",
+      "a": false,
+      "why": "rm deletes permanently."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "touch",
+        "Creates an empty file"
+       ],
+       [
+        "cp",
+        "Copies"
+       ],
+       [
+        "mv",
+        "Moves or renames"
+       ],
+       [
+        "rm",
+        "Deletes"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that creates an empty file named a.txt.",
+      "a": [
+       "touch a.txt"
+      ],
+      "why": "touch filename"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the commands to make a folder, put a file in it, and copy the file",
+      "lines": [
+       "mkdir notes",
+       "touch notes/a.txt",
+       "cp notes/a.txt notes/b.txt",
+       "ls notes"
+      ],
+      "why": "Folder first, then the file, then the copy."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of tidying up in order",
+      "items": [
+       [
+        "Make the folder with mkdir",
+        1
+       ],
+       [
+        "Move the file with mv",
+        2
+       ],
+       [
+        "List the folder with ls",
+        3
+       ],
+       [
+        "Delete leftovers with rm",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that creates a folder named games.",
+      "a": [
+       "mkdir games"
+      ],
+      "why": "mkdir name"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to copy a.txt to b.txt, rename b.txt to c.txt, then delete a.txt",
+      "lines": [
+       "cp a.txt b.txt",
+       "mv b.txt c.txt",
+       "rm a.txt",
+       "ls # c.txt remains"
+      ],
+      "why": "Copy, rename, delete the original, then list."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this command do?",
+      "code": "$ rm -r tmp",
+      "o": [
+       "Lists the folder tmp",
+       "Copies tmp",
+       "Only deletes empty folders",
+       "Deletes the folder tmp and everything in it"
+      ],
+      "a": 3,
+      "why": "rm -r removes folders recursively."
+     }
+    ]
+   },
+   {
+    "title": "Viewing: cat, less, head, tail",
+    "period": "Getting around",
+    "learn": [
+     {
+      "h": "cat",
+      "b": "cat prints the whole content of a file to the screen. Give it several files and it prints them one after the other, which is where its name comes from: concatenate. It is best for short files.",
+      "code": "$ cat hello.txt\nHello there!"
+     },
+     {
+      "h": "less",
+      "b": "less opens a long file one screen at a time. Press space to go forward, b to go back, / to search, and q to quit. It does not change the file.",
+      "code": "$ less long.txt"
+     },
+     {
+      "h": "head and tail",
+      "b": "head shows the first 10 lines of a file and tail shows the last 10. Add -n and a number to choose how many, like head -n 3. tail -f keeps watching a file and shows new lines as they appear, which is great for logs.",
+      "code": "$ head -n 3 log.txt\n$ tail -n 2 log.txt"
+     },
+     {
+      "h": "Counting with wc",
+      "b": "wc counts lines, words and characters. wc -l gives only the number of lines. It is a handy way to see how big a file is.",
+      "code": "$ wc -l log.txt\n120 log.txt"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command prints a whole file to the screen?",
+      "o": [
+       "cat",
+       "show",
+       "less -a",
+       "type"
+      ],
+      "a": 0,
+      "why": "cat prints the file content."
+     },
+     {
+      "t": "mc",
+      "q": "How do you quit less?",
+      "o": [
+       "Press x",
+       "Press q",
+       "Press Enter",
+       "Press Esc twice"
+      ],
+      "a": 1,
+      "why": "q quits less."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command show?",
+      "code": "$ head -n 3 log.txt",
+      "o": [
+       "The last 3 lines",
+       "Three random lines",
+       "The first 3 lines of log.txt",
+       "Only the third line"
+      ],
+      "a": 2,
+      "why": "head shows the beginning and -n 3 limits it to 3 lines."
+     },
+     {
+      "t": "tf",
+      "q": "tail shows the last lines of a file.",
+      "a": true,
+      "why": "tail shows the end, head shows the start."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its job",
+      "pairs": [
+       [
+        "cat",
+        "Prints a whole file"
+       ],
+       [
+        "less",
+        "Reads one screen at a time"
+       ],
+       [
+        "head",
+        "First lines"
+       ],
+       [
+        "tail",
+        "Last lines"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that shows only the number of lines in log.txt.",
+      "a": [
+       "wc -l log.txt"
+      ],
+      "why": "wc counts, -l counts lines."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the commands to show the first and last 2 lines of log.txt",
+      "lines": [
+       "head -n 2 log.txt",
+       "tail -n 2 log.txt",
+       "wc -l log.txt # how long is it"
+      ],
+      "why": "First lines, last lines, then count."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of reading a long file in order",
+      "items": [
+       [
+        "Open it with less",
+        1
+       ],
+       [
+        "Press space to scroll",
+        2
+       ],
+       [
+        "Search with a slash",
+        3
+       ],
+       [
+        "Quit with q",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that prints the whole file notes.txt.",
+      "a": [
+       "cat notes.txt"
+      ],
+      "why": "cat filename"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to see the start and end of a log, and watch it live",
+      "lines": [
+       "head -n 5 app.log",
+       "tail -n 5 app.log",
+       "tail -f app.log"
+      ],
+      "why": "Start, end, then follow new lines."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this command do?",
+      "code": "$ tail -n 20 server.log",
+      "o": [
+       "Shows the last 20 lines of server.log",
+       "Shows the first 20 lines",
+       "Deletes 20 lines",
+       "Counts 20 lines"
+      ],
+      "a": 0,
+      "why": "tail -n 20 shows the last 20 lines."
+     }
+    ]
+   },
+   {
+    "title": "Permissions: chmod",
+    "period": "Getting around",
+    "learn": [
+     {
+      "h": "Reading permissions",
+      "b": "In ls -l, each file starts with ten characters like -rwxr-xr--. The first says file (-) or directory (d). The next nine are three groups of three: owner, group and others. Each group shows r for read, w for write and x for execute, or a dash if not allowed.",
+      "code": "$ ls -l script.sh\n-rwxr-xr-- 1 sam team 40 script.sh"
+     },
+     {
+      "h": "Numbers",
+      "b": "Each permission has a number: read is 4, write is 2 and execute is 1. Add them for one group, so rwx is 7, rw- is 6, r-x is 5 and r-- is 4. Three digits give owner, group and others, so 755 is rwxr-xr-x.",
+      "code": "chmod 755 script.sh\nchmod 644 notes.txt"
+     },
+     {
+      "h": "Letters",
+      "b": "chmod also accepts letters. u is the owner, g the group, o others and a all. Use + to add and - to remove. So chmod +x script.sh adds execute for everyone, and chmod o-w file removes write from others.",
+      "code": "chmod +x script.sh\nchmod go-w notes.txt"
+     },
+     {
+      "h": "Why it matters",
+      "b": "A script cannot run as a program until it has execute permission. Private files should not be readable by others. Permissions protect your data on a shared computer."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the x in rwx stand for?",
+      "o": [
+       "Extra",
+       "Execute",
+       "Exclude",
+       "Examine"
+      ],
+      "a": 1,
+      "why": "x lets a file run as a program."
+     },
+     {
+      "t": "mc",
+      "q": "What number is rwx?",
+      "o": [
+       "7",
+       "5",
+       "6",
+       "4"
+      ],
+      "a": 0,
+      "why": "4 + 2 + 1 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "$ chmod +x script.sh",
+      "o": [
+       "Deletes the file",
+       "Makes the file read-only",
+       "Lets the owner, group and others run the file",
+       "Renames the file"
+      ],
+      "a": 2,
+      "why": "chmod +x adds execute permission."
+     },
+     {
+      "t": "tf",
+      "q": "chmod 644 gives the owner read and write, and everyone else only read.",
+      "a": true,
+      "why": "6 is rw-, and 4 is r--."
+     },
+     {
+      "t": "match",
+      "q": "Match each number to its meaning",
+      "pairs": [
+       [
+        "4",
+        "Read"
+       ],
+       [
+        "2",
+        "Write"
+       ],
+       [
+        "1",
+        "Execute"
+       ],
+       [
+        "7",
+        "Read, write and execute"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that makes script.sh executable for everyone.",
+      "a": [
+       "chmod +x script.sh",
+       "chmod a+x script.sh"
+      ],
+      "why": "chmod +x filename"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the commands to check a file, make it executable, and check again",
+      "lines": [
+       "ls -l run.sh",
+       "chmod +x run.sh",
+       "ls -l run.sh # now has x"
+      ],
+      "why": "Check, change, check."
+     },
+     {
+      "t": "order",
+      "q": "Put the three permission groups in the order they appear",
+      "items": [
+       [
+        "Owner",
+        1
+       ],
+       [
+        "Group",
+        2
+       ],
+       [
+        "Others",
+        3
+       ],
+       [
+        "Done: nine characters",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that gives the file data.txt permissions rwxr-xr-x using numbers.",
+      "a": [
+       "chmod 755 data.txt"
+      ],
+      "why": "rwx is 7, r-x is 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to remove write from others, then make the file executable by the owner",
+      "lines": [
+       "chmod o-w file.sh",
+       "chmod u+x file.sh",
+       "ls -l file.sh"
+      ],
+      "why": "Remove first, add next, then check."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does the permission string -rw-r--r-- mean?",
+      "code": "-rw-r--r-- 1 sam team 10 notes.txt",
+      "o": [
+       "Everyone can run it",
+       "Owner can read and write, others only read",
+       "Only the owner can read it",
+       "It is a directory"
+      ],
+      "a": 1,
+      "why": "rw- for owner, r-- for group, r-- for others."
+     }
+    ]
+   },
+   {
+    "title": "Pipes & Redirects",
+    "period": "Working with data",
+    "learn": [
+     {
+      "h": "Output goes somewhere",
+      "b": "Most commands print to the screen, which is called standard output. The greater-than sign redirects output into a file instead. A single > replaces the file, and >> adds to the end of it.",
+      "code": "$ echo hi > a.txt\n$ echo again >> a.txt\n$ cat a.txt\nhi\nagain"
+     },
+     {
+      "h": "Input redirect",
+      "b": "The less-than sign feeds a file into a command as its input. For example wc -l < a.txt counts lines from the file. Many commands can also take the file name directly.",
+      "code": "$ wc -l < a.txt\n2"
+     },
+     {
+      "h": "Pipes",
+      "b": "The pipe symbol | sends the output of one command into the next as its input. You chain small tools to do big jobs. Each command does one thing well.",
+      "code": "$ ls | wc -l\n5\n$ cat names.txt | sort"
+     },
+     {
+      "h": "Useful partners",
+      "b": "sort puts lines in order and sort -n sorts numbers. uniq removes repeated lines that are next to each other, so sort first. wc counts. Errors travel on a separate stream, and 2> redirects them.",
+      "code": "$ sort names.txt | uniq\n$ ls missing 2> errors.txt"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which symbol sends one command's output into another command?",
+      "o": [
+       "|",
+       ">",
+       "<",
+       "&"
+      ],
+      "a": 0,
+      "why": "The pipe connects commands."
+     },
+     {
+      "t": "mc",
+      "q": "Which symbol adds output to the end of a file without erasing it?",
+      "o": [
+       ">",
+       "|",
+       "<",
+       ">>"
+      ],
+      "a": 3,
+      "why": ">> appends, > overwrites."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "$ ls | wc -l",
+      "o": [
+       "Deletes the folder",
+       "Counts how many items are in the folder",
+       "Sorts the files",
+       "Prints file contents"
+      ],
+      "a": 1,
+      "why": "ls output is piped into wc -l, which counts lines."
+     },
+     {
+      "t": "tf",
+      "q": "A single > overwrites the file if it already exists.",
+      "a": true,
+      "why": "Use >> to append."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its job",
+      "pairs": [
+       [
+        ">",
+        "Writes output to a file, replacing it"
+       ],
+       [
+        ">>",
+        "Appends output to a file"
+       ],
+       [
+        "|",
+        "Sends output to another command"
+       ],
+       [
+        "<",
+        "Reads input from a file"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that saves the word hello into a file named a.txt (use echo and one symbol).",
+      "a": [
+       "echo hello > a.txt",
+       "echo hello >a.txt"
+      ],
+      "why": "echo hello > a.txt"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the commands to write two lines to a file and show it",
+      "lines": [
+       "echo apple > list.txt",
+       "echo pear >> list.txt",
+       "cat list.txt",
+       "wc -l list.txt"
+      ],
+      "why": "Create with >, add with >>, then read."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a pipeline in order",
+      "items": [
+       [
+        "First command produces output",
+        1
+       ],
+       [
+        "The pipe passes it along",
+        2
+       ],
+       [
+        "Second command reads it as input",
+        3
+       ],
+       [
+        "Final result shows on screen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that lists files and counts them.",
+      "a": [
+       "ls | wc -l",
+       "ls|wc -l"
+      ],
+      "why": "Pipe ls into wc -l."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the pipeline that sorts names.txt and removes duplicates, then saves the result",
+      "lines": [
+       "cat names.txt",
+       "| sort",
+       "| uniq",
+       "> clean.txt"
+      ],
+      "why": "Sort first so equal lines are together."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is in out.txt after these commands?",
+      "code": "$ echo hello > out.txt\n$ echo world >> out.txt",
+      "o": [
+       "Only hello",
+       "Only world",
+       "Both words, one per line",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "The second command appends with >>."
+     }
+    ]
+   },
+   {
+    "title": "grep & find",
+    "period": "Working with data",
+    "learn": [
+     {
+      "h": "grep",
+      "b": "grep searches for text inside files and prints the matching lines. Use grep word file. Useful options: -i ignores case, -n shows line numbers, -v shows lines that do NOT match, and -c counts matching lines.",
+      "code": "$ grep error app.log\n$ grep -i error app.log\n$ grep -n error app.log"
+     },
+     {
+      "h": "grep with pipes",
+      "b": "grep also reads from a pipe, so you can filter any command's output. For example ls -l | grep txt shows only the lines containing txt. Quote text with spaces so the shell passes it whole.",
+      "code": "$ ls | grep txt\n$ grep \"not found\" app.log"
+     },
+     {
+      "h": "Searching many files",
+      "b": "grep -r word folder searches every file inside the folder, including sub folders. It prints the file name before each match. This is a fast way to find where something is written.",
+      "code": "$ grep -r TODO src"
+     },
+     {
+      "h": "find",
+      "b": "find looks for files by name or other facts, not by content. find . -name \"*.txt\" searches from the current folder for names that end in .txt. The star is a wildcard for any characters. find -type d finds only folders.",
+      "code": "$ find . -name \"*.txt\"\n$ find /home -type d"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command searches for text inside a file?",
+      "o": [
+       "find",
+       "locate",
+       "grep",
+       "seek"
+      ],
+      "a": 2,
+      "why": "grep matches lines of text."
+     },
+     {
+      "t": "mc",
+      "q": "Which grep option ignores upper and lower case?",
+      "o": [
+       "-i",
+       "-c",
+       "-n",
+       "-v"
+      ],
+      "a": 0,
+      "why": "-i means case-insensitive."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "$ find . -name \"*.txt\"",
+      "o": [
+       "Searches inside files for txt",
+       "Finds all files ending in .txt below the current folder",
+       "Deletes txt files",
+       "Lists only folders"
+      ],
+      "a": 1,
+      "why": "find searches names, and . means start here."
+     },
+     {
+      "t": "tf",
+      "q": "grep -v shows only the lines that do NOT match.",
+      "a": true,
+      "why": "-v inverts the match."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "grep",
+        "Searches inside files"
+       ],
+       [
+        "find",
+        "Searches for files by name"
+       ],
+       [
+        "grep -n",
+        "Shows line numbers"
+       ],
+       [
+        "grep -r",
+        "Searches folders recursively"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that searches for the word error in app.log.",
+      "a": [
+       "grep error app.log"
+      ],
+      "why": "grep word file"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the commands to find a word, then count matching lines",
+      "lines": [
+       "grep -i error app.log",
+       "grep -c error app.log",
+       "ls | grep log"
+      ],
+      "why": "Search, count, then filter a listing."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of tracking down a bug message in order",
+      "items": [
+       [
+        "Find the log files with find",
+        1
+       ],
+       [
+        "Search them with grep",
+        2
+       ],
+       [
+        "Read the matching lines",
+        3
+       ],
+       [
+        "Fix the problem",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that counts the lines containing todo in notes.txt.",
+      "a": [
+       "grep -c todo notes.txt"
+      ],
+      "why": "Use the -c option."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to find .log files, then search one for warnings, ignoring case",
+      "lines": [
+       "find . -name \"*.log\"",
+       "grep -i warning app.log",
+       "grep -c -i warning app.log"
+      ],
+      "why": "Locate files, then search, then count."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this command print?",
+      "code": "$ ls | grep txt",
+      "o": [
+       "Only the lines that contain txt",
+       "All files",
+       "Only folders",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "grep filters the piped ls output."
+     }
+    ]
+   },
+   {
+    "title": "Variables & echo",
+    "period": "Scripting",
+    "learn": [
+     {
+      "h": "echo",
+      "b": "echo prints text to the screen. Quotes keep spaces together. echo -n does not add a new line at the end. It is the simplest way to see a value.",
+      "code": "$ echo Hello world\nHello world\n$ echo \"Hi    there\"\nHi    there"
+     },
+     {
+      "h": "Variables",
+      "b": "A variable stores a value. Write name=value with no spaces around the equals sign. Read it later with a dollar sign, like $name. By convention, variable names are in lower or upper case letters and underscores.",
+      "code": "$ name=Sam\n$ echo $name\nSam\n$ echo \"Hi, $name\"\nHi, Sam"
+     },
+     {
+      "h": "Quotes matter",
+      "b": "Double quotes allow variables to be replaced by their values. Single quotes print text exactly as written, with no replacements. Without quotes, extra spaces in a value get lost.",
+      "code": "$ n=5\n$ echo \"n is $n\"\nn is 5\n$ echo 'n is $n'\nn is $n"
+     },
+     {
+      "h": "Command substitution",
+      "b": "$( ) runs a command and puts its output in place. For example today=$(date) stores the date. Environment variables like $HOME and $USER are set by the system, and export makes your variable available to programs you start.",
+      "code": "$ me=$(whoami)\n$ echo $me\nsam\n$ echo $HOME\n/home/sam"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you create a variable named age with value 14?",
+      "o": [
+       "age = 14",
+       "age=14",
+       "var age = 14",
+       "set age 14"
+      ],
+      "a": 1,
+      "why": "Bash does not allow spaces around the equals sign."
+     },
+     {
+      "t": "mc",
+      "q": "How do you read the value of the variable name?",
+      "o": [
+       "#name",
+       "&name",
+       "$name",
+       "%name"
+      ],
+      "a": 2,
+      "why": "A dollar sign reads the value."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "n=5\necho 'n is $n'",
+      "o": [
+       "n is $n",
+       "n is 5",
+       "n is",
+       "5"
+      ],
+      "a": 0,
+      "why": "Single quotes stop the replacement, so the text prints exactly."
+     },
+     {
+      "t": "tf",
+      "q": "In bash, name = Sam with spaces around the equals sign is a correct assignment.",
+      "a": false,
+      "why": "No spaces are allowed around =."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its meaning",
+      "pairs": [
+       [
+        "$name",
+        "Value of a variable"
+       ],
+       [
+        "\"...\"",
+        "Allows variable replacement"
+       ],
+       [
+        "'...'",
+        "Prints text exactly"
+       ],
+       [
+        "$(cmd)",
+        "Output of a command"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that prints the value of the variable city.",
+      "a": [
+       "echo $city",
+       "echo \"$city\""
+      ],
+      "why": "echo $city"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to store a name and greet it",
+      "lines": [
+       "name=Sam",
+       "echo \"Hello, $name\"",
+       "name=Mia",
+       "echo \"Hi again, $name\""
+      ],
+      "why": "Assign before using, and re-assign to change."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a variable in order",
+      "items": [
+       [
+        "Assign it with name=value",
+        1
+       ],
+       [
+        "Read it with $name",
+        2
+       ],
+       [
+        "Change it with another assignment",
+        3
+       ],
+       [
+        "Print the new value",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that sets a variable named score to 10 (no spaces).",
+      "a": [
+       "score=10"
+      ],
+      "why": "name=value"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that store the current user and print a sentence",
+      "lines": [
+       "me=$(whoami)",
+       "echo \"I am $me\"",
+       "echo 'done'"
+      ],
+      "why": "Assign first, then print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "name=Mia\necho \"Hi, $name\"",
+      "o": [
+       "Hi, $name",
+       "Hi, Mia",
+       "Hi, name",
+       "Hi,"
+      ],
+      "a": 1,
+      "why": "Double quotes replace $name with Mia."
+     }
+    ]
+   },
+   {
+    "title": "If & test",
+    "period": "Scripting",
+    "learn": [
+     {
+      "h": "Exit status",
+      "b": "Every command ends with a number called its exit status. 0 means success and anything else means failure. The special variable $? holds the status of the last command. if uses this: it runs its block when the command succeeds.",
+      "code": "$ ls /home\n$ echo $?\n0"
+     },
+     {
+      "h": "test and [ ]",
+      "b": "test checks conditions and the square brackets [ ] are the same thing. Leave a space inside each bracket. For numbers use -eq, -ne, -lt, -gt, -le and -ge. For text use = and !=.",
+      "code": "[ 5 -gt 3 ]\n[ \"$a\" = \"yes\" ]"
+     },
+     {
+      "h": "File tests",
+      "b": "You can test files too. -e checks it exists, -f checks it is a regular file, -d checks it is a directory, and -r, -w, -x check permissions. This is how scripts check before they act.",
+      "code": "[ -f notes.txt ]\n[ -d photos ]"
+     },
+     {
+      "h": "The if statement",
+      "b": "if condition; then commands; fi. fi is if spelled backwards and closes the block. You can add elif and else. Always leave spaces around the brackets.",
+      "code": "if [ $age -ge 18 ]; then\n  echo \"adult\"\nelif [ $age -ge 13 ]; then\n  echo \"teen\"\nelse\n  echo \"kid\"\nfi"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word closes an if block in bash?",
+      "o": [
+       "fi",
+       "end",
+       "endif",
+       "done"
+      ],
+      "a": 0,
+      "why": "fi is if backwards."
+     },
+     {
+      "t": "mc",
+      "q": "Which operator means greater than for numbers inside [ ]?",
+      "o": [
+       ">",
+       "-gt",
+       "gt",
+       "=>"
+      ],
+      "a": 1,
+      "why": "Bash uses -gt for numeric greater than."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "age=14\nif [ $age -ge 18 ]; then\n  echo adult\nelif [ $age -ge 13 ]; then\n  echo teen\nelse\n  echo kid\nfi",
+      "o": [
+       "adult",
+       "kid",
+       "teen",
+       "nothing"
+      ],
+      "a": 2,
+      "why": "14 is not at least 18 but is at least 13."
+     },
+     {
+      "t": "tf",
+      "q": "An exit status of 0 means the command succeeded.",
+      "a": true,
+      "why": "0 is success, anything else is an error."
+     },
+     {
+      "t": "match",
+      "q": "Match each test to its meaning",
+      "pairs": [
+       [
+        "-f file",
+        "Is a regular file"
+       ],
+       [
+        "-d name",
+        "Is a directory"
+       ],
+       [
+        "-eq",
+        "Numbers are equal"
+       ],
+       [
+        "$?",
+        "Exit status of the last command"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the test option that checks whether a directory exists, like [ ___ photos ].",
+      "a": [
+       "-d"
+      ],
+      "why": "-d means directory."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the if statement that prints found when notes.txt exists",
+      "lines": [
+       "if [ -e notes.txt ]; then",
+       "  echo found",
+       "else",
+       "  echo missing",
+       "fi"
+      ],
+      "why": "if, then, else, then fi."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an if in order",
+      "items": [
+       [
+        "Run the test",
+        1
+       ],
+       [
+        "Get an exit status",
+        2
+       ],
+       [
+        "Choose the then or else block",
+        3
+       ],
+       [
+        "Continue after fi",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the test that checks if the variable n equals 5 as numbers (put it in square brackets).",
+      "a": [
+       "[ $n -eq 5 ]",
+       "[ \"$n\" -eq 5 ]"
+      ],
+      "why": "Use -eq for numbers."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that print big when score is over 50",
+      "lines": [
+       "if [ $score -gt 50 ]; then",
+       "  echo big",
+       "fi",
+       "echo done"
+      ],
+      "why": "The block ends with fi."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print when file a.txt does not exist?",
+      "code": "if [ -e a.txt ]; then\n  echo found\nelse\n  echo missing\nfi",
+      "o": [
+       "found",
+       "nothing",
+       "an error",
+       "missing"
+      ],
+      "a": 3,
+      "why": "-e is false, so the else block runs."
+     }
+    ]
+   },
+   {
+    "title": "Loops",
+    "period": "Scripting",
+    "learn": [
+     {
+      "h": "for loops",
+      "b": "for name in list; do commands; done runs the commands once for each item. Each time, the variable holds the next item. Items are separated by spaces.",
+      "code": "for fruit in apple pear kiwi; do\n  echo \"I like $fruit\"\ndone"
+     },
+     {
+      "h": "Ranges and files",
+      "b": "{1..5} expands to 1 2 3 4 5. A pattern like *.txt expands to all matching files, so you can loop over files. You can also loop over the lines of a command with $( ).",
+      "code": "for i in {1..3}; do\n  echo \"Round $i\"\ndone\nfor f in *.txt; do\n  echo \"$f\"\ndone"
+     },
+     {
+      "h": "while loops",
+      "b": "while runs as long as its condition is true. Something inside must change the condition, or it runs forever. Use ((n = n + 1)) or n=$((n + 1)) for math.",
+      "code": "n=1\nwhile [ $n -le 3 ]; do\n  echo $n\n  n=$((n + 1))\ndone"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves a loop right away. continue skips the rest of this round and starts the next. Both work in for and while loops. The loop always ends with done.",
+      "code": "for i in 1 2 3 4; do\n  if [ $i -eq 3 ]; then\n    break\n  fi\n  echo $i\ndone"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word ends a for or while loop in bash?",
+      "o": [
+       "end",
+       "done",
+       "fi",
+       "stop"
+      ],
+      "a": 1,
+      "why": "Loops open with do and close with done."
+     },
+     {
+      "t": "mc",
+      "q": "What does {1..5} expand to?",
+      "o": [
+       "1 2 3 4 5",
+       "1 5",
+       "0 1 2 3 4",
+       "1 2 3 4"
+      ],
+      "a": 0,
+      "why": "It counts from 1 to 5, both included."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "for i in 1 2 3 4; do\n  if [ $i -eq 3 ]; then\n    break\n  fi\n  echo $i\ndone",
+      "o": [
+       "1, 2, 3",
+       "Only 3",
+       "1 and 2 on separate lines",
+       "1, 2, 3, 4"
+      ],
+      "a": 2,
+      "why": "At 3 the loop breaks, so it never prints 3."
+     },
+     {
+      "t": "tf",
+      "q": "A while loop keeps running as long as its condition stays true.",
+      "a": true,
+      "why": "Make sure the condition can change."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its job",
+      "pairs": [
+       [
+        "for",
+        "Loops over a list"
+       ],
+       [
+        "while",
+        "Loops while a test is true"
+       ],
+       [
+        "break",
+        "Leaves the loop"
+       ],
+       [
+        "continue",
+        "Skips to the next round"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that starts the body of a loop after the list or condition.",
+      "a": [
+       "do"
+      ],
+      "why": "for x in list; do"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the loop that prints 1 to 3",
+      "lines": [
+       "for i in 1 2 3; do",
+       "  echo $i",
+       "done",
+       "echo finished"
+      ],
+      "why": "Header, body, done, then continue."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a for loop in order",
+      "items": [
+       [
+        "Take the first item",
+        1
+       ],
+       [
+        "Run the body",
+        2
+       ],
+       [
+        "Take the next item",
+        3
+       ],
+       [
+        "Stop after the last item",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that closes a loop.",
+      "a": [
+       "done"
+      ],
+      "why": "done ends for and while."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the loop that prints each txt file name",
+      "lines": [
+       "for f in *.txt; do",
+       "  echo \"$f\"",
+       "done"
+      ],
+      "why": "The pattern *.txt expands to matching files."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "n=3\nwhile [ $n -gt 0 ]; do\n  echo $n\n  n=$((n - 1))\ndone",
+      "o": [
+       "1 then 2 then 3",
+       "3 then 2 then 1",
+       "3 only",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "n starts at 3 and goes down by one each round until it is 0."
+     }
+    ]
+   },
+   {
+    "title": "Scripts, Shebang & Arguments",
+    "period": "Scripting",
+    "learn": [
+     {
+      "h": "What is a script",
+      "b": "A script is a text file of commands that bash runs from top to bottom. It lets you save and repeat work. By convention scripts end in .sh, though the name does not matter to bash.",
+      "code": "# hello.sh\necho \"Hello from a script\""
+     },
+     {
+      "h": "The shebang",
+      "b": "The first line #! followed by a program path tells the system which program runs the file. For bash scripts write #!/bin/bash. Then give the file execute permission with chmod +x and run it with ./script.sh.",
+      "code": "#!/bin/bash\necho \"Hi\"\n\n$ chmod +x hello.sh\n$ ./hello.sh\nHi"
+     },
+     {
+      "h": "Arguments",
+      "b": "Words you type after the script name are its arguments. Inside, $1 is the first, $2 the second, and so on. $# is how many were given, $@ is all of them, and $0 is the script name.",
+      "code": "#!/bin/bash\necho \"Hello, $1\"\n\n$ ./greet.sh Sam\nHello, Sam"
+     },
+     {
+      "h": "Putting it together",
+      "b": "A real script combines checks, loops and arguments. Check $# first, print a usage message and exit if something is missing. exit 0 ends successfully, and exit 1 signals an error.",
+      "code": "#!/bin/bash\nif [ $# -lt 1 ]; then\n  echo \"Usage: $0 name\"\n  exit 1\nfi\necho \"Hi $1\""
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the first line #!/bin/bash do?",
+      "o": [
+       "Prints the word bash",
+       "Deletes the script",
+       "Says which program runs the script",
+       "Makes the script faster"
+      ],
+      "a": 2,
+      "why": "The shebang picks the interpreter."
+     },
+     {
+      "t": "mc",
+      "q": "Inside a script, what is $1?",
+      "o": [
+       "The first argument",
+       "The script name",
+       "The number of arguments",
+       "The last argument"
+      ],
+      "a": 0,
+      "why": "$1 is the first word after the script name."
+     },
+     {
+      "t": "mc",
+      "q": "You run ./greet.sh Sam. What does it print?",
+      "code": "#!/bin/bash\necho \"Hello, $1\"",
+      "o": [
+       "Hello, $1",
+       "Hello, Sam",
+       "Hello, greet.sh",
+       "Hello,"
+      ],
+      "a": 1,
+      "why": "$1 becomes Sam."
+     },
+     {
+      "t": "tf",
+      "q": "A script needs execute permission to run as ./script.sh.",
+      "a": true,
+      "why": "Use chmod +x script.sh first."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "#!/bin/bash",
+        "Chooses bash to run the file"
+       ],
+       [
+        "$1",
+        "First argument"
+       ],
+       [
+        "$#",
+        "Number of arguments"
+       ],
+       [
+        "exit 1",
+        "Ends with an error"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that runs a script named run.sh in the current folder.",
+      "a": [
+       "./run.sh"
+      ],
+      "why": "Use ./ before the name."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a script that says hello to the first argument",
+      "lines": [
+       "#!/bin/bash",
+       "name=$1",
+       "echo \"Hello, $name\"",
+       "exit 0"
+      ],
+      "why": "Shebang first, then the commands."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of making a script run in order",
+      "items": [
+       [
+        "Write the commands in a file",
+        1
+       ],
+       [
+        "Add the shebang line at the top",
+        2
+       ],
+       [
+        "Run chmod +x on it",
+        3
+       ],
+       [
+        "Run it with ./name.sh",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the first line that makes a script run with bash.",
+      "a": [
+       "#!/bin/bash"
+      ],
+      "why": "The shebang starts with #!"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the script that warns when no argument is given",
+      "lines": [
+       "#!/bin/bash",
+       "if [ $# -lt 1 ]; then",
+       "  echo \"Usage: $0 name\"",
+       "  exit 1",
+       "fi",
+       "echo \"Hi $1\""
+      ],
+      "why": "Check $# before using $1."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: you run ./count.sh a b c. What does this print?",
+      "code": "#!/bin/bash\necho $#",
+      "o": [
+       "3",
+       "1",
+       "a",
+       "count.sh"
+      ],
+      "a": 0,
+      "why": "$# is the number of arguments."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1942 @@
+{
+ "js-3": {
+  "name": "JavaScript · Advanced",
+  "units": [
+   {
+    "title": "Callbacks",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "Functions as values",
+      "b": "In JavaScript a function is a value, so you can pass it to another function as an argument. A function you hand over to be called later is a callback. The function that receives it decides when to call it.",
+      "code": "function run(cb) {\n  cb(1);\n  cb(2);\n}\nrun(n => console.log(n * 10)); // 10 20"
+     },
+     {
+      "h": "Synchronous callbacks",
+      "b": "Many callbacks run immediately, in order, before the outer function finishes. Array methods like forEach, map and filter work this way. Passing different callbacks gives the same function different behaviour.",
+      "code": "function applyTwice(f, x) {\n  return f(f(x));\n}\nconsole.log(applyTwice(n => n + 3, 1)); // 7"
+     },
+     {
+      "h": "Asynchronous callbacks",
+      "b": "Some work takes time, like a timer or a network request. JavaScript does not wait: it keeps running the next lines and calls your callback when the work finishes. setTimeout(fn, ms) is the simplest example.",
+      "code": "console.log(\"start\");\nsetTimeout(() => console.log(\"later\"), 1000);\nconsole.log(\"end\");\n// start end later"
+     },
+     {
+      "h": "Error-first style and callback hell",
+      "b": "Node.js made a convention: the callback gets the error as its first argument, or null if all went well, and the result second. When callbacks nest inside callbacks the code drifts to the right and becomes hard to read. This pyramid is called callback hell, and promises were invented to fix it.",
+      "code": "function divide(a, b, cb) {\n  if (b === 0) return cb(new Error(\"zero\"));\n  cb(null, a / b);\n}\ndivide(6, 3, (err, r) => console.log(err ? err.message : r)); // 2"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a callback?",
+      "o": [
+       "A function passed to another function to be called later",
+       "A loop that repeats",
+       "A way to end a program",
+       "A variable that changes"
+      ],
+      "a": 0,
+      "why": "A callback is a function given as an argument."
+     },
+     {
+      "t": "mc",
+      "q": "What does setTimeout(fn, 1000) do?",
+      "o": [
+       "Calls fn immediately",
+       "Calls fn after about 1000 milliseconds",
+       "Calls fn 1000 times",
+       "Stops fn"
+      ],
+      "a": 1,
+      "why": "It schedules fn to run after the delay."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "function run(cb) {\n  cb(1);\n  cb(2);\n}\nrun(n => console.log(n * 10));",
+      "o": [
+       "10 then 20 on separate lines",
+       "1 then 2",
+       "20 only",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "The callback is called with 1 and then 2, each multiplied by 10."
+     },
+     {
+      "t": "tf",
+      "q": "Callbacks are always asynchronous.",
+      "a": false,
+      "why": "Callbacks like the one in forEach run synchronously."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "callback",
+        "function passed to be called later"
+       ],
+       [
+        "setTimeout",
+        "run code after a delay"
+       ],
+       [
+        "error-first callback",
+        "error is the first argument"
+       ],
+       [
+        "callback hell",
+        "deeply nested callbacks"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print? function twice(f) { f(); f(); } let n = 0; twice(() => n++); console.log(n);",
+      "a": [
+       "2"
+      ],
+      "why": "The callback runs twice, adding 1 each time."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to run an action twice",
+      "lines": [
+       "function repeat(n, action) {",
+       "  for (let i = 0; i < n; i++) action(i);",
+       "}",
+       "repeat(2, i => console.log(i));"
+      ],
+      "why": "Define repeat before calling it."
+     },
+     {
+      "t": "order",
+      "q": "Put the timer steps in order",
+      "items": [
+       [
+        "Call setTimeout with a function",
+        1
+       ],
+       [
+        "The code after setTimeout keeps running",
+        2
+       ],
+       [
+        "The timer finishes",
+        3
+       ],
+       [
+        "The callback runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write applyTwice(f, x) that returns f applied to f applied to x.",
+      "starter": "// write applyTwice below\n",
+      "tests": [
+       {
+        "post": "console.log(applyTwice(n => n + 3, 1));",
+        "expect": "7"
+       },
+       {
+        "post": "console.log(applyTwice(s => s + \"!\", \"hi\"));",
+        "expect": "hi!!"
+       },
+       {
+        "post": "console.log(applyTwice(n => n * n, 3));",
+        "expect": "81"
+       }
+      ],
+      "hint": "return f(f(x));",
+      "solution": "function applyTwice(f, x) {\n  return f(f(x));\n}",
+      "why": "The callback is called on its own result."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write myMap(arr, cb) that returns a new array with cb(item) for each item. Do not use the built-in map.",
+      "starter": "// write myMap below\n",
+      "tests": [
+       {
+        "post": "console.log(myMap([1, 2, 3], n => n * 2).join(\",\"));",
+        "expect": "2,4,6"
+       },
+       {
+        "post": "console.log(myMap([\"a\", \"b\"], s => s + \"!\").join(\",\"));",
+        "expect": "a!,b!"
+       },
+       {
+        "post": "console.log(myMap([], n => n).length === 0 ? \"\" : \"bad\");",
+        "expect": ""
+       }
+      ],
+      "hint": "Make an empty result array, loop over arr and push cb(item).",
+      "solution": "function myMap(arr, cb) {\n  const out = [];\n  for (const item of arr) {\n    out.push(cb(item));\n  }\n  return out;\n}",
+      "why": "Calling the callback for every item is exactly what map does."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of an error-first callback example that prints 2",
+      "lines": [
+       "function divide(a, b, cb) {",
+       "  if (b === 0) return cb(new Error(\"zero\"));",
+       "  cb(null, a / b);",
+       "}",
+       "divide(6, 3, (err, r) => console.log(err ? err.message : r));"
+      ],
+      "why": "The callback gets the error first, then the result."
+     }
+    ]
+   },
+   {
+    "title": "Promises",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "A value in the future",
+      "b": "A promise is an object that stands for a result that is not ready yet. It starts pending and then settles: fulfilled with a value, or rejected with an error. Once settled it never changes.",
+      "code": "const p = new Promise((resolve, reject) => {\n  setTimeout(() => resolve(\"done\"), 500);\n});"
+     },
+     {
+      "h": "then, catch, finally",
+      "b": "Use .then(fn) to run code when the promise is fulfilled, .catch(fn) when it is rejected and .finally(fn) when it settles either way. Each of these returns a new promise, so you can chain them.",
+      "code": "Promise.resolve(5)\n  .then(n => n * 2)\n  .then(n => console.log(n)) // 10\n  .catch(e => console.log(\"error\"))\n  .finally(() => console.log(\"end\"));"
+     },
+     {
+      "h": "Combining promises",
+      "b": "Promise.all waits for every promise and gives an array of results, but rejects as soon as one fails. Promise.allSettled waits for all and reports each outcome as an object with a status. Promise.race settles with whichever promise finishes first.",
+      "code": "Promise.all([Promise.resolve(1), Promise.resolve(2)])\n  .then(r => console.log(r.join())); // 1,2"
+     },
+     {
+      "h": "Order of execution",
+      "b": "Promise callbacks go into the microtask queue, which runs after the current code finishes but before timers. So synchronous code runs first, then promise callbacks, then setTimeout callbacks, even with a delay of 0.",
+      "code": "console.log(\"A\");\nsetTimeout(() => console.log(\"B\"), 0);\nPromise.resolve().then(() => console.log(\"C\"));\nconsole.log(\"D\");\n// A D C B"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is NOT a promise state?",
+      "o": [
+       "pending",
+       "fulfilled",
+       "rejected",
+       "running"
+      ],
+      "a": 3,
+      "why": "The three states are pending, fulfilled and rejected."
+     },
+     {
+      "t": "mc",
+      "q": "What does .catch handle?",
+      "o": [
+       "A fulfilled promise",
+       "A rejected promise",
+       "A pending promise",
+       "A timer"
+      ],
+      "a": 1,
+      "why": ".catch runs when the promise is rejected."
+     },
+     {
+      "t": "mc",
+      "q": "What order does this print?",
+      "code": "console.log(\"A\");\nsetTimeout(() => console.log(\"B\"), 0);\nPromise.resolve().then(() => console.log(\"C\"));\nconsole.log(\"D\");",
+      "o": [
+       "A B C D",
+       "A D C B",
+       "A D B C",
+       "D A C B"
+      ],
+      "a": 1,
+      "why": "Synchronous code first, then the promise callback, then the timer."
+     },
+     {
+      "t": "tf",
+      "q": "The .then method returns a new promise.",
+      "a": true,
+      "why": "That is what makes chaining possible."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "resolve",
+        "fulfills the promise"
+       ],
+       [
+        "reject",
+        "rejects the promise"
+       ],
+       [
+        "Promise.all",
+        "waits for all promises"
+       ],
+       [
+        "Promise.race",
+        "first promise to settle wins"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the method that runs when a promise is rejected.",
+      "a": [
+       "catch",
+       ".catch"
+      ],
+      "why": "catch handles rejections."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a promise chain that prints 10",
+      "lines": [
+       "Promise.resolve(5)",
+       "  .then(n => n * 2)",
+       "  .then(n => console.log(n));"
+      ],
+      "why": "Each then receives the previous result."
+     },
+     {
+      "t": "order",
+      "q": "Put the life of a promise in order",
+      "items": [
+       [
+        "The promise is created and pending",
+        1
+       ],
+       [
+        "The work finishes or fails",
+        2
+       ],
+       [
+        "The state becomes fulfilled or rejected",
+        3
+       ],
+       [
+        "The then or catch callback runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: results is an array like the output of Promise.allSettled: objects with status \"fulfilled\" (and a value) or \"rejected\" (and a reason). Print the values of the fulfilled ones joined with commas.",
+      "starter": "// results is already set\n",
+      "tests": [
+       {
+        "pre": "let results = [{ status: \"fulfilled\", value: 1 }, { status: \"rejected\", reason: \"x\" }, { status: \"fulfilled\", value: 3 }];",
+        "expect": "1,3"
+       },
+       {
+        "pre": "let results = [{ status: \"rejected\", reason: \"no\" }];",
+        "expect": ""
+       },
+       {
+        "pre": "let results = [{ status: \"fulfilled\", value: 7 }];",
+        "expect": "7"
+       }
+      ],
+      "hint": "Filter for status === \"fulfilled\", map to value, then join.",
+      "solution": "console.log(results.filter(r => r.status === \"fulfilled\").map(r => r.value).join(\",\"));",
+      "why": "filter then map mirrors what you would do after allSettled."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write chain(value, fns) that passes value through each function in fns in order, like a .then chain, and returns the final result.",
+      "starter": "// write chain below\n",
+      "tests": [
+       {
+        "post": "console.log(chain(2, [n => n + 1, n => n * 10]));",
+        "expect": "30"
+       },
+       {
+        "post": "console.log(chain(5, []));",
+        "expect": "5"
+       },
+       {
+        "post": "console.log(chain(\"hi\", [s => s.toUpperCase(), s => s + \"!\"]));",
+        "expect": "HI!"
+       }
+      ],
+      "hint": "Use reduce: fns.reduce((acc, f) => f(acc), value)",
+      "solution": "function chain(value, fns) {\n  return fns.reduce((acc, f) => f(acc), value);\n}",
+      "why": "Each step receives the previous result."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that runs after a promise whether it worked or failed.",
+      "a": [
+       "finally",
+       ".finally"
+      ],
+      "why": "finally always runs."
+     }
+    ]
+   },
+   {
+    "title": "async and await",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "async functions",
+      "b": "Putting async before a function makes it always return a promise. Whatever you return becomes the value of that promise, and a thrown error becomes a rejection.",
+      "code": "async function f() {\n  return 5;\n}\nf().then(v => console.log(v)); // 5"
+     },
+     {
+      "h": "await",
+      "b": "Inside an async function, await pauses that function until a promise settles and gives you its value. It reads like normal step-by-step code. Only that function waits: the rest of the program keeps running. await can only be used inside async functions (or at the top level of a module).",
+      "code": "async function main() {\n  const a = await getA();\n  const b = await getB();\n  console.log(a + b);\n}"
+     },
+     {
+      "h": "Handling errors",
+      "b": "A rejected promise makes await throw, so you handle failures with normal try/catch. This is much cleaner than a long chain of .catch calls. A forgotten await is a common bug: you get a pending promise instead of the value.",
+      "code": "async function load() {\n  try {\n    const v = await getValue();\n    console.log(v);\n  } catch (e) {\n    console.log(\"fail\");\n  }\n}"
+     },
+     {
+      "h": "Parallel work",
+      "b": "Two awaits in a row run one after the other. If the tasks do not depend on each other, start them together and await Promise.all, which is faster. For loops of async work use for...of with await inside, or Promise.all with map to run them at once.",
+      "code": "async function both() {\n  const [a, b] = await Promise.all([getA(), getB()]);\n  return a + b;\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does an async function always return?",
+      "o": [
+       "A promise",
+       "undefined",
+       "A string",
+       "A callback"
+      ],
+      "a": 0,
+      "why": "The return value is wrapped in a promise."
+     },
+     {
+      "t": "mc",
+      "q": "Where can await be used?",
+      "o": [
+       "Anywhere",
+       "Inside an async function",
+       "Only in loops",
+       "Only in classes"
+      ],
+      "a": 1,
+      "why": "await needs an async function (or a module top level)."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "async function f() {\n  return 5;\n}\nf().then(v => console.log(v));\nconsole.log(\"first\");",
+      "o": [
+       "5 then first",
+       "first then 5",
+       "Only first",
+       "Only 5"
+      ],
+      "a": 1,
+      "why": "The then callback runs later, after the synchronous log."
+     },
+     {
+      "t": "tf",
+      "q": "await freezes the entire program until the promise settles.",
+      "a": false,
+      "why": "Only the async function is paused; other code keeps running."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "async",
+        "function returns a promise"
+       ],
+       [
+        "await",
+        "pause until the promise settles"
+       ],
+       [
+        "try/catch",
+        "handle a rejected promise"
+       ],
+       [
+        "Promise.all",
+        "run tasks in parallel"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that pauses an async function until a promise settles.",
+      "a": [
+       "await"
+      ],
+      "why": "await waits for the promise."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to load a value and handle failure",
+      "lines": [
+       "async function load() {",
+       "  try {",
+       "    const v = await getValue();",
+       "    console.log(v);",
+       "  } catch (e) {",
+       "    console.log(\"fail\");",
+       "  }",
+       "}"
+      ],
+      "why": "The await is inside the try block."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of calling an async function in order",
+      "items": [
+       [
+        "Call the async function",
+        1
+       ],
+       [
+        "It runs until its first await",
+        2
+       ],
+       [
+        "The rest of the program keeps running",
+        3
+       ],
+       [
+        "When the promise settles the function resumes",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write sequence(tasks) where tasks is an array of functions. Call each one in order and return an array of their results. (This is the logic behind awaiting tasks one by one.)",
+      "starter": "// write sequence below\n",
+      "tests": [
+       {
+        "post": "console.log(sequence([() => 1, () => 2, () => 3]).join(\"-\"));",
+        "expect": "1-2-3"
+       },
+       {
+        "post": "console.log(sequence([]).join(\"-\"));",
+        "expect": ""
+       },
+       {
+        "post": "console.log(sequence([() => \"a\"]).join(\"-\"));",
+        "expect": "a"
+       }
+      ],
+      "hint": "Loop over tasks and push task() into a results array.",
+      "solution": "function sequence(tasks) {\n  const results = [];\n  for (const t of tasks) {\n    results.push(t());\n  }\n  return results;\n}",
+      "why": "Order is the order of the array."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write safeRun(fn, fallback) that returns fn() or, if fn throws, returns fallback. (This is the try/catch you use around await.)",
+      "starter": "// write safeRun below\n",
+      "tests": [
+       {
+        "post": "console.log(safeRun(() => JSON.parse(\"{\\\"a\\\":1}\").a, 0));",
+        "expect": "1"
+       },
+       {
+        "post": "console.log(safeRun(() => JSON.parse(\"bad\").a, 0));",
+        "expect": "0"
+       },
+       {
+        "post": "console.log(safeRun(() => null.x, \"none\"));",
+        "expect": "none"
+       }
+      ],
+      "hint": "try { return fn(); } catch (e) { return fallback; }",
+      "solution": "function safeRun(fn, fallback) {\n  try {\n    return fn();\n  } catch (e) {\n    return fallback;\n  }\n}",
+      "why": "catch gives a safe default."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of an async function that adds two awaited values",
+      "lines": [
+       "async function getTotal() {",
+       "  const a = await fetchA();",
+       "  const b = await fetchB();",
+       "  return a + b;",
+       "}"
+      ],
+      "why": "The awaits come before the return."
+     }
+    ]
+   },
+   {
+    "title": "Map and Set",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "Map",
+      "b": "A Map stores key-value pairs like an object, but any value can be a key, it remembers insertion order and it has a size property. Use set(key, value), get(key), has(key) and delete(key). Getting a missing key gives undefined.",
+      "code": "const m = new Map();\nm.set(\"a\", 1);\nm.set(\"b\", 2);\nconsole.log(m.get(\"a\")); // 1\nconsole.log(m.size); // 2"
+     },
+     {
+      "h": "Looping over a Map",
+      "b": "A Map is iterable. for...of gives [key, value] pairs, which you can destructure. m.keys() and m.values() give just the keys or values, and in the order they were added.",
+      "code": "for (const [k, v] of m) {\n  console.log(k, v);\n}\n// a 1\n// b 2"
+     },
+     {
+      "h": "Set",
+      "b": "A Set holds unique values, so adding the same value twice does nothing. Use add, has, delete and size. Sets are perfect for removing duplicates and for fast is-it-in-here checks.",
+      "code": "const s = new Set([1, 2, 2, 3]);\ns.add(3);\nconsole.log(s.size); // 3\nconsole.log(s.has(2)); // true"
+     },
+     {
+      "h": "Removing duplicates and counting",
+      "b": "Spread a Set to turn it back into an array, which removes duplicates in one line. A Map is the natural tool for counting how often things appear: get the old count, add one and set it again.",
+      "code": "const arr = [1, 1, 2];\nconsole.log([...new Set(arr)].join()); // 1,2\nconst counts = new Map();\nfor (const w of [\"a\", \"b\", \"a\"]) {\n  counts.set(w, (counts.get(w) || 0) + 1);\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a Set store?",
+      "o": [
+       "Key-value pairs",
+       "Unique values",
+       "Only numbers",
+       "Functions only"
+      ],
+      "a": 1,
+      "why": "A Set never keeps duplicates."
+     },
+     {
+      "t": "mc",
+      "q": "What does map.get(\"x\") return if x was never set?",
+      "o": [
+       "null",
+       "0",
+       "undefined",
+       "An error"
+      ],
+      "a": 2,
+      "why": "Missing keys give undefined."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log(new Set([1, 2, 2, 3, 3, 3]).size);",
+      "o": [
+       "6",
+       "3",
+       "2",
+       "1"
+      ],
+      "a": 1,
+      "why": "The duplicates are ignored, leaving 1, 2 and 3."
+     },
+     {
+      "t": "tf",
+      "q": "A Map can use objects as keys.",
+      "a": true,
+      "why": "Map keys can be any value, unlike plain object keys."
+     },
+     {
+      "t": "match",
+      "q": "Match each call to its job",
+      "pairs": [
+       [
+        "map.set",
+        "store a pair"
+       ],
+       [
+        "map.has",
+        "check for a key"
+       ],
+       [
+        "new Set(arr)",
+        "unique values only"
+       ],
+       [
+        "set.add",
+        "add a value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What is the length of [...new Set([1, 1, 2])]?",
+      "a": [
+       "2"
+      ],
+      "why": "The Set keeps 1 and 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to set a key twice and read it back",
+      "lines": [
+       "const m = new Map();",
+       "m.set(\"a\", 1);",
+       "m.set(\"a\", 2);",
+       "console.log(m.get(\"a\"));"
+      ],
+      "why": "The second set replaces the first, so it prints 2."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to remove duplicates in order",
+      "items": [
+       [
+        "Start with an array that has duplicates",
+        1
+       ],
+       [
+        "Pass it to new Set",
+        2
+       ],
+       [
+        "Spread the Set into a new array",
+        3
+       ],
+       [
+        "The result has only unique items",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: arr is an array. Print its unique items, in order of first appearance, joined with commas.",
+      "starter": "// arr is already set\n",
+      "tests": [
+       {
+        "pre": "let arr = [1, 2, 2, 3, 1];",
+        "expect": "1,2,3"
+       },
+       {
+        "pre": "let arr = [\"a\", \"a\"];",
+        "expect": "a"
+       },
+       {
+        "pre": "let arr = [5, 4, 5];",
+        "expect": "5,4"
+       }
+      ],
+      "hint": "console.log([...new Set(arr)].join(\",\"));",
+      "solution": "console.log([...new Set(arr)].join(\",\"));",
+      "why": "A Set drops the repeats."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: words is an array of strings. Count each word with a Map and print one line per distinct word in first-seen order, like a:2.",
+      "starter": "// words is already set\n",
+      "tests": [
+       {
+        "pre": "let words = [\"a\", \"b\", \"a\"];",
+        "expect": "a:2\nb:1"
+       },
+       {
+        "pre": "let words = [\"x\"];",
+        "expect": "x:1"
+       },
+       {
+        "pre": "let words = [\"hi\", \"yo\", \"hi\", \"hi\"];",
+        "expect": "hi:3\nyo:1"
+       }
+      ],
+      "hint": "counts.set(w, (counts.get(w) || 0) + 1) then loop over counts.",
+      "solution": "const counts = new Map();\nfor (const w of words) {\n  counts.set(w, (counts.get(w) || 0) + 1);\n}\nfor (const [w, n] of counts) {\n  console.log(w + \":\" + n);\n}",
+      "why": "Map keeps insertion order."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the Set property that tells how many items it holds.",
+      "a": [
+       "size",
+       ".size"
+      ],
+      "why": "size is a property, not a method."
+     }
+    ]
+   },
+   {
+    "title": "Iterators and Generators",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "Iterables",
+      "b": "Something is iterable if for...of and the spread syntax can loop over it. Arrays, strings, Maps and Sets are iterable. Plain objects are not. Behind the scenes an iterable can produce an iterator.",
+      "code": "for (const ch of \"hi\") console.log(ch);\nconsole.log([...\"abc\"].length); // 3"
+     },
+     {
+      "h": "The iterator protocol",
+      "b": "An iterator is an object with a next() method. Each call returns an object { value, done }. While there are items, done is false, and at the end done becomes true. for...of simply calls next() again and again.",
+      "code": "const it = [\"x\", \"y\"][Symbol.iterator]();\nconsole.log(it.next().value); // x\nconsole.log(it.next().value); // y\nconsole.log(it.next().done); // true"
+     },
+     {
+      "h": "Generators",
+      "b": "A generator function is written function* and uses yield to hand out values one at a time. Calling it does not run the body yet. Each next() runs until the next yield and pauses there, remembering everything. Generators are iterable, so you can spread them.",
+      "code": "function* count() {\n  yield 1;\n  yield 2;\n  yield 3;\n}\nconsole.log([...count()].join()); // 1,2,3"
+     },
+     {
+      "h": "Lazy and infinite",
+      "b": "Because a generator only works when asked, it can describe an infinite sequence without using infinite memory. You just take the values you need. This is called lazy evaluation.",
+      "code": "function* naturals() {\n  let n = 1;\n  while (true) yield n++;\n}\nconst g = naturals();\nconsole.log(g.next().value, g.next().value); // 1 2"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does an iterator next() method return?",
+      "o": [
+       "Only the value",
+       "An object with value and done",
+       "A promise",
+       "An array"
+      ],
+      "a": 1,
+      "why": "It returns { value, done }."
+     },
+     {
+      "t": "mc",
+      "q": "What does yield do inside a generator?",
+      "o": [
+       "Ends the program",
+       "Pauses and gives out a value",
+       "Throws an error",
+       "Deletes the function"
+      ],
+      "a": 1,
+      "why": "yield hands out a value and pauses."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "function* g() {\n  yield 1;\n  yield 2;\n}\nconsole.log([...g()].join(\"\"));",
+      "o": [
+       "12",
+       "1,2",
+       "21",
+       "undefined"
+      ],
+      "a": 0,
+      "why": "Spreading the generator gives [1, 2], and join with an empty string glues them."
+     },
+     {
+      "t": "tf",
+      "q": "A plain object like { a: 1 } works directly with for...of.",
+      "a": false,
+      "why": "Plain objects are not iterable."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "for...of",
+        "loops over an iterable"
+       ],
+       [
+        "next()",
+        "returns the next { value, done }"
+       ],
+       [
+        "function*",
+        "generator function"
+       ],
+       [
+        "yield",
+        "pause and give a value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print? const it = [10, 20][Symbol.iterator](); it.next(); console.log(it.next().value);",
+      "a": [
+       "20"
+      ],
+      "why": "The second call returns the second item."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 1,2,3 from a generator",
+      "lines": [
+       "function* count() {",
+       "  yield 1;",
+       "  yield 2;",
+       "  yield 3;",
+       "}",
+       "console.log([...count()].join(\",\"));"
+      ],
+      "why": "Define the generator before using it."
+     },
+     {
+      "t": "order",
+      "q": "Put the generator steps in order",
+      "items": [
+       [
+        "Call the generator function (no code runs yet)",
+        1
+       ],
+       [
+        "Call next() for the first time",
+        2
+       ],
+       [
+        "The code runs until the first yield",
+        3
+       ],
+       [
+        "The next call resumes after that yield",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write a generator function range(start, end) that yields every whole number from start to end inclusive.",
+      "starter": "// write function* range below\n",
+      "tests": [
+       {
+        "post": "console.log([...range(1, 4)].join(\",\"));",
+        "expect": "1,2,3,4"
+       },
+       {
+        "post": "console.log([...range(5, 5)].join(\",\"));",
+        "expect": "5"
+       },
+       {
+        "post": "console.log([...range(-1, 1)].join(\",\"));",
+        "expect": "-1,0,1"
+       }
+      ],
+      "hint": "function* range(start, end) { for (let i = start; i <= end; i++) yield i; }",
+      "solution": "function* range(start, end) {\n  for (let i = start; i <= end; i++) {\n    yield i;\n  }\n}",
+      "why": "yield inside a loop gives each number."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write a generator function fib(n) that yields the first n Fibonacci numbers (0, 1, 1, 2, 3, 5, ...).",
+      "starter": "// write function* fib below\n",
+      "tests": [
+       {
+        "post": "console.log([...fib(5)].join(\",\"));",
+        "expect": "0,1,1,2,3"
+       },
+       {
+        "post": "console.log([...fib(1)].join(\",\"));",
+        "expect": "0"
+       },
+       {
+        "post": "console.log([...fib(7)].join(\",\"));",
+        "expect": "0,1,1,2,3,5,8"
+       }
+      ],
+      "hint": "Keep a and b, yield a, then move to the next pair.",
+      "solution": "function* fib(n) {\n  let a = 0;\n  let b = 1;\n  for (let i = 0; i < n; i++) {\n    yield a;\n    [a, b] = [b, a + b];\n  }\n}",
+      "why": "Each step yields a and advances the pair."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to read a value and then see that the iterator is done",
+      "lines": [
+       "const it = [\"x\"][Symbol.iterator]();",
+       "console.log(it.next().value);",
+       "console.log(it.next().done);"
+      ],
+      "why": "The second next() has nothing left, so done is true."
+     }
+    ]
+   },
+   {
+    "title": "The DOM",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "A tree of nodes",
+      "b": "When a browser loads a web page it builds the DOM, the Document Object Model. It is a tree of objects: the document at the top, then the html element, then the head and body and everything inside. JavaScript can read and change this tree, and the page updates on screen. The DOM belongs to the browser, not to the JavaScript language itself.",
+      "code": "// document is the root object\nconsole.log(typeof document); // in a browser: object"
+     },
+     {
+      "h": "Finding elements",
+      "b": "document.querySelector takes a CSS selector and returns the first matching element, or null. querySelectorAll returns all of them. A selector like #title means the element with id title, .item means class item and p means every paragraph.",
+      "code": "const title = document.querySelector(\"#title\");\nconst items = document.querySelectorAll(\".item\");\nconsole.log(items.length);"
+     },
+     {
+      "h": "Changing content and style",
+      "b": "Set textContent to change the plain text of an element. Use classList.add, remove and toggle to change CSS classes, which is the best way to restyle. You can also set attributes and style properties directly. Avoid innerHTML with user text, because it can run harmful code.",
+      "code": "title.textContent = \"Hello!\";\ntitle.classList.add(\"big\");\ntitle.setAttribute(\"title\", \"tip\");\ntitle.style.color = \"red\";"
+     },
+     {
+      "h": "Creating elements",
+      "b": "createElement makes a new element that is not on the page yet. Fill it in and then add it with appendChild or append on a parent. remove() takes an element away again. This is how lists on a page are built from data.",
+      "code": "const li = document.createElement(\"li\");\nli.textContent = \"Milk\";\ndocument.querySelector(\"ul\").appendChild(li);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does DOM stand for?",
+      "o": [
+       "Data Object Method",
+       "Document Object Model",
+       "Digital Order Map",
+       "Document Output Mode"
+      ],
+      "a": 1,
+      "why": "It is the Document Object Model."
+     },
+     {
+      "t": "mc",
+      "q": "What does document.querySelector(\"#title\") select?",
+      "o": [
+       "Every element",
+       "The first element with id title",
+       "The page title text",
+       "All headings"
+      ],
+      "a": 1,
+      "why": "#title matches an element by its id."
+     },
+     {
+      "t": "mc",
+      "q": "A page has a paragraph with id msg that shows Hi. What does the paragraph show after this code?",
+      "code": "document.getElementById(\"msg\").textContent = \"Bye\";",
+      "o": [
+       "Hi",
+       "Bye",
+       "Hi Bye",
+       "An error"
+      ],
+      "a": 1,
+      "why": "Setting textContent replaces the text."
+     },
+     {
+      "t": "tf",
+      "q": "The DOM is part of the JavaScript language itself.",
+      "a": false,
+      "why": "It is an API provided by the browser."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "document.querySelector",
+        "find an element with a CSS selector"
+       ],
+       [
+        "textContent",
+        "the text inside an element"
+       ],
+       [
+        "createElement",
+        "make a new element"
+       ],
+       [
+        "classList.add",
+        "add a CSS class"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the property that sets the plain text of an element.",
+      "a": [
+       "textContent",
+       ".textContent"
+      ],
+      "why": "textContent sets plain text safely."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add a list item to a list",
+      "lines": [
+       "const li = document.createElement(\"li\");",
+       "li.textContent = \"Milk\";",
+       "list.appendChild(li);"
+      ],
+      "why": "Create and fill the element before appending."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of adding an element in order",
+      "items": [
+       [
+        "Create the element",
+        1
+       ],
+       [
+        "Set its text or attributes",
+        2
+       ],
+       [
+        "Append it to a parent",
+        3
+       ],
+       [
+        "The browser shows it on the page",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write makeSelector(tag, id, classes) that returns a CSS selector string: the tag, then #id if id is not empty, then a dot and name for each class. Example: div#main.a.b",
+      "starter": "// write makeSelector below\n",
+      "tests": [
+       {
+        "post": "console.log(makeSelector(\"div\", \"main\", [\"a\", \"b\"]));",
+        "expect": "div#main.a.b"
+       },
+       {
+        "post": "console.log(makeSelector(\"p\", \"\", []));",
+        "expect": "p"
+       },
+       {
+        "post": "console.log(makeSelector(\"li\", \"\", [\"item\"]));",
+        "expect": "li.item"
+       }
+      ],
+      "hint": "Start with tag, add \"#\" + id if id is not empty, then add \".\" + c for each class.",
+      "solution": "function makeSelector(tag, id, classes) {\n  let s = tag;\n  if (id) {\n    s += \"#\" + id;\n  }\n  for (const c of classes) {\n    s += \".\" + c;\n  }\n  return s;\n}",
+      "why": "Selector strings are plain string building."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: the DOM is a tree. tree is an object with a name and a children array (each child has the same shape). Print how many nodes the tree has in total.",
+      "starter": "// tree is already set\n",
+      "tests": [
+       {
+        "pre": "let tree = { name: \"html\", children: [{ name: \"head\", children: [] }, { name: \"body\", children: [{ name: \"p\", children: [] }] }] };",
+        "expect": "4"
+       },
+       {
+        "pre": "let tree = { name: \"div\", children: [] };",
+        "expect": "1"
+       },
+       {
+        "pre": "let tree = { name: \"ul\", children: [{ name: \"li\", children: [] }, { name: \"li\", children: [] }] };",
+        "expect": "3"
+       }
+      ],
+      "hint": "Write a recursive function that returns 1 plus the sum of the counts of the children.",
+      "solution": "function count(node) {\n  let total = 1;\n  for (const c of node.children) {\n    total += count(c);\n  }\n  return total;\n}\nconsole.log(count(tree));",
+      "why": "A tree is counted by recursion."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that finds the first element matching a CSS selector.",
+      "a": [
+       "querySelector",
+       "document.querySelector"
+      ],
+      "why": "querySelector returns the first match."
+     }
+    ]
+   },
+   {
+    "title": "Events",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "Reacting to the user",
+      "b": "An event is something that happens on the page: a click, a key press, typing in a box, a form being sent. You attach a function to an element with addEventListener(type, handler). The handler runs every time the event happens.",
+      "code": "let n = 0;\nbutton.addEventListener(\"click\", () => {\n  n++;\n  console.log(n);\n});"
+     },
+     {
+      "h": "The event object",
+      "b": "The browser passes an event object to your handler. event.target is the element that was clicked, event.key tells which key was pressed and for text boxes, event.target.value holds the current text. event.preventDefault() stops the browser default action, like a form reloading the page.",
+      "code": "form.addEventListener(\"submit\", e => {\n  e.preventDefault();\n  console.log(\"sent\");\n});"
+     },
+     {
+      "h": "Bubbling and delegation",
+      "b": "Most events bubble: after running on the target element they travel up through its parents. Because of this you can put one listener on a parent list and check event.target to see which child was clicked. This is event delegation, and it also works for elements added later.",
+      "code": "list.addEventListener(\"click\", e => {\n  console.log(e.target.textContent);\n});"
+     },
+     {
+      "h": "Removing and the idea behind it",
+      "b": "removeEventListener removes a handler, but you must pass the same function. Events work on the publish and subscribe idea: code registers interest with on and something announces it with emit. You can build this yourself with plain objects, with no browser needed.",
+      "code": "const handlers = {};\nfunction on(name, fn) {\n  (handlers[name] ||= []).push(fn);\n}\nfunction emit(name, data) {\n  (handlers[name] || []).forEach(fn => fn(data));\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method attaches an event handler to an element?",
+      "o": [
+       "onEvent",
+       "addEventListener",
+       "attachEvent",
+       "listen"
+      ],
+      "a": 1,
+      "why": "addEventListener(type, handler) is the standard."
+     },
+     {
+      "t": "mc",
+      "q": "What does event.preventDefault() do?",
+      "o": [
+       "Stops the browser default action",
+       "Deletes the element",
+       "Stops JavaScript",
+       "Makes the event bubble"
+      ],
+      "a": 0,
+      "why": "It cancels the default behaviour, like submitting a form."
+     },
+     {
+      "t": "mc",
+      "q": "A user clicks the button twice. What is printed?",
+      "code": "let n = 0;\nbutton.addEventListener(\"click\", () => {\n  n++;\n  console.log(n);\n});",
+      "o": [
+       "1 then 2",
+       "2",
+       "1 and 1",
+       "0 then 1"
+      ],
+      "a": 0,
+      "why": "n increases on each click."
+     },
+     {
+      "t": "tf",
+      "q": "Bubbling means an event travels from the target element up to its parents.",
+      "a": true,
+      "why": "That is what makes event delegation possible."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "click",
+        "a mouse press on an element"
+       ],
+       [
+        "input",
+        "text in a field changed"
+       ],
+       [
+        "submit",
+        "a form is sent"
+       ],
+       [
+        "event.target",
+        "the element that triggered it"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the event that fires when a form is sent.",
+      "a": [
+       "submit"
+      ],
+      "why": "A form fires the submit event."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to count clicks and show the number",
+      "lines": [
+       "button.addEventListener(\"click\", () => {",
+       "  count++;",
+       "  label.textContent = count;",
+       "});"
+      ],
+      "why": "The handler body goes between the braces."
+     },
+     {
+      "t": "order",
+      "q": "Put the click steps in order",
+      "items": [
+       [
+        "The user clicks an element",
+        1
+       ],
+       [
+        "The browser creates an event object",
+        2
+       ],
+       [
+        "The listeners run",
+        3
+       ],
+       [
+        "The event bubbles up to the parents",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write createEmitter() that returns an object with on(name, fn) to register a handler and emit(name, data) to call every handler registered for that name with data.",
+      "starter": "// write createEmitter below\n",
+      "tests": [
+       {
+        "post": "const e = createEmitter();\ne.on(\"hi\", n => console.log(\"A\" + n));\ne.on(\"hi\", n => console.log(\"B\" + n));\ne.emit(\"hi\", 1);",
+        "expect": "A1\nB1"
+       },
+       {
+        "post": "const e = createEmitter();\ne.emit(\"nothing\", 1);\nconsole.log(\"done\");",
+        "expect": "done"
+       },
+       {
+        "post": "const e = createEmitter();\ne.on(\"a\", n => console.log(\"x:\" + n));\ne.on(\"b\", n => console.log(\"y:\" + n));\ne.emit(\"a\", 5);",
+        "expect": "x:5"
+       }
+      ],
+      "hint": "Keep an object of arrays: handlers[name] holds the functions for that event.",
+      "solution": "function createEmitter() {\n  const handlers = {};\n  return {\n    on(name, fn) {\n      if (!handlers[name]) {\n        handlers[name] = [];\n      }\n      handlers[name].push(fn);\n    },\n    emit(name, data) {\n      for (const fn of handlers[name] || []) {\n        fn(data);\n      }\n    }\n  };\n}",
+      "why": "This is the same idea as DOM events."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write once(fn) that returns a function which calls fn only the first time and ignores later calls.",
+      "starter": "// write once below\n",
+      "tests": [
+       {
+        "post": "const f = once(() => console.log(\"x\"));\nf();\nf();\nf();",
+        "expect": "x"
+       },
+       {
+        "post": "const f = once(n => console.log(n));\nf(1);\nf(2);",
+        "expect": "1"
+       },
+       {
+        "post": "let c = 0;\nconst g = once(() => { c++; });\ng();\ng();\nconsole.log(c);",
+        "expect": "1"
+       }
+      ],
+      "hint": "Use a closure variable called called that starts false.",
+      "solution": "function once(fn) {\n  let called = false;\n  return function (...args) {\n    if (!called) {\n      called = true;\n      fn(...args);\n    }\n  };\n}",
+      "why": "A closure remembers whether it already ran."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that removes an event handler from an element.",
+      "a": [
+       "removeEventListener",
+       ".removeEventListener"
+      ],
+      "why": "removeEventListener undoes addEventListener."
+     }
+    ]
+   },
+   {
+    "title": "fetch and APIs",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "Requests and responses",
+      "b": "The web works by requests and responses. Your code sends a request to a URL, a server does some work and sends back a response. An API is a set of URLs a server offers so programs can ask for data, usually as JSON. The common methods are GET to read data and POST to send data.",
+      "code": "GET https://api.example.com/users/1\n-> 200 OK\n-> {\"id\":1,\"name\":\"Ana\"}"
+     },
+     {
+      "h": "Status codes",
+      "b": "Every response has a status code. 2xx means success (200 is OK), 3xx means redirect, 4xx means the request was wrong (404 Not Found, 401 not logged in, 403 not allowed) and 5xx means the server failed (500). fetch does not throw on 404 or 500, so you must check response.ok yourself.",
+      "code": "// 200 OK\n// 404 Not Found\n// 500 Internal Server Error"
+     },
+     {
+      "h": "Using fetch",
+      "b": "fetch(url) returns a promise of a Response. Call response.json() to read the body, which is also a promise. Use async/await and try/catch so network errors are handled. For POST pass an options object with method, headers and a JSON body.",
+      "code": "async function getUser() {\n  const res = await fetch(\"/api/user\");\n  if (!res.ok) throw new Error(\"HTTP \" + res.status);\n  const data = await res.json();\n  console.log(data.name);\n}"
+     },
+     {
+      "h": "Query strings, keys and CORS",
+      "b": "Extra data is added to a URL after a question mark, like ?q=cat&page=2, and special characters must be encoded with encodeURIComponent. Many APIs need an API key, which you must keep secret. Browsers also enforce CORS: a server must allow your page to read its responses, otherwise the browser blocks them.",
+      "code": "const q = encodeURIComponent(\"a b\");\nconsole.log(\"https://x.com/s?q=\" + q);\n// https://x.com/s?q=a%20b"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does fetch(url) return?",
+      "o": [
+       "The data directly",
+       "A promise of a Response",
+       "A string",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "fetch returns a promise that resolves to a Response object."
+     },
+     {
+      "t": "mc",
+      "q": "What does status code 404 mean?",
+      "o": [
+       "Server error",
+       "Not found",
+       "Success",
+       "Redirect"
+      ],
+      "a": 1,
+      "why": "404 means the resource was not found."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "const base = \"https://x.com/s\";\nconsole.log(base + \"?q=\" + encodeURIComponent(\"a b\"));",
+      "o": [
+       "https://x.com/s?q=a b",
+       "https://x.com/s?q=a%20b",
+       "https://x.com/s?q=a+b",
+       "https://x.com/s"
+      ],
+      "a": 1,
+      "why": "encodeURIComponent turns the space into %20."
+     },
+     {
+      "t": "tf",
+      "q": "response.json() returns a promise.",
+      "a": true,
+      "why": "Reading the body takes time, so it is asynchronous."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "GET",
+        "read data"
+       ],
+       [
+        "POST",
+        "send data"
+       ],
+       [
+        "200",
+        "OK"
+       ],
+       [
+        "500",
+        "server error"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the status code that means Not Found.",
+      "a": [
+       "404"
+      ],
+      "why": "404 is the classic not found code."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to fetch a user and print the name",
+      "lines": [
+       "async function getUser() {",
+       "  const res = await fetch(\"/api/user\");",
+       "  const data = await res.json();",
+       "  console.log(data.name);",
+       "}"
+      ],
+      "why": "Get the response, then read its JSON."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a fetch in order",
+      "items": [
+       [
+        "fetch sends the request",
+        1
+       ],
+       [
+        "The server processes it",
+        2
+       ],
+       [
+        "The response arrives",
+        3
+       ],
+       [
+        "json() parses the body",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write buildUrl(base, params) that returns base followed by ? and key=value pairs joined with & (values encoded with encodeURIComponent). With no params return just base.",
+      "starter": "// write buildUrl below\n",
+      "tests": [
+       {
+        "post": "console.log(buildUrl(\"https://api.x.com/s\", { q: \"cat\", n: 2 }));",
+        "expect": "https://api.x.com/s?q=cat&n=2"
+       },
+       {
+        "post": "console.log(buildUrl(\"https://api.x.com/s\", { q: \"a b\" }));",
+        "expect": "https://api.x.com/s?q=a%20b"
+       },
+       {
+        "post": "console.log(buildUrl(\"https://api.x.com/s\", {}));",
+        "expect": "https://api.x.com/s"
+       }
+      ],
+      "hint": "Use Object.entries(params).map(([k, v]) => k + \"=\" + encodeURIComponent(v)).join(\"&\").",
+      "solution": "function buildUrl(base, params) {\n  const pairs = Object.entries(params).map(([k, v]) => k + \"=\" + encodeURIComponent(v));\n  if (pairs.length === 0) {\n    return base;\n  }\n  return base + \"?\" + pairs.join(\"&\");\n}",
+      "why": "Query strings are built from key=value pairs."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write statusKind(code) that returns ok for 200-299, client error for 400-499, server error for 500-599 and other for anything else.",
+      "starter": "// write statusKind below\n",
+      "tests": [
+       {
+        "post": "console.log(statusKind(200));",
+        "expect": "ok"
+       },
+       {
+        "post": "console.log(statusKind(404));",
+        "expect": "client error"
+       },
+       {
+        "post": "console.log(statusKind(503));",
+        "expect": "server error"
+       },
+       {
+        "post": "console.log(statusKind(301));",
+        "expect": "other"
+       }
+      ],
+      "hint": "Use if / else if with range checks like code >= 200 && code < 300.",
+      "solution": "function statusKind(code) {\n  if (code >= 200 && code < 300) {\n    return \"ok\";\n  }\n  if (code >= 400 && code < 500) {\n    return \"client error\";\n  }\n  if (code >= 500 && code < 600) {\n    return \"server error\";\n  }\n  return \"other\";\n}",
+      "why": "Each family of codes has a range."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that check response.ok before reading the JSON",
+      "lines": [
+       "async function load(url) {",
+       "  const res = await fetch(url);",
+       "  if (!res.ok) throw new Error(\"HTTP \" + res.status);",
+       "  return await res.json();",
+       "}"
+      ],
+      "why": "Check ok before using the body."
+     }
+    ]
+   },
+   {
+    "title": "Node.js and npm",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "JavaScript outside the browser",
+      "b": "Node.js lets you run JavaScript on your computer or a server, without a browser. You run a file with node app.js in a terminal. There is no document or window, but you get tools for files, networks and the operating system. Typing just node opens a REPL where you try code line by line.",
+      "code": "// app.js\nconsole.log(\"Hello from Node\");\n// terminal: node app.js"
+     },
+     {
+      "h": "Modules in Node",
+      "b": "Node supports two module styles. CommonJS uses require and module.exports and is the older one. ES modules use import and export, the same as in the browser, when the file ends in .mjs or package.json says type is module. Built-in modules such as fs (files) and path are always available.",
+      "code": "const fs = require(\"fs\");        // CommonJS\n// import fs from \"fs\";          // ES module"
+     },
+     {
+      "h": "npm and package.json",
+      "b": "npm is the package manager that comes with Node. npm init creates package.json, a file describing your project and its dependencies. npm install name downloads a package into node_modules and records it in package.json. Dependencies are needed to run the app and devDependencies only while developing.",
+      "code": "npm init -y\nnpm install lodash\nnpm install --save-dev jest"
+     },
+     {
+      "h": "Scripts, versions and command line",
+      "b": "The scripts section of package.json holds shortcuts, so npm start runs the start script and npm run build runs build. Versions follow semver: major.minor.patch, like 1.4.2. Never commit node_modules to git. Your program can read command-line arguments from process.argv, and npx runs a package without installing it permanently.",
+      "code": "{ \"scripts\": { \"start\": \"node app.js\" } }\n// npm start  -> runs node app.js"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does node app.js do?",
+      "o": [
+       "Installs app.js",
+       "Runs app.js with Node",
+       "Compiles a website",
+       "Deletes app.js"
+      ],
+      "a": 1,
+      "why": "It executes the file with Node."
+     },
+     {
+      "t": "mc",
+      "q": "What does npm install express do?",
+      "o": [
+       "Removes express",
+       "Downloads express and adds it to package.json",
+       "Runs express",
+       "Creates a test"
+      ],
+      "a": 1,
+      "why": "npm install adds the package as a dependency."
+     },
+     {
+      "t": "mc",
+      "q": "Which command runs app.js with this setup?",
+      "code": "{\n  \"scripts\": {\n    \"start\": \"node app.js\"\n  }\n}",
+      "o": [
+       "npm start",
+       "npm run app",
+       "node start",
+       "npm app"
+      ],
+      "a": 0,
+      "why": "npm start runs the start script."
+     },
+     {
+      "t": "tf",
+      "q": "The node_modules folder should be committed to git.",
+      "a": false,
+      "why": "It can be rebuilt with npm install, so it is normally ignored."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "package.json",
+        "project info and dependencies"
+       ],
+       [
+        "node_modules",
+        "installed packages"
+       ],
+       [
+        "npx",
+        "run a package without installing it"
+       ],
+       [
+        "process.argv",
+        "command-line arguments"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that installs every package listed in package.json.",
+      "a": [
+       "npm install",
+       "npm i"
+      ],
+      "why": "npm install reads package.json."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the commands to start a new project and add lodash",
+      "lines": [
+       "mkdir app",
+       "cd app",
+       "npm init -y",
+       "npm install lodash"
+      ],
+      "why": "Create and enter the folder before npm init."
+     },
+     {
+      "t": "order",
+      "q": "Put the project steps in order",
+      "items": [
+       [
+        "npm init",
+        1
+       ],
+       [
+        "npm install a package",
+        2
+       ],
+       [
+        "require or import it in your code",
+        3
+       ],
+       [
+        "node app.js",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write bumpPatch(version) that takes a version string like 1.2.3 and returns it with the patch number increased by 1, like 1.2.4.",
+      "starter": "// write bumpPatch below\n",
+      "tests": [
+       {
+        "post": "console.log(bumpPatch(\"1.2.3\"));",
+        "expect": "1.2.4"
+       },
+       {
+        "post": "console.log(bumpPatch(\"0.0.9\"));",
+        "expect": "0.0.10"
+       },
+       {
+        "post": "console.log(bumpPatch(\"2.0.0\"));",
+        "expect": "2.0.1"
+       }
+      ],
+      "hint": "Split on dots, convert with Number, add 1 to the last part, join with dots.",
+      "solution": "function bumpPatch(v) {\n  const parts = v.split(\".\").map(Number);\n  parts[2]++;\n  return parts.join(\".\");\n}",
+      "why": "Semver is three numbers separated by dots."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: text is the content of a package.json file (a JSON string). Print the names of its dependencies sorted alphabetically and joined with commas, or none if there are no dependencies.",
+      "starter": "// text is already set\n",
+      "tests": [
+       {
+        "pre": "let text = '{\"name\":\"app\",\"dependencies\":{\"react\":\"^18.0.0\",\"axios\":\"^1.0.0\"}}';",
+        "expect": "axios,react"
+       },
+       {
+        "pre": "let text = '{\"name\":\"x\"}';",
+        "expect": "none"
+       },
+       {
+        "pre": "let text = '{\"dependencies\":{\"lodash\":\"4.17.21\"}}';",
+        "expect": "lodash"
+       }
+      ],
+      "hint": "Parse the text, use pkg.dependencies || {}, then Object.keys(...).sort().",
+      "solution": "const pkg = JSON.parse(text);\nconst names = Object.keys(pkg.dependencies || {}).sort();\nconsole.log(names.length ? names.join(\",\") : \"none\");",
+      "why": "JSON.parse turns the file text into an object."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the name of the file that lists a Node project's dependencies.",
+      "a": [
+       "package.json"
+      ],
+      "why": "package.json describes the project."
+     }
+    ]
+   },
+   {
+    "title": "Mini Projects in Logic",
+    "period": "JavaScript advanced",
+    "learn": [
+     {
+      "h": "Model the data first",
+      "b": "Before writing functions, decide how the data looks. A todo list is an array of objects, each with an id, a text and a done flag. A score tracker is a Map or object from player name to total points. Good data makes the code simple.",
+      "code": "const todos = [\n  { id: 1, text: \"Milk\", done: false },\n  { id: 2, text: \"Eggs\", done: true }\n];"
+     },
+     {
+      "h": "Small functions that return new data",
+      "b": "Write one small function per action: add, toggle, remove. Prefer functions that return a new array instead of changing the old one, using map and filter. That makes bugs easier to find and works well with UI libraries.",
+      "code": "const toggle = (todos, id) =>\n  todos.map(t => t.id === id ? { ...t, done: !t.done } : t);\nconst remove = (todos, id) =>\n  todos.filter(t => t.id !== id);"
+     },
+     {
+      "h": "Derived values",
+      "b": "Do not store what you can calculate. The number of items left is just todos.filter(t => !t.done).length. A leaderboard is the entries sorted by score. Calculating on demand keeps the data from getting out of sync.",
+      "code": "const left = todos.filter(t => !t.done).length;\nconst board = [...scores].sort((a, b) => b[1] - a[1]);"
+     },
+     {
+      "h": "Logic first, UI second",
+      "b": "Keep the logic in functions or a class that knows nothing about the page. Then the buttons and lists only call these functions and show the results. You can test the logic with console.log alone, which is what the challenges here do.",
+      "code": "class ScoreTracker {\n  constructor() { this.scores = new Map(); }\n  add(name, pts) {\n    this.scores.set(name, (this.scores.get(name) || 0) + pts);\n  }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a good way to store a todo list?",
+      "o": [
+       "One long string",
+       "An array of objects with id, text and done",
+       "A single number",
+       "A Set of booleans"
+      ],
+      "a": 1,
+      "why": "Objects hold the details and the array holds the list."
+     },
+     {
+      "t": "mc",
+      "q": "How do you mark a todo done without changing the original array?",
+      "o": [
+       "Use map and return a copy with done changed for that id",
+       "Use pop",
+       "Use delete on the array",
+       "Use sort"
+      ],
+      "a": 0,
+      "why": "map builds a new array with an updated copy."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "const todos = [\n  { id: 1, done: true },\n  { id: 2, done: false },\n  { id: 3, done: false }\n];\nconsole.log(todos.filter(t => !t.done).length);",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "0"
+      ],
+      "a": 1,
+      "why": "Two todos have done set to false."
+     },
+     {
+      "t": "tf",
+      "q": "Keeping logic in functions separate from the UI makes it easier to test.",
+      "a": true,
+      "why": "Pure logic can be tested with console.log alone."
+     },
+     {
+      "t": "match",
+      "q": "Match each array method to its use in these projects",
+      "pairs": [
+       [
+        "filter",
+        "remove items or count some"
+       ],
+       [
+        "map",
+        "update one item"
+       ],
+       [
+        "reduce",
+        "total score"
+       ],
+       [
+        "sort",
+        "build a leaderboard"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does Object.values({ a: 3, b: 5 }).reduce((s, n) => s + n, 0) return?",
+      "a": [
+       "8"
+      ],
+      "why": "3 + 5 is 8."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add two todos and count the finished ones",
+      "lines": [
+       "const todos = [];",
+       "todos.push({ id: 1, text: \"Milk\", done: false });",
+       "todos.push({ id: 2, text: \"Eggs\", done: true });",
+       "console.log(todos.filter(t => t.done).length);"
+      ],
+      "why": "Add the todos before counting."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of building the app in order",
+      "items": [
+       [
+        "Decide how the data looks",
+        1
+       ],
+       [
+        "Write small functions for each action",
+        2
+       ],
+       [
+        "Update the data when the user acts",
+        3
+       ],
+       [
+        "Show the new data on the page",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: todos is an array of objects with id, text and done. Write toggle(todos, id) that returns a NEW array where the todo with that id has done flipped. Do not change the original.",
+      "starter": "// todos is already set\n// write toggle below\n",
+      "tests": [
+       {
+        "pre": "let todos = [{ id: 1, text: \"a\", done: false }, { id: 2, text: \"b\", done: false }];",
+        "post": "console.log(toggle(todos, 2).map(t => t.done).join());",
+        "expect": "false,true"
+       },
+       {
+        "pre": "let todos = [{ id: 1, text: \"a\", done: true }, { id: 2, text: \"b\", done: false }];",
+        "post": "toggle(todos, 1);\nconsole.log(todos[0].done === true ? \"false\" : \"mutated\");",
+        "expect": "false"
+       },
+       {
+        "pre": "let todos = [{ id: 1, text: \"a\", done: true }, { id: 2, text: \"b\", done: true }];",
+        "post": "console.log(toggle(todos, 1).map(t => t.done).join());",
+        "expect": "false,true"
+       }
+      ],
+      "hint": "Use todos.map(t => t.id === id ? { ...t, done: !t.done } : t).",
+      "solution": "function toggle(todos, id) {\n  return todos.map(t => (t.id === id ? { ...t, done: !t.done } : t));\n}",
+      "why": "map with a copied object leaves the original alone."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write a class ScoreTracker with add(name, points) to add points to a player, total(name) returning that player's total (0 if unknown) and leader() returning the name with the highest total.",
+      "starter": "// write class ScoreTracker below\n",
+      "tests": [
+       {
+        "post": "const t = new ScoreTracker();\nt.add(\"Ann\", 5);\nt.add(\"Bob\", 8);\nt.add(\"Ann\", 4);\nconsole.log(t.leader());",
+        "expect": "Ann"
+       },
+       {
+        "post": "const t = new ScoreTracker();\nt.add(\"Ann\", 5);\nt.add(\"Bob\", 8);\nt.add(\"Ann\", 4);\nconsole.log(t.total(\"Bob\"));",
+        "expect": "8"
+       },
+       {
+        "post": "console.log(new ScoreTracker().total(\"Zed\"));",
+        "expect": "0"
+       }
+      ],
+      "hint": "Store totals in a Map. For leader, loop over the Map and keep the best name so far.",
+      "solution": "class ScoreTracker {\n  constructor() {\n    this.scores = new Map();\n  }\n  add(name, points) {\n    this.scores.set(name, (this.scores.get(name) || 0) + points);\n  }\n  total(name) {\n    return this.scores.get(name) || 0;\n  }\n  leader() {\n    let best = null;\n    let bestScore = -Infinity;\n    for (const [name, score] of this.scores) {\n      if (score > bestScore) {\n        best = name;\n        bestScore = score;\n      }\n    }\n    return best;\n  }\n}",
+      "why": "A Map plus a loop is all a score tracker needs."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print how many todos are left, like 2 left",
+      "lines": [
+       "const todos = [{ done: true }, { done: false }, { done: false }];",
+       "const remaining = todos.filter(t => !t.done).length;",
+       "console.log(`${remaining} left`);"
+      ],
+      "why": "Count the not-done items, then print."
+     }
+    ]
+   }
+  ]
+ }
+}

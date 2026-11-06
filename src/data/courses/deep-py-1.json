@@ -1,0 +1,2254 @@
+{
+ "py-1": {
+  "name": "Python · Beginner",
+  "units": [
+   {
+    "title": "Printing with print()",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Your first program",
+      "b": "The print() function shows text on the screen. Text must go inside quotes, either single or double. Python runs your lines from top to bottom, one at a time.",
+      "code": "print('Hello, world!')\nprint(\"Python is fun\")"
+     },
+     {
+      "h": "Printing more than one thing",
+      "b": "You can give print() several values separated by commas. Python puts a space between them. You can change that with sep, and change the ending with end.",
+      "code": "print('a', 'b', 'c')\nprint('a', 'b', sep='-')\nprint('Hi', end='!')\nprint('there')"
+     },
+     {
+      "h": "Special characters",
+      "b": "Inside a string, a backslash starts a special character. \\n makes a new line and \\t makes a tab. To print a quote inside the same kind of quote, put a backslash before it.",
+      "code": "print('Line 1\\nLine 2')\nprint('Name:\\tJude')\nprint('It\\'s ok')"
+     },
+     {
+      "h": "Comments",
+      "b": "A line that starts with # is a comment. Python ignores it, so you can leave notes for humans. Use comments to explain why your code does something.",
+      "code": "# This line is ignored\nprint('Visible')  # this part is ignored too"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which function shows text on the screen in Python?",
+      "o": [
+       "show()",
+       "print()",
+       "display()",
+       "echo()"
+      ],
+      "a": 1,
+      "why": "print() is the built-in function for output."
+     },
+     {
+      "t": "mc",
+      "q": "Which line prints the word Hello correctly?",
+      "o": [
+       "print(Hello)",
+       "print 'Hello'",
+       "print('Hello')",
+       "Print('Hello')"
+      ],
+      "a": 2,
+      "why": "Text needs quotes and print is lowercase with parentheses."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print('A', 'B')",
+      "o": [
+       "A B",
+       "AB",
+       "A,B",
+       "A-B"
+      ],
+      "a": 0,
+      "why": "print puts a space between values by default."
+     },
+     {
+      "t": "tf",
+      "q": "By default, print() moves to a new line after printing.",
+      "a": true,
+      "why": "The default end is a newline."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "\\n",
+        "new line"
+       ],
+       [
+        "\\t",
+        "tab space"
+       ],
+       [
+        "#",
+        "comment"
+       ],
+       [
+        "end=''",
+        "stay on the same line"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print('Hi' + '!')",
+      "a": [
+       "Hi!"
+      ],
+      "why": "The + joins the two strings with no space."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines: a comment, then print Hello, then print World",
+      "lines": [
+       "# greet the world",
+       "print('Hello')",
+       "print('World')"
+      ],
+      "why": "The comment goes first, then the prints in order."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of running a program in order",
+      "items": [
+       [
+        "Write the code",
+        1
+       ],
+       [
+        "Save the file",
+        2
+       ],
+       [
+        "Run the program",
+        3
+       ],
+       [
+        "Read the output",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: print exactly Hello, Python! on the screen.",
+      "starter": "# print the greeting\n",
+      "tests": [
+       {
+        "expect": "Hello, Python!"
+       }
+      ],
+      "hint": "Put the text inside quotes inside print().",
+      "solution": "print('Hello, Python!')",
+      "why": "print outputs the text."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: print 1, 2 and 3 on ONE line separated by dashes, like 1-2-3. Use sep.",
+      "starter": "# use print with sep\n",
+      "tests": [
+       {
+        "expect": "1-2-3"
+       }
+      ],
+      "hint": "print(1, 2, 3, sep='-')",
+      "solution": "print(1, 2, 3, sep='-')",
+      "why": "sep sets what goes between values."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is printed by print('a\\nb')? Type the number of lines it makes.",
+      "a": [
+       "2"
+      ],
+      "why": "The \\n splits the output into two lines: a and b."
+     }
+    ]
+   },
+   {
+    "title": "Variables",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Storing values",
+      "b": "A variable is a name that points to a value. You create one with =. The value goes on the right and the name goes on the left. Then you can use the name anywhere.",
+      "code": "score = 10\nname = 'Ana'\nprint(name, score)"
+     },
+     {
+      "h": "Naming rules",
+      "b": "Names can use letters, digits and underscores, but cannot start with a digit or contain spaces. Names are case sensitive, so score and Score are different. Use clear lowercase names like player_score.",
+      "code": "player_score = 3\n# 2cool = 1   <- not allowed\n# my score = 1 <- not allowed"
+     },
+     {
+      "h": "Changing a variable",
+      "b": "You can give a variable a new value any time. The right side is worked out first, so x = x + 1 means take x, add 1, and store it back in x.",
+      "code": "lives = 3\nlives = lives - 1\nprint(lives)"
+     },
+     {
+      "h": "Types of values",
+      "b": "Every value has a type: int for whole numbers, float for decimals, str for text, bool for True or False. The type() function tells you which. To swap two variables, use a temporary variable, or write a, b = b, a.",
+      "code": "print(type(5))\nprint(type(2.5))\nprint(type('hi'))\nprint(type(True))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a valid variable name?",
+      "o": [
+       "2fast",
+       "my score",
+       "my_score",
+       "my-score"
+      ],
+      "a": 2,
+      "why": "Underscores are allowed; spaces, dashes and a leading digit are not."
+     },
+     {
+      "t": "mc",
+      "q": "Which symbol assigns a value to a variable?",
+      "o": [
+       "==",
+       "=",
+       "=>",
+       "::"
+      ],
+      "a": 1,
+      "why": "A single = stores a value."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x = 5\nx = x + 1\nprint(x)",
+      "o": [
+       "5",
+       "6",
+       "x + 1",
+       "Error"
+      ],
+      "a": 1,
+      "why": "x becomes 5, then x + 1 is 6 and is stored in x."
+     },
+     {
+      "t": "tf",
+      "q": "A variable name in Python can start with a digit.",
+      "a": false,
+      "why": "Names must start with a letter or underscore."
+     },
+     {
+      "t": "match",
+      "q": "Match each value to its type",
+      "pairs": [
+       [
+        "5",
+        "int"
+       ],
+       [
+        "3.14",
+        "float"
+       ],
+       [
+        "'hi'",
+        "str"
+       ],
+       [
+        "True",
+        "bool"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the function that tells you the type of a value.",
+      "a": [
+       "type",
+       "type()"
+      ],
+      "why": "type(x) returns the type of x."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 15",
+      "lines": [
+       "a = 10",
+       "b = a + 5",
+       "print(b)"
+      ],
+      "why": "Create a, create b from a, then print b."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a variable in order",
+      "items": [
+       [
+        "Choose a name",
+        1
+       ],
+       [
+        "Write the = sign",
+        2
+       ],
+       [
+        "Give it a value",
+        3
+       ],
+       [
+        "Use it in print()",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: lives is already 3. Add 1 to it and print the new value.",
+      "starter": "lives = 3\n",
+      "tests": [
+       {
+        "expect": "4"
+       }
+      ],
+      "hint": "lives = lives + 1",
+      "solution": "lives = 3\nlives = lives + 1\nprint(lives)",
+      "why": "Reassign using the old value."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: a and b are already set. Swap them, then print a on one line and b on the next.",
+      "starter": "# a and b are already set\n",
+      "tests": [
+       {
+        "pre": "a = 1\nb = 2",
+        "expect": "2\n1"
+       },
+       {
+        "pre": "a = 'x'\nb = 'y'",
+        "expect": "y\nx"
+       }
+      ],
+      "hint": "Use a temporary variable: temp = a",
+      "solution": "temp = a\na = b\nb = temp\nprint(a)\nprint(b)",
+      "why": "A temporary variable holds one value during the swap."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: after x = 4 and x = x * 2, what is x?",
+      "a": [
+       "8"
+      ],
+      "why": "4 times 2 is 8."
+     }
+    ]
+   },
+   {
+    "title": "Numbers & Math",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Basic operators",
+      "b": "Python can do math with + - * and /. The / operator always gives a float, even when the answer is whole. Use ** for powers.",
+      "code": "print(7 + 3)\nprint(7 / 2)\nprint(2 ** 3)"
+     },
+     {
+      "h": "Floor division and remainder",
+      "b": "// divides and throws away the decimal part. % gives the remainder. Together they split a number, like turning 125 minutes into 2 hours and 5 minutes. A number is even when n % 2 equals 0.",
+      "code": "print(17 // 5)\nprint(17 % 5)\nprint(10 % 2)"
+     },
+     {
+      "h": "Order of operations",
+      "b": "Python follows the same order as math: parentheses first, then **, then * / // %, then + and -. Use parentheses when you want to be clear.",
+      "code": "print(2 + 3 * 4)\nprint((2 + 3) * 4)"
+     },
+     {
+      "h": "Converting and rounding",
+      "b": "int() turns a value into a whole number by cutting off decimals, and float() makes a decimal. round(x, n) rounds to n decimal places. abs() gives the positive version of a number.",
+      "code": "print(int(3.9))\nprint(float(2))\nprint(round(3.14159, 2))\nprint(abs(-5))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 10 % 3?",
+      "o": [
+       "3",
+       "1",
+       "0",
+       "3.33"
+      ],
+      "a": 1,
+      "why": "10 divided by 3 is 3 remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "What is 2 ** 3?",
+      "o": [
+       "6",
+       "5",
+       "8",
+       "9"
+      ],
+      "a": 2,
+      "why": "2 to the power 3 is 2*2*2 = 8."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print(7 / 2)",
+      "o": [
+       "3",
+       "3.5",
+       "4",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The / operator always gives a float."
+     },
+     {
+      "t": "tf",
+      "q": "7 / 2 gives the whole number 3 in Python 3.",
+      "a": false,
+      "why": "/ gives 3.5; // gives 3."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its job",
+      "pairs": [
+       [
+        "//",
+        "floor division"
+       ],
+       [
+        "%",
+        "remainder"
+       ],
+       [
+        "**",
+        "power"
+       ],
+       [
+        "/",
+        "true division"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print(2 + 3 * 4)",
+      "a": [
+       "14"
+      ],
+      "why": "Multiplication goes first: 3*4=12, then 2+12=14."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the quotient 3 and then the remainder 2 of 17 divided by 5",
+      "lines": [
+       "a = 17",
+       "b = 5",
+       "print(a // b)",
+       "print(a % b)"
+      ],
+      "why": "Set a and b, then print // and %."
+     },
+     {
+      "t": "order",
+      "q": "Put these in the order Python evaluates them",
+      "items": [
+       [
+        "Parentheses",
+        1
+       ],
+       [
+        "Exponents **",
+        2
+       ],
+       [
+        "Multiplication and division",
+        3
+       ],
+       [
+        "Addition and subtraction",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: price and qty are set. Print the total cost (price times qty).",
+      "starter": "# price and qty are set\n",
+      "tests": [
+       {
+        "pre": "price = 4\nqty = 3",
+        "expect": "12"
+       },
+       {
+        "pre": "price = 10\nqty = 5",
+        "expect": "50"
+       },
+       {
+        "pre": "price = 7\nqty = 1",
+        "expect": "7"
+       }
+      ],
+      "hint": "print(price * qty)",
+      "solution": "print(price * qty)",
+      "why": "Multiply and print."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: m is a number of minutes. Print the hours and the leftover minutes on one line, like 2 5 for 125.",
+      "starter": "# m is set\n",
+      "tests": [
+       {
+        "pre": "m = 125",
+        "expect": "2 5"
+       },
+       {
+        "pre": "m = 59",
+        "expect": "0 59"
+       },
+       {
+        "pre": "m = 60",
+        "expect": "1 0"
+       }
+      ],
+      "hint": "Use // for hours and % for leftover.",
+      "solution": "print(m // 60, m % 60)",
+      "why": "// and % split a number."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does 7 // 2 give?",
+      "a": [
+       "3"
+      ],
+      "why": "7 divided by 2 is 3 with the decimal dropped."
+     }
+    ]
+   },
+   {
+    "title": "Strings",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Text values",
+      "b": "A string is text inside quotes. You can join strings with + and repeat them with *. You can only join a string to another string, so use str() to turn a number into text first.",
+      "code": "a = 'sun'\nb = 'shine'\nprint(a + b)\nprint('ha' * 3)\nprint('Age: ' + str(12))"
+     },
+     {
+      "h": "Length and indexing",
+      "b": "len() counts the characters. Each character has an index starting at 0. Use square brackets to get one character. A negative index counts from the end, so -1 is the last character.",
+      "code": "s = 'python'\nprint(len(s))\nprint(s[0])\nprint(s[-1])"
+     },
+     {
+      "h": "Slicing",
+      "b": "A slice s[start:stop] takes characters from start up to but NOT including stop. If you leave one out, Python goes to the edge. A third number is the step.",
+      "code": "s = 'python'\nprint(s[1:4])\nprint(s[:2])\nprint(s[3:])\nprint(s[::-1])"
+     },
+     {
+      "h": "Strings cannot be changed",
+      "b": "Strings are immutable, which means you cannot change one letter in place. To change a string you build a new one. Use triple quotes for text on many lines.",
+      "code": "s = 'cat'\n# s[0] = 'b'  <- Error\ns = 'b' + s[1:]\nprint(s)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is len('Hi there')?",
+      "o": [
+       "7",
+       "8",
+       "9",
+       "2"
+      ],
+      "a": 1,
+      "why": "The space counts too: 8 characters."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'a' + 'b'?",
+      "o": [
+       "'ab'",
+       "'a b'",
+       "Error",
+       "'ba'"
+      ],
+      "a": 0,
+      "why": "+ joins strings with no space."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "s = 'python'\nprint(s[1:4])",
+      "o": [
+       "yth",
+       "pyt",
+       "ytho",
+       "tho"
+      ],
+      "a": 0,
+      "why": "Index 1 to 3 gives y, t, h."
+     },
+     {
+      "t": "tf",
+      "q": "You can change a letter with s[0] = 'J' on a string.",
+      "a": false,
+      "why": "Strings are immutable and this raises an error."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to what it gives for s = 'dog'",
+      "pairs": [
+       [
+        "s[0]",
+        "d"
+       ],
+       [
+        "s[-1]",
+        "g"
+       ],
+       [
+        "len(s)",
+        "3"
+       ],
+       [
+        "s * 2",
+        "dogdog"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print('ha' * 3)",
+      "a": [
+       "hahaha"
+      ],
+      "why": "The string is repeated 3 times."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print sunshine",
+      "lines": [
+       "a = 'sun'",
+       "b = 'shine'",
+       "print(a + b)"
+      ],
+      "why": "Define both strings, then join them."
+     },
+     {
+      "t": "order",
+      "q": "Put the letters of 'code' in index order, starting at index 0",
+      "items": [
+       [
+        "c",
+        1
+       ],
+       [
+        "o",
+        2
+       ],
+       [
+        "d",
+        3
+       ],
+       [
+        "e",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: word is set. Print its first letter followed by its last letter, like pn for python.",
+      "starter": "# word is set\n",
+      "tests": [
+       {
+        "pre": "word = 'python'",
+        "expect": "pn"
+       },
+       {
+        "pre": "word = 'cat'",
+        "expect": "ct"
+       },
+       {
+        "pre": "word = 'zebra'",
+        "expect": "za"
+       }
+      ],
+      "hint": "Use word[0] and word[-1].",
+      "solution": "print(word[0] + word[-1])",
+      "why": "Index 0 is first and -1 is last."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: word is set. Print its first three letters followed by three dots, like pyt... for python.",
+      "starter": "# word is set\n",
+      "tests": [
+       {
+        "pre": "word = 'python'",
+        "expect": "pyt..."
+       },
+       {
+        "pre": "word = 'sunshine'",
+        "expect": "sun..."
+       }
+      ],
+      "hint": "Use word[:3] + '...'",
+      "solution": "print(word[:3] + '...')",
+      "why": "A slice then join."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what number does len('hello') give?",
+      "a": [
+       "5"
+      ],
+      "why": "hello has 5 characters."
+     }
+    ]
+   },
+   {
+    "title": "Input & f-strings",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Asking the user",
+      "b": "input() pauses the program, shows an optional message, and waits for the user to type. It always returns a string, even if the user types digits.",
+      "code": "name = input('Your name? ')\nprint('Hi', name)"
+     },
+     {
+      "h": "Converting input",
+      "b": "To do math on typed numbers, convert them. int() makes a whole number and float() makes a decimal. Without conversion, '4' + '4' is '44', not 8.",
+      "code": "age = int(input('Age? '))\nprint(age + 1)"
+     },
+     {
+      "h": "f-strings",
+      "b": "Put an f before the quote and write variables inside curly braces. Python fills in their values. You can even put small calculations inside the braces.",
+      "code": "name = 'Zoe'\nage = 12\nprint(f'{name} is {age}')\nprint(f'Next year: {age + 1}')"
+     },
+     {
+      "h": "Formatting numbers",
+      "b": "After a colon inside the braces you can format the value. :.2f shows 2 decimal places, and :, adds thousands commas. This is perfect for prices.",
+      "code": "price = 3.5\nprint(f'${price:.2f}')\nbig = 1234567\nprint(f'{big:,}')"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What type does input() always return?",
+      "o": [
+       "int",
+       "float",
+       "str",
+       "bool"
+      ],
+      "a": 2,
+      "why": "input() gives back text."
+     },
+     {
+      "t": "mc",
+      "q": "If name = 'Sam', which line prints Hi Sam?",
+      "o": [
+       "print('Hi {name}')",
+       "print(f'Hi {name}')",
+       "print(f'Hi name')",
+       "print('Hi' name)"
+      ],
+      "a": 1,
+      "why": "The f before the quote makes {name} get replaced."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x = '4'\nprint(x + x)",
+      "o": [
+       "8",
+       "44",
+       "4 4",
+       "Error"
+      ],
+      "a": 1,
+      "why": "Both are strings, so + joins them."
+     },
+     {
+      "t": "tf",
+      "q": "input() returns an int when the user types digits.",
+      "a": false,
+      "why": "It always returns a string."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "input()",
+        "read text from the user"
+       ],
+       [
+        "int()",
+        "text to whole number"
+       ],
+       [
+        "float()",
+        "text to decimal"
+       ],
+       [
+        "f''",
+        "insert values into text"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print(f'{2 + 3}')",
+      "a": [
+       "5"
+      ],
+      "why": "The expression inside the braces is calculated."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Zoe is 12",
+      "lines": [
+       "name = 'Zoe'",
+       "age = 12",
+       "print(f'{name} is {age}')"
+      ],
+      "why": "Define both variables and then use them in the f-string."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a program that adds 1 to a typed age in order",
+      "items": [
+       [
+        "Ask with input()",
+        1
+       ],
+       [
+        "Convert with int()",
+        2
+       ],
+       [
+        "Add 1",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: name and age are set. Print Name is 12 years old using an f-string, for example Mia is 12 years old.",
+      "starter": "# name and age are set\n",
+      "tests": [
+       {
+        "pre": "name = 'Mia'\nage = 12",
+        "expect": "Mia is 12 years old"
+       },
+       {
+        "pre": "name = 'Leo'\nage = 9",
+        "expect": "Leo is 9 years old"
+       }
+      ],
+      "hint": "print(f'{name} is {age} years old')",
+      "solution": "print(f'{name} is {age} years old')",
+      "why": "Put the variables inside braces."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: price is a number. Print it as a dollar amount with 2 decimals, like $3.50.",
+      "starter": "# price is set\n",
+      "tests": [
+       {
+        "pre": "price = 3.5",
+        "expect": "$3.50"
+       },
+       {
+        "pre": "price = 12",
+        "expect": "$12.00"
+       },
+       {
+        "pre": "price = 0.99",
+        "expect": "$0.99"
+       }
+      ],
+      "hint": "print(f'${price:.2f}')",
+      "solution": "print(f'${price:.2f}')",
+      "why": "The :.2f format gives 2 decimals."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the name of the function that reads text typed by the user.",
+      "a": [
+       "input",
+       "input()"
+      ],
+      "why": "input() reads from the keyboard."
+     }
+    ]
+   },
+   {
+    "title": "Booleans & Comparisons",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "True and False",
+      "b": "The bool type has only two values: True and False. They start with a capital letter. Comparisons produce booleans, so you can print them or store them in variables.",
+      "code": "print(5 > 3)\nis_ok = 2 == 3\nprint(is_ok)"
+     },
+     {
+      "h": "Comparison operators",
+      "b": "== checks equal, != checks not equal, and < > <= >= compare size. Remember that a single = stores a value, but a double == asks a question. Strings can be compared too.",
+      "code": "print(3 == 3)\nprint(3 != 4)\nprint(5 <= 5)\nprint('a' == 'A')"
+     },
+     {
+      "h": "and, or, not",
+      "b": "and is True only if both sides are True. or is True if at least one side is True. not flips a boolean. not goes first, then and, then or.",
+      "code": "age = 15\nprint(age > 10 and age < 20)\nprint(age < 10 or age > 12)\nprint(not True)"
+     },
+     {
+      "h": "Chaining and membership",
+      "b": "Python lets you chain comparisons like 10 < x < 20. The in operator checks if something is inside a string or list.",
+      "code": "x = 15\nprint(10 < x < 20)\nprint('a' in 'cat')\nprint('z' in 'cat')"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which operator checks if two values are equal?",
+      "o": [
+       "=",
+       "==",
+       "!=",
+       "=>"
+      ],
+      "a": 1,
+      "why": "== compares; = assigns."
+     },
+     {
+      "t": "mc",
+      "q": "What does 3 != 4 give?",
+      "o": [
+       "True",
+       "False",
+       "Error",
+       "None"
+      ],
+      "a": 0,
+      "why": "3 and 4 are different, so True."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print(5 > 3 and 2 > 4)",
+      "o": [
+       "True",
+       "False",
+       "Error",
+       "None"
+      ],
+      "a": 1,
+      "why": "2 > 4 is False, so and gives False."
+     },
+     {
+      "t": "tf",
+      "q": "The single = operator compares two values.",
+      "a": false,
+      "why": "= assigns. == compares."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "==",
+        "equal to"
+       ],
+       [
+        "!=",
+        "not equal to"
+       ],
+       [
+        ">=",
+        "greater or equal"
+       ],
+       [
+        "not",
+        "flips True and False"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print(10 > 3)",
+      "a": [
+       "True"
+      ],
+      "why": "10 is greater than 3."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print True",
+      "lines": [
+       "x = 7",
+       "big = x > 5",
+       "print(big)"
+      ],
+      "why": "Store the comparison, then print it."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of evaluating not (3 > 2 and 1 > 2) in order",
+      "items": [
+       [
+        "3 > 2 is True",
+        1
+       ],
+       [
+        "1 > 2 is False",
+        2
+       ],
+       [
+        "True and False is False",
+        3
+       ],
+       [
+        "not False is True",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: n is a number. Print True if n is between 10 and 20 (including both), otherwise False.",
+      "starter": "# n is set\n",
+      "tests": [
+       {
+        "pre": "n = 15",
+        "expect": "True"
+       },
+       {
+        "pre": "n = 5",
+        "expect": "False"
+       },
+       {
+        "pre": "n = 20",
+        "expect": "True"
+       },
+       {
+        "pre": "n = 25",
+        "expect": "False"
+       }
+      ],
+      "hint": "Use n >= 10 and n <= 20",
+      "solution": "print(n >= 10 and n <= 20)",
+      "why": "and needs both parts True."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: age and has_ticket are set. Print True if the person is 12 or older OR has a ticket.",
+      "starter": "# age and has_ticket are set\n",
+      "tests": [
+       {
+        "pre": "age = 15\nhas_ticket = False",
+        "expect": "True"
+       },
+       {
+        "pre": "age = 8\nhas_ticket = True",
+        "expect": "True"
+       },
+       {
+        "pre": "age = 8\nhas_ticket = False",
+        "expect": "False"
+       }
+      ],
+      "hint": "print(age >= 12 or has_ticket)",
+      "solution": "print(age >= 12 or has_ticket)",
+      "why": "or needs only one True."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does print(not True) show?",
+      "a": [
+       "False"
+      ],
+      "why": "not flips True into False."
+     }
+    ]
+   },
+   {
+    "title": "If, elif & else",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Making a decision",
+      "b": "An if statement runs code only when its condition is True. The line ends with a colon, and the code inside is indented by 4 spaces. If the condition is False, Python skips the block.",
+      "code": "age = 16\nif age >= 13:\n    print('teen')\nprint('done')"
+     },
+     {
+      "h": "else",
+      "b": "else gives a backup plan. Its block runs when the if condition is False. Exactly one of the two blocks will run.",
+      "code": "age = 9\nif age >= 13:\n    print('teen')\nelse:\n    print('kid')"
+     },
+     {
+      "h": "elif",
+      "b": "Use elif (short for else if) to test more conditions. Python checks from top to bottom and runs only the FIRST block whose condition is True. else at the end catches everything left over.",
+      "code": "score = 72\nif score >= 90:\n    print('A')\nelif score >= 70:\n    print('B')\nelse:\n    print('C')"
+     },
+     {
+      "h": "Combining conditions",
+      "b": "You can use and, or and not inside a condition, and you can put an if inside another if. Indentation shows which lines belong to which block, so keep it neat.",
+      "code": "n = 8\nif n > 0 and n % 2 == 0:\n    print('positive even')\nif 'a' in 'cat':\n    print('has a')"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword adds an extra condition after an if?",
+      "o": [
+       "else if",
+       "elseif",
+       "elif",
+       "also"
+      ],
+      "a": 2,
+      "why": "Python uses elif."
+     },
+     {
+      "t": "mc",
+      "q": "What must the end of an if line have?",
+      "o": [
+       "A semicolon",
+       "A colon",
+       "A period",
+       "Curly braces"
+      ],
+      "a": 1,
+      "why": "if conditions end with a colon."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x = 15\nif x > 10:\n    print('big')\nelif x > 5:\n    print('medium')\nelse:\n    print('small')",
+      "o": [
+       "big",
+       "medium",
+       "small",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "15 > 10 is True, so only the first block runs."
+     },
+     {
+      "t": "tf",
+      "q": "In an if/elif/else chain, more than one block can run.",
+      "a": false,
+      "why": "Only the first True branch runs."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "first condition to test"
+       ],
+       [
+        "elif",
+        "another condition to try"
+       ],
+       [
+        "else",
+        "runs if nothing matched"
+       ],
+       [
+        "indent",
+        "marks code inside a block"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that handles everything the other conditions did not catch.",
+      "a": [
+       "else"
+      ],
+      "why": "else has no condition."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print even for n = 4",
+      "lines": [
+       "n = 4",
+       "if n % 2 == 0:",
+       "    print('even')",
+       "else:",
+       "    print('odd')"
+      ],
+      "why": "The if line comes before its indented block, then else."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps Python follows in an if/elif/else chain in order",
+      "items": [
+       [
+        "Check the if condition",
+        1
+       ],
+       [
+        "Check each elif in order",
+        2
+       ],
+       [
+        "If none matched, run else",
+        3
+       ],
+       [
+        "Continue after the chain",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: temp is a number. Print hot if it is 30 or more, mild if it is 15 or more, otherwise cold.",
+      "starter": "# temp is set\n",
+      "tests": [
+       {
+        "pre": "temp = 35",
+        "expect": "hot"
+       },
+       {
+        "pre": "temp = 20",
+        "expect": "mild"
+       },
+       {
+        "pre": "temp = 15",
+        "expect": "mild"
+       },
+       {
+        "pre": "temp = 3",
+        "expect": "cold"
+       }
+      ],
+      "hint": "Use if, elif and else.",
+      "solution": "if temp >= 30:\n    print('hot')\nelif temp >= 15:\n    print('mild')\nelse:\n    print('cold')",
+      "why": "Check the biggest threshold first."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: n is a whole number. Print even if it is even, otherwise odd.",
+      "starter": "# n is set\n",
+      "tests": [
+       {
+        "pre": "n = 8",
+        "expect": "even"
+       },
+       {
+        "pre": "n = 7",
+        "expect": "odd"
+       },
+       {
+        "pre": "n = 0",
+        "expect": "even"
+       }
+      ],
+      "hint": "Use n % 2 == 0",
+      "solution": "if n % 2 == 0:\n    print('even')\nelse:\n    print('odd')",
+      "why": "% 2 gives 0 for even numbers."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print B for score 75.",
+      "lines": [
+       "score = 75",
+       "if score >= 90:",
+       "    print('A')",
+       "elif score >= 70:",
+       "    print('B')",
+       "else:",
+       "    print('C')"
+      ],
+      "why": "Chain from highest to lowest threshold."
+     }
+    ]
+   },
+   {
+    "title": "While Loops",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Repeating with while",
+      "b": "A while loop repeats its block as long as the condition is True. Python checks the condition before every round. When it becomes False, the loop ends.",
+      "code": "i = 1\nwhile i <= 3:\n    print(i)\n    i = i + 1"
+     },
+     {
+      "h": "The counter pattern",
+      "b": "Most while loops need three things: a starting value, a condition, and a change inside the loop. You can write i += 1 as a short way to say i = i + 1. Forget the change and the loop never ends.",
+      "code": "total = 0\ni = 1\nwhile i <= 4:\n    total += i\n    i += 1\nprint(total)"
+     },
+     {
+      "h": "Infinite loops",
+      "b": "If the condition never becomes False, the loop runs forever. That is called an infinite loop. Sometimes it is on purpose: while True runs forever until you use break.",
+      "code": "while True:\n    print('once')\n    break"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop immediately. continue skips the rest of this round and jumps back to the condition check. Use them to handle special cases.",
+      "code": "i = 0\nwhile i < 6:\n    i += 1\n    if i == 2:\n        continue\n    if i == 5:\n        break\n    print(i)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What stops a while loop?",
+      "o": [
+       "The condition becoming False",
+       "Writing stop",
+       "Reaching the end of the file only",
+       "Nothing, it always stops"
+      ],
+      "a": 0,
+      "why": "The loop ends when the condition becomes False."
+     },
+     {
+      "t": "mc",
+      "q": "What is an infinite loop?",
+      "o": [
+       "A loop that runs zero times",
+       "A loop that never ends",
+       "A loop that runs once",
+       "A loop with a for"
+      ],
+      "a": 1,
+      "why": "Its condition never becomes False."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "i = 1\nwhile i < 4:\n    print(i)\n    i += 1",
+      "o": [
+       "1, 2, 3",
+       "1, 2, 3, 4",
+       "0, 1, 2, 3",
+       "4"
+      ],
+      "a": 0,
+      "why": "i goes 1, 2, 3 and the loop stops at 4; each number is on its own line."
+     },
+     {
+      "t": "tf",
+      "q": "The break statement exits the loop immediately.",
+      "a": true,
+      "why": "break stops the loop right away."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "while",
+        "repeat while True"
+       ],
+       [
+        "break",
+        "leave the loop"
+       ],
+       [
+        "continue",
+        "skip to next round"
+       ],
+       [
+        "i += 1",
+        "add 1 to i"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that exits a loop immediately.",
+      "a": [
+       "break"
+      ],
+      "why": "break ends the loop."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 1, 2, 3 on separate lines",
+      "lines": [
+       "i = 1",
+       "while i <= 3:",
+       "    print(i)",
+       "    i = i + 1"
+      ],
+      "why": "Start, loop, print, then update."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of each while round in order",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "Run the body",
+        2
+       ],
+       [
+        "Update the counter",
+        3
+       ],
+       [
+        "Check the condition again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: n is set. Use a while loop to print the numbers 1 up to n, one per line.",
+      "starter": "# n is set\n",
+      "tests": [
+       {
+        "pre": "n = 3",
+        "expect": "1\n2\n3"
+       },
+       {
+        "pre": "n = 1",
+        "expect": "1"
+       },
+       {
+        "pre": "n = 5",
+        "expect": "1\n2\n3\n4\n5"
+       }
+      ],
+      "hint": "Start i at 1 and add 1 each round.",
+      "solution": "i = 1\nwhile i <= n:\n    print(i)\n    i += 1",
+      "why": "The counter goes up until it passes n."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: n is set. Use a while loop to add 1 + 2 + ... + n and print the total.",
+      "starter": "# n is set\n",
+      "tests": [
+       {
+        "pre": "n = 4",
+        "expect": "10"
+       },
+       {
+        "pre": "n = 1",
+        "expect": "1"
+       },
+       {
+        "pre": "n = 10",
+        "expect": "55"
+       }
+      ],
+      "hint": "Keep a total and a counter.",
+      "solution": "total = 0\ni = 1\nwhile i <= n:\n    total += i\n    i += 1\nprint(total)",
+      "why": "Accumulate inside the loop."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: i starts at 0 and the loop is while i < 5 with i += 1 inside. How many times does the body run?",
+      "a": [
+       "5"
+      ],
+      "why": "i takes the values 0, 1, 2, 3, 4."
+     }
+    ]
+   },
+   {
+    "title": "For Loops & range()",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Looping a set number of times",
+      "b": "A for loop goes through a sequence of values, one at a time. range(5) gives 0, 1, 2, 3, 4, so it stops BEFORE the number you give. The loop variable takes each value in turn.",
+      "code": "for i in range(3):\n    print(i)"
+     },
+     {
+      "h": "start, stop and step",
+      "b": "range(start, stop) begins at start and stops before stop. A third number is the step. A negative step counts down.",
+      "code": "for i in range(1, 4):\n    print(i)\nfor i in range(0, 10, 3):\n    print(i)\nfor i in range(3, 0, -1):\n    print(i)"
+     },
+     {
+      "h": "Looping over things",
+      "b": "You can loop directly over a string or a list. The loop variable gets each letter or each item. This is often cleaner than using indexes.",
+      "code": "for ch in 'hey':\n    print(ch)\nfor n in [4, 8]:\n    print(n * 2)"
+     },
+     {
+      "h": "Accumulators and nesting",
+      "b": "To add things up, make a total before the loop and add to it inside. A loop inside another loop is a nested loop and the inner one runs fully for every round of the outer one.",
+      "code": "total = 0\nfor i in range(1, 5):\n    total += i\nprint(total)\nfor a in range(2):\n    for b in range(2):\n        print(a, b)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many numbers does range(5) produce?",
+      "o": [
+       "4",
+       "5",
+       "6",
+       "It depends"
+      ],
+      "a": 1,
+      "why": "0, 1, 2, 3, 4 is five numbers."
+     },
+     {
+      "t": "mc",
+      "q": "Which gives 2, 4, 6, 8?",
+      "o": [
+       "range(2, 10, 2)",
+       "range(2, 8)",
+       "range(8)",
+       "range(2, 8, 3)"
+      ],
+      "a": 0,
+      "why": "Start at 2, stop before 10, step 2."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "for i in range(1, 4):\n    print(i)",
+      "o": [
+       "1, 2, 3",
+       "1, 2, 3, 4",
+       "0, 1, 2, 3",
+       "2, 3, 4"
+      ],
+      "a": 0,
+      "why": "range(1, 4) gives 1, 2, 3, each on its own line."
+     },
+     {
+      "t": "tf",
+      "q": "range(1, 5) includes the number 5.",
+      "a": false,
+      "why": "The stop value is never included."
+     },
+     {
+      "t": "match",
+      "q": "Match each range to its numbers",
+      "pairs": [
+       [
+        "range(5)",
+        "0 to 4"
+       ],
+       [
+        "range(1, 5)",
+        "1 to 4"
+       ],
+       [
+        "range(0, 10, 2)",
+        "0, 2, 4, 6, 8"
+       ],
+       [
+        "range(3, 0, -1)",
+        "3, 2, 1"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "How many times does for i in range(7) run its body? Type the number.",
+      "a": [
+       "7"
+      ],
+      "why": "range(7) has 7 values."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the sum 6 of 1, 2 and 3",
+      "lines": [
+       "total = 0",
+       "for i in range(1, 4):",
+       "    total = total + i",
+       "print(total)"
+      ],
+      "why": "Total first, loop adds, print after the loop."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of each for round in order",
+      "items": [
+       [
+        "Python takes the next value",
+        1
+       ],
+       [
+        "It is stored in the loop variable",
+        2
+       ],
+       [
+        "The body runs",
+        3
+       ],
+       [
+        "Python goes back until values run out",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: n is set. Print a countdown from n to 1, one per line, then print Go!",
+      "starter": "# n is set\n",
+      "tests": [
+       {
+        "pre": "n = 3",
+        "expect": "3\n2\n1\nGo!"
+       },
+       {
+        "pre": "n = 1",
+        "expect": "1\nGo!"
+       }
+      ],
+      "hint": "Use range(n, 0, -1) then print after the loop.",
+      "solution": "for i in range(n, 0, -1):\n    print(i)\nprint('Go!')",
+      "why": "Negative step counts down."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: n is set. Print the sum of all even numbers from 2 up to n.",
+      "starter": "# n is set\n",
+      "tests": [
+       {
+        "pre": "n = 6",
+        "expect": "12"
+       },
+       {
+        "pre": "n = 10",
+        "expect": "30"
+       },
+       {
+        "pre": "n = 3",
+        "expect": "2"
+       }
+      ],
+      "hint": "Use range(2, n + 1, 2).",
+      "solution": "total = 0\nfor i in range(2, n + 1, 2):\n    total += i\nprint(total)",
+      "why": "Step 2 skips odd numbers."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the 3 times table: 3, 6, 9.",
+      "lines": [
+       "n = 3",
+       "for i in range(1, 4):",
+       "    print(n * i)"
+      ],
+      "why": "Set n, loop 1 to 3, print n times i."
+     }
+    ]
+   },
+   {
+    "title": "Lists",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Making a list",
+      "b": "A list holds many values in order, inside square brackets separated by commas. It can hold any types, even mixed. Each item has an index starting at 0.",
+      "code": "fruits = ['apple', 'pear', 'plum']\nprint(fruits[0])\nprint(fruits[2])"
+     },
+     {
+      "h": "Changing and negative indexes",
+      "b": "Lists are mutable: you can change an item by assigning to its index. A negative index counts from the end, so -1 is the last item. Using an index that does not exist causes an error.",
+      "code": "nums = [5, 10, 15]\nnums[0] = 1\nprint(nums)\nprint(nums[-1])"
+     },
+     {
+      "h": "Length and membership",
+      "b": "len() tells you how many items there are. The in operator checks whether a value is in the list and gives True or False.",
+      "code": "nums = [4, 8, 15]\nprint(len(nums))\nprint(8 in nums)\nprint(9 in nums)"
+     },
+     {
+      "h": "Looping over a list",
+      "b": "A for loop can visit each item directly. Combine it with an accumulator to add or count things. Use if inside the loop to pick only some items.",
+      "code": "nums = [3, 12, 7, 20]\ncount = 0\nfor n in nums:\n    if n > 10:\n        count += 1\nprint(count)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If fruits = ['a', 'b', 'c'], what is fruits[1]?",
+      "o": [
+       "a",
+       "b",
+       "c",
+       "Error"
+      ],
+      "a": 1,
+      "why": "Index 1 is the second item."
+     },
+     {
+      "t": "mc",
+      "q": "What is len([1, 2, 3, 4])?",
+      "o": [
+       "3",
+       "4",
+       "5",
+       "1"
+      ],
+      "a": 1,
+      "why": "There are 4 items."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "nums = [5, 10, 15]\nnums[0] = 1\nprint(nums)",
+      "o": [
+       "[5, 10, 15]",
+       "[1, 10, 15]",
+       "[1, 5, 10]",
+       "Error"
+      ],
+      "a": 1,
+      "why": "Index 0 is replaced by 1."
+     },
+     {
+      "t": "tf",
+      "q": "A list can hold values of different types.",
+      "a": true,
+      "why": "For example [1, 'a', True] is valid."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression for nums = [4, 8, 15]",
+      "pairs": [
+       [
+        "nums[0]",
+        "4"
+       ],
+       [
+        "nums[-1]",
+        "15"
+       ],
+       [
+        "len(nums)",
+        "3"
+       ],
+       [
+        "8 in nums",
+        "True"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print([1, 2, 3][1])",
+      "a": [
+       "2"
+      ],
+      "why": "Index 1 is the second item, 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the sum 15 of the scores",
+      "lines": [
+       "scores = [3, 7, 5]",
+       "total = 0",
+       "for s in scores:",
+       "    total = total + s",
+       "print(total)"
+      ],
+      "why": "Create, total, loop, add, print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of working with a list in order",
+      "items": [
+       [
+        "Create the list",
+        1
+       ],
+       [
+        "Read an item by index",
+        2
+       ],
+       [
+        "Change an item",
+        3
+       ],
+       [
+        "Print the list",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: nums is a list. Print the first item plus the last item.",
+      "starter": "# nums is set\n",
+      "tests": [
+       {
+        "pre": "nums = [3, 5, 9]",
+        "expect": "12"
+       },
+       {
+        "pre": "nums = [10]",
+        "expect": "20"
+       },
+       {
+        "pre": "nums = [1, 2, 3, 4]",
+        "expect": "5"
+       }
+      ],
+      "hint": "Use nums[0] and nums[-1].",
+      "solution": "print(nums[0] + nums[-1])",
+      "why": "Index 0 and -1 are the two ends."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: nums is a list. Print how many items are greater than 10.",
+      "starter": "# nums is set\n",
+      "tests": [
+       {
+        "pre": "nums = [5, 12, 20, 3]",
+        "expect": "2"
+       },
+       {
+        "pre": "nums = [1, 2]",
+        "expect": "0"
+       },
+       {
+        "pre": "nums = [11, 11, 11]",
+        "expect": "3"
+       }
+      ],
+      "hint": "Loop with a counter and an if.",
+      "solution": "count = 0\nfor n in nums:\n    if n > 10:\n        count += 1\nprint(count)",
+      "why": "Count only the items that match."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: nums = [4, 8, 15]. What does print(nums[-2]) show?",
+      "a": [
+       "8"
+      ],
+      "why": "-2 is the second from the end."
+     }
+    ]
+   },
+   {
+    "title": "List Methods & Slicing",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Adding items",
+      "b": "append(x) adds one item at the end. insert(i, x) adds at index i. extend(other) adds all items of another list. These change the list itself.",
+      "code": "nums = [1, 2]\nnums.append(3)\nnums.insert(0, 0)\nnums.extend([8, 9])\nprint(nums)"
+     },
+     {
+      "h": "Removing items",
+      "b": "remove(x) deletes the first item equal to x. pop() removes and returns the last item, and pop(i) removes the one at index i. del nums[i] also deletes by index.",
+      "code": "nums = [5, 6, 7, 8]\nnums.remove(6)\nlast = nums.pop()\nprint(nums, last)"
+     },
+     {
+      "h": "Sorting and reversing",
+      "b": "sort() sorts the list in place and returns None, so do not write x = x.sort(). sort(reverse=True) goes big to small. sorted(x) gives a new sorted list and leaves x alone. reverse() flips the list.",
+      "code": "nums = [3, 1, 2]\nnums.sort()\nprint(nums)\nprint(sorted(nums, reverse=True))"
+     },
+     {
+      "h": "Slicing and handy functions",
+      "b": "A list slice works like a string slice: nums[1:3] takes indexes 1 and 2. nums[:2] is the first two and nums[-2:] is the last two. sum, min and max work on number lists, and count(x) and index(x) search.",
+      "code": "nums = [4, 9, 1, 7]\nprint(nums[1:3])\nprint(nums[-2:])\nprint(sum(nums), min(nums), max(nums))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method adds an item to the end of a list?",
+      "o": [
+       "add()",
+       "append()",
+       "push()",
+       "insert_end()"
+      ],
+      "a": 1,
+      "why": "append adds at the end."
+     },
+     {
+      "t": "mc",
+      "q": "What does pop() do with no argument?",
+      "o": [
+       "Removes and returns the last item",
+       "Removes the first item",
+       "Sorts the list",
+       "Copies the list"
+      ],
+      "a": 0,
+      "why": "pop() takes off the last item and returns it."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "nums = [3, 1, 2]\nnums.sort()\nprint(nums)",
+      "o": [
+       "[1, 2, 3]",
+       "[3, 2, 1]",
+       "None",
+       "[3, 1, 2]"
+      ],
+      "a": 0,
+      "why": "sort() sorts the list in place."
+     },
+     {
+      "t": "tf",
+      "q": "nums.sort() returns a new sorted list.",
+      "a": false,
+      "why": "It sorts in place and returns None."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "append",
+        "add to the end"
+       ],
+       [
+        "pop",
+        "remove and return last"
+       ],
+       [
+        "sort",
+        "order in place"
+       ],
+       [
+        "insert",
+        "add at an index"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type exactly what this prints: print([1, 2, 3, 4, 5][1:3])",
+      "a": [
+       "[2, 3]",
+       "2, 3",
+       "2 3"
+      ],
+      "why": "The slice takes indexes 1 and 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print [0, 1, 2, 3]",
+      "lines": [
+       "nums = [3, 1, 2]",
+       "nums.append(0)",
+       "nums.sort()",
+       "print(nums)"
+      ],
+      "why": "Add the 0 first, then sort, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order",
+      "items": [
+       [
+        "Make the list",
+        1
+       ],
+       [
+        "Add an item with append",
+        2
+       ],
+       [
+        "Sort the list",
+        3
+       ],
+       [
+        "Print the list",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: nums is a list. Print it sorted from largest to smallest, as a list.",
+      "starter": "# nums is set\n",
+      "tests": [
+       {
+        "pre": "nums = [4, 9, 1]",
+        "expect": "[9, 4, 1]"
+       },
+       {
+        "pre": "nums = [2, 2, 5]",
+        "expect": "[5, 2, 2]"
+       }
+      ],
+      "hint": "Use sorted(nums, reverse=True) or sort(reverse=True).",
+      "solution": "nums.sort(reverse=True)\nprint(nums)",
+      "why": "reverse=True flips the order."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: nums is a list with at least 3 items. Print its last 3 items as a list using a slice.",
+      "starter": "# nums is set\n",
+      "tests": [
+       {
+        "pre": "nums = [1, 2, 3, 4, 5]",
+        "expect": "[3, 4, 5]"
+       },
+       {
+        "pre": "nums = [9, 8, 7]",
+        "expect": "[9, 8, 7]"
+       }
+      ],
+      "hint": "Use nums[-3:]",
+      "solution": "print(nums[-3:])",
+      "why": "A negative start counts from the end."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does print(min([4, 2, 8])) show?",
+      "a": [
+       "2"
+      ],
+      "why": "min returns the smallest value."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "Python basics",
+    "learn": [
+     {
+      "h": "Defining and calling",
+      "b": "A function is a named block of code you can reuse. You create it with def, a name, parentheses and a colon. The code inside is indented. Nothing happens until you call the function by name.",
+      "code": "def greet():\n    print('Hello!')\n\ngreet()\ngreet()"
+     },
+     {
+      "h": "Parameters",
+      "b": "Parameters are names in the parentheses that receive values when the function is called. The values you pass in are called arguments. The order matters.",
+      "code": "def greet(name):\n    print('Hi', name)\n\ngreet('Ana')"
+     },
+     {
+      "h": "return vs print",
+      "b": "return sends a value back to the caller and ends the function. print only shows something. If a function has no return, it gives back None. Use return when you want to reuse the result.",
+      "code": "def add(a, b):\n    return a + b\n\ntotal = add(2, 3)\nprint(total * 2)"
+     },
+     {
+      "h": "Functions that decide",
+      "b": "A function can return a boolean or choose between results with if. After return runs, nothing else in the function runs. You can also call one function from inside another.",
+      "code": "def is_even(n):\n    return n % 2 == 0\n\ndef label(n):\n    if is_even(n):\n        return 'even'\n    return 'odd'\n\nprint(label(7))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword defines a function?",
+      "o": [
+       "func",
+       "define",
+       "def",
+       "function"
+      ],
+      "a": 2,
+      "why": "Python uses def."
+     },
+     {
+      "t": "mc",
+      "q": "What does return do?",
+      "o": [
+       "Prints a value",
+       "Sends a value back and ends the function",
+       "Repeats the function",
+       "Deletes the function"
+      ],
+      "a": 1,
+      "why": "return hands a value to the caller."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "def double(n):\n    return n * 2\n\nprint(double(4))",
+      "o": [
+       "8",
+       "44",
+       "double",
+       "Error"
+      ],
+      "a": 0,
+      "why": "double(4) returns 8."
+     },
+     {
+      "t": "tf",
+      "q": "A function with no return statement gives back None.",
+      "a": true,
+      "why": "Without return the result is None."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "def",
+        "start a function"
+       ],
+       [
+        "return",
+        "send a value back"
+       ],
+       [
+        "parameter",
+        "name in the definition"
+       ],
+       [
+        "argument",
+        "value in the call"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that sends a value back from a function.",
+      "a": [
+       "return"
+      ],
+      "why": "return gives back a value."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 5",
+      "lines": [
+       "def add(a, b):",
+       "    return a + b",
+       "print(add(2, 3))"
+      ],
+      "why": "Define first, then call."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order",
+      "items": [
+       [
+        "Define the function with def",
+        1
+       ],
+       [
+        "Call it by name",
+        2
+       ],
+       [
+        "Python runs the body",
+        3
+       ],
+       [
+        "A value is returned",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a function add(a, b) that returns the sum of a and b.",
+      "starter": "def add(a, b):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(add(2, 3))",
+        "expect": "5"
+       },
+       {
+        "post": "print(add(-1, 1))",
+        "expect": "0"
+       },
+       {
+        "post": "print(add(10, 5))",
+        "expect": "15"
+       }
+      ],
+      "hint": "Use return a + b",
+      "solution": "def add(a, b):\n    return a + b",
+      "why": "return hands the sum back."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a function is_even(n) that returns True if n is even, otherwise False.",
+      "starter": "def is_even(n):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(is_even(4))",
+        "expect": "True"
+       },
+       {
+        "post": "print(is_even(7))",
+        "expect": "False"
+       },
+       {
+        "post": "print(is_even(0))",
+        "expect": "True"
+       }
+      ],
+      "hint": "Return n % 2 == 0",
+      "solution": "def is_even(n):\n    return n % 2 == 0",
+      "why": "A comparison is already a boolean."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines so the program prints 25.",
+      "lines": [
+       "def square(n):",
+       "    return n * n",
+       "print(square(5))"
+      ],
+      "why": "Define square, then print its result."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1693 @@
+{
+ "kotlin": {
+  "name": "Kotlin",
+  "units": [
+   {
+    "title": "Hello, main and println",
+    "period": "Kotlin basics",
+    "learn": [
+     {
+      "h": "Your first program",
+      "b": "Kotlin programs start running in a function called main. Inside it, println prints a line of text. Text goes inside double quotes.",
+      "code": "fun main() {\n    println(\"Hello, world!\")\n}"
+     },
+     {
+      "h": "fun and braces",
+      "b": "The keyword fun declares a function. The body goes between curly braces. Kotlin does not need semicolons at the end of lines, and indentation is just for readability."
+     },
+     {
+      "h": "print vs println",
+      "b": "println prints the text and then moves to a new line. print prints the text and stays on the same line, so the next output continues right after it.",
+      "code": "fun main() {\n    print(\"Hi \")\n    println(\"there\")\n    println(\"Bye\")\n}"
+     },
+     {
+      "h": "Comments",
+      "b": "A comment is a note for humans that the computer ignores. Use // for one line and /* ... */ for several lines. Kotlin runs on the JVM and its files end in .kt.",
+      "code": "// this is a comment\nfun main() {\n    println(1 + 2) // prints 3\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword declares a function in Kotlin?",
+      "o": [
+       "def",
+       "fun",
+       "function",
+       "func"
+      ],
+      "a": 1,
+      "why": "Kotlin uses the keyword fun."
+     },
+     {
+      "t": "mc",
+      "q": "What is the name of the function where a Kotlin program starts?",
+      "o": [
+       "main",
+       "start",
+       "run",
+       "init"
+      ],
+      "a": 0,
+      "why": "Execution begins in main."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun main() {\n    print(\"Hi \")\n    println(\"there\")\n}",
+      "o": [
+       "Hi",
+       "there",
+       "Hi there",
+       "Hithere"
+      ],
+      "a": 2,
+      "why": "print does not add a new line, so both pieces share one line, with the space inside the first string."
+     },
+     {
+      "t": "tf",
+      "q": "Kotlin requires a semicolon at the end of every statement.",
+      "a": false,
+      "why": "Semicolons are optional in Kotlin and usually left out."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its job",
+      "pairs": [
+       [
+        "println",
+        "prints text then a new line"
+       ],
+       [
+        "print",
+        "prints text with no new line"
+       ],
+       [
+        "//",
+        "starts a one-line comment"
+       ],
+       [
+        "fun",
+        "declares a function"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function name that prints text and then moves to a new line.",
+      "a": [
+       "println"
+      ],
+      "why": "println adds a new line after the text."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Hello",
+      "lines": [
+       "fun main() {",
+       "    println(\"Hello\")",
+       "}"
+      ],
+      "why": "The call sits inside the braces of main."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order to run a Kotlin program",
+      "items": [
+       [
+        "Write a main function",
+        1
+       ],
+       [
+        "Put println inside it",
+        2
+       ],
+       [
+        "Run the program",
+        3
+       ],
+       [
+        "See the text in the output",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that prints the text Kotlin using println.",
+      "a": [
+       "println(\"Kotlin\")"
+      ],
+      "why": "Text must be in double quotes."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the program that prints Go! and Done on the same line",
+      "lines": [
+       "fun main() {",
+       "    print(\"Go! \")",
+       "    println(\"Done\")",
+       "}"
+      ],
+      "why": "print keeps the line open."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is the output of this program?",
+      "code": "fun main() {\n    println(1)\n    println(1 + 2)\n}",
+      "o": [
+       "1 then 3, on two lines",
+       "13 on one line",
+       "1 then 1+2, on two lines",
+       "3 only"
+      ],
+      "a": 0,
+      "why": "println(1 + 2) calculates 3, and each println starts a new line."
+     }
+    ]
+   },
+   {
+    "title": "Variables, val/var and Types",
+    "period": "Kotlin basics",
+    "learn": [
+     {
+      "h": "val and var",
+      "b": "Use val for a value that never changes (read-only) and var for a variable that can change. Prefer val when you can.",
+      "code": "val name = \"Kai\"\nvar score = 0\nscore = 10"
+     },
+     {
+      "h": "Type inference",
+      "b": "Kotlin guesses the type from the value, so you rarely write it. You can also write the type after a colon: val age: Int = 14.",
+      "code": "val a = 5          // Int\nval b: Double = 2.5\nval c = true       // Boolean"
+     },
+     {
+      "h": "Basic types",
+      "b": "Int holds whole numbers, Long holds big whole numbers (write 5L), Double holds decimals, Float needs an f (1.5f), Boolean is true or false, Char is one character in single quotes, and String is text.",
+      "code": "val n: Long = 3000000000L\nval letter = 'K'\nval ok = false"
+     },
+     {
+      "h": "Math and conversion",
+      "b": "The operators are + - * / and % (remainder). Dividing two Ints gives an Int, so 7 / 2 is 3. Types do not convert by themselves: use toDouble(), toInt() and so on.",
+      "code": "println(7 / 2)\nprintln(7 / 2.0)\nprintln(7 % 2)\nprintln(3.9.toInt())"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which declares a variable that CAN be reassigned?",
+      "o": [
+       "val x = 1",
+       "const x = 1",
+       "var x = 1",
+       "let x = 1"
+      ],
+      "a": 2,
+      "why": "var is mutable, val is read-only."
+     },
+     {
+      "t": "mc",
+      "q": "What type does Kotlin infer for val p = 2.5 ?",
+      "o": [
+       "Double",
+       "Float",
+       "Int",
+       "String"
+      ],
+      "a": 0,
+      "why": "Decimal literals are Double by default."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun main() {\n    println(7 / 2)\n}",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "3.0"
+      ],
+      "a": 1,
+      "why": "Both numbers are Int, so the division drops the decimal part."
+     },
+     {
+      "t": "tf",
+      "q": "You can reassign a val after it is created.",
+      "a": false,
+      "why": "A val is read-only, so reassigning gives a compile error."
+     },
+     {
+      "t": "match",
+      "q": "Match each value to its type",
+      "pairs": [
+       [
+        "42",
+        "Int"
+       ],
+       [
+        "3.14",
+        "Double"
+       ],
+       [
+        "'A'",
+        "Char"
+       ],
+       [
+        "true",
+        "Boolean"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the result of 10 % 3.",
+      "a": [
+       "1"
+      ],
+      "why": "The remainder of 10 divided by 3 is 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so that score ends as 15",
+      "lines": [
+       "fun main() {",
+       "    var score = 10",
+       "    score = score + 5",
+       "    println(score)",
+       "}"
+      ],
+      "why": "Declare, update, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order to create and use a Double from an Int",
+      "items": [
+       [
+        "val n = 7",
+        1
+       ],
+       [
+        "val d = n.toDouble()",
+        2
+       ],
+       [
+        "println(d)",
+        3
+       ],
+       [
+        "Output is 7.0",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a read-only Int named lives set to 3.",
+      "a": [
+       "val lives = 3",
+       "val lives: Int = 3"
+      ],
+      "why": "val makes it read-only."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 9",
+      "lines": [
+       "fun main() {",
+       "    var x = 4",
+       "    x = x + 5",
+       "    println(x)",
+       "}"
+      ],
+      "why": "x becomes 9 before printing."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "fun main() {\n    val x = 3.9\n    println(x.toInt())\n}",
+      "o": [
+       "3",
+       "3.9",
+       "4",
+       "Error"
+      ],
+      "a": 0,
+      "why": "toInt() cuts off the decimals without rounding."
+     }
+    ]
+   },
+   {
+    "title": "Strings and Templates",
+    "period": "Kotlin basics",
+    "learn": [
+     {
+      "h": "Strings",
+      "b": "A String is text in double quotes. Use + to join strings, length to count characters, and indexes like s[0] to get a character (counting from 0).",
+      "code": "val s = \"Kotlin\"\nprintln(s.length)\nprintln(s[0])\nprintln(s + \"!\")"
+     },
+     {
+      "h": "String templates",
+      "b": "Put a dollar sign before a variable name inside a string and Kotlin fills in its value. For an expression use ${ }.",
+      "code": "val name = \"Mia\"\nval age = 12\nprintln(\"$name is $age\")\nprintln(\"Next year: ${age + 1}\")"
+     },
+     {
+      "h": "Useful functions",
+      "b": "Strings have functions like uppercase(), lowercase(), trim(), contains(), replace() and substring(). Strings are immutable, so these return a new string instead of changing the old one.",
+      "code": "val t = \"  hi  \"\nprintln(t.trim())\nprintln(\"abc\".uppercase())\nprintln(\"hello\".substring(1, 3))"
+     },
+     {
+      "h": "Escapes and raw strings",
+      "b": "Inside a string, \\n makes a new line, \\t a tab and \\\" a quote. Triple quotes make a raw string that can span many lines with no escapes.",
+      "code": "println(\"a\\nb\")\nval poem = \"\"\"line 1\nline 2\"\"\"\nprintln(poem)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you insert a variable name into a string?",
+      "o": [
+       "\"Hi $name\"",
+       "\"Hi {name}\"",
+       "\"Hi %name\"",
+       "\"Hi #name\""
+      ],
+      "a": 0,
+      "why": "Kotlin templates use the dollar sign."
+     },
+     {
+      "t": "mc",
+      "q": "What is the index of the first character in a string?",
+      "o": [
+       "0",
+       "1",
+       "-1",
+       "It depends"
+      ],
+      "a": 0,
+      "why": "Indexes start at 0."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun main() {\n    val n = \"Ana\"\n    val a = 13\n    println(\"Hi $n, ${a + 1}\")\n}",
+      "o": [
+       "Hi Ana, 14",
+       "Hi $n, ${a + 1}",
+       "Hi Ana, 13",
+       "Hi n, 14"
+      ],
+      "a": 0,
+      "why": "$n gives Ana and ${a + 1} gives 14."
+     },
+     {
+      "t": "tf",
+      "q": "Calling uppercase() on a String changes the original string.",
+      "a": false,
+      "why": "Strings are immutable, so it returns a new string."
+     },
+     {
+      "t": "match",
+      "q": "Match each to what it does",
+      "pairs": [
+       [
+        "length",
+        "number of characters"
+       ],
+       [
+        "trim()",
+        "removes spaces at the ends"
+       ],
+       [
+        "\\n",
+        "new line"
+       ],
+       [
+        "${ }",
+        "insert an expression"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the property that gives the number of characters in a string s (just the name).",
+      "a": [
+       "length"
+      ],
+      "why": "s.length counts characters."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Hello, Zoe",
+      "lines": [
+       "fun main() {",
+       "    val who = \"Zoe\"",
+       "    println(\"Hello, $who\")",
+       "}"
+      ],
+      "why": "Declare who first, then use it in a template."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order to build a greeting",
+      "items": [
+       [
+        "val name = \"Leo\"",
+        1
+       ],
+       [
+        "val msg = \"Hi $name\"",
+        2
+       ],
+       [
+        "println(msg)",
+        3
+       ],
+       [
+        "Output: Hi Leo",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the string template that prints the variable x inside text, written as: \"x is $x\"",
+      "a": [
+       "\"x is $x\"",
+       "println(\"x is $x\")"
+      ],
+      "why": "A dollar sign before the name fills in the value."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the program that prints the length of the word",
+      "lines": [
+       "fun main() {",
+       "    val w = \"banana\"",
+       "    println(w.length)",
+       "}"
+      ],
+      "why": "length of banana is 6."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "fun main() {\n    val s = \"kotlin\"\n    println(s.uppercase())\n}",
+      "o": [
+       "KOTLIN",
+       "kotlin",
+       "Kotlin",
+       "Error"
+      ],
+      "a": 0,
+      "why": "uppercase() returns the text in capital letters."
+     }
+    ]
+   },
+   {
+    "title": "If and When Expressions",
+    "period": "Control flow",
+    "learn": [
+     {
+      "h": "if / else",
+      "b": "if runs code when a condition is true. Comparison operators are == != < > <= >=, and you combine conditions with && (and), || (or) and ! (not). Use else if for more branches.",
+      "code": "val age = 15\nif (age >= 18) {\n    println(\"adult\")\n} else if (age >= 13) {\n    println(\"teen\")\n} else {\n    println(\"kid\")\n}"
+     },
+     {
+      "h": "if is an expression",
+      "b": "In Kotlin, if gives back a value, so you can assign it. This replaces the ternary operator from other languages. When used this way, else is required.",
+      "code": "val a = 4\nval b = 9\nval max = if (a > b) a else b\nprintln(max)"
+     },
+     {
+      "h": "when",
+      "b": "when is Kotlin's powerful switch. It checks a value against branches in order and runs the first match. No break is needed, and else covers everything left.",
+      "code": "val day = 3\nwhen (day) {\n    1 -> println(\"Mon\")\n    2, 3 -> println(\"Tue or Wed\")\n    else -> println(\"Other\")\n}"
+     },
+     {
+      "h": "when as an expression",
+      "b": "when can also return a value, and branches can use ranges with in or types with is. Without an argument it works like an if-else chain.",
+      "code": "val n = 15\nval size = when {\n    n < 10 -> \"small\"\n    n in 10..20 -> \"medium\"\n    else -> \"large\"\n}\nprintln(size)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does && mean?",
+      "o": [
+       "and",
+       "or",
+       "not",
+       "equal"
+      ],
+      "a": 0,
+      "why": "&& is logical AND."
+     },
+     {
+      "t": "mc",
+      "q": "Which Kotlin feature replaces the ternary operator ?: from other languages?",
+      "o": [
+       "if as an expression",
+       "when only",
+       "switch",
+       "unless"
+      ],
+      "a": 0,
+      "why": "val x = if (c) a else b."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun main() {\n    val n = 15\n    val s = when {\n        n < 10 -> \"small\"\n        n in 10..20 -> \"medium\"\n        else -> \"large\"\n    }\n    println(s)\n}",
+      "o": [
+       "medium",
+       "small",
+       "large",
+       "Error"
+      ],
+      "a": 0,
+      "why": "15 is in 10..20."
+     },
+     {
+      "t": "tf",
+      "q": "A when branch needs a break statement to stop falling through.",
+      "a": false,
+      "why": "when runs only the first matching branch."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its meaning",
+      "pairs": [
+       [
+        "==",
+        "equal to"
+       ],
+       [
+        "!=",
+        "not equal to"
+       ],
+       [
+        "||",
+        "or"
+       ],
+       [
+        "!",
+        "not"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that handles all remaining cases in a when.",
+      "a": [
+       "else"
+      ],
+      "why": "else is the default branch."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print big if x is over 10, otherwise small",
+      "lines": [
+       "val x = 12",
+       "if (x > 10) {",
+       "    println(\"big\")",
+       "} else {",
+       "    println(\"small\")",
+       "}"
+      ],
+      "why": "The else block comes after the if block."
+     },
+     {
+      "t": "order",
+      "q": "Put the when parts in order",
+      "items": [
+       [
+        "when (x) {",
+        1
+       ],
+       [
+        "1 -> println(\"one\")",
+        2
+       ],
+       [
+        "else -> println(\"many\")",
+        3
+       ],
+       [
+        "}",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the expression that makes val m the bigger of a and b, written as: if (a > b) a else b",
+      "a": [
+       "if (a > b) a else b"
+      ],
+      "why": "if returns a value."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the when that prints two for the value 2",
+      "lines": [
+       "val n = 2",
+       "when (n) {",
+       "    1 -> println(\"one\")",
+       "    2 -> println(\"two\")",
+       "    else -> println(\"many\")",
+       "}"
+      ],
+      "why": "The 2 branch matches."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "fun main() {\n    val n = 5\n    when (n) {\n        1 -> println(\"one\")\n        2 -> println(\"two\")\n        else -> println(\"many\")\n    }\n}",
+      "o": [
+       "many",
+       "one",
+       "two",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "5 matches no other branch, so else runs."
+     }
+    ]
+   },
+   {
+    "title": "Loops and Ranges",
+    "period": "Control flow",
+    "learn": [
+     {
+      "h": "Ranges",
+      "b": "Write 1..5 for the numbers 1 to 5 including 5. Use until to exclude the end, downTo to count down and step to skip numbers.",
+      "code": "1..5          // 1 2 3 4 5\n1 until 5     // 1 2 3 4\n5 downTo 1    // 5 4 3 2 1\n1..10 step 3  // 1 4 7 10"
+     },
+     {
+      "h": "for loops",
+      "b": "A for loop goes through anything you can iterate, such as a range or a list. The variable is created for you, with no var needed.",
+      "code": "for (i in 1..3) {\n    println(i)\n}\nfor (c in \"abc\") {\n    println(c)\n}"
+     },
+     {
+      "h": "while and do-while",
+      "b": "while repeats as long as its condition is true, checking first. do-while runs the body once before it checks.",
+      "code": "var n = 3\nwhile (n > 0) {\n    println(n)\n    n--\n}\ndo {\n    println(\"once\")\n} while (false)"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop at once. continue skips to the next round. To check membership use in, like if (x in 1..10).",
+      "code": "for (i in 1..10) {\n    if (i % 2 == 0) continue\n    if (i > 7) break\n    println(i)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which range does NOT include 5?",
+      "o": [
+       "1 until 5",
+       "1..5",
+       "5 downTo 1",
+       "1..10 step 2"
+      ],
+      "a": 0,
+      "why": "until excludes its end value."
+     },
+     {
+      "t": "mc",
+      "q": "What does for (i in 1..3) do?",
+      "o": [
+       "Runs three times with i = 1, 2, 3",
+       "Runs twice",
+       "Runs four times",
+       "Runs forever"
+      ],
+      "a": 0,
+      "why": "Range 1..3 includes both ends."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun main() {\n    for (i in 1 until 4) {\n        println(i)\n    }\n}",
+      "o": [
+       "1 2 3 (each on its own line)",
+       "0 1 2",
+       "1 2 3 4",
+       "3 2 1"
+      ],
+      "a": 0,
+      "why": "The range starts at 1 and excludes 4."
+     },
+     {
+      "t": "tf",
+      "q": "A do-while loop always runs its body at least once.",
+      "a": true,
+      "why": "It checks the condition after the body."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "break",
+        "leave the loop"
+       ],
+       [
+        "continue",
+        "skip to next round"
+       ],
+       [
+        "downTo",
+        "count backwards"
+       ],
+       [
+        "step",
+        "jump by more than 1"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that counts down in a range, as in 5 ___ 1.",
+      "a": [
+       "downTo"
+      ],
+      "why": "5 downTo 1 counts 5, 4, 3, 2, 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 1 to 3",
+      "lines": [
+       "for (i in 1..3) {",
+       "    println(i)",
+       "}"
+      ],
+      "why": "The println sits inside the loop."
+     },
+     {
+      "t": "order",
+      "q": "Put the while loop steps in order",
+      "items": [
+       [
+        "var n = 3",
+        1
+       ],
+       [
+        "while (n > 0) {",
+        2
+       ],
+       [
+        "println(n); n--",
+        3
+       ],
+       [
+        "}",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the for loop header that goes through the numbers 1 to 10.",
+      "a": [
+       "for (i in 1..10) {",
+       "for (i in 1..10)"
+      ],
+      "why": "1..10 includes 10."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the loop that prints 2, 4, 6",
+      "lines": [
+       "for (i in 2..6 step 2) {",
+       "    println(i)",
+       "}"
+      ],
+      "why": "step 2 skips every other number."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "fun main() {\n    for (i in 1..5) {\n        if (i == 2) continue\n        if (i == 4) break\n        println(i)\n    }\n}",
+      "o": [
+       "1 3 (each on its own line)",
+       "1 2 3",
+       "2 4",
+       "3"
+      ],
+      "a": 0,
+      "why": "continue skips 2, and break stops at 4."
+     }
+    ]
+   },
+   {
+    "title": "Functions and Default Arguments",
+    "period": "Functions and null safety",
+    "learn": [
+     {
+      "h": "Declaring a function",
+      "b": "Write fun, a name, parameters with types, then the return type after a colon. Use return to send back a value. Functions with no useful result return Unit, which you can leave out.",
+      "code": "fun add(a: Int, b: Int): Int {\n    return a + b\n}\nprintln(add(2, 3))"
+     },
+     {
+      "h": "Expression bodies",
+      "b": "If a function is just one expression, use = instead of braces and return. Kotlin infers the return type.",
+      "code": "fun square(x: Int) = x * x\nprintln(square(4))"
+     },
+     {
+      "h": "Default arguments",
+      "b": "Give a parameter a default value with = and callers can leave it out. This replaces many overloads from other languages.",
+      "code": "fun greet(name: String, greeting: String = \"Hello\") {\n    println(\"$greeting, $name\")\n}\ngreet(\"Sam\")\ngreet(\"Sam\", \"Hi\")"
+     },
+     {
+      "h": "Named arguments",
+      "b": "You can pass arguments by name, in any order, which makes calls easier to read and lets you skip defaults in the middle.",
+      "code": "fun box(w: Int = 1, h: Int = 1) = w * h\nprintln(box(h = 5))\nprintln(box(w = 2, h = 3))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where does the return type go in a Kotlin function?",
+      "o": [
+       "After the parameters, following a colon",
+       "Before fun",
+       "Before the name",
+       "Inside the braces"
+      ],
+      "a": 0,
+      "why": "fun f(x: Int): Int."
+     },
+     {
+      "t": "mc",
+      "q": "What does the = in fun sq(x: Int) = x * x mean?",
+      "o": [
+       "The body is a single expression",
+       "It is an assignment to x",
+       "It is a comparison",
+       "It is an error"
+      ],
+      "a": 0,
+      "why": "It is the expression body form."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun greet(n: String, g: String = \"Hello\") {\n    println(\"$g, $n\")\n}\nfun main() {\n    greet(\"Ann\")\n}",
+      "o": [
+       "Hello, Ann",
+       "Hi, Ann",
+       "Ann",
+       "Error"
+      ],
+      "a": 0,
+      "why": "greeting uses its default value."
+     },
+     {
+      "t": "tf",
+      "q": "In Kotlin you can call a function with arguments in any order by naming them.",
+      "a": true,
+      "why": "Named arguments allow any order."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "fun",
+        "declare a function"
+       ],
+       [
+        "return",
+        "send a value back"
+       ],
+       [
+        "Unit",
+        "no useful result"
+       ],
+       [
+        "default value",
+        "used if argument is missing"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that sends a value out of a function.",
+      "a": [
+       "return"
+      ],
+      "why": "return ends the function with a value."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the function that doubles a number, then call it",
+      "lines": [
+       "fun double(x: Int): Int {",
+       "    return x * 2",
+       "}",
+       "println(double(4))"
+      ],
+      "why": "Define the function before calling it."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order to use a function",
+      "items": [
+       [
+        "Declare fun add(a: Int, b: Int)",
+        1
+       ],
+       [
+        "Return a + b",
+        2
+       ],
+       [
+        "Call add(2, 3)",
+        3
+       ],
+       [
+        "Get 5",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of a function named hi that takes a String parameter name and has no return value written, starting with fun.",
+      "a": [
+       "fun hi(name: String) {",
+       "fun hi(name: String)"
+      ],
+      "why": "Parameters need types."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the one-line function and its call",
+      "lines": [
+       "fun triple(x: Int) = x * 3",
+       "fun main() {",
+       "    println(triple(5))",
+       "}"
+      ],
+      "why": "triple(5) is 15."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "fun box(w: Int = 2, h: Int = 1) = w * h\nfun main() {\n    println(box(h = 3))\n}",
+      "o": [
+       "6",
+       "5",
+       "7",
+       "23"
+      ],
+      "a": 0,
+      "why": "The call box(h = 3) uses w = 2 by default: 2 * 3."
+     }
+    ]
+   },
+   {
+    "title": "Null Safety",
+    "period": "Functions and null safety",
+    "learn": [
+     {
+      "h": "Types that cannot be null",
+      "b": "In Kotlin a normal type like String can never hold null, so the compiler stops many crashes before they happen. Writing val s: String = null is an error.",
+      "code": "val s: String = \"hi\"\n// val t: String = null   // error"
+     },
+     {
+      "h": "Nullable types",
+      "b": "Add a question mark to allow null: String?. Before using it you must handle the null case.",
+      "code": "var name: String? = \"Ana\"\nname = null\nprintln(name)"
+     },
+     {
+      "h": "Safe call and Elvis",
+      "b": "The safe call ?. runs only if the value is not null, otherwise gives null. The Elvis operator ?: gives a default when the left side is null.",
+      "code": "val s: String? = null\nprintln(s?.length)\nprintln(s?.length ?: 0)"
+     },
+     {
+      "h": "Checks and !!",
+      "b": "You can test with if (s != null) and Kotlin then treats s as non-null. The operator !! says trust me and crashes if it is null, so avoid it. The let function runs code only when not null.",
+      "code": "val s: String? = \"abc\"\nif (s != null) println(s.length)\ns?.let { println(it.uppercase()) }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which type can hold null?",
+      "o": [
+       "String?",
+       "String",
+       "Int",
+       "Boolean"
+      ],
+      "a": 0,
+      "why": "A question mark makes a type nullable."
+     },
+     {
+      "t": "mc",
+      "q": "What does ?: (the Elvis operator) do?",
+      "o": [
+       "Gives a default when the left side is null",
+       "Compares two values",
+       "Declares a nullable",
+       "Throws an error"
+      ],
+      "a": 0,
+      "why": "a ?: b means a if not null, else b."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun main() {\n    val s: String? = null\n    println(s?.length ?: 0)\n}",
+      "o": [
+       "0",
+       "null",
+       "3",
+       "Error"
+      ],
+      "a": 0,
+      "why": "s is null so s?.length is null and Elvis gives 0."
+     },
+     {
+      "t": "tf",
+      "q": "The !! operator is the safest way to handle null.",
+      "a": false,
+      "why": "It throws an exception if the value is null."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its meaning",
+      "pairs": [
+       [
+        "String?",
+        "nullable String"
+       ],
+       [
+        "?.",
+        "safe call"
+       ],
+       [
+        "?:",
+        "Elvis, default value"
+       ],
+       [
+        "!!",
+        "assert not null, may crash"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the operator that gives a default value when something is null.",
+      "a": [
+       "?:"
+      ],
+      "why": "Elvis: x ?: default."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 5 for a null name using Elvis",
+      "lines": [
+       "val n: String? = null",
+       "val len = n?.length ?: 5",
+       "println(len)"
+      ],
+      "why": "Declare, compute with Elvis, print."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order to handle a nullable safely",
+      "items": [
+       [
+        "Declare val s: String?",
+        1
+       ],
+       [
+        "Check with s?.length",
+        2
+       ],
+       [
+        "Add ?: 0 for a default",
+        3
+       ],
+       [
+        "Print the number",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration of a nullable String variable x set to null, starting with var.",
+      "a": [
+       "var x: String? = null"
+      ],
+      "why": "The ? makes it nullable."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the safe call that prints null",
+      "lines": [
+       "fun main() {",
+       "    val s: String? = null",
+       "    println(s?.length)",
+       "}"
+      ],
+      "why": "The safe call gives null instead of crashing."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "fun main() {\n    val s: String? = \"abc\"\n    println(s?.length ?: 0)\n}",
+      "o": [
+       "3",
+       "null",
+       "0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "s is not null, so the safe call returns its length."
+     }
+    ]
+   },
+   {
+    "title": "Collections and Lambdas",
+    "period": "Collections and OOP",
+    "learn": [
+     {
+      "h": "List, Set, Map",
+      "b": "listOf makes a read-only list, setOf a set with no duplicates, and mapOf pairs keys to values using to. Use mutableListOf and similar when you want to add or remove items.",
+      "code": "val nums = listOf(1, 2, 3)\nval m = mapOf(\"a\" to 1, \"b\" to 2)\nval items = mutableListOf(\"x\")\nitems.add(\"y\")\nprintln(nums[0])\nprintln(m[\"b\"])"
+     },
+     {
+      "h": "Looping and size",
+      "b": "Collections have size, and you can loop with for. Use in to test membership and indexes like list[0] to read items.",
+      "code": "val fruit = listOf(\"apple\", \"pear\")\nprintln(fruit.size)\nfor (f in fruit) println(f)\nprintln(\"pear\" in fruit)"
+     },
+     {
+      "h": "Lambdas",
+      "b": "A lambda is a small function written in braces: { x -> x * 2 }. If it has one parameter you can refer to it as it. When a lambda is the last argument it can go outside the parentheses.",
+      "code": "val double = { x: Int -> x * 2 }\nprintln(double(4))\nval list = listOf(1, 2, 3)\nprintln(list.map { it * 10 })"
+     },
+     {
+      "h": "map, filter and friends",
+      "b": "map changes every item, filter keeps items that pass a test, and sum, count, first and sorted work on lists. They return new collections.",
+      "code": "val n = listOf(1, 2, 3, 4)\nprintln(n.filter { it % 2 == 0 })\nprintln(n.map { it * it })\nprintln(n.sum())"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which creates a list you can add to?",
+      "o": [
+       "mutableListOf(1)",
+       "listOf(1)",
+       "setOf(1)",
+       "mapOf(1)"
+      ],
+      "a": 0,
+      "why": "mutableListOf gives a changeable list."
+     },
+     {
+      "t": "mc",
+      "q": "What is it inside a lambda { it * 2 }?",
+      "o": [
+       "The single parameter",
+       "A keyword for Int",
+       "The return value",
+       "A list"
+      ],
+      "a": 0,
+      "why": "it is the implicit name of the one parameter."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fun main() {\n    val n = listOf(1, 2, 3, 4)\n    println(n.filter { it % 2 == 0 })\n}",
+      "o": [
+       "[2, 4]",
+       "[1, 3]",
+       "[1, 2, 3, 4]",
+       "[4]"
+      ],
+      "a": 0,
+      "why": "filter keeps even numbers."
+     },
+     {
+      "t": "tf",
+      "q": "A Set can contain the same value twice.",
+      "a": false,
+      "why": "Sets drop duplicates."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "map",
+        "transform every item"
+       ],
+       [
+        "filter",
+        "keep items that pass a test"
+       ],
+       [
+        "sum",
+        "add numbers up"
+       ],
+       [
+        "size",
+        "how many items"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type what the lambda { it + 1 } returns for 4.",
+      "a": [
+       "5"
+      ],
+      "why": "it is 4, so 4 + 1 is 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the doubled list [2, 4, 6]",
+      "lines": [
+       "val a = listOf(1, 2, 3)",
+       "val b = a.map { it * 2 }",
+       "println(b)"
+      ],
+      "why": "Create, transform, print."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "val a = listOf(1, 2, 3, 4)",
+        1
+       ],
+       [
+        "val e = a.filter { it > 2 }",
+        2
+       ],
+       [
+        "val t = e.sum()",
+        3
+       ],
+       [
+        "println(t) shows 7",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that makes a read-only list called xs holding 1, 2 and 3.",
+      "a": [
+       "val xs = listOf(1, 2, 3)"
+      ],
+      "why": "listOf creates a read-only list."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints the squares [1, 4, 9]",
+      "lines": [
+       "val a = listOf(1, 2, 3)",
+       "val s = a.map { it * it }",
+       "println(s)"
+      ],
+      "why": "map squares each item."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "fun main() {\n    val m = mapOf(\"a\" to 1, \"b\" to 2)\n    println(m[\"b\"])\n}",
+      "o": [
+       "2",
+       "1",
+       "3",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The map holds b to 2, so m[\"b\"] is 2."
+     }
+    ]
+   },
+   {
+    "title": "Classes, Data Classes and Objects",
+    "period": "Collections and OOP",
+    "learn": [
+     {
+      "h": "Classes",
+      "b": "A class describes a kind of thing. The primary constructor sits in the header, and val or var turns a parameter into a property. Create an object by calling the class like a function, with no new keyword.",
+      "code": "class Dog(val name: String, var age: Int) {\n    fun bark() = println(\"$name says woof\")\n}\nval d = Dog(\"Rex\", 3)\nd.bark()\nd.age = 4"
+     },
+     {
+      "h": "init and members",
+      "b": "An init block runs when an object is created. Functions inside a class are called methods, and you reach members with a dot. Inside the class, this means the current object.",
+      "code": "class Counter {\n    var n = 0\n    init { println(\"created\") }\n    fun inc() { n++ }\n}"
+     },
+     {
+      "h": "Data classes",
+      "b": "Mark a class data when it mainly holds values. Kotlin generates toString, equals, copy and component functions for you.",
+      "code": "data class User(val name: String, val age: Int)\nval u = User(\"Ana\", 12)\nprintln(u)\nval v = u.copy(age = 13)\nprintln(u == User(\"Ana\", 12))"
+     },
+     {
+      "h": "object and companion",
+      "b": "An object declaration makes a single instance, a singleton, with no constructor. A companion object inside a class holds things shared by the class, like static members in other languages.",
+      "code": "object Config {\n    val version = 2\n}\nclass A {\n    companion object {\n        const val MAX = 5\n    }\n}\nprintln(Config.version)\nprintln(A.MAX)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you create an object of class Dog?",
+      "o": [
+       "Dog(\"Rex\", 3)",
+       "new Dog(\"Rex\", 3)",
+       "create Dog(\"Rex\", 3)",
+       "Dog.new(\"Rex\", 3)"
+      ],
+      "a": 0,
+      "why": "Kotlin has no new keyword."
+     },
+     {
+      "t": "mc",
+      "q": "What does data class generate automatically?",
+      "o": [
+       "toString, equals, copy",
+       "Only a constructor",
+       "A database table",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "These helpers come for free."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "data class User(val name: String, val age: Int)\nfun main() {\n    println(User(\"Ana\", 12))\n}",
+      "o": [
+       "User(name=Ana, age=12)",
+       "Ana 12",
+       "User@1a2b",
+       "Error"
+      ],
+      "a": 0,
+      "why": "A data class gives a readable toString."
+     },
+     {
+      "t": "tf",
+      "q": "An object declaration creates exactly one instance.",
+      "a": true,
+      "why": "It is a singleton."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "class",
+        "blueprint for objects"
+       ],
+       [
+        "data class",
+        "class that holds values"
+       ],
+       [
+        "object",
+        "singleton"
+       ],
+       [
+        "companion object",
+        "shared members of a class"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that makes a class data-focused, as in ___ class Point(val x: Int).",
+      "a": [
+       "data"
+      ],
+      "why": "data class generates helper functions."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the class and the object creation",
+      "lines": [
+       "class Pet(val name: String)",
+       "fun main() {",
+       "    val p = Pet(\"Mo\")",
+       "    println(p.name)",
+       "}"
+      ],
+      "why": "Declare the class, then use it."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Declare class Dog(val name: String)",
+        1
+       ],
+       [
+        "Create val d = Dog(\"Rex\")",
+        2
+       ],
+       [
+        "Read d.name",
+        3
+       ],
+       [
+        "Output: Rex",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the class header for a class Cat with a read-only String property name, starting with class.",
+      "a": [
+       "class Cat(val name: String)"
+      ],
+      "why": "val in the constructor makes a property."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the data class and copy",
+      "lines": [
+       "data class P(val x: Int)",
+       "fun main() {",
+       "    val a = P(1)",
+       "    println(a.copy(x = 2))",
+       "}"
+      ],
+      "why": "copy changes x and prints P(x=2)."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "data class P(val x: Int)\nfun main() {\n    println(P(1) == P(1))\n}",
+      "o": [
+       "true",
+       "false",
+       "Error",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "Data classes compare by values, so equal values are equal."
+     }
+    ]
+   },
+   {
+    "title": "Inheritance, Interfaces and Coroutines",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Inheritance with open",
+      "b": "Kotlin classes are final by default. Mark a class open to allow subclasses, write the parent after a colon, and mark overridable members open too. Use override in the child.",
+      "code": "open class Animal {\n    open fun sound() = \"...\"\n}\nclass Dog : Animal() {\n    override fun sound() = \"Woof\"\n}\nprintln(Dog().sound())"
+     },
+     {
+      "h": "Interfaces and abstract",
+      "b": "An interface lists functions a class promises to have and can include default code. A class can implement many interfaces. An abstract class cannot be created directly and can leave functions without a body.",
+      "code": "interface Flyer {\n    fun fly() = println(\"flying\")\n}\nclass Bird : Flyer\nBird().fly()"
+     },
+     {
+      "h": "Coroutines intro",
+      "b": "A coroutine is a light task that can pause without blocking a thread. You need the kotlinx.coroutines library. launch starts one, delay pauses it, and runBlocking waits for them in main.",
+      "code": "import kotlinx.coroutines.*\nfun main() = runBlocking {\n    launch {\n        delay(500)\n        println(\"World\")\n    }\n    println(\"Hello\")\n}"
+     },
+     {
+      "h": "suspend functions",
+      "b": "A suspend function can pause a coroutine, and can only be called from another suspend function or a coroutine. async starts work and returns a result you collect with await.",
+      "code": "suspend fun fetch(): Int {\n    delay(100)\n    return 42\n}\nfun main() = runBlocking {\n    val r = async { fetch() }\n    println(r.await())\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What must you add to a Kotlin class so others can inherit from it?",
+      "o": [
+       "open",
+       "extends",
+       "virtual",
+       "inherit"
+      ],
+      "a": 0,
+      "why": "Classes are final unless marked open."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword marks a function that replaces a parent's version?",
+      "o": [
+       "override",
+       "replace",
+       "super",
+       "new"
+      ],
+      "a": 0,
+      "why": "override is required in the child."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "open class Animal {\n    open fun sound() = \"...\"\n}\nclass Dog : Animal() {\n    override fun sound() = \"Woof\"\n}\nfun main() {\n    println(Dog().sound())\n}",
+      "o": [
+       "Woof",
+       "...",
+       "Animal",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Dog overrides sound, so Woof is used."
+     },
+     {
+      "t": "tf",
+      "q": "A suspend function can be called from any normal function.",
+      "a": false,
+      "why": "It needs a coroutine or another suspend function."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "open",
+        "can be inherited"
+       ],
+       [
+        "interface",
+        "promise of functions"
+       ],
+       [
+        "launch",
+        "starts a coroutine"
+       ],
+       [
+        "delay",
+        "pauses a coroutine"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that marks a function that can pause inside a coroutine.",
+      "a": [
+       "suspend"
+      ],
+      "why": "suspend fun can pause without blocking."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines for a class that inherits from open class A",
+      "lines": [
+       "open class A",
+       "class B : A()",
+       "fun main() {",
+       "    val b = B()",
+       "}"
+      ],
+      "why": "The parent comes after the colon with parentheses."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Declare open class Animal",
+        1
+       ],
+       [
+        "Declare class Dog : Animal()",
+        2
+       ],
+       [
+        "Override sound in Dog",
+        3
+       ],
+       [
+        "Call Dog().sound()",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of a class Cat that inherits from open class Animal, starting with class.",
+      "a": [
+       "class Cat : Animal()"
+      ],
+      "why": "Call the parent constructor with ()."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a coroutine program that prints Hi after a pause",
+      "lines": [
+       "fun main() = runBlocking {",
+       "    delay(100)",
+       "    println(\"Hi\")",
+       "}"
+      ],
+      "why": "runBlocking runs the pause and then prints."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "interface Flyer {\n    fun fly() = println(\"flying\")\n}\nclass Bird : Flyer\nfun main() {\n    Bird().fly()\n}",
+      "o": [
+       "flying",
+       "Nothing",
+       "Error",
+       "Bird"
+      ],
+      "a": 0,
+      "why": "Bird gets fly from the interface default code."
+     }
+    ]
+   }
+  ]
+ }
+}

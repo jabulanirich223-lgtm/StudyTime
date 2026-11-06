@@ -1,0 +1,2057 @@
+{
+ "csharp": {
+  "name": "C#",
+  "units": [
+   {
+    "title": "Console.WriteLine & Main",
+    "period": "C# basics",
+    "learn": [
+     {
+      "h": "Your first C# program",
+      "b": "Every C# program starts running at a method called Main. Inside it you can write statements, and each statement ends with a semicolon. Console.WriteLine prints text and then moves to a new line.",
+      "code": "using System;\n\nclass Program\n{\n    static void Main()\n    {\n        Console.WriteLine(\"Hello!\");\n    }\n}"
+     },
+     {
+      "h": "Console is a class",
+      "b": "Console lives in the System namespace, so we write using System; at the top of the file. Console.WriteLine prints a line, and Console.Write prints without a new line afterwards.",
+      "code": "Console.Write(\"Hi \");\nConsole.WriteLine(\"there\");\n// prints: Hi there"
+     },
+     {
+      "h": "Comments and braces",
+      "b": "Curly braces { } group code into blocks. A comment starts with // and is ignored by the computer. Use comments to explain your code to humans. C# is case sensitive, so console and Console are different.",
+      "code": "// This line is ignored\nConsole.WriteLine(\"Run\"); // so is this part"
+     },
+     {
+      "h": "Reading input",
+      "b": "Console.ReadLine() waits for the user to type a line and gives it back as text (a string). You can store it in a variable and print it later. Newer C# versions also allow top-level statements, where you skip Main, but Main is what you will see in most books.",
+      "code": "Console.WriteLine(\"Name?\");\nstring name = Console.ReadLine();\nConsole.WriteLine(name);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where does a C# program begin running?",
+      "o": [
+       "The Main method",
+       "The first comment",
+       "The last line",
+       "The using line"
+      ],
+      "a": 0,
+      "why": "Execution starts in the Main method."
+     },
+     {
+      "t": "mc",
+      "q": "Which statement prints text and then starts a new line?",
+      "o": [
+       "Console.Out(\"Hi\");",
+       "Console.Write(\"Hi\");",
+       "Console.WriteLine(\"Hi\");",
+       "Console.Print(\"Hi\");"
+      ],
+      "a": 2,
+      "why": "WriteLine adds a new line after the text."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "Console.Write(\"A\");\nConsole.Write(\"B\");",
+      "o": [
+       "A\nB",
+       "B",
+       "AB",
+       "A B"
+      ],
+      "a": 2,
+      "why": "Write does not add a new line, so the output is AB."
+     },
+     {
+      "t": "tf",
+      "q": "In C# the words console and Console mean the same thing.",
+      "a": false,
+      "why": "C# is case sensitive."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its job",
+      "pairs": [
+       [
+        "using System;",
+        "lets you use Console"
+       ],
+       [
+        "Main",
+        "where the program starts"
+       ],
+       [
+        "//",
+        "starts a comment"
+       ],
+       [
+        "Console.ReadLine()",
+        "reads a line the user types"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the character that ends most C# statements.",
+      "a": [
+       ";",
+       "semicolon"
+      ],
+      "why": "Statements end with a semicolon."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Hello",
+      "lines": [
+       "static void Main()",
+       "{",
+       "    Console.WriteLine(\"Hello\");",
+       "}"
+      ],
+      "why": "Main, then braces holding the statement."
+     },
+     {
+      "t": "order",
+      "q": "Put these in the order a simple program is written",
+      "items": [
+       [
+        "using System;",
+        1
+       ],
+       [
+        "class Program",
+        2
+       ],
+       [
+        "static void Main()",
+        3
+       ],
+       [
+        "Console.WriteLine(\"Hi\");",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the full statement that prints Hello World on its own line.",
+      "a": [
+       "Console.WriteLine(\"Hello World\");",
+       "Console.WriteLine(\"Hello World\")"
+      ],
+      "hint": "Console.WriteLine(...)",
+      "why": "Use Console.WriteLine with the text in double quotes."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange these lines to read a name and print it back.",
+      "lines": [
+       "Console.WriteLine(\"Name?\");",
+       "string name = Console.ReadLine();",
+       "Console.WriteLine(name);"
+      ],
+      "why": "Ask, read, then print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is the output?",
+      "code": "Console.Write(\"Hi\");\nConsole.WriteLine(\"!\");",
+      "o": [
+       "Hi !",
+       "Hi!Hi!",
+       "Hi\n!",
+       "Hi!"
+      ],
+      "a": 3,
+      "why": "Hi then ! on the same line, printed together."
+     }
+    ]
+   },
+   {
+    "title": "Variables & Types",
+    "period": "C# basics",
+    "learn": [
+     {
+      "h": "Declaring variables",
+      "b": "A variable is a named box that holds a value. In C# you must say its type when you create it. The type decides what kind of value fits inside.",
+      "code": "int score = 10;\ndouble price = 2.5;\nbool alive = true;\nstring name = \"Max\";\nchar grade = 'A';"
+     },
+     {
+      "h": "The common types",
+      "b": "int holds whole numbers, double holds decimals, bool holds true or false, char holds one character in single quotes, and string holds text in double quotes. Use float or long when you need those sizes, and write f after a float number like 1.5f.",
+      "code": "long big = 5000000000L;\nfloat speed = 1.5f;"
+     },
+     {
+      "h": "var and const",
+      "b": "The word var lets the compiler work out the type from the value, but the type is still fixed afterwards. A const is a value that can never change. Names usually start with a lowercase letter and use camelCase.",
+      "code": "var lives = 3;      // int\nconst int MaxLives = 5;\nlives = 2;          // allowed"
+     },
+     {
+      "h": "Converting types",
+      "b": "An int fits into a double automatically. Going the other way loses the decimals, so you must cast with (int). To turn text into a number use int.Parse or Convert.ToInt32.",
+      "code": "double d = 3.9;\nint n = (int)d;   // 3\nint age = int.Parse(\"15\");"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which type stores whole numbers?",
+      "o": [
+       "double",
+       "int",
+       "string",
+       "bool"
+      ],
+      "a": 1,
+      "why": "int is for whole numbers."
+     },
+     {
+      "t": "mc",
+      "q": "Which line correctly declares a text variable?",
+      "o": [
+       "city string = \"Rome\";",
+       "string city = 'Rome';",
+       "text city = \"Rome\";",
+       "string city = \"Rome\";"
+      ],
+      "a": 3,
+      "why": "string values use double quotes."
+     },
+     {
+      "t": "mc",
+      "q": "What is the value of n?",
+      "code": "double d = 3.9;\nint n = (int)d;",
+      "o": [
+       "3",
+       "Error",
+       "3.9",
+       "4"
+      ],
+      "a": 0,
+      "why": "Casting to int cuts off the decimals without rounding."
+     },
+     {
+      "t": "tf",
+      "q": "A const variable can be changed later in the program.",
+      "a": false,
+      "why": "const means the value is fixed."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to a value",
+      "pairs": [
+       [
+        "int",
+        "42"
+       ],
+       [
+        "double",
+        "3.14"
+       ],
+       [
+        "bool",
+        "true"
+       ],
+       [
+        "char",
+        "'x'"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that lets the compiler pick the type for you.",
+      "a": [
+       "var"
+      ],
+      "why": "var infers the type from the value."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so total ends as 15",
+      "lines": [
+       "int a = 10;",
+       "int b = 5;",
+       "int total = a + b;",
+       "Console.WriteLine(total);"
+      ],
+      "why": "Declare a and b before using them."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to store a user's age as a number",
+      "items": [
+       [
+        "Read text with Console.ReadLine()",
+        1
+       ],
+       [
+        "Parse the text with int.Parse",
+        2
+       ],
+       [
+        "Store the result in an int variable",
+        3
+       ],
+       [
+        "Print the number",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type one line that declares an int named score set to 10.",
+      "a": [
+       "int score = 10;",
+       "int score = 10"
+      ],
+      "hint": "int name = value;",
+      "why": "Type, name, equals, value."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the type of this variable? Type it: var price = 9.99;",
+      "a": [
+       "double"
+      ],
+      "why": "A decimal literal without f is a double."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange to convert the text 7 to a number and print it.",
+      "lines": [
+       "string text = \"7\";",
+       "int n = int.Parse(text);",
+       "Console.WriteLine(n);"
+      ],
+      "why": "Parse before printing."
+     }
+    ]
+   },
+   {
+    "title": "Operators",
+    "period": "C# basics",
+    "learn": [
+     {
+      "h": "Math operators",
+      "b": "C# has + - * / and % (remainder). When both numbers are int, division also gives an int and drops the decimals. If one of them is a double, you get a decimal answer.",
+      "code": "Console.WriteLine(7 / 2);    // 3\nConsole.WriteLine(7 / 2.0);  // 3.5\nConsole.WriteLine(7 % 2);    // 1"
+     },
+     {
+      "h": "Shortcuts",
+      "b": "x += 3 means x = x + 3. There are also -=, *=, /=. The ++ operator adds 1 and -- subtracts 1. These are very common in loops.",
+      "code": "int x = 5;\nx += 3;   // 8\nx++;      // 9\nx--;      // 8"
+     },
+     {
+      "h": "Comparison operators",
+      "b": "Comparisons give a bool. Use == to check equal, != for not equal, and < > <= >= for order. A single = is assignment, not comparison.",
+      "code": "int age = 14;\nbool teen = age >= 13;  // true\nbool same = age == 20;  // false"
+     },
+     {
+      "h": "Logical operators",
+      "b": "Combine bools with && (and), || (or) and ! (not). && is true only if both sides are true. || is true if at least one side is true. Parentheses make the order clear.",
+      "code": "bool ok = (age > 12) && (age < 20);\nbool no = !ok;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 7 / 2 when both are ints?",
+      "o": [
+       "4",
+       "3",
+       "2",
+       "3.5"
+      ],
+      "a": 1,
+      "why": "Integer division drops the decimals."
+     },
+     {
+      "t": "mc",
+      "q": "Which operator gives the remainder of a division?",
+      "o": [
+       "/",
+       "%",
+       "&",
+       "//"
+      ],
+      "a": 1,
+      "why": "% is the remainder (modulo) operator."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int x = 5;\nx += 3;\nx++;\nConsole.WriteLine(x);",
+      "o": [
+       "5",
+       "8",
+       "9",
+       "10"
+      ],
+      "a": 2,
+      "why": "x becomes 8 after += 3, then 9 after ++."
+     },
+     {
+      "t": "tf",
+      "q": "The operator = checks whether two values are equal.",
+      "a": false,
+      "why": "= assigns; == compares."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "&&",
+        "and"
+       ],
+       [
+        "||",
+        "or"
+       ],
+       [
+        "!",
+        "not"
+       ],
+       [
+        "!=",
+        "not equal"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does 17 % 5 equal? Type the number.",
+      "a": [
+       "2"
+      ],
+      "why": "17 = 3 x 5 + 2, so the remainder is 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange to double a score and add 1",
+      "lines": [
+       "int score = 4;",
+       "score *= 2;",
+       "score++;",
+       "Console.WriteLine(score);"
+      ],
+      "why": "4 doubled is 8, then 9."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order of evaluation for 2 + 3 * 4 (what happens first)",
+      "items": [
+       [
+        "3 * 4 is calculated",
+        1
+       ],
+       [
+        "12 is ready",
+        2
+       ],
+       [
+        "2 + 12 is calculated",
+        3
+       ],
+       [
+        "The result 14 is produced",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the expression that is true when age is 13 or more (use age).",
+      "a": [
+       "age >= 13",
+       "age>=13"
+      ],
+      "hint": "age ... 13",
+      "why": "Use >= for 'or more'."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the C# shortcut that adds 1 to the variable count (with ++).",
+      "a": [
+       "count++",
+       "count++;",
+       "++count",
+       "++count;"
+      ],
+      "why": "++ adds one."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is the value of ok?",
+      "code": "int a = 5;\nbool ok = a > 3 && a > 10;",
+      "o": [
+       "1",
+       "Error",
+       "true",
+       "false"
+      ],
+      "a": 3,
+      "why": "5 is not greater than 10, so && is false."
+     }
+    ]
+   },
+   {
+    "title": "Strings & Interpolation",
+    "period": "C# basics",
+    "learn": [
+     {
+      "h": "Working with strings",
+      "b": "A string is a sequence of characters. Use + to join strings, and .Length to count characters. Characters have positions starting at 0, so name[0] is the first one.",
+      "code": "string s = \"Hello\";\nConsole.WriteLine(s.Length); // 5\nConsole.WriteLine(s[0]);     // H\nConsole.WriteLine(s + \"!\"); // Hello!"
+     },
+     {
+      "h": "String interpolation",
+      "b": "Put a $ before the opening quote and write variables inside curly braces. This is the easiest way to build text from values. You can even put small expressions inside the braces.",
+      "code": "string name = \"Mia\";\nint age = 15;\nConsole.WriteLine($\"{name} is {age}\");\n// Mia is 15"
+     },
+     {
+      "h": "Useful methods",
+      "b": "ToUpper and ToLower change case. Contains checks for a piece of text. Replace swaps text. Substring cuts out part of a string. Strings are immutable, so these methods return a new string and do not change the original.",
+      "code": "string t = \"cat\";\nConsole.WriteLine(t.ToUpper());      // CAT\nConsole.WriteLine(t.Contains(\"a\")); // True\nConsole.WriteLine(t.Replace(\"c\",\"b\")); // bat"
+     },
+     {
+      "h": "Escapes and comparing",
+      "b": "Inside a string, \\n means a new line and \\\" puts a quote mark in the text. Compare strings with ==. Use string.IsNullOrEmpty(s) to check for empty text.",
+      "code": "Console.WriteLine(\"Line1\\nLine2\");\nbool same = \"a\" == \"a\"; // true"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does $\"{x}\" do?",
+      "o": [
+       "Inserts the value of x into the text",
+       "Makes x a constant",
+       "Declares x",
+       "Prints the word x"
+      ],
+      "a": 0,
+      "why": "Interpolation puts the value of x in the string."
+     },
+     {
+      "t": "mc",
+      "q": "What is \"Hello\".Length?",
+      "o": [
+       "4",
+       "6",
+       "5",
+       "H"
+      ],
+      "a": 2,
+      "why": "Hello has 5 characters."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "string t = \"cat\";\nConsole.WriteLine(t.Replace(\"c\", \"b\"));",
+      "o": [
+       "cab",
+       "bat",
+       "cat",
+       "bad"
+      ],
+      "a": 1,
+      "why": "Replace swaps c for b."
+     },
+     {
+      "t": "tf",
+      "q": "The first character of a string is at index 1.",
+      "a": false,
+      "why": "Indexes start at 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each member to its job",
+      "pairs": [
+       [
+        ".Length",
+        "number of characters"
+       ],
+       [
+        ".ToUpper()",
+        "capital letters"
+       ],
+       [
+        ".Contains(\"a\")",
+        "checks for a piece of text"
+       ],
+       [
+        "\\n",
+        "new line"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the single character you put before the opening quote to use interpolation.",
+      "a": [
+       "$"
+      ],
+      "why": "A $ starts an interpolated string."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange to print Hi Sam",
+      "lines": [
+       "string name = \"Sam\";",
+       "string msg = $\"Hi {name}\";",
+       "Console.WriteLine(msg);"
+      ],
+      "why": "Declare the variable, build the message, print it."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to shout a name",
+      "items": [
+       [
+        "Read the name",
+        1
+       ],
+       [
+        "Call ToUpper on it",
+        2
+       ],
+       [
+        "Store the new string",
+        3
+       ],
+       [
+        "Print it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that prints Score: 5 using interpolation with an int variable named score.",
+      "a": [
+       "Console.WriteLine($\"Score: {score}\");",
+       "Console.WriteLine($\"Score: {score}\")"
+      ],
+      "hint": "Console.WriteLine($\"...\");",
+      "why": "Use $ and {score}."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "string w = \"ask\";\nConsole.WriteLine(w[1]);",
+      "o": [
+       "Sun",
+       "0",
+       "s",
+       "S"
+      ],
+      "a": 2,
+      "why": "s[1] is the second character, which is s."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange to print the length of a word.",
+      "lines": [
+       "string word = \"banana\";",
+       "int n = word.Length;",
+       "Console.WriteLine(n);"
+      ],
+      "why": "Store the length, then print it."
+     }
+    ]
+   },
+   {
+    "title": "if & switch",
+    "period": "C# control flow",
+    "learn": [
+     {
+      "h": "if, else if, else",
+      "b": "An if statement runs a block only when its condition is true. The condition must be a bool and goes in parentheses. Add else if for more choices and else for everything left over.",
+      "code": "int age = 16;\nif (age >= 18)\n{\n    Console.WriteLine(\"adult\");\n}\nelse if (age >= 13)\n{\n    Console.WriteLine(\"teen\");\n}\nelse\n{\n    Console.WriteLine(\"child\");\n}"
+     },
+     {
+      "h": "Combining conditions",
+      "b": "Use && and || to test several things at once. Only the first matching branch in an if chain runs. Remember to compare with == and not a single =.",
+      "code": "if (score > 0 && lives > 0)\n{\n    Console.WriteLine(\"playing\");\n}"
+     },
+     {
+      "h": "switch statements",
+      "b": "A switch compares one value against many fixed cases. Each case ends with break. The default case runs when nothing else matches. It is neater than a long else if chain.",
+      "code": "switch (day)\n{\n    case 1:\n        Console.WriteLine(\"Mon\");\n        break;\n    case 2:\n        Console.WriteLine(\"Tue\");\n        break;\n    default:\n        Console.WriteLine(\"Other\");\n        break;\n}"
+     },
+     {
+      "h": "The ternary operator",
+      "b": "condition ? a : b picks a when the condition is true and b when it is false. It is a short way to choose between two values. Modern C# also has switch expressions, but the classic switch is what you meet first.",
+      "code": "string r = score >= 50 ? \"pass\" : \"fail\";"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which part runs when no other branch matches?",
+      "o": [
+       "break",
+       "case",
+       "continue",
+       "default or else"
+      ],
+      "a": 3,
+      "why": "else in an if chain and default in a switch catch everything else."
+     },
+     {
+      "t": "mc",
+      "q": "What must an if condition be?",
+      "o": [
+       "A string",
+       "A bool",
+       "An int",
+       "A char"
+      ],
+      "a": 1,
+      "why": "C# only accepts true or false conditions."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int s = 60;\nstring r = s >= 50 ? \"pass\" : \"fail\";\nConsole.WriteLine(r);",
+      "o": [
+       "Error",
+       "pass",
+       "fail",
+       "50"
+      ],
+      "a": 1,
+      "why": "60 >= 50 is true, so the first value is chosen."
+     },
+     {
+      "t": "tf",
+      "q": "Every case in a classic switch normally ends with break.",
+      "a": true,
+      "why": "break stops the switch from falling into the next case."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its use",
+      "pairs": [
+       [
+        "else if",
+        "an extra condition"
+       ],
+       [
+        "default",
+        "switch fallback"
+       ],
+       [
+        "break",
+        "leave the switch"
+       ],
+       [
+        "?:",
+        "ternary choice"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that starts a decision.",
+      "a": [
+       "if"
+      ],
+      "why": "if tests a condition."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange this if/else",
+      "lines": [
+       "if (x > 0)",
+       "{ // start of if",
+       "    Console.WriteLine(\"positive\");",
+       "} // end of if",
+       "else",
+       "{ // start of else",
+       "    Console.WriteLine(\"not positive\");",
+       "} // end of else"
+      ],
+      "why": "The else block follows the if block."
+     },
+     {
+      "t": "order",
+      "q": "Put in order for a three-way decision",
+      "items": [
+       [
+        "if (n > 0)",
+        1
+       ],
+       [
+        "else if (n < 0)",
+        2
+       ],
+       [
+        "else",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the condition (the part in parentheses) that checks a number n is even.",
+      "a": [
+       "n % 2 == 0",
+       "n%2==0",
+       "n % 2 == 0 "
+      ],
+      "hint": "use %",
+      "why": "Even numbers have remainder 0 when divided by 2."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed when day is 3?",
+      "code": "int day = 3;\nswitch (day)\n{\n    case 1: Console.WriteLine(\"Mon\"); break;\n    case 2: Console.WriteLine(\"Tue\"); break;\n    default: Console.WriteLine(\"Other\"); break;\n}",
+      "o": [
+       "Other",
+       "Nothing",
+       "Mon",
+       "Tue"
+      ],
+      "a": 0,
+      "why": "No case matches 3, so default runs."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a ternary program.",
+      "lines": [
+       "int age = 20;",
+       "string t = age >= 18 ? \"adult\" : \"kid\";",
+       "Console.WriteLine(t);"
+      ],
+      "why": "Define age, choose, then print."
+     }
+    ]
+   },
+   {
+    "title": "Loops",
+    "period": "C# control flow",
+    "learn": [
+     {
+      "h": "while loops",
+      "b": "A while loop repeats its block as long as the condition is true. Make sure something inside changes the condition, or the loop never ends.",
+      "code": "int i = 1;\nwhile (i <= 3)\n{\n    Console.WriteLine(i);\n    i++;\n}"
+     },
+     {
+      "h": "for loops",
+      "b": "A for loop packs the start, the condition and the step in one line, separated by semicolons. It is perfect when you know how many times to repeat.",
+      "code": "for (int i = 0; i < 3; i++)\n{\n    Console.WriteLine(i);\n}\n// 0 1 2"
+     },
+     {
+      "h": "foreach and do-while",
+      "b": "foreach goes through every item of a collection one by one. A do-while loop always runs at least once because it checks the condition at the end.",
+      "code": "foreach (char c in \"abc\")\n{\n    Console.WriteLine(c);\n}\n\nint n = 0;\ndo { n++; } while (n < 3);"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop at once. continue skips the rest of this round and jumps to the next one. Loops can be nested, with one loop inside another, to make grids and tables.",
+      "code": "for (int i = 1; i <= 5; i++)\n{\n    if (i == 2) continue;\n    if (i == 4) break;\n    Console.WriteLine(i);\n}\n// 1 3"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which loop is best when you know how many times to repeat?",
+      "o": [
+       "if",
+       "switch",
+       "goto",
+       "for"
+      ],
+      "a": 3,
+      "why": "for puts counter, condition and step together."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop always runs its body at least once?",
+      "o": [
+       "while",
+       "for",
+       "do-while",
+       "foreach"
+      ],
+      "a": 2,
+      "why": "do-while tests its condition after the body."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "for (int i = 0; i < 3; i++)\n{\n    Console.Write(i);\n}",
+      "o": [
+       "12",
+       "012",
+       "123",
+       "0123"
+      ],
+      "a": 1,
+      "why": "i takes the values 0, 1, 2 and each is printed on the same line."
+     },
+     {
+      "t": "tf",
+      "q": "continue stops the whole loop.",
+      "a": false,
+      "why": "break stops the loop; continue only skips to the next round."
+     },
+     {
+      "t": "match",
+      "q": "Match each loop keyword to its idea",
+      "pairs": [
+       [
+        "while",
+        "repeat while true"
+       ],
+       [
+        "for",
+        "counter loop"
+       ],
+       [
+        "foreach",
+        "each item in a collection"
+       ],
+       [
+        "break",
+        "leave the loop"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that skips to the next loop round.",
+      "a": [
+       "continue"
+      ],
+      "why": "continue skips the rest of the current round."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a loop printing 1 to 3",
+      "lines": [
+       "for (int i = 1; i <= 3; i++)",
+       "{",
+       "    Console.WriteLine(i);",
+       "}"
+      ],
+      "why": "Header first, then the braces with the body."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a for loop in the order they happen first time",
+      "items": [
+       [
+        "int i = 0 (start)",
+        1
+       ],
+       [
+        "i < 3 (check)",
+        2
+       ],
+       [
+        "Run the body",
+        3
+       ],
+       [
+        "i++ (step)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the for loop header that counts i from 1 to 10 including 10.",
+      "a": [
+       "for (int i = 1; i <= 10; i++)",
+       "for(int i=1;i<=10;i++)"
+      ],
+      "hint": "for (int i = ...)",
+      "why": "Start at 1, condition i <= 10, step i++."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a loop that sums 1 to 4.",
+      "lines": [
+       "int sum = 0;",
+       "for (int i = 1; i <= 4; i++)",
+       "{",
+       "    sum += i;",
+       "}",
+       "Console.WriteLine(sum);"
+      ],
+      "why": "Set sum, loop adding, then print 10."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "for (int i = 1; i <= 5; i++)\n{\n    if (i == 2) continue;\n    if (i == 4) break;\n    Console.Write(i + \" \");\n}",
+      "o": [
+       "1 3 4",
+       "3",
+       "1 3",
+       "1 2 3"
+      ],
+      "a": 2,
+      "why": "2 is skipped by continue, the loop stops at 4 with break."
+     }
+    ]
+   },
+   {
+    "title": "Arrays",
+    "period": "C# control flow",
+    "learn": [
+     {
+      "h": "What is an array?",
+      "b": "An array stores a fixed number of items of the same type. You choose its size when you create it. Items are reached with an index in square brackets, and the first index is 0.",
+      "code": "int[] scores = new int[3];\nscores[0] = 10;\nscores[1] = 20;\nscores[2] = 30;"
+     },
+     {
+      "h": "Array literals and Length",
+      "b": "You can fill an array right away with curly braces. The Length property tells you how many items it holds. The last valid index is Length - 1, and going outside gives an error at run time.",
+      "code": "string[] pets = { \"cat\", \"dog\", \"fish\" };\nConsole.WriteLine(pets.Length);   // 3\nConsole.WriteLine(pets[2]);       // fish"
+     },
+     {
+      "h": "Looping over arrays",
+      "b": "Use a for loop with the index when you need positions. Use foreach when you only need the values. Array.Sort and Array.Reverse change the order of the items in place.",
+      "code": "int[] n = { 3, 1, 2 };\nArray.Sort(n);\nforeach (int x in n)\n{\n    Console.Write(x); // 123\n}"
+     },
+     {
+      "h": "2D arrays",
+      "b": "A two dimensional array is like a table with rows and columns. You write int[,] and reach a cell with two indexes. Arrays have a fixed size, so for lists that grow you will later use List.",
+      "code": "int[,] grid = new int[2, 3];\ngrid[1, 2] = 9;\nConsole.WriteLine(grid.GetLength(0)); // 2"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first item of an array?",
+      "o": [
+       "0",
+       "-1",
+       "Length",
+       "1"
+      ],
+      "a": 0,
+      "why": "Arrays start counting at 0."
+     },
+     {
+      "t": "mc",
+      "q": "An array has 5 items. What is the last valid index?",
+      "o": [
+       "5",
+       "6",
+       "4",
+       "3"
+      ],
+      "a": 2,
+      "why": "The last index is Length - 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int[] a = { 10, 20, 30 };\nConsole.WriteLine(a[2]);",
+      "o": [
+       "10",
+       "30",
+       "20",
+       "3"
+      ],
+      "a": 1,
+      "why": "Index 2 is the third item."
+     },
+     {
+      "t": "tf",
+      "q": "An array can change its size after it is created.",
+      "a": false,
+      "why": "Arrays have a fixed size; use List for flexible size."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece of code to its meaning",
+      "pairs": [
+       [
+        "new int[3]",
+        "array of three ints"
+       ],
+       [
+        "a.Length",
+        "number of items"
+       ],
+       [
+        "a[0]",
+        "first item"
+       ],
+       [
+        "Array.Sort(a)",
+        "sorts the array"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the property that gives the number of items in an array called a (like a.xxxx).",
+      "a": [
+       "Length",
+       "a.Length"
+      ],
+      "why": "Length holds the item count."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange to print every item of an array",
+      "lines": [
+       "int[] nums = { 4, 5, 6 };",
+       "foreach (int n in nums)",
+       "{",
+       "    Console.WriteLine(n);",
+       "}"
+      ],
+      "why": "Create the array first, then loop."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to total an array",
+      "items": [
+       [
+        "Create the array",
+        1
+       ],
+       [
+        "Start total at 0",
+        2
+       ],
+       [
+        "Loop through the items adding each",
+        3
+       ],
+       [
+        "Print total",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an int array named a with the values 1, 2, 3 using curly braces (start with int[] a).",
+      "a": [
+       "int[] a = { 1, 2, 3 };",
+       "int[] a = {1,2,3};",
+       "int[] a = { 1, 2, 3 }",
+       "int[] a = {1,2,3}"
+      ],
+      "hint": "int[] a = { ... };",
+      "why": "Use curly braces for values."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "string[] t = { \"a\", \"b\", \"c\" };\nConsole.WriteLine(t.Length);",
+      "o": [
+       "2",
+       "12",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "The array holds 3 items so Length is 3."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange to find the biggest number.",
+      "lines": [
+       "int[] n = { 4, 9, 2 };",
+       "int max = n[0];",
+       "foreach (int x in n)",
+       "{",
+       "    if (x > max) max = x;",
+       "}",
+       "Console.WriteLine(max);"
+      ],
+      "why": "Start with the first item, update when bigger found."
+     }
+    ]
+   },
+   {
+    "title": "Methods",
+    "period": "C# control flow",
+    "learn": [
+     {
+      "h": "Writing a method",
+      "b": "A method is a named block of code you can run many times. You write the return type, the name, and parameters in parentheses. void means the method returns nothing. Inside a simple program the methods are marked static.",
+      "code": "static void SayHi()\n{\n    Console.WriteLine(\"Hi\");\n}\n\nSayHi();"
+     },
+     {
+      "h": "Parameters and return",
+      "b": "Parameters are inputs to the method. The return keyword sends a value back to the caller, and the return type must match it. Method names usually start with a capital letter in C#.",
+      "code": "static int Add(int a, int b)\n{\n    return a + b;\n}\n\nint r = Add(2, 3); // 5"
+     },
+     {
+      "h": "Optional and named arguments",
+      "b": "A parameter can have a default value, which makes it optional. You can also name the arguments when calling, so the order does not matter. Methods with the same name but different parameters are called overloads.",
+      "code": "static void Greet(string name, string word = \"Hi\")\n{\n    Console.WriteLine($\"{word} {name}\");\n}\n\nGreet(\"Ana\");\nGreet(word: \"Yo\", name: \"Ben\");"
+     },
+     {
+      "h": "ref, out and scope",
+      "b": "Normally a method gets a copy of simple values. The ref keyword passes the variable itself so the method can change it, and out lets a method give back extra results. Variables created inside a method only exist inside that method, which is called local scope.",
+      "code": "static void Double(ref int x)\n{\n    x *= 2;\n}\n\nint n = 4;\nDouble(ref n); // n is 8"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does void mean as a return type?",
+      "o": [
+       "Returns nothing",
+       "Returns zero",
+       "Returns true",
+       "Returns text"
+      ],
+      "a": 0,
+      "why": "void means no value is returned."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword sends a value back from a method?",
+      "o": [
+       "send",
+       "output",
+       "return",
+       "yield"
+      ],
+      "a": 2,
+      "why": "return gives the value to the caller."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "static int Add(int a, int b)\n{\n    return a + b;\n}\n\nConsole.WriteLine(Add(2, 3));",
+      "o": [
+       "6",
+       "5",
+       "23",
+       "2 3"
+      ],
+      "a": 1,
+      "why": "Add returns 2 + 3."
+     },
+     {
+      "t": "tf",
+      "q": "Two methods can share a name if their parameters differ.",
+      "a": true,
+      "why": "That is called overloading."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "parameter",
+        "input of a method"
+       ],
+       [
+        "return",
+        "sends a value back"
+       ],
+       [
+        "void",
+        "no return value"
+       ],
+       [
+        "ref",
+        "pass the variable itself"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the return type of a method that returns nothing.",
+      "a": [
+       "void"
+      ],
+      "why": "void means nothing is returned."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a method that doubles a number",
+      "lines": [
+       "static int Twice(int n)",
+       "{",
+       "    return n * 2;",
+       "}"
+      ],
+      "why": "Signature, braces, return."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order when a method is used",
+      "items": [
+       [
+        "Call the method with arguments",
+        1
+       ],
+       [
+        "The method runs its body",
+        2
+       ],
+       [
+        "return sends back a value",
+        3
+       ],
+       [
+        "The caller uses the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the method header for a static method named Square that takes an int n and returns an int.",
+      "a": [
+       "static int Square(int n)"
+      ],
+      "hint": "static int ...",
+      "why": "static, return type, name, parameter."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a method that returns the larger of two ints.",
+      "lines": [
+       "static int Max(int a, int b)",
+       "{",
+       "    if (a > b) return a;",
+       "    return b;",
+       "}"
+      ],
+      "why": "Return a if bigger, otherwise b."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "static void Greet(string name, string word = \"Hi\")\n{\n    Console.WriteLine($\"{word} {name}\");\n}\n\nGreet(\"Ana\");",
+      "o": [
+       "Ana Hi",
+       "Hi",
+       "Hi Ana",
+       "Yo Ana"
+      ],
+      "a": 2,
+      "why": "word uses its default value Hi."
+     }
+    ]
+   },
+   {
+    "title": "Classes & Properties",
+    "period": "C# objects & collections",
+    "learn": [
+     {
+      "h": "Classes and objects",
+      "b": "A class is a blueprint, and an object is one thing built from it. Fields store data and methods describe what the thing can do. You create an object with the new keyword.",
+      "code": "class Dog\n{\n    public string name;\n\n    public void Bark()\n    {\n        Console.WriteLine(name + \" says woof\");\n    }\n}\n\nDog d = new Dog();\nd.name = \"Rex\";\nd.Bark();"
+     },
+     {
+      "h": "Constructors",
+      "b": "A constructor is a special method with the same name as the class and no return type. It runs when you use new and sets up the object. The this keyword means the current object.",
+      "code": "class Dog\n{\n    public string name;\n    public Dog(string name)\n    {\n        this.name = name;\n    }\n}\n\nDog d = new Dog(\"Rex\");"
+     },
+     {
+      "h": "Properties",
+      "b": "A property looks like a field but is controlled by get and set. The short form { get; set; } makes C# create the hidden field for you. Use private set to let only the class change the value. Properties protect your data, an idea called encapsulation.",
+      "code": "class Player\n{\n    public string Name { get; set; }\n    public int Health { get; private set; } = 100;\n}"
+     },
+     {
+      "h": "Access and static",
+      "b": "public members can be used anywhere, private ones only inside the class. A static member belongs to the class itself, not to one object, like Console.WriteLine. Fields are usually private and exposed through properties.",
+      "code": "class Counter\n{\n    public static int Total = 0;\n}\n\nCounter.Total++;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a class?",
+      "o": [
+       "A kind of loop",
+       "A number type",
+       "A comment",
+       "A blueprint for objects"
+      ],
+      "a": 3,
+      "why": "Classes describe objects; objects are made from them."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword creates a new object?",
+      "o": [
+       "make",
+       "new",
+       "create",
+       "class"
+      ],
+      "a": 1,
+      "why": "new calls the constructor and builds the object."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Dog\n{\n    public string Name { get; set; }\n    public Dog(string n) { Name = n; }\n}\n\nDog d = new Dog(\"Rex\");\nConsole.WriteLine(d.Name);",
+      "o": [
+       "Nothing",
+       "Rex",
+       "Dog",
+       "name"
+      ],
+      "a": 1,
+      "why": "The constructor stores Rex in the property."
+     },
+     {
+      "t": "tf",
+      "q": "A constructor has a return type like int or void.",
+      "a": false,
+      "why": "Constructors have no return type."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "constructor",
+        "sets up a new object"
+       ],
+       [
+        "property",
+        "get and set access to data"
+       ],
+       [
+        "private",
+        "only inside the class"
+       ],
+       [
+        "static",
+        "belongs to the class itself"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that refers to the current object inside a class.",
+      "a": [
+       "this"
+      ],
+      "why": "this means the object whose method is running."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a class with a constructor",
+      "lines": [
+       "class Cat",
+       "{",
+       "    public string Name { get; set; }",
+       "    public Cat(string name) { Name = name; }",
+       "}"
+      ],
+      "why": "Class header, property, constructor."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to use a class",
+      "items": [
+       [
+        "Write the class",
+        1
+       ],
+       [
+        "Create an object with new",
+        2
+       ],
+       [
+        "Set or read its properties",
+        3
+       ],
+       [
+        "Call its methods",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a Dog object named d using new (no arguments).",
+      "a": [
+       "Dog d = new Dog();",
+       "Dog d = new Dog()",
+       "var d = new Dog();",
+       "var d = new Dog()"
+      ],
+      "hint": "Dog d = new ...",
+      "why": "Type name, new, constructor call."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the auto property for a public int named Score with get and set (write it as one line starting with public).",
+      "a": [
+       "public int Score { get; set; }",
+       "public int Score {get;set;}"
+      ],
+      "hint": "public int Score ...",
+      "why": "Auto property syntax."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange to make a Player and print its health.",
+      "lines": [
+       "Player p = new Player();",
+       "p.Health = 50;",
+       "Console.WriteLine(p.Health);"
+      ],
+      "why": "Create first, then use."
+     }
+    ]
+   },
+   {
+    "title": "Inheritance & Interfaces",
+    "period": "C# objects & collections",
+    "learn": [
+     {
+      "h": "Inheritance",
+      "b": "A class can inherit from another with a colon. The child class gets all the public members of the parent and can add its own. This avoids repeating code. C# allows only one parent class.",
+      "code": "class Animal\n{\n    public string Name;\n}\n\nclass Dog : Animal\n{\n    public void Bark() { }\n}"
+     },
+     {
+      "h": "virtual and override",
+      "b": "Mark a parent method virtual to allow children to replace it. The child uses override. When you call the method on a Dog stored in an Animal variable, the Dog version runs. This is polymorphism. Use base to call the parent version.",
+      "code": "class Animal\n{\n    public virtual void Speak() { Console.WriteLine(\"...\"); }\n}\nclass Dog : Animal\n{\n    public override void Speak() { Console.WriteLine(\"Woof\"); }\n}"
+     },
+     {
+      "h": "Abstract classes",
+      "b": "An abstract class cannot be created with new. It can contain abstract methods that have no body, and every child must override them. Use it for ideas like Shape that only make sense as specific shapes.",
+      "code": "abstract class Shape\n{\n    public abstract double Area();\n}"
+     },
+     {
+      "h": "Interfaces",
+      "b": "An interface lists members a class promises to have. Names usually start with I. A class can implement many interfaces. Interfaces let different classes be used in the same way.",
+      "code": "interface IFlyer\n{\n    void Fly();\n}\n\nclass Bird : IFlyer\n{\n    public void Fly() { Console.WriteLine(\"flap\"); }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which symbol makes a class inherit from another?",
+      "o": [
+       "::",
+       "->",
+       ":",
+       "=>"
+      ],
+      "a": 2,
+      "why": "class Dog : Animal means Dog inherits from Animal."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword lets a child replace a parent method?",
+      "o": [
+       "override",
+       "replace",
+       "base",
+       "new"
+      ],
+      "a": 0,
+      "why": "The parent uses virtual and the child uses override."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "Animal a = new Dog();\na.Speak();\n// Dog overrides Speak to print Woof",
+      "o": [
+       "Woof",
+       "...",
+       "Animal",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The Dog override runs even through an Animal variable."
+     },
+     {
+      "t": "tf",
+      "q": "A class can inherit from two parent classes in C#.",
+      "a": false,
+      "why": "C# allows one parent class, but many interfaces."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its use",
+      "pairs": [
+       [
+        "virtual",
+        "parent allows replacing"
+       ],
+       [
+        "override",
+        "child replaces method"
+       ],
+       [
+        "abstract",
+        "no body, children must fill"
+       ],
+       [
+        "base",
+        "call the parent"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the letter that interface names usually start with.",
+      "a": [
+       "I",
+       "i"
+      ],
+      "why": "Interface names start with I, like IFlyer."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a child class",
+      "lines": [
+       "class Animal { }",
+       "class Dog : Animal",
+       "{",
+       "    public void Bark() { }",
+       "}"
+      ],
+      "why": "Parent first, then the child."
+     },
+     {
+      "t": "order",
+      "q": "Put in order when using an interface",
+      "items": [
+       [
+        "Define the interface",
+        1
+       ],
+       [
+        "Write a class that implements it",
+        2
+       ],
+       [
+        "Create an object of the class",
+        3
+       ],
+       [
+        "Call the interface method",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the class header for a class Cat that inherits from Animal.",
+      "a": [
+       "class Cat : Animal",
+       "class Cat: Animal",
+       "public class Cat : Animal"
+      ],
+      "hint": "class Cat ...",
+      "why": "Name, colon, parent."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which line makes Bird follow the IFlyer contract?",
+      "o": [
+       "class Bird.IFlyer",
+       "class Bird : IFlyer",
+       "class Bird = IFlyer",
+       "class IFlyer : Bird"
+      ],
+      "a": 1,
+      "why": "Use a colon, then the interface name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange an abstract Shape with a Square.",
+      "lines": [
+       "abstract class Shape { public abstract int Sides(); }",
+       "class Square : Shape",
+       "{",
+       "    public override int Sides() { return 4; }",
+       "}"
+      ],
+      "why": "Define Shape, then override."
+     }
+    ]
+   },
+   {
+    "title": "List, Dictionary & LINQ",
+    "period": "C# objects & collections",
+    "learn": [
+     {
+      "h": "List<T>",
+      "b": "A List grows and shrinks, unlike an array. The T in angle brackets is the type of the items. Add appends, Remove deletes, and Count gives the size. You need using System.Collections.Generic; at the top.",
+      "code": "List<string> names = new List<string>();\nnames.Add(\"Ana\");\nnames.Add(\"Ben\");\nnames.Remove(\"Ana\");\nConsole.WriteLine(names.Count); // 1"
+     },
+     {
+      "h": "Dictionary",
+      "b": "A Dictionary stores pairs of a key and a value. You look up a value by its key, and every key must be unique. TryGetValue and ContainsKey check safely whether a key exists.",
+      "code": "var ages = new Dictionary<string, int>();\nages[\"Ana\"] = 15;\nages.Add(\"Ben\", 16);\nConsole.WriteLine(ages[\"Ana\"]); // 15"
+     },
+     {
+      "h": "Looping collections",
+      "b": "foreach works with lists and with dictionaries. For a dictionary each item is a KeyValuePair with Key and Value properties. Do not add or remove items while looping over a collection, or you get an error.",
+      "code": "foreach (var pair in ages)\n{\n    Console.WriteLine($\"{pair.Key}: {pair.Value}\");\n}"
+     },
+     {
+      "h": "LINQ basics",
+      "b": "LINQ gives short ways to query collections. Add using System.Linq; to use it. Where filters, Select transforms, Sum, Max and Count calculate, and ToList turns the result into a list. The arrow => builds a small function called a lambda.",
+      "code": "int[] n = { 1, 2, 3, 4 };\nvar even = n.Where(x => x % 2 == 0).ToList();\nint total = n.Sum(); // 10"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which collection can grow when you add items?",
+      "o": [
+       "string",
+       "char",
+       "int[]",
+       "List<int>"
+      ],
+      "a": 3,
+      "why": "A List resizes automatically."
+     },
+     {
+      "t": "mc",
+      "q": "What does a Dictionary store?",
+      "o": [
+       "Only numbers",
+       "Only text",
+       "Loop counters",
+       "Key and value pairs"
+      ],
+      "a": 3,
+      "why": "You look up values by key."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "var l = new List<int>();\nl.Add(1); l.Add(2); l.Add(3);\nl.Remove(2);\nConsole.WriteLine(l.Count);",
+      "o": [
+       "2",
+       "3",
+       "1",
+       "0"
+      ],
+      "a": 0,
+      "why": "After adding three items and removing one, two are left."
+     },
+     {
+      "t": "tf",
+      "q": "A Dictionary can contain the same key twice.",
+      "a": false,
+      "why": "Keys must be unique."
+     },
+     {
+      "t": "match",
+      "q": "Match each member to its job",
+      "pairs": [
+       [
+        "Add",
+        "puts an item in a list"
+       ],
+       [
+        "Count",
+        "number of items"
+       ],
+       [
+        "Where",
+        "filters items (LINQ)"
+       ],
+       [
+        "Sum",
+        "adds numbers (LINQ)"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the property that gives how many items a List has.",
+      "a": [
+       "Count",
+       "list.Count"
+      ],
+      "why": "Lists use Count, arrays use Length."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange to build a list and print its count",
+      "lines": [
+       "List<int> nums = new List<int>();",
+       "nums.Add(5);",
+       "nums.Add(7);",
+       "Console.WriteLine(nums.Count);"
+      ],
+      "why": "Create, add, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to use a Dictionary",
+      "items": [
+       [
+        "Create the dictionary",
+        1
+       ],
+       [
+        "Add a key and value",
+        2
+       ],
+       [
+        "Look up a value by key",
+        3
+       ],
+       [
+        "Print the value",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates an empty List of strings named names (use new List<string>()).",
+      "a": [
+       "List<string> names = new List<string>();",
+       "var names = new List<string>();",
+       "List<string> names = new();"
+      ],
+      "hint": "List<string> names = ...",
+      "why": "Type, name, new List<string>()."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does n.Where(x => x > 2) keep from { 1, 2, 3, 4 }?",
+      "o": [
+       "Only 4",
+       "3 and 4",
+       "1 and 2",
+       "2, 3 and 4"
+      ],
+      "a": 1,
+      "why": "Only values greater than 2 pass the filter."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange to read a value from a Dictionary.",
+      "lines": [
+       "var score = new Dictionary<string, int>();",
+       "score[\"Ana\"] = 90;",
+       "Console.WriteLine(score[\"Ana\"]);"
+      ],
+      "why": "Create, set, read."
+     }
+    ]
+   },
+   {
+    "title": "Exceptions & Unity-style Scripting",
+    "period": "C# objects & collections",
+    "learn": [
+     {
+      "h": "try and catch",
+      "b": "An exception is an error that happens while the program runs, like dividing by zero. Put risky code in a try block. If it fails, the matching catch block runs instead of crashing the program.",
+      "code": "try\n{\n    int x = int.Parse(\"abc\");\n}\ncatch (FormatException e)\n{\n    Console.WriteLine(\"Not a number\");\n}"
+     },
+     {
+      "h": "finally and throw",
+      "b": "A finally block always runs, even after an error, so it is good for cleanup. You can raise your own exception with throw. Catch the specific exception first and the general Exception last.",
+      "code": "try { Run(); }\ncatch (Exception e) { Console.WriteLine(e.Message); }\nfinally { Console.WriteLine(\"done\"); }\n\nthrow new ArgumentException(\"bad\");"
+     },
+     {
+      "h": "Unity scripts",
+      "b": "In Unity a C# class inherits from MonoBehaviour. Unity calls special methods for you: Start runs once at the beginning and Update runs every frame. A public field shows up in the Inspector, where you can change it without code.",
+      "code": "using UnityEngine;\n\npublic class Mover : MonoBehaviour\n{\n    public float speed = 5f;\n\n    void Update()\n    {\n        transform.Translate(Vector3.forward * speed * Time.deltaTime);\n    }\n}"
+     },
+     {
+      "h": "Unity concepts",
+      "b": "Components are scripts and parts attached to a GameObject. GetComponent finds another component, and Debug.Log writes to the Console. Time.deltaTime is the time of one frame, which keeps movement the same on slow and fast computers.",
+      "code": "void Start()\n{\n    Rigidbody rb = GetComponent<Rigidbody>();\n    Debug.Log(\"Ready\");\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which block holds code that might fail?",
+      "o": [
+       "else",
+       "switch",
+       "try",
+       "finally"
+      ],
+      "a": 2,
+      "why": "Risky code goes in try."
+     },
+     {
+      "t": "mc",
+      "q": "Which block always runs, error or not?",
+      "o": [
+       "finally",
+       "else",
+       "default",
+       "catch"
+      ],
+      "a": 0,
+      "why": "finally is for cleanup."
+     },
+     {
+      "t": "mc",
+      "q": "Which Unity method runs once when the script starts?",
+      "o": [
+       "Update",
+       "Begin",
+       "Start",
+       "Loop"
+      ],
+      "a": 2,
+      "why": "Start runs once; Update runs every frame."
+     },
+     {
+      "t": "tf",
+      "q": "In Unity, Update runs once per frame.",
+      "a": true,
+      "why": "Update is called every frame."
+     },
+     {
+      "t": "match",
+      "q": "Match each Unity term to its meaning",
+      "pairs": [
+       [
+        "MonoBehaviour",
+        "base class for scripts"
+       ],
+       [
+        "Start",
+        "runs once at the beginning"
+       ],
+       [
+        "Update",
+        "runs every frame"
+       ],
+       [
+        "Debug.Log",
+        "prints to the Console"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to raise your own exception.",
+      "a": [
+       "throw"
+      ],
+      "why": "throw raises an exception."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the try/catch",
+      "lines": [
+       "try",
+       "{ // try body",
+       "    int n = int.Parse(text);",
+       "} // end try",
+       "catch (FormatException)",
+       "{ // catch body",
+       "    Console.WriteLine(\"bad\");",
+       "} // end catch"
+      ],
+      "why": "try block first, then catch."
+     },
+     {
+      "t": "order",
+      "q": "Put in order what happens when an error occurs in try",
+      "items": [
+       [
+        "Code in try starts running",
+        1
+       ],
+       [
+        "An exception is thrown",
+        2
+       ],
+       [
+        "The matching catch runs",
+        3
+       ],
+       [
+        "finally runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the Unity class header for a script named Mover that inherits MonoBehaviour (start with public class).",
+      "a": [
+       "public class Mover : MonoBehaviour",
+       "public class Mover: MonoBehaviour"
+      ],
+      "hint": "public class Mover ...",
+      "why": "Name, colon, MonoBehaviour."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what prints?",
+      "code": "try { int.Parse(\"x\"); }\ncatch (FormatException)\n{ Console.WriteLine(\"Not a number\"); }\nfinally { Console.WriteLine(\"done\"); }",
+      "o": [
+       "Nothing",
+       "Not a number then done",
+       "Not a number only",
+       "done only"
+      ],
+      "a": 1,
+      "why": "The catch runs after the error and finally always runs."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a Unity Update method moving an object.",
+      "lines": [
+       "void Update()",
+       "{",
+       "    transform.Translate(Vector3.forward * speed * Time.deltaTime);",
+       "}"
+      ],
+      "why": "Move inside Update so it runs every frame."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,2038 @@
+{
+ "c": {
+  "name": "C",
+  "units": [
+   {
+    "title": "main and printf",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "Your first C program",
+      "b": "A C program starts in the function main. The line #include <stdio.h> loads the standard input/output library, which gives you printf. Statements end with a semicolon and blocks use curly braces.",
+      "code": "#include <stdio.h>\n\nint main(void) {\n    printf(\"Hi\\n\");\n    return 0;\n}"
+     },
+     {
+      "h": "printf and format specifiers",
+      "b": "printf prints text. Inside the text, a format specifier marks where a value goes: %d for int, %f for a decimal, %c for one character and %s for a string. Write %% to print a percent sign.",
+      "code": "printf(\"%d + %d\", 2, 3);     // 2 + 3\nprintf(\"%c is a letter\\n\", 'A');\nprintf(\"%d%%\\n\", 50);         // 50%"
+     },
+     {
+      "h": "Special characters",
+      "b": "Inside a string, \\n starts a new line and \\t is a tab. printf does not add a new line by itself, so you must write \\n when you want one.",
+      "code": "printf(\"A\\n\");\nprintf(\"B\");\nprintf(\"C\\n\");   // A, then BC"
+     },
+     {
+      "h": "Compile and run",
+      "b": "C must be compiled. With gcc you type gcc hello.c -o hello to build, then ./hello to run. return 0 at the end of main tells the system the program finished successfully."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which header gives you printf?",
+      "o": [
+       "<stdio.h>",
+       "<string.h>",
+       "<stdlib.h>",
+       "<math.h>"
+      ],
+      "a": 0,
+      "why": "printf is declared in stdio.h, the standard input/output header."
+     },
+     {
+      "t": "mc",
+      "q": "What does return 0; at the end of main mean?",
+      "o": [
+       "The program printed 0",
+       "The program finished successfully",
+       "The program must run again",
+       "The program had an error"
+      ],
+      "a": 1,
+      "why": "By convention 0 means success."
+     },
+     {
+      "t": "mc",
+      "q": "What appears on screen?",
+      "code": "printf(\"A\\n\");\nprintf(\"B\");\nprintf(\"C\\n\");",
+      "o": [
+       "A B C on three lines",
+       "ABC on one line",
+       "A, then BC on the next line",
+       "A, B, then C each on its own line"
+      ],
+      "a": 2,
+      "why": "Only A and C have \\n, so B and C end up on the same line."
+     },
+     {
+      "t": "tf",
+      "q": "printf works without any #include line.",
+      "a": false,
+      "why": "You need #include <stdio.h> so the compiler knows printf."
+     },
+     {
+      "t": "match",
+      "q": "Match each format specifier to its type",
+      "pairs": [
+       [
+        "%d",
+        "int"
+       ],
+       [
+        "%f",
+        "decimal number"
+       ],
+       [
+        "%c",
+        "single character"
+       ],
+       [
+        "%s",
+        "string"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  printf(\"%d + %d\", 2, 3);",
+      "a": [
+       "2 + 3"
+      ],
+      "why": "Each %d is replaced by the next argument."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make a program that prints Hi",
+      "lines": [
+       "#include <stdio.h>",
+       "int main(void) {",
+       "    printf(\"Hi\\n\");",
+       "    return 0;",
+       "}"
+      ],
+      "why": "Include, then main with printf and return."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Write hello.c",
+        1
+       ],
+       [
+        "Compile with gcc hello.c -o hello",
+        2
+       ],
+       [
+        "Run with ./hello",
+        3
+       ],
+       [
+        "See the output on screen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the name of the C function that prints formatted text",
+      "a": [
+       "printf"
+      ],
+      "why": "printf means print formatted."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines so the program prints Score: 10",
+      "lines": [
+       "int main(void) {",
+       "    int score = 10;",
+       "    printf(\"Score: %d\\n\", score);",
+       "    return 0;",
+       "}  // end of main"
+      ],
+      "why": "Declare score first, then print it."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "printf(\"%d%%\\n\", 50);",
+      "o": [
+       "50%",
+       "50",
+       "%",
+       "50 %%"
+      ],
+      "a": 0,
+      "why": "%% prints one percent sign."
+     }
+    ]
+   },
+   {
+    "title": "Variables and types",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "Declaring variables",
+      "b": "In C you must give every variable a type. The main types are int for whole numbers, float and double for decimals, and char for one character. Single quotes make a char and double quotes make a string.",
+      "code": "int age = 12;\ndouble price = 2.5;\nchar grade = 'A';\nfloat speed = 1.5f;"
+     },
+     {
+      "h": "Uninitialized variables",
+      "b": "A local variable that is declared but not given a value holds garbage, whatever was in that memory before. Always give variables a starting value before you use them.",
+      "code": "int n;        // garbage value\nint m = 0;    // safe"
+     },
+     {
+      "h": "char is a small number",
+      "b": "A char is stored as a number using the ASCII table, so 'A' is 65. Printing it with %c shows the letter and with %d shows the number.",
+      "code": "char c = 'A';\nprintf(\"%c\\n\", c);   // A\nprintf(\"%d\\n\", c);   // 65"
+     },
+     {
+      "h": "sizeof and constants",
+      "b": "sizeof tells you how many bytes a type uses; char is always 1. The keyword const makes a variable read-only. A common older way is #define NAME value.",
+      "code": "const int MAX = 10;\nprintf(\"%d\", (int)sizeof(char));  // 1"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line declares a decimal variable?",
+      "o": [
+       "double price = 2.5;",
+       "decimal price = 2.5;",
+       "price double = 2.5;",
+       "float = price 2.5;"
+      ],
+      "a": 0,
+      "why": "The type comes first, then the name and the value."
+     },
+     {
+      "t": "mc",
+      "q": "What does a char variable store?",
+      "o": [
+       "A whole word",
+       "One character, kept as a small number",
+       "A decimal number",
+       "A true or false value"
+      ],
+      "a": 1,
+      "why": "Characters are stored using their ASCII numbers."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "char c = 'A';\nprintf(\"%d\", c);",
+      "o": [
+       "A",
+       "a",
+       "65",
+       "1"
+      ],
+      "a": 2,
+      "why": "%d prints the number stored for the char, and 'A' is 65."
+     },
+     {
+      "t": "tf",
+      "q": "An uninitialized local variable in C is always 0.",
+      "a": false,
+      "why": "It holds garbage; you must set it yourself."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "int",
+        "whole number"
+       ],
+       [
+        "double",
+        "decimal with more precision"
+       ],
+       [
+        "char",
+        "one character"
+       ],
+       [
+        "sizeof",
+        "number of bytes a type uses"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that makes a variable read-only",
+      "a": [
+       "const"
+      ],
+      "why": "const stops later changes."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 7.0",
+      "lines": [
+       "int a = 7;",
+       "double b = a;",
+       "printf(\"%.1f\\n\", b);"
+      ],
+      "why": "The int is copied into a double, then printed with one decimal."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in order",
+      "items": [
+       [
+        "int n;",
+        1
+       ],
+       [
+        "n = 4;",
+        2
+       ],
+       [
+        "n = n + 1;",
+        3
+       ],
+       [
+        "printf(\"%d\", n);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an int named age set to 12",
+      "a": [
+       "int age = 12;",
+       "int age = 12",
+       "int age=12;",
+       "int age=12"
+      ],
+      "why": "Type, name, equals, value, semicolon."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print 20 (twice the constant)",
+      "lines": [
+       "const int MAX = 10;",
+       "int twice = MAX * 2;",
+       "printf(\"%d\\n\", twice);"
+      ],
+      "why": "A const is given its value when declared, then used like any value."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "printf(\"%d\", (int)sizeof(char));",
+      "o": [
+       "1",
+       "4",
+       "0",
+       "8"
+      ],
+      "a": 0,
+      "why": "sizeof(char) is always 1 byte."
+     }
+    ]
+   },
+   {
+    "title": "scanf input",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "Reading with scanf",
+      "b": "scanf reads what the user types. You give it a format string and the address of the variable to fill. The address is made with the & operator.",
+      "code": "int n;\nprintf(\"Enter: \");\nscanf(\"%d\", &n);\nprintf(\"%d\\n\", n * 2);"
+     },
+     {
+      "h": "Format codes",
+      "b": "Use %d for int, %f for float, %lf for double and %c for a char. For double you must use %lf in scanf, even though printf uses %f. Read several values by listing several codes.",
+      "code": "int a, b;\nscanf(\"%d %d\", &a, &b);\ndouble x;\nscanf(\"%lf\", &x);"
+     },
+     {
+      "h": "Reading words",
+      "b": "%s reads one word into a char array and stops at a space. An array name already means its address, so you do not put & in front of it. Make sure the array is big enough.",
+      "code": "char name[20];\nscanf(\"%s\", name);\nprintf(\"Hi %s\\n\", name);"
+     },
+     {
+      "h": "Common mistakes",
+      "b": "Forgetting & is a classic bug that crashes the program. scanf returns how many values it read successfully, so you can check for bad input. Spaces in the format string skip whitespace.",
+      "code": "int ok = scanf(\"%d\", &n);\nif (ok != 1) {\n    printf(\"Not a number\\n\");\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Why does scanf need & before the variable?",
+      "o": [
+       "It needs the address to store the value",
+       "It makes the value positive",
+       "It converts text to numbers",
+       "It prints the variable"
+      ],
+      "a": 0,
+      "why": "scanf writes into memory, so it must know where the variable lives."
+     },
+     {
+      "t": "mc",
+      "q": "Which scanf format reads a double?",
+      "o": [
+       "%d",
+       "%lf",
+       "%f",
+       "%c"
+      ],
+      "a": 1,
+      "why": "For scanf a double needs %lf."
+     },
+     {
+      "t": "mc",
+      "q": "The user types 3 4. What is printed?",
+      "code": "int a, b;\nscanf(\"%d %d\", &a, &b);\nprintf(\"%d\", a * b);",
+      "o": [
+       "7",
+       "34",
+       "12",
+       "Error"
+      ],
+      "a": 2,
+      "why": "a is 3 and b is 4, so a * b is 12."
+     },
+     {
+      "t": "tf",
+      "q": "scanf(\"%d\", x) is correct for reading an int into x.",
+      "a": false,
+      "why": "You must write &x, the address of x."
+     },
+     {
+      "t": "match",
+      "q": "Match each format code to what it reads",
+      "pairs": [
+       [
+        "%d",
+        "an int"
+       ],
+       [
+        "%lf",
+        "a double"
+       ],
+       [
+        "%c",
+        "a single character"
+       ],
+       [
+        "%s",
+        "a word into a char array"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the one-word name for what the & operator gives you",
+      "a": [
+       "address",
+       "the address"
+      ],
+      "why": "&x is the address of x."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to read a number and print its double",
+      "lines": [
+       "int n;",
+       "printf(\"Enter: \");",
+       "scanf(\"%d\", &n);",
+       "printf(\"%d\\n\", n * 2);"
+      ],
+      "why": "Declare, ask, read, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of reading a number in order",
+      "items": [
+       [
+        "Declare int n;",
+        1
+       ],
+       [
+        "Print a prompt",
+        2
+       ],
+       [
+        "Call scanf with &n",
+        3
+       ],
+       [
+        "Use the value in n",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the scanf format code (letters only, after the %) for a double",
+      "a": [
+       "lf",
+       "%lf"
+      ],
+      "why": "%lf reads a double."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to read two ints and print the sum",
+      "lines": [
+       "int a, b;",
+       "scanf(\"%d %d\", &a, &b);",
+       "printf(\"%d\\n\", a + b);"
+      ],
+      "why": "Declare first, read both, then print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: the user types Sam Lee. What is printed?",
+      "code": "char name[10];\nscanf(\"%s\", name);\nprintf(\"%s\", name);",
+      "o": [
+       "Sam Lee",
+       "Sam",
+       "Lee",
+       "Error"
+      ],
+      "a": 1,
+      "why": "%s stops reading at the first space."
+     }
+    ]
+   },
+   {
+    "title": "Operators",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "Arithmetic",
+      "b": "C has + - * / and %. The % gives the remainder and only works with integers. When both numbers are int, / throws away the decimals, so 7 / 2 is 3.",
+      "code": "printf(\"%d\\n\", 7 / 2);   // 3\nprintf(\"%d\\n\", 7 % 2);   // 1"
+     },
+     {
+      "h": "Shortcuts",
+      "b": "x++ adds 1 and x-- subtracts 1. x += 5 means x = x + 5. With x++ the old value is used in the expression first and the increase happens afterwards.",
+      "code": "int x = 5;\nint y = x++ + 2;   // y = 7, then x = 6\nprintf(\"%d %d\", x, y);"
+     },
+     {
+      "h": "Truth in C",
+      "b": "C has no true boolean in the basic language. The number 0 means false and any other number means true. Comparisons like == != < > give 1 or 0. Join conditions with && for and, || for or and ! for not.",
+      "code": "int ok = (5 > 3) && (2 < 4);   // 1\nif (0) { }    // never runs"
+     },
+     {
+      "h": "Casting",
+      "b": "To get a decimal from two ints, cast one of them to double before dividing: (double) a / b. Casting to int cuts off decimals. The cast happens before the division.",
+      "code": "int a = 7, b = 2;\ndouble r = (double) a / b;\nprintf(\"%.1f\", r);   // 3.5"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 7 / 2 when both are ints in C?",
+      "o": [
+       "3",
+       "3.5",
+       "4",
+       "2"
+      ],
+      "a": 0,
+      "why": "Integer division drops the decimals."
+     },
+     {
+      "t": "mc",
+      "q": "What does the % operator give?",
+      "o": [
+       "The percentage",
+       "The remainder",
+       "The quotient",
+       "The square"
+      ],
+      "a": 1,
+      "why": "17 % 5 is 2."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int x = 5;\nint y = x++ + 2;\nprintf(\"%d %d\", x, y);",
+      "o": [
+       "5 7",
+       "6 5",
+       "6 7",
+       "6 8"
+      ],
+      "a": 2,
+      "why": "y uses the old x (5) plus 2 = 7, then x becomes 6."
+     },
+     {
+      "t": "tf",
+      "q": "In C, the number 0 counts as false and any non-zero number counts as true.",
+      "a": true,
+      "why": "C uses numbers for truth values."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "&&",
+        "and"
+       ],
+       [
+        "||",
+        "or"
+       ],
+       [
+        "!",
+        "not"
+       ],
+       [
+        "(double)",
+        "cast to double"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  printf(\"%d\", 17 % 5);",
+      "a": [
+       "2"
+      ],
+      "why": "17 = 3 * 5 + 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 3.5",
+      "lines": [
+       "int a = 7;",
+       "int b = 2;",
+       "double r = (double) a / b;",
+       "printf(\"%.1f\", r);"
+      ],
+      "why": "Cast before dividing to keep the decimals."
+     },
+     {
+      "t": "order",
+      "q": "Put the evaluation steps of 2 + 3 * 4 / 2 - 1 in order",
+      "items": [
+       [
+        "3 * 4 = 12",
+        1
+       ],
+       [
+        "12 / 2 = 6",
+        2
+       ],
+       [
+        "2 + 6 = 8",
+        3
+       ],
+       [
+        "8 - 1 = 7",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is 20 / 8 when both are ints?",
+      "a": [
+       "2"
+      ],
+      "why": "20 / 8 is 2.5 and the decimal is dropped."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the quotient, then the remainder",
+      "lines": [
+       "int a = 9;",
+       "int b = a - 5;",
+       "printf(\"%d\\n\", a / b);",
+       "printf(\"%d\\n\", a % b);"
+      ],
+      "why": "b is 4, so you print 2 and then 1."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "double d = 5 / 2;\nprintf(\"%.1f\", d);",
+      "o": [
+       "2.0",
+       "2.5",
+       "2",
+       "3.0"
+      ],
+      "a": 0,
+      "why": "5 / 2 is integer division (2) and is stored as 2.0."
+     }
+    ]
+   },
+   {
+    "title": "if and switch",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "if, else if, else",
+      "b": "An if runs its block when the condition is true. else if tests another condition and else runs when nothing matched. Only the first matching branch runs.",
+      "code": "int score = 85;\nif (score >= 90) {\n    printf(\"A\");\n} else if (score >= 80) {\n    printf(\"B\");\n} else {\n    printf(\"C\");\n}"
+     },
+     {
+      "h": "Conditions are numbers",
+      "b": "A condition is true when it is not 0. That is why if (x) means if x is not zero. Use == to compare and not =, because x = 5 assigns 5 and is always true.",
+      "code": "int x = 0;\nif (x) printf(\"A\");\nelse printf(\"B\");   // B"
+     },
+     {
+      "h": "switch",
+      "b": "A switch compares one integer or char against several case labels. End each case with break, otherwise execution falls through into the next case. default runs when no case matches.",
+      "code": "int d = 2;\nswitch (d) {\n    case 1: printf(\"Mon\"); break;\n    case 2: printf(\"Tue\"); break;\n    default: printf(\"?\");\n}"
+     },
+     {
+      "h": "Fall-through",
+      "b": "If you leave out break, C keeps running the next case's code even though it did not match. This can be useful to share code but is usually a bug.",
+      "code": "switch (1) {\n    case 1: printf(\"A\");\n    case 2: printf(\"B\"); break;\n    case 3: printf(\"C\");\n}   // AB"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which value counts as false in a C condition?",
+      "o": [
+       "0",
+       "1",
+       "-1",
+       "'0'"
+      ],
+      "a": 0,
+      "why": "Zero is false and everything else is true."
+     },
+     {
+      "t": "mc",
+      "q": "What stops a switch from running into the next case?",
+      "o": [
+       "end",
+       "break",
+       "stop",
+       "continue"
+      ],
+      "a": 1,
+      "why": "Without break, execution falls through."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int n = 15;\nif (n % 3 == 0 && n % 5 == 0) printf(\"FizzBuzz\");\nelse if (n % 3 == 0) printf(\"Fizz\");\nelse printf(\"%d\", n);",
+      "o": [
+       "Fizz",
+       "15",
+       "FizzBuzz",
+       "Buzz"
+      ],
+      "a": 2,
+      "why": "15 is divisible by both 3 and 5."
+     },
+     {
+      "t": "tf",
+      "q": "In C, if (x = 5) compares x with 5.",
+      "a": false,
+      "why": "A single = assigns 5 to x; use == to compare."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "runs a block when the condition is true"
+       ],
+       [
+        "else",
+        "runs if no earlier condition matched"
+       ],
+       [
+        "else if",
+        "tests another condition"
+       ],
+       [
+        "default",
+        "switch fallback"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  int x = 0; if (x) printf(\"A\"); else printf(\"B\");",
+      "a": [
+       "B"
+      ],
+      "why": "0 is false, so the else part runs."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints Nice",
+      "lines": [
+       "int t = 25;",
+       "if (t > 30) {",
+       "    printf(\"Hot\\n\");",
+       "} else {",
+       "    printf(\"Nice\\n\");",
+       "}"
+      ],
+      "why": "25 is not above 30."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a switch in order",
+      "items": [
+       [
+        "switch (day) {",
+        1
+       ],
+       [
+        "case 1: printf(\"Mon\");",
+        2
+       ],
+       [
+        "break;",
+        3
+       ],
+       [
+        "default: printf(\"?\");",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: score is 85. The code prints A if score >= 90, B if score >= 80, otherwise C. What prints?",
+      "a": [
+       "B"
+      ],
+      "why": "85 fails the first test and passes the second."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print Two",
+      "lines": [
+       "int d = 2;",
+       "switch (d) {",
+       "    case 2:",
+       "        printf(\"Two\");",
+       "        break;",
+       "}"
+      ],
+      "why": "case 2 matches and break leaves the switch."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "switch (1) {\n    case 1: printf(\"A\");\n    case 2: printf(\"B\"); break;\n    case 3: printf(\"C\");\n}",
+      "o": [
+       "AB",
+       "A",
+       "ABC",
+       "B"
+      ],
+      "a": 0,
+      "why": "Case 1 has no break so it falls into case 2."
+     }
+    ]
+   },
+   {
+    "title": "Loops",
+    "period": "C basics",
+    "learn": [
+     {
+      "h": "while loop",
+      "b": "A while loop repeats while its condition is true. The condition is checked first, so the body might never run. Something inside must change the condition or the loop never ends.",
+      "code": "int n = 3;\nwhile (n > 0) {\n    printf(\"%d\\n\", n);\n    n--;\n}"
+     },
+     {
+      "h": "for loop",
+      "b": "A for loop has a start, a condition and an update in one line. It fits best when you know how many times to repeat.",
+      "code": "for (int i = 0; i < 5; i++) {\n    printf(\"%d\\n\", i);\n}   // 0 to 4"
+     },
+     {
+      "h": "do-while",
+      "b": "A do-while runs the body first and checks afterwards, so it always runs at least once. Notice the semicolon after the closing while.",
+      "code": "int x = 10;\ndo {\n    printf(\"%d\\n\", x);\n    x++;\n} while (x < 5);   // prints 10 once"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop at once. continue skips the rest of this round and starts the next one. You can put one loop inside another to work with tables or grids.",
+      "code": "for (int i = 1; i <= 5; i++) {\n    if (i == 3) continue;\n    printf(\"%d\", i);   // 1245\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which loop always runs its body at least once?",
+      "o": [
+       "do-while",
+       "while",
+       "for",
+       "if"
+      ],
+      "a": 0,
+      "why": "do-while checks after the body."
+     },
+     {
+      "t": "mc",
+      "q": "How many times does for (int i = 0; i < 5; i++) run?",
+      "o": [
+       "4",
+       "5",
+       "6",
+       "0"
+      ],
+      "a": 1,
+      "why": "i is 0, 1, 2, 3, 4."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int sum = 0;\nfor (int i = 1; i <= 4; i++) {\n    sum += i;\n}\nprintf(\"%d\", sum);",
+      "o": [
+       "4",
+       "6",
+       "10",
+       "24"
+      ],
+      "a": 2,
+      "why": "1 + 2 + 3 + 4 = 10."
+     },
+     {
+      "t": "tf",
+      "q": "continue leaves the whole loop.",
+      "a": false,
+      "why": "break leaves the loop; continue skips to the next round."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its meaning",
+      "pairs": [
+       [
+        "while",
+        "checks the condition first"
+       ],
+       [
+        "do-while",
+        "runs the body once before checking"
+       ],
+       [
+        "break",
+        "leaves the loop"
+       ],
+       [
+        "continue",
+        "skips to the next round"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  for (int i = 3; i > 0; i--) printf(\"%d\", i);",
+      "a": [
+       "321"
+      ],
+      "why": "i counts 3, 2, 1 with no new lines."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the loop prints 1, 2, 3 on separate lines",
+      "lines": [
+       "for (int i = 1; i <= 3; i++) {",
+       "    printf(\"%d\\n\", i);",
+       "}"
+      ],
+      "why": "Start at 1 and stop after 3."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of one for loop round in order",
+      "items": [
+       [
+        "Start: int i = 0",
+        1
+       ],
+       [
+        "Check the condition i < 3",
+        2
+       ],
+       [
+        "Run the body",
+        3
+       ],
+       [
+        "Do the update i++",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: n starts at 1 and the loop is  while (n < 10) { n += 3; }.  How many times does the body run?",
+      "a": [
+       "3"
+      ],
+      "why": "The body runs when n is 1, 4 and 7."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to count down 3, 2, 1",
+      "lines": [
+       "int n = 3;",
+       "while (n > 0) {",
+       "    printf(\"%d\\n\", n);",
+       "    n--;",
+       "}"
+      ],
+      "why": "Print first, then lower n."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "for (int i = 1; i <= 5; i++) {\n    if (i == 3) continue;\n    printf(\"%d\", i);\n}",
+      "o": [
+       "1245",
+       "12345",
+       "124",
+       "345"
+      ],
+      "a": 0,
+      "why": "When i is 3 the print is skipped."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "C building blocks",
+    "learn": [
+     {
+      "h": "Writing a function",
+      "b": "A function is a named block of code that you can call many times. You write the return type, the name and the parameters. return sends a value back and ends the function.",
+      "code": "int square(int n) {\n    return n * n;\n}\n\nprintf(\"%d\", square(4));   // 16"
+     },
+     {
+      "h": "Prototypes",
+      "b": "C reads your file from top to bottom, so a function must be known before it is used. Either define it above main or write a prototype, which is just the header followed by a semicolon.",
+      "code": "int square(int n);      // prototype\n\nint main(void) {\n    printf(\"%d\", square(3));\n    return 0;\n}\n\nint square(int n) { return n * n; }"
+     },
+     {
+      "h": "Pass by value",
+      "b": "C copies the arguments into the parameters. If the function changes its parameter, the caller's variable stays the same. To change the original you need pointers, which come later.",
+      "code": "void f(int x) {\n    x = x + 1;\n}\nint y = 5;\nf(y);\nprintf(\"%d\", y);   // 5"
+     },
+     {
+      "h": "void and recursion",
+      "b": "A function with return type void returns nothing. A function can call itself, which is called recursion, but it needs a base case that stops it.",
+      "code": "int fact(int n) {\n    if (n <= 1) return 1;\n    return n * fact(n - 1);\n}   // fact(4) is 24"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a function prototype for?",
+      "o": [
+       "It tells the compiler a function exists before it is defined",
+       "It runs the function",
+       "It deletes the function",
+       "It makes the function faster"
+      ],
+      "a": 0,
+      "why": "Prototypes let you call a function defined later in the file."
+     },
+     {
+      "t": "mc",
+      "q": "What does pass by value mean?",
+      "o": [
+       "The function receives the original variable",
+       "The function receives a copy of the argument",
+       "The function returns a pointer",
+       "The argument is deleted"
+      ],
+      "a": 1,
+      "why": "Changing the copy does not change the caller's variable."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int square(int n) {\n    return n * n;\n}\nint main(void) {\n    printf(\"%d\", square(3) + square(2));\n    return 0;\n}",
+      "o": [
+       "10",
+       "25",
+       "13",
+       "5"
+      ],
+      "a": 2,
+      "why": "square(3) is 9 and square(2) is 4."
+     },
+     {
+      "t": "tf",
+      "q": "A function with return type void can return an int.",
+      "a": false,
+      "why": "void means it returns no value."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "prototype",
+        "function header with a semicolon"
+       ],
+       [
+        "return",
+        "sends a value back"
+       ],
+       [
+        "parameter",
+        "variable in the function header"
+       ],
+       [
+        "void",
+        "no return value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  int add(int a, int b) { return a + b; }  printf(\"%d\", add(2, add(3, 4)));",
+      "a": [
+       "9"
+      ],
+      "why": "add(3, 4) is 7, then add(2, 7) is 9."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 8",
+      "lines": [
+       "int twice(int n) {",
+       "    return n * 2;",
+       "}  // end of twice",
+       "int main(void) {",
+       "    printf(\"%d\", twice(4));",
+       "}  // end of main"
+      ],
+      "why": "Define twice before main calls it."
+     },
+     {
+      "t": "order",
+      "q": "Put the events in order when twice(4) is called",
+      "items": [
+       [
+        "main calls twice(4)",
+        1
+       ],
+       [
+        "4 is copied into n",
+        2
+       ],
+       [
+        "n * 2 = 8 is computed",
+        3
+       ],
+       [
+        "8 is returned to main",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the return type of a function that returns nothing",
+      "a": [
+       "void"
+      ],
+      "why": "void means no value is returned."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the function that tells if a number is even",
+      "lines": [
+       "int is_even(int n) {",
+       "    return n % 2 == 0;",
+       "}"
+      ],
+      "why": "The comparison gives 1 for true and 0 for false."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "void f(int x) {\n    x = x + 1;\n}\nint main(void) {\n    int y = 5;\n    f(y);\n    printf(\"%d\", y);\n    return 0;\n}",
+      "o": [
+       "5",
+       "6",
+       "0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "x inside f is only a copy."
+     }
+    ]
+   },
+   {
+    "title": "Arrays",
+    "period": "C building blocks",
+    "learn": [
+     {
+      "h": "Arrays",
+      "b": "An array holds several values of the same type in a row of memory. The first index is 0 and the last is size - 1. You can give the values when you create it.",
+      "code": "int a[3] = {4, 8, 15};\nprintf(\"%d\", a[1]);   // 8\nint b[5] = {0};        // all zeros"
+     },
+     {
+      "h": "Filling and looping",
+      "b": "Loop over an array with a for loop and the index. If you give fewer values than the size, the rest become 0. To find the number of elements use sizeof(a) / sizeof(a[0]).",
+      "code": "int a[] = {2, 4, 6};\nint n = sizeof(a) / sizeof(a[0]);\nint sum = 0;\nfor (int i = 0; i < n; i++) {\n    sum += a[i];\n}   // 12"
+     },
+     {
+      "h": "No safety net",
+      "b": "C does not check array bounds. Writing or reading outside the array is undefined behavior: it may crash or silently damage other data. You must keep track of the size yourself.",
+      "code": "int a[5];\na[5] = 1;   // out of bounds, last index is 4"
+     },
+     {
+      "h": "Arrays and functions",
+      "b": "When you pass an array to a function, only its address is passed, so the function can change the original. The size is lost, so you pass it as another parameter.",
+      "code": "void fill(int a[], int n) {\n    for (int i = 0; i < n; i++) a[i] = 0;\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first element of an array?",
+      "o": [
+       "0",
+       "1",
+       "-1",
+       "It depends on the type"
+      ],
+      "a": 0,
+      "why": "C arrays are zero-based."
+     },
+     {
+      "t": "mc",
+      "q": "How do you count the elements of int a[]?",
+      "o": [
+       "a.length",
+       "sizeof(a) / sizeof(a[0])",
+       "length(a)",
+       "sizeof(a)"
+      ],
+      "a": 1,
+      "why": "Total bytes divided by bytes per element."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int a[] = {4, 8, 15};\nprintf(\"%d\", a[1] + a[2]);",
+      "o": [
+       "12",
+       "4815",
+       "23",
+       "8"
+      ],
+      "a": 2,
+      "why": "a[1] is 8 and a[2] is 15, so the sum is 23."
+     },
+     {
+      "t": "tf",
+      "q": "C checks array bounds and stops the program on a bad index.",
+      "a": false,
+      "why": "C does no bounds checking, so mistakes cause undefined behavior."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "int a[5] = {0};",
+        "array of five zeros"
+       ],
+       [
+        "a[0]",
+        "first element"
+       ],
+       [
+        "sizeof(a)",
+        "total bytes of the array"
+       ],
+       [
+        "a[5] with size 5",
+        "out of bounds, undefined behavior"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  int a[] = {5, 6, 7}; printf(\"%d\", a[2]);",
+      "a": [
+       "7"
+      ],
+      "why": "Index 2 is the third element."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints the sum 12",
+      "lines": [
+       "int a[] = {2, 4, 6};",
+       "int sum = 0;",
+       "for (int i = 0; i < 3; i++) {",
+       "    sum += a[i];",
+       "}",
+       "printf(\"%d\", sum);"
+      ],
+      "why": "Add each element in the loop, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in the order they must be written",
+      "items": [
+       [
+        "int a[3];",
+        1
+       ],
+       [
+        "a[0] = 7;",
+        2
+       ],
+       [
+        "a[2] = 9;",
+        3
+       ],
+       [
+        "printf(\"%d\", a[0]);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the last valid index of an array with 5 elements",
+      "a": [
+       "4"
+      ],
+      "why": "Indexes run from 0 to size - 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the biggest number, 9",
+      "lines": [
+       "int a[] = {3, 9, 4};",
+       "int max = a[0];",
+       "for (int i = 1; i < 3; i++) {",
+       "    if (a[i] > max) max = a[i];",
+       "}",
+       "printf(\"%d\", max);"
+      ],
+      "why": "Start with the first item, then keep the larger one."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "int a[3] = {1};\nprintf(\"%d%d%d\", a[0], a[1], a[2]);",
+      "o": [
+       "111",
+       "100",
+       "1",
+       "Error"
+      ],
+      "a": 1,
+      "why": "Missing initial values become 0."
+     }
+    ]
+   },
+   {
+    "title": "Strings",
+    "period": "C building blocks",
+    "learn": [
+     {
+      "h": "Strings are char arrays",
+      "b": "C has no string type. A string is an array of char that ends with the special character '\\0', called the null terminator. The text \"hi\" takes 3 bytes: h, i and \\0.",
+      "code": "char s[] = \"hi\";\nprintf(\"%d\", (int)sizeof(s));   // 3\nprintf(\"%s\", s);                 // hi"
+     },
+     {
+      "h": "Changing characters",
+      "b": "You can change single characters in a char array. Use %s in printf to print the whole string. Printing stops at the null terminator.",
+      "code": "char s[] = \"cat\";\ns[0] = 'b';\nprintf(\"%s\", s);   // bat"
+     },
+     {
+      "h": "string.h functions",
+      "b": "Include <string.h> to use strlen for the length (without the terminator), strcpy to copy, strcat to join and strcmp to compare. strcmp returns 0 when two strings are equal.",
+      "code": "#include <string.h>\nchar a[20] = \"Hi \";\nstrcat(a, \"Ann\");           // Hi Ann\nprintf(\"%d\", (int)strlen(a));   // 6"
+     },
+     {
+      "h": "Do not use ==",
+      "b": "Comparing two strings with == compares addresses, not text. Always use strcmp. Also make sure the destination array is big enough, or strcpy and strcat will write past its end.",
+      "code": "if (strcmp(a, b) == 0) {\n    printf(\"same\");\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What character ends every C string?",
+      "o": [
+       "The null character '\\0'",
+       "A space",
+       "A newline",
+       "A dot"
+      ],
+      "a": 0,
+      "why": "The terminator marks where the string stops."
+     },
+     {
+      "t": "mc",
+      "q": "What does strcmp return for two equal strings?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "true"
+      ],
+      "a": 1,
+      "why": "strcmp returns 0 when the strings match."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "char s[] = \"cat\";\ns[0] = 'b';\nprintf(\"%s\", s);",
+      "o": [
+       "cat",
+       "bcat",
+       "bat",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The first character is replaced by b."
+     },
+     {
+      "t": "tf",
+      "q": "In C you can compare two strings with == to check their text.",
+      "a": false,
+      "why": "== compares addresses; use strcmp."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to what it does",
+      "pairs": [
+       [
+        "strlen",
+        "length without the terminator"
+       ],
+       [
+        "strcpy",
+        "copies a string"
+       ],
+       [
+        "strcat",
+        "adds one string to the end of another"
+       ],
+       [
+        "strcmp",
+        "compares two strings, 0 means equal"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "How many bytes does  char s[] = \"abc\";  take up?",
+      "a": [
+       "4"
+      ],
+      "why": "Three letters plus the terminating zero."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints Hi Ann",
+      "lines": [
+       "char a[20] = \"Hi \";",
+       "strcat(a, \"Ann\");",
+       "printf(\"%s\\n\", a);"
+      ],
+      "why": "strcat adds Ann to the end of Hi."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in order",
+      "items": [
+       [
+        "char s[6];",
+        1
+       ],
+       [
+        "strcpy(s, \"Hello\");",
+        2
+       ],
+       [
+        "s[0] = 'J';",
+        3
+       ],
+       [
+        "printf(\"%s\", s);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the name of the function that gives the length of a string",
+      "a": [
+       "strlen"
+      ],
+      "why": "strlen is declared in string.h."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print same when two strings match",
+      "lines": [
+       "char a[] = \"hi\";",
+       "char b[] = \"hi\";",
+       "if (strcmp(a, b) == 0) {",
+       "    printf(\"same\");",
+       "}"
+      ],
+      "why": "strcmp gives 0 for equal strings."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "char s[] = \"hi\";\nprintf(\"%d\", (int)sizeof(s));",
+      "o": [
+       "3",
+       "2",
+       "1",
+       "4"
+      ],
+      "a": 0,
+      "why": "h, i and the terminating zero make 3 bytes."
+     }
+    ]
+   },
+   {
+    "title": "Pointers",
+    "period": "C memory and data",
+    "learn": [
+     {
+      "h": "Addresses and pointers",
+      "b": "Every variable lives at an address in memory. The & operator gives that address. A pointer is a variable that stores an address, declared with a star.",
+      "code": "int x = 5;\nint *p = &x;     // p holds the address of x"
+     },
+     {
+      "h": "Dereferencing",
+      "b": "Putting a star in front of a pointer follows it to the value it points to. You can read through it or write through it. Writing through a pointer changes the original variable.",
+      "code": "int x = 5;\nint *p = &x;\n*p = 9;\nprintf(\"%d\", x);   // 9"
+     },
+     {
+      "h": "Pointers and functions",
+      "b": "To let a function change a caller's variable, pass its address. The function receives a pointer and uses a star to change the value. This is how swap works.",
+      "code": "void swap(int *a, int *b) {\n    int t = *a;\n    *a = *b;\n    *b = t;\n}\nswap(&x, &y);"
+     },
+     {
+      "h": "Pointers and arrays",
+      "b": "An array name acts like a pointer to its first element. Adding 1 to a pointer moves it to the next element, not the next byte. A pointer set to NULL points to nothing and must not be dereferenced.",
+      "code": "int a[] = {5, 6, 7};\nint *p = a;\nprintf(\"%d\", *(p + 2));   // 7\nint *q = NULL;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the & operator give you?",
+      "o": [
+       "The address of a variable",
+       "The value of a variable",
+       "The size of a variable",
+       "The type of a variable"
+      ],
+      "a": 0,
+      "why": "&x is where x lives in memory."
+     },
+     {
+      "t": "mc",
+      "q": "What does *p do when p is a pointer?",
+      "o": [
+       "Gives the address of p",
+       "Reads or writes the value p points to",
+       "Multiplies p",
+       "Deletes p"
+      ],
+      "a": 1,
+      "why": "The star follows the pointer."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int x = 5;\nint *p = &x;\n*p = 9;\nprintf(\"%d\", x);",
+      "o": [
+       "5",
+       "0",
+       "9",
+       "Error"
+      ],
+      "a": 2,
+      "why": "Writing through p changes x."
+     },
+     {
+      "t": "tf",
+      "q": "Adding 1 to an int pointer moves it to the next int in memory.",
+      "a": true,
+      "why": "Pointer arithmetic moves by the size of the type."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "&x",
+        "address of x"
+       ],
+       [
+        "int *p",
+        "pointer to an int"
+       ],
+       [
+        "*p",
+        "value at the address"
+       ],
+       [
+        "NULL",
+        "pointer to nothing"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does this print?  int a[] = {5, 6, 7}; int *p = a; printf(\"%d\", *(p + 2));",
+      "a": [
+       "7"
+      ],
+      "why": "p + 2 points at the third element."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of the swap function",
+      "lines": [
+       "void swap(int *a, int *b) {",
+       "    int t = *a;",
+       "    *a = *b;",
+       "    *b = t;",
+       "}"
+      ],
+      "why": "Save one value in t before overwriting it."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in order so the program prints 7",
+      "items": [
+       [
+        "int x = 5;",
+        1
+       ],
+       [
+        "int *p = &x;",
+        2
+       ],
+       [
+        "*p = 7;",
+        3
+       ],
+       [
+        "printf(\"%d\", x);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: int x = 1; int *p = &x; *p = *p + 4;  What is x now?",
+      "a": [
+       "5"
+      ],
+      "why": "Writing through p changes x to 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print 8",
+      "lines": [
+       "int x = 4;",
+       "int *p = &x;",
+       "*p = *p * 2;",
+       "printf(\"%d\", x);"
+      ],
+      "why": "Double x through the pointer, then print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "void inc(int *n) {\n    (*n)++;\n}\nint main(void) {\n    int a = 1;\n    inc(&a);\n    inc(&a);\n    printf(\"%d\", a);\n    return 0;\n}",
+      "o": [
+       "1",
+       "3",
+       "2",
+       "Error"
+      ],
+      "a": 1,
+      "why": "inc adds 1 through the pointer, and it is called twice."
+     }
+    ]
+   },
+   {
+    "title": "Structs",
+    "period": "C memory and data",
+    "learn": [
+     {
+      "h": "Grouping data",
+      "b": "A struct groups several variables, called members, into one new type. You define it with the struct keyword, then create variables of that type.",
+      "code": "struct Point {\n    int x;\n    int y;\n};\nstruct Point p = {3, 4};"
+     },
+     {
+      "h": "Using members",
+      "b": "Use a dot to reach a member of a struct variable. Use an arrow -> when you have a pointer to a struct. p->x is a shorter way to write (*p).x.",
+      "code": "printf(\"%d\", p.x + p.y);   // 7\nstruct Point *q = &p;\nprintf(\"%d\", q->x);        // 3"
+     },
+     {
+      "h": "typedef",
+      "b": "typedef gives a type a shorter name. With it you can write Player instead of struct Player every time. Structs can be put into arrays, too.",
+      "code": "typedef struct {\n    int hp;\n    char name[10];\n} Player;\nPlayer a = {10, \"Rex\"};"
+     },
+     {
+      "h": "Structs and functions",
+      "b": "Structs are copied when passed to a function, like ints. To let a function change the original, pass a pointer to the struct and use the arrow.",
+      "code": "void heal(Player *p) {\n    p->hp = p->hp + 5;\n}\nheal(&a);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword defines a group of variables as one type?",
+      "o": [
+       "struct",
+       "class",
+       "group",
+       "record"
+      ],
+      "a": 0,
+      "why": "struct creates a custom type."
+     },
+     {
+      "t": "mc",
+      "q": "How do you reach a member of a struct variable p?",
+      "o": [
+       "p->x",
+       "p.x",
+       "p::x",
+       "p[x]"
+      ],
+      "a": 1,
+      "why": "The dot is for variables; the arrow is for pointers."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "struct P { int x; int y; };\nstruct P p = {3, 4};\nprintf(\"%d\", p.x + p.y);",
+      "o": [
+       "34",
+       "12",
+       "7",
+       "Error"
+      ],
+      "a": 2,
+      "why": "p.x is 3 and p.y is 4."
+     },
+     {
+      "t": "tf",
+      "q": "For a pointer to a struct, you reach members with the arrow ->.",
+      "a": true,
+      "why": "q->x means the member x of the struct q points to."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "struct",
+        "custom group of variables"
+       ],
+       [
+        "p.x",
+        "member through a variable"
+       ],
+       [
+        "q->x",
+        "member through a pointer"
+       ],
+       [
+        "typedef",
+        "gives a type a new name"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that gives a type a shorter name",
+      "a": [
+       "typedef"
+      ],
+      "why": "typedef creates an alias for a type."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define a struct and create one",
+      "lines": [
+       "struct Dog {",
+       "    int age;",
+       "    char name[10];",
+       "};",
+       "struct Dog d = {3, \"Rex\"};"
+      ],
+      "why": "Define the type first, then make a variable."
+     },
+     {
+      "t": "order",
+      "q": "Put the lines in order",
+      "items": [
+       [
+        "struct P { int x; };",
+        1
+       ],
+       [
+        "struct P a = {1};",
+        2
+       ],
+       [
+        "a.x = 9;",
+        3
+       ],
+       [
+        "printf(\"%d\", a.x);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: struct P p = {3, 4}; struct P *q = &p;  What does q->x give?",
+      "a": [
+       "3"
+      ],
+      "why": "q points at p, so q->x is p.x."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the player's hp, 10",
+      "lines": [
+       "typedef struct {",
+       "    int hp;",
+       "} Player;",
+       "Player p = {10};",
+       "printf(\"%d\", p.hp);"
+      ],
+      "why": "Define the type, create a Player, print its member."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "struct P { int x; };\nvoid f(struct P p) { p.x = 9; }\nint main(void) {\n    struct P a = {1};\n    f(a);\n    printf(\"%d\", a.x);\n    return 0;\n}",
+      "o": [
+       "1",
+       "9",
+       "0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The function got a copy of the struct."
+     }
+    ]
+   },
+   {
+    "title": "malloc, free and file I/O",
+    "period": "C memory and data",
+    "learn": [
+     {
+      "h": "malloc and free",
+      "b": "malloc reserves a block of memory while the program runs and returns a pointer to it. Include <stdlib.h>. When you are done you must call free, otherwise the memory leaks.",
+      "code": "#include <stdlib.h>\nint *p = malloc(3 * sizeof(int));\np[0] = 2; p[1] = 3; p[2] = 4;\nprintf(\"%d\", p[0] + p[2]);   // 6\nfree(p);"
+     },
+     {
+      "h": "Check and clean up",
+      "b": "malloc returns NULL if there is not enough memory, so check before using the pointer. calloc is like malloc but sets everything to 0. Never use memory after you free it.",
+      "code": "int *p = calloc(2, sizeof(int));\nif (p == NULL) return 1;\nprintf(\"%d\", p[0] + p[1]);   // 0\nfree(p);"
+     },
+     {
+      "h": "Writing files",
+      "b": "fopen opens a file and returns a FILE pointer. The mode \"w\" writes (and erases old content), \"r\" reads and \"a\" appends. Use fprintf to write like printf, and always fclose when finished.",
+      "code": "FILE *f = fopen(\"a.txt\", \"w\");\nif (f == NULL) return 1;\nfprintf(f, \"Hi\\n\");\nfclose(f);"
+     },
+     {
+      "h": "Reading files",
+      "b": "Open with mode \"r\". fgets reads one line into a char array and fscanf reads formatted values. Both signal the end of the file, so you can loop until it ends.",
+      "code": "char line[100];\nFILE *f = fopen(\"a.txt\", \"r\");\nwhile (fgets(line, 100, f) != NULL) {\n    printf(\"%s\", line);\n}\nfclose(f);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does free(p) do?",
+      "o": [
+       "Gives the reserved memory back",
+       "Deletes the pointer variable",
+       "Closes a file",
+       "Sets p to 0"
+      ],
+      "a": 0,
+      "why": "free releases memory obtained with malloc."
+     },
+     {
+      "t": "mc",
+      "q": "What does malloc return when it cannot get memory?",
+      "o": [
+       "0 bytes",
+       "NULL",
+       "-1",
+       "An empty string"
+      ],
+      "a": 1,
+      "why": "Always check for NULL before using the pointer."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int *p = malloc(3 * sizeof(int));\np[0] = 2; p[1] = 3; p[2] = 4;\nprintf(\"%d\", p[0] + p[2]);\nfree(p);",
+      "o": [
+       "9",
+       "2",
+       "6",
+       "Error"
+      ],
+      "a": 2,
+      "why": "p[0] is 2 and p[2] is 4."
+     },
+     {
+      "t": "tf",
+      "q": "If you forget to call free, the program leaks memory.",
+      "a": true,
+      "why": "The memory stays reserved until the program ends."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "malloc",
+        "reserves memory"
+       ],
+       [
+        "free",
+        "gives memory back"
+       ],
+       [
+        "fopen",
+        "opens a file"
+       ],
+       [
+        "fclose",
+        "closes a file"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the fopen mode letter that opens a file for writing",
+      "a": [
+       "w"
+      ],
+      "why": "\"w\" writes and erases old content."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to write Hi into a file",
+      "lines": [
+       "FILE *f = fopen(\"a.txt\", \"w\");",
+       "if (f == NULL) return 1;",
+       "fprintf(f, \"Hi\\n\");",
+       "fclose(f);"
+      ],
+      "why": "Open, check, write, close."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of writing a file in order",
+      "items": [
+       [
+        "Open the file with fopen",
+        1
+       ],
+       [
+        "Check the result is not NULL",
+        2
+       ],
+       [
+        "Write with fprintf",
+        3
+       ],
+       [
+        "Close with fclose",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the function that closes a file",
+      "a": [
+       "fclose"
+      ],
+      "why": "fclose finishes the file and releases it."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to store 5 on the heap, print it and free it",
+      "lines": [
+       "int *p = malloc(sizeof(int));",
+       "*p = 5;",
+       "printf(\"%d\", *p);",
+       "free(p);"
+      ],
+      "why": "Free the memory last."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is printed?",
+      "code": "int *p = calloc(2, sizeof(int));\nprintf(\"%d\", p[0] + p[1]);\nfree(p);",
+      "o": [
+       "2",
+       "0",
+       "garbage",
+       "Error"
+      ],
+      "a": 1,
+      "why": "calloc sets all bytes to zero."
+     }
+    ]
+   }
+  ]
+ }
+}

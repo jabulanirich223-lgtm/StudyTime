@@ -1,0 +1,1703 @@
+{
+ "swift": {
+  "name": "Swift",
+  "units": [
+   {
+    "title": "print and let/var",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "Hello, world",
+      "b": "In Swift, a single line is a whole program. print shows text and moves to a new line. You do not need a main function or semicolons in a simple script.",
+      "code": "print(\"Hello, world!\")"
+     },
+     {
+      "h": "let and var",
+      "b": "let makes a constant, a value that cannot change after you set it. var makes a variable, which can change. Swift guesses the type from the value, and it is good style to use let unless you need to change the value.",
+      "code": "let name = \"Ana\"\nvar score = 0\nscore = score + 10"
+     },
+     {
+      "h": "print with several values",
+      "b": "print can take many values separated by commas and puts a space between them. Change the separator with the separator: label. Comments start with // and run to the end of the line.",
+      "code": "print(\"A\", \"B\")\nprint(\"A\", \"B\", separator: \"-\") // A-B"
+     },
+     {
+      "h": "Changing variables",
+      "b": "Use = to give a variable a new value, and shortcuts like += and -= to update it. Trying to change a let constant is a compile error, which protects your data.",
+      "code": "var b = 4\nlet a = 3\nb += a\nprint(b)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword declares a constant in Swift?",
+      "o": [
+       "const",
+       "var",
+       "let",
+       "final"
+      ],
+      "a": 2,
+      "why": "let values cannot change."
+     },
+     {
+      "t": "mc",
+      "q": "Which function shows text on the screen?",
+      "o": [
+       "print",
+       "show",
+       "echo",
+       "display"
+      ],
+      "a": 0,
+      "why": "print outputs a line."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let a = 3\nvar b = 4\nb = b + a\nprint(b)",
+      "o": [
+       "3",
+       "4",
+       "Error",
+       "7"
+      ],
+      "a": 3,
+      "why": "b becomes 4 + 3."
+     },
+     {
+      "t": "tf",
+      "q": "You can reassign a value to a constant declared with let.",
+      "a": false,
+      "why": "let constants cannot change."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its job",
+      "pairs": [
+       [
+        "let",
+        "Declares a constant"
+       ],
+       [
+        "var",
+        "Declares a variable"
+       ],
+       [
+        "print",
+        "Outputs a line"
+       ],
+       [
+        "//",
+        "Starts a comment"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword for a value that can change later.",
+      "a": [
+       "var"
+      ],
+      "why": "var makes a variable."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add 5 to a score and print it",
+      "lines": [
+       "var score = 0",
+       "score += 5",
+       "print(score)"
+      ],
+      "why": "Declare, update, print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Declare var count = 1",
+        1
+       ],
+       [
+        "Add 2 to count",
+        2
+       ],
+       [
+        "Print count",
+        3
+       ],
+       [
+        "See 3 on screen",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a constant name set to the text Ana.",
+      "a": [
+       "let name = \"Ana\""
+      ],
+      "why": "let name = value"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that print a changed variable",
+      "lines": [
+       "var lives = 3",
+       "lives -= 1",
+       "print(lives)"
+      ],
+      "why": "Declare, change, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "print(\"A\", \"B\", separator: \"-\")",
+      "o": [
+       "A B",
+       "A-B",
+       "AB",
+       "A,B"
+      ],
+      "a": 1,
+      "why": "The separator replaces the default space."
+     }
+    ]
+   },
+   {
+    "title": "Types and Interpolation",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "Basic types",
+      "b": "Int is a whole number, Double is a decimal, Bool is true or false, String is text and Character is one letter. Swift infers the type, or you can write it with a colon.",
+      "code": "let age: Int = 12\nlet height: Double = 1.8\nlet ok = true"
+     },
+     {
+      "h": "Converting types",
+      "b": "Swift never mixes number types on its own. To use an Int with a Double, make a new value with the type name, like Double(x).",
+      "code": "let x = 7\nlet y = Double(x) / 2\nprint(y)"
+     },
+     {
+      "h": "String interpolation",
+      "b": "Put a value inside a string with a backslash and parentheses. You can put whole expressions inside, not just names.",
+      "code": "let name = \"Sam\"\nlet age = 12\nprint(\"\\(name) is \\(age + 1)\")"
+     },
+     {
+      "h": "Working with strings",
+      "b": "Join strings with +. A string has useful properties and methods like count for the number of characters and uppercased() for capitals. Triple quotes make a multi-line string.",
+      "code": "let s = \"hello\"\nprint(s.count)\nprint(s.uppercased())"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you put a variable name inside a string?",
+      "o": [
+       "{name}",
+       "\\(name)",
+       "$name",
+       "%name"
+      ],
+      "a": 1,
+      "why": "Interpolation uses a backslash and parentheses."
+     },
+     {
+      "t": "mc",
+      "q": "How do you divide an Int x by 2 and keep decimals?",
+      "o": [
+       "x / 2.0",
+       "x as decimal / 2",
+       "float(x) / 2",
+       "Double(x) / 2"
+      ],
+      "a": 3,
+      "why": "Convert to Double first."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let name = \"Sam\"\nlet age = 12\nprint(\"\\(name) is \\(age + 1)\")",
+      "o": [
+       "Sam is 13",
+       "Sam is 12",
+       "Sam is age + 1",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The expression age + 1 is calculated inside the string."
+     },
+     {
+      "t": "tf",
+      "q": "Swift automatically converts an Int to a Double when you add them.",
+      "a": false,
+      "why": "You must convert explicitly."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its use",
+      "pairs": [
+       [
+        "Int",
+        "Whole numbers"
+       ],
+       [
+        "Double",
+        "Decimal numbers"
+       ],
+       [
+        "String",
+        "Text"
+       ],
+       [
+        "Bool",
+        "true or false"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the String property that gives the number of characters.",
+      "a": [
+       "count"
+      ],
+      "why": "s.count"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print a total",
+      "lines": [
+       "let price = 5",
+       "let qty = 3",
+       "print(\"Total: \\(price * qty)\")"
+      ],
+      "why": "Interpolation can hold a calculation."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to show a decimal result",
+      "items": [
+       [
+        "Declare let x = 7",
+        1
+       ],
+       [
+        "Convert with Double(x)",
+        2
+       ],
+       [
+        "Divide by 2",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a Double constant height set to 1.8.",
+      "a": [
+       "let height: Double = 1.8"
+      ],
+      "why": "let name: Type = value"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that print a half",
+      "lines": [
+       "let x = 7",
+       "let y = Double(x) / 2",
+       "print(y)"
+      ],
+      "why": "Convert before dividing."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let s = \"hello\"\nprint(s.uppercased())",
+      "o": [
+       "hello",
+       "Hello",
+       "HELLO",
+       "5"
+      ],
+      "a": 2,
+      "why": "uppercased() makes all letters capital."
+     }
+    ]
+   },
+   {
+    "title": "Optionals",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "What an optional is",
+      "b": "An optional may hold a value or be nil, which means no value. Add ? to the type: Int? is an Int or nothing. Many operations that can fail, like turning text into a number, return an optional.",
+      "code": "let n = Int(\"42\")   // Int?\nlet bad = Int(\"abc\") // nil"
+     },
+     {
+      "h": "Safe unwrapping",
+      "b": "if let checks an optional and gives you the real value inside the braces only when it is not nil. Use else for the nil case.",
+      "code": "if let n = Int(\"42\") {\n    print(n * 2)\n} else {\n    print(\"not a number\")\n}"
+     },
+     {
+      "h": "Default values",
+      "b": "The ?? operator gives a default when the optional is nil. This is a short way to avoid a nil value.",
+      "code": "let n = Int(\"abc\")\nprint(n ?? 0)"
+     },
+     {
+      "h": "Force unwrap and chaining",
+      "b": "Adding ! after an optional forces the value out, but crashes if it is nil, so use it rarely. Optional chaining with ?. keeps going only if the value exists, and the result is an optional.",
+      "code": "let name: String? = \"Zed\"\nprint(name?.count ?? 0)\nlet x: Int? = 5\nprint(x! + 1)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the type Int? mean?",
+      "o": [
+       "Only an Int",
+       "A text",
+       "An Int or nil",
+       "An error"
+      ],
+      "a": 2,
+      "why": "The question mark makes it optional."
+     },
+     {
+      "t": "mc",
+      "q": "Which operator gives a default value for a nil optional?",
+      "o": [
+       "??",
+       "?:",
+       "||",
+       "!!"
+      ],
+      "a": 0,
+      "why": "?? is the nil-coalescing operator."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let n = Int(\"abc\")\nprint(n ?? 0)",
+      "o": [
+       "nil",
+       "abc",
+       "Error",
+       "0"
+      ],
+      "a": 3,
+      "why": "Int(\"abc\") is nil, so the default is used."
+     },
+     {
+      "t": "tf",
+      "q": "Force unwrapping a nil optional with ! crashes the program.",
+      "a": true,
+      "why": "That is why safe unwrapping is preferred."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "Int?",
+        "Optional integer"
+       ],
+       [
+        "nil",
+        "No value"
+       ],
+       [
+        "if let",
+        "Safe unwrapping"
+       ],
+       [
+        "??",
+        "Default value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the literal that means no value in Swift.",
+      "a": [
+       "nil"
+      ],
+      "why": "nil is the absence of a value."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to double a number from text or show a message",
+      "lines": [
+       "let text = \"42\"",
+       "if let n = Int(text) {",
+       "    print(n * 2)",
+       "} else {",
+       "    print(\"not a number\")",
+       "}"
+      ],
+      "why": "The else handles nil."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to unwrap safely",
+      "items": [
+       [
+        "Get an optional value",
+        1
+       ],
+       [
+        "Check it with if let",
+        2
+       ],
+       [
+        "Use the unwrapped value",
+        3
+       ],
+       [
+        "Else handle nil",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a variable nick of type optional String set to nil.",
+      "a": [
+       "var nick: String? = nil"
+      ],
+      "why": "Add ? to the type."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that use optional chaining with a default",
+      "lines": [
+       "var name: String? = \"Zed\"",
+       "let len = name?.count ?? 0",
+       "print(len)"
+      ],
+      "why": "?. then ?? gives a safe number."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let x: Int? = 5\nprint(x! + 1)",
+      "o": [
+       "5",
+       "6",
+       "nil",
+       "Error"
+      ],
+      "a": 1,
+      "why": "x! gives 5 and one is added."
+     }
+    ]
+   },
+   {
+    "title": "if, guard and switch",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "if and else",
+      "b": "Conditions need no parentheses, but braces are required. Combine tests with && for and, || for or and ! for not. The ternary operator a ? b : c picks one of two values.",
+      "code": "let age = 20\nif age >= 18 {\n    print(\"adult\")\n} else {\n    print(\"minor\")\n}"
+     },
+     {
+      "h": "switch",
+      "b": "switch compares a value with cases. It must be exhaustive, so it usually ends with default. There is no fall through, so you do not write break. A case can list several values or a range like 1...5.",
+      "code": "let score = 85\nswitch score {\ncase 90...100: print(\"A\")\ncase 80..<90: print(\"B\")\ndefault: print(\"C\")\n}"
+     },
+     {
+      "h": "guard",
+      "b": "guard checks a condition and runs its else block if the condition is false. The else block must leave the scope, for example with return. It keeps the happy path unindented.",
+      "code": "func check(_ n: Int) {\n    guard n > 0 else {\n        print(\"bad\")\n        return\n    }\n    print(\"ok\")\n}"
+     },
+     {
+      "h": "guard let and ternary",
+      "b": "guard let unwraps an optional and keeps the value for the rest of the function. The ternary operator is a short if for choosing a value.",
+      "code": "let a = 4\nlet r = a % 2 == 0 ? \"even\" : \"odd\"\nprint(r)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A switch statement in Swift must be what?",
+      "o": [
+       "Sorted",
+       "Exhaustive",
+       "Nested",
+       "Optional"
+      ],
+      "a": 1,
+      "why": "It must cover every possible value, often with default."
+     },
+     {
+      "t": "mc",
+      "q": "What must the else block of a guard do?",
+      "o": [
+       "Print a message",
+       "Return a number",
+       "Do nothing",
+       "Leave the current scope"
+      ],
+      "a": 3,
+      "why": "For example return, break or continue."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let score = 85\nswitch score {\ncase 90...100: print(\"A\")\ncase 80..<90: print(\"B\")\ndefault: print(\"C\")\n}",
+      "o": [
+       "B",
+       "A",
+       "C",
+       "80"
+      ],
+      "a": 0,
+      "why": "85 is in the range 80..<90."
+     },
+     {
+      "t": "tf",
+      "q": "Swift needs parentheses around an if condition.",
+      "a": false,
+      "why": "Parentheses are optional."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its job",
+      "pairs": [
+       [
+        "guard",
+        "Exit early when a condition fails"
+       ],
+       [
+        "case 1...5",
+        "Closed range pattern"
+       ],
+       [
+        "default",
+        "Fallback case"
+       ],
+       [
+        "&&",
+        "Logical and"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword for the fallback case in a switch.",
+      "a": [
+       "default"
+      ],
+      "why": "default catches everything else."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the function that validates a number",
+      "lines": [
+       "func check(_ n: Int) {",
+       "    guard n > 0 else {",
+       "        print(\"bad\")",
+       "        return",
+       "    }",
+       "    print(\"ok\")",
+       "}"
+      ],
+      "why": "The guard sits at the top."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for a guard",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "If false run the else block",
+        2
+       ],
+       [
+        "Leave with return",
+        3
+       ],
+       [
+        "If true continue below",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that starts an if when age is at least 18.",
+      "a": [
+       "if age >= 18 {",
+       "if age >= 18"
+      ],
+      "why": "Use >= for at least."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the switch that prints Mon for 1",
+      "lines": [
+       "switch day {",
+       "case 1:",
+       "    print(\"Mon\")",
+       "case 2:",
+       "    print(\"Tue\")",
+       "default:",
+       "    print(\"?\")",
+       "}"
+      ],
+      "why": "default goes last."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let a = 4\nlet r = a % 2 == 0 ? \"even\" : \"odd\"\nprint(r)",
+      "o": [
+       "odd",
+       "4",
+       "even",
+       "Error"
+      ],
+      "a": 2,
+      "why": "4 % 2 is 0."
+     }
+    ]
+   },
+   {
+    "title": "Loops",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "for-in loops",
+      "b": "for loops over a range or a collection. 1...3 is a closed range that includes 3, while 1..<3 is half open and stops before 3. If you do not need the counter, use an underscore.",
+      "code": "for i in 1...3 {\n    print(i)\n}\nfor _ in 0..<3 {\n    print(\"hi\")\n}"
+     },
+     {
+      "h": "Looping over arrays",
+      "b": "for item in array goes through every element. Use enumerated() to get the index too. stride lets you count in steps.",
+      "code": "for name in [\"a\", \"b\"] {\n    print(name)\n}\nfor i in stride(from: 0, to: 6, by: 2) {\n    print(i)\n}"
+     },
+     {
+      "h": "while and repeat-while",
+      "b": "while checks its condition before each round. repeat-while runs the body first and checks afterwards, so it always runs at least once.",
+      "code": "var n = 3\nwhile n > 0 {\n    print(n)\n    n -= 1\n}"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves a loop immediately. continue skips to the next round. They work in for, while and repeat-while loops.",
+      "code": "for i in 1...5 {\n    if i == 2 { continue }\n    if i == 4 { break }\n    print(i)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which values does 1..<4 produce?",
+      "o": [
+       "1, 2, 3, 4",
+       "2, 3, 4",
+       "1, 2, 3",
+       "0, 1, 2, 3"
+      ],
+      "a": 2,
+      "why": "The upper bound is excluded."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop always runs its body at least once?",
+      "o": [
+       "repeat-while",
+       "while",
+       "for-in",
+       "stride"
+      ],
+      "a": 0,
+      "why": "It checks after the body."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "var total = 0\nfor i in 1...3 { total += i }\nprint(total)",
+      "o": [
+       "3",
+       "123",
+       "Error",
+       "6"
+      ],
+      "a": 3,
+      "why": "1+2+3 is 6."
+     },
+     {
+      "t": "tf",
+      "q": "for _ in 0..<5 runs its body five times.",
+      "a": true,
+      "why": "The range has five values."
+     },
+     {
+      "t": "match",
+      "q": "Match each range or loop to its meaning",
+      "pairs": [
+       [
+        "1...3",
+        "Closed range, includes 3"
+       ],
+       [
+        "0..<3",
+        "Half-open range"
+       ],
+       [
+        "while",
+        "Checks before each round"
+       ],
+       [
+        "repeat-while",
+        "Runs first, then checks"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that exits a loop immediately.",
+      "a": [
+       "break"
+      ],
+      "why": "break ends the loop."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to count down 3 2 1",
+      "lines": [
+       "var n = 3",
+       "while n > 0 {",
+       "    print(n)",
+       "    n -= 1",
+       "}"
+      ],
+      "why": "Print then decrease."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for a for-in loop over 1...3",
+      "items": [
+       [
+        "i is 1",
+        1
+       ],
+       [
+        "Run the body",
+        2
+       ],
+       [
+        "i becomes 2 then 3",
+        3
+       ],
+       [
+        "Loop ends after 3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the loop header that counts i from 1 to 5 inclusive.",
+      "a": [
+       "for i in 1...5 {",
+       "for i in 1...5"
+      ],
+      "why": "Use the closed range ..."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the loop that prints each name",
+      "lines": [
+       "let names = [\"a\", \"b\"]",
+       "for name in names {",
+       "    print(name)",
+       "}"
+      ],
+      "why": "for item in collection."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which numbers does this print?",
+      "code": "for i in stride(from: 0, to: 6, by: 2) {\n    print(i)\n}",
+      "o": [
+       "0 2 4 6",
+       "0 2 4, each on its own line",
+       "2 4 6",
+       "0 1 2 3"
+      ],
+      "a": 1,
+      "why": "to excludes 6, and by 2 steps in twos."
+     }
+    ]
+   },
+   {
+    "title": "Arrays, Dictionaries and Sets",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "Arrays",
+      "b": "An array is an ordered list, written [1, 2, 3]. Its type is [Int]. Use append to add, count for the size, and numbers[0] to read. isEmpty tells you if it has no items.",
+      "code": "var nums = [3, 1, 2]\nnums.append(5)\nprint(nums.count)\nprint(nums[0])"
+     },
+     {
+      "h": "Dictionaries",
+      "b": "A dictionary stores key and value pairs, written [\"a\": 1] with type [String: Int]. Looking up a key gives an optional, because the key may be missing. Assign to a key to add or change it.",
+      "code": "var ages = [\"Ana\": 20]\nages[\"Bo\"] = 22\nprint(ages[\"Ana\"] ?? 0)"
+     },
+     {
+      "h": "Sets",
+      "b": "A set holds unique values with no order. Adding a duplicate does nothing. Use insert and contains, and set operations like union and intersection.",
+      "code": "var tags: Set = [1, 2, 2]\ntags.insert(3)\nprint(tags.count)\nprint(tags.contains(2))"
+     },
+     {
+      "h": "Removing and checking",
+      "b": "remove(at:) removes an array item by index. removeValue(forKey:) removes a dictionary entry. first and last return optionals because a collection could be empty.",
+      "code": "var a = [1, 2, 3]\na.remove(at: 0)\nprint(a.first ?? 0)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the type of the array [1, 2, 3]?",
+      "o": [
+       "Array(Int)",
+       "[Int]",
+       "List<Int>",
+       "Int[]"
+      ],
+      "a": 1,
+      "why": "Swift writes array types in square brackets."
+     },
+     {
+      "t": "mc",
+      "q": "What does looking up a key in a dictionary return?",
+      "o": [
+       "Always a value",
+       "A crash if missing",
+       "A Bool",
+       "An optional"
+      ],
+      "a": 3,
+      "why": "A missing key gives nil."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "var nums = [3, 1, 2]\nnums.append(5)\nprint(nums.count)",
+      "o": [
+       "4",
+       "3",
+       "5",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The array had 3 items and one was appended."
+     },
+     {
+      "t": "tf",
+      "q": "A Swift Set can store the same value twice.",
+      "a": false,
+      "why": "Sets keep unique values."
+     },
+     {
+      "t": "match",
+      "q": "Match each collection to its trait",
+      "pairs": [
+       [
+        "Array",
+        "Ordered list"
+       ],
+       [
+        "Dictionary",
+        "Key and value pairs"
+       ],
+       [
+        "Set",
+        "Unique unordered values"
+       ],
+       [
+        "append",
+        "Adds to the end of an array"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the array method that adds an item to the end.",
+      "a": [
+       "append"
+      ],
+      "why": "nums.append(x)"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add a person and count",
+      "lines": [
+       "var ages = [\"Ana\": 20]",
+       "ages[\"Bo\"] = 22",
+       "print(ages.count)"
+      ],
+      "why": "Assign a new key then count."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to work with an array",
+      "items": [
+       [
+        "Create var nums = [3, 1, 2]",
+        1
+       ],
+       [
+        "Append 5",
+        2
+       ],
+       [
+        "Read nums.count",
+        3
+       ],
+       [
+        "Print 4",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an array fruits holding apple and pear.",
+      "a": [
+       "var fruits = [\"apple\", \"pear\"]"
+      ],
+      "why": "Square brackets with commas."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that use a set",
+      "lines": [
+       "var tags: Set = [1, 2, 2]",
+       "tags.insert(3)",
+       "print(tags.count)"
+      ],
+      "why": "The duplicate 2 is stored once."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let d = [\"a\": 1]\nprint(d[\"z\"] ?? 0)",
+      "o": [
+       "nil",
+       "1",
+       "0",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The key z is missing, so ?? gives 0."
+     }
+    ]
+   },
+   {
+    "title": "Functions and Closures",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "Writing functions",
+      "b": "Use func, the name, parameters with types and -> for the return type. When you call it, you write the argument labels. An underscore before a parameter removes its label. A function with one expression can skip return.",
+      "code": "func greet(name: String) -> String {\n    return \"Hi \\(name)\"\n}\nprint(greet(name: \"Ann\"))"
+     },
+     {
+      "h": "Labels and defaults",
+      "b": "Parameters can have default values so callers may leave them out. A separate argument label makes calls read like English.",
+      "code": "func add(_ a: Int, _ b: Int) -> Int { a + b }\nprint(add(2, 3))\nfunc hi(name: String = \"you\") {\n    print(\"Hi \\(name)\")\n}"
+     },
+     {
+      "h": "Closures",
+      "b": "A closure is a block of code you can store or pass around. It looks like { parameters in body }. The shorthand $0 means the first parameter. When the closure is the last argument you can write it after the parentheses, a trailing closure.",
+      "code": "let doubled = [1, 2, 3].map { $0 * 2 }\nprint(doubled)"
+     },
+     {
+      "h": "map, filter and sorted",
+      "b": "map transforms every item, filter keeps items that pass a test and sorted orders them. Functions are values too, so you can pass a function to these.",
+      "code": "let evens = [1, 2, 3, 4].filter { $0 % 2 == 0 }\nprint(evens)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword declares a function?",
+      "o": [
+       "fn",
+       "def",
+       "func",
+       "function"
+      ],
+      "a": 2,
+      "why": "Swift uses func."
+     },
+     {
+      "t": "mc",
+      "q": "What does the arrow -> show in a function?",
+      "o": [
+       "The return type",
+       "A closure",
+       "A loop",
+       "A label"
+      ],
+      "a": 0,
+      "why": "-> is followed by the return type."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "func add(_ a: Int, _ b: Int) -> Int { a + b }\nprint(add(2, 3))",
+      "o": [
+       "23",
+       "6",
+       "Error",
+       "5"
+      ],
+      "a": 3,
+      "why": "The underscores remove labels, and 2 + 3 is 5."
+     },
+     {
+      "t": "tf",
+      "q": "A closure can be passed to a function as an argument.",
+      "a": true,
+      "why": "Closures are values."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "func",
+        "Declares a function"
+       ],
+       [
+        "->",
+        "Return type"
+       ],
+       [
+        "$0",
+        "First closure parameter"
+       ],
+       [
+        "in",
+        "Separates closure parameters from body"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the array method that transforms each element.",
+      "a": [
+       "map"
+      ],
+      "why": "map applies a closure to every item."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the function and its call",
+      "lines": [
+       "func square(_ n: Int) -> Int {",
+       "    return n * n",
+       "}",
+       "print(square(4))"
+      ],
+      "why": "Define, then call."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a function in order",
+      "items": [
+       [
+        "func keyword and name",
+        1
+       ],
+       [
+        "Parameters in parentheses",
+        2
+       ],
+       [
+        "-> and return type",
+        3
+       ],
+       [
+        "Body in braces",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of a function double taking an unlabeled Int n and returning an Int.",
+      "a": [
+       "func double(_ n: Int) -> Int {",
+       "func double(_ n: Int) -> Int"
+      ],
+      "why": "The underscore removes the label."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that double every number",
+      "lines": [
+       "let nums = [1, 2, 3]",
+       "let doubled = nums.map { $0 * 2 }",
+       "print(doubled)"
+      ],
+      "why": "map with a trailing closure."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let evens = [1, 2, 3, 4].filter { $0 % 2 == 0 }\nprint(evens)",
+      "o": [
+       "[1, 3]",
+       "[2, 4]",
+       "[2, 4, 6]",
+       "[1, 2, 3, 4]"
+      ],
+      "a": 1,
+      "why": "filter keeps only the even numbers."
+     }
+    ]
+   },
+   {
+    "title": "Structs and Classes",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "Structs",
+      "b": "A struct bundles properties and methods. Swift gives it a memberwise initializer, so you can write Point(x: 1, y: 2). Structs are value types: assigning one to another makes a copy.",
+      "code": "struct Point {\n    var x: Int\n    var y: Int\n}\nlet p = Point(x: 1, y: 2)\nprint(p.x)"
+     },
+     {
+      "h": "Methods and mutating",
+      "b": "A method is a function inside a type. A struct method that changes the struct's own properties must be marked mutating, and it can only be called on a var.",
+      "code": "struct Counter {\n    var n = 0\n    mutating func add() {\n        n += 1\n    }\n}"
+     },
+     {
+      "h": "Classes",
+      "b": "A class looks like a struct but is a reference type: two variables can point to the same object. You write an init yourself and use self to mean the object. Classes can inherit from another class and override its methods.",
+      "code": "class Dog {\n    var name: String\n    init(name: String) {\n        self.name = name\n    }\n}"
+     },
+     {
+      "h": "Value vs reference",
+      "b": "With a struct, copying creates an independent value. With a class, copying only copies the reference, so a change through one name is seen by the other. Apple recommends structs by default and classes when you need shared identity.",
+      "code": "class Box { var n = 1 }\nlet a = Box()\nlet b = a\nb.n = 9\nprint(a.n)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a value type?",
+      "o": [
+       "class",
+       "struct",
+       "closure only",
+       "protocol"
+      ],
+      "a": 1,
+      "why": "Structs are copied on assignment."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword marks a struct method that changes its properties?",
+      "o": [
+       "changing",
+       "var",
+       "inout",
+       "mutating"
+      ],
+      "a": 3,
+      "why": "mutating allows self to change."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Box { var n = 1 }\nlet a = Box()\nlet b = a\nb.n = 9\nprint(a.n)",
+      "o": [
+       "9",
+       "1",
+       "0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "a and b refer to the same Box object."
+     },
+     {
+      "t": "tf",
+      "q": "Structs get a memberwise initializer automatically.",
+      "a": true,
+      "why": "Point(x: 1, y: 2) works without writing init."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "struct",
+        "Value type"
+       ],
+       [
+        "class",
+        "Reference type"
+       ],
+       [
+        "init",
+        "Initializer"
+       ],
+       [
+        "override",
+        "Replaces a superclass method"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that names the initializer method.",
+      "a": [
+       "init"
+      ],
+      "why": "init sets up a new instance."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the struct and its use",
+      "lines": [
+       "struct Point {",
+       "    var x: Int",
+       "    var y: Int",
+       "}",
+       "let p = Point(x: 1, y: 2)",
+       "print(p.x)"
+      ],
+      "why": "Define the type, create, read."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for a class",
+      "items": [
+       [
+        "Declare the class",
+        1
+       ],
+       [
+        "Add properties",
+        2
+       ],
+       [
+        "Write an init",
+        3
+       ],
+       [
+        "Create an object",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a Point with x 3 and y 4 as a constant p.",
+      "a": [
+       "let p = Point(x: 3, y: 4)"
+      ],
+      "why": "Use the memberwise initializer."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the class with an init",
+      "lines": [
+       "class Dog {",
+       "    var name: String",
+       "    init(name: String) {",
+       "        self.name = name",
+       "    }",
+       "}"
+      ],
+      "why": "The init sets the property."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "struct S { var n = 1 }\nvar a = S()\nvar b = a\nb.n = 9\nprint(a.n)",
+      "o": [
+       "9",
+       "0",
+       "1",
+       "Error"
+      ],
+      "a": 2,
+      "why": "b is an independent copy of the struct."
+     }
+    ]
+   },
+   {
+    "title": "Protocols and Extensions",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "Protocols",
+      "b": "A protocol lists methods and properties a type must have. A struct, class or enum adopts it by writing a colon and the protocol name after its own name. The compiler checks that all the requirements are met.",
+      "code": "protocol Speaker {\n    func speak() -> String\n}\nstruct Dog: Speaker {\n    func speak() -> String { \"Woof\" }\n}"
+     },
+     {
+      "h": "Using protocols as types",
+      "b": "You can use a protocol as a type, for example an array of Speakers that holds Dogs and Cats together. Properties are required with get or get set.",
+      "code": "let pets: [Speaker] = [Dog()]\nfor p in pets {\n    print(p.speak())\n}"
+     },
+     {
+      "h": "Extensions",
+      "b": "An extension adds new methods or computed properties to a type that already exists, even built-in ones like Int and String. It cannot add stored properties.",
+      "code": "extension Int {\n    func doubled() -> Int { self * 2 }\n}\nprint(5.doubled())"
+     },
+     {
+      "h": "Protocol extensions",
+      "b": "An extension of a protocol gives all adopting types a default implementation. Standard protocols you will meet are Equatable for ==, Comparable for < and Codable for saving data.",
+      "code": "protocol Greeter { var name: String { get } }\nextension Greeter {\n    func hello() -> String { \"Hi \\(name)\" }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword declares a protocol?",
+      "o": [
+       "interface",
+       "trait",
+       "protocol",
+       "contract"
+      ],
+      "a": 2,
+      "why": "Swift uses protocol."
+     },
+     {
+      "t": "mc",
+      "q": "What does an extension let you do?",
+      "o": [
+       "Add functionality to an existing type",
+       "Delete a method",
+       "Make a class final",
+       "Copy a struct"
+      ],
+      "a": 0,
+      "why": "Extensions add methods and computed properties."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "extension Int {\n    func doubled() -> Int { self * 2 }\n}\nprint(5.doubled())",
+      "o": [
+       "5",
+       "2",
+       "Error",
+       "10"
+      ],
+      "a": 3,
+      "why": "The extension adds doubled() to Int."
+     },
+     {
+      "t": "tf",
+      "q": "A struct can adopt a protocol.",
+      "a": true,
+      "why": "Structs, classes and enums can all adopt protocols."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "protocol",
+        "List of required members"
+       ],
+       [
+        "extension",
+        "Adds methods to an existing type"
+       ],
+       [
+        "struct Dog: Speaker",
+        "Adopts a protocol"
+       ],
+       [
+        "Equatable",
+        "Allows comparing with =="
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that adds methods to an existing type.",
+      "a": [
+       "extension"
+      ],
+      "why": "extension Int { ... }"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the protocol and a struct adopting it",
+      "lines": [
+       "protocol Speaker {",
+       "    func speak() -> String",
+       "} // end protocol",
+       "struct Dog: Speaker {",
+       "    func speak() -> String { \"Woof\" }",
+       "}"
+      ],
+      "why": "Protocol first, adopter second."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to use a protocol",
+      "items": [
+       [
+        "Declare the protocol",
+        1
+       ],
+       [
+        "Adopt it with a colon",
+        2
+       ],
+       [
+        "Implement the required methods",
+        3
+       ],
+       [
+        "Call the method",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that starts a struct Cat adopting the Speaker protocol.",
+      "a": [
+       "struct Cat: Speaker {",
+       "struct Cat: Speaker"
+      ],
+      "why": "Colon then protocol name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the extension that adds shout to String",
+      "lines": [
+       "extension String {",
+       "    func shout() -> String { uppercased() + \"!\" }",
+       "}",
+       "print(\"hi\".shout())"
+      ],
+      "why": "Extension first, then use it."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "protocol Greeter { var name: String { get } }\nextension Greeter {\n    func hello() -> String { \"Hi \\(name)\" }\n}\nstruct P: Greeter { let name: String }\nprint(P(name: \"Ann\").hello())",
+      "o": [
+       "Ann",
+       "Hi Ann",
+       "Hi name",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The protocol extension gives P a hello method."
+     }
+    ]
+   },
+   {
+    "title": "SwiftUI Basics Concepts",
+    "period": "Swift book",
+    "learn": [
+     {
+      "h": "Declarative views",
+      "b": "SwiftUI builds screens by describing what they should look like. A screen is a struct that conforms to the View protocol and has a computed property body that returns some View. Text shows a string.",
+      "code": "struct HelloView: View {\n    var body: some View {\n        Text(\"Hello\")\n    }\n}"
+     },
+     {
+      "h": "Stacks and modifiers",
+      "b": "VStack puts views in a vertical column, HStack in a row and ZStack on top of each other. A modifier is a method that returns a changed view, such as .padding() or .font(.title). You chain them one after another.",
+      "code": "VStack {\n    Text(\"A\")\n    Text(\"B\")\n}\nText(\"Hi\").padding().font(.title)"
+     },
+     {
+      "h": "State",
+      "b": "@State marks a value that the view owns and can change. When it changes, SwiftUI redraws the view automatically. A Button takes a title and an action closure that can change the state.",
+      "code": "@State private var count = 0\n\nvar body: some View {\n    Button(\"Tap \\(count)\") {\n        count += 1\n    }\n}"
+     },
+     {
+      "h": "Lists and sharing data",
+      "b": "List and ForEach create rows from an array. @Binding lets a child view change a state value owned by its parent. Models shared by many views use ObservableObject or the newer @Observable. The preview lets you see a view while you edit.",
+      "code": "List(names, id: \\.self) { name in\n    Text(name)\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which property must every SwiftUI View provide?",
+      "o": [
+       "view",
+       "body",
+       "main",
+       "content"
+      ],
+      "a": 1,
+      "why": "var body: some View describes the screen."
+     },
+     {
+      "t": "mc",
+      "q": "How does HStack arrange its children?",
+      "o": [
+       "Vertically",
+       "On top of each other",
+       "In a grid",
+       "Horizontally in a row"
+      ],
+      "a": 3,
+      "why": "H stands for horizontal."
+     },
+     {
+      "t": "mc",
+      "q": "What does this show?",
+      "code": "struct ContentView: View {\n    var body: some View {\n        VStack {\n            Text(\"A\")\n            Text(\"B\")\n        }\n    }\n}",
+      "o": [
+       "Text A above text B",
+       "A and B side by side",
+       "Only A",
+       "Only B"
+      ],
+      "a": 0,
+      "why": "VStack stacks vertically."
+     },
+     {
+      "t": "tf",
+      "q": "A modifier like .padding() returns a changed version of the view.",
+      "a": true,
+      "why": "Modifiers wrap the view and can be chained."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "@State",
+        "Changing value owned by the view"
+       ],
+       [
+        "VStack",
+        "Vertical stack"
+       ],
+       [
+        "Text",
+        "Shows a string"
+       ],
+       [
+        ".font()",
+        "Modifier that changes the text style"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the property wrapper used for changing data owned by a view.",
+      "a": [
+       "@State",
+       "State"
+      ],
+      "why": "@State triggers a redraw when it changes."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make a view that shows Hello",
+      "lines": [
+       "struct HelloView: View {",
+       "    var body: some View {",
+       "        Text(\"Hello\")",
+       "    }",
+       "}"
+      ],
+      "why": "The body returns the Text."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for a tap counter",
+      "items": [
+       [
+        "Declare @State var count",
+        1
+       ],
+       [
+        "Show a Button",
+        2
+       ],
+       [
+        "User taps",
+        3
+       ],
+       [
+        "count changes and the view redraws",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that shows the text Hi on screen.",
+      "a": [
+       "Text(\"Hi\")"
+      ],
+      "why": "Text takes a string."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of a tap counter button",
+      "lines": [
+       "@State private var count = 0",
+       "var body: some View {",
+       "    Button(\"Tap \\(count)\") {",
+       "        count += 1",
+       "    }",
+       "}"
+      ],
+      "why": "The action closure changes the state."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this code do?",
+      "code": "Text(\"Hi\")\n    .padding()\n    .font(.title)",
+      "o": [
+       "Shows Hi in a row",
+       "Nothing",
+       "Shows Hi with padding in a title font",
+       "Hides Hi"
+      ],
+      "a": 2,
+      "why": "The modifiers are chained onto the Text."
+     }
+    ]
+   }
+  ]
+ }
+}

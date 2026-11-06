@@ -1,0 +1,1688 @@
+{
+ "ruby": {
+  "name": "Ruby",
+  "units": [
+   {
+    "title": "puts and Variables",
+    "period": "Ruby basics",
+    "learn": [
+     {
+      "h": "Your first program",
+      "b": "Ruby runs a file from top to bottom, with no main function needed. puts prints a value and then a new line. Files end in .rb and you run them with ruby file.rb.",
+      "code": "puts \"Hello, world!\""
+     },
+     {
+      "h": "print, p and puts",
+      "b": "puts adds a new line after the output. print does not. p shows the value the way a programmer would write it, for example with quotes around text.",
+      "code": "print \"Hi \"\nputs \"there\"\np \"quoted\"\np 42"
+     },
+     {
+      "h": "Variables",
+      "b": "A variable is created by assigning with =. There is no keyword and no type. Names use lowercase words joined by underscores (snake_case). Constants start with a capital letter.",
+      "code": "age = 12\nuser_name = \"Mia\"\nage = age + 1\nPI_ISH = 3.14\nputs age"
+     },
+     {
+      "h": "Everything is an object",
+      "b": "Every value in Ruby is an object with methods you call using a dot. Use .class to see the type, and # starts a comment.",
+      "code": "puts 5.class\nputs \"hi\".class\nputs nil.class\n# comments start with a hash"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method prints a value and then moves to a new line?",
+      "o": [
+       "puts",
+       "print",
+       "echo",
+       "say"
+      ],
+      "a": 0,
+      "why": "puts adds a newline."
+     },
+     {
+      "t": "mc",
+      "q": "How do you start a comment in Ruby?",
+      "o": [
+       "#",
+       "//",
+       "--",
+       "/*"
+      ],
+      "a": 0,
+      "why": "A hash starts a one-line comment."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print \"Hi \"\nputs \"there\"",
+      "o": [
+       "Hi there",
+       "Hi\nthere",
+       "there",
+       "Hi"
+      ],
+      "a": 0,
+      "why": "print stays on the line, so puts continues it."
+     },
+     {
+      "t": "tf",
+      "q": "In Ruby you must write the type of a variable when you create it.",
+      "a": false,
+      "why": "Ruby has no type declarations."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its job",
+      "pairs": [
+       [
+        "puts",
+        "print and add new line"
+       ],
+       [
+        "print",
+        "print with no new line"
+       ],
+       [
+        "p",
+        "show the inspect form"
+       ],
+       [
+        "#",
+        "comment"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the method that prints a value with a new line after it.",
+      "a": [
+       "puts"
+      ],
+      "why": "puts adds a newline."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to set a variable and print it",
+      "lines": [
+       "# a greeting",
+       "name = \"Leo\"",
+       "puts name"
+      ],
+      "why": "Assign first, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Write score = 0",
+        1
+       ],
+       [
+        "Write score = score + 10",
+        2
+       ],
+       [
+        "Write puts score",
+        3
+       ],
+       [
+        "Output: 10",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that prints the text Ruby with puts.",
+      "a": [
+       "puts \"Ruby\"",
+       "puts 'Ruby'"
+      ],
+      "why": "Text goes in quotes."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the program that prints 15",
+      "lines": [
+       "x = 10",
+       "x = x + 5",
+       "puts x"
+      ],
+      "why": "x becomes 15."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "puts 5.class",
+      "o": [
+       "Integer",
+       "Number",
+       "Int",
+       "Fixnum"
+      ],
+      "a": 0,
+      "why": "Whole numbers are objects of class Integer."
+     }
+    ]
+   },
+   {
+    "title": "Strings and Interpolation",
+    "period": "Ruby basics",
+    "learn": [
+     {
+      "h": "Strings",
+      "b": "Strings are written in single or double quotes. Join them with + or <<. length gives the number of characters and [] reads one, starting at 0.",
+      "code": "s = \"Ruby\"\nputs s.length\nputs s[0]\nputs s + \"!\""
+     },
+     {
+      "h": "Interpolation",
+      "b": "Inside double quotes, #{ } puts any Ruby expression into the text. Single quotes do not interpolate and do not read escapes like \\n.",
+      "code": "name = \"Ana\"\nputs \"Hi #{name}\"\nputs \"2 + 2 = #{2 + 2}\"\nputs 'Hi #{name}'"
+     },
+     {
+      "h": "String methods",
+      "b": "Common methods are upcase, downcase, capitalize, reverse, strip, include?, start_with?, sub, gsub and split. Methods ending in ? return true or false.",
+      "code": "puts \"ruby\".upcase\nputs \"abc\".reverse\nputs \"a-b\".gsub(\"-\", \"+\")\nputs \"hello\".include?(\"ell\")"
+     },
+     {
+      "h": "Changing strings",
+      "b": "Most methods return a new string. Methods ending in ! change the original, such as upcase!. A string times a number repeats it, and gets reads typed input.",
+      "code": "s = \"hi\"\nputs s * 3\ns.upcase!\nputs s"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which quotes allow #{ } interpolation?",
+      "o": [
+       "Double quotes",
+       "Single quotes",
+       "Both",
+       "Neither"
+      ],
+      "a": 0,
+      "why": "Only double quotes interpolate."
+     },
+     {
+      "t": "mc",
+      "q": "What does a method ending in ? usually return?",
+      "o": [
+       "true or false",
+       "A number",
+       "A string",
+       "nil always"
+      ],
+      "a": 0,
+      "why": "Question-mark methods are predicates."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "n = \"Leo\"\na = 10\nputs \"Hi #{n}, #{a + 1}\"",
+      "o": [
+       "Hi Leo, 11",
+       "Hi #{n}, #{a + 1}",
+       "Hi Leo, 10",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Both expressions are filled in."
+     },
+     {
+      "t": "tf",
+      "q": "The string method upcase changes the original string.",
+      "a": false,
+      "why": "upcase returns a new string, while upcase! changes the original."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "length",
+        "count characters"
+       ],
+       [
+        "reverse",
+        "flip the text"
+       ],
+       [
+        "include?",
+        "test for text inside"
+       ],
+       [
+        "gsub",
+        "replace all matches"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type what \"ab\" * 3 prints.",
+      "a": [
+       "ababab"
+      ],
+      "why": "Multiplying a string repeats it."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Hello, Zoe",
+      "lines": [
+       "# a greeting",
+       "who = \"Zoe\"",
+       "puts \"Hello, #{who}\""
+      ],
+      "why": "Set the variable before using it."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "name = \"ana\"",
+        1
+       ],
+       [
+        "name = name.capitalize",
+        2
+       ],
+       [
+        "puts \"Hi #{name}\"",
+        3
+       ],
+       [
+        "Output: Hi Ana",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the double-quoted string with x interpolated, written as: \"x is #{x}\"",
+      "a": [
+       "\"x is #{x}\"",
+       "puts \"x is #{x}\""
+      ],
+      "why": "#{ } inserts the value."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints the length of the word",
+      "lines": [
+       "# length",
+       "w = \"banana\"",
+       "puts w.length"
+      ],
+      "why": "banana has 6 letters."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "puts \"cat\".length",
+      "o": [
+       "3",
+       "2",
+       "4",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The string cat has three characters."
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Math",
+    "period": "Ruby basics",
+    "learn": [
+     {
+      "h": "Integers and floats",
+      "b": "Ruby has Integer for whole numbers of any size and Float for decimals. Dividing two integers gives an integer, so 7 / 2 is 3. Make one of them a float to get 3.5.",
+      "code": "puts 7 / 2\nputs 7 / 2.0\nputs 7 % 2\nputs 2 ** 10"
+     },
+     {
+      "h": "Converting",
+      "b": "to_i turns text into an integer, to_f into a float and to_s into a string. Convert before doing math on text.",
+      "code": "puts \"42\".to_i + 1\nputs 3.9.to_i\nputs 5.to_s + \"!\"\nputs \"2.5\".to_f"
+     },
+     {
+      "h": "Number methods",
+      "b": "Numbers have handy methods: round, floor, ceil, abs, even?, odd?, zero?, and divmod. Math has sqrt and more.",
+      "code": "puts 3.14159.round(2)\nputs 7.even?\nputs -5.abs\nputs Math.sqrt(16)"
+     },
+     {
+      "h": "Times, upto, and random",
+      "b": "Integers can repeat things: 3.times runs a block three times, 1.upto(3) counts up. rand gives a random number. Underscores can make big numbers readable.",
+      "code": "3.times { puts \"hi\" }\n1.upto(3) { |i| puts i }\nputs 1_000_000"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 7 / 2 in Ruby?",
+      "o": [
+       "3",
+       "3.5",
+       "4",
+       "2"
+      ],
+      "a": 0,
+      "why": "Integer division drops the decimals."
+     },
+     {
+      "t": "mc",
+      "q": "Which method turns \"42\" into the number 42?",
+      "o": [
+       "to_i",
+       "to_n",
+       "parse",
+       "int"
+      ],
+      "a": 0,
+      "why": "to_i converts to Integer."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "puts 7 / 2.0",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "3.0"
+      ],
+      "a": 0,
+      "why": "One operand is a float."
+     },
+     {
+      "t": "tf",
+      "q": "2 ** 3 equals 8 in Ruby.",
+      "a": true,
+      "why": "** is the power operator."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "%",
+        "remainder"
+       ],
+       [
+        "**",
+        "power"
+       ],
+       [
+        "to_f",
+        "convert to float"
+       ],
+       [
+        "even?",
+        "true if divisible by 2"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the result of 10 % 3.",
+      "a": [
+       "1"
+      ],
+      "why": "10 divided by 3 leaves 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the sum of two numbers read as text",
+      "lines": [
+       "a = \"4\"",
+       "b = \"5\"",
+       "puts a.to_i + b.to_i"
+      ],
+      "why": "Convert before adding."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "x = \"8\"",
+        1
+       ],
+       [
+        "n = x.to_i",
+        2
+       ],
+       [
+        "m = n * 2",
+        3
+       ],
+       [
+        "puts m prints 16",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the method that turns the string s into an integer, written as s.___ (method name only).",
+      "a": [
+       "to_i"
+      ],
+      "why": "to_i converts to Integer."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 1 2 3 on separate lines",
+      "lines": [
+       "1.upto(3) do |i|",
+       "  puts i",
+       "end"
+      ],
+      "why": "upto counts up."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "puts 8.even?",
+      "o": [
+       "true",
+       "false",
+       "7",
+       "Error"
+      ],
+      "a": 0,
+      "why": "8 is divisible by 2, so even? is true."
+     }
+    ]
+   },
+   {
+    "title": "Conditionals and unless",
+    "period": "Control flow",
+    "learn": [
+     {
+      "h": "if, elsif, else",
+      "b": "if runs code when a condition is true. Extra branches use elsif (note the spelling), and the whole thing ends with the keyword end. Only false and nil count as false, everything else is true, even 0.",
+      "code": "age = 15\nif age >= 18\n  puts \"adult\"\nelsif age >= 13\n  puts \"teen\"\nelse\n  puts \"kid\"\nend"
+     },
+     {
+      "h": "unless",
+      "b": "unless is the opposite of if: it runs when the condition is false. It reads well for simple negatives, but do not use elsif with it.",
+      "code": "logged_in = false\nunless logged_in\n  puts \"please log in\"\nend"
+     },
+     {
+      "h": "One-liners and ternary",
+      "b": "A modifier form puts the condition after the code. The ternary operator ?: chooses between two values. Combine tests with &&, || and !.",
+      "code": "puts \"even\" if 4.even?\nputs \"ok\" unless false\nage = 20\nputs age >= 18 ? \"adult\" : \"minor\""
+     },
+     {
+      "h": "case",
+      "b": "case compares one value against several options with when, and else catches the rest. A when can list many values or a range, and no break is needed.",
+      "code": "day = 3\ncase day\nwhen 1 then puts \"Mon\"\nwhen 2, 3 then puts \"Tue or Wed\"\nwhen 4..7 then puts \"later\"\nelse puts \"?\"\nend"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you spell the extra-branch keyword in Ruby?",
+      "o": [
+       "elsif",
+       "elif",
+       "else if",
+       "elseif"
+      ],
+      "a": 0,
+      "why": "Ruby uses elsif."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword runs code when a condition is false?",
+      "o": [
+       "unless",
+       "until",
+       "except",
+       "not"
+      ],
+      "a": 0,
+      "why": "unless is the negative if."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "age = 15\nif age >= 18\n  puts \"adult\"\nelsif age >= 13\n  puts \"teen\"\nelse\n  puts \"kid\"\nend",
+      "o": [
+       "teen",
+       "adult",
+       "kid",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "15 is below 18 but at least 13."
+     },
+     {
+      "t": "tf",
+      "q": "In Ruby, the number 0 counts as false in a condition.",
+      "a": false,
+      "why": "Only false and nil are falsy."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "elsif",
+        "extra branch"
+       ],
+       [
+        "unless",
+        "run if condition is false"
+       ],
+       [
+        "case",
+        "compare one value to many"
+       ],
+       [
+        "end",
+        "closes the block"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that closes an if block in Ruby.",
+      "a": [
+       "end"
+      ],
+      "why": "Every if ends with end."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print big if x is over 10, else small",
+      "lines": [
+       "if x > 10",
+       "  puts \"big\"",
+       "else",
+       "  puts \"small\"",
+       "end"
+      ],
+      "why": "The else comes before end."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "x = 5",
+        1
+       ],
+       [
+        "if x > 3",
+        2
+       ],
+       [
+        "puts \"yes\"",
+        3
+       ],
+       [
+        "end",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the first line of an unless block that checks the variable done.",
+      "a": [
+       "unless done"
+      ],
+      "why": "unless condition."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the case that prints two for 2",
+      "lines": [
+       "n = 2",
+       "case n",
+       "when 1 then puts \"one\"",
+       "when 2 then puts \"two\"",
+       "end"
+      ],
+      "why": "The 2 branch matches."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "age = 20\nputs age >= 18 ? \"adult\" : \"minor\"",
+      "o": [
+       "adult",
+       "minor",
+       "Nothing",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The ternary picks the first value when the test is true."
+     }
+    ]
+   },
+   {
+    "title": "Loops and Iterators",
+    "period": "Control flow",
+    "learn": [
+     {
+      "h": "while and until",
+      "b": "while repeats while the condition is true, and until repeats while it is false. Both end with end. Change a variable inside, or the loop never stops.",
+      "code": "i = 1\nwhile i <= 3\n  puts i\n  i += 1\nend"
+     },
+     {
+      "h": "Ranges and each",
+      "b": "1..5 is a range that includes 5, and 1...5 stops before 5. Rubyists prefer each to go over items. The part between pipes is the loop variable.",
+      "code": "(1..3).each do |i|\n  puts i\nend\n5.times { |n| puts n }"
+     },
+     {
+      "h": "Other iterators",
+      "b": "step jumps by a number, upto and downto count, and loop do repeats until you break. each_with_index gives the position too.",
+      "code": "1.step(10, 3) { |i| puts i }\n3.downto(1) { |i| puts i }\n%w[a b].each_with_index { |x, i| puts \"#{i} #{x}\" }"
+     },
+     {
+      "h": "break and next",
+      "b": "break leaves a loop at once. next skips to the next round. Ruby has no ++ operator, so use += 1.",
+      "code": "(1..5).each do |i|\n  next if i == 2\n  break if i == 4\n  puts i\nend"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which range does NOT include 5?",
+      "o": [
+       "1...5",
+       "1..5",
+       "(1..5)",
+       "1..10"
+      ],
+      "a": 0,
+      "why": "Three dots exclude the end."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop style do Rubyists use most to go over items?",
+      "o": [
+       "each",
+       "for i in 0..n",
+       "goto",
+       "repeat"
+      ],
+      "a": 0,
+      "why": "each is the idiomatic iterator."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "(1..3).each do |i|\n  puts i\nend",
+      "o": [
+       "1 2 3 on separate lines",
+       "0 1 2",
+       "1 2 3 4",
+       "3 2 1"
+      ],
+      "a": 0,
+      "why": "The range 1..3 includes both ends."
+     },
+     {
+      "t": "tf",
+      "q": "Ruby has a ++ operator to add one to a variable.",
+      "a": false,
+      "why": "Use i += 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "break",
+        "leave the loop"
+       ],
+       [
+        "next",
+        "skip this round"
+       ],
+       [
+        "1..5",
+        "range including 5"
+       ],
+       [
+        "1...5",
+        "range excluding 5"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that skips to the next round of a loop.",
+      "a": [
+       "next"
+      ],
+      "why": "next ignores the rest of this round."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 1 to 3 with times",
+      "lines": [
+       "3.times do |i|",
+       "  puts i + 1",
+       "end"
+      ],
+      "why": "times starts at 0, so add 1."
+     },
+     {
+      "t": "order",
+      "q": "Put the while loop in order",
+      "items": [
+       [
+        "i = 1",
+        1
+       ],
+       [
+        "while i <= 3",
+        2
+       ],
+       [
+        "puts i; i += 1",
+        3
+       ],
+       [
+        "end",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the method that repeats a block 5 times, written as 5.___ (method name only).",
+      "a": [
+       "times"
+      ],
+      "why": "5.times runs five times."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the loop that prints 2, 4, 6",
+      "lines": [
+       "2.step(6, 2) do |i|",
+       "  puts i",
+       "end"
+      ],
+      "why": "step 2 skips every other number."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "(1..5).each do |i|\n  next if i == 2\n  break if i == 4\n  puts i\nend",
+      "o": [
+       "1 3 on separate lines",
+       "1 2 3",
+       "2 4",
+       "3"
+      ],
+      "a": 0,
+      "why": "next skips 2 and break stops at 4."
+     }
+    ]
+   },
+   {
+    "title": "Arrays",
+    "period": "Collections",
+    "learn": [
+     {
+      "h": "Making arrays",
+      "b": "An array is an ordered list in square brackets. Items can be any type, and you read them by position starting at 0. Negative positions count from the end, so -1 is the last. %w[] makes an array of words.",
+      "code": "fruits = [\"apple\", \"pear\"]\nputs fruits[0]\nputs fruits[-1]\nwords = %w[a b c]\nputs words.length"
+     },
+     {
+      "h": "Adding and removing",
+      "b": "push or << adds at the end, pop removes the last, shift removes the first and unshift adds at the front. insert and delete work by value or position.",
+      "code": "a = [1, 2]\na << 3\na.push(4)\na.pop\nputs a.inspect"
+     },
+     {
+      "h": "Useful methods",
+      "b": "first, last, length, include?, sort, reverse, uniq, sum, min, max and join work on arrays. join makes one string from the items.",
+      "code": "n = [3, 1, 2]\nputs n.sort.inspect\nputs n.max\nputs n.sum\nputs n.join(\"-\")"
+     },
+     {
+      "h": "map, select, reject",
+      "b": "map transforms every item, select keeps items that pass a test, and reject removes them. Each returns a new array. Blocks are written with braces or do and end.",
+      "code": "n = [1, 2, 3, 4]\np n.map { |x| x * 2 }\np n.select { |x| x.even? }\np n.reject { |x| x.even? }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first item in a Ruby array?",
+      "o": [
+       "0",
+       "1",
+       "-1",
+       "It varies"
+      ],
+      "a": 0,
+      "why": "Positions start at 0."
+     },
+     {
+      "t": "mc",
+      "q": "What does array[-1] give?",
+      "o": [
+       "The last item",
+       "The first item",
+       "An error",
+       "The array length"
+      ],
+      "a": 0,
+      "why": "Negative indexes count from the end."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "p [1, 2, 3].map { |x| x * 2 }",
+      "o": [
+       "[2, 4, 6]",
+       "[1, 2, 3]",
+       "[1, 4, 9]",
+       "[2, 3, 4]"
+      ],
+      "a": 0,
+      "why": "map doubles each item."
+     },
+     {
+      "t": "tf",
+      "q": "The << operator adds an item to the end of an array.",
+      "a": true,
+      "why": "a << x appends x."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "push",
+        "add to the end"
+       ],
+       [
+        "pop",
+        "remove the last item"
+       ],
+       [
+        "select",
+        "keep matching items"
+       ],
+       [
+        "join",
+        "make a string from items"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type what [3, 1, 2].max returns.",
+      "a": [
+       "3"
+      ],
+      "why": "3 is the biggest."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to add 3 to the array and print its size",
+      "lines": [
+       "a = [1, 2]",
+       "a << 3",
+       "puts a.length"
+      ],
+      "why": "The array has 3 items after adding."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "a = [1, 2, 3, 4]",
+        1
+       ],
+       [
+        "b = a.select { |x| x > 2 }",
+        2
+       ],
+       [
+        "c = b.sum",
+        3
+       ],
+       [
+        "puts c prints 7",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates an array xs holding 1, 2 and 3.",
+      "a": [
+       "xs = [1, 2, 3]",
+       "xs=[1,2,3]"
+      ],
+      "why": "Square brackets with commas."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints the squares as an array",
+      "lines": [
+       "a = [1, 2, 3]",
+       "s = a.map { |x| x * x }",
+       "p s"
+      ],
+      "why": "map squares each item."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "a = [1, 2]\na.push(3)\nputs a.length",
+      "o": [
+       "3",
+       "2",
+       "4",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The array has three items after the push."
+     }
+    ]
+   },
+   {
+    "title": "Hashes",
+    "period": "Collections",
+    "learn": [
+     {
+      "h": "Making hashes",
+      "b": "A hash stores key and value pairs. Symbols such as :name are the usual keys, and the short form name: \"Ana\" means the same. Read a value with [].",
+      "code": "user = { name: \"Ana\", age: 12 }\nputs user[:name]\nuser[:age] = 13\nputs user[:age]"
+     },
+     {
+      "h": "Missing keys",
+      "b": "Reading a missing key gives nil. fetch raises an error unless you give a default. A Hash.new(0) gives 0 for missing keys, which is perfect for counting.",
+      "code": "user = { name: \"Ana\" }\np user[:x]\nputs user.fetch(:x, \"none\")\ncount = Hash.new(0)\ncount[\"a\"] += 1\nputs count[\"a\"]"
+     },
+     {
+      "h": "Looping",
+      "b": "each gives the key and value. keys, values and key? help you inspect a hash. delete removes a key and size counts pairs.",
+      "code": "h = { a: 1, b: 2 }\nh.each do |k, v|\n  puts \"#{k} = #{v}\"\nend\nputs h.keys.inspect\nputs h.key?(:a)"
+     },
+     {
+      "h": "Transforming",
+      "b": "map, select and sum work on hashes too. Symbols are cheap, unique names, while strings as keys are fine too. Hashes keep the order you added items.",
+      "code": "prices = { tea: 2, cake: 5 }\nputs prices.values.sum\nbig = prices.select { |k, v| v > 3 }\nputs big.keys.inspect"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a hash store?",
+      "o": [
+       "Key and value pairs",
+       "Only numbers",
+       "Only text",
+       "Ordered numbers only"
+      ],
+      "a": 0,
+      "why": "Each key maps to a value."
+     },
+     {
+      "t": "mc",
+      "q": "What does user[:x] return if the key :x is missing?",
+      "o": [
+       "nil",
+       "0",
+       "An error",
+       "false"
+      ],
+      "a": 0,
+      "why": "A missing key reads as nil."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "user = { name: \"Ana\", age: 12 }\nputs user[:name]",
+      "o": [
+       "Ana",
+       "name",
+       "user",
+       "nil"
+      ],
+      "a": 0,
+      "why": "user[:name] reads the value stored under :name."
+     },
+     {
+      "t": "tf",
+      "q": "Hash.new(0) gives 0 for keys that are not set yet.",
+      "a": true,
+      "why": "The default value is 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "keys",
+        "list of keys"
+       ],
+       [
+        "values",
+        "list of values"
+       ],
+       [
+        "key?",
+        "does this key exist"
+       ],
+       [
+        "fetch",
+        "read with a default or error"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the method that lists a hash's keys (just the name).",
+      "a": [
+       "keys"
+      ],
+      "why": "h.keys returns the keys."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to count a letter with Hash.new(0)",
+      "lines": [
+       "count = Hash.new(0)",
+       "count[\"a\"] += 1 # first",
+       "count[\"a\"] += 1 # second",
+       "puts count[\"a\"]"
+      ],
+      "why": "The count reaches 2."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "h = { a: 1 }",
+        1
+       ],
+       [
+        "h[:b] = 2",
+        2
+       ],
+       [
+        "h.each do |k, v|",
+        3
+       ],
+       [
+        "puts \"#{k} #{v}\" end",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a hash h with the key name set to \"Zoe\" (use the name: form).",
+      "a": [
+       "h = { name: \"Zoe\" }",
+       "h = {name: \"Zoe\"}"
+      ],
+      "why": "The short key form is name: value."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 13",
+      "lines": [
+       "user = { age: 12 }",
+       "user[:age] += 1",
+       "puts user[:age]"
+      ],
+      "why": "+= 1 makes it 13."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "h = { a: 1, b: 2 }\nputs h.size",
+      "o": [
+       "2",
+       "1",
+       "3",
+       "nil"
+      ],
+      "a": 0,
+      "why": "The hash has two pairs."
+     }
+    ]
+   },
+   {
+    "title": "Methods",
+    "period": "Methods and objects",
+    "learn": [
+     {
+      "h": "Defining methods",
+      "b": "Use def, a name, optional parameters and end. The last expression is returned automatically, though you can write return. Names use snake_case.",
+      "code": "def add(a, b)\n  a + b\nend\nputs add(2, 3)"
+     },
+     {
+      "h": "Default and keyword arguments",
+      "b": "A parameter can have a default with =. Keyword arguments end in a colon and are named in the call, which makes calls easy to read.",
+      "code": "def greet(name, greeting = \"Hello\")\n  \"#{greeting}, #{name}\"\nend\nputs greet(\"Sam\")\ndef box(w: 1, h: 1)\n  w * h\nend\nputs box(h: 5)"
+     },
+     {
+      "h": "Return values",
+      "b": "Without return, a method gives back its last evaluated line. You can return several values as an array. A method with no value returns nil. Questions end in ? and dangerous methods end in !.",
+      "code": "def min_max(a)\n  return a.min, a.max\nend\nlo, hi = min_max([3, 1, 2])\nputs lo\nputs hi"
+     },
+     {
+      "h": "Splat and scope",
+      "b": "*args collects extra arguments into an array. Variables inside a method are local and not visible outside it. Parentheses on calls are optional, but they keep code clear.",
+      "code": "def total(*nums)\n  nums.sum\nend\nputs total(1, 2, 3)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword starts a method definition?",
+      "o": [
+       "def",
+       "fun",
+       "function",
+       "method"
+      ],
+      "a": 0,
+      "why": "Methods begin with def."
+     },
+     {
+      "t": "mc",
+      "q": "What does a Ruby method return if you do not write return?",
+      "o": [
+       "The value of its last expression",
+       "Always nil",
+       "The first argument",
+       "Nothing, it is an error"
+      ],
+      "a": 0,
+      "why": "The last evaluated expression is returned."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "def greet(n, g = \"Hello\")\n  \"#{g}, #{n}\"\nend\nputs greet(\"Ann\")",
+      "o": [
+       "Hello, Ann",
+       "Hi, Ann",
+       "Ann",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The default greeting is used."
+     },
+     {
+      "t": "tf",
+      "q": "A variable created inside a method can be used outside of it.",
+      "a": false,
+      "why": "It is local to the method."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "def",
+        "define a method"
+       ],
+       [
+        "return",
+        "give back a value early"
+       ],
+       [
+        "*args",
+        "collect extra arguments"
+       ],
+       [
+        "name: value in a call",
+        "keyword argument"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that closes a method definition.",
+      "a": [
+       "end"
+      ],
+      "why": "def ... end."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the method that doubles a number, then call it",
+      "lines": [
+       "def double(x)",
+       "  x * 2",
+       "end",
+       "puts double(4)"
+      ],
+      "why": "Define it before calling it."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "def add(a, b)",
+        1
+       ],
+       [
+        "a + b",
+        2
+       ],
+       [
+        "end",
+        3
+       ],
+       [
+        "puts add(2, 3)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the first line of a method named hello with one parameter name.",
+      "a": [
+       "def hello(name)",
+       "def hello name"
+      ],
+      "why": "def name(parameters)."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the method and call that print 9",
+      "lines": [
+       "def sq(n)",
+       "  n * n",
+       "end",
+       "puts sq(3)"
+      ],
+      "why": "3 squared is 9."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "def box(w: 2, h: 1)\n  w * h\nend\nputs box(h: 3)",
+      "o": [
+       "6",
+       "5",
+       "7",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The call box(h: 3) uses w = 2: 2 * 3."
+     }
+    ]
+   },
+   {
+    "title": "Blocks, Procs and Lambdas",
+    "period": "Methods and objects",
+    "learn": [
+     {
+      "h": "Blocks",
+      "b": "A block is a chunk of code passed to a method, written with braces or do and end. A method runs it with yield. Blocks can take parameters between pipes.",
+      "code": "def twice\n  yield\n  yield\nend\ntwice { puts \"hi\" }\ndef show\n  yield 5\nend\nshow { |n| puts n * 2 }"
+     },
+     {
+      "h": "block_given?",
+      "b": "A method can check whether a block was passed with block_given?. That lets one method work both with and without a block. Blocks are what each, map and select use.",
+      "code": "def maybe\n  if block_given?\n    yield\n  else\n    puts \"no block\"\n  end\nend\nmaybe\nmaybe { puts \"block\" }"
+     },
+     {
+      "h": "Procs",
+      "b": "A Proc saves a block in a variable so you can keep it and call it later with call. Proc.new and proc create one.",
+      "code": "say = Proc.new { |name| puts \"Hi #{name}\" }\nsay.call(\"Ana\")"
+     },
+     {
+      "h": "Lambdas",
+      "b": "A lambda is a stricter proc made with lambda or the arrow ->. It checks the number of arguments, and return inside it only leaves the lambda. Call it with call, .() or [].",
+      "code": "sq = ->(x) { x * x }\nputs sq.call(4)\nputs sq.(5)\nputs sq[6]"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword runs the block given to a method?",
+      "o": [
+       "yield",
+       "call",
+       "run",
+       "block"
+      ],
+      "a": 0,
+      "why": "yield runs the block."
+     },
+     {
+      "t": "mc",
+      "q": "How do you run a lambda stored in the variable f?",
+      "o": [
+       "f.call(1)",
+       "f(1)",
+       "run f",
+       "f.yield(1)"
+      ],
+      "a": 0,
+      "why": "Call a lambda or proc with call."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "sq = ->(x) { x * x }\nputs sq.call(4)",
+      "o": [
+       "16",
+       "8",
+       "4",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The lambda squares its argument."
+     },
+     {
+      "t": "tf",
+      "q": "A lambda checks the number of arguments you pass it.",
+      "a": true,
+      "why": "A lambda is strict about arguments."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "yield",
+        "run the given block"
+       ],
+       [
+        "Proc",
+        "saved block"
+       ],
+       [
+        "->(x) { }",
+        "lambda syntax"
+       ],
+       [
+        "block_given?",
+        "was a block passed"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the method name used to run a lambda or proc.",
+      "a": [
+       "call"
+      ],
+      "why": "f.call runs it."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the method that runs its block twice, then call it",
+      "lines": [
+       "def twice",
+       "  yield # first",
+       "  yield # second",
+       "end",
+       "twice { puts \"hi\" }"
+      ],
+      "why": "Define the method, then pass the block."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "def run",
+        1
+       ],
+       [
+        "yield",
+        2
+       ],
+       [
+        "end",
+        3
+       ],
+       [
+        "run { puts 1 }",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword inside a method that runs the block it was given.",
+      "a": [
+       "yield"
+      ],
+      "why": "yield calls the block."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lambda and its call that print 10",
+      "lines": [
+       "# a lambda",
+       "dbl = ->(x) { x * 2 }",
+       "puts dbl.call(5)"
+      ],
+      "why": "5 doubled is 10."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "def twice\n  yield\n  yield\nend\ntwice { print \"hi \" }",
+      "o": [
+       "hi hi",
+       "hi",
+       "Nothing",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The method yields twice, so the block runs twice on the same line."
+     }
+    ]
+   },
+   {
+    "title": "Classes, Modules and Gems",
+    "period": "Methods and objects",
+    "learn": [
+     {
+      "h": "Classes",
+      "b": "A class is a blueprint. initialize runs on Class.new, and instance variables start with @. attr_reader and attr_accessor make getters and setters. Create objects with new.",
+      "code": "class Dog\n  attr_reader :name\n  def initialize(name)\n    @name = name\n  end\n  def bark\n    \"#{@name} says woof\"\n  end\nend\nd = Dog.new(\"Rex\")\nputs d.bark"
+     },
+     {
+      "h": "Inheritance",
+      "b": "A class can inherit with <, getting all its methods. Use super to call the parent's version. A class can have only one parent.",
+      "code": "class Animal\n  def sound\n    \"...\"\n  end\nend\nclass Cat < Animal\n  def sound\n    \"Meow\"\n  end\nend\nputs Cat.new.sound"
+     },
+     {
+      "h": "Modules",
+      "b": "A module groups methods and constants, and cannot be instantiated. Use it as a namespace with ::, or mix it into a class with include to share behavior.",
+      "code": "module Greet\n  def hello\n    \"Hello from #{self.class}\"\n  end\nend\nclass Bot\n  include Greet\nend\nputs Bot.new.hello"
+     },
+     {
+      "h": "Gems and require",
+      "b": "A gem is a package of Ruby code shared on rubygems.org. Install one with gem install name or list it in a Gemfile and run bundle install. Then load it with require.",
+      "code": "# terminal: gem install colorize\nrequire \"json\"\nputs({ a: 1 }.to_json)\n# Gemfile: gem \"sinatra\""
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method runs when you call Dog.new?",
+      "o": [
+       "initialize",
+       "constructor",
+       "start",
+       "new_object"
+      ],
+      "a": 0,
+      "why": "initialize is the constructor."
+     },
+     {
+      "t": "mc",
+      "q": "What does an instance variable name start with?",
+      "o": [
+       "@",
+       "$",
+       "#",
+       "&"
+      ],
+      "a": 0,
+      "why": "Instance variables start with @."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Animal\n  def sound\n    \"...\"\n  end\nend\nclass Cat < Animal\n  def sound\n    \"Meow\"\n  end\nend\nputs Cat.new.sound",
+      "o": [
+       "Meow",
+       "...",
+       "Cat",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Cat overrides sound."
+     },
+     {
+      "t": "tf",
+      "q": "You can create an object from a module with Module.new on its own like a class.",
+      "a": false,
+      "why": "Modules cannot be instantiated, but you can include them in a class."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "class",
+        "blueprint for objects"
+       ],
+       [
+        "module",
+        "group of shared methods"
+       ],
+       [
+        "gem",
+        "shared package of Ruby code"
+       ],
+       [
+        "require",
+        "load a library"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that mixes a module into a class.",
+      "a": [
+       "include"
+      ],
+      "why": "include Module adds its methods."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the class and object creation",
+      "lines": [
+       "class Pet",
+       "  def initialize(name)",
+       "    @name = name",
+       "  end",
+       "end",
+       "p = Pet.new(\"Mo\")"
+      ],
+      "why": "Define the class, then create an object."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Define class Dog",
+        1
+       ],
+       [
+        "Create d = Dog.new(\"Rex\")",
+        2
+       ],
+       [
+        "Call d.bark",
+        3
+       ],
+       [
+        "See the output",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the first line that declares a class named Car that inherits from Vehicle.",
+      "a": [
+       "class Car < Vehicle"
+      ],
+      "why": "Use < for inheritance."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the class with a getter and print the name",
+      "lines": [
+       "class Pet",
+       "  attr_reader :name",
+       "  def initialize(n)",
+       "    @name = n",
+       "  end",
+       "end",
+       "puts Pet.new(\"Zoe\").name"
+      ],
+      "why": "attr_reader gives access to @name."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "module Greet\n  def hello\n    \"Hello from #{self.class}\"\n  end\nend\nclass Bot\n  include Greet\nend\nputs Bot.new.hello",
+      "o": [
+       "Hello from Bot",
+       "Hello",
+       "Bot",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The module method runs on a Bot object."
+     }
+    ]
+   }
+  ]
+ }
+}

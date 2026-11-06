@@ -224,7 +224,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
       if ((e.key === 'r' || e.key === 'R') && !e.ctrlKey && !e.metaKey && (e.target as HTMLElement)?.tagName !== 'INPUT') { (document.querySelector('.lesson [data-speak]') as HTMLButtonElement | null)?.click(); return; }
       if (phase === 'answer') {
         const n = Number(e.key);
-        if (n >= 1 && n <= 4) (document.querySelectorAll('.lesson .opt')[n - 1] as HTMLButtonElement | undefined)?.click();
+        if (n >= 1 && n <= 4 && (e.target as HTMLElement)?.tagName !== 'INPUT') (document.querySelectorAll('.lesson .opt')[n - 1] as HTMLButtonElement | undefined)?.click();
         if (e.key === 'Enter') { if (it?.t === 'card') next(); else if (ready()) check(); }
       } else if (e.key === 'Enter') next();
     };
@@ -307,7 +307,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
               {it.t === 'input' && (
                 <div className="typein">
                   <input autoFocus className={phase === 'feedback' ? (lastOk ? 'right' : 'wrong') : ''} value={sel || ''} disabled={phase !== 'answer'} placeholder="Type your answer"
-                    onChange={(e) => setSel(e.target.value)} onKeyDown={(e) => { if (e.key === 'Enter' && sel?.trim()) check(); }} aria-label="Your answer" />
+                    onChange={(e) => setSel(e.target.value)} aria-label="Your answer" />
                   {it.hint && phase === 'answer' && <details><summary>Hint</summary>{it.hint}</details>}
                 </div>
               )}
@@ -413,7 +413,7 @@ export function Face({ c, mood, size }: { c: CastMember; mood: 'neutral' | 'happ
     return () => clearInterval(iv);
   }, [talk]);
   const src = talk && frame ? face(c, 'talk') : face(c, mood);
-  return <img className={`face ${talk ? 'talking' : ''}`} src={src} alt={c.name} style={size ? { width: size } : undefined} />;
+  return <img className={`who-face ${talk ? 'talking' : ''}`} src={src} alt={c.name} style={size ? { width: size } : undefined} />;
 }
 
 const normAns = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^\p{L}\p{N}.\-]+/gu, ' ').replace(/\s+/g, ' ').trim();

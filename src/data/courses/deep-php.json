@@ -1,0 +1,1702 @@
+{
+ "php": {
+  "name": "PHP",
+  "units": [
+   {
+    "title": "PHP Tags and echo",
+    "period": "PHP basics",
+    "learn": [
+     {
+      "h": "What PHP is",
+      "b": "PHP is a language that runs on a web server and builds web pages before they are sent to the browser. PHP code lives in files ending in .php and sits between the tags <?php and ?>.",
+      "code": "<?php\necho \"Hello, world!\";\n?>"
+     },
+     {
+      "h": "echo and semicolons",
+      "b": "echo prints text into the page. Every PHP statement must end with a semicolon. Text goes in quotes, either single or double.",
+      "code": "<?php\necho \"One\";\necho 'Two';\n?>"
+     },
+     {
+      "h": "Mixing HTML and PHP",
+      "b": "A .php file can contain normal HTML with PHP blocks inside it. Only the output of the PHP part reaches the browser, never the PHP code itself.",
+      "code": "<h1>\n<?php echo \"Welcome\"; ?>\n</h1>"
+     },
+     {
+      "h": "Comments",
+      "b": "Comments are ignored by PHP. Use // or # for one line and /* ... */ for many lines. print also outputs text, but echo is the usual choice.",
+      "code": "<?php\n// a comment\necho 5 + 3; // prints 8\n?>"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What do you put at the start of PHP code?",
+      "o": [
+       "<?php",
+       "<php>",
+       "<?echo",
+       "<script>"
+      ],
+      "a": 0,
+      "why": "PHP code starts with the tag <?php."
+     },
+     {
+      "t": "mc",
+      "q": "What must end each PHP statement?",
+      "o": [
+       "A semicolon",
+       "A period",
+       "A colon",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "Semicolons are required."
+     },
+     {
+      "t": "mc",
+      "q": "What does the browser receive from this code?",
+      "code": "<?php echo \"Hi\"; ?>",
+      "o": [
+       "Hi",
+       "echo \"Hi\";",
+       "<?php echo \"Hi\"; ?>",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "The server runs the PHP and sends only its output."
+     },
+     {
+      "t": "tf",
+      "q": "PHP code runs inside the visitor's browser.",
+      "a": false,
+      "why": "PHP runs on the server."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its job",
+      "pairs": [
+       [
+        "<?php",
+        "opens PHP code"
+       ],
+       [
+        "?>",
+        "closes PHP code"
+       ],
+       [
+        "echo",
+        "prints text"
+       ],
+       [
+        "//",
+        "one-line comment"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that prints text in PHP.",
+      "a": [
+       "echo"
+      ],
+      "why": "echo outputs text."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a PHP script that prints Hello",
+      "lines": [
+       "<?php",
+       "echo \"Hello\";",
+       "?>"
+      ],
+      "why": "Open tag, statement, close tag."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Visitor asks for page.php",
+        1
+       ],
+       [
+        "Server runs the PHP code",
+        2
+       ],
+       [
+        "Server sends the output as HTML",
+        3
+       ],
+       [
+        "Browser shows the page",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the statement that prints Hi with echo (include the semicolon).",
+      "a": [
+       "echo \"Hi\";",
+       "echo 'Hi';"
+      ],
+      "why": "Do not forget the semicolon."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the script that prints 8",
+      "lines": [
+       "<?php",
+       "echo 5 + 3;",
+       "?>"
+      ],
+      "why": "5 + 3 is 8."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\necho \"A\";\necho \"B\";\n?>",
+      "o": [
+       "AB",
+       "A B",
+       "A",
+       "Error"
+      ],
+      "a": 0,
+      "why": "echo does not add a new line or space."
+     }
+    ]
+   },
+   {
+    "title": "Variables and Data Types",
+    "period": "PHP basics",
+    "learn": [
+     {
+      "h": "Variables",
+      "b": "A variable name starts with a dollar sign. You create one by assigning a value with =. There are no type keywords. Names are case sensitive.",
+      "code": "<?php\n$name = \"Mia\";\n$age = 12;\necho $name;\n?>"
+     },
+     {
+      "h": "Types",
+      "b": "PHP has string, int, float, bool and array, plus null for no value. The type comes from the value, and PHP changes types automatically when needed.",
+      "code": "$a = 5;       // int\n$b = 2.5;     // float\n$c = true;    // bool\n$d = \"hi\";    // string"
+     },
+     {
+      "h": "Checking types",
+      "b": "var_dump shows both the type and the value. gettype gives the type name. You can cast with (int), (string) and so on.",
+      "code": "$x = \"5\";\nvar_dump($x);\n$n = (int)$x;\nvar_dump($n);\necho gettype(3.5);"
+     },
+     {
+      "h": "Constants",
+      "b": "A constant never changes. Create one with define or const, and use it without a dollar sign. By convention names are capitals.",
+      "code": "define(\"SITE\", \"MyShop\");\nconst TAX = 0.2;\necho SITE;\necho TAX;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How does every PHP variable name start?",
+      "o": [
+       "$",
+       "@",
+       "#",
+       "var"
+      ],
+      "a": 0,
+      "why": "Variable names begin with a dollar sign."
+     },
+     {
+      "t": "mc",
+      "q": "Which function shows a variable's type and value?",
+      "o": [
+       "var_dump",
+       "typeof",
+       "show",
+       "print_r only"
+      ],
+      "a": 0,
+      "why": "var_dump prints both."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "<?php\n$a = 3;\n$b = 4;\necho $a + $b;\n?>",
+      "o": [
+       "7",
+       "34",
+       "3 4",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The plus operator adds numbers."
+     },
+     {
+      "t": "tf",
+      "q": "You must declare the type of a PHP variable before using it.",
+      "a": false,
+      "why": "PHP picks the type from the value."
+     },
+     {
+      "t": "match",
+      "q": "Match each value to its type",
+      "pairs": [
+       [
+        "42",
+        "int"
+       ],
+       [
+        "3.14",
+        "float"
+       ],
+       [
+        "true",
+        "bool"
+       ],
+       [
+        "\"hello\"",
+        "string"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that returns the type name of a variable, for example gettype($x).",
+      "a": [
+       "gettype"
+      ],
+      "why": "gettype gives the type name."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to set a variable and print it",
+      "lines": [
+       "<?php",
+       "$score = 10;",
+       "echo $score;",
+       "?>"
+      ],
+      "why": "Assign first, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "$a = \"5\";",
+        1
+       ],
+       [
+        "$b = (int)$a;",
+        2
+       ],
+       [
+        "$c = $b + 1;",
+        3
+       ],
+       [
+        "echo $c; prints 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the statement that stores the number 10 in a variable called $score.",
+      "a": [
+       "$score = 10;",
+       "$score=10;"
+      ],
+      "why": "Use the dollar sign and a semicolon."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints 15",
+      "lines": [
+       "<?php",
+       "$x = 10;",
+       "$x = $x + 5;",
+       "echo $x;",
+       "?>"
+      ],
+      "why": "x becomes 15."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\n$x = \"5\";\nvar_dump((int)$x);\n?>",
+      "o": [
+       "int(5)",
+       "string(1) \"5\"",
+       "5",
+       "float(5)"
+      ],
+      "a": 0,
+      "why": "The cast turns the string into an integer."
+     }
+    ]
+   },
+   {
+    "title": "Working with Strings",
+    "period": "PHP basics",
+    "learn": [
+     {
+      "h": "Quotes",
+      "b": "Double quotes read variables inside them, and single quotes do not. Escapes like \\n work only in double quotes. Join strings with a dot.",
+      "code": "$n = \"Leo\";\necho \"Hi $n\";\necho 'Hi $n';\necho \"Hi \" . $n . \"!\";"
+     },
+     {
+      "h": "Length and search",
+      "b": "strlen gives the length. strpos finds where text starts, counting from 0, and gives false if not found. str_contains tests for text in PHP 8 and later.",
+      "code": "echo strlen(\"hello\");\necho strpos(\"hello\", \"l\");\nvar_dump(str_contains(\"hello\", \"ell\"));"
+     },
+     {
+      "h": "Changing text",
+      "b": "strtoupper and strtolower change case. str_replace swaps text. substr cuts a piece. trim removes spaces at the ends. ucfirst capitalizes the first letter.",
+      "code": "echo strtoupper(\"abc\");\necho str_replace(\"a\", \"o\", \"cat\");\necho substr(\"hello\", 1, 3);\necho ucfirst(\"php\");"
+     },
+     {
+      "h": "Splitting and joining",
+      "b": "explode splits a string into an array using a separator. implode joins an array into a string. Use heredoc or sprintf for longer text and formatting.",
+      "code": "$parts = explode(\",\", \"a,b,c\");\necho count($parts);\necho implode(\"-\", $parts);\necho sprintf(\"%05.1f\", 3.14159);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which operator joins strings in PHP?",
+      "o": [
+       ". (dot)",
+       "+",
+       "&",
+       "++"
+      ],
+      "a": 0,
+      "why": "The dot is the concatenation operator."
+     },
+     {
+      "t": "mc",
+      "q": "Which quotes let a variable be read inside the string?",
+      "o": [
+       "Double quotes",
+       "Single quotes",
+       "Backticks only",
+       "Neither"
+      ],
+      "a": 0,
+      "why": "Only double quotes expand variables."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "<?php\necho strtoupper(\"hello\");\n?>",
+      "o": [
+       "HELLO",
+       "hello",
+       "Hello",
+       "Error"
+      ],
+      "a": 0,
+      "why": "strtoupper makes all letters capital."
+     },
+     {
+      "t": "tf",
+      "q": "strlen(\"hello\") returns 5.",
+      "a": true,
+      "why": "There are five characters."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "strlen",
+        "length of a string"
+       ],
+       [
+        "str_replace",
+        "swap text for other text"
+       ],
+       [
+        "explode",
+        "split into an array"
+       ],
+       [
+        "implode",
+        "join an array into a string"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that returns the length of a string.",
+      "a": [
+       "strlen"
+      ],
+      "why": "strlen counts characters."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Hi Zoe",
+      "lines": [
+       "<?php",
+       "$n = \"Zoe\";",
+       "echo \"Hi $n\";",
+       "?>"
+      ],
+      "why": "Define n, then use it in double quotes."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "$s = \"a,b,c\";",
+        1
+       ],
+       [
+        "$p = explode(\",\", $s);",
+        2
+       ],
+       [
+        "$c = count($p);",
+        3
+       ],
+       [
+        "echo $c; prints 3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the function call that returns the length of $word, starting with strlen.",
+      "a": [
+       "strlen($word)"
+      ],
+      "why": "strlen takes the string in parentheses."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints Hi Max",
+      "lines": [
+       "<?php",
+       "$a = \"Hi \";",
+       "$b = \"Max\";",
+       "echo $a . $b;",
+       "?>"
+      ],
+      "why": "The dot joins the two strings."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\n$n = \"Leo\";\necho '$n';\n?>",
+      "o": [
+       "$n",
+       "Leo",
+       "n",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Single quotes do not expand variables."
+     }
+    ]
+   },
+   {
+    "title": "Operators and if Statements",
+    "period": "PHP basics",
+    "learn": [
+     {
+      "h": "Operators",
+      "b": "Math operators are + - * / % and ** for power. Assignment shortcuts include +=, -= and .= for strings. ++ adds one. Comparison uses ==, ===, != and <, >.",
+      "code": "$a = 7;\n$a += 3;\necho $a % 4;\necho 2 ** 3;"
+     },
+     {
+      "h": "== vs ===",
+      "b": "== compares values after converting types, so 5 == \"5\" is true. === also compares the type, so 5 === \"5\" is false. Prefer === to avoid surprises.",
+      "code": "var_dump(5 == \"5\");\nvar_dump(5 === \"5\");"
+     },
+     {
+      "h": "if, elseif, else",
+      "b": "if runs code when a condition is true. Combine conditions with && (and), || (or) and !. Use elseif (one word) for extra branches.",
+      "code": "$age = 15;\nif ($age >= 18) {\n    echo \"adult\";\n} elseif ($age >= 13) {\n    echo \"teen\";\n} else {\n    echo \"kid\";\n}"
+     },
+     {
+      "h": "match and ??",
+      "b": "match returns a value and uses strict comparison (PHP 8). The null coalescing operator ?? gives a default when a value is missing or null. A switch statement is the older alternative.",
+      "code": "$day = 2;\n$name = match($day) {\n    1 => \"Mon\",\n    2 => \"Tue\",\n    default => \"Other\",\n};\necho $name;\necho $x ?? \"none\";"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which comparison also checks the type?",
+      "o": [
+       "===",
+       "==",
+       "=",
+       "!="
+      ],
+      "a": 0,
+      "why": "=== is strict."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword adds another branch after if in PHP?",
+      "o": [
+       "elseif",
+       "elsif",
+       "elif",
+       "otherwise"
+      ],
+      "a": 0,
+      "why": "elseif is the PHP keyword, one word."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "<?php\n$age = 15;\nif ($age >= 18) {\n    echo \"adult\";\n} elseif ($age >= 13) {\n    echo \"teen\";\n} else {\n    echo \"kid\";\n}\n?>",
+      "o": [
+       "teen",
+       "adult",
+       "kid",
+       "Error"
+      ],
+      "a": 0,
+      "why": "15 is not 18 or more but is 13 or more."
+     },
+     {
+      "t": "tf",
+      "q": "In PHP, 5 === \"5\" is true.",
+      "a": false,
+      "why": "The types differ, so strict comparison fails."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "%",
+        "remainder"
+       ],
+       [
+        "**",
+        "power"
+       ],
+       [
+        "&&",
+        "and"
+       ],
+       [
+        "??",
+        "default if null"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the result of 10 % 4.",
+      "a": [
+       "2"
+      ],
+      "why": "10 divided by 4 leaves 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print big for numbers over 10, else small",
+      "lines": [
+       "if ($n > 10) {",
+       "    echo \"big\";",
+       "} else {",
+       "    echo \"small\";",
+       "}"
+      ],
+      "why": "The else block comes last."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "$n = 5;",
+        1
+       ],
+       [
+        "if ($n > 3) {",
+        2
+       ],
+       [
+        "echo \"yes\";",
+        3
+       ],
+       [
+        "}",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the operator that checks equal value AND type.",
+      "a": [
+       "==="
+      ],
+      "why": "Triple equals is strict."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the if/else that prints pass for a score of 60 or more",
+      "lines": [
+       "<?php",
+       "if ($score >= 60) {",
+       "    echo \"pass\";",
+       "} else {",
+       "    echo \"fail\";",
+       "}",
+       "?>"
+      ],
+      "why": "The test comes first."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\n$a = 7;\necho $a % 3;\n?>",
+      "o": [
+       "1",
+       "2",
+       "0",
+       "3"
+      ],
+      "a": 0,
+      "why": "7 % 3 leaves 1."
+     }
+    ]
+   },
+   {
+    "title": "Loops",
+    "period": "PHP basics",
+    "learn": [
+     {
+      "h": "while",
+      "b": "while repeats as long as its condition is true. Change something inside the loop, or it never ends.",
+      "code": "$i = 1;\nwhile ($i <= 3) {\n    echo $i;\n    $i++;\n}"
+     },
+     {
+      "h": "for",
+      "b": "for puts the start, the test and the step in one line, separated by semicolons.",
+      "code": "for ($i = 1; $i <= 5; $i++) {\n    echo $i . \" \";\n}"
+     },
+     {
+      "h": "foreach",
+      "b": "foreach goes through every item of an array. Add key => value to get keys too. It is the loop you will use most in PHP.",
+      "code": "$fruits = [\"apple\", \"pear\"];\nforeach ($fruits as $f) {\n    echo $f . \"\\n\";\n}"
+     },
+     {
+      "h": "break and continue",
+      "b": "break stops the loop. continue jumps to the next round. do-while runs the body once before testing.",
+      "code": "for ($i = 1; $i <= 5; $i++) {\n    if ($i == 2) continue;\n    if ($i == 4) break;\n    echo $i;\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which loop is made to go through an array?",
+      "o": [
+       "foreach",
+       "while",
+       "switch",
+       "repeat"
+      ],
+      "a": 0,
+      "why": "foreach visits each element."
+     },
+     {
+      "t": "mc",
+      "q": "In for ($i = 0; $i < 3; $i++), how many times does the body run?",
+      "o": [
+       "3",
+       "2",
+       "4",
+       "Forever"
+      ],
+      "a": 0,
+      "why": "i is 0, 1 and 2."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "<?php\nfor ($i = 1; $i <= 3; $i++) {\n    echo $i;\n}\n?>",
+      "o": [
+       "123",
+       "012",
+       "1 2 3",
+       "321"
+      ],
+      "a": 0,
+      "why": "echo adds no spaces, so the numbers join."
+     },
+     {
+      "t": "tf",
+      "q": "A while loop with a condition that never becomes false runs forever.",
+      "a": true,
+      "why": "That is an infinite loop."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its use",
+      "pairs": [
+       [
+        "for",
+        "count with a start, test, step"
+       ],
+       [
+        "foreach",
+        "go through array items"
+       ],
+       [
+        "break",
+        "leave the loop"
+       ],
+       [
+        "continue",
+        "skip to next round"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that skips to the next round of a loop.",
+      "a": [
+       "continue"
+      ],
+      "why": "continue ignores the rest of this round."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the numbers 1 to 3",
+      "lines": [
+       "for ($i = 1; $i <= 3; $i++) {",
+       "    echo $i;",
+       "}"
+      ],
+      "why": "The echo is inside the braces."
+     },
+     {
+      "t": "order",
+      "q": "Put the while loop in order",
+      "items": [
+       [
+        "$i = 1;",
+        1
+       ],
+       [
+        "while ($i <= 3) {",
+        2
+       ],
+       [
+        "echo $i;",
+        3
+       ],
+       [
+        "$i++; }",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the foreach header that goes through $list giving each item the name $item.",
+      "a": [
+       "foreach ($list as $item) {",
+       "foreach ($list as $item)"
+      ],
+      "why": "foreach (array as value)."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the loop that prints 246",
+      "lines": [
+       "for ($i = 2; $i <= 6; $i += 2) {",
+       "    echo $i;",
+       "}"
+      ],
+      "why": "Step by 2."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\nfor ($i = 1; $i <= 5; $i++) {\n    if ($i == 2) continue;\n    if ($i == 4) break;\n    echo $i;\n}\n?>",
+      "o": [
+       "13",
+       "123",
+       "12",
+       "1"
+      ],
+      "a": 0,
+      "why": "2 is skipped and the loop stops at 4."
+     }
+    ]
+   },
+   {
+    "title": "Arrays: Indexed and Associative",
+    "period": "Data and functions",
+    "learn": [
+     {
+      "h": "Indexed arrays",
+      "b": "An array holds many values. Create it with square brackets. Positions are numbered from 0. Use count to get the size and [] to add at the end.",
+      "code": "$colors = [\"red\", \"green\"];\n$colors[] = \"blue\";\necho $colors[0];\necho count($colors);"
+     },
+     {
+      "h": "Associative arrays",
+      "b": "An associative array uses names as keys instead of numbers. Write key => value pairs.",
+      "code": "$user = [\"name\" => \"Ana\", \"age\" => 12];\necho $user[\"name\"];\n$user[\"age\"] = 13;"
+     },
+     {
+      "h": "Looping with keys",
+      "b": "foreach with $key => $value goes through pairs. Use isset to test if a key exists and unset to remove one.",
+      "code": "foreach ($user as $k => $v) {\n    echo \"$k: $v\\n\";\n}\nvar_dump(isset($user[\"x\"]));"
+     },
+     {
+      "h": "Array functions",
+      "b": "array_push adds at the end, array_pop removes the last, in_array checks for a value, array_keys lists keys, sort orders values, and array_merge joins arrays. print_r displays an array.",
+      "code": "$n = [3, 1, 2];\nsort($n);\nprint_r($n);\necho in_array(2, $n) ? \"yes\" : \"no\";"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first item in an indexed array?",
+      "o": [
+       "0",
+       "1",
+       "-1",
+       "It varies"
+      ],
+      "a": 0,
+      "why": "Positions start at 0."
+     },
+     {
+      "t": "mc",
+      "q": "How do you read the value for the key \"name\" in $user?",
+      "o": [
+       "$user[\"name\"]",
+       "$user.name",
+       "$user->name only",
+       "user(\"name\")"
+      ],
+      "a": 0,
+      "why": "Use square brackets with the key."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "<?php\n$c = [\"red\", \"green\", \"blue\"];\necho $c[2];\n?>",
+      "o": [
+       "blue",
+       "red",
+       "green",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Index 2 is the third item."
+     },
+     {
+      "t": "tf",
+      "q": "An associative array uses text keys instead of numbers.",
+      "a": true,
+      "why": "Keys can be strings like name or age."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "count",
+        "number of items"
+       ],
+       [
+        "in_array",
+        "check if a value exists"
+       ],
+       [
+        "sort",
+        "order the values"
+       ],
+       [
+        "isset",
+        "check if a key exists"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that returns how many items an array has.",
+      "a": [
+       "count"
+      ],
+      "why": "count($arr) gives the size."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to build an array and print its first item",
+      "lines": [
+       "<?php",
+       "$a = [\"x\", \"y\"];",
+       "echo $a[0];",
+       "?>"
+      ],
+      "why": "Create first, then read."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "$a = [1, 2];",
+        1
+       ],
+       [
+        "$a[] = 3;",
+        2
+       ],
+       [
+        "$n = count($a);",
+        3
+       ],
+       [
+        "echo $n; prints 3",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the statement that creates an array $nums holding 1, 2 and 3 using square brackets.",
+      "a": [
+       "$nums = [1, 2, 3];",
+       "$nums=[1,2,3];"
+      ],
+      "why": "Square brackets hold the items."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints Ana",
+      "lines": [
+       "<?php",
+       "$u = [\"name\" => \"Ana\"];",
+       "echo $u[\"name\"];",
+       "?>"
+      ],
+      "why": "Use the key to read the value."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\n$a = [1, 2];\n$a[] = 3;\necho count($a);\n?>",
+      "o": [
+       "3",
+       "2",
+       "4",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Adding with [] makes three items."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "Data and functions",
+    "learn": [
+     {
+      "h": "Defining a function",
+      "b": "Use the function keyword, a name, parameters and a body. return sends back a value. Call it by name with parentheses.",
+      "code": "function add($a, $b) {\n    return $a + $b;\n}\necho add(2, 3);"
+     },
+     {
+      "h": "Types and defaults",
+      "b": "You can give parameters and results types, and defaults with =. Add declare(strict_types=1) at the top to make type checks strict.",
+      "code": "function greet(string $name, string $hi = \"Hello\"): string {\n    return \"$hi, $name\";\n}\necho greet(\"Sam\");"
+     },
+     {
+      "h": "Scope",
+      "b": "Variables made inside a function are local and not visible outside. Variables outside are not visible inside unless you pass them as arguments. The global keyword exists but is best avoided.",
+      "code": "$x = 5;\nfunction f() {\n    $y = 1;\n    return $y;\n}\necho f();"
+     },
+     {
+      "h": "Arrow functions and built-ins",
+      "b": "fn is short for small functions, like fn($x) => $x * 2. They are handy with array_map and array_filter. PHP also has hundreds of built-in functions, such as strlen and count.",
+      "code": "$d = fn($x) => $x * 2;\necho $d(4);\nprint_r(array_map($d, [1, 2, 3]));"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword defines a function in PHP?",
+      "o": [
+       "function",
+       "def",
+       "fun",
+       "func"
+      ],
+      "a": 0,
+      "why": "PHP uses function."
+     },
+     {
+      "t": "mc",
+      "q": "What does return do?",
+      "o": [
+       "Sends a value back and ends the function",
+       "Prints a value",
+       "Starts a loop",
+       "Declares a variable"
+      ],
+      "a": 0,
+      "why": "return ends the function and gives a result."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "<?php\nfunction add($a, $b) {\n    return $a + $b;\n}\necho add(2, 3);\n?>",
+      "o": [
+       "5",
+       "23",
+       "2 3",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The function adds its two arguments."
+     },
+     {
+      "t": "tf",
+      "q": "A variable created inside a function is visible everywhere in the script.",
+      "a": false,
+      "why": "It is local to the function."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "function",
+        "declares a function"
+       ],
+       [
+        "return",
+        "gives back a value"
+       ],
+       [
+        "fn",
+        "arrow function"
+       ],
+       [
+        "= \"Hi\" in a parameter",
+        "default value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that gives back a value from a function.",
+      "a": [
+       "return"
+      ],
+      "why": "return sends the result out."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the function that doubles a number, then call it",
+      "lines": [
+       "<?php",
+       "function dbl($x) {",
+       "    return $x * 2;",
+       "}",
+       "echo dbl(4);",
+       "?>"
+      ],
+      "why": "Define, then call."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "function add($a, $b) {",
+        1
+       ],
+       [
+        "return $a + $b;",
+        2
+       ],
+       [
+        "}",
+        3
+       ],
+       [
+        "echo add(2, 3);",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of a function named hello that takes one parameter $name.",
+      "a": [
+       "function hello($name) {",
+       "function hello($name)"
+      ],
+      "why": "function name(parameters)."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the function and call that prints 9",
+      "lines": [
+       "<?php",
+       "function sq($n) {",
+       "    return $n * $n;",
+       "}",
+       "echo sq(3);",
+       "?>"
+      ],
+      "why": "3 squared is 9."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\nfunction greet($n, $h = \"Hello\") {\n    return \"$h, $n\";\n}\necho greet(\"Sam\");\n?>",
+      "o": [
+       "Hello, Sam",
+       "Hi, Sam",
+       "Sam",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The default greeting is used."
+     }
+    ]
+   },
+   {
+    "title": "Forms with $_GET and $_POST",
+    "period": "Web PHP",
+    "learn": [
+     {
+      "h": "HTML forms",
+      "b": "A form sends data to a PHP file. The action says where to send it, and method says how: get puts data in the URL and post sends it in the request body. Each input has a name.",
+      "code": "<form action=\"hi.php\" method=\"post\">\n  <input name=\"user\">\n  <button>Send</button>\n</form>"
+     },
+     {
+      "h": "$_GET and $_POST",
+      "b": "These are special arrays that hold the data. The input's name is the key. Use $_GET for links and searches, and $_POST for forms that change things or send private data.",
+      "code": "<?php\n$name = $_POST[\"user\"];\necho $name;\n// URL ?page=2 gives $_GET[\"page\"]\n?>"
+     },
+     {
+      "h": "Check before using",
+      "b": "A visitor may leave a field out, so check it first. isset tests if a key exists, empty tests for blank values, and ?? gives a default. $_SERVER[\"REQUEST_METHOD\"] tells you if the form was sent.",
+      "code": "if ($_SERVER[\"REQUEST_METHOD\"] === \"POST\") {\n    $name = $_POST[\"user\"] ?? \"guest\";\n    echo $name;\n}"
+     },
+     {
+      "h": "Never trust input",
+      "b": "Anything from a form can be changed by a visitor. Validate it, for example with filter_var, and clean it before output. Use htmlspecialchars when printing user text to stop XSS attacks.",
+      "code": "$email = $_POST[\"email\"] ?? \"\";\nif (filter_var($email, FILTER_VALIDATE_EMAIL)) {\n    echo \"ok\";\n}\necho htmlspecialchars($_POST[\"msg\"] ?? \"\");"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which array holds data sent by a form with method post?",
+      "o": [
+       "$_POST",
+       "$_FORM",
+       "$_SEND",
+       "$_BODY"
+      ],
+      "a": 0,
+      "why": "$_POST holds POST data."
+     },
+     {
+      "t": "mc",
+      "q": "Where does the method get put the data?",
+      "o": [
+       "In the URL",
+       "Hidden in the body only",
+       "In a cookie",
+       "Nowhere"
+      ],
+      "a": 0,
+      "why": "GET data shows up in the URL query string."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print when the form field user is Ana?",
+      "code": "<?php\necho $_POST[\"user\"];\n?>",
+      "o": [
+       "Ana",
+       "user",
+       "$_POST",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "The key matches the input name."
+     },
+     {
+      "t": "tf",
+      "q": "You can fully trust data that arrives from a form.",
+      "a": false,
+      "why": "Visitors can send anything, so always validate."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "$_GET",
+        "data in the URL"
+       ],
+       [
+        "$_POST",
+        "data in the request body"
+       ],
+       [
+        "isset",
+        "key exists and not null"
+       ],
+       [
+        "filter_var",
+        "validate a value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the superglobal array that holds data from a post form.",
+      "a": [
+       "$_POST"
+      ],
+      "why": "Form data arrives in $_POST."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to greet the visitor, using a default",
+      "lines": [
+       "<?php",
+       "$n = $_GET[\"n\"] ?? \"guest\";",
+       "echo \"Hi $n\";",
+       "?>"
+      ],
+      "why": "?? gives the default."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Visitor fills the form",
+        1
+       ],
+       [
+        "Browser sends it to the PHP file",
+        2
+       ],
+       [
+        "PHP reads $_POST",
+        3
+       ],
+       [
+        "PHP prints a reply",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the expression that reads the field called city from a post form.",
+      "a": [
+       "$_POST[\"city\"]",
+       "$_POST['city']"
+      ],
+      "why": "The key is the input name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints the page number from the URL, defaulting to 1",
+      "lines": [
+       "<?php",
+       "$p = $_GET[\"page\"] ?? 1;",
+       "echo $p;",
+       "?>"
+      ],
+      "why": "?? supplies 1 when page is missing."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: for the URL page.php?id=7, what does this print?",
+      "code": "<?php\necho $_GET[\"id\"];\n?>",
+      "o": [
+       "7",
+       "id",
+       "?id=7",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "$_GET[\"id\"] holds 7."
+     }
+    ]
+   },
+   {
+    "title": "OOP: Classes and Objects",
+    "period": "Web PHP",
+    "learn": [
+     {
+      "h": "Classes and objects",
+      "b": "A class is a blueprint, and an object is one thing made from it with new. Properties hold data and methods are functions in the class. Use -> to reach them, and $this inside the class.",
+      "code": "class Dog {\n    public $name = \"Rex\";\n    public function bark() {\n        return $this->name . \" says woof\";\n    }\n}\n$d = new Dog();\necho $d->bark();"
+     },
+     {
+      "h": "Constructors",
+      "b": "The method __construct runs when an object is created. PHP 8 lets you declare properties right in its parameters. Visibility keywords are public, protected and private.",
+      "code": "class User {\n    public function __construct(\n        private string $name,\n        public int $age\n    ) {}\n    public function getName() { return $this->name; }\n}\n$u = new User(\"Ana\", 12);\necho $u->getName();"
+     },
+     {
+      "h": "Inheritance and static",
+      "b": "A class can extend another and gets its properties and methods. parent:: reaches the parent's version. static members belong to the class and are used with ::.",
+      "code": "class Animal {\n    public function sound() { return \"...\"; }\n}\nclass Cat extends Animal {\n    public function sound() { return \"Meow\"; }\n}\necho (new Cat())->sound();"
+     },
+     {
+      "h": "Interfaces",
+      "b": "An interface lists methods a class must have. A class says implements. Together with abstract classes and traits they keep big programs organized.",
+      "code": "interface Speaks {\n    public function speak();\n}\nclass Bot implements Speaks {\n    public function speak() { return \"beep\"; }\n}\necho (new Bot())->speak();"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword creates an object?",
+      "o": [
+       "new",
+       "create",
+       "make",
+       "object"
+      ],
+      "a": 0,
+      "why": "new Dog() builds a Dog."
+     },
+     {
+      "t": "mc",
+      "q": "What do you use inside a class to refer to the current object?",
+      "o": [
+       "$this",
+       "self only",
+       "this",
+       "$me"
+      ],
+      "a": 0,
+      "why": "$this is the current object."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "<?php\nclass Dog {\n    public $name = \"Rex\";\n    public function bark() {\n        return $this->name . \" says woof\";\n    }\n}\n$d = new Dog();\necho $d->bark();\n?>",
+      "o": [
+       "Rex says woof",
+       "Rex",
+       "woof",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The method joins name and text."
+     },
+     {
+      "t": "tf",
+      "q": "A private property can be read directly from outside the class.",
+      "a": false,
+      "why": "private means only the class can use it."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its meaning",
+      "pairs": [
+       [
+        "new",
+        "create an object"
+       ],
+       [
+        "->",
+        "reach a property or method"
+       ],
+       [
+        "__construct",
+        "runs on creation"
+       ],
+       [
+        "extends",
+        "inherit from a class"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the special method that runs when an object is created.",
+      "a": [
+       "__construct",
+       "construct"
+      ],
+      "why": "__construct is the constructor."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the class and its use",
+      "lines": [
+       "class Cat {",
+       "    public $name = \"Mo\";",
+       "}",
+       "$c = new Cat();",
+       "echo $c->name;"
+      ],
+      "why": "Define the class, create the object, read it."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Declare class Dog",
+        1
+       ],
+       [
+        "Create $d = new Dog()",
+        2
+       ],
+       [
+        "Call $d->bark()",
+        3
+       ],
+       [
+        "See the output",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the statement that creates an object of class Car stored in $c (with new).",
+      "a": [
+       "$c = new Car();",
+       "$c = new Car;"
+      ],
+      "why": "new ClassName()."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the class with a constructor that sets the name",
+      "lines": [
+       "class Pet {",
+       "    public function __construct(public $name) {}",
+       "}",
+       "$p = new Pet(\"Zoe\");",
+       "echo $p->name;"
+      ],
+      "why": "The constructor promotes the parameter to a property."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "<?php\nclass Animal {\n    public function sound() { return \"...\"; }\n}\nclass Cat extends Animal {\n    public function sound() { return \"Meow\"; }\n}\necho (new Cat())->sound();\n?>",
+      "o": [
+       "Meow",
+       "...",
+       "Cat",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Cat overrides sound."
+     }
+    ]
+   },
+   {
+    "title": "Databases with PDO and Security",
+    "period": "Web PHP",
+    "learn": [
+     {
+      "h": "PDO",
+      "b": "PDO is PHP's way to talk to many databases such as MySQL or SQLite with the same code. You create a connection with a DSN, a username and a password, and tell it to throw exceptions on errors.",
+      "code": "$pdo = new PDO(\"sqlite:app.db\");\n$pdo->setAttribute(\n    PDO::ATTR_ERRMODE,\n    PDO::ERRMODE_EXCEPTION\n);"
+     },
+     {
+      "h": "Prepared statements",
+      "b": "Never put user input directly into SQL, because that allows SQL injection. Use a prepared statement with placeholders, then pass the values to execute. The database treats them as data, never as code.",
+      "code": "$stmt = $pdo->prepare(\n    \"SELECT * FROM users WHERE email = ?\"\n);\n$stmt->execute([$_POST[\"email\"]]);"
+     },
+     {
+      "h": "Reading results",
+      "b": "fetch returns one row and fetchAll returns all rows as arrays. For inserts, call execute with the values. Named placeholders such as :name make longer queries easier to read.",
+      "code": "$stmt = $pdo->prepare(\n    \"INSERT INTO users (name) VALUES (:name)\"\n);\n$stmt->execute([\"name\" => \"Ana\"]);\n$rows = $pdo->query(\"SELECT * FROM users\")\n    ->fetchAll(PDO::FETCH_ASSOC);"
+     },
+     {
+      "h": "Output safety",
+      "b": "Escape user text with htmlspecialchars before printing it in HTML to stop XSS. Store passwords with password_hash and check them with password_verify, never as plain text.",
+      "code": "echo htmlspecialchars($row[\"name\"]);\n$hash = password_hash(\"secret\", PASSWORD_DEFAULT);\nvar_dump(password_verify(\"secret\", $hash));"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What protects SQL queries from injection?",
+      "o": [
+       "Prepared statements",
+       "Single quotes",
+       "Long passwords",
+       "HTML forms"
+      ],
+      "a": 0,
+      "why": "Placeholders keep data separate from SQL code."
+     },
+     {
+      "t": "mc",
+      "q": "Which function makes user text safe to print in HTML?",
+      "o": [
+       "htmlspecialchars",
+       "strlen",
+       "trim",
+       "addslashes only"
+      ],
+      "a": 0,
+      "why": "It turns < and > into harmless entities."
+     },
+     {
+      "t": "mc",
+      "q": "In this code, what does the question mark stand for?",
+      "code": "$stmt = $pdo->prepare(\"SELECT * FROM users WHERE id = ?\");\n$stmt->execute([5]);",
+      "o": [
+       "A value passed to execute",
+       "A comment",
+       "A column name",
+       "A table name"
+      ],
+      "a": 0,
+      "why": "The placeholder is replaced by the bound value safely."
+     },
+     {
+      "t": "tf",
+      "q": "It is safe to put $_POST values straight into an SQL string.",
+      "a": false,
+      "why": "That allows SQL injection."
+     },
+     {
+      "t": "match",
+      "q": "Match each to its job",
+      "pairs": [
+       [
+        "PDO",
+        "connect to a database"
+       ],
+       [
+        "prepare",
+        "create a safe query with placeholders"
+       ],
+       [
+        "fetchAll",
+        "get all result rows"
+       ],
+       [
+        "password_hash",
+        "store a password safely"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that escapes HTML in user text before output.",
+      "a": [
+       "htmlspecialchars"
+      ],
+      "why": "It prevents XSS."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to run a prepared query",
+      "lines": [
+       "$stmt = $pdo->prepare(\"SELECT * FROM t WHERE id = ?\");",
+       "$stmt->execute([$id]);",
+       "$row = $stmt->fetch();"
+      ],
+      "why": "Prepare, execute, then fetch."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "Connect with new PDO",
+        1
+       ],
+       [
+        "Prepare the SQL with placeholders",
+        2
+       ],
+       [
+        "Execute with values",
+        3
+       ],
+       [
+        "Fetch the rows",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the PDO method that creates a prepared statement, written as $pdo->___(...) (method name only).",
+      "a": [
+       "prepare"
+      ],
+      "why": "prepare builds the statement."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the safe way to print a name from a form",
+      "lines": [
+       "<?php",
+       "$name = $_POST[\"name\"] ?? \"\";",
+       "echo htmlspecialchars($name);",
+       "?>"
+      ],
+      "why": "Escape before printing."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which line is safe against SQL injection?",
+      "code": "$stmt = $pdo->prepare(\"SELECT * FROM users WHERE email = ?\");\n// which line goes next?",
+      "o": [
+       "$stmt->execute([$email]);",
+       "$pdo->query(\"... '$email'\");",
+       "echo $email;",
+       "$sql = \"... \" . $email;"
+      ],
+      "a": 0,
+      "why": "Passing values to execute keeps them out of the SQL text."
+     }
+    ]
+   }
+  ]
+ }
+}

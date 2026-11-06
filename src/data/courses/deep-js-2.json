@@ -1,0 +1,2292 @@
+{
+ "js-2": {
+  "name": "JavaScript · Intermediate",
+  "units": [
+   {
+    "title": "Objects",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "Key-value pairs",
+      "b": "An object stores related data as key-value pairs inside curly braces. Each key is a name and each value can be anything: a number, a string, an array or even another object. Pairs are separated by commas.",
+      "code": "let person = {\n  name: \"Ava\",\n  age: 12,\n  hobbies: [\"chess\", \"art\"]\n};"
+     },
+     {
+      "h": "Reading and changing",
+      "b": "Use dot notation, person.name, when you know the key. Use bracket notation, person[\"name\"], when the key is in a variable or has spaces. Assigning to a key changes it, or adds it if it does not exist. Reading a missing key gives undefined.",
+      "code": "console.log(person.name); // Ava\nlet key = \"age\";\nconsole.log(person[key]); // 12\nperson.city = \"Rome\";\nconsole.log(person.zip); // undefined"
+     },
+     {
+      "h": "Deleting and checking",
+      "b": "The delete keyword removes a key. The in operator checks whether a key exists. Nested objects are read by chaining dots, like person.address.city.",
+      "code": "delete person.age;\nconsole.log(\"age\" in person); // false\nlet o = { a: { b: 5 } };\nconsole.log(o.a.b); // 5"
+     },
+     {
+      "h": "Keys, values and entries",
+      "b": "Object.keys gives an array of the keys, Object.values gives the values and Object.entries gives [key, value] pairs. Use for...in to loop over the keys of an object.",
+      "code": "let p = { x: 1, y: 2 };\nconsole.log(Object.keys(p).join()); // x,y\nfor (const k in p) {\n  console.log(k, p[k]);\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you read the name property of person?",
+      "o": [
+       "person(name)",
+       "person.name",
+       "person->name",
+       "person::name"
+      ],
+      "a": 1,
+      "why": "Dot notation reads a property."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword removes a property from an object?",
+      "o": [
+       "remove",
+       "erase",
+       "delete",
+       "drop"
+      ],
+      "a": 2,
+      "why": "delete obj.key removes the key."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let p = { a: 1, b: 2 };\np.c = 3;\nconsole.log(Object.keys(p).length);",
+      "o": [
+       "2",
+       "3",
+       "1",
+       "undefined"
+      ],
+      "a": 1,
+      "why": "The object ends up with keys a, b and c."
+     },
+     {
+      "t": "tf",
+      "q": "Object keys must always be written inside quotes.",
+      "a": false,
+      "why": "Quotes are only needed when the key has spaces or special characters."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece of code to what it does",
+      "pairs": [
+       [
+        "obj.key",
+        "dot access"
+       ],
+       [
+        "obj[\"key\"]",
+        "bracket access"
+       ],
+       [
+        "delete obj.key",
+        "removes a property"
+       ],
+       [
+        "Object.keys(obj)",
+        "array of key names"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Given let o = { x: 5 }; what does console.log(o.y) print?",
+      "a": [
+       "undefined"
+      ],
+      "why": "Missing keys give undefined."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to build a car object and print brand and year together",
+      "lines": [
+       "let car = { brand: \"Fiat\" };",
+       "car.year = 2020;",
+       "console.log(car.brand + car.year);"
+      ],
+      "why": "Add the year before reading it."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Create the object",
+        1
+       ],
+       [
+        "Add a new property",
+        2
+       ],
+       [
+        "Read a property",
+        3
+       ],
+       [
+        "Delete a property",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: person has first and last keys. Print the full name with a space between, like Ada Lovelace.",
+      "starter": "// person is already set\n",
+      "tests": [
+       {
+        "pre": "let person = { first: \"Ada\", last: \"Lovelace\" };",
+        "expect": "Ada Lovelace"
+       },
+       {
+        "pre": "let person = { first: \"Alan\", last: \"Turing\" };",
+        "expect": "Alan Turing"
+       }
+      ],
+      "hint": "Use a template literal with person.first and person.last.",
+      "solution": "console.log(`${person.first} ${person.last}`);",
+      "why": "Dot access works inside ${ }."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: prices is an object of numbers. Print the sum of all its values.",
+      "starter": "// prices is already set\n",
+      "tests": [
+       {
+        "pre": "let prices = { apple: 2, pear: 3, plum: 5 };",
+        "expect": "10"
+       },
+       {
+        "pre": "let prices = { tea: 4 };",
+        "expect": "4"
+       },
+       {
+        "pre": "let prices = {};",
+        "expect": "0"
+       }
+      ],
+      "hint": "Loop over Object.values(prices) and add them up.",
+      "solution": "let sum = 0;\nfor (const v of Object.values(prices)) {\n  sum += v;\n}\nconsole.log(sum);",
+      "why": "Object.values gives an array to loop over."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that returns an array of an object's keys.",
+      "a": [
+       "Object.keys",
+       "keys"
+      ],
+      "why": "Object.keys(obj) lists the keys."
+     }
+    ]
+   },
+   {
+    "title": "Object Methods and this",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "Methods",
+      "b": "A method is a function stored in an object property. Call it with dot notation and brackets. The short form lets you leave out the colon and the function keyword.",
+      "code": "let dog = {\n  name: \"Rex\",\n  speak() {\n    console.log(\"Woof\");\n  }\n};\ndog.speak();"
+     },
+     {
+      "h": "What this means",
+      "b": "Inside a method, this refers to the object the method was called on. That lets a method read and change the object own data. Without this, the method would not know which object it belongs to.",
+      "code": "let counter = {\n  count: 0,\n  inc() {\n    this.count++;\n  }\n};\ncounter.inc();\nconsole.log(counter.count); // 1"
+     },
+     {
+      "h": "Arrow functions and this",
+      "b": "An arrow function does not have its own this. If you use an arrow as an object method, this will not be the object. So for methods, use the normal method syntax. Arrows are great inside methods, where they keep the outer this.",
+      "code": "let o = {\n  v: 3,\n  good() { return this.v; }, // 3\n  bad: () => typeof this // not the object\n};"
+     },
+     {
+      "h": "Chaining and losing this",
+      "b": "If a method ends with return this, you can chain calls like obj.add(1).add(2). Be careful: pulling a method out of its object, like let f = obj.method, loses this, so f() will not work as expected.",
+      "code": "let calc = {\n  total: 0,\n  add(n) {\n    this.total += n;\n    return this;\n  }\n};\ncalc.add(1).add(2);\nconsole.log(calc.total); // 3"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Inside a method, what does this refer to?",
+      "o": [
+       "The global window",
+       "The object the method is called on",
+       "The first argument",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "this is the object before the dot."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the method shorthand?",
+      "o": [
+       "greet: function = () {}",
+       "greet() { }",
+       "function greet: { }",
+       "greet => { }"
+      ],
+      "a": 1,
+      "why": "Shorthand drops the colon and function keyword."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let c = {\n  n: 0,\n  inc() {\n    this.n++;\n    return this.n;\n  }\n};\nconsole.log(c.inc() + c.inc());",
+      "o": [
+       "2",
+       "3",
+       "1",
+       "NaN"
+      ],
+      "a": 1,
+      "why": "The first call returns 1 and the second returns 2, so 1 + 2 = 3."
+     },
+     {
+      "t": "tf",
+      "q": "An arrow function used as an object method has this set to that object.",
+      "a": false,
+      "why": "Arrow functions have no own this."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "this",
+        "the object calling the method"
+       ],
+       [
+        "method",
+        "a function stored in an object"
+       ],
+       [
+        "obj.fn()",
+        "calls a method"
+       ],
+       [
+        "return this",
+        "allows chaining"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Given let o = { v: 4, dbl() { return this.v * 2; } }, what does o.dbl() return?",
+      "a": [
+       "8"
+      ],
+      "why": "this.v is 4, so 4 * 2 is 8."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make a dog speak",
+      "lines": [
+       "let dog = {",
+       "  name: \"Rex\",",
+       "  speak() {",
+       "    console.log(this.name + \" barks\");",
+       "  }",
+       "};",
+       "dog.speak();"
+      ],
+      "why": "Define the object first, then call the method."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Create an object with data",
+        1
+       ],
+       [
+        "Add a method that uses this",
+        2
+       ],
+       [
+        "Call it as obj.method()",
+        3
+       ],
+       [
+        "this points to obj while it runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: counter is an object with a count. Add a method add(n) to it that increases count by n. The test code calls it and prints count.",
+      "starter": "// counter is already set\n// add counter.add = function (n) { ... }\n",
+      "tests": [
+       {
+        "pre": "let counter = { count: 0 };",
+        "post": "counter.add(5);\ncounter.add(2);\nconsole.log(counter.count);",
+        "expect": "7"
+       },
+       {
+        "pre": "let counter = { count: 10 };",
+        "post": "counter.add(5);\ncounter.add(2);\nconsole.log(counter.count);",
+        "expect": "17"
+       },
+       {
+        "pre": "let counter = { count: -2 };",
+        "post": "counter.add(5);\ncounter.add(2);\nconsole.log(counter.count);",
+        "expect": "5"
+       }
+      ],
+      "hint": "counter.add = function (n) { this.count += n; };",
+      "solution": "counter.add = function (n) {\n  this.count += n;\n};",
+      "why": "this.count is the count of the object the method is called on."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: rect has w and h. Add a method area() that returns w times h. The test prints rect.area().",
+      "starter": "// rect is already set\n",
+      "tests": [
+       {
+        "pre": "let rect = { w: 3, h: 4 };",
+        "post": "console.log(rect.area());",
+        "expect": "12"
+       },
+       {
+        "pre": "let rect = { w: 5, h: 5 };",
+        "post": "console.log(rect.area());",
+        "expect": "25"
+       },
+       {
+        "pre": "let rect = { w: 2, h: 10 };",
+        "post": "console.log(rect.area());",
+        "expect": "20"
+       }
+      ],
+      "hint": "rect.area = function () { return this.w * this.h; };",
+      "solution": "rect.area = function () {\n  return this.w * this.h;\n};",
+      "why": "this reads the object own w and h."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that refers to the current object inside a method.",
+      "a": [
+       "this"
+      ],
+      "why": "this is the object calling the method."
+     }
+    ]
+   },
+   {
+    "title": "Destructuring and Spread",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "Unpacking objects",
+      "b": "Destructuring pulls values out of an object into variables in one line. The names inside the braces must match the keys. You can rename with a colon and give a default with =.",
+      "code": "const person = { name: \"Ana\", age: 9 };\nconst { name, age } = person;\nconst { city = \"Rome\" } = person;\nconsole.log(name, age, city); // Ana 9 Rome"
+     },
+     {
+      "h": "Unpacking arrays",
+      "b": "Array destructuring uses square brackets and picks items by position. You can skip an item by leaving a gap. It also gives a neat swap without a temporary variable.",
+      "code": "const [first, , third] = [1, 2, 3];\nconsole.log(first + third); // 4\nlet a = 1;\nlet b = 2;\n[a, b] = [b, a];"
+     },
+     {
+      "h": "Spread",
+      "b": "Three dots spread an array or object into its pieces. Use it to copy or combine them without changing the originals. For objects, later keys win over earlier ones. The copy is shallow, so nested objects are still shared.",
+      "code": "const a = [1, 2];\nconst b = [...a, 3];\nconst o = { x: 1 };\nconst o2 = { ...o, y: 2 };\nconsole.log(b.join(), o2.y); // 1,2,3 2"
+     },
+     {
+      "h": "Rest parameters",
+      "b": "In a function definition, three dots collect all remaining arguments into an array. This lets a function accept any number of values. In destructuring, rest collects whatever is left over.",
+      "code": "function sum(...nums) {\n  let t = 0;\n  for (const n of nums) t += n;\n  return t;\n}\nconsole.log(sum(1, 2, 3)); // 6"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a after const { a } = { a: 1, b: 2 }?",
+      "o": [
+       "2",
+       "1",
+       "undefined",
+       "{ a: 1 }"
+      ],
+      "a": 1,
+      "why": "The key a has the value 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does ... do in [...arr, 4]?",
+      "o": [
+       "Deletes arr",
+       "Copies the items of arr into the new array",
+       "Sorts arr",
+       "Counts arr"
+      ],
+      "a": 1,
+      "why": "Spread inserts each item."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "const [x, , z] = [1, 2, 3];\nconsole.log(x + z);",
+      "o": [
+       "3",
+       "4",
+       "2",
+       "6"
+      ],
+      "a": 1,
+      "why": "x is 1, the gap skips 2, z is 3, so x + z is 4."
+     },
+     {
+      "t": "tf",
+      "q": "{ ...o } creates a new object that has the properties of o.",
+      "a": true,
+      "why": "Spread copies the properties into a new object."
+     },
+     {
+      "t": "match",
+      "q": "Match each syntax to its name",
+      "pairs": [
+       [
+        "const { a } = obj",
+        "object destructuring"
+       ],
+       [
+        "const [a, b] = arr",
+        "array destructuring"
+       ],
+       [
+        "[...arr]",
+        "spread"
+       ],
+       [
+        "function f(...args)",
+        "rest parameter"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does const { n = 5 } = {}; console.log(n) print?",
+      "a": [
+       "5"
+      ],
+      "why": "The default is used because n is missing."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to unpack a person and print both values",
+      "lines": [
+       "const person = { name: \"Ana\", age: 9 };",
+       "const { name, age } = person;",
+       "console.log(name, age);"
+      ],
+      "why": "Destructure after the object exists."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of object destructuring in order",
+      "items": [
+       [
+        "Write const and braces",
+        1
+       ],
+       [
+        "List the property names inside",
+        2
+       ],
+       [
+        "Add = and the object",
+        3
+       ],
+       [
+        "Use the new variables",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: arr is set. Use array destructuring to take the first two items and print them with a space between, like 7 8.",
+      "starter": "// arr is already set\n",
+      "tests": [
+       {
+        "pre": "let arr = [7, 8, 9];",
+        "expect": "7 8"
+       },
+       {
+        "pre": "let arr = [1, 2];",
+        "expect": "1 2"
+       },
+       {
+        "pre": "let arr = [\"a\", \"b\", \"c\", \"d\"];",
+        "expect": "a b"
+       }
+      ],
+      "hint": "const [p, q] = arr; then print p and q.",
+      "solution": "const [p, q] = arr;\nconsole.log(p, q);",
+      "why": "console.log joins values with a space."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: a1 and a2 are arrays. Print a new array containing a1 then a2, joined with commas.",
+      "starter": "// a1 and a2 are already set\n",
+      "tests": [
+       {
+        "pre": "let a1 = [1, 2]; let a2 = [3, 4];",
+        "expect": "1,2,3,4"
+       },
+       {
+        "pre": "let a1 = [9]; let a2 = [5];",
+        "expect": "9,5"
+       },
+       {
+        "pre": "let a1 = []; let a2 = [1, 2];",
+        "expect": "1,2"
+       }
+      ],
+      "hint": "Make [...a1, ...a2] then join(\",\").",
+      "solution": "console.log([...a1, ...a2].join(\",\"));",
+      "why": "Spread both arrays into one."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to swap a and b with destructuring and print 2 1",
+      "lines": [
+       "let a = 1;",
+       "let b = 2;",
+       "[a, b] = [b, a];",
+       "console.log(a, b);"
+      ],
+      "why": "The right side is built before the assignment."
+     }
+    ]
+   },
+   {
+    "title": "map, filter, reduce",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "map transforms",
+      "b": "map runs a function on every item and returns a new array of the results, always the same length as the original. The original array is not changed.",
+      "code": "let nums = [1, 2, 3];\nlet doubled = nums.map(n => n * 2);\nconsole.log(doubled.join()); // 2,4,6"
+     },
+     {
+      "h": "filter keeps",
+      "b": "filter runs a test function on each item and returns a new array with only the items for which the test gave a truthy value. The result can be shorter, or even empty.",
+      "code": "let nums = [1, 2, 3, 4];\nlet evens = nums.filter(n => n % 2 === 0);\nconsole.log(evens.join()); // 2,4"
+     },
+     {
+      "h": "reduce combines",
+      "b": "reduce boils an array down to one value. Your function gets an accumulator (the running result) and the current item, and returns the new accumulator. The second argument of reduce is the starting value. The result can be a number, string, array or object.",
+      "code": "let nums = [1, 2, 3];\nlet sum = nums.reduce((acc, n) => acc + n, 0);\nconsole.log(sum); // 6"
+     },
+     {
+      "h": "Chaining them",
+      "b": "Because map and filter return arrays, you can chain calls one after another. Read a chain from left to right: filter first, then map, then reduce. This replaces many small loops with clear steps.",
+      "code": "let total = [1, 2, 3, 4, 5]\n  .filter(n => n % 2 === 1)\n  .map(n => n * 10)\n  .reduce((a, n) => a + n, 0);\nconsole.log(total); // 90"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does map return?",
+      "o": [
+       "A single value",
+       "A new array of the same length",
+       "Only some items",
+       "undefined"
+      ],
+      "a": 1,
+      "why": "map transforms each item into a new array."
+     },
+     {
+      "t": "mc",
+      "q": "filter keeps the items for which the callback returns...",
+      "o": [
+       "a truthy value",
+       "undefined",
+       "a string",
+       "an array"
+      ],
+      "a": 0,
+      "why": "Truthy results keep the item."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log([1, 2, 3, 4].filter(n => n % 2 === 0).map(n => n * 10).join(\",\"));",
+      "o": [
+       "2,4",
+       "20,40",
+       "10,20,30,40",
+       "40,20"
+      ],
+      "a": 1,
+      "why": "filter keeps 2 and 4, then map multiplies by 10."
+     },
+     {
+      "t": "tf",
+      "q": "reduce can only be used to add numbers.",
+      "a": false,
+      "why": "reduce can build any kind of single result."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "map",
+        "transform every item"
+       ],
+       [
+        "filter",
+        "keep some items"
+       ],
+       [
+        "reduce",
+        "combine into one value"
+       ],
+       [
+        "forEach",
+        "run code, returns undefined"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does [1, 2, 3].reduce((s, n) => s + n, 0) return?",
+      "a": [
+       "6"
+      ],
+      "why": "0 + 1 + 2 + 3 is 6."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to double the numbers and print them",
+      "lines": [
+       "const nums = [1, 2, 3];",
+       "const doubled = nums.map(n => n * 2);",
+       "console.log(doubled.join(\",\"));"
+      ],
+      "why": "map creates the new array before printing."
+     },
+     {
+      "t": "order",
+      "q": "Put a chain on [1,2,3,4] in order",
+      "items": [
+       [
+        "Start with the array [1, 2, 3, 4]",
+        1
+       ],
+       [
+        "filter keeps the evens [2, 4]",
+        2
+       ],
+       [
+        "map doubles them [4, 8]",
+        3
+       ],
+       [
+        "reduce adds them to get 12",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: nums is an array of numbers. Use map to print the squares joined with spaces, like 1 4 9.",
+      "starter": "// nums is already set\n",
+      "tests": [
+       {
+        "pre": "let nums = [1, 2, 3];",
+        "expect": "1 4 9"
+       },
+       {
+        "pre": "let nums = [5];",
+        "expect": "25"
+       },
+       {
+        "pre": "let nums = [0, 4];",
+        "expect": "0 16"
+       }
+      ],
+      "hint": "nums.map(n => n * n).join(\" \")",
+      "solution": "console.log(nums.map(n => n * n).join(\" \"));",
+      "why": "map builds the new array."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: nums is set. Print the sum of the numbers that are greater than 10 (0 if none).",
+      "starter": "// nums is already set\n",
+      "tests": [
+       {
+        "pre": "let nums = [5, 12, 20];",
+        "expect": "32"
+       },
+       {
+        "pre": "let nums = [1, 2];",
+        "expect": "0"
+       },
+       {
+        "pre": "let nums = [11, 3];",
+        "expect": "11"
+       }
+      ],
+      "hint": "Use filter(n => n > 10) then reduce with a start value of 0.",
+      "solution": "console.log(nums.filter(n => n > 10).reduce((a, n) => a + n, 0));",
+      "why": "The start value 0 handles the empty case."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that turns an array into a single value.",
+      "a": [
+       "reduce"
+      ],
+      "why": "reduce combines items into one result."
+     }
+    ]
+   },
+   {
+    "title": "find, some, every and sort",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "find and findIndex",
+      "b": "find returns the first item that passes your test, or undefined if none does. findIndex returns its position, or -1. Both stop as soon as they find a match.",
+      "code": "let nums = [4, 15, 20];\nconsole.log(nums.find(n => n > 10)); // 15\nconsole.log(nums.findIndex(n => n > 10)); // 1"
+     },
+     {
+      "h": "some and every",
+      "b": "some returns true if at least one item passes the test. every returns true only if all items pass. On an empty array, some gives false and every gives true.",
+      "code": "let ages = [12, 18, 30];\nconsole.log(ages.some(a => a < 13)); // true\nconsole.log(ages.every(a => a >= 18)); // false"
+     },
+     {
+      "h": "Sorting",
+      "b": "sort puts items in order, but it changes the original array. By default it compares items as text, so numbers sort in a surprising order. Give it a compare function: (a, b) => a - b sorts numbers upward and (a, b) => b - a sorts downward.",
+      "code": "let a = [10, 9, 1];\nconsole.log(a.sort().join()); // 1,10,9\na.sort((x, y) => x - y);\nconsole.log(a.join()); // 1,9,10"
+     },
+     {
+      "h": "Copying before sorting",
+      "b": "To keep the original order, sort a copy made with the spread syntax. reverse flips an array in place. For strings, the default sort works alphabetically, and localeCompare is the proper compare function for words.",
+      "code": "let words = [\"pear\", \"apple\"];\nlet sorted = [...words].sort();\nconsole.log(sorted.join(), words.join());\n// apple,pear pear,apple"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does find return when no item passes?",
+      "o": [
+       "null",
+       "-1",
+       "undefined",
+       "false"
+      ],
+      "a": 2,
+      "why": "find gives undefined when nothing matches."
+     },
+     {
+      "t": "mc",
+      "q": "What does some return?",
+      "o": [
+       "The first match",
+       "true if at least one item passes",
+       "true only if all pass",
+       "A new array"
+      ],
+      "a": 1,
+      "why": "some means at least one."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log([10, 9, 1].sort().join(\",\"));",
+      "o": [
+       "1,9,10",
+       "1,10,9",
+       "10,9,1",
+       "9,10,1"
+      ],
+      "a": 1,
+      "why": "Default sort compares as text, so 10 comes before 9."
+     },
+     {
+      "t": "tf",
+      "q": "sort() with no argument sorts numbers from smallest to largest.",
+      "a": false,
+      "why": "It sorts as text, so 10 comes before 9."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its result",
+      "pairs": [
+       [
+        "find",
+        "first matching item"
+       ],
+       [
+        "some",
+        "at least one passes"
+       ],
+       [
+        "every",
+        "all pass"
+       ],
+       [
+        "sort((a, b) => a - b)",
+        "numbers ascending"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does [1, 2, 3].every(n => n > 0) return?",
+      "a": [
+       "true"
+      ],
+      "why": "All three items are above 0."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to sort ages numerically and print them",
+      "lines": [
+       "const ages = [30, 12, 25];",
+       "ages.sort((a, b) => a - b);",
+       "console.log(ages.join(\" \"));"
+      ],
+      "why": "Sort before printing."
+     },
+     {
+      "t": "order",
+      "q": "Put the compare function steps in order",
+      "items": [
+       [
+        "sort takes two items a and b",
+        1
+       ],
+       [
+        "It runs compare(a, b)",
+        2
+       ],
+       [
+        "A negative result puts a first",
+        3
+       ],
+       [
+        "A positive result puts b first",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: nums is set. Print the first number greater than 10, or undefined if there is none.",
+      "starter": "// nums is already set\n",
+      "tests": [
+       {
+        "pre": "let nums = [4, 15, 20];",
+        "expect": "15"
+       },
+       {
+        "pre": "let nums = [1, 2];",
+        "expect": "undefined"
+       },
+       {
+        "pre": "let nums = [11, 3];",
+        "expect": "11"
+       }
+      ],
+      "hint": "console.log(nums.find(n => n > 10));",
+      "solution": "console.log(nums.find(n => n > 10));",
+      "why": "find returns the first match or undefined."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: nums is set. Print the numbers sorted from smallest to largest, joined with commas.",
+      "starter": "// nums is already set\n",
+      "tests": [
+       {
+        "pre": "let nums = [10, 9, 1];",
+        "expect": "1,9,10"
+       },
+       {
+        "pre": "let nums = [3, 1, 2];",
+        "expect": "1,2,3"
+       },
+       {
+        "pre": "let nums = [5];",
+        "expect": "5"
+       }
+      ],
+      "hint": "Use sort((a, b) => a - b) before join.",
+      "solution": "nums.sort((a, b) => a - b);\nconsole.log(nums.join(\",\"));",
+      "why": "The compare function makes the sort numeric."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that checks that ALL items pass a test.",
+      "a": [
+       "every"
+      ],
+      "why": "every needs all items to pass."
+     }
+    ]
+   },
+   {
+    "title": "String Methods",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "split and join",
+      "b": "split cuts a string into an array at a separator, and join glues an array back into a string. Splitting on an empty string \"\" gives single characters. reverse flips an array, so split, reverse, join reverses text.",
+      "code": "console.log(\"a-b-c\".split(\"-\").length); // 3\nconsole.log(\"abc\".split(\"\").reverse().join(\"\")); // cba"
+     },
+     {
+      "h": "trim and case",
+      "b": "trim removes spaces and new lines from both ends. trimStart and trimEnd do one side. These are very useful for cleaning up what users type. Remember strings are immutable, so each method returns a new string.",
+      "code": "let s = \"  hi  \";\nconsole.log(s.trim().toUpperCase()); // HI"
+     },
+     {
+      "h": "Searching text",
+      "b": "includes tells if some text is inside. startsWith and endsWith check the ends. indexOf returns the position of the first match or -1. slice(start, end) cuts out a piece, and a negative start counts from the end.",
+      "code": "let s = \"Hello World\";\nconsole.log(s.includes(\"World\")); // true\nconsole.log(s.startsWith(\"He\")); // true\nconsole.log(s.slice(0, 5)); // Hello\nconsole.log(s.slice(-5)); // World"
+     },
+     {
+      "h": "Replacing and padding",
+      "b": "replace swaps the first match, while replaceAll swaps every match. repeat copies a string several times. padStart adds characters to the front until a length is reached, which is handy for times like 07.",
+      "code": "console.log(\"banana\".replaceAll(\"a\", \"o\")); // bonono\nconsole.log(\"ab\".repeat(3)); // ababab\nconsole.log(String(7).padStart(2, \"0\")); // 07"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does \"a-b-c\".split(\"-\") return?",
+      "o": [
+       "The string abc",
+       "An array of three strings",
+       "The number 3",
+       "undefined"
+      ],
+      "a": 1,
+      "why": "split gives the array [\"a\", \"b\", \"c\"]."
+     },
+     {
+      "t": "mc",
+      "q": "What does trim do?",
+      "o": [
+       "Cuts the string in half",
+       "Removes spaces from both ends",
+       "Makes the string lowercase",
+       "Removes all vowels"
+      ],
+      "a": 1,
+      "why": "It strips whitespace at the start and end."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log(\"banana\".replace(\"a\", \"o\"));",
+      "o": [
+       "bonono",
+       "bonana",
+       "bonan",
+       "banana"
+      ],
+      "a": 1,
+      "why": "replace with a string only changes the first match."
+     },
+     {
+      "t": "tf",
+      "q": "replace with a string argument changes only the first match.",
+      "a": true,
+      "why": "Use replaceAll for every match."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "split",
+        "string to array"
+       ],
+       [
+        "trim",
+        "remove edge spaces"
+       ],
+       [
+        "startsWith",
+        "check the beginning"
+       ],
+       [
+        "repeat",
+        "copy the text"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does console.log(\"ab\".repeat(3)) print?",
+      "a": [
+       "ababab"
+      ],
+      "why": "ab is repeated three times."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to trim the text and print it in capitals",
+      "lines": [
+       "let s = \"  hi  \";",
+       "let t = s.trim();",
+       "console.log(t.toUpperCase());"
+      ],
+      "why": "Trim first, then change the case."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to reverse a string in order",
+      "items": [
+       [
+        "split(\"\") makes an array of characters",
+        1
+       ],
+       [
+        "reverse() flips the array",
+        2
+       ],
+       [
+        "join(\"\") glues it back into text",
+        3
+       ],
+       [
+        "console.log prints the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: text is a string of words separated by single spaces. Print how many words it has.",
+      "starter": "// text is already set\n",
+      "tests": [
+       {
+        "pre": "let text = \"a b c\";",
+        "expect": "3"
+       },
+       {
+        "pre": "let text = \"hello\";",
+        "expect": "1"
+       },
+       {
+        "pre": "let text = \"one two\";",
+        "expect": "2"
+       }
+      ],
+      "hint": "text.split(\" \").length",
+      "solution": "console.log(text.split(\" \").length);",
+      "why": "split gives an array and length counts it."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: word is a lowercase word. Print true if it reads the same backwards (a palindrome), otherwise false.",
+      "starter": "// word is already set\n",
+      "tests": [
+       {
+        "pre": "let word = \"racecar\";",
+        "expect": "true"
+       },
+       {
+        "pre": "let word = \"hello\";",
+        "expect": "false"
+       },
+       {
+        "pre": "let word = \"a\";",
+        "expect": "true"
+       }
+      ],
+      "hint": "Compare word with word.split(\"\").reverse().join(\"\").",
+      "solution": "console.log(word === word.split(\"\").reverse().join(\"\"));",
+      "why": "Reverse the text and compare."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that removes spaces at both ends of a string.",
+      "a": [
+       "trim"
+      ],
+      "why": "trim cleans both ends."
+     }
+    ]
+   },
+   {
+    "title": "Scope and Closures",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "Where variables live",
+      "b": "Scope decides where a variable can be seen. Variables outside every function are global. let and const are block scoped: they exist only inside the nearest pair of curly braces. The old var keyword is function scoped, which is why it is avoided.",
+      "code": "let x = 1;\n{\n  let x = 2; // a different x\n}\nconsole.log(x); // 1"
+     },
+     {
+      "h": "Looking outwards",
+      "b": "When JavaScript needs a variable it looks in the current scope first, then in the surrounding scopes, going outwards. An inner variable with the same name hides the outer one, which is called shadowing. Inner code can read outer variables but not the other way round.",
+      "code": "let a = \"outer\";\nfunction f() {\n  console.log(a); // outer\n  let b = \"inner\";\n}\n// console.log(b); // Error"
+     },
+     {
+      "h": "Closures",
+      "b": "A closure is a function that remembers the variables of the place where it was created, even after that place has finished running. Returning an inner function from an outer function gives you a function with private memory.",
+      "code": "function makeCounter() {\n  let c = 0;\n  return () => {\n    c++;\n    return c;\n  };\n}\nconst a = makeCounter();\na();\nconsole.log(a()); // 2"
+     },
+     {
+      "h": "Why closures matter",
+      "b": "Each call of the outer function makes a fresh set of variables, so every closure has its own private state. Nobody outside can change c directly. Closures power counters, private data and callbacks that remember things.",
+      "code": "function makeAdder(n) {\n  return x => x + n;\n}\nconst add5 = makeAdder(5);\nconst add10 = makeAdder(10);\nconsole.log(add5(1), add10(1)); // 6 11"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A variable declared with let inside curly braces is visible...",
+      "o": [
+       "everywhere",
+       "only inside that block",
+       "only in other files",
+       "only after the block"
+      ],
+      "a": 1,
+      "why": "let is block scoped."
+     },
+     {
+      "t": "mc",
+      "q": "What is a closure?",
+      "o": [
+       "A function that remembers the variables where it was created",
+       "A loop that stops",
+       "A way to close a file",
+       "A kind of object"
+      ],
+      "a": 0,
+      "why": "A closure keeps access to its outer variables."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "function makeCounter() {\n  let c = 0;\n  return () => {\n    c++;\n    return c;\n  };\n}\nconst a = makeCounter();\na();\nconsole.log(a());",
+      "o": [
+       "1",
+       "2",
+       "0",
+       "undefined"
+      ],
+      "a": 1,
+      "why": "The same c is shared across calls, so the second call returns 2."
+     },
+     {
+      "t": "tf",
+      "q": "Each call to makeCounter creates its own separate count.",
+      "a": true,
+      "why": "Every call has fresh variables."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "global scope",
+        "visible everywhere"
+       ],
+       [
+        "block scope",
+        "visible inside curly braces"
+       ],
+       [
+        "closure",
+        "function remembering outer variables"
+       ],
+       [
+        "shadowing",
+        "inner name hides outer name"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does let x = 1; { let x = 2; } console.log(x); print?",
+      "a": [
+       "1"
+      ],
+      "why": "The inner x is a different variable."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make an adder that adds 5 and print 8",
+      "lines": [
+       "function makeAdder(n) {",
+       "  return x => x + n;",
+       "}",
+       "const add5 = makeAdder(5);",
+       "console.log(add5(3));"
+      ],
+      "why": "The returned arrow remembers n."
+     },
+     {
+      "t": "order",
+      "q": "Put the closure steps in order",
+      "items": [
+       [
+        "The outer function is called",
+        1
+       ],
+       [
+        "An inner function is created that can see its variables",
+        2
+       ],
+       [
+        "The outer function finishes",
+        3
+       ],
+       [
+        "The inner function still remembers the variables",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write makeCounter() that returns a function. Each call of that function adds 1 to a private count and returns it (1, 2, 3, ...).",
+      "starter": "// write makeCounter below\n",
+      "tests": [
+       {
+        "post": "const c = makeCounter();\nc();\nc();\nconsole.log(c());",
+        "expect": "3"
+       },
+       {
+        "post": "const c1 = makeCounter();\nconst c2 = makeCounter();\nc1();\nc1();\nc2();\nconsole.log(c1() + \",\" + c2());",
+        "expect": "3,2"
+       },
+       {
+        "post": "console.log(makeCounter()());",
+        "expect": "1"
+       }
+      ],
+      "hint": "Create let count = 0 inside makeCounter and return a function that does count++ and returns count.",
+      "solution": "function makeCounter() {\n  let count = 0;\n  return function () {\n    count++;\n    return count;\n  };\n}",
+      "why": "The returned function keeps its own count."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write makeMultiplier(n) that returns a function multiplying its input by n.",
+      "starter": "// write makeMultiplier below\n",
+      "tests": [
+       {
+        "post": "console.log(makeMultiplier(3)(4));",
+        "expect": "12"
+       },
+       {
+        "post": "console.log(makeMultiplier(5)(0));",
+        "expect": "0"
+       },
+       {
+        "post": "console.log(makeMultiplier(2)(-7));",
+        "expect": "-14"
+       }
+      ],
+      "hint": "return x => x * n;",
+      "solution": "function makeMultiplier(n) {\n  return x => x * n;\n}",
+      "why": "The inner function remembers n."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword for a block-scoped variable that can be reassigned.",
+      "a": [
+       "let"
+      ],
+      "why": "let is block scoped and can change."
+     }
+    ]
+   },
+   {
+    "title": "Classes",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "A blueprint for objects",
+      "b": "A class is a blueprint for making many similar objects. You write class Name, and inside it a constructor and methods. By convention class names start with a capital letter.",
+      "code": "class Dog {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    return this.name + \" barks\";\n  }\n}"
+     },
+     {
+      "h": "Creating instances",
+      "b": "Use the new keyword to create an object from a class. The constructor runs automatically and sets up the new object using this. Each object made this way is called an instance and has its own data.",
+      "code": "const d = new Dog(\"Rex\");\nconsole.log(d.speak()); // Rex barks\nconst e = new Dog(\"Bo\");\nconsole.log(e.name); // Bo"
+     },
+     {
+      "h": "Fields and methods",
+      "b": "The constructor sets the starting fields. Methods are written without the function keyword and are shared by all instances. A method can change this to update the instance, and it can return this to allow chaining.",
+      "code": "class Counter {\n  constructor() {\n    this.count = 0;\n  }\n  inc() {\n    this.count++;\n  }\n}\nconst c = new Counter();\nc.inc();\nconsole.log(c.count); // 1"
+     },
+     {
+      "h": "Static and getters",
+      "b": "A static method belongs to the class itself, not to instances, so you call it as ClassName.method(). A getter, written with the get keyword, is read like a property but runs code. Classes must be called with new, or JavaScript throws an error.",
+      "code": "class Circle {\n  constructor(r) { this.r = r; }\n  get diameter() { return this.r * 2; }\n  static unit() { return \"cm\"; }\n}\nconsole.log(new Circle(3).diameter); // 6\nconsole.log(Circle.unit()); // cm"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword creates an instance of a class?",
+      "o": [
+       "make",
+       "create",
+       "new",
+       "class"
+      ],
+      "a": 2,
+      "why": "new calls the constructor and builds the object."
+     },
+     {
+      "t": "mc",
+      "q": "When does the constructor run?",
+      "o": [
+       "When the class is defined",
+       "When an object is created with new",
+       "When a method is called",
+       "Never automatically"
+      ],
+      "a": 1,
+      "why": "It runs on every new."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class Dog {\n  constructor(name) {\n    this.name = name;\n  }\n  speak() {\n    return this.name + \" barks\";\n  }\n}\nconsole.log(new Dog(\"Rex\").speak());",
+      "o": [
+       "Rex",
+       "Rex barks",
+       "barks",
+       "undefined barks"
+      ],
+      "a": 1,
+      "why": "speak returns the name followed by barks."
+     },
+     {
+      "t": "tf",
+      "q": "A class can be called as a plain function without new.",
+      "a": false,
+      "why": "Calling a class without new throws a TypeError."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "class",
+        "blueprint for objects"
+       ],
+       [
+        "constructor",
+        "sets up a new instance"
+       ],
+       [
+        "this",
+        "the current instance"
+       ],
+       [
+        "static",
+        "belongs to the class itself"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Given class P { constructor(x) { this.x = x; } }, what does console.log(new P(7).x) print?",
+      "a": [
+       "7"
+      ],
+      "why": "The constructor stores 7 in x."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define Point and print its y value",
+      "lines": [
+       "class Point {",
+       "  constructor(x, y) {",
+       "    this.x = x;",
+       "    this.y = y;",
+       "  }",
+       "}",
+       "console.log(new Point(3, 4).y);"
+      ],
+      "why": "The class must exist before new is used."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a class in order",
+      "items": [
+       [
+        "Define the class",
+        1
+       ],
+       [
+        "Add a constructor",
+        2
+       ],
+       [
+        "Create an object with new",
+        3
+       ],
+       [
+        "Call a method on it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write a class Rectangle whose constructor takes w and h, and a method area() that returns w times h.",
+      "starter": "// write class Rectangle below\n",
+      "tests": [
+       {
+        "post": "console.log(new Rectangle(3, 4).area());",
+        "expect": "12"
+       },
+       {
+        "post": "console.log(new Rectangle(5, 5).area());",
+        "expect": "25"
+       },
+       {
+        "post": "console.log(new Rectangle(0, 9).area());",
+        "expect": "0"
+       }
+      ],
+      "hint": "Store w and h with this in the constructor, then return this.w * this.h.",
+      "solution": "class Rectangle {\n  constructor(w, h) {\n    this.w = w;\n    this.h = h;\n  }\n  area() {\n    return this.w * this.h;\n  }\n}",
+      "why": "The method uses the instance data."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write a class Counter that starts count at 0 and has a method inc() that adds 1.",
+      "starter": "// write class Counter below\n",
+      "tests": [
+       {
+        "post": "const c = new Counter();\nc.inc();\nc.inc();\nconsole.log(c.count);",
+        "expect": "2"
+       },
+       {
+        "post": "console.log(new Counter().count);",
+        "expect": "0"
+       },
+       {
+        "post": "const c = new Counter();\nc.inc();\nc.inc();\nc.inc();\nconsole.log(c.count);",
+        "expect": "3"
+       }
+      ],
+      "hint": "constructor() { this.count = 0; } and inc() { this.count++; }",
+      "solution": "class Counter {\n  constructor() {\n    this.count = 0;\n  }\n  inc() {\n    this.count++;\n  }\n}",
+      "why": "Each Counter keeps its own count."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the name of the special method that runs when you use new.",
+      "a": [
+       "constructor"
+      ],
+      "why": "The constructor sets up the object."
+     }
+    ]
+   },
+   {
+    "title": "Inheritance",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "extends",
+      "b": "A class can inherit from another class with extends. The new class, called the subclass, gets all the methods of the parent class and can add its own. This avoids copying code.",
+      "code": "class Animal {\n  speak() {\n    return \"...\";\n  }\n}\nclass Cat extends Animal {}\nconsole.log(new Cat().speak()); // ..."
+     },
+     {
+      "h": "Overriding",
+      "b": "If the subclass defines a method with the same name, it overrides the parent version. Instances of the subclass use the new one. Inside it, super.method() calls the parent version, so you can extend behaviour instead of replacing it.",
+      "code": "class A {\n  hi() { return \"A\"; }\n}\nclass B extends A {\n  hi() { return super.hi() + \"B\"; }\n}\nconsole.log(new B().hi()); // AB"
+     },
+     {
+      "h": "super in constructors",
+      "b": "If a subclass has its own constructor, it must call super(...) before touching this. super(...) runs the parent constructor, which sets up the inherited fields. After that the subclass can add its own fields.",
+      "code": "class Animal {\n  constructor(name) { this.name = name; }\n}\nclass Dog extends Animal {\n  constructor(name, breed) {\n    super(name);\n    this.breed = breed;\n  }\n}"
+     },
+     {
+      "h": "instanceof",
+      "b": "The instanceof operator tests whether an object was made by a class or one of its parents. A Dog is an instance of Dog and of Animal. This is the is-a relationship: a dog is an animal.",
+      "code": "const d = new Dog(\"Rex\", \"lab\");\nconsole.log(d instanceof Dog); // true\nconsole.log(d instanceof Animal); // true"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword makes one class inherit from another?",
+      "o": [
+       "inherits",
+       "extends",
+       "from",
+       "super"
+      ],
+      "a": 1,
+      "why": "class B extends A makes B a subclass of A."
+     },
+     {
+      "t": "mc",
+      "q": "What does super(...) do in a subclass constructor?",
+      "o": [
+       "Calls the parent constructor",
+       "Deletes the parent",
+       "Creates a static method",
+       "Ends the program"
+      ],
+      "a": 0,
+      "why": "It runs the parent constructor."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class A {\n  hi() { return \"A\"; }\n}\nclass B extends A {\n  hi() { return super.hi() + \"B\"; }\n}\nconsole.log(new B().hi());",
+      "o": [
+       "A",
+       "B",
+       "AB",
+       "BA"
+      ],
+      "a": 2,
+      "why": "super.hi() gives A, then B is added."
+     },
+     {
+      "t": "tf",
+      "q": "In a subclass constructor you must call super before using this.",
+      "a": true,
+      "why": "Otherwise JavaScript throws a ReferenceError."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "extends",
+        "inherit from a class"
+       ],
+       [
+        "super()",
+        "call the parent constructor"
+       ],
+       [
+        "override",
+        "replace a parent method"
+       ],
+       [
+        "instanceof",
+        "test the class of an object"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Given class A {} and class B extends A {}, what does console.log(new B() instanceof A) print?",
+      "a": [
+       "true"
+      ],
+      "why": "A B is also an A."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make a Cat that overrides speak",
+      "lines": [
+       "class Animal { speak() { return \"...\"; } }",
+       "class Cat extends Animal {",
+       "  speak() { return \"meow\"; }",
+       "}",
+       "console.log(new Cat().speak());"
+      ],
+      "why": "The parent is defined before the child."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of creating a subclass instance in order",
+      "items": [
+       [
+        "new Child() is called",
+        1
+       ],
+       [
+        "The child constructor starts running",
+        2
+       ],
+       [
+        "super() runs the parent constructor",
+        3
+       ],
+       [
+        "The child sets its own fields",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: Animal is defined with a name and describe(). Write class Dog extending Animal, overriding describe() to return the name followed by  is a dog.",
+      "starter": "// Animal is already defined\n",
+      "tests": [
+       {
+        "pre": "class Animal {\n  constructor(name) { this.name = name; }\n  describe() { return this.name + \" is an animal\"; }\n}",
+        "post": "console.log(new Dog(\"Rex\").describe());",
+        "expect": "Rex is a dog"
+       },
+       {
+        "pre": "class Animal {\n  constructor(name) { this.name = name; }\n  describe() { return this.name + \" is an animal\"; }\n}",
+        "post": "console.log(new Dog(\"Bo\").describe());",
+        "expect": "Bo is a dog"
+       }
+      ],
+      "hint": "class Dog extends Animal { describe() { return this.name + ' is a dog'; } }",
+      "solution": "class Dog extends Animal {\n  describe() {\n    return this.name + \" is a dog\";\n  }\n}",
+      "why": "Dog inherits the constructor and overrides describe."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: Shape is defined with area() returning 0. Write class Square extending Shape. Its constructor takes side, calls super(), saves side, and area() returns side times side.",
+      "starter": "// Shape is already defined\n",
+      "tests": [
+       {
+        "pre": "class Shape {\n  area() { return 0; }\n}",
+        "post": "console.log(new Square(3).area());",
+        "expect": "9"
+       },
+       {
+        "pre": "class Shape {\n  area() { return 0; }\n}",
+        "post": "console.log(new Square(5).area());",
+        "expect": "25"
+       },
+       {
+        "pre": "class Shape {\n  area() { return 0; }\n}",
+        "post": "console.log(new Square(0).area());",
+        "expect": "0"
+       }
+      ],
+      "hint": "constructor(side) { super(); this.side = side; }",
+      "solution": "class Square extends Shape {\n  constructor(side) {\n    super();\n    this.side = side;\n  }\n  area() {\n    return this.side * this.side;\n  }\n}",
+      "why": "super() comes first, then the subclass sets its own field."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that calls the parent class.",
+      "a": [
+       "super"
+      ],
+      "why": "super refers to the parent."
+     }
+    ]
+   },
+   {
+    "title": "Errors and try/catch",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "When things go wrong",
+      "b": "When JavaScript hits an error it stops and prints a message, unless you handle it. Common ones are ReferenceError (a name that does not exist), TypeError (using a value the wrong way, like null.x) and SyntaxError (broken code).",
+      "code": "// console.log(nope);  // ReferenceError\n// null.x;  // TypeError"
+     },
+     {
+      "h": "try and catch",
+      "b": "Put risky code in a try block. If any line inside throws, JavaScript jumps straight to the catch block and the rest of the try is skipped. The catch gets the error object, whose message property describes the problem.",
+      "code": "try {\n  console.log(\"a\");\n  null.x;\n  console.log(\"b\");\n} catch (e) {\n  console.log(\"caught\");\n}\n// a caught"
+     },
+     {
+      "h": "finally",
+      "b": "A finally block runs after try and catch no matter what, even if there was no error. It is used for cleanup like closing things. If no error happens, catch is simply skipped.",
+      "code": "try {\n  console.log(\"work\");\n} catch (e) {\n  console.log(\"oops\");\n} finally {\n  console.log(\"done\");\n}\n// work done"
+     },
+     {
+      "h": "Throwing your own errors",
+      "b": "You can raise an error yourself with throw new Error(message). This stops the function and sends the error to the nearest catch. Use it when someone gives your function bad input. Always throw Error objects, not plain strings.",
+      "code": "function checkAge(a) {\n  if (a < 0) {\n    throw new Error(\"Age cannot be negative\");\n  }\n  return a;\n}\ntry {\n  checkAge(-1);\n} catch (e) {\n  console.log(e.message);\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which block runs when an error is thrown inside try?",
+      "o": [
+       "finally only",
+       "catch",
+       "else",
+       "next"
+      ],
+      "a": 1,
+      "why": "Control jumps to catch."
+     },
+     {
+      "t": "mc",
+      "q": "When does a finally block run?",
+      "o": [
+       "Only on errors",
+       "Only if no errors",
+       "Always",
+       "Never"
+      ],
+      "a": 2,
+      "why": "finally always runs."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "try {\n  console.log(\"a\");\n  null.x;\n  console.log(\"b\");\n} catch (e) {\n  console.log(\"c\");\n}",
+      "o": [
+       "a, b and c",
+       "a then c",
+       "a then b",
+       "The program crashes"
+      ],
+      "a": 1,
+      "why": "null.x throws, so b is skipped and catch runs."
+     },
+     {
+      "t": "tf",
+      "q": "throw new Error(\"x\") stops the function unless something catches it.",
+      "a": true,
+      "why": "An uncaught error ends the program."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "try",
+        "code that might fail"
+       ],
+       [
+        "catch",
+        "handles the error"
+       ],
+       [
+        "finally",
+        "always runs after"
+       ],
+       [
+        "throw",
+        "raises an error"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does try { throw new Error('boom'); } catch (e) { console.log(e.message); } print?",
+      "a": [
+       "boom"
+      ],
+      "why": "e.message holds the text given to Error."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to throw and catch an error",
+      "lines": [
+       "try {",
+       "  throw new Error(\"oops\");",
+       "} catch (err) {",
+       "  console.log(err.message);",
+       "}"
+      ],
+      "why": "The throw is inside the try block."
+     },
+     {
+      "t": "order",
+      "q": "Put the flow of try/catch in order",
+      "items": [
+       [
+        "The try block starts running",
+        1
+       ],
+       [
+        "A line throws an error",
+        2
+       ],
+       [
+        "The rest of the try is skipped",
+        3
+       ],
+       [
+        "The catch block runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: write safeDivide(a, b) that returns a / b but throws new Error(\"Cannot divide by zero\") when b is 0.",
+      "starter": "// write safeDivide below\n",
+      "tests": [
+       {
+        "post": "try {\n  console.log(safeDivide(8, 2));\n  console.log(safeDivide(1, 0));\n} catch (e) {\n  console.log(e.message);\n}",
+        "expect": "4\nCannot divide by zero"
+       },
+       {
+        "post": "try {\n  console.log(safeDivide(5, 0));\n} catch (e) {\n  console.log(e.message);\n}",
+        "expect": "Cannot divide by zero"
+       },
+       {
+        "post": "console.log(safeDivide(9, 3));",
+        "expect": "3"
+       }
+      ],
+      "hint": "if (b === 0) throw new Error(\"Cannot divide by zero\");",
+      "solution": "function safeDivide(a, b) {\n  if (b === 0) {\n    throw new Error(\"Cannot divide by zero\");\n  }\n  return a / b;\n}",
+      "why": "throw stops the function with an error."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: data may be null or undefined. Use try/catch to print data.name, and print no data if reading it fails.",
+      "starter": "// data is already set\n",
+      "tests": [
+       {
+        "pre": "let data = { name: \"Ana\" };",
+        "expect": "Ana"
+       },
+       {
+        "pre": "let data = null;",
+        "expect": "no data"
+       },
+       {
+        "pre": "let data = undefined;",
+        "expect": "no data"
+       }
+      ],
+      "hint": "Put console.log(data.name) in try and console.log(\"no data\") in catch.",
+      "solution": "try {\n  console.log(data.name);\n} catch (e) {\n  console.log(\"no data\");\n}",
+      "why": "Reading a property of null throws a TypeError."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword for the block that always runs after try and catch.",
+      "a": [
+       "finally"
+      ],
+      "why": "finally runs no matter what."
+     }
+    ]
+   },
+   {
+    "title": "JSON",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "A text format for data",
+      "b": "JSON (JavaScript Object Notation) is a text format for sending and storing data. It looks like a JavaScript object but is stricter: keys and strings need double quotes, and it cannot hold functions or undefined. Nearly every web service speaks JSON.",
+      "code": "{\"name\":\"Ana\",\"age\":9,\"tags\":[\"a\",\"b\"],\"ok\":true}"
+     },
+     {
+      "h": "stringify",
+      "b": "JSON.stringify turns a JavaScript value into a JSON string. Use it to save or send data. Functions and undefined values inside an object are left out.",
+      "code": "let o = { a: 1, b: [2, 3] };\nlet text = JSON.stringify(o);\nconsole.log(text); // {\"a\":1,\"b\":[2,3]}"
+     },
+     {
+      "h": "parse",
+      "b": "JSON.parse turns a JSON string back into a real value. If the text is not valid JSON it throws a SyntaxError, so wrap risky input in try/catch. A stringify then parse round trip makes a deep copy.",
+      "code": "let back = JSON.parse('{\"id\":7}');\nconsole.log(back.id); // 7\ntry {\n  JSON.parse(\"{bad\");\n} catch (e) {\n  console.log(\"invalid\");\n}"
+     },
+     {
+      "h": "Pretty printing",
+      "b": "Pass a third argument to stringify to indent the output and make it readable, like JSON.stringify(obj, null, 2). The data is the same, only the spacing changes. The second argument is rarely needed, so it is usually null.",
+      "code": "console.log(JSON.stringify({ a: 1 }, null, 2));\n// {\n//   \"a\": 1\n// }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does JSON.stringify do?",
+      "o": [
+       "Turns a value into a JSON string",
+       "Turns text into a value",
+       "Deletes JSON",
+       "Sorts keys"
+      ],
+      "a": 0,
+      "why": "stringify makes text from data."
+     },
+     {
+      "t": "mc",
+      "q": "What does JSON.parse do?",
+      "o": [
+       "Turns a JSON string into a value",
+       "Prints JSON",
+       "Turns a value into text",
+       "Checks types"
+      ],
+      "a": 0,
+      "why": "parse makes data from text."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "console.log(JSON.stringify({ a: 1, b: [2, 3] }));",
+      "o": [
+       "{a:1,b:[2,3]}",
+       "{\"a\":1,\"b\":[2,3]}",
+       "a1b23",
+       "{\"a\":1,\"b\":2,3}"
+      ],
+      "a": 1,
+      "why": "JSON uses double quotes around keys."
+     },
+     {
+      "t": "tf",
+      "q": "In JSON, keys must be written inside double quotes.",
+      "a": true,
+      "why": "Single quotes or no quotes are invalid JSON."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "JSON.stringify",
+        "object to text"
+       ],
+       [
+        "JSON.parse",
+        "text to object"
+       ],
+       [
+        "double quotes",
+        "required for JSON strings"
+       ],
+       [
+        "function",
+        "cannot be stored in JSON"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What does JSON.parse('{\"n\":5}').n return?",
+      "a": [
+       "5"
+      ],
+      "why": "The parsed object has n equal to 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to save an object as text and read it back",
+      "lines": [
+       "let o = { id: 7 };",
+       "let text = JSON.stringify(o);",
+       "let back = JSON.parse(text);",
+       "console.log(back.id);"
+      ],
+      "why": "Stringify before parse."
+     },
+     {
+      "t": "order",
+      "q": "Put the round trip in order",
+      "items": [
+       [
+        "Start with an object",
+        1
+       ],
+       [
+        "stringify it into text",
+        2
+       ],
+       [
+        "Store or send the text",
+        3
+       ],
+       [
+        "parse the text back into an object",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: data is a JSON string describing a person. Parse it and print the name property.",
+      "starter": "// data is already set\n",
+      "tests": [
+       {
+        "pre": "let data = '{\"name\":\"Ana\",\"age\":9}';",
+        "expect": "Ana"
+       },
+       {
+        "pre": "let data = '{\"name\":\"Leo\",\"age\":12}';",
+        "expect": "Leo"
+       }
+      ],
+      "hint": "console.log(JSON.parse(data).name);",
+      "solution": "console.log(JSON.parse(data).name);",
+      "why": "parse gives a real object."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: obj is set. Print obj as a JSON string.",
+      "starter": "// obj is already set\n",
+      "tests": [
+       {
+        "pre": "let obj = { a: 1 };",
+        "expect": "{\"a\":1}"
+       },
+       {
+        "pre": "let obj = { x: \"hi\", y: [1, 2] };",
+        "expect": "{\"x\":\"hi\",\"y\":[1,2]}"
+       },
+       {
+        "pre": "let obj = {};",
+        "expect": "{}"
+       }
+      ],
+      "hint": "console.log(JSON.stringify(obj));",
+      "solution": "console.log(JSON.stringify(obj));",
+      "why": "stringify makes the text."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the method that turns JSON text into an object.",
+      "a": [
+       "JSON.parse",
+       "parse"
+      ],
+      "why": "JSON.parse reads JSON text."
+     }
+    ]
+   },
+   {
+    "title": "Modules",
+    "period": "JavaScript intermediate",
+    "learn": [
+     {
+      "h": "Why modules",
+      "b": "As programs grow, putting everything in one file gets messy. A module is a file that keeps its own variables private and shares only what it chooses. Modules make code easier to find, reuse and test.",
+      "code": "// math.js and app.js are two\n// separate files (modules)"
+     },
+     {
+      "h": "export and import",
+      "b": "Use export in front of a function, class or variable to share it. In another file, use import with the names in braces and the file path. Imports go at the top of the file. These are called named exports and must be imported with the same names.",
+      "code": "// math.js\nexport const add = (a, b) => a + b;\n\n// app.js\nimport { add } from \"./math.js\";\nconsole.log(add(2, 3)); // 5"
+     },
+     {
+      "h": "Default exports",
+      "b": "A file can also have one default export, written export default. It is imported without braces, and the importer can choose any name for it. A file can mix one default export with many named ones.",
+      "code": "// area.js\nexport default function area(r) {\n  return 3 * r * r;\n}\n\n// app.js\nimport circleArea from \"./area.js\";"
+     },
+     {
+      "h": "Before modules",
+      "b": "Older code used the module pattern: a function that runs at once, keeps variables private inside and returns an object of public tools. You can still use this idea anywhere. Node.js also has an older style called CommonJS that uses require, but modern code prefers import and export.",
+      "code": "const counter = (function () {\n  let n = 0;\n  return {\n    inc() { n++; },\n    get() { return n; }\n  };\n})();\ncounter.inc();\nconsole.log(counter.get()); // 1"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword makes something available to other files?",
+      "o": [
+       "share",
+       "export",
+       "public",
+       "send"
+      ],
+      "a": 1,
+      "why": "export marks code as shareable."
+     },
+     {
+      "t": "mc",
+      "q": "What does import { add } from \"./math.js\" do?",
+      "o": [
+       "Runs math.js twice",
+       "Gets the named export add from math.js",
+       "Deletes add",
+       "Creates a new file"
+      ],
+      "a": 1,
+      "why": "The braces pick a named export."
+     },
+     {
+      "t": "mc",
+      "q": "What does app.js print?",
+      "code": "// math.js\nexport const add = (a, b) => a + b;\n\n// app.js\nimport { add } from \"./math.js\";\nconsole.log(add(2, 3));",
+      "o": [
+       "2",
+       "3",
+       "5",
+       "add"
+      ],
+      "a": 2,
+      "why": "add(2, 3) returns 5."
+     },
+     {
+      "t": "tf",
+      "q": "A default export can be imported under any name you choose.",
+      "a": true,
+      "why": "Only named exports must keep their exact names."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "export",
+        "share code from a file"
+       ],
+       [
+        "import",
+        "use code from another file"
+       ],
+       [
+        "default export",
+        "imported without braces"
+       ],
+       [
+        "named export",
+        "imported with braces"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that brings code in from another file.",
+      "a": [
+       "import"
+      ],
+      "why": "import loads exports from a module."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines: first a math.js export, then an app.js import and use",
+      "lines": [
+       "// math.js",
+       "export const square = n => n * n;",
+       "// app.js",
+       "import { square } from \"./math.js\";",
+       "console.log(square(4));"
+      ],
+      "why": "The exporting file comes first."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of sharing code in order",
+      "items": [
+       [
+        "Write a function in file A",
+        1
+       ],
+       [
+        "export it from file A",
+        2
+       ],
+       [
+        "import it in file B",
+        3
+       ],
+       [
+        "Use it in file B",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: use the module pattern. Create const counter with an immediately-invoked function that keeps a private n starting at 0 and returns an object with inc() and get().",
+      "starter": "// write: const counter = (function () { ... })();\n",
+      "tests": [
+       {
+        "post": "counter.inc();\ncounter.inc();\nconsole.log(counter.get());",
+        "expect": "2"
+       },
+       {
+        "post": "console.log(counter.get());",
+        "expect": "0"
+       },
+       {
+        "post": "counter.inc();\nconsole.log(counter.n);",
+        "expect": "undefined"
+       }
+      ],
+      "hint": "Keep let n inside the function and return { inc() { n++; }, get() { return n; } }.",
+      "solution": "const counter = (function () {\n  let n = 0;\n  return {\n    inc() {\n      n++;\n    },\n    get() {\n      return n;\n    }\n  };\n})();",
+      "why": "n is private because it is not in the returned object."
+     },
+     {
+      "t": "code",
+      "lang": "javascript",
+      "q": "Challenge: create a const mathUtils object with two methods: add(a, b) that returns the sum and double(n) that returns n times 2.",
+      "starter": "// write: const mathUtils = { ... };\n",
+      "tests": [
+       {
+        "post": "console.log(mathUtils.add(2, 3));\nconsole.log(mathUtils.double(4));",
+        "expect": "5\n8"
+       },
+       {
+        "post": "console.log(mathUtils.add(10, -4));\nconsole.log(mathUtils.double(0));",
+        "expect": "6\n0"
+       }
+      ],
+      "hint": "Put both functions as methods inside one object literal.",
+      "solution": "const mathUtils = {\n  add(a, b) {\n    return a + b;\n  },\n  double(n) {\n    return n * 2;\n  }\n};",
+      "why": "An object groups related tools like a tiny module."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the keyword that shares a function from a module file.",
+      "a": [
+       "export"
+      ],
+      "why": "export makes it importable."
+     }
+    ]
+   }
+  ]
+ }
+}

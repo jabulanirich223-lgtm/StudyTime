@@ -1,0 +1,1673 @@
+{
+ "git": {
+  "name": "Git & GitHub",
+  "units": [
+   {
+    "title": "What Is Version Control?",
+    "period": "Git basics",
+    "learn": [
+     {
+      "h": "Saving history",
+      "b": "Version control is a tool that remembers every version of your project. Instead of files named final, final2 and really_final, you keep one folder and the tool stores each saved snapshot. You can look back or return to any of them."
+     },
+     {
+      "h": "Commits and repositories",
+      "b": "A snapshot in Git is called a commit. Each commit has an ID, an author, a date and a message. All the commits plus your files live in a repository, or repo for short. Git keeps its data in a hidden folder called .git."
+     },
+     {
+      "h": "Git vs GitHub",
+      "b": "Git is the program that runs on your computer and tracks changes. GitHub is a website that hosts Git repositories online so you can back them up and work with other people. You can use Git without GitHub, but not GitHub without Git."
+     },
+     {
+      "h": "First-time setup",
+      "b": "Git stamps your name and email on every commit, so tell it who you are once. The --global flag saves the setting for every repo on your computer.",
+      "code": "git config --global user.name \"Ana\"\ngit config --global user.email \"ana@example.com\"\ngit --version"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a commit in Git?",
+      "o": [
+       "A saved snapshot of your project",
+       "A copy of Git itself",
+       "A website for hosting code",
+       "A kind of branch"
+      ],
+      "a": 0,
+      "why": "A commit is a snapshot with an ID, author, date and message."
+     },
+     {
+      "t": "mc",
+      "q": "Which statement about Git and GitHub is true?",
+      "o": [
+       "They are the same thing",
+       "GitHub runs on your computer, Git is a website",
+       "Git is the tool, GitHub is a hosting website",
+       "Git only works with GitHub"
+      ],
+      "a": 2,
+      "why": "Git tracks changes locally; GitHub hosts repos online."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "git config --global user.name \"Ana\"",
+      "o": [
+       "Creates a new repository",
+       "Saves your name for all repos on this computer",
+       "Deletes your name from Git",
+       "Uploads your name to GitHub"
+      ],
+      "a": 1,
+      "why": "--global applies the setting to every repo for your user."
+     },
+     {
+      "t": "tf",
+      "q": "Git stores its data in a hidden folder called .git inside the project.",
+      "a": true,
+      "why": "The .git folder holds the whole history."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Repository",
+        "A project plus its full history"
+       ],
+       [
+        "Commit",
+        "One saved snapshot"
+       ],
+       [
+        "Git",
+        "Tool that tracks changes on your computer"
+       ],
+       [
+        "GitHub",
+        "Website that hosts repos online"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that prints the installed Git version.",
+      "a": [
+       "git --version",
+       "git version"
+      ],
+      "hint": "Starts with git and a flag",
+      "why": "git --version shows the version."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to set your name and email.",
+      "lines": [
+       "git config --global user.name \"Ana\"",
+       "git config --global user.email \"ana@example.com\"",
+       "git --version"
+      ],
+      "why": "Set name, then email, then check the version."
+     },
+     {
+      "t": "order",
+      "q": "Put the idea in order: how version control helps",
+      "items": [
+       [
+        "You change your files",
+        1
+       ],
+       [
+        "You save a snapshot (commit)",
+        2
+       ],
+       [
+        "You keep working and commit again",
+        3
+       ],
+       [
+        "You can go back to any snapshot",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that sets your global user name to Sam.",
+      "a": [
+       "git config --global user.name \"Sam\"",
+       "git config --global user.name Sam"
+      ],
+      "hint": "git config --global user.name ...",
+      "why": "user.name is the setting key."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the setup commands.",
+      "lines": [
+       "git --version",
+       "git config --global user.name \"Sam\"",
+       "git config --global user.email \"sam@example.com\"",
+       "git config --list"
+      ],
+      "why": "Check Git, set name, set email, then list the settings."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which command shows all your Git settings?",
+      "o": [
+       "git settings",
+       "git config --list",
+       "git show config",
+       "git list --config"
+      ],
+      "a": 1,
+      "why": "git config --list prints the settings."
+     }
+    ]
+   },
+   {
+    "title": "init, status, add, commit",
+    "period": "Git basics",
+    "learn": [
+     {
+      "h": "Starting a repo",
+      "b": "Run git init inside a project folder to turn it into a repository. Git creates the hidden .git folder and starts watching. Run it only once per project.",
+      "code": "mkdir game\ncd game\ngit init"
+     },
+     {
+      "h": "Checking status",
+      "b": "git status tells you what is going on: which files are new (untracked), which changed, and which are ready to be committed. Run it often, it is your best friend."
+     },
+     {
+      "h": "The staging area",
+      "b": "Git saves in two steps. First git add puts changes in the staging area, like a box you pack. Then git commit seals the box as a snapshot. This lets you choose exactly which changes go into each commit.",
+      "code": "git add index.html\ngit add .\ngit status"
+     },
+     {
+      "h": "Committing",
+      "b": "git commit -m with a short message saves the staged changes. Write messages that say what you did, like Add login page. Without -m, Git opens a text editor.",
+      "code": "git commit -m \"Add login page\""
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does git init do?",
+      "o": [
+       "Uploads code to GitHub",
+       "Saves a snapshot",
+       "Creates a new repository in the current folder",
+       "Shows the history"
+      ],
+      "a": 2,
+      "why": "git init makes the .git folder."
+     },
+     {
+      "t": "mc",
+      "q": "What is the staging area?",
+      "o": [
+       "Where you put changes you want in the next commit",
+       "A remote server",
+       "A list of all commits",
+       "A backup folder on GitHub"
+      ],
+      "a": 0,
+      "why": "git add moves changes into staging."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "git add .",
+      "o": [
+       "Commits every file",
+       "Deletes every file",
+       "Pushes to GitHub",
+       "Stages every changed file in the current folder"
+      ],
+      "a": 3,
+      "why": "The dot means everything here."
+     },
+     {
+      "t": "tf",
+      "q": "git commit saves changes that you have not staged with git add.",
+      "a": false,
+      "why": "Only staged changes go into the commit."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to what it does",
+      "pairs": [
+       [
+        "git init",
+        "Start a repository"
+       ],
+       [
+        "git status",
+        "See what changed"
+       ],
+       [
+        "git add",
+        "Stage changes"
+       ],
+       [
+        "git commit -m",
+        "Save a snapshot with a message"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that shows which files are changed or staged.",
+      "a": [
+       "git status"
+      ],
+      "why": "git status reports the state of your files."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to save a new file.",
+      "lines": [
+       "git status",
+       "git add notes.txt",
+       "git commit -m \"Add notes\""
+      ],
+      "why": "Check, stage, then commit."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Edit a file",
+        1
+       ],
+       [
+        "git add the file",
+        2
+       ],
+       [
+        "git commit -m with a message",
+        3
+       ],
+       [
+        "git status shows a clean tree",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that stages a file called app.js.",
+      "a": [
+       "git add app.js"
+      ],
+      "why": "git add takes the file name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to start a repo and save its first commit.",
+      "lines": [
+       "git init",
+       "git add .",
+       "git commit -m \"First commit\"",
+       "git status"
+      ],
+      "why": "Init, stage, commit, check."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which commit command is written correctly?",
+      "o": [
+       "git commit \"Fix bug\" -m",
+       "git commit -message Fix bug",
+       "git commit -m \"Fix bug\"",
+       "git save -m \"Fix bug\""
+      ],
+      "a": 2,
+      "why": "The message follows -m in quotes."
+     }
+    ]
+   },
+   {
+    "title": "Log and Diff",
+    "period": "Git basics",
+    "learn": [
+     {
+      "h": "Reading history",
+      "b": "git log lists commits from newest to oldest, with ID, author, date and message. Press q to leave the list. For a short view use git log --oneline, which shows one line per commit.",
+      "code": "git log\ngit log --oneline"
+     },
+     {
+      "h": "What changed: git diff",
+      "b": "git diff shows lines you changed but have not staged yet. Lines starting with a minus were removed and lines with a plus were added. It is a great way to review your work before committing."
+     },
+     {
+      "h": "Diff of staged changes",
+      "b": "Once you git add a file, git diff shows nothing for it. To see what is staged and about to be committed, use git diff --staged.",
+      "code": "git diff\ngit add app.js\ngit diff --staged"
+     },
+     {
+      "h": "Looking at one commit",
+      "b": "git show followed by a commit ID displays that commit's message and changes. IDs are long, but the first 7 characters are usually enough.",
+      "code": "git show a1b2c3d"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In what order does git log list commits?",
+      "o": [
+       "Oldest first",
+       "Newest first",
+       "Alphabetical by message",
+       "Random"
+      ],
+      "a": 1,
+      "why": "The latest commit is at the top."
+     },
+     {
+      "t": "mc",
+      "q": "Which command shows a one-line summary per commit?",
+      "o": [
+       "git log --oneline",
+       "git short",
+       "git log --one",
+       "git history -1"
+      ],
+      "a": 0,
+      "why": "--oneline compresses each commit to one line."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command show?",
+      "code": "git diff --staged",
+      "o": [
+       "Changes not yet staged",
+       "The list of branches",
+       "Changes that are staged for the next commit",
+       "The remote address"
+      ],
+      "a": 2,
+      "why": "--staged compares staging with the last commit."
+     },
+     {
+      "t": "tf",
+      "q": "In a diff, a line starting with + was added.",
+      "a": true,
+      "why": "Plus means added, minus means removed."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to its output",
+      "pairs": [
+       [
+        "git log",
+        "Full commit history"
+       ],
+       [
+        "git diff",
+        "Unstaged changes"
+       ],
+       [
+        "git diff --staged",
+        "Staged changes"
+       ],
+       [
+        "git show a1b2c3d",
+        "One commit in detail"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the key you press to leave git log.",
+      "a": [
+       "q"
+      ],
+      "hint": "A single letter",
+      "why": "q quits the pager."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to review then save your work.",
+      "lines": [
+       "git diff",
+       "git add .",
+       "git diff --staged",
+       "git commit -m \"Update menu\""
+      ],
+      "why": "Review unstaged, stage, review staged, commit."
+     },
+     {
+      "t": "order",
+      "q": "Put in order from newest to oldest",
+      "items": [
+       [
+        "Commit: Add login",
+        1
+       ],
+       [
+        "Commit: Add menu",
+        2
+       ],
+       [
+        "Commit: Add readme",
+        3
+       ],
+       [
+        "Commit: Initial commit",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that lists history one line per commit.",
+      "a": [
+       "git log --oneline"
+      ],
+      "why": "Short log view."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to inspect changes.",
+      "lines": [
+       "git status",
+       "git diff",
+       "git add index.html",
+       "git diff --staged"
+      ],
+      "why": "Status, unstaged diff, stage, staged diff."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: you ran git add and now git diff shows nothing. Which command shows your staged change?",
+      "o": [
+       "git diff --staged",
+       "git log",
+       "git diff --unstaged",
+       "git status -d"
+      ],
+      "a": 0,
+      "why": "Staged changes need --staged."
+     }
+    ]
+   },
+   {
+    "title": ".gitignore",
+    "period": "Git basics",
+    "learn": [
+     {
+      "h": "Files Git should skip",
+      "b": "Some files should never be committed: passwords, huge downloads, build output, and folders like node_modules. A file named .gitignore lists patterns Git must ignore. Git will not show or add matching files."
+     },
+     {
+      "h": "Writing patterns",
+      "b": "Put one pattern per line. A name ignores that file, a star matches any text, a trailing slash means a folder, and a line starting with # is a comment.",
+      "code": "# secrets\n.env\n*.log\nnode_modules/\nbuild/"
+     },
+     {
+      "h": "Commit the .gitignore",
+      "b": "The .gitignore file itself is a normal file, and you should commit it so everyone shares the same rules. Create it before you add other files, so unwanted files never enter history."
+     },
+     {
+      "h": "Already tracked files",
+      "b": "Ignoring only works for untracked files. If Git already tracks a file, adding it to .gitignore is not enough. Stop tracking it with git rm --cached, which keeps the file on disk.",
+      "code": "git rm --cached secrets.txt\ngit commit -m \"Stop tracking secrets\""
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a .gitignore file for?",
+      "o": [
+       "Deleting files from your disk",
+       "Listing your commits",
+       "Storing passwords safely",
+       "Telling Git which files to skip"
+      ],
+      "a": 3,
+      "why": "It holds patterns of files Git ignores."
+     },
+     {
+      "t": "mc",
+      "q": "Which pattern ignores every file ending in .log?",
+      "o": [
+       "*.log",
+       "log.*",
+       "/log",
+       "#log"
+      ],
+      "a": 0,
+      "why": "The star matches any name before .log."
+     },
+     {
+      "t": "mc",
+      "q": "What does this line ignore?",
+      "code": "node_modules/",
+      "o": [
+       "Only a file named node_modules",
+       "The whole node_modules folder",
+       "Every file with node in the name",
+       "Nothing, it is a comment"
+      ],
+      "a": 1,
+      "why": "A trailing slash marks a folder."
+     },
+     {
+      "t": "tf",
+      "q": "Adding a file to .gitignore stops Git tracking it if it is already committed.",
+      "a": false,
+      "why": "You must also run git rm --cached."
+     },
+     {
+      "t": "match",
+      "q": "Match each pattern to what it does",
+      "pairs": [
+       [
+        ".env",
+        "Ignore a file named .env"
+       ],
+       [
+        "*.tmp",
+        "Ignore all .tmp files"
+       ],
+       [
+        "build/",
+        "Ignore the build folder"
+       ],
+       [
+        "# note",
+        "A comment line"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the exact name of the file that lists ignored patterns.",
+      "a": [
+       ".gitignore",
+       "gitignore"
+      ],
+      "hint": "Starts with a dot",
+      "why": "The file is called .gitignore."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a .gitignore file.",
+      "lines": [
+       "# private data",
+       ".env",
+       "*.log",
+       "build/"
+      ],
+      "why": "One pattern per line, comment first."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to stop tracking a committed file",
+      "items": [
+       [
+        "Add the file name to .gitignore",
+        1
+       ],
+       [
+        "git rm --cached the file",
+        2
+       ],
+       [
+        "git commit the change",
+        3
+       ],
+       [
+        "Git now ignores the file",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the .gitignore line that ignores all files ending in .csv.",
+      "a": [
+       "*.csv"
+      ],
+      "why": "Use a star then the extension."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to untrack a file called config.json.",
+      "lines": [
+       "echo config.json >> .gitignore",
+       "git rm --cached config.json",
+       "git add .gitignore",
+       "git commit -m \"Ignore config\""
+      ],
+      "why": "Ignore it, untrack it, stage the .gitignore, commit."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which command stops tracking secret.txt but keeps it on disk?",
+      "o": [
+       "git rm secret.txt",
+       "git delete secret.txt",
+       "git rm --cached secret.txt",
+       "git ignore secret.txt"
+      ],
+      "a": 2,
+      "why": "--cached removes it from Git only."
+     }
+    ]
+   },
+   {
+    "title": "Branches",
+    "period": "Branching",
+    "learn": [
+     {
+      "h": "What is a branch?",
+      "b": "A branch is a separate line of work. You can try a new feature on its own branch without touching the main one. If it works you merge it in, and if not you just delete it. Branches are cheap and fast in Git."
+     },
+     {
+      "h": "Creating and switching",
+      "b": "git branch name makes a branch, and git switch name moves you onto it. The shortcut git switch -c name does both at once. git branch alone lists branches, with a star on the current one.",
+      "code": "git branch\ngit switch -c login\ngit switch main"
+     },
+     {
+      "h": "HEAD",
+      "b": "HEAD is Git's pointer to where you are now, usually the tip of your current branch. When you commit, the current branch moves forward and HEAD goes with it. Older tutorials use git checkout in place of git switch."
+     },
+     {
+      "h": "Deleting branches",
+      "b": "After a branch is merged you can remove it with git branch -d name. Git refuses if the work is not merged yet, which protects you. A capital -D forces the delete.",
+      "code": "git branch -d login"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a branch?",
+      "o": [
+       "A copy of GitHub",
+       "A separate line of work in the repo",
+       "A type of file",
+       "A commit message"
+      ],
+      "a": 1,
+      "why": "Branches let you work in isolation."
+     },
+     {
+      "t": "mc",
+      "q": "Which command creates a branch and switches to it?",
+      "o": [
+       "git branch -s feature",
+       "git new feature",
+       "git switch -c feature",
+       "git make feature"
+      ],
+      "a": 2,
+      "why": "-c means create."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "git branch -d login",
+      "o": [
+       "Creates a branch named login",
+       "Switches to login",
+       "Merges login",
+       "Deletes the merged branch named login"
+      ],
+      "a": 3,
+      "why": "-d deletes a merged branch."
+     },
+     {
+      "t": "tf",
+      "q": "Running git branch with no name lists your branches.",
+      "a": true,
+      "why": "The current branch has a star."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to what it does",
+      "pairs": [
+       [
+        "git branch",
+        "List branches"
+       ],
+       [
+        "git switch main",
+        "Move to main"
+       ],
+       [
+        "git switch -c fix",
+        "Create and move to fix"
+       ],
+       [
+        "git branch -d fix",
+        "Delete a merged branch"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that switches to the branch called dev.",
+      "a": [
+       "git switch dev"
+      ],
+      "hint": "git switch ...",
+      "why": "Use switch then the name."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to work on a new feature branch.",
+      "lines": [
+       "git switch -c login",
+       "git add .",
+       "git commit -m \"Add login form\"",
+       "git switch main"
+      ],
+      "why": "Create branch, stage, commit, go back to main."
+     },
+     {
+      "t": "order",
+      "q": "Put in order",
+      "items": [
+       [
+        "Create a branch",
+        1
+       ],
+       [
+        "Commit work on it",
+        2
+       ],
+       [
+        "Switch back to main",
+        3
+       ],
+       [
+        "Delete the finished branch",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that creates and switches to a branch named shop.",
+      "a": [
+       "git switch -c shop"
+      ],
+      "why": "Use the -c flag."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to start and clean up a branch.",
+      "lines": [
+       "git switch -c menu",
+       "git add .",
+       "git commit -m \"Add menu\"",
+       "git switch main",
+       "git merge menu",
+       "git branch -d menu"
+      ],
+      "why": "Branch, stage, commit, return, merge, then delete."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which command lists all local branches?",
+      "o": [
+       "git branch",
+       "git branches",
+       "git list",
+       "git switch --all"
+      ],
+      "a": 0,
+      "why": "git branch alone lists them."
+     }
+    ]
+   },
+   {
+    "title": "Merging and Conflicts",
+    "period": "Branching",
+    "learn": [
+     {
+      "h": "Merging",
+      "b": "To bring a branch's work into another, switch to the receiving branch and run git merge with the other branch's name. For example, to put login into main, be on main and merge login. Git joins the histories with a new merge commit or by just moving forward.",
+      "code": "git switch main\ngit merge login"
+     },
+     {
+      "h": "Fast-forward",
+      "b": "If main has no new commits since you branched, Git simply moves main forward to the branch tip. This is called a fast-forward and makes no extra merge commit. If both branches changed, Git creates a merge commit."
+     },
+     {
+      "h": "What is a conflict?",
+      "b": "A conflict happens when two branches changed the same lines of the same file. Git cannot guess which is right, so it stops and asks you. git status lists the files with conflicts."
+     },
+     {
+      "h": "Fixing a conflict",
+      "b": "Open the file and look for markers: lines starting with <<<<<<<, =======, and >>>>>>>. Keep the code you want and delete the markers. Then git add the file and git commit to finish the merge.",
+      "code": "<<<<<<< HEAD\ncolor = 'red'\n=======\ncolor = 'blue'\n>>>>>>> login\n\n# keep one, remove markers"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "You are on main and want login's work in main. What do you run?",
+      "o": [
+       "git merge login",
+       "git merge main",
+       "git push login",
+       "git switch login"
+      ],
+      "a": 0,
+      "why": "Merge the other branch into the one you are on."
+     },
+     {
+      "t": "mc",
+      "q": "What causes a merge conflict?",
+      "o": [
+       "Two branches have different names",
+       "Both branches changed the same lines",
+       "A file is in .gitignore",
+       "The commit message is too long"
+      ],
+      "a": 1,
+      "why": "Git cannot choose between competing edits."
+     },
+     {
+      "t": "mc",
+      "q": "In this file, what is the part between the ======= line and the >>>>>>> line?",
+      "code": "<<<<<<< HEAD\nx = 1\n=======\nx = 2\n>>>>>>> login",
+      "o": [
+       "The current branch's version",
+       "Git's suggested fix",
+       "The incoming branch's version",
+       "A comment"
+      ],
+      "a": 2,
+      "why": "The top is HEAD, the bottom is the merged branch."
+     },
+     {
+      "t": "tf",
+      "q": "After fixing the conflict markers you must git add the file and commit.",
+      "a": true,
+      "why": "That finishes the merge."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fast-forward",
+        "Branch pointer simply moves ahead"
+       ],
+       [
+        "Merge commit",
+        "Commit joining two histories"
+       ],
+       [
+        "Conflict",
+        "Same lines changed in both branches"
+       ],
+       [
+        "<<<<<<<",
+        "Start of a conflict marker"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command to stop a merge and go back to before it started.",
+      "a": [
+       "git merge --abort"
+      ],
+      "hint": "git merge ...",
+      "why": "Use the --abort flag."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to merge login into main.",
+      "lines": [
+       "git switch main",
+       "git merge login",
+       "git status",
+       "git branch -d login"
+      ],
+      "why": "Go to main, merge, check, delete."
+     },
+     {
+      "t": "order",
+      "q": "Put the conflict steps in order",
+      "items": [
+       [
+        "git merge shows a conflict",
+        1
+       ],
+       [
+        "Edit the file and remove the markers",
+        2
+       ],
+       [
+        "git add the fixed file",
+        3
+       ],
+       [
+        "git commit to finish",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that merges a branch named shop into your current branch.",
+      "a": [
+       "git merge shop"
+      ],
+      "why": "git merge then the branch name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to resolve a conflict in app.js.",
+      "lines": [
+       "git merge login",
+       "# edit app.js and remove markers",
+       "git add app.js",
+       "git commit -m \"Resolve conflict\""
+      ],
+      "why": "Merge, edit, stage, commit."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: where is the conflicting file listed?",
+      "o": [
+       "In .gitignore",
+       "In git status under unmerged paths",
+       "Only in git log",
+       "On GitHub only"
+      ],
+      "a": 1,
+      "why": "git status shows files with conflicts."
+     }
+    ]
+   },
+   {
+    "title": "Remotes: push, pull, clone",
+    "period": "Collaboration",
+    "learn": [
+     {
+      "h": "What is a remote?",
+      "b": "A remote is a copy of your repository stored somewhere else, usually on GitHub. By convention the main remote is named origin. git remote -v lists remotes with their URLs.",
+      "code": "git remote add origin https://github.com/ana/game.git\ngit remote -v"
+     },
+     {
+      "h": "Pushing",
+      "b": "git push sends your local commits to the remote. The first time on a new branch use -u so Git remembers the link, like git push -u origin main. After that, plain git push is enough.",
+      "code": "git push -u origin main\ngit push"
+     },
+     {
+      "h": "Pulling and fetching",
+      "b": "git pull downloads new commits from the remote and merges them into your branch. git fetch only downloads them and leaves your files alone, so you can look first. Pull equals fetch plus merge."
+     },
+     {
+      "h": "Cloning",
+      "b": "git clone URL copies an entire repository, with all its history, onto your computer. It also sets origin for you. Use it once to get a project, and then use pull to stay updated.",
+      "code": "git clone https://github.com/ana/game.git"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is origin?",
+      "o": [
+       "The first commit",
+       "The main branch",
+       "The usual name of your main remote",
+       "A GitHub account"
+      ],
+      "a": 2,
+      "why": "origin is just a default remote name."
+     },
+     {
+      "t": "mc",
+      "q": "What does git pull do?",
+      "o": [
+       "Fetches and merges new remote commits",
+       "Uploads your commits",
+       "Deletes the remote",
+       "Creates a branch"
+      ],
+      "a": 0,
+      "why": "Pull is fetch plus merge."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "git push -u origin main",
+      "o": [
+       "Clones main",
+       "Pushes main and remembers origin as its upstream",
+       "Pulls main",
+       "Deletes main on origin"
+      ],
+      "a": 1,
+      "why": "-u links the local branch to the remote one."
+     },
+     {
+      "t": "tf",
+      "q": "git clone downloads the whole history of a repository.",
+      "a": true,
+      "why": "Clone copies everything."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to what it does",
+      "pairs": [
+       [
+        "git clone",
+        "Copy a repo to your computer"
+       ],
+       [
+        "git push",
+        "Upload local commits"
+       ],
+       [
+        "git fetch",
+        "Download without merging"
+       ],
+       [
+        "git remote -v",
+        "List remotes and URLs"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that uploads your commits to the remote.",
+      "a": [
+       "git push"
+      ],
+      "why": "Plain push after the first time."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to publish a new local repo.",
+      "lines": [
+       "git remote add origin https://github.com/ana/game.git",
+       "git branch -M main",
+       "git push -u origin main"
+      ],
+      "why": "Add the remote, name the branch main, then push."
+     },
+     {
+      "t": "order",
+      "q": "Put in order",
+      "items": [
+       [
+        "git clone the repo",
+        1
+       ],
+       [
+        "Make changes and commit",
+        2
+       ],
+       [
+        "git pull to get teammates' work",
+        3
+       ],
+       [
+        "git push your commits",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that downloads new commits without merging them.",
+      "a": [
+       "git fetch"
+      ],
+      "why": "Fetch only downloads."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to share your work safely.",
+      "lines": [
+       "git add .",
+       "git commit -m \"Add shop\"",
+       "git pull",
+       "git push"
+      ],
+      "why": "Stage, commit, pull teammates' work, then push."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which command copies a GitHub repo to your computer?",
+      "o": [
+       "git clone https://github.com/ana/game.git",
+       "git copy https://github.com/ana/game.git",
+       "git pull https://github.com/ana/game.git",
+       "git init https://github.com/ana/game.git"
+      ],
+      "a": 0,
+      "why": "Clone takes the repo URL."
+     }
+    ]
+   },
+   {
+    "title": "GitHub Pull Requests",
+    "period": "Collaboration",
+    "learn": [
+     {
+      "h": "What is a pull request?",
+      "b": "A pull request, or PR, is a request to merge your branch into another one, usually main. You push your branch to GitHub and open a PR on the website. Teammates can read your changes and discuss them before anything is merged."
+     },
+     {
+      "h": "The PR workflow",
+      "b": "Create a branch, commit your work, push the branch, then open the PR. GitHub shows the changed lines, called the diff. Give the PR a clear title and describe what and why."
+     },
+     {
+      "h": "Reviews",
+      "b": "Reviewers comment on specific lines and then approve, comment, or request changes. If changes are requested, you commit more fixes to the same branch and the PR updates by itself. Reviews catch bugs and share knowledge.",
+      "code": "git switch -c fix-typo\ngit commit -m \"Fix typo\"\ngit push -u origin fix-typo"
+     },
+     {
+      "h": "Merging a PR",
+      "b": "When the PR is approved and checks pass, someone clicks Merge. GitHub offers merge commit, squash (all commits become one), or rebase. After merging you can delete the branch and pull main locally. Forking copies someone else's repo to your account so you can open PRs to it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a pull request?",
+      "o": [
+       "A command that downloads code",
+       "A request to merge one branch into another",
+       "A kind of commit",
+       "A backup of GitHub"
+      ],
+      "a": 1,
+      "why": "PRs ask for review and merge."
+     },
+     {
+      "t": "mc",
+      "q": "A reviewer asks for changes. What do you do?",
+      "o": [
+       "Commit fixes to the same branch",
+       "Open a brand new repo",
+       "Delete the PR",
+       "Force push to main"
+      ],
+      "a": 0,
+      "why": "The PR updates when you push to its branch."
+     },
+     {
+      "t": "mc",
+      "q": "Which step comes right before opening a PR on GitHub?",
+      "code": "git switch -c fix-typo\ngit commit -m \"Fix typo\"\n# next step?",
+      "o": [
+       "Deleting main",
+       "Running git init",
+       "Cloning again",
+       "Pushing your branch"
+      ],
+      "a": 3,
+      "why": "GitHub needs your branch on the remote."
+     },
+     {
+      "t": "tf",
+      "q": "Squash merge combines all PR commits into one commit.",
+      "a": true,
+      "why": "Squash gives a tidy single commit."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Pull request",
+        "Ask to merge your branch"
+       ],
+       [
+        "Review",
+        "Teammates check your changes"
+       ],
+       [
+        "Fork",
+        "Your own copy of someone else's repo"
+       ],
+       [
+        "Squash",
+        "Combine commits into one"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that uploads a new branch called fix and links it to origin.",
+      "a": [
+       "git push -u origin fix",
+       "git push --set-upstream origin fix"
+      ],
+      "hint": "git push -u ...",
+      "why": "Use -u origin and the branch name."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to prepare a PR.",
+      "lines": [
+       "git switch -c add-footer",
+       "git add .",
+       "git commit -m \"Add footer\"",
+       "git push -u origin add-footer"
+      ],
+      "why": "Branch, commit, push, then open the PR on GitHub."
+     },
+     {
+      "t": "order",
+      "q": "Put the PR steps in order",
+      "items": [
+       [
+        "Push your branch",
+        1
+       ],
+       [
+        "Open the pull request",
+        2
+       ],
+       [
+        "Teammates review",
+        3
+       ],
+       [
+        "Merge the pull request",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that pushes a new branch named login to origin and sets upstream.",
+      "a": [
+       "git push -u origin login",
+       "git push --set-upstream origin login"
+      ],
+      "why": "The -u flag links the branch."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands after your PR was merged.",
+      "lines": [
+       "git switch main",
+       "git pull",
+       "git branch -d add-footer",
+       "git log --oneline"
+      ],
+      "why": "Go to main, update it, delete the old branch, check the log."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: who can request changes on a PR?",
+      "o": [
+       "Only the author",
+       "Only GitHub staff",
+       "A reviewer",
+       "Nobody"
+      ],
+      "a": 2,
+      "why": "Reviewers approve or request changes."
+     }
+    ]
+   },
+   {
+    "title": "Undoing Things",
+    "period": "Fixing mistakes",
+    "learn": [
+     {
+      "h": "Discard file changes: restore",
+      "b": "git restore file throws away your unsaved changes in that file and brings back the last committed version. This cannot be undone, so be sure. To unstage a file without losing edits use git restore --staged file.",
+      "code": "git restore app.js\ngit restore --staged app.js"
+     },
+     {
+      "h": "Safe undo: revert",
+      "b": "git revert ID makes a new commit that does the opposite of an old commit. History is kept, so it is safe even for commits you already pushed. Use it on shared branches.",
+      "code": "git revert a1b2c3d"
+     },
+     {
+      "h": "Moving back: reset",
+      "b": "git reset moves your branch pointer to an older commit. With --soft the changes stay staged, with the default mixed they stay in your files, and with --hard they are deleted. Resetting rewrites history, so avoid it on commits others already have.",
+      "code": "git reset --soft HEAD~1\ngit reset --hard HEAD~1"
+     },
+     {
+      "h": "Fixing the last commit",
+      "b": "If you only mistyped the last message or forgot a file, use git commit --amend. It replaces the last commit with a new one. Only amend commits you have not pushed. HEAD~1 means one commit before HEAD.",
+      "code": "git add forgot.txt\ngit commit --amend -m \"Better message\""
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command discards unsaved changes in app.js?",
+      "o": [
+       "git revert app.js",
+       "git reset app.js --hard",
+       "git restore app.js",
+       "git undo app.js"
+      ],
+      "a": 2,
+      "why": "restore brings back the committed file."
+     },
+     {
+      "t": "mc",
+      "q": "Which undo is safest for a commit that is already pushed?",
+      "o": [
+       "git revert",
+       "git reset --hard",
+       "git commit --amend",
+       "Deleting .git"
+      ],
+      "a": 0,
+      "why": "Revert adds a new commit without rewriting history."
+     },
+     {
+      "t": "mc",
+      "q": "What does this command do?",
+      "code": "git reset --hard HEAD~1",
+      "o": [
+       "Undoes the last commit and keeps changes staged",
+       "Creates a new commit",
+       "Only unstages files",
+       "Undoes the last commit and deletes its changes"
+      ],
+      "a": 3,
+      "why": "--hard throws the changes away."
+     },
+     {
+      "t": "tf",
+      "q": "git revert deletes the old commit from history.",
+      "a": false,
+      "why": "Revert adds a new commit that cancels it."
+     },
+     {
+      "t": "match",
+      "q": "Match each command to what it does",
+      "pairs": [
+       [
+        "git restore file",
+        "Discard edits in a file"
+       ],
+       [
+        "git restore --staged file",
+        "Unstage a file"
+       ],
+       [
+        "git revert ID",
+        "New commit that cancels an old one"
+       ],
+       [
+        "git commit --amend",
+        "Replace the last commit"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that makes a new commit undoing commit a1b2c3d.",
+      "a": [
+       "git revert a1b2c3d"
+      ],
+      "hint": "git revert ...",
+      "why": "revert cancels a commit safely."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to fix a forgotten file in your last commit.",
+      "lines": [
+       "git add forgot.txt",
+       "git commit --amend --no-edit",
+       "git log --oneline"
+      ],
+      "why": "Stage it, amend, then check the log."
+     },
+     {
+      "t": "order",
+      "q": "Put the safe undo steps in order",
+      "items": [
+       [
+        "Notice a bad commit",
+        1
+       ],
+       [
+        "git log --oneline to find its ID",
+        2
+       ],
+       [
+        "git revert that ID",
+        3
+       ],
+       [
+        "git push the new commit",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that unstages file notes.txt but keeps your edits.",
+      "a": [
+       "git restore --staged notes.txt"
+      ],
+      "why": "Use restore with --staged."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the commands to safely undo commit a1b2c3d and share it.",
+      "lines": [
+       "git revert a1b2c3d",
+       "git log --oneline",
+       "git push"
+      ],
+      "why": "Revert, check, push."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which command undoes the last commit but keeps your changes staged?",
+      "o": [
+       "git reset --hard HEAD~1",
+       "git reset --soft HEAD~1",
+       "git restore HEAD~1",
+       "git revert --soft"
+      ],
+      "a": 1,
+      "why": "--soft keeps changes staged."
+     }
+    ]
+   },
+   {
+    "title": "Workflows, Tags, Actions",
+    "period": "Teamwork",
+    "learn": [
+     {
+      "h": "Common workflows",
+      "b": "Most teams use feature branches: main always works, and every new feature or fix gets its own short branch and a PR. Name branches clearly, like feature/login or fix/typo. Commit small and often, and pull before you push."
+     },
+     {
+      "h": "Tags",
+      "b": "A tag is a permanent label on a commit, often used for releases like v1.0. Create a lightweight tag with git tag v1.0 and an annotated one with git tag -a v1.0 -m \"First release\". Tags are not pushed automatically, so push them yourself.",
+      "code": "git tag -a v1.0 -m \"First release\"\ngit push origin v1.0"
+     },
+     {
+      "h": "GitHub Actions",
+      "b": "GitHub Actions runs commands for you automatically when something happens, such as a push. It is used to run tests, build projects and deploy. You describe it in a YAML file inside .github/workflows."
+     },
+     {
+      "h": "A tiny workflow",
+      "b": "A workflow lists when it runs (on), and jobs made of steps. This one runs your tests on every push. If a step fails, the commit gets a red mark on GitHub, which tells you something broke.",
+      "code": "name: Tests\non: push\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - run: npm test"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a tag in Git?",
+      "o": [
+       "A kind of branch that moves",
+       "A permanent label on a commit",
+       "A GitHub comment",
+       "A remote name"
+      ],
+      "a": 1,
+      "why": "Tags mark releases like v1.0."
+     },
+     {
+      "t": "mc",
+      "q": "Where do GitHub Actions workflow files live?",
+      "o": [
+       "In .github/workflows",
+       "In .gitignore",
+       "In the .git folder",
+       "In the remote settings only"
+      ],
+      "a": 0,
+      "why": "Workflows are YAML files in that folder."
+     },
+     {
+      "t": "mc",
+      "q": "In this workflow, when does it run?",
+      "code": "name: Tests\non: push\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - run: npm test",
+      "o": [
+       "Every night",
+       "Only on pull requests",
+       "On every push",
+       "Never"
+      ],
+      "a": 2,
+      "why": "on: push triggers on each push."
+     },
+     {
+      "t": "tf",
+      "q": "git push sends tags to the remote automatically.",
+      "a": false,
+      "why": "You must push tags, for example git push origin v1.0."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Feature branch",
+        "Short branch for one new change"
+       ],
+       [
+        "Tag",
+        "Label for a release commit"
+       ],
+       [
+        "Workflow",
+        "YAML file describing automation"
+       ],
+       [
+        "Step",
+        "One command inside a job"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the command that creates a lightweight tag called v2.0.",
+      "a": [
+       "git tag v2.0"
+      ],
+      "hint": "git tag ...",
+      "why": "git tag then the name."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to release version 1.0.",
+      "lines": [
+       "git tag -a v1.0 -m \"First release\"",
+       "git push origin v1.0",
+       "git tag"
+      ],
+      "why": "Create, push, list tags."
+     },
+     {
+      "t": "order",
+      "q": "Put the feature branch workflow in order",
+      "items": [
+       [
+        "Create a feature branch",
+        1
+       ],
+       [
+        "Commit small changes",
+        2
+       ],
+       [
+        "Open a pull request",
+        3
+       ],
+       [
+        "Merge into main",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that pushes tag v1.0 to origin.",
+      "a": [
+       "git push origin v1.0"
+      ],
+      "why": "Push the tag by name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the workflow file lines.",
+      "lines": [
+       "name: Tests",
+       "on: push",
+       "jobs:",
+       "  test:",
+       "    runs-on: ubuntu-latest",
+       "    steps:",
+       "      - run: npm test"
+      ],
+      "why": "Name, trigger, jobs, job, runner, steps, command."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what file format do GitHub Actions workflows use?",
+      "o": [
+       "YAML",
+       "Python",
+       "Markdown only",
+       "Binary"
+      ],
+      "a": 0,
+      "why": "Workflows are written in YAML."
+     }
+    ]
+   }
+  ]
+ }
+}

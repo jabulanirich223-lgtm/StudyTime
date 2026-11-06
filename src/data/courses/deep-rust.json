@@ -1,0 +1,1707 @@
+{
+ "rust": {
+  "name": "Rust",
+  "units": [
+   {
+    "title": "Cargo and println!",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Hello, Cargo",
+      "b": "Cargo is Rust's build tool and package manager. Run cargo new hello to make a project with a src/main.rs file. Every program starts at fn main.",
+      "code": "fn main() {\n    println!(\"Hello, world!\");\n}"
+     },
+     {
+      "h": "Cargo commands",
+      "b": "cargo run builds and runs your program. cargo build only builds it, and cargo check quickly looks for errors without making an executable. Project settings and dependencies live in Cargo.toml, and build output goes in the target folder."
+     },
+     {
+      "h": "println! is a macro",
+      "b": "The exclamation mark means println! is a macro, not a normal function. Put {} in the text and Rust fills it with the arguments in order. Use {:?} to print a value in debug form.",
+      "code": "println!(\"{} + {} = {}\", 1, 2, 1 + 2);"
+     },
+     {
+      "h": "Inline names and comments",
+      "b": "You can put a variable name directly inside the braces, like {name}. Comments start with // and run to the end of the line. Lines that are statements end with a semicolon.",
+      "code": "let name = \"Ana\";\nprintln!(\"Hi {name}\"); // greeting"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which command creates a new Rust project?",
+      "o": [
+       "rust new",
+       "cargo start",
+       "cargo new",
+       "rustc make"
+      ],
+      "a": 2,
+      "why": "cargo new makes a project folder."
+     },
+     {
+      "t": "mc",
+      "q": "What does the ! in println! tell you?",
+      "o": [
+       "It is a macro",
+       "It is unsafe",
+       "It never fails",
+       "It is private"
+      ],
+      "a": 0,
+      "why": "Names ending in ! are macros."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fn main() {\n    println!(\"{} + {} = {}\", 1, 2, 1 + 2);\n}",
+      "o": [
+       "3",
+       "1 + 2",
+       "{} + {} = {}",
+       "1 + 2 = 3"
+      ],
+      "a": 3,
+      "why": "Each {} is filled in order."
+     },
+     {
+      "t": "tf",
+      "q": "A Rust program starts running at fn main.",
+      "a": true,
+      "why": "main is the entry point."
+     },
+     {
+      "t": "match",
+      "q": "Match each Cargo item to its job",
+      "pairs": [
+       [
+        "cargo new",
+        "Creates a project"
+       ],
+       [
+        "cargo run",
+        "Builds and runs"
+       ],
+       [
+        "cargo check",
+        "Finds errors without building"
+       ],
+       [
+        "Cargo.toml",
+        "Project settings"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the file that holds a Cargo project's settings.",
+      "a": [
+       "Cargo.toml"
+      ],
+      "why": "Cargo.toml lists the package and dependencies."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Hello",
+      "lines": [
+       "fn main() {",
+       "    println!(\"Hello\");",
+       "}"
+      ],
+      "why": "The call goes inside main."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to start a project",
+      "items": [
+       [
+        "Run cargo new hello",
+        1
+       ],
+       [
+        "Move into the hello folder",
+        2
+       ],
+       [
+        "Edit src/main.rs",
+        3
+       ],
+       [
+        "Run cargo run",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that prints Hi.",
+      "a": [
+       "println!(\"Hi\");"
+      ],
+      "why": "println! with the text and a semicolon."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the program that prints two lines",
+      "lines": [
+       "fn main() {",
+       "    println!(\"one\");",
+       "    println!(\"two\");",
+       "}"
+      ],
+      "why": "Lines run top to bottom."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "fn main() {\n    let name = \"Ana\";\n    println!(\"Hi {name}\");\n}",
+      "o": [
+       "Hi {name}",
+       "Hi Ana",
+       "Hi name",
+       "Error"
+      ],
+      "a": 1,
+      "why": "{name} is replaced by the variable."
+     }
+    ]
+   },
+   {
+    "title": "Variables, mut and Shadowing",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Immutable by default",
+      "b": "let creates a variable that cannot be changed after you set it. Trying to assign a new value is a compile error. This helps prevent accidental bugs.",
+      "code": "let x = 5;\n// x = 6;  // error"
+     },
+     {
+      "h": "mut",
+      "b": "Add mut to allow a variable to change. Use it only when you need it. You still keep the same type, so a number stays a number.",
+      "code": "let mut count = 0;\ncount += 1;\nprintln!(\"{count}\");"
+     },
+     {
+      "h": "Constants",
+      "b": "const declares a value that never changes and is known at compile time. It always needs a type, and by convention the name is in capital letters. Constants can be declared anywhere, even outside functions.",
+      "code": "const MAX_POINTS: u32 = 100;"
+     },
+     {
+      "h": "Shadowing",
+      "b": "You can declare a new variable with the same name using let again. The new one shadows the old one, even in another type. Inside a block the shadow lasts only until the block ends. Shadowing is different from mut because it creates a new variable.",
+      "code": "let x = 5;\nlet x = x + 1;\n{\n    let x = x * 2;\n    println!(\"{x}\");\n}\nprintln!(\"{x}\");"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Variables in Rust are what by default?",
+      "o": [
+       "Mutable",
+       "Immutable",
+       "Global",
+       "Constant types only"
+      ],
+      "a": 1,
+      "why": "You need mut to change them."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword lets a variable be changed?",
+      "o": [
+       "var",
+       "change",
+       "set",
+       "mut"
+      ],
+      "a": 3,
+      "why": "let mut makes a variable mutable."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let x = 5;\nlet x = x + 1;\n{\n    let x = x * 2;\n    println!(\"{x}\");\n}\nprintln!(\"{x}\");",
+      "o": [
+       "12 then 6, on two lines",
+       "6 and 6",
+       "12 and 12",
+       "10 and 6"
+      ],
+      "a": 0,
+      "why": "The inner block shadows x as 12, the outer x stays 6."
+     },
+     {
+      "t": "tf",
+      "q": "A const must be given a type annotation.",
+      "a": true,
+      "why": "const always needs an explicit type."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its meaning",
+      "pairs": [
+       [
+        "let",
+        "Declares an immutable variable"
+       ],
+       [
+        "let mut",
+        "Declares a changeable variable"
+       ],
+       [
+        "const",
+        "Compile-time constant"
+       ],
+       [
+        "shadowing",
+        "New let reusing a name"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that makes a variable changeable.",
+      "a": [
+       "mut"
+      ],
+      "why": "let mut x = 0;"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to count twice and print",
+      "lines": [
+       "let mut count = 0;",
+       "count += 1;",
+       "count += 1; // again",
+       "println!(\"{count}\");"
+      ],
+      "why": "Declare as mut, change, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for shadowing",
+      "items": [
+       [
+        "let x = 5;",
+        1
+       ],
+       [
+        "let x = x + 1;",
+        2
+       ],
+       [
+        "The new x is 6",
+        3
+       ],
+       [
+        "The old x is hidden",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a changeable integer named score set to 0.",
+      "a": [
+       "let mut score = 0;"
+      ],
+      "why": "let mut name = value;"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that turn spaces into its length",
+      "lines": [
+       "let spaces = \"   \";",
+       "let spaces = spaces.len();",
+       "println!(\"{spaces}\");"
+      ],
+      "why": "Shadowing can change the type."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let mut n = 1;\nn = n + 4;\nprintln!(\"{n}\");",
+      "o": [
+       "1",
+       "4",
+       "5",
+       "Error"
+      ],
+      "a": 2,
+      "why": "n starts at 1 and becomes 1 + 4."
+     }
+    ]
+   },
+   {
+    "title": "Types",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Integers and floats",
+      "b": "Integer types are signed like i8, i32, i64 or unsigned like u8, u32, u64. If you do not say, an integer is i32 and a decimal is f64. Unsigned types cannot be negative.",
+      "code": "let a: i32 = -5;\nlet b: u8 = 255;\nlet c = 2.5; // f64"
+     },
+     {
+      "h": "bool and char",
+      "b": "bool is true or false. A char is a single character in single quotes and can be any Unicode character, even an emoji. Strings use double quotes and are a different type.",
+      "code": "let ok = true;\nlet letter = 'z';"
+     },
+     {
+      "h": "Tuples",
+      "b": "A tuple groups values of different types in a fixed order. Read parts with .0, .1 and so on, or destructure them into separate variables with let.",
+      "code": "let t = (500, 6.4, 'z');\nprintln!(\"{}\", t.1);\nlet (a, b, c) = t;"
+     },
+     {
+      "h": "Arrays and casting",
+      "b": "An array holds a fixed number of items of the same type, written [i32; 3]. Index with a[0]. Rust never converts number types silently; use as to cast.",
+      "code": "let a = [1, 2, 3];\nprintln!(\"{}\", a[0]);\nlet x = 7;\nlet y = x as f64 / 2.0;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What integer type does Rust use by default?",
+      "o": [
+       "i64",
+       "u32",
+       "i32",
+       "int"
+      ],
+      "a": 2,
+      "why": "Plain integers default to i32."
+     },
+     {
+      "t": "mc",
+      "q": "Which type can never be negative?",
+      "o": [
+       "u32",
+       "i32",
+       "f64",
+       "char"
+      ],
+      "a": 0,
+      "why": "u means unsigned."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let t = (500, 6.4, 'z');\nprintln!(\"{}\", t.1);",
+      "o": [
+       "500",
+       "z",
+       "6",
+       "6.4"
+      ],
+      "a": 3,
+      "why": "t.1 is the second item."
+     },
+     {
+      "t": "tf",
+      "q": "A char literal uses single quotes in Rust.",
+      "a": true,
+      "why": "'a' is a char, \"a\" is a string."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to what it is",
+      "pairs": [
+       [
+        "i32",
+        "Signed integer"
+       ],
+       [
+        "u8",
+        "Whole number from 0 to 255"
+       ],
+       [
+        "f64",
+        "Default decimal type"
+       ],
+       [
+        "(i32, bool)",
+        "A tuple"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Rust type of an array holding three i32 values.",
+      "a": [
+       "[i32; 3]",
+       "[i32;3]"
+      ],
+      "why": "The type is [element; length]."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to read two values from an array",
+      "lines": [
+       "let a = [1, 2, 3];",
+       "let first = a[0];",
+       "let total = a[0] + a[2];",
+       "println!(\"{first} {total}\");"
+      ],
+      "why": "Make the array, index it, print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to divide an integer and keep decimals",
+      "items": [
+       [
+        "let x: i32 = 7;",
+        1
+       ],
+       [
+        "let y = x as f64;",
+        2
+       ],
+       [
+        "let z = y / 2.0;",
+        3
+       ],
+       [
+        "println!(\"{z}\");",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a u8 named age set to 30.",
+      "a": [
+       "let age: u8 = 30;"
+      ],
+      "why": "let name: type = value;"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that destructure a tuple",
+      "lines": [
+       "let t = (1, 2.5);",
+       "let (a, b) = t;",
+       "println!(\"{a} {b}\");"
+      ],
+      "why": "Destructure with a pattern on the left."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let x = 7;\nlet y = x as f64 / 2.0;\nprintln!(\"{y}\");",
+      "o": [
+       "3",
+       "3.5",
+       "4",
+       "Error"
+      ],
+      "a": 1,
+      "why": "7 as f64 divided by 2.0 is 3.5."
+     }
+    ]
+   },
+   {
+    "title": "Functions and Expressions",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Defining functions",
+      "b": "Use fn, then the name, parameters with types and an arrow with the return type. Rust always needs types on parameters. Functions use snake_case names.",
+      "code": "fn add(a: i32, b: i32) -> i32 {\n    a + b\n}"
+     },
+     {
+      "h": "Statements and expressions",
+      "b": "A statement does something and gives no value, like let x = 5;. An expression evaluates to a value, like 5 + 6 or a block in braces. Rust is built from expressions.",
+      "code": "let y = {\n    let x = 3;\n    x + 1\n};\nprintln!(\"{y}\");"
+     },
+     {
+      "h": "Returning values",
+      "b": "The last expression of a function with no semicolon is returned. Adding a semicolon turns it into a statement, so the function returns () instead. Use return to leave early.",
+      "code": "fn sign(n: i32) -> i32 {\n    if n < 0 {\n        return -1;\n    }\n    1\n}"
+     },
+     {
+      "h": "if as an expression",
+      "b": "Because if is an expression you can assign its result. Both branches must have the same type. A function with no return type returns the unit type ().",
+      "code": "let n = if true { 1 } else { 2 };\nprintln!(\"{n}\");"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What makes a Rust function return a value without return?",
+      "o": [
+       "The last line with a semicolon",
+       "The last expression with no semicolon",
+       "A print call",
+       "The name of the function"
+      ],
+      "a": 1,
+      "why": "The final expression is returned."
+     },
+     {
+      "t": "mc",
+      "q": "What happens if you add a semicolon to the last expression?",
+      "o": [
+       "It returns the value anyway",
+       "It prints it",
+       "Nothing changes",
+       "It becomes a statement and returns ()"
+      ],
+      "a": 3,
+      "why": "A semicolon discards the value."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fn square(x: i32) -> i32 {\n    x * x\n}\n\nfn main() {\n    println!(\"{}\", square(4));\n}",
+      "o": [
+       "16",
+       "8",
+       "4",
+       "Error"
+      ],
+      "a": 0,
+      "why": "square(4) is 4 times 4."
+     },
+     {
+      "t": "tf",
+      "q": "Parameter types must be written in a Rust function signature.",
+      "a": true,
+      "why": "Rust does not infer parameter types."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "fn",
+        "Defines a function"
+       ],
+       [
+        "-> i32",
+        "Return type"
+       ],
+       [
+        "expression",
+        "Evaluates to a value"
+       ],
+       [
+        "statement",
+        "Performs an action, no value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that leaves a function early with a value.",
+      "a": [
+       "return"
+      ],
+      "why": "return exits at once."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 5",
+      "lines": [
+       "fn add(a: i32, b: i32) -> i32 {",
+       "    a + b",
+       "} // end add",
+       "fn main() {",
+       "    println!(\"{}\", add(2, 3));",
+       "} // end main"
+      ],
+      "why": "Define add, then call it."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a function in order",
+      "items": [
+       [
+        "fn keyword and name",
+        1
+       ],
+       [
+        "Parameters with types",
+        2
+       ],
+       [
+        "Return type after ->",
+        3
+       ],
+       [
+        "Body ending in an expression",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header line of a function double that takes an i32 n and returns an i32.",
+      "a": [
+       "fn double(n: i32) -> i32 {",
+       "fn double(n: i32) -> i32"
+      ],
+      "why": "fn name(param: type) -> type"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the program that prints true",
+      "lines": [
+       "fn is_even(n: i32) -> bool {",
+       "    n % 2 == 0",
+       "}",
+       "fn main() {",
+       "    println!(\"{}\", is_even(4));",
+       "} // end main"
+      ],
+      "why": "The comparison is the returned expression."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let y = {\n    let x = 3;\n    x + 1\n};\nprintln!(\"{y}\");",
+      "o": [
+       "3",
+       "1",
+       "4",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The block evaluates to x + 1."
+     }
+    ]
+   },
+   {
+    "title": "Control Flow",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "if and else",
+      "b": "The condition must be a bool, Rust never treats numbers as true or false. No parentheses are needed. Use else if for more branches.",
+      "code": "let n = 7;\nif n % 2 == 0 {\n    println!(\"even\");\n} else {\n    println!(\"odd\");\n}"
+     },
+     {
+      "h": "loop and while",
+      "b": "loop repeats forever until you break, and break can even return a value. while repeats as long as its condition is true. continue skips to the next round.",
+      "code": "let mut n = 3;\nwhile n > 0 {\n    println!(\"{n}\");\n    n -= 1;\n}"
+     },
+     {
+      "h": "for loops and ranges",
+      "b": "for item in collection is the usual loop. A range 1..4 gives 1, 2, 3 and leaves out the end. Write 1..=4 to include 4.",
+      "code": "for i in 1..=3 {\n    println!(\"{i}\");\n}"
+     },
+     {
+      "h": "Looping over arrays",
+      "b": "You can loop straight over an array or vector. Labels and break work in nested loops too. The for loop is the safest and most common choice in Rust.",
+      "code": "let a = [10, 20, 30];\nfor x in a {\n    println!(\"{x}\");\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which values does the range 1..4 produce?",
+      "o": [
+       "1, 2, 3, 4",
+       "2, 3, 4",
+       "1, 2, 3",
+       "0, 1, 2, 3"
+      ],
+      "a": 2,
+      "why": "The end of a .. range is excluded."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword makes an infinite loop?",
+      "o": [
+       "loop",
+       "forever",
+       "while true only",
+       "repeat"
+      ],
+      "a": 0,
+      "why": "loop runs until break."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let mut sum = 0;\nfor i in 1..=4 {\n    sum += i;\n}\nprintln!(\"{sum}\");",
+      "o": [
+       "6",
+       "4",
+       "Error",
+       "10"
+      ],
+      "a": 3,
+      "why": "1+2+3+4 is 10 since ..= includes 4."
+     },
+     {
+      "t": "tf",
+      "q": "In Rust you can write if with an integer as the condition, like if 1 { }.",
+      "a": false,
+      "why": "The condition must be a bool."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "loop",
+        "Repeats until break"
+       ],
+       [
+        "while",
+        "Repeats while a condition holds"
+       ],
+       [
+        "for i in 0..3",
+        "Loops over a range"
+       ],
+       [
+        "break",
+        "Leaves the loop"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that skips to the next loop round.",
+      "a": [
+       "continue"
+      ],
+      "why": "continue starts the next iteration."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to count down 3 2 1",
+      "lines": [
+       "let mut n = 3;",
+       "while n > 0 {",
+       "    println!(\"{n}\");",
+       "    n -= 1;",
+       "}"
+      ],
+      "why": "Print then decrease."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for a while loop",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "Run the body",
+        2
+       ],
+       [
+        "Change the counter",
+        3
+       ],
+       [
+        "Check the condition again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the loop header that goes over i from 0 to 4.",
+      "a": [
+       "for i in 0..5 {",
+       "for i in 0..5"
+      ],
+      "why": "0..5 stops before 5."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the if and else that prints big or small",
+      "lines": [
+       "let n = 12;",
+       "if n > 10 {",
+       "    println!(\"big\");",
+       "} else {",
+       "    println!(\"small\");",
+       "}"
+      ],
+      "why": "The else follows the if block."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let n = if 5 > 3 { 10 } else { 20 };\nprintln!(\"{n}\");",
+      "o": [
+       "20",
+       "10",
+       "5",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The condition is true, so the first branch value is used."
+     }
+    ]
+   },
+   {
+    "title": "Ownership",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "The three rules",
+      "b": "Each value in Rust has one owner. There can be only one owner at a time. When the owner goes out of scope, the value is dropped and its memory is freed. This is how Rust manages memory without a garbage collector."
+     },
+     {
+      "h": "Moves",
+      "b": "String data lives on the heap. When you write let s2 = s1; ownership moves to s2 and s1 can no longer be used. This stops two variables from freeing the same memory.",
+      "code": "let s1 = String::from(\"hi\");\nlet s2 = s1;\n// println!(\"{s1}\"); // error"
+     },
+     {
+      "h": "clone and Copy",
+      "b": "If you really want two separate values, call clone() to make a deep copy. Simple types like integers, floats, bool and char are Copy, so they are just duplicated and both variables stay valid.",
+      "code": "let s1 = String::from(\"hi\");\nlet s2 = s1.clone();\nlet a = 5;\nlet b = a;\nprintln!(\"{s1} {s2} {a} {b}\");"
+     },
+     {
+      "h": "Ownership and functions",
+      "b": "Passing a String to a function moves it into the function, and it is dropped when the function ends. The function can give ownership back by returning the value. Next you will learn borrowing, which avoids this.",
+      "code": "fn consume(s: String) {\n    println!(\"{s}\");\n}\nlet s = String::from(\"hey\");\nconsume(s);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What happens to s1 after let s2 = s1; when s1 is a String?",
+      "o": [
+       "s1 is copied",
+       "Ownership moves to s2",
+       "Both own it",
+       "s1 becomes empty"
+      ],
+      "a": 1,
+      "why": "Strings are moved."
+     },
+     {
+      "t": "mc",
+      "q": "Which method makes a deep copy of a String?",
+      "o": [
+       "copy",
+       "dup",
+       "move",
+       "clone"
+      ],
+      "a": 3,
+      "why": "clone duplicates the heap data."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let a = 5;\nlet b = a;\nprintln!(\"{a} {b}\");",
+      "o": [
+       "5 5",
+       "5 0",
+       "Error: a moved",
+       "0 5"
+      ],
+      "a": 0,
+      "why": "Integers are Copy, so a stays valid."
+     },
+     {
+      "t": "tf",
+      "q": "When the owner of a value goes out of scope, the value is dropped.",
+      "a": true,
+      "why": "Rust frees memory at the end of scope."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "move",
+        "Ownership is transferred"
+       ],
+       [
+        "clone",
+        "Makes a deep copy"
+       ],
+       [
+        "Copy types",
+        "Simple values duplicated automatically"
+       ],
+       [
+        "drop",
+        "Memory freed at end of scope"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "How many owners can a value have at the same time? Type the number.",
+      "a": [
+       "1",
+       "one"
+      ],
+      "why": "A value has exactly one owner."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to copy a String and print both",
+      "lines": [
+       "let s1 = String::from(\"hi\");",
+       "let s2 = s1.clone();",
+       "println!(\"{s1} {s2}\");"
+      ],
+      "why": "Clone before using both."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for a move",
+      "items": [
+       [
+        "Create s1 with String::from",
+        1
+       ],
+       [
+        "Assign let s2 = s1",
+        2
+       ],
+       [
+        "Ownership moves to s2",
+        3
+       ],
+       [
+        "s1 can no longer be used",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that makes s2 an independent copy of s1.",
+      "a": [
+       "let s2 = s1.clone();"
+      ],
+      "why": "clone makes a deep copy."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the program that passes a String into a function",
+      "lines": [
+       "fn consume(s: String) {",
+       "    println!(\"{s}\");",
+       "}",
+       "fn main() {",
+       "    let s = String::from(\"hey\");",
+       "    consume(s);",
+       "} // end main"
+      ],
+      "why": "s is moved into consume."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what happens when this compiles?",
+      "code": "let s1 = String::from(\"hi\");\nlet s2 = s1;\nprintln!(\"{s1}\");",
+      "o": [
+       "It prints hi",
+       "It prints nothing",
+       "A compile error because s1 was moved",
+       "A runtime panic"
+      ],
+      "a": 2,
+      "why": "s1 is used after its value moved to s2."
+     }
+    ]
+   },
+   {
+    "title": "Borrowing and References",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Borrowing with &",
+      "b": "A reference lets you use a value without taking ownership. Write &s to borrow s. The function that receives it has the parameter type &String, and the owner keeps the value afterwards.",
+      "code": "fn length(s: &String) -> usize {\n    s.len()\n}\nlet s = String::from(\"hello\");\nprintln!(\"{}\", length(&s));"
+     },
+     {
+      "h": "Mutable references",
+      "b": "Use &mut to borrow in a way that lets the function change the value. The variable itself must be declared mut. Use * to reach the value behind a reference.",
+      "code": "fn add_one(x: &mut i32) {\n    *x += 1;\n}\nlet mut n = 4;\nadd_one(&mut n);"
+     },
+     {
+      "h": "The borrowing rules",
+      "b": "At any moment you can have either many shared references & or exactly one &mut, never both at once. References must always be valid. These rules, checked by the borrow checker, prevent data races and dangling pointers."
+     },
+     {
+      "h": "Slices",
+      "b": "A slice borrows part of a collection. For text, &s[0..5] is a string slice of type &str. String literals are also &str. Slices do not own their data.",
+      "code": "let s = String::from(\"hello world\");\nlet w = &s[0..5];\nprintln!(\"{w}\");"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which symbol creates a reference to a variable?",
+      "o": [
+       "*",
+       "#",
+       "&",
+       "@"
+      ],
+      "a": 2,
+      "why": "&x borrows x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the rule about references at one moment?",
+      "o": [
+       "Many & or exactly one &mut",
+       "Only one reference of any kind",
+       "Any number of &mut",
+       "One & and one &mut"
+      ],
+      "a": 0,
+      "why": "That prevents conflicting access."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "fn add_one(x: &mut i32) {\n    *x += 1;\n}\n\nfn main() {\n    let mut n = 4;\n    add_one(&mut n);\n    println!(\"{n}\");\n}",
+      "o": [
+       "4",
+       "1",
+       "Error",
+       "5"
+      ],
+      "a": 3,
+      "why": "The function adds one through the mutable reference."
+     },
+     {
+      "t": "tf",
+      "q": "You can have two &mut references to the same value at the same time.",
+      "a": false,
+      "why": "Only one mutable reference is allowed."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "&T",
+        "Shared read-only borrow"
+       ],
+       [
+        "&mut T",
+        "Exclusive mutable borrow"
+       ],
+       [
+        "*r",
+        "Follows the reference to its value"
+       ],
+       [
+        "&s[0..2]",
+        "String slice"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the compiler part that enforces borrowing rules (two words).",
+      "a": [
+       "borrow checker",
+       "the borrow checker"
+      ],
+      "why": "The borrow checker validates references."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the program that prints the length of a borrowed String",
+      "lines": [
+       "fn length(s: &String) -> usize {",
+       "    s.len()",
+       "}",
+       "fn main() {",
+       "    let s = String::from(\"hello\");",
+       "    println!(\"{}\", length(&s));",
+       "} // end main"
+      ],
+      "why": "Borrow with & so s stays usable."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to change a value through a reference",
+      "items": [
+       [
+        "Declare let mut n = 4",
+        1
+       ],
+       [
+        "Create &mut n",
+        2
+       ],
+       [
+        "Pass it to the function",
+        3
+       ],
+       [
+        "Change *x inside",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a mutable reference r to the variable x.",
+      "a": [
+       "let r = &mut x;"
+      ],
+      "why": "&mut x borrows x mutably."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that push to a String through a reference",
+      "lines": [
+       "let mut s = String::from(\"hi\");",
+       "let r = &mut s;",
+       "r.push('!');",
+       "println!(\"{r}\");"
+      ],
+      "why": "Borrow mutably, then push."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let s = String::from(\"hello world\");\nlet w = &s[0..5];\nprintln!(\"{w}\");",
+      "o": [
+       "hello world",
+       "hello",
+       "world",
+       "Error"
+      ],
+      "a": 1,
+      "why": "The slice 0..5 holds the first five characters."
+     }
+    ]
+   },
+   {
+    "title": "Structs and impl",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Defining structs",
+      "b": "A struct bundles named fields. Create an instance with every field filled in. Read fields with a dot, and make the instance mut to change them.",
+      "code": "struct User {\n    name: String,\n    age: u32,\n}\nlet u = User { name: String::from(\"Ana\"), age: 20 };\nprintln!(\"{}\", u.age);"
+     },
+     {
+      "h": "Methods with impl",
+      "b": "An impl block holds the methods for a type. The first parameter is &self to read, &mut self to change, or self to take ownership. Call methods with a dot.",
+      "code": "struct Rect { w: u32, h: u32 }\nimpl Rect {\n    fn area(&self) -> u32 {\n        self.w * self.h\n    }\n}"
+     },
+     {
+      "h": "Associated functions",
+      "b": "A function in impl without self is an associated function, called with Type::name(). The usual one is new, which acts like a constructor. Self means the type being implemented. If the parameter has the same name as a field, you can write the field shorthand.",
+      "code": "impl Point {\n    fn new(x: i32, y: i32) -> Point {\n        Point { x, y }\n    }\n}\nlet p = Point::new(1, 2);"
+     },
+     {
+      "h": "Debug printing and tuple structs",
+      "b": "Add #[derive(Debug)] above a struct to print it with {:?}. A tuple struct has unnamed fields, like struct Meters(f64). These make types that mean something specific.",
+      "code": "#[derive(Debug)]\nstruct P { x: i32 }\nprintln!(\"{:?}\", P { x: 1 });"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which block holds the methods of a struct?",
+      "o": [
+       "methods",
+       "impl",
+       "class",
+       "trait only"
+      ],
+      "a": 1,
+      "why": "Methods go in an impl block."
+     },
+     {
+      "t": "mc",
+      "q": "Which first parameter lets a method read the struct without owning it?",
+      "o": [
+       "self!",
+       "this",
+       "&mut",
+       "&self"
+      ],
+      "a": 3,
+      "why": "&self borrows the instance."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "struct Rect { w: u32, h: u32 }\nimpl Rect {\n    fn area(&self) -> u32 { self.w * self.h }\n}\nfn main() {\n    let r = Rect { w: 3, h: 4 };\n    println!(\"{}\", r.area());\n}",
+      "o": [
+       "12",
+       "7",
+       "3",
+       "Error"
+      ],
+      "a": 0,
+      "why": "area is w times h."
+     },
+     {
+      "t": "tf",
+      "q": "An associated function without self is called with the Type::name() syntax.",
+      "a": true,
+      "why": "Like String::from."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "struct",
+        "Groups named fields"
+       ],
+       [
+        "impl",
+        "Attaches methods to a type"
+       ],
+       [
+        "Self",
+        "The type being implemented"
+       ],
+       [
+        "#[derive(Debug)]",
+        "Enables {:?} printing"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to define a struct.",
+      "a": [
+       "struct"
+      ],
+      "why": "struct Name { ... }"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define a Point and print x",
+      "lines": [
+       "struct Point {",
+       "    x: i32,",
+       "    y: i32,",
+       "}",
+       "let p = Point { x: 1, y: 2 };",
+       "println!(\"{}\", p.x);"
+      ],
+      "why": "Define the type, create it, use a field."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order for building a type with a method",
+      "items": [
+       [
+        "Define the struct",
+        1
+       ],
+       [
+        "Write an impl block",
+        2
+       ],
+       [
+        "Add a method with &self",
+        3
+       ],
+       [
+        "Create a value and call the method",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a Point with x as 1 and y as 2.",
+      "a": [
+       "let p = Point { x: 1, y: 2 };"
+      ],
+      "why": "Fill in every field."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the impl block with a new function",
+      "lines": [
+       "impl Point {",
+       "    fn new(x: i32, y: i32) -> Point {",
+       "        Point { x, y }",
+       "    }",
+       "}"
+      ],
+      "why": "The function goes inside impl."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "#[derive(Debug)]\nstruct P { x: i32 }\n\nfn main() {\n    println!(\"{:?}\", P { x: 1 });\n}",
+      "o": [
+       "1",
+       "x: 1",
+       "P { x: 1 }",
+       "Error"
+      ],
+      "a": 2,
+      "why": "Debug output shows the struct name and fields."
+     }
+    ]
+   },
+   {
+    "title": "Enums, match and Option/Result",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Enums",
+      "b": "An enum lists the possible values of a type, called variants. Variants can hold data too, so one enum can describe several shapes of information.",
+      "code": "enum Shape {\n    Circle(f64),\n    Rect(f64, f64),\n}\nlet s = Shape::Circle(2.0);"
+     },
+     {
+      "h": "match",
+      "b": "match compares a value against patterns and runs the first one that fits. It must be exhaustive, covering every case. Use _ as a catch-all.",
+      "code": "match s {\n    Shape::Circle(r) => println!(\"{r}\"),\n    Shape::Rect(w, h) => println!(\"{w} {h}\"),\n}"
+     },
+     {
+      "h": "Option",
+      "b": "Rust has no null. Option<T> is either Some(value) or None. You must handle both, so you cannot forget a missing value. if let is a short way to handle just one pattern.",
+      "code": "let x: Option<i32> = Some(3);\nif let Some(n) = x {\n    println!(\"{n}\");\n}"
+     },
+     {
+      "h": "Result",
+      "b": "Result<T, E> is either Ok(value) or Err(error), used for things that can fail. Match on it, or use unwrap and expect which panic on failure, expect with your own message. The ? operator returns the error early from the function.",
+      "code": "let r: Result<i32, String> = Ok(5);\nmatch r {\n    Ok(v) => println!(\"{v}\"),\n    Err(e) => println!(\"{e}\"),\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does Rust use instead of null?",
+      "o": [
+       "Nil",
+       "Maybe",
+       "Option",
+       "Void"
+      ],
+      "a": 2,
+      "why": "Option<T> holds Some or None."
+     },
+     {
+      "t": "mc",
+      "q": "A match expression must be what?",
+      "o": [
+       "Exhaustive",
+       "Short",
+       "Sorted",
+       "Mutable"
+      ],
+      "a": 0,
+      "why": "Every possible value must be covered."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let x: Option<i32> = Some(3);\nmatch x {\n    Some(n) => println!(\"{}\", n + 1),\n    None => println!(\"none\"),\n}",
+      "o": [
+       "3",
+       "none",
+       "Error",
+       "4"
+      ],
+      "a": 3,
+      "why": "x is Some(3), so n + 1 is 4."
+     },
+     {
+      "t": "tf",
+      "q": "Result has the two variants Ok and Err.",
+      "a": true,
+      "why": "Ok holds success, Err holds the failure."
+     },
+     {
+      "t": "match",
+      "q": "Match each value to its meaning",
+      "pairs": [
+       [
+        "Some(v)",
+        "A value is present"
+       ],
+       [
+        "None",
+        "No value"
+       ],
+       [
+        "Ok(v)",
+        "Success"
+       ],
+       [
+        "Err(e)",
+        "Failure"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the method that panics with YOUR message when a Result is Err.",
+      "a": [
+       "expect"
+      ],
+      "why": "expect(\"message\") panics with that message."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines that print stop for a red light",
+      "lines": [
+       "enum Light { Red, Green }",
+       "let l = Light::Red;",
+       "match l {",
+       "    Light::Red => println!(\"stop\"),",
+       "    Light::Green => println!(\"go\"),",
+       "}"
+      ],
+      "why": "Define, create, then match."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to handle an Option",
+      "items": [
+       [
+        "Get an Option value",
+        1
+       ],
+       [
+        "Match on it",
+        2
+       ],
+       [
+        "Handle Some(v)",
+        3
+       ],
+       [
+        "Handle None",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares x as an Option<i32> holding 5.",
+      "a": [
+       "let x: Option<i32> = Some(5);"
+      ],
+      "why": "Wrap the value in Some."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the if let with an else",
+      "lines": [
+       "let x = Some(7);",
+       "if let Some(n) = x {",
+       "    println!(\"{n}\");",
+       "} else {",
+       "    println!(\"none\");",
+       "}"
+      ],
+      "why": "else handles None."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let r: Result<i32, String> = Err(\"bad\".to_string());\nmatch r {\n    Ok(v) => println!(\"{v}\"),\n    Err(e) => println!(\"{e}\"),\n}",
+      "o": [
+       "Err",
+       "bad",
+       "0",
+       "Error"
+      ],
+      "a": 1,
+      "why": "r is Err, so the Err arm prints the message."
+     }
+    ]
+   },
+   {
+    "title": "Vec, String, HashMap and Traits",
+    "period": "Rust book",
+    "learn": [
+     {
+      "h": "Vec",
+      "b": "A Vec<T> is a growable list. Make one with vec![1, 2, 3] or Vec::new(). Use push to add, pop to remove the last item, and v.get(i) to get an Option instead of risking a crash. Loop with for x in &v.",
+      "code": "let mut v = vec![1, 2];\nv.push(3);\nprintln!(\"{}\", v.len());\nprintln!(\"{:?}\", v.get(10));"
+     },
+     {
+      "h": "String",
+      "b": "String is an owned, growable piece of text, while &str is a borrowed slice. Use String::from or to_string to make one, push_str to add text, and format! to build text without printing. len counts bytes.",
+      "code": "let mut s = String::from(\"Hi\");\ns.push_str(\" there\");\nlet t = format!(\"{s}!\");"
+     },
+     {
+      "h": "HashMap",
+      "b": "A HashMap stores key and value pairs. Bring it in with use std::collections::HashMap;. insert adds, get returns an Option, and entry().or_insert() sets a default if the key is missing.",
+      "code": "use std::collections::HashMap;\nlet mut m = HashMap::new();\nm.insert(\"a\", 1);\nprintln!(\"{:?}\", m.get(\"a\"));"
+     },
+     {
+      "h": "Traits",
+      "b": "A trait describes shared behavior as method signatures. A type opts in with impl Trait for Type. Generic functions can require a trait with a bound like T: Summary. Traits can also have default methods.",
+      "code": "trait Speak {\n    fn say(&self) -> String;\n}\nstruct Dog;\nimpl Speak for Dog {\n    fn say(&self) -> String { String::from(\"Woof\") }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which macro creates a Vec with starting items?",
+      "o": [
+       "list!",
+       "vec!",
+       "array!",
+       "Vec!"
+      ],
+      "a": 1,
+      "why": "vec![1, 2, 3] builds a vector."
+     },
+     {
+      "t": "mc",
+      "q": "What does v.get(10) return on a vector with only 2 items?",
+      "o": [
+       "A crash",
+       "0",
+       "An error message string",
+       "None"
+      ],
+      "a": 3,
+      "why": "get returns an Option."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "let mut v = vec![1, 2];\nv.push(3);\nprintln!(\"{}\", v.len());",
+      "o": [
+       "3",
+       "2",
+       "1",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Two items plus one pushed gives three."
+     },
+     {
+      "t": "tf",
+      "q": "A trait defines behavior that different types can implement.",
+      "a": true,
+      "why": "That is what traits are for."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its role",
+      "pairs": [
+       [
+        "Vec<T>",
+        "Growable list"
+       ],
+       [
+        "String",
+        "Owned growable text"
+       ],
+       [
+        "HashMap<K, V>",
+        "Key and value store"
+       ],
+       [
+        "trait",
+        "Shared behavior"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to implement a trait for a type.",
+      "a": [
+       "impl"
+      ],
+      "why": "impl Trait for Type."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the trait and its implementation for Dog",
+      "lines": [
+       "trait Speak {",
+       "    fn say(&self) -> String;",
+       "} // end trait",
+       "struct Dog;",
+       "impl Speak for Dog {",
+       "    fn say(&self) -> String { String::from(\"Woof\") }",
+       "}"
+      ],
+      "why": "Define the trait, then impl it."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order to use a HashMap",
+      "items": [
+       [
+        "Add use std::collections::HashMap;",
+        1
+       ],
+       [
+        "Create it with HashMap::new()",
+        2
+       ],
+       [
+        "Insert a key and value",
+        3
+       ],
+       [
+        "Read it with get",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that brings HashMap into scope.",
+      "a": [
+       "use std::collections::HashMap;"
+      ],
+      "why": "HashMap lives in std::collections."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that insert into a HashMap and print the lookup",
+      "lines": [
+       "let mut m = HashMap::new();",
+       "m.insert(\"a\", 1);",
+       "println!(\"{:?}\", m.get(\"a\"));"
+      ],
+      "why": "insert then get."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "let v = vec![1, 2, 3];\nlet mut t = 0;\nfor x in &v {\n    t += x;\n}\nprintln!(\"{t}\");",
+      "o": [
+       "3",
+       "123",
+       "6",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The loop adds 1, 2 and 3."
+     }
+    ]
+   }
+  ]
+ }
+}

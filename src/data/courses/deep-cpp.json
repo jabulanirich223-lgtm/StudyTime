@@ -1,0 +1,2055 @@
+{
+ "cpp": {
+  "name": "C++ · Beginner",
+  "units": [
+   {
+    "title": "Hello World, main and #include",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Your first program",
+      "b": "A C++ program is plain text in a .cpp file. The computer runs the code inside a function called main. When main finishes, the program ends. This tiny program prints one line of text.",
+      "code": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, world!\";\n    return 0;\n}"
+     },
+     {
+      "h": "What #include does",
+      "b": "Lines that start with # are instructions for the preprocessor, which runs before compiling. #include <iostream> copies in the code that lets you print and read. Without it the compiler does not know what cout is. Standard headers use angle brackets like <iostream>."
+     },
+     {
+      "h": "main and return 0",
+      "b": "Every program needs exactly one main function. int means main gives back a whole number when it ends. Returning 0 tells the operating system that everything went fine. The code between the curly braces { } is the body of main.",
+      "code": "int main() {\n    // your code goes here\n    return 0;\n}"
+     },
+     {
+      "h": "Semicolons, comments and building",
+      "b": "Most statements end with a semicolon ;. A comment starts with // and the compiler ignores it. To run your code you compile it with a compiler such as g++, which makes an executable file, and then you run that file."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line gives you access to cout?",
+      "o": [
+       "#include <iostream>",
+       "#include <cout>",
+       "import iostream;",
+       "using iostream;"
+      ],
+      "a": 0,
+      "why": "The iostream header declares cout and cin."
+     },
+     {
+      "t": "mc",
+      "q": "Where does a C++ program start running?",
+      "o": [
+       "At the first #include line",
+       "Inside the main function",
+       "At the last line of the file",
+       "Inside a function called start"
+      ],
+      "a": 1,
+      "why": "Execution always begins at main."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "#include <iostream>\nint main() {\n    std::cout << \"Hi\";\n    return 0;\n}",
+      "o": [
+       "Hi 0",
+       "return 0",
+       "Hi",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "cout prints Hi; the return value 0 is not printed."
+     },
+     {
+      "t": "tf",
+      "q": "Most C++ statements end with a semicolon.",
+      "a": true,
+      "why": "A semicolon marks the end of a statement."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its job",
+      "pairs": [
+       [
+        "#include",
+        "Copies in a header file"
+       ],
+       [
+        "int main()",
+        "Where the program starts"
+       ],
+       [
+        "return 0;",
+        "Tells the system all went fine"
+       ],
+       [
+        "//",
+        "Starts a comment"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the number that main normally returns to say all went fine.",
+      "a": [
+       "0"
+      ],
+      "why": "Returning 0 means success."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines into a complete program that prints Hi",
+      "lines": [
+       "#include <iostream>",
+       "int main() {",
+       "    std::cout << \"Hi\";",
+       "    return 0;",
+       "}"
+      ],
+      "why": "Include first, then main with its body."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of running a C++ program in order",
+      "items": [
+       [
+        "Write the code in a .cpp file",
+        1
+       ],
+       [
+        "Compile it with g++",
+        2
+       ],
+       [
+        "Run the executable",
+        3
+       ],
+       [
+        "Read the output",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that prints Hello with cout.",
+      "a": [
+       "std::cout << \"Hello\";",
+       "cout << \"Hello\";",
+       "std::cout << \"Hello\"",
+       "cout << \"Hello\""
+      ],
+      "hint": "Start with std::cout",
+      "why": "cout << sends the text to the screen."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a program that prints Hello",
+      "lines": [
+       "#include <iostream>",
+       "using namespace std;",
+       "int main() {",
+       "    cout << \"Hello\";",
+       "}"
+      ],
+      "why": "Header, using line, then main. main returns 0 automatically if you leave it out."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "std::cout << \"Hello\" << \"World\";",
+      "o": [
+       "Hello World",
+       "Hello\nWorld",
+       "World",
+       "HelloWorld"
+      ],
+      "a": 3,
+      "why": "Two strings printed one after the other with no space."
+     }
+    ]
+   },
+   {
+    "title": "Input and Output with cout and cin",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Printing with cout",
+      "b": "cout prints to the screen. The << operator pushes values into it, and you can chain many of them. Text goes inside double quotes, numbers and variables do not.",
+      "code": "std::cout << \"Score: \" << 10 << \"\\n\";"
+     },
+     {
+      "h": "New lines",
+      "b": "To start a new line, print \"\\n\" or std::endl. endl also flushes the output, which is a little slower, so \\n is fine most of the time. Without either, everything prints on one line."
+     },
+     {
+      "h": "Reading with cin",
+      "b": "cin reads what the user types. The >> operator moves the typed value into a variable, and the variable must be declared first. cin stops reading at a space.",
+      "code": "int age;\nstd::cout << \"Age? \";\nstd::cin >> age;\nstd::cout << age + 1;"
+     },
+     {
+      "h": "Why std:: and using namespace",
+      "b": "cout and cin live in the namespace std, so we write std::cout. You can write using namespace std; once near the top and then just write cout. Beginners often do this in small programs, but big projects keep std:: to avoid name clashes.",
+      "code": "using namespace std;\ncout << \"Hi\";"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which operator sends data to cout?",
+      "o": [
+       ">>",
+       "<<",
+       "<-",
+       "=>"
+      ],
+      "a": 1,
+      "why": "<< is the insertion operator used with cout."
+     },
+     {
+      "t": "mc",
+      "q": "Which line reads a number from the keyboard into x?",
+      "o": [
+       "std::cin >> x;",
+       "std::cout << x;",
+       "read(x);",
+       "std::cin << x;"
+      ],
+      "a": 0,
+      "why": "cin uses >> to extract into a variable."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "std::cout << \"A\" << 1 + 2 << \"B\";",
+      "o": [
+       "A1+2B",
+       "A12B",
+       "A3B",
+       "AB3"
+      ],
+      "a": 2,
+      "why": "1 + 2 is calculated to 3 before printing."
+     },
+     {
+      "t": "tf",
+      "q": "Both \"\\n\" and std::endl move output to a new line.",
+      "a": true,
+      "why": "endl also flushes the buffer, but both start a new line."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "cout",
+        "Output stream"
+       ],
+       [
+        "cin",
+        "Input stream"
+       ],
+       [
+        "<<",
+        "Insertion operator"
+       ],
+       [
+        ">>",
+        "Extraction operator"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the manipulator that ends a line (it starts with e).",
+      "a": [
+       "endl",
+       "std::endl"
+      ],
+      "why": "std::endl ends the line and flushes output."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to ask for an age and print it",
+      "lines": [
+       "int age;",
+       "std::cout << \"Age? \";",
+       "std::cin >> age;",
+       "std::cout << age;"
+      ],
+      "why": "Declare, prompt, read, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a program that reads a number in order",
+      "items": [
+       [
+        "Declare a variable",
+        1
+       ],
+       [
+        "Print a prompt",
+        2
+       ],
+       [
+        "Read the value with cin",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that reads an int into variable n with cin.",
+      "a": [
+       "std::cin >> n;",
+       "cin >> n;",
+       "std::cin >> n",
+       "cin >> n"
+      ],
+      "why": "cin >> n stores the typed value in n."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a program part that reads n and prints double it",
+      "lines": [
+       "int n;",
+       "std::cin >> n;",
+       "std::cout << n * 2;"
+      ],
+      "why": "Declare, read, then use."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "int a = 4;\nstd::cout << \"a=\" << a << \"\\n\" << \"done\";",
+      "o": [
+       "a=4\ndone",
+       "a=4 done",
+       "a=4done",
+       "a=\n4\ndone"
+      ],
+      "a": 0,
+      "why": "\\n puts done on a new line."
+     }
+    ]
+   },
+   {
+    "title": "Variables and Types",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Declaring variables",
+      "b": "A variable is a named box that holds a value. You write the type, the name, and usually a starting value. C++ is statically typed, so the type cannot change later.",
+      "code": "int score = 10;\nscore = score + 5;\nstd::cout << score;"
+     },
+     {
+      "h": "The basic types",
+      "b": "int holds whole numbers. double holds decimal numbers. char holds one character in single quotes like 'A'. bool holds true or false. std::string holds text in double quotes.",
+      "code": "int lives = 3;\ndouble price = 2.5;\nchar grade = 'A';\nbool alive = true;"
+     },
+     {
+      "h": "Printing bool and char",
+      "b": "A bool prints as 1 for true and 0 for false. A char prints as the character. Adding 1 to a char moves it along the alphabet, so 'A' plus 1 becomes 'B'.",
+      "code": "bool done = false;\nstd::cout << done;   // 0"
+     },
+     {
+      "h": "const and naming",
+      "b": "Put const before a variable to stop it from changing. Names use letters, digits and underscores, cannot start with a digit, and are case sensitive. Always give a variable a starting value, because an uninitialized one holds garbage.",
+      "code": "const int MAX_LIVES = 3;\nint coins = 0;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which type is best for the value 3.14?",
+      "o": [
+       "int",
+       "double",
+       "char",
+       "bool"
+      ],
+      "a": 1,
+      "why": "double stores numbers with decimals."
+     },
+     {
+      "t": "mc",
+      "q": "Which line declares a constant?",
+      "o": [
+       "int const = MAX 10;",
+       "constant int MAX = 10;",
+       "const int MAX = 10;",
+       "final int MAX = 10;"
+      ],
+      "a": 2,
+      "why": "The const keyword before the type makes it read-only."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int x = 5;\ndouble y = 2.5;\nstd::cout << x + y;",
+      "o": [
+       "7.5",
+       "7",
+       "75",
+       "Error"
+      ],
+      "a": 0,
+      "why": "int plus double gives a double, 5 + 2.5 = 7.5."
+     },
+     {
+      "t": "tf",
+      "q": "A char value is written with single quotes, like 'A'.",
+      "a": true,
+      "why": "Double quotes are for strings, single quotes for one char."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to what it stores",
+      "pairs": [
+       [
+        "int",
+        "Whole numbers"
+       ],
+       [
+        "double",
+        "Decimal numbers"
+       ],
+       [
+        "bool",
+        "true or false"
+       ],
+       [
+        "char",
+        "One character"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword for the type that holds true or false.",
+      "a": [
+       "bool"
+      ],
+      "why": "bool is the boolean type."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 15",
+      "lines": [
+       "int score = 10;",
+       "score = score + 5;",
+       "std::cout << score;"
+      ],
+      "why": "Set the value, change it, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of declaring a variable in order",
+      "items": [
+       [
+        "Choose a type like int",
+        1
+       ],
+       [
+        "Choose a name like score",
+        2
+       ],
+       [
+        "Give a starting value with =",
+        3
+       ],
+       [
+        "End the line with a semicolon",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an int named score set to 10.",
+      "a": [
+       "int score = 10;",
+       "int score = 10",
+       "int score(10);",
+       "int score{10};"
+      ],
+      "why": "Type, name, = value, semicolon."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print 5 for a double price",
+      "lines": [
+       "double price = 2.5;",
+       "price = price * 2;",
+       "std::cout << price;"
+      ],
+      "why": "2.5 doubled is 5, and a double prints 5 without a decimal part."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "bool done = false;\nstd::cout << done;",
+      "o": [
+       "false",
+       "1",
+       "0",
+       "true"
+      ],
+      "a": 2,
+      "why": "A bool prints as 0 for false."
+     }
+    ]
+   },
+   {
+    "title": "Operators",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Arithmetic",
+      "b": "Use + - * / for math and % for the remainder. Multiplication and division happen before addition and subtraction, and brackets go first. The remainder operator only works on whole numbers.",
+      "code": "std::cout << 7 % 3;  // 1\nstd::cout << 2 + 3 * 4;  // 14"
+     },
+     {
+      "h": "Integer division",
+      "b": "When both numbers are int, / throws away the decimal part, so 7 / 2 is 3. Make one side a double to keep the decimals, as in 7 / 2.0, which gives 3.5.",
+      "code": "std::cout << 7 / 2;    // 3\nstd::cout << 7 / 2.0;  // 3.5"
+     },
+     {
+      "h": "Shortcuts",
+      "b": "x += 5 means x = x + 5. The same works for -=, *=, /= and %=. x++ adds one and x-- subtracts one.",
+      "code": "int a = 10;\na += 5;\na++;\nstd::cout << a;  // 16"
+     },
+     {
+      "h": "Comparing and combining",
+      "b": "Comparison operators are == != < > <= >= and give a bool. Use && for AND, || for OR and ! for NOT. A single = assigns a value, while == compares two values.",
+      "code": "int age = 15;\nbool teen = age >= 13 && age <= 19;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is 7 / 2 when both are ints?",
+      "o": [
+       "3.5",
+       "3",
+       "4",
+       "2"
+      ],
+      "a": 1,
+      "why": "Integer division drops the decimals."
+     },
+     {
+      "t": "mc",
+      "q": "What is 7 % 3?",
+      "o": [
+       "1",
+       "2",
+       "0",
+       "3"
+      ],
+      "a": 0,
+      "why": "7 divided by 3 leaves remainder 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int a = 10;\na += 5;\na *= 2;\nstd::cout << a;",
+      "o": [
+       "15",
+       "25",
+       "30",
+       "20"
+      ],
+      "a": 2,
+      "why": "10 + 5 is 15, and 15 * 2 is 30."
+     },
+     {
+      "t": "tf",
+      "q": "The expression 5 / 2.0 gives 2.5.",
+      "a": true,
+      "why": "One side is a double, so the division keeps decimals."
+     },
+     {
+      "t": "match",
+      "q": "Match each operator to its meaning",
+      "pairs": [
+       [
+        "%",
+        "Remainder"
+       ],
+       [
+        "&&",
+        "Logical AND"
+       ],
+       [
+        "!=",
+        "Not equal to"
+       ],
+       [
+        "++",
+        "Add one"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What is 17 % 5? Type the number.",
+      "a": [
+       "2"
+      ],
+      "why": "17 = 3 * 5 + 2, so the remainder is 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 19",
+      "lines": [
+       "int x = 9;",
+       "x = x * 2;",
+       "x++;",
+       "std::cout << x;"
+      ],
+      "why": "9 * 2 is 18, then adding one gives 19."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of evaluating (1 + 2) * 3 + 4 in order",
+      "items": [
+       [
+        "Brackets: 1 + 2 = 3",
+        1
+       ],
+       [
+        "Multiply: 3 * 3 = 9",
+        2
+       ],
+       [
+        "Add: 9 + 4 = 13",
+        3
+       ],
+       [
+        "Result is 13",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the expression for the remainder of n divided by 2.",
+      "a": [
+       "n % 2",
+       "n%2"
+      ],
+      "why": "n % 2 is 0 for even numbers and 1 for odd."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print the area 12",
+      "lines": [
+       "int w = 3;",
+       "int h = w + 1;",
+       "std::cout << w * h;"
+      ],
+      "why": "h needs w first, then multiply."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "int a = 7, b = 2;\nstd::cout << a / b << \" \" << a % b;",
+      "o": [
+       "3 1",
+       "3.5 1",
+       "4 1",
+       "3 0"
+      ],
+      "a": 0,
+      "why": "7 / 2 is 3 and 7 % 2 is 1."
+     }
+    ]
+   },
+   {
+    "title": "If, Else and Switch",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "if and else",
+      "b": "An if statement runs code only when its condition is true. The condition goes in parentheses. Add else for the case when it is false, and else if for extra checks. Use curly braces for more than one line.",
+      "code": "if (score >= 90) {\n    std::cout << \"A\";\n} else if (score >= 50) {\n    std::cout << \"B\";\n} else {\n    std::cout << \"C\";\n}"
+     },
+     {
+      "h": "Conditions",
+      "b": "Conditions use ==, !=, <, >, <=, >= and can be joined with && and ||. Careful, = assigns and == compares. Only the first branch whose condition is true runs, and the rest are skipped."
+     },
+     {
+      "h": "switch",
+      "b": "switch picks a branch by comparing one whole number or char to several case values. After a matching case runs, you normally write break to stop. default runs when nothing matches.",
+      "code": "switch (day) {\n    case 1: std::cout << \"Mon\"; break;\n    case 2: std::cout << \"Tue\"; break;\n    default: std::cout << \"Other\";\n}"
+     },
+     {
+      "h": "Fall-through",
+      "b": "If you forget break, execution continues into the next case, even if its value does not match. This is called fall-through. It is a common bug, but it is sometimes used on purpose to share code between cases."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which operator tests whether two values are equal?",
+      "o": [
+       "=",
+       "=>",
+       "==",
+       "equals"
+      ],
+      "a": 2,
+      "why": "== compares, = assigns."
+     },
+     {
+      "t": "mc",
+      "q": "Where does the condition of an if go?",
+      "o": [
+       "Inside parentheses ( )",
+       "Inside square brackets [ ]",
+       "Inside quotes",
+       "After a colon"
+      ],
+      "a": 0,
+      "why": "C++ needs if (condition)."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int n = 15;\nif (n % 2 == 0) std::cout << \"even\";\nelse std::cout << \"odd\";",
+      "o": [
+       "even",
+       "odd",
+       "evenodd",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "15 % 2 is 1, not 0, so the else branch runs."
+     },
+     {
+      "t": "tf",
+      "q": "In a switch, leaving out break makes execution fall into the next case.",
+      "a": true,
+      "why": "Without break the following cases also run."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "Runs when the condition is true"
+       ],
+       [
+        "else",
+        "Runs when the if was false"
+       ],
+       [
+        "else if",
+        "Adds another condition"
+       ],
+       [
+        "switch",
+        "Chooses between many fixed values"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that ends a switch case so it does not fall through.",
+      "a": [
+       "break"
+      ],
+      "why": "break jumps out of the switch."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints B",
+      "lines": [
+       "int score = 85;",
+       "if (score >= 90) {",
+       "    std::cout << \"A\";",
+       "} else {",
+       "    std::cout << \"B\";",
+       "}"
+      ],
+      "why": "85 is not at least 90, so else runs."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an if / else if / else chain in order",
+      "items": [
+       [
+        "Check the if condition",
+        1
+       ],
+       [
+        "If false, check the else if",
+        2
+       ],
+       [
+        "If still false, run else",
+        3
+       ],
+       [
+        "Continue after the chain",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the if line that checks age is at least 18 (no brace).",
+      "a": [
+       "if (age >= 18)",
+       "if(age>=18)",
+       "if (age >= 18) {"
+      ],
+      "why": "At least means greater than or equal."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints ok",
+      "lines": [
+       "int x = 4;",
+       "if (x < 0) {",
+       "    std::cout << \"neg\";",
+       "} else {",
+       "    std::cout << \"ok\";",
+       "}"
+      ],
+      "why": "4 is not negative, so else runs."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "int d = 2;\nswitch (d) {\n    case 1: std::cout << \"A\";\n    case 2: std::cout << \"B\";\n    case 3: std::cout << \"C\"; break;\n    default: std::cout << \"D\";\n}",
+      "o": [
+       "B",
+       "ABC",
+       "BCD",
+       "BC"
+      ],
+      "a": 3,
+      "why": "Case 2 has no break, so it falls into case 3, which breaks."
+     }
+    ]
+   },
+   {
+    "title": "Loops",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "while",
+      "b": "A while loop repeats its body as long as the condition is true. The condition is checked before every round. Make sure something inside changes, or the loop never ends.",
+      "code": "int n = 3;\nwhile (n > 0) {\n    std::cout << n;\n    n--;\n}"
+     },
+     {
+      "h": "for",
+      "b": "A for loop packs three parts in one line: a start, a condition and an update. It is perfect when you know how many times to repeat.",
+      "code": "for (int i = 0; i < 3; i++) {\n    std::cout << i;\n}\n// prints 012"
+     },
+     {
+      "h": "do while",
+      "b": "A do while loop runs the body first and checks the condition afterwards, so it always runs at least once. Note the semicolon after the closing while.",
+      "code": "int x = 10;\ndo {\n    std::cout << x;\n} while (x < 5);"
+     },
+     {
+      "h": "break and continue",
+      "b": "break leaves the loop immediately. continue skips the rest of the current round and jumps to the next one. You can put one loop inside another, which is called nesting.",
+      "code": "for (int i = 1; i <= 5; i++) {\n    if (i == 3) continue;\n    std::cout << i;\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the three parts of a for loop header?",
+      "o": [
+       "Name, type, value",
+       "Start, condition, update",
+       "If, else, then",
+       "Input, output, error"
+      ],
+      "a": 1,
+      "why": "for (start; condition; update)."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop always runs its body at least once?",
+      "o": [
+       "do while",
+       "while",
+       "for",
+       "if"
+      ],
+      "a": 0,
+      "why": "The condition is checked after the body."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "for (int i = 1; i <= 3; i++) {\n    std::cout << i;\n}",
+      "o": [
+       "012",
+       "1234",
+       "123",
+       "12"
+      ],
+      "a": 2,
+      "why": "i goes 1, 2, 3 and stops when i is 4."
+     },
+     {
+      "t": "tf",
+      "q": "continue skips the rest of the current round and goes to the next one.",
+      "a": true,
+      "why": "It does not leave the loop like break does."
+     },
+     {
+      "t": "match",
+      "q": "Match each loop idea to its description",
+      "pairs": [
+       [
+        "for",
+        "Repeat a known number of times"
+       ],
+       [
+        "while",
+        "Repeat until the condition is false"
+       ],
+       [
+        "do while",
+        "Body runs once before checking"
+       ],
+       [
+        "break",
+        "Leave the loop immediately"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that exits a loop early.",
+      "a": [
+       "break"
+      ],
+      "why": "break ends the loop at once."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 10",
+      "lines": [
+       "int sum = 0;",
+       "for (int i = 1; i <= 4; i++) {",
+       "    sum += i;",
+       "}",
+       "std::cout << sum;"
+      ],
+      "why": "1 + 2 + 3 + 4 is 10."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a while loop in order",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "Run the body",
+        2
+       ],
+       [
+        "Go back and check again",
+        3
+       ],
+       [
+        "Exit when it is false",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type a for header that counts i from 0 up to 4, using i < 5 and i++.",
+      "a": [
+       "for (int i = 0; i < 5; i++)",
+       "for(int i=0;i<5;i++)",
+       "for (int i = 0; i < 5; i++) {"
+      ],
+      "why": "Start at 0, stop before 5, add one each round."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the countdown that prints 321",
+      "lines": [
+       "int n = 3;",
+       "while (n > 0) {",
+       "    std::cout << n;",
+       "    n--;",
+       "}"
+      ],
+      "why": "Print then decrease until n is 0."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "for (int i = 1; i <= 5; i++) {\n    if (i == 3) continue;\n    std::cout << i;\n}",
+      "o": [
+       "1245",
+       "12345",
+       "124",
+       "1235"
+      ],
+      "a": 0,
+      "why": "When i is 3, continue skips the print."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Writing a function",
+      "b": "A function is a named block of code you can call many times. You write the return type, the name, the parameters in parentheses, and the body. return sends a value back to the caller.",
+      "code": "int square(int n) {\n    return n * n;\n}\n\nstd::cout << square(4);  // 16"
+     },
+     {
+      "h": "void functions",
+      "b": "If a function gives nothing back, its return type is void. It can still print things or do work. Calling it is just writing its name with arguments and a semicolon.",
+      "code": "void greet(std::string name) {\n    std::cout << \"Hi \" << name;\n}\ngreet(\"Ada\");"
+     },
+     {
+      "h": "Prototypes",
+      "b": "C++ reads top to bottom, so a function must be known before you call it. Either define it above main, or write a prototype, which is just the header with a semicolon. Then the full definition can come later.",
+      "code": "int add(int a, int b);  // prototype\n\nint main() {\n    std::cout << add(2, 3);\n}\n\nint add(int a, int b) { return a + b; }"
+     },
+     {
+      "h": "Pass by value",
+      "b": "By default the function receives a copy of each argument. Changing the parameter inside does not change the original variable in the caller. You can also give a parameter a default value, like int step = 1."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What return type means a function gives nothing back?",
+      "o": [
+       "null",
+       "none",
+       "void",
+       "empty"
+      ],
+      "a": 2,
+      "why": "void means no return value."
+     },
+     {
+      "t": "mc",
+      "q": "What is a function prototype?",
+      "o": [
+       "A declaration of the header ending with a semicolon",
+       "A function with no body and no name",
+       "A loop inside main",
+       "A comment about a function"
+      ],
+      "a": 0,
+      "why": "It tells the compiler the function exists before its definition."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int square(int n) { return n * n; }\nint main() {\n    std::cout << square(4) + 1;\n}",
+      "o": [
+       "16",
+       "8",
+       "5",
+       "17"
+      ],
+      "a": 3,
+      "why": "square(4) is 16, plus 1 is 17."
+     },
+     {
+      "t": "tf",
+      "q": "When you pass an int by value, changing it inside the function changes the caller's variable.",
+      "a": false,
+      "why": "The function only changes its own copy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "void",
+        "Returns nothing"
+       ],
+       [
+        "return",
+        "Sends a value back"
+       ],
+       [
+        "parameter",
+        "Input variable in the definition"
+       ],
+       [
+        "prototype",
+        "Declaration before use"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the return type of a function that gives back true or false.",
+      "a": [
+       "bool"
+      ],
+      "why": "bool holds true or false."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 5",
+      "lines": [
+       "int add(int a, int b) {",
+       "    return a + b;",
+       "}  // end of add",
+       "int main() {",
+       "    std::cout << add(2, 3);",
+       "}"
+      ],
+      "why": "Define add first, then call it from main."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a function call in order",
+      "items": [
+       [
+        "main calls add(2, 3)",
+        1
+       ],
+       [
+        "The arguments are copied into a and b",
+        2
+       ],
+       [
+        "The body runs",
+        3
+       ],
+       [
+        "The value returns to main",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header line of function twice that takes int n and returns an int.",
+      "a": [
+       "int twice(int n)",
+       "int twice(int n) {"
+      ],
+      "why": "Return type, name, then parameter list."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the function that returns the bigger of two ints",
+      "lines": [
+       "int maxOf(int a, int b) {",
+       "    if (a > b) return a;",
+       "    return b;",
+       "}"
+      ],
+      "why": "Return a if it is bigger, otherwise b."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "void bump(int x) { x = x + 1; }\nint main() {\n    int n = 5;\n    bump(n);\n    std::cout << n;\n}",
+      "o": [
+       "5",
+       "6",
+       "0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "bump changes only its own copy of n."
+     }
+    ]
+   },
+   {
+    "title": "Arrays",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "What is an array",
+      "b": "An array holds a fixed number of values of the same type in a row. You write the type, the name and the size in square brackets. You can fill it with curly braces when you declare it.",
+      "code": "int a[4] = {3, 6, 9, 12};"
+     },
+     {
+      "h": "Indexes start at 0",
+      "b": "The first element is a[0] and the last is a[n-1] for an array of size n. You read or change an element with square brackets. Looping with a for loop is the usual way to visit all elements.",
+      "code": "int a[3] = {2, 4, 6};\nfor (int i = 0; i < 3; i++) {\n    std::cout << a[i];\n}"
+     },
+     {
+      "h": "Unfilled spots",
+      "b": "If you give fewer values than the size, the rest become 0. So int a[5] = {1, 2, 3}; makes the last two elements 0. Without any braces the values are garbage, so always initialize.",
+      "code": "int a[5] = {1, 2, 3};\n// a[3] and a[4] are 0"
+     },
+     {
+      "h": "Size and bounds",
+      "b": "sizeof(a) / sizeof(a[0]) gives the number of elements. C++ does not check bounds, so a[10] on a size 5 array reads memory that is not yours and causes bugs. Always keep the index between 0 and size minus 1.",
+      "code": "int n = sizeof(a) / sizeof(a[0]);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which index is the first element of an array?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "The size"
+      ],
+      "a": 1,
+      "why": "Arrays are zero indexed."
+     },
+     {
+      "t": "mc",
+      "q": "Which line declares an array of 5 ints?",
+      "o": [
+       "int a[5];",
+       "array int a(5);",
+       "int[5] a;",
+       "int a = [5];"
+      ],
+      "a": 0,
+      "why": "Type, name, then the size in brackets."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int a[4] = {3, 6, 9, 12};\nstd::cout << a[1] + a[3];",
+      "o": [
+       "15",
+       "9",
+       "18",
+       "12"
+      ],
+      "a": 2,
+      "why": "a[1] is 6 and a[3] is 12, so the sum is 18."
+     },
+     {
+      "t": "tf",
+      "q": "C++ automatically stops you from using an index outside an array.",
+      "a": false,
+      "why": "There is no bounds check, which is dangerous."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its meaning",
+      "pairs": [
+       [
+        "a[0]",
+        "First element"
+       ],
+       [
+        "a[n-1]",
+        "Last element of n"
+       ],
+       [
+        "{1, 2, 3}",
+        "Initializer list"
+       ],
+       [
+        "sizeof(a)/sizeof(a[0])",
+        "Number of elements"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "An array has 10 elements. Type the index of the last one.",
+      "a": [
+       "9"
+      ],
+      "why": "Indexes run from 0 to 9."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 12",
+      "lines": [
+       "int a[3] = {2, 4, 6};",
+       "int total = a[0] + a[1];",
+       "total += a[2];",
+       "std::cout << total;"
+      ],
+      "why": "2 + 4 + 6 is 12."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using an array in order",
+      "items": [
+       [
+        "Declare it with a size",
+        1
+       ],
+       [
+        "Fill it with values",
+        2
+       ],
+       [
+        "Loop over its indexes",
+        3
+       ],
+       [
+        "Use each element",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an int array named nums of size 5.",
+      "a": [
+       "int nums[5];",
+       "int nums[5]"
+      ],
+      "why": "Type, name, size in brackets."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that prints the array backwards (321)",
+      "lines": [
+       "int a[3] = {1, 2, 3};",
+       "for (int i = 2; i >= 0; i--) {",
+       "    std::cout << a[i];",
+       "}"
+      ],
+      "why": "Start at the last index and go down to 0."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "int a[5] = {1, 2, 3};\nstd::cout << a[2] << a[4];",
+      "o": [
+       "3",
+       "34",
+       "0",
+       "30"
+      ],
+      "a": 3,
+      "why": "a[2] is 3 and a[4] was not given a value so it is 0."
+     }
+    ]
+   },
+   {
+    "title": "Strings",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "std::string",
+      "b": "To work with text, include <string> and use std::string. It is a real type that grows and shrinks as needed. Join two strings with + and add to one with +=.",
+      "code": "#include <string>\nstd::string s = \"Hello\";\ns += \" C++\";"
+     },
+     {
+      "h": "Length and characters",
+      "b": "s.length() or s.size() gives the number of characters. s[0] is the first character, and indexes start at 0. You compare two strings with == and they match only if every character is equal.",
+      "code": "std::string s = \"cat\";\nstd::cout << s.length();  // 3\nstd::cout << s[0];        // c"
+     },
+     {
+      "h": "Part of a string",
+      "b": "s.substr(start, count) returns a piece of the string beginning at start with up to count characters. s.find(\"x\") gives the position of the text, or a special value if it is missing.",
+      "code": "std::string s = \"banana\";\nstd::cout << s.substr(1, 3);  // ana"
+     },
+     {
+      "h": "Reading text",
+      "b": "std::cin >> s stops at the first space. To read a whole line with spaces, use std::getline(std::cin, s). The first argument is the input stream and the second is the string to fill.",
+      "code": "std::string line;\nstd::getline(std::cin, line);\nstd::cout << line;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which header do you include to use std::string?",
+      "o": [
+       "<string>",
+       "<text>",
+       "<str>",
+       "<chars>"
+      ],
+      "a": 0,
+      "why": "std::string lives in the string header."
+     },
+     {
+      "t": "mc",
+      "q": "Which gives the number of characters in s?",
+      "o": [
+       "len(s)",
+       "s.length()",
+       "s.count",
+       "length(s)"
+      ],
+      "a": 1,
+      "why": "length() and size() both work."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "std::string s = \"Hello\";\ns += \" C++\";\nstd::cout << s.length();",
+      "o": [
+       "5",
+       "8",
+       "9",
+       "Hello C++"
+      ],
+      "a": 2,
+      "why": "Hello C++ has 5 + 1 + 3 = 9 characters."
+     },
+     {
+      "t": "tf",
+      "q": "You can compare two std::string values with ==.",
+      "a": true,
+      "why": "== is true when all characters are equal."
+     },
+     {
+      "t": "match",
+      "q": "Match each call to what it does",
+      "pairs": [
+       [
+        "s.length()",
+        "Number of characters"
+       ],
+       [
+        "s[0]",
+        "First character"
+       ],
+       [
+        "getline(cin, s)",
+        "Reads a whole line"
+       ],
+       [
+        "s.substr(1, 3)",
+        "Piece of the string"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the method name that returns the number of characters (not size).",
+      "a": [
+       "length",
+       "s.length()",
+       "s.length"
+      ],
+      "why": "length() counts characters."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints Hi Ada",
+      "lines": [
+       "std::string name = \"Ada\";",
+       "std::string msg = \"Hi \" + name;",
+       "std::cout << msg;"
+      ],
+      "why": "Create name, join it, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of reading a full line in order",
+      "items": [
+       [
+        "Include <string>",
+        1
+       ],
+       [
+        "Declare std::string line;",
+        2
+       ],
+       [
+        "Call std::getline(std::cin, line);",
+        3
+       ],
+       [
+        "Print line",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a std::string named name holding Bob.",
+      "a": [
+       "std::string name = \"Bob\";",
+       "std::string name(\"Bob\");",
+       "std::string name{\"Bob\"};",
+       "std::string name = \"Bob\""
+      ],
+      "why": "Type, name, then the text in double quotes."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that print Hi!",
+      "lines": [
+       "std::string a = \"Hi\";",
+       "std::string b = a + \"!\";",
+       "std::cout << b;"
+      ],
+      "why": "Join a and ! then print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "std::string s = \"banana\";\nstd::cout << s.substr(1, 3);",
+      "o": [
+       "ban",
+       "ana",
+       "anan",
+       "nan"
+      ],
+      "a": 1,
+      "why": "substr(1, 3) starts at index 1 and takes 3 characters."
+     }
+    ]
+   },
+   {
+    "title": "Vectors",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "A vector grows",
+      "b": "std::vector is an array that can change size. Include <vector> and write the element type in angle brackets. It starts empty or with a list of values.",
+      "code": "#include <vector>\nstd::vector<int> v = {5, 7};"
+     },
+     {
+      "h": "Adding and removing",
+      "b": "v.push_back(x) adds x at the end. v.pop_back() removes the last element. v.size() gives how many elements there are, and v.empty() tells if there are none. v.back() is the last element.",
+      "code": "v.push_back(9);\nstd::cout << v.size();  // 3"
+     },
+     {
+      "h": "Reading elements",
+      "b": "Use v[i] to read by index, starting at 0, just like an array. v.at(i) does the same but checks the index and throws an error if it is wrong. A range-based for loop visits every element without an index.",
+      "code": "for (int x : v) {\n    std::cout << x;\n}"
+     },
+     {
+      "h": "Why prefer vectors",
+      "b": "A vector knows its own size, grows when needed and cleans up after itself. Plain arrays have a fixed size and no safety. In modern C++ you reach for a vector first and only use arrays for simple fixed data."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which header gives you std::vector?",
+      "o": [
+       "<array>",
+       "<vector>",
+       "<list>",
+       "<vec>"
+      ],
+      "a": 1,
+      "why": "std::vector is defined in the vector header."
+     },
+     {
+      "t": "mc",
+      "q": "Which call adds an element at the end of a vector?",
+      "o": [
+       "push_back",
+       "add_end",
+       "append",
+       "insert_last"
+      ],
+      "a": 0,
+      "why": "push_back appends a value."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "std::vector<int> v = {5, 7};\nv.push_back(9);\nstd::cout << v.size() << v[2];",
+      "o": [
+       "29",
+       "37",
+       "39",
+       "3"
+      ],
+      "a": 2,
+      "why": "There are 3 elements and v[2] is 9."
+     },
+     {
+      "t": "tf",
+      "q": "A std::vector can grow while the program runs.",
+      "a": true,
+      "why": "push_back makes it bigger as needed."
+     },
+     {
+      "t": "match",
+      "q": "Match each call to what it does",
+      "pairs": [
+       [
+        "push_back(x)",
+        "Add at the end"
+       ],
+       [
+        "size()",
+        "Number of elements"
+       ],
+       [
+        "pop_back()",
+        "Remove the last"
+       ],
+       [
+        "empty()",
+        "True if no elements"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the declaration of an empty vector of ints named v.",
+      "a": [
+       "std::vector<int> v;",
+       "vector<int> v;",
+       "std::vector<int> v",
+       "vector<int> v"
+      ],
+      "why": "The element type goes in angle brackets."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 48",
+      "lines": [
+       "std::vector<int> v;",
+       "v.push_back(4);",
+       "v.push_back(8);",
+       "for (int x : v) {",
+       "    std::cout << x;",
+       "}"
+      ],
+      "why": "Elements print in the order they were added."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of building and showing a vector in order",
+      "items": [
+       [
+        "Include <vector>",
+        1
+       ],
+       [
+        "Declare the vector",
+        2
+       ],
+       [
+        "Add values with push_back",
+        3
+       ],
+       [
+        "Loop over it and print",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that adds 3 to the end of vector v.",
+      "a": [
+       "v.push_back(3);",
+       "v.push_back(3)"
+      ],
+      "why": "push_back appends to the end."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that print 5",
+      "lines": [
+       "std::vector<int> v;",
+       "v.push_back(2);",
+       "v.push_back(5);",
+       "std::cout << v.back();"
+      ],
+      "why": "back() returns the last element added."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "std::vector<int> v = {1, 2, 3};\nv.pop_back();\nstd::cout << v.size() << v.back();",
+      "o": [
+       "22",
+       "23",
+       "32",
+       "12"
+      ],
+      "a": 0,
+      "why": "After pop_back there are 2 elements and the last one is 2."
+     }
+    ]
+   },
+   {
+    "title": "References",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "A second name",
+      "b": "A reference is another name for an existing variable. You declare it with & after the type, and you must set it right away. After that, using the reference is exactly like using the original.",
+      "code": "int x = 5;\nint& r = x;\nr = 9;\nstd::cout << x;  // 9"
+     },
+     {
+      "h": "Pass by reference",
+      "b": "If a function parameter is a reference, the function works on the caller's variable instead of a copy. This lets a function change its arguments, like a swap function.",
+      "code": "void inc(int& n) {\n    n++;\n}\nint x = 4;\ninc(x);  // x is now 5"
+     },
+     {
+      "h": "const references",
+      "b": "Copying a big string or vector is slow. Passing it as const std::string& avoids the copy, and const promises the function will not change it. This is the standard way to pass big read-only data.",
+      "code": "void show(const std::string& s) {\n    std::cout << s;\n}"
+     },
+     {
+      "h": "Rules to remember",
+      "b": "A reference cannot be left empty and cannot be changed to refer to something else later. It is not a separate copy, so there is only one value in memory. Think of it as a nickname for the same variable."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a reference in C++?",
+      "o": [
+       "A copy of a variable",
+       "A pointer to a function",
+       "Another name for an existing variable",
+       "A type of loop"
+      ],
+      "a": 2,
+      "why": "Both names refer to the same value."
+     },
+     {
+      "t": "mc",
+      "q": "Which line makes r a reference to x?",
+      "o": [
+       "int& r = x;",
+       "int r = &x;",
+       "ref int r = x;",
+       "int r& x;"
+      ],
+      "a": 0,
+      "why": "The & goes after the type."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int x = 5;\nint& r = x;\nr = 9;\nstd::cout << x;",
+      "o": [
+       "5",
+       "14",
+       "Error",
+       "9"
+      ],
+      "a": 3,
+      "why": "Changing r changes x because r is x."
+     },
+     {
+      "t": "tf",
+      "q": "A reference must be given its variable at the moment it is declared.",
+      "a": true,
+      "why": "A reference can never be empty."
+     },
+     {
+      "t": "match",
+      "q": "Match each idea to its meaning",
+      "pairs": [
+       [
+        "int& r = x;",
+        "r is another name for x"
+       ],
+       [
+        "void f(int& n)",
+        "f can change the caller's variable"
+       ],
+       [
+        "const std::string& s",
+        "Read-only, no copy"
+       ],
+       [
+        "Pass by value",
+        "Function gets a copy"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "After int a = 1; int& b = a; b++; what is a? Type the number.",
+      "a": [
+       "2"
+      ],
+      "why": "b is a, so adding one to b makes a equal 2."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to build a function that swaps two ints",
+      "lines": [
+       "void swap2(int& a, int& b) {",
+       "    int t = a;",
+       "    a = b;",
+       "    b = t;",
+       "}"
+      ],
+      "why": "Save a in t, copy b into a, then t into b."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a pass by reference call in order",
+      "items": [
+       [
+        "The caller passes variable x",
+        1
+       ],
+       [
+        "The function parameter becomes an alias of x",
+        2
+       ],
+       [
+        "The function changes the parameter",
+        3
+       ],
+       [
+        "The caller sees x changed",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the header of a void function inc taking an int reference n.",
+      "a": [
+       "void inc(int& n)",
+       "void inc(int &n)",
+       "void inc(int & n)"
+      ],
+      "why": "Put & after the type to make it a reference."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the code that makes x equal 5",
+      "lines": [
+       "void inc(int& n) {",
+       "    n++;",
+       "}",
+       "int x = 4;",
+       "inc(x);",
+       "std::cout << x;"
+      ],
+      "why": "inc changes x itself, so it prints 5."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "void swap2(int& a, int& b) {\n    int t = a;\n    a = b;\n    b = t;\n}\nint main() {\n    int a = 1, b = 2;\n    swap2(a, b);\n    std::cout << a << b;\n}",
+      "o": [
+       "21",
+       "12",
+       "11",
+       "22"
+      ],
+      "a": 0,
+      "why": "After the swap, a is 2 and b is 1."
+     }
+    ]
+   },
+   {
+    "title": "Pointers Basics",
+    "period": "C++ basics",
+    "learn": [
+     {
+      "h": "Addresses",
+      "b": "Every variable lives at an address in memory. The & operator in an expression gives the address of a variable. A pointer is a variable that stores an address, and it is declared with * after the type.",
+      "code": "int x = 10;\nint* p = &x;   // p holds the address of x"
+     },
+     {
+      "h": "Dereferencing",
+      "b": "Putting * in front of a pointer follows it to the value it points at. You can read the value or assign a new one, and the original variable changes too.",
+      "code": "*p = 25;\nstd::cout << x;  // 25"
+     },
+     {
+      "h": "nullptr",
+      "b": "A pointer that points to nothing should be set to nullptr. Never dereference a null pointer, because the program will crash. Check with if (p != nullptr) before using a pointer you are unsure about.",
+      "code": "int* p = nullptr;\nif (p != nullptr) {\n    std::cout << *p;\n}"
+     },
+     {
+      "h": "Pointer or reference",
+      "b": "Both let you reach another variable. A reference is simpler and safer and cannot be null. A pointer can be null and can be pointed at another variable later. You will need pointers for dynamic memory and for working with arrays in lower level code."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the & operator give you in the expression &x?",
+      "o": [
+       "The value of x",
+       "The address of x",
+       "The size of x",
+       "The type of x"
+      ],
+      "a": 1,
+      "why": "& is the address-of operator."
+     },
+     {
+      "t": "mc",
+      "q": "What does *p do when p is a pointer?",
+      "o": [
+       "Reaches the value p points to",
+       "Gets the address of p",
+       "Multiplies p",
+       "Deletes p"
+      ],
+      "a": 0,
+      "why": "* dereferences the pointer."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "int x = 10;\nint* p = &x;\n*p = 25;\nstd::cout << x;",
+      "o": [
+       "10",
+       "35",
+       "25",
+       "Error"
+      ],
+      "a": 2,
+      "why": "Writing through p changes x to 25."
+     },
+     {
+      "t": "tf",
+      "q": "nullptr means a pointer points to nothing.",
+      "a": true,
+      "why": "It is the safe empty value for pointers."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its meaning",
+      "pairs": [
+       [
+        "&x",
+        "Address of x"
+       ],
+       [
+        "*p",
+        "Value p points to"
+       ],
+       [
+        "int* p",
+        "Pointer to an int"
+       ],
+       [
+        "nullptr",
+        "Points nowhere"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword for the null pointer value in modern C++.",
+      "a": [
+       "nullptr"
+      ],
+      "why": "nullptr replaced the old NULL."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the program prints 7",
+      "lines": [
+       "int a = 3;",
+       "int* p = &a;",
+       "*p = *p + 4;",
+       "std::cout << a;"
+      ],
+      "why": "Writing through p changes a from 3 to 7."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a pointer in order",
+      "items": [
+       [
+        "Declare a variable",
+        1
+       ],
+       [
+        "Store its address in a pointer",
+        2
+       ],
+       [
+        "Dereference the pointer",
+        3
+       ],
+       [
+        "The variable is read or changed",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an int pointer p pointing to x.",
+      "a": [
+       "int* p = &x;",
+       "int *p = &x;",
+       "int * p = &x;",
+       "int* p = &x"
+      ],
+      "why": "Type int*, name p, then &x."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines so the program prints 2",
+      "lines": [
+       "int x = 6;",
+       "int* p = &x;",
+       "*p = 2;",
+       "std::cout << x;"
+      ],
+      "why": "The write through p changes x."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "int a = 1, b = 2;\nint* p = &a;\np = &b;\n*p = 7;\nstd::cout << a << b;",
+      "o": [
+       "12",
+       "17",
+       "27",
+       "71"
+      ],
+      "a": 1,
+      "why": "p moves to b, so *p = 7 changes b and a stays 1."
+     }
+    ]
+   }
+  ]
+ }
+}

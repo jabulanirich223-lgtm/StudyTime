@@ -1,0 +1,2372 @@
+{
+ "dsa": {
+  "name": "Algorithms & Data Structures",
+  "units": [
+   {
+    "title": "Big O Notation",
+    "period": "Foundations",
+    "learn": [
+     {
+      "h": "Why measure speed?",
+      "b": "Two programs can solve the same problem, but one may take a second and the other a year on big input. Big O describes how the number of steps grows as the input size n grows. We ignore the computer and constants, and look only at the growth."
+     },
+     {
+      "h": "Common growth rates",
+      "b": "O(1) is constant: the same work however big n is, like reading list[0]. O(n) is linear: a loop over all items. O(n^2) is quadratic: a loop inside a loop. O(log n) is logarithmic: the problem halves each step, like binary search. O(n log n) is typical for good sorting.",
+      "code": "def first(items):\n    return items[0]      # O(1)\n\ndef total(items):\n    s = 0\n    for x in items:      # O(n)\n        s += x\n    return s"
+     },
+     {
+      "h": "Counting loops",
+      "b": "Count how many times the work repeats. One loop over n items is O(n). Two nested loops over n items is n times n, so O(n^2). Two loops one after another is n + n, which is still O(n). Drop constants and smaller terms.",
+      "code": "for a in items:\n    for b in items:\n        print(a, b)   # n * n = O(n^2)"
+     },
+     {
+      "h": "Time and space",
+      "b": "Big O also measures space, meaning how much extra memory you use. Making a new list of size n is O(n) space. Often you can trade one for the other: a set uses extra memory but makes lookups O(1) instead of O(n)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does Big O describe?",
+      "o": [
+       "How the work grows as the input grows",
+       "The exact seconds a program takes",
+       "The length of the code",
+       "The number of variables"
+      ],
+      "a": 0,
+      "why": "It measures growth, not exact time."
+     },
+     {
+      "t": "mc",
+      "q": "What is the time of reading items[0] from a list?",
+      "o": [
+       "O(n)",
+       "O(log n)",
+       "O(1)",
+       "O(n^2)"
+      ],
+      "a": 2,
+      "why": "Indexing takes the same time for any size."
+     },
+     {
+      "t": "mc",
+      "q": "What is the Big O of this code?",
+      "code": "for a in items:\n    for b in items:\n        print(a, b)",
+      "o": [
+       "O(n)",
+       "O(n^2)",
+       "O(1)",
+       "O(log n)"
+      ],
+      "a": 1,
+      "why": "Nested loops over n give n times n steps."
+     },
+     {
+      "t": "tf",
+      "q": "O(2n) simplifies to O(n) because we drop constants.",
+      "a": true,
+      "why": "Constants do not change the growth rate."
+     },
+     {
+      "t": "match",
+      "q": "Match each Big O to an example",
+      "pairs": [
+       [
+        "O(1)",
+        "Reading items[0]"
+       ],
+       [
+        "O(n)",
+        "One loop over the list"
+       ],
+       [
+        "O(n^2)",
+        "Loop inside a loop"
+       ],
+       [
+        "O(log n)",
+        "Halving the problem each step"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Big O of a single loop over n items.",
+      "a": [
+       "O(n)",
+       "On"
+      ],
+      "hint": "O(...)",
+      "why": "One pass is linear."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a function that sums a list, which is O(n).",
+      "lines": [
+       "def total(items):",
+       "    s = 0",
+       "    for x in items:",
+       "        s += x",
+       "    return s"
+      ],
+      "why": "Set up a total, loop, add, return."
+     },
+     {
+      "t": "order",
+      "q": "Order these from fastest to slowest growth",
+      "items": [
+       [
+        "O(1)",
+        1
+       ],
+       [
+        "O(log n)",
+        2
+       ],
+       [
+        "O(n)",
+        3
+       ],
+       [
+        "O(n^2)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write total(items) that returns the sum of a list using a loop (O(n)).",
+      "starter": "def total(items):\n    pass\n",
+      "tests": [
+       {
+        "expect": "6",
+        "post": "print(total([1, 2, 3]))"
+       },
+       {
+        "expect": "0",
+        "post": "print(total([]))"
+       },
+       {
+        "expect": "6",
+        "post": "print(total([10, -4]))"
+       }
+      ],
+      "hint": "Start s = 0 and add each item.",
+      "solution": "def total(items):\n    s = 0\n    for x in items:\n        s += x\n    return s",
+      "why": "One loop over n items is O(n)."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write has_duplicates(items) that returns True if any value appears twice. Use a set so it is O(n).",
+      "starter": "def has_duplicates(items):\n    pass\n",
+      "tests": [
+       {
+        "expect": "True",
+        "post": "print(has_duplicates([1, 2, 3, 2]))"
+       },
+       {
+        "expect": "False",
+        "post": "print(has_duplicates([1, 2, 3]))"
+       },
+       {
+        "expect": "False",
+        "post": "print(has_duplicates([]))"
+       }
+      ],
+      "hint": "Keep a set of seen values.",
+      "solution": "def has_duplicates(items):\n    seen = set()\n    for x in items:\n        if x in seen:\n            return True\n        seen.add(x)\n    return False",
+      "why": "Set lookups are O(1), so the whole function is O(n)."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the O(n^2) pair counter.",
+      "lines": [
+       "def count_pairs(items):",
+       "    c = 0",
+       "    for a in items:",
+       "        for b in items:",
+       "            c += 1",
+       "    return c"
+      ],
+      "why": "Two nested loops make n times n steps."
+     }
+    ]
+   },
+   {
+    "title": "Arrays and Two Pointers",
+    "period": "Arrays",
+    "learn": [
+     {
+      "h": "Arrays as Python lists",
+      "b": "A Python list stores items in order and gives each an index starting at 0. Reading or writing items[i] is O(1). Appending at the end is O(1) on average. Inserting or deleting at the front is O(n) because everything must shift.",
+      "code": "items = [5, 8, 2]\nitems[1] = 9\nitems.append(4)\nprint(len(items))"
+     },
+     {
+      "h": "Two pointers idea",
+      "b": "The two pointers technique uses two index variables that move through the list, often from opposite ends. It turns many O(n^2) loops into O(n) because each pointer moves only one way. Set left = 0 and right = len(items) - 1.",
+      "code": "left = 0\nright = len(items) - 1\nwhile left < right:\n    # work with items[left], items[right]\n    left += 1\n    right -= 1"
+     },
+     {
+      "h": "Reversing in place",
+      "b": "To reverse a list, swap the left and right items, then move both pointers inward. Stop when they meet. This changes the list itself and uses O(1) extra space. Python swaps with a, b = b, a.",
+      "code": "while left < right:\n    items[left], items[right] = items[right], items[left]\n    left += 1\n    right -= 1"
+     },
+     {
+      "h": "Pair sum on a sorted list",
+      "b": "To find two numbers that add to a target in a sorted list, start at both ends. If the sum is too small, move left up. If it is too big, move right down. If it matches, you found the pair. It takes O(n)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the time to read items[3]?",
+      "o": [
+       "O(1)",
+       "O(n)",
+       "O(log n)",
+       "O(n^2)"
+      ],
+      "a": 0,
+      "why": "Index access is constant."
+     },
+     {
+      "t": "mc",
+      "q": "Where do the two pointers usually start when reversing?",
+      "o": [
+       "Both at the start",
+       "Both at the end",
+       "In the middle",
+       "One at each end"
+      ],
+      "a": 3,
+      "why": "Left at 0, right at the last index."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "a = [1, 2, 3]\nl, r = 0, 2\nwhile l < r:\n    a[l], a[r] = a[r], a[l]\n    l += 1\n    r -= 1\nprint(a)",
+      "o": [
+       "[1, 2, 3]",
+       "[3, 2, 1]",
+       "[3, 2, 1, 3]",
+       "[2, 1, 3]"
+      ],
+      "a": 1,
+      "why": "The ends are swapped and then the pointers meet."
+     },
+     {
+      "t": "tf",
+      "q": "Inserting at the front of a Python list is O(1).",
+      "a": false,
+      "why": "Everything shifts, so it is O(n)."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "left pointer",
+        "Starts at index 0"
+       ],
+       [
+        "right pointer",
+        "Starts at the last index"
+       ],
+       [
+        "Two pointers",
+        "Turns many O(n^2) loops into O(n)"
+       ],
+       [
+        "Swap",
+        "a, b = b, a"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Python line that swaps a and b.",
+      "a": [
+       "a, b = b, a"
+      ],
+      "hint": "a, b = ...",
+      "why": "Tuple assignment swaps."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to reverse a list in place.",
+      "lines": [
+       "left, right = 0, len(items) - 1",
+       "while left < right:",
+       "    items[left], items[right] = items[right], items[left]",
+       "    left += 1",
+       "    right -= 1"
+      ],
+      "why": "Setup, loop, swap, move both."
+     },
+     {
+      "t": "order",
+      "q": "Put in order the pair-sum steps",
+      "items": [
+       [
+        "Put pointers at both ends",
+        1
+       ],
+       [
+        "Add the two values",
+        2
+       ],
+       [
+        "Move a pointer based on the sum",
+        3
+       ],
+       [
+        "Stop when the pointers meet",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write reverse_list(items) that reverses the list in place with two pointers and returns it.",
+      "starter": "def reverse_list(items):\n    pass\n",
+      "tests": [
+       {
+        "expect": "[4, 3, 2, 1]",
+        "post": "print(reverse_list([1, 2, 3, 4]))"
+       },
+       {
+        "expect": "[7]",
+        "post": "print(reverse_list([7]))"
+       },
+       {
+        "expect": "[7, 6, 5]",
+        "post": "print(reverse_list([5, 6, 7]))"
+       }
+      ],
+      "hint": "Swap items[left] and items[right], then move them.",
+      "solution": "def reverse_list(items):\n    left, right = 0, len(items) - 1\n    while left < right:\n        items[left], items[right] = items[right], items[left]\n        left += 1\n        right -= 1\n    return items",
+      "why": "Two pointers meet in the middle, O(n)."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write pair_sum(nums, target) for a sorted list. Return True if two different items add to target.",
+      "starter": "def pair_sum(nums, target):\n    pass\n",
+      "tests": [
+       {
+        "expect": "True",
+        "post": "print(pair_sum([1, 3, 4, 6, 9], 10))"
+       },
+       {
+        "expect": "False",
+        "post": "print(pair_sum([1, 3, 4, 6, 9], 20))"
+       },
+       {
+        "expect": "True",
+        "post": "print(pair_sum([2, 5], 7))"
+       }
+      ],
+      "hint": "Move left up if the sum is too small, right down if too big.",
+      "solution": "def pair_sum(nums, target):\n    l, r = 0, len(nums) - 1\n    while l < r:\n        s = nums[l] + nums[r]\n        if s == target:\n            return True\n        if s < target:\n            l += 1\n        else:\n            r -= 1\n    return False",
+      "why": "The sorted order tells which pointer to move."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the sorted pair-sum loop.",
+      "lines": [
+       "l, r = 0, len(nums) - 1",
+       "while l < r:",
+       "    s = nums[l] + nums[r]",
+       "    if s < target:",
+       "        l += 1",
+       "    elif s > target:",
+       "        r -= 1"
+      ],
+      "why": "Compute the sum and move the correct pointer."
+     }
+    ]
+   },
+   {
+    "title": "Strings",
+    "period": "Arrays",
+    "learn": [
+     {
+      "h": "Strings are sequences",
+      "b": "A string is a sequence of characters, so you can index it like a list: s[0] is the first character and s[-1] the last. Slicing s[1:4] gives characters 1 to 3. Strings are immutable, so you cannot change a character, you build a new string.",
+      "code": "s = 'hello'\nprint(s[0])\nprint(s[-1])\nprint(s[1:4])"
+     },
+     {
+      "h": "Useful methods",
+      "b": "upper() and lower() change case, split() cuts a string into a list of words, join() glues a list back together, strip() removes spaces at the ends, and replace() swaps text. len(s) is its length.",
+      "code": "words = 'a b c'.split()\nprint('-'.join(words))\nprint('Hi'.lower())"
+     },
+     {
+      "h": "Looping over characters",
+      "b": "A for loop gives you each character in turn. This is how you count letters or check conditions. Building a string with += in a loop can be slow for huge strings, so collect pieces in a list and join them at the end.",
+      "code": "count = 0\nfor ch in 'banana':\n    if ch == 'a':\n        count += 1\nprint(count)"
+     },
+     {
+      "h": "Palindromes",
+      "b": "A palindrome reads the same forward and backward, like level. Reverse a string with s[::-1]. Compare it to the original. For a two pointers check, compare s[left] with s[right] and move inward. Both take O(n).",
+      "code": "s = 'level'\nprint(s == s[::-1])"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is s[-1] for s = 'cat'?",
+      "o": [
+       "'t'",
+       "'c'",
+       "'a'",
+       "Error"
+      ],
+      "a": 0,
+      "why": "Negative index counts from the end."
+     },
+     {
+      "t": "mc",
+      "q": "Why can you not do s[0] = 'x' on a string?",
+      "o": [
+       "Strings have no index",
+       "Indexes must be negative",
+       "Strings are immutable",
+       "It is too slow"
+      ],
+      "a": 2,
+      "why": "You must build a new string instead."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "count = 0\nfor ch in 'banana':\n    if ch == 'a':\n        count += 1\nprint(count)",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "6"
+      ],
+      "a": 1,
+      "why": "There are three letter a in banana."
+     },
+     {
+      "t": "tf",
+      "q": "s[::-1] gives the string reversed.",
+      "a": true,
+      "why": "A step of -1 walks backward."
+     },
+     {
+      "t": "match",
+      "q": "Match each method to its job",
+      "pairs": [
+       [
+        "split()",
+        "Cut into a list of words"
+       ],
+       [
+        "join()",
+        "Glue a list into a string"
+       ],
+       [
+        "strip()",
+        "Remove spaces at the ends"
+       ],
+       [
+        "lower()",
+        "Make all letters small"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the expression that reverses string s using a slice.",
+      "a": [
+       "s[::-1]"
+      ],
+      "hint": "s[...]",
+      "why": "Step -1."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to check for a palindrome.",
+      "lines": [
+       "def is_pal(s):",
+       "    s = s.lower()",
+       "    return s == s[::-1]"
+      ],
+      "why": "Define, lowercase, compare."
+     },
+     {
+      "t": "order",
+      "q": "Put in order how to count the vowels in a word",
+      "items": [
+       [
+        "Set count to 0",
+        1
+       ],
+       [
+        "Loop over each character",
+        2
+       ],
+       [
+        "Check if it is a vowel",
+        3
+       ],
+       [
+        "Add 1 to count",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write is_palindrome(s) that returns True if s reads the same backward. Ignore capital letters.",
+      "starter": "def is_palindrome(s):\n    pass\n",
+      "tests": [
+       {
+        "expect": "True",
+        "post": "print(is_palindrome('Level'))"
+       },
+       {
+        "expect": "False",
+        "post": "print(is_palindrome('hello'))"
+       },
+       {
+        "expect": "True",
+        "post": "print(is_palindrome('a'))"
+       }
+      ],
+      "hint": "Lowercase it, then compare with its reverse.",
+      "solution": "def is_palindrome(s):\n    s = s.lower()\n    return s == s[::-1]",
+      "why": "Compare with the reversed string."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write count_vowels(s) that counts the letters a, e, i, o, u (lowercase) in s.",
+      "starter": "def count_vowels(s):\n    pass\n",
+      "tests": [
+       {
+        "expect": "3",
+        "post": "print(count_vowels('banana'))"
+       },
+       {
+        "expect": "0",
+        "post": "print(count_vowels('sky'))"
+       },
+       {
+        "expect": "5",
+        "post": "print(count_vowels('education'))"
+       }
+      ],
+      "hint": "Loop and check ch in 'aeiou'.",
+      "solution": "def count_vowels(s):\n    c = 0\n    for ch in s:\n        if ch in 'aeiou':\n            c += 1\n    return c",
+      "why": "One pass, O(n)."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that reverse the words in a sentence.",
+      "lines": [
+       "def reverse_words(s):",
+       "    words = s.split()",
+       "    words.reverse()",
+       "    return ' '.join(words)"
+      ],
+      "why": "Split, reverse, join."
+     }
+    ]
+   },
+   {
+    "title": "Hash Maps",
+    "period": "Hashing",
+    "learn": [
+     {
+      "h": "Key and value",
+      "b": "A hash map stores pairs of key and value. In Python it is a dict. You look up a value by its key, and the lookup is O(1) on average, because the key is turned into a number (a hash) that points straight to the spot.",
+      "code": "ages = {'Ana': 12, 'Bo': 15}\nprint(ages['Ana'])\nages['Cy'] = 9"
+     },
+     {
+      "h": "Common operations",
+      "b": "d[k] = v adds or changes. k in d tests whether a key exists. d.get(k, 0) returns 0 if the key is missing instead of an error. del d[k] removes it. for k, v in d.items() loops over pairs.",
+      "code": "d = {}\nd['a'] = d.get('a', 0) + 1\nprint('a' in d)"
+     },
+     {
+      "h": "Counting with a dict",
+      "b": "A very common pattern is counting. Loop over items and add 1 to d[item], using get to start at 0. This turns a problem that needs nested loops into one pass of O(n).",
+      "code": "counts = {}\nfor ch in 'aab':\n    counts[ch] = counts.get(ch, 0) + 1\nprint(counts)"
+     },
+     {
+      "h": "Two sum",
+      "b": "Given numbers and a target, find two that add to it. For each number x, check if target - x was already seen in a dict. Store each number with its index. One pass gives O(n) instead of O(n^2).",
+      "code": "seen = {}\nfor i, x in enumerate(nums):\n    need = target - x\n    if need in seen:\n        return [seen[need], i]\n    seen[x] = i"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the average time to look up a key in a dict?",
+      "o": [
+       "O(1)",
+       "O(n)",
+       "O(log n)",
+       "O(n^2)"
+      ],
+      "a": 0,
+      "why": "Hashing jumps straight to the value."
+     },
+     {
+      "t": "mc",
+      "q": "What does d.get('z', 0) return when z is missing?",
+      "o": [
+       "An error",
+       "0",
+       "None",
+       "'z'"
+      ],
+      "a": 1,
+      "why": "The second argument is the default."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "counts = {}\nfor ch in 'aab':\n    counts[ch] = counts.get(ch, 0) + 1\nprint(counts)",
+      "o": [
+       "{'a': 1, 'b': 1}",
+       "{'a': 3}",
+       "{'a': 2, 'b': 1}",
+       "['a', 'a', 'b']"
+      ],
+      "a": 2,
+      "why": "a appears twice and b once."
+     },
+     {
+      "t": "tf",
+      "q": "Two dict keys can be exactly the same.",
+      "a": false,
+      "why": "Keys are unique; a new value replaces the old."
+     },
+     {
+      "t": "match",
+      "q": "Match each operation to its meaning",
+      "pairs": [
+       [
+        "k in d",
+        "Is the key present"
+       ],
+       [
+        "d.get(k, 0)",
+        "Value or a default"
+       ],
+       [
+        "d.items()",
+        "Pairs to loop over"
+       ],
+       [
+        "del d[k]",
+        "Remove a key"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Python keyword used to test if a key is in a dict.",
+      "a": [
+       "in"
+      ],
+      "hint": "Two letters",
+      "why": "The word in."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to count letters.",
+      "lines": [
+       "counts = {}",
+       "for ch in word:",
+       "    counts[ch] = counts.get(ch, 0) + 1",
+       "print(counts)"
+      ],
+      "why": "Empty dict, loop, count, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order how two sum works",
+      "items": [
+       [
+        "Take the next number x",
+        1
+       ],
+       [
+        "Compute target - x",
+        2
+       ],
+       [
+        "Look it up in the dict",
+        3
+       ],
+       [
+        "Store x and its index",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write count_chars(s) that returns the number of times the letter a appears in s using a dict of counts. Print result with print(count_chars(s)['a']).",
+      "starter": "def count_chars(s):\n    pass\n",
+      "tests": [
+       {
+        "expect": "3",
+        "post": "print(count_chars('banana')['a'])"
+       },
+       {
+        "expect": "4",
+        "post": "print(count_chars('aaaa')['a'])"
+       },
+       {
+        "expect": "1",
+        "post": "print(count_chars('xay')['a'])"
+       }
+      ],
+      "hint": "Use counts[ch] = counts.get(ch, 0) + 1.",
+      "solution": "def count_chars(s):\n    counts = {}\n    for ch in s:\n        counts[ch] = counts.get(ch, 0) + 1\n    return counts",
+      "why": "The dict maps each letter to its count."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write two_sum(nums, target) returning the indices [i, j] of two numbers that add to target, with i < j. Use a dict.",
+      "starter": "def two_sum(nums, target):\n    pass\n",
+      "tests": [
+       {
+        "expect": "[0, 1]",
+        "post": "print(two_sum([2, 7, 11, 15], 9))"
+       },
+       {
+        "expect": "[1, 2]",
+        "post": "print(two_sum([3, 2, 4], 6))"
+       },
+       {
+        "expect": "[0, 1]",
+        "post": "print(two_sum([5, 5], 10))"
+       }
+      ],
+      "hint": "Look for target - x in the seen dict.",
+      "solution": "def two_sum(nums, target):\n    seen = {}\n    for i, x in enumerate(nums):\n        if target - x in seen:\n            return [seen[target - x], i]\n        seen[x] = i",
+      "why": "One pass, O(n)."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to find the first repeated item.",
+      "lines": [
+       "def first_repeat(items):",
+       "    seen = set()",
+       "    for x in items:",
+       "        if x in seen:",
+       "            return x",
+       "        seen.add(x)"
+      ],
+      "why": "Check the set, return a repeat, else add."
+     }
+    ]
+   },
+   {
+    "title": "Stacks",
+    "period": "Linear structures",
+    "learn": [
+     {
+      "h": "Last in, first out",
+      "b": "A stack is like a pile of plates: you add and remove only at the top. The last item in is the first out, called LIFO. The two main operations are push (add on top) and pop (remove from top). Both are O(1).",
+      "code": "stack = []\nstack.append(1)\nstack.append(2)\nprint(stack.pop())"
+     },
+     {
+      "h": "Using a list as a stack",
+      "b": "In Python, a list works as a stack. append() pushes and pop() removes the last item. stack[-1] looks at the top without removing it. An empty stack is falsy, so if not stack tests for empty. Popping an empty list raises an error.",
+      "code": "stack = [3, 4]\nprint(stack[-1])\nprint(len(stack))"
+     },
+     {
+      "h": "Where stacks appear",
+      "b": "Stacks power the undo button, the browser back button, and function calls (the call stack). Deep recursion fills the call stack and can crash with a stack overflow. Stacks are also used to match brackets and to evaluate expressions."
+     },
+     {
+      "h": "Balanced brackets",
+      "b": "To check that brackets match, push each opening bracket. For a closing bracket, pop the stack and make sure it is the matching opener. At the end the stack must be empty. If you pop an empty stack or see a mismatch, the text is unbalanced.",
+      "code": "for ch in text:\n    if ch in '([{':\n        stack.append(ch)\n    else:\n        # pop and compare\n        pass"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does LIFO mean?",
+      "o": [
+       "Last in, first out",
+       "Last in, first old",
+       "Lowest in, first out",
+       "Left in, first out"
+      ],
+      "a": 0,
+      "why": "The newest item leaves first."
+     },
+     {
+      "t": "mc",
+      "q": "Which list method pushes onto a stack?",
+      "o": [
+       "pop()",
+       "append()",
+       "insert(0)",
+       "remove()"
+      ],
+      "a": 1,
+      "why": "append adds at the end, the top."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "s = [1, 2]\ns.append(3)\nprint(s.pop())",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "[1, 2]"
+      ],
+      "a": 2,
+      "why": "Pop removes the last item, 3."
+     },
+     {
+      "t": "tf",
+      "q": "Popping from an empty list raises an error in Python.",
+      "a": true,
+      "why": "There is nothing to remove."
+     },
+     {
+      "t": "match",
+      "q": "Match each stack operation to its meaning",
+      "pairs": [
+       [
+        "push",
+        "Add on top"
+       ],
+       [
+        "pop",
+        "Remove from top"
+       ],
+       [
+        "peek",
+        "Look at the top"
+       ],
+       [
+        "empty",
+        "No items left"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the expression that looks at the top of list s without removing it.",
+      "a": [
+       "s[-1]"
+      ],
+      "hint": "s[...]",
+      "why": "The last item."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to push two items and pop one.",
+      "lines": [
+       "stack = []",
+       "stack.append('a')",
+       "stack.append('b')",
+       "top = stack.pop()",
+       "print(top)"
+      ],
+      "why": "Push a, push b, pop, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order for '(a)'",
+      "items": [
+       [
+        "Push the opening bracket",
+        1
+       ],
+       [
+        "Skip the letter a",
+        2
+       ],
+       [
+        "Pop on the closing bracket",
+        3
+       ],
+       [
+        "Stack is empty so it is balanced",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write reverse_string(s) using a stack (push each character, then pop them all).",
+      "starter": "def reverse_string(s):\n    pass\n",
+      "tests": [
+       {
+        "expect": "cba",
+        "post": "print(reverse_string('abc'))"
+       },
+       {
+        "expect": "x",
+        "post": "print(reverse_string('x'))"
+       },
+       {
+        "expect": "kcats",
+        "post": "print(reverse_string('stack'))"
+       }
+      ],
+      "hint": "Append each character, then pop into a result.",
+      "solution": "def reverse_string(s):\n    stack = []\n    for ch in s:\n        stack.append(ch)\n    out = ''\n    while stack:\n        out += stack.pop()\n    return out",
+      "why": "Popping reverses the order."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write balanced(s) returning True if the round brackets ( ) in s are balanced.",
+      "starter": "def balanced(s):\n    pass\n",
+      "tests": [
+       {
+        "expect": "True",
+        "post": "print(balanced('(a(b)c)'))"
+       },
+       {
+        "expect": "False",
+        "post": "print(balanced('(()'))"
+       },
+       {
+        "expect": "False",
+        "post": "print(balanced(')('))"
+       }
+      ],
+      "hint": "Push on ( and pop on ). Pop of an empty stack means False.",
+      "solution": "def balanced(s):\n    stack = []\n    for ch in s:\n        if ch == '(':\n            stack.append(ch)\n        elif ch == ')':\n            if not stack:\n                return False\n            stack.pop()\n    return not stack",
+      "why": "The stack must be empty at the end."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that undo the last action.",
+      "lines": [
+       "history = ['a', 'b', 'c']",
+       "last = history.pop()",
+       "print(last)",
+       "print(history)"
+      ],
+      "why": "Pop the last action then show both."
+     }
+    ]
+   },
+   {
+    "title": "Queues",
+    "period": "Linear structures",
+    "learn": [
+     {
+      "h": "First in, first out",
+      "b": "A queue is like a line at a shop: new people join at the back and the first person is served first. This is FIFO. The two main operations are enqueue (add at the back) and dequeue (remove from the front)."
+     },
+     {
+      "h": "Use deque, not list",
+      "b": "Removing from the front of a Python list is O(n) because everything shifts. Use collections.deque, where append() adds to the back and popleft() removes from the front, both O(1).",
+      "code": "from collections import deque\nq = deque()\nq.append('Ana')\nq.append('Bo')\nprint(q.popleft())"
+     },
+     {
+      "h": "Where queues appear",
+      "b": "Queues model anything fair and in order: print jobs, customers, messages, and tasks waiting for the CPU. They are also the key tool of breadth-first search in graphs, which you will meet later."
+     },
+     {
+      "h": "Rotating a queue",
+      "b": "Many problems take the front item and put it at the back. With a deque that is q.append(q.popleft()). Repeating it rotates the queue. The hot potato game rotates k times and then removes the person at the front, until one is left.",
+      "code": "q = deque([1, 2, 3])\nq.append(q.popleft())\nprint(list(q))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does FIFO mean?",
+      "o": [
+       "Fast in, fast out",
+       "First in, first out",
+       "First in, final out",
+       "Last in, first out"
+      ],
+      "a": 1,
+      "why": "The oldest item leaves first."
+     },
+     {
+      "t": "mc",
+      "q": "Which deque method removes from the front?",
+      "o": [
+       "popleft()",
+       "pop()",
+       "remove()",
+       "front()"
+      ],
+      "a": 0,
+      "why": "popleft takes the first item."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "from collections import deque\nq = deque([1, 2, 3])\nq.append(q.popleft())\nprint(list(q))",
+      "o": [
+       "[1, 2, 3]",
+       "[3, 1, 2]",
+       "[2, 3, 1]",
+       "[2, 1, 3]"
+      ],
+      "a": 2,
+      "why": "The front 1 moves to the back."
+     },
+     {
+      "t": "tf",
+      "q": "popleft() on a deque is O(1).",
+      "a": true,
+      "why": "That is why deque is used for queues."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "enqueue",
+        "Add at the back"
+       ],
+       [
+        "dequeue",
+        "Remove from the front"
+       ],
+       [
+        "FIFO",
+        "Oldest leaves first"
+       ],
+       [
+        "deque",
+        "Fast queue in Python"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the deque method that adds to the back.",
+      "a": [
+       "append"
+      ],
+      "hint": "One word",
+      "why": "Same as a list."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to serve the first person.",
+      "lines": [
+       "from collections import deque",
+       "q = deque(['Ana', 'Bo'])",
+       "first = q.popleft()",
+       "print(first)"
+      ],
+      "why": "Import, create, pop front, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order for a queue of Ana, Bo, Cy",
+      "items": [
+       [
+        "Ana is served first",
+        1
+       ],
+       [
+        "Bo is served second",
+        2
+       ],
+       [
+        "Cy is served third",
+        3
+       ],
+       [
+        "The queue is empty",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write rotate(items, k) that moves the first item to the back k times using a deque, and returns a list.",
+      "starter": "from collections import deque\n\ndef rotate(items, k):\n    pass\n",
+      "tests": [
+       {
+        "expect": "[2, 3, 4, 1]",
+        "post": "print(rotate([1, 2, 3, 4], 1))"
+       },
+       {
+        "expect": "[4, 1, 2, 3]",
+        "post": "print(rotate([1, 2, 3, 4], 3))"
+       },
+       {
+        "expect": "[5, 6]",
+        "post": "print(rotate([5, 6], 0))"
+       }
+      ],
+      "hint": "Use q.append(q.popleft()).",
+      "solution": "from collections import deque\n\ndef rotate(items, k):\n    q = deque(items)\n    for _ in range(k):\n        q.append(q.popleft())\n    return list(q)",
+      "why": "Each rotation is O(1)."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write hot_potato(names, k) that, until one name is left, rotates the queue k times then removes the front. Return the last name.",
+      "starter": "from collections import deque\n\ndef hot_potato(names, k):\n    pass\n",
+      "tests": [
+       {
+        "expect": "C",
+        "post": "print(hot_potato(['A', 'B', 'C'], 1))"
+       },
+       {
+        "expect": "A",
+        "post": "print(hot_potato(['A', 'B', 'C', 'D'], 2))"
+       },
+       {
+        "expect": "X",
+        "post": "print(hot_potato(['X'], 5))"
+       }
+      ],
+      "hint": "Rotate k times, popleft, repeat while len(q) > 1.",
+      "solution": "from collections import deque\n\ndef hot_potato(names, k):\n    q = deque(names)\n    while len(q) > 1:\n        for _ in range(k):\n            q.append(q.popleft())\n        q.popleft()\n    return q[0]",
+      "why": "Queue operations keep the order fair."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that process tasks in order.",
+      "lines": [
+       "from collections import deque",
+       "tasks = deque(['a', 'b', 'c'])",
+       "while tasks:",
+       "    t = tasks.popleft()",
+       "    print(t)"
+      ],
+      "why": "Loop until empty and serve from the front."
+     }
+    ]
+   },
+   {
+    "title": "Linked Lists",
+    "period": "Linear structures",
+    "learn": [
+     {
+      "h": "Nodes in a chain",
+      "b": "A linked list is a chain of nodes. Each node holds a value and a pointer to the next node. The last node points to None. You keep only the head, the first node, and reach the rest by following next.",
+      "code": "class Node:\n    def __init__(self, val, next=None):\n        self.val = val\n        self.next = next\n\nhead = Node(1, Node(2, Node(3)))"
+     },
+     {
+      "h": "Walking the list",
+      "b": "To visit every node, start at the head and move with cur = cur.next until cur is None. There is no index, so reaching the item at position i takes O(i) steps, unlike an array where it is O(1).",
+      "code": "cur = head\nwhile cur:\n    print(cur.val)\n    cur = cur.next"
+     },
+     {
+      "h": "Inserting and deleting",
+      "b": "Adding a node at the head is O(1): make a new node whose next is the old head. Deleting after a known node is O(1): set node.next = node.next.next. Compared with arrays, no items need to shift, but finding a place costs O(n).",
+      "code": "new = Node(0, head)\nhead = new"
+     },
+     {
+      "h": "Reversing a list",
+      "b": "To reverse, walk through the list and flip each next pointer to the previous node. Keep three names: prev (starts None), cur and nxt (saved before you change cur.next). When cur becomes None, prev is the new head. It takes O(n) time and O(1) space.",
+      "code": "prev = None\ncur = head\nwhile cur:\n    nxt = cur.next\n    cur.next = prev\n    prev = cur\n    cur = nxt\nhead = prev"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the last node of a linked list point to?",
+      "o": [
+       "None",
+       "The head",
+       "Itself",
+       "The first value"
+      ],
+      "a": 0,
+      "why": "None marks the end."
+     },
+     {
+      "t": "mc",
+      "q": "How long does it take to add a node at the head?",
+      "o": [
+       "O(n)",
+       "O(log n)",
+       "O(1)",
+       "O(n^2)"
+      ],
+      "a": 2,
+      "why": "Only a couple of pointers change."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "head = Node(1, Node(2, Node(3)))\ncur = head.next\nprint(cur.val)",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "None"
+      ],
+      "a": 1,
+      "why": "cur starts at head, and one step moves to value 2."
+     },
+     {
+      "t": "tf",
+      "q": "In a linked list you can read the item at position i in O(1).",
+      "a": false,
+      "why": "You must walk i steps, so it is O(i)."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its job",
+      "pairs": [
+       [
+        "head",
+        "First node"
+       ],
+       [
+        "next",
+        "Pointer to the following node"
+       ],
+       [
+        "None",
+        "End of the list"
+       ],
+       [
+        "cur",
+        "Walks through the list"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the line that moves cur to the next node.",
+      "a": [
+       "cur = cur.next"
+      ],
+      "hint": "cur = ...",
+      "why": "Follow the next pointer."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print every value.",
+      "lines": [
+       "cur = head",
+       "while cur:",
+       "    print(cur.val)",
+       "    cur = cur.next"
+      ],
+      "why": "Start, loop, print, move on."
+     },
+     {
+      "t": "order",
+      "q": "Put in order the steps of reversing one node",
+      "items": [
+       [
+        "Save cur.next in nxt",
+        1
+       ],
+       [
+        "Point cur.next to prev",
+        2
+       ],
+       [
+        "Move prev to cur",
+        3
+       ],
+       [
+        "Move cur to nxt",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write length(head) that returns how many nodes the list has. Node and build() are already defined.",
+      "starter": "def length(head):\n    pass\n",
+      "tests": [
+       {
+        "expect": "3",
+        "pre": "class Node:\n    def __init__(self, val, next=None):\n        self.val = val\n        self.next = next\n\ndef build(vals):\n    head = None\n    for v in reversed(vals):\n        head = Node(v, head)\n    return head\n",
+        "post": "print(length(build([4, 5, 6])))"
+       },
+       {
+        "expect": "0",
+        "pre": "class Node:\n    def __init__(self, val, next=None):\n        self.val = val\n        self.next = next\n\ndef build(vals):\n    head = None\n    for v in reversed(vals):\n        head = Node(v, head)\n    return head\n",
+        "post": "print(length(build([])))"
+       },
+       {
+        "expect": "1",
+        "pre": "class Node:\n    def __init__(self, val, next=None):\n        self.val = val\n        self.next = next\n\ndef build(vals):\n    head = None\n    for v in reversed(vals):\n        head = Node(v, head)\n    return head\n",
+        "post": "print(length(build([9])))"
+       }
+      ],
+      "hint": "Walk with cur = cur.next and count.",
+      "solution": "def length(head):\n    n = 0\n    cur = head\n    while cur:\n        n += 1\n        cur = cur.next\n    return n",
+      "why": "One pass, O(n)."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write reverse(head) that reverses the list and returns the new head. Node and build() are defined.",
+      "starter": "def reverse(head):\n    pass\n",
+      "tests": [
+       {
+        "expect": "[3, 2, 1]",
+        "pre": "class Node:\n    def __init__(self, val, next=None):\n        self.val = val\n        self.next = next\n\ndef build(vals):\n    head = None\n    for v in reversed(vals):\n        head = Node(v, head)\n    return head\n",
+        "post": "h = reverse(build([1, 2, 3]))\nout = []\nwhile h:\n    out.append(h.val)\n    h = h.next\nprint(out)"
+       },
+       {
+        "expect": "7",
+        "pre": "class Node:\n    def __init__(self, val, next=None):\n        self.val = val\n        self.next = next\n\ndef build(vals):\n    head = None\n    for v in reversed(vals):\n        head = Node(v, head)\n    return head\n",
+        "post": "h = reverse(build([7]))\nprint(h.val)"
+       },
+       {
+        "expect": "None",
+        "pre": "class Node:\n    def __init__(self, val, next=None):\n        self.val = val\n        self.next = next\n\ndef build(vals):\n    head = None\n    for v in reversed(vals):\n        head = Node(v, head)\n    return head\n",
+        "post": "print(reverse(None))"
+       }
+      ],
+      "hint": "Use prev, cur and nxt.",
+      "solution": "def reverse(head):\n    prev = None\n    cur = head\n    while cur:\n        nxt = cur.next\n        cur.next = prev\n        prev = cur\n        cur = nxt\n    return prev",
+      "why": "Flip each pointer as you walk."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that insert a new head.",
+      "lines": [
+       "new = Node(0)",
+       "new.next = head",
+       "head = new",
+       "print(head.val)"
+      ],
+      "why": "Make node, link to old head, move head."
+     }
+    ]
+   },
+   {
+    "title": "Recursion",
+    "period": "Recursion",
+    "learn": [
+     {
+      "h": "A function that calls itself",
+      "b": "Recursion means a function solves a problem by calling itself on a smaller version. Every recursive function needs a base case, which stops the recursion, and a recursive case, which moves toward the base case. Without a base case it never stops.",
+      "code": "def countdown(n):\n    if n == 0:\n        print('go')\n        return\n    print(n)\n    countdown(n - 1)"
+     },
+     {
+      "h": "Factorial",
+      "b": "The factorial of n, written n!, is n times (n - 1)!, and 0! is 1. That fits recursion perfectly. factorial(4) = 4 * factorial(3), and so on, until factorial(0) returns 1.",
+      "code": "def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)"
+     },
+     {
+      "h": "The call stack",
+      "b": "Each call waits for the call it made, so Python keeps a stack of unfinished calls. When the base case returns, the calls finish one by one in reverse order. Very deep recursion overflows the stack, and Python stops at around 1000 calls."
+     },
+     {
+      "h": "Thinking recursively",
+      "b": "Ask: what is the smallest case I can answer directly, and how can the big case use the answer to a smaller one? For the sum of a list: an empty list sums to 0, otherwise it is the first item plus the sum of the rest. Fibonacci calls itself twice, which can be slow, so use it only for small n.",
+      "code": "def total(items):\n    if not items:\n        return 0\n    return items[0] + total(items[1:])"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What stops a recursive function?",
+      "o": [
+       "The base case",
+       "The return type",
+       "A for loop",
+       "The print statement"
+      ],
+      "a": 0,
+      "why": "The base case returns without recursing."
+     },
+     {
+      "t": "mc",
+      "q": "What is factorial(3)?",
+      "o": [
+       "3",
+       "6",
+       "9",
+       "1"
+      ],
+      "a": 1,
+      "why": "3 * 2 * 1 equals 6."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "def f(n):\n    if n == 0:\n        return 1\n    return n * f(n - 1)\nprint(f(4))",
+      "o": [
+       "10",
+       "4",
+       "24",
+       "12"
+      ],
+      "a": 2,
+      "why": "4 * 3 * 2 * 1 equals 24."
+     },
+     {
+      "t": "tf",
+      "q": "A recursive function without a base case runs forever until it crashes.",
+      "a": true,
+      "why": "It overflows the call stack."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Base case",
+        "Stops the recursion"
+       ],
+       [
+        "Recursive case",
+        "Calls itself on a smaller problem"
+       ],
+       [
+        "Call stack",
+        "Holds the unfinished calls"
+       ],
+       [
+        "Stack overflow",
+        "Too many nested calls"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the value of 0 factorial.",
+      "a": [
+       "1"
+      ],
+      "hint": "A number",
+      "why": "By definition."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of recursive factorial.",
+      "lines": [
+       "def factorial(n):",
+       "    if n == 0:",
+       "        return 1",
+       "    return n * factorial(n - 1)"
+      ],
+      "why": "Header, base case, return, recursive step."
+     },
+     {
+      "t": "order",
+      "q": "Put in order how factorial(2) is computed",
+      "items": [
+       [
+        "factorial(2) calls factorial(1)",
+        1
+       ],
+       [
+        "factorial(1) calls factorial(0)",
+        2
+       ],
+       [
+        "factorial(0) returns 1",
+        3
+       ],
+       [
+        "The results multiply back up to 2",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write factorial(n) recursively.",
+      "starter": "def factorial(n):\n    pass\n",
+      "tests": [
+       {
+        "expect": "120",
+        "post": "print(factorial(5))"
+       },
+       {
+        "expect": "1",
+        "post": "print(factorial(0))"
+       },
+       {
+        "expect": "6",
+        "post": "print(factorial(3))"
+       }
+      ],
+      "hint": "Base case n == 0 returns 1.",
+      "solution": "def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)",
+      "why": "n times the factorial of n - 1."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write sum_digits(n) recursively; it returns the sum of the digits of a non-negative integer.",
+      "starter": "def sum_digits(n):\n    pass\n",
+      "tests": [
+       {
+        "expect": "6",
+        "post": "print(sum_digits(123))"
+       },
+       {
+        "expect": "0",
+        "post": "print(sum_digits(0))"
+       },
+       {
+        "expect": "18",
+        "post": "print(sum_digits(9045))"
+       }
+      ],
+      "hint": "Last digit is n % 10; the rest is n // 10.",
+      "solution": "def sum_digits(n):\n    if n < 10:\n        return n\n    return n % 10 + sum_digits(n // 10)",
+      "why": "Each call removes the last digit."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the recursive countdown.",
+      "lines": [
+       "def countdown(n):",
+       "    if n == 0:",
+       "        return",
+       "    print(n)",
+       "    countdown(n - 1)"
+      ],
+      "why": "Stop at zero, print, recurse."
+     }
+    ]
+   },
+   {
+    "title": "Sorting",
+    "period": "Algorithms",
+    "learn": [
+     {
+      "h": "Why sort?",
+      "b": "Sorted data is easier to search, compare and group. There are many sorting algorithms with different speed. In real Python code you use sorted() or list.sort(), which take O(n log n). Learning the classic algorithms teaches you how to think about speed."
+     },
+     {
+      "h": "Bubble sort",
+      "b": "Bubble sort walks through the list and swaps neighbors that are in the wrong order, so large values bubble to the end. Repeat until a full pass has no swaps. It is easy but slow: O(n^2).",
+      "code": "def bubble_sort(a):\n    n = len(a)\n    for i in range(n):\n        for j in range(n - 1 - i):\n            if a[j] > a[j + 1]:\n                a[j], a[j + 1] = a[j + 1], a[j]\n    return a"
+     },
+     {
+      "h": "Merge sort",
+      "b": "Merge sort splits the list in half, sorts each half recursively, then merges the two sorted halves by repeatedly taking the smaller front item. It is O(n log n) always, but needs O(n) extra space.",
+      "code": "def merge(a, b):\n    out = []\n    i = j = 0\n    while i < len(a) and j < len(b):\n        if a[i] <= b[j]:\n            out.append(a[i]); i += 1\n        else:\n            out.append(b[j]); j += 1\n    return out + a[i:] + b[j:]"
+     },
+     {
+      "h": "Quick sort",
+      "b": "Quick sort picks a pivot, puts smaller items on the left and larger on the right, then sorts each side recursively. On average it is O(n log n) and very fast, but a bad pivot choice can make it O(n^2).",
+      "code": "def quick(a):\n    if len(a) <= 1:\n        return a\n    p = a[0]\n    small = [x for x in a[1:] if x < p]\n    big = [x for x in a[1:] if x >= p]\n    return quick(small) + [p] + quick(big)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the time of bubble sort?",
+      "o": [
+       "O(n^2)",
+       "O(n)",
+       "O(log n)",
+       "O(1)"
+      ],
+      "a": 0,
+      "why": "Nested loops over the list."
+     },
+     {
+      "t": "mc",
+      "q": "What does merge sort do first?",
+      "o": [
+       "Picks the smallest item",
+       "Splits the list in half",
+       "Swaps neighbors",
+       "Reverses the list"
+      ],
+      "a": 1,
+      "why": "It divides, sorts the halves, then merges."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "a = [3, 2, 1]\nfor i in range(3):\n    for j in range(2):\n        if a[j] > a[j + 1]:\n            a[j], a[j + 1] = a[j + 1], a[j]\nprint(a)",
+      "o": [
+       "[3, 2, 1]",
+       "[2, 1, 3]",
+       "[1, 2, 3]",
+       "[1, 3, 2]"
+      ],
+      "a": 2,
+      "why": "One pass swaps 3 and 2, and then 3 and 1; another pass fixes the rest."
+     },
+     {
+      "t": "tf",
+      "q": "Merge sort needs extra memory for the merged lists.",
+      "a": true,
+      "why": "It uses O(n) extra space."
+     },
+     {
+      "t": "match",
+      "q": "Match each sort to its description",
+      "pairs": [
+       [
+        "Bubble",
+        "Swap neighbors repeatedly"
+       ],
+       [
+        "Merge",
+        "Split, sort halves, merge"
+       ],
+       [
+        "Quick",
+        "Partition around a pivot"
+       ],
+       [
+        "sorted()",
+        "Python built-in sort"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Big O of merge sort.",
+      "a": [
+       "O(n log n)",
+       "On log n",
+       "n log n"
+      ],
+      "hint": "O(...)",
+      "why": "Linearithmic."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of the merge step for two sorted lists.",
+      "lines": [
+       "out = []",
+       "i = j = 0",
+       "while i < len(a) and j < len(b):",
+       "    if a[i] <= b[j]:",
+       "        out.append(a[i]); i += 1",
+       "    else:",
+       "        out.append(b[j]); j += 1"
+      ],
+      "why": "Setup, loop, take the smaller front item."
+     },
+     {
+      "t": "order",
+      "q": "Put in order the steps of merge sort",
+      "items": [
+       [
+        "Split the list in half",
+        1
+       ],
+       [
+        "Sort the left half",
+        2
+       ],
+       [
+        "Sort the right half",
+        3
+       ],
+       [
+        "Merge the sorted halves",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write bubble_sort(a) that sorts the list in place with the bubble sort algorithm and returns it.",
+      "starter": "def bubble_sort(a):\n    pass\n",
+      "tests": [
+       {
+        "expect": "[1, 2, 5, 9]",
+        "post": "print(bubble_sort([5, 2, 9, 1]))"
+       },
+       {
+        "expect": "[]",
+        "post": "print(bubble_sort([]))"
+       },
+       {
+        "expect": "[1, 3, 3]",
+        "post": "print(bubble_sort([3, 3, 1]))"
+       }
+      ],
+      "hint": "Nested loops: swap a[j] and a[j + 1] when out of order.",
+      "solution": "def bubble_sort(a):\n    n = len(a)\n    for i in range(n):\n        for j in range(n - 1 - i):\n            if a[j] > a[j + 1]:\n                a[j], a[j + 1] = a[j + 1], a[j]\n    return a",
+      "why": "Each pass bubbles the largest to the end."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write merge(a, b) that merges two sorted lists into one sorted list.",
+      "starter": "def merge(a, b):\n    pass\n",
+      "tests": [
+       {
+        "expect": "[1, 2, 3, 4, 7, 9]",
+        "post": "print(merge([1, 4, 7], [2, 3, 9]))"
+       },
+       {
+        "expect": "[5]",
+        "post": "print(merge([], [5]))"
+       },
+       {
+        "expect": "[1, 1, 1]",
+        "post": "print(merge([1, 1], [1]))"
+       }
+      ],
+      "hint": "Compare the front items with two indexes.",
+      "solution": "def merge(a, b):\n    out = []\n    i = j = 0\n    while i < len(a) and j < len(b):\n        if a[i] <= b[j]:\n            out.append(a[i])\n            i += 1\n        else:\n            out.append(b[j])\n            j += 1\n    return out + a[i:] + b[j:]",
+      "why": "This is the heart of merge sort."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of quick sort.",
+      "lines": [
+       "def quick(a):",
+       "    if len(a) <= 1:",
+       "        return a",
+       "    p = a[0]",
+       "    small = [x for x in a[1:] if x < p]",
+       "    big = [x for x in a[1:] if x >= p]",
+       "    return quick(small) + [p] + quick(big)"
+      ],
+      "why": "Base case, pivot, partition, recurse."
+     }
+    ]
+   },
+   {
+    "title": "Binary Search",
+    "period": "Algorithms",
+    "learn": [
+     {
+      "h": "Halving the search",
+      "b": "Binary search finds an item in a sorted list by looking at the middle. If the target is smaller, search the left half, otherwise the right half. Each step halves the work, so it takes O(log n): a million items need only about 20 steps."
+     },
+     {
+      "h": "The loop",
+      "b": "Keep two indexes, low and high. While low <= high, compute mid = (low + high) // 2. If items[mid] is the target, return mid. If it is too small, set low = mid + 1. If it is too big, set high = mid - 1. If the loop ends, return -1.",
+      "code": "def bsearch(items, target):\n    low, high = 0, len(items) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if items[mid] == target:\n            return mid\n        if items[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+     },
+     {
+      "h": "Needs sorted data",
+      "b": "Binary search only works if the list is sorted. On unsorted data you must use linear search, O(n), which checks one by one. Sorting costs O(n log n), so sorting once pays off only if you search many times."
+     },
+     {
+      "h": "Beyond lists",
+      "b": "The halving idea works on any question where answers go from no to yes. For example, finding the integer square root of n: guess mid, check mid * mid against n, and halve the range. Python offers the bisect module for ready-made binary search.",
+      "code": "import bisect\nprint(bisect.bisect_left([1, 3, 5], 3))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the time of binary search?",
+      "o": [
+       "O(log n)",
+       "O(n)",
+       "O(1)",
+       "O(n^2)"
+      ],
+      "a": 0,
+      "why": "It halves the range each step."
+     },
+     {
+      "t": "mc",
+      "q": "What must be true about the list?",
+      "o": [
+       "It has no duplicates",
+       "It has even length",
+       "It is sorted",
+       "It holds only numbers"
+      ],
+      "a": 2,
+      "why": "Halving relies on order."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "items = [1, 3, 5, 7, 9]\nlow, high = 0, 4\nt = 7\nwhile low <= high:\n    mid = (low + high) // 2\n    if items[mid] == t:\n        print(mid)\n        break\n    if items[mid] < t:\n        low = mid + 1\n    else:\n        high = mid - 1",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "-1"
+      ],
+      "a": 1,
+      "why": "mid becomes 2 then 3; the value 7 is at index 3."
+     },
+     {
+      "t": "tf",
+      "q": "Binary search works on an unsorted list.",
+      "a": false,
+      "why": "The list must be sorted."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "low",
+        "Left end of the range"
+       ],
+       [
+        "high",
+        "Right end of the range"
+       ],
+       [
+        "mid",
+        "Middle index"
+       ],
+       [
+        "-1",
+        "Not found"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Python expression for the middle index of low and high.",
+      "a": [
+       "(low + high) // 2",
+       "(high + low) // 2",
+       "low + (high - low) // 2"
+      ],
+      "hint": "(low + high) ...",
+      "why": "Use integer division."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of the loop.",
+      "lines": [
+       "while low <= high:",
+       "    mid = (low + high) // 2",
+       "    if items[mid] == target:",
+       "        return mid",
+       "    if items[mid] < target:",
+       "        low = mid + 1",
+       "    else:",
+       "        high = mid - 1"
+      ],
+      "why": "Loop, mid, found, move low, else move high."
+     },
+     {
+      "t": "order",
+      "q": "Put in order one step of binary search",
+      "items": [
+       [
+        "Compute the middle index",
+        1
+       ],
+       [
+        "Compare the middle item to the target",
+        2
+       ],
+       [
+        "Discard the wrong half",
+        3
+       ],
+       [
+        "Repeat on the remaining half",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write bsearch(items, target) returning the index of target in a sorted list, or -1 if missing.",
+      "starter": "def bsearch(items, target):\n    pass\n",
+      "tests": [
+       {
+        "expect": "3",
+        "post": "print(bsearch([1, 3, 5, 7, 9], 7))"
+       },
+       {
+        "expect": "-1",
+        "post": "print(bsearch([1, 3, 5, 7, 9], 4))"
+       },
+       {
+        "expect": "0",
+        "post": "print(bsearch([2], 2))"
+       }
+      ],
+      "hint": "Move low and high until they cross.",
+      "solution": "def bsearch(items, target):\n    low, high = 0, len(items) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if items[mid] == target:\n            return mid\n        if items[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1",
+      "why": "Halving gives O(log n)."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write int_sqrt(n) returning the largest integer r with r * r <= n, using binary search on r.",
+      "starter": "def int_sqrt(n):\n    pass\n",
+      "tests": [
+       {
+        "expect": "4",
+        "post": "print(int_sqrt(16))"
+       },
+       {
+        "expect": "4",
+        "post": "print(int_sqrt(17))"
+       },
+       {
+        "expect": "0",
+        "post": "print(int_sqrt(0))"
+       }
+      ],
+      "hint": "Search r between 0 and n and keep the best valid r.",
+      "solution": "def int_sqrt(n):\n    low, high = 0, n\n    best = 0\n    while low <= high:\n        mid = (low + high) // 2\n        if mid * mid <= n:\n            best = mid\n            low = mid + 1\n        else:\n            high = mid - 1\n    return best",
+      "why": "Binary search works on yes/no questions."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that set up and run linear search.",
+      "lines": [
+       "def linear(items, target):",
+       "    for i in range(len(items)):",
+       "        if items[i] == target:",
+       "            return i",
+       "    return -1"
+      ],
+      "why": "Loop, check, return the index, else -1."
+     }
+    ]
+   },
+   {
+    "title": "Trees, BST and Traversal",
+    "period": "Trees and graphs",
+    "learn": [
+     {
+      "h": "Trees",
+      "b": "A tree is a set of nodes in a hierarchy. The top node is the root. Each node can have children, and a node without children is a leaf. A binary tree allows at most two children, called left and right. The height is the number of levels.",
+      "code": "class TreeNode:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right"
+     },
+     {
+      "h": "Binary search trees",
+      "b": "A binary search tree (BST) keeps order: every value in the left subtree is smaller than the node, and every value in the right subtree is larger. To search, compare with the node and go left or right. On a balanced tree this is O(log n), but a tree that is a straight line takes O(n).",
+      "code": "def contains(node, v):\n    if node is None:\n        return False\n    if v == node.val:\n        return True\n    if v < node.val:\n        return contains(node.left, v)\n    return contains(node.right, v)"
+     },
+     {
+      "h": "Depth-first traversals",
+      "b": "A traversal visits every node. In-order goes left, node, right, and on a BST it gives sorted values. Pre-order goes node, left, right. Post-order goes left, right, node. They are naturally recursive.",
+      "code": "def inorder(node):\n    if node is None:\n        return []\n    return inorder(node.left) + [node.val] + inorder(node.right)"
+     },
+     {
+      "h": "Level order and height",
+      "b": "Level order visits row by row, using a queue. The height of a tree is 1 plus the larger height of its two children, and an empty tree has height 0. Recursion fits trees because each child is itself a smaller tree.",
+      "code": "def height(node):\n    if node is None:\n        return 0\n    return 1 + max(height(node.left), height(node.right))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a leaf in a tree?",
+      "o": [
+       "A node with no children",
+       "The root",
+       "A node with two children",
+       "The deepest value only"
+      ],
+      "a": 0,
+      "why": "Leaves have no left or right child."
+     },
+     {
+      "t": "mc",
+      "q": "In a BST, where are smaller values than the node?",
+      "o": [
+       "In the right subtree",
+       "In the left subtree",
+       "At the root",
+       "Anywhere"
+      ],
+      "a": 1,
+      "why": "Left is smaller, right is larger."
+     },
+     {
+      "t": "mc",
+      "q": "What does in-order traversal of this BST give?",
+      "code": "#     2\n#    / \\\n#   1   3",
+      "o": [
+       "[2, 1, 3]",
+       "[3, 2, 1]",
+       "[1, 2, 3]",
+       "[1, 3, 2]"
+      ],
+      "a": 2,
+      "why": "Left, node, right gives sorted order. The tree has 2 at the root, 1 on the left and 3 on the right."
+     },
+     {
+      "t": "tf",
+      "q": "Pre-order visits the node before its children.",
+      "a": true,
+      "why": "Pre means the node comes first."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Root",
+        "Top node"
+       ],
+       [
+        "Leaf",
+        "Node without children"
+       ],
+       [
+        "In-order",
+        "Left, node, right"
+       ],
+       [
+        "Height",
+        "Number of levels"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the traversal name that goes left, node, right.",
+      "a": [
+       "in-order",
+       "inorder",
+       "in order"
+      ],
+      "hint": "Starts with in",
+      "why": "On a BST it gives sorted values."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of in-order traversal.",
+      "lines": [
+       "def inorder(node):",
+       "    if node is None:",
+       "        return []",
+       "    return inorder(node.left) + [node.val] + inorder(node.right)"
+      ],
+      "why": "Base case then left, node, right."
+     },
+     {
+      "t": "order",
+      "q": "Put in order how to search a BST for 7 (root 5)",
+      "items": [
+       [
+        "Compare 7 with the root 5",
+        1
+       ],
+       [
+        "7 is larger so go right",
+        2
+       ],
+       [
+        "Compare with the right child",
+        3
+       ],
+       [
+        "Stop when found or at None",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write height(node) that returns the height of a binary tree (0 for an empty tree). TreeNode and make() are defined; make builds a BST.",
+      "starter": "def height(node):\n    pass\n",
+      "tests": [
+       {
+        "expect": "3",
+        "pre": "class TreeNode:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef insert(root, v):\n    if root is None:\n        return TreeNode(v)\n    if v < root.val:\n        root.left = insert(root.left, v)\n    else:\n        root.right = insert(root.right, v)\n    return root\n\ndef make(vals):\n    root = None\n    for v in vals:\n        root = insert(root, v)\n    return root\n",
+        "post": "print(height(make([5, 3, 8, 1])))"
+       },
+       {
+        "expect": "0",
+        "pre": "class TreeNode:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef insert(root, v):\n    if root is None:\n        return TreeNode(v)\n    if v < root.val:\n        root.left = insert(root.left, v)\n    else:\n        root.right = insert(root.right, v)\n    return root\n\ndef make(vals):\n    root = None\n    for v in vals:\n        root = insert(root, v)\n    return root\n",
+        "post": "print(height(None))"
+       },
+       {
+        "expect": "1",
+        "pre": "class TreeNode:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef insert(root, v):\n    if root is None:\n        return TreeNode(v)\n    if v < root.val:\n        root.left = insert(root.left, v)\n    else:\n        root.right = insert(root.right, v)\n    return root\n\ndef make(vals):\n    root = None\n    for v in vals:\n        root = insert(root, v)\n    return root\n",
+        "post": "print(height(make([4])))"
+       }
+      ],
+      "hint": "1 + max of the left and right heights.",
+      "solution": "def height(node):\n    if node is None:\n        return 0\n    return 1 + max(height(node.left), height(node.right))",
+      "why": "Recursion on both children."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write contains(node, v) that searches a BST and returns True or False. TreeNode and make() are defined.",
+      "starter": "def contains(node, v):\n    pass\n",
+      "tests": [
+       {
+        "expect": "True",
+        "pre": "class TreeNode:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef insert(root, v):\n    if root is None:\n        return TreeNode(v)\n    if v < root.val:\n        root.left = insert(root.left, v)\n    else:\n        root.right = insert(root.right, v)\n    return root\n\ndef make(vals):\n    root = None\n    for v in vals:\n        root = insert(root, v)\n    return root\n",
+        "post": "print(contains(make([5, 3, 8, 1]), 8))"
+       },
+       {
+        "expect": "False",
+        "pre": "class TreeNode:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef insert(root, v):\n    if root is None:\n        return TreeNode(v)\n    if v < root.val:\n        root.left = insert(root.left, v)\n    else:\n        root.right = insert(root.right, v)\n    return root\n\ndef make(vals):\n    root = None\n    for v in vals:\n        root = insert(root, v)\n    return root\n",
+        "post": "print(contains(make([5, 3, 8, 1]), 4))"
+       },
+       {
+        "expect": "False",
+        "pre": "class TreeNode:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n\ndef insert(root, v):\n    if root is None:\n        return TreeNode(v)\n    if v < root.val:\n        root.left = insert(root.left, v)\n    else:\n        root.right = insert(root.right, v)\n    return root\n\ndef make(vals):\n    root = None\n    for v in vals:\n        root = insert(root, v)\n    return root\n",
+        "post": "print(contains(None, 1))"
+       }
+      ],
+      "hint": "Go left if v is smaller, right if bigger.",
+      "solution": "def contains(node, v):\n    if node is None:\n        return False\n    if v == node.val:\n        return True\n    if v < node.val:\n        return contains(node.left, v)\n    return contains(node.right, v)",
+      "why": "Each step discards one subtree."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the pre-order traversal.",
+      "lines": [
+       "def preorder(node):",
+       "    if node is None:",
+       "        return []",
+       "    return [node.val] + preorder(node.left) + preorder(node.right)"
+      ],
+      "why": "Node first, then left, then right."
+     }
+    ]
+   },
+   {
+    "title": "Graphs: BFS and DFS",
+    "period": "Trees and graphs",
+    "learn": [
+     {
+      "h": "What is a graph?",
+      "b": "A graph is a set of nodes (vertices) joined by edges. It models maps, friendships and networks. Edges can be directed (one way) or undirected, and can carry weights. The easiest way to store a graph in Python is an adjacency list: a dict from each node to the list of its neighbors.",
+      "code": "graph = {\n    'A': ['B', 'C'],\n    'B': ['D'],\n    'C': ['D'],\n    'D': [],\n}"
+     },
+     {
+      "h": "Breadth-first search",
+      "b": "BFS explores the graph level by level: first the start, then its neighbors, then their neighbors. It uses a queue. Keep a visited set so you never visit a node twice. BFS finds the shortest path in an unweighted graph. It takes O(V + E).",
+      "code": "from collections import deque\n\ndef bfs(graph, start):\n    seen = {start}\n    q = deque([start])\n    order = []\n    while q:\n        node = q.popleft()\n        order.append(node)\n        for nb in graph[node]:\n            if nb not in seen:\n                seen.add(nb)\n                q.append(nb)\n    return order"
+     },
+     {
+      "h": "Depth-first search",
+      "b": "DFS goes as deep as possible along one path, then backs up. It uses recursion (or a stack). Mark nodes visited when you enter them. It is great for finding connected parts, detecting cycles and exploring mazes. Also O(V + E).",
+      "code": "def dfs(graph, node, seen, order):\n    seen.add(node)\n    order.append(node)\n    for nb in graph[node]:\n        if nb not in seen:\n            dfs(graph, nb, seen, order)\n    return order"
+     },
+     {
+      "h": "Choosing BFS or DFS",
+      "b": "Use BFS for shortest paths or the nearest thing, because it spreads outward evenly. Use DFS to explore everything along a path, like solving a maze or checking if two nodes are connected. The only real difference in code is a queue versus a stack."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What data structure does BFS use?",
+      "o": [
+       "A queue",
+       "A stack",
+       "A heap",
+       "A dict only"
+      ],
+      "a": 0,
+      "why": "Queue gives level-by-level order."
+     },
+     {
+      "t": "mc",
+      "q": "What does DFS do first?",
+      "o": [
+       "Visits all neighbors first",
+       "Goes deep along one path",
+       "Sorts the nodes",
+       "Finds the shortest path"
+      ],
+      "a": 1,
+      "why": "It dives before backing up."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "from collections import deque\ngraph = {'A': ['B', 'C'], 'B': [], 'C': []}\nq = deque(['A'])\nout = []\nwhile q:\n    n = q.popleft()\n    out.append(n)\n    for nb in graph[n]:\n        q.append(nb)\nprint(out)",
+      "o": [
+       "['A', 'C', 'B']",
+       "['B', 'C', 'A']",
+       "['A', 'B', 'C']",
+       "['A']"
+      ],
+      "a": 2,
+      "why": "BFS visits A, then its neighbors B and C in order."
+     },
+     {
+      "t": "tf",
+      "q": "A visited set prevents going around a cycle forever.",
+      "a": true,
+      "why": "Each node is processed only once."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Vertex",
+        "A node in the graph"
+       ],
+       [
+        "Edge",
+        "A link between two nodes"
+       ],
+       [
+        "Adjacency list",
+        "Dict of neighbors"
+       ],
+       [
+        "BFS",
+        "Level by level"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the data structure that makes a search breadth-first.",
+      "a": [
+       "queue"
+      ],
+      "hint": "One word",
+      "why": "First in, first out."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of BFS.",
+      "lines": [
+       "seen = {start}",
+       "q = deque([start])",
+       "while q:",
+       "    node = q.popleft()",
+       "    print(node)"
+      ],
+      "why": "Mark start, queue it, loop, pop, process."
+     },
+     {
+      "t": "order",
+      "q": "Put in order the BFS steps",
+      "items": [
+       [
+        "Put the start in the queue",
+        1
+       ],
+       [
+        "Take a node from the front",
+        2
+       ],
+       [
+        "Add its unseen neighbors",
+        3
+       ],
+       [
+        "Repeat until the queue is empty",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write bfs_order(graph, start) returning the list of nodes in BFS order (neighbors in the listed order). A sample graph is defined above your code.",
+      "starter": "from collections import deque\n\ndef bfs_order(graph, start):\n    pass\n",
+      "tests": [
+       {
+        "expect": "['A', 'B', 'C', 'D']",
+        "pre": "graph = {\n    'A': ['B', 'C'],\n    'B': ['D'],\n    'C': ['D'],\n    'D': [],\n}\n",
+        "post": "print(bfs_order(graph, 'A'))"
+       },
+       {
+        "expect": "['B', 'D']",
+        "pre": "graph = {\n    'A': ['B', 'C'],\n    'B': ['D'],\n    'C': ['D'],\n    'D': [],\n}\n",
+        "post": "print(bfs_order(graph, 'B'))"
+       },
+       {
+        "expect": "['D']",
+        "pre": "graph = {\n    'A': ['B', 'C'],\n    'B': ['D'],\n    'C': ['D'],\n    'D': [],\n}\n",
+        "post": "print(bfs_order(graph, 'D'))"
+       }
+      ],
+      "hint": "Use a deque and a seen set.",
+      "solution": "from collections import deque\n\ndef bfs_order(graph, start):\n    seen = {start}\n    q = deque([start])\n    order = []\n    while q:\n        node = q.popleft()\n        order.append(node)\n        for nb in graph[node]:\n            if nb not in seen:\n                seen.add(nb)\n                q.append(nb)\n    return order",
+      "why": "BFS uses a queue."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write dfs_order(graph, start) returning nodes in DFS order using recursion (neighbors in the listed order).",
+      "starter": "def dfs_order(graph, start):\n    pass\n",
+      "tests": [
+       {
+        "expect": "['A', 'B', 'D', 'C']",
+        "pre": "graph = {\n    'A': ['B', 'C'],\n    'B': ['D'],\n    'C': ['D'],\n    'D': [],\n}\n",
+        "post": "print(dfs_order(graph, 'A'))"
+       },
+       {
+        "expect": "['C', 'D']",
+        "pre": "graph = {\n    'A': ['B', 'C'],\n    'B': ['D'],\n    'C': ['D'],\n    'D': [],\n}\n",
+        "post": "print(dfs_order(graph, 'C'))"
+       },
+       {
+        "expect": "['D']",
+        "pre": "graph = {\n    'A': ['B', 'C'],\n    'B': ['D'],\n    'C': ['D'],\n    'D': [],\n}\n",
+        "post": "print(dfs_order(graph, 'D'))"
+       }
+      ],
+      "hint": "Use a helper with a seen set.",
+      "solution": "def dfs_order(graph, start):\n    seen = set()\n    order = []\n    def go(n):\n        seen.add(n)\n        order.append(n)\n        for nb in graph[n]:\n            if nb not in seen:\n                go(nb)\n    go(start)\n    return order",
+      "why": "DFS dives deep first."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines that build and print a tiny graph.",
+      "lines": [
+       "graph = {}",
+       "graph['A'] = ['B']",
+       "graph['B'] = ['A']",
+       "print(graph['A'])"
+      ],
+      "why": "Create the dict, add edges, print neighbors."
+     }
+    ]
+   }
+  ]
+ }
+}

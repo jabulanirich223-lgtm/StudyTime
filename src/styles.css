@@ -373,7 +373,7 @@ select { font-family: inherit; font-weight: 800; font-size: 15px; padding: 8px 1
   .subject-pick small { display: none; }
   .banner h2 { font-size: 22px; } .banner-ico img, .banner-ico .svg { width: 56px !important; height: 56px !important; }
   .guide > span:not(.svg) { display: none; }
-  .qtext { font-size: 23px; } .asker img { width: 74px; }
+  .qtext { font-size: 23px; } .asker img, .who-face { width: 74px; }
   .learncard .tock-wrap { display: none; }
   .fb .tock-wrap { width: 50px; }
   .foot-btns { width: 100%; } .foot-btns .btn { flex: 1; min-width: 0; }
@@ -384,16 +384,19 @@ select { font-family: inherit; font-weight: 800; font-size: 15px; padding: 8px 1
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
 
 /* ---------- course picker (5 columns) ---------- */
-.cat-cols { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; align-items: start; text-align: left; }
+.cat-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(205px, 1fr)); gap: 14px; align-items: start; text-align: left; }
 .cat-col { background: var(--panel); border: 1px solid var(--line); border-top: 6px solid var(--cc); border-radius: 18px; padding: 14px; min-width: 0; }
 .cat-col header { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; }
 .cat-col h3 { font-size: 19px; }
+.cat-col header > div { min-width: 0; }
+.cat-col h3 { overflow-wrap: anywhere; }
 .cat-col header span { font-size: 13px; color: var(--muted); }
 .cat-list { display: flex; flex-direction: column; gap: 6px; }
 .track-btn { width: 100%; display: flex; align-items: center; gap: 10px; padding: 8px 10px; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 14px; background: var(--panel); text-align: left; font-weight: 800; color: var(--head); }
 .track-btn:hover { background: var(--soft); }
-.track-btn span:not(.svg) { flex: 1; min-width: 0; line-height: 1.2; text-align: left; }
-.track-btn small { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.track-btn .tb-txt { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.2; text-align: left; }
+.track-btn .tb-txt b { font-weight: 800; overflow-wrap: anywhere; }
+.track-btn small { color: var(--muted); font-size: 12px; font-weight: 700; }
 .track.open .track-btn { border-color: var(--cc); background: color-mix(in srgb, var(--cc) 8%, var(--panel)); }
 .track.soon { opacity: .45; }
 .levels { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 6px 0 4px 10px; }
@@ -401,7 +404,7 @@ select { font-family: inherit; font-weight: 800; font-size: 15px; padding: 8px 1
 .level:hover { background: var(--soft); }
 .level.cur { background: var(--brand-l); color: var(--brand-d); }
 .onb-pick.wide { max-width: 1400px; }
-@media (max-width: 1200px) { .cat-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 1200px) { .cat-cols { grid-template-columns: repeat(auto-fill, minmax(205px, 1fr)); } }
 @media (max-width: 760px) { .cat-cols { grid-template-columns: 1fr; } }
 
 /* ---------- interactive tasks ---------- */
@@ -423,5 +426,11 @@ select { font-family: inherit; font-weight: 800; font-size: 15px; padding: 8px 1
 .ide textarea { width: 100%; border: none; resize: vertical; background: transparent; color: #e5e9f0; font: 600 15px/1.6 ui-monospace, 'Cascadia Code', Consolas, monospace; padding: 14px 16px; outline: none; tab-size: 4; }
 .console { margin: 0; background: #0f1117; color: #d1d5db; border-radius: 12px; padding: 12px 14px; font: 600 14px/1.5 ui-monospace, Consolas, monospace; white-space: pre-wrap; max-height: 200px; overflow: auto; border-left: 5px solid #475569; }
 .console.pass { border-left-color: var(--green); color: #86efac; } .console.fail { border-left-color: var(--red); }
-.face { width: 96px; flex: none; transition: transform .1s; }
-.face.talking { transform: translateY(-2px); }
+.who-face { width: 96px; flex: none; transition: transform .1s; }
+.who-face.talking { transform: translateY(-2px); }
+.crew.pick { flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
+.crew.pick img { margin: 0; }
+.crew-mem { display: flex; flex-direction: column; align-items: center; gap: 2px; width: 104px; padding: 10px 6px; border: 2px solid var(--line); border-bottom-width: 4px; border-radius: 16px; background: #fff; cursor: pointer; font: inherit; }
+.crew-mem:hover { background: var(--soft); }
+.crew-mem img { height: 84px; object-fit: contain; }
+.crew-mem .tock-wrap { height: 84px; display: flex; align-items: center; }

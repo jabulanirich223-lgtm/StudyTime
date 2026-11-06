@@ -1,0 +1,2140 @@
+{
+ "luau": {
+  "name": "Lua & Roblox Luau",
+  "units": [
+   {
+    "title": "Print, Variables & local",
+    "period": "Lua basics",
+    "learn": [
+     {
+      "h": "Your first script",
+      "b": "Every program is a list of instructions. The print function shows a value in the Output window, which is how you check what your code is doing. Text goes inside quotes, numbers do not.",
+      "code": "print(\"Hello, world!\")\nprint(42)"
+     },
+     {
+      "h": "Variables",
+      "b": "A variable is a name that holds a value. You write the name, an equals sign, then the value. Later you can use the name instead of the value, or give it a new value.",
+      "code": "score = 10\nprint(score)\nscore = 15\nprint(score)"
+     },
+     {
+      "h": "Always use local",
+      "b": "Writing local before the name keeps the variable inside the script or block where you made it. It is faster and stops different scripts from mixing up their variables. Good Luau code uses local almost every time.",
+      "code": "local coins = 5\nlocal playerName = \"Rob\"\nprint(playerName, coins)"
+     },
+     {
+      "h": "Comments, names and nil",
+      "b": "Two dashes start a comment, which Luau ignores. Names are case sensitive, cannot start with a number, and are usually written in camelCase. A variable with no value holds nil, which means nothing.",
+      "code": "-- this is a comment\nlocal Coins = 1\nlocal coins = 2\nlocal empty\nprint(empty)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which function shows a value in the Output window?",
+      "o": [
+       "echo",
+       "print",
+       "log",
+       "say"
+      ],
+      "a": 1,
+      "why": "print writes values to the Output window."
+     },
+     {
+      "t": "mc",
+      "q": "Which line creates a local variable named lives with the value 3?",
+      "o": [
+       "var lives = 3",
+       "lives := 3",
+       "local lives = 3",
+       "int lives = 3"
+      ],
+      "a": 2,
+      "why": "Luau uses the local keyword and a plain equals sign."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local a = 5\nlocal b = a\na = 9\nprint(b)",
+      "o": [
+       "5",
+       "9",
+       "14",
+       "nil"
+      ],
+      "a": 0,
+      "why": "b copied the value 5 before a changed, so b stays 5."
+     },
+     {
+      "t": "tf",
+      "q": "In Luau, the names Coins and coins are two different variables.",
+      "a": true,
+      "why": "Names are case sensitive."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to what it does",
+      "pairs": [
+       [
+        "--",
+        "Starts a comment"
+       ],
+       [
+        "print",
+        "Shows a value in Output"
+       ],
+       [
+        "local",
+        "Limits a variable to its block"
+       ],
+       [
+        "nil",
+        "Means no value"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the two symbols that start a single-line comment.",
+      "a": [
+       "--"
+      ],
+      "why": "Two dashes start a comment."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the script prints 8",
+      "lines": [
+       "local coins = 5",
+       "local bonus = 3",
+       "coins = coins + bonus",
+       "print(coins)"
+      ],
+      "why": "Create both variables, add them, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for using a variable in order",
+      "items": [
+       [
+        "Write local and a name",
+        1
+       ],
+       [
+        "Add = and a value",
+        2
+       ],
+       [
+        "Change the value with a new = line",
+        3
+       ],
+       [
+        "Print it to check",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: the variables a and b are already set. Print their sum.",
+      "starter": "-- a and b are already set\n",
+      "tests": [
+       {
+        "pre": "a = 2\nb = 3",
+        "expect": "5"
+       },
+       {
+        "pre": "a = 10\nb = 25",
+        "expect": "35"
+       },
+       {
+        "pre": "a = -4\nb = 4",
+        "expect": "0"
+       }
+      ],
+      "hint": "print(a + b)",
+      "solution": "print(a + b)",
+      "why": "Adding two variables and printing the result."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: swap the values of a and b using a temporary local, then print a and b on separate lines.",
+      "starter": "-- a and b are already set\n",
+      "tests": [
+       {
+        "pre": "a = 1\nb = 2",
+        "expect": "2\n1"
+       },
+       {
+        "pre": "a = 7\nb = 9",
+        "expect": "9\n7"
+       }
+      ],
+      "hint": "Save a in a local first: local temp = a",
+      "solution": "local temp = a\na = b\nb = temp\nprint(a)\nprint(b)",
+      "why": "A temporary variable keeps one value safe while you overwrite it."
+     }
+    ]
+   },
+   {
+    "title": "Numbers, Strings & ..",
+    "period": "Lua basics",
+    "learn": [
+     {
+      "h": "Math operators",
+      "b": "Luau does math with + - * / and the percent sign gives the remainder after dividing. The caret ^ raises to a power. Math follows the usual order: powers first, then multiply and divide, then add and subtract.",
+      "code": "print(7 + 3 * 2)\nprint(10 % 3)\nprint(2 ^ 3)"
+     },
+     {
+      "h": "Strings",
+      "b": "A string is text inside quotes. You can use double or single quotes, just match the pair. Putting a hash sign before a string gives its length.",
+      "code": "local name = \"Roblox\"\nprint(#name)\nprint('single quotes work too')"
+     },
+     {
+      "h": "Joining with ..",
+      "b": "Two dots join strings together, which is called concatenation. Numbers are turned into text when you join them. Remember to add spaces inside the quotes yourself.",
+      "code": "local n = 7\nprint(\"Level \" .. n)\nprint(\"Hi \" .. \"Sam\" .. \"!\")"
+     },
+     {
+      "h": "Converting values",
+      "b": "tostring turns a value into a string, and tonumber turns text that looks like a number into a number. If the text is not a number, tonumber gives nil. Use these when you read numbers from text.",
+      "code": "local t = \"25\"\nprint(tonumber(t) + 5)\nprint(tostring(99) .. \" points\")"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which operator joins two strings together?",
+      "o": [
+       "+",
+       "&",
+       "..",
+       ","
+      ],
+      "a": 2,
+      "why": "Two dots concatenate strings in Luau."
+     },
+     {
+      "t": "mc",
+      "q": "What is the value of 10 % 3?",
+      "o": [
+       "3",
+       "0",
+       "3.33",
+       "1"
+      ],
+      "a": 3,
+      "why": "10 divided by 3 is 3 with a remainder of 1."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local name = \"Rob\"\nprint(\"Hi \" .. name .. \"!\")",
+      "o": [
+       "Hi Rob!",
+       "Hi name!",
+       "HiRob!",
+       "Hi + Rob!"
+      ],
+      "a": 0,
+      "why": "The .. operator joins the pieces exactly as written."
+     },
+     {
+      "t": "tf",
+      "q": "In Luau, 2 ^ 3 equals 8.",
+      "a": true,
+      "why": "The caret raises a number to a power."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "%",
+        "Remainder after dividing"
+       ],
+       [
+        "^",
+        "Raises to a power"
+       ],
+       [
+        "#",
+        "Length of a string"
+       ],
+       [
+        "tonumber",
+        "Turns text into a number"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the number printed by print(7 % 2).",
+      "a": [
+       "1"
+      ],
+      "why": "7 divided by 2 leaves a remainder of 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Total: 12",
+      "lines": [
+       "local price = 4",
+       "local qty = 3",
+       "local total = price * qty",
+       "print(\"Total: \" .. total)"
+      ],
+      "why": "Make the variables, multiply, then join and print."
+     },
+     {
+      "t": "order",
+      "q": "Put these operators in the order Luau does them (first to last)",
+      "items": [
+       [
+        "Power (^)",
+        1
+       ],
+       [
+        "Multiply (*)",
+        2
+       ],
+       [
+        "Add (+)",
+        3
+       ],
+       [
+        "Join (..)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: a and b are set. Print the remainder when a is divided by b.",
+      "starter": "-- a and b are already set\n",
+      "tests": [
+       {
+        "pre": "a = 7\nb = 2",
+        "expect": "1"
+       },
+       {
+        "pre": "a = 10\nb = 4",
+        "expect": "2"
+       },
+       {
+        "pre": "a = 9\nb = 3",
+        "expect": "0"
+       }
+      ],
+      "hint": "Use the % operator.",
+      "solution": "print(a % b)",
+      "why": "The percent operator gives the remainder."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: name and age are set. Print a sentence like: Mia is 12 years old",
+      "starter": "-- name and age are already set\n",
+      "tests": [
+       {
+        "pre": "name = \"Mia\"\nage = 12",
+        "expect": "Mia is 12 years old"
+       },
+       {
+        "pre": "name = \"Leo\"\nage = 9",
+        "expect": "Leo is 9 years old"
+       }
+      ],
+      "hint": "Join name, \" is \", age and \" years old\" with ..",
+      "solution": "print(name .. \" is \" .. age .. \" years old\")",
+      "why": "Concatenation builds one sentence from pieces."
+     }
+    ]
+   },
+   {
+    "title": "If, Elseif & Else",
+    "period": "Lua basics",
+    "learn": [
+     {
+      "h": "Making decisions",
+      "b": "An if statement runs code only when its condition is true. You write if, the condition, then, the code, and finish with end. Without end Luau does not know where the block stops.",
+      "code": "local hp = 0\nif hp <= 0 then\n    print(\"You died\")\nend"
+     },
+     {
+      "h": "Comparing values",
+      "b": "To compare, use == for equal, ~= for not equal, and < > <= >= for size. A single = is for giving a value to a variable, not for comparing. Every comparison gives true or false.",
+      "code": "print(5 == 5)\nprint(5 ~= 5)\nprint(3 >= 4)"
+     },
+     {
+      "h": "and, or, not",
+      "b": "and needs both sides to be true, or needs at least one, and not flips true and false. You can build bigger conditions from them. Use brackets when it gets confusing.",
+      "code": "local age = 14\nif age >= 13 and age < 20 then\n    print(\"teenager\")\nend"
+     },
+     {
+      "h": "elseif and else",
+      "b": "Add elseif to test another condition when the first one fails. Add else at the end for everything left over. Luau checks from the top and runs only the first block that is true.",
+      "code": "local x = 15\nif x > 20 then\n    print(\"big\")\nelseif x > 10 then\n    print(\"medium\")\nelse\n    print(\"small\")\nend"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which operator means not equal in Luau?",
+      "o": [
+       "~=",
+       "!=",
+       "<>",
+       "=/="
+      ],
+      "a": 0,
+      "why": "Luau writes not equal as ~=."
+     },
+     {
+      "t": "mc",
+      "q": "Which keyword closes an if block?",
+      "o": [
+       "}",
+       "end",
+       "endif",
+       "fi"
+      ],
+      "a": 1,
+      "why": "Every if block finishes with end."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local x = 15\nif x > 20 then\n    print(\"big\")\nelseif x > 10 then\n    print(\"medium\")\nelse\n    print(\"small\")\nend",
+      "o": [
+       "big",
+       "small",
+       "nothing",
+       "medium"
+      ],
+      "a": 3,
+      "why": "15 is not above 20 but it is above 10, so the elseif runs."
+     },
+     {
+      "t": "tf",
+      "q": "To check if two values are equal in an if, you write a single = sign.",
+      "a": false,
+      "why": "Comparing uses ==. A single = gives a value to a variable."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "and",
+        "Both sides must be true"
+       ],
+       [
+        "or",
+        "At least one side is true"
+       ],
+       [
+        "not",
+        "Flips true and false"
+       ],
+       [
+        "elseif",
+        "Tests another condition"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that adds a second condition to an if chain.",
+      "a": [
+       "elseif"
+      ],
+      "why": "elseif is written as one word in Luau."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print dead when hp is 0 or less, otherwise alive",
+      "lines": [
+       "if hp <= 0 then",
+       "    print(\"dead\")",
+       "else",
+       "    print(\"alive\")",
+       "end"
+      ],
+      "why": "if, then its code, else, its code, then end."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an if/elseif/else chain in order",
+      "items": [
+       [
+        "Check the if condition",
+        1
+       ],
+       [
+        "If it is false, check elseif",
+        2
+       ],
+       [
+        "If all are false, run else",
+        3
+       ],
+       [
+        "Continue after end",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: n is a whole number. Print even if it is even, otherwise print odd.",
+      "starter": "-- n is already set\n",
+      "tests": [
+       {
+        "pre": "n = 4",
+        "expect": "even"
+       },
+       {
+        "pre": "n = 7",
+        "expect": "odd"
+       },
+       {
+        "pre": "n = 0",
+        "expect": "even"
+       }
+      ],
+      "hint": "A number is even when n % 2 == 0.",
+      "solution": "if n % 2 == 0 then\n    print('even')\nelse\n    print('odd')\nend",
+      "why": "The remainder after dividing by 2 tells you if a number is even."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: score is set. Print A if it is 90 or more, B if it is 70 or more, otherwise C.",
+      "starter": "-- score is already set\n",
+      "tests": [
+       {
+        "pre": "score = 95",
+        "expect": "A"
+       },
+       {
+        "pre": "score = 75",
+        "expect": "B"
+       },
+       {
+        "pre": "score = 40",
+        "expect": "C"
+       },
+       {
+        "pre": "score = 90",
+        "expect": "A"
+       }
+      ],
+      "hint": "Check the highest score first with if, then elseif, then else.",
+      "solution": "if score >= 90 then\n    print('A')\nelseif score >= 70 then\n    print('B')\nelse\n    print('C')\nend",
+      "why": "The chain stops at the first true condition."
+     }
+    ]
+   },
+   {
+    "title": "Loops: while, repeat, for",
+    "period": "Lua basics",
+    "learn": [
+     {
+      "h": "The numeric for loop",
+      "b": "for i = 1, 5 do runs the code with i counting from 1 to 5, including 5. You can add a third number as the step, and a negative step counts down. Use it when you know how many times to repeat.",
+      "code": "for i = 1, 3 do\n    print(i)\nend\nfor i = 10, 1, -4 do\n    print(i)\nend"
+     },
+     {
+      "h": "while loops",
+      "b": "A while loop checks its condition before every run and repeats while it is true. Make sure something inside the loop changes the condition, or it never ends. A loop that never ends will freeze your game.",
+      "code": "local n = 3\nwhile n > 0 do\n    print(n)\n    n = n - 1\nend"
+     },
+     {
+      "h": "repeat until",
+      "b": "A repeat loop runs the body first and checks the condition at the end. That means it always runs at least once. It stops when the condition after until becomes true.",
+      "code": "local tries = 0\nrepeat\n    tries = tries + 1\nuntil tries >= 3\nprint(tries)"
+     },
+     {
+      "h": "break",
+      "b": "The break keyword leaves the loop right away. It is useful when you found what you were looking for and do not need to keep going. It works in while, repeat and for loops.",
+      "code": "for i = 1, 100 do\n    if i * i > 50 then\n        print(i)\n        break\n    end\nend"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many times does for i = 1, 3 do run its body?",
+      "o": [
+       "2",
+       "3",
+       "4",
+       "1"
+      ],
+      "a": 1,
+      "why": "The loop counts 1, 2 and 3, and includes the last number."
+     },
+     {
+      "t": "mc",
+      "q": "Which loop always runs its body at least once?",
+      "o": [
+       "repeat ... until",
+       "while ... do",
+       "for i = 1, 0 do",
+       "if ... then"
+      ],
+      "a": 0,
+      "why": "repeat checks the condition after the body."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "for i = 10, 1, -4 do\n    print(i)\nend",
+      "o": [
+       "10, 7, 4, 1",
+       "6 and 2",
+       "10, 6 and 2 on separate lines",
+       "10, 6, 2, -2"
+      ],
+      "a": 2,
+      "why": "It starts at 10 and subtracts 4 each time: 10, 6, 2. The next, -2, is below 1."
+     },
+     {
+      "t": "tf",
+      "q": "A repeat loop stops when the condition after until becomes true.",
+      "a": true,
+      "why": "until works as the stop condition."
+     },
+     {
+      "t": "match",
+      "q": "Match each loop to how it behaves",
+      "pairs": [
+       [
+        "while",
+        "Checks the condition before each run"
+       ],
+       [
+        "repeat",
+        "Runs once before checking"
+       ],
+       [
+        "for i = 1, 5",
+        "Counts with a counter"
+       ],
+       [
+        "break",
+        "Leaves the loop early"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that ends a repeat loop and holds its condition.",
+      "a": [
+       "until"
+      ],
+      "why": "repeat ... until condition."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the sum of 1 to 4 (which is 10)",
+      "lines": [
+       "local total = 0",
+       "for i = 1, 4 do",
+       "    total = total + i",
+       "end",
+       "print(total)"
+      ],
+      "why": "Start total, loop adding i, then print after end."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a while loop in order",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "Run the body if it is true",
+        2
+       ],
+       [
+        "Go back and check again",
+        3
+       ],
+       [
+        "Exit when it is false",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: n is set. Use a loop to print the sum of the numbers from 1 to n.",
+      "starter": "-- n is already set\n",
+      "tests": [
+       {
+        "pre": "n = 5",
+        "expect": "15"
+       },
+       {
+        "pre": "n = 3",
+        "expect": "6"
+       },
+       {
+        "pre": "n = 10",
+        "expect": "55"
+       }
+      ],
+      "hint": "Keep a total and add i in a for loop.",
+      "solution": "local total = 0\nfor i = 1, n do\n    total = total + i\nend\nprint(total)",
+      "why": "A for loop plus a running total adds up a range."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: n is set. Use a while loop to print n down to 1 on separate lines, then print Go!",
+      "starter": "-- n is already set\n",
+      "tests": [
+       {
+        "pre": "n = 3",
+        "expect": "3\n2\n1\nGo!"
+       },
+       {
+        "pre": "n = 2",
+        "expect": "2\n1\nGo!"
+       }
+      ],
+      "hint": "while n > 0 do ... n = n - 1 end",
+      "solution": "while n > 0 do\n    print(n)\n    n = n - 1\nend\nprint('Go!')",
+      "why": "The loop changes n each time so it eventually stops."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "Lua basics",
+    "learn": [
+     {
+      "h": "Defining a function",
+      "b": "A function is a named block of code you can run again and again. You write function, a name, brackets with inputs, the code, and end. Nothing happens until you call the function by its name with brackets.",
+      "code": "local function greet(name)\n    print(\"Hi \" .. name)\nend\ngreet(\"Sam\")\ngreet(\"Mia\")"
+     },
+     {
+      "h": "return",
+      "b": "The return keyword sends a value back to the code that called the function. Code after return in the same block does not run. A function with no return gives back nil.",
+      "code": "local function add(a, b)\n    return a + b\nend\nlocal result = add(2, 3)\nprint(result)"
+     },
+     {
+      "h": "Parameters and arguments",
+      "b": "The names in the brackets of the definition are parameters. The real values you pass when calling are arguments. They are copied into the parameters in order.",
+      "code": "local function area(w, h)\n    return w * h\nend\nprint(area(3, 4))"
+     },
+     {
+      "h": "More function tricks",
+      "b": "A function can return several values separated by commas. Functions are values, so you can store them in variables and pass them to other functions. Variables made with local inside a function disappear when it ends.",
+      "code": "local function minMax(a, b)\n    if a < b then return a, b end\n    return b, a\nend\nlocal low, high = minMax(9, 4)\nprint(low, high)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword sends a value back from a function?",
+      "o": [
+       "give",
+       "output",
+       "return",
+       "send"
+      ],
+      "a": 2,
+      "why": "return hands a value back to the caller."
+     },
+     {
+      "t": "mc",
+      "q": "In function add(a, b), what are a and b called?",
+      "o": [
+       "Parameters",
+       "Arguments",
+       "Returns",
+       "Events"
+      ],
+      "a": 0,
+      "why": "Parameters are the names in the definition."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local function double(n)\n    return n * 2\nend\nprint(double(double(3)))",
+      "o": [
+       "6",
+       "12",
+       "9",
+       "3"
+      ],
+      "a": 1,
+      "why": "double(3) is 6, then double(6) is 12."
+     },
+     {
+      "t": "tf",
+      "q": "A function with no return statement gives back nil.",
+      "a": true,
+      "why": "Without return, the result is nil."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "function",
+        "Defines a reusable block"
+       ],
+       [
+        "return",
+        "Sends a value back"
+       ],
+       [
+        "parameter",
+        "Name for an input in the definition"
+       ],
+       [
+        "call",
+        "Runs a function with brackets"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that finishes a function definition.",
+      "a": [
+       "end"
+      ],
+      "why": "Functions close with end."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines so the script prints 25",
+      "lines": [
+       "local function square(n)",
+       "    return n * n",
+       "end",
+       "print(square(5))"
+      ],
+      "why": "Define the function first, then call it."
+     },
+     {
+      "t": "order",
+      "q": "Put the life of a function in order",
+      "items": [
+       [
+        "Define it with the function keyword",
+        1
+       ],
+       [
+        "Call it with brackets",
+        2
+       ],
+       [
+        "Arguments are copied into parameters",
+        3
+       ],
+       [
+        "return sends the value back",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: write a function named bigger(a, b) that returns the larger number.",
+      "starter": "local function bigger(a, b)\n    -- your code\nend\n",
+      "tests": [
+       {
+        "pre": "",
+        "post": "print(bigger(3, 9))",
+        "expect": "9"
+       },
+       {
+        "pre": "",
+        "post": "print(bigger(12, 4))",
+        "expect": "12"
+       },
+       {
+        "pre": "",
+        "post": "print(bigger(5, 5))",
+        "expect": "5"
+       }
+      ],
+      "hint": "Use if a > b then return a end, then return b.",
+      "solution": "local function bigger(a, b)\n    if a > b then\n        return a\n    end\n    return b\nend",
+      "why": "The function compares and returns one value."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: write a function named isEven(n) that returns true if n is even, otherwise false.",
+      "starter": "local function isEven(n)\n    -- your code\nend\n",
+      "tests": [
+       {
+        "pre": "",
+        "post": "print(isEven(4))",
+        "expect": "true"
+       },
+       {
+        "pre": "",
+        "post": "print(isEven(7))",
+        "expect": "false"
+       },
+       {
+        "pre": "",
+        "post": "print(isEven(0))",
+        "expect": "true"
+       }
+      ],
+      "hint": "A comparison like n % 2 == 0 already gives true or false.",
+      "solution": "local function isEven(n)\n    return n % 2 == 0\nend",
+      "why": "A comparison can be returned directly."
+     }
+    ]
+   },
+   {
+    "title": "Tables as Arrays",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "Making an array",
+      "b": "A table is Luau's one container type. With values in curly brackets separated by commas it works as an array, a numbered list. Counting starts at 1, not 0, and you read items with square brackets.",
+      "code": "local fruits = {\"apple\", \"pear\", \"kiwi\"}\nprint(fruits[1])\nprint(fruits[3])"
+     },
+     {
+      "h": "Length and adding",
+      "b": "A hash sign before the table gives how many items it has. table.insert adds an item to the end, and table.remove takes one out by position. The last item is always at position #t.",
+      "code": "local t = {5, 10}\ntable.insert(t, 15)\nprint(#t)\nprint(t[#t])\ntable.remove(t, 1)\nprint(t[1])"
+     },
+     {
+      "h": "Looping with ipairs",
+      "b": "for i, v in ipairs(t) goes through the array in order. i is the position and v is the value. Use an underscore name like _ when you do not need the position.",
+      "code": "local t = {4, 8, 15}\nfor i, v in ipairs(t) do\n    print(i, v)\nend"
+     },
+     {
+      "h": "Joining and changing",
+      "b": "You can change an item by assigning to its position. table.concat joins the items of an array into one string with a separator you choose. Items can be numbers, strings, or even other tables.",
+      "code": "local t = {\"a\", \"b\", \"c\"}\nt[2] = \"X\"\nprint(table.concat(t, \"-\"))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the position of the first item in a Luau array?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "It depends"
+      ],
+      "a": 0,
+      "why": "Luau arrays start counting at 1."
+     },
+     {
+      "t": "mc",
+      "q": "How do you get how many items are in the array t?",
+      "o": [
+       "t.length",
+       "len(t)",
+       "#t",
+       "t.size"
+      ],
+      "a": 2,
+      "why": "The hash sign gives the length."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local t = {5, 10, 15}\ntable.insert(t, 20)\nprint(t[#t])",
+      "o": [
+       "20",
+       "15",
+       "4",
+       "10"
+      ],
+      "a": 0,
+      "why": "After inserting 20, it is the last item, at position #t."
+     },
+     {
+      "t": "tf",
+      "q": "In Luau, the first element of an array is at index 0.",
+      "a": false,
+      "why": "The first element is at index 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to what it does",
+      "pairs": [
+       [
+        "ipairs",
+        "Loops through an array in order"
+       ],
+       [
+        "table.insert",
+        "Adds an item to the end"
+       ],
+       [
+        "table.remove",
+        "Removes an item by position"
+       ],
+       [
+        "#",
+        "Gives the number of items"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function used in a for loop to go through an array in order.",
+      "a": [
+       "ipairs"
+      ],
+      "why": "for i, v in ipairs(t) do"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print each fruit with its number",
+      "lines": [
+       "local fruits = {\"apple\", \"pear\"}",
+       "table.insert(fruits, \"kiwi\")",
+       "for i, f in ipairs(fruits) do",
+       "    print(i, f)",
+       "end"
+      ],
+      "why": "Make the array, add to it, then loop."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of summing an array in order",
+      "items": [
+       [
+        "Start total at 0",
+        1
+       ],
+       [
+        "Loop with ipairs",
+        2
+       ],
+       [
+        "Add each value to total",
+        3
+       ],
+       [
+        "Print total after the loop",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: the array t is set. Print the sum of all its numbers.",
+      "starter": "-- t is already set\n",
+      "tests": [
+       {
+        "pre": "t = {3, 8, 2}",
+        "expect": "13"
+       },
+       {
+        "pre": "t = {10}",
+        "expect": "10"
+       },
+       {
+        "pre": "t = {1, 2, 3, 4}",
+        "expect": "10"
+       }
+      ],
+      "hint": "Use a total and a for ... ipairs loop.",
+      "solution": "local total = 0\nfor _, v in ipairs(t) do\n    total = total + v\nend\nprint(total)",
+      "why": "Loop and add each value to a running total."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: the array t is set. Print its largest number.",
+      "starter": "-- t is already set\n",
+      "tests": [
+       {
+        "pre": "t = {3, 8, 2}",
+        "expect": "8"
+       },
+       {
+        "pre": "t = {5, 1}",
+        "expect": "5"
+       },
+       {
+        "pre": "t = {-4, -9, -1}",
+        "expect": "-1"
+       }
+      ],
+      "hint": "Start with the first item as the biggest so far.",
+      "solution": "local m = t[1]\nfor _, v in ipairs(t) do\n    if v > m then\n        m = v\n    end\nend\nprint(m)",
+      "why": "Keep the largest value seen so far."
+     }
+    ]
+   },
+   {
+    "title": "Tables as Dictionaries",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "Keys and values",
+      "b": "A table can also store values under names, called keys. You write key = value pairs in the curly brackets. Read a value with a dot and the key, like player.coins.",
+      "code": "local player = {name = \"Rob\", coins = 5}\nprint(player.name)\nprint(player.coins)"
+     },
+     {
+      "h": "Adding, changing and deleting",
+      "b": "Assign to a key to change it, or to make a new one. Setting a key to nil deletes it. You can also use square brackets with a string, which helps when the key is in a variable.",
+      "code": "local p = {hp = 10}\np.hp = p.hp + 5\np.mana = 3\np.mana = nil\nlocal k = \"hp\"\nprint(p[k])"
+     },
+     {
+      "h": "Looping with pairs",
+      "b": "for key, value in pairs(t) goes through every pair in a dictionary. The order is not guaranteed, so do not rely on it. Use pairs for dictionaries and ipairs for numbered arrays.",
+      "code": "local stock = {apples = 3, pears = 5}\nlocal total = 0\nfor name, n in pairs(stock) do\n    total = total + n\nend\nprint(total)"
+     },
+     {
+      "h": "Checking and nesting",
+      "b": "A missing key gives nil, so you can test if t.key ~= nil then. Tables can hold other tables, which lets you build things like a list of players. Chain the dots to dig in.",
+      "code": "local game = {player = {name = \"Ann\", hp = 80}}\nprint(game.player.hp)\nprint(game.boss)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Given p = {hp = 100}, which expression gives 100?",
+      "o": [
+       "p[hp]",
+       "p.hp",
+       "p->hp",
+       "p:hp"
+      ],
+      "a": 1,
+      "why": "A dot with the key name reads the value."
+     },
+     {
+      "t": "mc",
+      "q": "How do you delete the key mana from the table p?",
+      "o": [
+       "p.mana = 0",
+       "delete p.mana",
+       "p.mana = nil",
+       "p.remove(mana)"
+      ],
+      "a": 2,
+      "why": "Setting a key to nil removes it."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local p = {hp = 10}\np.hp = p.hp + 5\np.mana = 3\nprint(p.hp + p.mana)",
+      "o": [
+       "15",
+       "13",
+       "3",
+       "18"
+      ],
+      "a": 3,
+      "why": "hp becomes 15 and mana is 3, so the sum is 18."
+     },
+     {
+      "t": "tf",
+      "q": "pairs guarantees that keys come out in the order you wrote them.",
+      "a": false,
+      "why": "The order of pairs is not guaranteed."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece of code to its meaning",
+      "pairs": [
+       [
+        "pairs",
+        "Loops over all key-value pairs"
+       ],
+       [
+        "t.key = nil",
+        "Deletes a key"
+       ],
+       [
+        "t[\"name\"]",
+        "Reads a key using a string"
+       ],
+       [
+        "{}",
+        "An empty table"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function used to loop over all key-value pairs of a dictionary.",
+      "a": [
+       "pairs"
+      ],
+      "why": "for k, v in pairs(t) do"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 150",
+      "lines": [
+       "local stats = {}",
+       "stats.hp = 100",
+       "stats.mana = 50",
+       "print(stats.hp + stats.mana)"
+      ],
+      "why": "Create the table, add the keys, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of using a dictionary in order",
+      "items": [
+       [
+        "Create an empty table with {}",
+        1
+       ],
+       [
+        "Add keys with t.key = value",
+        2
+       ],
+       [
+        "Loop with pairs",
+        3
+       ],
+       [
+        "Set a key to nil to delete it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: the dictionary t is set. Print how many keys it has.",
+      "starter": "-- t is already set\n",
+      "tests": [
+       {
+        "pre": "t = {a = 1, b = 2, c = 3}",
+        "expect": "3"
+       },
+       {
+        "pre": "t = {x = 5}",
+        "expect": "1"
+       },
+       {
+        "pre": "t = {}",
+        "expect": "0"
+       }
+      ],
+      "hint": "Count one for every pair in a pairs loop.",
+      "solution": "local n = 0\nfor _ in pairs(t) do\n    n = n + 1\nend\nprint(n)",
+      "why": "The # sign does not count dictionary keys, so you loop and count."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: the dictionary t has number values. Print the sum of all the values.",
+      "starter": "-- t is already set\n",
+      "tests": [
+       {
+        "pre": "t = {a = 1, b = 2, c = 3}",
+        "expect": "6"
+       },
+       {
+        "pre": "t = {x = 10, y = 5}",
+        "expect": "15"
+       },
+       {
+        "pre": "t = {}",
+        "expect": "0"
+       }
+      ],
+      "hint": "Add each value inside for k, v in pairs(t).",
+      "solution": "local total = 0\nfor _, v in pairs(t) do\n    total = total + v\nend\nprint(total)",
+      "why": "pairs gives every value no matter the key names."
+     }
+    ]
+   },
+   {
+    "title": "The String Library",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "Length, case and repeat",
+      "b": "Strings have built-in methods you call with a colon. upper and lower change the case, rep repeats the text, and len gives the length. The original string never changes, you get a new one back.",
+      "code": "local s = \"Roblox\"\nprint(s:upper())\nprint(s:lower())\nprint((\"ab\"):rep(3))\nprint(s:len())"
+     },
+     {
+      "h": "Cutting with sub",
+      "b": "s:sub(i, j) gives the part from position i to position j, counting from 1 and including both ends. With one number it goes to the end. A negative number counts from the back.",
+      "code": "local s = \"Roblox\"\nprint(s:sub(1, 3))\nprint(s:sub(4))\nprint(s:sub(-2))"
+     },
+     {
+      "h": "Searching and replacing",
+      "b": "s:find(text) gives the start and end position of the first match, or nil if there is none. s:gsub(a, b) replaces every a with b and also returns how many it replaced. Wrap it in brackets to keep only the new string.",
+      "code": "local s = \"banana\"\nprint(s:find(\"nan\"))\nprint((s:gsub(\"a\", \"o\")))"
+     },
+     {
+      "h": "Formatting",
+      "b": "string.format builds text from a template. %s is a slot for a string, and %d is a slot for a whole number. It is cleaner than joining many pieces with two dots.",
+      "code": "local name, score = \"Ann\", 7\nprint(string.format(\"%s scored %d\", name, score))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method makes a string all capital letters?",
+      "o": [
+       "caps",
+       "upper",
+       "big",
+       "capital"
+      ],
+      "a": 1,
+      "why": "s:upper() returns the capital version."
+     },
+     {
+      "t": "mc",
+      "q": "What is (\"Roblox\"):sub(1, 3)?",
+      "o": [
+       "Rob",
+       "Rox",
+       "Rbl",
+       "Blo"
+      ],
+      "a": 0,
+      "why": "It takes characters 1 to 3."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local s = \"banana\"\nprint(s:upper():sub(1, 3))",
+      "o": [
+       "ban",
+       "BANAN",
+       "BAN",
+       "ANA"
+      ],
+      "a": 2,
+      "why": "upper makes BANANA, then sub(1, 3) takes the first three letters."
+     },
+     {
+      "t": "tf",
+      "q": "String positions in Luau start counting at 1.",
+      "a": true,
+      "why": "Like arrays, strings start at 1."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to what it does",
+      "pairs": [
+       [
+        "s:lower()",
+        "Makes all letters small"
+       ],
+       [
+        "s:rep(2)",
+        "Repeats the text"
+       ],
+       [
+        "s:sub(2, 3)",
+        "Cuts out part of the text"
+       ],
+       [
+        "string.format",
+        "Fills slots in a template"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the text printed by print((\"ab\"):rep(3)).",
+      "a": [
+       "ababab"
+      ],
+      "why": "rep repeats the text 3 times."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Hello from hello",
+      "lines": [
+       "local word = \"hello\"",
+       "local first = word:sub(1, 1):upper()",
+       "local rest = word:sub(2)",
+       "print(first .. rest)"
+      ],
+      "why": "Cut the first letter, capitalise it, add the rest."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of capitalising a word in order",
+      "items": [
+       [
+        "Take the word",
+        1
+       ],
+       [
+        "Cut the first letter with sub",
+        2
+       ],
+       [
+        "Make that letter upper case",
+        3
+       ],
+       [
+        "Join it to the rest",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: s is set. Print its first 3 letters in upper case.",
+      "starter": "-- s is already set\n",
+      "tests": [
+       {
+        "pre": "s = \"robux\"",
+        "expect": "ROB"
+       },
+       {
+        "pre": "s = \"lua\"",
+        "expect": "LUA"
+       },
+       {
+        "pre": "s = \"studio\"",
+        "expect": "STU"
+       }
+      ],
+      "hint": "Use s:sub(1, 3) and :upper().",
+      "solution": "print(s:sub(1, 3):upper())",
+      "why": "Methods can be chained one after another."
+     },
+     {
+      "t": "code",
+      "lang": "lua",
+      "q": "Challenge: s is set. Print how many times the letter a appears in s.",
+      "starter": "-- s is already set\n",
+      "tests": [
+       {
+        "pre": "s = \"banana\"",
+        "expect": "3"
+       },
+       {
+        "pre": "s = \"lua\"",
+        "expect": "1"
+       },
+       {
+        "pre": "s = \"xyz\"",
+        "expect": "0"
+       }
+      ],
+      "hint": "Loop i from 1 to #s and compare s:sub(i, i) with \"a\".",
+      "solution": "local n = 0\nfor i = 1, #s do\n    if s:sub(i, i) == 'a' then\n        n = n + 1\n    end\nend\nprint(n)",
+      "why": "sub(i, i) gives one letter to compare."
+     }
+    ]
+   },
+   {
+    "title": "Instances & Properties",
+    "period": "Roblox",
+    "learn": [
+     {
+      "h": "Everything is an Instance",
+      "b": "In Roblox Studio, every object such as a Part, a Sound or a Folder is an Instance. Instance.new creates one from its class name. The new object is invisible to the game until you give it a parent.",
+      "code": "local part = Instance.new(\"Part\")\nprint(part.ClassName)"
+     },
+     {
+      "h": "Properties",
+      "b": "Properties describe an object, like Size, Position, Color and Anchored. You set them with a dot. Sizes and positions use Vector3.new(x, y, z), and colors use Color3.fromRGB or BrickColor.",
+      "code": "local part = Instance.new(\"Part\")\npart.Size = Vector3.new(4, 1, 4)\npart.Position = Vector3.new(0, 10, 0)\npart.Color = Color3.fromRGB(255, 0, 0)\npart.Anchored = true"
+     },
+     {
+      "h": "Parent and workspace",
+      "b": "The Parent property decides where an object lives. Setting Parent to workspace puts a Part into the 3D world so players can see it. It is best practice to set Parent last, after the other properties.",
+      "code": "local part = Instance.new(\"Part\")\npart.Anchored = true\npart.Parent = workspace\nprint(part.Parent.Name)"
+     },
+     {
+      "h": "Finding and removing",
+      "b": "FindFirstChild looks inside an object for a child with a given name and gives nil if it is missing. Destroy removes an object for good. A script can reach its own parent with script.Parent.",
+      "code": "local door = workspace:FindFirstChild(\"Door\")\nif door then\n    door:Destroy()\nend"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which line creates a new Part?",
+      "o": [
+       "new Part()",
+       "Part.create()",
+       "workspace.Part()",
+       "Instance.new(\"Part\")"
+      ],
+      "a": 3,
+      "why": "Instance.new takes the class name as a string."
+     },
+     {
+      "t": "mc",
+      "q": "What makes a new Part appear in the game world?",
+      "o": [
+       "Setting its Parent to workspace",
+       "Calling print on it",
+       "Setting its Name",
+       "Giving it a Color"
+      ],
+      "a": 0,
+      "why": "An object only shows up once it has a parent in the world."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "local p = Instance.new(\"Part\")\np.Anchored = true\np.Parent = workspace\nprint(p.Parent.Name)",
+      "o": [
+       "Part",
+       "Workspace",
+       "nil",
+       "Game"
+      ],
+      "a": 1,
+      "why": "The part's parent is the workspace, whose name is Workspace."
+     },
+     {
+      "t": "tf",
+      "q": "A Part with Anchored set to false can fall because of gravity.",
+      "a": true,
+      "why": "Unanchored parts are affected by physics."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece of code to what it does",
+      "pairs": [
+       [
+        "Instance.new",
+        "Creates an object"
+       ],
+       [
+        "workspace",
+        "The container of the 3D world"
+       ],
+       [
+        ":Destroy()",
+        "Removes an object"
+       ],
+       [
+        "Color3.fromRGB",
+        "Builds a color from red, green, blue"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Part property that stops it from falling or moving.",
+      "a": [
+       "Anchored"
+      ],
+      "why": "Anchored = true keeps the part in place."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make an anchored platform in the world",
+      "lines": [
+       "local part = Instance.new(\"Part\")",
+       "part.Size = Vector3.new(4, 1, 4)",
+       "part.Anchored = true",
+       "part.Parent = workspace"
+      ],
+      "why": "Create, set properties, and set Parent last."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of making a Part in order",
+      "items": [
+       [
+        "Create it with Instance.new",
+        1
+       ],
+       [
+        "Set its properties",
+        2
+       ],
+       [
+        "Set Parent to workspace",
+        3
+       ],
+       [
+        "Press Play to test it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that creates a Part and stores it in a local variable named part.",
+      "a": [
+       "local part = Instance.new(\"Part\")",
+       "local part = Instance.new('Part')"
+      ],
+      "why": "The variable holds the new Part so you can set its properties."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to put a red part at height 10",
+      "lines": [
+       "local brick = Instance.new(\"Part\")",
+       "brick.BrickColor = BrickColor.new(\"Bright red\")",
+       "brick.Position = Vector3.new(0, 10, 0)",
+       "brick.Parent = workspace"
+      ],
+      "why": "Make it, style it, place it, then give it a parent."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this code do?",
+      "code": "local door = workspace:FindFirstChild(\"Door\")\nif door then\n    door:Destroy()\nend",
+      "o": [
+       "Creates a new Door",
+       "Renames the Door",
+       "Removes the Door if it exists",
+       "Always errors"
+      ],
+      "a": 2,
+      "why": "FindFirstChild gives nil when missing, so the if protects Destroy."
+     }
+    ]
+   },
+   {
+    "title": "Events & Connect",
+    "period": "Roblox",
+    "learn": [
+     {
+      "h": "What is an event",
+      "b": "An event is a signal Roblox sends when something happens, like a part being touched or a player joining. You do not check over and over. You tell Roblox which function to run when the event fires.",
+      "code": "local part = script.Parent\nprint(part.Name)"
+     },
+     {
+      "h": "Connect",
+      "b": "Every event has a Connect method that takes a function. That function runs each time the event fires, and it can keep running many times. Touched fires when something touches a Part, and passes the part that touched it.",
+      "code": "local part = script.Parent\npart.Touched:Connect(function(hit)\n    print(hit.Name)\nend)"
+     },
+     {
+      "h": "Finding the player",
+      "b": "When a character touches a part, hit is one of its body parts, such as a Leg. Its Parent is the character, and the character holds a Humanoid. Checking for the Humanoid tells you a character touched it, not just a block.",
+      "code": "part.Touched:Connect(function(hit)\n    local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n    if humanoid then\n        humanoid.Health = 0\n    end\nend)"
+     },
+     {
+      "h": "PlayerAdded and Disconnect",
+      "b": "game:GetService(\"Players\") gives the Players service. Its PlayerAdded event fires for every player who joins and passes that player. Connect returns a connection, and calling Disconnect on it stops listening.",
+      "code": "local Players = game:GetService(\"Players\")\nPlayers.PlayerAdded:Connect(function(player)\n    print(\"Welcome \" .. player.Name)\nend)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which method attaches a function to an event?",
+      "o": [
+       "Listen",
+       "Attach",
+       "Connect",
+       "Call"
+      ],
+      "a": 2,
+      "why": "event:Connect(function) is the standard way."
+     },
+     {
+      "t": "mc",
+      "q": "What does the Touched function receive as its argument?",
+      "o": [
+       "The part that touched it",
+       "The player's name",
+       "How long it was touched",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "Touched passes the other part that made contact."
+     },
+     {
+      "t": "mc",
+      "q": "A player named Sam joins. What prints?",
+      "code": "local Players = game:GetService(\"Players\")\nPlayers.PlayerAdded:Connect(function(player)\n    print(\"Welcome \" .. player.Name)\nend)",
+      "o": [
+       "Welcome player",
+       "Welcome Sam",
+       "Welcome",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "PlayerAdded passes the player, whose Name is Sam."
+     },
+     {
+      "t": "tf",
+      "q": "A Touched event fires only one time, then it is gone.",
+      "a": false,
+      "why": "It fires every time something touches the part."
+     },
+     {
+      "t": "match",
+      "q": "Match each name to its meaning",
+      "pairs": [
+       [
+        "PlayerAdded",
+        "Fires when a player joins"
+       ],
+       [
+        "Touched",
+        "Fires on contact with a part"
+       ],
+       [
+        "Connect",
+        "Links a function to an event"
+       ],
+       [
+        "Disconnect",
+        "Stops listening to an event"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the Players service event that fires when someone joins.",
+      "a": [
+       "PlayerAdded"
+      ],
+      "why": "Players.PlayerAdded"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the name of whatever touches the part",
+      "lines": [
+       "local part = script.Parent",
+       "part.Touched:Connect(function(hit)",
+       "    print(hit.Name)",
+       "end)"
+      ],
+      "why": "Get the part, connect, print inside, close."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using an event in order",
+      "items": [
+       [
+        "Write the function",
+        1
+       ],
+       [
+        "Connect it to the event",
+        2
+       ],
+       [
+        "The event fires in the game",
+        3
+       ],
+       [
+        "Your function runs",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the method name that stops listening to an event connection.",
+      "a": [
+       "Disconnect"
+      ],
+      "why": "connection:Disconnect()"
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to make a leaderstats folder for each new player",
+      "lines": [
+       "Players.PlayerAdded:Connect(function(player)",
+       "    local stats = Instance.new(\"Folder\")",
+       "    stats.Name = \"leaderstats\"",
+       "    stats.Parent = player",
+       "end)"
+      ],
+      "why": "The folder must be named leaderstats and parented to the player."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what happens when a player's character touches this part?",
+      "code": "script.Parent.Touched:Connect(function(hit)\n    local humanoid = hit.Parent:FindFirstChild(\"Humanoid\")\n    if humanoid then\n        humanoid.Health = 0\n    end\nend)",
+      "o": [
+       "The part is destroyed",
+       "Nothing, it only prints",
+       "The player gets 100 coins",
+       "The character's health becomes 0"
+      ],
+      "a": 3,
+      "why": "The Humanoid is found and its Health set to 0."
+     }
+    ]
+   },
+   {
+    "title": "Client, Server & RemoteEvents",
+    "period": "Roblox",
+    "learn": [
+     {
+      "h": "Two sides of every game",
+      "b": "A Roblox game runs on a server, which all players share, and on each player's own device, called the client. A Script runs on the server, and a LocalScript runs on one player's client. The server is the boss: it decides what is real.",
+      "code": "-- Script (server): in ServerScriptService\nprint(\"I run on the server\")\n-- LocalScript (client): in StarterPlayerScripts\nprint(\"I run on one player\")"
+     },
+     {
+      "h": "Why they are separate",
+      "b": "If a client changes something, such as a Part, only that player sees it. Things like coins, damage and items must be changed by the server so everyone agrees. A cheater can edit anything on their own client, so never trust it."
+     },
+     {
+      "h": "RemoteEvents",
+      "b": "A RemoteEvent is a message pipe between client and server. Put it in ReplicatedStorage so both sides can see it. The client calls FireServer to send, and the server listens with OnServerEvent.",
+      "code": "-- Client\nremote:FireServer(\"Sword\")\n-- Server\nremote.OnServerEvent:Connect(function(player, item)\n    print(item)\nend)"
+     },
+     {
+      "h": "Sending back",
+      "b": "The server always receives the player who fired as the first argument, so you never pass it yourself. To talk the other way, the server calls FireClient for one player or FireAllClients for everyone. The client listens with OnClientEvent.",
+      "code": "-- Server\nremote:FireClient(player, \"You won!\")\n-- Client\nremote.OnClientEvent:Connect(function(message)\n    print(message)\nend)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where should important data like coins be controlled?",
+      "o": [
+       "On the client",
+       "On the server",
+       "In a comment",
+       "In the Output window"
+      ],
+      "a": 1,
+      "why": "The server is authoritative and cannot be edited by players."
+     },
+     {
+      "t": "mc",
+      "q": "What does OnServerEvent automatically give as the first argument?",
+      "o": [
+       "The player who fired the event",
+       "The RemoteEvent",
+       "The server's name",
+       "A random number"
+      ],
+      "a": 0,
+      "why": "Roblox passes the sender first."
+     },
+     {
+      "t": "mc",
+      "q": "A client fires the remote with \"Sword\". What does the server print?",
+      "code": "remote.OnServerEvent:Connect(function(player, item)\n    print(item)\nend)",
+      "o": [
+       "player",
+       "nil",
+       "Sword",
+       "remote"
+      ],
+      "a": 2,
+      "why": "item holds the second argument, which is \"Sword\"."
+     },
+     {
+      "t": "tf",
+      "q": "Changes a LocalScript makes to a Part are seen by every player.",
+      "a": false,
+      "why": "A client change stays on that player's own screen."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to what it does",
+      "pairs": [
+       [
+        "LocalScript",
+        "Runs on a player's device"
+       ],
+       [
+        "Script",
+        "Runs on the server"
+       ],
+       [
+        "RemoteEvent",
+        "Sends messages between client and server"
+       ],
+       [
+        "FireClient",
+        "Server sends to one player"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the method a client calls to send a RemoteEvent to the server.",
+      "a": [
+       "FireServer"
+      ],
+      "why": "remote:FireServer()"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a server script that reacts to a RemoteEvent",
+      "lines": [
+       "local remote = game.ReplicatedStorage:WaitForChild(\"GiveCoin\")",
+       "remote.OnServerEvent:Connect(function(player)",
+       "    print(player.Name .. \" asked for a coin\")",
+       "end)"
+      ],
+      "why": "Find the remote, connect, then act."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a button click in order",
+      "items": [
+       [
+        "Player clicks a button",
+        1
+       ],
+       [
+        "LocalScript calls FireServer",
+        2
+       ],
+       [
+        "Server receives OnServerEvent",
+        3
+       ],
+       [
+        "Server checks and changes the data",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the service where RemoteEvents are usually stored so both sides can reach them.",
+      "a": [
+       "ReplicatedStorage"
+      ],
+      "why": "ReplicatedStorage is shared by client and server."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of a LocalScript that fires the server when a button is clicked",
+      "lines": [
+       "local remote = game.ReplicatedStorage:WaitForChild(\"Attack\")",
+       "local button = script.Parent",
+       "button.MouseButton1Click:Connect(function()",
+       "    remote:FireServer()",
+       "end)"
+      ],
+      "why": "Find the remote and button, connect the click, fire."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what is the safety problem with this server code?",
+      "code": "remote.OnServerEvent:Connect(function(player, amount)\n    player.Character.Humanoid.Health -= amount\nend)",
+      "o": [
+       "It uses the wrong event name",
+       "The client can send any damage amount it wants",
+       "The player is missing",
+       "It cannot run on the server"
+      ],
+      "a": 1,
+      "why": "The server should decide the damage, not trust a number from the client."
+     }
+    ]
+   },
+   {
+    "title": "ModuleScripts, Types & task.wait",
+    "period": "Roblox",
+    "learn": [
+     {
+      "h": "ModuleScripts",
+      "b": "A ModuleScript lets you keep code in one place and use it from many scripts. It must end with return, usually a table of functions. Other scripts load it with require.",
+      "code": "-- ModuleScript named Util\nlocal Util = {}\nfunction Util.double(n)\n    return n * 2\nend\nreturn Util\n\n-- another script\nlocal Util = require(script.Parent.Util)\nprint(Util.double(4))"
+     },
+     {
+      "h": "Luau types",
+      "b": "Luau is Lua with optional types. You write a colon and a type after a variable or parameter, like number, string or boolean. Types catch mistakes while you type, and putting --!strict at the top of a script checks them strictly.",
+      "code": "--!strict\nlocal name: string = \"Sam\"\nlocal function add(a: number, b: number): number\n    return a + b\nend\nprint(add(2, 3))"
+     },
+     {
+      "h": "task.wait",
+      "b": "task.wait(seconds) pauses the script for that long and then continues. It replaces the old wait function and is more accurate. Use it in loops so they do not freeze the game.",
+      "code": "for i = 3, 1, -1 do\n    print(i)\n    task.wait(1)\nend\nprint(\"Go!\")"
+     },
+     {
+      "h": "task.spawn and task.delay",
+      "b": "task.spawn runs a function right now on its own, so the main script keeps going without waiting. task.delay runs a function after some seconds. Luau also has +=, so score += 1 means score = score + 1.",
+      "code": "task.spawn(function()\n    task.wait(2)\n    print(\"B\")\nend)\nprint(\"A\")\ntask.delay(1, function()\n    print(\"later\")\nend)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What must a ModuleScript do at the end?",
+      "o": [
+       "Print its name",
+       "Call wait",
+       "Return a value, usually a table",
+       "Destroy itself"
+      ],
+      "a": 2,
+      "why": "require gets whatever the module returns."
+     },
+     {
+      "t": "mc",
+      "q": "Which line pauses the script for 2 seconds?",
+      "o": [
+       "pause(2)",
+       "task.wait(2)",
+       "sleep(2)",
+       "delay.wait(2)"
+      ],
+      "a": 1,
+      "why": "task.wait takes the number of seconds."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "-- Util ModuleScript\nlocal Util = {}\nfunction Util.double(n: number): number\n    return n * 2\nend\nreturn Util\n\n-- Another script\nlocal U = require(script.Parent.Util)\nprint(U.double(4))",
+      "o": [
+       "4",
+       "2",
+       "nil",
+       "8"
+      ],
+      "a": 3,
+      "why": "double(4) returns 4 * 2."
+     },
+     {
+      "t": "tf",
+      "q": "task.wait is the modern replacement for the old wait function.",
+      "a": true,
+      "why": "Roblox recommends the task library."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its job",
+      "pairs": [
+       [
+        "require",
+        "Loads a ModuleScript"
+       ],
+       [
+        "task.spawn",
+        "Runs a function on its own"
+       ],
+       [
+        "--!strict",
+        "Turns on strict type checking"
+       ],
+       [
+        ": number",
+        "Says a value is a number"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that loads a ModuleScript.",
+      "a": [
+       "require"
+      ],
+      "why": "local M = require(module)"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a ModuleScript with a typed function",
+      "lines": [
+       "local MathUtil = {}",
+       "function MathUtil.square(n: number): number",
+       "    return n * n",
+       "end",
+       "return MathUtil"
+      ],
+      "why": "Make the table, add the function, return the table."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using a module in order",
+      "items": [
+       [
+        "Create a ModuleScript",
+        1
+       ],
+       [
+        "Put functions in a table",
+        2
+       ],
+       [
+        "Return the table at the end",
+        3
+       ],
+       [
+        "Use require in another script",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the type that makes this valid: local name: ___ = \"Sam\"",
+      "a": [
+       "string"
+      ],
+      "why": "Text values have the type string."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of a countdown that waits one second each number",
+      "lines": [
+       "for i = 3, 1, -1 do",
+       "    print(i)",
+       "    task.wait(1)",
+       "end",
+       "print(\"Go!\")"
+      ],
+      "why": "Print, wait, repeat, then Go! after the loop."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: in what order does this print?",
+      "code": "task.spawn(function()\n    task.wait(2)\n    print(\"B\")\nend)\nprint(\"A\")",
+      "o": [
+       "A first, then B two seconds later",
+       "B first, then A",
+       "Only A",
+       "Only B"
+      ],
+      "a": 0,
+      "why": "task.spawn does not block, so print A runs right away."
+     }
+    ]
+   }
+  ]
+ }
+}

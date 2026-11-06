@@ -1,0 +1,1688 @@
+{
+ "r": {
+  "name": "R",
+  "units": [
+   {
+    "title": "Console, print and <-",
+    "period": "R basics",
+    "learn": [
+     {
+      "h": "The R console",
+      "b": "R is a language made for working with data. You type a line in the console, press Enter, and R shows the result right away. R can be used as a calculator, with + - * / and ^ for powers. Anything after # is a comment and R ignores it.",
+      "code": "5 + 3\n2 ^ 3\n# this is a comment"
+     },
+     {
+      "h": "Printing",
+      "b": "Results print with a leading [1], which just means the first value on that line. Use print() to show a value from inside a script, and cat() to print plain text without the [1] or quotes.",
+      "code": "print(10)\nprint(\"hello\")\ncat(\"hello\", \"world\\n\")"
+     },
+     {
+      "h": "Assigning with <-",
+      "b": "The arrow <- stores a value under a name, like x <- 10. Read it as x gets 10. You can use = too, but R programmers prefer <-. Names are case sensitive, so score and Score are different.",
+      "code": "x <- 10\ny <- x * 2\nprint(y)"
+     },
+     {
+      "h": "Getting help",
+      "b": "Put a question mark before a function name, like ?mean, to open its help page. ls() lists the names you have created. R is vectorized and 1-based, which you will see in the next lessons."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the arrow <- do in R?",
+      "o": [
+       "Compares two values",
+       "Stores a value in a name",
+       "Prints a value",
+       "Starts a comment"
+      ],
+      "a": 1,
+      "why": "x <- 5 assigns 5 to x."
+     },
+     {
+      "t": "mc",
+      "q": "What does the [1] mean in R output?",
+      "o": [
+       "The answer is 1",
+       "An error",
+       "The first value on that line",
+       "The variable name"
+      ],
+      "a": 2,
+      "why": "It is the index of the first printed element."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x <- 4\nprint(x * 2)",
+      "o": [
+       "[1] 8",
+       "[1] 4",
+       "[1] 42",
+       "Error"
+      ],
+      "a": 0,
+      "why": "x is 4, and 4 * 2 is 8."
+     },
+     {
+      "t": "tf",
+      "q": "In R, score and Score are the same variable.",
+      "a": false,
+      "why": "R is case sensitive."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its use",
+      "pairs": [
+       [
+        "<-",
+        "Assign a value"
+       ],
+       [
+        "#",
+        "Comment"
+       ],
+       [
+        "^",
+        "Power"
+       ],
+       [
+        "?mean",
+        "Open help for mean"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the line that stores 5 in a variable named x.",
+      "a": [
+       "x <- 5",
+       "x = 5"
+      ],
+      "hint": "x <- ...",
+      "why": "Use the assignment arrow."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print the double of 6.",
+      "lines": [
+       "n <- 6",
+       "d <- n * 2",
+       "print(d)"
+      ],
+      "why": "Assign, compute, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order",
+      "items": [
+       [
+        "Type a line in the console",
+        1
+       ],
+       [
+        "Press Enter",
+        2
+       ],
+       [
+        "R runs the line",
+        3
+       ],
+       [
+        "R prints the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that stores 10 in a variable called total.",
+      "a": [
+       "total <- 10",
+       "total = 10"
+      ],
+      "why": "Name, arrow, value."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to print a total of 3 and 4.",
+      "lines": [
+       "a <- 3",
+       "b <- 4",
+       "total <- a + b",
+       "print(total)"
+      ],
+      "why": "Create a, b, add, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "a <- 3\nb <- 4\nprint(a * b)",
+      "o": [
+       "[1] 12",
+       "[1] 7",
+       "[1] 34",
+       "[1] 6"
+      ],
+      "a": 0,
+      "why": "3 * 4 is 12."
+     }
+    ]
+   },
+   {
+    "title": "Vectors",
+    "period": "R basics",
+    "learn": [
+     {
+      "h": "Making vectors",
+      "b": "A vector is an ordered list of values of the same type. c() combines values into a vector. The colon makes ranges, so 1:5 is 1 2 3 4 5. seq() makes sequences with a step, and rep() repeats values.",
+      "code": "v <- c(3, 1, 4)\n1:5\nseq(1, 10, by = 3)\nrep(0, 3)"
+     },
+     {
+      "h": "Vectorized math",
+      "b": "Math works on the whole vector at once, element by element. v * 2 doubles every number, and adding two vectors adds them pair by pair. You almost never need a loop for simple math in R.",
+      "code": "v <- c(1, 2, 3)\nv * 2\nv + c(10, 20, 30)"
+     },
+     {
+      "h": "Handy functions",
+      "b": "length() counts items, sum() adds them, mean() gives the average, max() and min() find extremes, sort() orders them, and rev() reverses. These return a single value or a new vector."
+     },
+     {
+      "h": "Recycling",
+      "b": "If two vectors have different lengths, R repeats the shorter one to match. So c(1,2,3,4) + c(10,20) gives 11 22 13 24. If the lengths do not divide evenly you get a warning. Use paste() to join text vectors."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which function combines values into a vector?",
+      "o": [
+       "c()",
+       "v()",
+       "vec()",
+       "list()"
+      ],
+      "a": 0,
+      "why": "c stands for combine."
+     },
+     {
+      "t": "mc",
+      "q": "What does 1:4 create?",
+      "o": [
+       "1 4",
+       "1 2 3 4",
+       "0 1 2 3 4",
+       "4 3 2 1"
+      ],
+      "a": 1,
+      "why": "The colon makes a whole-number range."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "v <- c(1, 2, 3)\nprint(v * 2)",
+      "o": [
+       "[1] 6",
+       "[1] 1 2 3 2",
+       "[1] 2 4 6",
+       "Error"
+      ],
+      "a": 2,
+      "why": "The multiplication applies to each element."
+     },
+     {
+      "t": "tf",
+      "q": "A vector can mix numbers and text without changing them.",
+      "a": false,
+      "why": "R converts everything to one type, here text."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its result",
+      "pairs": [
+       [
+        "length(c(5,6,7))",
+        "3"
+       ],
+       [
+        "sum(c(1,2,3))",
+        "6"
+       ],
+       [
+        "max(c(4,9,2))",
+        "9"
+       ],
+       [
+        "mean(c(2,4))",
+        "3"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the call that gives the number of items in vector v.",
+      "a": [
+       "length(v)"
+      ],
+      "hint": "length(...)",
+      "why": "length counts items."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to compute the average of three scores.",
+      "lines": [
+       "scores <- c(8, 6, 10)",
+       "avg <- mean(scores)",
+       "print(avg)"
+      ],
+      "why": "Make the vector, average, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order what happens in v + 1 when v is c(1,2)",
+      "items": [
+       [
+        "R takes the first element of v",
+        1
+       ],
+       [
+        "R adds 1 to it",
+        2
+       ],
+       [
+        "R moves to the next element",
+        3
+       ],
+       [
+        "R returns c(2,3)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the code that makes a vector of 2, 4 and 6 called nums.",
+      "a": [
+       "nums <- c(2, 4, 6)",
+       "nums = c(2, 4, 6)"
+      ],
+      "hint": "nums <- c(...)",
+      "why": "Use c()."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to add 5 to each value and print the sum.",
+      "lines": [
+       "x <- c(1, 2, 3)",
+       "y <- x + 5",
+       "print(sum(y))"
+      ],
+      "why": "Vector, add, sum, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "print(c(1, 2, 3, 4) + c(10, 20))",
+      "o": [
+       "[1] 11 22 13 24",
+       "[1] 11 22",
+       "[1] 11 12 13 14",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The short vector is recycled."
+     }
+    ]
+   },
+   {
+    "title": "Types and Factors",
+    "period": "R basics",
+    "learn": [
+     {
+      "h": "Basic types",
+      "b": "R has numeric (like 3.5), integer (like 3L), character (text in quotes), and logical (TRUE or FALSE). class() tells you the type of a value. TRUE and FALSE are written in capital letters.",
+      "code": "class(3.5)\nclass(\"hi\")\nclass(TRUE)\nclass(3L)"
+     },
+     {
+      "h": "Converting types",
+      "b": "as.numeric(), as.character() and as.integer() change the type. as.numeric(\"12\") gives 12. If a text cannot be converted you get NA with a warning. NA means a missing value, and is.na() tests for it.",
+      "code": "as.numeric(\"12\")\nas.character(7)\nis.na(NA)"
+     },
+     {
+      "h": "Factors",
+      "b": "A factor stores categories, like small, medium, large. Internally R stores numbers with labels called levels. Use factor() to create one and levels() to see the categories. Factors are used heavily in stats and plots.",
+      "code": "size <- factor(c(\"S\", \"L\", \"S\"))\nlevels(size)\ntable(size)"
+     },
+     {
+      "h": "Logical operators",
+      "b": "Comparisons like >, <, ==, != return logical values. Combine them with & for and, | for or, and ! for not. Use == to compare, never a single = which assigns. TRUE counts as 1 and FALSE as 0 in math, so sum() counts TRUEs."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does class(TRUE) return?",
+      "o": [
+       "\"numeric\"",
+       "\"character\"",
+       "\"boolean\"",
+       "\"logical\""
+      ],
+      "a": 3,
+      "why": "TRUE and FALSE are logical values."
+     },
+     {
+      "t": "mc",
+      "q": "What does NA mean in R?",
+      "o": [
+       "Not a number only",
+       "A missing value",
+       "Zero",
+       "An error message"
+      ],
+      "a": 1,
+      "why": "NA marks missing data."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print(sum(c(TRUE, FALSE, TRUE)))",
+      "o": [
+       "[1] 2",
+       "[1] TRUE",
+       "[1] 3",
+       "[1] 0"
+      ],
+      "a": 0,
+      "why": "TRUE counts as 1, so two TRUEs sum to 2."
+     },
+     {
+      "t": "tf",
+      "q": "A single = and == both compare two values in R.",
+      "a": false,
+      "why": "== compares, a single = assigns."
+     },
+     {
+      "t": "match",
+      "q": "Match each value to its class",
+      "pairs": [
+       [
+        "42.5",
+        "numeric"
+       ],
+       [
+        "\"hello\"",
+        "character"
+       ],
+       [
+        "FALSE",
+        "logical"
+       ],
+       [
+        "factor(\"a\")",
+        "factor"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that shows the categories of a factor f.",
+      "a": [
+       "levels(f)"
+      ],
+      "hint": "levels(...)",
+      "why": "levels lists the categories."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to make a factor and see its levels.",
+      "lines": [
+       "sizes <- c(\"S\", \"M\", \"S\")",
+       "f <- factor(sizes)",
+       "print(levels(f))"
+      ],
+      "why": "Vector, factor, levels."
+     },
+     {
+      "t": "order",
+      "q": "Put in order",
+      "items": [
+       [
+        "Create text values",
+        1
+       ],
+       [
+        "Convert to a factor with factor()",
+        2
+       ],
+       [
+        "Check categories with levels()",
+        3
+       ],
+       [
+        "Count them with table()",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the code that converts the text \"7\" into a number.",
+      "a": [
+       "as.numeric(\"7\")",
+       "as.numeric('7')"
+      ],
+      "why": "as.numeric converts to numbers."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to count how many values are above 5.",
+      "lines": [
+       "x <- c(3, 8, 6, 1)",
+       "big <- x > 5",
+       "print(sum(big))"
+      ],
+      "why": "Compare, then sum the TRUEs."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "print(class(\"5\"))",
+      "o": [
+       "[1] \"numeric\"",
+       "[1] \"character\"",
+       "[1] 5",
+       "[1] \"integer\""
+      ],
+      "a": 1,
+      "why": "Anything in quotes is text."
+     }
+    ]
+   },
+   {
+    "title": "Data Frames",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "What is a data frame?",
+      "b": "A data frame is a table where each column is a vector and all columns have the same length. Columns can have different types, like names and ages. It is the most important structure in R for data analysis.",
+      "code": "df <- data.frame(\n  name = c(\"Ana\", \"Bo\"),\n  age = c(12, 15)\n)"
+     },
+     {
+      "h": "Looking at data",
+      "b": "print(df) shows it, head(df) shows the first six rows, nrow() and ncol() give the size, and names() lists the columns. str() shows the structure and types. summary() gives quick statistics for each column.",
+      "code": "nrow(df)\nncol(df)\nnames(df)\nstr(df)"
+     },
+     {
+      "h": "Getting and adding columns",
+      "b": "Use the dollar sign to get a column: df$age. You can create a new column by assigning to a name that does not exist yet. The new column is computed for all rows at once.",
+      "code": "df$age\ndf$next_year <- df$age + 1"
+     },
+     {
+      "h": "Importing data",
+      "b": "read.csv(\"file.csv\") loads a CSV file into a data frame, and write.csv() saves one. Add row.names = FALSE when saving to avoid an extra column. Built-in practice data sets like mtcars and iris are ready to use without importing.",
+      "code": "d <- read.csv(\"scores.csv\")\nhead(mtcars)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a data frame?",
+      "o": [
+       "A single number",
+       "A picture",
+       "A table of columns of equal length",
+       "A function"
+      ],
+      "a": 2,
+      "why": "Each column is a vector."
+     },
+     {
+      "t": "mc",
+      "q": "Which operator gets the column age from df?",
+      "o": [
+       "df$age",
+       "df.age",
+       "df->age",
+       "df{age}"
+      ],
+      "a": 0,
+      "why": "The dollar sign selects a column."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "df <- data.frame(a = 1:3, b = c(\"x\", \"y\", \"z\"))\nprint(nrow(df))",
+      "o": [
+       "[1] 2",
+       "[1] 3",
+       "[1] 6",
+       "a b"
+      ],
+      "a": 1,
+      "why": "The data frame has 3 rows."
+     },
+     {
+      "t": "tf",
+      "q": "All columns in a data frame must have the same type.",
+      "a": false,
+      "why": "Each column has one type, but columns can differ."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to what it does",
+      "pairs": [
+       [
+        "nrow(df)",
+        "Number of rows"
+       ],
+       [
+        "names(df)",
+        "Column names"
+       ],
+       [
+        "head(df)",
+        "First rows"
+       ],
+       [
+        "read.csv()",
+        "Load a CSV file"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that shows the first rows of df.",
+      "a": [
+       "head(df)"
+      ],
+      "hint": "head(...)",
+      "why": "head shows the top."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to build a table and add a column.",
+      "lines": [
+       "df <- data.frame(price = c(2, 5))",
+       "df$double <- df$price * 2",
+       "print(df$double)"
+      ],
+      "why": "Create, add column, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order",
+      "items": [
+       [
+        "Create a data frame",
+        1
+       ],
+       [
+        "Inspect it with str()",
+        2
+       ],
+       [
+        "Add a new column",
+        3
+       ],
+       [
+        "Save it with write.csv()",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the code that gets the column score from a data frame called d.",
+      "a": [
+       "d$score"
+      ],
+      "why": "Use the dollar sign."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to find the mean of a column.",
+      "lines": [
+       "d <- data.frame(score = c(4, 6, 8))",
+       "m <- mean(d$score)",
+       "print(m)"
+      ],
+      "why": "Create, average the column, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "d <- data.frame(x = 1:3, y = 4:6)\nprint(ncol(d))",
+      "o": [
+       "[1] 2",
+       "[1] 3",
+       "[1] 6",
+       "[1] 1"
+      ],
+      "a": 0,
+      "why": "The data frame has two columns."
+     }
+    ]
+   },
+   {
+    "title": "Indexing and Subsetting",
+    "period": "Data",
+    "learn": [
+     {
+      "h": "Square brackets",
+      "b": "Use v[2] to get the second element. R counts from 1, not 0. A negative index drops an item, so v[-1] is everything except the first. v[2:3] gets a range, and v[c(1,3)] gets chosen positions.",
+      "code": "v <- c(10, 20, 30, 40)\nv[2]\nv[-1]\nv[2:3]"
+     },
+     {
+      "h": "Logical filtering",
+      "b": "Put a condition inside the brackets to keep only matching values. v[v > 15] gives the values greater than 15. The condition makes a TRUE/FALSE vector and only the TRUE positions are kept.",
+      "code": "v[v > 15]\nv[v %% 20 == 0]"
+     },
+     {
+      "h": "Data frame indexing",
+      "b": "A data frame has two dimensions: df[row, column]. Leave one empty to get all. df[1, ] is the first row, df[, 2] is the second column, and df[df$age > 12, ] keeps the rows where age is above 12. Do not forget the comma.",
+      "code": "df[1, ]\ndf[, \"age\"]\ndf[df$age > 12, ]"
+     },
+     {
+      "h": "Lists and double brackets",
+      "b": "A list can hold different things, like a number, text and a vector. Use [[ ]] or $ to get an item out, and single [ ] to get a smaller list. For a named list, lst$name and lst[[\"name\"]] both work.",
+      "code": "lst <- list(a = 1, b = \"hi\")\nlst$b\nlst[[\"a\"]]"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the index of the first element in R?",
+      "o": [
+       "1",
+       "0",
+       "-1",
+       "It depends"
+      ],
+      "a": 0,
+      "why": "R is 1-based."
+     },
+     {
+      "t": "mc",
+      "q": "What does v[-1] return?",
+      "o": [
+       "Only the last element",
+       "The first element",
+       "Everything except the first element",
+       "An error"
+      ],
+      "a": 2,
+      "why": "A negative index removes that position."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "v <- c(10, 20, 30, 40)\nprint(v[v > 15])",
+      "o": [
+       "[1] 10",
+       "[1] 20 30 40",
+       "[1] TRUE TRUE TRUE",
+       "[1] 15"
+      ],
+      "a": 1,
+      "why": "Values above 15 are kept."
+     },
+     {
+      "t": "tf",
+      "q": "In df[2, 3], the 2 selects the row and the 3 selects the column.",
+      "a": true,
+      "why": "The format is df[row, column]."
+     },
+     {
+      "t": "match",
+      "q": "Match each expression to its meaning",
+      "pairs": [
+       [
+        "v[2]",
+        "Second element"
+       ],
+       [
+        "v[-2]",
+        "All except the second"
+       ],
+       [
+        "df[, 1]",
+        "First column"
+       ],
+       [
+        "df[1, ]",
+        "First row"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the expression that gets the third element of v.",
+      "a": [
+       "v[3]"
+      ],
+      "hint": "v[...]",
+      "why": "Square brackets and 3."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to keep only values over 5.",
+      "lines": [
+       "x <- c(2, 9, 5, 7)",
+       "big <- x[x > 5]",
+       "print(big)"
+      ],
+      "why": "Create, filter, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order how R does v[v > 2]",
+      "items": [
+       [
+        "Compare each value with 2",
+        1
+       ],
+       [
+        "Get TRUE or FALSE for each",
+        2
+       ],
+       [
+        "Keep positions that are TRUE",
+        3
+       ],
+       [
+        "Return the kept values",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the code that gets the first element of v.",
+      "a": [
+       "v[1]"
+      ],
+      "why": "R starts at 1."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to filter a data frame to age over 12.",
+      "lines": [
+       "df <- data.frame(age = c(10, 14, 16))",
+       "older <- df[df$age > 12, ]",
+       "print(older)"
+      ],
+      "why": "Create, filter rows, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "v <- c(1, 2, 3, 4)\nprint(v[-c(1, 2)])",
+      "o": [
+       "[1] 3 4",
+       "[1] 1 2",
+       "[1] 3",
+       "[1] 2 3 4"
+      ],
+      "a": 0,
+      "why": "Dropping the first two elements leaves 3 and 4."
+     }
+    ]
+   },
+   {
+    "title": "Functions",
+    "period": "Programming",
+    "learn": [
+     {
+      "h": "Defining a function",
+      "b": "A function packages code you can reuse. Use function() and assign it to a name. The last value computed is returned automatically, and return() can end it early. Call it with parentheses.",
+      "code": "square <- function(x) {\n  x * x\n}\nsquare(4)"
+     },
+     {
+      "h": "Arguments and defaults",
+      "b": "A function can take several arguments, separated by commas. Give an argument a default with an equals sign, and callers may skip it. You can pass arguments by name, which makes code easier to read.",
+      "code": "greet <- function(name, greeting = \"Hi\") {\n  paste(greeting, name)\n}\ngreet(\"Ana\")\ngreet(\"Ana\", greeting = \"Hello\")"
+     },
+     {
+      "h": "Using return",
+      "b": "Without return(), R gives back the last line. Writing return(x) is clearer in longer functions, or when you want to stop early. A function can return only one object, but that object can be a vector or a list.",
+      "code": "is_even <- function(n) {\n  return(n %% 2 == 0)\n}"
+     },
+     {
+      "h": "Scope",
+      "b": "Variables created inside a function exist only while it runs. They do not change variables outside, even with the same name. If you want a result, return it. Many built-in functions like sum, mean and paste work the same way."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword creates a function in R?",
+      "o": [
+       "def",
+       "function",
+       "func",
+       "fn"
+      ],
+      "a": 1,
+      "why": "R uses function()."
+     },
+     {
+      "t": "mc",
+      "q": "What does a function return if it has no return()?",
+      "o": [
+       "The value of its last line",
+       "Nothing",
+       "The first argument",
+       "NULL always"
+      ],
+      "a": 0,
+      "why": "R returns the last evaluated expression."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "add <- function(a, b = 1) {\n  a + b\n}\nprint(add(5))",
+      "o": [
+       "[1] 5",
+       "[1] 1",
+       "[1] 6",
+       "Error"
+      ],
+      "a": 2,
+      "why": "b defaults to 1, so 5 + 1 is 6."
+     },
+     {
+      "t": "tf",
+      "q": "A variable created inside a function is available everywhere afterwards.",
+      "a": false,
+      "why": "It exists only inside the function."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its job",
+      "pairs": [
+       [
+        "function(x)",
+        "Defines an argument"
+       ],
+       [
+        "b = 1",
+        "A default value"
+       ],
+       [
+        "return(x)",
+        "Gives back a result"
+       ],
+       [
+        "{ }",
+        "Holds the function body"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to define a function in R.",
+      "a": [
+       "function"
+      ],
+      "hint": "One word",
+      "why": "The word is function."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to define and call a function.",
+      "lines": [
+       "double <- function(x) {",
+       "  x * 2",
+       "}",
+       "print(double(7))"
+      ],
+      "why": "Header, body, closing brace, call."
+     },
+     {
+      "t": "order",
+      "q": "Put in order",
+      "items": [
+       [
+        "Define the function",
+        1
+       ],
+       [
+        "Call it with an argument",
+        2
+       ],
+       [
+        "The body runs",
+        3
+       ],
+       [
+        "The result comes back",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that starts a function called triple with one argument x.",
+      "a": [
+       "triple <- function(x) {"
+      ],
+      "why": "Name, arrow, function(x), open brace."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of a function that adds 10.",
+      "lines": [
+       "add10 <- function(n) {",
+       "  n + 10",
+       "}",
+       "print(add10(5))"
+      ],
+      "why": "Header, body, close, call."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "greet <- function(name, greeting = \"Hi\") {\n  paste(greeting, name)\n}\nprint(greet(\"Bo\"))",
+      "o": [
+       "[1] \"Hi Bo\"",
+       "[1] \"Bo Hi\"",
+       "[1] \"Hi\"",
+       "Error"
+      ],
+      "a": 0,
+      "why": "paste joins greeting and name."
+     }
+    ]
+   },
+   {
+    "title": "Control Flow",
+    "period": "Programming",
+    "learn": [
+     {
+      "h": "if, else if, else",
+      "b": "if runs code when a condition is TRUE. Use else if for more choices and else for everything left. The condition must be a single TRUE or FALSE, and curly braces hold the code.",
+      "code": "x <- 7\nif (x > 10) {\n  print(\"big\")\n} else if (x > 5) {\n  print(\"medium\")\n} else {\n  print(\"small\")\n}"
+     },
+     {
+      "h": "for loops",
+      "b": "A for loop repeats code for each item in a vector. The loop variable takes each value in turn. 1:3 makes a convenient range. Use it when you really need to repeat steps.",
+      "code": "for (i in 1:3) {\n  print(i * 2)\n}"
+     },
+     {
+      "h": "while, break and next",
+      "b": "A while loop repeats as long as its condition is TRUE, so make sure something changes or it never ends. break leaves a loop early and next skips to the next round.",
+      "code": "n <- 1\nwhile (n < 4) {\n  print(n)\n  n <- n + 1\n}"
+     },
+     {
+      "h": "ifelse and && ||",
+      "b": "ifelse(test, yes, no) works on a whole vector at once, which is faster than a loop. Inside an if use && for and, and || for or, because they work on single values. Use & and | for vectors.",
+      "code": "ifelse(c(1, 6, 9) > 5, \"hi\", \"lo\")"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword repeats code for each item in a vector?",
+      "o": [
+       "for",
+       "repeat each",
+       "loop",
+       "foreach"
+      ],
+      "a": 0,
+      "why": "for (i in x) loops over x."
+     },
+     {
+      "t": "mc",
+      "q": "What does break do inside a loop?",
+      "o": [
+       "Skips one round",
+       "Leaves the loop immediately",
+       "Restarts the loop",
+       "Prints a break"
+      ],
+      "a": 1,
+      "why": "next skips a round, break ends the loop."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x <- 7\nif (x > 10) {\n  print(\"big\")\n} else if (x > 5) {\n  print(\"medium\")\n} else {\n  print(\"small\")\n}",
+      "o": [
+       "[1] \"big\"",
+       "[1] \"small\"",
+       "[1] \"medium\"",
+       "Nothing"
+      ],
+      "a": 2,
+      "why": "7 is not above 10 but is above 5."
+     },
+     {
+      "t": "tf",
+      "q": "ifelse() works on a whole vector at once.",
+      "a": true,
+      "why": "It tests every element."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its job",
+      "pairs": [
+       [
+        "if",
+        "Run code on a condition"
+       ],
+       [
+        "for",
+        "Repeat for each item"
+       ],
+       [
+        "next",
+        "Skip to the next round"
+       ],
+       [
+        "while",
+        "Repeat while TRUE"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the operator that means and for single values inside an if.",
+      "a": [
+       "&&"
+      ],
+      "hint": "Two ampersands",
+      "why": "Two symbols."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 1 to 3.",
+      "lines": [
+       "for (i in 1:3) {",
+       "  print(i)",
+       "}"
+      ],
+      "why": "Header, body, closing brace."
+     },
+     {
+      "t": "order",
+      "q": "Put in order how a while loop works",
+      "items": [
+       [
+        "Check the condition",
+        1
+       ],
+       [
+        "Run the body if TRUE",
+        2
+       ],
+       [
+        "Update the variable",
+        3
+       ],
+       [
+        "Check the condition again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the for line that loops i over 1 to 5.",
+      "a": [
+       "for (i in 1:5) {"
+      ],
+      "why": "for, (i in 1:5), open brace."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to say big or small.",
+      "lines": [
+       "x <- 12",
+       "if (x > 10) {",
+       "  print(\"big\")",
+       "} else {",
+       "  print(\"small\")",
+       "}"
+      ],
+      "why": "Value, if, true branch, else, false branch, close."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which numbers does this print?",
+      "code": "for (i in 1:3) {\n  if (i == 2) next\n  print(i)\n}",
+      "o": [
+       "1, 2 and 3",
+       "1 and 3",
+       "Only 2",
+       "Only 3"
+      ],
+      "a": 1,
+      "why": "next skips 2, so 1 and 3 print on separate lines."
+     }
+    ]
+   },
+   {
+    "title": "The Apply Family",
+    "period": "Programming",
+    "learn": [
+     {
+      "h": "Why apply?",
+      "b": "The apply functions run a function over many items without writing a loop. The code is shorter and clearer. They take the data first and the function second.",
+      "code": "sapply(1:3, function(x) x^2)"
+     },
+     {
+      "h": "lapply and sapply",
+      "b": "lapply returns a list. sapply does the same job but simplifies the result into a vector when it can. You can pass a built-in function by name, like sapply(df, mean).",
+      "code": "nums <- list(a = 1:3, b = 4:6)\nlapply(nums, sum)\nsapply(nums, sum)"
+     },
+     {
+      "h": "apply on matrices",
+      "b": "apply(m, 1, sum) runs sum on each row, and apply(m, 2, sum) runs it on each column. The second number is the margin: 1 for rows, 2 for columns.",
+      "code": "m <- matrix(1:6, nrow = 2)\napply(m, 1, sum)\napply(m, 2, sum)"
+     },
+     {
+      "h": "tapply and vapply",
+      "b": "tapply(values, groups, fun) applies a function to values split by group, such as the mean score per class. vapply is like sapply but you declare the output type, so it is safer in programs.",
+      "code": "tapply(c(1, 2, 3, 4), c(\"a\", \"b\", \"a\", \"b\"), sum)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does sapply do?",
+      "o": [
+       "Sorts a vector",
+       "Applies a function to each item and simplifies the result",
+       "Reads a file",
+       "Creates a plot"
+      ],
+      "a": 1,
+      "why": "It returns a vector when possible."
+     },
+     {
+      "t": "mc",
+      "q": "In apply(m, 1, sum), what does the 1 mean?",
+      "o": [
+       "Apply over rows",
+       "Apply over columns",
+       "Apply once",
+       "Return one value"
+      ],
+      "a": 0,
+      "why": "1 is rows, 2 is columns."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print(sapply(1:3, function(x) x^2))",
+      "o": [
+       "[1] 1 2 3",
+       "[1] 14",
+       "[1] 1 4 9",
+       "[1] 2 4 6"
+      ],
+      "a": 2,
+      "why": "Each number is squared."
+     },
+     {
+      "t": "tf",
+      "q": "lapply always returns a list.",
+      "a": true,
+      "why": "sapply is the one that simplifies."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "lapply",
+        "Returns a list"
+       ],
+       [
+        "sapply",
+        "Returns a simplified vector"
+       ],
+       [
+        "apply",
+        "Works over matrix rows or columns"
+       ],
+       [
+        "tapply",
+        "Applies by group"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that applies a function to each item and returns a list.",
+      "a": [
+       "lapply"
+      ],
+      "hint": "One word",
+      "why": "The l stands for list."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to square each value.",
+      "lines": [
+       "nums <- c(1, 2, 3)",
+       "sq <- sapply(nums, function(x) x^2)",
+       "print(sq)"
+      ],
+      "why": "Vector, sapply, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order",
+      "items": [
+       [
+        "Choose the data",
+        1
+       ],
+       [
+        "Choose the function",
+        2
+       ],
+       [
+        "Call sapply(data, function)",
+        3
+       ],
+       [
+        "Get the result vector",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the call that gets the sum of each column of matrix m.",
+      "a": [
+       "apply(m, 2, sum)"
+      ],
+      "hint": "apply(m, ..., sum)",
+      "why": "2 means columns."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to double every number with sapply.",
+      "lines": [
+       "v <- c(2, 4, 6)",
+       "d <- sapply(v, function(x) x * 2)",
+       "print(d)"
+      ],
+      "why": "Vector, sapply, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "m <- matrix(1:4, nrow = 2)\nprint(apply(m, 2, sum))",
+      "o": [
+       "[1] 3 7",
+       "[1] 10",
+       "[1] 4 6",
+       "[1] 1 2 3 4"
+      ],
+      "a": 0,
+      "why": "The columns are 1,2 and 3,4, so the sums are 3 and 7."
+     }
+    ]
+   },
+   {
+    "title": "dplyr Verbs",
+    "period": "Data tools",
+    "learn": [
+     {
+      "h": "Loading dplyr",
+      "b": "dplyr is a package that makes data wrangling easy. Install it once with install.packages(\"dplyr\") and load it each session with library(dplyr). Its functions take a data frame first and return a new data frame, with readable verbs for each job."
+     },
+     {
+      "h": "filter, select, arrange",
+      "b": "filter() keeps rows that match a condition. select() keeps chosen columns. arrange() sorts rows, and desc() sorts from high to low. Column names are written without quotes or dollar signs.",
+      "code": "filter(df, age > 12)\nselect(df, name, age)\narrange(df, desc(age))"
+     },
+     {
+      "h": "mutate and summarise",
+      "b": "mutate() adds or changes columns. summarise() collapses many rows into one summary row, like a mean or count. n() counts rows in a group.",
+      "code": "mutate(df, next_age = age + 1)\nsummarise(df, avg = mean(age))"
+     },
+     {
+      "h": "group_by and the pipe",
+      "b": "group_by() splits data into groups so summarise works per group. The pipe passes the left result into the next function, so steps read left to right. The classic pipe is %>% and the built-in one is |>.",
+      "code": "df |>\n  filter(age > 10) |>\n  group_by(team) |>\n  summarise(avg = mean(age))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which dplyr verb keeps only rows matching a condition?",
+      "o": [
+       "filter()",
+       "select()",
+       "mutate()",
+       "arrange()"
+      ],
+      "a": 0,
+      "why": "filter works on rows, select on columns."
+     },
+     {
+      "t": "mc",
+      "q": "Which verb adds a new column?",
+      "o": [
+       "summarise()",
+       "mutate()",
+       "filter()",
+       "group_by()"
+      ],
+      "a": 1,
+      "why": "mutate creates or changes columns."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print(c(1, 4, 9) |> sqrt() |> sum())",
+      "o": [
+       "[1] 3",
+       "[1] 14",
+       "[1] 6",
+       "[1] 1 4 9"
+      ],
+      "a": 2,
+      "why": "The pipe takes the square roots 1, 2, 3, then sums to 6."
+     },
+     {
+      "t": "tf",
+      "q": "select() chooses columns, while filter() chooses rows.",
+      "a": true,
+      "why": "Those are their jobs."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its job",
+      "pairs": [
+       [
+        "filter",
+        "Keep matching rows"
+       ],
+       [
+        "select",
+        "Keep chosen columns"
+       ],
+       [
+        "arrange",
+        "Sort rows"
+       ],
+       [
+        "summarise",
+        "Collapse rows to a summary"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that sorts rows in dplyr.",
+      "a": [
+       "arrange"
+      ],
+      "hint": "One word",
+      "why": "arrange sorts."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to find the average age of people over 12.",
+      "lines": [
+       "library(dplyr)",
+       "res <- df |> filter(age > 12)",
+       "avg <- res |> summarise(m = mean(age))",
+       "print(avg)"
+      ],
+      "why": "Load, filter, summarise, print."
+     },
+     {
+      "t": "order",
+      "q": "Put the pipe steps in order",
+      "items": [
+       [
+        "Start with the data frame",
+        1
+       ],
+       [
+        "filter the rows",
+        2
+       ],
+       [
+        "group_by a column",
+        3
+       ],
+       [
+        "summarise each group",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the call that keeps only the column name from df using dplyr.",
+      "a": [
+       "select(df, name)"
+      ],
+      "hint": "select(df, ...)",
+      "why": "select takes the data and column."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to add a column and sort by it.",
+      "lines": [
+       "library(dplyr)",
+       "df2 <- mutate(df, double = age * 2)",
+       "df3 <- arrange(df2, double)",
+       "print(df3)"
+      ],
+      "why": "Load, mutate, arrange, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which pipeline gives the mean age per team?",
+      "o": [
+       "df |> group_by(team) |> summarise(m = mean(age))",
+       "df |> summarise(team) |> mean(age)",
+       "df |> filter(team) |> mean(age)",
+       "df |> arrange(team, mean)"
+      ],
+      "a": 0,
+      "why": "Group first, then summarise."
+     }
+    ]
+   },
+   {
+    "title": "ggplot2 and Basic Stats",
+    "period": "Data tools",
+    "learn": [
+     {
+      "h": "The grammar of graphics",
+      "b": "ggplot2 builds charts in layers. ggplot(data, aes(x, y)) sets the data and which columns go on which axis, and a plus sign adds layers like geom_point() for a scatter plot. Load it with library(ggplot2).",
+      "code": "library(ggplot2)\nggplot(mtcars, aes(wt, mpg)) +\n  geom_point()"
+     },
+     {
+      "h": "Common geoms",
+      "b": "geom_point draws dots, geom_line draws lines, geom_col or geom_bar draws bars, and geom_histogram shows how values are spread. labs() adds a title and axis labels. aes(color = group) colors points by a column.",
+      "code": "ggplot(df, aes(age)) +\n  geom_histogram(bins = 5) +\n  labs(title = \"Ages\")"
+     },
+     {
+      "h": "Summary statistics",
+      "b": "mean() is the average and median() is the middle value, which is less affected by outliers. sd() measures how spread out values are, and range(), min() and max() give the extremes. summary() prints several at once.",
+      "code": "x <- c(2, 4, 4, 4, 5, 5, 7, 9)\nmean(x)\nmedian(x)\nsd(x)"
+     },
+     {
+      "h": "Relationships and models",
+      "b": "cor(x, y) gives correlation from -1 to 1. lm(y ~ x) fits a straight line, and summary() of the model shows the slope. The tilde means y depends on x. A t.test() compares the means of two groups.",
+      "code": "fit <- lm(mpg ~ wt, data = mtcars)\ncoef(fit)\ncor(mtcars$wt, mtcars$mpg)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What joins layers in a ggplot?",
+      "o": [
+       "The pipe |>",
+       "A comma",
+       "The plus sign",
+       "The arrow <-"
+      ],
+      "a": 2,
+      "why": "Layers are added with +."
+     },
+     {
+      "t": "mc",
+      "q": "Which geom draws a scatter plot?",
+      "o": [
+       "geom_point()",
+       "geom_bar()",
+       "geom_line()",
+       "geom_box()"
+      ],
+      "a": 0,
+      "why": "Points make a scatter plot."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "x <- c(2, 4, 4, 4, 5, 5, 7, 9)\nprint(median(x))",
+      "o": [
+       "[1] 5",
+       "[1] 4.5",
+       "[1] 4",
+       "[1] 9"
+      ],
+      "a": 1,
+      "why": "The sorted middle values are 4 and 5, so the median is 4.5."
+     },
+     {
+      "t": "tf",
+      "q": "A correlation close to 1 means two variables rise together.",
+      "a": true,
+      "why": "Correlation near 1 means a strong positive link."
+     },
+     {
+      "t": "match",
+      "q": "Match each function to its job",
+      "pairs": [
+       [
+        "mean(x)",
+        "Average"
+       ],
+       [
+        "sd(x)",
+        "Spread of values"
+       ],
+       [
+        "cor(x, y)",
+        "Strength of a relationship"
+       ],
+       [
+        "lm(y ~ x)",
+        "Fit a line"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the function that gives the middle value of x.",
+      "a": [
+       "median(x)"
+      ],
+      "hint": "median(...)",
+      "why": "median is the middle."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to draw a scatter plot.",
+      "lines": [
+       "library(ggplot2)",
+       "p <- ggplot(df, aes(x, y))",
+       "p <- p + geom_point()",
+       "print(p)"
+      ],
+      "why": "Load, set up, add layer, show."
+     },
+     {
+      "t": "order",
+      "q": "Put in order how to make a ggplot",
+      "items": [
+       [
+        "Load ggplot2",
+        1
+       ],
+       [
+        "Call ggplot with data and aes",
+        2
+       ],
+       [
+        "Add a geom layer",
+        3
+       ],
+       [
+        "Add labs for a title",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the call that gives the standard deviation of x.",
+      "a": [
+       "sd(x)"
+      ],
+      "hint": "sd(...)",
+      "why": "sd stands for standard deviation."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines to plot a histogram of age.",
+      "lines": [
+       "library(ggplot2)",
+       "p <- ggplot(df, aes(age))",
+       "p <- p + geom_histogram(bins = 5)",
+       "print(p)"
+      ],
+      "why": "Load, aes, histogram layer, print."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this print?",
+      "code": "x <- c(2, 4, 4, 4, 5, 5, 7, 9)\nprint(mean(x))",
+      "o": [
+       "[1] 5",
+       "[1] 4",
+       "[1] 8",
+       "[1] 40"
+      ],
+      "a": 0,
+      "why": "The sum is 40 and there are 8 values, so the mean is 5."
+     }
+    ]
+   }
+  ]
+ }
+}

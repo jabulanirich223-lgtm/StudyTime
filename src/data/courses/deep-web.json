@@ -1,0 +1,2037 @@
+{
+ "web": {
+  "name": "HTML & CSS",
+  "units": [
+   {
+    "title": "HTML Structure",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "What is HTML?",
+      "b": "HTML is the language that gives a web page its structure. It is made of elements written with tags in angle brackets. Most elements have an opening tag, content and a closing tag with a slash.",
+      "code": "<p>Hello world</p>"
+     },
+     {
+      "h": "The page skeleton",
+      "b": "Every page starts with a doctype that tells the browser it is modern HTML. The html element wraps everything. Inside, head holds information about the page like its title, and body holds what people see.",
+      "code": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>My page</title>\n</head>\n<body>\n  <h1>Welcome</h1>\n</body>\n</html>"
+     },
+     {
+      "h": "Attributes",
+      "b": "Attributes give extra information to an element. They go inside the opening tag as name=\"value\". Examples are lang on html and charset on meta. Some elements, like meta and img, are void and have no closing tag.",
+      "code": "<html lang=\"en\">\n<img src=\"cat.png\" alt=\"A cat\">"
+     },
+     {
+      "h": "Nesting and comments",
+      "b": "Elements can sit inside other elements, which is called nesting. Close the inner element before the outer one. Comments start with <!-- and end with -->, and the browser does not show them. Indenting your code makes the structure easy to read.",
+      "code": "<body>\n  <!-- main text -->\n  <p>Hi <strong>there</strong></p>\n</body>"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does HTML describe?",
+      "o": [
+       "The structure of a web page",
+       "The colors only",
+       "A database",
+       "A server"
+      ],
+      "a": 0,
+      "why": "HTML gives the page its structure and content."
+     },
+     {
+      "t": "mc",
+      "q": "Where is the page title (shown in the tab) written?",
+      "o": [
+       "In the doctype",
+       "In the title element inside head",
+       "In the body",
+       "In a comment"
+      ],
+      "a": 1,
+      "why": "The title element goes in head."
+     },
+     {
+      "t": "mc",
+      "q": "What will visitors see on the page?",
+      "code": "<body>\n  <p>Hello</p>\n</body>",
+      "o": [
+       "body",
+       "Nothing",
+       "Hello",
+       "<p>Hello</p>"
+      ],
+      "a": 2,
+      "why": "Tags are not shown; only the content Hello is."
+     },
+     {
+      "t": "tf",
+      "q": "The body element holds what visitors see on the page.",
+      "a": true,
+      "why": "Visible content goes in body."
+     },
+     {
+      "t": "match",
+      "q": "Match each element to its job",
+      "pairs": [
+       [
+        "<head>",
+        "information about the page"
+       ],
+       [
+        "<body>",
+        "visible content"
+       ],
+       [
+        "<title>",
+        "name in the browser tab"
+       ],
+       [
+        "<html>",
+        "wraps the whole page"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the tag that opens the visible part of the page.",
+      "a": [
+       "<body>",
+       "body"
+      ],
+      "why": "body holds the visible content."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the page skeleton",
+      "lines": [
+       "<!DOCTYPE html>",
+       "<html lang=\"en\">",
+       "<head><title>Hi</title></head>",
+       "<body><p>Hello</p></body>",
+       "</html>"
+      ],
+      "why": "Doctype, html, head, body, closing html."
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from outermost to innermost",
+      "items": [
+       [
+        "<html>",
+        1
+       ],
+       [
+        "<body>",
+        2
+       ],
+       [
+        "<p>",
+        3
+       ],
+       [
+        "text",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the full opening of a document, the doctype line.",
+      "a": [
+       "<!DOCTYPE html>",
+       "<!doctype html>"
+      ],
+      "hint": "<!DOCTYPE ...>",
+      "why": "The doctype is not case sensitive."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type a paragraph element that says Hi (opening tag, text, closing tag).",
+      "a": [
+       "<p>Hi</p>"
+      ],
+      "hint": "<p>...</p>",
+      "why": "Open, content, close."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a valid nested element.",
+      "lines": [
+       "<body>",
+       "  <p>Hi <strong>you</strong></p>",
+       "</body>"
+      ],
+      "why": "The p element sits inside body."
+     }
+    ]
+   },
+   {
+    "title": "Text Tags",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "Headings and paragraphs",
+      "b": "Headings go from h1, the main title, to h6, the smallest. Use one h1 per page and keep the order sensible. The p element makes a paragraph, and the browser adds space around it.",
+      "code": "<h1>My Blog</h1>\n<h2>Post one</h2>\n<p>This is a paragraph.</p>"
+     },
+     {
+      "h": "Emphasis",
+      "b": "Use strong for important text, which is usually bold. Use em for stressed text, which is usually italic. They carry meaning, not only looks. The b and i tags only change how text looks.",
+      "code": "<p>This is <strong>very</strong> <em>important</em>.</p>"
+     },
+     {
+      "h": "Line breaks and rules",
+      "b": "The br tag makes a line break inside a paragraph, and hr draws a horizontal line. Both are void elements with no closing tag. Extra spaces and new lines in your code are collapsed into one space.",
+      "code": "<p>Roses are red<br>Violets are blue</p>\n<hr>"
+     },
+     {
+      "h": "Other text elements",
+      "b": "Use blockquote for a long quote and q for a short one. code shows computer code, and pre keeps spaces and line breaks. span and div are generic containers with no meaning: span is inline and div is block.",
+      "code": "<blockquote>To be or not to be</blockquote>\n<p>Press <code>Ctrl+S</code></p>\n<pre>a   b</pre>\n<span>inline</span> <div>block</div>"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the largest, most important heading?",
+      "o": [
+       "h6",
+       "h3",
+       "head",
+       "h1"
+      ],
+      "a": 3,
+      "why": "h1 is the main heading."
+     },
+     {
+      "t": "mc",
+      "q": "Which tag marks important text?",
+      "o": [
+       "strong",
+       "big",
+       "mark2",
+       "bold"
+      ],
+      "a": 0,
+      "why": "strong means important."
+     },
+     {
+      "t": "mc",
+      "q": "What does the browser show for this code?",
+      "code": "<p>Hi<br>there</p>",
+      "o": [
+       "Nothing",
+       "Two lines",
+       "One line",
+       "A horizontal rule"
+      ],
+      "a": 1,
+      "why": "The br tag breaks the line."
+     },
+     {
+      "t": "tf",
+      "q": "The br element needs a closing tag.",
+      "a": false,
+      "why": "br is a void element."
+     },
+     {
+      "t": "match",
+      "q": "Match each tag to what it makes",
+      "pairs": [
+       [
+        "<h1>",
+        "main heading"
+       ],
+       [
+        "<p>",
+        "paragraph"
+       ],
+       [
+        "<em>",
+        "stressed text"
+       ],
+       [
+        "<hr>",
+        "horizontal line"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the tag name (without brackets) for a line break.",
+      "a": [
+       "br"
+      ],
+      "why": "br breaks the line."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a small article",
+      "lines": [
+       "<h1>Pets</h1>",
+       "<p>I have a <strong>dog</strong>.</p>",
+       "<hr>",
+       "<p>The end.</p>"
+      ],
+      "why": "Heading, paragraph, line, final paragraph."
+     },
+     {
+      "t": "order",
+      "q": "Put these headings in order from most to least important",
+      "items": [
+       [
+        "h1",
+        1
+       ],
+       [
+        "h2",
+        2
+       ],
+       [
+        "h3",
+        3
+       ],
+       [
+        "h4",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type a level 2 heading that says News.",
+      "a": [
+       "<h2>News</h2>"
+      ],
+      "hint": "<h2>...</h2>",
+      "why": "h2 opens and closes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the element that makes the word stop important (use strong).",
+      "a": [
+       "<strong>stop</strong>"
+      ],
+      "hint": "<strong>...</strong>",
+      "why": "Wrap the text in strong."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a poem with a line break.",
+      "lines": [
+       "<p>",
+       "  Roses are red<br>",
+       "  Violets are blue",
+       "</p>"
+      ],
+      "why": "br sits between the lines inside the p."
+     }
+    ]
+   },
+   {
+    "title": "Links & Images",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "Links",
+      "b": "The a element makes a link. Its href attribute holds the address to open, and the content is the clickable text. Use a full address for other sites and a file name for pages on your own site.",
+      "code": "<a href=\"https://example.com\">Visit</a>\n<a href=\"about.html\">About us</a>"
+     },
+     {
+      "h": "More about links",
+      "b": "Add target=\"_blank\" to open a link in a new tab, together with rel=\"noopener\" for safety. A link starting with # jumps to the element with that id on the same page. mailto: opens an email.",
+      "code": "<a href=\"https://example.com\" target=\"_blank\" rel=\"noopener\">New tab</a>\n<a href=\"#top\">Back to top</a>\n<a href=\"mailto:me@mail.com\">Email me</a>"
+     },
+     {
+      "h": "Images",
+      "b": "The img tag shows a picture. The src attribute is the file path or address, and alt is a text description. alt is read by screen readers and shown if the image fails to load. Set width and height to avoid the page jumping while loading.",
+      "code": "<img src=\"images/dog.jpg\" alt=\"A brown dog\" width=\"300\" height=\"200\">"
+     },
+     {
+      "h": "Paths",
+      "b": "A relative path is found from the current page, like images/dog.jpg, or ../logo.png to go up one folder. An absolute path is a full address starting with https. An image can be inside a link to make it clickable. Use figure and figcaption to add a caption.",
+      "code": "<a href=\"home.html\"><img src=\"logo.png\" alt=\"Home\"></a>\n<figure>\n  <img src=\"sun.jpg\" alt=\"The sun\">\n  <figcaption>Sunrise</figcaption>\n</figure>"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which attribute holds the address of a link?",
+      "o": [
+       "link",
+       "url",
+       "href",
+       "src"
+      ],
+      "a": 2,
+      "why": "href is the link target."
+     },
+     {
+      "t": "mc",
+      "q": "Which attribute holds the picture file of an img?",
+      "o": [
+       "href",
+       "alt",
+       "file",
+       "src"
+      ],
+      "a": 3,
+      "why": "src gives the image source."
+     },
+     {
+      "t": "mc",
+      "q": "What does this code create?",
+      "code": "<a href=\"https://example.com\" target=\"_blank\">Go</a>",
+      "o": [
+       "A link that opens in a new tab",
+       "An image",
+       "A heading",
+       "A list"
+      ],
+      "a": 0,
+      "why": "target=_blank opens a new tab."
+     },
+     {
+      "t": "tf",
+      "q": "The alt attribute describes an image for people who cannot see it.",
+      "a": true,
+      "why": "Screen readers read the alt text."
+     },
+     {
+      "t": "match",
+      "q": "Match each element or attribute to its job",
+      "pairs": [
+       [
+        "<a>",
+        "makes a link"
+       ],
+       [
+        "<img>",
+        "shows a picture"
+       ],
+       [
+        "alt",
+        "text description of an image"
+       ],
+       [
+        "target=\"_blank\"",
+        "opens a new tab"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the attribute that gives alternative text for an image.",
+      "a": [
+       "alt"
+      ],
+      "why": "alt describes the image."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange an image with caption",
+      "lines": [
+       "<figure>",
+       "  <img src=\"sun.jpg\" alt=\"The sun\">",
+       "  <figcaption>Sunrise</figcaption>",
+       "</figure>"
+      ],
+      "why": "The caption goes inside figure after the image."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to add an image to a page",
+      "items": [
+       [
+        "Save the picture in a folder",
+        1
+       ],
+       [
+        "Write the img tag",
+        2
+       ],
+       [
+        "Set src to the file path",
+        3
+       ],
+       [
+        "Write the alt text",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type a link to about.html with the text About.",
+      "a": [
+       "<a href=\"about.html\">About</a>"
+      ],
+      "hint": "<a href=\"...\">...</a>",
+      "why": "href then the text."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the img tag showing cat.png with alt text Cat (src first, then alt).",
+      "a": [
+       "<img src=\"cat.png\" alt=\"Cat\">",
+       "<img src=\"cat.png\" alt=\"Cat\" />"
+      ],
+      "hint": "<img src=... alt=...>",
+      "why": "Void element with src and alt."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which path goes up one folder to find logo.png?",
+      "o": [
+       "^logo.png",
+       "../logo.png",
+       "logo.png/..",
+       "/up/logo.png"
+      ],
+      "a": 1,
+      "why": "../ means the parent folder."
+     }
+    ]
+   },
+   {
+    "title": "Lists & Tables",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "Lists",
+      "b": "Use ul for an unordered list with bullets and ol for an ordered list with numbers. Each item goes in a li element. Lists can be nested by putting a new list inside an li.",
+      "code": "<ul>\n  <li>Apples</li>\n  <li>Bread</li>\n</ul>\n<ol>\n  <li>Wake up</li>\n  <li>Go to school</li>\n</ol>"
+     },
+     {
+      "h": "Definition lists",
+      "b": "A dl element makes a list of terms and descriptions. The dt element is the term and dd is its description. This is useful for glossaries.",
+      "code": "<dl>\n  <dt>HTML</dt>\n  <dd>Page structure</dd>\n</dl>"
+     },
+     {
+      "h": "Tables",
+      "b": "A table is built from rows. The table element wraps tr rows, and each row has td cells. Use th for header cells, which are bold and centered by default. Tables are for data, not for page layout.",
+      "code": "<table>\n  <tr><th>Name</th><th>Age</th></tr>\n  <tr><td>Ana</td><td>15</td></tr>\n</table>"
+     },
+     {
+      "h": "Table structure",
+      "b": "Group rows with thead, tbody and tfoot, and add a caption to name the table. colspan and rowspan let a cell stretch across columns or rows. Use scope on th so screen readers know whether it heads a column or a row.",
+      "code": "<table>\n  <caption>Scores</caption>\n  <thead>\n    <tr><th scope=\"col\">Name</th><th scope=\"col\">Pts</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Ana</td><td>9</td></tr>\n  </tbody>\n</table>"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which element makes a numbered list?",
+      "o": [
+       "li",
+       "dl",
+       "ol",
+       "ul"
+      ],
+      "a": 2,
+      "why": "ol is an ordered list."
+     },
+     {
+      "t": "mc",
+      "q": "Which element is one item of a list?",
+      "o": [
+       "td",
+       "tr",
+       "dt",
+       "li"
+      ],
+      "a": 3,
+      "why": "li holds each list item."
+     },
+     {
+      "t": "mc",
+      "q": "How many cells are in this row?",
+      "code": "<tr><td>Ana</td><td>15</td></tr>",
+      "o": [
+       "2",
+       "1",
+       "3",
+       "4"
+      ],
+      "a": 0,
+      "why": "Two td elements make two cells."
+     },
+     {
+      "t": "tf",
+      "q": "Tables should be used to lay out a whole web page.",
+      "a": false,
+      "why": "Tables are for data; use CSS for layout."
+     },
+     {
+      "t": "match",
+      "q": "Match each element to its job",
+      "pairs": [
+       [
+        "<ul>",
+        "bulleted list"
+       ],
+       [
+        "<tr>",
+        "table row"
+       ],
+       [
+        "<td>",
+        "table data cell"
+       ],
+       [
+        "<th>",
+        "table header cell"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the tag name for a table row.",
+      "a": [
+       "tr"
+      ],
+      "why": "tr means table row."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a bulleted list",
+      "lines": [
+       "<ul>",
+       "  <li>Tea</li>",
+       "  <li>Milk</li>",
+       "</ul>"
+      ],
+      "why": "Items go inside ul."
+     },
+     {
+      "t": "order",
+      "q": "Put these table parts in order from outermost to innermost",
+      "items": [
+       [
+        "table",
+        1
+       ],
+       [
+        "tr",
+        2
+       ],
+       [
+        "td",
+        3
+       ],
+       [
+        "text",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the opening tag of a numbered list.",
+      "a": [
+       "<ol>"
+      ],
+      "hint": "<..>",
+      "why": "ol is ordered list."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type a list item that says Milk.",
+      "a": [
+       "<li>Milk</li>"
+      ],
+      "hint": "<li>...</li>",
+      "why": "li wraps one item."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a table with a header row and one data row.",
+      "lines": [
+       "<table>",
+       "  <tr><th>Item</th></tr>",
+       "  <tr><td>Pen</td></tr>",
+       "</table>"
+      ],
+      "why": "Header row first, then data."
+     }
+    ]
+   },
+   {
+    "title": "Forms",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "The form element",
+      "b": "A form collects information from a visitor. The action attribute says where the data goes and method says how, usually get or post. Inside the form you place inputs and a submit button.",
+      "code": "<form action=\"/signup\" method=\"post\">\n  <input type=\"text\" name=\"user\">\n  <button type=\"submit\">Send</button>\n</form>"
+     },
+     {
+      "h": "Inputs and labels",
+      "b": "The input element changes with its type attribute: text, email, password, number, checkbox, radio, date and more. Always connect a label to its input with for and id, so clicking the label focuses the field. The name attribute is the key of the sent data.",
+      "code": "<label for=\"mail\">Email</label>\n<input type=\"email\" id=\"mail\" name=\"mail\" required>"
+     },
+     {
+      "h": "Other controls",
+      "b": "textarea is for many lines of text. select with option elements makes a drop-down list. Radio buttons share the same name so only one can be chosen. A checkbox can be ticked on its own.",
+      "code": "<textarea name=\"msg\" rows=\"3\"></textarea>\n<select name=\"color\">\n  <option value=\"r\">Red</option>\n  <option value=\"b\">Blue</option>\n</select>\n<input type=\"radio\" name=\"size\" value=\"s\"> Small"
+     },
+     {
+      "h": "Validation and grouping",
+      "b": "Attributes like required, min, max, minlength and pattern let the browser check input before sending. placeholder shows a hint inside an empty field. Group related fields with fieldset and name the group with legend.",
+      "code": "<fieldset>\n  <legend>Account</legend>\n  <input type=\"password\" name=\"pw\" minlength=\"8\" placeholder=\"8+ characters\" required>\n</fieldset>"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which attribute decides which kind of input a field is?",
+      "o": [
+       "for",
+       "type",
+       "kind",
+       "name"
+      ],
+      "a": 1,
+      "why": "type=\"text\", type=\"email\" and so on."
+     },
+     {
+      "t": "mc",
+      "q": "How do you connect a label to an input?",
+      "o": [
+       "href on the label",
+       "They connect automatically",
+       "for on the label and id on the input",
+       "name on both"
+      ],
+      "a": 2,
+      "why": "The label's for matches the input's id."
+     },
+     {
+      "t": "mc",
+      "q": "What does required do here?",
+      "code": "<input type=\"text\" name=\"u\" required>",
+      "o": [
+       "Hides the field",
+       "Makes the field read-only",
+       "Adds a label",
+       "Stops sending until the field is filled"
+      ],
+      "a": 3,
+      "why": "The browser blocks submitting an empty required field."
+     },
+     {
+      "t": "tf",
+      "q": "Radio buttons in one group should share the same name.",
+      "a": true,
+      "why": "Sharing a name means only one can be chosen."
+     },
+     {
+      "t": "match",
+      "q": "Match each element to its use",
+      "pairs": [
+       [
+        "<textarea>",
+        "many lines of text"
+       ],
+       [
+        "<select>",
+        "drop-down list"
+       ],
+       [
+        "<label>",
+        "text tied to an input"
+       ],
+       [
+        "<fieldset>",
+        "groups related fields"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the input type value for a field that hides the typed letters.",
+      "a": [
+       "password"
+      ],
+      "why": "type=password shows dots."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a labelled field",
+      "lines": [
+       "<label for=\"n\">Name</label>",
+       "<input type=\"text\" id=\"n\" name=\"n\">",
+       "<button type=\"submit\">Send</button>"
+      ],
+      "why": "Label, input, then button."
+     },
+     {
+      "t": "order",
+      "q": "Put in order what happens when a form is sent",
+      "items": [
+       [
+        "The user fills in the fields",
+        1
+       ],
+       [
+        "The user clicks submit",
+        2
+       ],
+       [
+        "The browser checks required fields",
+        3
+       ],
+       [
+        "The data goes to the action address",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the input element for an email field (type only).",
+      "a": [
+       "<input type=\"email\">",
+       "<input type=\"email\" />"
+      ],
+      "hint": "<input type=...>",
+      "why": "Set type to email."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the attribute (one word) that makes a field mandatory.",
+      "a": [
+       "required"
+      ],
+      "hint": "...",
+      "why": "required blocks empty submit."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a form with one field.",
+      "lines": [
+       "<form action=\"/go\" method=\"post\">",
+       "  <input type=\"text\" name=\"q\">",
+       "  <button type=\"submit\">Go</button>",
+       "</form>"
+      ],
+      "why": "Fields and button live inside form."
+     }
+    ]
+   },
+   {
+    "title": "Semantic HTML & Accessibility",
+    "period": "HTML",
+    "learn": [
+     {
+      "h": "Semantic elements",
+      "b": "Semantic elements describe their meaning, not only their look. Use header, nav, main, article, section, aside and footer instead of generic divs. Search engines and screen readers use them to understand the page.",
+      "code": "<header>Site name</header>\n<nav><a href=\"/\">Home</a></nav>\n<main>\n  <article>Story</article>\n</main>\n<footer>Contact</footer>"
+     },
+     {
+      "h": "Page outline",
+      "b": "Use one main per page, and one h1 as the main heading. Headings should not skip levels, like going from h2 to h5. A section needs a heading. aside holds side information such as related links.",
+      "code": "<main>\n  <h1>Recipes</h1>\n  <section>\n    <h2>Soup</h2>\n  </section>\n  <aside>Tip</aside>\n</main>"
+     },
+     {
+      "h": "Alt text and labels",
+      "b": "Every meaningful image needs alt text that explains what it shows. A purely decorative image gets an empty alt, alt=\"\". Every form input needs a label. Link text should make sense alone, so avoid \"click here\".",
+      "code": "<img src=\"chart.png\" alt=\"Sales rose 20% in May\">\n<img src=\"line.png\" alt=\"\">\n<a href=\"menu.html\">Read the menu</a>"
+     },
+     {
+      "h": "ARIA and keyboard use",
+      "b": "People who use screen readers or only a keyboard must be able to use your page. Use real buttons and links because they work with the keyboard. ARIA attributes like aria-label add a name when text is missing, but the first rule is to use the right HTML element. Keep good color contrast and set lang on html.",
+      "code": "<button aria-label=\"Close\">X</button>\n<html lang=\"en\">"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which element should hold the main navigation links?",
+      "o": [
+       "nav",
+       "aside",
+       "footer",
+       "section"
+      ],
+      "a": 0,
+      "why": "nav is for navigation."
+     },
+     {
+      "t": "mc",
+      "q": "What should the alt of a purely decorative image be?",
+      "o": [
+       "It must have no alt",
+       "Empty: alt=\"\"",
+       "Image",
+       "Decoration.png"
+      ],
+      "a": 1,
+      "why": "An empty alt tells screen readers to skip it."
+     },
+     {
+      "t": "mc",
+      "q": "What is wrong with this link?",
+      "code": "<a href=\"menu.html\">Click here</a>",
+      "o": [
+       "It is a button",
+       "It is in nav",
+       "The text is not meaningful on its own",
+       "It has no href"
+      ],
+      "a": 2,
+      "why": "Link text should describe the destination."
+     },
+     {
+      "t": "tf",
+      "q": "You should use a div with a click handler instead of a button element.",
+      "a": false,
+      "why": "A real button works with the keyboard and screen readers."
+     },
+     {
+      "t": "match",
+      "q": "Match each semantic element to its job",
+      "pairs": [
+       [
+        "<header>",
+        "top of page or section"
+       ],
+       [
+        "<main>",
+        "main content"
+       ],
+       [
+        "<aside>",
+        "side information"
+       ],
+       [
+        "<footer>",
+        "bottom of page or section"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the element (without brackets) used for the main content of a page.",
+      "a": [
+       "main"
+      ],
+      "why": "There should be one main per page."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a semantic page",
+      "lines": [
+       "<header>Logo</header>",
+       "<nav>Menu</nav>",
+       "<main>Content</main>",
+       "<footer>Contact</footer>"
+      ],
+      "why": "Header, nav, main, footer."
+     },
+     {
+      "t": "order",
+      "q": "Put these in a sensible page order top to bottom",
+      "items": [
+       [
+        "header",
+        1
+       ],
+       [
+        "nav",
+        2
+       ],
+       [
+        "main",
+        3
+       ],
+       [
+        "footer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the empty alt attribute used for decorative images.",
+      "a": [
+       "alt=\"\"",
+       "alt=''"
+      ],
+      "hint": "alt=...",
+      "why": "Empty quotes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the semantic element for a self-contained blog post (one word).",
+      "a": [
+       "article"
+      ],
+      "hint": "...",
+      "why": "article holds an independent piece of content."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which button gives a clear name for a screen reader?",
+      "o": [
+       "<button>X</button>",
+       "<div>X</div>",
+       "<button></button>",
+       "<button aria-label=\"Close\">X</button>"
+      ],
+      "a": 3,
+      "why": "aria-label provides the name when text is unclear."
+     }
+    ]
+   },
+   {
+    "title": "CSS Selectors",
+    "period": "CSS",
+    "learn": [
+     {
+      "h": "What is CSS?",
+      "b": "CSS controls how HTML looks: colors, sizes, spacing and layout. A rule has a selector that picks elements and a block of declarations in curly braces. Each declaration is a property, a colon, a value and a semicolon.",
+      "code": "p {\n  color: blue;\n  font-size: 18px;\n}"
+     },
+     {
+      "h": "Adding CSS",
+      "b": "The best way is a separate file linked from head with a link element. You can also put rules inside a style element, or use the style attribute on one element. A separate file lets many pages share the same look.",
+      "code": "<link rel=\"stylesheet\" href=\"style.css\">\n<style> h1 { color: red; } </style>\n<p style=\"color: green;\">Hi</p>"
+     },
+     {
+      "h": "Basic selectors",
+      "b": "An element selector uses the tag name like p. A class selector starts with a dot and picks every element with that class. An id selector starts with # and should be used once per page. The star * picks everything.",
+      "code": "p { color: black; }\n.note { color: gray; }\n#title { font-size: 2em; }\n/* html: <p class=\"note\"> */"
+     },
+     {
+      "h": "Combining selectors",
+      "b": "A comma picks several selectors at once. A space picks descendants, so nav a means links inside nav. A > picks direct children only. Pseudo-classes like :hover and :first-child pick elements in a special state or position. When rules conflict, the more specific one wins, then the later one.",
+      "code": "h1, h2 { color: navy; }\nnav a { text-decoration: none; }\nul > li { margin: 4px; }\na:hover { color: red; }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which selector picks elements with class card?",
+      "o": [
+       ".card",
+       "#card",
+       "card",
+       "*card"
+      ],
+      "a": 0,
+      "why": "A class selector starts with a dot."
+     },
+     {
+      "t": "mc",
+      "q": "Which selector picks the element with id main?",
+      "o": [
+       "*main",
+       "#main",
+       ".main",
+       "main#"
+      ],
+      "a": 1,
+      "why": "An id selector starts with #."
+     },
+     {
+      "t": "mc",
+      "q": "Which elements does this rule style?",
+      "code": "nav a {\n  color: red;\n}",
+      "o": [
+       "Only a",
+       "Links outside nav",
+       "Links inside nav",
+       "Only nav"
+      ],
+      "a": 2,
+      "why": "A space means descendants."
+     },
+     {
+      "t": "tf",
+      "q": "Every CSS declaration ends with a semicolon (the last one may omit it).",
+      "a": true,
+      "why": "Semicolons separate declarations."
+     },
+     {
+      "t": "match",
+      "q": "Match each selector to what it picks",
+      "pairs": [
+       [
+        "p",
+        "all paragraphs"
+       ],
+       [
+        ".note",
+        "elements with class note"
+       ],
+       [
+        "#top",
+        "element with id top"
+       ],
+       [
+        "a:hover",
+        "a link under the mouse"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the symbol that starts a class selector.",
+      "a": [
+       ".",
+       "dot",
+       "a dot"
+      ],
+      "why": "A dot starts a class selector."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a CSS rule",
+      "lines": [
+       "p {",
+       "  color: blue;",
+       "  font-size: 18px;",
+       "}"
+      ],
+      "why": "Selector, declarations, closing brace."
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a rule in order",
+      "items": [
+       [
+        "Selector",
+        1
+       ],
+       [
+        "{",
+        2
+       ],
+       [
+        "Property: value;",
+        3
+       ],
+       [
+        "}",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the selector for every element with the class warning.",
+      "a": [
+       ".warning"
+      ],
+      "hint": ".",
+      "why": "Dot plus class name."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type one declaration that makes text red.",
+      "a": [
+       "color: red;",
+       "color:red;",
+       "color: red",
+       "color:red"
+      ],
+      "hint": "color: ...",
+      "why": "Property color, value red."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a rule that removes the underline from links.",
+      "lines": [
+       "a {",
+       "  text-decoration: none;",
+       "}"
+      ],
+      "why": "The selector comes first."
+     }
+    ]
+   },
+   {
+    "title": "Colors & Fonts",
+    "period": "CSS",
+    "learn": [
+     {
+      "h": "Color values",
+      "b": "Color names like red work, but you can also use hex codes like #ff0000, rgb(255, 0, 0), or hsl(0, 100%, 50%). Hex and rgb mix red, green and blue. Add alpha with rgba for see-through colors. color sets text color and background-color sets the background.",
+      "code": "h1 {\n  color: #1e90ff;\n  background-color: rgb(240, 240, 240);\n}\np { color: rgba(0, 0, 0, 0.7); }"
+     },
+     {
+      "h": "Font family and size",
+      "b": "font-family lists fonts in order of preference, ending with a generic family like sans-serif or serif. font-size can be in px, em or rem. rem is relative to the root size, so it scales well. Put names with spaces in quotes.",
+      "code": "body {\n  font-family: \"Segoe UI\", Arial, sans-serif;\n  font-size: 16px;\n}\nh1 { font-size: 2rem; }"
+     },
+     {
+      "h": "Weight, style and text",
+      "b": "font-weight sets how bold text is, with normal, bold or numbers like 700. font-style: italic slants text. text-align aligns text to left, center or right. line-height sets the space between lines, and text-decoration adds underlines.",
+      "code": "p {\n  font-weight: bold;\n  font-style: italic;\n  text-align: center;\n  line-height: 1.5;\n}"
+     },
+     {
+      "h": "Web fonts and units",
+      "b": "Google Fonts and @font-face let you use fonts the visitor does not have installed. Link the font or declare it, then use its name in font-family. Always keep a fallback generic family. Keep text color and background at strong contrast so it is easy to read.",
+      "code": "@import url(\"https://fonts.googleapis.com/css2?family=Roboto\");\nbody { font-family: \"Roboto\", sans-serif; }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which property sets the text color?",
+      "o": [
+       "text-color",
+       "font-color",
+       "background",
+       "color"
+      ],
+      "a": 3,
+      "why": "color sets the text color."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a valid hex color for pure red?",
+      "o": [
+       "#ff0000",
+       "#00ff00",
+       "#0000ff",
+       "#rr0000"
+      ],
+      "a": 0,
+      "why": "ff for red, 00 for green and blue."
+     },
+     {
+      "t": "mc",
+      "q": "What does this make the text?",
+      "code": "p {\n  font-weight: bold;\n  text-align: center;\n}",
+      "o": [
+       "Normal and centered",
+       "Bold and centered",
+       "Italic and left",
+       "Bold and right"
+      ],
+      "a": 1,
+      "why": "font-weight bold and text-align center."
+     },
+     {
+      "t": "tf",
+      "q": "A font-family list should end with a generic family like sans-serif.",
+      "a": true,
+      "why": "The generic family is the fallback."
+     },
+     {
+      "t": "match",
+      "q": "Match each property to its job",
+      "pairs": [
+       [
+        "background-color",
+        "color behind the element"
+       ],
+       [
+        "font-size",
+        "size of text"
+       ],
+       [
+        "text-align",
+        "left, center or right"
+       ],
+       [
+        "line-height",
+        "space between lines"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the property that makes text italic or normal (the property name only).",
+      "a": [
+       "font-style"
+      ],
+      "why": "font-style: italic."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a typography rule",
+      "lines": [
+       "body {",
+       "  font-family: Arial, sans-serif;",
+       "  font-size: 16px;",
+       "}"
+      ],
+      "why": "Selector, declarations, closing brace."
+     },
+     {
+      "t": "order",
+      "q": "Put the color systems from simplest name to most precise",
+      "items": [
+       [
+        "Name like red",
+        1
+       ],
+       [
+        "Hex like #ff0000",
+        2
+       ],
+       [
+        "rgb(255, 0, 0)",
+        3
+       ],
+       [
+        "rgba(255, 0, 0, 0.5)",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that sets the background to white using the name white.",
+      "a": [
+       "background-color: white;",
+       "background-color:white;",
+       "background-color: white",
+       "background: white;",
+       "background: white"
+      ],
+      "hint": "background-color: ...",
+      "why": "background-color then white."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that sets the font size to 20 pixels.",
+      "a": [
+       "font-size: 20px;",
+       "font-size:20px;",
+       "font-size: 20px",
+       "font-size:20px"
+      ],
+      "hint": "font-size: ...",
+      "why": "A number with the unit px."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which declaration is valid CSS?",
+      "o": [
+       "text: #333;",
+       "color: 333#;",
+       "color: #333;",
+       "color = #333;"
+      ],
+      "a": 2,
+      "why": "Property, colon, value, semicolon."
+     }
+    ]
+   },
+   {
+    "title": "The Box Model",
+    "period": "CSS",
+    "learn": [
+     {
+      "h": "Every element is a box",
+      "b": "The browser draws every element as a rectangle with four layers. From the inside out they are content, padding, border and margin. Padding is space inside the border, and margin is space outside it.",
+      "code": ".box {\n  width: 200px;\n  padding: 10px;\n  border: 2px solid black;\n  margin: 20px;\n}"
+     },
+     {
+      "h": "Shorthand values",
+      "b": "With one value, all four sides get it. With two values, the first is top and bottom and the second is left and right. With four values they go clockwise: top, right, bottom, left. You can also set one side, like margin-top.",
+      "code": "padding: 10px;            /* all sides */\npadding: 10px 20px;       /* top-bottom left-right */\nmargin: 1px 2px 3px 4px;  /* top right bottom left */\nmargin-top: 8px;"
+     },
+     {
+      "h": "Borders and width",
+      "b": "border sets width, style and color together. border-radius rounds the corners. By default width only covers the content, so padding and border make the box bigger. Setting box-sizing: border-box includes them in the width, which is much easier to plan.",
+      "code": "* {\n  box-sizing: border-box;\n}\n.card {\n  width: 300px;\n  border: 1px solid #ccc;\n  border-radius: 8px;\n}"
+     },
+     {
+      "h": "Display and margins",
+      "b": "Block elements like div and p start on a new line and fill the width. Inline elements like span and a sit in the text and ignore width and height. inline-block mixes both. margin: 0 auto centers a block with a set width. Vertical margins of neighbors can collapse into one.",
+      "code": ".wrap {\n  width: 600px;\n  margin: 0 auto;\n}\nspan { display: inline-block; }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which layer is between the content and the border?",
+      "o": [
+       "margin",
+       "outline",
+       "gap",
+       "padding"
+      ],
+      "a": 3,
+      "why": "Padding is inside the border."
+     },
+     {
+      "t": "mc",
+      "q": "Which layer is outside the border?",
+      "o": [
+       "margin",
+       "padding",
+       "content",
+       "text"
+      ],
+      "a": 0,
+      "why": "Margin creates space around the element."
+     },
+     {
+      "t": "mc",
+      "q": "What are the left and right padding values?",
+      "code": ".a {\n  padding: 10px 20px;\n}",
+      "o": [
+       "0",
+       "20px",
+       "10px",
+       "30px"
+      ],
+      "a": 1,
+      "why": "Two values: first is top and bottom, second is left and right."
+     },
+     {
+      "t": "tf",
+      "q": "With the default box-sizing, padding is added to the width.",
+      "a": true,
+      "why": "content-box width excludes padding and border."
+     },
+     {
+      "t": "match",
+      "q": "Match each property to its job",
+      "pairs": [
+       [
+        "padding",
+        "space inside the border"
+       ],
+       [
+        "margin",
+        "space outside the border"
+       ],
+       [
+        "border",
+        "line around the element"
+       ],
+       [
+        "border-radius",
+        "rounded corners"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the box-sizing value that includes padding and border in the width.",
+      "a": [
+       "border-box"
+      ],
+      "why": "box-sizing: border-box."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a box rule",
+      "lines": [
+       ".box {",
+       "  width: 200px;",
+       "  padding: 10px;",
+       "  border: 2px solid black;",
+       "  margin: 20px;",
+       "}"
+      ],
+      "why": "Selector, then declarations."
+     },
+     {
+      "t": "order",
+      "q": "Put the box layers in order from inside to outside",
+      "items": [
+       [
+        "content",
+        1
+       ],
+       [
+        "padding",
+        2
+       ],
+       [
+        "border",
+        3
+       ],
+       [
+        "margin",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that adds 16 pixels of padding on all sides.",
+      "a": [
+       "padding: 16px;",
+       "padding:16px;",
+       "padding: 16px",
+       "padding:16px"
+      ],
+      "hint": "padding: ...",
+      "why": "One value applies to all sides."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the margin declaration that centers a block horizontally (zero top and bottom, auto on the sides).",
+      "a": [
+       "margin: 0 auto;",
+       "margin:0 auto;",
+       "margin: 0 auto",
+       "margin:0 auto"
+      ],
+      "hint": "margin: 0 ...",
+      "why": "auto splits the free space equally."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which declaration gives a 2px solid black border?",
+      "o": [
+       "border-color: 2px;",
+       "border = 2px black;",
+       "border: 2px solid black;",
+       "border: solid 2px black 2px;"
+      ],
+      "a": 2,
+      "why": "width, style and color."
+     }
+    ]
+   },
+   {
+    "title": "Flexbox",
+    "period": "CSS",
+    "learn": [
+     {
+      "h": "Flex container",
+      "b": "Set display: flex on a parent and its children become flex items laid out in a row. The parent is the container. Items can shrink or grow to fit. It makes one dimensional layouts, a row or a column, easy.",
+      "code": ".row {\n  display: flex;\n}\n/* html: <div class=\"row\"><div>A</div><div>B</div></div> */"
+     },
+     {
+      "h": "Direction and wrapping",
+      "b": "flex-direction sets the main axis: row (default) or column. flex-wrap: wrap lets items move onto new lines when there is no space. The main axis follows the direction and the cross axis runs across it.",
+      "code": ".col {\n  display: flex;\n  flex-direction: column;\n  flex-wrap: wrap;\n}"
+     },
+     {
+      "h": "Alignment",
+      "b": "justify-content spreads items along the main axis with values like center, space-between and flex-end. align-items aligns them along the cross axis with values like center and stretch. gap adds space between items. To center something perfectly use both justify-content and align-items set to center.",
+      "code": ".center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 12px;\n  height: 200px;\n}"
+     },
+     {
+      "h": "Flex items",
+      "b": "flex-grow tells an item how much extra space to take. flex: 1 makes items share space equally. flex-basis sets the starting size, and align-self lets one item align differently. order changes the visual position.",
+      "code": ".item { flex: 1; }\n.big { flex: 2; }\n.special { align-self: flex-end; }"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which declaration turns an element into a flex container?",
+      "o": [
+       "flex: container;",
+       "layout: flex;",
+       "position: flex;",
+       "display: flex;"
+      ],
+      "a": 3,
+      "why": "display: flex on the parent."
+     },
+     {
+      "t": "mc",
+      "q": "Which property aligns items along the main axis?",
+      "o": [
+       "justify-content",
+       "align-items",
+       "gap",
+       "order"
+      ],
+      "a": 0,
+      "why": "justify-content works on the main axis."
+     },
+     {
+      "t": "mc",
+      "q": "How are the items laid out?",
+      "code": ".box {\n  display: flex;\n  flex-direction: column;\n}",
+      "o": [
+       "Hidden",
+       "Stacked vertically",
+       "Side by side",
+       "Overlapped"
+      ],
+      "a": 1,
+      "why": "flex-direction column stacks items."
+     },
+     {
+      "t": "tf",
+      "q": "The default flex-direction is row.",
+      "a": true,
+      "why": "Items sit side by side by default."
+     },
+     {
+      "t": "match",
+      "q": "Match each property to its job",
+      "pairs": [
+       [
+        "justify-content",
+        "spread items along the main axis"
+       ],
+       [
+        "align-items",
+        "align on the cross axis"
+       ],
+       [
+        "gap",
+        "space between items"
+       ],
+       [
+        "flex-wrap",
+        "allow new lines"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the value of justify-content that centers items.",
+      "a": [
+       "center"
+      ],
+      "why": "justify-content: center."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a centered flex container",
+      "lines": [
+       ".center {",
+       "  display: flex;",
+       "  justify-content: center;",
+       "  align-items: center;",
+       "}"
+      ],
+      "why": "The selector comes first, then three declarations."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to build a flex row",
+      "items": [
+       [
+        "Write the HTML children",
+        1
+       ],
+       [
+        "Pick the parent",
+        2
+       ],
+       [
+        "Set display: flex on it",
+        3
+       ],
+       [
+        "Adjust justify-content",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that makes an element a flex container.",
+      "a": [
+       "display: flex;",
+       "display:flex;",
+       "display: flex",
+       "display:flex"
+      ],
+      "hint": "display: ...",
+      "why": "display: flex."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that puts flex items in a column.",
+      "a": [
+       "flex-direction: column;",
+       "flex-direction:column;",
+       "flex-direction: column",
+       "flex-direction:column"
+      ],
+      "hint": "flex-direction: ...",
+      "why": "flex-direction takes row or column."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which pair of declarations centers a child both ways in a flex container?",
+      "o": [
+       "flex: center;",
+       "position: center;",
+       "justify-content: center; align-items: center;",
+       "text-align: center; margin: auto;"
+      ],
+      "a": 2,
+      "why": "One for each axis."
+     }
+    ]
+   },
+   {
+    "title": "CSS Grid",
+    "period": "CSS",
+    "learn": [
+     {
+      "h": "Grid container",
+      "b": "Set display: grid on a parent to make a two dimensional layout with rows and columns. You define the columns with grid-template-columns. Children fill the cells automatically.",
+      "code": ".grid {\n  display: grid;\n  grid-template-columns: 200px 200px 200px;\n  gap: 10px;\n}"
+     },
+     {
+      "h": "The fr unit and repeat",
+      "b": "fr is a fraction of the free space. 1fr 2fr gives the second column twice as much space. repeat(3, 1fr) is a short way to write three equal columns. Use grid-template-rows to size rows the same way.",
+      "code": ".grid {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}\n.two { grid-template-columns: 1fr 2fr; }"
+     },
+     {
+      "h": "Placing items",
+      "b": "grid-column and grid-row place an item by line numbers. span makes an item cover several cells. Lines are numbered from 1. gap, column-gap and row-gap set the space between cells.",
+      "code": ".wide {\n  grid-column: 1 / 3;\n}\n.tall {\n  grid-row: span 2;\n}"
+     },
+     {
+      "h": "Template areas and auto-fit",
+      "b": "grid-template-areas names regions of the layout like a map, and each item uses grid-area with its name. For responsive cards without media queries use repeat(auto-fit, minmax(200px, 1fr)). Grid is for whole page layouts and flexbox is for single rows or columns.",
+      "code": ".page {\n  display: grid;\n  grid-template-areas:\n    \"head head\"\n    \"nav main\";\n}\n.head { grid-area: head; }\n.cards {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which declaration makes a grid container?",
+      "o": [
+       "grid: on;",
+       "layout: grid;",
+       "display: table-grid;",
+       "display: grid;"
+      ],
+      "a": 3,
+      "why": "display: grid on the parent."
+     },
+     {
+      "t": "mc",
+      "q": "What does 1fr 2fr mean?",
+      "o": [
+       "The second column is twice as wide",
+       "Two equal columns",
+       "Two fixed columns",
+       "One column"
+      ],
+      "a": 0,
+      "why": "fr shares the free space in ratio."
+     },
+     {
+      "t": "mc",
+      "q": "How many columns does the grid have?",
+      "code": ".g {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}",
+      "o": [
+       "6",
+       "3",
+       "1",
+       "2"
+      ],
+      "a": 1,
+      "why": "repeat(3, 1fr) makes three columns."
+     },
+     {
+      "t": "tf",
+      "q": "Grid can arrange both rows and columns at the same time.",
+      "a": true,
+      "why": "Grid is two dimensional."
+     },
+     {
+      "t": "match",
+      "q": "Match each property to its job",
+      "pairs": [
+       [
+        "grid-template-columns",
+        "defines the columns"
+       ],
+       [
+        "gap",
+        "space between cells"
+       ],
+       [
+        "grid-column",
+        "places an item by column lines"
+       ],
+       [
+        "grid-template-areas",
+        "names layout regions"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the unit that means a fraction of free space in grid.",
+      "a": [
+       "fr"
+      ],
+      "why": "fr is the fraction unit."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a three column grid",
+      "lines": [
+       ".grid {",
+       "  display: grid;",
+       "  grid-template-columns: repeat(3, 1fr);",
+       "  gap: 10px;",
+       "}"
+      ],
+      "why": "Selector, then declarations."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to build a grid",
+      "items": [
+       [
+        "Write the HTML children",
+        1
+       ],
+       [
+        "Pick the parent",
+        2
+       ],
+       [
+        "Set display: grid",
+        3
+       ],
+       [
+        "Define grid-template-columns",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that makes three equal columns using repeat and fr.",
+      "a": [
+       "grid-template-columns: repeat(3, 1fr);",
+       "grid-template-columns:repeat(3,1fr);",
+       "grid-template-columns: repeat(3, 1fr)"
+      ],
+      "hint": "grid-template-columns: ...",
+      "why": "repeat(count, size)."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that puts a 20 pixel gap between grid cells.",
+      "a": [
+       "gap: 20px;",
+       "gap:20px;",
+       "gap: 20px",
+       "gap:20px"
+      ],
+      "hint": "gap: ...",
+      "why": "gap sets the space between cells."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does grid-column: 1 / 3 do?",
+      "o": [
+       "Item is 3 columns tall",
+       "Item is removed",
+       "Item spans from line 1 to line 3",
+       "Item is in column 13"
+      ],
+      "a": 2,
+      "why": "It covers two columns, from line 1 up to line 3."
+     }
+    ]
+   },
+   {
+    "title": "Responsive Design & Media Queries",
+    "period": "CSS",
+    "learn": [
+     {
+      "h": "The viewport tag",
+      "b": "Phones pretend to be wide unless you tell them otherwise. Add the viewport meta tag in head so the page uses the real screen width. Without it your responsive CSS will not work on phones.",
+      "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+     },
+     {
+      "h": "Flexible sizes",
+      "b": "Avoid fixed pixel widths for layout. Use percentages, max-width and relative units like rem. Images should never be wider than their container, so use max-width: 100% and height: auto. Flexbox with wrap and grid with auto-fit adapt without extra rules.",
+      "code": "img {\n  max-width: 100%;\n  height: auto;\n}\n.container {\n  width: 90%;\n  max-width: 900px;\n}"
+     },
+     {
+      "h": "Media queries",
+      "b": "A media query applies CSS only if a condition is true, such as the screen being narrow. min-width queries apply from a size and up, and max-width queries apply up to a size. Common breakpoints are around 600px and 900px, but choose them where your design breaks.",
+      "code": "@media (max-width: 600px) {\n  .menu {\n    flex-direction: column;\n  }\n}"
+     },
+     {
+      "h": "Mobile first",
+      "b": "Mobile first means writing the small screen styles first, then adding min-width queries for larger screens. It keeps phone CSS simple and fast. You can also query by orientation or by a dark color scheme preference. Test by resizing the browser or using the device mode in the developer tools.",
+      "code": ".cards { display: grid; grid-template-columns: 1fr; }\n@media (min-width: 700px) {\n  .cards { grid-template-columns: repeat(3, 1fr); }\n}\n@media (prefers-color-scheme: dark) {\n  body { background: #111; color: #eee; }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which tag makes a page use the real phone screen width?",
+      "o": [
+       "The responsive tag",
+       "The mobile link tag",
+       "The width attribute",
+       "The viewport meta tag"
+      ],
+      "a": 3,
+      "why": "width=device-width in the viewport meta tag."
+     },
+     {
+      "t": "mc",
+      "q": "Which makes images shrink to fit small screens?",
+      "o": [
+       "max-width: 100%;",
+       "width: 1000px;",
+       "float: left;",
+       "overflow: show;"
+      ],
+      "a": 0,
+      "why": "max-width: 100% stops images overflowing."
+     },
+     {
+      "t": "mc",
+      "q": "When does this rule apply?",
+      "code": "@media (max-width: 600px) {\n  .menu { display: none; }\n}",
+      "o": [
+       "Never",
+       "When the screen is 600px wide or narrower",
+       "When it is 600px or wider",
+       "Always"
+      ],
+      "a": 1,
+      "why": "max-width means up to that size."
+     },
+     {
+      "t": "tf",
+      "q": "Mobile first means writing the small screen styles first and using min-width queries.",
+      "a": true,
+      "why": "Start small and add larger screen rules."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "@media",
+        "rule that depends on conditions"
+       ],
+       [
+        "max-width: 600px",
+        "screens up to 600px"
+       ],
+       [
+        "min-width: 700px",
+        "screens 700px and wider"
+       ],
+       [
+        "viewport",
+        "visible area of the browser"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the at-rule keyword (with the @) that starts a media query.",
+      "a": [
+       "@media"
+      ],
+      "why": "@media (condition) { ... }"
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a media query",
+      "lines": [
+       "@media (max-width: 600px) {",
+       "  .menu {",
+       "    flex-direction: column;",
+       "  }",
+       "}"
+      ],
+      "why": "The query wraps the rule."
+     },
+     {
+      "t": "order",
+      "q": "Put in order for a mobile first stylesheet",
+      "items": [
+       [
+        "Write styles for small screens",
+        1
+       ],
+       [
+        "Add a min-width query",
+        2
+       ],
+       [
+        "Enlarge the layout there",
+        3
+       ],
+       [
+        "Test by resizing",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the media query condition line that targets screens up to 600 pixels wide (start with @media).",
+      "a": [
+       "@media (max-width: 600px) {",
+       "@media (max-width: 600px)",
+       "@media (max-width:600px) {",
+       "@media (max-width:600px)"
+      ],
+      "hint": "@media (max-width: ...) {",
+      "why": "max-width in parentheses."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the declaration that stops an image from being wider than its container.",
+      "a": [
+       "max-width: 100%;",
+       "max-width:100%;",
+       "max-width: 100%",
+       "max-width:100%"
+      ],
+      "hint": "max-width: ...",
+      "why": "Use max-width with 100%."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which query makes a rule apply on screens 768px and wider?",
+      "o": [
+       "@media (width: 768)",
+       "@media (wide: 768px)",
+       "@media (min-width: 768px)",
+       "@media (max-width: 768px)"
+      ],
+      "a": 2,
+      "why": "min-width means this width and up."
+     }
+    ]
+   }
+  ]
+ }
+}

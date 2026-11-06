@@ -1,0 +1,1692 @@
+{
+ "ts": {
+  "name": "TypeScript",
+  "units": [
+   {
+    "title": "Why TypeScript & tsc",
+    "period": "TypeScript basics",
+    "learn": [
+     {
+      "h": "What is TypeScript?",
+      "b": "TypeScript is JavaScript with types added on top. You write types to describe your data, and a checker finds mistakes before the program runs. Every valid JavaScript program is also valid TypeScript.",
+      "code": "let age: number = 15;\nage = \"fifteen\"; // Error: string is not a number"
+     },
+     {
+      "h": "The compiler tsc",
+      "b": "Browsers and Node run JavaScript, not TypeScript. The compiler tsc reads .ts files, checks the types and writes .js files. Types are erased in the output, so they cost nothing when the program runs.",
+      "code": "// install once\nnpm install -g typescript\n\ntsc hello.ts   // makes hello.js\nnode hello.js"
+     },
+     {
+      "h": "Your first file",
+      "b": "A TypeScript file looks like JavaScript with annotations after names. A colon followed by a type says what a variable can hold. Many types are worked out automatically, which is called type inference.",
+      "code": "const name: string = \"Mia\";\nlet score = 10;   // inferred as number\nconsole.log(name, score);"
+     },
+     {
+      "h": "Errors help you",
+      "b": "If the types do not match, tsc reports an error with the file name and line number. By default it still creates the .js file, but you should fix the errors first. Editors like VS Code show the same errors as red underlines while you type.",
+      "code": "let n: number = 5;\nn.toUpperCase(); // Error: Property does not exist on type number"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is TypeScript?",
+      "o": [
+       "JavaScript with types",
+       "A new browser",
+       "A database",
+       "A CSS tool"
+      ],
+      "a": 0,
+      "why": "TypeScript adds static types to JavaScript."
+     },
+     {
+      "t": "mc",
+      "q": "What does the tsc command do?",
+      "o": [
+       "Formats CSS",
+       "Compiles TypeScript to JavaScript",
+       "Runs a web server",
+       "Installs Node"
+      ],
+      "a": 1,
+      "why": "tsc checks types and outputs .js files."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to type annotations in the compiled JavaScript?",
+      "o": [
+       "They run as checks",
+       "They become strings",
+       "They are removed",
+       "They become comments"
+      ],
+      "a": 2,
+      "why": "Types exist only at compile time and are erased."
+     },
+     {
+      "t": "tf",
+      "q": "Valid JavaScript is also valid TypeScript.",
+      "a": true,
+      "why": "TypeScript is a superset of JavaScript."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "tsc",
+        "the TypeScript compiler"
+       ],
+       [
+        ".ts",
+        "TypeScript source file"
+       ],
+       [
+        ".js",
+        "compiled output file"
+       ],
+       [
+        "type inference",
+        "the compiler works out a type"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the file extension of a TypeScript file (with the dot).",
+      "a": [
+       ".ts",
+       "ts"
+      ],
+      "why": "TypeScript files end with .ts."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the steps as commands",
+      "lines": [
+       "// 1 write hello.ts",
+       "tsc hello.ts",
+       "node hello.js"
+      ],
+      "why": "Write, compile, then run the output."
+     },
+     {
+      "t": "order",
+      "q": "Put the TypeScript workflow in order",
+      "items": [
+       [
+        "Write a .ts file",
+        1
+       ],
+       [
+        "Run tsc",
+        2
+       ],
+       [
+        "Fix any type errors",
+        3
+       ],
+       [
+        "Run the .js with node",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the command that compiles a file named app.ts.",
+      "a": [
+       "tsc app.ts"
+      ],
+      "hint": "tsc ...",
+      "why": "tsc followed by the file name."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which line makes tsc report an error?",
+      "o": [
+       "let x: number = 5;",
+       "let x = 5;",
+       "let x: string = \"hi\";",
+       "let x: number = \"hi\";"
+      ],
+      "a": 3,
+      "why": "A string cannot be assigned to a number variable."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a typed variable and print it.",
+      "lines": [
+       "const user: string = \"Ana\";",
+       "console.log(user);",
+       "// run: node file.js"
+      ],
+      "why": "Declare first, then use it."
+     }
+    ]
+   },
+   {
+    "title": "Basic Types",
+    "period": "TypeScript basics",
+    "learn": [
+     {
+      "h": "Primitive types",
+      "b": "The main simple types are string, number, boolean, null and undefined. There is only one number type for both whole numbers and decimals. Write the type after the name with a colon. Use lowercase type names.",
+      "code": "let title: string = \"Hi\";\nlet count: number = 3;\nlet ready: boolean = true;"
+     },
+     {
+      "h": "any, unknown, void, never",
+      "b": "any turns the type checker off for that value, so avoid it. unknown is the safe version: you must check the value before using it. void is the return type of a function that returns nothing, and never is for things that cannot happen, like a function that always throws.",
+      "code": "let x: unknown = 5;\nfunction log(m: string): void {\n  console.log(m);\n}"
+     },
+     {
+      "h": "Inference and const",
+      "b": "If you give a variable a value when you declare it, TypeScript guesses the type for you. A const with a plain value gets a very specific type, like the exact text \"hi\". Annotate only when inference cannot know the type.",
+      "code": "let a = 5;        // number\nconst b = \"hi\";   // type is \"hi\"\nlet c;            // implicit any"
+     },
+     {
+      "h": "null and strict mode",
+      "b": "With strictNullChecks (part of strict mode) a variable cannot be null or undefined unless you say so. Write a union like string | null to allow it. Turning strict on is recommended because it catches many bugs.",
+      "code": "let name: string = \"Ana\";\nname = null; // Error in strict mode\nlet maybe: string | null = null;"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which type holds both whole numbers and decimals?",
+      "o": [
+       "number",
+       "int",
+       "float",
+       "decimal"
+      ],
+      "a": 0,
+      "why": "TypeScript has one number type."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the safe alternative to any?",
+      "o": [
+       "maybe",
+       "unknown",
+       "object",
+       "void"
+      ],
+      "a": 1,
+      "why": "unknown forces you to check before use."
+     },
+     {
+      "t": "mc",
+      "q": "What type does TypeScript infer for this variable?",
+      "code": "let a = 5;",
+      "o": [
+       "any",
+       "boolean",
+       "number",
+       "string"
+      ],
+      "a": 2,
+      "why": "The value 5 is a number."
+     },
+     {
+      "t": "tf",
+      "q": "In TypeScript you should write String with a capital S for text variables.",
+      "a": false,
+      "why": "Use the lowercase primitive type string."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to a value",
+      "pairs": [
+       [
+        "string",
+        "\"hello\""
+       ],
+       [
+        "number",
+        "3.14"
+       ],
+       [
+        "boolean",
+        "false"
+       ],
+       [
+        "null",
+        "null"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the return type of a function that returns nothing.",
+      "a": [
+       "void"
+      ],
+      "why": "void means no return value."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the typed declarations",
+      "lines": [
+       "let name: string = \"Ana\";",
+       "let age: number = 15;",
+       "let ok: boolean = true;",
+       "console.log(name, age, ok);"
+      ],
+      "why": "Declare each, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps in order",
+      "items": [
+       [
+        "Declare a variable with a type",
+        1
+       ],
+       [
+        "Give it a matching value",
+        2
+       ],
+       [
+        "Use it in an expression",
+        3
+       ],
+       [
+        "Print the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a number variable named score set to 10, with the type written out.",
+      "a": [
+       "let score: number = 10;",
+       "let score: number = 10",
+       "const score: number = 10;",
+       "const score: number = 10"
+      ],
+      "hint": "let score: number = ...",
+      "why": "name, colon, type, equals, value."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the type that allows a string or null (write it with the pipe).",
+      "a": [
+       "string | null",
+       "string|null"
+      ],
+      "hint": "string ...",
+      "why": "A union uses |."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which line is an error under strict mode?",
+      "o": [
+       "let s: string | null = null;",
+       "let s: string = \"a\";",
+       "let s = \"a\";",
+       "let s: string = null;"
+      ],
+      "a": 3,
+      "why": "null is not allowed in a plain string under strictNullChecks."
+     }
+    ]
+   },
+   {
+    "title": "Arrays & Tuples",
+    "period": "TypeScript basics",
+    "learn": [
+     {
+      "h": "Typed arrays",
+      "b": "An array type is the item type followed by []. You can also write Array<number>. Every item must have that type, so mixing types gives an error. The usual methods like push, map and filter are all type checked.",
+      "code": "let nums: number[] = [1, 2, 3];\nnums.push(4);\nnums.push(\"5\"); // Error\nlet names: Array<string> = [\"a\", \"b\"];"
+     },
+     {
+      "h": "Reading and looping",
+      "b": "Reading an item gives you the item type. A for...of loop goes through the values, and TypeScript knows the type of each one. map returns a new array whose type comes from your function.",
+      "code": "for (const n of nums) {\n  console.log(n * 2);\n}\nconst strs = nums.map(n => String(n)); // string[]"
+     },
+     {
+      "h": "Tuples",
+      "b": "A tuple is an array with a fixed length where each position has its own type. Write the types in square brackets. Use a tuple for a small group of different things, like a name and an age.",
+      "code": "let person: [string, number] = [\"Ana\", 15];\nconsole.log(person[0]); // string\nperson = [15, \"Ana\"]; // Error"
+     },
+     {
+      "h": "readonly and destructuring",
+      "b": "Add readonly to stop an array or tuple from being changed. You can pull values out of an array or tuple with destructuring, and the types follow along. Tuple items can also be optional or have names.",
+      "code": "const pt: readonly [number, number] = [1, 2];\nconst [x, y] = pt;\nlet a: readonly string[] = [\"a\"];\n// a.push(\"b\") is an Error"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you write the type of an array of strings?",
+      "o": [
+       "string[]",
+       "[string]",
+       "str[]",
+       "list<string>"
+      ],
+      "a": 0,
+      "why": "The item type followed by []."
+     },
+     {
+      "t": "mc",
+      "q": "What is a tuple?",
+      "o": [
+       "A string method",
+       "A fixed-length array with a type for each position",
+       "A kind of object",
+       "A loop"
+      ],
+      "a": 1,
+      "why": "Each position in a tuple has its own type."
+     },
+     {
+      "t": "mc",
+      "q": "What type does nums.map(n => String(n)) produce?",
+      "code": "const nums: number[] = [1, 2];\nconst r = nums.map(n => String(n));",
+      "o": [
+       "any",
+       "string",
+       "string[]",
+       "number[]"
+      ],
+      "a": 2,
+      "why": "map returns an array of the callback's return type."
+     },
+     {
+      "t": "tf",
+      "q": "A number[] array can store a string if you use push.",
+      "a": false,
+      "why": "The checker rejects a string in a number array."
+     },
+     {
+      "t": "match",
+      "q": "Match each type to its meaning",
+      "pairs": [
+       [
+        "number[]",
+        "array of numbers"
+       ],
+       [
+        "[string, number]",
+        "tuple of two types"
+       ],
+       [
+        "readonly number[]",
+        "array that cannot change"
+       ],
+       [
+        "Array<string>",
+        "array of strings"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that stops an array from being modified.",
+      "a": [
+       "readonly"
+      ],
+      "why": "readonly makes the array read-only."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a typed tuple use",
+      "lines": [
+       "let p: [string, number] = [\"Ana\", 15];",
+       "const name = p[0];",
+       "console.log(name);"
+      ],
+      "why": "Declare the tuple, read an item, print."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to build a number array",
+      "items": [
+       [
+        "Declare number[]",
+        1
+       ],
+       [
+        "Push a number",
+        2
+       ],
+       [
+        "Loop through the items",
+        3
+       ],
+       [
+        "Print the sum",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the type for an array of booleans (use the [] form).",
+      "a": [
+       "boolean[]"
+      ],
+      "hint": "... []",
+      "why": "Item type then []."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the tuple type for a string followed by a number (use square brackets).",
+      "a": [
+       "[string, number]",
+       "[string,number]"
+      ],
+      "hint": "[ ..., ... ]",
+      "why": "List the types in order."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which line is an error?",
+      "o": [
+       "let t: [string, number] = [\"a\", 1];",
+       "let n: number[] = [1, 2];",
+       "let s: string[] = [];",
+       "let t: [string, number] = [\"a\", \"b\"];"
+      ],
+      "a": 3,
+      "why": "The second position must be a number."
+     }
+    ]
+   },
+   {
+    "title": "Function Types",
+    "period": "TypeScript basics",
+    "learn": [
+     {
+      "h": "Typing parameters and returns",
+      "b": "Write a type after each parameter and after the closing parenthesis for the return type. Callers must pass the right number and types of arguments. If you leave the return type out, TypeScript infers it.",
+      "code": "function add(a: number, b: number): number {\n  return a + b;\n}\nadd(1, 2);\nadd(1, \"2\"); // Error"
+     },
+     {
+      "h": "Optional and default parameters",
+      "b": "A question mark makes a parameter optional, and its type then includes undefined. A default value also makes a parameter optional. Optional parameters must come after the required ones.",
+      "code": "function greet(name: string, word?: string) {\n  return (word ?? \"Hi\") + \" \" + name;\n}\nfunction pow(x: number, n: number = 2) {\n  return x ** n;\n}"
+     },
+     {
+      "h": "Arrow functions and function types",
+      "b": "Arrow functions are typed the same way. A function type describes a function's shape: the parameters, then an arrow, then the return type. Use it for callbacks and for variables that hold functions.",
+      "code": "const double = (n: number): number => n * 2;\nlet op: (a: number, b: number) => number;\nop = (a, b) => a + b;"
+     },
+     {
+      "h": "Rest parameters and overloads",
+      "b": "A rest parameter collects extra arguments into an array, so its type is an array. Overloads declare several allowed call shapes before one real implementation. Functions that never return a value are typed void.",
+      "code": "function sum(...nums: number[]): number {\n  return nums.reduce((t, n) => t + n, 0);\n}\nsum(1, 2, 3);"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where does the return type go?",
+      "o": [
+       "After the parentheses with a colon",
+       "Before the name",
+       "Inside the braces",
+       "After the word function"
+      ],
+      "a": 0,
+      "why": "function f(a: number): number"
+     },
+     {
+      "t": "mc",
+      "q": "What does a question mark after a parameter name mean?",
+      "o": [
+       "It is readonly",
+       "It is optional",
+       "It is a string",
+       "It returns void"
+      ],
+      "a": 1,
+      "why": "name?: string makes the argument optional."
+     },
+     {
+      "t": "mc",
+      "q": "What is the type of this function variable?",
+      "code": "const sq = (a: number): number => a * a;",
+      "o": [
+       "void",
+       "number[]",
+       "(a: number) => number",
+       "number"
+      ],
+      "a": 2,
+      "why": "It takes a number and returns a number."
+     },
+     {
+      "t": "tf",
+      "q": "A required parameter may come after an optional one.",
+      "a": false,
+      "why": "Optional parameters must come last."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece of syntax to its meaning",
+      "pairs": [
+       [
+        "(a: number): string",
+        "returns a string"
+       ],
+       [
+        "x?: number",
+        "optional parameter"
+       ],
+       [
+        "...nums: number[]",
+        "rest parameter"
+       ],
+       [
+        "(a: number) => void",
+        "function type"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the return type of a function that gives back no value.",
+      "a": [
+       "void"
+      ],
+      "why": "void means nothing is returned."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a typed function",
+      "lines": [
+       "function double(n: number): number {",
+       "  return n * 2;",
+       "}",
+       "console.log(double(4));"
+      ],
+      "why": "Define the function, then call it."
+     },
+     {
+      "t": "order",
+      "q": "Put in order when a function is called",
+      "items": [
+       [
+        "Arguments are checked against the parameter types",
+        1
+       ],
+       [
+        "The body runs",
+        2
+       ],
+       [
+        "A value is returned",
+        3
+       ],
+       [
+        "The caller uses the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the function header for add that takes two numbers a and b and returns a number (start with function).",
+      "a": [
+       "function add(a: number, b: number): number",
+       "function add(a: number, b: number): number {"
+      ],
+      "hint": "function add(a: ..., b: ...): ...",
+      "why": "Types after each parameter and after the parentheses."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the function type for a callback taking a string s and returning void.",
+      "a": [
+       "(s: string) => void",
+       "(s:string)=>void"
+      ],
+      "hint": "(s: ...) => ...",
+      "why": "parameters, arrow, return type."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange a function with a default parameter.",
+      "lines": [
+       "function pow(x: number, n: number = 2): number {",
+       "  return x ** n;",
+       "}",
+       "console.log(pow(3));"
+      ],
+      "why": "Default 2 makes pow(3) equal 9."
+     }
+    ]
+   },
+   {
+    "title": "Objects & Interfaces",
+    "period": "TypeScript basics",
+    "learn": [
+     {
+      "h": "Object types",
+      "b": "You can describe an object's shape by listing its properties and their types. TypeScript checks that every property exists and has the right type. An extra or missing property is an error when you create the object.",
+      "code": "let user: { name: string; age: number } = {\n  name: \"Ana\",\n  age: 15\n};"
+     },
+     {
+      "h": "Interfaces",
+      "b": "An interface gives a name to an object shape so you can reuse it. By convention the name starts with a capital letter. Anything that has the right properties fits the interface, even without saying so.",
+      "code": "interface User {\n  name: string;\n  age: number;\n}\nconst u: User = { name: \"Ana\", age: 15 };"
+     },
+     {
+      "h": "Optional and readonly properties",
+      "b": "Add ? after a property name to make it optional. Add readonly in front to stop it from being changed after the object is made. Interfaces can also describe methods.",
+      "code": "interface Item {\n  readonly id: number;\n  label: string;\n  note?: string;\n  show(): void;\n}"
+     },
+     {
+      "h": "Extending interfaces",
+      "b": "An interface can extend another one to add more properties. It keeps everything from the parent. An interface can also describe a function or an object with any number of keys using an index signature.",
+      "code": "interface Animal { name: string }\ninterface Dog extends Animal {\n  bark(): void;\n}\ninterface Scores {\n  [player: string]: number;\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword creates a reusable object shape?",
+      "o": [
+       "object",
+       "shape",
+       "struct",
+       "interface"
+      ],
+      "a": 3,
+      "why": "interface names an object shape."
+     },
+     {
+      "t": "mc",
+      "q": "What does note?: string mean in an interface?",
+      "o": [
+       "note is optional",
+       "note is a method",
+       "note is readonly",
+       "note is private"
+      ],
+      "a": 0,
+      "why": "The question mark makes the property optional."
+     },
+     {
+      "t": "mc",
+      "q": "What happens here?",
+      "code": "interface User { name: string; age: number }\nconst u: User = { name: \"Ana\" };",
+      "o": [
+       "It prints",
+       "Error: age is missing",
+       "It works",
+       "Error: name is a number"
+      ],
+      "a": 1,
+      "why": "The object lacks the required age property."
+     },
+     {
+      "t": "tf",
+      "q": "A readonly property can be changed after the object is created.",
+      "a": false,
+      "why": "readonly blocks reassignment."
+     },
+     {
+      "t": "match",
+      "q": "Match each syntax to its meaning",
+      "pairs": [
+       [
+        "interface",
+        "names an object shape"
+       ],
+       [
+        "extends",
+        "adds to another interface"
+       ],
+       [
+        "?",
+        "optional property"
+       ],
+       [
+        "readonly",
+        "cannot be reassigned"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to make one interface build on another.",
+      "a": [
+       "extends"
+      ],
+      "why": "Dog extends Animal."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange an interface and an object",
+      "lines": [
+       "interface User {",
+       "  name: string;",
+       "}",
+       "const u: User = { name: \"Ana\" };"
+      ],
+      "why": "Define the interface before using it."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to use an interface",
+      "items": [
+       [
+        "Declare the interface",
+        1
+       ],
+       [
+        "Create an object of that shape",
+        2
+       ],
+       [
+        "Read a property",
+        3
+       ],
+       [
+        "Print it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that starts an interface named Car (include the opening brace).",
+      "a": [
+       "interface Car {",
+       "interface Car{"
+      ],
+      "hint": "interface ... {",
+      "why": "interface, name, brace."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the property line making a readonly number named id (end with semicolon).",
+      "a": [
+       "readonly id: number;",
+       "readonly id: number"
+      ],
+      "hint": "readonly ...",
+      "why": "readonly name: type."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which interface line makes age optional?",
+      "o": [
+       "optional age: number;",
+       "age: number | ;",
+       "age?: number;",
+       "age: number?;"
+      ],
+      "a": 2,
+      "why": "Put ? after the property name."
+     }
+    ]
+   },
+   {
+    "title": "Type Aliases & Unions",
+    "period": "TypeScript in depth",
+    "learn": [
+     {
+      "h": "Type aliases",
+      "b": "A type alias gives a name to any type using the type keyword. It works for objects, unions, tuples and more. Aliases make long types short and readable.",
+      "code": "type ID = number;\ntype Point = { x: number; y: number };\nconst p: Point = { x: 1, y: 2 };"
+     },
+     {
+      "h": "Union types",
+      "b": "A union type allows one of several types, written with a pipe. A variable of type string | number can hold either, but you can only use what both types share until you check which one it is.",
+      "code": "let id: string | number;\nid = 5;\nid = \"abc\";\nid = true; // Error"
+     },
+     {
+      "h": "Literal types",
+      "b": "A literal type is one exact value, like \"left\" or 3. Combine literals in a union to list the only allowed values. This is great for options and states because typos become errors.",
+      "code": "type Dir = \"left\" | \"right\" | \"up\" | \"down\";\nlet d: Dir = \"left\";\nd = \"back\"; // Error"
+     },
+     {
+      "h": "Intersections and discriminated unions",
+      "b": "An intersection with & combines types so a value has all their properties. A discriminated union is a union of objects that share a literal property such as kind, which tells you which one you have. This pattern makes state handling safe.",
+      "code": "type Circle = { kind: \"circle\"; r: number };\ntype Square = { kind: \"square\"; side: number };\ntype Shape = Circle | Square;\ntype Named = { name: string } & { age: number };"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which keyword creates a type alias?",
+      "o": [
+       "alias",
+       "define",
+       "typedef",
+       "type"
+      ],
+      "a": 3,
+      "why": "type Name = ... creates an alias."
+     },
+     {
+      "t": "mc",
+      "q": "What does string | number mean?",
+      "o": [
+       "Either a string or a number",
+       "Both a string and a number",
+       "A string of numbers",
+       "An array"
+      ],
+      "a": 0,
+      "why": "The pipe makes a union."
+     },
+     {
+      "t": "mc",
+      "q": "Is the last line allowed?",
+      "code": "type Dir = \"left\" | \"right\";\nlet d: Dir = \"left\";\nd = \"back\";",
+      "o": [
+       "Only with any",
+       "No, \"back\" is not in Dir",
+       "Yes",
+       "Only at run time"
+      ],
+      "a": 1,
+      "why": "Dir only allows the four listed strings."
+     },
+     {
+      "t": "tf",
+      "q": "The & symbol creates a union type.",
+      "a": false,
+      "why": "| makes a union and & makes an intersection."
+     },
+     {
+      "t": "match",
+      "q": "Match each syntax to its meaning",
+      "pairs": [
+       [
+        "A | B",
+        "A or B"
+       ],
+       [
+        "A & B",
+        "A and B together"
+       ],
+       [
+        "\"yes\" | \"no\"",
+        "literal union"
+       ],
+       [
+        "type X = ...",
+        "type alias"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the symbol used between types in a union.",
+      "a": [
+       "|",
+       "pipe"
+      ],
+      "why": "The pipe | separates union members."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the alias and use",
+      "lines": [
+       "type Status = \"on\" | \"off\";",
+       "let s: Status = \"on\";",
+       "s = \"off\";",
+       "console.log(s);"
+      ],
+      "why": "Declare the alias before using it."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to use a union of options",
+      "items": [
+       [
+        "Declare the literal union alias",
+        1
+       ],
+       [
+        "Declare a variable of that type",
+        2
+       ],
+       [
+        "Assign an allowed value",
+        3
+       ],
+       [
+        "Get an error for a typo",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the alias for Color that allows only \"red\" or \"blue\" (one line starting with type).",
+      "a": [
+       "type Color = \"red\" | \"blue\";",
+       "type Color = \"red\" | \"blue\"",
+       "type Color = 'red' | 'blue';",
+       "type Color = 'red' | 'blue'"
+      ],
+      "hint": "type Color = ...",
+      "why": "Alias name, equals, literals with a pipe."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the type that is a number or undefined.",
+      "a": [
+       "number | undefined",
+       "number|undefined"
+      ],
+      "hint": "number ...",
+      "why": "Use a union with undefined."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which type means an object that has both name and age?",
+      "o": [
+       "[string, number]",
+       "string & number",
+       "{ name: string } & { age: number }",
+       "{ name: string } | { age: number }"
+      ],
+      "a": 2,
+      "why": "Intersection requires all properties."
+     }
+    ]
+   },
+   {
+    "title": "Type Narrowing",
+    "period": "TypeScript in depth",
+    "learn": [
+     {
+      "h": "Why narrow?",
+      "b": "With a union you can only use members that every type has. Narrowing means checking the type so TypeScript knows which one you have in that block. After the check you can use the full features of that type.",
+      "code": "function show(x: string | number) {\n  x.toFixed(1); // Error: not on string\n}"
+     },
+     {
+      "h": "typeof and truthiness",
+      "b": "A typeof check on a primitive narrows the type inside the if. A truthiness check removes null and undefined. The else branch gets the remaining types.",
+      "code": "function show(x: string | number) {\n  if (typeof x === \"string\") {\n    console.log(x.toUpperCase());\n  } else {\n    console.log(x.toFixed(1));\n  }\n}"
+     },
+     {
+      "h": "in, instanceof and equality",
+      "b": "The in operator checks if a property exists on an object. instanceof checks if an object comes from a class. Comparing with === to a literal also narrows. Optional chaining ?. and nullish ?? help with values that may be missing.",
+      "code": "if (\"swim\" in animal) { animal.swim(); }\nif (e instanceof Error) { console.log(e.message); }\nconst n = user?.name ?? \"guest\";"
+     },
+     {
+      "h": "Discriminated unions and custom guards",
+      "b": "When objects share a literal property like kind, checking it narrows to the exact member. A switch on kind is ideal. You can also write a type predicate function that returns x is Type to make your own guard.",
+      "code": "function area(s: Shape) {\n  switch (s.kind) {\n    case \"circle\": return 3 * s.r * s.r;\n    case \"square\": return s.side * s.side;\n  }\n}\nfunction isStr(v: unknown): v is string {\n  return typeof v === \"string\";\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is narrowing?",
+      "o": [
+       "Making a file smaller",
+       "Changing a value",
+       "Deleting types",
+       "Checking a type so TypeScript knows which it is"
+      ],
+      "a": 3,
+      "why": "Narrowing refines a union to one type."
+     },
+     {
+      "t": "mc",
+      "q": "Which check narrows a string | number value to a string?",
+      "o": [
+       "typeof x === \"string\"",
+       "x == string",
+       "x.type == string",
+       "isString(x)"
+      ],
+      "a": 0,
+      "why": "typeof compares with a string name of the type."
+     },
+     {
+      "t": "mc",
+      "q": "What is the type of x in the else branch?",
+      "code": "function f(x: string | number) {\n  if (typeof x === \"string\") {\n  } else {\n    // x here\n  }\n}",
+      "o": [
+       "string | number",
+       "number",
+       "string",
+       "boolean"
+      ],
+      "a": 1,
+      "why": "The string case was removed, leaving number."
+     },
+     {
+      "t": "tf",
+      "q": "The in operator checks whether a property exists on an object.",
+      "a": true,
+      "why": "\"key\" in obj tests for the property."
+     },
+     {
+      "t": "match",
+      "q": "Match each check to what it does",
+      "pairs": [
+       [
+        "typeof",
+        "checks a primitive type"
+       ],
+       [
+        "instanceof",
+        "checks a class instance"
+       ],
+       [
+        "in",
+        "checks a property name"
+       ],
+       [
+        "?.",
+        "safe access on null or undefined"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the operator that checks if an object was made from a class.",
+      "a": [
+       "instanceof"
+      ],
+      "why": "obj instanceof Class."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a narrowing function",
+      "lines": [
+       "function len(x: string | string[]) {",
+       "  if (typeof x === \"string\") return x.length;",
+       "  return x.length; // array case",
+       "}"
+      ],
+      "why": "The check goes inside the function body."
+     },
+     {
+      "t": "order",
+      "q": "Put in order what the compiler does",
+      "items": [
+       [
+        "Sees the union type",
+        1
+       ],
+       [
+        "Reads the typeof check",
+        2
+       ],
+       [
+        "Narrows the type in the block",
+        3
+       ],
+       [
+        "Allows methods of that type",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the condition that checks x is a number (use typeof and ===, with double quotes).",
+      "a": [
+       "typeof x === \"number\"",
+       "typeof x === 'number'",
+       "typeof x===\"number\""
+      ],
+      "hint": "typeof x ...",
+      "why": "typeof x === \"number\"."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the operator that gives \"guest\" only when name is null or undefined (two characters).",
+      "a": [
+       "??"
+      ],
+      "why": "?? is the nullish coalescing operator."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which union member does s become after case \"circle\"?",
+      "code": "type Shape =\n  | { kind: \"circle\"; r: number }\n  | { kind: \"square\"; side: number };\n\nswitch (s.kind) {\n  case \"circle\": // s is...",
+      "o": [
+       "string",
+       "never",
+       "The Circle object",
+       "The Square object"
+      ],
+      "a": 2,
+      "why": "The kind property tells TypeScript it is the circle."
+     }
+    ]
+   },
+   {
+    "title": "Generics",
+    "period": "TypeScript in depth",
+    "learn": [
+     {
+      "h": "The problem generics solve",
+      "b": "Sometimes a function should work with any type but keep track of it. Using any loses the type. A generic uses a type parameter, like T, as a placeholder that is filled in when you call the function.",
+      "code": "function first<T>(arr: T[]): T {\n  return arr[0];\n}\nconst n = first([1, 2]);     // number\nconst s = first([\"a\", \"b\"]); // string"
+     },
+     {
+      "h": "Type arguments",
+      "b": "You can let TypeScript infer T, or you can write it yourself in angle brackets. A function can have more than one type parameter. Names are usually T, U, K and V.",
+      "code": "function pair<A, B>(a: A, b: B): [A, B] {\n  return [a, b];\n}\npair<string, number>(\"a\", 1);"
+     },
+     {
+      "h": "Constraints",
+      "b": "Use extends to limit what T can be. This lets you use certain properties inside the function. Only types that have those properties are accepted.",
+      "code": "function len<T extends { length: number }>(x: T) {\n  return x.length;\n}\nlen(\"abc\");\nlen([1, 2]);\nlen(5); // Error"
+     },
+     {
+      "h": "Generic interfaces and classes",
+      "b": "Interfaces, type aliases and classes can be generic too. Built in types like Array<T>, Promise<T> and Map<K, V> use this idea. You choose the type when you create the object.",
+      "code": "interface Box<T> {\n  value: T;\n}\nconst b: Box<number> = { value: 5 };\nclass Stack<T> {\n  items: T[] = [];\n  push(x: T) { this.items.push(x); }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is T in function first<T>(a: T[]): T?",
+      "o": [
+       "A variable",
+       "A class",
+       "A string",
+       "A type parameter"
+      ],
+      "a": 3,
+      "why": "T is a placeholder for a type."
+     },
+     {
+      "t": "mc",
+      "q": "Why use generics instead of any?",
+      "o": [
+       "They keep the type information",
+       "They run faster",
+       "They remove errors",
+       "They are shorter"
+      ],
+      "a": 0,
+      "why": "A generic remembers the type that was passed in."
+     },
+     {
+      "t": "mc",
+      "q": "What type does r have?",
+      "code": "function first<T>(a: T[]): T { return a[0]; }\nconst r = first([5, 6]);",
+      "o": [
+       "T",
+       "number",
+       "string",
+       "any"
+      ],
+      "a": 1,
+      "why": "first receives number[], so T becomes number."
+     },
+     {
+      "t": "tf",
+      "q": "A generic function can have more than one type parameter.",
+      "a": true,
+      "why": "For example <A, B>."
+     },
+     {
+      "t": "match",
+      "q": "Match each syntax to its meaning",
+      "pairs": [
+       [
+        "<T>",
+        "type parameter"
+       ],
+       [
+        "T extends X",
+        "constraint"
+       ],
+       [
+        "Box<number>",
+        "type argument given"
+       ],
+       [
+        "Array<string>",
+        "generic array type"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword used to limit a type parameter (as in T ... { length: number }).",
+      "a": [
+       "extends"
+      ],
+      "why": "T extends Type is a constraint."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a generic function",
+      "lines": [
+       "function id<T>(x: T): T {",
+       "  return x;",
+       "}",
+       "console.log(id<number>(5));"
+      ],
+      "why": "Declare the function, then call it with a type argument."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to use a generic function",
+      "items": [
+       [
+        "Write function with <T>",
+        1
+       ],
+       [
+        "Call it with a value",
+        2
+       ],
+       [
+        "TypeScript infers T",
+        3
+       ],
+       [
+        "The return has that type",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the function header for a generic id that takes x of type T and returns T (start with function).",
+      "a": [
+       "function id<T>(x: T): T",
+       "function id<T>(x: T): T {"
+      ],
+      "hint": "function id<T>(...)",
+      "why": "The <T> goes after the name."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the type for a Box holding a string using angle brackets.",
+      "a": [
+       "Box<string>"
+      ],
+      "hint": "Box<...>",
+      "why": "Name followed by <type>."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which call is an error?",
+      "code": "function len<T extends { length: number }>(x: T) {\n  return x.length;\n}",
+      "o": [
+       "len([1])",
+       "len([])",
+       "len(5)",
+       "len(\"abc\")"
+      ],
+      "a": 2,
+      "why": "Numbers have no length property."
+     }
+    ]
+   },
+   {
+    "title": "Classes & Access Modifiers",
+    "period": "TypeScript in depth",
+    "learn": [
+     {
+      "h": "Classes in TypeScript",
+      "b": "A class has typed properties, a constructor and methods. You must declare the properties with their types. Create objects with new, just like in JavaScript.",
+      "code": "class Dog {\n  name: string;\n  constructor(name: string) {\n    this.name = name;\n  }\n  bark(): void {\n    console.log(this.name + \" woof\");\n  }\n}\nconst d = new Dog(\"Rex\");"
+     },
+     {
+      "h": "Access modifiers",
+      "b": "public is the default and means anyone can use it. private means only code inside the class. protected means the class and its children. These are checked at compile time only.",
+      "code": "class Account {\n  private balance = 0;\n  public deposit(n: number) {\n    this.balance += n;\n  }\n}\nconst a = new Account();\na.balance; // Error: private"
+     },
+     {
+      "h": "Parameter properties and readonly",
+      "b": "You can put a modifier on a constructor parameter to declare and assign the property in one step. readonly stops a property from being changed after the constructor. This removes a lot of repeated code.",
+      "code": "class User {\n  constructor(\n    public name: string,\n    private readonly id: number\n  ) {}\n}\nconst u = new User(\"Ana\", 1);"
+     },
+     {
+      "h": "Inheritance, interfaces and abstract",
+      "b": "extends makes a class inherit from another, and super calls the parent constructor. implements checks that a class follows an interface. An abstract class cannot be created directly and can have abstract methods that children must write. static members belong to the class itself.",
+      "code": "interface Speaker { speak(): void }\nabstract class Animal {\n  abstract sound(): string;\n}\nclass Cat extends Animal implements Speaker {\n  sound() { return \"meow\"; }\n  speak() { console.log(this.sound()); }\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which modifier hides a member from outside the class?",
+      "o": [
+       "public",
+       "static",
+       "readonly",
+       "private"
+      ],
+      "a": 3,
+      "why": "private is only usable inside the class."
+     },
+     {
+      "t": "mc",
+      "q": "Which modifier allows the class and its subclasses?",
+      "o": [
+       "protected",
+       "private",
+       "readonly",
+       "abstract"
+      ],
+      "a": 0,
+      "why": "protected is shared with child classes."
+     },
+     {
+      "t": "mc",
+      "q": "What happens on the last line?",
+      "code": "class A { private balance = 0; }\nconst a = new A();\nconsole.log(a.balance);",
+      "o": [
+       "It sets balance",
+       "Error: balance is private",
+       "It prints 0",
+       "It prints undefined"
+      ],
+      "a": 1,
+      "why": "A private member cannot be read outside the class."
+     },
+     {
+      "t": "tf",
+      "q": "public is the default access modifier in TypeScript classes.",
+      "a": true,
+      "why": "Members are public unless you say otherwise."
+     },
+     {
+      "t": "match",
+      "q": "Match each keyword to its meaning",
+      "pairs": [
+       [
+        "extends",
+        "inherit from a class"
+       ],
+       [
+        "implements",
+        "follow an interface"
+       ],
+       [
+        "abstract",
+        "cannot be created directly"
+       ],
+       [
+        "static",
+        "belongs to the class"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that calls the parent constructor.",
+      "a": [
+       "super"
+      ],
+      "why": "super(...) calls the parent constructor."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange a class with a constructor",
+      "lines": [
+       "class Dog {",
+       "  name: string;",
+       "  constructor(name: string) { this.name = name; }",
+       "}"
+      ],
+      "why": "Class header, property, constructor."
+     },
+     {
+      "t": "order",
+      "q": "Put in order when using a class",
+      "items": [
+       [
+        "Declare the class",
+        1
+       ],
+       [
+        "Create an object with new",
+        2
+       ],
+       [
+        "The constructor runs",
+        3
+       ],
+       [
+        "Call a method",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares a private number property named balance set to 0 (inside a class).",
+      "a": [
+       "private balance: number = 0;",
+       "private balance = 0;",
+       "private balance: number = 0",
+       "private balance = 0"
+      ],
+      "hint": "private balance ...",
+      "why": "modifier, name, type or value."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the class header for Cat that inherits from Animal.",
+      "a": [
+       "class Cat extends Animal",
+       "class Cat extends Animal {"
+      ],
+      "hint": "class Cat ...",
+      "why": "class, name, extends, parent."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: what does this constructor do?",
+      "code": "class U {\n  constructor(public name: string) {}\n}",
+      "o": [
+       "Does nothing",
+       "Creates a static property",
+       "Creates a public property name",
+       "Creates a private property name"
+      ],
+      "a": 2,
+      "why": "A modifier on a parameter makes it a property."
+     }
+    ]
+   },
+   {
+    "title": "Enums, Utility Types & tsconfig",
+    "period": "TypeScript in depth",
+    "learn": [
+     {
+      "h": "Enums",
+      "b": "An enum is a named set of related values. Without values, members count from 0. A string enum gives each member a text value. Use const enum or a union of literals if you want smaller output.",
+      "code": "enum Color { Red, Green, Blue }\nenum Dir { Up = \"UP\", Down = \"DOWN\" }\nlet c: Color = Color.Green; // 1\nlet d = Dir.Up;             // \"UP\""
+     },
+     {
+      "h": "Partial, Required, Readonly",
+      "b": "Utility types transform existing types. Partial makes every property optional, Required makes them all required, and Readonly makes them all read-only. They save you from rewriting shapes.",
+      "code": "interface User { name: string; age: number }\nconst patch: Partial<User> = { age: 16 };\nconst fixed: Readonly<User> = { name: \"Ana\", age: 15 };"
+     },
+     {
+      "h": "Pick, Omit, Record",
+      "b": "Pick keeps only the listed properties and Omit removes them. Record builds an object type from key and value types. keyof gives the property names of a type as a union.",
+      "code": "type Name = Pick<User, \"name\">;\ntype NoAge = Omit<User, \"age\">;\ntype Scores = Record<string, number>;\ntype Keys = keyof User; // \"name\" | \"age\""
+     },
+     {
+      "h": "tsconfig.json",
+      "b": "A tsconfig.json file configures the compiler. Run tsc --init to create one, then just run tsc. Important options are target for the JavaScript version, outDir for the output folder, and strict to turn on all strict checks. Also useful are include, rootDir and noImplicitAny.",
+      "code": "{\n  \"compilerOptions\": {\n    \"target\": \"ES2020\",\n    \"outDir\": \"dist\",\n    \"strict\": true\n  },\n  \"include\": [\"src\"]\n}"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number does the first member of an enum get by default?",
+      "o": [
+       "1",
+       "-1",
+       "It has none",
+       "0"
+      ],
+      "a": 3,
+      "why": "Enum members count from 0."
+     },
+     {
+      "t": "mc",
+      "q": "Which utility type makes every property optional?",
+      "o": [
+       "Partial",
+       "Required",
+       "Readonly",
+       "Pick"
+      ],
+      "a": 0,
+      "why": "Partial<T> makes all properties optional."
+     },
+     {
+      "t": "mc",
+      "q": "What does Omit<User, \"age\"> produce?",
+      "code": "interface User { name: string; age: number }\ntype T = Omit<User, \"age\">;",
+      "o": [
+       "A string",
+       "User without age",
+       "Only age",
+       "An array"
+      ],
+      "a": 1,
+      "why": "Omit removes the listed keys."
+     },
+     {
+      "t": "tf",
+      "q": "Running tsc --init creates a tsconfig.json file.",
+      "a": true,
+      "why": "The --init flag generates the config file."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "Partial<T>",
+        "all properties optional"
+       ],
+       [
+        "Pick<T, K>",
+        "keep only some properties"
+       ],
+       [
+        "Record<K, V>",
+        "object type from key and value"
+       ],
+       [
+        "strict",
+        "turns on strict checks"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the file that configures the TypeScript compiler.",
+      "a": [
+       "tsconfig.json",
+       "tsconfig"
+      ],
+      "why": "tsconfig.json holds the options."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the config file",
+      "lines": [
+       "{",
+       "  \"compilerOptions\": {",
+       "    \"strict\": true",
+       "  }",
+       "}"
+      ],
+      "why": "Options live inside compilerOptions."
+     },
+     {
+      "t": "order",
+      "q": "Put in order to set up a project",
+      "items": [
+       [
+        "Run tsc --init",
+        1
+       ],
+       [
+        "Edit tsconfig.json",
+        2
+       ],
+       [
+        "Write .ts files",
+        3
+       ],
+       [
+        "Run tsc",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: type the line that declares an enum named Color with members Red and Blue (one line, with braces).",
+      "a": [
+       "enum Color { Red, Blue }",
+       "enum Color {Red, Blue}",
+       "enum Color { Red, Blue };"
+      ],
+      "hint": "enum Color { ... }",
+      "why": "enum, name, members in braces."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: type the utility type that makes User read-only (write Name<User>).",
+      "a": [
+       "Readonly<User>"
+      ],
+      "hint": "...<User>",
+      "why": "Readonly<T> blocks changes."
+     },
+     {
+      "t": "mc",
+      "q": "Challenge: which compilerOptions entry turns on all strict type checks?",
+      "o": [
+       "\"types\": true",
+       "\"check\": all",
+       "\"strict\": true",
+       "\"safe\": true"
+      ],
+      "a": 2,
+      "why": "strict enables the strict family of checks."
+     }
+    ]
+   }
+  ]
+ }
+}

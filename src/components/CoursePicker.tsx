@@ -24,8 +24,8 @@ export function CoursePicker({ current, onPick }: { current?: string; onPick: (c
                       snd('tap');
                       if (avail.length === 1) onPick(avail[0].id); else setOpen(isOpen ? null : t.id);
                     }}>
-                      <CourseIcon icon={t.icon} size={34} /><span>{t.name}</span>
-                      <small>{avail.length ? (avail.length > 1 ? `${avail.length} levels` : '') : 'Soon'}</small>
+                      <CourseIcon icon={t.icon} size={34} /><div className="tb-txt"><b>{t.name}</b>
+                      {(avail.length !== 1) && <small>{avail.length ? `${avail.length} levels` : 'Soon'}</small>}</div>
                     </button>
                     {isOpen && avail.length > 1 && (
                       <div className="levels">

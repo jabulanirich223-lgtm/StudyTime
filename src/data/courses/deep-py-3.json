@@ -1,0 +1,1891 @@
+{
+ "py-3": {
+  "name": "Python · Advanced",
+  "units": [
+   {
+    "title": "Iterators & Generators",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "Iterables and iterators",
+      "b": "An iterable is anything you can loop over, like a list or a string. iter() turns it into an iterator and next() gets the next item. When there are no items left, next() raises StopIteration. A for loop does all of this for you.",
+      "code": "it = iter([10, 20])\nprint(next(it))\nprint(next(it))\n# next(it) -> StopIteration"
+     },
+     {
+      "h": "Generators with yield",
+      "b": "A generator function uses yield instead of return. Each yield hands back a value and pauses the function, keeping its variables. The next request resumes right after the yield. Calling the function gives you a generator object, it does not run the body yet.",
+      "code": "def countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nprint(list(countdown(3)))"
+     },
+     {
+      "h": "Lazy and memory friendly",
+      "b": "A generator makes values one at a time only when asked. That means it can describe huge or even infinite sequences without storing them. A generator can be used only once; after it runs out you must create a new one.",
+      "code": "def naturals():\n    n = 1\n    while True:\n        yield n\n        n += 1\n\ng = naturals()\nprint(next(g), next(g), next(g))"
+     },
+     {
+      "h": "Generator expressions and helpers",
+      "b": "A generator expression looks like a list comprehension but uses parentheses and is lazy. Functions like sum, max and any accept it directly. enumerate() gives index and item pairs and zip() walks several lists together.",
+      "code": "print(sum(x * x for x in range(4)))\nfor i, ch in enumerate('ab'):\n    print(i, ch)\nprint(list(zip([1, 2], ['a', 'b'])))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does next() do with an iterator?",
+      "o": [
+       "Resets it",
+       "Returns the next item",
+       "Sorts it",
+       "Returns its length"
+      ],
+      "a": 1,
+      "why": "next() asks for the next value."
+     },
+     {
+      "t": "mc",
+      "q": "What does yield do in a function?",
+      "o": [
+       "Ends the program",
+       "Produces a value and pauses the function",
+       "Imports a module",
+       "Raises an error"
+      ],
+      "a": 1,
+      "why": "yield hands back a value and remembers where it stopped."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "def count():\n    yield 1\n    yield 2\n\nprint(list(count()))",
+      "o": [
+       "[1, 2]",
+       "[2, 1]",
+       "1",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The generator yields 1 and then 2."
+     },
+     {
+      "t": "tf",
+      "q": "A generator stores all its values in memory at the same time.",
+      "a": false,
+      "why": "A generator makes values one at a time, lazily."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "iter()",
+        "get an iterator from an iterable"
+       ],
+       [
+        "next()",
+        "get the next item"
+       ],
+       [
+        "yield",
+        "produce a value and pause"
+       ],
+       [
+        "StopIteration",
+        "no more items left"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that makes a function a generator.",
+      "a": [
+       "yield"
+      ],
+      "why": "A function with yield is a generator function."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print [3, 2, 1]",
+      "lines": [
+       "def countdown(n):",
+       "    while n > 0:",
+       "        yield n",
+       "        n -= 1",
+       "print(list(countdown(3)))"
+      ],
+      "why": "Define the generator, then collect it with list."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of getting the first value from a generator in order",
+      "items": [
+       [
+        "Call the generator function",
+        1
+       ],
+       [
+        "Get a generator object back",
+        2
+       ],
+       [
+        "next() runs to the first yield",
+        3
+       ],
+       [
+        "The value is returned and the function pauses",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a generator evens(limit) that yields the even numbers from 0 up to and including limit.",
+      "starter": "def evens(limit):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(list(evens(6)))",
+        "expect": "[0, 2, 4, 6]"
+       },
+       {
+        "post": "print(list(evens(1)))",
+        "expect": "[0]"
+       },
+       {
+        "post": "print(list(evens(5)))",
+        "expect": "[0, 2, 4]"
+       }
+      ],
+      "hint": "Loop with range(0, limit + 1, 2) and yield.",
+      "solution": "def evens(limit):\n    for n in range(0, limit + 1, 2):\n        yield n",
+      "why": "yield inside a loop."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a generator fib(n) that yields the first n Fibonacci numbers, starting 0, 1, 1, 2.",
+      "starter": "def fib(n):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(list(fib(6)))",
+        "expect": "[0, 1, 1, 2, 3, 5]"
+       },
+       {
+        "post": "print(list(fib(1)))",
+        "expect": "[0]"
+       },
+       {
+        "post": "print(list(fib(0)))",
+        "expect": "[]"
+       }
+      ],
+      "hint": "Keep a and b, yield a, then a, b = b, a + b.",
+      "solution": "def fib(n):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b",
+      "why": "Two running variables."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does print(sum(x for x in range(4))) show?",
+      "a": [
+       "6"
+      ],
+      "why": "0 + 1 + 2 + 3 is 6."
+     }
+    ]
+   },
+   {
+    "title": "Decorators",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "Functions are objects",
+      "b": "In Python a function is a value. You can store it in a variable, pass it into another function, and return it from a function. A function defined inside another function can use the outer function's variables; this is called a closure.",
+      "code": "def make_adder(n):\n    def add(x):\n        return x + n\n    return add\n\nadd5 = make_adder(5)\nprint(add5(2))"
+     },
+     {
+      "h": "Your first decorator",
+      "b": "A decorator is a function that takes a function and returns a new function that usually wraps the old one. The new function can run code before and after the original. This lets you add features without editing the original function.",
+      "code": "def shout(func):\n    def wrapper():\n        return func().upper()\n    return wrapper\n\ndef hi():\n    return 'hi'\n\nhi = shout(hi)\nprint(hi())"
+     },
+     {
+      "h": "The @ shortcut",
+      "b": "Writing @shout above a function is the same as writing hi = shout(hi) after it. The wrapper should accept *args and **kwargs so it works with any function. Return what the original returns.",
+      "code": "def shout(func):\n    def wrapper(*args, **kwargs):\n        return func(*args, **kwargs).upper()\n    return wrapper\n\n@shout\ndef greet(name):\n    return 'hi ' + name\n\nprint(greet('ana'))"
+     },
+     {
+      "h": "functools.wraps and arguments",
+      "b": "Wrappers hide the original name and docstring. Put @functools.wraps(func) on the wrapper to keep them. A decorator that takes its own arguments needs one more layer: a function that returns the decorator.",
+      "code": "import functools\ndef repeat(n):\n    def deco(func):\n        @functools.wraps(func)\n        def wrapper(*a, **k):\n            for _ in range(n):\n                func(*a, **k)\n        return wrapper\n    return deco\n\n@repeat(2)\ndef hey():\n    print('hey')\n\nhey()"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does placing @name above a def do?",
+      "o": [
+       "Comments the function",
+       "Applies the decorator name to the function",
+       "Imports name",
+       "Makes the function private"
+      ],
+      "a": 1,
+      "why": "It is the same as f = name(f)."
+     },
+     {
+      "t": "mc",
+      "q": "What does a decorator receive as its argument?",
+      "o": [
+       "A string",
+       "A function",
+       "A class only",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "A decorator takes the function to wrap."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "def shout(f):\n    def w():\n        return f().upper()\n    return w\n\n@shout\ndef hi():\n    return 'hi'\n\nprint(hi())",
+      "o": [
+       "HI",
+       "hi",
+       "Hi",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The decorator uppercases the result."
+     },
+     {
+      "t": "tf",
+      "q": "After decorating, calling the function actually runs the wrapper.",
+      "a": true,
+      "why": "The name now points to the wrapper function."
+     },
+     {
+      "t": "match",
+      "q": "Match each piece to its job",
+      "pairs": [
+       [
+        "wrapper",
+        "runs around the original function"
+       ],
+       [
+        "@",
+        "applies a decorator"
+       ],
+       [
+        "*args, **kwargs",
+        "let wrapper accept any arguments"
+       ],
+       [
+        "functools.wraps",
+        "keeps the original name"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the standard module that contains wraps.",
+      "a": [
+       "functools"
+      ],
+      "why": "wraps lives in functools."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print HI",
+      "lines": [
+       "def shout(f):",
+       "    def wrapper():",
+       "        return f().upper()",
+       "    return wrapper",
+       "@shout",
+       "def hi():",
+       "    return 'hi'",
+       "print(hi())"
+      ],
+      "why": "Decorator first, then the decorated function, then the call."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of what @deco does to hi in order",
+      "items": [
+       [
+        "Python defines hi",
+        1
+       ],
+       [
+        "Python passes hi to deco",
+        2
+       ],
+       [
+        "deco returns a wrapper",
+        3
+       ],
+       [
+        "The name hi now points to the wrapper",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a decorator shout that makes the decorated function's returned text uppercase. It must work with any arguments.",
+      "starter": "def shout(func):\n    pass\n",
+      "tests": [
+       {
+        "post": "@shout\ndef greet(name):\n    return 'hi ' + name\n\nprint(greet('ana'))",
+        "expect": "HI ANA"
+       },
+       {
+        "post": "@shout\ndef greet(name):\n    return 'hello ' + name\n\nprint(greet('bo'))",
+        "expect": "HELLO BO"
+       }
+      ],
+      "hint": "Define wrapper(*args, **kwargs) inside.",
+      "solution": "def shout(func):\n    def wrapper(*args, **kwargs):\n        return func(*args, **kwargs).upper()\n    return wrapper",
+      "why": "The wrapper changes the result."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a decorator count_calls that counts calls in an attribute called calls on the wrapper.",
+      "starter": "def count_calls(func):\n    pass\n",
+      "tests": [
+       {
+        "post": "@count_calls\ndef f():\n    pass\n\nf()\nf()\nf()\nprint(f.calls)",
+        "expect": "3"
+       },
+       {
+        "post": "@count_calls\ndef g():\n    pass\n\nprint(g.calls)",
+        "expect": "0"
+       }
+      ],
+      "hint": "Set wrapper.calls = 0 and increase it inside wrapper.",
+      "solution": "def count_calls(func):\n    def wrapper(*args, **kwargs):\n        wrapper.calls += 1\n        return func(*args, **kwargs)\n    wrapper.calls = 0\n    return wrapper",
+      "why": "Functions can have attributes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: writing @d above def f is the same as f = what? Type the code.",
+      "a": [
+       "d(f)"
+      ],
+      "why": "The decorator is called with the function."
+     }
+    ]
+   },
+   {
+    "title": "Context Managers",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "Why with?",
+      "b": "A with statement sets something up, runs your block, and always cleans up, even if an error happens. Files, locks and database connections all use it. Without with you must remember to clean up yourself, and mistakes leak resources.",
+      "code": "with open('a.txt', 'w') as f:\n    f.write('hi')\nprint(f.closed)"
+     },
+     {
+      "h": "__enter__ and __exit__",
+      "b": "Any class with an __enter__ and an __exit__ method works in a with statement. __enter__ runs at the start and its return value goes after as. __exit__ runs at the end, even after an error.",
+      "code": "class Demo:\n    def __enter__(self):\n        print('in')\n        return self\n    def __exit__(self, exc_type, exc, tb):\n        print('out')\n\nwith Demo():\n    print('body')"
+     },
+     {
+      "h": "The contextmanager decorator",
+      "b": "contextlib.contextmanager lets you write a context manager as a generator. Code before yield is the setup and code after yield is the clean up. Use try and finally around the yield so cleanup always runs.",
+      "code": "from contextlib import contextmanager\n\n@contextmanager\ndef tag():\n    print('start')\n    try:\n        yield\n    finally:\n        print('end')\n\nwith tag():\n    print('inside')"
+     },
+     {
+      "h": "Real uses",
+      "b": "Context managers are good for timing code, changing a setting temporarily, opening files, and locking shared data. If __exit__ returns True it hides the error, so only do that on purpose. You can also stack several in one with line separated by commas.",
+      "code": "with open('a.txt') as a, open('b.txt') as b:\n    pass"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a with statement guarantee?",
+      "o": [
+       "The code runs faster",
+       "Clean up happens when the block ends",
+       "The code runs twice",
+       "Errors are ignored"
+      ],
+      "a": 1,
+      "why": "Exit code runs even after errors."
+     },
+     {
+      "t": "mc",
+      "q": "Which method runs when entering a with block?",
+      "o": [
+       "__start__",
+       "__enter__",
+       "__open__",
+       "__init_with__"
+      ],
+      "a": 1,
+      "why": "__enter__ is called at the start."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "class C:\n    def __enter__(self):\n        print('in')\n    def __exit__(self, *a):\n        print('out')\n\nwith C():\n    print('body')",
+      "o": [
+       "in, body, out",
+       "body, in, out",
+       "in, out, body",
+       "body"
+      ],
+      "a": 0,
+      "why": "Enter runs, then the body, then exit."
+     },
+     {
+      "t": "tf",
+      "q": "The __exit__ method runs even if an error happens inside the with block.",
+      "a": true,
+      "why": "That is the point of a context manager."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its job",
+      "pairs": [
+       [
+        "__enter__",
+        "setup at the start"
+       ],
+       [
+        "__exit__",
+        "clean up at the end"
+       ],
+       [
+        "contextmanager",
+        "turn a generator into a context manager"
+       ],
+       [
+        "yield",
+        "where the with block runs"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that starts a context manager block.",
+      "a": [
+       "with"
+      ],
+      "why": "The with keyword begins it."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print start, inside, end on separate lines",
+      "lines": [
+       "from contextlib import contextmanager",
+       "@contextmanager",
+       "def tag():",
+       "    print('start')",
+       "    yield",
+       "    print('end')",
+       "with tag():",
+       "    print('inside')"
+      ],
+      "why": "Define the manager, then use it with with."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a with statement in order",
+      "items": [
+       [
+        "with calls __enter__",
+        1
+       ],
+       [
+        "The body runs",
+        2
+       ],
+       [
+        "__exit__ runs",
+        3
+       ],
+       [
+        "The program continues after the block",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a class Tracker that works with with. On entering print start, on leaving print end.",
+      "starter": "class Tracker:\n    pass\n",
+      "tests": [
+       {
+        "post": "with Tracker():\n    print('work')",
+        "expect": "start\nwork\nend"
+       },
+       {
+        "post": "with Tracker():\n    pass",
+        "expect": "start\nend"
+       }
+      ],
+      "hint": "Add __enter__ and __exit__(self, exc_type, exc, tb).",
+      "solution": "class Tracker:\n    def __enter__(self):\n        print('start')\n    def __exit__(self, exc_type, exc, tb):\n        print('end')",
+      "why": "Two special methods."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: use contextlib.contextmanager to write banner(). It prints <<< before the block and >>> after it.",
+      "starter": "# import what you need and write banner\n",
+      "tests": [
+       {
+        "post": "with banner():\n    print('hi')",
+        "expect": "<<<\nhi\n>>>"
+       },
+       {
+        "post": "with banner():\n    pass",
+        "expect": "<<<\n>>>"
+       }
+      ],
+      "hint": "from contextlib import contextmanager, then yield between two prints.",
+      "solution": "from contextlib import contextmanager\n\n@contextmanager\ndef banner():\n    print('<<<')\n    yield\n    print('>>>')",
+      "why": "Code before yield is setup."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which method runs when leaving a with block? Type its name.",
+      "a": [
+       "__exit__",
+       "exit"
+      ],
+      "why": "__exit__ cleans up."
+     }
+    ]
+   },
+   {
+    "title": "Dataclasses & Typing",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "Type hints",
+      "b": "You can annotate variables and functions with types, like x: int and def f(a: int) -> str. Python does NOT enforce them when running. They help humans, editors and checkers like mypy find mistakes early.",
+      "code": "def add(a: int, b: int) -> int:\n    return a + b\n\nname: str = 'Ana'\nprint(add(2, 3))"
+     },
+     {
+      "h": "Typing containers and optional values",
+      "b": "Write the contents of containers like list[int], dict[str, int] and tuple[int, str]. A value that may be missing is written str | None. Use these hints to document what your data looks like.",
+      "code": "def first(nums: list[int]) -> int | None:\n    return nums[0] if nums else None\n\nscores: dict[str, int] = {'a': 1}\nprint(first([4, 5]))"
+     },
+     {
+      "h": "Dataclasses",
+      "b": "The @dataclass decorator writes __init__, __repr__ and __eq__ for you. You list the fields with type hints. It saves lots of boilerplate for classes that mainly hold data.",
+      "code": "from dataclasses import dataclass\n\n@dataclass\nclass Item:\n    name: str\n    price: float\n\nprint(Item('pen', 1.5))"
+     },
+     {
+      "h": "Defaults and options",
+      "b": "Fields can have defaults, and defaults must come last. For mutable defaults like lists use field(default_factory=list). frozen=True makes objects unchangeable and order=True lets you compare and sort them.",
+      "code": "from dataclasses import dataclass, field\n\n@dataclass\nclass Player:\n    name: str\n    score: int = 0\n    tags: list = field(default_factory=list)\n\np = Player('A')\np.score += 5\nprint(p)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Does Python enforce type hints when the program runs?",
+      "o": [
+       "Yes, always",
+       "No, they are only hints",
+       "Only for int",
+       "Only for functions"
+      ],
+      "a": 1,
+      "why": "Hints are not checked at runtime."
+     },
+     {
+      "t": "mc",
+      "q": "What does @dataclass generate automatically?",
+      "o": [
+       "Only a loop",
+       "__init__ and __repr__",
+       "A database",
+       "A GUI"
+      ],
+      "a": 1,
+      "why": "It writes __init__, __repr__ and __eq__."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "from dataclasses import dataclass\n\n@dataclass\nclass P:\n    x: int\n    y: int = 0\n\nprint(P(3))",
+      "o": [
+       "P(x=3, y=0)",
+       "P(3, 0)",
+       "3 0",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The generated repr shows field names and values."
+     },
+     {
+      "t": "tf",
+      "q": "Type hints stop you from passing the wrong type at runtime.",
+      "a": false,
+      "why": "Python ignores them when running."
+     },
+     {
+      "t": "match",
+      "q": "Match each hint to its meaning",
+      "pairs": [
+       [
+        "int",
+        "a whole number"
+       ],
+       [
+        "list[str]",
+        "a list of strings"
+       ],
+       [
+        "str | None",
+        "a string or nothing"
+       ],
+       [
+        "@dataclass",
+        "auto-writes __init__"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "In def f(x: int) -> str, what type does f promise to return?",
+      "a": [
+       "str"
+      ],
+      "why": "The text after the arrow is the return type."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print Item(name='pen', price=1.5)",
+      "lines": [
+       "from dataclasses import dataclass",
+       "@dataclass",
+       "class Item:",
+       "    name: str",
+       "    price: float",
+       "print(Item('pen', 1.5))"
+      ],
+      "why": "Import, decorate, list fields, then create."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of making a dataclass in order",
+      "items": [
+       [
+        "Import dataclass",
+        1
+       ],
+       [
+        "Put @dataclass above the class",
+        2
+       ],
+       [
+        "List the typed fields",
+        3
+       ],
+       [
+        "Create an object",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a dataclass Book with fields title (str) and pages (int).",
+      "starter": "# import and write the dataclass\n",
+      "tests": [
+       {
+        "post": "print(Book('Dune', 500))",
+        "expect": "Book(title='Dune', pages=500)"
+       },
+       {
+        "post": "print(Book('A', 1))",
+        "expect": "Book(title='A', pages=1)"
+       }
+      ],
+      "hint": "from dataclasses import dataclass",
+      "solution": "from dataclasses import dataclass\n\n@dataclass\nclass Book:\n    title: str\n    pages: int",
+      "why": "The repr is generated."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a dataclass Player with name (str) and score (int) that defaults to 0.",
+      "starter": "# import and write the dataclass\n",
+      "tests": [
+       {
+        "post": "p = Player('A')\np.score += 5\nprint(p)",
+        "expect": "Player(name='A', score=5)"
+       },
+       {
+        "post": "print(Player('Bo'))",
+        "expect": "Player(name='Bo', score=0)"
+       }
+      ],
+      "hint": "score: int = 0",
+      "solution": "from dataclasses import dataclass\n\n@dataclass\nclass Player:\n    name: str\n    score: int = 0",
+      "why": "A default value after the typed name."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines of a typed function that prints 5.",
+      "lines": [
+       "def add(a: int, b: int) -> int:",
+       "    return a + b",
+       "print(add(2, 3))"
+      ],
+      "why": "Hints go after names and after the arrow."
+     }
+    ]
+   },
+   {
+    "title": "Recursion",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "A function that calls itself",
+      "b": "Recursion means a function solves a problem by calling itself on a smaller version of the problem. Each call gets its own set of variables. Think of Russian dolls: open one and find a smaller one inside.",
+      "code": "def countdown(n):\n    if n == 0:\n        print('go')\n    else:\n        print(n)\n        countdown(n - 1)\n\ncountdown(3)"
+     },
+     {
+      "h": "Base case and recursive case",
+      "b": "Every recursive function needs a base case that stops the recursion with a direct answer. The recursive case moves toward the base case, usually by making the input smaller. Without a base case Python raises RecursionError.",
+      "code": "def fact(n):\n    if n <= 1:\n        return 1\n    return n * fact(n - 1)\n\nprint(fact(5))"
+     },
+     {
+      "h": "Recursion on lists and strings",
+      "b": "Lists and strings fit recursion well: handle the first item, then recurse on the rest. The base case is usually the empty list or empty string. Slicing makes the smaller input.",
+      "code": "def total(nums):\n    if not nums:\n        return 0\n    return nums[0] + total(nums[1:])\n\nprint(total([1, 2, 3]))"
+     },
+     {
+      "h": "Limits and trade offs",
+      "b": "Python allows about 1000 nested calls by default. Deep recursion can fail, and some recursion repeats work, like a naive Fibonacci. Often a loop is simpler, but recursion is great for trees and nested data.",
+      "code": "def fib(n):\n    if n < 2:\n        return n\n    return fib(n - 1) + fib(n - 2)\n\nprint(fib(7))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What stops a recursive function?",
+      "o": [
+       "The base case",
+       "A for loop",
+       "The import",
+       "The return type"
+      ],
+      "a": 0,
+      "why": "The base case returns without recursing."
+     },
+     {
+      "t": "mc",
+      "q": "What happens if a recursive function has no base case?",
+      "o": [
+       "It returns None",
+       "RecursionError",
+       "It runs once",
+       "It prints nothing"
+      ],
+      "a": 1,
+      "why": "Python stops it with RecursionError."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "def f(n):\n    return 1 if n <= 1 else n * f(n - 1)\n\nprint(f(4))",
+      "o": [
+       "24",
+       "10",
+       "4",
+       "12"
+      ],
+      "a": 0,
+      "why": "4 * 3 * 2 * 1 is 24."
+     },
+     {
+      "t": "tf",
+      "q": "Each recursive call has its own local variables.",
+      "a": true,
+      "why": "Every call has its own frame."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "base case",
+        "stops the recursion"
+       ],
+       [
+        "recursive case",
+        "calls itself on a smaller input"
+       ],
+       [
+        "RecursionError",
+        "too many nested calls"
+       ],
+       [
+        "call stack",
+        "keeps track of active calls"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What is 5 factorial (5 * 4 * 3 * 2 * 1)? Type the number.",
+      "a": [
+       "120"
+      ],
+      "why": "5 * 4 = 20, * 3 = 60, * 2 = 120."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 120",
+      "lines": [
+       "def fact(n):",
+       "    if n <= 1:",
+       "        return 1",
+       "    return n * fact(n - 1)",
+       "print(fact(5))"
+      ],
+      "why": "Base case first, then the recursive return."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of fact(3) in order",
+      "items": [
+       [
+        "fact(3) calls fact(2)",
+        1
+       ],
+       [
+        "fact(2) calls fact(1)",
+        2
+       ],
+       [
+        "fact(1) returns 1",
+        3
+       ],
+       [
+        "Results multiply back up to 6",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a recursive function factorial(n) that returns n factorial. factorial(0) is 1.",
+      "starter": "def factorial(n):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(factorial(5))",
+        "expect": "120"
+       },
+       {
+        "post": "print(factorial(0))",
+        "expect": "1"
+       },
+       {
+        "post": "print(factorial(3))",
+        "expect": "6"
+       }
+      ],
+      "hint": "Base case n <= 1, else n * factorial(n - 1).",
+      "solution": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)",
+      "why": "A smaller call each time."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write a recursive function sum_list(nums) that returns the sum of a list. An empty list gives 0.",
+      "starter": "def sum_list(nums):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(sum_list([1, 2, 3]))",
+        "expect": "6"
+       },
+       {
+        "post": "print(sum_list([]))",
+        "expect": "0"
+       },
+       {
+        "post": "print(sum_list([5]))",
+        "expect": "5"
+       }
+      ],
+      "hint": "Return nums[0] + sum_list(nums[1:])",
+      "solution": "def sum_list(nums):\n    if not nums:\n        return 0\n    return nums[0] + sum_list(nums[1:])",
+      "why": "Handle the first, recurse on the rest."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: f(n) returns 0 if n == 0, otherwise 1 + f(n - 1). What is f(3)?",
+      "a": [
+       "3"
+      ],
+      "why": "f(3) = 1 + 1 + 1 + 0 = 3."
+     }
+    ]
+   },
+   {
+    "title": "Sorting & collections",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "sorted and sort",
+      "b": "sorted(x) returns a new sorted list and leaves x alone. x.sort() sorts the list itself and returns None. Both take reverse=True for big to small. The key parameter is a function that gives each item a sort value.",
+      "code": "words = ['bb', 'a', 'ccc']\nprint(sorted(words, key=len))\nprint(sorted(words, reverse=True))"
+     },
+     {
+      "h": "Lambda keys",
+      "b": "A lambda is the usual key. For tuples or dicts, pick the field you want to sort by. Sorting by a tuple key sorts by several rules at once, first by the first value, then by the next.",
+      "code": "people = [('Ana', 30), ('Bo', 20)]\nprint(sorted(people, key=lambda p: p[1]))\nrows = [{'n': 'x', 'v': 2}, {'n': 'y', 'v': 1}]\nprint(sorted(rows, key=lambda r: r['v']))"
+     },
+     {
+      "h": "Counter",
+      "b": "collections.Counter counts how often each item appears. It works like a dictionary of counts. most_common(n) gives the top n pairs, and missing items count as 0.",
+      "code": "from collections import Counter\nc = Counter('banana')\nprint(c['a'])\nprint(c.most_common(1))"
+     },
+     {
+      "h": "defaultdict, deque, namedtuple",
+      "b": "defaultdict(list) makes a dict that creates a missing value automatically. deque is a list-like queue that is fast to add and remove at both ends. namedtuple makes a tuple whose items have names.",
+      "code": "from collections import defaultdict, deque, namedtuple\ng = defaultdict(list)\ng['a'].append(1)\nq = deque([1, 2])\nq.appendleft(0)\nPt = namedtuple('Pt', 'x y')\nprint(dict(g), list(q), Pt(1, 2).x)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does sorted(words, key=len) do?",
+      "o": [
+       "Sorts alphabetically",
+       "Sorts by word length",
+       "Reverses the list",
+       "Counts the words"
+      ],
+      "a": 1,
+      "why": "key=len sorts by length."
+     },
+     {
+      "t": "mc",
+      "q": "What does Counter.most_common(1) return?",
+      "o": [
+       "The most frequent item with its count in a list of pairs",
+       "The least frequent item",
+       "The length",
+       "A sorted dict"
+      ],
+      "a": 0,
+      "why": "It returns a list with the top pair."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "print(sorted(['bb', 'a', 'ccc'], key=len))",
+      "o": [
+       "['a', 'bb', 'ccc']",
+       "['ccc', 'bb', 'a']",
+       "['bb', 'a', 'ccc']",
+       "['a', 'ccc', 'bb']"
+      ],
+      "a": 0,
+      "why": "Sorted by length, shortest first."
+     },
+     {
+      "t": "tf",
+      "q": "sorted() changes the original list.",
+      "a": false,
+      "why": "sorted() returns a new list; sort() changes the original."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to what it does",
+      "pairs": [
+       [
+        "Counter",
+        "counts items"
+       ],
+       [
+        "defaultdict",
+        "dict with automatic default values"
+       ],
+       [
+        "deque",
+        "fast add and remove at both ends"
+       ],
+       [
+        "namedtuple",
+        "tuple with named fields"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "After from collections import Counter, what does Counter('aab')['a'] give?",
+      "a": [
+       "2"
+      ],
+      "why": "The letter a appears twice."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 3",
+      "lines": [
+       "from collections import Counter",
+       "c = Counter('banana')",
+       "print(c['a'])"
+      ],
+      "why": "Import, count, then look up a."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of sorted(items, key=f) in order",
+      "items": [
+       [
+        "Python calls f on each item",
+        1
+       ],
+       [
+        "Items are compared by their keys",
+        2
+       ],
+       [
+        "Items are arranged in key order",
+        3
+       ],
+       [
+        "A new sorted list is returned",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: people is a list of (name, age) tuples with different ages. Print the names as a list, from youngest to oldest.",
+      "starter": "# people is set\n",
+      "tests": [
+       {
+        "pre": "people = [('Ana', 30), ('Bo', 20), ('Cy', 25)]",
+        "expect": "['Bo', 'Cy', 'Ana']"
+       },
+       {
+        "pre": "people = [('Z', 1)]",
+        "expect": "['Z']"
+       }
+      ],
+      "hint": "Sort with key=lambda p: p[1], then take the names.",
+      "solution": "ordered = sorted(people, key=lambda p: p[1])\nprint([p[0] for p in ordered])",
+      "why": "A lambda key picks the age."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: words is a list. Print the word that appears most often. There is one clear winner.",
+      "starter": "# words is set\n",
+      "tests": [
+       {
+        "pre": "words = ['a', 'b', 'a', 'c']",
+        "expect": "a"
+       },
+       {
+        "pre": "words = ['x']",
+        "expect": "x"
+       },
+       {
+        "pre": "words = ['yo', 'hi', 'hi', 'hi', 'yo']",
+        "expect": "hi"
+       }
+      ],
+      "hint": "Use Counter(words).most_common(1)",
+      "solution": "from collections import Counter\nprint(Counter(words).most_common(1)[0][0])",
+      "why": "most_common gives (item, count) pairs."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does print(sorted([3, 1, 2], reverse=True)[0]) show?",
+      "a": [
+       "3"
+      ],
+      "why": "The reversed list is [3, 2, 1] and index 0 is 3."
+     }
+    ]
+   },
+   {
+    "title": "Regular Expressions",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "Finding patterns",
+      "b": "A regular expression (regex) is a pattern for matching text. In Python you use the re module. re.search(pattern, text) finds the first match anywhere and returns a match object or None. Use .group() to get the matched text. Write patterns as raw strings like r'\\d+' so backslashes are kept.",
+      "code": "import re\nm = re.search(r'\\d+', 'room 42')\nprint(m.group())"
+     },
+     {
+      "h": "Special symbols",
+      "b": "\\d is a digit, \\w is a letter, digit or underscore, and \\s is whitespace. A dot . is any character. + means one or more, * means zero or more, ? means optional, and {3} means exactly 3. ^ is the start and $ is the end of the text. [abc] matches one of the listed letters.",
+      "code": "import re\nprint(re.findall(r'\\d{3}', '12 345 6789'))\nprint(bool(re.match(r'^[a-z]+$', 'abc')))"
+     },
+     {
+      "h": "findall, sub and split",
+      "b": "re.findall returns a list of all matches. re.sub(pattern, new, text) replaces matches. re.split splits text at matches. re.match only matches at the very start of the text.",
+      "code": "import re\nprint(re.findall(r'\\d+', 'a1b22'))\nprint(re.sub(r'\\s+', ' ', 'a   b    c'))\nprint(re.split(r',\\s*', 'a, b,c'))"
+     },
+     {
+      "h": "Groups",
+      "b": "Parentheses make groups that capture parts of a match. m.group(1) is the first group. Use groups to pull out pieces like a name and a number. Quantifiers are greedy by default and take as much as possible; add ? to make them take as little as possible.",
+      "code": "import re\nm = re.search(r'(\\w+)@(\\w+)\\.com', 'bo@site.com')\nprint(m.group(1), m.group(2))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does \\d match in a regex?",
+      "o": [
+       "Any letter",
+       "A digit",
+       "A space",
+       "A dot"
+      ],
+      "a": 1,
+      "why": "\\d matches one digit."
+     },
+     {
+      "t": "mc",
+      "q": "What does re.findall return?",
+      "o": [
+       "The first match only",
+       "A list of all matches",
+       "True or False",
+       "A number"
+      ],
+      "a": 1,
+      "why": "findall returns every match in a list."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "import re\nprint(re.findall(r'\\d+', 'a12b345'))",
+      "o": [
+       "['12', '345']",
+       "['1', '2', '3', '4', '5']",
+       "12345",
+       "['a', 'b']"
+      ],
+      "a": 0,
+      "why": "\\d+ matches runs of digits."
+     },
+     {
+      "t": "tf",
+      "q": "A raw string like r'\\d' helps keep backslashes as they are.",
+      "a": true,
+      "why": "Raw strings do not process escape sequences."
+     },
+     {
+      "t": "match",
+      "q": "Match each symbol to its meaning",
+      "pairs": [
+       [
+        "\\d",
+        "a digit"
+       ],
+       [
+        "\\w",
+        "letter, digit or underscore"
+       ],
+       [
+        "+",
+        "one or more"
+       ],
+       [
+        "^",
+        "start of the text"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the name of the re function that replaces matches with new text.",
+      "a": [
+       "sub",
+       "re.sub"
+      ],
+      "why": "re.sub(pattern, new, text) replaces."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 555-1234",
+      "lines": [
+       "import re",
+       "text = 'call 555-1234 now'",
+       "m = re.search(r'\\d{3}-\\d{4}', text)",
+       "print(m.group())"
+      ],
+      "why": "Import, set text, search, then print the group."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using regex in order",
+      "items": [
+       [
+        "Import re",
+        1
+       ],
+       [
+        "Write the pattern",
+        2
+       ],
+       [
+        "Search the text",
+        3
+       ],
+       [
+        "Use the result",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: text is a string. Print a list of all the whole numbers in it, as strings.",
+      "starter": "# text is set\n",
+      "tests": [
+       {
+        "pre": "text = 'a1b22c333'",
+        "expect": "['1', '22', '333']"
+       },
+       {
+        "pre": "text = 'none here'",
+        "expect": "[]"
+       },
+       {
+        "pre": "text = 'in 2024 on day 7'",
+        "expect": "['2024', '7']"
+       }
+      ],
+      "hint": "import re then re.findall(r'\\d+', text)",
+      "solution": "import re\nprint(re.findall(r'\\d+', text))",
+      "why": "findall collects every match."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: email is a string. Print True if it looks like something@something.something with no spaces, otherwise False.",
+      "starter": "# email is set\n",
+      "tests": [
+       {
+        "pre": "email = 'a@b.com'",
+        "expect": "True"
+       },
+       {
+        "pre": "email = 'abc'",
+        "expect": "False"
+       },
+       {
+        "pre": "email = 'x@y'",
+        "expect": "False"
+       }
+      ],
+      "hint": "Use re.match(r'^\\S+@\\S+\\.\\S+$', email) inside bool()",
+      "solution": "import re\nprint(bool(re.match(r'^\\S+@\\S+\\.\\S+$', email)))",
+      "why": "match returns None when there is no match."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does re.search(r'\\d', 'abc') return when nothing matches? Type the value.",
+      "a": [
+       "None"
+      ],
+      "why": "No match gives None."
+     }
+    ]
+   },
+   {
+    "title": "JSON & APIs",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "What is JSON?",
+      "b": "JSON is a text format for data that almost every language understands. It looks like Python dicts and lists, but keys must be in double quotes and the words are true, false and null. Python converts them to True, False and None.",
+      "code": "text = '{\"name\": \"Ana\", \"age\": 12, \"ok\": true}'\nprint(text)"
+     },
+     {
+      "h": "json.loads and json.dumps",
+      "b": "json.loads(text) turns JSON text into Python objects. json.dumps(obj) turns Python objects into JSON text. indent=2 makes it pretty and sort_keys=True orders the keys. The s in the names stands for string.",
+      "code": "import json\ndata = json.loads('{\"a\": [1, 2]}')\nprint(data['a'][1])\nprint(json.dumps({'b': True, 'a': None}, sort_keys=True))"
+     },
+     {
+      "h": "Files and JSON",
+      "b": "json.dump(obj, file) writes JSON to an open file, and json.load(file) reads it back. This is a simple way to save game scores or settings. Always open files with with.",
+      "code": "import json\nwith open('save.json', 'w') as f:\n    json.dump({'score': 5}, f)\nwith open('save.json') as f:\n    print(json.load(f))"
+     },
+     {
+      "h": "APIs in concept",
+      "b": "An API is a web address that gives you data. You send an HTTP request, usually GET to read data, and the server replies with a status code and often JSON. 200 means OK, 404 means not found and 500 means a server error. With the requests library you call r = requests.get(url) and then r.json(). Always check the status before using the data.",
+      "code": "# import requests\n# r = requests.get('https://example.com/api/items')\n# if r.status_code == 200:\n#     data = r.json()"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does json.loads do?",
+      "o": [
+       "Python object to JSON text",
+       "JSON text to Python object",
+       "Opens a file",
+       "Sorts keys"
+      ],
+      "a": 1,
+      "why": "loads reads JSON from a string."
+     },
+     {
+      "t": "mc",
+      "q": "What does the JSON value true become in Python?",
+      "o": [
+       "'true'",
+       "True",
+       "1",
+       "None"
+      ],
+      "a": 1,
+      "why": "JSON true becomes Python True."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "import json\nprint(json.loads('{\"a\": 1}')['a'])",
+      "o": [
+       "1",
+       "2",
+       "a",
+       "Error"
+      ],
+      "a": 0,
+      "why": "loads gives a dict and ['a'] is 1."
+     },
+     {
+      "t": "tf",
+      "q": "Valid JSON allows keys in single quotes.",
+      "a": false,
+      "why": "JSON requires double quotes."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "json.dumps",
+        "Python to JSON text"
+       ],
+       [
+        "json.loads",
+        "JSON text to Python"
+       ],
+       [
+        "404",
+        "not found"
+       ],
+       [
+        "200",
+        "success"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the HTTP method used to fetch (read) data from an API.",
+      "a": [
+       "GET"
+      ],
+      "why": "GET asks the server for data."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print 10",
+      "lines": [
+       "import json",
+       "text = '{\"n\": 5}'",
+       "data = json.loads(text)",
+       "print(data['n'] * 2)"
+      ],
+      "why": "Parse first, then use the value."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of using an API in order",
+      "items": [
+       [
+        "Send a GET request to the URL",
+        1
+       ],
+       [
+        "The server replies with JSON text",
+        2
+       ],
+       [
+        "Parse it with json.loads",
+        3
+       ],
+       [
+        "Use the data",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: text is a JSON string like {\"scores\": [3, 4, 5]}. Print the sum of the scores.",
+      "starter": "# text is set\n",
+      "tests": [
+       {
+        "pre": "text = '{\"scores\": [3, 4, 5]}'",
+        "expect": "12"
+       },
+       {
+        "pre": "text = '{\"scores\": []}'",
+        "expect": "0"
+       },
+       {
+        "pre": "text = '{\"scores\": [7]}'",
+        "expect": "7"
+       }
+      ],
+      "hint": "import json, then json.loads(text)['scores']",
+      "solution": "import json\nprint(sum(json.loads(text)['scores']))",
+      "why": "loads gives a dict with a list."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: data is a Python dict. Print it as JSON text with keys sorted.",
+      "starter": "# data is set\n",
+      "tests": [
+       {
+        "pre": "data = {'b': [1, 2], 'a': 1}",
+        "expect": "{\"a\": 1, \"b\": [1, 2]}"
+       },
+       {
+        "pre": "data = {'x': True}",
+        "expect": "{\"x\": true}"
+       }
+      ],
+      "hint": "json.dumps(data, sort_keys=True)",
+      "solution": "import json\nprint(json.dumps(data, sort_keys=True))",
+      "why": "dumps turns Python into JSON."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what does print(json.dumps(True)) show?",
+      "a": [
+       "true"
+      ],
+      "why": "JSON writes booleans in lowercase."
+     }
+    ]
+   },
+   {
+    "title": "Testing with assert & unittest",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "Why test?",
+      "b": "A test is code that checks that your code works. When you change something later, tests tell you right away if you broke it. Write small tests with known inputs and expected outputs, and include edge cases like empty input or zero.",
+      "code": "def double(n):\n    return n * 2\n\nprint(double(4) == 8)"
+     },
+     {
+      "h": "assert",
+      "b": "assert condition raises AssertionError if the condition is False and does nothing if it is True. You can add a message after a comma. It is a quick way to check your assumptions.",
+      "code": "def double(n):\n    return n * 2\n\nassert double(4) == 8\nassert double(0) == 0, 'zero case'\nprint('all passed')"
+     },
+     {
+      "h": "unittest",
+      "b": "The unittest module organizes tests in classes that inherit from unittest.TestCase. Each test method name must start with test. Use assertEqual, assertTrue and assertRaises instead of plain assert for clearer messages. unittest.main() runs them all.",
+      "code": "import unittest\n\nclass TestMath(unittest.TestCase):\n    def test_add(self):\n        self.assertEqual(1 + 1, 2)\n    def test_div(self):\n        with self.assertRaises(ZeroDivisionError):\n            1 / 0\n\nif __name__ == '__main__':\n    unittest.main()"
+     },
+     {
+      "h": "Good test habits",
+      "b": "Follow arrange, act, assert: set up the input, call the code, check the result. Test one thing per test and give tests clear names. setUp runs before every test to prepare shared data. When a test fails, fix the code, not the test, unless the test is wrong.",
+      "code": "import unittest\n\nclass TestList(unittest.TestCase):\n    def setUp(self):\n        self.items = [1, 2, 3]\n    def test_len(self):\n        self.assertEqual(len(self.items), 3)"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does assert False do?",
+      "o": [
+       "Nothing",
+       "Raises AssertionError",
+       "Prints False",
+       "Stops Python"
+      ],
+      "a": 1,
+      "why": "A failing assert raises AssertionError."
+     },
+     {
+      "t": "mc",
+      "q": "How must test method names in a TestCase start?",
+      "o": [
+       "check",
+       "test",
+       "assert",
+       "run"
+      ],
+      "a": 1,
+      "why": "unittest only runs methods starting with test."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "assert 2 + 2 == 4\nprint('ok')",
+      "o": [
+       "ok",
+       "Nothing",
+       "AssertionError",
+       "True"
+      ],
+      "a": 0,
+      "why": "The assert passes, so the print runs."
+     },
+     {
+      "t": "tf",
+      "q": "A passing assert prints nothing by itself.",
+      "a": true,
+      "why": "It only reports when the condition is False."
+     },
+     {
+      "t": "match",
+      "q": "Match each tool to its job",
+      "pairs": [
+       [
+        "assertEqual(a, b)",
+        "checks a == b"
+       ],
+       [
+        "assertTrue(x)",
+        "checks x is true"
+       ],
+       [
+        "assertRaises",
+        "checks an error is raised"
+       ],
+       [
+        "setUp",
+        "runs before every test"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "What error does a failing assert raise? Type its name.",
+      "a": [
+       "AssertionError"
+      ],
+      "why": "AssertionError is raised."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines of a small unittest test",
+      "lines": [
+       "import unittest",
+       "class TestMath(unittest.TestCase):",
+       "    def test_add(self):",
+       "        self.assertEqual(1 + 1, 2)",
+       "unittest.main()"
+      ],
+      "why": "Import, class, test method, then run."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of test driven fixing in order",
+      "items": [
+       [
+        "Write the function",
+        1
+       ],
+       [
+        "Write a test with the expected value",
+        2
+       ],
+       [
+        "Run the tests",
+        3
+       ],
+       [
+        "Fix failures and run again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write double(n) so that all the asserts after your code pass.",
+      "starter": "def double(n):\n    pass\n",
+      "tests": [
+       {
+        "post": "assert double(2) == 4\nassert double(0) == 0\nassert double(-3) == -6\nprint('all passed')",
+        "expect": "all passed"
+       },
+       {
+        "post": "assert double(10) == 20\nassert double(1) == 2\nprint('all passed')",
+        "expect": "all passed"
+       }
+      ],
+      "hint": "Return n * 2",
+      "solution": "def double(n):\n    return n * 2",
+      "why": "The asserts check your function."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write fizzbuzz(n) that returns 'FizzBuzz' if n divides by 15, 'Fizz' if by 3, 'Buzz' if by 5, otherwise the number as text.",
+      "starter": "def fizzbuzz(n):\n    pass\n",
+      "tests": [
+       {
+        "post": "assert fizzbuzz(3) == 'Fizz'\nassert fizzbuzz(5) == 'Buzz'\nassert fizzbuzz(15) == 'FizzBuzz'\nassert fizzbuzz(7) == '7'\nprint('all passed')",
+        "expect": "all passed"
+       },
+       {
+        "post": "assert fizzbuzz(30) == 'FizzBuzz'\nassert fizzbuzz(9) == 'Fizz'\nassert fizzbuzz(1) == '1'\nprint('all passed')",
+        "expect": "all passed"
+       }
+      ],
+      "hint": "Check 15 first.",
+      "solution": "def fizzbuzz(n):\n    if n % 15 == 0:\n        return 'FizzBuzz'\n    if n % 3 == 0:\n        return 'Fizz'\n    if n % 5 == 0:\n        return 'Buzz'\n    return str(n)",
+      "why": "Order of checks matters."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which unittest method checks that two values are equal? Type its name.",
+      "a": [
+       "assertEqual",
+       "self.assertEqual"
+      ],
+      "why": "assertEqual(a, b) checks a == b."
+     }
+    ]
+   },
+   {
+    "title": "Mini Projects: Game & To-Do Logic",
+    "period": "Python advanced",
+    "learn": [
+     {
+      "h": "Game state and the main loop",
+      "b": "A text game keeps its state in variables or a dictionary: where the player is, health, items. The main loop repeats: show the state, read a command, update the state, check for a win or quit. while True with a break is a common way to write it.",
+      "code": "state = {'x': 0, 'y': 0, 'health': 10}\nwhile True:\n    cmd = input('> ')\n    if cmd == 'quit':\n        break\n    print(state)"
+     },
+     {
+      "h": "Parsing commands",
+      "b": "Split what the user typed into words with split(). The first word is the verb and the rest are the arguments. A dictionary can map verbs to functions, which is cleaner than a long if chain. Always handle unknown commands politely.",
+      "code": "cmd = 'go north'\nparts = cmd.split()\nverb, arg = parts[0], parts[1]\nprint(verb, arg)"
+     },
+     {
+      "h": "To-do list logic",
+      "b": "A to-do app is a list of dictionaries, each with text and done. Functions add a task, mark one complete, remove one, and count what is left. Returning values instead of printing makes each function easy to test.",
+      "code": "tasks = []\ndef add_task(tasks, text):\n    tasks.append({'text': text, 'done': False})\n\nadd_task(tasks, 'milk')\ntasks[0]['done'] = True\nprint(tasks)"
+     },
+     {
+      "h": "Putting it together",
+      "b": "Keep the logic in small pure functions and keep input() and print() in a thin outer layer. Then you can test the logic with assert and reuse it later in a bigger app. Save data with json when the game or list must remember things.",
+      "code": "def step(x, y, cmd):\n    if cmd == 'north':\n        return x, y + 1\n    return x, y\n\nassert step(0, 0, 'north') == (0, 1)\nprint(step(0, 0, 'stay'))"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Why keep game logic in functions separate from input() and print()?",
+      "o": [
+       "It makes the code easy to test and reuse",
+       "It makes Python faster",
+       "It is required by Python",
+       "It uses less memory"
+      ],
+      "a": 0,
+      "why": "Pure functions can be tested without a keyboard."
+     },
+     {
+      "t": "mc",
+      "q": "Where is a good place to store the current game state?",
+      "o": [
+       "In a dictionary or variables",
+       "Inside a comment",
+       "Only in the print text",
+       "In an import"
+      ],
+      "a": 0,
+      "why": "A dictionary groups position, health and items."
+     },
+     {
+      "t": "mc",
+      "q": "What does this print?",
+      "code": "todo = []\ntodo.append({'task': 'a', 'done': False})\ntodo[0]['done'] = True\nprint(todo[0]['done'])",
+      "o": [
+       "True",
+       "False",
+       "None",
+       "Error"
+      ],
+      "a": 0,
+      "why": "The task dict is changed to done True."
+     },
+     {
+      "t": "tf",
+      "q": "while True with a break is a common way to write a main loop.",
+      "a": true,
+      "why": "The loop runs until break is reached."
+     },
+     {
+      "t": "match",
+      "q": "Match each idea to its meaning",
+      "pairs": [
+       [
+        "state",
+        "data describing the game now"
+       ],
+       [
+        "command",
+        "text the user types"
+       ],
+       [
+        "main loop",
+        "repeats until quit"
+       ],
+       [
+        "function",
+        "one small job"
+       ]
+      ]
+     },
+     {
+      "t": "input",
+      "q": "Type the keyword that exits the main loop.",
+      "a": [
+       "break"
+      ],
+      "why": "break leaves the loop."
+     },
+     {
+      "t": "parsons",
+      "q": "Arrange the lines to print ['eggs']",
+      "lines": [
+       "tasks = []",
+       "tasks.append('milk')",
+       "tasks.append('eggs')",
+       "tasks.remove('milk')",
+       "print(tasks)"
+      ],
+      "why": "Add both, remove milk, then print."
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of one game loop round in order",
+      "items": [
+       [
+        "Show the state",
+        1
+       ],
+       [
+        "Read a command",
+        2
+       ],
+       [
+        "Update the state",
+        3
+       ],
+       [
+        "Check for win or quit",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: write step(x, y, cmd) that returns the new position as a tuple. north is y + 1, south is y - 1, east is x + 1, west is x - 1. Any other command leaves the position unchanged.",
+      "starter": "def step(x, y, cmd):\n    pass\n",
+      "tests": [
+       {
+        "post": "print(step(0, 0, 'north'))",
+        "expect": "(0, 1)"
+       },
+       {
+        "post": "print(step(2, 3, 'west'))",
+        "expect": "(1, 3)"
+       },
+       {
+        "post": "print(step(1, 1, 'dance'))",
+        "expect": "(1, 1)"
+       }
+      ],
+      "hint": "Use if and elif, then return x, y at the end.",
+      "solution": "def step(x, y, cmd):\n    if cmd == 'north':\n        return x, y + 1\n    if cmd == 'south':\n        return x, y - 1\n    if cmd == 'east':\n        return x + 1, y\n    if cmd == 'west':\n        return x - 1, y\n    return x, y",
+      "why": "Return a tuple."
+     },
+     {
+      "t": "code",
+      "lang": "python",
+      "q": "Challenge: tasks is a list of dicts with text and done. Write pending(tasks) that returns how many tasks are not done.",
+      "starter": "def pending(tasks):\n    pass\n",
+      "tests": [
+       {
+        "post": "tasks = [{'text': 'a', 'done': True}, {'text': 'b', 'done': False}, {'text': 'c', 'done': False}]\nprint(pending(tasks))",
+        "expect": "2"
+       },
+       {
+        "post": "print(pending([]))",
+        "expect": "0"
+       },
+       {
+        "post": "print(pending([{'text': 'x', 'done': False}]))",
+        "expect": "1"
+       }
+      ],
+      "hint": "Count items where not t['done'].",
+      "solution": "def pending(tasks):\n    return sum(1 for t in tasks if not t['done'])",
+      "why": "Count with a condition."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: arrange the lines so the program prints alive.",
+      "lines": [
+       "health = 10",
+       "damage = 3",
+       "health -= damage",
+       "if health <= 0:",
+       "    print('game over')",
+       "else:",
+       "    print('alive')"
+      ],
+      "why": "Subtract damage, then check health."
+     }
+    ]
+   }
+  ]
+ }
+}
