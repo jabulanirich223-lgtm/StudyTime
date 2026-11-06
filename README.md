@@ -1,13 +1,19 @@
 # StudyTime
 
-A gamified history study app for **AP World History** and **AP US History**, built as a Windows desktop app.
-Lessons are laid out on a path like a language-learning app, but for school subjects, with short Khan-style notes before each unit.
+A gamified study app for **school subjects, languages, coding, money and tech**, built as a Windows desktop app.
+Lessons are laid out on a path like a language-learning app, with short Khan-style notes before each unit.
+
+**111 courses · 3,000+ questions**, picked from five columns:
+
+| Academics | Languages | Coding | Money & Business | Tech & Computers |
+| --- | --- | --- | --- | --- |
+| Math grades 3–8, Algebra 1 & 2, Geometry, Precalc, Calculus, Statistics · English grades 3–12 · Science grades 3–8, Biology, Chemistry, Physics, Environmental · US & World History, Civics, Geography · AP World, AP US History, AP Bio, Chem, Calc AB, Psych, Gov, English Lang, Macro · Psychology | Spanish, French, German, Italian, Portuguese, Russian, Japanese, Mandarin, Korean, Arabic, Hindi, English (each Beginner + Intermediate) | Coding Basics, Python, JavaScript, TypeScript, HTML & CSS, Java, C, C++, C#, Go, Rust, Swift, Kotlin, PHP, Ruby, SQL, Bash, Git, Lua & Roblox Luau, R, Algorithms | Personal Finance, Investing & Stocks, Crypto, Micro & Macroeconomics, Business Basics, Entrepreneurship, Marketing, Accounting, Real Estate, Taxes | Computer Basics, How the Internet Works, Cybersecurity, AI & Machine Learning, Networking, PC Hardware, Cloud |
 
 ![Learn path](docs/learn.png)
 
 ## What's inside
 
-- **Lesson path**: 20 units (AP World units 1–9 + 2 ancient bonus units, AP US History periods 1–9). Each unit has Learn, Practice 1, Practice 2, Unit Test and a treasure chest.
+- **Lesson path**: every course has 4+ units; each unit has Learn, Practice 1, Practice 2, Unit Test and a treasure chest.
 - **Question types**: multiple choice, true/false, tap-to-match pairs, put-events-in-order, AP source (stimulus) questions.
 - **AP Prep**: timed Exam Sim with a 1–5 score estimate, Source Drills, Unit Focus.
 - **Cram**: Lightning Round (60 s), Date Dash, Flashcards, Cram Sheet.
@@ -40,7 +46,10 @@ Tech: React 19, TypeScript, Vite, Zustand (progress saved locally), Electron + e
 
 ```
 electron/main.cjs        desktop window
-src/data/subjects.json   all course content (units, notes, questions)
+src/data/subjects.json   AP World + AP US History
+src/data/courses/*.json  every other course (one file per group)
+src/data/catalog.ts      the 5 columns, subjects and levels
+scripts/validate.mjs     checks a course file before it ships
 src/data/index.ts        unit colors and icons
 src/data/cast.ts         the study crew
 src/lib/                 game state, sounds, read-aloud, launchers
@@ -51,7 +60,7 @@ src/assets/              character and icon art (made locally with ComfyUI + FLU
 
 ## Adding questions
 
-Questions live in `src/data/subjects.json`. Each unit has `learn` notes and `qs` questions:
+Add a course to a file in `src/data/courses/`, list it in `src/data/catalog.ts`, and run `node scripts/validate.mjs <file>`. Each unit has `learn` notes and `qs` questions:
 
 ```json
 { "t": "mc", "q": "Question?", "o": ["A", "B", "C", "D"], "a": 0, "why": "Explanation." }

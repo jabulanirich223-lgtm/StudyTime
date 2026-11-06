@@ -1,0 +1,5726 @@
+{
+ "hist-us": {
+  "name": "US History",
+  "units": [
+   {
+    "title": "Colonies and Revolution",
+    "period": "1607-1783",
+    "learn": [
+     {
+      "h": "The first colonies",
+      "b": "England started its first lasting colony at Jamestown, Virginia, in 1607. In 1620 the Pilgrims landed at Plymouth. Over time there were 13 British colonies along the Atlantic coast."
+     },
+     {
+      "h": "Why the colonists got angry",
+      "b": "After a costly war with France, Britain taxed the colonies with laws like the Stamp Act. Colonists had no vote in Parliament, so they said 'no taxation without representation.'"
+     },
+     {
+      "h": "Becoming independent",
+      "b": "The war began at Lexington and Concord in 1775. Thomas Jefferson wrote the Declaration of Independence, adopted in 1776. The British army surrendered at Yorktown in 1781."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which was the first lasting English colony in America?",
+      "o": [
+       "Plymouth",
+       "Jamestown",
+       "Roanoke",
+       "Boston"
+      ],
+      "a": 1,
+      "why": "Jamestown, founded in 1607, was the first permanent English colony."
+     },
+     {
+      "t": "mc",
+      "q": "What did 'no taxation without representation' protest?",
+      "o": [
+       "Taxes made by Britain without a colonial vote",
+       "French land claims",
+       "Spanish trade rules",
+       "Native American treaties"
+      ],
+      "a": 0,
+      "why": "Colonists had no members in Parliament, yet Parliament taxed them."
+     },
+     {
+      "t": "mc",
+      "q": "Who was the main writer of the Declaration of Independence?",
+      "o": [
+       "Benjamin Franklin",
+       "George Washington",
+       "Thomas Jefferson",
+       "John Adams"
+      ],
+      "a": 2,
+      "why": "Thomas Jefferson wrote the first draft of the Declaration."
+     },
+     {
+      "t": "mc",
+      "q": "Which battles started the Revolutionary War in 1775?",
+      "o": [
+       "Saratoga and Yorktown",
+       "Gettysburg and Antietam",
+       "Trenton and Saratoga",
+       "Lexington and Concord"
+      ],
+      "a": 3,
+      "why": "The first shots were fired at Lexington and Concord in April 1775."
+     },
+     {
+      "t": "tf",
+      "q": "The Declaration of Independence was adopted in 1789.",
+      "a": false,
+      "why": "It was adopted in 1776; 1789 is when the new government under the Constitution began."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stamp Act",
+        "Tax on printed paper"
+       ],
+       [
+        "Boston Tea Party",
+        "Dumping tea into the harbor"
+       ],
+       [
+        "Minutemen",
+        "Colonial militia ready fast"
+       ],
+       [
+        "Loyalist",
+        "Colonist who backed Britain"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Jamestown founded",
+        1607
+       ],
+       [
+        "Pilgrims land at Plymouth",
+        1620
+       ],
+       [
+        "Declaration of Independence signed",
+        1776
+       ],
+       [
+        "British surrender at Yorktown",
+        1781
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "A New Nation",
+    "period": "1783-1850",
+    "learn": [
+     {
+      "h": "Writing the Constitution",
+      "b": "The Articles of Confederation gave the national government too little power. In 1787 leaders wrote the Constitution, which made a stronger government with three branches. The Bill of Rights added ten amendments."
+     },
+     {
+      "h": "Growing bigger",
+      "b": "In 1803 the US bought the Louisiana Purchase from France, doubling its size. Many Americans believed in Manifest Destiny, the idea that the nation should stretch to the Pacific."
+     },
+     {
+      "h": "Costs of expansion",
+      "b": "Cotton farming grew after the cotton gin, and it increased slavery in the South. The Indian Removal Act of 1830 led to the Trail of Tears, when Native Americans were forced from their homelands."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many branches of government does the Constitution create?",
+      "o": [
+       "Two",
+       "Three",
+       "Four",
+       "Five"
+      ],
+      "a": 1,
+      "why": "Legislative, executive, and judicial branches."
+     },
+     {
+      "t": "mc",
+      "q": "From which country did the US buy the Louisiana Territory in 1803?",
+      "o": [
+       "Spain",
+       "Britain",
+       "Mexico",
+       "France"
+      ],
+      "a": 3,
+      "why": "Napoleon's France sold the land for about 15 million dollars."
+     },
+     {
+      "t": "mc",
+      "q": "What is the Bill of Rights?",
+      "o": [
+       "The first ten amendments to the Constitution",
+       "A tax law",
+       "The opening of the Constitution",
+       "A treaty that ended a war"
+      ],
+      "a": 0,
+      "why": "It protects basic freedoms like speech and religion."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Trail of Tears?",
+      "o": [
+       "A Civil War march",
+       "A Gold Rush route to California",
+       "Forced removal of Native Americans from the Southeast",
+       "The Pilgrims' voyage"
+      ],
+      "a": 2,
+      "why": "Cherokee and other nations were forced to move west in the 1830s."
+     },
+     {
+      "t": "tf",
+      "q": "The Articles of Confederation created a very strong central government.",
+      "a": false,
+      "why": "It was weak, which is why the Constitution replaced it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Federalist",
+        "Backed a strong national government"
+       ],
+       [
+        "Manifest Destiny",
+        "Belief the US should reach the Pacific"
+       ],
+       [
+        "Cotton gin",
+        "Machine that cleaned cotton fast"
+       ],
+       [
+        "Monroe Doctrine",
+        "Warned Europe to stay out of the Americas"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Constitution signed",
+        1787
+       ],
+       [
+        "Louisiana Purchase",
+        1803
+       ],
+       [
+        "War of 1812 begins",
+        1812
+       ],
+       [
+        "Indian Removal Act",
+        1830
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Civil War and Reconstruction",
+    "period": "1850-1877",
+    "learn": [
+     {
+      "h": "A divided country",
+      "b": "The North and South argued over slavery, especially in new western lands. After Abraham Lincoln won the 1860 election, Southern states seceded, or left the Union, and formed the Confederacy."
+     },
+     {
+      "h": "The war",
+      "b": "The war began at Fort Sumter in 1861. Lincoln's Emancipation Proclamation in 1863 declared enslaved people in Confederate states free. The Union won a key battle at Gettysburg, Pennsylvania, and the war ended in 1865."
+     },
+     {
+      "h": "Reconstruction",
+      "b": "After the war, Reconstruction tried to rebuild the South and bring its states back. The 13th Amendment ended slavery, the 14th gave citizenship to people born in the US, and the 15th protected the right of Black men to vote."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who was the US president during the Civil War?",
+      "o": [
+       "Andrew Jackson",
+       "Abraham Lincoln",
+       "Ulysses Grant",
+       "James Madison"
+      ],
+      "a": 1,
+      "why": "Abraham Lincoln led the Union from 1861 to 1865."
+     },
+     {
+      "t": "mc",
+      "q": "What did the 13th Amendment do?",
+      "o": [
+       "Gave women the vote",
+       "Abolished slavery",
+       "Created an income tax",
+       "Lowered the voting age"
+      ],
+      "a": 1,
+      "why": "It made slavery illegal across the United States."
+     },
+     {
+      "t": "mc",
+      "q": "In which state was the Battle of Gettysburg fought?",
+      "o": [
+       "Virginia",
+       "Maryland",
+       "Pennsylvania",
+       "Georgia"
+      ],
+      "a": 2,
+      "why": "Gettysburg is in Pennsylvania; the Union won there in July 1863."
+     },
+     {
+      "t": "mc",
+      "q": "What was the main goal of Reconstruction?",
+      "o": [
+       "Buy Alaska from Russia",
+       "Build the transcontinental railroad",
+       "End the Mexican War",
+       "Rebuild the South and bring its states back"
+      ],
+      "a": 3,
+      "why": "Reconstruction (1865-1877) rebuilt the South and readmitted its states."
+     },
+     {
+      "t": "tf",
+      "q": "The Emancipation Proclamation of 1863 declared enslaved people free in the Confederate states.",
+      "a": true,
+      "why": "It applied to areas in rebellion against the Union."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Confederacy",
+        "Southern states that left the Union"
+       ],
+       [
+        "Union",
+        "Northern states loyal to the US"
+       ],
+       [
+        "Abolitionist",
+        "Person who wanted to end slavery"
+       ],
+       [
+        "Secession",
+        "Leaving the Union"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Compromise of 1850",
+        1850
+       ],
+       [
+        "Attack on Fort Sumter",
+        1861
+       ],
+       [
+        "Emancipation Proclamation",
+        1863
+       ],
+       [
+        "Lee surrenders at Appomattox",
+        1865
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Modern America",
+    "period": "1877-Today",
+    "learn": [
+     {
+      "h": "Industry and reform",
+      "b": "After 1877 factories, railroads, and cities grew fast, and millions of immigrants arrived. Reformers pushed for change, and the 19th Amendment in 1920 gave women the right to vote."
+     },
+     {
+      "h": "Depression and world war",
+      "b": "The stock market crashed in 1929, starting the Great Depression. President Franklin D. Roosevelt answered with the New Deal. The US joined World War II after Japan attacked Pearl Harbor in 1941."
+     },
+     {
+      "h": "Cold War and civil rights",
+      "b": "After the war, the US and the Soviet Union competed in the Cold War without fighting each other directly. At home, leaders like Martin Luther King Jr. fought segregation, and the Civil Rights Act passed in 1964."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which president created the New Deal?",
+      "o": [
+       "Herbert Hoover",
+       "Franklin D. Roosevelt",
+       "Harry Truman",
+       "Dwight Eisenhower"
+      ],
+      "a": 1,
+      "why": "FDR's New Deal programs fought the Great Depression."
+     },
+     {
+      "t": "mc",
+      "q": "Who were the two main rivals in the Cold War?",
+      "o": [
+       "China and Japan",
+       "Germany and Italy",
+       "The US and the Soviet Union",
+       "Britain and France"
+      ],
+      "a": 2,
+      "why": "The US and the USSR competed for world influence from the late 1940s to 1991."
+     },
+     {
+      "t": "mc",
+      "q": "Who gave the 'I Have a Dream' speech in 1963?",
+      "o": [
+       "Martin Luther King Jr.",
+       "Malcolm X",
+       "Frederick Douglass",
+       "W.E.B. Du Bois"
+      ],
+      "a": 0,
+      "why": "King gave the speech at the March on Washington."
+     },
+     {
+      "t": "mc",
+      "q": "What did the 19th Amendment do?",
+      "o": [
+       "Ended slavery",
+       "Banned alcohol",
+       "Created the income tax",
+       "Gave women the right to vote"
+      ],
+      "a": 3,
+      "why": "It was ratified in 1920."
+     },
+     {
+      "t": "tf",
+      "q": "The US entered World War II after Japan attacked Pearl Harbor.",
+      "a": true,
+      "why": "The attack on December 7, 1941 brought the US into the war."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Great Depression",
+        "1930s economic crisis"
+       ],
+       [
+        "Cold War",
+        "US-Soviet rivalry without direct war"
+       ],
+       [
+        "Segregation",
+        "Forced separation by race"
+       ],
+       [
+        "Apollo 11",
+        "First Moon landing, 1969"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Stock market crash begins Depression",
+        1929
+       ],
+       [
+        "Attack on Pearl Harbor",
+        1941
+       ],
+       [
+        "Civil Rights Act",
+        1964
+       ],
+       [
+        "September 11 attacks",
+        2001
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "hist-world": {
+  "name": "World History",
+  "units": [
+   {
+    "title": "Ancient Civilizations",
+    "period": "Before 500 CE",
+    "learn": [
+     {
+      "h": "River valleys",
+      "b": "The first civilizations grew near rivers. Mesopotamia was between the Tigris and Euphrates rivers, and Egypt grew along the Nile. Rivers gave water and rich farmland."
+     },
+     {
+      "h": "Greece",
+      "b": "Ancient Greece was made of city-states called poleis. Athens developed an early form of democracy, where citizens voted on laws, while Sparta was known for its army."
+     },
+     {
+      "h": "Rome",
+      "b": "Rome began as a republic with a Senate. Julius Caesar's rule and death ended the republic, and Augustus became the first emperor. The Western Roman Empire fell in 476 CE."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Mesopotamia was located between which two rivers?",
+      "o": [
+       "Nile and Congo",
+       "Tigris and Euphrates",
+       "Indus and Ganges",
+       "Yellow and Yangtze"
+      ],
+      "a": 1,
+      "why": "Mesopotamia means 'land between the rivers' in Greek."
+     },
+     {
+      "t": "mc",
+      "q": "What was the writing system of ancient Egypt?",
+      "o": [
+       "Cuneiform",
+       "Runes",
+       "Hieroglyphics",
+       "The Latin alphabet"
+      ],
+      "a": 2,
+      "why": "Egyptians used picture symbols called hieroglyphics."
+     },
+     {
+      "t": "mc",
+      "q": "Which Greek city-state is known for early democracy?",
+      "o": [
+       "Athens",
+       "Sparta",
+       "Troy",
+       "Babylon"
+      ],
+      "a": 0,
+      "why": "Athenian citizens voted directly on laws."
+     },
+     {
+      "t": "mc",
+      "q": "Who was the first emperor of Rome?",
+      "o": [
+       "Julius Caesar",
+       "Nero",
+       "Constantine",
+       "Augustus"
+      ],
+      "a": 3,
+      "why": "Augustus became emperor in 27 BCE."
+     },
+     {
+      "t": "tf",
+      "q": "Ancient Egyptians built the pyramids as tombs for their pharaohs.",
+      "a": true,
+      "why": "Pyramids were royal burial places."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Pharaoh",
+        "Ruler of ancient Egypt"
+       ],
+       [
+        "Polis",
+        "Greek city-state"
+       ],
+       [
+        "Senate",
+        "Roman governing council"
+       ],
+       [
+        "Ziggurat",
+        "Mesopotamian temple tower"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Roman Republic founded",
+        -509
+       ],
+       [
+        "Alexander the Great dies",
+        -323
+       ],
+       [
+        "Julius Caesar assassinated",
+        -44
+       ],
+       [
+        "Western Roman Empire falls",
+        476
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "The Medieval World",
+    "period": "500-1450",
+    "learn": [
+     {
+      "h": "Europe in the Middle Ages",
+      "b": "After Rome fell, Europe used feudalism. Kings gave land to lords, lords gave land to vassals, and peasants called serfs worked the land. The Magna Carta of 1215 limited the English king's power."
+     },
+     {
+      "h": "Empires and trade",
+      "b": "The Byzantine Empire kept Roman traditions with its capital at Constantinople. Islam spread after Muhammad's Hijra in 622. The Silk Road linked China to the Mediterranean, and Mali's ruler Mansa Musa became famous for his wealth."
+     },
+     {
+      "h": "Crisis and change",
+      "b": "The Crusades were Christian military campaigns to control the Holy Land. In the 1340s the Black Death, a plague spread by fleas on rats, killed millions in Europe."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In feudalism, what did a lord give to a vassal?",
+      "o": [
+       "Votes",
+       "Ships",
+       "Land",
+       "Printing presses"
+      ],
+      "a": 2,
+      "why": "Vassals received land in return for loyalty and military service."
+     },
+     {
+      "t": "mc",
+      "q": "How was the Black Death spread in Europe?",
+      "o": [
+       "Contaminated bread",
+       "Eating pork",
+       "Spoiled wine",
+       "Fleas carried by rats"
+      ],
+      "a": 3,
+      "why": "Plague bacteria passed to people through fleas on rats."
+     },
+     {
+      "t": "mc",
+      "q": "The Silk Road connected China with what region?",
+      "o": [
+       "The Americas",
+       "Europe and the Mediterranean",
+       "Australia",
+       "Antarctica"
+      ],
+      "a": 1,
+      "why": "Goods like silk and spices traveled between Asia and Europe."
+     },
+     {
+      "t": "mc",
+      "q": "What was the capital of the Byzantine Empire?",
+      "o": [
+       "Rome",
+       "Athens",
+       "Constantinople",
+       "Alexandria"
+      ],
+      "a": 2,
+      "why": "Constantinople is modern Istanbul."
+     },
+     {
+      "t": "tf",
+      "q": "The Magna Carta of 1215 limited the power of the English king.",
+      "a": true,
+      "why": "It said even the king had to obey the law."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Crusades",
+        "Campaigns to control the Holy Land"
+       ],
+       [
+        "Samurai",
+        "Japanese warrior class"
+       ],
+       [
+        "Mansa Musa",
+        "Wealthy ruler of Mali"
+       ],
+       [
+        "Serf",
+        "Peasant tied to the land"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Muhammad's Hijra to Medina",
+        622
+       ],
+       [
+        "Charlemagne crowned emperor",
+        800
+       ],
+       [
+        "Norman conquest of England",
+        1066
+       ],
+       [
+        "Black Death reaches Europe",
+        1347
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Renaissance and Exploration",
+    "period": "1450-1800",
+    "learn": [
+     {
+      "h": "The Renaissance",
+      "b": "The Renaissance began in Italy and means 'rebirth.' Artists and thinkers like Leonardo da Vinci studied ancient Greece and Rome. The printing press helped ideas spread quickly."
+     },
+     {
+      "h": "Exploration and Reformation",
+      "b": "European explorers like Columbus crossed the Atlantic, starting the Columbian Exchange of plants, animals, and diseases. In 1517 Martin Luther's 95 Theses began the Reformation, which split Western Christianity."
+     },
+     {
+      "h": "Science and Enlightenment",
+      "b": "In the Scientific Revolution, Copernicus said the Sun is the center of the solar system. Enlightenment thinkers then stressed reason and individual rights, which inspired revolutions such as the French Revolution."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where did the Renaissance begin?",
+      "o": [
+       "France",
+       "Italy",
+       "England",
+       "Spain"
+      ],
+      "a": 1,
+      "why": "Italian cities like Florence were its early centers."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote the 95 Theses in 1517?",
+      "o": [
+       "John Calvin",
+       "Henry VIII",
+       "Johannes Gutenberg",
+       "Martin Luther"
+      ],
+      "a": 3,
+      "why": "Luther criticized Church practices, starting the Reformation."
+     },
+     {
+      "t": "mc",
+      "q": "Which idea did Copernicus propose?",
+      "o": [
+       "The Earth is the center of the universe",
+       "The Sun is the center of the solar system",
+       "The Earth is flat",
+       "The Moon makes its own light"
+      ],
+      "a": 1,
+      "why": "Copernicus put the Sun at the center, challenging the old view."
+     },
+     {
+      "t": "mc",
+      "q": "What did Enlightenment thinkers stress?",
+      "o": [
+       "Obedience to kings",
+       "Tradition above all",
+       "Reason and individual rights",
+       "Rule by the church"
+      ],
+      "a": 2,
+      "why": "Thinkers like Locke and Voltaire valued reason and rights."
+     },
+     {
+      "t": "tf",
+      "q": "The Columbian Exchange moved plants, animals, and diseases between the Americas and the Old World.",
+      "a": true,
+      "why": "Potatoes, horses, and diseases such as smallpox all crossed the Atlantic."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Renaissance",
+        "Rebirth of art and learning"
+       ],
+       [
+        "Reformation",
+        "Protest movement against Church practices"
+       ],
+       [
+        "Absolutism",
+        "King holds total power"
+       ],
+       [
+        "Enlightenment",
+        "Age of reason and rights"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Columbus reaches the Americas",
+        1492
+       ],
+       [
+        "Luther's 95 Theses",
+        1517
+       ],
+       [
+        "Spanish Armada defeated",
+        1588
+       ],
+       [
+        "French Revolution begins",
+        1789
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "The Modern World",
+    "period": "1800-Today",
+    "learn": [
+     {
+      "h": "Industry and empires",
+      "b": "The Industrial Revolution began in Great Britain with machines and factories. Strong countries practiced imperialism, taking control of lands in Africa and Asia, which led to colonial rule and later independence movements."
+     },
+     {
+      "h": "World wars",
+      "b": "World War I began in 1914 after the assassination of Archduke Franz Ferdinand. World War II ended in 1945, after Nazi Germany murdered six million Jews in the Holocaust. The United Nations was founded in 1945."
+     },
+     {
+      "h": "After 1945",
+      "b": "The Cold War divided the world between the US and the Soviet Union. Many colonies became independent, such as India under Gandhi's nonviolent leadership. The Berlin Wall fell in 1989, and the USSR ended in 1991."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where did the Industrial Revolution begin?",
+      "o": [
+       "Germany",
+       "Great Britain",
+       "Japan",
+       "Russia"
+      ],
+      "a": 1,
+      "why": "Britain had coal, iron, and early factories."
+     },
+     {
+      "t": "mc",
+      "q": "Which event triggered World War I?",
+      "o": [
+       "Invasion of Poland",
+       "Sinking of the Titanic",
+       "Assassination of Archduke Franz Ferdinand",
+       "Russian Revolution"
+      ],
+      "a": 2,
+      "why": "His killing in 1914 pulled alliances into war."
+     },
+     {
+      "t": "mc",
+      "q": "Gandhi led a nonviolent movement for independence from which country?",
+      "o": [
+       "Portugal",
+       "France",
+       "The Netherlands",
+       "Britain"
+      ],
+      "a": 3,
+      "why": "India gained independence from Britain in 1947."
+     },
+     {
+      "t": "mc",
+      "q": "Roughly how many Jews were murdered in the Holocaust?",
+      "o": [
+       "One million",
+       "Six million",
+       "Fifty thousand",
+       "Twenty million"
+      ],
+      "a": 1,
+      "why": "About six million Jews were killed by Nazi Germany."
+     },
+     {
+      "t": "tf",
+      "q": "The Cold War was a period of direct fighting between the US and the USSR.",
+      "a": false,
+      "why": "They competed through arms races and proxy wars but never fought each other directly."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Imperialism",
+        "One country controlling others"
+       ],
+       [
+        "Apartheid",
+        "South African system of racial separation"
+       ],
+       [
+        "United Nations",
+        "International group founded in 1945"
+       ],
+       [
+        "Nationalism",
+        "Strong pride in one's nation"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "World War I begins",
+        1914
+       ],
+       [
+        "Russian Revolution",
+        1917
+       ],
+       [
+        "World War II ends",
+        1945
+       ],
+       [
+        "Berlin Wall falls",
+        1989
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "civics": {
+  "name": "US Government & Civics",
+  "units": [
+   {
+    "title": "Foundations of Government",
+    "period": "Founding Ideas",
+    "learn": [
+     {
+      "h": "The Constitution",
+      "b": "The Constitution is the supreme law of the United States. It begins with 'We the People,' which shows that power comes from the people. This idea is called popular sovereignty."
+     },
+     {
+      "h": "Separating power",
+      "b": "To stop any one group from getting too strong, power is divided into three branches: legislative, executive, and judicial. Each branch can limit the others, which is called checks and balances."
+     },
+     {
+      "h": "Federalism and amendments",
+      "b": "In federalism, power is shared between the national government and state governments. The Constitution can be changed by amendments. The first ten amendments are the Bill of Rights."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the first three words of the Constitution?",
+      "o": [
+       "All men are",
+       "Life, Liberty, and",
+       "We the People",
+       "In God We"
+      ],
+      "a": 2,
+      "why": "The Preamble opens with 'We the People.'"
+     },
+     {
+      "t": "mc",
+      "q": "What does popular sovereignty mean?",
+      "o": [
+       "A king holds power",
+       "Power comes from the people",
+       "Courts make all laws",
+       "The army rules"
+      ],
+      "a": 1,
+      "why": "In a republic, government gets its authority from the people."
+     },
+     {
+      "t": "mc",
+      "q": "What does separation of powers divide?",
+      "o": [
+       "Democrats and Republicans",
+       "North, South, East, and West",
+       "Federal, state, and local levels",
+       "Legislative, executive, and judicial branches"
+      ],
+      "a": 3,
+      "why": "It splits government power among three branches."
+     },
+     {
+      "t": "mc",
+      "q": "How many amendments are in the Bill of Rights?",
+      "o": [
+       "Ten",
+       "Five",
+       "Twenty",
+       "Twenty-seven"
+      ],
+      "a": 0,
+      "why": "The Bill of Rights is the first ten amendments."
+     },
+     {
+      "t": "tf",
+      "q": "The Constitution can be changed through amendments.",
+      "a": true,
+      "why": "Article V explains how to amend it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Constitution",
+        "Supreme law of the land"
+       ],
+       [
+        "Amendment",
+        "Change to the Constitution"
+       ],
+       [
+        "Federalism",
+        "Power shared by nation and states"
+       ],
+       [
+        "Checks and balances",
+        "Each branch limits the others"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in the order they happened",
+      "items": [
+       [
+        "Declaration of Independence",
+        1
+       ],
+       [
+        "Articles of Confederation",
+        2
+       ],
+       [
+        "Constitution written",
+        3
+       ],
+       [
+        "Bill of Rights added",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "The Three Branches",
+    "period": "How Government Works",
+    "learn": [
+     {
+      "h": "Congress",
+      "b": "Congress is the legislative branch and makes federal laws. It has two parts: the House of Representatives, based on state population, and the Senate, with two senators from each state."
+     },
+     {
+      "h": "President and courts",
+      "b": "The President leads the executive branch, carries out laws, and is commander in chief of the armed forces. The President can veto a bill, but Congress can override a veto with a two-thirds vote in both houses."
+     },
+     {
+      "h": "The Supreme Court",
+      "b": "The judicial branch includes the Supreme Court. It decides whether laws follow the Constitution, a power called judicial review."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which branch makes federal laws?",
+      "o": [
+       "The President",
+       "The Supreme Court",
+       "Congress",
+       "The Cabinet"
+      ],
+      "a": 2,
+      "why": "Article I gives lawmaking power to Congress."
+     },
+     {
+      "t": "mc",
+      "q": "How many senators does each state have?",
+      "o": [
+       "One",
+       "Two",
+       "Three",
+       "It depends on population"
+      ],
+      "a": 1,
+      "why": "Every state has two senators, so there are 100 in total."
+     },
+     {
+      "t": "mc",
+      "q": "Who is commander in chief of the armed forces?",
+      "o": [
+       "The President",
+       "The Secretary of Defense",
+       "The Speaker of the House",
+       "The Chief Justice"
+      ],
+      "a": 0,
+      "why": "The Constitution makes the President commander in chief."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of the Supreme Court?",
+      "o": [
+       "Command the military",
+       "Write the budget",
+       "Elect the President",
+       "Decide if laws follow the Constitution"
+      ],
+      "a": 3,
+      "why": "This power is called judicial review."
+     },
+     {
+      "t": "tf",
+      "q": "Congress can override a presidential veto with a two-thirds vote in both houses.",
+      "a": true,
+      "why": "A two-thirds vote in the House and Senate overrides a veto."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Legislative",
+        "Makes the laws"
+       ],
+       [
+        "Executive",
+        "Carries out the laws"
+       ],
+       [
+        "Judicial",
+        "Interprets the laws"
+       ],
+       [
+        "Veto",
+        "President rejects a bill"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of how a bill becomes law in order",
+      "items": [
+       [
+        "A member of Congress introduces a bill",
+        1
+       ],
+       [
+        "The House and Senate both pass it",
+        2
+       ],
+       [
+        "The President signs it",
+        3
+       ],
+       [
+        "It becomes law",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Rights and Responsibilities",
+    "period": "Citizenship",
+    "learn": [
+     {
+      "h": "Your basic rights",
+      "b": "The First Amendment protects freedom of speech, religion, press, assembly, and petition. The Fourth Amendment protects people from unreasonable searches. Due process means the government must follow fair legal steps."
+     },
+     {
+      "h": "Voting rights",
+      "b": "Over time, amendments widened voting rights. The 19th gave women the vote and the 26th set the voting age at 18."
+     },
+     {
+      "h": "Being a citizen",
+      "b": "Citizens have duties such as obeying laws, paying taxes, and serving on a jury when called. People born elsewhere can become citizens through naturalization."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which freedom is protected by the First Amendment?",
+      "o": [
+       "Right to bear arms",
+       "Freedom of speech",
+       "Right to a speedy trial",
+       "Protection from soldiers in homes"
+      ],
+      "a": 1,
+      "why": "The First Amendment protects speech, religion, press, assembly, and petition."
+     },
+     {
+      "t": "mc",
+      "q": "Which amendment protects against unreasonable searches?",
+      "o": [
+       "First",
+       "Second",
+       "Fourth",
+       "Tenth"
+      ],
+      "a": 2,
+      "why": "The Fourth Amendment requires warrants based on probable cause."
+     },
+     {
+      "t": "mc",
+      "q": "What voting age did the 26th Amendment set?",
+      "o": [
+       "16",
+       "21",
+       "25",
+       "18"
+      ],
+      "a": 3,
+      "why": "It lowered the voting age from 21 to 18 in 1971."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a duty of US citizens?",
+      "o": [
+       "Serving on a jury when called",
+       "Owning property",
+       "Joining a political party",
+       "Running for office"
+      ],
+      "a": 0,
+      "why": "Jury service is a civic duty; the other choices are optional."
+     },
+     {
+      "t": "tf",
+      "q": "The Second Amendment protects freedom of the press.",
+      "a": false,
+      "why": "Freedom of the press is in the First Amendment."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Free speech",
+        "Right to express ideas"
+       ],
+       [
+        "Due process",
+        "Fair legal procedures"
+       ],
+       [
+        "Jury",
+        "Citizens who decide a verdict"
+       ],
+       [
+        "Naturalization",
+        "Process of becoming a citizen"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to become a citizen in order",
+      "items": [
+       [
+        "Become a lawful permanent resident",
+        1
+       ],
+       [
+        "Live in the US for several years",
+        2
+       ],
+       [
+        "Apply and pass the citizenship test",
+        3
+       ],
+       [
+        "Take the Oath of Allegiance",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Elections and Local Government",
+    "period": "Participation",
+    "learn": [
+     {
+      "h": "Electing a President",
+      "b": "Candidates first compete in primaries and caucuses, then are chosen at party conventions. Everyone votes in the general election in November. The Electoral College has 538 electors, and a candidate needs 270 to win."
+     },
+     {
+      "h": "State government",
+      "b": "Each state has its own constitution and a governor who leads the executive branch. States run most elections and many services."
+     },
+     {
+      "h": "Local government",
+      "b": "Cities, towns, and counties are local governments. A mayor leads many cities, and local governments often run schools, police, and fire services. Representatives in the US House serve two-year terms."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many electoral votes are needed to win the presidency?",
+      "o": [
+       "218",
+       "538",
+       "270",
+       "435"
+      ],
+      "a": 2,
+      "why": "A majority of 538 electors is 270."
+     },
+     {
+      "t": "mc",
+      "q": "Who is the chief executive of a state?",
+      "o": [
+       "The governor",
+       "The mayor",
+       "The chief justice",
+       "The speaker"
+      ],
+      "a": 0,
+      "why": "Each state is led by a governor."
+     },
+     {
+      "t": "mc",
+      "q": "Which level of government usually runs local schools and police?",
+      "o": [
+       "Only the President",
+       "The Supreme Court",
+       "The United Nations",
+       "Local governments"
+      ],
+      "a": 3,
+      "why": "School districts, cities, and counties run these services."
+     },
+     {
+      "t": "mc",
+      "q": "How long is a term for a US Representative?",
+      "o": [
+       "Four years",
+       "Two years",
+       "Six years",
+       "Life"
+      ],
+      "a": 1,
+      "why": "House members face election every two years."
+     },
+     {
+      "t": "tf",
+      "q": "The Electoral College has 100 electors.",
+      "a": false,
+      "why": "It has 538 electors."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Ballot",
+        "Form or screen used to vote"
+       ],
+       [
+        "Governor",
+        "Chief executive of a state"
+       ],
+       [
+        "Mayor",
+        "Head of a city government"
+       ],
+       [
+        "Primary",
+        "Election to choose party candidates"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the presidential election steps in order",
+      "items": [
+       [
+        "Primaries and caucuses",
+        1
+       ],
+       [
+        "National conventions",
+        2
+       ],
+       [
+        "General election in November",
+        3
+       ],
+       [
+        "Electoral College votes",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "geography": {
+  "name": "World Geography",
+  "units": [
+   {
+    "title": "Maps and Earth Basics",
+    "period": "Map Skills",
+    "learn": [
+     {
+      "h": "Latitude and longitude",
+      "b": "Latitude lines run east-west and measure distance north or south of the equator. Longitude lines run north-south and measure distance east or west of the prime meridian, which passes through Greenwich, England."
+     },
+     {
+      "h": "Hemispheres and continents",
+      "b": "The equator splits Earth into Northern and Southern Hemispheres. There are seven continents: Africa, Antarctica, Asia, Australia, Europe, North America, and South America."
+     },
+     {
+      "h": "Reading a map",
+      "b": "A legend explains the symbols on a map. A scale shows how map distance matches real distance. The Pacific is the largest ocean."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which lines measure distance north or south of the equator?",
+      "o": [
+       "Longitude",
+       "Latitude",
+       "Meridians",
+       "Time zones"
+      ],
+      "a": 1,
+      "why": "Latitude measures north-south position."
+     },
+     {
+      "t": "mc",
+      "q": "The prime meridian passes through which place?",
+      "o": [
+       "Paris",
+       "Cairo",
+       "Greenwich, England",
+       "Rome"
+      ],
+      "a": 2,
+      "why": "Greenwich is at 0 degrees longitude."
+     },
+     {
+      "t": "mc",
+      "q": "How many continents are there?",
+      "o": [
+       "Five",
+       "Six",
+       "Eight",
+       "Seven"
+      ],
+      "a": 3,
+      "why": "The common model counts seven continents."
+     },
+     {
+      "t": "mc",
+      "q": "What does the equator divide Earth into?",
+      "o": [
+       "Northern and Southern Hemispheres",
+       "Eastern and Western Hemispheres",
+       "Land and water",
+       "Tropics and poles"
+      ],
+      "a": 0,
+      "why": "The equator is 0 degrees latitude."
+     },
+     {
+      "t": "tf",
+      "q": "The Pacific Ocean is the largest ocean on Earth.",
+      "a": true,
+      "why": "It covers about one third of Earth's surface."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Latitude",
+        "Distance north or south of equator"
+       ],
+       [
+        "Longitude",
+        "Distance east or west of prime meridian"
+       ],
+       [
+        "Scale",
+        "Map distance versus real distance"
+       ],
+       [
+        "Legend",
+        "Key to map symbols"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these oceans from largest to smallest",
+      "items": [
+       [
+        "Pacific",
+        1
+       ],
+       [
+        "Atlantic",
+        2
+       ],
+       [
+        "Indian",
+        3
+       ],
+       [
+        "Arctic",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Landforms and Climate",
+    "period": "Physical Geography",
+    "learn": [
+     {
+      "h": "Landforms",
+      "b": "A peninsula is land surrounded by water on three sides. A plateau is high, flat land. A delta forms where a river meets the sea. An archipelago is a group of islands. Mount Everest is the highest mountain above sea level."
+     },
+     {
+      "h": "Climate and weather",
+      "b": "Weather is what the air is like today. Climate is the usual weather pattern over many years. Places near the equator are usually warm, and places near the poles are cold."
+     },
+     {
+      "h": "Biomes and Earth's layers",
+      "b": "A biome is a large natural region, such as rainforest, desert, or tundra. Tundra has permanently frozen ground. Earth has four layers: crust, mantle, outer core, and inner core."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the highest mountain above sea level?",
+      "o": [
+       "K2",
+       "Mount Everest",
+       "Denali",
+       "Kilimanjaro"
+      ],
+      "a": 1,
+      "why": "Everest is about 8,849 meters high."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the largest hot desert in the world?",
+      "o": [
+       "Gobi",
+       "Kalahari",
+       "Sahara",
+       "Atacama"
+      ],
+      "a": 2,
+      "why": "The Sahara in Africa is the largest hot desert."
+     },
+     {
+      "t": "mc",
+      "q": "What is climate?",
+      "o": [
+       "Today's temperature",
+       "A storm that lasts days",
+       "Tomorrow's forecast",
+       "The usual weather pattern over many years"
+      ],
+      "a": 3,
+      "why": "Climate is long-term; weather is short-term."
+     },
+     {
+      "t": "mc",
+      "q": "Which biome has permanently frozen ground?",
+      "o": [
+       "Tundra",
+       "Savanna",
+       "Rainforest",
+       "Desert"
+      ],
+      "a": 0,
+      "why": "Tundra has permafrost beneath the surface."
+     },
+     {
+      "t": "tf",
+      "q": "Tropical rainforests receive very little rainfall.",
+      "a": false,
+      "why": "Rainforests are among the wettest places on Earth."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Peninsula",
+        "Land with water on three sides"
+       ],
+       [
+        "Plateau",
+        "High flat land"
+       ],
+       [
+        "Delta",
+        "Land formed at a river's mouth"
+       ],
+       [
+        "Archipelago",
+        "Group of islands"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Earth's layers in order from the surface to the center",
+      "items": [
+       [
+        "Crust",
+        1
+       ],
+       [
+        "Mantle",
+        2
+       ],
+       [
+        "Outer core",
+        3
+       ],
+       [
+        "Inner core",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "People and Places",
+    "period": "Human Geography",
+    "learn": [
+     {
+      "h": "Population",
+      "b": "India and China have the largest populations in the world. Population density means how many people live in a certain area. Many people now live in cities, a trend called urbanization."
+     },
+     {
+      "h": "Migration",
+      "b": "Migration is moving from one place to live in another. Push factors, like war or famine, drive people away. Pull factors, like jobs or safety, attract them. An emigrant leaves a country and an immigrant enters one."
+     },
+     {
+      "h": "Culture",
+      "b": "Culture means the customs, beliefs, and language a group shares. Mandarin Chinese has the most native speakers of any language. A capital city is the seat of government and is not always the largest city."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which two countries have the largest populations?",
+      "o": [
+       "United States and Brazil",
+       "Russia and Japan",
+       "India and China",
+       "Nigeria and Indonesia"
+      ],
+      "a": 2,
+      "why": "India and China each have more than 1.4 billion people."
+     },
+     {
+      "t": "mc",
+      "q": "What is urbanization?",
+      "o": [
+       "Growth of farmland",
+       "Decline of trade",
+       "Moving to remote villages",
+       "Growth of cities as more people live there"
+      ],
+      "a": 3,
+      "why": "Urbanization means a rising share of people living in cities."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of a push factor in migration?",
+      "o": [
+       "A job offer abroad",
+       "War in the home country",
+       "Good schools overseas",
+       "Family living abroad"
+      ],
+      "a": 1,
+      "why": "Push factors drive people away from their home."
+     },
+     {
+      "t": "mc",
+      "q": "Which language has the most native speakers?",
+      "o": [
+       "Mandarin Chinese",
+       "English",
+       "Hindi",
+       "Arabic"
+      ],
+      "a": 0,
+      "why": "Mandarin has more native speakers than any other language."
+     },
+     {
+      "t": "tf",
+      "q": "A country's capital city is always its largest city.",
+      "a": false,
+      "why": "For example, Canberra is Australia's capital, but Sydney is larger."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Immigrant",
+        "Person moving into a country"
+       ],
+       [
+        "Emigrant",
+        "Person leaving a country"
+       ],
+       [
+        "Culture",
+        "Shared customs and beliefs"
+       ],
+       [
+        "Population density",
+        "People per area"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these settlements from smallest to largest",
+      "items": [
+       [
+        "Village",
+        1
+       ],
+       [
+        "Town",
+        2
+       ],
+       [
+        "City",
+        3
+       ],
+       [
+        "Megacity",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Regions of the World",
+    "period": "Countries and Capitals",
+    "learn": [
+     {
+      "h": "Big countries and rivers",
+      "b": "Russia is the largest country by area, followed by Canada and China. The Nile flows through Egypt and the Amazon flows through Brazil."
+     },
+     {
+      "h": "Capitals",
+      "b": "Every country has a capital. Tokyo is the capital of Japan, Cairo of Egypt, Ottawa of Canada, Nairobi of Kenya, and Brasilia of Brazil."
+     },
+     {
+      "h": "Continents and countries",
+      "b": "Africa has the most countries of any continent. Australia is both a country and a continent. Oslo is far north, Rome is in the middle latitudes, Nairobi is near the equator, and Cape Town is in the far south."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the capital of Brazil?",
+      "o": [
+       "Rio de Janeiro",
+       "Sao Paulo",
+       "Brasilia",
+       "Buenos Aires"
+      ],
+      "a": 2,
+      "why": "Brasilia became the capital in 1960."
+     },
+     {
+      "t": "mc",
+      "q": "Which continent has the most countries?",
+      "o": [
+       "Asia",
+       "Africa",
+       "Europe",
+       "South America"
+      ],
+      "a": 1,
+      "why": "Africa has 54 countries."
+     },
+     {
+      "t": "mc",
+      "q": "Which river flows through Egypt?",
+      "o": [
+       "Amazon",
+       "Danube",
+       "Ganges",
+       "Nile"
+      ],
+      "a": 3,
+      "why": "The Nile runs north through Egypt to the Mediterranean."
+     },
+     {
+      "t": "mc",
+      "q": "Which country is the largest by area?",
+      "o": [
+       "Russia",
+       "Canada",
+       "China",
+       "Brazil"
+      ],
+      "a": 0,
+      "why": "Russia covers more than 17 million square kilometers."
+     },
+     {
+      "t": "tf",
+      "q": "Australia is both a country and a continent.",
+      "a": true,
+      "why": "The country of Australia covers most of the Australian continent."
+     },
+     {
+      "t": "match",
+      "q": "Match each country to its capital",
+      "pairs": [
+       [
+        "Japan",
+        "Tokyo"
+       ],
+       [
+        "Egypt",
+        "Cairo"
+       ],
+       [
+        "Canada",
+        "Ottawa"
+       ],
+       [
+        "Kenya",
+        "Nairobi"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cities in order from north to south",
+      "items": [
+       [
+        "Oslo",
+        1
+       ],
+       [
+        "Rome",
+        2
+       ],
+       [
+        "Nairobi",
+        3
+       ],
+       [
+        "Cape Town",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "psych": {
+  "name": "Psychology",
+  "units": [
+   {
+    "title": "What Is Psychology?",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "The science of the mind",
+      "b": "Psychology is the scientific study of behavior and mental processes. Wilhelm Wundt opened the first psychology lab in 1879. Today psychologists study things like memory, emotions, and relationships."
+     },
+     {
+      "h": "Research methods",
+      "b": "Surveys ask many people questions. A case study looks deeply at one person. In an experiment, researchers assign people randomly to groups, so they can test cause and effect."
+     },
+     {
+      "h": "Correlation",
+      "b": "A correlation means two things are related. It does not prove that one causes the other. Only a well-designed experiment can show cause and effect."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Psychology is the scientific study of what?",
+      "o": [
+       "Behavior and mental processes",
+       "Only dreams",
+       "Only the brain's size",
+       "Human history"
+      ],
+      "a": 0,
+      "why": "That is the standard definition of psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Who opened the first psychology lab in 1879?",
+      "o": [
+       "Sigmund Freud",
+       "Wilhelm Wundt",
+       "B.F. Skinner",
+       "Carl Rogers"
+      ],
+      "a": 1,
+      "why": "Wundt's lab in Leipzig is seen as the start of modern psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Which method can show cause and effect?",
+      "o": [
+       "Survey",
+       "Case study",
+       "Experiment",
+       "Naturalistic observation"
+      ],
+      "a": 2,
+      "why": "Experiments control variables and use random assignment."
+     },
+     {
+      "t": "mc",
+      "q": "What does a correlation tell us?",
+      "o": [
+       "One thing causes the other",
+       "The two things are opposites",
+       "The data is false",
+       "Two things are related, but one may not cause the other"
+      ],
+      "a": 3,
+      "why": "Correlation does not prove causation."
+     },
+     {
+      "t": "tf",
+      "q": "A correlation proves that one variable causes the other.",
+      "a": false,
+      "why": "A third factor may explain the link."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Hypothesis",
+        "Testable prediction"
+       ],
+       [
+        "Variable",
+        "Factor that can change"
+       ],
+       [
+        "Survey",
+        "Questions given to many people"
+       ],
+       [
+        "Case study",
+        "In-depth look at one person"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the scientific method in order",
+      "items": [
+       [
+        "Ask a question",
+        1
+       ],
+       [
+        "Form a hypothesis",
+        2
+       ],
+       [
+        "Collect data",
+        3
+       ],
+       [
+        "Draw conclusions",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Brain and Behavior",
+    "period": "Biology and the Mind",
+    "learn": [
+     {
+      "h": "Neurons",
+      "b": "A neuron is a nerve cell. It receives signals through dendrites, passes them down the axon, and releases chemical messengers called neurotransmitters into the synapse, the small gap before the next neuron."
+     },
+     {
+      "h": "Brain parts",
+      "b": "The cerebellum controls balance and coordination. The hippocampus helps form new memories. The amygdala handles fear and emotion. The frontal lobe helps with planning and decisions."
+     },
+     {
+      "h": "Two sides",
+      "b": "The brain has two hemispheres. The left hemisphere mostly controls the right side of the body, and the right hemisphere mostly controls the left side."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which brain part helps control balance and coordination?",
+      "o": [
+       "Cerebrum",
+       "Cerebellum",
+       "Hippocampus",
+       "Amygdala"
+      ],
+      "a": 1,
+      "why": "The cerebellum fine-tunes movement and balance."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of the hippocampus?",
+      "o": [
+       "Controlling hunger",
+       "Seeing colors",
+       "Forming new memories",
+       "Breathing"
+      ],
+      "a": 2,
+      "why": "Damage to the hippocampus makes it hard to form new memories."
+     },
+     {
+      "t": "mc",
+      "q": "What are neurotransmitters?",
+      "o": [
+       "Bones in the skull",
+       "Brain cells that protect neurons",
+       "Electric wires",
+       "Chemical messengers between neurons"
+      ],
+      "a": 3,
+      "why": "They cross the synapse to carry signals."
+     },
+     {
+      "t": "mc",
+      "q": "Which brain part is most linked to fear and emotion?",
+      "o": [
+       "Amygdala",
+       "Cerebellum",
+       "Occipital lobe",
+       "Brain stem"
+      ],
+      "a": 0,
+      "why": "The amygdala processes fear and other strong emotions."
+     },
+     {
+      "t": "tf",
+      "q": "The right side of the brain mostly controls the left side of the body.",
+      "a": true,
+      "why": "Each hemisphere controls the opposite side of the body."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Neuron",
+        "Nerve cell"
+       ],
+       [
+        "Synapse",
+        "Gap between neurons"
+       ],
+       [
+        "Amygdala",
+        "Processes fear and emotion"
+       ],
+       [
+        "Frontal lobe",
+        "Planning and decisions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a nerve signal in order",
+      "items": [
+       [
+        "Dendrites receive the signal",
+        1
+       ],
+       [
+        "Cell body processes it",
+        2
+       ],
+       [
+        "Signal travels down the axon",
+        3
+       ],
+       [
+        "Axon terminals release neurotransmitters",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Learning and Memory",
+    "period": "How We Learn",
+    "learn": [
+     {
+      "h": "Conditioning",
+      "b": "Classical conditioning is learning by association, as in Pavlov's dogs, who learned that a bell meant food. Operant conditioning is learning from consequences. A reward after a behavior is positive reinforcement."
+     },
+     {
+      "h": "How memory works",
+      "b": "Memory has three jobs: encoding (getting information in), storage (keeping it), and retrieval (getting it out). Short-term memory holds about 7 items. Long-term memory is very large."
+     },
+     {
+      "h": "Better studying",
+      "b": "Spacing your study over several days helps you remember more than cramming. Testing yourself also strengthens memory."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Pavlov's dogs showed which kind of learning?",
+      "o": [
+       "Operant conditioning",
+       "Classical conditioning",
+       "Observational learning",
+       "Insight learning"
+      ],
+      "a": 1,
+      "why": "They learned to link a bell with food."
+     },
+     {
+      "t": "mc",
+      "q": "A dog gets a treat after it sits. This is an example of what?",
+      "o": [
+       "Punishment",
+       "Extinction",
+       "Positive reinforcement",
+       "Habituation"
+      ],
+      "a": 2,
+      "why": "Adding a reward makes the behavior more likely."
+     },
+     {
+      "t": "mc",
+      "q": "About how many items can short-term memory hold?",
+      "o": [
+       "About 7",
+       "About 70",
+       "An unlimited number",
+       "About 1"
+      ],
+      "a": 0,
+      "why": "Miller's research suggested 7, plus or minus 2."
+     },
+     {
+      "t": "mc",
+      "q": "Which study method best builds long-term memory?",
+      "o": [
+       "Cramming all night",
+       "Reading once",
+       "Only highlighting",
+       "Spacing study over several days"
+      ],
+      "a": 3,
+      "why": "Spaced practice beats cramming for long-term recall."
+     },
+     {
+      "t": "tf",
+      "q": "Long-term memory can only hold a small amount of information.",
+      "a": false,
+      "why": "Long-term memory has no known practical limit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Classical conditioning",
+        "Learning by association"
+       ],
+       [
+        "Operant conditioning",
+        "Learning from consequences"
+       ],
+       [
+        "Encoding",
+        "Getting information into memory"
+       ],
+       [
+        "Retrieval",
+        "Pulling a memory out"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the flow of information through memory in order",
+      "items": [
+       [
+        "Sensory memory",
+        1
+       ],
+       [
+        "Attention",
+        2
+       ],
+       [
+        "Short-term memory",
+        3
+       ],
+       [
+        "Long-term memory",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Development and Social Behavior",
+    "period": "People Over Time",
+    "learn": [
+     {
+      "h": "Stages of growth",
+      "b": "Jean Piaget described four stages of thinking in children: sensorimotor, preoperational, concrete operational, and formal operational. Erik Erikson said people face a social challenge at every stage of life."
+     },
+     {
+      "h": "Needs",
+      "b": "Abraham Maslow said people have a hierarchy of needs. Basic physiological needs like food and sleep come first, then safety, belonging, esteem, and finally self-actualization."
+     },
+     {
+      "h": "Groups",
+      "b": "Conformity means changing your behavior to match a group. Obedience means following an authority. The bystander effect means people are less likely to help when others are present."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which psychologist proposed four stages of cognitive development?",
+      "o": [
+       "Freud",
+       "Piaget",
+       "Pavlov",
+       "Skinner"
+      ],
+      "a": 1,
+      "why": "Piaget described how children's thinking changes with age."
+     },
+     {
+      "t": "mc",
+      "q": "What is at the base of Maslow's hierarchy of needs?",
+      "o": [
+       "Self-actualization",
+       "Esteem",
+       "Safety",
+       "Physiological needs"
+      ],
+      "a": 3,
+      "why": "Basic needs like food and water come first."
+     },
+     {
+      "t": "mc",
+      "q": "What does the bystander effect describe?",
+      "o": [
+       "People help more in large groups",
+       "People always help strangers",
+       "People are less likely to help when others are present",
+       "People only help family"
+      ],
+      "a": 2,
+      "why": "Responsibility is spread across onlookers."
+     },
+     {
+      "t": "mc",
+      "q": "What is conformity?",
+      "o": [
+       "Changing behavior to match a group",
+       "Obeying a direct order",
+       "Helping a stranger",
+       "Blaming others"
+      ],
+      "a": 0,
+      "why": "Asch's line experiments showed people conform to the group."
+     },
+     {
+      "t": "tf",
+      "q": "Erikson proposed that people face a social challenge at each stage of life.",
+      "a": true,
+      "why": "His theory has eight psychosocial stages."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stereotype",
+        "Fixed idea about a group"
+       ],
+       [
+        "Obedience",
+        "Following an authority's orders"
+       ],
+       [
+        "Attachment",
+        "Emotional bond to a caregiver"
+       ],
+       [
+        "Conformity",
+        "Matching a group's behavior"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Piaget's stages in order",
+      "items": [
+       [
+        "Sensorimotor",
+        1
+       ],
+       [
+        "Preoperational",
+        2
+       ],
+       [
+        "Concrete operational",
+        3
+       ],
+       [
+        "Formal operational",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-bio": {
+  "name": "AP Biology",
+  "units": [
+   {
+    "title": "Chemistry of Life and Cells",
+    "period": "Units 1-2",
+    "learn": [
+     {
+      "h": "Water and molecules",
+      "b": "Water is polar, so its molecules form hydrogen bonds. This makes water cohesive and a good solvent. Proteins are built from amino acids, and nucleic acids are built from nucleotides."
+     },
+     {
+      "h": "Cell structures",
+      "b": "Eukaryotic cells have a membrane-bound nucleus; prokaryotes do not. Mitochondria make ATP, ribosomes build proteins, and lysosomes break down waste. The cell membrane controls what enters and leaves."
+     },
+     {
+      "h": "Moving across membranes",
+      "b": "Osmosis is the passive movement of water across a membrane. Active transport uses ATP to move substances against their gradient. A secreted protein travels from the rough ER to the Golgi to a vesicle."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What type of bond holds water molecules together, giving water cohesion?",
+      "o": [
+       "Ionic bonds",
+       "Hydrogen bonds",
+       "Metallic bonds",
+       "Peptide bonds"
+      ],
+      "a": 1,
+      "why": "Polar water molecules attract each other through hydrogen bonds."
+     },
+     {
+      "t": "mc",
+      "q": "What is the monomer of a protein?",
+      "o": [
+       "Nucleotide",
+       "Monosaccharide",
+       "Amino acid",
+       "Fatty acid"
+      ],
+      "a": 2,
+      "why": "Proteins are chains of amino acids."
+     },
+     {
+      "t": "mc",
+      "q": "Which organelle produces most of a cell's ATP?",
+      "o": [
+       "Mitochondrion",
+       "Ribosome",
+       "Golgi apparatus",
+       "Lysosome"
+      ],
+      "a": 0,
+      "why": "Mitochondria carry out most cellular respiration."
+     },
+     {
+      "t": "mc",
+      "q": "What is the passive movement of water across a membrane called?",
+      "o": [
+       "Active transport",
+       "Endocytosis",
+       "Exocytosis",
+       "Osmosis"
+      ],
+      "a": 3,
+      "why": "Osmosis needs no ATP; water moves toward higher solute concentration."
+     },
+     {
+      "t": "tf",
+      "q": "Prokaryotic cells have a membrane-bound nucleus.",
+      "a": false,
+      "why": "Only eukaryotic cells have a membrane-bound nucleus."
+     },
+     {
+      "t": "match",
+      "q": "Match each organelle to its job",
+      "pairs": [
+       [
+        "Ribosome",
+        "Builds proteins"
+       ],
+       [
+        "Lysosome",
+        "Breaks down waste"
+       ],
+       [
+        "Cell membrane",
+        "Controls what enters and leaves"
+       ],
+       [
+        "Nucleus",
+        "Stores DNA"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a secreted protein in order",
+      "items": [
+       [
+        "Made on a ribosome at the rough ER",
+        1
+       ],
+       [
+        "Folded inside the rough ER",
+        2
+       ],
+       [
+        "Modified in the Golgi apparatus",
+        3
+       ],
+       [
+        "Sent out in a vesicle",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Cell Energy and Enzymes",
+    "period": "Units 3-4",
+    "learn": [
+     {
+      "h": "Enzymes",
+      "b": "Enzymes are proteins that speed up reactions by lowering the activation energy. They are not used up. Temperature and pH can change an enzyme's shape and its activity."
+     },
+     {
+      "h": "Photosynthesis",
+      "b": "Photosynthesis happens in chloroplasts. The light reactions in the thylakoid membranes make ATP and NADPH, and the Calvin cycle in the stroma uses them to build glucose from carbon dioxide."
+     },
+     {
+      "h": "Cellular respiration",
+      "b": "Cells break down glucose in four steps: glycolysis in the cytoplasm, pyruvate oxidation, the Krebs cycle, and the electron transport chain, which makes the most ATP. ATP is the cell's energy currency."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the reactants of photosynthesis?",
+      "o": [
+       "Oxygen and glucose",
+       "Nitrogen and water",
+       "Carbon dioxide and water",
+       "Lactic acid and ATP"
+      ],
+      "a": 2,
+      "why": "Plants combine CO2 and H2O using light energy."
+     },
+     {
+      "t": "mc",
+      "q": "Where do the light reactions occur in a chloroplast?",
+      "o": [
+       "Stroma",
+       "Thylakoid membranes",
+       "Matrix",
+       "Cytosol"
+      ],
+      "a": 1,
+      "why": "Light-capturing pigments sit in the thylakoid membranes."
+     },
+     {
+      "t": "mc",
+      "q": "Which stage of cellular respiration makes the most ATP?",
+      "o": [
+       "Glycolysis",
+       "Krebs cycle",
+       "Fermentation",
+       "Electron transport chain"
+      ],
+      "a": 3,
+      "why": "The electron transport chain drives ATP synthase."
+     },
+     {
+      "t": "mc",
+      "q": "How do enzymes speed up reactions?",
+      "o": [
+       "By lowering activation energy",
+       "By adding energy to products",
+       "By being used up",
+       "By raising temperature"
+      ],
+      "a": 0,
+      "why": "Enzymes provide an easier path for the reaction."
+     },
+     {
+      "t": "tf",
+      "q": "Glycolysis occurs in the cytoplasm and does not require oxygen.",
+      "a": true,
+      "why": "Glycolysis is the first, oxygen-independent step of respiration."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "ATP",
+        "Cell's energy currency"
+       ],
+       [
+        "Enzyme",
+        "Biological catalyst"
+       ],
+       [
+        "Chloroplast",
+        "Site of photosynthesis"
+       ],
+       [
+        "Receptor",
+        "Protein that binds a signal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the stages of cellular respiration in order",
+      "items": [
+       [
+        "Glycolysis",
+        1
+       ],
+       [
+        "Pyruvate oxidation",
+        2
+       ],
+       [
+        "Krebs cycle",
+        3
+       ],
+       [
+        "Electron transport chain",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Genetics",
+    "period": "Units 5-6",
+    "learn": [
+     {
+      "h": "Cell division",
+      "b": "Mitosis makes two genetically identical cells. Meiosis makes gametes with half the number of chromosomes, and crossing over and independent assortment create variety."
+     },
+     {
+      "h": "Inheritance",
+      "b": "An allele is a version of a gene. Genotype is the genetic makeup and phenotype is the observable trait. A cross of Aa x Aa gives a 3:1 phenotype ratio when one allele is completely dominant."
+     },
+     {
+      "h": "From DNA to protein",
+      "b": "In DNA, A pairs with T and C pairs with G. Transcription copies DNA into mRNA. In translation, a ribosome reads mRNA codons (three bases) and tRNA brings the matching amino acids."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does mitosis produce?",
+      "o": [
+       "Four haploid cells",
+       "Two genetically identical cells",
+       "Two different haploid cells",
+       "One large cell"
+      ],
+      "a": 1,
+      "why": "Mitosis makes identical diploid daughter cells."
+     },
+     {
+      "t": "mc",
+      "q": "Compared with its parent cell, how many chromosomes does a gamete have?",
+      "o": [
+       "Double",
+       "One quarter",
+       "Half as many",
+       "The same number"
+      ],
+      "a": 2,
+      "why": "Meiosis halves the chromosome number."
+     },
+     {
+      "t": "mc",
+      "q": "What is the phenotype ratio of an Aa x Aa cross with complete dominance?",
+      "o": [
+       "1:1",
+       "1:2:1",
+       "9:3:3:1",
+       "3:1"
+      ],
+      "a": 3,
+      "why": "Three offspring show the dominant trait for each one that shows the recessive."
+     },
+     {
+      "t": "mc",
+      "q": "What does transcription produce?",
+      "o": [
+       "mRNA from a DNA template",
+       "Protein from mRNA",
+       "DNA from protein",
+       "tRNA from a ribosome"
+      ],
+      "a": 0,
+      "why": "RNA polymerase copies a DNA gene into mRNA."
+     },
+     {
+      "t": "tf",
+      "q": "In DNA, adenine pairs with cytosine.",
+      "a": false,
+      "why": "Adenine pairs with thymine; cytosine pairs with guanine."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Allele",
+        "Version of a gene"
+       ],
+       [
+        "Genotype",
+        "Genetic makeup"
+       ],
+       [
+        "Phenotype",
+        "Observable trait"
+       ],
+       [
+        "Codon",
+        "Three-base mRNA code"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of gene expression in order",
+      "items": [
+       [
+        "DNA is transcribed into mRNA",
+        1
+       ],
+       [
+        "mRNA moves to a ribosome",
+        2
+       ],
+       [
+        "tRNA brings amino acids matching codons",
+        3
+       ],
+       [
+        "A polypeptide chain forms",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Evolution and Ecology",
+    "period": "Units 7-8",
+    "learn": [
+     {
+      "h": "Natural selection",
+      "b": "Individuals vary, and some traits help them survive and reproduce more. Over generations, those traits become more common in the population. Mutations are the original source of new alleles."
+     },
+     {
+      "h": "Species",
+      "b": "Darwin and Wallace proposed natural selection. Speciation is the formation of new species, often after populations become isolated. A niche is an organism's role in its ecosystem."
+     },
+     {
+      "h": "Ecosystems",
+      "b": "Producers make their own food. Energy flows from producers to consumers, and only about 10% of energy passes to the next trophic level. A population is one species in an area; a community includes all species there."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does natural selection mean?",
+      "o": [
+       "Organisms choose their traits",
+       "Individuals with helpful traits reproduce more",
+       "Traits gained in life are passed on",
+       "All individuals survive equally"
+      ],
+      "a": 1,
+      "why": "Helpful heritable traits become more common."
+     },
+     {
+      "t": "mc",
+      "q": "Who proposed the theory of natural selection?",
+      "o": [
+       "Mendel",
+       "Lamarck",
+       "Darwin",
+       "Pasteur"
+      ],
+      "a": 2,
+      "why": "Charles Darwin published it in On the Origin of Species."
+     },
+     {
+      "t": "mc",
+      "q": "Which group makes its own food in an ecosystem?",
+      "o": [
+       "Producers",
+       "Consumers",
+       "Decomposers",
+       "Predators"
+      ],
+      "a": 0,
+      "why": "Producers use light or chemicals to make food."
+     },
+     {
+      "t": "mc",
+      "q": "About how much energy passes to the next trophic level?",
+      "o": [
+       "90%",
+       "50%",
+       "1%",
+       "10%"
+      ],
+      "a": 3,
+      "why": "Most energy is lost as heat at each step."
+     },
+     {
+      "t": "tf",
+      "q": "Mutations are the original source of new alleles.",
+      "a": true,
+      "why": "Mutations create new variation that selection can act on."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Population",
+        "One species in an area"
+       ],
+       [
+        "Community",
+        "All species in an area"
+       ],
+       [
+        "Niche",
+        "Organism's role in its ecosystem"
+       ],
+       [
+        "Speciation",
+        "Formation of new species"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this food chain in order, from producer to top consumer",
+      "items": [
+       [
+        "Grass",
+        1
+       ],
+       [
+        "Grasshopper",
+        2
+       ],
+       [
+        "Frog",
+        3
+       ],
+       [
+        "Snake",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-chem": {
+  "name": "AP Chemistry",
+  "units": [
+   {
+    "title": "Atoms and Bonding",
+    "period": "Structure",
+    "learn": [
+     {
+      "h": "Inside the atom",
+      "b": "The atomic number is the number of protons. Isotopes have the same protons but different neutrons. Valence electrons are the outer electrons that take part in bonding."
+     },
+     {
+      "h": "Periodic trends",
+      "b": "Moving left to right across a period, ionization energy and electronegativity generally increase. Fluorine has the highest electronegativity. Electrons fill subshells in order: 1s, 2s, 2p, 3s, and so on."
+     },
+     {
+      "h": "Bonds",
+      "b": "Ionic bonds form between a metal and a nonmetal when electrons transfer. Covalent bonds form between nonmetals when electrons are shared. A cation is a positive ion."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the atomic number of an element tell you?",
+      "o": [
+       "Number of neutrons",
+       "Number of protons",
+       "Protons plus neutrons",
+       "Number of shells"
+      ],
+      "a": 1,
+      "why": "Atomic number equals the number of protons."
+     },
+     {
+      "t": "mc",
+      "q": "How does first ionization energy generally change across a period, left to right?",
+      "o": [
+       "It decreases",
+       "It stays the same",
+       "It increases",
+       "It is random"
+      ],
+      "a": 2,
+      "why": "Greater nuclear charge holds electrons more tightly."
+     },
+     {
+      "t": "mc",
+      "q": "Which type of bond forms between a metal and a nonmetal?",
+      "o": [
+       "Ionic",
+       "Covalent",
+       "Hydrogen",
+       "Nonpolar"
+      ],
+      "a": 0,
+      "why": "The metal gives electrons to the nonmetal, forming ions."
+     },
+     {
+      "t": "mc",
+      "q": "Which element has the highest electronegativity?",
+      "o": [
+       "Oxygen",
+       "Chlorine",
+       "Nitrogen",
+       "Fluorine"
+      ],
+      "a": 3,
+      "why": "Fluorine attracts shared electrons most strongly."
+     },
+     {
+      "t": "tf",
+      "q": "Electrons are found inside the nucleus of an atom.",
+      "a": false,
+      "why": "The nucleus has protons and neutrons; electrons are outside it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Isotope",
+        "Same protons, different neutrons"
+       ],
+       [
+        "Cation",
+        "Positive ion"
+       ],
+       [
+        "Valence electrons",
+        "Outer shell electrons"
+       ],
+       [
+        "Covalent bond",
+        "Shared electron pair"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these subshells in the order electrons fill them",
+      "items": [
+       [
+        "1s",
+        1
+       ],
+       [
+        "2s",
+        2
+       ],
+       [
+        "2p",
+        3
+       ],
+       [
+        "3s",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Moles and Reactions",
+    "period": "Stoichiometry",
+    "learn": [
+     {
+      "h": "The mole",
+      "b": "A mole is 6.022 x 10^23 particles, which is Avogadro's number. Molar mass is the mass of one mole in grams. For water, H2O, it is 18 g/mol."
+     },
+     {
+      "h": "Balancing equations",
+      "b": "Mass is conserved in a reaction, so both sides must have the same number of each atom. Balanced: 2H2 + O2 -> 2H2O."
+     },
+     {
+      "h": "Limiting reactant and yield",
+      "b": "The limiting reactant is used up first and limits how much product forms. Percent yield is actual yield divided by theoretical yield, times 100."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Avogadro's number?",
+      "o": [
+       "3.0 x 10^8",
+       "1.6 x 10^-19",
+       "6.022 x 10^23",
+       "9.8 x 10^1"
+      ],
+      "a": 2,
+      "why": "One mole contains 6.022 x 10^23 particles."
+     },
+     {
+      "t": "mc",
+      "q": "What is the molar mass of H2O in g/mol?",
+      "o": [
+       "16",
+       "18",
+       "20",
+       "34"
+      ],
+      "a": 1,
+      "why": "2(1) + 16 = 18."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limiting reactant?",
+      "o": [
+       "The one in the largest amount",
+       "A catalyst",
+       "The product",
+       "The one used up first"
+      ],
+      "a": 3,
+      "why": "It runs out first and stops the reaction."
+     },
+     {
+      "t": "mc",
+      "q": "What are the coefficients that balance H2 + O2 -> H2O, in order?",
+      "o": [
+       "1, 1, 1",
+       "1, 2, 2",
+       "2, 1, 2",
+       "2, 2, 1"
+      ],
+      "a": 2,
+      "why": "2H2 + O2 -> 2H2O has 4 H and 2 O on each side."
+     },
+     {
+      "t": "tf",
+      "q": "Mass is conserved in a chemical reaction.",
+      "a": true,
+      "why": "Atoms are rearranged, not created or destroyed."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Mole",
+        "6.022 x 10^23 particles"
+       ],
+       [
+        "Reactant",
+        "Substance that is consumed"
+       ],
+       [
+        "Product",
+        "Substance that is formed"
+       ],
+       [
+        "Percent yield",
+        "Actual over theoretical yield"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of converting grams to particles in order",
+      "items": [
+       [
+        "Start with grams of the substance",
+        1
+       ],
+       [
+        "Divide by molar mass to get moles",
+        2
+       ],
+       [
+        "Multiply moles by 6.022 x 10^23",
+        3
+       ],
+       [
+        "The result is the number of particles",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Energy and Rates",
+    "period": "Thermochemistry and Kinetics",
+    "learn": [
+     {
+      "h": "Heat in reactions",
+      "b": "An exothermic reaction releases heat and has a negative change in enthalpy (delta H). An endothermic reaction absorbs heat. Heat transfer is calculated with q = mc(delta T)."
+     },
+     {
+      "h": "Reaction rates",
+      "b": "Rates depend on concentration, temperature, and catalysts. Higher temperature means more collisions with enough energy, so the rate usually goes up. Activation energy is the energy needed to start a reaction."
+     },
+     {
+      "h": "Catalysts and entropy",
+      "b": "A catalyst lowers the activation energy and is not used up. Entropy measures disorder, and nature tends toward more disorder."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is true of an exothermic reaction?",
+      "o": [
+       "It absorbs heat and delta H is positive",
+       "It releases heat and delta H is negative",
+       "It has no energy change",
+       "It only absorbs light"
+      ],
+      "a": 1,
+      "why": "Exothermic reactions give off heat to the surroundings."
+     },
+     {
+      "t": "mc",
+      "q": "What does a catalyst do?",
+      "o": [
+       "Raises activation energy",
+       "Changes the products",
+       "Is used up",
+       "Lowers activation energy"
+      ],
+      "a": 3,
+      "why": "A catalyst gives a lower-energy path and is not consumed."
+     },
+     {
+      "t": "mc",
+      "q": "How does raising the temperature usually affect reaction rate?",
+      "o": [
+       "It increases the rate",
+       "It decreases the rate",
+       "It has no effect",
+       "It stops the reaction"
+      ],
+      "a": 0,
+      "why": "More particles have enough energy to react."
+     },
+     {
+      "t": "mc",
+      "q": "In q = mc(delta T), what does q stand for?",
+      "o": [
+       "Charge",
+       "Pressure",
+       "Heat energy transferred",
+       "Moles"
+      ],
+      "a": 2,
+      "why": "q is the heat gained or lost, in joules."
+     },
+     {
+      "t": "tf",
+      "q": "An endothermic process absorbs heat from its surroundings.",
+      "a": true,
+      "why": "Endothermic means energy flows in."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Enthalpy",
+        "Heat content at constant pressure"
+       ],
+       [
+        "Activation energy",
+        "Energy needed to start a reaction"
+       ],
+       [
+        "Rate law",
+        "Links rate to concentrations"
+       ],
+       [
+        "Entropy",
+        "Measure of disorder"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these temperatures in order from coldest to hottest",
+      "items": [
+       [
+        "Absolute zero (0 K)",
+        1
+       ],
+       [
+        "Water freezes (273 K)",
+        2
+       ],
+       [
+        "Room temperature (298 K)",
+        3
+       ],
+       [
+        "Water boils (373 K)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Equilibrium and Acids",
+    "period": "Equilibrium and pH",
+    "learn": [
+     {
+      "h": "Equilibrium",
+      "b": "At equilibrium, the forward and reverse reaction rates are equal, so concentrations stay constant. The equilibrium constant K is the ratio of products to reactants. Le Chatelier's principle says a system shifts to oppose a change."
+     },
+     {
+      "h": "Acids and bases",
+      "b": "An acid donates H+ and a base accepts H+. A strong acid like HCl fully ionizes in water, while a weak acid like acetic acid does not."
+     },
+     {
+      "h": "pH",
+      "b": "pH measures acidity. At 25 C, pH 7 is neutral, below 7 is acidic, and above 7 is basic. A buffer resists changes in pH."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is true at chemical equilibrium?",
+      "o": [
+       "The forward rate is faster",
+       "Forward and reverse rates are equal",
+       "The reverse rate is zero",
+       "Both reactions stop"
+      ],
+      "a": 1,
+      "why": "Both reactions continue at the same rate, so concentrations stay constant."
+     },
+     {
+      "t": "mc",
+      "q": "What is the pH of a neutral solution at 25 C?",
+      "o": [
+       "0",
+       "7",
+       "10",
+       "14"
+      ],
+      "a": 1,
+      "why": "Pure water has pH 7 at 25 C."
+     },
+     {
+      "t": "mc",
+      "q": "If more reactant is added to a system at equilibrium, which way does it shift?",
+      "o": [
+       "Toward reactants",
+       "It does not shift",
+       "Toward products",
+       "It reverses permanently"
+      ],
+      "a": 2,
+      "why": "Le Chatelier: the system uses up the added reactant."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a strong acid?",
+      "o": [
+       "CH3COOH",
+       "NH3",
+       "NaOH",
+       "HCl"
+      ],
+      "a": 3,
+      "why": "HCl ionizes completely in water."
+     },
+     {
+      "t": "tf",
+      "q": "A solution with pH 3 is more acidic than one with pH 5.",
+      "a": true,
+      "why": "Lower pH means higher H+ concentration."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Acid",
+        "Donates H+"
+       ],
+       [
+        "Base",
+        "Accepts H+"
+       ],
+       [
+        "Buffer",
+        "Resists pH change"
+       ],
+       [
+        "K",
+        "Products over reactants at equilibrium"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from most acidic to most basic",
+      "items": [
+       [
+        "Stomach acid",
+        1
+       ],
+       [
+        "Black coffee",
+        2
+       ],
+       [
+        "Pure water",
+        3
+       ],
+       [
+        "Household ammonia",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-calc": {
+  "name": "AP Calculus AB",
+  "units": [
+   {
+    "title": "Limits and Continuity",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "What is a limit?",
+      "b": "A limit is the value a function approaches as x gets close to a number. For example, the limit as x goes to 3 of 2x + 1 is 7. The limit does not depend on the value at the point itself."
+     },
+     {
+      "h": "Hard-looking limits",
+      "b": "If plugging in gives 0/0, simplify first. For (x^2 - 4)/(x - 2), factor to get x + 2, so the limit as x goes to 2 is 4."
+     },
+     {
+      "h": "Continuity",
+      "b": "A function is continuous at a if the limit as x goes to a exists and equals f(a). A removable discontinuity is a hole. As x goes to infinity, 1/x goes to 0."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 2 of (x^2 - 4)/(x - 2)?",
+      "o": [
+       "0",
+       "2",
+       "4",
+       "It does not exist"
+      ],
+      "a": 2,
+      "why": "It simplifies to x + 2, which is 4 at x = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 3 of (2x + 1)?",
+      "o": [
+       "6",
+       "7",
+       "8",
+       "9"
+      ],
+      "a": 1,
+      "why": "Plug in 3: 2(3) + 1 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "What does continuity at x = a require?",
+      "o": [
+       "The graph has a hole at a",
+       "f(a) equals zero",
+       "The function is increasing at a",
+       "The limit exists and equals f(a)"
+      ],
+      "a": 3,
+      "why": "The limit and the function value must exist and match."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches infinity of 1/x?",
+      "o": [
+       "0",
+       "1",
+       "Infinity",
+       "It does not exist"
+      ],
+      "a": 0,
+      "why": "As x grows, 1/x gets closer to 0."
+     },
+     {
+      "t": "tf",
+      "q": "If the limit of f(x) as x approaches a exists, then f(a) must be defined.",
+      "a": false,
+      "why": "A function can have a hole at a and still have a limit there."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Limit",
+        "Value a function approaches"
+       ],
+       [
+        "Asymptote",
+        "Line the graph nears"
+       ],
+       [
+        "Continuous",
+        "No breaks or jumps"
+       ],
+       [
+        "Removable discontinuity",
+        "A hole in the graph"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these limits in order from smallest to largest value",
+      "items": [
+       [
+        "lim x->0 of cos(x)",
+        1
+       ],
+       [
+        "lim x->2 of x^2",
+        2
+       ],
+       [
+        "lim x->3 of 2x",
+        3
+       ],
+       [
+        "lim x->1 of 10x",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Derivatives",
+    "period": "Units 2-3",
+    "learn": [
+     {
+      "h": "The derivative",
+      "b": "The derivative is the instantaneous rate of change, or the slope of the tangent line. The power rule says d/dx of x^n is n x^(n-1). The derivative of a constant is 0."
+     },
+     {
+      "h": "Common derivatives",
+      "b": "d/dx of sin x is cos x. d/dx of cos x is -sin x. d/dx of e^x is e^x. d/dx of ln x is 1/x."
+     },
+     {
+      "h": "Rules",
+      "b": "The product rule says (fg)' = f'g + fg'. The chain rule handles composite functions: differentiate the outside, keep the inside, then multiply by the derivative of the inside."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the derivative of x^3?",
+      "o": [
+       "x^2",
+       "3x^2",
+       "3x",
+       "x^4/4"
+      ],
+      "a": 1,
+      "why": "Power rule: bring down 3 and subtract 1 from the exponent."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of cos x?",
+      "o": [
+       "-cos x",
+       "tan x",
+       "cos x",
+       "-sin x"
+      ],
+      "a": 3,
+      "why": "The derivative of cos x is -sin x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of e^x?",
+      "o": [
+       "x e^(x-1)",
+       "ln x",
+       "e^x",
+       "1/x"
+      ],
+      "a": 2,
+      "why": "e^x is its own derivative."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the product rule for (fg)'?",
+      "o": [
+       "f'g + fg'",
+       "f'g'",
+       "f'g - fg'",
+       "f' + g'"
+      ],
+      "a": 0,
+      "why": "Differentiate each factor in turn and add."
+     },
+     {
+      "t": "tf",
+      "q": "The derivative of a constant function is 0.",
+      "a": true,
+      "why": "A constant has a flat graph with slope 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Derivative",
+        "Instantaneous rate of change"
+       ],
+       [
+        "Chain rule",
+        "For composite functions"
+       ],
+       [
+        "Tangent line",
+        "Touches curve, slope f'(a)"
+       ],
+       [
+        "Power rule",
+        "d/dx of x^n is n x^(n-1)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for d/dx of (x^2 + 1)^3 in order",
+      "items": [
+       [
+        "Identify outer u^3 and inner x^2 + 1",
+        1
+       ],
+       [
+        "Differentiate outer: 3(x^2 + 1)^2",
+        2
+       ],
+       [
+        "Differentiate inner: 2x",
+        3
+       ],
+       [
+        "Multiply to get 6x(x^2 + 1)^2",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Applications of Derivatives",
+    "period": "Units 4-5",
+    "learn": [
+     {
+      "h": "Shape of a graph",
+      "b": "If f'(x) > 0 the function is increasing; if f'(x) < 0 it is decreasing. If f''(x) > 0 the graph is concave up. An inflection point is where concavity changes."
+     },
+     {
+      "h": "Extrema",
+      "b": "Critical points occur where f' is zero or undefined. If f' changes from positive to negative at c, f has a local maximum at c. If it changes from negative to positive, it has a local minimum."
+     },
+     {
+      "h": "Motion and optimization",
+      "b": "Velocity is the derivative of position, and acceleration is the derivative of velocity. Optimization uses derivatives to find the largest or smallest value."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If f'(c) = 0 and f' changes from positive to negative at c, what does f have at c?",
+      "o": [
+       "Local minimum",
+       "Local maximum",
+       "Inflection point",
+       "Vertical asymptote"
+      ],
+      "a": 1,
+      "why": "The function rises, then falls, so c is a peak."
+     },
+     {
+      "t": "mc",
+      "q": "If f'(x) > 0 on an interval, what is f doing there?",
+      "o": [
+       "Decreasing",
+       "Constant",
+       "Increasing",
+       "Undefined"
+      ],
+      "a": 2,
+      "why": "A positive slope means the function is going up."
+     },
+     {
+      "t": "mc",
+      "q": "What is velocity in terms of position?",
+      "o": [
+       "The integral of position",
+       "The second derivative of position",
+       "The derivative of acceleration",
+       "The derivative of position"
+      ],
+      "a": 3,
+      "why": "Velocity is the rate of change of position."
+     },
+     {
+      "t": "mc",
+      "q": "Where does f(x) = -x^2 + 4x have its maximum?",
+      "o": [
+       "x = 1",
+       "x = 2",
+       "x = 4",
+       "x = 0"
+      ],
+      "a": 1,
+      "why": "f'(x) = -2x + 4 = 0 gives x = 2."
+     },
+     {
+      "t": "tf",
+      "q": "If f''(x) > 0 on an interval, the graph is concave up there.",
+      "a": true,
+      "why": "A positive second derivative means the slope is increasing."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Critical point",
+        "f' is zero or undefined"
+       ],
+       [
+        "Inflection point",
+        "Concavity changes"
+       ],
+       [
+        "Related rates",
+        "Rates that change together"
+       ],
+       [
+        "Optimization",
+        "Finding a maximum or minimum"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the first derivative test in order",
+      "items": [
+       [
+        "Find f'(x)",
+        1
+       ],
+       [
+        "Set f'(x) = 0 and solve for x",
+        2
+       ],
+       [
+        "Check the sign of f' on each side",
+        3
+       ],
+       [
+        "Classify each point as max or min",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Integrals",
+    "period": "Units 6-8",
+    "learn": [
+     {
+      "h": "Antiderivatives",
+      "b": "An antiderivative of f is a function whose derivative is f. The integral of x^n is x^(n+1)/(n+1) + C. For example, the integral of 2x dx is x^2 + C, and the integral of cos x dx is sin x + C."
+     },
+     {
+      "h": "Definite integrals",
+      "b": "A definite integral gives the net area under a curve between two limits. Riemann sums approximate it with rectangles."
+     },
+     {
+      "h": "Fundamental Theorem",
+      "b": "The Fundamental Theorem of Calculus links derivatives and integrals: the integral from a to b of f(x) dx equals F(b) - F(a), where F is an antiderivative of f."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the integral of 2x dx?",
+      "o": [
+       "2x^2 + C",
+       "x^2 + C",
+       "x + C",
+       "2 + C"
+      ],
+      "a": 1,
+      "why": "The derivative of x^2 is 2x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral from 0 to 3 of 2x dx?",
+      "o": [
+       "6",
+       "12",
+       "9",
+       "3"
+      ],
+      "a": 2,
+      "why": "x^2 evaluated from 0 to 3 is 9 - 0 = 9."
+     },
+     {
+      "t": "mc",
+      "q": "The Fundamental Theorem of Calculus connects which two ideas?",
+      "o": [
+       "Derivatives and integrals",
+       "Limits and sequences",
+       "Slopes and angles",
+       "Series and sums"
+      ],
+      "a": 0,
+      "why": "It shows integration and differentiation are inverse processes."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of cos x dx?",
+      "o": [
+       "-sin x + C",
+       "cos x + C",
+       "-cos x + C",
+       "sin x + C"
+      ],
+      "a": 3,
+      "why": "The derivative of sin x is cos x."
+     },
+     {
+      "t": "tf",
+      "q": "The integral of x^2 dx equals 2x + C.",
+      "a": false,
+      "why": "It equals x^3/3 + C."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Antiderivative",
+        "Function whose derivative is f"
+       ],
+       [
+        "Definite integral",
+        "Net area between two limits"
+       ],
+       [
+        "Riemann sum",
+        "Rectangles that approximate area"
+       ],
+       [
+        "+ C",
+        "Constant of integration"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the integral from 0 to 2 of x dx in order",
+      "items": [
+       [
+        "Find the antiderivative: x^2/2",
+        1
+       ],
+       [
+        "Plug in the upper limit: 2",
+        2
+       ],
+       [
+        "Plug in the lower limit: 0",
+        3
+       ],
+       [
+        "Subtract: 2 - 0 = 2",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-psych": {
+  "name": "AP Psychology",
+  "units": [
+   {
+    "title": "Methods and Biology",
+    "period": "Research and the Brain",
+    "learn": [
+     {
+      "h": "Experiments",
+      "b": "In an experiment, the independent variable is what the researcher changes, and the dependent variable is the outcome measured. A placebo is an inactive treatment. In a double-blind study, neither participants nor researchers know who is in which group."
+     },
+     {
+      "h": "Statistics",
+      "b": "A correlation coefficient runs from -1 to +1. A value of -0.8 means a strong negative relationship. The median is less affected by outliers than the mean. Standard deviation shows how spread out scores are."
+     },
+     {
+      "h": "Brain basics",
+      "b": "The thalamus is the brain's sensory relay station. The hypothalamus controls hunger and body temperature. Neurons communicate with neurotransmitters."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the independent variable in an experiment?",
+      "o": [
+       "The outcome measured",
+       "The factor the researcher manipulates",
+       "The factor held constant",
+       "An unrelated factor"
+      ],
+      "a": 1,
+      "why": "Researchers change it to see its effect on the dependent variable."
+     },
+     {
+      "t": "mc",
+      "q": "What does a correlation of -0.8 mean?",
+      "o": [
+       "Weak positive relationship",
+       "No relationship",
+       "Strong negative relationship",
+       "Perfect positive relationship"
+      ],
+      "a": 2,
+      "why": "It is close to -1, so as one variable rises the other falls."
+     },
+     {
+      "t": "mc",
+      "q": "What is a double-blind study?",
+      "o": [
+       "Only participants are unaware of groups",
+       "Only researchers are unaware of groups",
+       "Everyone knows the groups",
+       "Neither participants nor researchers know the groups"
+      ],
+      "a": 3,
+      "why": "This reduces bias from expectations."
+     },
+     {
+      "t": "mc",
+      "q": "Which brain structure acts as a relay station for sensory information?",
+      "o": [
+       "Thalamus",
+       "Hypothalamus",
+       "Pons",
+       "Medulla"
+      ],
+      "a": 0,
+      "why": "Most sensory signals pass through the thalamus."
+     },
+     {
+      "t": "tf",
+      "q": "The median is less affected by outliers than the mean.",
+      "a": true,
+      "why": "A single extreme score can pull the mean, but barely moves the median."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Placebo",
+        "Inactive treatment"
+       ],
+       [
+        "Sample",
+        "Group studied from a population"
+       ],
+       [
+        "Standard deviation",
+        "Spread of scores"
+       ],
+       [
+        "Dependent variable",
+        "Outcome measured"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an experiment in order",
+      "items": [
+       [
+        "Form a hypothesis",
+        1
+       ],
+       [
+        "Randomly assign participants",
+        2
+       ],
+       [
+        "Manipulate the independent variable",
+        3
+       ],
+       [
+        "Measure the dependent variable",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Learning and Cognition",
+    "period": "Thinking and Memory",
+    "learn": [
+     {
+      "h": "Types of learning",
+      "b": "In classical conditioning, a neutral stimulus gets paired with a natural one until it triggers a response alone. In operant conditioning, behavior changes because of consequences. Bandura showed observational learning with his Bobo doll study."
+     },
+     {
+      "h": "Reinforcement schedules",
+      "b": "A variable-ratio schedule rewards behavior after an unpredictable number of responses, as with slot machines, and it produces high, steady responding."
+     },
+     {
+      "h": "Memory and thinking",
+      "b": "Loftus showed the misinformation effect: misleading information can change memories. The availability heuristic judges how likely something is by how easily examples come to mind. An algorithm guarantees a solution if followed correctly."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Bandura's Bobo doll study demonstrated which kind of learning?",
+      "o": [
+       "Classical conditioning",
+       "Observational learning",
+       "Insight learning",
+       "Latent learning"
+      ],
+      "a": 1,
+      "why": "Children copied aggressive behavior they had watched."
+     },
+     {
+      "t": "mc",
+      "q": "Which reinforcement schedule do slot machines use?",
+      "o": [
+       "Fixed-interval",
+       "Fixed-ratio",
+       "Variable-ratio",
+       "Variable-interval"
+      ],
+      "a": 2,
+      "why": "Rewards come after an unpredictable number of plays."
+     },
+     {
+      "t": "mc",
+      "q": "What did Elizabeth Loftus's research on memory show?",
+      "o": [
+       "Memory is a perfect recording",
+       "Forgetting only happens by decay",
+       "Eyewitnesses are never wrong",
+       "Misleading information can change memories"
+      ],
+      "a": 3,
+      "why": "This is the misinformation effect."
+     },
+     {
+      "t": "mc",
+      "q": "Judging how likely something is by how easily examples come to mind is called what?",
+      "o": [
+       "Availability heuristic",
+       "Anchoring",
+       "Representativeness heuristic",
+       "Algorithm"
+      ],
+      "a": 0,
+      "why": "Vivid or recent events seem more common."
+     },
+     {
+      "t": "tf",
+      "q": "An algorithm guarantees a solution if it is followed correctly.",
+      "a": true,
+      "why": "Unlike a heuristic shortcut, an algorithm is a step-by-step procedure."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Proactive interference",
+        "Old information blocks new"
+       ],
+       [
+        "Retroactive interference",
+        "New information blocks old"
+       ],
+       [
+        "Schema",
+        "Mental framework of ideas"
+       ],
+       [
+        "Confirmation bias",
+        "Favoring info that fits beliefs"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of classical conditioning in order",
+      "items": [
+       [
+        "Food (US) causes salivation (UR)",
+        1
+       ],
+       [
+        "A neutral bell is paired with the food",
+        2
+       ],
+       [
+        "The bell becomes a conditioned stimulus",
+        3
+       ],
+       [
+        "The bell alone causes salivation (CR)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Development and Personality",
+    "period": "Growth and Motivation",
+    "learn": [
+     {
+      "h": "Development",
+      "b": "Vygotsky's zone of proximal development is the range of tasks a child can do with help but not yet alone. Erikson described eight stages, starting with trust vs. mistrust. Authoritative parenting mixes warmth with firm rules."
+     },
+     {
+      "h": "Personality",
+      "b": "Freud said personality has an id (pleasure principle), an ego (reality), and a superego (conscience). The Big Five traits are openness, conscientiousness, extraversion, agreeableness, and neuroticism."
+     },
+     {
+      "h": "Motivation",
+      "b": "Intrinsic motivation comes from enjoying the activity itself. Extrinsic motivation comes from outside rewards or pressures."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Vygotsky's zone of proximal development?",
+      "o": [
+       "Tasks a child has already mastered",
+       "Tasks that are far too hard",
+       "Birth to age two",
+       "Tasks a child can do with help"
+      ],
+      "a": 3,
+      "why": "It is the gap between what a child can do alone and with guidance."
+     },
+     {
+      "t": "mc",
+      "q": "Which is NOT one of the Big Five personality traits?",
+      "o": [
+       "Openness",
+       "Conscientiousness",
+       "Dominance",
+       "Agreeableness"
+      ],
+      "a": 2,
+      "why": "The Big Five are openness, conscientiousness, extraversion, agreeableness, and neuroticism."
+     },
+     {
+      "t": "mc",
+      "q": "Which part of personality follows the pleasure principle in Freud's theory?",
+      "o": [
+       "Ego",
+       "Id",
+       "Superego",
+       "Persona"
+      ],
+      "a": 1,
+      "why": "The id seeks immediate satisfaction."
+     },
+     {
+      "t": "mc",
+      "q": "What is intrinsic motivation?",
+      "o": [
+       "Doing something for its own enjoyment",
+       "Doing something for money",
+       "Doing something to avoid punishment",
+       "Doing something for praise"
+      ],
+      "a": 0,
+      "why": "The reward comes from the activity itself."
+     },
+     {
+      "t": "tf",
+      "q": "Authoritative parenting combines warmth with firm rules.",
+      "a": true,
+      "why": "It is high in both support and expectations."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Id",
+        "Instinctive urges"
+       ],
+       [
+        "Superego",
+        "Moral conscience"
+       ],
+       [
+        "Intrinsic motivation",
+        "Driven by enjoyment"
+       ],
+       [
+        "Extrinsic motivation",
+        "Driven by outside rewards"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Erikson's first four stages in order",
+      "items": [
+       [
+        "Trust vs. mistrust",
+        1
+       ],
+       [
+        "Autonomy vs. shame and doubt",
+        2
+       ],
+       [
+        "Initiative vs. guilt",
+        3
+       ],
+       [
+        "Industry vs. inferiority",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Disorders and Social Psychology",
+    "period": "Mind and Society",
+    "learn": [
+     {
+      "h": "Disorders and therapy",
+      "b": "Major depressive disorder involves persistent sadness and loss of interest. A phobia is an intense, irrational fear. Cognitive-behavioral therapy (CBT) helps people change unhelpful thoughts and behaviors. Schizophrenia and dissociative identity disorder are different conditions."
+     },
+     {
+      "h": "Attitudes",
+      "b": "Cognitive dissonance is the discomfort felt when beliefs and actions do not match, which people often reduce by changing the belief. Prejudice is an unjustified negative attitude toward a group."
+     },
+     {
+      "h": "Group effects",
+      "b": "The fundamental attribution error means blaming another person's behavior on personality while ignoring the situation. Groupthink happens when the wish for harmony overrides good decisions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does cognitive-behavioral therapy focus on?",
+      "o": [
+       "Interpreting dreams",
+       "Changing unhelpful thoughts and behaviors",
+       "Only childhood memories",
+       "Only medication"
+      ],
+      "a": 1,
+      "why": "CBT targets the link between thoughts, feelings, and actions."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a main symptom of major depressive disorder?",
+      "o": [
+       "Sudden extreme energy",
+       "Fear of open spaces",
+       "Persistent sadness and loss of interest",
+       "Hearing voices"
+      ],
+      "a": 2,
+      "why": "Sad mood or loss of interest lasting weeks is central to the diagnosis."
+     },
+     {
+      "t": "mc",
+      "q": "What is cognitive dissonance?",
+      "o": [
+       "Memory loss after trauma",
+       "Pressure from a group",
+       "Feeling helpless after failure",
+       "Discomfort when beliefs and actions conflict"
+      ],
+      "a": 3,
+      "why": "People try to reduce the tension, often by changing a belief."
+     },
+     {
+      "t": "mc",
+      "q": "What is the fundamental attribution error?",
+      "o": [
+       "Blaming others' behavior on personality, not the situation",
+       "Blaming yourself for everything",
+       "Ignoring all possible causes",
+       "Praising others too much"
+      ],
+      "a": 0,
+      "why": "We underestimate how much situations shape what others do."
+     },
+     {
+      "t": "tf",
+      "q": "Schizophrenia is the same condition as dissociative identity disorder.",
+      "a": false,
+      "why": "Schizophrenia involves psychosis; dissociative identity disorder involves separate identities."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Phobia",
+        "Intense irrational fear"
+       ],
+       [
+        "Anxiety disorder",
+        "Excessive worry"
+       ],
+       [
+        "Prejudice",
+        "Unjustified negative attitude"
+       ],
+       [
+        "Groupthink",
+        "Harmony overrides good decisions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of systematic desensitization in order",
+      "items": [
+       [
+        "Learn relaxation skills",
+        1
+       ],
+       [
+        "Make a list of fears from mild to severe",
+        2
+       ],
+       [
+        "Face the mildest fear while relaxed",
+        3
+       ],
+       [
+        "Move up to the most feared item",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-gov": {
+  "name": "AP US Government",
+  "units": [
+   {
+    "title": "Foundations of Democracy",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "Founding debates",
+      "b": "In Federalist No. 10, Madison argued a large republic would help control the effects of factions, groups that pursue their own interests. Anti-Federalists feared a strong national government and demanded a Bill of Rights."
+     },
+     {
+      "h": "Federalism",
+      "b": "Federalism divides power between the national and state governments. The Tenth Amendment reserves powers to the states or the people. The enumerated powers of Congress are listed in Article I, Section 8."
+     },
+     {
+      "h": "Flexible powers",
+      "b": "The Necessary and Proper Clause lets Congress make laws needed to carry out its listed powers. The idea of a social contract says people agree to be governed in return for protection."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In Federalist No. 10, what did Madison say a large republic would do?",
+      "o": [
+       "Eliminate all political parties",
+       "Help control the effects of factions",
+       "Weaken the national government",
+       "Abolish elections"
+      ],
+      "a": 1,
+      "why": "A large, varied republic makes it harder for one faction to dominate."
+     },
+     {
+      "t": "mc",
+      "q": "Why did Anti-Federalists want a Bill of Rights?",
+      "o": [
+       "To weaken state governments",
+       "To create a monarchy",
+       "To protect individual liberties from federal power",
+       "To end elections"
+      ],
+      "a": 2,
+      "why": "They feared a strong national government would threaten liberty."
+     },
+     {
+      "t": "mc",
+      "q": "Which amendment reserves powers to the states or the people?",
+      "o": [
+       "Ninth",
+       "Fifth",
+       "First",
+       "Tenth"
+      ],
+      "a": 3,
+      "why": "The Tenth Amendment reserves powers not given to the national government."
+     },
+     {
+      "t": "mc",
+      "q": "Where are the enumerated powers of Congress listed?",
+      "o": [
+       "Article I, Section 8",
+       "Article II, Section 1",
+       "Article III",
+       "Article V"
+      ],
+      "a": 0,
+      "why": "Article I, Section 8 lists them, such as taxing and coining money."
+     },
+     {
+      "t": "tf",
+      "q": "The Necessary and Proper Clause lets Congress make laws needed to carry out its listed powers.",
+      "a": true,
+      "why": "It is also called the elastic clause."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Federalism",
+        "Power divided between nation and states"
+       ],
+       [
+        "Enumerated powers",
+        "Powers listed for Congress"
+       ],
+       [
+        "Faction",
+        "Group seeking its own interests"
+       ],
+       [
+        "Social contract",
+        "People agree to be governed for protection"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in the order they happened",
+      "items": [
+       [
+        "Declaration of Independence",
+        1
+       ],
+       [
+        "Articles of Confederation",
+        2
+       ],
+       [
+        "Constitution written",
+        3
+       ],
+       [
+        "Bill of Rights added",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "The Branches",
+    "period": "Unit 2",
+    "learn": [
+     {
+      "h": "Congress",
+      "b": "The House can impeach, which means bring charges, and the Senate holds the trial. A filibuster is unlimited debate in the Senate, and cloture ends it with 60 votes."
+     },
+     {
+      "h": "The Presidency",
+      "b": "Presidents use executive orders, directives that have the force of law. A pocket veto happens when Congress adjourns and the president does not sign the bill, so it dies. The president also leads the bureaucracy, which includes agencies like the EPA."
+     },
+     {
+      "h": "The courts",
+      "b": "Marbury v. Madison (1803) established judicial review, the power of courts to strike down unconstitutional laws. Federal judges and justices are nominated by the president and confirmed by the Senate."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which case established judicial review?",
+      "o": [
+       "McCulloch v. Maryland",
+       "Brown v. Board of Education",
+       "Marbury v. Madison",
+       "Gideon v. Wainwright"
+      ],
+      "a": 2,
+      "why": "Marbury v. Madison (1803) established the power."
+     },
+     {
+      "t": "mc",
+      "q": "How many votes are needed for cloture to end a Senate filibuster?",
+      "o": [
+       "51",
+       "67",
+       "75",
+       "60"
+      ],
+      "a": 3,
+      "why": "Cloture needs three-fifths of the Senate, or 60 votes."
+     },
+     {
+      "t": "mc",
+      "q": "Which chamber has the power to impeach?",
+      "o": [
+       "House of Representatives",
+       "Senate",
+       "Supreme Court",
+       "Cabinet"
+      ],
+      "a": 0,
+      "why": "The House impeaches and the Senate tries the case."
+     },
+     {
+      "t": "mc",
+      "q": "Which is part of the federal bureaucracy?",
+      "o": [
+       "The Supreme Court",
+       "The Rules Committee",
+       "The Environmental Protection Agency",
+       "The Electoral College"
+      ],
+      "a": 2,
+      "why": "Agencies like the EPA carry out laws in the executive branch."
+     },
+     {
+      "t": "tf",
+      "q": "The Senate holds the trial in an impeachment.",
+      "a": true,
+      "why": "The Senate acts as the jury."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Judicial review",
+        "Courts strike down unconstitutional laws"
+       ],
+       [
+        "Cloture",
+        "Vote to end a filibuster"
+       ],
+       [
+        "Executive order",
+        "Presidential directive with force of law"
+       ],
+       [
+        "Pocket veto",
+        "Bill dies unsigned after Congress adjourns"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of confirming a Supreme Court justice in order",
+      "items": [
+       [
+        "President nominates a candidate",
+        1
+       ],
+       [
+        "Senate Judiciary Committee holds hearings",
+        2
+       ],
+       [
+        "Committee votes on the nominee",
+        3
+       ],
+       [
+        "Full Senate votes",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Participation and Elections",
+    "period": "Units 4-5",
+    "learn": [
+     {
+      "h": "Parties and elections",
+      "b": "Winner-take-all elections tend to produce a two-party system. In a primary, voters choose a party's nominee. An incumbent is the person currently holding office."
+     },
+     {
+      "h": "Shaping districts",
+      "b": "Gerrymandering is drawing district lines to favor one party. Political socialization is how people form political beliefs, and family is usually the strongest early influence."
+     },
+     {
+      "h": "Money in politics",
+      "b": "A PAC raises money for campaigns. In Citizens United v. FEC (2010), the Court allowed unlimited independent political spending by corporations and unions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is gerrymandering?",
+      "o": [
+       "Counting votes twice",
+       "Moving election day",
+       "Running a voter registration drive",
+       "Drawing district lines to favor one party"
+      ],
+      "a": 3,
+      "why": "Those who draw the map can help one party win."
+     },
+     {
+      "t": "mc",
+      "q": "Winner-take-all elections tend to produce what kind of party system?",
+      "o": [
+       "Many parties",
+       "A two-party system",
+       "A one-party system",
+       "No parties"
+      ],
+      "a": 1,
+      "why": "This pattern is called Duverger's law."
+     },
+     {
+      "t": "mc",
+      "q": "Which is usually the strongest early influence on political beliefs?",
+      "o": [
+       "Late-night TV",
+       "The Census",
+       "Family",
+       "Court rulings"
+      ],
+      "a": 2,
+      "why": "Family shapes political socialization more than other sources."
+     },
+     {
+      "t": "mc",
+      "q": "Which case allowed unlimited independent political spending by corporations and unions?",
+      "o": [
+       "Roe v. Wade",
+       "Citizens United v. FEC",
+       "Miranda v. Arizona",
+       "Engel v. Vitale"
+      ],
+      "a": 1,
+      "why": "The Court ruled such spending is protected speech."
+     },
+     {
+      "t": "tf",
+      "q": "In a primary election, voters choose a party's nominee.",
+      "a": true,
+      "why": "The winner goes on to represent the party in the general election."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Incumbent",
+        "Current officeholder"
+       ],
+       [
+        "Primary",
+        "Picks a party's nominee"
+       ],
+       [
+        "PAC",
+        "Group raising money for campaigns"
+       ],
+       [
+        "Gerrymandering",
+        "Drawing districts to favor a party"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps of voting in order",
+      "items": [
+       [
+        "Register to vote",
+        1
+       ],
+       [
+        "Learn about candidates and issues",
+        2
+       ],
+       [
+        "Cast a ballot",
+        3
+       ],
+       [
+        "Officials count and certify results",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Civil Liberties and Rights",
+    "period": "Unit 3",
+    "learn": [
+     {
+      "h": "Incorporation",
+      "b": "The Bill of Rights first limited only the national government. Through the Fourteenth Amendment's due process clause, the Supreme Court applied most rights to the states, case by case. This is called selective incorporation."
+     },
+     {
+      "h": "Key cases on liberties",
+      "b": "Tinker v. Des Moines (1969) protected students' symbolic speech. Gideon v. Wainwright (1963) guaranteed a lawyer to felony defendants who cannot pay. Miranda v. Arizona (1966) requires police to warn suspects of their rights."
+     },
+     {
+      "h": "Equal protection",
+      "b": "Brown v. Board of Education (1954) ruled that segregated public schools are unconstitutional, using the equal protection clause."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which amendment's due process clause was used to apply the Bill of Rights to the states?",
+      "o": [
+       "Tenth",
+       "Thirteenth",
+       "Fourteenth",
+       "Fifteenth"
+      ],
+      "a": 2,
+      "why": "Selective incorporation relies on the Fourteenth Amendment."
+     },
+     {
+      "t": "mc",
+      "q": "What did Brown v. Board of Education (1954) decide?",
+      "o": [
+       "School prayer is allowed",
+       "Students may wear armbands",
+       "Police must read suspects' rights",
+       "Segregated public schools are unconstitutional"
+      ],
+      "a": 3,
+      "why": "Separate schools were found inherently unequal."
+     },
+     {
+      "t": "mc",
+      "q": "What does Miranda v. Arizona require police to do?",
+      "o": [
+       "Get a warrant to search cars",
+       "Warn suspects of their rights before questioning",
+       "End the death penalty",
+       "Pay suspects' legal fees"
+      ],
+      "a": 1,
+      "why": "Suspects must be told of their right to remain silent and to a lawyer."
+     },
+     {
+      "t": "mc",
+      "q": "What did Tinker v. Des Moines protect?",
+      "o": [
+       "Prayer in public schools",
+       "Burning draft cards",
+       "Students' symbolic speech such as armbands",
+       "Racial quotas"
+      ],
+      "a": 2,
+      "why": "Students do not lose free speech rights at school gates."
+     },
+     {
+      "t": "tf",
+      "q": "Gideon v. Wainwright guaranteed a lawyer to felony defendants who cannot afford one.",
+      "a": true,
+      "why": "This follows the Sixth Amendment right to counsel."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Establishment Clause",
+        "Government cannot favor a religion"
+       ],
+       [
+        "Due process",
+        "Fair legal procedures"
+       ],
+       [
+        "Equal protection",
+        "Laws apply equally to all"
+       ],
+       [
+        "Selective incorporation",
+        "Applying rights to states case by case"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cases in order from earliest to latest",
+      "items": [
+       [
+        "Brown v. Board of Education",
+        1
+       ],
+       [
+        "Gideon v. Wainwright",
+        2
+       ],
+       [
+        "Miranda v. Arizona",
+        3
+       ],
+       [
+        "Tinker v. Des Moines",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-lang": {
+  "name": "AP English Language",
+  "units": [
+   {
+    "title": "Rhetorical Situation and Appeals",
+    "period": "Rhetoric",
+    "learn": [
+     {
+      "h": "The rhetorical situation",
+      "b": "Every text has a speaker, an audience, a purpose, and a context. To analyze a text, ask who is speaking, to whom, and why."
+     },
+     {
+      "h": "The appeals",
+      "b": "Ethos appeals to credibility and character. Pathos appeals to emotion. Logos appeals to logic and evidence. Writers often use all three together."
+     },
+     {
+      "h": "Kairos",
+      "b": "Kairos is the right moment. A message may work better because it arrives at a timely moment."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which appeal builds trust in the speaker's credibility?",
+      "o": [
+       "Pathos",
+       "Logos",
+       "Kairos",
+       "Ethos"
+      ],
+      "a": 3,
+      "why": "Ethos shows the speaker is trustworthy or knowledgeable."
+     },
+     {
+      "t": "mc",
+      "q": "A charity ad shows a sad puppy in the rain. Which appeal is mainly used?",
+      "o": [
+       "Pathos",
+       "Ethos",
+       "Logos",
+       "Kairos"
+      ],
+      "a": 0,
+      "why": "The image aims at the audience's emotions."
+     },
+     {
+      "t": "mc",
+      "q": "Using statistics and clear reasons is mostly an appeal to what?",
+      "o": [
+       "Ethos",
+       "Pathos",
+       "Logos",
+       "Kairos"
+      ],
+      "a": 2,
+      "why": "Logos relies on logic and evidence."
+     },
+     {
+      "t": "mc",
+      "q": "Which list names the parts of a rhetorical situation?",
+      "o": [
+       "Title, font, layout, length",
+       "Speaker, audience, purpose, context",
+       "Plot, setting, theme, character",
+       "Grammar, spelling, tone, rhyme"
+      ],
+      "a": 1,
+      "why": "These four elements shape every text."
+     },
+     {
+      "t": "tf",
+      "q": "Kairos refers to the timeliness of an argument, or the right moment.",
+      "a": true,
+      "why": "Kairos is Greek for the opportune moment."
+     },
+     {
+      "t": "match",
+      "q": "Match each appeal to its meaning",
+      "pairs": [
+       [
+        "Ethos",
+        "Credibility"
+       ],
+       [
+        "Pathos",
+        "Emotion"
+       ],
+       [
+        "Logos",
+        "Logic"
+       ],
+       [
+        "Kairos",
+        "Right time"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of rhetorical analysis in order",
+      "items": [
+       [
+        "Identify speaker and audience",
+        1
+       ],
+       [
+        "Determine the purpose",
+        2
+       ],
+       [
+        "Note the appeals and devices",
+        3
+       ],
+       [
+        "Explain how they achieve the purpose",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Claims, Evidence, and Reasoning",
+    "period": "Argument",
+    "learn": [
+     {
+      "h": "Building an argument",
+      "b": "A claim is the main point a writer wants you to accept. Reasons explain it, and evidence supports the reasons. Strong evidence is relevant, specific, and from a reliable source."
+     },
+     {
+      "h": "Fallacies",
+      "b": "Ad hominem attacks the person instead of the argument. A straw man misrepresents an opponent's view so it is easy to attack. A false dilemma pretends there are only two options. Bandwagon says something is right because everyone does it."
+     },
+     {
+      "h": "Other viewpoints",
+      "b": "A concession admits a fair point from the other side. A counterargument is an opposing viewpoint, and a rebuttal answers it."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a claim in an argument?",
+      "o": [
+       "A summary of the plot",
+       "A list of facts only",
+       "A main point the writer wants you to accept",
+       "A quotation from a source"
+      ],
+      "a": 2,
+      "why": "A claim is the position the argument defends."
+     },
+     {
+      "t": "mc",
+      "q": "Attacking the speaker instead of the argument is called what?",
+      "o": [
+       "Concession",
+       "Rebuttal",
+       "Syllogism",
+       "Ad hominem"
+      ],
+      "a": 3,
+      "why": "Ad hominem means 'to the person.'"
+     },
+     {
+      "t": "mc",
+      "q": "Which is the strongest evidence?",
+      "o": [
+       "A friend's rumor",
+       "Reliable data from an expert source",
+       "An angry comment",
+       "A vague generalization"
+      ],
+      "a": 1,
+      "why": "Strong evidence is reliable, relevant, and specific."
+     },
+     {
+      "t": "mc",
+      "q": "What is a straw man fallacy?",
+      "o": [
+       "Admitting the other side has a point",
+       "Quoting experts",
+       "Misrepresenting an opponent's view to attack it easily",
+       "Giving a statistic"
+      ],
+      "a": 2,
+      "why": "The arguer attacks a weaker version of the real argument."
+     },
+     {
+      "t": "tf",
+      "q": "A concession acknowledges a fair point from the opposing side.",
+      "a": true,
+      "why": "Concessions can make an argument more credible."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Counterargument",
+        "Opposing viewpoint"
+       ],
+       [
+        "Rebuttal",
+        "Response to a counterargument"
+       ],
+       [
+        "Bandwagon",
+        "Everyone is doing it"
+       ],
+       [
+        "False dilemma",
+        "Only two options shown"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of an argument in order",
+      "items": [
+       [
+        "State a claim",
+        1
+       ],
+       [
+        "Give reasons",
+        2
+       ],
+       [
+        "Support with evidence",
+        3
+       ],
+       [
+        "Explain how the evidence proves the claim",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Style and Rhetorical Devices",
+    "period": "Language",
+    "learn": [
+     {
+      "h": "Figurative language",
+      "b": "A metaphor compares two things without 'like' or 'as,' for example 'Time is a thief.' A simile uses 'like' or 'as.' Hyperbole is deliberate exaggeration. An oxymoron joins contradictory words, like 'deafening silence.'"
+     },
+     {
+      "h": "Repetition and irony",
+      "b": "Anaphora repeats words at the start of successive clauses, as in Churchill's 'We shall fight...' speech. Verbal irony means saying the opposite of what you mean."
+     },
+     {
+      "h": "Tone and choices",
+      "b": "Tone is the writer's attitude toward the subject. Diction is word choice and syntax is sentence structure. Both help create tone."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "'Time is a thief.' Which device is this?",
+      "o": [
+       "Simile",
+       "Metaphor",
+       "Hyperbole",
+       "Irony"
+      ],
+      "a": 1,
+      "why": "It compares time to a thief without using like or as."
+     },
+     {
+      "t": "mc",
+      "q": "'We shall fight on the beaches, we shall fight on the landing grounds...' uses which device?",
+      "o": [
+       "Alliteration",
+       "Hyperbole",
+       "Anaphora",
+       "Oxymoron"
+      ],
+      "a": 2,
+      "why": "Repeating 'we shall fight' at the start of each clause is anaphora."
+     },
+     {
+      "t": "mc",
+      "q": "What is verbal irony?",
+      "o": [
+       "Exaggeration for effect",
+       "Comparing using like or as",
+       "Repeating sounds",
+       "Saying the opposite of what you mean"
+      ],
+      "a": 3,
+      "why": "Saying 'Great weather!' during a storm is verbal irony."
+     },
+     {
+      "t": "mc",
+      "q": "What is tone?",
+      "o": [
+       "The writer's attitude toward the subject",
+       "A summary of the plot",
+       "The setting of a story",
+       "The rhyme scheme"
+      ],
+      "a": 0,
+      "why": "Tone shows how the writer feels, such as angry or hopeful."
+     },
+     {
+      "t": "tf",
+      "q": "Hyperbole is deliberate exaggeration.",
+      "a": true,
+      "why": "Example: 'I've told you a million times.'"
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Simile",
+        "Comparison using like or as"
+       ],
+       [
+        "Oxymoron",
+        "Contradictory pair of words"
+       ],
+       [
+        "Syntax",
+        "Sentence structure"
+       ],
+       [
+        "Diction",
+        "Word choice"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of an analysis paragraph in order",
+      "items": [
+       [
+        "Topic sentence",
+        1
+       ],
+       [
+        "Evidence from the text",
+        2
+       ],
+       [
+        "Explain the device used",
+        3
+       ],
+       [
+        "Link to the writer's purpose",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Writing the Essays",
+    "period": "Synthesis and Analysis",
+    "learn": [
+     {
+      "h": "Thesis and commentary",
+      "b": "A thesis is the main claim that guides the whole essay. After each piece of evidence, add commentary, your own explanation of why the evidence supports your thesis."
+     },
+     {
+      "h": "The three essays",
+      "b": "The synthesis essay asks you to build an argument using at least three of the provided sources. The rhetorical analysis essay asks how the writer's choices achieve a purpose. The argument essay asks you to defend a position."
+     },
+     {
+      "h": "Using sources well",
+      "b": "Blend quotes into your own sentences and explain them. Use transitions to link ideas. Do not just summarize the passage."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a thesis?",
+      "o": [
+       "The last sentence",
+       "The main claim that guides the essay",
+       "A quotation",
+       "A title"
+      ],
+      "a": 1,
+      "why": "Everything in the essay supports the thesis."
+     },
+     {
+      "t": "mc",
+      "q": "A synthesis essay requires you to use how many provided sources at minimum?",
+      "o": [
+       "One",
+       "All of them",
+       "At least three",
+       "None"
+      ],
+      "a": 2,
+      "why": "You must combine at least three sources to support your own argument."
+     },
+     {
+      "t": "mc",
+      "q": "What is the best way to use a quotation?",
+      "o": [
+       "Drop it in with no comment",
+       "Use only very long block quotes",
+       "Let it replace your own ideas",
+       "Blend it into your sentence and explain it"
+      ],
+      "a": 3,
+      "why": "Commentary connects the quote to your claim."
+     },
+     {
+      "t": "mc",
+      "q": "What does a rhetorical analysis essay ask you to do?",
+      "o": [
+       "Explain how the writer's choices achieve a purpose",
+       "Say whether you agree with the writer",
+       "Summarize the passage",
+       "Retell the plot"
+      ],
+      "a": 0,
+      "why": "It focuses on how, not just what, the author writes."
+     },
+     {
+      "t": "tf",
+      "q": "In a rhetorical analysis essay, you should mostly summarize the passage.",
+      "a": false,
+      "why": "You should analyze the writer's choices and their effects."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Thesis",
+        "Main claim of the essay"
+       ],
+       [
+        "Synthesis",
+        "Combining sources for your argument"
+       ],
+       [
+        "Commentary",
+        "Your explanation of evidence"
+       ],
+       [
+        "Transition",
+        "Word or phrase linking ideas"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing process in order",
+      "items": [
+       [
+        "Read the prompt carefully",
+        1
+       ],
+       [
+        "Plan a thesis and outline",
+        2
+       ],
+       [
+        "Write the draft",
+        3
+       ],
+       [
+        "Revise and proofread",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-macro": {
+  "name": "AP Macroeconomics",
+  "units": [
+   {
+    "title": "Basic Economic Concepts",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "Scarcity and trade-offs",
+      "b": "Scarcity means resources are limited while wants are unlimited, so we must choose. Opportunity cost is the value of the next best alternative given up. A point inside the production possibilities curve means resources are not fully used."
+     },
+     {
+      "h": "Comparative advantage",
+      "b": "A country has a comparative advantage in a good if it can make it at a lower opportunity cost. Trade is usually best when countries specialize in what they do best relative to others."
+     },
+     {
+      "h": "Supply and demand",
+      "b": "The law of demand says that when price rises, quantity demanded falls. Equilibrium is where quantity demanded equals quantity supplied. A surplus pushes prices down."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is opportunity cost?",
+      "o": [
+       "The money price of a good",
+       "The value of the next best alternative given up",
+       "The total cost of production",
+       "Time spent shopping"
+      ],
+      "a": 1,
+      "why": "It measures what you give up when you choose something."
+     },
+     {
+      "t": "mc",
+      "q": "A point inside the production possibilities curve means what?",
+      "o": [
+       "Output is unattainable",
+       "Economic growth has occurred",
+       "Resources are not fully used",
+       "Goods are free"
+      ],
+      "a": 2,
+      "why": "The economy could produce more with its resources."
+     },
+     {
+      "t": "mc",
+      "q": "A country has a comparative advantage in a good if it has what?",
+      "o": [
+       "More workers",
+       "Higher total output",
+       "Cheaper labor",
+       "A lower opportunity cost"
+      ],
+      "a": 3,
+      "why": "Comparative advantage is about lower opportunity cost."
+     },
+     {
+      "t": "mc",
+      "q": "According to the law of demand, what happens when price rises?",
+      "o": [
+       "Quantity demanded falls",
+       "Quantity demanded rises",
+       "Supply decreases",
+       "Demand shifts right"
+      ],
+      "a": 0,
+      "why": "Higher prices lead buyers to buy less."
+     },
+     {
+      "t": "tf",
+      "q": "Scarcity exists because human wants are unlimited but resources are limited.",
+      "a": true,
+      "why": "That gap forces people to make choices."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Scarcity",
+        "Limited resources, unlimited wants"
+       ],
+       [
+        "Demand",
+        "Willingness and ability to buy"
+       ],
+       [
+        "Supply",
+        "Amount sellers offer"
+       ],
+       [
+        "Equilibrium",
+        "Quantity demanded equals supplied"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the market adjustment to a price above equilibrium in order",
+      "items": [
+       [
+        "Price is set above equilibrium",
+        1
+       ],
+       [
+        "A surplus appears",
+        2
+       ],
+       [
+        "Sellers lower prices",
+        3
+       ],
+       [
+        "Market returns to equilibrium",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Economic Indicators",
+    "period": "Unit 2",
+    "learn": [
+     {
+      "h": "GDP",
+      "b": "Gross domestic product (GDP) is the total value of final goods and services produced in a country in a year. Real GDP is adjusted for inflation, and nominal GDP is not."
+     },
+     {
+      "h": "Unemployment",
+      "b": "The unemployment rate is the number unemployed divided by the labor force. Frictional unemployment is between jobs, structural unemployment is from skill mismatch, and cyclical unemployment rises in recessions."
+     },
+     {
+      "h": "Inflation and cycles",
+      "b": "Inflation is a general rise in prices, measured with the Consumer Price Index (CPI). The business cycle moves through expansion, peak, contraction, and trough."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does GDP measure?",
+      "o": [
+       "Total government spending",
+       "Value of final goods and services produced in a year",
+       "Total exports",
+       "Income of the richest people"
+      ],
+      "a": 1,
+      "why": "GDP counts the value of final output within a country."
+     },
+     {
+      "t": "mc",
+      "q": "How is the unemployment rate calculated?",
+      "o": [
+       "Unemployed divided by total population",
+       "Employed divided by labor force",
+       "Unemployed divided by the labor force",
+       "Jobs divided by workers"
+      ],
+      "a": 2,
+      "why": "Only people in the labor force count in the denominator."
+     },
+     {
+      "t": "mc",
+      "q": "Which measure tracks changes in prices of a basket of consumer goods?",
+      "o": [
+       "Gross National Product",
+       "Labor force participation rate",
+       "Trade deficit",
+       "Consumer Price Index"
+      ],
+      "a": 3,
+      "why": "CPI is the main measure of inflation for households."
+     },
+     {
+      "t": "mc",
+      "q": "Which GDP measure is adjusted for inflation?",
+      "o": [
+       "Real GDP",
+       "Nominal GDP",
+       "Net GDP",
+       "Per capita GDP"
+      ],
+      "a": 0,
+      "why": "Real GDP uses constant prices."
+     },
+     {
+      "t": "tf",
+      "q": "Cyclical unemployment rises during recessions.",
+      "a": true,
+      "why": "Falling demand causes layoffs."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Inflation",
+        "General rise in prices"
+       ],
+       [
+        "Recession",
+        "Significant decline in activity"
+       ],
+       [
+        "Frictional unemployment",
+        "Between jobs"
+       ],
+       [
+        "Structural unemployment",
+        "Skills do not match jobs"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the phases of the business cycle in order",
+      "items": [
+       [
+        "Expansion",
+        1
+       ],
+       [
+        "Peak",
+        2
+       ],
+       [
+        "Contraction",
+        3
+       ],
+       [
+        "Trough",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Aggregate Demand and Fiscal Policy",
+    "period": "Units 3-4",
+    "learn": [
+     {
+      "h": "Aggregate demand",
+      "b": "Aggregate demand (AD) is total spending in the economy. GDP = C + I + G + NX: consumption, investment, government spending, and net exports. AD shifts right when consumer confidence rises."
+     },
+     {
+      "h": "Fiscal policy",
+      "b": "Fiscal policy is government spending and taxes. Expansionary policy cuts taxes or raises spending to fight recessions. Contractionary policy does the opposite to fight inflation."
+     },
+     {
+      "h": "The multiplier",
+      "b": "The multiplier is 1/(1 - MPC), where MPC is the marginal propensity to consume. If MPC is 0.8, the multiplier is 5. Stagflation is high inflation together with high unemployment."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the expenditure formula for GDP?",
+      "o": [
+       "C + S + T",
+       "C + I + G + NX",
+       "M x V",
+       "W + R + I + P"
+      ],
+      "a": 1,
+      "why": "Consumption, investment, government spending, and net exports."
+     },
+     {
+      "t": "mc",
+      "q": "Which is expansionary fiscal policy?",
+      "o": [
+       "Raise taxes",
+       "Cut government spending",
+       "Cut taxes or raise spending",
+       "Sell bonds"
+      ],
+      "a": 2,
+      "why": "It boosts aggregate demand during a recession."
+     },
+     {
+      "t": "mc",
+      "q": "If MPC is 0.8, what is the spending multiplier?",
+      "o": [
+       "2",
+       "4",
+       "8",
+       "5"
+      ],
+      "a": 3,
+      "why": "1/(1 - 0.8) = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Which change would shift aggregate demand to the right?",
+      "o": [
+       "Higher consumer confidence",
+       "Higher taxes",
+       "Lower government spending",
+       "Lower exports"
+      ],
+      "a": 0,
+      "why": "More confident consumers spend more."
+     },
+     {
+      "t": "tf",
+      "q": "In the short run, an increase in aggregate demand can raise both output and the price level.",
+      "a": true,
+      "why": "Moving up the short-run aggregate supply curve raises both."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fiscal policy",
+        "Government spending and taxes"
+       ],
+       [
+        "Aggregate demand",
+        "Total spending at each price level"
+       ],
+       [
+        "Stagflation",
+        "High inflation with high unemployment"
+       ],
+       [
+        "Multiplier",
+        "Total GDP change per initial spending change"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the effects of a tax cut in order",
+      "items": [
+       [
+        "Government cuts taxes",
+        1
+       ],
+       [
+        "Households have more disposable income",
+        2
+       ],
+       [
+        "Consumption rises",
+        3
+       ],
+       [
+        "AD shifts right and real GDP rises",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Money, Banking, and Trade",
+    "period": "Units 4-6",
+    "learn": [
+     {
+      "h": "Money",
+      "b": "Money works as a medium of exchange, a store of value, and a unit of account. Banks keep a fraction of deposits as reserves. The simple money multiplier is 1 divided by the reserve requirement, so a 20% requirement gives 5."
+     },
+     {
+      "h": "The Federal Reserve",
+      "b": "The Fed is the central bank of the United States. Its tools include open market operations (buying or selling government bonds), the reserve requirement, and the discount rate. To fight a recession, it buys bonds to lower interest rates."
+     },
+     {
+      "h": "Exchange rates",
+      "b": "If the dollar appreciates, US exports become more expensive for foreigners and imports become cheaper for Americans."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a function of money?",
+      "o": [
+       "Generating profit",
+       "Medium of exchange",
+       "Fixing prices",
+       "Collecting taxes"
+      ],
+      "a": 1,
+      "why": "Money lets people trade without bartering."
+     },
+     {
+      "t": "mc",
+      "q": "To fight a recession, what should the Fed do?",
+      "o": [
+       "Raise the discount rate",
+       "Sell bonds",
+       "Raise the reserve requirement",
+       "Buy government bonds"
+      ],
+      "a": 3,
+      "why": "Buying bonds adds reserves and lowers interest rates."
+     },
+     {
+      "t": "mc",
+      "q": "If the reserve requirement is 20%, what is the simple money multiplier?",
+      "o": [
+       "2",
+       "10",
+       "5",
+       "20"
+      ],
+      "a": 2,
+      "why": "1 / 0.20 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "If the US dollar appreciates, what happens to US exports?",
+      "o": [
+       "They become more expensive for foreigners",
+       "They become cheaper for foreigners",
+       "They do not change",
+       "They become free"
+      ],
+      "a": 0,
+      "why": "A stronger dollar makes US goods cost more abroad."
+     },
+     {
+      "t": "tf",
+      "q": "The Federal Reserve is the central bank of the United States.",
+      "a": true,
+      "why": "It manages monetary policy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Central bank",
+        "Manages the money supply"
+       ],
+       [
+        "Reserve requirement",
+        "Share of deposits banks must hold"
+       ],
+       [
+        "Open market operations",
+        "Buying or selling government bonds"
+       ],
+       [
+        "Discount rate",
+        "Rate the Fed charges banks"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps the Fed takes to fight inflation in order",
+      "items": [
+       [
+        "The Fed sells bonds",
+        1
+       ],
+       [
+        "Bank reserves fall",
+        2
+       ],
+       [
+        "Interest rates rise",
+        3
+       ],
+       [
+        "Spending and AD fall",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
