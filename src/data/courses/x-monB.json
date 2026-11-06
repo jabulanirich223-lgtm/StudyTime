@@ -1,0 +1,7256 @@
+{
+ "biz-basics": {
+  "name": "Business Basics",
+  "units": [
+   {
+    "title": "What Is a Business?",
+    "period": "Foundations",
+    "learn": [
+     {
+      "h": "Goods and services",
+      "b": "A business makes goods, like shoes, or provides services, like haircuts, to earn money. It exists to meet customer needs. Some businesses sell both."
+     },
+     {
+      "h": "Revenue, expenses, profit",
+      "b": "Revenue is the money from sales. Expenses are the costs of running the business. Profit is revenue minus expenses."
+     },
+     {
+      "h": "Stakeholders",
+      "b": "Stakeholders are people affected by a business: owners, employees, customers, suppliers and the community. Good businesses think about all of them."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is revenue?",
+      "o": [
+       "Costs of the business",
+       "Money earned from sales",
+       "Money owed",
+       "Taxes"
+      ],
+      "a": 1,
+      "why": "Revenue is the total sales income."
+     },
+     {
+      "t": "mc",
+      "q": "How is profit calculated?",
+      "o": [
+       "Revenue plus expenses",
+       "Expenses minus revenue",
+       "Revenue minus expenses",
+       "Sales times price"
+      ],
+      "a": 2,
+      "why": "Profit is what remains after expenses."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a service?",
+      "o": [
+       "A pair of shoes",
+       "A phone",
+       "A bag of rice",
+       "A haircut"
+      ],
+      "a": 3,
+      "why": "Services are actions done for customers, not physical items."
+     },
+     {
+      "t": "mc",
+      "q": "Who is a stakeholder of a business?",
+      "o": [
+       "Its employees",
+       "Only the owner",
+       "Only the bank",
+       "Nobody else"
+      ],
+      "a": 0,
+      "why": "Employees, customers, suppliers and owners are all affected."
+     },
+     {
+      "t": "tf",
+      "q": "A business always makes a profit.",
+      "a": false,
+      "why": "If expenses exceed revenue, a business has a loss."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Revenue",
+        "Money from sales"
+       ],
+       [
+        "Expense",
+        "Cost of operating"
+       ],
+       [
+        "Profit",
+        "Revenue minus expenses"
+       ],
+       [
+        "Customer",
+        "Buyer of goods or services"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of running a lemonade stand in order",
+      "items": [
+       [
+        "Buy supplies",
+        1
+       ],
+       [
+        "Make the lemonade",
+        2
+       ],
+       [
+        "Sell to customers",
+        3
+       ],
+       [
+        "Count the profit",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A bakery has revenue of $1,200 and expenses of $850. What is the profit in dollars?",
+      "a": [
+       "350",
+       "$350"
+      ],
+      "hint": "Profit = revenue - expenses.",
+      "why": "1,200 - 850 = 350."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A shop sells 40 cakes at $15 each. What is the revenue in dollars?",
+      "a": [
+       "600",
+       "$600"
+      ],
+      "hint": "Multiply the number sold by the price.",
+      "why": "40 x 15 = 600."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: People affected by a business, like owners, employees and customers, are called what?",
+      "a": [
+       "stakeholders",
+       "stakeholder"
+      ],
+      "hint": "The word starts with 'stake'.",
+      "why": "They are stakeholders because the business affects them."
+     }
+    ]
+   },
+   {
+    "title": "Business Structures",
+    "period": "Ownership",
+    "learn": [
+     {
+      "h": "Sole proprietorship and partnership",
+      "b": "A sole proprietorship has one owner who keeps all profit and is personally responsible for debts. A partnership has two or more owners who share profit and responsibility."
+     },
+     {
+      "h": "LLC",
+      "b": "An LLC, limited liability company, is a flexible structure. In general it keeps owners' personal belongings separate from business debts. This is called limited liability."
+     },
+     {
+      "h": "Corporation",
+      "b": "A corporation is a separate legal entity owned by shareholders. It can raise money by selling shares. It is more complex and has more rules."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many owners does a sole proprietorship have?",
+      "o": [
+       "Two",
+       "One",
+       "Many shareholders",
+       "None"
+      ],
+      "a": 1,
+      "why": "Sole means one owner."
+     },
+     {
+      "t": "mc",
+      "q": "What does limited liability mean?",
+      "o": [
+       "No taxes",
+       "No customers",
+       "Owners are generally not personally responsible for all business debts",
+       "Owners cannot make profit"
+      ],
+      "a": 2,
+      "why": "Personal assets are generally protected from business debts."
+     },
+     {
+      "t": "mc",
+      "q": "What is a corporation?",
+      "o": [
+       "A one-person shop",
+       "A family loan",
+       "A hobby",
+       "A separate legal entity owned by shareholders"
+      ],
+      "a": 3,
+      "why": "A corporation is legally separate from its owners."
+     },
+     {
+      "t": "mc",
+      "q": "How many owners does a partnership have?",
+      "o": [
+       "Two or more",
+       "Exactly one",
+       "None",
+       "Only shareholders"
+      ],
+      "a": 0,
+      "why": "Partnerships are owned by two or more people."
+     },
+     {
+      "t": "tf",
+      "q": "An LLC can generally protect owners' personal assets from business debts.",
+      "a": true,
+      "why": "Limited liability is the main feature of an LLC."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Sole proprietorship",
+        "One owner"
+       ],
+       [
+        "Partnership",
+        "Two or more owners"
+       ],
+       [
+        "LLC",
+        "Flexible with limited liability"
+       ],
+       [
+        "Corporation",
+        "Separate legal entity"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of forming a company in order",
+      "items": [
+       [
+        "Choose a business structure",
+        1
+       ],
+       [
+        "Register with the state",
+        2
+       ],
+       [
+        "Get required licenses",
+        3
+       ],
+       [
+        "Open for business",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which structure has one owner who is personally responsible for the debts? (two words)",
+      "a": [
+       "sole proprietorship",
+       "a sole proprietorship",
+       "sole proprietor"
+      ],
+      "hint": "One owner, no separate legal entity.",
+      "why": "A sole proprietorship has no legal separation between owner and business."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does LLC stand for?",
+      "a": [
+       "limited liability company",
+       "a limited liability company"
+      ],
+      "hint": "The middle word is the key idea: owners' belongings are protected.",
+      "why": "LLC means limited liability company."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The owners of a corporation are called what?",
+      "a": [
+       "shareholders",
+       "stockholders",
+       "shareholder",
+       "stockholder"
+      ],
+      "hint": "They own shares.",
+      "why": "Shareholders own parts of the corporation through shares."
+     }
+    ]
+   },
+   {
+    "title": "Supply, Demand and Markets",
+    "period": "Economics",
+    "learn": [
+     {
+      "h": "Demand and supply",
+      "b": "Demand is how much buyers want at a price. When the price goes up, buyers usually want less. Supply is how much sellers offer. When the price goes up, sellers usually offer more."
+     },
+     {
+      "h": "Equilibrium",
+      "b": "The equilibrium price is where the quantity supplied equals the quantity demanded. If the price is too low, there is a shortage. If it is too high, there is a surplus, so goods are left unsold."
+     },
+     {
+      "h": "Scarcity and competition",
+      "b": "Scarcity means resources are limited but wants are not. Opportunity cost is the next best choice you give up. A monopoly has one seller. Competition between many sellers usually keeps prices fair."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "When the price of a product goes up, what usually happens to the quantity buyers want?",
+      "o": [
+       "It rises",
+       "It falls",
+       "It stays exactly the same",
+       "It doubles"
+      ],
+      "a": 1,
+      "why": "Higher prices usually reduce the quantity demanded."
+     },
+     {
+      "t": "mc",
+      "q": "A shortage happens when:",
+      "o": [
+       "Quantity supplied is higher than demanded",
+       "Price equals the equilibrium price",
+       "Quantity demanded is higher than quantity supplied",
+       "Nobody wants the product"
+      ],
+      "a": 2,
+      "why": "Buyers want more than sellers offer, so the product runs out."
+     },
+     {
+      "t": "mc",
+      "q": "What is the equilibrium price?",
+      "o": [
+       "The price where supply equals demand",
+       "The lowest price possible",
+       "The price set by the government",
+       "The price of the best seller"
+      ],
+      "a": 0,
+      "why": "At equilibrium, buyers and sellers agree on quantity."
+     },
+     {
+      "t": "mc",
+      "q": "What is opportunity cost?",
+      "o": [
+       "The price on the tag",
+       "A tax on trade",
+       "The cost of making a product",
+       "The value of the next best choice you give up"
+      ],
+      "a": 3,
+      "why": "Choosing one thing means giving up the next best option."
+     },
+     {
+      "t": "tf",
+      "q": "A market with only one seller is called a monopoly.",
+      "a": true,
+      "why": "Mono means one: one seller controls the market."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Scarcity",
+        "Limited resources, unlimited wants"
+       ],
+       [
+        "Surplus",
+        "Supply greater than demand"
+       ],
+       [
+        "Monopoly",
+        "One seller controls the market"
+       ],
+       [
+        "Competition",
+        "Many sellers try to win buyers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order when a price is set too low",
+      "items": [
+       [
+        "The price is set too low",
+        1
+       ],
+       [
+        "Demand becomes higher than supply",
+        2
+       ],
+       [
+        "Sellers raise the price",
+        3
+       ],
+       [
+        "The price moves toward equilibrium",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: One company is the only seller in a market. What is this called?",
+      "a": [
+       "monopoly",
+       "a monopoly"
+      ],
+      "hint": "Mono means one.",
+      "why": "A single seller is a monopoly."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: You pay $20 for a game instead of a $20 fan. What do we call the value of the fan you gave up?",
+      "a": [
+       "opportunity cost",
+       "the opportunity cost"
+      ],
+      "hint": "Two words: it is the cost of the next best choice.",
+      "why": "The fan is the opportunity cost of buying the game."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: At $5 buyers want 120 sunglasses but sellers offer only 80. How many sunglasses is the shortage?",
+      "a": [
+       "40"
+      ],
+      "hint": "Subtract supply from demand.",
+      "why": "120 - 80 = 40."
+     }
+    ]
+   },
+   {
+    "title": "Operations and Management",
+    "period": "Running It",
+    "learn": [
+     {
+      "h": "Supply chain and inventory",
+      "b": "A supply chain is the path from raw materials to the customer. Inventory is the goods a business holds for sale. Too little means lost sales, too much ties up money."
+     },
+     {
+      "h": "Management functions",
+      "b": "Managers plan (set goals), organize (arrange people and resources), lead (guide and motivate) and control (check results and fix problems)."
+     },
+     {
+      "h": "SWOT analysis",
+      "b": "SWOT stands for Strengths, Weaknesses, Opportunities and Threats. Strengths and weaknesses are inside the business. Opportunities and threats come from outside, like new rivals."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a supply chain?",
+      "o": [
+       "The path from raw materials to the customer",
+       "A store sign",
+       "A bank chain",
+       "A list of employees"
+      ],
+      "a": 0,
+      "why": "It covers everything needed to get a product to buyers."
+     },
+     {
+      "t": "mc",
+      "q": "What is inventory?",
+      "o": [
+       "Employee records",
+       "Goods a business holds for sale",
+       "Bank loans",
+       "Advertising plans"
+      ],
+      "a": 1,
+      "why": "Inventory is the stock of goods ready to sell."
+     },
+     {
+      "t": "mc",
+      "q": "What does the T in SWOT stand for?",
+      "o": [
+       "Taxes",
+       "Time",
+       "Threats",
+       "Tools"
+      ],
+      "a": 2,
+      "why": "SWOT is Strengths, Weaknesses, Opportunities, Threats."
+     },
+     {
+      "t": "mc",
+      "q": "Which management function means setting goals and deciding how to reach them?",
+      "o": [
+       "Controlling",
+       "Leading",
+       "Organizing",
+       "Planning"
+      ],
+      "a": 3,
+      "why": "Planning sets the goals and the path."
+     },
+     {
+      "t": "tf",
+      "q": "Opportunities and threats in a SWOT analysis are internal to the company.",
+      "a": false,
+      "why": "They are external; strengths and weaknesses are internal."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Supply chain",
+        "Raw materials to customer"
+       ],
+       [
+        "Inventory",
+        "Goods held for sale"
+       ],
+       [
+        "Quality control",
+        "Checking products meet standards"
+       ],
+       [
+        "Planning",
+        "Setting goals"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the management functions in order",
+      "items": [
+       [
+        "Planning",
+        1
+       ],
+       [
+        "Organizing",
+        2
+       ],
+       [
+        "Leading",
+        3
+       ],
+       [
+        "Controlling",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In SWOT, what does the S stand for?",
+      "a": [
+       "strengths",
+       "strength"
+      ],
+      "hint": "It is something good inside the business.",
+      "why": "SWOT is Strengths, Weaknesses, Opportunities, Threats."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which management function means setting goals and deciding how to reach them?",
+      "a": [
+       "planning",
+       "plan"
+      ],
+      "hint": "It comes first: plan, organize, lead, control.",
+      "why": "Planning sets the goals and the path to them."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the supply chain in order",
+      "lines": [
+       "Raw materials are collected",
+       "A factory makes the product",
+       "A store stocks the product",
+       "The customer buys it"
+      ],
+      "why": "A supply chain runs from raw materials to the customer."
+     }
+    ]
+   },
+   {
+    "title": "Human Resources and Teams",
+    "period": "People",
+    "learn": [
+     {
+      "h": "Hiring",
+      "b": "Human resources (HR) finds and supports employees. Hiring usually goes: write a job description, advertise, interview, make an offer, then train. Training helps new workers do the job well."
+     },
+     {
+      "h": "Pay and benefits",
+      "b": "A wage is pay by the hour. A salary is a fixed amount per year. Benefits are extras such as health insurance and paid time off. Turnover is how often employees leave and must be replaced."
+     },
+     {
+      "h": "Motivation and fairness",
+      "b": "People work best with clear goals, good communication and recognition, not only money. Laws set rules such as minimum wage and safe workplaces. It is illegal to refuse a job because of someone's race or religion."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a salary?",
+      "o": [
+       "Pay only for each hour worked",
+       "A bonus for sales",
+       "A fixed amount paid per year",
+       "A gift from customers"
+      ],
+      "a": 2,
+      "why": "A salary stays the same regardless of the exact hours."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is an employee benefit?",
+      "o": [
+       "Paid time off",
+       "A job title",
+       "A business license",
+       "A supplier contract"
+      ],
+      "a": 0,
+      "why": "Benefits are extras given on top of pay."
+     },
+     {
+      "t": "mc",
+      "q": "What is usually the first step in hiring?",
+      "o": [
+       "Train the new employee",
+       "Write a job description",
+       "Give a raise",
+       "Sign a retirement plan"
+      ],
+      "a": 1,
+      "why": "You must know what the job needs before you search."
+     },
+     {
+      "t": "mc",
+      "q": "Which is illegal when hiring in most countries?",
+      "o": [
+       "Checking references",
+       "Asking about skills",
+       "Posting a job ad",
+       "Rejecting someone because of their religion"
+      ],
+      "a": 3,
+      "why": "Discrimination is against the law."
+     },
+     {
+      "t": "tf",
+      "q": "Employees are motivated only by money.",
+      "a": false,
+      "why": "Recognition, goals and growth also motivate people."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Wage",
+        "Pay by the hour"
+       ],
+       [
+        "Salary",
+        "Fixed yearly pay"
+       ],
+       [
+        "Benefits",
+        "Extras like insurance and leave"
+       ],
+       [
+        "Turnover",
+        "Rate at which employees leave"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the hiring steps in order",
+      "items": [
+       [
+        "Post the job ad",
+        1
+       ],
+       [
+        "Interview candidates",
+        2
+       ],
+       [
+        "Make a job offer",
+        3
+       ],
+       [
+        "Train the new employee",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: An employee earns $12 per hour and works 30 hours. What is the pay in dollars?",
+      "a": [
+       "360",
+       "$360"
+      ],
+      "hint": "Multiply hourly pay by hours.",
+      "why": "12 x 30 = 360."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A salary is $24,000 per year, paid in 12 equal months. What is one monthly payment in dollars?",
+      "a": [
+       "2000",
+       "$2000",
+       "2,000"
+      ],
+      "hint": "Divide by 12.",
+      "why": "24,000 / 12 = 2,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: When employees leave and must be replaced, the rate is called employee what?",
+      "a": [
+       "turnover",
+       "employee turnover"
+      ],
+      "hint": "It starts with T.",
+      "why": "Turnover measures how often workers leave."
+     }
+    ]
+   },
+   {
+    "title": "Money and Growth",
+    "period": "Growth",
+    "learn": [
+     {
+      "h": "Cash flow",
+      "b": "Cash flow is the movement of money in and out of a business. Positive cash flow means more comes in than goes out. A profitable business can still run out of cash if customers pay late."
+     },
+     {
+      "h": "Break-even and scale",
+      "b": "The break-even point is when revenue equals total costs, so profit is zero. Economies of scale mean the cost per unit falls as a business makes more."
+     },
+     {
+      "h": "Product life cycle and ethics",
+      "b": "Products go through introduction, growth, maturity and decline. Business ethics means doing the right thing, such as honest ads and fair pay. Trust helps a business last."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is cash flow?",
+      "o": [
+       "Total profit",
+       "Movement of money in and out",
+       "Stock price",
+       "Number of customers"
+      ],
+      "a": 1,
+      "why": "Cash flow tracks money entering and leaving."
+     },
+     {
+      "t": "mc",
+      "q": "What are economies of scale?",
+      "o": [
+       "Rising costs per unit",
+       "Cost per unit falls as output grows",
+       "Weighing machines",
+       "Lower quality"
+      ],
+      "a": 1,
+      "why": "Making more can spread costs and lower the unit cost."
+     },
+     {
+      "t": "mc",
+      "q": "What is the break-even point?",
+      "o": [
+       "Revenue exceeds costs",
+       "Costs are zero",
+       "When revenue equals total costs",
+       "When the company closes"
+      ],
+      "a": 2,
+      "why": "At break-even, profit is zero."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the first stage of the product life cycle?",
+      "o": [
+       "Decline",
+       "Maturity",
+       "Growth",
+       "Introduction"
+      ],
+      "a": 3,
+      "why": "A product starts with its introduction to the market."
+     },
+     {
+      "t": "tf",
+      "q": "A profitable business can still run out of cash.",
+      "a": true,
+      "why": "Timing matters: if money arrives late, bills may go unpaid."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Cash flow",
+        "Money in and out"
+       ],
+       [
+        "Break-even",
+        "Revenue equals costs"
+       ],
+       [
+        "Economies of scale",
+        "Lower unit cost with more output"
+       ],
+       [
+        "Stakeholder",
+        "Person affected by the business"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the product life cycle in order",
+      "items": [
+       [
+        "Introduction",
+        1
+       ],
+       [
+        "Growth",
+        2
+       ],
+       [
+        "Maturity",
+        3
+       ],
+       [
+        "Decline",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Fixed costs are $500 and each unit adds $5 after variable costs. How many units are needed to break even?",
+      "a": [
+       "100"
+      ],
+      "hint": "Divide fixed costs by the amount each unit adds.",
+      "why": "500 / 5 = 100 units."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A business takes in $900 and pays out $650 in a month. What is the net cash flow in dollars?",
+      "a": [
+       "250",
+       "$250"
+      ],
+      "hint": "Money in minus money out.",
+      "why": "900 - 650 = 250."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which stage of the product life cycle comes right after growth?",
+      "a": [
+       "maturity",
+       "mature"
+      ],
+      "hint": "Introduction, growth, ___, decline.",
+      "why": "After growth, sales level off in maturity."
+     }
+    ]
+   },
+   {
+    "title": "Ethics and Social Responsibility",
+    "period": "Responsible business",
+    "learn": [
+     {
+      "h": "Law and ethics",
+      "b": "Laws are rules you must follow. Ethics is about what is right. Something can be legal but still unethical, like misleading customers in a way the law does not cover."
+     },
+     {
+      "h": "Social responsibility",
+      "b": "CSR, corporate social responsibility, means a business cares about society and the environment, not only profit. Examples are cutting waste, fair pay and donating. Sustainability means meeting today's needs without harming the future."
+     },
+     {
+      "h": "Wrongdoing",
+      "b": "Bribery is paying to get unfair favors. Fraud is lying to gain money unfairly. A conflict of interest is when personal gain clashes with your duty. A whistleblower reports wrongdoing inside an organization."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does CSR stand for?",
+      "o": [
+       "Company sales report",
+       "Corporate social responsibility",
+       "Customer service rating",
+       "Cost and supply review"
+      ],
+      "a": 1,
+      "why": "CSR is about a company's duty to society."
+     },
+     {
+      "t": "mc",
+      "q": "A company legally dumps waste that harms a river. How is this best described?",
+      "o": [
+       "Legal but unethical",
+       "Legal and ethical",
+       "Illegal but ethical",
+       "A form of sustainability"
+      ],
+      "a": 0,
+      "why": "Following the law does not make an action right."
+     },
+     {
+      "t": "mc",
+      "q": "What does the triple bottom line measure?",
+      "o": [
+       "Price, product and place",
+       "Sales, costs and taxes",
+       "People, planet and profit",
+       "Staff, stock and savings"
+      ],
+      "a": 2,
+      "why": "It adds social and environmental results to profit."
+     },
+     {
+      "t": "mc",
+      "q": "What is a whistleblower?",
+      "o": [
+       "A person who sells whistles",
+       "A company auditor",
+       "A rival business owner",
+       "Someone who reports wrongdoing inside an organization"
+      ],
+      "a": 3,
+      "why": "Whistleblowers expose wrongdoing."
+     },
+     {
+      "t": "tf",
+      "q": "If something is legal, it is always ethical.",
+      "a": false,
+      "why": "Some legal actions are still unfair or harmful."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Sustainability",
+        "Meeting needs without harming the future"
+       ],
+       [
+        "Bribery",
+        "Paying to get unfair favors"
+       ],
+       [
+        "Fraud",
+        "Lying to gain money unfairly"
+       ],
+       [
+        "Conflict of interest",
+        "Personal gain clashes with duty"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order after a company finds an unsafe product",
+      "items": [
+       [
+        "Find the problem",
+        1
+       ],
+       [
+        "Stop selling the product",
+        2
+       ],
+       [
+        "Tell customers openly",
+        3
+       ],
+       [
+        "Improve the safety checks",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do we call a person who reports wrongdoing inside an organization?",
+      "a": [
+       "whistleblower",
+       "a whistleblower"
+      ],
+      "hint": "One word, it involves blowing a whistle.",
+      "why": "A whistleblower exposes wrongdoing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The triple bottom line is people, planet and what?",
+      "a": [
+       "profit",
+       "profits"
+      ],
+      "hint": "It is the traditional business goal.",
+      "why": "The three Ps are people, planet and profit."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Paying someone money to get an unfair favor is called what?",
+      "a": [
+       "bribery",
+       "bribe",
+       "a bribe",
+       "bribing"
+      ],
+      "hint": "It starts with B.",
+      "why": "That is bribery."
+     }
+    ]
+   },
+   {
+    "title": "Global Business and Trade",
+    "period": "Global economy",
+    "learn": [
+     {
+      "h": "Imports and exports",
+      "b": "An import is a good bought from another country. An export is a good sold to another country. Trade lets countries focus on what they make best."
+     },
+     {
+      "h": "Trade rules",
+      "b": "A tariff is a tax on imported goods. A quota limits how much of a good can be imported. Both can protect local businesses but raise prices for buyers."
+     },
+     {
+      "h": "Going global",
+      "b": "An exchange rate is the price of one currency in another. If $1 = 0.90 euros, then $100 = 90 euros. Outsourcing is paying another company, often abroad, to do some work. A multinational operates in many countries."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an export?",
+      "o": [
+       "A good sold to another country",
+       "A good bought from another country",
+       "A tax on trade",
+       "A foreign currency"
+      ],
+      "a": 0,
+      "why": "Exports leave the country to be sold abroad."
+     },
+     {
+      "t": "mc",
+      "q": "What is a tariff?",
+      "o": [
+       "A limit on exports",
+       "A tax on imported goods",
+       "A kind of currency",
+       "A shipping company"
+      ],
+      "a": 1,
+      "why": "Tariffs make imports more expensive."
+     },
+     {
+      "t": "mc",
+      "q": "If $1 equals 0.90 euros, how many euros is $50?",
+      "o": [
+       "55",
+       "50",
+       "45",
+       "4.5"
+      ],
+      "a": 2,
+      "why": "50 x 0.90 = 45."
+     },
+     {
+      "t": "mc",
+      "q": "What is outsourcing?",
+      "o": [
+       "Selling goods abroad",
+       "Hiring only family",
+       "Closing a factory",
+       "Paying another company to do some of your work"
+      ],
+      "a": 3,
+      "why": "Outsourcing hands tasks to an outside company."
+     },
+     {
+      "t": "tf",
+      "q": "A country imports goods when it sells them to other countries.",
+      "a": false,
+      "why": "Selling abroad is exporting; importing means buying from abroad."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Import",
+        "Good bought from abroad"
+       ],
+       [
+        "Export",
+        "Good sold abroad"
+       ],
+       [
+        "Quota",
+        "Limit on imported amount"
+       ],
+       [
+        "Multinational",
+        "Company operating in many countries"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of exporting a product in order",
+      "items": [
+       [
+        "Find a foreign buyer",
+        1
+       ],
+       [
+        "Agree on price and terms",
+        2
+       ],
+       [
+        "Ship the goods through customs",
+        3
+       ],
+       [
+        "Receive payment",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: $1 = 0.90 euros. How many euros do you get for $200?",
+      "a": [
+       "180",
+       "180 euros"
+      ],
+      "hint": "Multiply 200 by 0.90.",
+      "why": "200 x 0.90 = 180."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A country adds a 10% tariff to a $40 imported item. How many dollars is the tariff?",
+      "a": [
+       "4",
+       "$4"
+      ],
+      "hint": "10% of 40.",
+      "why": "0.10 x 40 = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Paying another company, often abroad, to do some of your work is called what?",
+      "a": [
+       "outsourcing",
+       "outsource"
+      ],
+      "hint": "It starts with 'out'.",
+      "why": "That is outsourcing."
+     }
+    ]
+   }
+  ]
+ },
+ "biz-entre": {
+  "name": "Entrepreneurship",
+  "units": [
+   {
+    "title": "Finding an Idea",
+    "period": "Ideas",
+    "learn": [
+     {
+      "h": "What is an entrepreneur?",
+      "b": "An entrepreneur starts and runs a business and takes on financial risk. Many great businesses begin by solving a real problem. Example: a tutoring app for students who need homework help."
+     },
+     {
+      "h": "Know your customer",
+      "b": "Your target market is the group of people you want to serve. Market research means collecting information about customers and competitors, by talking to people or using surveys."
+     },
+     {
+      "h": "Value proposition",
+      "b": "A value proposition explains why customers should choose you. It answers: what problem do you solve and why are you better? Keep it short and clear."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an entrepreneur?",
+      "o": [
+       "Someone who only works for others",
+       "Someone who starts and runs a business and takes risk",
+       "A tax officer",
+       "A bank clerk"
+      ],
+      "a": 1,
+      "why": "Entrepreneurs create businesses and accept financial risk."
+     },
+     {
+      "t": "mc",
+      "q": "Good business ideas often do what?",
+      "o": [
+       "Copy every competitor exactly",
+       "Avoid customers",
+       "Solve a real problem for customers",
+       "Ignore costs"
+      ],
+      "a": 2,
+      "why": "Solving a problem gives people a reason to buy."
+     },
+     {
+      "t": "mc",
+      "q": "What is a value proposition?",
+      "o": [
+       "A tax form",
+       "A loan agreement",
+       "A price list",
+       "The reason customers should choose your product"
+      ],
+      "a": 3,
+      "why": "It states the benefit you offer."
+     },
+     {
+      "t": "mc",
+      "q": "What is market research?",
+      "o": [
+       "Collecting information about customers and competitors",
+       "Printing flyers",
+       "Hiring staff",
+       "Buying stock"
+      ],
+      "a": 0,
+      "why": "Research helps you understand the market before you spend."
+     },
+     {
+      "t": "tf",
+      "q": "Talking to potential customers before launching can reduce risk.",
+      "a": true,
+      "why": "You learn what people want before investing heavily."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Entrepreneur",
+        "Starts and runs a business"
+       ],
+       [
+        "Target market",
+        "Group you want to serve"
+       ],
+       [
+        "Value proposition",
+        "Why customers should pick you"
+       ],
+       [
+        "Competitor",
+        "Business selling similar things"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of developing an idea in order",
+      "items": [
+       [
+        "Spot a problem",
+        1
+       ],
+       [
+        "Brainstorm a solution",
+        2
+       ],
+       [
+        "Test it with customers",
+        3
+       ],
+       [
+        "Improve it",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The group of people you want to serve is called your target what? (two words: target ___)",
+      "a": [
+       "target market",
+       "market",
+       "target audience",
+       "target customers"
+      ],
+      "hint": "Think of who you aim at.",
+      "why": "Your target market is the group you aim to serve."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Collecting information about customers and competitors is called market what?",
+      "a": [
+       "research",
+       "market research"
+      ],
+      "hint": "It is about finding things out.",
+      "why": "Market research gathers facts about customers and rivals."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A short statement of why customers should choose you is a value what?",
+      "a": [
+       "proposition",
+       "value proposition"
+      ],
+      "hint": "It starts with P.",
+      "why": "A value proposition says what problem you solve and why you are better."
+     }
+    ]
+   },
+   {
+    "title": "Market Research and Validation",
+    "period": "Testing ideas",
+    "learn": [
+     {
+      "h": "Primary and secondary research",
+      "b": "Primary research is information you collect yourself, such as surveys and interviews. Secondary research uses data someone else already collected, like reports and articles. Use both to learn about customers and rivals."
+     },
+     {
+      "h": "Validate before you build",
+      "b": "Validation means checking that real customers want your idea before you spend a lot. Ask about what people did in the past, not what they might do. Opinions like 'nice idea' are weak proof."
+     },
+     {
+      "h": "Signs of real demand",
+      "b": "The strongest sign is when people pay or pre-order. A landing page with a sign-up form is a cheap test. Market size can be estimated as number of customers times price, for example 1,000 customers x $20 = $20,000."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is an example of primary research?",
+      "o": [
+       "A government report",
+       "A survey you send to customers",
+       "A magazine article",
+       "A competitor's public report"
+      ],
+      "a": 1,
+      "why": "Primary research is collected by you."
+     },
+     {
+      "t": "mc",
+      "q": "What does validating an idea mean?",
+      "o": [
+       "Checking that real customers want it before investing heavily",
+       "Registering the business name",
+       "Printing business cards",
+       "Hiring a team"
+      ],
+      "a": 0,
+      "why": "Validation tests demand early."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the strongest sign of demand?",
+      "o": [
+       "Friends say it is a nice idea",
+       "You feel sure it will work",
+       "People pre-order or pay",
+       "Lots of social media likes"
+      ],
+      "a": 2,
+      "why": "Spending money shows real interest."
+     },
+     {
+      "t": "mc",
+      "q": "How does competitor analysis help?",
+      "o": [
+       "It copies their prices exactly",
+       "It removes competition",
+       "It guarantees sales",
+       "It shows how others serve customers and where gaps are"
+      ],
+      "a": 3,
+      "why": "You can find what rivals miss."
+     },
+     {
+      "t": "tf",
+      "q": "Secondary research uses data someone else already collected.",
+      "a": true,
+      "why": "Reports and articles are secondary sources."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Primary research",
+        "Data you collect yourself"
+       ],
+       [
+        "Secondary research",
+        "Existing published data"
+       ],
+       [
+        "Pre-order",
+        "Customer pays before it is ready"
+       ],
+       [
+        "Survey",
+        "Questions asked to many people"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the idea validation steps in order",
+      "items": [
+       [
+        "Spot a problem",
+        1
+       ],
+       [
+        "Interview possible customers",
+        2
+       ],
+       [
+        "Build a simple test",
+        3
+       ],
+       [
+        "Measure results and decide",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A market has 2,500 possible customers who would each pay $40. What is the market size in dollars?",
+      "a": [
+       "100000",
+       "$100000",
+       "100,000"
+      ],
+      "hint": "Customers times price.",
+      "why": "2,500 x 40 = 100,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In a survey of 200 people, 50 say they would buy. What percent is that?",
+      "a": [
+       "25",
+       "25%"
+      ],
+      "hint": "Divide 50 by 200.",
+      "why": "50 / 200 = 0.25 = 25%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Information you collect yourself is called what kind of research?",
+      "a": [
+       "primary",
+       "primary research"
+      ],
+      "hint": "Opposite of secondary.",
+      "why": "Collecting data yourself is primary research."
+     }
+    ]
+   },
+   {
+    "title": "Planning and Funding",
+    "period": "Planning",
+    "learn": [
+     {
+      "h": "Business plan and MVP",
+      "b": "A business plan is a written plan of your goals and how to reach them. An MVP, minimum viable product, is the simplest version you can test with real customers. It saves time and money."
+     },
+     {
+      "h": "Startup costs",
+      "b": "Startup costs are what you must spend before earning, such as equipment, a website and licenses. Estimate them to know how much money you need."
+     },
+     {
+      "h": "Ways to fund",
+      "b": "Bootstrapping uses your own savings and sales. A loan must be repaid with interest but you keep ownership. Equity investors give money for a share of ownership. Crowdfunding collects small sums from many people."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an MVP?",
+      "o": [
+       "Most valuable player",
+       "The final perfect product",
+       "The simplest version you can test with customers",
+       "A tax number"
+      ],
+      "a": 2,
+      "why": "An MVP tests the idea with minimal effort."
+     },
+     {
+      "t": "mc",
+      "q": "What is bootstrapping?",
+      "o": [
+       "Getting a big loan",
+       "Selling to investors",
+       "Buying boots",
+       "Funding a business with your own savings and sales"
+      ],
+      "a": 3,
+      "why": "Bootstrapped founders rely on their own money."
+     },
+     {
+      "t": "mc",
+      "q": "What does an equity investor receive?",
+      "o": [
+       "An ownership share",
+       "Guaranteed repayment with interest",
+       "A coupon",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "Equity means ownership in the company."
+     },
+     {
+      "t": "mc",
+      "q": "What is a business plan?",
+      "o": [
+       "A bank card",
+       "A written plan of goals and how to reach them",
+       "A logo",
+       "A tax return"
+      ],
+      "a": 1,
+      "why": "It lays out the idea, market, costs and goals."
+     },
+     {
+      "t": "tf",
+      "q": "A loan gives the lender part ownership of your business.",
+      "a": false,
+      "why": "A loan is repaid with interest; it does not give ownership."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "MVP",
+        "Simplest testable product"
+       ],
+       [
+        "Bootstrapping",
+        "Using your own money"
+       ],
+       [
+        "Crowdfunding",
+        "Small sums from many people"
+       ],
+       [
+        "Equity",
+        "Ownership share"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the startup steps in order",
+      "items": [
+       [
+        "Write a business plan",
+        1
+       ],
+       [
+        "Estimate startup costs",
+        2
+       ],
+       [
+        "Secure funding",
+        3
+       ],
+       [
+        "Launch your MVP",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What three-letter abbreviation means the simplest version of a product you can test?",
+      "a": [
+       "mvp",
+       "MVP"
+      ],
+      "hint": "Minimum viable product.",
+      "why": "An MVP lets you test with real customers cheaply."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Startup costs: equipment $1,500, website $300, license $200. What is the total in dollars?",
+      "a": [
+       "2000",
+       "$2000",
+       "2,000"
+      ],
+      "hint": "Add all three.",
+      "why": "1,500 + 300 + 200 = 2,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Funding a business with your own savings and sales is called what? (one word ending in -ing)",
+      "a": [
+       "bootstrapping",
+       "bootstrap"
+      ],
+      "hint": "Pulling yourself up by your bootstraps.",
+      "why": "Bootstrapping uses your own money."
+     }
+    ]
+   },
+   {
+    "title": "Business Models and Pricing",
+    "period": "Making money",
+    "learn": [
+     {
+      "h": "Business models",
+      "b": "A business model is how a company creates value and earns money. A subscription charges customers regularly. Freemium gives a free basic version and charges for upgrades. A marketplace takes a commission, a share of each sale."
+     },
+     {
+      "h": "Margins",
+      "b": "Contribution per unit is price minus variable cost. If the price is $20 and the variable cost is $8, each unit contributes $12. Margin percent is that amount divided by price, here 60%."
+     },
+     {
+      "h": "Setting a price",
+      "b": "Cost-plus pricing adds a markup to cost. Value-based pricing uses what customers think the product is worth. Fixed costs, like rent, stay the same as sales change. Variable costs rise with each unit."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A monthly payment for a streaming service is an example of a:",
+      "o": [
+       "Commission model",
+       "Subscription model",
+       "One-time sale",
+       "Franchise"
+      ],
+      "a": 1,
+      "why": "Customers pay regularly."
+     },
+     {
+      "t": "mc",
+      "q": "What does freemium mean?",
+      "o": [
+       "A free basic version with paid upgrades",
+       "A product that is always free",
+       "A very cheap premium item",
+       "A free trial that never ends"
+      ],
+      "a": 0,
+      "why": "Freemium mixes free and paid."
+     },
+     {
+      "t": "mc",
+      "q": "Price is $20 and variable cost is $8. What is the contribution per unit?",
+      "o": [
+       "$8",
+       "$28",
+       "$12",
+       "$10"
+      ],
+      "a": 2,
+      "why": "20 - 8 = 12."
+     },
+     {
+      "t": "mc",
+      "q": "Which cost stays the same when you sell more units?",
+      "o": [
+       "Materials for each unit",
+       "Packaging per item",
+       "Shipping per order",
+       "Monthly rent"
+      ],
+      "a": 3,
+      "why": "Rent is a fixed cost."
+     },
+     {
+      "t": "tf",
+      "q": "Value-based pricing sets the price from what customers think the product is worth.",
+      "a": true,
+      "why": "It looks at customer value, not just cost."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Subscription",
+        "Customers pay regularly"
+       ],
+       [
+        "Freemium",
+        "Free basic, paid extras"
+       ],
+       [
+        "Commission",
+        "Share of each sale"
+       ],
+       [
+        "Fixed cost",
+        "Stays the same as sales change"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of cost-plus pricing in order",
+      "items": [
+       [
+        "List all costs",
+        1
+       ],
+       [
+        "Work out the cost per unit",
+        2
+       ],
+       [
+        "Add the markup",
+        3
+       ],
+       [
+        "Set and test the price",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A product sells for $25 and costs $10 to make. What is the margin as a percent of price?",
+      "a": [
+       "60",
+       "60%"
+      ],
+      "hint": "(25 - 10) / 25.",
+      "why": "15 / 25 = 0.60 = 60%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A product costs $12 and you add a 50% markup. What is the price in dollars?",
+      "a": [
+       "18",
+       "$18"
+      ],
+      "hint": "50% of 12 is 6.",
+      "why": "12 + 6 = 18."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Fixed costs are $900 and each unit contributes $15. How many units to break even?",
+      "a": [
+       "60"
+      ],
+      "hint": "Divide 900 by 15.",
+      "why": "900 / 15 = 60."
+     }
+    ]
+   },
+   {
+    "title": "Launching and Growing",
+    "period": "Launch",
+    "learn": [
+     {
+      "h": "Pricing",
+      "b": "Cost-plus pricing means cost plus a markup. If a product costs $6 and you add a 50% markup, the price is $9. Prices that are too low can cause losses, and too high can scare customers away."
+     },
+     {
+      "h": "Break-even",
+      "b": "Break-even is when revenue equals costs. If fixed costs are $100 and each sale adds $5 after variable costs, you need 20 sales to break even."
+     },
+     {
+      "h": "Feedback and pivots",
+      "b": "Customer feedback shows what to improve. A pivot is a big change in strategy based on what you learn. Scaling means growing without costs rising as fast as sales."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A product costs $6 to make. With a 50% markup on cost, what is the price?",
+      "o": [
+       "$7",
+       "$12",
+       "$9",
+       "$6"
+      ],
+      "a": 2,
+      "why": "50% of 6 is 3, so 6 + 3 = 9."
+     },
+     {
+      "t": "mc",
+      "q": "Fixed costs are $100 and each sale adds $5 toward them. How many sales to break even?",
+      "o": [
+       "5",
+       "10",
+       "50",
+       "20"
+      ],
+      "a": 3,
+      "why": "100 / 5 = 20."
+     },
+     {
+      "t": "mc",
+      "q": "What is a pivot?",
+      "o": [
+       "A change in strategy based on what you learn",
+       "Closing the business",
+       "A tax rule",
+       "Hiring a manager"
+      ],
+      "a": 0,
+      "why": "Startups pivot when evidence shows a better path."
+     },
+     {
+      "t": "mc",
+      "q": "What does scaling mean?",
+      "o": [
+       "Weighing goods",
+       "Making the business smaller",
+       "Growing without costs rising as fast as sales",
+       "Lowering quality"
+      ],
+      "a": 2,
+      "why": "Scaling grows revenue faster than costs."
+     },
+     {
+      "t": "tf",
+      "q": "A price that is too low can never hurt a business.",
+      "a": false,
+      "why": "Very low prices can fail to cover costs and cause losses."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Pivot",
+        "Major change in strategy"
+       ],
+       [
+        "Markup",
+        "Amount added to cost"
+       ],
+       [
+        "Scaling",
+        "Growing efficiently"
+       ],
+       [
+        "Feedback",
+        "Customer opinions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the growth stages in order",
+      "items": [
+       [
+        "Idea",
+        1
+       ],
+       [
+        "Prototype",
+        2
+       ],
+       [
+        "First customers",
+        3
+       ],
+       [
+        "Scale up",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A product costs $8 and you add a 25% markup. What is the price in dollars?",
+      "a": [
+       "10",
+       "$10",
+       "10.00"
+      ],
+      "hint": "25% of 8 is 2.",
+      "why": "8 + 2 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Fixed costs are $300 and each sale adds $6 after variable costs. How many sales are needed to break even?",
+      "a": [
+       "50"
+      ],
+      "hint": "Divide 300 by 6.",
+      "why": "300 / 6 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What do we call a big change in strategy based on what you learned from customers?",
+      "a": [
+       "pivot",
+       "a pivot"
+      ],
+      "hint": "Basketball players do it too.",
+      "why": "A pivot changes direction based on feedback."
+     }
+    ]
+   },
+   {
+    "title": "Sales and Customer Service",
+    "period": "Winning customers",
+    "learn": [
+     {
+      "h": "The sales funnel",
+      "b": "A lead is a person who might buy. Many leads enter the sales funnel: awareness, interest, decision, action. The action stage is the purchase. Fewer people reach each next step."
+     },
+     {
+      "h": "Pitching and objections",
+      "b": "A pitch is a short, clear explanation of what you offer. An objection is a reason the customer hesitates, like price. Good sellers listen first and answer the real concern."
+     },
+     {
+      "h": "Serving customers",
+      "b": "Fast, polite service keeps customers coming back. A CRM, customer relationship management tool, stores customer details. Happy customers tell friends, which is word of mouth. Conversion rate is buyers divided by leads."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a lead?",
+      "o": [
+       "A paid advertisement",
+       "A product sample",
+       "A person who might buy",
+       "A competitor"
+      ],
+      "a": 2,
+      "why": "Leads are possible customers."
+     },
+     {
+      "t": "mc",
+      "q": "What is the best way to handle a customer complaint?",
+      "o": [
+       "Listen, apologize if needed and fix the problem",
+       "Ignore it",
+       "Argue about who is right",
+       "Wait until they stop"
+      ],
+      "a": 0,
+      "why": "Solving problems keeps trust."
+     },
+     {
+      "t": "mc",
+      "q": "At which funnel stage does the person actually buy?",
+      "o": [
+       "Awareness",
+       "Interest",
+       "Decision",
+       "Action"
+      ],
+      "a": 3,
+      "why": "Action is the purchase."
+     },
+     {
+      "t": "mc",
+      "q": "What is an objection in sales?",
+      "o": [
+       "A legal complaint",
+       "A reason a customer hesitates to buy",
+       "A discount",
+       "A product feature"
+      ],
+      "a": 1,
+      "why": "Objections are doubts to answer."
+     },
+     {
+      "t": "tf",
+      "q": "Happy customers can bring new customers through word of mouth.",
+      "a": true,
+      "why": "People recommend what they like."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Lead",
+        "Possible customer"
+       ],
+       [
+        "Pitch",
+        "Short explanation of an offer"
+       ],
+       [
+        "CRM",
+        "Tool that stores customer details"
+       ],
+       [
+        "Conversion rate",
+        "Share of leads who buy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the sales funnel stages in order",
+      "items": [
+       [
+        "Awareness",
+        1
+       ],
+       [
+        "Interest",
+        2
+       ],
+       [
+        "Decision",
+        3
+       ],
+       [
+        "Action",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Out of 200 leads, 30 bought. What is the conversion rate as a percent?",
+      "a": [
+       "15",
+       "15%"
+      ],
+      "hint": "Divide 30 by 200.",
+      "why": "30 / 200 = 0.15 = 15%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: When customers tell their friends about you, it is called word of what?",
+      "a": [
+       "mouth",
+       "word of mouth"
+      ],
+      "hint": "You use your mouth to speak.",
+      "why": "Word of mouth spreads by people talking."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 50 customers each buy a $30 item. What is the revenue in dollars?",
+      "a": [
+       "1500",
+       "$1500",
+       "1,500"
+      ],
+      "hint": "Multiply 50 by 30.",
+      "why": "50 x 30 = 1,500."
+     }
+    ]
+   },
+   {
+    "title": "Leadership and Protection",
+    "period": "Leading",
+    "learn": [
+     {
+      "h": "Leading a team",
+      "b": "Good leaders share a clear goal and delegate, which means giving tasks to others. They also listen. Setbacks are normal, and smart founders learn from them."
+     },
+     {
+      "h": "Protecting ideas",
+      "b": "Intellectual property protects creations. A patent protects an invention. A trademark protects a name or logo. A copyright protects creative works like writing and music."
+     },
+     {
+      "h": "Doing the right thing",
+      "b": "Ethics means honest ads, fair pay and respecting customers. Trust helps a business grow over time."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a trademark protect?",
+      "o": [
+       "A recipe for soup",
+       "Brand names and logos",
+       "A new invention",
+       "A song"
+      ],
+      "a": 1,
+      "why": "Trademarks protect identifiers of a brand."
+     },
+     {
+      "t": "mc",
+      "q": "What does a patent protect?",
+      "o": [
+       "A logo",
+       "A book",
+       "An invention",
+       "A slogan only"
+      ],
+      "a": 2,
+      "why": "Patents cover new inventions."
+     },
+     {
+      "t": "mc",
+      "q": "What does a copyright protect?",
+      "o": [
+       "A machine",
+       "A logo",
+       "A shop name",
+       "Creative works like writing or music"
+      ],
+      "a": 3,
+      "why": "Copyright covers original creative works."
+     },
+     {
+      "t": "mc",
+      "q": "What does delegation mean?",
+      "o": [
+       "Giving tasks to others",
+       "Doing everything yourself",
+       "Firing staff",
+       "Raising prices"
+      ],
+      "a": 0,
+      "why": "Delegating shares work with team members."
+     },
+     {
+      "t": "tf",
+      "q": "A trademark can protect a brand logo.",
+      "a": true,
+      "why": "Logos are a classic trademark use."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Patent",
+        "Protects inventions"
+       ],
+       [
+        "Trademark",
+        "Protects brand identity"
+       ],
+       [
+        "Copyright",
+        "Protects creative works"
+       ],
+       [
+        "Delegation",
+        "Assigning tasks"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of learning from a setback in order",
+      "items": [
+       [
+        "Notice what went wrong",
+        1
+       ],
+       [
+        "Find the cause",
+        2
+       ],
+       [
+        "Make a change",
+        3
+       ],
+       [
+        "Try again",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Giving tasks to other people to do is called what?",
+      "a": [
+       "delegating",
+       "delegate",
+       "delegation"
+      ],
+      "hint": "Starts with D.",
+      "why": "Delegating spreads the work and builds trust."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which kind of intellectual property protects an invention?",
+      "a": [
+       "patent",
+       "a patent"
+      ],
+      "hint": "One word starting with P.",
+      "why": "A patent protects inventions."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which kind of intellectual property protects a name or logo?",
+      "a": [
+       "trademark",
+       "a trademark"
+      ],
+      "hint": "Mark of trade.",
+      "why": "A trademark protects names and logos."
+     }
+    ]
+   },
+   {
+    "title": "Scaling and Exits",
+    "period": "Growing big",
+    "learn": [
+     {
+      "h": "Scaling",
+      "b": "Scaling means revenue grows faster than costs. Systems, software and good hiring help. A franchise lets others use your brand and system for fees. The owner is the franchisor and the user is the franchisee."
+     },
+     {
+      "h": "Funding rounds",
+      "b": "Growing startups often raise money in stages: seed, Series A, Series B and later. Investors give money for ownership and expect fast growth. More funding means owners keep a smaller share."
+     },
+     {
+      "h": "Exits",
+      "b": "An exit is how owners leave or cash out. In an acquisition another company buys the business. In an IPO, initial public offering, shares are first sold to the public. Valuation is the estimated worth of a business, sometimes a multiple of profit."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is scaling?",
+      "o": [
+       "Spending more money",
+       "Growing revenue faster than costs",
+       "Cutting prices to zero",
+       "Staying small on purpose"
+      ],
+      "a": 1,
+      "why": "Scaling means efficient growth."
+     },
+     {
+      "t": "mc",
+      "q": "What is an IPO?",
+      "o": [
+       "The first sale of company shares to the public",
+       "A type of loan",
+       "A patent filing",
+       "A franchise contract"
+      ],
+      "a": 0,
+      "why": "IPO means initial public offering."
+     },
+     {
+      "t": "mc",
+      "q": "In a franchise, what does the franchisee do?",
+      "o": [
+       "Owns the brand",
+       "Lends money to the franchisor",
+       "Pays fees to use the franchisor's brand and system",
+       "Sells only online"
+      ],
+      "a": 2,
+      "why": "The franchisee uses someone else's model."
+     },
+     {
+      "t": "mc",
+      "q": "What is an acquisition?",
+      "o": [
+       "You hire a new manager",
+       "You open a new shop",
+       "You get a loan",
+       "Another company buys your business"
+      ],
+      "a": 3,
+      "why": "The buyer takes over the business."
+     },
+     {
+      "t": "tf",
+      "q": "Scaling just means spending as much money as possible.",
+      "a": false,
+      "why": "Scaling is about growing without costs rising as fast."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Franchise",
+        "License to use a brand and system"
+       ],
+       [
+        "IPO",
+        "First public sale of shares"
+       ],
+       [
+        "Acquisition",
+        "One company buys another"
+       ],
+       [
+        "Valuation",
+        "Estimated worth of a business"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these funding stages in a typical order",
+      "items": [
+       [
+        "Seed round",
+        1
+       ],
+       [
+        "Series A",
+        2
+       ],
+       [
+        "Series B",
+        3
+       ],
+       [
+        "IPO",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A business earns $40,000 profit and is valued at 5 times profit. What is the valuation in dollars?",
+      "a": [
+       "200000",
+       "$200000",
+       "200,000"
+      ],
+      "hint": "Multiply 40,000 by 5.",
+      "why": "40,000 x 5 = 200,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A franchisee pays 5% of $80,000 in sales as a fee. How many dollars is the fee?",
+      "a": [
+       "4000",
+       "$4000",
+       "4,000"
+      ],
+      "hint": "5% of 80,000.",
+      "why": "0.05 x 80,000 = 4,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What three-letter term means a company first sells its shares to the public?",
+      "a": [
+       "ipo",
+       "IPO"
+      ],
+      "hint": "Initial public offering.",
+      "why": "That is an IPO."
+     }
+    ]
+   }
+  ]
+ },
+ "biz-marketing": {
+  "name": "Marketing",
+  "units": [
+   {
+    "title": "Marketing Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "What is marketing?",
+      "b": "Marketing is everything a business does to understand customers and get them interested in its products. Advertising is only one part."
+     },
+     {
+      "h": "The 4 Ps",
+      "b": "The 4 Ps are Product (what you sell), Price (what it costs), Place (where it is sold) and Promotion (how you tell people). Together they form a marketing mix."
+     },
+     {
+      "h": "Target market",
+      "b": "No product suits everyone. A target market is the group you aim at. Segmentation divides people by age, interests or needs so you can speak to them directly."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which are the 4 Ps of marketing?",
+      "o": [
+       "People, Planet, Profit, Power",
+       "Product, Price, Place, Promotion",
+       "Plan, Pack, Pay, Print",
+       "Policy, Power, Pitch, Prize"
+      ],
+      "a": 1,
+      "why": "The marketing mix is product, price, place and promotion."
+     },
+     {
+      "t": "mc",
+      "q": "Which P describes where a product is sold?",
+      "o": [
+       "Price",
+       "Product",
+       "Place",
+       "Promotion"
+      ],
+      "a": 2,
+      "why": "Place covers where and how customers can buy."
+     },
+     {
+      "t": "mc",
+      "q": "What is a target market?",
+      "o": [
+       "A store in a mall",
+       "A discount",
+       "A price tag",
+       "The group of customers a business aims at"
+      ],
+      "a": 3,
+      "why": "Businesses focus on the people most likely to buy."
+     },
+     {
+      "t": "mc",
+      "q": "What is segmentation?",
+      "o": [
+       "Dividing a market into groups with similar traits",
+       "Cutting prices",
+       "Printing ads",
+       "Selling less"
+      ],
+      "a": 0,
+      "why": "Segments help tailor messages to groups."
+     },
+     {
+      "t": "tf",
+      "q": "Marketing means only advertising.",
+      "a": false,
+      "why": "Marketing also includes research, pricing, product design and distribution."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Product",
+        "What you sell"
+       ],
+       [
+        "Price",
+        "What it costs"
+       ],
+       [
+        "Place",
+        "Where it is sold"
+       ],
+       [
+        "Promotion",
+        "How you tell people"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the marketing planning steps in order",
+      "items": [
+       [
+        "Research customers",
+        1
+       ],
+       [
+        "Choose a target market",
+        2
+       ],
+       [
+        "Plan the 4 Ps",
+        3
+       ],
+       [
+        "Launch the campaign",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which of the 4 Ps describes where a product is sold?",
+      "a": [
+       "place"
+      ],
+      "hint": "Starts with P and is about location.",
+      "why": "Place covers where and how customers can buy."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which of the 4 Ps is about what a product costs?",
+      "a": [
+       "price"
+      ],
+      "hint": "What you pay.",
+      "why": "Price is the amount customers pay."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The group of people a business aims at is called its target what?",
+      "a": [
+       "market",
+       "target market"
+      ],
+      "hint": "Not 'audience' here: think of a place to buy and sell.",
+      "why": "The target market is the group the business aims at."
+     }
+    ]
+   },
+   {
+    "title": "Consumer Behavior and Research",
+    "period": "Understanding buyers",
+    "learn": [
+     {
+      "h": "How people buy",
+      "b": "Buyers usually go through steps: they notice a need, search for information, compare options, buy, and then feel good or bad about it. That last feeling affects whether they buy again."
+     },
+     {
+      "h": "What influences choices",
+      "b": "Personal factors are needs and taste. Social factors are friends, family and trends. Psychological factors are perception and motivation. Price and quality matter too."
+     },
+     {
+      "h": "Research types",
+      "b": "Qualitative research collects opinions and reasons, for example interviews and focus groups. Quantitative research collects numbers from many people, like a large survey. Marketers often use both."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the first step in the buying process?",
+      "o": [
+       "Paying",
+       "Comparing prices",
+       "Recognizing a need",
+       "Writing a review"
+      ],
+      "a": 2,
+      "why": "Buying starts when you notice a need."
+     },
+     {
+      "t": "mc",
+      "q": "What is a focus group?",
+      "o": [
+       "A small group that discusses a product with a researcher",
+       "A large online survey",
+       "A type of advertisement",
+       "A store layout"
+      ],
+      "a": 0,
+      "why": "It is a form of qualitative research."
+     },
+     {
+      "t": "mc",
+      "q": "Quantitative research gives you:",
+      "o": [
+       "Deep personal stories only",
+       "Numbers from many people",
+       "Free advertising",
+       "A new product"
+      ],
+      "a": 1,
+      "why": "Quantitative means measurable numbers."
+     },
+     {
+      "t": "mc",
+      "q": "Friends and trends are an example of which influence?",
+      "o": [
+       "Personal",
+       "Legal",
+       "Physical",
+       "Social"
+      ],
+      "a": 3,
+      "why": "Other people shape what we buy."
+     },
+     {
+      "t": "tf",
+      "q": "How customers feel after buying matters because it affects repeat purchases.",
+      "a": true,
+      "why": "Happy buyers return."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Qualitative",
+        "Opinions and reasons"
+       ],
+       [
+        "Quantitative",
+        "Numbers and statistics"
+       ],
+       [
+        "Focus group",
+        "Small discussion group"
+       ],
+       [
+        "Social influence",
+        "Friends and trends"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the buying process in order",
+      "items": [
+       [
+        "Notice a need",
+        1
+       ],
+       [
+        "Search for information",
+        2
+       ],
+       [
+        "Compare options",
+        3
+       ],
+       [
+        "Make a purchase",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In a survey of 1,200 people, 300 prefer red. What percent is that?",
+      "a": [
+       "25",
+       "25%"
+      ],
+      "hint": "Divide 300 by 1,200.",
+      "why": "300 / 1,200 = 0.25 = 25%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A survey asks 2,000 people to rate a product from 1 to 5. Is it qualitative or quantitative research?",
+      "a": [
+       "quantitative"
+      ],
+      "hint": "The answers are numbers.",
+      "why": "Ratings give numbers, so it is quantitative."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The first step in buying is recognizing a what?",
+      "a": [
+       "need",
+       "a need"
+      ],
+      "hint": "Something you lack.",
+      "why": "Buyers first recognize a need."
+     }
+    ]
+   },
+   {
+    "title": "Branding",
+    "period": "Brand",
+    "learn": [
+     {
+      "h": "What is a brand?",
+      "b": "A brand is the identity and feeling people connect with a business. It includes the name, logo, colors and promises. A strong brand is easy to remember."
+     },
+     {
+      "h": "Standing out",
+      "b": "A USP, unique selling proposition, is what makes you different from others. Positioning is the place your brand holds in customers' minds compared with competitors."
+     },
+     {
+      "h": "Brand voice",
+      "b": "Brand voice is the personality in your words, like friendly or serious. Using the same voice and look everywhere builds trust and recognition."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a brand?",
+      "o": [
+       "Only a logo",
+       "A type of tax",
+       "The identity and feeling people connect with a business",
+       "A discount"
+      ],
+      "a": 2,
+      "why": "A brand is more than a logo; it is the whole impression."
+     },
+     {
+      "t": "mc",
+      "q": "What does USP stand for?",
+      "o": [
+       "Unique Selling Proposition",
+       "United Sales Plan",
+       "Universal Store Price",
+       "Useful Shopping Place"
+      ],
+      "a": 0,
+      "why": "A USP is what makes you different."
+     },
+     {
+      "t": "mc",
+      "q": "What is positioning?",
+      "o": [
+       "Where the store is built",
+       "Your brand's place in customers' minds versus rivals",
+       "The price of a product",
+       "A shelf layout"
+      ],
+      "a": 1,
+      "why": "Positioning is about perception relative to competitors."
+     },
+     {
+      "t": "mc",
+      "q": "What is brand voice?",
+      "o": [
+       "A radio ad",
+       "A phone call",
+       "A loud speaker",
+       "The personality of a brand's words"
+      ],
+      "a": 3,
+      "why": "Voice shows personality in how a brand communicates."
+     },
+     {
+      "t": "tf",
+      "q": "Consistent branding helps customers recognize a business.",
+      "a": true,
+      "why": "Repetition builds familiarity and trust."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Brand",
+        "Identity people connect with"
+       ],
+       [
+        "Logo",
+        "Symbol of a business"
+       ],
+       [
+        "Positioning",
+        "Place in customers' minds"
+       ],
+       [
+        "USP",
+        "What makes you different"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of building a brand in order",
+      "items": [
+       [
+        "Define your values",
+        1
+       ],
+       [
+        "Pick a name and logo",
+        2
+       ],
+       [
+        "Choose a consistent voice",
+        3
+       ],
+       [
+        "Share it everywhere",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does USP stand for? (three words)",
+      "a": [
+       "unique selling proposition",
+       "unique selling point"
+      ],
+      "hint": "It makes you different.",
+      "why": "USP means unique selling proposition."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The personality in a brand's words, like friendly or serious, is its brand what?",
+      "a": [
+       "voice",
+       "brand voice"
+      ],
+      "hint": "You hear it in how it speaks.",
+      "why": "Brand voice is the personality in the words."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The place a brand holds in customers' minds compared with competitors is called what?",
+      "a": [
+       "positioning",
+       "position"
+      ],
+      "hint": "It starts with P.",
+      "why": "Positioning is the brand's place in customers' minds."
+     }
+    ]
+   },
+   {
+    "title": "Segmentation, Targeting, Positioning",
+    "period": "STP",
+    "learn": [
+     {
+      "h": "Segmentation",
+      "b": "Segmentation divides a market into groups. Demographic uses age, income or gender. Geographic uses location. Psychographic uses lifestyle and values. Behavioral uses how people buy or use a product."
+     },
+     {
+      "h": "Targeting",
+      "b": "Targeting is choosing which segments to serve. A niche market is a small, specific segment, like vegan hiking snacks. Focusing lets a small business compete with big ones."
+     },
+     {
+      "h": "Positioning",
+      "b": "Positioning is the image you want in the target's mind. Marketers write a short positioning statement and then design the marketing mix to match it. The steps are Segment, Target, Position, often called STP."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Dividing customers by age and income is which kind of segmentation?",
+      "o": [
+       "Demographic",
+       "Geographic",
+       "Behavioral",
+       "Psychographic"
+      ],
+      "a": 0,
+      "why": "Age and income are demographics."
+     },
+     {
+      "t": "mc",
+      "q": "Dividing customers by city or climate is which kind of segmentation?",
+      "o": [
+       "Demographic",
+       "Geographic",
+       "Psychographic",
+       "Behavioral"
+      ],
+      "a": 1,
+      "why": "Location-based."
+     },
+     {
+      "t": "mc",
+      "q": "What does the T in STP stand for?",
+      "o": [
+       "Testing",
+       "Trading",
+       "Targeting",
+       "Tracking"
+      ],
+      "a": 2,
+      "why": "Segment, Target, Position."
+     },
+     {
+      "t": "mc",
+      "q": "What is a niche market?",
+      "o": [
+       "The whole population",
+       "A type of store",
+       "Only online buyers",
+       "A small, specific segment"
+      ],
+      "a": 3,
+      "why": "Niches are narrow groups."
+     },
+     {
+      "t": "tf",
+      "q": "Psychographic segmentation uses lifestyle and values.",
+      "a": true,
+      "why": "It looks at attitudes and interests."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Demographic",
+        "Age, income, gender"
+       ],
+       [
+        "Geographic",
+        "Where people live"
+       ],
+       [
+        "Psychographic",
+        "Lifestyle and values"
+       ],
+       [
+        "Behavioral",
+        "How people buy or use"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the STP process in order",
+      "items": [
+       [
+        "Divide the market into segments",
+        1
+       ],
+       [
+        "Choose target segments",
+        2
+       ],
+       [
+        "Position the brand",
+        3
+       ],
+       [
+        "Design the marketing mix",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Segmenting customers by where they live is called what kind of segmentation?",
+      "a": [
+       "geographic"
+      ],
+      "hint": "Think geography.",
+      "why": "Location-based groups are geographic."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A market has 5,000 teens and you expect to reach 10% of them. How many teens is that?",
+      "a": [
+       "500"
+      ],
+      "hint": "10% of 5,000.",
+      "why": "0.10 x 5,000 = 500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does the S in STP stand for?",
+      "a": [
+       "segmentation",
+       "segment",
+       "segmenting"
+      ],
+      "hint": "Dividing the market.",
+      "why": "S stands for segmentation."
+     }
+    ]
+   },
+   {
+    "title": "Pricing and Promotion",
+    "period": "Price and message",
+    "learn": [
+     {
+      "h": "Pricing strategies",
+      "b": "Penetration pricing starts low to win customers quickly. Price skimming starts high and lowers the price later. Psychological pricing, like $9.99 instead of $10, makes prices feel smaller. Competitive pricing follows rivals."
+     },
+     {
+      "h": "Promotion mix",
+      "b": "The promotion mix has advertising (paid messages), sales promotion (coupons, discounts), public relations (news and events) and personal selling. Using them together works best."
+     },
+     {
+      "h": "Discount math",
+      "b": "A discount lowers the price by a percent. To find 20% off $50, take 20% of 50, which is $10, and subtract: $40. Always check that a sale price still covers your costs."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is penetration pricing?",
+      "o": [
+       "Starting very high",
+       "Starting low to win customers quickly",
+       "Never changing the price",
+       "Copying a rival exactly"
+      ],
+      "a": 1,
+      "why": "The low price helps enter the market."
+     },
+     {
+      "t": "mc",
+      "q": "What is price skimming?",
+      "o": [
+       "A high price at first, lowered later",
+       "A low price forever",
+       "Random pricing",
+       "A coupon"
+      ],
+      "a": 0,
+      "why": "Early buyers pay more."
+     },
+     {
+      "t": "mc",
+      "q": "Pricing a product at $9.99 instead of $10 is an example of:",
+      "o": [
+       "Skimming",
+       "Penetration",
+       "Psychological pricing",
+       "Cost-plus"
+      ],
+      "a": 2,
+      "why": "The price looks smaller."
+     },
+     {
+      "t": "mc",
+      "q": "A coupon is an example of:",
+      "o": [
+       "Public relations",
+       "Personal selling",
+       "Market research",
+       "Sales promotion"
+      ],
+      "a": 3,
+      "why": "Coupons give a short-term incentive."
+     },
+     {
+      "t": "tf",
+      "q": "Public relations tries to build a good image through news and events, not paid ads.",
+      "a": true,
+      "why": "PR earns attention rather than buying it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Penetration",
+        "Low price to enter"
+       ],
+       [
+        "Skimming",
+        "High price first"
+       ],
+       [
+        "Advertising",
+        "Paid message"
+       ],
+       [
+        "PR",
+        "Image built through news and events"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a promotion campaign in order",
+      "items": [
+       [
+        "Set a goal",
+        1
+       ],
+       [
+        "Choose message and channels",
+        2
+       ],
+       [
+        "Run the campaign",
+        3
+       ],
+       [
+        "Measure the results",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A $60 jacket is 20% off. What is the sale price in dollars?",
+      "a": [
+       "48",
+       "$48"
+      ],
+      "hint": "20% of 60 is 12.",
+      "why": "60 - 12 = 48."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A product costs $15 to make and you add a 40% markup. What is the price in dollars?",
+      "a": [
+       "21",
+       "$21"
+      ],
+      "hint": "40% of 15 is 6.",
+      "why": "15 + 6 = 21."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Pricing low to enter a market and win customers is called what kind of pricing?",
+      "a": [
+       "penetration",
+       "penetration pricing"
+      ],
+      "hint": "It starts with P.",
+      "why": "That is penetration pricing."
+     }
+    ]
+   },
+   {
+    "title": "Digital Marketing",
+    "period": "Online",
+    "learn": [
+     {
+      "h": "SEO and content",
+      "b": "SEO, search engine optimization, means improving your website so it shows higher in search results without paying for ads. Content marketing means sharing useful posts or videos to attract customers."
+     },
+     {
+      "h": "Social and email",
+      "b": "Social media lets brands talk with people directly. Email reaches people who already signed up. A CTA, call to action, tells people what to do next, like Sign up now."
+     },
+     {
+      "h": "Measuring results",
+      "b": "A conversion happens when a visitor does what you wanted, such as buying. CTR, click-through rate, is the percent of viewers who click. If 1,000 people see an ad and 50 click, CTR is 5%."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does SEO try to do?",
+      "o": [
+       "Pay for ads",
+       "Delete competitors",
+       "Help a website rank higher in search results",
+       "Lower prices"
+      ],
+      "a": 2,
+      "why": "SEO improves organic visibility."
+     },
+     {
+      "t": "mc",
+      "q": "What is a CTA?",
+      "o": [
+       "A prompt telling people what to do next",
+       "A tax",
+       "A type of logo",
+       "A customer survey"
+      ],
+      "a": 0,
+      "why": "CTA means call to action."
+     },
+     {
+      "t": "mc",
+      "q": "An ad is seen 1,000 times and clicked 50 times. What is the CTR?",
+      "o": [
+       "50%",
+       "0.5%",
+       "10%",
+       "5%"
+      ],
+      "a": 3,
+      "why": "50 / 1,000 = 5%."
+     },
+     {
+      "t": "mc",
+      "q": "What is a conversion?",
+      "o": [
+       "Changing currency",
+       "A visitor taking the desired action",
+       "A new logo",
+       "Moving a shop"
+      ],
+      "a": 1,
+      "why": "A conversion is a completed goal like a purchase or sign-up."
+     },
+     {
+      "t": "tf",
+      "q": "SEO means paying for search ads.",
+      "a": false,
+      "why": "SEO is about earning higher results unpaid, not buying ads."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "SEO",
+        "Rank higher in search"
+       ],
+       [
+        "CTA",
+        "Prompt to act"
+       ],
+       [
+        "Conversion",
+        "Visitor completes goal"
+       ],
+       [
+        "Content marketing",
+        "Useful content to attract buyers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the customer journey in order",
+      "items": [
+       [
+        "Awareness",
+        1
+       ],
+       [
+        "Interest",
+        2
+       ],
+       [
+        "Desire",
+        3
+       ],
+       [
+        "Action",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: An ad is seen 2,000 times and clicked 100 times. What is the CTR as a percent?",
+      "a": [
+       "5",
+       "5%"
+      ],
+      "hint": "Clicks divided by views.",
+      "why": "100 / 2,000 = 5%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does SEO stand for? (three words)",
+      "a": [
+       "search engine optimization",
+       "search engine optimisation"
+      ],
+      "hint": "It helps you show up in search.",
+      "why": "SEO is search engine optimization."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: CTA stands for call to what?",
+      "a": [
+       "action",
+       "call to action"
+      ],
+      "hint": "A CTA tells people what to do.",
+      "why": "CTA means call to action."
+     }
+    ]
+   },
+   {
+    "title": "Marketing Analytics",
+    "period": "Numbers that matter",
+    "learn": [
+     {
+      "h": "Key metrics",
+      "b": "Impressions count how many times an ad was shown. Conversion rate is conversions divided by visitors. If 500 visitors lead to 25 buyers, the conversion rate is 5%."
+     },
+     {
+      "h": "ROI",
+      "b": "ROI, return on investment, is (gain - cost) / cost x 100. If an ad costs $200 and brings $500 in revenue, ROI is (500 - 200) / 200 = 150%. A positive ROI means the campaign earned more than it cost."
+     },
+     {
+      "h": "Customer value",
+      "b": "CAC is the cost to win one new customer. CLV, customer lifetime value, is the total a customer brings over time. A healthy business has CLV higher than CAC. Dashboards show these numbers in one place."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Conversion rate is calculated as:",
+      "o": [
+       "Clicks divided by cost",
+       "Visitors divided by conversions",
+       "Cost divided by revenue",
+       "Conversions divided by visitors"
+      ],
+      "a": 3,
+      "why": "It shows what share of visitors take action."
+     },
+     {
+      "t": "mc",
+      "q": "An ad costs $400 and brings $1,000 in revenue. What is ROI using (revenue - cost) / cost?",
+      "o": [
+       "150%",
+       "60%",
+       "250%",
+       "40%"
+      ],
+      "a": 0,
+      "why": "(1,000 - 400) / 400 = 1.5, or 150%."
+     },
+     {
+      "t": "mc",
+      "q": "What does CAC mean?",
+      "o": [
+       "Total company assets",
+       "The cost to win one new customer",
+       "Clicks and conversions",
+       "Customer age category"
+      ],
+      "a": 1,
+      "why": "Customer acquisition cost."
+     },
+     {
+      "t": "mc",
+      "q": "For a healthy business, CLV should be:",
+      "o": [
+       "Lower than CAC",
+       "Exactly zero",
+       "Higher than CAC",
+       "Unrelated to CAC"
+      ],
+      "a": 2,
+      "why": "A customer should bring more than they cost to win."
+     },
+     {
+      "t": "tf",
+      "q": "Impressions count how many times an ad was shown.",
+      "a": true,
+      "why": "One showing equals one impression."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Impression",
+        "One showing of an ad"
+       ],
+       [
+        "CTR",
+        "Clicks divided by views"
+       ],
+       [
+        "Conversion rate",
+        "Visitors who take action"
+       ],
+       [
+        "CLV",
+        "Total value of a customer over time"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the analytics cycle in order",
+      "items": [
+       [
+        "Set a goal",
+        1
+       ],
+       [
+        "Collect data",
+        2
+       ],
+       [
+        "Analyze results",
+        3
+       ],
+       [
+        "Improve and repeat",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 500 visitors lead to 25 purchases. What is the conversion rate as a percent?",
+      "a": [
+       "5",
+       "5%"
+      ],
+      "hint": "Divide 25 by 500.",
+      "why": "25 / 500 = 0.05 = 5%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: An ad costs $200 and brings $500 in revenue. What is the ROI as a percent using (revenue - cost) / cost?",
+      "a": [
+       "150",
+       "150%"
+      ],
+      "hint": "Subtract first, then divide by cost.",
+      "why": "(500 - 200) / 200 = 1.5 = 150%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A customer spends $30 per order, 4 times a year, for 3 years. What is the customer lifetime value in dollars?",
+      "a": [
+       "360",
+       "$360"
+      ],
+      "hint": "Multiply 30 x 4 x 3.",
+      "why": "30 x 4 x 3 = 360."
+     }
+    ]
+   },
+   {
+    "title": "Strategy and Ethics",
+    "period": "Strategy",
+    "learn": [
+     {
+      "h": "Testing and surveys",
+      "b": "A survey asks people for opinions. An A/B test shows two versions, like two ad headlines, to different groups and compares which works better."
+     },
+     {
+      "h": "Keeping customers",
+      "b": "Retention means keeping existing customers buying. Customer acquisition cost is how much it costs to win a new customer. Keeping a customer is often cheaper than finding a new one."
+     },
+     {
+      "h": "Honest marketing",
+      "b": "Ads should not make false claims. Misleading customers can break the law and harms trust. Ethical marketing respects privacy and tells the truth."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an A/B test?",
+      "o": [
+       "A school exam",
+       "A tax check",
+       "Comparing two versions to see which performs better",
+       "A discount code"
+      ],
+      "a": 2,
+      "why": "A/B tests compare two options with real audiences."
+     },
+     {
+      "t": "mc",
+      "q": "What is customer retention?",
+      "o": [
+       "Keeping existing customers buying",
+       "Gaining new customers only",
+       "Lowering prices",
+       "Ending a brand"
+      ],
+      "a": 0,
+      "why": "Retention is about repeat business."
+     },
+     {
+      "t": "mc",
+      "q": "What is a survey?",
+      "o": [
+       "A type of ad",
+       "A map",
+       "A way to collect opinions",
+       "A price"
+      ],
+      "a": 2,
+      "why": "Surveys gather customer feedback."
+     },
+     {
+      "t": "mc",
+      "q": "Why is false advertising a problem?",
+      "o": [
+       "It lowers taxes",
+       "It is always free",
+       "It makes products cheaper",
+       "It is unethical and can be illegal"
+      ],
+      "a": 3,
+      "why": "Misleading claims harm customers and break trust."
+     },
+     {
+      "t": "tf",
+      "q": "Keeping an existing customer is often cheaper than winning a new one.",
+      "a": true,
+      "why": "New customers usually require more marketing spend."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "A/B test",
+        "Compare two versions"
+       ],
+       [
+        "Retention",
+        "Keeping customers"
+       ],
+       [
+        "Survey",
+        "Collecting opinions"
+       ],
+       [
+        "Acquisition cost",
+        "Cost to win a new customer"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an A/B test in order",
+      "items": [
+       [
+        "Pick one change to test",
+        1
+       ],
+       [
+        "Show versions to different groups",
+        2
+       ],
+       [
+        "Measure the results",
+        3
+       ],
+       [
+        "Use the winner",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Showing two versions of an ad to different groups to see which works better is an A/B what?",
+      "a": [
+       "test",
+       "a/b test",
+       "ab test"
+      ],
+      "hint": "You test.",
+      "why": "That is an A/B test."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Keeping existing customers buying is called what?",
+      "a": [
+       "retention",
+       "customer retention"
+      ],
+      "hint": "Starts with R.",
+      "why": "Retention means keeping customers."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: You spend $500 on ads and win 25 new customers. What is the cost per new customer in dollars?",
+      "a": [
+       "20",
+       "$20"
+      ],
+      "hint": "Divide 500 by 25.",
+      "why": "500 / 25 = 20."
+     }
+    ]
+   }
+  ]
+ },
+ "biz-accounting": {
+  "name": "Accounting",
+  "units": [
+   {
+    "title": "Accounting Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "What is accounting?",
+      "b": "Accounting records, summarizes and reports a business's money. Bookkeeping is the day-to-day recording of transactions. Owners, banks and tax offices use the reports."
+     },
+     {
+      "h": "Assets, liabilities, equity",
+      "b": "Assets are things the business owns, like cash and equipment. Liabilities are what it owes, like loans. Equity is the owner's share after debts are paid."
+     },
+     {
+      "h": "The accounting equation",
+      "b": "Assets = Liabilities + Equity. This always balances. If assets are $500 and liabilities are $200, equity is $300."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the accounting equation?",
+      "o": [
+       "Assets = Revenue - Costs",
+       "Assets = Liabilities + Equity",
+       "Equity = Assets + Liabilities",
+       "Profit = Assets x Equity"
+      ],
+      "a": 1,
+      "why": "The two sides of the balance sheet must always match."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an asset?",
+      "o": [
+       "A bank loan",
+       "Rent owed",
+       "Equipment the business owns",
+       "Unpaid wages"
+      ],
+      "a": 2,
+      "why": "Assets are resources owned by the business."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a liability?",
+      "o": [
+       "Cash",
+       "A delivery van",
+       "Inventory",
+       "A loan from a bank"
+      ],
+      "a": 3,
+      "why": "Liabilities are amounts the business owes."
+     },
+     {
+      "t": "mc",
+      "q": "What is bookkeeping?",
+      "o": [
+       "Recording financial transactions",
+       "Writing books",
+       "Selling stock",
+       "Advertising"
+      ],
+      "a": 0,
+      "why": "Bookkeepers keep daily financial records."
+     },
+     {
+      "t": "tf",
+      "q": "If assets are $500 and liabilities are $200, equity is $300.",
+      "a": true,
+      "why": "Equity = 500 - 200 = 300."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Asset",
+        "Owned resource"
+       ],
+       [
+        "Liability",
+        "Amount owed"
+       ],
+       [
+        "Equity",
+        "Owner's share"
+       ],
+       [
+        "Bookkeeping",
+        "Recording transactions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the basic accounting steps in order",
+      "items": [
+       [
+        "Record transactions",
+        1
+       ],
+       [
+        "Summarize them in ledgers",
+        2
+       ],
+       [
+        "Prepare financial statements",
+        3
+       ],
+       [
+        "Close the period",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Assets are $800 and liabilities are $300. What is equity in dollars?",
+      "a": [
+       "500",
+       "$500"
+      ],
+      "hint": "Assets = liabilities + equity.",
+      "why": "800 - 300 = 500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Assets are $1,000 and equity is $400. What are liabilities in dollars?",
+      "a": [
+       "600",
+       "$600"
+      ],
+      "hint": "Subtract equity from assets.",
+      "why": "1,000 - 400 = 600."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the day-to-day recording of transactions called?",
+      "a": [
+       "bookkeeping"
+      ],
+      "hint": "One word starting with B.",
+      "why": "Bookkeeping records transactions daily."
+     }
+    ]
+   },
+   {
+    "title": "Debits and Credits",
+    "period": "Double Entry",
+    "learn": [
+     {
+      "h": "Double-entry",
+      "b": "In double-entry bookkeeping, every transaction affects at least two accounts. Total debits always equal total credits. This helps catch mistakes."
+     },
+     {
+      "h": "Debit and credit",
+      "b": "A debit is an entry on the left side of an account. A credit is on the right. Debits increase assets and expenses. Credits increase liabilities, equity and revenue."
+     },
+     {
+      "h": "Journal and ledger",
+      "b": "The journal records transactions in date order. The ledger groups them by account. If you pay cash for equipment, equipment goes up and cash goes down."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does double-entry mean?",
+      "o": [
+       "Every transaction is recorded twice in different books only",
+       "Every transaction affects at least two accounts",
+       "Two accountants must sign",
+       "Costs are doubled"
+      ],
+      "a": 1,
+      "why": "Each transaction has a debit side and a credit side."
+     },
+     {
+      "t": "mc",
+      "q": "Which side increases an asset account?",
+      "o": [
+       "Credit",
+       "Neither",
+       "Debit",
+       "Both"
+      ],
+      "a": 2,
+      "why": "Debits increase asset accounts."
+     },
+     {
+      "t": "mc",
+      "q": "A business pays cash for new equipment. What changes?",
+      "o": [
+       "Cash up and equipment down",
+       "Revenue goes up",
+       "Only expenses change",
+       "Equipment goes up and cash goes down"
+      ],
+      "a": 3,
+      "why": "One asset rises while another asset falls."
+     },
+     {
+      "t": "mc",
+      "q": "What is a ledger?",
+      "o": [
+       "A collection of accounts",
+       "A calendar",
+       "A type of tax",
+       "A loan form"
+      ],
+      "a": 0,
+      "why": "The ledger organizes transactions by account."
+     },
+     {
+      "t": "tf",
+      "q": "A debit always means a decrease.",
+      "a": false,
+      "why": "Debits increase assets and expenses, and decrease liabilities."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Debit",
+        "Left-side entry"
+       ],
+       [
+        "Credit",
+        "Right-side entry"
+       ],
+       [
+        "Journal",
+        "Date-order record"
+       ],
+       [
+        "Ledger",
+        "Set of accounts"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the recording steps in order",
+      "items": [
+       [
+        "Transaction happens",
+        1
+       ],
+       [
+        "Record in the journal",
+        2
+       ],
+       [
+        "Post to the ledger",
+        3
+       ],
+       [
+        "Check the trial balance",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In double-___ bookkeeping, every transaction affects at least two accounts. What word fills the blank?",
+      "a": [
+       "entry",
+       "double-entry",
+       "double entry"
+      ],
+      "hint": "Each deal is entered twice.",
+      "why": "Double-entry means two sides for each transaction."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Debits increase assets and which other kind of account?",
+      "a": [
+       "expenses",
+       "expense"
+      ],
+      "hint": "Think of costs.",
+      "why": "Debits increase assets and expenses."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The journal records transactions in what order?",
+      "a": [
+       "date",
+       "date order",
+       "chronological",
+       "chronological order"
+      ],
+      "hint": "Think of a diary.",
+      "why": "The journal lists transactions in order by date."
+     }
+    ]
+   },
+   {
+    "title": "Adjusting Entries",
+    "period": "Period end",
+    "learn": [
+     {
+      "h": "Why adjust?",
+      "b": "At the end of a period, accountants adjust the books so revenue and expenses match the period they belong to. This follows accrual accounting. Adjusting entries are made before preparing financial statements."
+     },
+     {
+      "h": "Accruals and deferrals",
+      "b": "An accrued expense is incurred but not yet paid, like wages owed: debit expense, credit liability. A prepaid expense is paid in advance, like $1,200 of insurance for 12 months, so $100 becomes expense each month. Unearned revenue is cash received before the work is done. It is a liability."
+     },
+     {
+      "h": "Depreciation",
+      "b": "Straight-line depreciation spreads cost evenly: (cost - salvage value) / useful life. Salvage value is the estimated value at the end. A $10,000 asset with $1,000 salvage and 3 years of life loses $3,000 per year."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Wages earned by workers but not yet paid are an example of:",
+      "o": [
+       "Unearned revenue",
+       "An accrued expense",
+       "A prepaid expense",
+       "Salvage value"
+      ],
+      "a": 1,
+      "why": "They are incurred but unpaid."
+     },
+     {
+      "t": "mc",
+      "q": "A customer pays $600 in advance for six months of service. Before the service is given, the money is:",
+      "o": [
+       "Unearned revenue",
+       "Earned revenue",
+       "An expense",
+       "An asset you own for free"
+      ],
+      "a": 0,
+      "why": "You owe the service, so it is a liability."
+     },
+     {
+      "t": "mc",
+      "q": "Prepaid insurance is recorded as:",
+      "o": [
+       "A liability",
+       "Revenue",
+       "An asset until it is used up",
+       "Equity"
+      ],
+      "a": 2,
+      "why": "It has future value to the business."
+     },
+     {
+      "t": "mc",
+      "q": "Cost $10,000, salvage $1,000, life 3 years. What is the yearly straight-line depreciation?",
+      "o": [
+       "$3,333",
+       "$1,000",
+       "$9,000",
+       "$3,000"
+      ],
+      "a": 3,
+      "why": "(10,000 - 1,000) / 3 = 3,000."
+     },
+     {
+      "t": "tf",
+      "q": "Adjusting entries are made at the end of a period so the records match accrual accounting.",
+      "a": true,
+      "why": "They place revenue and expenses in the right period."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Accrued expense",
+        "Incurred but not yet paid"
+       ],
+       [
+        "Prepaid expense",
+        "Paid in advance"
+       ],
+       [
+        "Unearned revenue",
+        "Cash received before work is done"
+       ],
+       [
+        "Salvage value",
+        "Estimated value at end of life"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order",
+      "items": [
+       [
+        "Record transactions in the journal",
+        1
+       ],
+       [
+        "Post to the ledger",
+        2
+       ],
+       [
+        "Make adjusting entries",
+        3
+       ],
+       [
+        "Prepare financial statements",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A business prepays $2,400 of rent for 12 months. How many dollars of rent expense per month?",
+      "a": [
+       "200",
+       "$200"
+      ],
+      "hint": "Divide by 12.",
+      "why": "2,400 / 12 = 200."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A machine costs $5,000, has $500 salvage value and lasts 5 years. What is the yearly straight-line depreciation in dollars?",
+      "a": [
+       "900",
+       "$900"
+      ],
+      "hint": "(Cost - salvage) / life.",
+      "why": "(5,000 - 500) / 5 = 900."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Cash received before the work is done is called what kind of revenue?",
+      "a": [
+       "unearned",
+       "unearned revenue"
+      ],
+      "hint": "Not yet earned.",
+      "why": "It is unearned revenue until the work is done."
+     }
+    ]
+   },
+   {
+    "title": "Inventory and Cost of Goods Sold",
+    "period": "Merchandising",
+    "learn": [
+     {
+      "h": "Inventory",
+      "b": "Inventory is goods held for sale. It is a current asset on the balance sheet. When goods are sold, their cost moves to an expense called cost of goods sold (COGS)."
+     },
+     {
+      "h": "Finding COGS",
+      "b": "COGS = beginning inventory + purchases - ending inventory. If you start with $2,000, buy $6,000 and end with $1,500, COGS is $6,500. Gross profit is sales minus COGS."
+     },
+     {
+      "h": "FIFO and others",
+      "b": "FIFO means first in, first out: the oldest items are assumed sold first. LIFO means last in, first out. Weighted average uses the average cost. When prices rise, FIFO usually gives a lower COGS and a higher profit than LIFO."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does FIFO mean?",
+      "o": [
+       "The last items bought are sold first",
+       "The first items bought are assumed sold first",
+       "All items cost the same",
+       "Items are sold at random"
+      ],
+      "a": 1,
+      "why": "First in, first out."
+     },
+     {
+      "t": "mc",
+      "q": "Beginning inventory $2,000, purchases $6,000, ending inventory $1,500. What is COGS?",
+      "o": [
+       "$6,500",
+       "$9,500",
+       "$5,500",
+       "$7,500"
+      ],
+      "a": 0,
+      "why": "2,000 + 6,000 - 1,500 = 6,500."
+     },
+     {
+      "t": "mc",
+      "q": "When prices are rising, which method usually gives the lower COGS?",
+      "o": [
+       "FIFO",
+       "LIFO",
+       "Neither: they always match",
+       "Depreciation"
+      ],
+      "a": 0,
+      "why": "Older, cheaper costs go to COGS under FIFO."
+     },
+     {
+      "t": "mc",
+      "q": "Where does inventory appear?",
+      "o": [
+       "As revenue",
+       "As equity",
+       "As a liability",
+       "As an asset on the balance sheet"
+      ],
+      "a": 3,
+      "why": "It is something the business owns."
+     },
+     {
+      "t": "tf",
+      "q": "Cost of goods sold is the cost of items a business actually sold in the period.",
+      "a": true,
+      "why": "Unsold goods stay in inventory."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "FIFO",
+        "Oldest costs sold first"
+       ],
+       [
+        "Weighted average",
+        "Uses average cost per unit"
+       ],
+       [
+        "Perpetual system",
+        "Updates inventory after each sale"
+       ],
+       [
+        "Ending inventory",
+        "Goods left at period end"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to find COGS in order",
+      "items": [
+       [
+        "Start with beginning inventory",
+        1
+       ],
+       [
+        "Add purchases",
+        2
+       ],
+       [
+        "Subtract ending inventory",
+        3
+       ],
+       [
+        "The result is COGS",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Beginning inventory is $3,000, purchases are $8,000 and ending inventory is $2,500. What is COGS in dollars?",
+      "a": [
+       "8500",
+       "$8500",
+       "8,500"
+      ],
+      "hint": "Beginning + purchases - ending.",
+      "why": "3,000 + 8,000 - 2,500 = 8,500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: You buy 10 units at $2 and then 10 units at $3. Using FIFO, what is the COGS in dollars of selling 10 units?",
+      "a": [
+       "20",
+       "$20"
+      ],
+      "hint": "The oldest units are sold first.",
+      "why": "The first 10 units cost $2 each: 10 x 2 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Sales are $15,000 and COGS is $9,000. What is the gross profit in dollars?",
+      "a": [
+       "6000",
+       "$6000",
+       "6,000"
+      ],
+      "hint": "Sales - COGS.",
+      "why": "15,000 - 9,000 = 6,000."
+     }
+    ]
+   },
+   {
+    "title": "Financial Statements",
+    "period": "Statements",
+    "learn": [
+     {
+      "h": "Income statement",
+      "b": "The income statement shows revenue, expenses and profit over a period, like a month. Net income = revenue - expenses. Example: $500 revenue and $350 expenses leaves $150."
+     },
+     {
+      "h": "Balance sheet",
+      "b": "The balance sheet is a snapshot of assets, liabilities and equity on one date. It shows what the business owns and owes at that moment."
+     },
+     {
+      "h": "Cash flow statement",
+      "b": "The cash flow statement shows cash coming in and going out. A business can show profit but still lack cash. Owners check all three statements."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does an income statement show?",
+      "o": [
+       "Assets on one date",
+       "Revenue, expenses and profit over a period",
+       "Only cash",
+       "Only taxes"
+      ],
+      "a": 1,
+      "why": "It covers performance across a period."
+     },
+     {
+      "t": "mc",
+      "q": "What does a balance sheet show?",
+      "o": [
+       "Profit for a year",
+       "Daily cash",
+       "Assets, liabilities and equity at a point in time",
+       "Marketing results"
+      ],
+      "a": 2,
+      "why": "It is a snapshot at a specific date."
+     },
+     {
+      "t": "mc",
+      "q": "Revenue is $500 and expenses are $350. What is net income?",
+      "o": [
+       "$850",
+       "$500",
+       "$350",
+       "$150"
+      ],
+      "a": 3,
+      "why": "500 - 350 = 150."
+     },
+     {
+      "t": "mc",
+      "q": "What does a cash flow statement show?",
+      "o": [
+       "Cash coming in and going out",
+       "Brand value",
+       "Number of customers",
+       "Total equity only"
+      ],
+      "a": 0,
+      "why": "It tracks cash movements."
+     },
+     {
+      "t": "tf",
+      "q": "A balance sheet is a snapshot at one date.",
+      "a": true,
+      "why": "It reports balances at a specific point in time."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Balance sheet",
+        "Snapshot of what is owned and owed"
+       ],
+       [
+        "Income statement",
+        "Profit over a period"
+       ],
+       [
+        "Cash flow statement",
+        "Cash in and out"
+       ],
+       [
+        "Net income",
+        "Revenue minus expenses"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these income statement lines in order from top to bottom",
+      "items": [
+       [
+        "Revenue",
+        1
+       ],
+       [
+        "Cost of goods sold",
+        2
+       ],
+       [
+        "Operating expenses",
+        3
+       ],
+       [
+        "Net income",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Revenue is $2,000 and expenses are $1,350. What is net income in dollars?",
+      "a": [
+       "650",
+       "$650"
+      ],
+      "hint": "Revenue - expenses.",
+      "why": "2,000 - 1,350 = 650."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which statement is a snapshot of assets, liabilities and equity on one date?",
+      "a": [
+       "balance sheet",
+       "the balance sheet"
+      ],
+      "hint": "Two words.",
+      "why": "The balance sheet is a snapshot."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which statement shows cash coming in and going out?",
+      "a": [
+       "cash flow statement",
+       "cash flow",
+       "statement of cash flows",
+       "the cash flow statement"
+      ],
+      "hint": "It is about cash.",
+      "why": "The cash flow statement tracks cash movement."
+     }
+    ]
+   },
+   {
+    "title": "Cash Flow and Working Capital",
+    "period": "Managing cash",
+    "learn": [
+     {
+      "h": "Three kinds of cash flow",
+      "b": "The cash flow statement has three sections. Operating is day-to-day sales and expenses. Investing is buying or selling long-term assets like equipment. Financing is loans, owner money and dividends."
+     },
+     {
+      "h": "Working capital",
+      "b": "Working capital = current assets - current liabilities. It shows if a business can pay its short-term bills. Accounts receivable is money customers owe the business. Accounts payable is money the business owes suppliers."
+     },
+     {
+      "h": "Profit is not cash",
+      "b": "A business can show a profit but run out of cash if customers pay late or if it spends heavily on inventory. Owners watch cash closely. Net change in cash is operating + investing + financing."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Buying new equipment appears in which section?",
+      "o": [
+       "Operating",
+       "Investing",
+       "Financing",
+       "Equity"
+      ],
+      "a": 1,
+      "why": "Long-term assets are investing."
+     },
+     {
+      "t": "mc",
+      "q": "Taking out a bank loan appears in which section?",
+      "o": [
+       "Financing",
+       "Operating",
+       "Investing",
+       "Depreciation"
+      ],
+      "a": 0,
+      "why": "Loans and owner funds are financing."
+     },
+     {
+      "t": "mc",
+      "q": "What is working capital?",
+      "o": [
+       "Total assets minus equity",
+       "Revenue minus expenses",
+       "Current assets minus current liabilities",
+       "Cash plus inventory only"
+      ],
+      "a": 2,
+      "why": "It measures short-term strength."
+     },
+     {
+      "t": "mc",
+      "q": "What are accounts receivable?",
+      "o": [
+       "Money the business owes suppliers",
+       "Cash in the bank",
+       "Money owners invest",
+       "Money customers owe the business"
+      ],
+      "a": 3,
+      "why": "Receivable means to be received."
+     },
+     {
+      "t": "tf",
+      "q": "A profitable company can still run short of cash when customers pay slowly.",
+      "a": true,
+      "why": "Profit is not the same as cash in hand."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Operating",
+        "Day-to-day sales and costs"
+       ],
+       [
+        "Investing",
+        "Buying long-term assets"
+       ],
+       [
+        "Financing",
+        "Loans and owner funding"
+       ],
+       [
+        "Accounts payable",
+        "Money owed to suppliers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the cash flow statement sections in their usual order",
+      "items": [
+       [
+        "Operating activities",
+        1
+       ],
+       [
+        "Investing activities",
+        2
+       ],
+       [
+        "Financing activities",
+        3
+       ],
+       [
+        "Net change in cash",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Current assets are $12,000 and current liabilities are $7,500. What is working capital in dollars?",
+      "a": [
+       "4500",
+       "$4500",
+       "4,500"
+      ],
+      "hint": "Subtract liabilities from assets.",
+      "why": "12,000 - 7,500 = 4,500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Operating cash flow is +$5,000, investing is -$3,000 and financing is +$1,000. What is the net change in cash in dollars?",
+      "a": [
+       "3000",
+       "$3000",
+       "3,000"
+      ],
+      "hint": "Add them, keeping the signs.",
+      "why": "5,000 - 3,000 + 1,000 = 3,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Money a business owes to suppliers is called accounts what?",
+      "a": [
+       "payable",
+       "accounts payable"
+      ],
+      "hint": "Starts with P.",
+      "why": "Accounts payable are bills still to pay."
+     }
+    ]
+   },
+   {
+    "title": "Analyzing the Numbers",
+    "period": "Analysis",
+    "learn": [
+     {
+      "h": "Gross profit and ratios",
+      "b": "Gross profit = revenue - cost of goods sold. The current ratio = current assets / current liabilities. If you have $200 of current assets and $100 of current liabilities, it is 2."
+     },
+     {
+      "h": "Depreciation",
+      "b": "Depreciation spreads the cost of an asset, like a machine, over its useful life. A $1,000 machine lasting 5 years can be recorded as $200 of expense per year."
+     },
+     {
+      "h": "Accrual and audits",
+      "b": "Accrual accounting records revenue when earned and expenses when incurred, even if cash moves later. Cash-basis records when cash moves. An audit is an independent check of financial records."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How is gross profit calculated?",
+      "o": [
+       "Net income minus taxes",
+       "Revenue minus cost of goods sold",
+       "Assets minus liabilities",
+       "Revenue plus costs"
+      ],
+      "a": 1,
+      "why": "Gross profit is sales minus direct production cost."
+     },
+     {
+      "t": "mc",
+      "q": "Current assets are $200 and current liabilities are $100. What is the current ratio?",
+      "o": [
+       "0.5",
+       "100",
+       "2",
+       "300"
+      ],
+      "a": 2,
+      "why": "200 / 100 = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What does depreciation do?",
+      "o": [
+       "Raises asset value",
+       "Cancels debts",
+       "Adds revenue",
+       "Spreads an asset's cost over its useful life"
+      ],
+      "a": 3,
+      "why": "It matches an asset's cost to the years it is used."
+     },
+     {
+      "t": "mc",
+      "q": "When does accrual accounting record revenue?",
+      "o": [
+       "When it is earned",
+       "Only when cash arrives",
+       "At year end only",
+       "Never"
+      ],
+      "a": 0,
+      "why": "Accrual records revenue when earned, not when paid."
+     },
+     {
+      "t": "tf",
+      "q": "Under cash-basis accounting, revenue is recorded when the sale is made even if unpaid.",
+      "a": false,
+      "why": "Cash-basis records revenue when cash is actually received."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Depreciation",
+        "Spreads asset cost"
+       ],
+       [
+        "Accrual",
+        "Record when earned"
+       ],
+       [
+        "Gross profit",
+        "Revenue minus COGS"
+       ],
+       [
+        "Audit",
+        "Independent check of records"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these profit lines in order from top to bottom",
+      "items": [
+       [
+        "Revenue",
+        1
+       ],
+       [
+        "Gross profit",
+        2
+       ],
+       [
+        "Operating income",
+        3
+       ],
+       [
+        "Net income",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Revenue is $900 and cost of goods sold is $550. What is gross profit in dollars?",
+      "a": [
+       "350",
+       "$350"
+      ],
+      "hint": "Revenue - COGS.",
+      "why": "900 - 550 = 350."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Current assets are $300 and current liabilities are $150. What is the current ratio?",
+      "a": [
+       "2",
+       "2.0",
+       "2.00"
+      ],
+      "hint": "Divide assets by liabilities.",
+      "why": "300 / 150 = 2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A $6,000 machine lasts 10 years with no leftover value. How many dollars of depreciation per year?",
+      "a": [
+       "600",
+       "$600"
+      ],
+      "hint": "Divide cost by years.",
+      "why": "6,000 / 10 = 600."
+     }
+    ]
+   },
+   {
+    "title": "Budgeting and Managerial Accounting",
+    "period": "Decisions",
+    "learn": [
+     {
+      "h": "Inside the business",
+      "b": "Financial accounting reports to outsiders like banks and investors. Managerial accounting helps managers inside the business make decisions. It does not have to follow the same strict reporting rules."
+     },
+     {
+      "h": "Budgets and variances",
+      "b": "A budget is a plan of expected income and spending. A variance is actual minus budget. If you planned to spend $1,000 and spent $1,200, that is a $200 unfavorable variance."
+     },
+     {
+      "h": "Costs and break-even",
+      "b": "Fixed costs stay the same, variable costs change with output. Contribution margin = price - variable cost per unit. Break-even units = fixed costs / contribution margin. With fixed costs $6,000, price $20 and variable cost $8, break-even is 6,000 / 12 = 500 units."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who is managerial accounting mainly for?",
+      "o": [
+       "Managers inside the business",
+       "Tax offices only",
+       "Banks only",
+       "Competitors"
+      ],
+      "a": 0,
+      "why": "It supports internal decisions."
+     },
+     {
+      "t": "mc",
+      "q": "What is a budget?",
+      "o": [
+       "A record of past sales",
+       "A tax form",
+       "A plan of expected income and spending",
+       "A bank loan"
+      ],
+      "a": 2,
+      "why": "Budgets look ahead."
+     },
+     {
+      "t": "mc",
+      "q": "Fixed costs $6,000, price $20, variable cost $8. What is the break-even in units?",
+      "o": [
+       "300",
+       "750",
+       "214",
+       "500"
+      ],
+      "a": 3,
+      "why": "6,000 / 12 = 500."
+     },
+     {
+      "t": "mc",
+      "q": "A business budgeted $1,000 but spent $1,200. This is a:",
+      "o": [
+       "$200 favorable variance",
+       "$200 unfavorable variance",
+       "$1,200 profit",
+       "$1,000 loss"
+      ],
+      "a": 1,
+      "why": "Spending went over the plan."
+     },
+     {
+      "t": "tf",
+      "q": "A variable cost changes when production changes.",
+      "a": true,
+      "why": "More units usually means more materials."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Budget",
+        "Plan of income and spending"
+       ],
+       [
+        "Variance",
+        "Actual minus budget"
+       ],
+       [
+        "Fixed cost",
+        "Stays the same as output changes"
+       ],
+       [
+        "Contribution margin",
+        "Price minus variable cost"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the budgeting steps in order",
+      "items": [
+       [
+        "Set goals",
+        1
+       ],
+       [
+        "Estimate revenue and costs",
+        2
+       ],
+       [
+        "Compare actual results with the budget",
+        3
+       ],
+       [
+        "Adjust the plan",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Fixed costs are $4,500, price is $15 and variable cost is $6 per unit. How many units to break even?",
+      "a": [
+       "500"
+      ],
+      "hint": "Contribution = 15 - 6 = 9.",
+      "why": "4,500 / 9 = 500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A budget was $800 and actual spending was $950. By how many dollars did spending go over?",
+      "a": [
+       "150",
+       "$150"
+      ],
+      "hint": "Actual minus budget.",
+      "why": "950 - 800 = 150."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Price is $40 and variable cost is $25 per unit. What is the contribution margin per unit in dollars?",
+      "a": [
+       "15",
+       "$15"
+      ],
+      "hint": "Price minus variable cost.",
+      "why": "40 - 25 = 15."
+     }
+    ]
+   }
+  ]
+ },
+ "fin-realestate": {
+  "name": "Real Estate",
+  "units": [
+   {
+    "title": "Property Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "Types of property",
+      "b": "Residential property is for living, like houses and apartments. Commercial property is for business, like offices and shops. Land can be used for either or kept as it is."
+     },
+     {
+      "h": "Renting vs owning",
+      "b": "Renters pay a landlord and do not build ownership. Owners pay for upkeep, taxes and often a mortgage, but build equity. Equity is the home's value minus the loan still owed."
+     },
+     {
+      "h": "Appreciation",
+      "b": "Appreciation is when a property's value rises over time. Values can also fall. Location, demand and the economy all matter."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is residential property?",
+      "o": [
+       "Property used for offices",
+       "Property meant for people to live in",
+       "Unused land only",
+       "Factories"
+      ],
+      "a": 1,
+      "why": "Residential means homes where people live."
+     },
+     {
+      "t": "mc",
+      "q": "How is home equity calculated?",
+      "o": [
+       "Home value plus mortgage",
+       "Mortgage minus home value",
+       "Home value minus mortgage owed",
+       "Rent times months"
+      ],
+      "a": 2,
+      "why": "Equity is your ownership share after the loan."
+     },
+     {
+      "t": "mc",
+      "q": "What is appreciation?",
+      "o": [
+       "Saying thank you",
+       "A property fee",
+       "A repair",
+       "A rise in a property's value"
+      ],
+      "a": 3,
+      "why": "Appreciation means value goes up over time."
+     },
+     {
+      "t": "mc",
+      "q": "Who does a renter pay?",
+      "o": [
+       "A landlord",
+       "A tax office",
+       "A mortgage broker",
+       "An inspector"
+      ],
+      "a": 0,
+      "why": "Rent is paid to the property owner or landlord."
+     },
+     {
+      "t": "tf",
+      "q": "Renting a home builds ownership equity.",
+      "a": false,
+      "why": "Rent payments do not give the renter ownership of the property."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Residential",
+        "Property for living"
+       ],
+       [
+        "Commercial",
+        "Property for business"
+       ],
+       [
+        "Appreciation",
+        "Value rising"
+       ],
+       [
+        "Landlord",
+        "Owner who rents out property"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of renting a home in order",
+      "items": [
+       [
+        "Search listings",
+        1
+       ],
+       [
+        "Visit and apply",
+        2
+       ],
+       [
+        "Sign the lease",
+        3
+       ],
+       [
+        "Move in",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A home is worth $250,000 and the loan owed is $180,000. What is the equity in dollars?",
+      "a": [
+       "70000",
+       "$70000",
+       "70,000"
+      ],
+      "hint": "Value minus loan.",
+      "why": "250,000 - 180,000 = 70,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A $200,000 property rises 5% in value. What is its new value in dollars?",
+      "a": [
+       "210000",
+       "$210000",
+       "210,000"
+      ],
+      "hint": "5% of 200,000 is 10,000.",
+      "why": "200,000 + 10,000 = 210,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Property made for people to live in, like houses and apartments, is what kind of property?",
+      "a": [
+       "residential",
+       "residential property"
+      ],
+      "hint": "Not commercial.",
+      "why": "Residential property is for living."
+     }
+    ]
+   },
+   {
+    "title": "Mortgages",
+    "period": "Financing",
+    "learn": [
+     {
+      "h": "What is a mortgage?",
+      "b": "A mortgage is a loan used to buy property. The property is collateral. If payments stop, the lender can take the property in a process called foreclosure."
+     },
+     {
+      "h": "Down payment",
+      "b": "A down payment is the part of the price you pay up front in cash. On a $200,000 home, a 10% down payment is $20,000. The rest is borrowed. Principal is the amount borrowed."
+     },
+     {
+      "h": "Rates and terms",
+      "b": "A fixed-rate mortgage keeps the same interest rate for its whole term. An adjustable-rate mortgage can change over time. Amortization is paying off the loan gradually through regular payments."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a down payment?",
+      "o": [
+       "A monthly fee",
+       "Money paid up front toward the price",
+       "A tax",
+       "A penalty"
+      ],
+      "a": 1,
+      "why": "It is the cash you pay at the start of the purchase."
+     },
+     {
+      "t": "mc",
+      "q": "A home costs $200,000. How much is a 10% down payment?",
+      "o": [
+       "$2,000",
+       "$200",
+       "$20,000",
+       "$10,000"
+      ],
+      "a": 2,
+      "why": "10% of 200,000 is 20,000."
+     },
+     {
+      "t": "mc",
+      "q": "What does a fixed-rate mortgage mean?",
+      "o": [
+       "The price of the house is fixed",
+       "Payments end after one year",
+       "The loan has no interest",
+       "The interest rate stays the same for the term"
+      ],
+      "a": 3,
+      "why": "A fixed rate does not change over the term."
+     },
+     {
+      "t": "mc",
+      "q": "What secures a mortgage loan?",
+      "o": [
+       "The property itself",
+       "A car",
+       "A phone",
+       "Nothing"
+      ],
+      "a": 0,
+      "why": "The home acts as collateral for the lender."
+     },
+     {
+      "t": "tf",
+      "q": "If you stop paying a mortgage, the lender may take the property through foreclosure.",
+      "a": true,
+      "why": "Foreclosure lets the lender recover money by taking the property."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Down payment",
+        "Cash paid up front"
+       ],
+       [
+        "Principal",
+        "Amount borrowed"
+       ],
+       [
+        "Amortization",
+        "Gradual loan payoff"
+       ],
+       [
+        "Foreclosure",
+        "Lender takes the property"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path to buying with a mortgage in order",
+      "items": [
+       [
+        "Save for a down payment",
+        1
+       ],
+       [
+        "Get pre-approved",
+        2
+       ],
+       [
+        "Make an offer",
+        3
+       ],
+       [
+        "Close on the home",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A 20% down payment on a $300,000 home is how many dollars?",
+      "a": [
+       "60000",
+       "$60000",
+       "60,000"
+      ],
+      "hint": "20% of 300,000.",
+      "why": "0.20 x 300,000 = 60,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A home costs $250,000 and you pay 10% down. How many dollars do you borrow?",
+      "a": [
+       "225000",
+       "$225000",
+       "225,000"
+      ],
+      "hint": "Price minus down payment.",
+      "why": "250,000 - 25,000 = 225,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is it called when a lender takes a property after payments stop?",
+      "a": [
+       "foreclosure",
+       "foreclosing"
+      ],
+      "hint": "Starts with F.",
+      "why": "That is foreclosure."
+     }
+    ]
+   },
+   {
+    "title": "Valuation and Appraisal",
+    "period": "What is it worth?",
+    "learn": [
+     {
+      "h": "Market value",
+      "b": "Market value is the price a willing buyer would reasonably pay a willing seller. It is not the same as the asking price, which is the listing price. The assessed value is the value used for property tax."
+     },
+     {
+      "h": "Comparables",
+      "b": "Appraisers use comparables, or comps: similar nearby properties sold recently. They adjust for differences like size and condition. Price per square foot is price divided by area, for example $300,000 / 1,500 sq ft = $200."
+     },
+     {
+      "h": "What affects value",
+      "b": "Location matters most: schools, jobs and safety. Size, age, condition and upgrades also matter. A lender orders an appraisal so it does not lend more than the property is worth."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are comps?",
+      "o": [
+       "Contracts for repairs",
+       "Similar nearby properties that sold recently",
+       "Competing lenders",
+       "Tax records"
+      ],
+      "a": 1,
+      "why": "Comparables guide the value."
+     },
+     {
+      "t": "mc",
+      "q": "A 1,500 sq ft home sells for $300,000. What is the price per square foot?",
+      "o": [
+       "$200",
+       "$150",
+       "$450",
+       "$20"
+      ],
+      "a": 0,
+      "why": "300,000 / 1,500 = 200."
+     },
+     {
+      "t": "mc",
+      "q": "Which factor usually affects value the most?",
+      "o": [
+       "Paint color",
+       "Mailbox style",
+       "Location",
+       "Seller's age"
+      ],
+      "a": 2,
+      "why": "Location drives demand."
+     },
+     {
+      "t": "mc",
+      "q": "Who usually orders an appraisal?",
+      "o": [
+       "The seller's neighbor",
+       "The tax office",
+       "The real estate agent's boss",
+       "The lender"
+      ],
+      "a": 3,
+      "why": "The lender protects its loan."
+     },
+     {
+      "t": "tf",
+      "q": "Market value is what a willing buyer would reasonably pay a willing seller.",
+      "a": true,
+      "why": "That is the standard definition."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Comparable",
+        "Similar recently sold property"
+       ],
+       [
+        "Listing price",
+        "Price the seller asks"
+       ],
+       [
+        "Assessed value",
+        "Value used for property tax"
+       ],
+       [
+        "Square footage",
+        "Floor area of a building"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the appraisal steps in order",
+      "items": [
+       [
+        "The appraiser visits the property",
+        1
+       ],
+       [
+        "Finds comparable sales",
+        2
+       ],
+       [
+        "Adjusts for differences",
+        3
+       ],
+       [
+        "Reports the estimated value",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A home has 2,000 sq ft and similar homes sell for $175 per sq ft. What is the estimated value in dollars?",
+      "a": [
+       "350000",
+       "$350000",
+       "350,000"
+      ],
+      "hint": "Multiply area by price per sq ft.",
+      "why": "2,000 x 175 = 350,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Comps average $210 per sq ft. A home has 1,200 sq ft. What is its estimated value in dollars?",
+      "a": [
+       "252000",
+       "$252000",
+       "252,000"
+      ],
+      "hint": "1,200 x 210.",
+      "why": "1,200 x 210 = 252,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Similar nearby properties that sold recently, used to estimate value, are called what? (one word, plural)",
+      "a": [
+       "comps",
+       "comparables"
+      ],
+      "hint": "Short form of comparables.",
+      "why": "Comps guide an appraisal."
+     }
+    ]
+   },
+   {
+    "title": "Contracts, Title and Closing",
+    "period": "The legal side",
+    "learn": [
+     {
+      "h": "The purchase agreement",
+      "b": "A sale is made by a written contract, called a purchase agreement. Contingencies are conditions, like a good inspection or loan approval, that let the buyer cancel if they are not met. Earnest money is a deposit showing the buyer is serious."
+     },
+     {
+      "h": "Title",
+      "b": "Title means the legal right to own a property. A title search checks the ownership history and any liens, which are legal claims for unpaid debts. Title insurance protects against hidden ownership problems."
+     },
+     {
+      "h": "Closing",
+      "b": "At closing, the buyer signs loan papers, pays the remaining money and closing costs, and receives the deed. The deed is the document that transfers ownership. Then the buyer gets the keys."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a deed do?",
+      "o": [
+       "It transfers ownership of the property",
+       "It gives a loan",
+       "It estimates value",
+       "It lists repairs"
+      ],
+      "a": 0,
+      "why": "The deed shows who owns the property."
+     },
+     {
+      "t": "mc",
+      "q": "What is a contingency?",
+      "o": [
+       "A bonus for the seller",
+       "A type of tax",
+       "A condition that must be met or the buyer can cancel",
+       "A kind of mortgage"
+      ],
+      "a": 2,
+      "why": "Example: loan approval."
+     },
+     {
+      "t": "mc",
+      "q": "What does a title search check?",
+      "o": [
+       "The paint color",
+       "Ownership history and any liens",
+       "The neighborhood noise",
+       "The roof age"
+      ],
+      "a": 1,
+      "why": "It looks for claims against the property."
+     },
+     {
+      "t": "mc",
+      "q": "What is earnest money?",
+      "o": [
+       "The agent's fee",
+       "Property tax",
+       "The final loan payment",
+       "A deposit showing the buyer is serious"
+      ],
+      "a": 3,
+      "why": "It is paid early with the offer."
+     },
+     {
+      "t": "tf",
+      "q": "A real estate sales contract should be in writing.",
+      "a": true,
+      "why": "Verbal agreements are generally not enough for property sales."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Lien",
+        "Legal claim for a debt"
+       ],
+       [
+        "Title insurance",
+        "Protects against ownership problems"
+       ],
+       [
+        "Deed",
+        "Document that transfers ownership"
+       ],
+       [
+        "Closing",
+        "Final meeting to complete the sale"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the buying steps in order",
+      "items": [
+       [
+        "Make an offer",
+        1
+       ],
+       [
+        "Seller accepts and the contract is signed",
+        2
+       ],
+       [
+        "Inspection and title search",
+        3
+       ],
+       [
+        "Closing and getting the keys",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Earnest money is 1% of a $250,000 price. How many dollars is the deposit?",
+      "a": [
+       "2500",
+       "$2500",
+       "2,500"
+      ],
+      "hint": "1% of 250,000.",
+      "why": "0.01 x 250,000 = 2,500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A legal claim against a property for an unpaid debt is called a what?",
+      "a": [
+       "lien",
+       "a lien"
+      ],
+      "hint": "Four letters.",
+      "why": "That is a lien."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What document transfers ownership of a property?",
+      "a": [
+       "deed",
+       "a deed"
+      ],
+      "hint": "Four letters.",
+      "why": "The deed transfers ownership."
+     }
+    ]
+   },
+   {
+    "title": "Buying and Owning",
+    "period": "The Process",
+    "learn": [
+     {
+      "h": "Checks before buying",
+      "b": "An inspection checks the condition of the home. An appraisal estimates its market value, and lenders use it to decide how much they will lend."
+     },
+     {
+      "h": "Costs of owning",
+      "b": "Closing costs are fees paid when the sale is finished. Owners also pay property tax to local government, homeowner insurance and maintenance. These are on top of the mortgage."
+     },
+     {
+      "h": "Escrow",
+      "b": "Escrow is when a neutral third party holds money or documents until all conditions of the deal are met. Many lenders also collect taxes and insurance through an escrow account."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a home inspection do?",
+      "o": [
+       "Sets the price",
+       "Examines the condition of the home",
+       "Pays the mortgage",
+       "Collects taxes"
+      ],
+      "a": 1,
+      "why": "Inspectors look for problems in the building."
+     },
+     {
+      "t": "mc",
+      "q": "What is an appraisal?",
+      "o": [
+       "A loan payment",
+       "A sales ad",
+       "An estimate of a property's value",
+       "A tax bill"
+      ],
+      "a": 2,
+      "why": "Appraisers estimate market value."
+     },
+     {
+      "t": "mc",
+      "q": "What are closing costs?",
+      "o": [
+       "Rent for one month",
+       "The cost of closing a bank account",
+       "A tax refund",
+       "Fees paid when the purchase is completed"
+      ],
+      "a": 3,
+      "why": "They cover loan, legal and other fees at closing."
+     },
+     {
+      "t": "mc",
+      "q": "Who receives property tax?",
+      "o": [
+       "Local government",
+       "The seller",
+       "The inspector",
+       "The lender only"
+      ],
+      "a": 0,
+      "why": "Property tax funds local services."
+     },
+     {
+      "t": "tf",
+      "q": "An appraisal is a monthly loan payment.",
+      "a": false,
+      "why": "An appraisal is an estimate of value, not a payment."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Appraisal",
+        "Estimate of value"
+       ],
+       [
+        "Inspection",
+        "Check of condition"
+       ],
+       [
+        "Escrow",
+        "Neutral holding of funds"
+       ],
+       [
+        "Closing costs",
+        "Fees at completion"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the buying steps in order",
+      "items": [
+       [
+        "Make an offer",
+        1
+       ],
+       [
+        "Inspection and appraisal",
+        2
+       ],
+       [
+        "Sign closing documents",
+        3
+       ],
+       [
+        "Receive the keys",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do we call a neutral third party holding money until a deal's conditions are met?",
+      "a": [
+       "escrow",
+       "an escrow"
+      ],
+      "hint": "Starts with E.",
+      "why": "Escrow holds funds for both sides."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which check estimates a home's market value for the lender?",
+      "a": [
+       "appraisal",
+       "an appraisal"
+      ],
+      "hint": "Not the inspection.",
+      "why": "An appraisal estimates value."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Yearly property tax is $2,400 and yearly insurance is $1,200. How many dollars per month go into escrow for both?",
+      "a": [
+       "300",
+       "$300"
+      ],
+      "hint": "Add them, then divide by 12.",
+      "why": "3,600 / 12 = 300."
+     }
+    ]
+   },
+   {
+    "title": "Renting and Landlording",
+    "period": "Rental life",
+    "learn": [
+     {
+      "h": "The lease",
+      "b": "A lease is a written agreement between a landlord (owner) and a tenant (renter). It states the rent, length, rules and who pays for what. A security deposit is money held to cover damage or unpaid rent."
+     },
+     {
+      "h": "Responsibilities",
+      "b": "The landlord must keep the home safe and livable. The tenant must pay rent on time and take care of the home. Evictions must follow legal steps. A landlord cannot simply change the locks."
+     },
+     {
+      "h": "Affording rent",
+      "b": "A common guideline is that rent should be about 30% of gross income or less. If you earn $4,000 per month, 30% is $1,200. Check the total yearly cost too: monthly rent times 12."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a security deposit?",
+      "o": [
+       "A monthly fee for parking",
+       "A tax",
+       "Money held to cover damage or unpaid rent",
+       "The first month of rent only"
+      ],
+      "a": 2,
+      "why": "It is returned if nothing is wrong."
+     },
+     {
+      "t": "mc",
+      "q": "What is a lease?",
+      "o": [
+       "A written agreement between landlord and tenant",
+       "A type of mortgage",
+       "A building permit",
+       "A property tax bill"
+      ],
+      "a": 0,
+      "why": "It sets the rules of the rental."
+     },
+     {
+      "t": "mc",
+      "q": "A common guideline says rent should be no more than about what share of gross income?",
+      "o": [
+       "80%",
+       "30%",
+       "65%",
+       "5%"
+      ],
+      "a": 1,
+      "why": "The 30% rule is a rough guide."
+     },
+     {
+      "t": "mc",
+      "q": "Who normally must keep a rental safe and livable?",
+      "o": [
+       "The neighbor",
+       "The tenant alone",
+       "The bank",
+       "The landlord"
+      ],
+      "a": 3,
+      "why": "Landlords must maintain habitable homes."
+     },
+     {
+      "t": "tf",
+      "q": "A landlord can usually remove a tenant by changing the locks without any legal process.",
+      "a": false,
+      "why": "Evictions must follow the legal process."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Lease",
+        "Rental agreement"
+       ],
+       [
+        "Tenant",
+        "Person who rents"
+       ],
+       [
+        "Landlord",
+        "Owner who rents out"
+       ],
+       [
+        "Eviction",
+        "Legal process to remove a tenant"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the renting steps in order",
+      "items": [
+       [
+        "Search listings",
+        1
+       ],
+       [
+        "Apply and pass a credit check",
+        2
+       ],
+       [
+        "Sign the lease and pay the deposit",
+        3
+       ],
+       [
+        "Move in and note any damage",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Your income is $4,000 per month. How many dollars is 30% of it for rent?",
+      "a": [
+       "1200",
+       "$1200",
+       "1,200"
+      ],
+      "hint": "0.30 x 4,000.",
+      "why": "0.30 x 4,000 = 1,200."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Rent is $900 per month on a 12-month lease. What is the total rent for the lease in dollars?",
+      "a": [
+       "10800",
+       "$10800",
+       "10,800"
+      ],
+      "hint": "Multiply by 12.",
+      "why": "900 x 12 = 10,800."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A $1,000 deposit has $250 deducted for damage. How many dollars are returned?",
+      "a": [
+       "750",
+       "$750"
+      ],
+      "hint": "Subtract the damage.",
+      "why": "1,000 - 250 = 750."
+     }
+    ]
+   },
+   {
+    "title": "Taxes, Insurance and Risk",
+    "period": "Costs and protection",
+    "learn": [
+     {
+      "h": "Property tax",
+      "b": "Local governments charge property tax based on assessed value times a tax rate. A home assessed at $200,000 with a 1.2% rate pays $2,400 per year. It is paid every year, even after the mortgage is paid off."
+     },
+     {
+      "h": "Insurance",
+      "b": "Homeowners insurance covers damage like fire and theft. It usually does not cover floods, which need separate flood insurance. If your down payment is under 20%, lenders often require PMI, private mortgage insurance, to protect themselves."
+     },
+     {
+      "h": "Selling and gains",
+      "b": "A capital gain is profit from selling for more than you paid. Some places tax it, sometimes with a break for a main home. An HOA fee is a regular payment to a homeowners association for shared spaces."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "PMI is usually required when:",
+      "o": [
+       "The down payment is less than 20%",
+       "The home is old",
+       "You rent the home",
+       "The loan is paid off"
+      ],
+      "a": 0,
+      "why": "It protects the lender."
+     },
+     {
+      "t": "mc",
+      "q": "Standard homeowners insurance usually does not cover:",
+      "o": [
+       "Fire",
+       "Floods",
+       "Theft",
+       "Storm damage to the roof"
+      ],
+      "a": 1,
+      "why": "Floods need separate coverage."
+     },
+     {
+      "t": "mc",
+      "q": "Property tax is based on:",
+      "o": [
+       "The seller's income",
+       "The buyer's age",
+       "The assessed value",
+       "The mortgage interest rate"
+      ],
+      "a": 2,
+      "why": "Assessed value times the tax rate."
+     },
+     {
+      "t": "mc",
+      "q": "What is a capital gain?",
+      "o": [
+       "A loan payment",
+       "A home repair",
+       "A monthly fee",
+       "Profit from selling an asset for more than you paid"
+      ],
+      "a": 3,
+      "why": "Sale price minus purchase price."
+     },
+     {
+      "t": "tf",
+      "q": "Homeowners insurance can protect against fire damage.",
+      "a": true,
+      "why": "Fire is a standard covered risk."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Property tax",
+        "Yearly tax to local government"
+       ],
+       [
+        "PMI",
+        "Insurance protecting the lender"
+       ],
+       [
+        "HOA fee",
+        "Payment for shared community costs"
+       ],
+       [
+        "Capital gain",
+        "Profit from selling"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to find a monthly property tax in order",
+      "items": [
+       [
+        "Find the assessed value",
+        1
+       ],
+       [
+        "Multiply by the tax rate",
+        2
+       ],
+       [
+        "Get the yearly tax",
+        3
+       ],
+       [
+        "Divide by 12",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A home is assessed at $250,000 and the tax rate is 1.5%. How many dollars is the yearly property tax?",
+      "a": [
+       "3750",
+       "$3750",
+       "3,750"
+      ],
+      "hint": "1.5% = 0.015.",
+      "why": "0.015 x 250,000 = 3,750."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: You bought a home for $200,000 and sold it for $260,000. What is the capital gain in dollars?",
+      "a": [
+       "60000",
+       "$60000",
+       "60,000"
+      ],
+      "hint": "Sale price minus purchase price.",
+      "why": "260,000 - 200,000 = 60,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What three-letter insurance is often required when your down payment is under 20%?",
+      "a": [
+       "pmi",
+       "PMI"
+      ],
+      "hint": "Private mortgage insurance.",
+      "why": "That is PMI."
+     }
+    ]
+   },
+   {
+    "title": "Real Estate as Investment",
+    "period": "Investing",
+    "learn": [
+     {
+      "h": "Rental income",
+      "b": "Owners can rent property to earn income. Cash flow from a rental is rent minus costs such as the mortgage, taxes, insurance and repairs. Vacancy, when no one is renting, means lost income."
+     },
+     {
+      "h": "Leverage",
+      "b": "Leverage means using borrowed money to buy an asset. It can magnify gains, but it also magnifies losses. Debt still must be repaid if the property falls in value."
+     },
+     {
+      "h": "REITs and liquidity",
+      "b": "A REIT is a company that owns income-producing real estate, and you can buy its shares like a stock. Real estate is illiquid, meaning it can take time to sell and turn into cash."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a REIT?",
+      "o": [
+       "A company that owns income-producing real estate with shares you can buy",
+       "A type of loan",
+       "A tax form",
+       "A home inspection"
+      ],
+      "a": 0,
+      "why": "REITs let people invest in real estate through shares."
+     },
+     {
+      "t": "mc",
+      "q": "How is rental cash flow calculated?",
+      "o": [
+       "Mortgage minus rent",
+       "Rent minus expenses",
+       "Value minus tax",
+       "Rent plus loan"
+      ],
+      "a": 1,
+      "why": "Cash flow is income left after costs."
+     },
+     {
+      "t": "mc",
+      "q": "What does illiquid mean?",
+      "o": [
+       "Very cheap",
+       "Easy to sell in a second",
+       "Slow and harder to turn into cash",
+       "Free of tax"
+      ],
+      "a": 2,
+      "why": "Real estate can take weeks or months to sell."
+     },
+     {
+      "t": "mc",
+      "q": "What is vacancy?",
+      "o": [
+       "A vacation",
+       "A tax break",
+       "A repair",
+       "A period when a unit is empty and earns no rent"
+      ],
+      "a": 3,
+      "why": "Empty units do not produce rental income."
+     },
+     {
+      "t": "tf",
+      "q": "Using borrowed money to buy property is called leverage and can magnify both gains and losses.",
+      "a": true,
+      "why": "Debt amplifies results in both directions."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "REIT",
+        "Shares in real estate company"
+       ],
+       [
+        "Leverage",
+        "Using borrowed money"
+       ],
+       [
+        "Illiquid",
+        "Hard to sell quickly"
+       ],
+       [
+        "Vacancy",
+        "Unit with no renter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to find rental cash flow in order",
+      "items": [
+       [
+        "Add up monthly rent",
+        1
+       ],
+       [
+        "Subtract the mortgage payment",
+        2
+       ],
+       [
+        "Subtract taxes, insurance and repairs",
+        3
+       ],
+       [
+        "The result is cash flow",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A rental brings $1,800 in rent and costs $1,350 per month. What is the monthly cash flow in dollars?",
+      "a": [
+       "450",
+       "$450"
+      ],
+      "hint": "Rent minus costs.",
+      "why": "1,800 - 1,350 = 450."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Using borrowed money to buy an asset is called what?",
+      "a": [
+       "leverage",
+       "leveraging"
+      ],
+      "hint": "Like a lever.",
+      "why": "That is leverage."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does REIT stand for? (four words)",
+      "a": [
+       "real estate investment trust",
+       "a real estate investment trust"
+      ],
+      "hint": "A company that owns property.",
+      "why": "REIT means real estate investment trust."
+     }
+    ]
+   }
+  ]
+ },
+ "tech-computers": {
+  "name": "Computer Basics",
+  "units": [
+   {
+    "title": "What Is a Computer?",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Input, process, output",
+      "b": "A computer takes input (like typing), processes it, and gives output (like text on the screen). It can also store data for later."
+     },
+     {
+      "h": "Hardware and software",
+      "b": "Hardware is the parts you can touch, like the screen and keyboard. Software is the programs and apps that tell the hardware what to do."
+     },
+     {
+      "h": "Bits and bytes",
+      "b": "Computers use only 0s and 1s. One 0 or 1 is a bit. Eight bits make one byte, which can store one letter like A."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which one is an input device?",
+      "o": [
+       "Monitor",
+       "Keyboard",
+       "Speaker",
+       "Printer"
+      ],
+      "a": 1,
+      "why": "A keyboard sends data into the computer, so it is an input device."
+     },
+     {
+      "t": "mc",
+      "q": "Which one is software?",
+      "o": [
+       "Mouse",
+       "Hard drive",
+       "Web browser",
+       "Monitor"
+      ],
+      "a": 2,
+      "why": "A web browser is a program, and programs are software."
+     },
+     {
+      "t": "mc",
+      "q": "How many bits are in one byte?",
+      "o": [
+       "2",
+       "4",
+       "16",
+       "8"
+      ],
+      "a": 3,
+      "why": "One byte is made of 8 bits."
+     },
+     {
+      "t": "mc",
+      "q": "Which digits do computers use to store all data?",
+      "o": [
+       "0 and 1",
+       "1 and 2",
+       "0 to 9",
+       "A and B"
+      ],
+      "a": 0,
+      "why": "Computers use the binary system, which has only 0 and 1."
+     },
+     {
+      "t": "tf",
+      "q": "A monitor is an output device.",
+      "a": true,
+      "why": "A monitor shows information coming out of the computer."
+     },
+     {
+      "t": "match",
+      "q": "Match each device to its type",
+      "pairs": [
+       [
+        "Mouse",
+        "Input"
+       ],
+       [
+        "Monitor",
+        "Output"
+       ],
+       [
+        "Hard drive",
+        "Storage"
+       ],
+       [
+        "CPU",
+        "Processing"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from smallest to largest",
+      "items": [
+       [
+        "Bit",
+        1
+       ],
+       [
+        "Byte",
+        2
+       ],
+       [
+        "Kilobyte",
+        3
+       ],
+       [
+        "Megabyte",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: There are 8 bits in a byte. How many bits are in 3 bytes?",
+      "a": [
+       "24"
+      ],
+      "hint": "Multiply 8 by 3.",
+      "why": "8 x 3 = 24."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A computer takes input, processes it and gives what?",
+      "a": [
+       "output"
+      ],
+      "hint": "The opposite of input.",
+      "why": "The result is output."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The parts of a computer you can touch are called what?",
+      "a": [
+       "hardware"
+      ],
+      "hint": "Not software.",
+      "why": "Hardware is the physical parts."
+     }
+    ]
+   },
+   {
+    "title": "Operating Systems and Files",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "What is an operating system?",
+      "b": "The operating system (OS) is the main software of a computer. It manages the hardware and lets apps run. Windows, macOS, Linux, Android and iOS are operating systems."
+     },
+     {
+      "h": "Files and folders",
+      "b": "A file holds data, like a photo or a document. Folders keep files organized. The file extension, like .jpg or .txt, shows the file type."
+     },
+     {
+      "h": "Saving and backups",
+      "b": "Save your work often so you do not lose it. A backup is an extra copy of your files in another place, in case something breaks."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is an operating system?",
+      "o": [
+       "Chrome",
+       "Linux",
+       "Word",
+       "Excel"
+      ],
+      "a": 1,
+      "why": "Linux is an operating system; the others are apps."
+     },
+     {
+      "t": "mc",
+      "q": "What does a file extension like .jpg tell you?",
+      "o": [
+       "The file size",
+       "Who made the file",
+       "The type of file",
+       "The file's password"
+      ],
+      "a": 2,
+      "why": "The extension shows the file format, here an image."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of an operating system?",
+      "o": [
+       "Manage hardware and run apps",
+       "Connect to Wi-Fi only",
+       "Make the screen bright",
+       "Store websites"
+      ],
+      "a": 0,
+      "why": "The OS manages the computer's parts and lets programs run."
+     },
+     {
+      "t": "mc",
+      "q": "What is a backup?",
+      "o": [
+       "A faster computer",
+       "A deleted file",
+       "A type of virus",
+       "An extra copy of your files"
+      ],
+      "a": 3,
+      "why": "A backup is a copy kept safe in case the original is lost."
+     },
+     {
+      "t": "tf",
+      "q": "Folders help you organize files.",
+      "a": true,
+      "why": "Folders group related files together so they are easy to find."
+     },
+     {
+      "t": "match",
+      "q": "Match each file extension to its type",
+      "pairs": [
+       [
+        ".txt",
+        "Plain text"
+       ],
+       [
+        ".mp3",
+        "Audio"
+       ],
+       [
+        ".png",
+        "Image"
+       ],
+       [
+        ".mp4",
+        "Video"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to save a new document",
+      "items": [
+       [
+        "Write your text",
+        1
+       ],
+       [
+        "Click Save",
+        2
+       ],
+       [
+        "Type a file name",
+        3
+       ],
+       [
+        "Choose a folder",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does OS stand for? (two words)",
+      "a": [
+       "operating system",
+       "an operating system"
+      ],
+      "hint": "It manages the hardware.",
+      "why": "OS means operating system."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which file extension, starting with a dot, is used for a plain text file?",
+      "a": [
+       ".txt",
+       "txt"
+      ],
+      "hint": "Three letters.",
+      "why": "Plain text files end in .txt."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: An extra copy of your files kept in another place is called a what?",
+      "a": [
+       "backup",
+       "a backup"
+      ],
+      "hint": "One word.",
+      "why": "A backup protects against loss."
+     }
+    ]
+   },
+   {
+    "title": "Inside the Computer",
+    "period": "Hardware and memory",
+    "learn": [
+     {
+      "h": "CPU: the brain",
+      "b": "The CPU (central processing unit) runs instructions and does calculations. A faster CPU can do more work each second."
+     },
+     {
+      "h": "RAM and storage",
+      "b": "RAM is short-term memory. It holds what you are using now and is erased when the power is off. Storage (SSD or hard drive) keeps files even when the computer is off."
+     },
+     {
+      "h": "Other important parts",
+      "b": "The motherboard connects all the parts together. The GPU handles graphics. The power supply gives the parts electricity."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which part is called the brain of the computer?",
+      "o": [
+       "RAM",
+       "CPU",
+       "Monitor",
+       "Power supply"
+      ],
+      "a": 1,
+      "why": "The CPU runs instructions and does the calculations."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to data in RAM when the computer is turned off?",
+      "o": [
+       "It is saved forever",
+       "It moves to the CPU",
+       "It is erased",
+       "It becomes a backup"
+      ],
+      "a": 2,
+      "why": "RAM is temporary memory and loses its data without power."
+     },
+     {
+      "t": "mc",
+      "q": "Which part connects all the main components together?",
+      "o": [
+       "Motherboard",
+       "Keyboard",
+       "Speaker",
+       "Mouse"
+      ],
+      "a": 0,
+      "why": "The motherboard is the main circuit board that links the parts."
+     },
+     {
+      "t": "mc",
+      "q": "Which part is mainly responsible for graphics?",
+      "o": [
+       "SSD",
+       "Fan",
+       "Power supply",
+       "GPU"
+      ],
+      "a": 3,
+      "why": "The GPU (graphics processing unit) draws images and video."
+     },
+     {
+      "t": "tf",
+      "q": "An SSD keeps your files when the computer is turned off.",
+      "a": true,
+      "why": "An SSD is permanent storage, so data stays without power."
+     },
+     {
+      "t": "match",
+      "q": "Match each part to its job",
+      "pairs": [
+       [
+        "CPU",
+        "Runs instructions"
+       ],
+       [
+        "RAM",
+        "Short-term memory"
+       ],
+       [
+        "SSD",
+        "Long-term storage"
+       ],
+       [
+        "GPU",
+        "Draws graphics"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these storage sizes in order from smallest to largest",
+      "items": [
+       [
+        "Megabyte",
+        1
+       ],
+       [
+        "Gigabyte",
+        2
+       ],
+       [
+        "Terabyte",
+        3
+       ],
+       [
+        "Petabyte",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which part is the computer's short-term memory? (three letters)",
+      "a": [
+       "ram",
+       "RAM"
+      ],
+      "hint": "It is erased when the power is off.",
+      "why": "RAM is short-term memory."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does CPU stand for? (three words)",
+      "a": [
+       "central processing unit",
+       "the central processing unit"
+      ],
+      "hint": "It runs instructions.",
+      "why": "CPU is the central processing unit."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does GPU stand for? (three words)",
+      "a": [
+       "graphics processing unit",
+       "a graphics processing unit"
+      ],
+      "hint": "It handles graphics.",
+      "why": "GPU is the graphics processing unit."
+     }
+    ]
+   },
+   {
+    "title": "Data and Binary",
+    "period": "How computers store data",
+    "learn": [
+     {
+      "h": "Binary",
+      "b": "Computers use binary, which has only 0 and 1. Place values go 8, 4, 2, 1 from the right. So 101 means 4 + 0 + 1 = 5, and 1010 means 8 + 2 = 10."
+     },
+     {
+      "h": "Sizes",
+      "b": "A bit is one 0 or 1. A byte is 8 bits. A kilobyte (KB) is about a thousand bytes, a megabyte (MB) about a million and a gigabyte (GB) about a billion. A GB is much larger than an MB."
+     },
+     {
+      "h": "Pictures and text",
+      "b": "Text is stored using codes that give each character a number, such as ASCII and Unicode. Pictures are made of pixels, tiny dots of color. Each pixel's color is stored as numbers, often red, green and blue."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is binary 101 in decimal?",
+      "o": [
+       "5",
+       "3",
+       "7",
+       "101"
+      ],
+      "a": 0,
+      "why": "4 + 0 + 1 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "What is a pixel?",
+      "o": [
+       "A type of file",
+       "A byte of text",
+       "The smallest dot of color in an image",
+       "A computer chip"
+      ],
+      "a": 2,
+      "why": "Images are grids of pixels."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these units is the largest?",
+      "o": [
+       "Kilobyte",
+       "Megabyte",
+       "Byte",
+       "Gigabyte"
+      ],
+      "a": 3,
+      "why": "Byte, KB, MB, GB grow in that order."
+     },
+     {
+      "t": "mc",
+      "q": "What do ASCII and Unicode do?",
+      "o": [
+       "Make files smaller",
+       "Give each character a number code",
+       "Connect to Wi-Fi",
+       "Draw pictures"
+      ],
+      "a": 1,
+      "why": "Computers store text as numbers."
+     },
+     {
+      "t": "tf",
+      "q": "Binary uses only the digits 0 and 1.",
+      "a": true,
+      "why": "Binary is base 2."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Bit",
+        "One 0 or 1"
+       ],
+       [
+        "Byte",
+        "Eight bits"
+       ],
+       [
+        "Pixel",
+        "Tiny dot of color"
+       ],
+       [
+        "Unicode",
+        "Code that gives characters numbers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these sizes in order from smallest to largest",
+      "items": [
+       [
+        "Bit",
+        1
+       ],
+       [
+        "Byte",
+        2
+       ],
+       [
+        "Kilobyte",
+        3
+       ],
+       [
+        "Megabyte",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is binary 1010 in decimal?",
+      "a": [
+       "10"
+      ],
+      "hint": "8 + 0 + 2 + 0.",
+      "why": "8 + 2 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Write the decimal number 6 in binary.",
+      "a": [
+       "110",
+       "0110"
+      ],
+      "hint": "6 = 4 + 2.",
+      "why": "4 + 2 + 0 = 110."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many bits are in 5 bytes?",
+      "a": [
+       "40"
+      ],
+      "hint": "Multiply 8 by 5.",
+      "why": "8 x 5 = 40."
+     }
+    ]
+   },
+   {
+    "title": "Networks and the Internet",
+    "period": "Connected world",
+    "learn": [
+     {
+      "h": "Networks",
+      "b": "A network connects computers so they can share data. A LAN, local area network, covers a small place like a home or school. A WAN covers a large area. The internet is a huge network of networks."
+     },
+     {
+      "h": "How it works",
+      "b": "A router sends data between devices and networks. Wi-Fi connects devices without cables. Every device has an IP address. DNS turns names like example.com into IP addresses. Data travels in small pieces called packets."
+     },
+     {
+      "h": "Internet and web",
+      "b": "The web is the websites you open with a browser. The internet is the whole system that carries the web, email and more. An ISP, internet service provider, is the company that gives you access."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does DNS do?",
+      "o": [
+       "Blocks viruses",
+       "Stores your files",
+       "Turns website names into IP addresses",
+       "Makes Wi-Fi faster"
+      ],
+      "a": 2,
+      "why": "DNS is like a phone book for the internet."
+     },
+     {
+      "t": "mc",
+      "q": "What does a router do?",
+      "o": [
+       "Directs data between devices and networks",
+       "Stores photos",
+       "Cools the CPU",
+       "Plays music"
+      ],
+      "a": 0,
+      "why": "It sends packets to the right place."
+     },
+     {
+      "t": "mc",
+      "q": "What is a packet?",
+      "o": [
+       "A type of cable",
+       "A small piece of data sent across a network",
+       "A website",
+       "A password"
+      ],
+      "a": 1,
+      "why": "Data is split into packets."
+     },
+     {
+      "t": "mc",
+      "q": "What does a LAN cover?",
+      "o": [
+       "The whole world",
+       "Only the ocean",
+       "Only mobile phones",
+       "A small area like a home or school"
+      ],
+      "a": 3,
+      "why": "LAN means local area network."
+     },
+     {
+      "t": "tf",
+      "q": "The web and the internet are exactly the same thing.",
+      "a": false,
+      "why": "The web is one service that runs on the internet."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "IP address",
+        "Number that identifies a device"
+       ],
+       [
+        "DNS",
+        "Turns names into addresses"
+       ],
+       [
+        "Wi-Fi",
+        "Wireless connection"
+       ],
+       [
+        "ISP",
+        "Company that provides internet access"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put what happens when you open a website in order",
+      "items": [
+       [
+        "You type the address",
+        1
+       ],
+       [
+        "DNS finds the IP address",
+        2
+       ],
+       [
+        "Your request reaches the server",
+        3
+       ],
+       [
+        "The page comes back and shows",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What do the letters IP stand for in IP address? (two words)",
+      "a": [
+       "internet protocol"
+      ],
+      "hint": "The second word is a set of rules.",
+      "why": "IP means internet protocol."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does LAN stand for? (three words)",
+      "a": [
+       "local area network",
+       "a local area network"
+      ],
+      "hint": "It covers a small place.",
+      "why": "LAN is local area network."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Data on a network is split into small pieces called what?",
+      "a": [
+       "packets",
+       "packet"
+      ],
+      "hint": "Like a small parcel.",
+      "why": "Data travels in packets."
+     }
+    ]
+   },
+   {
+    "title": "Software, Apps and the Cloud",
+    "period": "Programs",
+    "learn": [
+     {
+      "h": "Kinds of software",
+      "b": "System software, like an operating system, runs the computer. Application software, like a word processor or game, does tasks for you. A web browser is an app that opens websites."
+     },
+     {
+      "h": "Open source and licenses",
+      "b": "Open-source software has code anyone can read and often change. Proprietary software keeps its code private. A license says how you may use the software."
+     },
+     {
+      "h": "The cloud",
+      "b": "The cloud means storing files or running programs on remote servers over the internet. You can reach your files from many devices and they are backed up. The main downside is that you usually need an internet connection."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is application software?",
+      "o": [
+       "The operating system",
+       "A word processor",
+       "A router",
+       "A power supply"
+      ],
+      "a": 1,
+      "why": "Apps do tasks for users."
+     },
+     {
+      "t": "mc",
+      "q": "What does cloud storage mean?",
+      "o": [
+       "Files are kept on remote servers you reach over the internet",
+       "Files are kept only on a USB stick",
+       "Files are deleted every day",
+       "Files are kept in RAM"
+      ],
+      "a": 0,
+      "why": "The servers belong to the cloud provider."
+     },
+     {
+      "t": "mc",
+      "q": "What is open-source software?",
+      "o": [
+       "Software that is always free of bugs",
+       "Software without a license",
+       "Software whose code anyone can view",
+       "Software that only works offline"
+      ],
+      "a": 2,
+      "why": "Open means the code is open to see."
+     },
+     {
+      "t": "mc",
+      "q": "What is a common downside of the cloud?",
+      "o": [
+       "Files cannot be shared",
+       "It only stores text",
+       "It is never backed up",
+       "You usually need internet access"
+      ],
+      "a": 3,
+      "why": "No internet often means no access."
+     },
+     {
+      "t": "tf",
+      "q": "An operating system is a kind of system software.",
+      "a": true,
+      "why": "It manages the hardware and runs apps."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Cloud storage",
+        "Files kept on remote servers"
+       ],
+       [
+        "Open source",
+        "Code anyone can view"
+       ],
+       [
+        "Browser",
+        "App for opening websites"
+       ],
+       [
+        "App",
+        "Program for a specific task"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of installing an app in order",
+      "items": [
+       [
+        "Download the installer",
+        1
+       ],
+       [
+        "Run the installer",
+        2
+       ],
+       [
+        "Follow the setup steps",
+        3
+       ],
+       [
+        "Open the app",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Software like Windows that runs the computer is called what kind of software?",
+      "a": [
+       "system",
+       "system software"
+      ],
+      "hint": "Not application.",
+      "why": "Operating systems are system software."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Storing files on remote servers over the internet is called cloud what?",
+      "a": [
+       "storage",
+       "cloud storage"
+      ],
+      "hint": "Starts with S.",
+      "why": "That is cloud storage."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Google Chrome is an example of a web what?",
+      "a": [
+       "browser",
+       "a browser",
+       "web browser"
+      ],
+      "hint": "It opens websites.",
+      "why": "Chrome is a web browser."
+     }
+    ]
+   },
+   {
+    "title": "Security and Privacy",
+    "period": "Staying safe",
+    "learn": [
+     {
+      "h": "Passwords",
+      "b": "A strong password is long, unique and hard to guess, like several random words with numbers. Never reuse passwords. A password manager stores them safely. Two-factor authentication (2FA) adds a second proof, such as a code sent to your phone."
+     },
+     {
+      "h": "Threats",
+      "b": "Phishing is a fake message that tricks you into giving information. Malware is harmful software, such as viruses and ransomware. Ransomware locks your files and demands money. Do not click unknown links or open strange attachments."
+     },
+     {
+      "h": "Protection",
+      "b": "Keep your system updated and use antivirus. A firewall blocks unwanted network traffic. Look for HTTPS and the padlock on websites. Share as little personal information as you can."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is phishing?",
+      "o": [
+       "A fake message that tricks you into giving information",
+       "A type of fast internet",
+       "A backup method",
+       "A computer part"
+      ],
+      "a": 0,
+      "why": "Phishers try to steal passwords."
+     },
+     {
+      "t": "mc",
+      "q": "Which password is the strongest?",
+      "o": [
+       "password123",
+       "John2010",
+       "Tr!ee-Lamp-87-Moon",
+       "12345678"
+      ],
+      "a": 2,
+      "why": "Long, mixed and unique."
+     },
+     {
+      "t": "mc",
+      "q": "What does two-factor authentication add?",
+      "o": [
+       "A faster password",
+       "A second proof, like a code sent to your phone",
+       "A larger screen",
+       "More storage"
+      ],
+      "a": 1,
+      "why": "It protects you if a password leaks."
+     },
+     {
+      "t": "mc",
+      "q": "What does ransomware do?",
+      "o": [
+       "Speeds up the computer",
+       "Deletes ads",
+       "Updates your apps",
+       "Locks your files and demands money"
+      ],
+      "a": 3,
+      "why": "It holds your data hostage."
+     },
+     {
+      "t": "tf",
+      "q": "You should use the same password for every account.",
+      "a": false,
+      "why": "If one account leaks, all of them are at risk."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Malware",
+        "Harmful software"
+       ],
+       [
+        "Firewall",
+        "Blocks unwanted network traffic"
+       ],
+       [
+        "Phishing",
+        "Fake message to steal data"
+       ],
+       [
+        "Password manager",
+        "Stores strong passwords safely"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps after a malware infection in order",
+      "items": [
+       [
+        "Disconnect from the internet",
+        1
+       ],
+       [
+        "Run an antivirus scan",
+        2
+       ],
+       [
+        "Remove the threats found",
+        3
+       ],
+       [
+        "Change important passwords",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A fake email that tricks you into giving your password is called what?",
+      "a": [
+       "phishing",
+       "phish"
+      ],
+      "hint": "It sounds like fishing.",
+      "why": "That is phishing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does the 2 in 2FA stand for in 'two-factor ___'? Type the missing word.",
+      "a": [
+       "authentication",
+       "two-factor authentication"
+      ],
+      "hint": "It starts with A.",
+      "why": "2FA means two-factor authentication."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What do we call a program that blocks unwanted network traffic?",
+      "a": [
+       "firewall",
+       "a firewall"
+      ],
+      "hint": "A wall against fire, in a network sense.",
+      "why": "A firewall filters network traffic."
+     }
+    ]
+   },
+   {
+    "title": "Using Computers Well",
+    "period": "Everyday skills",
+    "learn": [
+     {
+      "h": "Keyboard shortcuts",
+      "b": "Shortcuts save time. Ctrl+C copies, Ctrl+V pastes, and Ctrl+Z undoes your last action. On a Mac, use Command instead of Ctrl."
+     },
+     {
+      "h": "Apps and updates",
+      "b": "Apps are programs for a task, like writing or drawing. Updates fix bugs and add features, so install them when your computer asks."
+     },
+     {
+      "h": "Fixing problems",
+      "b": "If a computer is frozen or acting strange, restarting it often helps. Also check cables, close extra programs, and save your work often."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which shortcut copies selected text on Windows?",
+      "o": [
+       "Ctrl+V",
+       "Ctrl+Z",
+       "Ctrl+C",
+       "Ctrl+P"
+      ],
+      "a": 2,
+      "why": "Ctrl+C copies what you selected."
+     },
+     {
+      "t": "mc",
+      "q": "Which shortcut undoes your last action?",
+      "o": [
+       "Ctrl+Z",
+       "Ctrl+C",
+       "Ctrl+X",
+       "Ctrl+A"
+      ],
+      "a": 0,
+      "why": "Ctrl+Z reverses the last action."
+     },
+     {
+      "t": "mc",
+      "q": "What is a good first step when a computer freezes and acts strange?",
+      "o": [
+       "Throw it away",
+       "Delete all files",
+       "Unplug the monitor only",
+       "Restart it"
+      ],
+      "a": 3,
+      "why": "Restarting clears many temporary problems."
+     },
+     {
+      "t": "mc",
+      "q": "Why should you install software updates?",
+      "o": [
+       "They erase your files",
+       "They fix bugs and add features",
+       "They slow the computer on purpose",
+       "They remove the screen"
+      ],
+      "a": 1,
+      "why": "Updates fix problems and improve the software."
+     },
+     {
+      "t": "tf",
+      "q": "Ctrl+V pastes the text you copied.",
+      "a": true,
+      "why": "Ctrl+V inserts copied or cut content."
+     },
+     {
+      "t": "match",
+      "q": "Match each shortcut to its action",
+      "pairs": [
+       [
+        "Ctrl+C",
+        "Copy"
+       ],
+       [
+        "Ctrl+V",
+        "Paste"
+       ],
+       [
+        "Ctrl+Z",
+        "Undo"
+       ],
+       [
+        "Ctrl+S",
+        "Save"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps in order to copy a sentence to another document",
+      "items": [
+       [
+        "Select the sentence",
+        1
+       ],
+       [
+        "Press Ctrl+C",
+        2
+       ],
+       [
+        "Click in the other document",
+        3
+       ],
+       [
+        "Press Ctrl+V",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What does the shortcut Ctrl+V do?",
+      "a": [
+       "paste",
+       "pastes"
+      ],
+      "hint": "Ctrl+C is copy.",
+      "why": "Ctrl+V pastes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What does the shortcut Ctrl+Z do?",
+      "a": [
+       "undo",
+       "undoes"
+      ],
+      "hint": "It reverses your last action.",
+      "why": "Ctrl+Z undoes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: If a computer freezes, what simple step often helps? (one word)",
+      "a": [
+       "restart",
+       "reboot",
+       "restarting"
+      ],
+      "hint": "Turn it off and on.",
+      "why": "Restarting often clears the problem."
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,5992 @@
+{
+ "ela-g3": {
+  "name": "Grade 3 English",
+  "units": [
+   {
+    "title": "Nouns, Verbs and Adjectives",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Nouns name things",
+      "b": "A noun is a person, place, thing, or idea. In 'The dog ran to the park', dog and park are nouns."
+     },
+     {
+      "h": "Verbs show action",
+      "b": "A verb tells what someone does or is. In 'Mia jumps high', jumps is the verb. Past tense often ends in -ed, like jumped."
+     },
+     {
+      "h": "Adjectives describe",
+      "b": "An adjective tells more about a noun. In 'a red ball', red is the adjective. It can tell color, size, or how many."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word is a noun in: The cat sleeps on the sofa?",
+      "o": [
+       "sleeps",
+       "on",
+       "sofa",
+       "the"
+      ],
+      "a": 2,
+      "why": "A sofa is a thing, so it is a noun."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is a verb in: Tom kicks the ball?",
+      "o": [
+       "Tom",
+       "kicks",
+       "the",
+       "ball"
+      ],
+      "a": 1,
+      "why": "Kicks is the action Tom does."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is an adjective in: She wore a yellow hat?",
+      "o": [
+       "wore",
+       "She",
+       "hat",
+       "yellow"
+      ],
+      "a": 3,
+      "why": "Yellow describes the hat."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past tense of walk?",
+      "o": [
+       "walking",
+       "walked",
+       "walks",
+       "will walk"
+      ],
+      "a": 1,
+      "why": "Add -ed to walk to show it happened already."
+     },
+     {
+      "t": "tf",
+      "q": "A noun can be a place, like school.",
+      "a": true,
+      "why": "Nouns name people, places, things, or ideas."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its type",
+      "pairs": [
+       [
+        "teacher",
+        "noun"
+       ],
+       [
+        "run",
+        "verb"
+       ],
+       [
+        "tiny",
+        "adjective"
+       ],
+       [
+        "quickly",
+        "adverb"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a sentence",
+      "items": [
+       [
+        "The",
+        1
+       ],
+       [
+        "happy",
+        2
+       ],
+       [
+        "dog",
+        3
+       ],
+       [
+        "barked",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the verb in this sentence: Birds fly south in winter.",
+      "a": [
+       "fly"
+      ],
+      "hint": "The verb is the action word.",
+      "why": "Fly is the action the birds do."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the adjective in this sentence: We saw a tall tree.",
+      "a": [
+       "tall"
+      ],
+      "hint": "Which word describes the tree?",
+      "why": "Tall tells what kind of tree it is."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the past tense of 'jump'.",
+      "a": [
+       "jumped"
+      ],
+      "hint": "Add -ed to show it already happened.",
+      "why": "Jump + ed = jumped."
+     }
+    ]
+   },
+   {
+    "title": "Reading Stories",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Main idea and details",
+      "b": "The main idea is what a text is mostly about. Details are small facts that support it. A text about bees might have the main idea 'Bees help flowers grow'."
+     },
+     {
+      "h": "Characters and setting",
+      "b": "Characters are the people or animals in a story. The setting is where and when it happens. A story set in a dark forest at night feels different from one at a beach."
+     },
+     {
+      "h": "Beginning, middle, end",
+      "b": "Most stories have a beginning that introduces the problem, a middle where things happen, and an end where the problem is solved."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the main idea of a text?",
+      "o": [
+       "A small detail",
+       "What it is mostly about",
+       "The title only",
+       "The last word"
+      ],
+      "a": 1,
+      "why": "The main idea is the big point of the whole text."
+     },
+     {
+      "t": "mc",
+      "q": "Who are the characters in a story?",
+      "o": [
+       "The people or animals in it",
+       "The pages",
+       "The place it happens",
+       "The author's name"
+      ],
+      "a": 0,
+      "why": "Characters are the people or animals the story is about."
+     },
+     {
+      "t": "mc",
+      "q": "What does the setting of a story tell you?",
+      "o": [
+       "Who wrote it",
+       "How long it is",
+       "Where and when it happens",
+       "What the moral is"
+      ],
+      "a": 2,
+      "why": "Setting means the place and time."
+     },
+     {
+      "t": "mc",
+      "q": "Which part of a story solves the problem?",
+      "o": [
+       "The title",
+       "The beginning",
+       "The middle",
+       "The end"
+      ],
+      "a": 3,
+      "why": "The problem is usually solved at the end."
+     },
+     {
+      "t": "tf",
+      "q": "Details in a text help support the main idea.",
+      "a": true,
+      "why": "Details give facts that explain the main idea."
+     },
+     {
+      "t": "match",
+      "q": "Match each story word to its meaning",
+      "pairs": [
+       [
+        "character",
+        "person in a story"
+       ],
+       [
+        "setting",
+        "place and time"
+       ],
+       [
+        "problem",
+        "trouble to fix"
+       ],
+       [
+        "title",
+        "name of the story"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these story parts in order",
+      "items": [
+       [
+        "Meet the characters",
+        1
+       ],
+       [
+        "A problem appears",
+        2
+       ],
+       [
+        "Characters try to fix it",
+        3
+       ],
+       [
+        "Problem is solved",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A story happens in a forest at night. What do we call 'a forest at night'? (one word)",
+      "a": [
+       "setting",
+       "the setting"
+      ],
+      "hint": "It tells where and when.",
+      "why": "The setting is where and when a story happens."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the missing word: The ____ idea tells what a text is mostly about.",
+      "a": [
+       "main"
+      ],
+      "hint": "Two words: ___ idea.",
+      "why": "The main idea is what a text is mostly about."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put these story events in order",
+      "lines": [
+       "Sam plants a seed.",
+       "Sam waters the seed every day.",
+       "A flower grows."
+      ],
+      "why": "A seed must be planted and watered before a flower grows."
+     }
+    ]
+   },
+   {
+    "title": "Word Meanings",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Synonyms and antonyms",
+      "b": "Synonyms mean almost the same, like big and large. Antonyms mean the opposite, like hot and cold."
+     },
+     {
+      "h": "Prefixes",
+      "b": "A prefix goes at the start of a word and changes its meaning. Un- means not, so unhappy means not happy. Re- means again, so reread means read again."
+     },
+     {
+      "h": "Homophones",
+      "b": "Homophones sound the same but have different spellings and meanings, like to, too, and two, or their and there."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word is a synonym for happy?",
+      "o": [
+       "sad",
+       "angry",
+       "tired",
+       "glad"
+      ],
+      "a": 3,
+      "why": "Glad and happy mean almost the same."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is an antonym of hot?",
+      "o": [
+       "cold",
+       "warm",
+       "sunny",
+       "boiling"
+      ],
+      "a": 0,
+      "why": "Cold is the opposite of hot."
+     },
+     {
+      "t": "mc",
+      "q": "What does the prefix un- mean in unlock?",
+      "o": [
+       "again",
+       "not",
+       "before",
+       "very"
+      ],
+      "a": 1,
+      "why": "Unlock means to undo locking."
+     },
+     {
+      "t": "mc",
+      "q": "What does redo mean?",
+      "o": [
+       "Do not do",
+       "Do before",
+       "Do again",
+       "Do badly"
+      ],
+      "a": 2,
+      "why": "The prefix re- means again."
+     },
+     {
+      "t": "tf",
+      "q": "The words 'see' and 'sea' are homophones.",
+      "a": true,
+      "why": "They sound the same but have different spellings and meanings."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its antonym",
+      "pairs": [
+       [
+        "up",
+        "down"
+       ],
+       [
+        "fast",
+        "slow"
+       ],
+       [
+        "open",
+        "closed"
+       ],
+       [
+        "day",
+        "night"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the animals from smallest to largest",
+      "items": [
+       [
+        "ant",
+        1
+       ],
+       [
+        "cat",
+        2
+       ],
+       [
+        "horse",
+        3
+       ],
+       [
+        "whale",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the antonym (opposite) of 'full'.",
+      "a": [
+       "empty"
+      ],
+      "hint": "Think of a glass with nothing in it.",
+      "why": "Empty is the opposite of full."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Add the prefix re- to 'write'. Type the new word.",
+      "a": [
+       "rewrite"
+      ],
+      "hint": "re- means again.",
+      "why": "Rewrite means to write again."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the homophone of 'two' that means 'also'.",
+      "a": [
+       "too"
+      ],
+      "hint": "It sounds like two but has a different spelling.",
+      "why": "Too means also."
+     }
+    ]
+   },
+   {
+    "title": "Writing Sentences",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Complete sentences",
+      "b": "A sentence starts with a capital letter, ends with punctuation, and tells a whole idea. 'The bird sings.' is a sentence. 'The bird' is not."
+     },
+     {
+      "h": "End marks",
+      "b": "Use a period for a statement, a question mark for a question, and an exclamation mark for strong feeling. Example: Where is my bag?"
+     },
+     {
+      "h": "Commas in a list",
+      "b": "Put commas between three or more things in a list. Example: I packed apples, grapes, and bread."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence is written correctly?",
+      "o": [
+       "the dog barked.",
+       "The dog barked.",
+       "The dog barked",
+       "the Dog barked"
+      ],
+      "a": 1,
+      "why": "It starts with a capital letter and ends with a period."
+     },
+     {
+      "t": "mc",
+      "q": "Which end mark goes after: Where do you live",
+      "o": [
+       ".",
+       "!",
+       ",",
+       "?"
+      ],
+      "a": 3,
+      "why": "A question needs a question mark."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses commas in a list correctly?",
+      "o": [
+       "I like red, blue, and green.",
+       "I like, red blue and green.",
+       "I, like red blue green.",
+       "I like red blue, and, green."
+      ],
+      "a": 0,
+      "why": "Commas separate the items in the list."
+     },
+     {
+      "t": "mc",
+      "q": "Which word should be capitalized?",
+      "o": [
+       "table",
+       "monday",
+       "happy",
+       "quickly"
+      ],
+      "a": 1,
+      "why": "Days of the week are capitalized."
+     },
+     {
+      "t": "tf",
+      "q": "'Ran to the store' is a complete sentence.",
+      "a": false,
+      "why": "It has no subject, so it does not say who ran."
+     },
+     {
+      "t": "match",
+      "q": "Match each sentence to its end mark",
+      "pairs": [
+       [
+        "I like pizza",
+        "period"
+       ],
+       [
+        "What is your name",
+        "question mark"
+       ],
+       [
+        "Watch out",
+        "exclamation mark"
+       ],
+       [
+        "Hello there, friend",
+        "comma"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing steps in order",
+      "items": [
+       [
+        "Think of an idea",
+        1
+       ],
+       [
+        "Write a first draft",
+        2
+       ],
+       [
+        "Fix mistakes",
+        3
+       ],
+       [
+        "Share your work",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the name of the mark that ends a question? Type its two words.",
+      "a": [
+       "question mark",
+       "a question mark"
+      ],
+      "hint": "It looks like a curly hook with a dot.",
+      "why": "A question ends with a question mark."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the contraction for 'do not'.",
+      "a": [
+       "don't",
+       "dont"
+      ],
+      "hint": "The apostrophe replaces the letter o.",
+      "why": "Do not becomes don't."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put these parts in order to build a sentence",
+      "lines": [
+       "The little dog",
+       "ran",
+       "across the yard"
+      ],
+      "why": "The subject comes first, then the verb, then the rest."
+     }
+    ]
+   },
+   {
+    "title": "Plurals, Pronouns and Agreement",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Making plurals",
+      "b": "Add -s to most nouns: cat, cats. Add -es after s, x, z, ch or sh: box, boxes. If a noun ends in a consonant plus y, change the y to i and add -es: baby, babies."
+     },
+     {
+      "h": "Irregular plurals",
+      "b": "Some nouns change in a special way: child, children; foot, feet; mouse, mice. A few stay the same: one sheep, two sheep."
+     },
+     {
+      "h": "Pronouns and agreement",
+      "b": "A pronoun takes the place of a noun: he, she, it, they. A verb must match its subject: The dog runs. The dogs run."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the plural of 'box'?",
+      "o": [
+       "boxs",
+       "boxen",
+       "boxes",
+       "boxies"
+      ],
+      "a": 2,
+      "why": "Nouns ending in x add -es."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'baby'?",
+      "o": [
+       "babies",
+       "babys",
+       "babyes",
+       "babyies"
+      ],
+      "a": 0,
+      "why": "Change y to i and add -es."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'child'?",
+      "o": [
+       "childs",
+       "childes",
+       "childrens",
+       "children"
+      ],
+      "a": 3,
+      "why": "Child is an irregular noun: child, children."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct verb: The bird ___ in the tree every morning.",
+      "o": [
+       "sing",
+       "sings",
+       "singing",
+       "sung"
+      ],
+      "a": 1,
+      "why": "A singular subject takes a verb ending in -s."
+     },
+     {
+      "t": "tf",
+      "q": "The plural of 'sheep' is 'sheeps'.",
+      "a": false,
+      "why": "Sheep stays the same in the plural."
+     },
+     {
+      "t": "match",
+      "q": "Match each singular noun to its plural",
+      "pairs": [
+       [
+        "mouse",
+        "mice"
+       ],
+       [
+        "foot",
+        "feet"
+       ],
+       [
+        "wish",
+        "wishes"
+       ],
+       [
+        "city",
+        "cities"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for making a plural in order",
+      "items": [
+       [
+        "Look at the last letter of the noun",
+        1
+       ],
+       [
+        "Check for s, x, z, ch or sh at the end",
+        2
+       ],
+       [
+        "Choose -s or -es",
+        3
+       ],
+       [
+        "Write the plural word",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the plural of 'fox'.",
+      "a": [
+       "foxes"
+      ],
+      "hint": "Add -es after x.",
+      "why": "Fox ends in x, so add -es."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the plural of 'lady'.",
+      "a": [
+       "ladies"
+      ],
+      "hint": "Change y to i, then add -es.",
+      "why": "Lady becomes ladies."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the correct verb: The girl ___ (run or runs) very fast.",
+      "a": [
+       "runs"
+      ],
+      "hint": "One girl needs a verb ending in -s.",
+      "why": "A singular subject takes runs."
+     }
+    ]
+   },
+   {
+    "title": "Apostrophes and Spelling Patterns",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Contractions",
+      "b": "An apostrophe can take the place of missing letters. do not becomes don't, I am becomes I'm, it is becomes it's."
+     },
+     {
+      "h": "Showing ownership",
+      "b": "To show that something belongs to one person, add 's: the dog's bone. If the plural ends in s, add just an apostrophe: the dogs' bones."
+     },
+     {
+      "h": "Spelling patterns",
+      "b": "Drop a silent e before -ing: make, making. Double the last letter in short words like hop: hopping. Remember i before e, except after c: receive."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the contraction for 'she is'?",
+      "o": [
+       "she's",
+       "shes",
+       "she'is",
+       "s'he"
+      ],
+      "a": 0,
+      "why": "The apostrophe replaces the letter i."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence shows ownership correctly?",
+      "o": [
+       "The girls hat is red.",
+       "The girl hat's is red.",
+       "The girl's hat is red.",
+       "The girls's hat is red."
+      ],
+      "a": 2,
+      "why": "Add 's to the singular noun girl."
+     },
+     {
+      "t": "mc",
+      "q": "What is 'make' with -ing added?",
+      "o": [
+       "makeing",
+       "maaking",
+       "makking",
+       "making"
+      ],
+      "a": 3,
+      "why": "Drop the silent e before adding -ing."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is spelled correctly?",
+      "o": [
+       "recieve",
+       "receive",
+       "receeve",
+       "reseive"
+      ],
+      "a": 1,
+      "why": "Use i before e, except after c."
+     },
+     {
+      "t": "tf",
+      "q": "The contraction won't means 'will not'.",
+      "a": true,
+      "why": "Won't is the short form of will not."
+     },
+     {
+      "t": "match",
+      "q": "Match each pair of words to its contraction",
+      "pairs": [
+       [
+        "do not",
+        "don't"
+       ],
+       [
+        "I am",
+        "I'm"
+       ],
+       [
+        "they are",
+        "they're"
+       ],
+       [
+        "we will",
+        "we'll"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for spelling a new word in order",
+      "items": [
+       [
+        "Say the word slowly",
+        1
+       ],
+       [
+        "Write the sounds you hear",
+        2
+       ],
+       [
+        "Check the spelling in a dictionary",
+        3
+       ],
+       [
+        "Fix any mistakes",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the contraction for 'we are'.",
+      "a": [
+       "we're",
+       "were"
+      ],
+      "hint": "Use an apostrophe to replace the letter a.",
+      "why": "We are becomes we're."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Add -ing to 'hop'. Type the new word.",
+      "a": [
+       "hopping"
+      ],
+      "hint": "Double the last letter.",
+      "why": "Short words like hop double the p before -ing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the missing word: the bone that belongs to the dog is the ___ bone.",
+      "a": [
+       "dog's",
+       "dogs"
+      ],
+      "hint": "Add 's to dog.",
+      "why": "Dog's shows that the bone belongs to the dog."
+     }
+    ]
+   },
+   {
+    "title": "Nonfiction and Text Features",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Fiction and nonfiction",
+      "b": "Fiction is made up, like a story with a talking bee. Nonfiction gives true facts, like a book about how bees make honey."
+     },
+     {
+      "h": "Text features",
+      "b": "A heading names a section. A caption explains a picture. A glossary gives word meanings. An index lists topics with page numbers. A table of contents lists chapters."
+     },
+     {
+      "h": "How facts connect",
+      "b": "Clue words help. First, next and then show sequence. Because and so show cause and effect. Both and but compare things."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which text feature tells you what a section is about?",
+      "o": [
+       "caption",
+       "heading",
+       "index",
+       "glossary"
+      ],
+      "a": 1,
+      "why": "A heading names the section that follows it."
+     },
+     {
+      "t": "mc",
+      "q": "What does a glossary do?",
+      "o": [
+       "Gives meanings of key words",
+       "Lists page numbers for topics",
+       "Shows a picture",
+       "Tells who wrote the book"
+      ],
+      "a": 0,
+      "why": "A glossary explains important words."
+     },
+     {
+      "t": "mc",
+      "q": "Which part lists chapters and page numbers at the front of a book?",
+      "o": [
+       "table of contents",
+       "index",
+       "glossary",
+       "caption"
+      ],
+      "a": 0,
+      "why": "The table of contents shows chapters in order."
+     },
+     {
+      "t": "mc",
+      "q": "Which book is nonfiction?",
+      "o": [
+       "A story about a talking bee",
+       "A fairy tale about a queen bee",
+       "A poem about a dancing bee",
+       "A book about how bees make honey"
+      ],
+      "a": 3,
+      "why": "Nonfiction is about real facts."
+     },
+     {
+      "t": "tf",
+      "q": "A caption gives more information about a picture.",
+      "a": true,
+      "why": "Captions are the words beneath a picture."
+     },
+     {
+      "t": "match",
+      "q": "Match each text feature to its job",
+      "pairs": [
+       [
+        "table of contents",
+        "Lists chapters at the front"
+       ],
+       [
+        "index",
+        "Lists topics with page numbers"
+       ],
+       [
+        "diagram",
+        "Labeled picture showing parts"
+       ],
+       [
+        "bold word",
+        "Important word, often in the glossary"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these sequence words in the order they are usually used",
+      "items": [
+       [
+        "First",
+        1
+       ],
+       [
+        "Next",
+        2
+       ],
+       [
+        "Then",
+        3
+       ],
+       [
+        "Finally",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the text feature at the back of a book that lists topics with page numbers.",
+      "a": [
+       "index",
+       "the index"
+      ],
+      "hint": "It is in alphabetical order.",
+      "why": "An index helps you find topics fast."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the clue word that fits: Our team won ___ we practiced hard.",
+      "a": [
+       "because"
+      ],
+      "hint": "It shows the cause.",
+      "why": "Because tells why the team won."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the words under a picture that explain it.",
+      "a": [
+       "caption",
+       "captions",
+       "a caption"
+      ],
+      "hint": "It starts with c.",
+      "why": "A caption explains a picture."
+     }
+    ]
+   },
+   {
+    "title": "Fables, Folktales and Narrative Writing",
+    "period": "Grade 3",
+    "learn": [
+     {
+      "h": "Fables, folktales and myths",
+      "b": "A fable is a short story with talking animals and a moral, or lesson. A folktale is passed down by people over many years. A myth explains something in nature."
+     },
+     {
+      "h": "Point of view",
+      "b": "The narrator tells the story. A narrator using I and me is a character in the story. A character may know or feel something different from the narrator."
+     },
+     {
+      "h": "Writing a story",
+      "b": "A good story has characters, a setting, a problem, events in order and an ending. Use dialogue and time words like first, then and later."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the lesson at the end of a fable called?",
+      "o": [
+       "title",
+       "setting",
+       "moral",
+       "plot"
+      ],
+      "a": 2,
+      "why": "The moral is the lesson."
+     },
+     {
+      "t": "mc",
+      "q": "Which story is most likely a fable?",
+      "o": [
+       "A short tale where animals talk and teach a lesson",
+       "A news report about a storm",
+       "A list of rules for a game",
+       "A science book about animals"
+      ],
+      "a": 0,
+      "why": "Fables use animals to teach lessons."
+     },
+     {
+      "t": "mc",
+      "q": "A character tells the story using I. Whose point of view is it?",
+      "o": [
+       "The author's friend",
+       "The character telling the story",
+       "The reader",
+       "Every character"
+      ],
+      "a": 1,
+      "why": "First-person narrators tell their own view."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses dialogue correctly?",
+      "o": [
+       "Let's go, said Mia.",
+       "\"Let's go said Mia.",
+       "Mia said \"Let's go.",
+       "\"Let's go,\" said Mia."
+      ],
+      "a": 3,
+      "why": "Quotation marks go around the spoken words."
+     },
+     {
+      "t": "tf",
+      "q": "A myth often explains something in nature.",
+      "a": true,
+      "why": "Many myths tell why the sun rises or why storms happen."
+     },
+     {
+      "t": "match",
+      "q": "Match each story word to its meaning",
+      "pairs": [
+       [
+        "fable",
+        "Short story with a moral"
+       ],
+       [
+        "character",
+        "Person or animal in a story"
+       ],
+       [
+        "setting",
+        "Where and when it happens"
+       ],
+       [
+        "dialogue",
+        "Words characters say"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Ben finds a lost puppy.",
+        1
+       ],
+       [
+        "He looks for its owner.",
+        2
+       ],
+       [
+        "He finds a girl calling for her puppy.",
+        3
+       ],
+       [
+        "The girl thanks Ben.",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the lesson of a fable.",
+      "a": [
+       "moral",
+       "a moral"
+      ],
+      "hint": "It starts with m.",
+      "why": "The moral is the lesson."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the spoken words of characters in a story.",
+      "a": [
+       "dialogue"
+      ],
+      "hint": "It starts with d.",
+      "why": "Dialogue is what characters say."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the parts of a story in order",
+      "lines": [
+       "Introduce the characters and setting",
+       "Tell the problem",
+       "Tell the events in order",
+       "Give the ending"
+      ],
+      "why": "A story starts with who and where, then the problem, then events, then the end."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g4": {
+  "name": "Grade 4 English",
+  "units": [
+   {
+    "title": "Parts of Speech",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Adverbs",
+      "b": "An adverb tells how, when, or where something happens. In 'She ran quickly', quickly tells how she ran. Many adverbs end in -ly."
+     },
+     {
+      "h": "Pronouns",
+      "b": "A pronoun takes the place of a noun, like he, she, it, they, or we. 'Sam is tall. He plays basketball.' He replaces Sam."
+     },
+     {
+      "h": "Verb tenses",
+      "b": "Past tense tells what already happened, present tense what happens now, and future tense what will happen. Example: walked, walk, will walk."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word is an adverb in: The turtle moved slowly?",
+      "o": [
+       "turtle",
+       "moved",
+       "The",
+       "slowly"
+      ],
+      "a": 3,
+      "why": "Slowly tells how the turtle moved."
+     },
+     {
+      "t": "mc",
+      "q": "Which pronoun can replace 'Maria and I'?",
+      "o": [
+       "they",
+       "we",
+       "she",
+       "you"
+      ],
+      "a": 1,
+      "why": "We means the speaker plus another person."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is in future tense?",
+      "o": [
+       "I played soccer.",
+       "I play soccer.",
+       "I will play soccer.",
+       "I have played soccer."
+      ],
+      "a": 2,
+      "why": "Will plus a verb shows the future."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct past tense of 'go'.",
+      "o": [
+       "goed",
+       "went",
+       "gone to",
+       "going"
+      ],
+      "a": 1,
+      "why": "Go is irregular, and its past tense is went."
+     },
+     {
+      "t": "tf",
+      "q": "A pronoun takes the place of a noun.",
+      "a": true,
+      "why": "Pronouns like he and they replace nouns."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its type",
+      "pairs": [
+       [
+        "gently",
+        "adverb"
+       ],
+       [
+        "they",
+        "pronoun"
+       ],
+       [
+        "jumped",
+        "verb"
+       ],
+       [
+        "blue",
+        "adjective"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to turn 'jump' into past tense in order",
+      "items": [
+       [
+        "Find the verb",
+        1
+       ],
+       [
+        "Check if it is regular",
+        2
+       ],
+       [
+        "Add -ed",
+        3
+       ],
+       [
+        "Read: jumped",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the adverb in this sentence: The runner finished quickly.",
+      "a": [
+       "quickly"
+      ],
+      "hint": "It tells how the runner finished.",
+      "why": "Quickly describes the verb finished."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the past tense of 'swim'.",
+      "a": [
+       "swam"
+      ],
+      "hint": "It is an irregular verb.",
+      "why": "Swim becomes swam."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the pronoun that replaces 'the boys': ___ are playing.",
+      "a": [
+       "they"
+      ],
+      "hint": "It means more than one person.",
+      "why": "They replaces the boys."
+     }
+    ]
+   },
+   {
+    "title": "Reading Closely",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Theme",
+      "b": "The theme is the lesson or message of a story, like 'honesty matters' or 'never give up'. You find it by looking at what the characters learn."
+     },
+     {
+      "h": "Point of view",
+      "b": "First person uses I and we, and the narrator is in the story. Third person uses he, she, and they, and the narrator tells about others."
+     },
+     {
+      "h": "Text evidence",
+      "b": "When you answer a question about a text, point to words in the text that prove your answer. This is called text evidence."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the theme of a story?",
+      "o": [
+       "Its setting",
+       "Its lesson or message",
+       "Its length",
+       "Its title"
+      ],
+      "a": 1,
+      "why": "Theme is the big lesson of the story."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is in first person?",
+      "o": [
+       "She opened the box.",
+       "They ran home.",
+       "He felt scared.",
+       "I opened the box."
+      ],
+      "a": 3,
+      "why": "First person uses I."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is in third person?",
+      "o": [
+       "We walked to school.",
+       "The boy walked to school.",
+       "I walked to school.",
+       "Let us walk to school."
+      ],
+      "a": 1,
+      "why": "Third person talks about others, using he, she, or names."
+     },
+     {
+      "t": "mc",
+      "q": "What is text evidence?",
+      "o": [
+       "Words from the text that support your answer",
+       "Your own guess",
+       "A picture",
+       "The page number"
+      ],
+      "a": 0,
+      "why": "Evidence comes directly from the text."
+     },
+     {
+      "t": "tf",
+      "q": "A story's theme is always stated in the first sentence.",
+      "a": false,
+      "why": "Readers usually figure out the theme from what happens."
+     },
+     {
+      "t": "match",
+      "q": "Match each reading term to its meaning",
+      "pairs": [
+       [
+        "theme",
+        "lesson of a story"
+       ],
+       [
+        "narrator",
+        "who tells the story"
+       ],
+       [
+        "setting",
+        "where and when"
+       ],
+       [
+        "summary",
+        "short retelling"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for answering a question in order",
+      "items": [
+       [
+        "Read the question",
+        1
+       ],
+       [
+        "Find the part of the text",
+        2
+       ],
+       [
+        "Pick the evidence",
+        3
+       ],
+       [
+        "Write your answer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the lesson or message of a story.",
+      "a": [
+       "theme",
+       "the theme"
+      ],
+      "hint": "It starts with t.",
+      "why": "The theme is the message of a story."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A narrator says I and my. What point of view is it?",
+      "a": [
+       "first person",
+       "first-person",
+       "first"
+      ],
+      "hint": "It starts with f.",
+      "why": "I and my show first-person point of view."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps for answering with text evidence in order",
+      "lines": [
+       "Read the question",
+       "Find a detail in the text",
+       "Quote or retell that detail",
+       "Explain how it proves your answer"
+      ],
+      "why": "You find the proof before you explain it."
+     }
+    ]
+   },
+   {
+    "title": "Vocabulary Skills",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Context clues",
+      "b": "When you meet a new word, look at the words around it for hints. In 'The enormous elephant was huge', the word huge helps you guess enormous means very big."
+     },
+     {
+      "h": "Suffixes",
+      "b": "A suffix goes at the end of a word. -ful means full of, so joyful means full of joy. -less means without, so hopeless means without hope."
+     },
+     {
+      "h": "Similes and metaphors",
+      "b": "A simile compares two things using like or as: 'as quick as a fox'. A metaphor says one thing is another: 'The classroom was a zoo'."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the suffix -less mean in 'careless'?",
+      "o": [
+       "without",
+       "full of",
+       "again",
+       "before"
+      ],
+      "a": 0,
+      "why": "-less means without, so careless means without care."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence has a simile?",
+      "o": [
+       "Time is money.",
+       "He is a rock.",
+       "She sings like a bird.",
+       "The wind howled."
+      ],
+      "a": 2,
+      "why": "A simile uses the word like or as."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence has a metaphor?",
+      "o": [
+       "The room was as hot as an oven.",
+       "The room was an oven.",
+       "The room felt very hot.",
+       "I like the room."
+      ],
+      "a": 1,
+      "why": "A metaphor says one thing is another without like or as."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'timid' mean: The timid mouse hid because it was shy and scared.",
+      "o": [
+       "angry",
+       "loud",
+       "hungry",
+       "shy and fearful"
+      ],
+      "a": 3,
+      "why": "The clue words shy and scared explain timid."
+     },
+     {
+      "t": "tf",
+      "q": "The suffix -ful means full of.",
+      "a": true,
+      "why": "Helpful means full of help."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "joyful",
+        "full of joy"
+       ],
+       [
+        "fearless",
+        "without fear"
+       ],
+       [
+        "unkind",
+        "not kind"
+       ],
+       [
+        "rewrite",
+        "write again"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these words from weakest to strongest feeling",
+      "items": [
+       [
+        "annoyed",
+        1
+       ],
+       [
+        "upset",
+        2
+       ],
+       [
+        "angry",
+        3
+       ],
+       [
+        "furious",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Add the suffix -less to 'hope'. Type the word.",
+      "a": [
+       "hopeless"
+      ],
+      "hint": "-less means without.",
+      "why": "Hopeless means without hope."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Add the suffix -ful to 'care'. Type the word.",
+      "a": [
+       "careful"
+      ],
+      "hint": "-ful means full of.",
+      "why": "Careful means full of care."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the figure of speech: 'The snow was a white blanket.' (simile or metaphor)",
+      "a": [
+       "metaphor",
+       "a metaphor"
+      ],
+      "hint": "There is no like or as.",
+      "why": "A metaphor says one thing is another."
+     }
+    ]
+   },
+   {
+    "title": "Opinion and Informational Writing",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Opinion writing",
+      "b": "In an opinion piece, you state what you think and give reasons. Start with your opinion, add reasons with facts, and end with a closing sentence."
+     },
+     {
+      "h": "Facts and opinions",
+      "b": "A fact can be proven, like 'Water freezes at 0 degrees Celsius'. An opinion tells what someone thinks, like 'Winter is the best season'."
+     },
+     {
+      "h": "Quotation marks",
+      "b": "Use quotation marks around a speaker's exact words. Example: Mom said, \"Dinner is ready.\" The comma and period go inside the quotes."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence is an opinion?",
+      "o": [
+       "A week has seven days.",
+       "The sun is a star.",
+       "Dogs are the best pets.",
+       "Paris is in France."
+      ],
+      "a": 2,
+      "why": "'Best' is a feeling that cannot be proven."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is a fact?",
+      "o": [
+       "Math is boring.",
+       "Spiders have eight legs.",
+       "Pizza tastes great.",
+       "Blue is the prettiest color."
+      ],
+      "a": 1,
+      "why": "You can check that spiders have eight legs."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses quotation marks correctly?",
+      "o": [
+       "\"I am hungry,\" said Leo.",
+       "I am hungry, \"said Leo.\"",
+       "\"I am hungry, said Leo.\"",
+       "I \"am hungry\" said Leo."
+      ],
+      "a": 0,
+      "why": "Quotation marks surround only the spoken words."
+     },
+     {
+      "t": "mc",
+      "q": "What should an opinion paragraph include besides your opinion?",
+      "o": [
+       "Only a title",
+       "A drawing",
+       "Reasons that support it",
+       "A random fact"
+      ],
+      "a": 2,
+      "why": "Reasons make an opinion convincing."
+     },
+     {
+      "t": "tf",
+      "q": "A fact can be proven true or false.",
+      "a": true,
+      "why": "Facts can be checked, while opinions are beliefs."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its type",
+      "pairs": [
+       [
+        "Cats are cute.",
+        "opinion"
+       ],
+       [
+        "Ice is frozen water.",
+        "fact"
+       ],
+       [
+        "Summer is the best.",
+        "opinion"
+       ],
+       [
+        "Earth has one moon.",
+        "fact"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of an opinion paragraph in order",
+      "items": [
+       [
+        "State your opinion",
+        1
+       ],
+       [
+        "Give reason one",
+        2
+       ],
+       [
+        "Give reason two",
+        3
+       ],
+       [
+        "Write a closing sentence",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type fact or opinion: 'Pizza is the tastiest food.'",
+      "a": [
+       "opinion",
+       "an opinion"
+      ],
+      "hint": "Can it be proven?",
+      "why": "Tastiest is a feeling, so it is an opinion."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word that links an opinion to its reason: I like recess ___ it is fun.",
+      "a": [
+       "because"
+      ],
+      "hint": "It gives the reason.",
+      "why": "Because connects the reason to the opinion."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the last part of an opinion paragraph called? (one word)",
+      "a": [
+       "conclusion",
+       "the conclusion"
+      ],
+      "hint": "It wraps up the paragraph.",
+      "why": "The conclusion ends the paragraph."
+     }
+    ]
+   },
+   {
+    "title": "Sentences, Commas and Modals",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Fragments and run-ons",
+      "b": "A complete sentence has a subject and a verb and is a whole thought. A fragment is missing a part: Running down the hill. A run-on joins two sentences with no punctuation: I was tired I went to bed."
+     },
+     {
+      "h": "Commas",
+      "b": "Use a comma after an opening phrase: After school, we played. Use one before and, but or so when joining two sentences. Also use one when speaking to someone: Mia, come here."
+     },
+     {
+      "h": "Verbs and adjectives",
+      "b": "Progressive tenses show action in progress: I was walking, I am walking, I will be walking. Modals like can, may and must show ability, permission or duty. Adjectives go in order: opinion, size, age, color."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a sentence fragment?",
+      "o": [
+       "The dog ran home.",
+       "We played outside.",
+       "Running down the hill.",
+       "Ben likes soccer."
+      ],
+      "a": 2,
+      "why": "It has no subject, so it is not a complete sentence."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a run-on sentence?",
+      "o": [
+       "I was tired I went to bed.",
+       "I was tired, so I went to bed.",
+       "I was tired. I went to bed.",
+       "I was tired because I stayed up late."
+      ],
+      "a": 0,
+      "why": "Two sentences are joined with no punctuation."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses a comma correctly?",
+      "o": [
+       "After, school we played tag.",
+       "After school, we played tag.",
+       "After school we, played tag.",
+       "After school we played, tag."
+      ],
+      "a": 1,
+      "why": "Put a comma after the opening phrase."
+     },
+     {
+      "t": "mc",
+      "q": "Which modal verb shows a duty or need?",
+      "o": [
+       "might",
+       "can",
+       "may",
+       "must"
+      ],
+      "a": 3,
+      "why": "Must means something is required."
+     },
+     {
+      "t": "tf",
+      "q": "'I am walking' is in the present progressive tense.",
+      "a": true,
+      "why": "Am plus a verb ending in -ing shows action happening now."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb form to its meaning",
+      "pairs": [
+       [
+        "can",
+        "ability"
+       ],
+       [
+        "may",
+        "permission"
+       ],
+       [
+        "was running",
+        "past progressive"
+       ],
+       [
+        "will be running",
+        "future progressive"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these adjectives in the usual order before the noun 'car'",
+      "items": [
+       [
+        "lovely",
+        1
+       ],
+       [
+        "small",
+        2
+       ],
+       [
+        "old",
+        3
+       ],
+       [
+        "red",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the modal that fits: You ___ wear a seat belt. (It is a duty. It starts with m.)",
+      "a": [
+       "must"
+      ],
+      "hint": "It starts with m.",
+      "why": "Must shows a duty."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the past progressive form: They ___ (play) outside all day.",
+      "a": [
+       "were playing"
+      ],
+      "hint": "Use were plus -ing.",
+      "why": "They were playing shows action in progress in the past."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word that needs a comma after it: Yesterday we went to the zoo.",
+      "a": [
+       "yesterday"
+      ],
+      "hint": "It is the opening word.",
+      "why": "A comma follows an opening word or phrase."
+     }
+    ]
+   },
+   {
+    "title": "Poetry, Drama and Story Structure",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Parts of a poem",
+      "b": "A poem is built from lines. A group of lines is a stanza. Rhyme is words that end with the same sound, like light and night. Some poems are free verse and do not rhyme."
+     },
+     {
+      "h": "Parts of a play",
+      "b": "A play is written as a script. It has a cast of characters, dialogue and stage directions. Stage directions tell how characters move and speak. A play is divided into acts, and acts into scenes."
+     },
+     {
+      "h": "Comparing forms",
+      "b": "Stories use paragraphs and chapters. Poems use lines and stanzas. Plays use scenes and dialogue. All of them have characters, a problem and a message you can find."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a group of lines in a poem called?",
+      "o": [
+       "stanza",
+       "scene",
+       "chapter",
+       "act"
+      ],
+      "a": 0,
+      "why": "A stanza is a group of lines."
+     },
+     {
+      "t": "mc",
+      "q": "In a play, what do stage directions tell you?",
+      "o": [
+       "Who wrote the play",
+       "What the title means",
+       "How characters move and speak",
+       "Where the theater is"
+      ],
+      "a": 2,
+      "why": "Stage directions describe actions and feelings."
+     },
+     {
+      "t": "mc",
+      "q": "Which pair of words rhymes?",
+      "o": [
+       "cat and cup",
+       "light and night",
+       "moon and sun",
+       "ball and bell"
+      ],
+      "a": 1,
+      "why": "Light and night end with the same sound."
+     },
+     {
+      "t": "mc",
+      "q": "Which part of a play is a section of an act?",
+      "o": [
+       "act",
+       "play",
+       "cast",
+       "scene"
+      ],
+      "a": 3,
+      "why": "A scene is a part of an act."
+     },
+     {
+      "t": "tf",
+      "q": "A poem must always rhyme.",
+      "a": false,
+      "why": "Free verse poems do not rhyme."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "stanza",
+        "Group of lines in a poem"
+       ],
+       [
+        "rhyme",
+        "Same ending sound"
+       ],
+       [
+        "script",
+        "Written text of a play"
+       ],
+       [
+        "stage directions",
+        "Notes about action and setting"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these parts of a play from largest to smallest",
+      "items": [
+       [
+        "Play",
+        1
+       ],
+       [
+        "Act",
+        2
+       ],
+       [
+        "Scene",
+        3
+       ],
+       [
+        "Line of dialogue",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a group of lines in a poem.",
+      "a": [
+       "stanza",
+       "a stanza"
+      ],
+      "hint": "It starts with s.",
+      "why": "A stanza groups lines in a poem."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for words that end with the same sound, like cat and hat.",
+      "a": [
+       "rhyme",
+       "rhymes"
+      ],
+      "hint": "It starts with r.",
+      "why": "Rhyming words share an ending sound."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In a script, what is the list of characters called? (Type 'cast' or 'cast of characters'.)",
+      "a": [
+       "cast",
+       "cast of characters",
+       "the cast"
+      ],
+      "hint": "It starts with c.",
+      "why": "The cast is the people or characters in a play."
+     }
+    ]
+   },
+   {
+    "title": "Informational Text and Sources",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Main idea and summary",
+      "b": "The main idea is what a text is mostly about. Key details support it. A summary retells the main points in a few sentences, in your own words."
+     },
+     {
+      "h": "Text structure and visuals",
+      "b": "Writers organize facts in ways like time order, cause and effect, problem and solution, or compare and contrast. Timelines, charts and graphs show information in pictures and numbers."
+     },
+     {
+      "h": "Accounts and sources",
+      "b": "A firsthand account is told by a person who was there, like a diary. A secondhand account is told by someone who was not, like a textbook. Use reliable sources and write down where facts come from."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A paragraph tells how bees make honey, build hives and pollinate flowers. What is the main idea?",
+      "o": [
+       "Honey tastes sweet.",
+       "Bees do many important things.",
+       "Flowers are pretty.",
+       "Hives are made of wax."
+      ],
+      "a": 1,
+      "why": "The main idea covers all the details."
+     },
+     {
+      "t": "mc",
+      "q": "A diary entry by a girl about a storm she lived through is what kind of account?",
+      "o": [
+       "A secondhand account",
+       "A fable",
+       "A firsthand account",
+       "A poem"
+      ],
+      "a": 2,
+      "why": "She was there, so it is firsthand."
+     },
+     {
+      "t": "mc",
+      "q": "Which text structure explains how one event makes another happen?",
+      "o": [
+       "Cause and effect",
+       "Compare and contrast",
+       "Description",
+       "Time order"
+      ],
+      "a": 0,
+      "why": "Cause and effect links an event to its result."
+     },
+     {
+      "t": "mc",
+      "q": "Which tool shows events in time order?",
+      "o": [
+       "bar graph",
+       "glossary",
+       "index",
+       "timeline"
+      ],
+      "a": 3,
+      "why": "A timeline lists events by date."
+     },
+     {
+      "t": "tf",
+      "q": "A secondhand account is told by someone who was not there.",
+      "a": true,
+      "why": "They learned about the event from others."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to its meaning",
+      "pairs": [
+       [
+        "timeline",
+        "Events in order"
+       ],
+       [
+        "chart",
+        "Facts in rows and columns"
+       ],
+       [
+        "summary",
+        "Short retelling of main points"
+       ],
+       [
+        "firsthand account",
+        "Told by someone who was there"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these research steps in order",
+      "items": [
+       [
+        "Choose a topic",
+        1
+       ],
+       [
+        "Find reliable sources",
+        2
+       ],
+       [
+        "Take notes in your own words",
+        3
+       ],
+       [
+        "Write and list your sources",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a short retelling of the main points.",
+      "a": [
+       "summary",
+       "a summary"
+      ],
+      "hint": "It starts with s.",
+      "why": "A summary retells the main points."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the missing word: One problem is litter. One ___ is more trash cans.",
+      "a": [
+       "solution"
+      ],
+      "hint": "It fixes the problem.",
+      "why": "Problem and solution is a text structure."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A diary is a ___ account. Type firsthand or secondhand.",
+      "a": [
+       "firsthand",
+       "first hand",
+       "first-hand"
+      ],
+      "hint": "The writer was there.",
+      "why": "A diary is written by the person who lived it."
+     }
+    ]
+   },
+   {
+    "title": "Word Study and Narrative Writing",
+    "period": "Grade 4",
+    "learn": [
+     {
+      "h": "Greek and Latin roots",
+      "b": "Many words are built from roots. tele means far, photo means light, graph means write, auto means self. Telescope: see far. Autograph: self-written name."
+     },
+     {
+      "h": "Idioms, proverbs and word meanings",
+      "b": "A proverb gives wise advice: Look before you leap means think first. A word can have more than one meaning, like bat. Use the sentence around it to choose the right meaning."
+     },
+     {
+      "h": "Narrative writing",
+      "b": "A narrative tells a story. Start with a hook, then add sensory details and dialogue. Use time words to link events and end with a conclusion that solves the problem."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The root tele means far. What is a telescope used for?",
+      "o": [
+       "Writing letters",
+       "Measuring heat",
+       "Seeing things far away",
+       "Hearing music"
+      ],
+      "a": 2,
+      "why": "Tele means far and scope means look."
+     },
+     {
+      "t": "mc",
+      "q": "The root auto means self and graph means write. What does 'autograph' mean?",
+      "o": [
+       "A far-away picture",
+       "A person's own written name",
+       "A light show",
+       "A kind of book"
+      ],
+      "a": 1,
+      "why": "Auto plus graph means self-written."
+     },
+     {
+      "t": "mc",
+      "q": "What does the proverb 'Don't count your chickens before they hatch' mean?",
+      "o": [
+       "Don't plan on something that hasn't happened yet",
+       "Chickens hatch slowly",
+       "Always count your eggs",
+       "Chickens are valuable"
+      ],
+      "a": 0,
+      "why": "It warns you not to assume a result too early."
+     },
+     {
+      "t": "mc",
+      "q": "Which meaning of 'bat' fits: A bat flew out of the cave at night.",
+      "o": [
+       "A wooden stick",
+       "A baseball team",
+       "A swing in a game",
+       "A flying animal"
+      ],
+      "a": 3,
+      "why": "Cave and night point to the animal."
+     },
+     {
+      "t": "tf",
+      "q": "The word 'bark' can mean a dog's sound or the outside of a tree.",
+      "a": true,
+      "why": "Bark has more than one meaning."
+     },
+     {
+      "t": "match",
+      "q": "Match each root to its meaning",
+      "pairs": [
+       [
+        "tele",
+        "far"
+       ],
+       [
+        "photo",
+        "light"
+       ],
+       [
+        "graph",
+        "write"
+       ],
+       [
+        "auto",
+        "self"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these narrative writing steps in order",
+      "items": [
+       [
+        "Plan characters, setting and problem",
+        1
+       ],
+       [
+        "Write a beginning that hooks the reader",
+        2
+       ],
+       [
+        "Tell events in order with details",
+        3
+       ],
+       [
+        "End with a conclusion that solves the problem",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The root photo means light and graph means write. Type the word for a picture made with light: photo___.",
+      "a": [
+       "photograph"
+      ],
+      "hint": "Add the second root.",
+      "why": "Photograph means writing with light."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the missing word in the proverb: Look before you ___.",
+      "a": [
+       "leap"
+      ],
+      "hint": "It rhymes with keep.",
+      "why": "Look before you leap means think first."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The root aqua means water. Type the word for a tank where fish live: aqua___.",
+      "a": [
+       "aquarium"
+      ],
+      "hint": "It ends with -rium.",
+      "why": "An aquarium is a tank of water for fish."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g5": {
+  "name": "Grade 5 English",
+  "units": [
+   {
+    "title": "Grammar and Usage",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Conjunctions",
+      "b": "Conjunctions join words or ideas. And, but, and or join equal parts. Because, although, and when start a dependent clause. Example: I stayed in because it rained."
+     },
+     {
+      "h": "Perfect tenses",
+      "b": "Present perfect uses have or has plus a past verb: 'I have finished'. Past perfect uses had: 'I had finished before dinner'. Future perfect uses will have."
+     },
+     {
+      "h": "Interjections and commas",
+      "b": "An interjection shows sudden feeling, like Wow! or Oops! Use a comma after an introductory word: 'Yes, I can help.'"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word is a conjunction: We wanted to swim, but it was cold.",
+      "o": [
+       "wanted",
+       "swim",
+       "but",
+       "cold"
+      ],
+      "a": 2,
+      "why": "But joins two ideas."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is in present perfect tense?",
+      "o": [
+       "She has eaten lunch.",
+       "She ate lunch.",
+       "She will eat lunch.",
+       "She had eaten lunch."
+      ],
+      "a": 0,
+      "why": "Has plus eaten is present perfect."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is in past perfect tense?",
+      "o": [
+       "They have left.",
+       "They left.",
+       "They will have left.",
+       "They had left."
+      ],
+      "a": 3,
+      "why": "Had plus a past verb is past perfect."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is an interjection?",
+      "o": [
+       "quickly",
+       "Wow",
+       "because",
+       "table"
+      ],
+      "a": 1,
+      "why": "Wow expresses sudden feeling."
+     },
+     {
+      "t": "tf",
+      "q": "'Because' starts a dependent clause.",
+      "a": true,
+      "why": "A clause starting with because cannot stand alone."
+     },
+     {
+      "t": "match",
+      "q": "Match each tense to an example",
+      "pairs": [
+       [
+        "past perfect",
+        "had walked"
+       ],
+       [
+        "present perfect",
+        "have walked"
+       ],
+       [
+        "future perfect",
+        "will have walked"
+       ],
+       [
+        "future",
+        "will walk"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order of time, earliest first",
+      "items": [
+       [
+        "Yesterday I ate.",
+        1
+       ],
+       [
+        "Right now I am eating.",
+        2
+       ],
+       [
+        "Tomorrow I will eat.",
+        3
+       ],
+       [
+        "Next year I will eat.",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the conjunction: I was tired, so I went to bed.",
+      "a": [
+       "so"
+      ],
+      "hint": "It joins two parts of the sentence.",
+      "why": "So is a conjunction showing a result."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Complete in past perfect: Before dinner, they ___ (finish) their homework.",
+      "a": [
+       "had finished"
+      ],
+      "hint": "Use had plus the past participle.",
+      "why": "Past perfect is had plus finished."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Complete in present perfect: He ___ (walk) to school already.",
+      "a": [
+       "has walked"
+      ],
+      "hint": "Use has with he.",
+      "why": "Present perfect is has plus walked."
+     }
+    ]
+   },
+   {
+    "title": "Reading Literature",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Comparing characters",
+      "b": "To compare characters, look at what they say, do, and feel. Ask how they are alike and different, and how each one changes."
+     },
+     {
+      "h": "Figurative language",
+      "b": "Authors use words in creative ways. A metaphor says one thing is another. Personification gives human actions to objects: 'The wind whispered.' Hyperbole is extreme exaggeration."
+     },
+     {
+      "h": "Making inferences",
+      "b": "An inference is a smart guess using clues from the text and what you know. If a character shivers and zips her coat, you can infer it is cold."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence uses personification?",
+      "o": [
+       "The sun is hot.",
+       "The sun smiled down on us.",
+       "The sun is a ball of fire.",
+       "I like the sun."
+      ],
+      "a": 1,
+      "why": "The sun cannot smile, so this gives it a human action."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is hyperbole?",
+      "o": [
+       "I am so hungry I could eat a horse.",
+       "I am a little hungry.",
+       "I ate lunch.",
+       "I like food."
+      ],
+      "a": 0,
+      "why": "Eating a horse is an extreme exaggeration."
+     },
+     {
+      "t": "mc",
+      "q": "A boy slams his book and stomps away. What can you infer?",
+      "o": [
+       "He is happy",
+       "He is sleepy",
+       "He is angry",
+       "He is hungry"
+      ],
+      "a": 2,
+      "why": "Slamming and stomping are clues of anger."
+     },
+     {
+      "t": "mc",
+      "q": "What is an inference?",
+      "o": [
+       "A word from the title",
+       "A direct quote",
+       "A guess based on clues",
+       "A fact from the first line"
+      ],
+      "a": 2,
+      "why": "Inferences use clues plus what you already know."
+     },
+     {
+      "t": "tf",
+      "q": "A metaphor compares two things using the word like.",
+      "a": false,
+      "why": "That is a simile; a metaphor says one thing is another."
+     },
+     {
+      "t": "match",
+      "q": "Match each device to an example",
+      "pairs": [
+       [
+        "simile",
+        "as brave as a lion"
+       ],
+       [
+        "metaphor",
+        "Life is a journey"
+       ],
+       [
+        "personification",
+        "The door groaned"
+       ],
+       [
+        "hyperbole",
+        "I waited a million years"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for making an inference in order",
+      "items": [
+       [
+        "Read the text",
+        1
+       ],
+       [
+        "Notice the clues",
+        2
+       ],
+       [
+        "Think about what you know",
+        3
+       ],
+       [
+        "Make your inference",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the device: 'The wind whispered through the trees.'",
+      "a": [
+       "personification"
+      ],
+      "hint": "The wind acts like a person.",
+      "why": "Giving human actions to a thing is personification."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the device: 'I've told you a million times!'",
+      "a": [
+       "hyperbole"
+      ],
+      "hint": "It is a big exaggeration.",
+      "why": "Hyperbole is exaggeration."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a guess based on clues in the text.",
+      "a": [
+       "inference",
+       "an inference",
+       "infer"
+      ],
+      "hint": "It starts with i.",
+      "why": "An inference uses clues plus what you know."
+     }
+    ]
+   },
+   {
+    "title": "Informational Texts",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Text structures",
+      "b": "Writers organize information in patterns: compare and contrast, cause and effect, problem and solution, description, and sequence."
+     },
+     {
+      "h": "Text features",
+      "b": "A heading names a section, a glossary defines key words, a caption explains a picture, and an index lists topics with page numbers."
+     },
+     {
+      "h": "Author's purpose",
+      "b": "Authors write to persuade, inform, or entertain. A news report informs, an advertisement persuades, and a funny story entertains."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where would you find the meaning of a bold word at the back of a book?",
+      "o": [
+       "Index",
+       "Glossary",
+       "Caption",
+       "Title page"
+      ],
+      "a": 1,
+      "why": "A glossary lists and defines key words."
+     },
+     {
+      "t": "mc",
+      "q": "A text explains how pollution leads to dying fish. Which structure is this?",
+      "o": [
+       "Sequence",
+       "Description",
+       "Compare and contrast",
+       "Cause and effect"
+      ],
+      "a": 3,
+      "why": "Pollution is the cause and dying fish is the effect."
+     },
+     {
+      "t": "mc",
+      "q": "A commercial urges you to buy a toy. What is the author's purpose?",
+      "o": [
+       "To persuade",
+       "To inform",
+       "To entertain",
+       "To teach a lesson"
+      ],
+      "a": 0,
+      "why": "Ads try to convince you to buy."
+     },
+     {
+      "t": "mc",
+      "q": "What does a caption do?",
+      "o": [
+       "Lists page numbers",
+       "Explains a picture",
+       "Names the author",
+       "Defines words"
+      ],
+      "a": 1,
+      "why": "Captions sit near images and explain them."
+     },
+     {
+      "t": "tf",
+      "q": "An index is found at the back of a book and lists topics with page numbers.",
+      "a": true,
+      "why": "The index helps you find topics quickly."
+     },
+     {
+      "t": "match",
+      "q": "Match each text structure to its clue words",
+      "pairs": [
+       [
+        "sequence",
+        "first, next, finally"
+       ],
+       [
+        "compare",
+        "both, however, unlike"
+       ],
+       [
+        "cause and effect",
+        "because, as a result"
+       ],
+       [
+        "problem and solution",
+        "the answer is"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from the front to the back of a book",
+      "items": [
+       [
+        "Title page",
+        1
+       ],
+       [
+        "Table of contents",
+        2
+       ],
+       [
+        "Chapters",
+        3
+       ],
+       [
+        "Index",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the text feature at the back of a book that gives word meanings.",
+      "a": [
+       "glossary",
+       "the glossary"
+      ],
+      "hint": "It starts with g.",
+      "why": "A glossary explains key words."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A newspaper article reports facts about a storm. Type the author's purpose: inform, persuade or entertain.",
+      "a": [
+       "inform",
+       "to inform"
+      ],
+      "hint": "The article gives facts.",
+      "why": "Facts mean the purpose is to inform."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which text structure uses clue words like first, next and then? Type it.",
+      "a": [
+       "sequence",
+       "chronological order",
+       "chronological",
+       "time order"
+      ],
+      "hint": "It is about order in time.",
+      "why": "Those words show sequence."
+     }
+    ]
+   },
+   {
+    "title": "Writing and Research",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Narrative writing",
+      "b": "A narrative tells a story with characters, a setting, and events. Use dialogue and sensory details, and use transition words like then and later."
+     },
+     {
+      "h": "Paragraphs and transitions",
+      "b": "A paragraph has a topic sentence, supporting details, and a closing sentence. Transitions like for example, however, and in conclusion connect ideas."
+     },
+     {
+      "h": "Using sources",
+      "b": "When you research, use more than one source and write in your own words. Never copy someone else's writing without saying where it came from. Copying is plagiarism."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the topic sentence of a paragraph?",
+      "o": [
+       "The main idea sentence",
+       "The last sentence",
+       "A quote",
+       "A question"
+      ],
+      "a": 0,
+      "why": "It tells the main idea, usually at the start."
+     },
+     {
+      "t": "mc",
+      "q": "Which transition word shows contrast?",
+      "o": [
+       "Also",
+       "Next",
+       "However",
+       "Finally"
+      ],
+      "a": 2,
+      "why": "However introduces an opposite idea."
+     },
+     {
+      "t": "mc",
+      "q": "What is plagiarism?",
+      "o": [
+       "Using two sources",
+       "Writing a summary",
+       "Making an outline",
+       "Copying someone's words as your own"
+      ],
+      "a": 3,
+      "why": "Plagiarism means passing off another person's work as yours."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best way to use a source?",
+      "o": [
+       "Copy it exactly",
+       "Write the ideas in your own words and name the source",
+       "Skip reading it",
+       "Change one word only"
+      ],
+      "a": 1,
+      "why": "Paraphrasing and crediting is honest research."
+     },
+     {
+      "t": "tf",
+      "q": "A narrative can include dialogue between characters.",
+      "a": true,
+      "why": "Dialogue makes stories more lively."
+     },
+     {
+      "t": "match",
+      "q": "Match each writing term to its job",
+      "pairs": [
+       [
+        "topic sentence",
+        "states main idea"
+       ],
+       [
+        "detail",
+        "supports the idea"
+       ],
+       [
+        "transition",
+        "links ideas"
+       ],
+       [
+        "conclusion",
+        "wraps up"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing process in order",
+      "items": [
+       [
+        "Plan",
+        1
+       ],
+       [
+        "Draft",
+        2
+       ],
+       [
+        "Revise",
+        3
+       ],
+       [
+        "Publish",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for copying someone's words and calling them your own.",
+      "a": [
+       "plagiarism"
+      ],
+      "hint": "It starts with p.",
+      "why": "That is plagiarism."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type a transition word that shows contrast and starts with h.",
+      "a": [
+       "however"
+      ],
+      "hint": "It means 'but'.",
+      "why": "However shows contrast."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the writing process in order",
+      "lines": [
+       "Plan your ideas",
+       "Write a first draft",
+       "Revise to improve",
+       "Edit for mistakes",
+       "Publish"
+      ],
+      "why": "You plan and draft before you revise and edit."
+     }
+    ]
+   },
+   {
+    "title": "Punctuation and Correlative Conjunctions",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Commas",
+      "b": "Use commas to separate items in a series: red, blue, and green. Set off yes or no: Yes, I can. Set off a name: Mia, come here. Use one before a question tag: You like pizza, don't you?"
+     },
+     {
+      "h": "Correlative conjunctions and titles",
+      "b": "Pairs of words join ideas: either/or, neither/nor, both/and, not only/but also. Show titles with italics for long works like books, and quotation marks for short works like poems and songs."
+     },
+     {
+      "h": "Keeping verb tense",
+      "b": "Keep the same tense unless time changes. Wrong: She opened the door and walks in. Right: She opened the door and walked in."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence uses commas correctly?",
+      "o": [
+       "Yes I can, help you.",
+       "Yes, I can help you.",
+       "Yes I can help, you.",
+       "Yes I, can help you."
+      ],
+      "a": 1,
+      "why": "A comma follows the word yes."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct pair: ___ the red shirt ___ the blue one fits me.",
+      "o": [
+       "Neither / nor",
+       "Either / nor",
+       "Both / or",
+       "Not only / and"
+      ],
+      "a": 0,
+      "why": "Neither always goes with nor."
+     },
+     {
+      "t": "mc",
+      "q": "Which title goes in quotation marks?",
+      "o": [
+       "A novel",
+       "A movie",
+       "A short poem",
+       "A magazine"
+      ],
+      "a": 2,
+      "why": "Short works like poems use quotation marks."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence keeps the verb tense the same?",
+      "o": [
+       "She opened the door and walks in.",
+       "She opens the door and walked in.",
+       "She will open the door and walked in.",
+       "She opened the door and walked in."
+      ],
+      "a": 3,
+      "why": "Both verbs are past tense."
+     },
+     {
+      "t": "tf",
+      "q": "A comma is used to set off the name of a person you are speaking to.",
+      "a": true,
+      "why": "Example: Mia, please sit down."
+     },
+     {
+      "t": "match",
+      "q": "Match each pair to its job",
+      "pairs": [
+       [
+        "both ... and",
+        "adds two things"
+       ],
+       [
+        "either ... or",
+        "shows a choice"
+       ],
+       [
+        "neither ... nor",
+        "rules out two things"
+       ],
+       [
+        "not only ... but also",
+        "adds with emphasis"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these editing steps in order",
+      "items": [
+       [
+        "Read your sentence aloud",
+        1
+       ],
+       [
+        "Check the verb tenses",
+        2
+       ],
+       [
+        "Check commas and punctuation",
+        3
+       ],
+       [
+        "Write the final copy",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the missing word: Either you go now ___ you stay.",
+      "a": [
+       "or"
+      ],
+      "hint": "Either goes with it.",
+      "why": "Either pairs with or."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the missing word: Neither Tom ___ Ana came.",
+      "a": [
+       "nor"
+      ],
+      "hint": "Neither goes with it.",
+      "why": "Neither pairs with nor."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word that needs a comma after it: Yes I can come.",
+      "a": [
+       "yes"
+      ],
+      "hint": "It is the opening word.",
+      "why": "A comma follows yes or no."
+     }
+    ]
+   },
+   {
+    "title": "Theme, Character and Point of View",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Finding the theme",
+      "b": "A topic is one or two words, like friendship. A theme is a message about life: True friends help in hard times. Use the characters' choices and what they learn to find it."
+     },
+     {
+      "h": "Understanding characters",
+      "b": "A trait describes a character, like brave or kind. A motivation is why the character acts. Notice what they say, do and feel, and how they respond to problems."
+     },
+     {
+      "h": "Point of view",
+      "b": "In first person the narrator is in the story and says I. In third person the narrator is outside and says he or she. Two stories on the same topic can feel different when told from different views."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a theme, not just a topic?",
+      "o": [
+       "Hard work leads to success",
+       "Hard work",
+       "Sports",
+       "Friendship"
+      ],
+      "a": 0,
+      "why": "A theme is a full message."
+     },
+     {
+      "t": "mc",
+      "q": "A girl gives her only lunch to a hungry friend. Which trait fits her?",
+      "o": [
+       "Selfish",
+       "Lazy",
+       "Generous",
+       "Careless"
+      ],
+      "a": 2,
+      "why": "Giving to others shows she is generous."
+     },
+     {
+      "t": "mc",
+      "q": "What is a character's motivation?",
+      "o": [
+       "The place of the story",
+       "The reason the character acts",
+       "The title",
+       "The last sentence"
+      ],
+      "a": 1,
+      "why": "Motivation is the why behind actions."
+     },
+     {
+      "t": "mc",
+      "q": "One story about a lost pet uses I and another uses an outside narrator. What differs?",
+      "o": [
+       "The title",
+       "The setting",
+       "The number of pages",
+       "The point of view"
+      ],
+      "a": 3,
+      "why": "The narrators tell the story differently."
+     },
+     {
+      "t": "tf",
+      "q": "The theme is always written directly in the story.",
+      "a": false,
+      "why": "Readers usually figure it out from details."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "trait",
+        "Quality that describes a character"
+       ],
+       [
+        "motivation",
+        "Why a character acts"
+       ],
+       [
+        "narrator",
+        "Voice that tells the story"
+       ],
+       [
+        "theme",
+        "Message about life"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for finding a theme in order",
+      "items": [
+       [
+        "Read the whole story",
+        1
+       ],
+       [
+        "Notice the problem and how it is solved",
+        2
+       ],
+       [
+        "Think about what the character learns",
+        3
+       ],
+       [
+        "State the theme as a message",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the reason a character does something.",
+      "a": [
+       "motivation",
+       "motive"
+      ],
+      "hint": "It starts with m.",
+      "why": "Motivation is why a character acts."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A boy tells the truth even when it is hard. Type one trait that starts with h.",
+      "a": [
+       "honest"
+      ],
+      "hint": "It starts with h.",
+      "why": "Telling the truth shows he is honest."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the point of view when the narrator uses I and me.",
+      "a": [
+       "first person",
+       "first-person",
+       "first"
+      ],
+      "hint": "It starts with f.",
+      "why": "I and me show first-person point of view."
+     }
+    ]
+   },
+   {
+    "title": "Arguments and Multiple Sources",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Claims, reasons and evidence",
+      "b": "An author makes a claim, gives reasons and backs them with evidence. A fact can be proven. An opinion is a belief or feeling. Strong arguments use facts."
+     },
+     {
+      "h": "Using more than one text",
+      "b": "Reading two texts on a topic helps you learn more. Compare what each says. Combine the ideas in your own words and notice when they disagree."
+     },
+     {
+      "h": "Is the source reliable?",
+      "b": "Ask who wrote it, when it was written and why. Experts, schools and science groups are usually reliable. Ads and personal blogs may leave out facts."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which reason best supports 'School should start later'?",
+      "o": [
+       "Mornings are cold.",
+       "I like cartoons.",
+       "Some schools have buses.",
+       "Tired students have trouble paying attention."
+      ],
+      "a": 3,
+      "why": "It connects sleep to learning."
+     },
+     {
+      "t": "mc",
+      "q": "Two articles about volcanoes give different numbers. What should you do?",
+      "o": [
+       "Pick the shorter one",
+       "Check which source is more reliable and recent",
+       "Ignore both",
+       "Pick the one with more pictures"
+      ],
+      "a": 1,
+      "why": "Reliable, current sources give better facts."
+     },
+     {
+      "t": "mc",
+      "q": "Which source is most reliable about animals?",
+      "o": [
+       "A random post online",
+       "An ad for a toy",
+       "A zoo's science website written by biologists",
+       "A friend's guess"
+      ],
+      "a": 2,
+      "why": "Experts write the information."
+     },
+     {
+      "t": "mc",
+      "q": "An author says 'Everyone must buy this juice!' This is mostly",
+      "o": [
+       "An opinion meant to persuade",
+       "A proven fact",
+       "A summary",
+       "A timeline"
+      ],
+      "a": 0,
+      "why": "It tells people what to do with no proof."
+     },
+     {
+      "t": "tf",
+      "q": "Using two texts on a topic can help you understand it better.",
+      "a": true,
+      "why": "Each text can add new details."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "claim",
+        "What the author wants you to believe"
+       ],
+       [
+        "reason",
+        "Why the claim makes sense"
+       ],
+       [
+        "evidence",
+        "Facts that back a reason"
+       ],
+       [
+        "source",
+        "Where information comes from"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for using sources in order",
+      "items": [
+       [
+        "Pick keywords",
+        1
+       ],
+       [
+        "Search and choose a reliable source",
+        2
+       ],
+       [
+        "Read and take notes",
+        3
+       ],
+       [
+        "Combine ideas in your own words",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the point an author argues.",
+      "a": [
+       "claim",
+       "a claim"
+      ],
+      "hint": "It starts with c.",
+      "why": "The claim is the main point."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type fact or opinion: The Nile is a river in Africa.",
+      "a": [
+       "fact",
+       "a fact"
+      ],
+      "hint": "Can it be proven?",
+      "why": "It can be checked, so it is a fact."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for facts that support a reason.",
+      "a": [
+       "evidence"
+      ],
+      "hint": "It starts with e.",
+      "why": "Evidence backs up reasons."
+     }
+    ]
+   },
+   {
+    "title": "Narrative Writing and Word Choice",
+    "period": "Grade 5",
+    "learn": [
+     {
+      "h": "Writing a narrative",
+      "b": "A narrative tells about real or imagined events. Introduce the narrator and characters, then tell events in order. Build to the most exciting moment and end by solving the problem."
+     },
+     {
+      "h": "Techniques that bring a story to life",
+      "b": "Use dialogue to show what characters are like. Add sensory details of sight, sound, smell, taste and touch. Use transitions like meanwhile and after a while to move through time."
+     },
+     {
+      "h": "Precise words and roots",
+      "b": "Choose exact words: sprinted is stronger than went fast. Roots help with meaning: spect means see, bene means good, mal means bad. Spectator, benefit, malfunction."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence uses the most precise words?",
+      "o": [
+       "The boy went across the field.",
+       "The boy moved fast across the field.",
+       "The boy sprinted across the field.",
+       "The boy did a run across the field."
+      ],
+      "a": 2,
+      "why": "Sprinted is exact and vivid."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a sensory detail?",
+      "o": [
+       "The soup smelled like warm garlic.",
+       "The soup was a food.",
+       "The soup was made today.",
+       "I had soup."
+      ],
+      "a": 0,
+      "why": "It describes a smell."
+     },
+     {
+      "t": "mc",
+      "q": "Which transition shows time passing?",
+      "o": [
+       "However",
+       "For example",
+       "In conclusion",
+       "After a while"
+      ],
+      "a": 3,
+      "why": "After a while links moments in time."
+     },
+     {
+      "t": "mc",
+      "q": "The root spect means see. What does 'spectator' mean?",
+      "o": [
+       "A person who watches",
+       "A person who sings",
+       "A person who cooks",
+       "A person who sleeps"
+      ],
+      "a": 0,
+      "why": "A spectator sees an event."
+     },
+     {
+      "t": "tf",
+      "q": "Dialogue helps show what characters are like.",
+      "a": true,
+      "why": "What people say shows their personality."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "dialogue",
+        "Characters' spoken words"
+       ],
+       [
+        "sensory details",
+        "Details of sight, sound, smell, taste, touch"
+       ],
+       [
+        "transition",
+        "Word that links ideas or time"
+       ],
+       [
+        "pacing",
+        "How fast events move"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of a narrative in order",
+      "items": [
+       [
+        "Introduce characters and setting",
+        1
+       ],
+       [
+        "A problem appears",
+        2
+       ],
+       [
+        "Events build to the most exciting moment",
+        3
+       ],
+       [
+        "The problem is solved",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The root bene means good. Type the word for a good effect: bene___.",
+      "a": [
+       "benefit"
+      ],
+      "hint": "It ends with -fit.",
+      "why": "A benefit is something good."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the transition that means 'at the same time' and starts with m.",
+      "a": [
+       "meanwhile"
+      ],
+      "hint": "It starts with m.",
+      "why": "Meanwhile shows events at the same time."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many senses do sensory details cover? Type the number.",
+      "a": [
+       "5",
+       "five"
+      ],
+      "hint": "Sight, sound, smell, taste, touch.",
+      "why": "There are five senses."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g6": {
+  "name": "Grade 6 English",
+  "units": [
+   {
+    "title": "Grammar: Pronouns and Agreement",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Subject and object pronouns",
+      "b": "Use I, he, she, we, they as subjects: 'She called.' Use me, him, her, us, them as objects: 'Call her.' Say 'Sam and I went', not 'Sam and me went'."
+     },
+     {
+      "h": "Pronoun-antecedent agreement",
+      "b": "A pronoun must match the noun it replaces. 'The girls lost their bags' uses plural their for plural girls. 'Tom lost his bag' uses singular his."
+     },
+     {
+      "h": "Intensive pronouns",
+      "b": "Intensive pronouns end in -self or -selves and add emphasis: 'I myself cooked dinner.' You can remove them and the sentence still works."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which sentence is correct?",
+      "o": [
+       "Her and I went home.",
+       "Me and her went home.",
+       "Her and me went home.",
+       "She and I went home."
+      ],
+      "a": 3,
+      "why": "She and I are subject pronouns."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct pronoun: The teacher gave the prize to ___.",
+      "o": [
+       "they",
+       "he",
+       "them",
+       "we"
+      ],
+      "a": 2,
+      "why": "Them is the object form, used after to."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct pronoun: Each student must bring ___ book.",
+      "o": [
+       "his or her",
+       "their own selves",
+       "our",
+       "its"
+      ],
+      "a": 0,
+      "why": "Each is singular, so a singular pronoun fits."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence contains an intensive pronoun?",
+      "o": [
+       "She baked the cake herself.",
+       "She baked the cake.",
+       "Her cake was good.",
+       "The cake was hers."
+      ],
+      "a": 0,
+      "why": "Herself adds emphasis to She."
+     },
+     {
+      "t": "tf",
+      "q": "'Them' can be the subject of a sentence.",
+      "a": false,
+      "why": "Them is an object pronoun; the subject form is they."
+     },
+     {
+      "t": "match",
+      "q": "Match each pronoun to its type",
+      "pairs": [
+       [
+        "she",
+        "subject"
+       ],
+       [
+        "him",
+        "object"
+       ],
+       [
+        "myself",
+        "intensive"
+       ],
+       [
+        "their",
+        "possessive"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to choose a pronoun in order",
+      "items": [
+       [
+        "Find the noun it replaces",
+        1
+       ],
+       [
+        "Check singular or plural",
+        2
+       ],
+       [
+        "Check its job in the sentence",
+        3
+       ],
+       [
+        "Pick the matching pronoun",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Choose the correct pronoun: ___ and I went to the park. (She or Her)",
+      "a": [
+       "she"
+      ],
+      "hint": "Use a subject pronoun.",
+      "why": "She is the subject of the sentence."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Choose the correct pronoun: The gift is for Sam and ___. (I or me)",
+      "a": [
+       "me"
+      ],
+      "hint": "Use an object pronoun after for.",
+      "why": "Me is the object after the preposition."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the reflexive pronoun: Liam taught ___ to swim.",
+      "a": [
+       "himself"
+      ],
+      "hint": "It ends in -self.",
+      "why": "Himself refers back to Liam."
+     }
+    ]
+   },
+   {
+    "title": "Reading Fiction",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Plot structure",
+      "b": "A plot has exposition (introduction), rising action (problems grow), climax (most tense moment), falling action, and resolution (ending)."
+     },
+     {
+      "h": "Theme and character",
+      "b": "A theme is a message about life, such as 'courage means acting despite fear'. Characters change as they face the plot. Notice how they grow."
+     },
+     {
+      "h": "Word choice and tone",
+      "b": "Tone is the author's attitude, like joyful or serious. Connotation is the feeling a word carries. 'Slim' feels more positive than 'skinny'."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the climax of a story?",
+      "o": [
+       "The opening scene",
+       "The most tense or important moment",
+       "The final sentence",
+       "The setting"
+      ],
+      "a": 1,
+      "why": "The climax is the turning point of highest tension."
+     },
+     {
+      "t": "mc",
+      "q": "Which word has the most positive connotation?",
+      "o": [
+       "stubborn",
+       "determined",
+       "pigheaded",
+       "bossy"
+      ],
+      "a": 1,
+      "why": "Determined sounds admirable, while the others sound negative."
+     },
+     {
+      "t": "mc",
+      "q": "Which plot part comes right after the climax?",
+      "o": [
+       "Exposition",
+       "Rising action",
+       "Falling action",
+       "Title"
+      ],
+      "a": 2,
+      "why": "After the climax, events wind down in the falling action."
+     },
+     {
+      "t": "mc",
+      "q": "A story's tone is best described as",
+      "o": [
+       "The setting",
+       "The author's attitude",
+       "The plot",
+       "The length"
+      ],
+      "a": 1,
+      "why": "Tone shows how the author feels about the subject."
+     },
+     {
+      "t": "tf",
+      "q": "The resolution of a story shows how the main problem ends.",
+      "a": true,
+      "why": "The resolution wraps up the conflict."
+     },
+     {
+      "t": "match",
+      "q": "Match each plot part to its job",
+      "pairs": [
+       [
+        "exposition",
+        "introduces characters"
+       ],
+       [
+        "rising action",
+        "problems build"
+       ],
+       [
+        "climax",
+        "peak of tension"
+       ],
+       [
+        "resolution",
+        "problem is solved"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the plot parts in order",
+      "items": [
+       [
+        "Exposition",
+        1
+       ],
+       [
+        "Rising action",
+        2
+       ],
+       [
+        "Climax",
+        3
+       ],
+       [
+        "Resolution",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the first part of a plot, which introduces characters and setting.",
+      "a": [
+       "exposition",
+       "the exposition"
+      ],
+      "hint": "It starts with e.",
+      "why": "Exposition begins a story."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the plot part that comes right after the climax.",
+      "a": [
+       "falling action",
+       "the falling action"
+      ],
+      "hint": "Two words.",
+      "why": "Falling action follows the climax."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type positive or negative: the connotation of 'He was stubborn.'",
+      "a": [
+       "negative"
+      ],
+      "hint": "Stubborn sounds like a flaw.",
+      "why": "Stubborn has a negative feel."
+     }
+    ]
+   },
+   {
+    "title": "Vocabulary and Word Parts",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Greek and Latin roots",
+      "b": "Many English words have roots. Graph means write, so autograph is self-writing. Bio means life, so biology is the study of life. Port means carry, so transport means carry across."
+     },
+     {
+      "h": "Denotation and connotation",
+      "b": "Denotation is the dictionary meaning. Connotation is the emotion attached to a word. Both 'house' and 'home' mean a place to live, but 'home' feels warmer."
+     },
+     {
+      "h": "Idioms",
+      "b": "An idiom is a phrase whose meaning is not literal. 'Break the ice' means to start a friendly conversation. 'Piece of cake' means very easy."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The root 'bio' means life. What is biology?",
+      "o": [
+       "Study of rocks",
+       "Study of stars",
+       "Study of life",
+       "Study of words"
+      ],
+      "a": 2,
+      "why": "Bio means life and -logy means study of."
+     },
+     {
+      "t": "mc",
+      "q": "What does the idiom 'piece of cake' mean?",
+      "o": [
+       "A dessert",
+       "Very easy",
+       "Very hard",
+       "A party"
+      ],
+      "a": 1,
+      "why": "It is an idiom meaning something is easy."
+     },
+     {
+      "t": "mc",
+      "q": "The root 'port' means carry. What does 'transport' mean?",
+      "o": [
+       "Carry across",
+       "Stay still",
+       "Break apart",
+       "Write down"
+      ],
+      "a": 0,
+      "why": "Trans means across and port means carry."
+     },
+     {
+      "t": "mc",
+      "q": "What is a word's denotation?",
+      "o": [
+       "Its emotional feeling",
+       "Its spelling",
+       "Its dictionary meaning",
+       "Its sound"
+      ],
+      "a": 2,
+      "why": "Denotation is the literal meaning."
+     },
+     {
+      "t": "tf",
+      "q": "An idiom means exactly what its words say.",
+      "a": false,
+      "why": "Idioms have a meaning that differs from the literal words."
+     },
+     {
+      "t": "match",
+      "q": "Match each root to its meaning",
+      "pairs": [
+       [
+        "graph",
+        "write"
+       ],
+       [
+        "aqua",
+        "water"
+       ],
+       [
+        "tele",
+        "far"
+       ],
+       [
+        "scope",
+        "look"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for figuring out a new word in order",
+      "items": [
+       [
+        "Read the sentence",
+        1
+       ],
+       [
+        "Look for context clues",
+        2
+       ],
+       [
+        "Check word parts",
+        3
+       ],
+       [
+        "Confirm in a dictionary",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The prefix sub means under. Type the word for a boat that travels under water.",
+      "a": [
+       "submarine"
+      ],
+      "hint": "It starts with sub.",
+      "why": "A submarine travels under the sea."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The idiom 'under the weather' means feeling ___. (one word)",
+      "a": [
+       "sick",
+       "ill"
+      ],
+      "hint": "It is not a good feeling.",
+      "why": "It means feeling ill."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a word's dictionary meaning.",
+      "a": [
+       "denotation",
+       "the denotation"
+      ],
+      "hint": "It starts with d.",
+      "why": "Denotation is the literal meaning."
+     }
+    ]
+   },
+   {
+    "title": "Argument and Informational Writing",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Claims and evidence",
+      "b": "A claim is the point you argue, like 'Schools should start later.' Evidence is facts, examples, or data that support it. Reasoning explains why the evidence proves the claim."
+     },
+     {
+      "h": "Summarizing",
+      "b": "A summary tells only the main points in your own words, without your opinion. It is much shorter than the original text."
+     },
+     {
+      "h": "Formal style",
+      "b": "In formal writing, avoid slang and contractions like gonna. Use clear sentences and precise words. Keep the tone respectful."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a claim in an argument?",
+      "o": [
+       "A random fact",
+       "The main point you argue",
+       "A joke",
+       "A title"
+      ],
+      "a": 1,
+      "why": "The claim is the position you try to prove."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best evidence for the claim 'Exercise helps health'?",
+      "o": [
+       "I like exercise.",
+       "My friend runs.",
+       "A study shows exercise lowers heart disease risk.",
+       "Exercise is fun."
+      ],
+      "a": 2,
+      "why": "A study gives a checkable fact."
+     },
+     {
+      "t": "mc",
+      "q": "Which is true about a good summary?",
+      "o": [
+       "It includes your opinion",
+       "It copies every detail",
+       "It uses the main points in your own words",
+       "It is longer than the text"
+      ],
+      "a": 2,
+      "why": "Summaries are short and objective."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is the most formal?",
+      "o": [
+       "Kids gotta sleep more.",
+       "Sleep is super cool.",
+       "Students need adequate sleep to learn well.",
+       "Sleep rocks, no doubt."
+      ],
+      "a": 2,
+      "why": "It avoids slang and is clear and precise."
+     },
+     {
+      "t": "tf",
+      "q": "A summary should include your personal opinions.",
+      "a": false,
+      "why": "A summary only restates the text's main ideas."
+     },
+     {
+      "t": "match",
+      "q": "Match each argument part to its job",
+      "pairs": [
+       [
+        "claim",
+        "main position"
+       ],
+       [
+        "evidence",
+        "facts that support"
+       ],
+       [
+        "reasoning",
+        "explains the link"
+       ],
+       [
+        "counterclaim",
+        "opposing view"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the parts of an argument essay in order",
+      "items": [
+       [
+        "Introduction with claim",
+        1
+       ],
+       [
+        "Body with evidence",
+        2
+       ],
+       [
+        "Address other side",
+        3
+       ],
+       [
+        "Conclusion",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the main point you argue.",
+      "a": [
+       "claim",
+       "a claim"
+      ],
+      "hint": "It starts with c.",
+      "why": "The claim is the main point."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the opposing view you respond to.",
+      "a": [
+       "counterclaim",
+       "counterargument",
+       "counter claim"
+      ],
+      "hint": "It starts with counter.",
+      "why": "A counterclaim is the other side."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the parts of an argument essay in order",
+      "lines": [
+       "Introduce your claim",
+       "Give reasons with evidence",
+       "Address the counterclaim",
+       "Write a concluding statement"
+      ],
+      "why": "You claim first, support it, answer the other side, then conclude."
+     }
+    ]
+   },
+   {
+    "title": "Sentence Variety and Pronoun Shifts",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Varying sentences",
+      "b": "Too many short sentences sound choppy. Combine them: The dog barked. The dog was loud becomes The loud dog barked. Start sentences in different ways to keep readers interested."
+     },
+     {
+      "h": "Extra information",
+      "b": "Commas, dashes or parentheses can set off extra details: My cousin, who lives in Rome, is a chef. Use a pair of commas, one before and one after the extra part."
+     },
+     {
+      "h": "Pronoun problems",
+      "b": "A vague pronoun has no clear noun: Ana told Bea that she was late. Who was late? A pronoun shift switches person: When you swim, one should wear a cap. Keep the person the same."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which combines 'The dog barked. The dog was loud.' best?",
+      "o": [
+       "The dog barked loud.",
+       "The loud dog barked.",
+       "Barked the loud dog.",
+       "The dog, barked, was loud."
+      ],
+      "a": 1,
+      "why": "It joins the ideas smoothly."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence sets off extra information correctly?",
+      "o": [
+       "My cousin, who lives in Rome, is a chef.",
+       "My cousin who, lives in Rome is a chef.",
+       "My cousin, who lives in Rome is a chef.",
+       "My cousin who lives, in Rome, is a chef."
+      ],
+      "a": 0,
+      "why": "Extra details need a comma before and after."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence has a vague pronoun?",
+      "o": [
+       "Ana was late, so she ran.",
+       "Ben lost his key.",
+       "Ana told Bea that she was late.",
+       "The class finished its test."
+      ],
+      "a": 2,
+      "why": "She could mean Ana or Bea."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence has a shift in person?",
+      "o": [
+       "When you swim, you should wear a cap.",
+       "When we swim, we wear caps.",
+       "When Ana swims, she wears a cap.",
+       "When you swim, one should wear a cap."
+      ],
+      "a": 3,
+      "why": "It switches from you to one."
+     },
+     {
+      "t": "tf",
+      "q": "Starting every sentence the same way makes writing more interesting.",
+      "a": false,
+      "why": "Variety makes writing more interesting."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "vague pronoun",
+        "No clear noun it refers to"
+       ],
+       [
+        "nonrestrictive element",
+        "Extra info set off by commas"
+       ],
+       [
+        "sentence combining",
+        "Joining short sentences"
+       ],
+       [
+        "pronoun shift",
+        "Switching person for no reason"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these revision steps in order",
+      "items": [
+       [
+        "Read your draft aloud",
+        1
+       ],
+       [
+        "Mark short, choppy sentences",
+        2
+       ],
+       [
+        "Combine or vary them",
+        3
+       ],
+       [
+        "Check punctuation and pronouns",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the pronoun that matches 'you': When you read, ___ learn new words.",
+      "a": [
+       "you"
+      ],
+      "hint": "Keep the same person.",
+      "why": "You matches you with no shift."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many commas are needed to set off 'a beagle': My dog a beagle loves treats. Type the number.",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "One before and one after.",
+      "why": "My dog, a beagle, loves treats."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name of the punctuation marks ( ) used around extra information.",
+      "a": [
+       "parentheses",
+       "parenthesis"
+      ],
+      "hint": "They look like curved lines.",
+      "why": "Parentheses set off extra information."
+     }
+    ]
+   },
+   {
+    "title": "Poetry, Drama and Word Choice",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Parts of a poem",
+      "b": "The speaker is the voice in a poem. Rhyme scheme shows which lines rhyme: ABAB means lines 1 and 3 rhyme and lines 2 and 4 rhyme. Free verse has no regular rhyme. Imagery and alliteration add pictures and sound."
+     },
+     {
+      "h": "Drama",
+      "b": "A monologue is a long speech by one character. A soliloquy is a character alone on stage sharing private thoughts. Stage directions describe action and scenery. Scenes build the plot."
+     },
+     {
+      "h": "Word choice and tone",
+      "b": "Words with strong feelings change the tone of a poem or scene. Compare a text with a film or audio version to see how choices change what you feel."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In the rhyme scheme ABAB, which lines rhyme?",
+      "o": [
+       "Lines 1 and 2",
+       "Lines 2 and 3",
+       "Lines 1 and 3",
+       "Lines 1 and 4"
+      ],
+      "a": 2,
+      "why": "Both A lines are lines 1 and 3."
+     },
+     {
+      "t": "mc",
+      "q": "Who is the speaker of a poem?",
+      "o": [
+       "The voice that talks in the poem",
+       "The poet's teacher",
+       "The book's printer",
+       "The reader"
+      ],
+      "a": 0,
+      "why": "The speaker is the voice in the poem."
+     },
+     {
+      "t": "mc",
+      "q": "A character speaks alone on stage to share private thoughts. What is this?",
+      "o": [
+       "Dialogue",
+       "Soliloquy",
+       "Stage direction",
+       "Scene"
+      ],
+      "a": 1,
+      "why": "A soliloquy shares private thoughts."
+     },
+     {
+      "t": "mc",
+      "q": "Which phrase is imagery?",
+      "o": [
+       "The poem has four stanzas",
+       "The poet was born in May",
+       "It was a long poem",
+       "The golden sun spilled warm light on the cold stones"
+      ],
+      "a": 3,
+      "why": "It paints a picture with the senses."
+     },
+     {
+      "t": "tf",
+      "q": "Free verse poetry has no regular rhyme scheme.",
+      "a": true,
+      "why": "Free verse does not follow set rhyme patterns."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "monologue",
+        "Long speech by one character"
+       ],
+       [
+        "stage directions",
+        "Instructions for action and scenery"
+       ],
+       [
+        "imagery",
+        "Words that create pictures in the mind"
+       ],
+       [
+        "alliteration",
+        "Repeated beginning consonant sounds"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for analyzing a poem in order",
+      "items": [
+       [
+        "Read the poem aloud",
+        1
+       ],
+       [
+        "Identify the speaker and subject",
+        2
+       ],
+       [
+        "Notice imagery and sound devices",
+        3
+       ],
+       [
+        "Explain the poem's meaning or tone",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for repeated beginning sounds, as in 'silly snakes slither'.",
+      "a": [
+       "alliteration"
+      ],
+      "hint": "It starts with a.",
+      "why": "Alliteration repeats beginning sounds."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the voice that speaks in a poem.",
+      "a": [
+       "speaker",
+       "the speaker"
+      ],
+      "hint": "It starts with s.",
+      "why": "The speaker is the voice in the poem."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the rhyme scheme of these end words: sky, ground, high, sound.",
+      "a": [
+       "abab"
+      ],
+      "hint": "Mark each new sound with a new letter.",
+      "why": "Sky and high rhyme (A). Ground and sound rhyme (B). So ABAB."
+     }
+    ]
+   },
+   {
+    "title": "Informational Text: Central Idea and Structure",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Central idea",
+      "b": "The central idea is the most important point a text makes. Details develop it. A good summary shares the central idea in your own words with no opinions."
+     },
+     {
+      "h": "Structure and point of view",
+      "b": "Authors organize ideas in time order, cause and effect, problem and solution or comparison. Notice the author's purpose and point of view and how facts and word choice reveal them."
+     },
+     {
+      "h": "Kinds of sources",
+      "b": "A primary source is created at the time of an event, like a diary or photo. A secondary source is written later, like a textbook. A biography is about someone else. An autobiography is the person's own life story."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the central idea of a text?",
+      "o": [
+       "The first sentence",
+       "The most important point the author makes",
+       "The longest paragraph",
+       "The title's spelling"
+      ],
+      "a": 1,
+      "why": "Details all support the central idea."
+     },
+     {
+      "t": "mc",
+      "q": "A biography is written by",
+      "o": [
+       "Someone other than the subject",
+       "The subject of the book",
+       "A fictional narrator",
+       "A poet"
+      ],
+      "a": 0,
+      "why": "A biography is about another person's life."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a primary source?",
+      "o": [
+       "A textbook chapter written years later",
+       "An encyclopedia entry",
+       "A diary written during the event",
+       "A movie review"
+      ],
+      "a": 2,
+      "why": "It was created at the time."
+     },
+     {
+      "t": "mc",
+      "q": "An author describes a problem, then offers solutions. Which structure is it?",
+      "o": [
+       "Chronological",
+       "Compare and contrast",
+       "Description",
+       "Problem and solution"
+      ],
+      "a": 3,
+      "why": "It presents a problem and then answers."
+     },
+     {
+      "t": "tf",
+      "q": "Details in a text help develop its central idea.",
+      "a": true,
+      "why": "Details support and explain the main point."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "primary source",
+        "Created at the time of an event"
+       ],
+       [
+        "central idea",
+        "Main point of the text"
+       ],
+       [
+        "author's purpose",
+        "Why the author writes"
+       ],
+       [
+        "autobiography",
+        "Life story written by the person"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these summarizing steps in order",
+      "items": [
+       [
+        "Read the text carefully",
+        1
+       ],
+       [
+        "Find the central idea",
+        2
+       ],
+       [
+        "Choose key supporting details",
+        3
+       ],
+       [
+        "Write the summary in your own words",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type primary or secondary: a letter written by a soldier during a war.",
+      "a": [
+       "primary",
+       "primary source"
+      ],
+      "hint": "It was written at the time.",
+      "why": "A letter written then is a primary source."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the missing word: to inform, persuade or entertain is the author's ___.",
+      "a": [
+       "purpose"
+      ],
+      "hint": "It is why the author writes.",
+      "why": "Purpose is the reason for writing."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for a book about a person's life written by that same person.",
+      "a": [
+       "autobiography",
+       "memoir"
+      ],
+      "hint": "It starts with auto.",
+      "why": "Auto means self."
+     }
+    ]
+   },
+   {
+    "title": "Narrative Writing and Research Skills",
+    "period": "Grade 6",
+    "learn": [
+     {
+      "h": "Narrative techniques",
+      "b": "Good narratives use pacing, sensory details, dialogue and reflection, which is the narrator's thoughts about events. Transitions show shifts in time, like later that night."
+     },
+     {
+      "h": "Doing research",
+      "b": "Start with a clear question: How do volcanoes form? Use several sources and check that they are credible, meaning trustworthy. Take notes in your own words."
+     },
+     {
+      "h": "Credit and sharing",
+      "b": "Quote exact words with quotation marks or paraphrase. Either way give a citation, which credits the source. When you present, speak clearly, look at the audience and use visuals that help."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which technique helps readers feel they are in the scene?",
+      "o": [
+       "A longer title",
+       "A glossary",
+       "Sensory details",
+       "A table of contents"
+      ],
+      "a": 2,
+      "why": "Sensory details help readers imagine the scene."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best research question?",
+      "o": [
+       "How do volcanoes form?",
+       "Volcanoes",
+       "Do you like volcanoes?",
+       "Volcano facts"
+      ],
+      "a": 0,
+      "why": "It asks something that sources can answer."
+     },
+     {
+      "t": "mc",
+      "q": "Which source is likely most credible on climate?",
+      "o": [
+       "A stranger's comment",
+       "An ad",
+       "A friend's guess",
+       "A university research website"
+      ],
+      "a": 3,
+      "why": "Experts and researchers write it."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the right way to use someone's idea?",
+      "o": [
+       "Copy it with no credit",
+       "Restate it in your own words and cite the source",
+       "Change two words and skip the source",
+       "Only credit if you quote"
+      ],
+      "a": 1,
+      "why": "Paraphrase and credit the source."
+     },
+     {
+      "t": "tf",
+      "q": "You should check more than one source to confirm a fact.",
+      "a": true,
+      "why": "Several sources make a fact more trustworthy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "transition",
+        "Shows a shift in time or idea"
+       ],
+       [
+        "reflection",
+        "Narrator's thoughts about events"
+       ],
+       [
+        "citation",
+        "Credit given to a source"
+       ],
+       [
+        "credible",
+        "Trustworthy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these research steps in order",
+      "items": [
+       [
+        "Ask a research question",
+        1
+       ],
+       [
+        "Gather and evaluate sources",
+        2
+       ],
+       [
+        "Take notes and paraphrase",
+        3
+       ],
+       [
+        "Cite sources and share findings",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for giving credit to a source (a noun).",
+      "a": [
+       "citation",
+       "citations"
+      ],
+      "hint": "It starts with c.",
+      "why": "A citation credits the source."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word meaning trustworthy, as in a ___ source.",
+      "a": [
+       "credible",
+       "reliable",
+       "trustworthy"
+      ],
+      "hint": "It starts with c.",
+      "why": "A credible source can be trusted."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the parts of a narrative in order",
+      "lines": [
+       "Introduce the narrator and setting",
+       "Build up events with dialogue",
+       "Reach the turning point",
+       "End with a reflection"
+      ],
+      "why": "A narrative builds to a turning point before it reflects."
+     }
+    ]
+   }
+  ]
+ },
+ "ela-g7": {
+  "name": "Grade 7 English",
+  "units": [
+   {
+    "title": "Sentence Structure",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Phrases and clauses",
+      "b": "A clause has a subject and a verb. An independent clause can stand alone: 'I read.' A dependent clause cannot: 'when I read'. A phrase lacks a subject or verb."
+     },
+     {
+      "h": "Simple, compound, complex",
+      "b": "A simple sentence has one independent clause. A compound has two joined by a conjunction like and or but. A complex has an independent plus a dependent clause."
+     },
+     {
+      "h": "Commas and semicolons",
+      "b": "Use a comma and a conjunction to join two clauses: 'I was tired, but I finished.' A semicolon can join two related independent clauses: 'I was tired; I finished.'"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a dependent clause?",
+      "o": [
+       "She laughed.",
+       "Birds fly.",
+       "I went home.",
+       "because it was late"
+      ],
+      "a": 3,
+      "why": "It has a subject and verb but cannot stand alone."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is compound?",
+      "o": [
+       "I like tea, and she likes coffee.",
+       "Although it rained, we played.",
+       "We played outside.",
+       "Running fast, he won."
+      ],
+      "a": 0,
+      "why": "It joins two independent clauses with and."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is complex?",
+      "o": [
+       "I ran and she walked.",
+       "I ran.",
+       "I ran because I was late.",
+       "I ran, she walked, we met."
+      ],
+      "a": 2,
+      "why": "Because I was late is a dependent clause attached to an independent one."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence uses a semicolon correctly?",
+      "o": [
+       "I love; pizza.",
+       "I was cold; I put on a coat.",
+       "Although; I was cold, I stayed.",
+       "I was; cold."
+      ],
+      "a": 1,
+      "why": "A semicolon joins two complete, related sentences."
+     },
+     {
+      "t": "tf",
+      "q": "An independent clause can stand alone as a sentence.",
+      "a": true,
+      "why": "It has a subject and verb and expresses a complete thought."
+     },
+     {
+      "t": "match",
+      "q": "Match each sentence type to an example",
+      "pairs": [
+       [
+        "simple",
+        "Dogs bark."
+       ],
+       [
+        "compound",
+        "Dogs bark, and cats purr."
+       ],
+       [
+        "complex",
+        "Dogs bark when they play."
+       ],
+       [
+        "fragment",
+        "When dogs bark."
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to check a sentence in order",
+      "items": [
+       [
+        "Find the verb",
+        1
+       ],
+       [
+        "Find the subject",
+        2
+       ],
+       [
+        "Check for a complete thought",
+        3
+       ],
+       [
+        "Add end punctuation",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the conjunction: I wanted to go, ___ it rained.",
+      "a": [
+       "but",
+       "yet"
+      ],
+      "hint": "It shows contrast.",
+      "why": "But joins two independent clauses showing contrast."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the sentence type: 'She plays piano, and he plays guitar.' (simple, compound or complex)",
+      "a": [
+       "compound"
+      ],
+      "hint": "Two independent clauses.",
+      "why": "Two independent clauses joined by and make a compound sentence."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the punctuation mark that joins two related independent clauses without a conjunction.",
+      "a": [
+       "semicolon",
+       "a semicolon"
+      ],
+      "hint": "It looks like a dot over a comma.",
+      "why": "A semicolon joins related independent clauses."
+     }
+    ]
+   },
+   {
+    "title": "Literary Analysis",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Theme development",
+      "b": "A theme grows through the whole story. Look at conflicts, how the main character changes, and repeated ideas. The theme is a statement, such as 'Pride can lead to loss'."
+     },
+     {
+      "h": "Point of view effects",
+      "b": "First person gives us only the narrator's thoughts. Third person limited follows one character's thoughts. Third person omniscient knows what all characters think."
+     },
+     {
+      "h": "Types of conflict",
+      "b": "Character vs. character, character vs. self (inner struggle), character vs. nature, and character vs. society are the main types of conflict."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "A character struggles with her own fear. What type of conflict is this?",
+      "o": [
+       "Character vs. character",
+       "Character vs. self",
+       "Character vs. nature",
+       "Character vs. society"
+      ],
+      "a": 1,
+      "why": "The struggle happens inside her."
+     },
+     {
+      "t": "mc",
+      "q": "A narrator who knows every character's thoughts is",
+      "o": [
+       "First person",
+       "Second person",
+       "Third person omniscient",
+       "Third person limited"
+      ],
+      "a": 2,
+      "why": "Omniscient means all-knowing."
+     },
+     {
+      "t": "mc",
+      "q": "Which is written as a theme statement?",
+      "o": [
+       "Friendship",
+       "Honesty builds trust",
+       "A dog and a boy",
+       "The forest"
+      ],
+      "a": 1,
+      "why": "A theme is a full statement about life, not just a topic."
+     },
+     {
+      "t": "mc",
+      "q": "A hiker fights a blizzard. What type of conflict is this?",
+      "o": [
+       "Character vs. self",
+       "Character vs. society",
+       "Character vs. character",
+       "Character vs. nature"
+      ],
+      "a": 3,
+      "why": "The hiker struggles against a natural force."
+     },
+     {
+      "t": "tf",
+      "q": "In first-person point of view, the narrator uses the word I.",
+      "a": true,
+      "why": "First person means the narrator is a character telling the story."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "protagonist",
+        "main character"
+       ],
+       [
+        "antagonist",
+        "opposes the hero"
+       ],
+       [
+        "foreshadowing",
+        "hints of what comes"
+       ],
+       [
+        "flashback",
+        "scene from the past"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for finding a theme in order",
+      "items": [
+       [
+        "Read the whole story",
+        1
+       ],
+       [
+        "Note the main conflict",
+        2
+       ],
+       [
+        "See how the character changes",
+        3
+       ],
+       [
+        "State the theme as a sentence",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A girl struggles against unfair laws in her town. Type the conflict: character vs. ___.",
+      "a": [
+       "society"
+      ],
+      "hint": "The struggle is against a group or system.",
+      "why": "Character vs. society."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A narrator knows only one character's thoughts. Type the missing word: third person ___.",
+      "a": [
+       "limited"
+      ],
+      "hint": "It is the opposite of omniscient.",
+      "why": "Third person limited."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for the message about life that a story teaches.",
+      "a": [
+       "theme",
+       "the theme"
+      ],
+      "hint": "It starts with t.",
+      "why": "That message is the theme."
+     }
+    ]
+   },
+   {
+    "title": "Vocabulary and Figurative Language",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Figurative devices",
+      "b": "Alliteration repeats starting sounds: 'silly snakes slither'. Onomatopoeia imitates sounds, like buzz or crash. An allusion refers to a famous story or person. An idiom has a non-literal meaning."
+     },
+     {
+      "h": "Word relationships",
+      "b": "Words can be linked as synonyms, antonyms, or by degree. 'Glance', 'look', and 'stare' show growing intensity. Analogies show these links: hot is to cold as up is to down."
+     },
+     {
+      "h": "Using context",
+      "b": "Context clues can be definitions, examples, or contrasts. In 'The tranquil lake, calm and still, soothed us', the words calm and still define tranquil."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which phrase is an example of alliteration?",
+      "o": [
+       "Peter picked purple peppers",
+       "The wind howled",
+       "He ran fast",
+       "As cold as ice"
+      ],
+      "a": 0,
+      "why": "The repeated p sound is alliteration."
+     },
+     {
+      "t": "mc",
+      "q": "Which word is onomatopoeia?",
+      "o": [
+       "Quiet",
+       "Table",
+       "Sizzle",
+       "Soft"
+      ],
+      "a": 2,
+      "why": "Sizzle imitates the sound it names."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'tranquil' mean: The tranquil lake, calm and still, soothed us?",
+      "o": [
+       "Peaceful",
+       "Stormy",
+       "Deep",
+       "Cold"
+      ],
+      "a": 0,
+      "why": "Calm and still are context clues."
+     },
+     {
+      "t": "mc",
+      "q": "Hot is to cold as up is to ___.",
+      "o": [
+       "high",
+       "sky",
+       "down",
+       "roof"
+      ],
+      "a": 2,
+      "why": "Both pairs are antonyms."
+     },
+     {
+      "t": "tf",
+      "q": "An allusion refers to a well-known person, story, or event.",
+      "a": true,
+      "why": "Example: calling someone a Romeo alludes to Romeo and Juliet."
+     },
+     {
+      "t": "match",
+      "q": "Match each device to its example",
+      "pairs": [
+       [
+        "onomatopoeia",
+        "buzz"
+       ],
+       [
+        "alliteration",
+        "big bad bear"
+       ],
+       [
+        "hyperbole",
+        "tons of homework"
+       ],
+       [
+        "idiom",
+        "under the weather"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these from least to most intense",
+      "items": [
+       [
+        "glance",
+        1
+       ],
+       [
+        "look",
+        2
+       ],
+       [
+        "stare",
+        3
+       ],
+       [
+        "glare",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for words that sound like what they mean, such as buzz.",
+      "a": [
+       "onomatopoeia"
+      ],
+      "hint": "It is a long word starting with o.",
+      "why": "Onomatopoeia imitates sounds."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Complete the analogy: Hot is to cold as tall is to ___.",
+      "a": [
+       "short"
+      ],
+      "hint": "Find the opposite.",
+      "why": "Tall and short are opposites."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type a synonym for 'fortunate' that starts with l.",
+      "a": [
+       "lucky"
+      ],
+      "hint": "It starts with l.",
+      "why": "Fortunate means lucky."
+     }
+    ]
+   },
+   {
+    "title": "Writing and Research",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Strong thesis statements",
+      "b": "A thesis states your main argument in one sentence. 'Schools should offer more art classes because art builds creativity' is clear and arguable."
+     },
+     {
+      "h": "Evaluating sources",
+      "b": "Good sources are accurate, current, and by experts. Check the author and the date. Be careful with sources that show bias or have no author."
+     },
+     {
+      "h": "Citing and paraphrasing",
+      "b": "Paraphrase means restating an idea in your own words, and you still must credit the source. A direct quote uses quotation marks and the exact words."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the strongest thesis statement?",
+      "o": [
+       "Dogs are animals.",
+       "I will write about dogs.",
+       "Dogs",
+       "Shelter dogs make loyal pets, so families should adopt them."
+      ],
+      "a": 3,
+      "why": "It makes a clear, arguable claim with a reason."
+     },
+     {
+      "t": "mc",
+      "q": "Which source is most reliable for facts about space?",
+      "o": [
+       "A random blog",
+       "A NASA website",
+       "An anonymous post",
+       "A rumor from a friend"
+      ],
+      "a": 1,
+      "why": "NASA is an expert, trustworthy organization."
+     },
+     {
+      "t": "mc",
+      "q": "What is paraphrasing?",
+      "o": [
+       "Copying exactly",
+       "Skipping the source",
+       "Restating an idea in your own words",
+       "Writing a quote"
+      ],
+      "a": 2,
+      "why": "A paraphrase keeps the meaning but changes the wording."
+     },
+     {
+      "t": "mc",
+      "q": "When should you use quotation marks?",
+      "o": [
+       "For any idea",
+       "For the exact words of a source",
+       "For titles of your essay",
+       "For every sentence"
+      ],
+      "a": 1,
+      "why": "Quotation marks show exact words from someone else."
+     },
+     {
+      "t": "tf",
+      "q": "You must credit a source even when you paraphrase it.",
+      "a": true,
+      "why": "The ideas still belong to the original author."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "thesis",
+        "main argument"
+       ],
+       [
+        "citation",
+        "credit to a source"
+       ],
+       [
+        "bias",
+        "unfair leaning"
+       ],
+       [
+        "plagiarism",
+        "stealing words"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the research steps in order",
+      "items": [
+       [
+        "Choose a topic",
+        1
+       ],
+       [
+        "Find reliable sources",
+        2
+       ],
+       [
+        "Take notes",
+        3
+       ],
+       [
+        "Write and cite",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for the main claim of an essay.",
+      "a": [
+       "thesis",
+       "thesis statement",
+       "a thesis"
+      ],
+      "hint": "It starts with t.",
+      "why": "The thesis states the main claim."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for restating an idea in your own words.",
+      "a": [
+       "paraphrase",
+       "paraphrasing"
+      ],
+      "hint": "It starts with p.",
+      "why": "To paraphrase is to restate in your own words."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the name for the list of sources at the end of a research paper.",
+      "a": [
+       "bibliography",
+       "works cited",
+       "reference list",
+       "references"
+      ],
+      "hint": "Two common names.",
+      "why": "It lists the sources used."
+     }
+    ]
+   },
+   {
+    "title": "Phrases, Modifiers and Precise Language",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Phrases and clauses",
+      "b": "A clause has a subject and a verb. A phrase does not. Under the bridge is a prepositional phrase. Phrases add detail to a sentence."
+     },
+     {
+      "h": "Modifiers and adjectives",
+      "b": "A modifier should sit next to the word it describes. Misplaced: I saw a dog on the way to school with a long tail. Better: I saw a dog with a long tail on the way to school. Use a comma between coordinate adjectives: a long, cold, rainy night."
+     },
+     {
+      "h": "Concise language",
+      "b": "Cut extra words. The meeting will begin at the time of twelve noon becomes The meeting starts at noon. Avoid redundancy, like free gift or return back."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a phrase, not a clause?",
+      "o": [
+       "under the bridge",
+       "the dog barked",
+       "we left early",
+       "she smiled"
+      ],
+      "a": 0,
+      "why": "It has no subject and verb pair."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence has a misplaced modifier?",
+      "o": [
+       "I saw a dog with a long tail on my way to school.",
+       "Ana lost her keys.",
+       "I saw a dog on the way to school with a long tail.",
+       "After lunch, we left."
+      ],
+      "a": 2,
+      "why": "The dog, not the school, has the tail."
+     },
+     {
+      "t": "mc",
+      "q": "Which uses a comma correctly between adjectives?",
+      "o": [
+       "a bright sunny, day",
+       "a bright, sunny day",
+       "a, bright sunny day",
+       "a bright sunny day,"
+      ],
+      "a": 1,
+      "why": "Put a comma between coordinate adjectives."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the most concise?",
+      "o": [
+       "The meeting will begin at the time of twelve o'clock noon.",
+       "The meeting is going to be starting at noon time.",
+       "The meeting commences at the hour of noon.",
+       "The meeting starts at noon."
+      ],
+      "a": 3,
+      "why": "It says the same thing in fewer words."
+     },
+     {
+      "t": "tf",
+      "q": "'Free gift' is redundant because gifts are already free.",
+      "a": true,
+      "why": "Free repeats the idea in gift."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "prepositional phrase",
+        "Starts with a preposition, like on the table"
+       ],
+       [
+        "misplaced modifier",
+        "Describes the wrong word"
+       ],
+       [
+        "coordinate adjectives",
+        "Need a comma between them"
+       ],
+       [
+        "redundant",
+        "Repeats the same idea"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for fixing a modifier in order",
+      "items": [
+       [
+        "Read the sentence",
+        1
+       ],
+       [
+        "Find the modifier",
+        2
+       ],
+       [
+        "Place it next to the word it describes",
+        3
+       ],
+       [
+        "Reread to check the meaning",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the preposition that begins the phrase 'under the table'.",
+      "a": [
+       "under"
+      ],
+      "hint": "It is the first word.",
+      "why": "Under is the preposition."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In 'return back', which word is unnecessary? Type it.",
+      "a": [
+       "back"
+      ],
+      "hint": "Return already means go back.",
+      "why": "Back is redundant."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many commas are needed: 'a long cold rainy night' (coordinate adjectives)? Type the number.",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "Put a comma between each pair of adjectives.",
+      "why": "A long, cold, rainy night needs two commas."
+     }
+    ]
+   },
+   {
+    "title": "Analyzing Informational Texts and Arguments",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Central ideas and purpose",
+      "b": "Authors build a central idea with details and often respond to other views. Ask what the author wants you to know or believe and how the details support it."
+     },
+     {
+      "h": "Evaluating arguments",
+      "b": "A sound argument has a clear claim, relevant evidence and enough evidence. Faulty reasoning includes bandwagon, which says everyone is doing it, and hasty generalization, a broad claim from too few examples."
+     },
+     {
+      "h": "Comparing texts",
+      "b": "Two authors can present the same topic differently by choosing different facts or tone. Compare print, audio and video to see how each shapes your understanding."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which evidence is most relevant for 'Recycling reduces waste'?",
+      "o": [
+       "Many people like green.",
+       "Trash trucks are loud.",
+       "Cities that recycle send less trash to landfills.",
+       "Recycling bins come in blue."
+      ],
+      "a": 2,
+      "why": "It directly shows less waste."
+     },
+     {
+      "t": "mc",
+      "q": "'Everyone is buying this phone, so it must be best.' What is this?",
+      "o": [
+       "Bandwagon appeal",
+       "Statistic",
+       "Expert testimony",
+       "Cause and effect"
+      ],
+      "a": 0,
+      "why": "It argues from what everyone does."
+     },
+     {
+      "t": "mc",
+      "q": "A hasty generalization is",
+      "o": [
+       "A fact from an expert",
+       "A summary of a text",
+       "A claim backed by many studies",
+       "A broad claim based on too little evidence"
+      ],
+      "a": 3,
+      "why": "It jumps to a conclusion from too few examples."
+     },
+     {
+      "t": "mc",
+      "q": "An author includes an opposing view and answers it. Why?",
+      "o": [
+       "To confuse readers",
+       "To strengthen the argument",
+       "To lengthen the text",
+       "To change the topic"
+      ],
+      "a": 1,
+      "why": "Answering other views makes the argument stronger."
+     },
+     {
+      "t": "tf",
+      "q": "Evidence is sufficient when one example proves a broad claim.",
+      "a": false,
+      "why": "A broad claim needs enough evidence."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "bandwagon",
+        "Everyone is doing it"
+       ],
+       [
+        "hasty generalization",
+        "Conclusion from too few examples"
+       ],
+       [
+        "counterclaim",
+        "Opposing position"
+       ],
+       [
+        "relevant evidence",
+        "Directly supports the claim"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for evaluating an argument in order",
+      "items": [
+       [
+        "Identify the claim",
+        1
+       ],
+       [
+        "List the reasons and evidence",
+        2
+       ],
+       [
+        "Check that evidence is relevant and enough",
+        3
+       ],
+       [
+        "Decide whether the argument is sound",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Type the fallacy: 'My neighbor got sick after eating fish, so fish makes everyone sick.' (hasty g...)",
+      "a": [
+       "hasty generalization",
+       "generalization"
+      ],
+      "hint": "It is a broad claim from one example.",
+      "why": "One example is not enough, so it is a hasty generalization."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for an opposing position an author answers.",
+      "a": [
+       "counterclaim",
+       "counterargument",
+       "counter claim"
+      ],
+      "hint": "It starts with counter.",
+      "why": "A counterclaim is the other side."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Evidence that directly supports a claim is ___. Type the word that starts with r.",
+      "a": [
+       "relevant"
+      ],
+      "hint": "It starts with r.",
+      "why": "Relevant evidence connects to the claim."
+     }
+    ]
+   },
+   {
+    "title": "Poetry, Drama and Comparing Forms",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Poetic forms",
+      "b": "A sonnet has 14 lines. A haiku has three lines with 5, 7 and 5 syllables. A ballad tells a story. Free verse has no set rhyme or meter. A poem's form can add to its meaning."
+     },
+     {
+      "h": "Text and film",
+      "b": "A filmed play or story adds music, camera angles and acting. Compare the written scene to the film and ask why the director made each choice and how it changes the mood."
+     },
+     {
+      "h": "Historical fiction",
+      "b": "Historical fiction mixes invented characters with real times and events. Compare it with a history text to see which details are true and which are imagined."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many lines are in a sonnet?",
+      "o": [
+       "12",
+       "14",
+       "16",
+       "20"
+      ],
+      "a": 1,
+      "why": "A sonnet has 14 lines."
+     },
+     {
+      "t": "mc",
+      "q": "A haiku traditionally has what syllable pattern?",
+      "o": [
+       "7-5-7",
+       "4-6-4",
+       "3-5-3",
+       "5-7-5"
+      ],
+      "a": 3,
+      "why": "The lines have 5, 7 and 5 syllables."
+     },
+     {
+      "t": "mc",
+      "q": "A film version of a play adds music and camera angles. What do these affect?",
+      "o": [
+       "The mood and how viewers see events",
+       "The author's name",
+       "The plot's length only",
+       "The rhyme scheme"
+      ],
+      "a": 0,
+      "why": "Sound and camera choices shape feelings."
+     },
+     {
+      "t": "mc",
+      "q": "Which best describes historical fiction?",
+      "o": [
+       "A true diary",
+       "A science report",
+       "Invented characters in a real time and events",
+       "A list of dates"
+      ],
+      "a": 2,
+      "why": "It mixes fiction with real history."
+     },
+     {
+      "t": "tf",
+      "q": "A poem's structure can add to its meaning.",
+      "a": true,
+      "why": "Form, such as a sonnet, shapes how we read it."
+     },
+     {
+      "t": "match",
+      "q": "Match each form to its description",
+      "pairs": [
+       [
+        "sonnet",
+        "14-line poem"
+       ],
+       [
+        "haiku",
+        "Three lines, 5-7-5"
+       ],
+       [
+        "ballad",
+        "Poem that tells a story"
+       ],
+       [
+        "free verse",
+        "No set rhyme or meter"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for comparing a text and film in order",
+      "items": [
+       [
+        "Read the scene",
+        1
+       ],
+       [
+        "Watch the film version",
+        2
+       ],
+       [
+        "Note differences in setting, characters and mood",
+        3
+       ],
+       [
+        "Explain why the director chose them",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many syllables are in a standard haiku? Type the number.",
+      "a": [
+       "17",
+       "seventeen"
+      ],
+      "hint": "Add 5, 7 and 5.",
+      "why": "5 + 7 + 5 = 17."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for a poem with 14 lines.",
+      "a": [
+       "sonnet",
+       "a sonnet"
+      ],
+      "hint": "It starts with s.",
+      "why": "A sonnet has 14 lines."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the term for a poem that tells a story, often in rhyming stanzas.",
+      "a": [
+       "ballad",
+       "a ballad"
+      ],
+      "hint": "It starts with b.",
+      "why": "A ballad tells a story."
+     }
+    ]
+   },
+   {
+    "title": "Narrative Writing, Revision and Citing Sources",
+    "period": "Grade 7",
+    "learn": [
+     {
+      "h": "Narrative writing",
+      "b": "A strong narrative opens with a scene or problem, builds events in order and uses sensory language, dialogue and pacing. It ends with a conclusion that reflects on what happened."
+     },
+     {
+      "h": "Revising and editing",
+      "b": "Revising improves ideas, organization and clarity. Editing fixes grammar, spelling and punctuation. Peer feedback helps. Then publish your final draft."
+     },
+     {
+      "h": "Citing sources",
+      "b": "Quote exact words in quotation marks. Paraphrase in your own words. Give credit either way and list sources on a works cited page. Trust sources with a named expert author and a recent date."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the strongest narrative opening?",
+      "o": [
+       "This story is about a girl.",
+       "I will tell you a story now.",
+       "One day something happened.",
+       "Thunder shook the tiny cabin as Mara gripped the lantern."
+      ],
+      "a": 3,
+      "why": "It uses a scene and details."
+     },
+     {
+      "t": "mc",
+      "q": "What is the purpose of revising?",
+      "o": [
+       "To improve ideas, organization and clarity",
+       "To fix only spelling",
+       "To copy the final draft",
+       "To add a title page"
+      ],
+      "a": 0,
+      "why": "Revising improves the content."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a correct use of a quotation?",
+      "o": [
+       "Copy the words without marks",
+       "Change one word and skip credit",
+       "Put quotation marks around the source's exact words and credit it",
+       "Credit only the title"
+      ],
+      "a": 2,
+      "why": "Exact words need marks and credit."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best sign of a trustworthy website?",
+      "o": [
+       "Lots of ads",
+       "Named expert author and recent date",
+       "No author listed",
+       "Bright colors"
+      ],
+      "a": 1,
+      "why": "Experts and fresh information are more reliable."
+     },
+     {
+      "t": "tf",
+      "q": "Paraphrasing without crediting the source is plagiarism.",
+      "a": true,
+      "why": "Ideas must be credited even in your own words."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "revising",
+        "Improving content and organization"
+       ],
+       [
+        "editing",
+        "Fixing grammar and spelling"
+       ],
+       [
+        "paraphrase",
+        "Restate in your own words"
+       ],
+       [
+        "works cited",
+        "List of sources used"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the writing process in order",
+      "items": [
+       [
+        "Draft",
+        1
+       ],
+       [
+        "Revise",
+        2
+       ],
+       [
+        "Edit",
+        3
+       ],
+       [
+        "Publish",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "parsons",
+      "q": "Challenge: put the parts of a narrative in order",
+      "lines": [
+       "Hook the reader with an opening scene",
+       "Introduce the narrator and conflict",
+       "Build events with dialogue and detail",
+       "Resolve the conflict",
+       "End with a reflection"
+      ],
+      "why": "A narrative hooks, builds, resolves and then reflects."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the word for fixing grammar, spelling and punctuation.",
+      "a": [
+       "editing",
+       "edit",
+       "proofreading",
+       "proofread"
+      ],
+      "hint": "It starts with e.",
+      "why": "Editing corrects mistakes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Type the two-word name for the list of sources at the end of an MLA paper.",
+      "a": [
+       "works cited"
+      ],
+      "hint": "The first word is works.",
+      "why": "MLA calls it the works cited page."
+     }
+    ]
+   }
+  ]
+ }
+}

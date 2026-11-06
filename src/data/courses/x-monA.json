@@ -1,0 +1,7380 @@
+{
+ "fin-personal": {
+  "name": "Personal Finance",
+  "units": [
+   {
+    "title": "Budgeting Basics",
+    "period": "Budgeting",
+    "learn": [
+     {
+      "h": "What is a budget?",
+      "b": "A budget is a plan for your money. You write down the money coming in (income) and the money going out (expenses). Example: if you earn $200 and spend $150, you have $50 left."
+     },
+     {
+      "h": "Needs vs wants",
+      "b": "Needs are things you must have, like rent, food and transport. Wants are extras, like games or fancy sneakers. A good budget pays for needs first."
+     },
+     {
+      "h": "The 50/30/20 rule",
+      "b": "One simple plan is 50% of income for needs, 30% for wants and 20% for savings or paying off debt. It is a guide, not a law. You can change the numbers to fit your life."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is a need?",
+      "o": [
+       "A streaming subscription",
+       "Rent for a home",
+       "Designer sneakers",
+       "A restaurant dinner"
+      ],
+      "a": 1,
+      "why": "Housing is a basic need, while the others are wants."
+     },
+     {
+      "t": "mc",
+      "q": "In the 50/30/20 rule, what share goes to savings or debt payments?",
+      "o": [
+       "50%",
+       "30%",
+       "20%",
+       "10%"
+      ],
+      "a": 2,
+      "why": "The 20 in 50/30/20 is for savings and debt repayment."
+     },
+     {
+      "t": "mc",
+      "q": "Your income is higher than your expenses. What do you have?",
+      "o": [
+       "A deficit",
+       "A surplus",
+       "A loan",
+       "A penalty"
+      ],
+      "a": 1,
+      "why": "Money left over after expenses is called a surplus."
+     },
+     {
+      "t": "mc",
+      "q": "Why is it useful to track your spending?",
+      "o": [
+       "It increases your income",
+       "To see where your money actually goes",
+       "It lowers prices",
+       "It replaces a budget"
+      ],
+      "a": 1,
+      "why": "Tracking shows real habits so you can adjust your budget."
+     },
+     {
+      "t": "tf",
+      "q": "Net income is the money you earn before taxes are taken out.",
+      "a": false,
+      "why": "Net income is what you keep after taxes; before taxes it is gross income."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Income",
+        "Money coming in"
+       ],
+       [
+        "Expense",
+        "Money going out"
+       ],
+       [
+        "Savings",
+        "Money set aside for later"
+       ],
+       [
+        "Budget",
+        "A plan for your money"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the budgeting steps in order",
+      "items": [
+       [
+        "Add up your income",
+        1
+       ],
+       [
+        "List your expenses",
+        2
+       ],
+       [
+        "Compare and adjust",
+        3
+       ],
+       [
+        "Track spending each month",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: your monthly income is 2400. Using the 50/30/20 rule, how much goes to savings and debt?",
+      "a": [
+       "480",
+       "480.0",
+       "480.00"
+      ],
+      "hint": "20% of 2400 = 0.20 x 2400.",
+      "why": "0.20 x 2400 = 480."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you earn 1800 and spend 1260 in a month. How much is your surplus?",
+      "a": [
+       "540",
+       "540.0",
+       "540.00"
+      ],
+      "hint": "Surplus = income minus expenses.",
+      "why": "1800 - 1260 = 540."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: rent is 600 and your income is 2000. What percent of income goes to rent? (number only)",
+      "a": [
+       "30",
+       "30.0",
+       "30.00",
+       "30%"
+      ],
+      "hint": "Divide 600 by 2000, then multiply by 100.",
+      "why": "600 / 2000 = 0.30, which is 30%."
+     }
+    ]
+   },
+   {
+    "title": "Banking and Payments",
+    "period": "Banking",
+    "learn": [
+     {
+      "h": "Checking and savings",
+      "b": "A checking account is for everyday spending: you can pay bills, use a debit card and withdraw cash. A savings account is for money you do not need soon, and it usually pays interest. Many people keep both."
+     },
+     {
+      "h": "Debit vs credit cards",
+      "b": "A debit card takes money straight from your checking account, so you spend only what you have. A credit card lends you money that you must repay later, with interest if you do not pay in full."
+     },
+     {
+      "h": "Fees and safety",
+      "b": "Banks can charge fees, such as an overdraft fee when you spend more than your balance or a monthly fee. In many countries, deposits are insured up to a limit if the bank fails. Always check your statement for mistakes."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which account is best for everyday bill payments?",
+      "o": [
+       "Checking account",
+       "Certificate of deposit",
+       "Retirement account",
+       "Brokerage account"
+      ],
+      "a": 0,
+      "why": "Checking accounts are built for frequent deposits and payments."
+     },
+     {
+      "t": "mc",
+      "q": "What does a debit card use to pay?",
+      "o": [
+       "A loan from the card company",
+       "Money in your bank account",
+       "Your credit score",
+       "Store points"
+      ],
+      "a": 1,
+      "why": "Debit purchases come directly out of your account balance."
+     },
+     {
+      "t": "mc",
+      "q": "What is an overdraft?",
+      "o": [
+       "Depositing too much money",
+       "Closing an account",
+       "Spending more than your account balance",
+       "Earning extra interest"
+      ],
+      "a": 2,
+      "why": "An overdraft happens when a payment is bigger than the balance."
+     },
+     {
+      "t": "mc",
+      "q": "Why should you read your bank statement every month?",
+      "o": [
+       "To raise your credit limit",
+       "To avoid all taxes",
+       "To earn bonus interest",
+       "To catch mistakes or fraud"
+      ],
+      "a": 3,
+      "why": "Checking statements helps you spot wrong or unknown charges early."
+     },
+     {
+      "t": "tf",
+      "q": "A debit card lets you borrow money from the bank to pay later.",
+      "a": false,
+      "why": "A debit card spends your own money; a credit card borrows."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Deposit",
+        "Money you put in"
+       ],
+       [
+        "Withdrawal",
+        "Money you take out"
+       ],
+       [
+        "Balance",
+        "Money in the account now"
+       ],
+       [
+        "Overdraft fee",
+        "Charge for overspending"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of paying by debit card in order",
+      "items": [
+       [
+        "Choose what to buy",
+        1
+       ],
+       [
+        "Insert or tap the card",
+        2
+       ],
+       [
+        "Enter PIN or approve",
+        3
+       ],
+       [
+        "Money leaves your account",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a bank charges a 35 overdraft fee each time. You overdraw 3 times. Total fees?",
+      "a": [
+       "105",
+       "105.0",
+       "105.00"
+      ],
+      "hint": "Multiply the fee by the number of times.",
+      "why": "35 x 3 = 105."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 2500 sits in savings at 3% simple interest for one year. How much interest?",
+      "a": [
+       "75",
+       "75.0",
+       "75.00"
+      ],
+      "hint": "2500 x 0.03.",
+      "why": "2500 x 0.03 = 75."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps of checking your account in order",
+      "lines": [
+       "Open your bank statement",
+       "Compare each charge to your receipts",
+       "Mark any charge you do not recognize",
+       "Contact the bank about the problem"
+      ],
+      "why": "You review first, compare, flag problems, then report them."
+     }
+    ]
+   },
+   {
+    "title": "Saving and Interest",
+    "period": "Saving",
+    "learn": [
+     {
+      "h": "Emergency fund",
+      "b": "An emergency fund is cash kept for surprises like a broken phone or a medical bill. Many experts suggest saving 3 to 6 months of basic expenses. Keep it in an easy-to-reach savings account."
+     },
+     {
+      "h": "What is interest?",
+      "b": "Interest is money a bank pays you for keeping money with it. Simple interest uses only your starting amount (the principal). Example: 5% simple interest on $100 for one year is $5."
+     },
+     {
+      "h": "Compound interest",
+      "b": "With compound interest, you earn interest on your principal and on the interest you already earned. Money grows faster over time. Starting early gives compounding more time to work."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How much is a common emergency fund goal?",
+      "o": [
+       "1 week of expenses",
+       "1 year of income",
+       "3 to 6 months of expenses",
+       "Exactly $50"
+      ],
+      "a": 2,
+      "why": "Many experts suggest 3 to 6 months of basic expenses."
+     },
+     {
+      "t": "mc",
+      "q": "You earn 5% simple interest on $100 for one year. How much interest is that?",
+      "o": [
+       "$5",
+       "$50",
+       "$0.50",
+       "$105"
+      ],
+      "a": 0,
+      "why": "5% of $100 is $5."
+     },
+     {
+      "t": "mc",
+      "q": "What does compound interest mean?",
+      "o": [
+       "Interest only on the starting amount",
+       "A fee for opening an account",
+       "Interest paid once at the end of life",
+       "Interest on both principal and past interest"
+      ],
+      "a": 3,
+      "why": "Compounding adds earned interest to the base that earns more interest."
+     },
+     {
+      "t": "mc",
+      "q": "Which usually pays you interest?",
+      "o": [
+       "Cash under a mattress",
+       "A savings account",
+       "A wallet",
+       "A piggy bank"
+      ],
+      "a": 1,
+      "why": "Banks pay interest on money held in savings accounts."
+     },
+     {
+      "t": "tf",
+      "q": "Starting to save earlier usually lets compound interest grow your money more.",
+      "a": true,
+      "why": "More time means more compounding periods."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Principal",
+        "The starting amount"
+       ],
+       [
+        "Interest",
+        "Payment for using money"
+       ],
+       [
+        "APY",
+        "Yearly yield with compounding"
+       ],
+       [
+        "Emergency fund",
+        "Cash for surprises"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "$1,000 grows 10% a year, compounded. Order the balance from year 0 to year 3",
+      "items": [
+       [
+        "$1,000",
+        1
+       ],
+       [
+        "$1,100",
+        2
+       ],
+       [
+        "$1,210",
+        3
+       ],
+       [
+        "$1,331",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: simple interest on 500 at 4% per year for 3 years. How much interest?",
+      "a": [
+       "60",
+       "60.0",
+       "60.00"
+      ],
+      "hint": "Interest = principal x rate x years.",
+      "why": "500 x 0.04 x 3 = 60."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 1000 earns 5% compound interest once a year. How much after 2 years?",
+      "a": [
+       "1102.5",
+       "1102.50"
+      ],
+      "hint": "Multiply by 1.05 two times.",
+      "why": "1000 x 1.05 x 1.05 = 1102.50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Rule of 72. At 6% a year, about how many years does money take to double?",
+      "a": [
+       "12",
+       "12.0",
+       "12.00"
+      ],
+      "hint": "Divide 72 by the rate.",
+      "why": "72 / 6 = 12 years."
+     }
+    ]
+   },
+   {
+    "title": "Earning and Paychecks",
+    "period": "Income",
+    "learn": [
+     {
+      "h": "Gross and net pay",
+      "b": "Gross pay is what you earn before anything is taken out. Net pay, or take-home pay, is what you actually receive after taxes and other deductions. Plan your budget with net pay."
+     },
+     {
+      "h": "Hourly and salary",
+      "b": "Hourly workers are paid for each hour worked. Salaried workers get a fixed yearly amount split across pay periods. Overtime is often paid at 1.5 times the hourly rate for hours over a weekly limit."
+     },
+     {
+      "h": "Ways to earn more",
+      "b": "You can raise income by gaining skills, asking for a raise, changing jobs or adding side work. A bigger gap between income and spending makes saving easier."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is net pay?",
+      "o": [
+       "Pay after deductions",
+       "Pay before taxes",
+       "Only your bonus",
+       "Your yearly total"
+      ],
+      "a": 0,
+      "why": "Net pay is the money left after taxes and deductions."
+     },
+     {
+      "t": "mc",
+      "q": "Which pay type stays the same each pay period regardless of hours?",
+      "o": [
+       "Hourly wage",
+       "Salary",
+       "Overtime",
+       "Tips"
+      ],
+      "a": 1,
+      "why": "Salary is a fixed amount per period."
+     },
+     {
+      "t": "mc",
+      "q": "Overtime at 1.5 times pay means a 10 per hour worker earns how much per overtime hour?",
+      "o": [
+       "11.50",
+       "20",
+       "15",
+       "12"
+      ],
+      "a": 2,
+      "why": "10 x 1.5 = 15."
+     },
+     {
+      "t": "mc",
+      "q": "Which should you use to build a monthly budget?",
+      "o": [
+       "Gross income",
+       "Your dream salary",
+       "Your highest month",
+       "Net income"
+      ],
+      "a": 3,
+      "why": "You can only spend what you actually take home."
+     },
+     {
+      "t": "tf",
+      "q": "Deductions can include taxes and insurance premiums.",
+      "a": true,
+      "why": "Payroll deductions often cover taxes, insurance and retirement contributions."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Gross pay",
+        "Before deductions"
+       ],
+       [
+        "Net pay",
+        "Take-home amount"
+       ],
+       [
+        "Wage",
+        "Paid per hour"
+       ],
+       [
+        "Salary",
+        "Fixed yearly amount"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a paycheck in order",
+      "items": [
+       [
+        "Gross pay",
+        1
+       ],
+       [
+        "Subtract taxes",
+        2
+       ],
+       [
+        "Subtract other deductions",
+        3
+       ],
+       [
+        "Net pay received",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: you earn 12 per hour: 40 regular hours plus 5 overtime hours at 1.5 times pay. Total pay?",
+      "a": [
+       "570",
+       "570.0",
+       "570.00"
+      ],
+      "hint": "Regular = 12 x 40. Overtime rate = 12 x 1.5 = 18.",
+      "why": "480 + (5 x 18 = 90) = 570."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a yearly salary of 52000 is paid every 2 weeks (26 times a year). Pay per check?",
+      "a": [
+       "2000",
+       "2000.0",
+       "2000.00"
+      ],
+      "hint": "Divide 52000 by 26.",
+      "why": "52000 / 26 = 2000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: gross pay is 2000 and deductions total 450. What is net pay?",
+      "a": [
+       "1550",
+       "1550.0",
+       "1550.00"
+      ],
+      "hint": "Net = gross minus deductions.",
+      "why": "2000 - 450 = 1550."
+     }
+    ]
+   },
+   {
+    "title": "Credit and Debt",
+    "period": "Credit & Debt",
+    "learn": [
+     {
+      "h": "Credit scores",
+      "b": "A credit score is a number that shows how likely you are to repay money you borrow. Paying bills on time is the biggest factor. Lenders use it to decide whether to lend to you and at what rate."
+     },
+     {
+      "h": "Credit card interest",
+      "b": "APR means annual percentage rate, the yearly cost of borrowing. If you do not pay your full statement balance, interest is added to what you owe. Credit limit is the most you can borrow on the card."
+     },
+     {
+      "h": "Handling debt",
+      "b": "Debt is money you owe. Paying only the minimum keeps you in debt longer and costs more interest. Paying the full balance on time avoids card interest."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a credit score mainly show?",
+      "o": [
+       "How much you earn",
+       "How likely you are to repay debt",
+       "Your age",
+       "How much you saved"
+      ],
+      "a": 1,
+      "why": "It estimates your reliability as a borrower."
+     },
+     {
+      "t": "mc",
+      "q": "How can you avoid credit card interest?",
+      "o": [
+       "Pay only the minimum",
+       "Pay late",
+       "Pay the full statement balance by the due date",
+       "Use the card up to the limit"
+      ],
+      "a": 2,
+      "why": "Paying in full on time usually means no interest charged."
+     },
+     {
+      "t": "mc",
+      "q": "What does APR stand for?",
+      "o": [
+       "Annual Percentage Rate",
+       "Average Payment Record",
+       "Account Payment Review",
+       "Applied Penalty Rate"
+      ],
+      "a": 0,
+      "why": "APR is the yearly cost of borrowing as a percentage."
+     },
+     {
+      "t": "mc",
+      "q": "Which action helps a credit score most?",
+      "o": [
+       "Having a long name",
+       "Owning many phones",
+       "Checking the weather",
+       "Paying bills on time"
+      ],
+      "a": 3,
+      "why": "Payment history is a major scoring factor."
+     },
+     {
+      "t": "tf",
+      "q": "Paying only the minimum on a credit card usually means paying more interest over time.",
+      "a": true,
+      "why": "The balance shrinks slowly, so interest keeps building."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "APR",
+        "Yearly cost of borrowing"
+       ],
+       [
+        "Credit limit",
+        "Most you can borrow"
+       ],
+       [
+        "Minimum payment",
+        "Smallest amount due"
+       ],
+       [
+        "Debt",
+        "Money you owe"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these borrowing costs from lowest to highest",
+      "items": [
+       [
+        "0% APR",
+        1
+       ],
+       [
+        "5% APR",
+        2
+       ],
+       [
+        "15% APR",
+        3
+       ],
+       [
+        "25% APR",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a card has 800 balance and 24% APR. About how much interest is charged for one month? (APR / 12)",
+      "a": [
+       "16",
+       "16.0",
+       "16.00"
+      ],
+      "hint": "Monthly rate = 24% / 12 = 2%.",
+      "why": "2% of 800 = 16."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you use 300 of a 1000 credit limit. What is your credit utilization in percent? (number only)",
+      "a": [
+       "30",
+       "30.0",
+       "30.00",
+       "30%"
+      ],
+      "hint": "Utilization = balance / limit x 100.",
+      "why": "300 / 1000 = 30%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which debt payoff method pays the smallest balance first? (one word)",
+      "a": [
+       "snowball",
+       "the snowball",
+       "debt snowball",
+       "snowball method"
+      ],
+      "hint": "It is named after something that grows as it rolls.",
+      "why": "The debt snowball pays the smallest balance first for quick wins."
+     }
+    ]
+   },
+   {
+    "title": "Big Purchases and Loans",
+    "period": "Loans",
+    "learn": [
+     {
+      "h": "How loans work",
+      "b": "A loan is money you borrow and repay over time. The principal is the amount borrowed, the interest rate is the cost of borrowing and the term is how long you have to repay. A longer term lowers monthly payments but usually costs more interest overall."
+     },
+     {
+      "h": "Down payments",
+      "b": "A down payment is money you pay upfront toward a big purchase like a car or home. A larger down payment means you borrow less, so you pay less interest."
+     },
+     {
+      "h": "Total cost",
+      "b": "Always compare the total you will pay, not only the monthly payment. Total paid = monthly payment x number of payments. Interest paid = total paid minus the amount borrowed."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the principal of a loan?",
+      "o": [
+       "The amount borrowed",
+       "The monthly fee",
+       "The interest earned",
+       "The loan length"
+      ],
+      "a": 0,
+      "why": "Principal is the original amount you borrow."
+     },
+     {
+      "t": "mc",
+      "q": "What happens to the total interest if you pick a longer loan term (same rate)?",
+      "o": [
+       "It always disappears",
+       "It usually increases",
+       "It stays exactly the same",
+       "It becomes negative"
+      ],
+      "a": 1,
+      "why": "More months of borrowing means more interest in total."
+     },
+     {
+      "t": "mc",
+      "q": "A bigger down payment mainly does what?",
+      "o": [
+       "Raises the interest rate",
+       "Lengthens the term",
+       "Reduces the amount you borrow",
+       "Lowers the car price to zero"
+      ],
+      "a": 2,
+      "why": "Less borrowed means less interest to pay."
+     },
+     {
+      "t": "mc",
+      "q": "A loan of 10000 is repaid with 11200 in total. How much interest was paid?",
+      "o": [
+       "10000",
+       "11200",
+       "21200",
+       "1200"
+      ],
+      "a": 3,
+      "why": "11200 - 10000 = 1200."
+     },
+     {
+      "t": "tf",
+      "q": "A low monthly payment always means the loan is cheap overall.",
+      "a": false,
+      "why": "A low payment can come from a long term, which can cost more in total."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Principal",
+        "Amount borrowed"
+       ],
+       [
+        "Term",
+        "Length of the loan"
+       ],
+       [
+        "Down payment",
+        "Upfront money paid"
+       ],
+       [
+        "Interest",
+        "Cost of borrowing"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the loan steps in order",
+      "items": [
+       [
+        "Decide what you can afford",
+        1
+       ],
+       [
+        "Compare loan offers",
+        2
+       ],
+       [
+        "Sign the loan agreement",
+        3
+       ],
+       [
+        "Make monthly payments",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a car costs 20000 and you pay 4000 down. How much do you borrow?",
+      "a": [
+       "16000",
+       "16000.0",
+       "16000.00"
+      ],
+      "hint": "Price minus down payment.",
+      "why": "20000 - 4000 = 16000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you repay a loan with 300 per month for 60 months. Total paid?",
+      "a": [
+       "18000",
+       "18000.0",
+       "18000.00"
+      ],
+      "hint": "Multiply payment by number of months.",
+      "why": "300 x 60 = 18000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: simple interest on 5000 at 6% per year for 2 years. How much interest?",
+      "a": [
+       "600",
+       "600.0",
+       "600.00"
+      ],
+      "hint": "5000 x 0.06 x 2.",
+      "why": "5000 x 0.06 x 2 = 600."
+     }
+    ]
+   },
+   {
+    "title": "Money Planning",
+    "period": "Money Plans",
+    "learn": [
+     {
+      "h": "Net worth",
+      "b": "Net worth is what you own (assets) minus what you owe (liabilities). Example: $500 in savings and a $100 debt gives a net worth of $400."
+     },
+     {
+      "h": "Inflation",
+      "b": "Inflation is when prices rise over time. A bag of snacks that costs $2 today may cost more in ten years. Money kept only in cash buys less as time passes."
+     },
+     {
+      "h": "Insurance and goals",
+      "b": "Insurance shares the risk of big losses. You pay a small premium, and the insurer pays for covered problems after your deductible. Clear goals help too: a good goal has an amount and a date."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you calculate net worth?",
+      "o": [
+       "Income minus expenses",
+       "Assets minus liabilities",
+       "Savings plus debts",
+       "Assets plus liabilities"
+      ],
+      "a": 1,
+      "why": "Net worth equals what you own minus what you owe."
+     },
+     {
+      "t": "mc",
+      "q": "Which best describes inflation?",
+      "o": [
+       "Prices falling over time",
+       "Banks closing",
+       "Prices generally rising, so money buys less",
+       "Interest rates being zero"
+      ],
+      "a": 2,
+      "why": "Inflation is a general rise in prices."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main purpose of insurance?",
+      "o": [
+       "To make you rich",
+       "To avoid taxes",
+       "To pay for groceries",
+       "To protect against large unexpected losses"
+      ],
+      "a": 3,
+      "why": "Insurance spreads the cost of big risks across many people."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best savings goal?",
+      "o": [
+       "Save some money someday",
+       "Save $600 in 6 months by putting aside $100 monthly",
+       "Spend less",
+       "Be rich"
+      ],
+      "a": 1,
+      "why": "It has a clear amount, deadline and plan."
+     },
+     {
+      "t": "tf",
+      "q": "A checking account is mainly designed for long-term growth of savings.",
+      "a": false,
+      "why": "Checking is for everyday spending; savings and investments are for growth."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Asset",
+        "Something valuable you own"
+       ],
+       [
+        "Liability",
+        "Something you owe"
+       ],
+       [
+        "Premium",
+        "Payment for insurance"
+       ],
+       [
+        "Deductible",
+        "Amount you pay before insurance"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to reach a savings goal in order",
+      "items": [
+       [
+        "Set a goal amount and date",
+        1
+       ],
+       [
+        "Divide it into monthly amounts",
+        2
+       ],
+       [
+        "Save automatically each month",
+        3
+       ],
+       [
+        "Check your progress",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: assets are 12000 and liabilities are 4500. What is your net worth?",
+      "a": [
+       "7500",
+       "7500.0",
+       "7500.00"
+      ],
+      "hint": "Net worth = assets minus liabilities.",
+      "why": "12000 - 4500 = 7500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: an item costs 100 today. With 3% inflation, what will it cost in one year?",
+      "a": [
+       "103",
+       "103.0",
+       "103.00"
+      ],
+      "hint": "Add 3% of 100.",
+      "why": "100 x 1.03 = 103."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: your repair bill is 2000 and your insurance deductible is 500. How much does the insurer pay (ignore other limits)?",
+      "a": [
+       "1500",
+       "1500.0",
+       "1500.00"
+      ],
+      "hint": "You pay the deductible, the insurer pays the rest.",
+      "why": "2000 - 500 = 1500."
+     }
+    ]
+   },
+   {
+    "title": "Retirement Planning",
+    "period": "Retirement",
+    "learn": [
+     {
+      "h": "Start early",
+      "b": "Retirement is far away, but time is powerful. Money invested early has many years to grow with compound interest. Small amounts saved at 20 can beat larger amounts saved at 40."
+     },
+     {
+      "h": "Employer match",
+      "b": "Some employers add money to your retirement account when you contribute. This is called a match, and it is like free money. Contribute at least enough to get the full match if you can."
+     },
+     {
+      "h": "Retirement accounts",
+      "b": "Special retirement accounts, such as a 401(k) or IRA in the US, give tax benefits. Some are taxed when you put money in and others when you take it out. Rules differ by country, so learn the local ones."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Why does starting to save early help so much?",
+      "o": [
+       "Compound growth has more time",
+       "Taxes disappear",
+       "Banks pay you more fees",
+       "Prices stop rising"
+      ],
+      "a": 0,
+      "why": "Longer time lets interest earn interest."
+     },
+     {
+      "t": "mc",
+      "q": "What is an employer match?",
+      "o": [
+       "A tax bill",
+       "Extra money your employer adds to your savings",
+       "A loan from your job",
+       "A type of insurance"
+      ],
+      "a": 1,
+      "why": "A match is employer money added when you contribute."
+     },
+     {
+      "t": "mc",
+      "q": "You earn 40000 and your employer matches 100% of your contributions up to 3% of pay. What is the maximum match?",
+      "o": [
+       "3000",
+       "400",
+       "1200",
+       "12000"
+      ],
+      "a": 2,
+      "why": "3% of 40000 = 1200."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the best reason to use a retirement account?",
+      "o": [
+       "Instant access with no limits",
+       "Guaranteed zero risk",
+       "No need to ever save",
+       "Tax advantages for long-term saving"
+      ],
+      "a": 3,
+      "why": "These accounts are designed with tax benefits for retirement."
+     },
+     {
+      "t": "tf",
+      "q": "The Rule of 72 can estimate how long money takes to double.",
+      "a": true,
+      "why": "Years to double is about 72 divided by the interest rate."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Retirement",
+        "Life after full-time work"
+       ],
+       [
+        "Match",
+        "Employer adds money"
+       ],
+       [
+        "Compound growth",
+        "Interest on interest"
+       ],
+       [
+        "Pension",
+        "Regular income from a plan"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these ages of saving in order of the biggest growth time first",
+      "items": [
+       [
+        "Start at 20",
+        1
+       ],
+       [
+        "Start at 30",
+        2
+       ],
+       [
+        "Start at 40",
+        3
+       ],
+       [
+        "Start at 50",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 2000 grows at 7% compound once a year for 10 years. Final amount? (2 decimals)",
+      "a": [
+       "3934.3",
+       "3934.30"
+      ],
+      "hint": "2000 x 1.07^10.",
+      "why": "2000 x 1.07^10 = 3934.30."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you earn 40000 and put in 6%. How many dollars do you contribute per year?",
+      "a": [
+       "2400",
+       "2400.0",
+       "2400.00"
+      ],
+      "hint": "0.06 x 40000.",
+      "why": "0.06 x 40000 = 2400."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Rule of 72. At 8% a year, about how many years to double?",
+      "a": [
+       "9",
+       "9.0",
+       "9.00"
+      ],
+      "hint": "72 / 8.",
+      "why": "72 / 8 = 9 years."
+     }
+    ]
+   }
+  ]
+ },
+ "fin-invest": {
+  "name": "Investing & Stocks",
+  "units": [
+   {
+    "title": "Investing Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "Stocks",
+      "b": "A stock is a small piece of ownership in a company. If the company grows, the share price may rise. Some companies also pay dividends, a share of profit paid to owners."
+     },
+     {
+      "h": "Bonds",
+      "b": "A bond is a loan you give to a company or government. They pay you interest and return your money on a set date. Bonds are usually less risky than stocks."
+     },
+     {
+      "h": "Risk and return",
+      "b": "Higher possible returns usually come with higher risk of losing money. Savings accounts are safer but grow slowly. Stocks can grow more but go up and down."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does owning a share of stock mean?",
+      "o": [
+       "You lent money to a company",
+       "You own a small part of the company",
+       "You work for the company",
+       "You insure the company"
+      ],
+      "a": 1,
+      "why": "A stock is an ownership share."
+     },
+     {
+      "t": "mc",
+      "q": "What is a bond?",
+      "o": [
+       "A loan made to a company or government",
+       "A piece of ownership",
+       "A type of bank fee",
+       "A tax form"
+      ],
+      "a": 0,
+      "why": "Bond buyers lend money and receive interest."
+     },
+     {
+      "t": "mc",
+      "q": "Generally, higher potential returns come with what?",
+      "o": [
+       "Lower taxes",
+       "Guaranteed profit",
+       "Higher risk",
+       "No fees"
+      ],
+      "a": 2,
+      "why": "Risk and return are linked."
+     },
+     {
+      "t": "mc",
+      "q": "What is a dividend?",
+      "o": [
+       "A stock fee",
+       "A company's debt",
+       "A stock ticker",
+       "A share of profit paid to shareholders"
+      ],
+      "a": 3,
+      "why": "Some companies pay part of profits to owners as dividends."
+     },
+     {
+      "t": "tf",
+      "q": "Owning a stock guarantees that you will make money.",
+      "a": false,
+      "why": "Stock prices can fall, so losses are possible."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stock",
+        "Ownership share"
+       ],
+       [
+        "Bond",
+        "Loan to an issuer"
+       ],
+       [
+        "Dividend",
+        "Profit payout"
+       ],
+       [
+        "Ticker",
+        "Short code for a stock"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order by typical risk, from lowest to highest",
+      "items": [
+       [
+        "Insured savings account",
+        1
+       ],
+       [
+        "Government bond",
+        2
+       ],
+       [
+        "Stock index fund",
+        3
+       ],
+       [
+        "Single small-company stock",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: you buy a stock at 50 and sell at 60. What is your percent return? (number only)",
+      "a": [
+       "20",
+       "20.0",
+       "20.00",
+       "20%"
+      ],
+      "hint": "Gain divided by the price you paid.",
+      "why": "(60 - 50) / 50 = 0.20, or 20%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you have 500 to invest and a share costs 25. How many whole shares can you buy?",
+      "a": [
+       "20",
+       "20.0",
+       "20.00"
+      ],
+      "hint": "Divide 500 by 25.",
+      "why": "500 / 25 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you own 40 shares and the dividend is 1.50 per share. How much dividend income?",
+      "a": [
+       "60",
+       "60.0",
+       "60.00"
+      ],
+      "hint": "Multiply shares by dividend per share.",
+      "why": "40 x 1.50 = 60."
+     }
+    ]
+   },
+   {
+    "title": "Funds and Diversification",
+    "period": "Funds",
+    "learn": [
+     {
+      "h": "Diversification",
+      "b": "Diversification means spreading money across many investments. If one falls, others may hold up. It is like not putting all your eggs in one basket."
+     },
+     {
+      "h": "Index funds and ETFs",
+      "b": "An index fund holds the stocks in an index, like the S&P 500, which tracks 500 large US companies. An ETF is a fund that trades on an exchange like a stock. Both give instant diversification."
+     },
+     {
+      "h": "Fees matter",
+      "b": "Funds charge an expense ratio, a yearly fee as a percent of your money. A 0.1% fee costs $1 a year on $1,000. Lower fees mean you keep more of your returns."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is diversification?",
+      "o": [
+       "Buying only one stock",
+       "Spreading money across many investments",
+       "Selling everything",
+       "Borrowing to invest"
+      ],
+      "a": 1,
+      "why": "Diversifying reduces the impact of any single investment failing."
+     },
+     {
+      "t": "mc",
+      "q": "What does an index fund do?",
+      "o": [
+       "Picks one winning stock",
+       "Pays no fees ever",
+       "Guarantees profit",
+       "Tracks a market index like the S&P 500"
+      ],
+      "a": 3,
+      "why": "Index funds copy the holdings of an index."
+     },
+     {
+      "t": "mc",
+      "q": "What is an expense ratio?",
+      "o": [
+       "A fund's yearly fee as a percent of assets",
+       "A company's profit",
+       "A stock's price",
+       "A tax rate"
+      ],
+      "a": 0,
+      "why": "It is the annual cost of owning the fund."
+     },
+     {
+      "t": "mc",
+      "q": "How does an ETF trade?",
+      "o": [
+       "Only once a year",
+       "Only through the government",
+       "On an exchange during the day like a stock",
+       "Only by mail"
+      ],
+      "a": 2,
+      "why": "ETF shares are bought and sold on exchanges."
+     },
+     {
+      "t": "tf",
+      "q": "An index fund holds many stocks, so it is diversified.",
+      "a": true,
+      "why": "Owning many companies spreads risk."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "ETF",
+        "Fund traded like a stock"
+       ],
+       [
+        "Index",
+        "List measuring a market"
+       ],
+       [
+        "Diversify",
+        "Spread out risk"
+       ],
+       [
+        "Expense ratio",
+        "Fund's yearly fee"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order from least diversified to most diversified",
+      "items": [
+       [
+        "One company stock",
+        1
+       ],
+       [
+        "Ten stocks",
+        2
+       ],
+       [
+        "500-stock index fund",
+        3
+       ],
+       [
+        "Total world stock fund",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a fund has a 0.5% expense ratio and you hold 10000. How much is the yearly fee?",
+      "a": [
+       "50",
+       "50.0",
+       "50.00"
+      ],
+      "hint": "0.5% = 0.005.",
+      "why": "10000 x 0.005 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 1% yearly fee on a 20000 portfolio costs how much per year?",
+      "a": [
+       "200",
+       "200.0",
+       "200.00"
+      ],
+      "hint": "20000 x 0.01.",
+      "why": "20000 x 0.01 = 200."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 10000 portfolio is 60% stocks and 40% bonds. How much is in stocks?",
+      "a": [
+       "6000",
+       "6000.0",
+       "6000.00"
+      ],
+      "hint": "60% of 10000.",
+      "why": "0.60 x 10000 = 6000."
+     }
+    ]
+   },
+   {
+    "title": "Bonds and Interest Rates",
+    "period": "Bonds",
+    "learn": [
+     {
+      "h": "Face value and coupon",
+      "b": "A bond has a face value, which is repaid at maturity. The issuer pays regular interest called the coupon. A 1000 bond with a 5% coupon pays 50 per year."
+     },
+     {
+      "h": "Price and rates move opposite",
+      "b": "When market interest rates rise, older bonds with lower coupons become less attractive, so their prices fall. When rates fall, existing bond prices rise. This is called interest rate risk."
+     },
+     {
+      "h": "Yield and credit risk",
+      "b": "Current yield is yearly coupon divided by the bond price. Bonds from riskier issuers must pay higher yields because they might fail to repay. Government bonds of stable countries are usually seen as safer."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a bond coupon?",
+      "o": [
+       "Regular interest paid by the issuer",
+       "The bond price",
+       "The date the bond ends",
+       "A company's profit"
+      ],
+      "a": 0,
+      "why": "The coupon is the periodic interest payment."
+     },
+     {
+      "t": "mc",
+      "q": "If market interest rates rise, what usually happens to existing bond prices?",
+      "o": [
+       "They rise",
+       "They fall",
+       "They stay fixed forever",
+       "They become zero"
+      ],
+      "a": 1,
+      "why": "Bond prices and interest rates move in opposite directions."
+     },
+     {
+      "t": "mc",
+      "q": "A 1000 bond pays a 6% coupon. How much interest per year?",
+      "o": [
+       "6",
+       "600",
+       "60",
+       "160"
+      ],
+      "a": 2,
+      "why": "6% of 1000 = 60."
+     },
+     {
+      "t": "mc",
+      "q": "Why does a riskier bond offer a higher yield?",
+      "o": [
+       "Because it is guaranteed",
+       "Because it has no maturity",
+       "Because the price is fixed",
+       "To compensate for default risk"
+      ],
+      "a": 3,
+      "why": "Investors demand extra return for taking more risk."
+     },
+     {
+      "t": "tf",
+      "q": "At maturity, the issuer repays the bond's face value.",
+      "a": true,
+      "why": "Maturity is when the principal (face value) is returned."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Face value",
+        "Amount repaid at maturity"
+       ],
+       [
+        "Coupon",
+        "Regular interest payment"
+       ],
+       [
+        "Maturity",
+        "Date the bond ends"
+       ],
+       [
+        "Yield",
+        "Return based on price"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the life of a bond in order",
+      "items": [
+       [
+        "Issuer sells the bond",
+        1
+       ],
+       [
+        "Investor pays the price",
+        2
+       ],
+       [
+        "Coupons are paid over time",
+        3
+       ],
+       [
+        "Face value is repaid",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a 1000 bond has a 5% coupon. How much interest does it pay each year?",
+      "a": [
+       "50",
+       "50.0",
+       "50.00"
+      ],
+      "hint": "5% of 1000.",
+      "why": "0.05 x 1000 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a bond pays 40 per year and costs 800. What is the current yield in percent? (number only)",
+      "a": [
+       "5",
+       "5.0",
+       "5.00",
+       "5%"
+      ],
+      "hint": "Current yield = coupon / price.",
+      "why": "40 / 800 = 0.05 = 5%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 1000 bond pays a 3% coupon for 5 years. How much total coupon interest?",
+      "a": [
+       "150",
+       "150.0",
+       "150.00"
+      ],
+      "hint": "Yearly coupon = 30, then multiply by 5.",
+      "why": "30 x 5 = 150."
+     }
+    ]
+   },
+   {
+    "title": "Valuing Companies",
+    "period": "Valuation",
+    "learn": [
+     {
+      "h": "Earnings per share",
+      "b": "EPS is a company's profit divided by its number of shares. If a company earns $100 million and has 20 million shares, EPS is $5."
+     },
+     {
+      "h": "The P/E ratio",
+      "b": "The P/E ratio is share price divided by EPS. A $50 stock with $5 EPS has a P/E of 10. It shows how much investors pay for each $1 of earnings."
+     },
+     {
+      "h": "Market cap and markets",
+      "b": "Market cap is share price times the number of shares, the total value of a company. A bull market is rising prices, a bear market is falling prices."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How is the P/E ratio calculated?",
+      "o": [
+       "Profit divided by price",
+       "Price per share divided by earnings per share",
+       "Shares times price",
+       "Debt divided by cash"
+      ],
+      "a": 1,
+      "why": "P/E equals price divided by EPS."
+     },
+     {
+      "t": "mc",
+      "q": "A stock costs $50 and EPS is $5. What is the P/E ratio?",
+      "o": [
+       "5",
+       "55",
+       "10",
+       "250"
+      ],
+      "a": 2,
+      "why": "50 / 5 = 10."
+     },
+     {
+      "t": "mc",
+      "q": "How do you calculate market cap?",
+      "o": [
+       "Profit times debt",
+       "Revenue minus costs",
+       "Dividends divided by price",
+       "Share price times number of shares"
+      ],
+      "a": 3,
+      "why": "Market cap is the total market value of all shares."
+     },
+     {
+      "t": "mc",
+      "q": "What is a bear market?",
+      "o": [
+       "A period of broadly falling prices",
+       "A market for animals",
+       "A period of rising prices",
+       "A tax on stocks"
+      ],
+      "a": 0,
+      "why": "Bear markets are marked by sustained price declines."
+     },
+     {
+      "t": "tf",
+      "q": "Market capitalization is the total value of all of a company's shares.",
+      "a": true,
+      "why": "It equals share price times shares outstanding."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "EPS",
+        "Profit per share"
+       ],
+       [
+        "P/E",
+        "Price compared to earnings"
+       ],
+       [
+        "Market cap",
+        "Total value of shares"
+       ],
+       [
+        "Bull market",
+        "Rising prices"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order company sizes by market cap, smallest to largest",
+      "items": [
+       [
+        "Small-cap",
+        1
+       ],
+       [
+        "Mid-cap",
+        2
+       ],
+       [
+        "Large-cap",
+        3
+       ],
+       [
+        "Mega-cap",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a company earns 2000000 and has 500000 shares. What is EPS (earnings per share)?",
+      "a": [
+       "4",
+       "4.0",
+       "4.00"
+      ],
+      "hint": "EPS = earnings / shares.",
+      "why": "2000000 / 500000 = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a stock costs 60 and EPS is 4. What is the P/E ratio?",
+      "a": [
+       "15",
+       "15.0",
+       "15.00"
+      ],
+      "hint": "P/E = price / EPS.",
+      "why": "60 / 4 = 15."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a stock trades at 30 and there are 2000000 shares. What is the market cap?",
+      "a": [
+       "60000000",
+       "60000000.0",
+       "60000000.00"
+      ],
+      "hint": "Market cap = price x number of shares.",
+      "why": "30 x 2000000 = 60000000."
+     }
+    ]
+   },
+   {
+    "title": "Reading Financial Statements",
+    "period": "Statements",
+    "learn": [
+     {
+      "h": "Income statement",
+      "b": "The income statement shows a company's revenue, expenses and profit over a period. Net income = revenue minus all expenses. It tells you if the company made money."
+     },
+     {
+      "h": "Balance sheet",
+      "b": "The balance sheet is a snapshot of what a company owns (assets) and owes (liabilities) at one moment. The rest belongs to owners and is called equity. The rule is: assets = liabilities + equity."
+     },
+     {
+      "h": "Cash flow and margins",
+      "b": "The cash flow statement tracks money moving in and out. A company can show profit but still run out of cash. Profit margin = net income divided by revenue, shown as a percent."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which statement shows revenue and profit over a period?",
+      "o": [
+       "Income statement",
+       "Balance sheet",
+       "Loan agreement",
+       "Stock chart"
+      ],
+      "a": 0,
+      "why": "The income statement covers revenue, expenses and profit."
+     },
+     {
+      "t": "mc",
+      "q": "What does the balance sheet equation say?",
+      "o": [
+       "Assets = revenue - cost",
+       "Assets = liabilities + equity",
+       "Equity = revenue + debt",
+       "Liabilities = profit"
+      ],
+      "a": 1,
+      "why": "Everything a company owns is funded by debt or owners' equity."
+     },
+     {
+      "t": "mc",
+      "q": "Revenue is 500 and expenses are 420. What is net income?",
+      "o": [
+       "920",
+       "500",
+       "80",
+       "420"
+      ],
+      "a": 2,
+      "why": "500 - 420 = 80."
+     },
+     {
+      "t": "mc",
+      "q": "Why do investors look at cash flow?",
+      "o": [
+       "It shows the stock price",
+       "It replaces the balance sheet",
+       "It lists all employees",
+       "A profitable company can still run short of cash"
+      ],
+      "a": 3,
+      "why": "Cash flow shows real money movement, which profit alone does not."
+     },
+     {
+      "t": "tf",
+      "q": "Liabilities are things a company owns.",
+      "a": false,
+      "why": "Liabilities are what the company owes; assets are what it owns."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Revenue",
+        "Money from sales"
+       ],
+       [
+        "Asset",
+        "Something the company owns"
+       ],
+       [
+        "Liability",
+        "Something the company owes"
+       ],
+       [
+        "Equity",
+        "Owners' share"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the income statement flow in order",
+      "items": [
+       [
+        "Start with revenue",
+        1
+       ],
+       [
+        "Subtract cost of goods",
+        2
+       ],
+       [
+        "Subtract other expenses",
+        3
+       ],
+       [
+        "Arrive at net income",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: revenue is 500000 and total expenses are 380000. What is net income?",
+      "a": [
+       "120000",
+       "120000.0",
+       "120000.00"
+      ],
+      "hint": "Revenue minus expenses.",
+      "why": "500000 - 380000 = 120000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: net income is 120000 on revenue of 500000. What is the profit margin in percent? (number only)",
+      "a": [
+       "24",
+       "24.0",
+       "24.00",
+       "24%"
+      ],
+      "hint": "Net income / revenue x 100.",
+      "why": "120000 / 500000 = 24%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: assets are 900 and liabilities are 600. What is equity?",
+      "a": [
+       "300",
+       "300.0",
+       "300.00"
+      ],
+      "hint": "Equity = assets - liabilities.",
+      "why": "900 - 600 = 300."
+     }
+    ]
+   },
+   {
+    "title": "Strategy and Risk",
+    "period": "Strategy",
+    "learn": [
+     {
+      "h": "Time horizon and volatility",
+      "b": "Time horizon is how long until you need the money. Volatility is how much prices swing up and down. Longer horizons give more time to ride out swings."
+     },
+     {
+      "h": "Dollar-cost averaging",
+      "b": "Dollar-cost averaging means investing a fixed amount at regular times, like $50 each month. You buy more shares when prices are low and fewer when high. It avoids trying to guess the best day."
+     },
+     {
+      "h": "Rebalancing",
+      "b": "Over time some investments grow faster, changing your mix. Rebalancing means adjusting back to your target mix. Risk tolerance is how much loss you can handle without panic."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is dollar-cost averaging?",
+      "o": [
+       "Investing everything on the cheapest day",
+       "Investing a fixed amount at regular intervals",
+       "Selling when prices fall",
+       "Only buying bonds"
+      ],
+      "a": 1,
+      "why": "It spreads purchases across time."
+     },
+     {
+      "t": "mc",
+      "q": "What does volatility measure?",
+      "o": [
+       "A fund's fee",
+       "How much prices move up and down",
+       "A company's age",
+       "The tax rate"
+      ],
+      "a": 1,
+      "why": "High volatility means big price swings."
+     },
+     {
+      "t": "mc",
+      "q": "Why can a longer time horizon help investors?",
+      "o": [
+       "Prices never fall",
+       "Fees disappear",
+       "There is more time to recover from dips",
+       "Taxes are zero"
+      ],
+      "a": 2,
+      "why": "Longer periods let markets recover from short-term drops."
+     },
+     {
+      "t": "mc",
+      "q": "What is rebalancing?",
+      "o": [
+       "Buying a new house",
+       "Changing your bank",
+       "Selling all investments",
+       "Adjusting your investments back to a target mix"
+      ],
+      "a": 3,
+      "why": "It restores your intended proportions."
+     },
+     {
+      "t": "tf",
+      "q": "Past performance guarantees future results.",
+      "a": false,
+      "why": "Past returns do not promise future returns."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Volatility",
+        "Size of price swings"
+       ],
+       [
+        "Time horizon",
+        "Time until you need money"
+       ],
+       [
+        "Rebalancing",
+        "Restoring target mix"
+       ],
+       [
+        "Risk tolerance",
+        "Loss you can handle"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a simple investing plan in order",
+      "items": [
+       [
+        "Set a goal and time horizon",
+        1
+       ],
+       [
+        "Choose a diversified mix",
+        2
+       ],
+       [
+        "Invest regularly",
+        3
+       ],
+       [
+        "Review and rebalance",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: you invest 100 when the price is 10, then 100 when the price is 20. How many shares in total (dollar-cost averaging)?",
+      "a": [
+       "15",
+       "15.0",
+       "15.00"
+      ],
+      "hint": "100/10 plus 100/20.",
+      "why": "10 shares + 5 shares = 15 shares."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: your 10000 portfolio targets 50% stocks but stocks are now 6000. How much should you sell to rebalance?",
+      "a": [
+       "1000",
+       "1000.0",
+       "1000.00"
+      ],
+      "hint": "Target stocks = 5000.",
+      "why": "6000 - 5000 = 1000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: an investment falls from 1000 to 800. What percent did it lose? (number only)",
+      "a": [
+       "20",
+       "20.0",
+       "20.00",
+       "20%"
+      ],
+      "hint": "Loss / starting value.",
+      "why": "200 / 1000 = 20%."
+     }
+    ]
+   },
+   {
+    "title": "Investment Accounts",
+    "period": "Accounts",
+    "learn": [
+     {
+      "h": "Brokerage accounts",
+      "b": "A brokerage account lets you buy and sell stocks, bonds and funds. You can usually withdraw any time, but profits may be taxed. Many brokers today charge no commission on basic stock trades."
+     },
+     {
+      "h": "Order types",
+      "b": "A market order buys or sells right away at the best current price. A limit order only trades at your chosen price or better. Limit orders give price control but may never fill."
+     },
+     {
+      "h": "Bid, ask and spread",
+      "b": "The bid is the highest price a buyer offers. The ask is the lowest price a seller wants. The difference is the spread, a small cost of trading."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a market order do?",
+      "o": [
+       "Trades immediately at the current price",
+       "Waits for an exact price",
+       "Cancels itself",
+       "Guarantees a profit"
+      ],
+      "a": 0,
+      "why": "Market orders prioritize speed over price control."
+     },
+     {
+      "t": "mc",
+      "q": "What is a limit order?",
+      "o": [
+       "An order that buys instantly",
+       "An order that trades only at your price or better",
+       "A tax form",
+       "An order with no price"
+      ],
+      "a": 1,
+      "why": "Limit orders set the worst price you will accept."
+     },
+     {
+      "t": "mc",
+      "q": "The bid is 49.90 and the ask is 50.10. What is the spread?",
+      "o": [
+       "0.10",
+       "99.99",
+       "0.20",
+       "50.00"
+      ],
+      "a": 2,
+      "why": "50.10 - 49.90 = 0.20."
+     },
+     {
+      "t": "mc",
+      "q": "Which account type typically gives tax benefits for long-term saving?",
+      "o": [
+       "A checking account",
+       "A credit card",
+       "A gift card",
+       "A retirement account"
+      ],
+      "a": 3,
+      "why": "Retirement accounts are designed with tax advantages."
+     },
+     {
+      "t": "tf",
+      "q": "The ask price is what a buyer offers to pay.",
+      "a": false,
+      "why": "The bid is the buyer's offer; the ask is the seller's price."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Bid",
+        "Highest buyer offer"
+       ],
+       [
+        "Ask",
+        "Lowest seller price"
+       ],
+       [
+        "Broker",
+        "Firm that places trades"
+       ],
+       [
+        "Commission",
+        "Fee per trade"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of buying a stock in order",
+      "items": [
+       [
+        "Open a brokerage account",
+        1
+       ],
+       [
+        "Fund the account",
+        2
+       ],
+       [
+        "Choose a stock and order type",
+        3
+       ],
+       [
+        "Place the order",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: you have 1000 and the stock costs 40 per share. How many whole shares can you buy?",
+      "a": [
+       "25",
+       "25.0",
+       "25.00"
+      ],
+      "hint": "Divide 1000 by 40.",
+      "why": "1000 / 40 = 25."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you buy 10 shares at the ask price of 50.10. What is the total cost?",
+      "a": [
+       "501",
+       "501.0",
+       "501.00"
+      ],
+      "hint": "Multiply 50.10 by 10.",
+      "why": "50.10 x 10 = 501."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps of placing a limit order in order",
+      "lines": [
+       "Choose the stock",
+       "Select limit order",
+       "Enter your price and shares",
+       "Submit the order"
+      ],
+      "why": "You pick the stock, the type, the details, then submit."
+     }
+    ]
+   },
+   {
+    "title": "Investor Behavior",
+    "period": "Psychology",
+    "learn": [
+     {
+      "h": "Emotions and money",
+      "b": "Fear and greed push people to buy high and sell low. Loss aversion means losses hurt more than equal gains feel good. Knowing this helps you stick to a plan."
+     },
+     {
+      "h": "Bubbles and herds",
+      "b": "A bubble happens when prices rise far above real value because everyone expects more gains. Herd behavior means copying the crowd. Bubbles often end in sharp price drops."
+     },
+     {
+      "h": "Markets and costs of mistakes",
+      "b": "In an efficient market, prices already reflect known information, so beating the market is hard. A loss needs a bigger gain to recover: after a 50% loss you need a 100% gain to break even."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is loss aversion?",
+      "o": [
+       "Losses feel worse than equal gains feel good",
+       "Never losing money",
+       "Avoiding all investing",
+       "Loving risk"
+      ],
+      "a": 0,
+      "why": "People weigh losses more heavily than gains."
+     },
+     {
+      "t": "mc",
+      "q": "What describes a bubble?",
+      "o": [
+       "A slow steady rise",
+       "Prices far above real value driven by hype",
+       "A fixed bond price",
+       "A tax on stocks"
+      ],
+      "a": 1,
+      "why": "Bubbles are driven by expectations, not value."
+     },
+     {
+      "t": "mc",
+      "q": "Which behavior often hurts long-term returns?",
+      "o": [
+       "Regular investing",
+       "Diversifying",
+       "Panic selling in a crash",
+       "Keeping fees low"
+      ],
+      "a": 2,
+      "why": "Selling after drops locks in losses."
+     },
+     {
+      "t": "mc",
+      "q": "What is herd behavior?",
+      "o": [
+       "Buying only bonds",
+       "Researching deeply",
+       "Using limit orders",
+       "Copying what the crowd does"
+      ],
+      "a": 3,
+      "why": "Herding means following others instead of your own plan."
+     },
+     {
+      "t": "tf",
+      "q": "An investment that falls 50% needs a 50% gain to get back to even.",
+      "a": false,
+      "why": "It needs a 100% gain to recover."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Bubble",
+        "Price far above value"
+       ],
+       [
+        "FOMO",
+        "Fear of missing out"
+       ],
+       [
+        "Panic selling",
+        "Selling from fear"
+       ],
+       [
+        "Efficient market",
+        "Prices reflect information"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a typical bubble cycle in order",
+      "items": [
+       [
+        "Prices start rising",
+        1
+       ],
+       [
+        "Hype and buying grow",
+        2
+       ],
+       [
+        "Prices peak",
+        3
+       ],
+       [
+        "Prices crash",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: after a 50% loss, what percent gain is needed to break even? (number only)",
+      "a": [
+       "100",
+       "100.0",
+       "100.00",
+       "100%"
+      ],
+      "hint": "Half of 100 needs to double.",
+      "why": "50 becomes 100 only with +100%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 10000 falls 10%, then rises 10%. What is the final value?",
+      "a": [
+       "9900",
+       "9900.0",
+       "9900.00"
+      ],
+      "hint": "10000 x 0.90 x 1.10.",
+      "why": "9000 x 1.10 = 9900."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: name the bias where losses hurt more than equal gains feel good (two words).",
+      "a": [
+       "loss aversion",
+       "lossaversion"
+      ],
+      "hint": "The theme of this unit's first card.",
+      "why": "This is called loss aversion."
+     }
+    ]
+   }
+  ]
+ },
+ "fin-crypto": {
+  "name": "Crypto & Blockchain",
+  "units": [
+   {
+    "title": "Blockchain Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "What is a blockchain?",
+      "b": "A blockchain is a shared digital record book. Transactions are grouped into blocks, and each block links to the one before it. This makes old records very hard to change."
+     },
+     {
+      "h": "Decentralization",
+      "b": "Decentralized means no single company or government is in charge. Many computers, called nodes, each keep a copy of the ledger. They check each other's work."
+     },
+     {
+      "h": "Bitcoin",
+      "b": "Bitcoin was the first cryptocurrency, created by a person or group called Satoshi Nakamoto. It launched in 2009. Only 21 million bitcoin can ever exist."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a blockchain?",
+      "o": [
+       "A shared ledger of linked blocks of transactions",
+       "A type of bank",
+       "A video game",
+       "A tax form"
+      ],
+      "a": 0,
+      "why": "Blocks of transactions are chained together in a shared record."
+     },
+     {
+      "t": "mc",
+      "q": "Who created Bitcoin?",
+      "o": [
+       "Elon Musk",
+       "A bank",
+       "Satoshi Nakamoto",
+       "The US government"
+      ],
+      "a": 2,
+      "why": "Bitcoin was created under the name Satoshi Nakamoto."
+     },
+     {
+      "t": "mc",
+      "q": "What does decentralized mean?",
+      "o": [
+       "Run by one company",
+       "Not used by anyone",
+       "Stored in one office",
+       "No single authority controls it"
+      ],
+      "a": 3,
+      "why": "Control is spread across many participants."
+     },
+     {
+      "t": "mc",
+      "q": "What is the maximum supply of Bitcoin?",
+      "o": [
+       "1 million",
+       "21 million",
+       "100 million",
+       "Unlimited"
+      ],
+      "a": 1,
+      "why": "Bitcoin's code caps supply at 21 million."
+     },
+     {
+      "t": "tf",
+      "q": "One person can easily edit old records on a large blockchain.",
+      "a": false,
+      "why": "Changing old blocks would require redoing many linked blocks and beating the network."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Blockchain",
+        "Linked ledger"
+       ],
+       [
+        "Bitcoin",
+        "First cryptocurrency"
+       ],
+       [
+        "Block",
+        "Group of transactions"
+       ],
+       [
+        "Node",
+        "Computer in the network"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put how a transaction is recorded in order",
+      "items": [
+       [
+        "Someone sends a transaction",
+        1
+       ],
+       [
+        "The network verifies it",
+        2
+       ],
+       [
+        "It is added to a block",
+        3
+       ],
+       [
+        "The block is linked to the chain",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Bitcoin makes a new block about every 10 minutes. How many blocks is that per hour?",
+      "a": [
+       "6",
+       "6.0",
+       "6.00"
+      ],
+      "hint": "60 minutes / 10 minutes.",
+      "why": "60 / 10 = 6 blocks per hour."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the SHA-256 hash function outputs how many bits?",
+      "a": [
+       "256",
+       "256.0",
+       "256.00"
+      ],
+      "hint": "The number is in the name.",
+      "why": "SHA-256 produces a 256-bit hash."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is a computer that keeps a copy of the blockchain called? (one word)",
+      "a": [
+       "node",
+       "a node"
+      ],
+      "hint": "It is a point in the network.",
+      "why": "Each computer that stores the ledger and follows the rules is a node."
+     }
+    ]
+   },
+   {
+    "title": "Wallets and Keys",
+    "period": "Wallets",
+    "learn": [
+     {
+      "h": "Public and private keys",
+      "b": "A public address is like an email address: you share it to receive crypto. A private key is like a password that allows spending. Never share your private key."
+     },
+     {
+      "h": "Seed phrases",
+      "b": "A seed phrase is a list of words that can restore your wallet. Anyone with it can take your funds. Write it down and keep it offline."
+     },
+     {
+      "h": "Hot, cold, custodial",
+      "b": "A hot wallet is connected to the internet, a cold wallet is offline. In a custodial wallet, like an exchange, a company holds the keys for you. In self-custody, you hold them yourself."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a private key do?",
+      "o": [
+       "Lets you receive messages",
+       "Shows your balance publicly",
+       "Lowers fees",
+       "Authorizes spending your crypto"
+      ],
+      "a": 3,
+      "why": "The private key proves ownership and signs transactions."
+     },
+     {
+      "t": "mc",
+      "q": "What is a public address used for?",
+      "o": [
+       "Receiving crypto",
+       "Spending crypto secretly",
+       "Restoring a wallet",
+       "Mining"
+      ],
+      "a": 0,
+      "why": "You can share it so others can send you funds."
+     },
+     {
+      "t": "mc",
+      "q": "Who should know your seed phrase?",
+      "o": [
+       "Support staff",
+       "Only you",
+       "Your friends",
+       "Any website that asks"
+      ],
+      "a": 1,
+      "why": "Anyone with the seed phrase can control your wallet."
+     },
+     {
+      "t": "mc",
+      "q": "What is a cold wallet?",
+      "o": [
+       "A wallet stored in a fridge",
+       "A wallet that is always online",
+       "A wallet with no keys",
+       "A wallet kept offline"
+      ],
+      "a": 3,
+      "why": "Cold storage is not connected to the internet."
+     },
+     {
+      "t": "tf",
+      "q": "If you lose your private key and have no backup, you may lose access to your crypto permanently.",
+      "a": true,
+      "why": "No central company can reset it in self-custody."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Public address",
+        "Where to receive"
+       ],
+       [
+        "Private key",
+        "Secret that authorizes"
+       ],
+       [
+        "Hot wallet",
+        "Connected to internet"
+       ],
+       [
+        "Cold wallet",
+        "Offline storage"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order the steps for setting up a self-custody wallet",
+      "items": [
+       [
+        "Install a wallet from the official source",
+        1
+       ],
+       [
+        "Write your seed phrase on paper",
+        2
+       ],
+       [
+        "Store the backup safely offline",
+        3
+       ],
+       [
+        "Send a small test transaction",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which key must you never share, the public key or the private key? (type: public or private)",
+      "a": [
+       "private",
+       "private key",
+       "the private key"
+      ],
+      "hint": "It controls your coins.",
+      "why": "Anyone with your private key can spend your funds."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you hold 0.5 BTC and send 0.2 BTC (ignore fees). How much is left?",
+      "a": [
+       "0.3",
+       "0.30"
+      ],
+      "hint": "0.5 - 0.2.",
+      "why": "0.5 - 0.2 = 0.3."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you send 0.1 coins and the network fee is 0.0005. How much leaves your wallet in total?",
+      "a": [
+       "0.1005",
+       "0.10"
+      ],
+      "hint": "Add the amount and the fee.",
+      "why": "0.1 + 0.0005 = 0.1005."
+     }
+    ]
+   },
+   {
+    "title": "How Crypto Works",
+    "period": "Technology",
+    "learn": [
+     {
+      "h": "Consensus",
+      "b": "Consensus means the network agrees on which transactions are valid. Bitcoin uses proof of work, where miners use computer power to solve puzzles. The winner adds the next block."
+     },
+     {
+      "h": "Proof of stake",
+      "b": "In proof of stake, validators lock up coins as a stake. They are chosen to add blocks and can lose stake if they cheat. It uses much less energy than proof of work."
+     },
+     {
+      "h": "Smart contracts",
+      "b": "A smart contract is a program on a blockchain that runs automatically when conditions are met. Ethereum made them popular. Users pay a gas fee to process transactions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What do miners do in proof of work?",
+      "o": [
+       "Solve computational puzzles to add blocks",
+       "Lock up coins as a stake",
+       "Print paper money",
+       "Store wallets for users"
+      ],
+      "a": 0,
+      "why": "Miners compete to solve puzzles and add the next block."
+     },
+     {
+      "t": "mc",
+      "q": "What do validators do in proof of stake?",
+      "o": [
+       "Mine with heavy computers",
+       "Delete old blocks",
+       "Lock up coins as stake to help add blocks",
+       "Set prices"
+      ],
+      "a": 2,
+      "why": "Validators put coins at stake to earn the right to add blocks."
+     },
+     {
+      "t": "mc",
+      "q": "What is a smart contract?",
+      "o": [
+       "A paper agreement",
+       "A bank loan form",
+       "A tax return",
+       "A program that runs automatically on a blockchain"
+      ],
+      "a": 3,
+      "why": "It executes code when set conditions are met."
+     },
+     {
+      "t": "mc",
+      "q": "Which blockchain is best known for smart contracts?",
+      "o": [
+       "Litecoin",
+       "Ethereum",
+       "Dogecoin",
+       "Bitcoin Cash"
+      ],
+      "a": 1,
+      "why": "Ethereum popularized programmable smart contracts."
+     },
+     {
+      "t": "tf",
+      "q": "Bitcoin uses proof of stake.",
+      "a": false,
+      "why": "Bitcoin uses proof of work."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Consensus",
+        "Agreement on valid ledger"
+       ],
+       [
+        "Miner",
+        "Solves puzzles in proof of work"
+       ],
+       [
+        "Validator",
+        "Stakes coins in proof of stake"
+       ],
+       [
+        "Gas fee",
+        "Cost to process a transaction"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these crypto events by year",
+      "items": [
+       [
+        "Bitcoin launches",
+        2009
+       ],
+       [
+        "Dogecoin launches",
+        2013
+       ],
+       [
+        "Ethereum launches",
+        2015
+       ],
+       [
+        "Ethereum moves to proof of stake",
+        2022
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a proof-of-stake network needs two-thirds of 9 validators to agree. How many validators is that?",
+      "a": [
+       "6",
+       "6.0",
+       "6.00"
+      ],
+      "hint": "9 x 2/3.",
+      "why": "9 x 2/3 = 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you stake 32 coins at 4% yearly reward. How many coins do you earn in a year?",
+      "a": [
+       "1.28"
+      ],
+      "hint": "32 x 0.04.",
+      "why": "32 x 0.04 = 1.28."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what do we call self-running code on a blockchain that acts when conditions are met? (two words)",
+      "a": [
+       "smart contract",
+       "a smart contract",
+       "smart contracts"
+      ],
+      "hint": "It is not a paper agreement.",
+      "why": "That is a smart contract."
+     }
+    ]
+   },
+   {
+    "title": "Bitcoin Mining and Supply",
+    "period": "Bitcoin",
+    "learn": [
+     {
+      "h": "Mining",
+      "b": "Miners collect transactions into blocks and compete to solve a hard puzzle using computer power. The winner adds the block and receives newly created bitcoin plus fees. This system is called proof of work."
+     },
+     {
+      "h": "Limited supply",
+      "b": "Bitcoin has a fixed maximum supply of 21 million coins. New coins are created only as block rewards. This scarcity is one reason some people compare bitcoin to digital gold."
+     },
+     {
+      "h": "Halving",
+      "b": "About every 210,000 blocks, roughly four years, the block reward is cut in half. It started at 50 bitcoin per block. Halvings slow the creation of new coins over time."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the maximum supply of bitcoin?",
+      "o": [
+       "21 million",
+       "1 million",
+       "100 million",
+       "Unlimited"
+      ],
+      "a": 0,
+      "why": "Bitcoin's code caps supply at 21 million coins."
+     },
+     {
+      "t": "mc",
+      "q": "What do miners do?",
+      "o": [
+       "Print paper money",
+       "Add blocks of transactions by solving a puzzle",
+       "Store your passwords",
+       "Set the price"
+      ],
+      "a": 1,
+      "why": "Miners secure the network and add new blocks."
+     },
+     {
+      "t": "mc",
+      "q": "What happens in a halving?",
+      "o": [
+       "Prices are cut in half",
+       "All coins are deleted",
+       "The block reward is cut in half",
+       "Fees double"
+      ],
+      "a": 2,
+      "why": "A halving cuts the reward paid for each new block."
+     },
+     {
+      "t": "mc",
+      "q": "Which consensus method does Bitcoin use?",
+      "o": [
+       "Proof of stake",
+       "Proof of charity",
+       "Proof of identity",
+       "Proof of work"
+      ],
+      "a": 3,
+      "why": "Bitcoin miners use computing work to earn the right to add blocks."
+     },
+     {
+      "t": "tf",
+      "q": "New bitcoin is created when miners add blocks.",
+      "a": true,
+      "why": "The block reward is how new coins enter circulation."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Miner",
+        "Adds new blocks"
+       ],
+       [
+        "Block reward",
+        "New coins for the miner"
+       ],
+       [
+        "Halving",
+        "Reward cut in half"
+       ],
+       [
+        "Hash rate",
+        "Total mining power"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the mining steps in order",
+      "items": [
+       [
+        "Transactions wait in a pool",
+        1
+       ],
+       [
+        "Miners build a block",
+        2
+       ],
+       [
+        "A miner solves the puzzle",
+        3
+       ],
+       [
+        "The block joins the chain",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: the block reward starts at 50 and halves 3 times. What is the reward now?",
+      "a": [
+       "6.25"
+      ],
+      "hint": "50, then 25, then 12.5, then...",
+      "why": "50 / 2 / 2 / 2 = 6.25."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: blocks arrive every 10 minutes. How many blocks are mined in a full day?",
+      "a": [
+       "144",
+       "144.0",
+       "144.00"
+      ],
+      "hint": "6 per hour x 24 hours.",
+      "why": "6 x 24 = 144."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a miner earns a reward of 6.25 coins per block and mines 4 blocks. How many coins total?",
+      "a": [
+       "25",
+       "25.0",
+       "25.00"
+      ],
+      "hint": "6.25 x 4.",
+      "why": "6.25 x 4 = 25."
+     }
+    ]
+   },
+   {
+    "title": "Ethereum and DeFi",
+    "period": "Ethereum",
+    "learn": [
+     {
+      "h": "Ethereum",
+      "b": "Ethereum is a blockchain made to run smart contracts and apps, not only payments. Its coin is ether (ETH). Developers build programs on it that anyone can use."
+     },
+     {
+      "h": "Gas fees",
+      "b": "Every action on Ethereum costs gas, a fee paid to the network. Fee = gas used x gas price. Gas prices are often quoted in gwei, and 1 ETH equals one billion gwei."
+     },
+     {
+      "h": "DeFi",
+      "b": "DeFi means decentralized finance: lending, borrowing and trading done by smart contracts without a bank. A DEX lets users swap tokens directly. Many loans need collateral worth more than the loan because prices can fall."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Ethereum best known for?",
+      "o": [
+       "Running smart contracts",
+       "Only storing gold",
+       "Being a bank",
+       "Printing paper money"
+      ],
+      "a": 0,
+      "why": "Ethereum is a programmable blockchain."
+     },
+     {
+      "t": "mc",
+      "q": "What is gas on Ethereum?",
+      "o": [
+       "A type of token wallet",
+       "The fee for using the network",
+       "A mining machine",
+       "A tax form"
+      ],
+      "a": 1,
+      "why": "Gas pays for computation on the network."
+     },
+     {
+      "t": "mc",
+      "q": "What does DEX stand for?",
+      "o": [
+       "Digital export",
+       "Direct equity",
+       "Decentralized exchange",
+       "Dollar exchange"
+      ],
+      "a": 2,
+      "why": "A DEX trades tokens through smart contracts."
+     },
+     {
+      "t": "mc",
+      "q": "Why do crypto loans often require extra collateral?",
+      "o": [
+       "Banks like paperwork",
+       "It lowers fees",
+       "Collateral is a tax",
+       "Prices can drop quickly"
+      ],
+      "a": 3,
+      "why": "Over-collateralization protects lenders from price drops."
+     },
+     {
+      "t": "tf",
+      "q": "DeFi always needs a bank to approve each loan.",
+      "a": false,
+      "why": "DeFi uses smart contracts instead of a traditional bank."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "ETH",
+        "Ethereum's coin"
+       ],
+       [
+        "Gas",
+        "Network fee"
+       ],
+       [
+        "DEX",
+        "Swap tokens directly"
+       ],
+       [
+        "Collateral",
+        "Security for a loan"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a smart contract use in order",
+      "items": [
+       [
+        "Developer writes the contract",
+        1
+       ],
+       [
+        "Contract is deployed",
+        2
+       ],
+       [
+        "User sends a transaction",
+        3
+       ],
+       [
+        "Contract runs its rules",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a transfer uses 21000 gas at a price of 50 gwei. What is the fee in gwei?",
+      "a": [
+       "1050000",
+       "1050000.0",
+       "1050000.00"
+      ],
+      "hint": "Gas used x gas price.",
+      "why": "21000 x 50 = 1050000 gwei."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 1 ETH equals how many gwei?",
+      "a": [
+       "1000000000",
+       "1000000000.0",
+       "1000000000.00"
+      ],
+      "hint": "Giga means a billion.",
+      "why": "1 ETH = 1,000,000,000 gwei."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you lock 1500 of collateral to borrow 1000. What is the collateral ratio in percent? (number only)",
+      "a": [
+       "150",
+       "150.0",
+       "150.00",
+       "150%"
+      ],
+      "hint": "Collateral / loan x 100.",
+      "why": "1500 / 1000 = 150%."
+     }
+    ]
+   },
+   {
+    "title": "Stablecoins, Tokens and NFTs",
+    "period": "Tokens",
+    "learn": [
+     {
+      "h": "Stablecoins",
+      "b": "A stablecoin tries to keep a steady price, often 1 dollar. Some are backed by cash or bonds in reserve. People use them to move money fast without big price swings."
+     },
+     {
+      "h": "Tokens vs coins",
+      "b": "A coin has its own blockchain, like bitcoin. A token is built on another blockchain, often with a smart contract. Tokens can stand for money, points, voting rights or items."
+     },
+     {
+      "h": "NFTs",
+      "b": "An NFT is a unique token that proves ownership of a digital item, like art. Unlike a normal coin, each NFT is different. Their value can change a lot and depends on demand."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a stablecoin designed to do?",
+      "o": [
+       "Hold a steady price",
+       "Double each month",
+       "Replace the internet",
+       "Avoid all fees"
+      ],
+      "a": 0,
+      "why": "Stablecoins aim to track a stable asset like the dollar."
+     },
+     {
+      "t": "mc",
+      "q": "What is the difference between a coin and a token?",
+      "o": [
+       "A coin has no value",
+       "A token is built on another blockchain",
+       "A token has no code",
+       "They are the same"
+      ],
+      "a": 1,
+      "why": "Tokens use an existing chain, coins have their own."
+     },
+     {
+      "t": "mc",
+      "q": "What does NFT stand for?",
+      "o": [
+       "New financial transfer",
+       "Network fee total",
+       "Non-fungible token",
+       "Notable fund trade"
+      ],
+      "a": 2,
+      "why": "Non-fungible means each item is unique."
+     },
+     {
+      "t": "mc",
+      "q": "Why is an NFT different from one bitcoin?",
+      "o": [
+       "It is cheaper always",
+       "It cannot be sold",
+       "It has no owner",
+       "Each NFT is unique"
+      ],
+      "a": 3,
+      "why": "Bitcoins are interchangeable; NFTs are not."
+     },
+     {
+      "t": "tf",
+      "q": "All stablecoins are guaranteed to always keep their price.",
+      "a": false,
+      "why": "A stablecoin can lose its peg if its backing fails."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stablecoin",
+        "Aims for a steady price"
+       ],
+       [
+        "Token",
+        "Built on another chain"
+       ],
+       [
+        "NFT",
+        "Unique digital item"
+       ],
+       [
+        "Peg",
+        "Target price link"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from usually most stable price to most volatile",
+      "items": [
+       [
+        "Stablecoin",
+        1
+       ],
+       [
+        "Large-cap coin",
+        2
+       ],
+       [
+        "Small token",
+        3
+       ],
+       [
+        "Brand-new meme token",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a token costs 2 and there are 1000000 tokens. What is the market cap?",
+      "a": [
+       "2000000",
+       "2000000.0",
+       "2000000.00"
+      ],
+      "hint": "Price x supply.",
+      "why": "2 x 1000000 = 2000000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a token rises from 50 to 65. What is the percent gain? (number only)",
+      "a": [
+       "30",
+       "30.0",
+       "30.00",
+       "30%"
+      ],
+      "hint": "Gain / starting price.",
+      "why": "15 / 50 = 30%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: an NFT sells for 400 and the creator gets a 5% royalty. How much is the royalty?",
+      "a": [
+       "20",
+       "20.0",
+       "20.00"
+      ],
+      "hint": "5% of 400.",
+      "why": "0.05 x 400 = 20."
+     }
+    ]
+   },
+   {
+    "title": "Risks and Uses",
+    "period": "Risks",
+    "learn": [
+     {
+      "h": "Volatility",
+      "b": "Crypto prices can rise or fall a lot in a short time. This is high volatility. Some stablecoins try to avoid this by tracking a steady asset like the US dollar."
+     },
+     {
+      "h": "Scams",
+      "b": "Scammers promise guaranteed high returns, rush you, or ask for your seed phrase. Real projects never need your seed phrase. A rug pull is when creators abandon a project and take the money."
+     },
+     {
+      "h": "Uses and rules",
+      "b": "Crypto is used for payments, DeFi (financial services on blockchains) and NFTs (unique digital tokens). Transactions usually cannot be reversed. Laws about crypto differ by country."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a stablecoin designed to do?",
+      "o": [
+       "Double in price weekly",
+       "Keep a steady value tied to an asset",
+       "Replace the internet",
+       "Avoid all blockchains"
+      ],
+      "a": 1,
+      "why": "Stablecoins aim to hold a stable value, such as one dollar."
+     },
+     {
+      "t": "mc",
+      "q": "How would you describe crypto prices?",
+      "o": [
+       "Always stable",
+       "Fixed by law",
+       "Highly volatile",
+       "Controlled by schools"
+      ],
+      "a": 2,
+      "why": "Crypto prices often swing sharply."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a common scam red flag?",
+      "o": [
+       "Clear public information",
+       "Open-source code",
+       "Independent audits",
+       "Guaranteed high returns"
+      ],
+      "a": 3,
+      "why": "No real investment can guarantee high returns."
+     },
+     {
+      "t": "mc",
+      "q": "What is an NFT?",
+      "o": [
+       "A bank account",
+       "A unique digital token tied to a specific item",
+       "A type of stablecoin",
+       "A mining computer"
+      ],
+      "a": 1,
+      "why": "NFTs are one-of-a-kind tokens on a blockchain."
+     },
+     {
+      "t": "tf",
+      "q": "Crypto sent to the wrong address usually cannot be reversed.",
+      "a": true,
+      "why": "Blockchain transactions are generally final."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stablecoin",
+        "Pegged to a steady value"
+       ],
+       [
+        "DeFi",
+        "Finance services on blockchain"
+       ],
+       [
+        "NFT",
+        "Unique token"
+       ],
+       [
+        "Rug pull",
+        "Creators abandon and take funds"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a scam-spotting routine in order",
+      "items": [
+       [
+        "Notice an unexpected offer",
+        1
+       ],
+       [
+        "Check if the sender is official",
+        2
+       ],
+       [
+        "Never share your seed phrase",
+        3
+       ],
+       [
+        "Report the scam",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a coin falls from 10000 to 7500. What percent did it drop? (number only)",
+      "a": [
+       "25",
+       "25.0",
+       "25.00",
+       "25%"
+      ],
+      "hint": "Drop / starting price.",
+      "why": "2500 / 10000 = 25%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: someone promises 10% profit per day. If true, 1000 would grow how much in 7 days (compounded daily)? 2 decimals",
+      "a": [
+       "1948.72"
+      ],
+      "hint": "Multiply by 1.1 seven times.",
+      "why": "1000 x 1.1^7 = 1948.72, which is unrealistic and a scam warning."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: complete: a promise of guaranteed high returns is a common sign of a ____ (one word).",
+      "a": [
+       "scam",
+       "a scam"
+      ],
+      "hint": "Think of fraud.",
+      "why": "Guaranteed high returns are a classic scam warning sign."
+     }
+    ]
+   },
+   {
+    "title": "Security and Regulation",
+    "period": "Safety and law",
+    "learn": [
+     {
+      "h": "Protect your accounts",
+      "b": "Use strong unique passwords and turn on two-factor authentication (2FA). Never type your seed phrase into a website. Be careful with links, because phishing sites copy real ones."
+     },
+     {
+      "h": "Exchanges and KYC",
+      "b": "Many exchanges follow KYC (know your customer) rules and ask for ID to prevent crime. If an exchange fails, funds left there may be lost. Moving long-term holdings to your own wallet gives you control."
+     },
+     {
+      "h": "Rules and taxes",
+      "b": "Crypto rules differ by country and change often. In many places selling or trading crypto can be a taxable event, so keep records of buys and sells. Check your local rules or ask a professional."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is phishing?",
+      "o": [
+       "A fake message or site that steals your info",
+       "A mining method",
+       "A type of wallet",
+       "A tax rule"
+      ],
+      "a": 0,
+      "why": "Phishing tricks people into giving passwords or keys."
+     },
+     {
+      "t": "mc",
+      "q": "What does 2FA add?",
+      "o": [
+       "Higher coin supply",
+       "A second proof that it is you",
+       "Free fees",
+       "A faster chain"
+      ],
+      "a": 1,
+      "why": "Two-factor authentication needs a second step to log in."
+     },
+     {
+      "t": "mc",
+      "q": "Who should know your seed phrase?",
+      "o": [
+       "Support staff",
+       "Any website that asks",
+       "Only you, stored safely offline",
+       "Your followers"
+      ],
+      "a": 2,
+      "why": "Anyone with the seed phrase can take your funds."
+     },
+     {
+      "t": "mc",
+      "q": "Why keep records of crypto trades?",
+      "o": [
+       "To raise prices",
+       "To avoid 2FA",
+       "To mine faster",
+       "They may be needed for taxes"
+      ],
+      "a": 3,
+      "why": "Many countries tax gains, so records matter."
+     },
+     {
+      "t": "tf",
+      "q": "Support staff from a real exchange will never need your seed phrase.",
+      "a": true,
+      "why": "Real support never asks for it; requests for it are scams."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "KYC",
+        "ID checks by exchanges"
+       ],
+       [
+        "2FA",
+        "Second login step"
+       ],
+       [
+        "Phishing",
+        "Fake site or message"
+       ],
+       [
+        "Cold wallet",
+        "Offline storage"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put safe wallet setup steps in order",
+      "items": [
+       [
+        "Download from the official source",
+        1
+       ],
+       [
+        "Create the wallet",
+        2
+       ],
+       [
+        "Write the seed phrase offline",
+        3
+       ],
+       [
+        "Test with a small transfer",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 2FA stands for two-factor ____ (one word).",
+      "a": [
+       "authentication",
+       "authentification"
+      ],
+      "hint": "It proves who you are.",
+      "why": "2FA means two-factor authentication."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you bought 1 coin at 200 and sold it at 350. What is your gain?",
+      "a": [
+       "150",
+       "150.0",
+       "150.00"
+      ],
+      "hint": "Sale price minus purchase price.",
+      "why": "350 - 200 = 150."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put the steps of a safe first purchase in order",
+      "lines": [
+       "Pick a trusted exchange",
+       "Turn on 2FA",
+       "Buy a small amount",
+       "Move holdings to a safe wallet"
+      ],
+      "why": "Secure the account before buying, then move holdings to safe storage."
+     }
+    ]
+   }
+  ]
+ },
+ "econ-micro": {
+  "name": "Microeconomics",
+  "units": [
+   {
+    "title": "Scarcity and Choice",
+    "period": "Foundations",
+    "learn": [
+     {
+      "h": "Scarcity",
+      "b": "Scarcity means resources are limited but wants are unlimited. Because of this, everyone must make choices. Even rich people have limited time."
+     },
+     {
+      "h": "Opportunity cost",
+      "b": "Opportunity cost is the value of the next best thing you give up when you choose. If you spend Saturday at the beach instead of a paid shift, the shift is what you gave up. Every choice has a trade-off."
+     },
+     {
+      "h": "Incentives",
+      "b": "An incentive is something that motivates people to act, like a discount or a reward. People usually respond to incentives. Economics studies how people make choices with limited resources."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is scarcity?",
+      "o": [
+       "Too much money",
+       "Limited resources but unlimited wants",
+       "A type of tax",
+       "Free goods for all"
+      ],
+      "a": 1,
+      "why": "Scarcity is the gap between limited resources and unlimited wants."
+     },
+     {
+      "t": "mc",
+      "q": "What is opportunity cost?",
+      "o": [
+       "The price on the tag",
+       "A bank fee",
+       "The value of the next best alternative you give up",
+       "The cost of making a good"
+      ],
+      "a": 2,
+      "why": "It measures what you sacrifice by choosing one option."
+     },
+     {
+      "t": "mc",
+      "q": "What is an incentive?",
+      "o": [
+       "A type of loan",
+       "A law",
+       "A tax return",
+       "Something that motivates a choice"
+      ],
+      "a": 3,
+      "why": "Rewards and costs push people toward certain behavior."
+     },
+     {
+      "t": "mc",
+      "q": "What does economics study?",
+      "o": [
+       "How people make choices with limited resources",
+       "Only stock prices",
+       "Only banks",
+       "Only governments"
+      ],
+      "a": 0,
+      "why": "Economics is about choices under scarcity."
+     },
+     {
+      "t": "tf",
+      "q": "Scarcity only affects poor people.",
+      "a": false,
+      "why": "Everyone faces limited time, money or resources."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Scarcity",
+        "Limited resources"
+       ],
+       [
+        "Opportunity cost",
+        "Next best option lost"
+       ],
+       [
+        "Incentive",
+        "Motivation to act"
+       ],
+       [
+        "Trade-off",
+        "Giving up one thing for another"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a good decision in order",
+      "items": [
+       [
+        "Identify your choices",
+        1
+       ],
+       [
+        "Weigh costs and benefits",
+        2
+       ],
+       [
+        "Make a choice",
+        3
+       ],
+       [
+        "Review the outcome",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: instead of studying for 2 hours, you could work and earn 15 per hour. What is the opportunity cost of studying in dollars?",
+      "a": [
+       "30",
+       "30.0",
+       "30.00"
+      ],
+      "hint": "Opportunity cost is the best alternative you give up.",
+      "why": "2 x 15 = 30."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a country can make 10 cars or 20 bikes. How many bikes is the opportunity cost of 1 car?",
+      "a": [
+       "2",
+       "2.0",
+       "2.00"
+      ],
+      "hint": "Divide bikes by cars.",
+      "why": "20 / 10 = 2 bikes per car."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you can spend 100 on option A (value 60) or option B (value 80). You pick B. What is your opportunity cost (value)?",
+      "a": [
+       "60",
+       "60.0",
+       "60.00"
+      ],
+      "hint": "It is the value of the choice you did not take.",
+      "why": "The next best option was A, worth 60."
+     }
+    ]
+   },
+   {
+    "title": "Supply and Demand",
+    "period": "Markets",
+    "learn": [
+     {
+      "h": "Demand and supply",
+      "b": "Demand is how much buyers want at each price. The law of demand says that when price rises, quantity demanded falls. Supply is how much sellers offer, and when price rises, quantity supplied rises."
+     },
+     {
+      "h": "Equilibrium",
+      "b": "Equilibrium is the price where the amount buyers want equals the amount sellers offer. At that price there is no shortage and no surplus. Markets tend to move toward it."
+     },
+     {
+      "h": "Shortage and surplus",
+      "b": "If the price is below equilibrium, buyers want more than sellers offer: a shortage. If the price is above equilibrium, sellers have extra goods: a surplus. Prices then tend to adjust."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "According to the law of demand, if price rises, quantity demanded usually does what?",
+      "o": [
+       "Rises",
+       "Falls",
+       "Stays the same always",
+       "Doubles"
+      ],
+      "a": 1,
+      "why": "Higher prices lead buyers to buy less."
+     },
+     {
+      "t": "mc",
+      "q": "According to the law of supply, if price rises, quantity supplied usually does what?",
+      "o": [
+       "Falls",
+       "Becomes zero",
+       "Rises",
+       "Does not matter"
+      ],
+      "a": 2,
+      "why": "Higher prices encourage sellers to offer more."
+     },
+     {
+      "t": "mc",
+      "q": "What is equilibrium?",
+      "o": [
+       "Where prices are zero",
+       "When government sets prices",
+       "When a firm has profit",
+       "The price where quantity supplied equals quantity demanded"
+      ],
+      "a": 3,
+      "why": "At equilibrium the market clears."
+     },
+     {
+      "t": "mc",
+      "q": "What happens when price is below equilibrium?",
+      "o": [
+       "A shortage",
+       "A surplus",
+       "Nothing",
+       "A recession"
+      ],
+      "a": 0,
+      "why": "Buyers want more than sellers supply at the low price."
+     },
+     {
+      "t": "tf",
+      "q": "A surplus happens when the price is set above equilibrium.",
+      "a": true,
+      "why": "Sellers offer more than buyers want at a high price."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Demand",
+        "What buyers want at each price"
+       ],
+       [
+        "Supply",
+        "What sellers offer at each price"
+       ],
+       [
+        "Equilibrium",
+        "Supply equals demand"
+       ],
+       [
+        "Shortage",
+        "Demand exceeds supply"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "A toy becomes very popular. Order what happens next",
+      "items": [
+       [
+        "Demand rises",
+        1
+       ],
+       [
+        "A shortage appears",
+        2
+       ],
+       [
+        "Price rises",
+        3
+       ],
+       [
+        "A new equilibrium is reached",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Demand is Qd = 100 - 2P and supply is Qs = 3P. What is the equilibrium price?",
+      "a": [
+       "20",
+       "20.0",
+       "20.00"
+      ],
+      "hint": "Set 100 - 2P = 3P.",
+      "why": "100 = 5P, so P = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: with Qd = 100 - 2P and Qs = 3P, at price 10 what is the shortage (Qd - Qs)?",
+      "a": [
+       "50",
+       "50.0",
+       "50.00"
+      ],
+      "hint": "Qd = 80 and Qs = 30.",
+      "why": "80 - 30 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: with Qd = 100 - 2P and Qs = 3P, at price 30 what is the surplus (Qs - Qd)?",
+      "a": [
+       "50",
+       "50.0",
+       "50.00"
+      ],
+      "hint": "Qd = 40 and Qs = 90.",
+      "why": "90 - 40 = 50."
+     }
+    ]
+   },
+   {
+    "title": "Consumer Choice and Utility",
+    "period": "Consumers",
+    "learn": [
+     {
+      "h": "Utility",
+      "b": "Utility is the satisfaction you get from consuming something. Economists assume people try to get the most utility from limited money. Total utility is the sum of satisfaction from all units."
+     },
+     {
+      "h": "Diminishing marginal utility",
+      "b": "Marginal utility is the extra satisfaction from one more unit. It usually falls as you consume more: the first slice of pizza is great, the fifth is less so. This helps explain why demand slopes down."
+     },
+     {
+      "h": "Budget and best choice",
+      "b": "A budget constraint limits what you can buy with your income. Spend so that the marginal utility per dollar (MU / price) is equal across goods. Then moving a dollar to another good would not help you."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is marginal utility?",
+      "o": [
+       "Extra satisfaction from one more unit",
+       "Total satisfaction",
+       "The price of a good",
+       "Income after taxes"
+      ],
+      "a": 0,
+      "why": "Marginal means the additional unit."
+     },
+     {
+      "t": "mc",
+      "q": "What usually happens to marginal utility as you eat more of the same food?",
+      "o": [
+       "It rises forever",
+       "It falls",
+       "It stays the same",
+       "It becomes the price"
+      ],
+      "a": 1,
+      "why": "This is diminishing marginal utility."
+     },
+     {
+      "t": "mc",
+      "q": "You have 20 and a snack costs 4. What is the most snacks you can buy?",
+      "o": [
+       "4",
+       "16",
+       "5",
+       "80"
+      ],
+      "a": 2,
+      "why": "20 / 4 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does a budget constraint show?",
+      "o": [
+       "What you like most",
+       "Prices over time",
+       "Company profits",
+       "What you can afford with your income"
+      ],
+      "a": 3,
+      "why": "It marks the limit of possible purchases."
+     },
+     {
+      "t": "tf",
+      "q": "Total utility can still rise while marginal utility is falling.",
+      "a": true,
+      "why": "Each extra unit adds less, but still adds something while MU is positive."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Utility",
+        "Satisfaction"
+       ],
+       [
+        "Marginal utility",
+        "Extra satisfaction"
+       ],
+       [
+        "Budget constraint",
+        "Spending limit"
+       ],
+       [
+        "Trade-off",
+        "Giving up one thing for another"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a smart buying choice in order",
+      "items": [
+       [
+        "Know your budget",
+        1
+       ],
+       [
+        "List options and prices",
+        2
+       ],
+       [
+        "Compare utility per dollar",
+        3
+       ],
+       [
+        "Buy the best mix",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: total utility from slices 1, 2 and 3 is 10, 18 and 24. What is the marginal utility of the 3rd slice?",
+      "a": [
+       "6",
+       "6.0",
+       "6.00"
+      ],
+      "hint": "Subtract TU of 2 slices from TU of 3.",
+      "why": "24 - 18 = 6."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a good gives marginal utility 12 and costs 3. What is MU per dollar?",
+      "a": [
+       "4",
+       "4.0",
+       "4.00"
+      ],
+      "hint": "MU / price.",
+      "why": "12 / 3 = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: your budget is 60 and a movie ticket is 12. How many tickets can you afford?",
+      "a": [
+       "5",
+       "5.0",
+       "5.00"
+      ],
+      "hint": "Divide the budget by the price.",
+      "why": "60 / 12 = 5."
+     }
+    ]
+   },
+   {
+    "title": "Elasticity and Costs",
+    "period": "Firms",
+    "learn": [
+     {
+      "h": "Elasticity",
+      "b": "Elasticity shows how much quantity changes when price changes. Elastic demand means buyers react a lot, like for a luxury treat. Inelastic demand means buyers react little, like for salt."
+     },
+     {
+      "h": "Costs",
+      "b": "Fixed costs do not change with how much you make, like rent. Variable costs change with output, like ingredients. Marginal cost is the extra cost of making one more unit."
+     },
+     {
+      "h": "Profit",
+      "b": "Revenue is money from sales. Profit equals total revenue minus total cost. A firm often keeps producing while the extra revenue from a unit is more than its marginal cost."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does elastic demand mean?",
+      "o": [
+       "Price never changes",
+       "Quantity demanded changes a lot when price changes",
+       "Quantity does not respond to price",
+       "Only the rich buy"
+      ],
+      "a": 1,
+      "why": "Elastic means buyers are very sensitive to price."
+     },
+     {
+      "t": "mc",
+      "q": "Which good likely has the most inelastic demand?",
+      "o": [
+       "Salt",
+       "A specific cereal brand",
+       "Concert tickets",
+       "Souvenirs"
+      ],
+      "a": 0,
+      "why": "People need salt and have few substitutes, so price changes matter little."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a fixed cost for a bakery?",
+      "o": [
+       "Flour",
+       "Eggs",
+       "Monthly rent",
+       "Packaging"
+      ],
+      "a": 2,
+      "why": "Rent stays the same however many loaves are baked."
+     },
+     {
+      "t": "mc",
+      "q": "How is profit calculated?",
+      "o": [
+       "Revenue plus cost",
+       "Price times quantity",
+       "Cost minus revenue",
+       "Total revenue minus total cost"
+      ],
+      "a": 3,
+      "why": "Profit is what remains after costs."
+     },
+     {
+      "t": "tf",
+      "q": "Marginal cost is the total cost of all units produced.",
+      "a": false,
+      "why": "Marginal cost is the extra cost of producing one more unit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Elasticity",
+        "Sensitivity to price change"
+       ],
+       [
+        "Marginal cost",
+        "Cost of one more unit"
+       ],
+       [
+        "Fixed cost",
+        "Does not change with output"
+       ],
+       [
+        "Revenue",
+        "Money from sales"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to find profit in order",
+      "items": [
+       [
+        "Find total revenue",
+        1
+       ],
+       [
+        "Add up all costs",
+        2
+       ],
+       [
+        "Subtract costs from revenue",
+        3
+       ],
+       [
+        "Check if the result is positive",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: price rises 10% and quantity demanded falls 20%. What is the price elasticity of demand (absolute value)?",
+      "a": [
+       "2",
+       "2.0",
+       "2.00"
+      ],
+      "hint": "Divide the % change in quantity by the % change in price.",
+      "why": "20 / 10 = 2, so demand is elastic."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fixed cost is 100, variable cost is 5 per unit, and you make 20 units. What is average total cost per unit?",
+      "a": [
+       "10",
+       "10.0",
+       "10.00"
+      ],
+      "hint": "Total cost = 100 + 100 = 200.",
+      "why": "200 / 20 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you sell 20 units at 15 each with total cost 200. What is profit?",
+      "a": [
+       "100",
+       "100.0",
+       "100.00"
+      ],
+      "hint": "Revenue = 300.",
+      "why": "300 - 200 = 100."
+     }
+    ]
+   },
+   {
+    "title": "Consumer and Producer Surplus",
+    "period": "Welfare",
+    "learn": [
+     {
+      "h": "Consumer surplus",
+      "b": "Willingness to pay is the most a buyer would pay. Consumer surplus is willingness to pay minus the price actually paid. If you would pay 50 but pay 35, your surplus is 15."
+     },
+     {
+      "h": "Producer surplus",
+      "b": "Producer surplus is the price a seller receives minus the lowest price they would accept, which relates to their cost. If it costs you 20 and you sell for 35, your surplus is 15."
+     },
+     {
+      "h": "Total surplus and deadweight loss",
+      "b": "Total surplus is consumer surplus plus producer surplus. Free markets with competition tend to maximize it. A tax, price control or monopoly can shrink trade and create deadweight loss, which is lost surplus."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is consumer surplus?",
+      "o": [
+       "Willingness to pay minus price paid",
+       "Price minus cost",
+       "Revenue minus tax",
+       "Profit plus rent"
+      ],
+      "a": 0,
+      "why": "It measures the buyer's gain from a trade."
+     },
+     {
+      "t": "mc",
+      "q": "What is producer surplus?",
+      "o": [
+       "Willingness to pay minus price",
+       "Price received minus minimum acceptable price",
+       "Wages minus taxes",
+       "Price plus cost"
+      ],
+      "a": 1,
+      "why": "It measures the seller's gain from a trade."
+     },
+     {
+      "t": "mc",
+      "q": "Which creates deadweight loss?",
+      "o": [
+       "More competition",
+       "Lower costs",
+       "A tax that reduces trading",
+       "Better information"
+      ],
+      "a": 2,
+      "why": "Fewer mutually beneficial trades means lost surplus."
+     },
+     {
+      "t": "mc",
+      "q": "You would pay 40, but the price is 25. What is your consumer surplus?",
+      "o": [
+       "40",
+       "25",
+       "65",
+       "15"
+      ],
+      "a": 3,
+      "why": "40 - 25 = 15."
+     },
+     {
+      "t": "tf",
+      "q": "Total surplus equals consumer surplus plus producer surplus.",
+      "a": true,
+      "why": "Total surplus adds the gains of both sides."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Consumer surplus",
+        "Buyer's gain"
+       ],
+       [
+        "Producer surplus",
+        "Seller's gain"
+       ],
+       [
+        "Deadweight loss",
+        "Lost trade value"
+       ],
+       [
+        "Willingness to pay",
+        "Most a buyer would pay"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of finding total surplus in order",
+      "items": [
+       [
+        "Find the price",
+        1
+       ],
+       [
+        "Find consumer surplus",
+        2
+       ],
+       [
+        "Find producer surplus",
+        3
+       ],
+       [
+        "Add them together",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: you would pay 50 for a game but pay 35. What is your consumer surplus?",
+      "a": [
+       "15",
+       "15.0",
+       "15.00"
+      ],
+      "hint": "Willingness to pay minus price.",
+      "why": "50 - 35 = 15."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: it costs a baker 20 to make a cake and she sells it for 35. What is her producer surplus?",
+      "a": [
+       "15",
+       "15.0",
+       "15.00"
+      ],
+      "hint": "Price minus cost.",
+      "why": "35 - 20 = 15."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: demand starts at a price of 20 and the market price is 10 with 50 units sold. Consumer surplus is the triangle 1/2 x base x height. What is it?",
+      "a": [
+       "250",
+       "250.0",
+       "250.00"
+      ],
+      "hint": "Base = 50, height = 20 - 10.",
+      "why": "0.5 x 50 x 10 = 250."
+     }
+    ]
+   },
+   {
+    "title": "Profit Maximization",
+    "period": "Firms",
+    "learn": [
+     {
+      "h": "Marginal revenue and cost",
+      "b": "Marginal revenue (MR) is the extra revenue from selling one more unit. Marginal cost (MC) is the extra cost of making one more unit. A firm increases output while MR is greater than MC."
+     },
+     {
+      "h": "The MR = MC rule",
+      "b": "Profit is highest where MR equals MC. In perfect competition, many firms sell the same good and each is a price taker, so price equals MR. Profit = (price - average total cost) x quantity."
+     },
+     {
+      "h": "Monopoly",
+      "b": "A monopoly is the only seller, so it can choose its price, but to sell more it must lower the price. Its MR is below the price. It also uses MR = MC, then charges the price buyers will pay at that quantity, usually higher than in competition."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where is profit maximized?",
+      "o": [
+       "Where MR = MC",
+       "Where price is highest",
+       "Where cost is zero",
+       "Where output is smallest"
+      ],
+      "a": 0,
+      "why": "Past that point extra units cost more than they earn."
+     },
+     {
+      "t": "mc",
+      "q": "In perfect competition a firm is a...",
+      "o": [
+       "Price maker",
+       "Price taker",
+       "Only seller",
+       "Government agency"
+      ],
+      "a": 1,
+      "why": "No single firm can change the market price."
+     },
+     {
+      "t": "mc",
+      "q": "If MR is greater than MC, the firm should...",
+      "o": [
+       "Produce less",
+       "Shut down",
+       "Produce more",
+       "Raise wages"
+      ],
+      "a": 2,
+      "why": "Another unit adds more revenue than cost."
+     },
+     {
+      "t": "mc",
+      "q": "Compared with competition, a monopoly usually charges a...",
+      "o": [
+       "Lower price and sells more",
+       "Price of zero",
+       "Fixed tax rate",
+       "Higher price and sells less"
+      ],
+      "a": 3,
+      "why": "Market power lets it restrict output and raise price."
+     },
+     {
+      "t": "tf",
+      "q": "A price taker has to lower its price to sell more units.",
+      "a": false,
+      "why": "A price taker sells any quantity at the market price."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "MR",
+        "Extra revenue"
+       ],
+       [
+        "MC",
+        "Extra cost"
+       ],
+       [
+        "Price taker",
+        "Cannot set price"
+       ],
+       [
+        "Monopoly",
+        "Single seller"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the profit-maximizing steps in order",
+      "items": [
+       [
+        "Estimate MR",
+        1
+       ],
+       [
+        "Estimate MC",
+        2
+       ],
+       [
+        "Find where MR = MC",
+        3
+       ],
+       [
+        "Set output there",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: price is 12, average total cost is 9 and the firm sells 100 units. What is profit?",
+      "a": [
+       "300",
+       "300.0",
+       "300.00"
+      ],
+      "hint": "(12 - 9) x 100.",
+      "why": "3 x 100 = 300."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: total revenue is 50 at 5 units and 58 at 6 units. What is the marginal revenue of the 6th unit?",
+      "a": [
+       "8",
+       "8.0",
+       "8.00"
+      ],
+      "hint": "TR change from 5 to 6 units.",
+      "why": "58 - 50 = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: price is 8 and MC = 2 + 0.1q. At what quantity q does MC equal price?",
+      "a": [
+       "60",
+       "60.0",
+       "60.00"
+      ],
+      "hint": "Solve 2 + 0.1q = 8.",
+      "why": "0.1q = 6, so q = 60."
+     }
+    ]
+   },
+   {
+    "title": "Market Structures",
+    "period": "Competition",
+    "learn": [
+     {
+      "h": "Types of markets",
+      "b": "In perfect competition there are many sellers of identical goods, so no one controls the price. A monopoly has one seller. An oligopoly has a few big firms, like some phone companies."
+     },
+     {
+      "h": "Externalities",
+      "b": "An externality is a cost or benefit that affects people who were not part of the deal. Pollution is a negative externality. A neighbor's beautiful garden can be a positive one."
+     },
+     {
+      "h": "Public goods",
+      "b": "A public good, like national defense or streetlights, is available to everyone and one person using it does not stop others. Private companies often will not provide them, so governments often do."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a monopoly?",
+      "o": [
+       "Many sellers",
+       "A market with one seller",
+       "Two buyers",
+       "A government store"
+      ],
+      "a": 1,
+      "why": "Mono means one: a single seller controls the market."
+     },
+     {
+      "t": "mc",
+      "q": "What is an oligopoly?",
+      "o": [
+       "Only one firm",
+       "Thousands of tiny sellers",
+       "A few large firms dominate",
+       "No firms"
+      ],
+      "a": 2,
+      "why": "Oligopolies are dominated by a small number of big firms."
+     },
+     {
+      "t": "mc",
+      "q": "What is an externality?",
+      "o": [
+       "A type of tax",
+       "A company's profit",
+       "An export",
+       "A cost or benefit affecting people outside a deal"
+      ],
+      "a": 3,
+      "why": "Outsiders feel effects they did not choose."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a public good?",
+      "o": [
+       "Streetlights",
+       "A pizza",
+       "A concert ticket",
+       "A private jet"
+      ],
+      "a": 0,
+      "why": "Streetlights serve everyone and use by one does not reduce use by others."
+     },
+     {
+      "t": "tf",
+      "q": "Pollution from a factory is an example of a negative externality.",
+      "a": true,
+      "why": "People nearby bear a cost they did not agree to."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Monopoly",
+        "One seller"
+       ],
+       [
+        "Oligopoly",
+        "A few large sellers"
+       ],
+       [
+        "Externality",
+        "Side effect on outsiders"
+       ],
+       [
+        "Public good",
+        "Open to all, use does not exclude others"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order markets by number of sellers, fewest to most",
+      "items": [
+       [
+        "Monopoly",
+        1
+       ],
+       [
+        "Oligopoly",
+        2
+       ],
+       [
+        "Monopolistic competition",
+        3
+       ],
+       [
+        "Perfect competition",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: four firms have shares 30%, 25%, 20% and 10%. What is the four-firm concentration ratio in percent? (number only)",
+      "a": [
+       "85",
+       "85.0",
+       "85.00",
+       "85%"
+      ],
+      "hint": "Add the shares.",
+      "why": "30 + 25 + 20 + 10 = 85."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a factory's private cost is 8 per unit and it causes 3 of pollution damage. What is the social cost per unit?",
+      "a": [
+       "11",
+       "11.0",
+       "11.00"
+      ],
+      "hint": "Private cost plus external cost.",
+      "why": "8 + 3 = 11."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a Pigouvian tax is set equal to the external cost of 3. How much is the tax per unit?",
+      "a": [
+       "3",
+       "3.0",
+       "3.00"
+      ],
+      "hint": "Make polluters pay the damage they cause.",
+      "why": "The tax equals the external cost: 3."
+     }
+    ]
+   },
+   {
+    "title": "Labor Markets and Game Theory",
+    "period": "Advanced",
+    "learn": [
+     {
+      "h": "Hiring workers",
+      "b": "Firms hire workers as long as the extra revenue from a worker beats the wage. Marginal product (MP) is the extra output from one more worker. Marginal revenue product (MRP) = MP x output price."
+     },
+     {
+      "h": "Wages",
+      "b": "In a competitive labor market, wages are set by labor supply and demand. Skills in short supply and jobs in high demand pay more. A minimum wage set above equilibrium can reduce jobs for some workers."
+     },
+     {
+      "h": "Game theory",
+      "b": "Game theory studies choices when each player's result depends on others. In a prisoner's dilemma, each player has a dominant strategy that leaves both worse off. Oligopoly firms face a similar choice: cooperate on prices or compete."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is marginal product of labor?",
+      "o": [
+       "Extra output from one more worker",
+       "Wage of a worker",
+       "Total output",
+       "Profit per hour"
+      ],
+      "a": 0,
+      "why": "It is the change in output from adding one worker."
+     },
+     {
+      "t": "mc",
+      "q": "A firm should hire another worker if MRP is...",
+      "o": [
+       "Less than the wage",
+       "Greater than the wage",
+       "Zero",
+       "Equal to price"
+      ],
+      "a": 1,
+      "why": "Hiring adds more revenue than cost."
+     },
+     {
+      "t": "mc",
+      "q": "A prisoner's dilemma shows that...",
+      "o": [
+       "Cooperation is impossible",
+       "Prices always fall",
+       "Choosing alone can leave both worse off",
+       "Wages are fixed"
+      ],
+      "a": 2,
+      "why": "Each player's dominant strategy can lead to a worse joint result."
+     },
+     {
+      "t": "mc",
+      "q": "A minimum wage above the equilibrium wage can lead to...",
+      "o": [
+       "More jobs offered",
+       "No change in labor",
+       "Free labor",
+       "Fewer jobs offered"
+      ],
+      "a": 3,
+      "why": "Employers hire fewer workers at a higher required wage."
+     },
+     {
+      "t": "tf",
+      "q": "A dominant strategy is the best choice no matter what the other player does.",
+      "a": true,
+      "why": "That is the definition of a dominant strategy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "MP",
+        "Extra output per worker"
+       ],
+       [
+        "MRP",
+        "Extra revenue per worker"
+       ],
+       [
+        "Oligopoly",
+        "Few large firms"
+       ],
+       [
+        "Nash equilibrium",
+        "No one gains by switching"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the hiring decision in order",
+      "items": [
+       [
+        "Estimate the worker's extra output",
+        1
+       ],
+       [
+        "Multiply by the output price",
+        2
+       ],
+       [
+        "Compare with the wage",
+        3
+       ],
+       [
+        "Hire if it pays off",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: total output is 40 with 5 workers and 47 with 6 workers. What is the marginal product of the 6th worker?",
+      "a": [
+       "7",
+       "7.0",
+       "7.00"
+      ],
+      "hint": "Subtract.",
+      "why": "47 - 40 = 7."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the 6th worker has MP = 7 and each unit sells for 3. What is the MRP?",
+      "a": [
+       "21",
+       "21.0",
+       "21.00"
+      ],
+      "hint": "MP x price.",
+      "why": "7 x 3 = 21."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in a prisoner's dilemma, a best choice regardless of what the other does is called a ____ strategy (one word).",
+      "a": [
+       "dominant",
+       "a dominant"
+      ],
+      "hint": "It dominates the alternatives.",
+      "why": "That is a dominant strategy."
+     }
+    ]
+   }
+  ]
+ },
+ "econ-macro": {
+  "name": "Macroeconomics",
+  "units": [
+   {
+    "title": "GDP and Growth",
+    "period": "Output",
+    "learn": [
+     {
+      "h": "What is GDP?",
+      "b": "GDP, gross domestic product, is the total value of final goods and services made in a country in a period. It measures the size of an economy. It counts new production, not used items resold."
+     },
+     {
+      "h": "Real vs nominal",
+      "b": "Nominal GDP uses current prices. Real GDP adjusts for inflation so you can compare years fairly. If prices rise 5% and output is the same, nominal GDP grows but real GDP does not."
+     },
+     {
+      "h": "Business cycle",
+      "b": "The economy goes through ups and downs. Expansion is growth, a peak is the high point, contraction is decline, and a trough is the low point. A recession is a significant fall in economic activity."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does GDP measure?",
+      "o": [
+       "Total value of final goods and services produced",
+       "A country's debt",
+       "The number of workers",
+       "Government taxes only"
+      ],
+      "a": 0,
+      "why": "GDP is the value of final output in a period."
+     },
+     {
+      "t": "mc",
+      "q": "What does real GDP adjust for?",
+      "o": [
+       "Population",
+       "Inflation",
+       "Exchange rates",
+       "Taxes"
+      ],
+      "a": 1,
+      "why": "Real GDP removes the effect of price changes."
+     },
+     {
+      "t": "mc",
+      "q": "Which counts in GDP for this year?",
+      "o": [
+       "Resale of a used car",
+       "Buying shares of stock",
+       "A new car built and sold this year",
+       "A gift between friends"
+      ],
+      "a": 2,
+      "why": "GDP counts newly produced final goods."
+     },
+     {
+      "t": "mc",
+      "q": "What is a recession?",
+      "o": [
+       "A time of rapid growth",
+       "A tax cut",
+       "A bank holiday",
+       "A significant decline in economic activity"
+      ],
+      "a": 3,
+      "why": "Recessions involve falling output, jobs and income."
+     },
+     {
+      "t": "tf",
+      "q": "GDP counts the resale of used goods.",
+      "a": false,
+      "why": "Only newly produced goods and services count."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "GDP",
+        "Value of goods and services made"
+       ],
+       [
+        "Nominal",
+        "Not adjusted for inflation"
+       ],
+       [
+        "Real",
+        "Adjusted for inflation"
+       ],
+       [
+        "Recession",
+        "Economy shrinks"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the business cycle phases in order starting from growth",
+      "items": [
+       [
+        "Expansion",
+        1
+       ],
+       [
+        "Peak",
+        2
+       ],
+       [
+        "Contraction",
+        3
+       ],
+       [
+        "Trough",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: C = 600, I = 200, G = 300 and net exports = -50. What is GDP (C + I + G + NX)?",
+      "a": [
+       "1050",
+       "1050.0",
+       "1050.00"
+      ],
+      "hint": "Add all four, including the negative.",
+      "why": "600 + 200 + 300 - 50 = 1050."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: nominal GDP is 1100 and the GDP deflator is 110. What is real GDP (nominal / deflator x 100)?",
+      "a": [
+       "1000",
+       "1000.0",
+       "1000.00"
+      ],
+      "hint": "Divide by 110, multiply by 100.",
+      "why": "1100 / 110 x 100 = 1000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: real GDP grows from 1000 to 1050. What is the growth rate in percent? (number only)",
+      "a": [
+       "5",
+       "5.0",
+       "5.00",
+       "5%"
+      ],
+      "hint": "Change / starting value.",
+      "why": "50 / 1000 = 5%."
+     }
+    ]
+   },
+   {
+    "title": "Inflation and Jobs",
+    "period": "Prices & Work",
+    "learn": [
+     {
+      "h": "Inflation and CPI",
+      "b": "Inflation is a general rise in prices over time. The CPI, consumer price index, tracks the price of a typical basket of goods people buy. If CPI rises 3%, prices are about 3% higher."
+     },
+     {
+      "h": "Deflation",
+      "b": "Deflation is when prices fall over time. It sounds nice but can make people delay buying, which hurts the economy. Most central banks aim for low, stable inflation."
+     },
+     {
+      "h": "Unemployment",
+      "b": "The labor force is people who have a job or are actively looking. The unemployment rate is the percent of the labor force without a job. A student not looking for work is not counted as unemployed."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does CPI measure?",
+      "o": [
+       "Average price changes of a basket of consumer goods",
+       "Company profits",
+       "Total exports",
+       "Interest rates"
+      ],
+      "a": 0,
+      "why": "CPI tracks the cost of a typical shopping basket."
+     },
+     {
+      "t": "mc",
+      "q": "What is the unemployment rate?",
+      "o": [
+       "People without a job divided by population",
+       "Percent of the labor force without a job who are looking",
+       "Percent of workers who retire",
+       "Number of job ads"
+      ],
+      "a": 1,
+      "why": "It uses the labor force as the base."
+     },
+     {
+      "t": "mc",
+      "q": "What is deflation?",
+      "o": [
+       "Rising prices",
+       "Stable prices",
+       "A general fall in prices",
+       "Higher wages"
+      ],
+      "a": 2,
+      "why": "Deflation is a decline in the price level."
+     },
+     {
+      "t": "mc",
+      "q": "Who is counted as unemployed?",
+      "o": [
+       "A retiree",
+       "A full-time student not looking for work",
+       "A person working part time",
+       "Someone without a job who is actively looking"
+      ],
+      "a": 3,
+      "why": "Unemployed means jobless and actively seeking work."
+     },
+     {
+      "t": "tf",
+      "q": "Inflation reduces the purchasing power of money.",
+      "a": true,
+      "why": "When prices rise, each dollar buys less."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Inflation",
+        "Rising prices"
+       ],
+       [
+        "Deflation",
+        "Falling prices"
+       ],
+       [
+        "CPI",
+        "Price index of a basket"
+       ],
+       [
+        "Labor force",
+        "Working or seeking work"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order these yearly price changes from lowest to highest",
+      "items": [
+       [
+        "-2%",
+        1
+       ],
+       [
+        "0%",
+        2
+       ],
+       [
+        "3%",
+        3
+       ],
+       [
+        "10%",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: the CPI rises from 200 to 206 in one year. What is the inflation rate in percent? (number only)",
+      "a": [
+       "3",
+       "3.0",
+       "3.00",
+       "3%"
+      ],
+      "hint": "Change / old CPI.",
+      "why": "6 / 200 = 3%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: there are 8 million unemployed and 92 million employed. What is the unemployment rate in percent? (number only)",
+      "a": [
+       "8",
+       "8.0",
+       "8.00",
+       "8%"
+      ],
+      "hint": "Labor force = 100 million.",
+      "why": "8 / 100 = 8%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: prices fall for a long time across the economy. What is this called? (one word)",
+      "a": [
+       "deflation"
+      ],
+      "hint": "The opposite of inflation.",
+      "why": "Falling general prices is deflation."
+     }
+    ]
+   },
+   {
+    "title": "Aggregate Demand and Supply",
+    "period": "AD-AS",
+    "learn": [
+     {
+      "h": "Aggregate demand",
+      "b": "Aggregate demand (AD) is total spending in the economy: C + I + G + NX. When AD rises, firms sell more and may hire more. When AD falls, output and jobs can drop."
+     },
+     {
+      "h": "Aggregate supply",
+      "b": "Aggregate supply (AS) is the total output firms are willing to produce at each price level. In the short run, higher prices can raise output. In the long run, output depends on resources and technology."
+     },
+     {
+      "h": "Shocks and gaps",
+      "b": "Demand shocks shift AD and can cause demand-pull inflation or a recession. A supply shock, like a jump in oil prices, shifts AS. When prices rise while output falls, it is called stagflation."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does aggregate demand measure?",
+      "o": [
+       "Total spending in the economy",
+       "Total taxes",
+       "Only exports",
+       "Only prices"
+      ],
+      "a": 0,
+      "why": "AD = C + I + G + NX."
+     },
+     {
+      "t": "mc",
+      "q": "A rise in consumer confidence most likely shifts...",
+      "o": [
+       "AS to the left",
+       "AD to the right",
+       "AD to the left",
+       "Nothing"
+      ],
+      "a": 1,
+      "why": "More spending means higher AD."
+     },
+     {
+      "t": "mc",
+      "q": "What is stagflation?",
+      "o": [
+       "Falling prices with growth",
+       "Low prices and booms",
+       "High inflation with weak output and high unemployment",
+       "A budget surplus"
+      ],
+      "a": 2,
+      "why": "Stagflation combines inflation and a stagnant economy."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of a negative supply shock?",
+      "o": [
+       "More consumer spending",
+       "A tax cut",
+       "Lower interest rates",
+       "A sudden jump in oil prices"
+      ],
+      "a": 3,
+      "why": "Higher input costs shift AS left."
+     },
+     {
+      "t": "tf",
+      "q": "Demand-pull inflation comes from too much spending chasing limited output.",
+      "a": true,
+      "why": "Strong demand pulls up prices."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "AD",
+        "Total spending"
+       ],
+       [
+        "AS",
+        "Total output offered"
+       ],
+       [
+        "Recession",
+        "Falling output and jobs"
+       ],
+       [
+        "Stagflation",
+        "Inflation plus weak growth"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a demand-driven expansion in order",
+      "items": [
+       [
+        "Spending rises",
+        1
+       ],
+       [
+        "Firms produce more",
+        2
+       ],
+       [
+        "Firms hire workers",
+        3
+       ],
+       [
+        "Prices may start rising",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: C = 700, I = 150, G = 250 and NX = 20. What is aggregate demand?",
+      "a": [
+       "1120",
+       "1120.0",
+       "1120.00"
+      ],
+      "hint": "Add the four parts.",
+      "why": "700 + 150 + 250 + 20 = 1120."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: potential GDP is 1000 and actual GDP is 950. What is the output gap in percent of potential? (number only)",
+      "a": [
+       "5",
+       "5.0",
+       "5.00",
+       "5%"
+      ],
+      "hint": "Gap = 50.",
+      "why": "50 / 1000 = 5%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: inflation with high unemployment at the same time is called ____ (one word).",
+      "a": [
+       "stagflation"
+      ],
+      "hint": "It joins stagnation and inflation.",
+      "why": "That combination is stagflation."
+     }
+    ]
+   },
+   {
+    "title": "Banking and the Money Supply",
+    "period": "Money",
+    "learn": [
+     {
+      "h": "Banks create money",
+      "b": "Banks take deposits and lend most of them out. The loan becomes a new deposit somewhere else, and the process repeats. This is how the money supply grows."
+     },
+     {
+      "h": "Reserves and the multiplier",
+      "b": "Banks keep a fraction of deposits as reserves. The reserve ratio is that fraction. The simple money multiplier is 1 divided by the reserve ratio, so a 10% ratio gives a multiplier of 10."
+     },
+     {
+      "h": "Central bank tools",
+      "b": "The central bank can change the money supply with open market operations (buying or selling government bonds), the policy interest rate and reserve rules. Buying bonds adds money to the banking system."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the reserve ratio?",
+      "o": [
+       "The fraction of deposits banks must keep",
+       "The interest on loans",
+       "The tax on banks",
+       "The inflation target"
+      ],
+      "a": 0,
+      "why": "Banks hold a share back and can lend the rest."
+     },
+     {
+      "t": "mc",
+      "q": "A reserve ratio of 20% gives a simple money multiplier of...",
+      "o": [
+       "20",
+       "5",
+       "0.2",
+       "50"
+      ],
+      "a": 1,
+      "why": "1 / 0.20 = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Buying government bonds from banks tends to...",
+      "o": [
+       "Decrease the money supply",
+       "Stop lending",
+       "Increase the money supply",
+       "Raise reserve ratios"
+      ],
+      "a": 2,
+      "why": "The central bank pays banks, adding reserves."
+     },
+     {
+      "t": "mc",
+      "q": "Who runs open market operations?",
+      "o": [
+       "Local shops",
+       "Credit rating firms",
+       "Tax offices",
+       "The central bank"
+      ],
+      "a": 3,
+      "why": "It buys and sells bonds to steer money and rates."
+     },
+     {
+      "t": "tf",
+      "q": "Banks lend out all deposits and keep zero reserves in the simple model.",
+      "a": false,
+      "why": "Banks keep a fraction as reserves."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Reserves",
+        "Money banks hold back"
+       ],
+       [
+        "Multiplier",
+        "1 / reserve ratio"
+       ],
+       [
+        "Open market operation",
+        "Buying or selling bonds"
+       ],
+       [
+        "Central bank",
+        "Manages the money system"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the money creation steps in order",
+      "items": [
+       [
+        "A bank receives a deposit",
+        1
+       ],
+       [
+        "It keeps reserves",
+        2
+       ],
+       [
+        "It lends the rest",
+        3
+       ],
+       [
+        "The loan is deposited elsewhere",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: the reserve ratio is 10%. What is the simple money multiplier?",
+      "a": [
+       "10",
+       "10.0",
+       "10.00"
+      ],
+      "hint": "1 / 0.10.",
+      "why": "1 / 0.10 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: with a 20% reserve ratio, a 1000 new deposit can support up to how much total deposits?",
+      "a": [
+       "5000",
+       "5000.0",
+       "5000.00"
+      ],
+      "hint": "Multiplier = 5.",
+      "why": "1000 x 5 = 5000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a bank gets a 500 deposit and keeps 10% as reserves. How much can it lend?",
+      "a": [
+       "450",
+       "450.0",
+       "450.00"
+      ],
+      "hint": "Keep 50, lend the rest.",
+      "why": "500 - 50 = 450."
+     }
+    ]
+   },
+   {
+    "title": "Government and Money",
+    "period": "Policy",
+    "learn": [
+     {
+      "h": "Fiscal policy",
+      "b": "Fiscal policy is how the government uses taxes and spending to influence the economy. Cutting taxes or spending more can boost growth. A budget deficit happens when spending is higher than revenue."
+     },
+     {
+      "h": "Monetary policy",
+      "b": "Monetary policy is run by the central bank, like the Federal Reserve in the US. It sets interest rates and influences the money supply. Lower rates make borrowing cheaper."
+     },
+     {
+      "h": "Cooling inflation",
+      "b": "When prices rise too fast, a central bank may raise interest rates. Borrowing becomes costlier and spending slows. This eases pressure on prices."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is fiscal policy?",
+      "o": [
+       "Government taxes and spending choices",
+       "Setting interest rates by a central bank",
+       "Printing coins",
+       "Trade deals only"
+      ],
+      "a": 0,
+      "why": "Fiscal policy uses the government budget."
+     },
+     {
+      "t": "mc",
+      "q": "Who runs monetary policy in the US?",
+      "o": [
+       "Congress",
+       "The Federal Reserve",
+       "The Supreme Court",
+       "Local schools"
+      ],
+      "a": 1,
+      "why": "The Federal Reserve is the US central bank."
+     },
+     {
+      "t": "mc",
+      "q": "If a central bank raises interest rates, what generally happens to borrowing?",
+      "o": [
+       "It gets cheaper",
+       "It stops entirely",
+       "It gets more expensive",
+       "Nothing changes"
+      ],
+      "a": 2,
+      "why": "Higher rates raise the cost of loans."
+     },
+     {
+      "t": "mc",
+      "q": "What is a budget deficit?",
+      "o": [
+       "Revenue greater than spending",
+       "Zero taxes",
+       "A type of bond",
+       "Spending greater than revenue"
+      ],
+      "a": 3,
+      "why": "A deficit means the government spends more than it collects."
+     },
+     {
+      "t": "tf",
+      "q": "Fiscal policy is set by the central bank.",
+      "a": false,
+      "why": "Fiscal policy is set by government; the central bank handles monetary policy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fiscal policy",
+        "Taxes and spending"
+       ],
+       [
+        "Monetary policy",
+        "Interest rates and money supply"
+       ],
+       [
+        "Federal Reserve",
+        "US central bank"
+       ],
+       [
+        "Budget deficit",
+        "Spending exceeds revenue"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Order how a rate hike cools inflation",
+      "items": [
+       [
+        "Central bank raises rates",
+        1
+       ],
+       [
+        "Borrowing becomes costlier",
+        2
+       ],
+       [
+        "Spending slows",
+        3
+       ],
+       [
+        "Price pressure eases",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: the government spends 500 and collects 450 in taxes. What is the budget deficit?",
+      "a": [
+       "50",
+       "50.0",
+       "50.00"
+      ],
+      "hint": "Spending minus revenue.",
+      "why": "500 - 450 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: to fight high inflation, a central bank usually ____ interest rates (raises or lowers).",
+      "a": [
+       "raises",
+       "raise",
+       "raises interest rates"
+      ],
+      "hint": "Higher rates cool spending.",
+      "why": "Raising rates makes borrowing costlier and slows demand."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the nominal interest rate is 5% and inflation is 2%. What is the real interest rate in percent? (number only)",
+      "a": [
+       "3",
+       "3.0",
+       "3.00",
+       "3%"
+      ],
+      "hint": "Real = nominal minus inflation.",
+      "why": "5 - 2 = 3."
+     }
+    ]
+   },
+   {
+    "title": "Deficits, Debt and the Multiplier",
+    "period": "Fiscal",
+    "learn": [
+     {
+      "h": "Deficit vs debt",
+      "b": "A deficit is a one-year gap when spending is greater than revenue. Debt is the total built up from past deficits. A surplus in a year can reduce the debt."
+     },
+     {
+      "h": "The spending multiplier",
+      "b": "When the government spends, that money becomes income for others, who spend part of it. The marginal propensity to consume (MPC) is the share spent. The multiplier is 1 / (1 - MPC)."
+     },
+     {
+      "h": "Debt burden",
+      "b": "Economists often compare debt to GDP rather than looking at dollars alone. A ratio shows ability to repay. High debt can lead to higher interest costs and less room for new spending."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a budget deficit?",
+      "o": [
+       "Spending exceeds revenue in a year",
+       "Total debt owed",
+       "Revenue exceeds spending",
+       "A tax cut"
+      ],
+      "a": 0,
+      "why": "Deficit is an annual flow."
+     },
+     {
+      "t": "mc",
+      "q": "How does debt differ from deficit?",
+      "o": [
+       "Debt is one year only",
+       "Debt is the accumulated total",
+       "They are the same",
+       "Debt is always zero"
+      ],
+      "a": 1,
+      "why": "Debt is the sum of past borrowing."
+     },
+     {
+      "t": "mc",
+      "q": "If MPC is 0.8, what is the multiplier?",
+      "o": [
+       "8",
+       "1.25",
+       "5",
+       "0.2"
+      ],
+      "a": 2,
+      "why": "1 / (1 - 0.8) = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Why compare debt to GDP?",
+      "o": [
+       "It sets interest rates",
+       "It removes inflation",
+       "It counts exports",
+       "It shows debt relative to the economy's size"
+      ],
+      "a": 3,
+      "why": "A bigger economy can support more debt."
+     },
+     {
+      "t": "tf",
+      "q": "A higher MPC leads to a larger spending multiplier.",
+      "a": true,
+      "why": "More respending means a bigger total effect."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Deficit",
+        "Yearly shortfall"
+       ],
+       [
+        "Debt",
+        "Total owed"
+       ],
+       [
+        "MPC",
+        "Share of extra income spent"
+       ],
+       [
+        "Multiplier",
+        "Total effect of spending"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the multiplier chain in order",
+      "items": [
+       [
+        "Government spends",
+        1
+       ],
+       [
+        "Workers receive income",
+        2
+       ],
+       [
+        "They spend part of it",
+        3
+       ],
+       [
+        "Others receive more income",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: MPC = 0.8. What is the spending multiplier?",
+      "a": [
+       "5",
+       "5.0",
+       "5.00"
+      ],
+      "hint": "1 / (1 - 0.8).",
+      "why": "1 / 0.2 = 5."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: with a multiplier of 5, government spending rises by 20. What is the total change in GDP?",
+      "a": [
+       "100",
+       "100.0",
+       "100.00"
+      ],
+      "hint": "20 x 5.",
+      "why": "20 x 5 = 100."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: debt is 900 and GDP is 1200. What is the debt-to-GDP ratio in percent? (number only)",
+      "a": [
+       "75",
+       "75.0",
+       "75.00",
+       "75%"
+      ],
+      "hint": "900 / 1200 x 100.",
+      "why": "900 / 1200 = 0.75 = 75%."
+     }
+    ]
+   },
+   {
+    "title": "Trade and the World",
+    "period": "Global Economy",
+    "learn": [
+     {
+      "h": "Imports and exports",
+      "b": "Exports are goods and services sold to other countries. Imports are those bought from other countries. Trade lets countries get things they cannot make cheaply."
+     },
+     {
+      "h": "Comparative advantage",
+      "b": "A country has a comparative advantage when it can make something at a lower opportunity cost than others. Each country does best by specializing in what it makes most efficiently, then trading."
+     },
+     {
+      "h": "Tariffs and exchange rates",
+      "b": "A tariff is a tax on imported goods. An exchange rate is the price of one currency in another. If a currency gets stronger, imports for that country become cheaper."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are exports?",
+      "o": [
+       "Goods bought from abroad",
+       "Goods and services sold to other countries",
+       "Taxes on trade",
+       "Currency notes"
+      ],
+      "a": 1,
+      "why": "Exports leave the country to be sold abroad."
+     },
+     {
+      "t": "mc",
+      "q": "What is a tariff?",
+      "o": [
+       "A bank loan",
+       "A trade agreement",
+       "A subsidy",
+       "A tax on imported goods"
+      ],
+      "a": 3,
+      "why": "Tariffs raise the price of imports."
+     },
+     {
+      "t": "mc",
+      "q": "What is comparative advantage?",
+      "o": [
+       "Making something at a lower opportunity cost",
+       "Having the biggest army",
+       "Having more money",
+       "Selling more than you buy"
+      ],
+      "a": 0,
+      "why": "It is about lower opportunity cost, not absolute output."
+     },
+     {
+      "t": "mc",
+      "q": "If a country's currency strengthens, imports generally become what?",
+      "o": [
+       "More expensive",
+       "Illegal",
+       "Cheaper",
+       "Unchanged always"
+      ],
+      "a": 2,
+      "why": "A stronger currency buys more foreign goods."
+     },
+     {
+      "t": "tf",
+      "q": "Countries can both gain from trade by specializing where their opportunity cost is lower.",
+      "a": true,
+      "why": "Specialization and trade can raise total output for both."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Export",
+        "Sold abroad"
+       ],
+       [
+        "Import",
+        "Bought from abroad"
+       ],
+       [
+        "Tariff",
+        "Tax on imports"
+       ],
+       [
+        "Exchange rate",
+        "Price of one currency in another"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a trade chain in order",
+      "items": [
+       [
+        "Raw material is grown",
+        1
+       ],
+       [
+        "Factory makes a product",
+        2
+       ],
+       [
+        "Product is exported",
+        3
+       ],
+       [
+        "Consumer buys it abroad",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: exports are 300 and imports are 250. What are net exports?",
+      "a": [
+       "50",
+       "50.0",
+       "50.00"
+      ],
+      "hint": "Exports minus imports.",
+      "why": "300 - 250 = 50."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a country makes 6 shirts or 3 hats with the same resources. How many shirts is the opportunity cost of 1 hat?",
+      "a": [
+       "2",
+       "2.0",
+       "2.00"
+      ],
+      "hint": "6 / 3.",
+      "why": "6 / 3 = 2 shirts."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a 10% tariff is placed on imports worth 200. How much tariff is collected?",
+      "a": [
+       "20",
+       "20.0",
+       "20.00"
+      ],
+      "hint": "10% of 200.",
+      "why": "0.10 x 200 = 20."
+     }
+    ]
+   },
+   {
+    "title": "Growth and Productivity",
+    "period": "Long run",
+    "learn": [
+     {
+      "h": "What drives growth",
+      "b": "Long-run growth comes from more workers, more capital (machines, buildings), better education and new technology. Productivity is output per hour of work. Higher productivity raises living standards."
+     },
+     {
+      "h": "Per-person measures",
+      "b": "Real GDP per person (per capita) shows average output for each person. It is a better measure of living standards than total GDP when population changes. Growth of even 2% a year adds up over decades."
+     },
+     {
+      "h": "Rule of 70",
+      "b": "The Rule of 70 estimates the years for a quantity to double: 70 divided by the growth rate. At 2% growth, output doubles in about 35 years. This shows why small growth differences matter."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is labor productivity?",
+      "o": [
+       "Output per hour worked",
+       "Wages per hour",
+       "Hours per week",
+       "Taxes per worker"
+      ],
+      "a": 0,
+      "why": "It measures how much each hour produces."
+     },
+     {
+      "t": "mc",
+      "q": "Which most directly raises long-run growth?",
+      "o": [
+       "Printing more money",
+       "Better technology and capital",
+       "Higher tariffs always",
+       "Shorter school years"
+      ],
+      "a": 1,
+      "why": "Technology and capital increase what each worker can produce."
+     },
+     {
+      "t": "mc",
+      "q": "Why use GDP per capita?",
+      "o": [
+       "It counts only exports",
+       "It ignores prices",
+       "It adjusts for population size",
+       "It shows only taxes"
+      ],
+      "a": 2,
+      "why": "Per-person output compares living standards better."
+     },
+     {
+      "t": "mc",
+      "q": "At 5% annual growth, about how long to double (Rule of 70)?",
+      "o": [
+       "5 years",
+       "70 years",
+       "35 years",
+       "14 years"
+      ],
+      "a": 3,
+      "why": "70 / 5 = 14."
+     },
+     {
+      "t": "tf",
+      "q": "Investing in education can raise productivity.",
+      "a": true,
+      "why": "Human capital helps workers produce more."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Productivity",
+        "Output per hour"
+       ],
+       [
+        "Capital",
+        "Machines and buildings"
+       ],
+       [
+        "Human capital",
+        "Skills and knowledge"
+       ],
+       [
+        "GDP per capita",
+        "Output per person"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the growth chain in order",
+      "items": [
+       [
+        "Invest in capital and skills",
+        1
+       ],
+       [
+        "Productivity rises",
+        2
+       ],
+       [
+        "Output grows",
+        3
+       ],
+       [
+        "Living standards improve",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 500 units are made in 25 hours. What is productivity (units per hour)?",
+      "a": [
+       "20",
+       "20.0",
+       "20.00"
+      ],
+      "hint": "Output / hours.",
+      "why": "500 / 25 = 20."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: GDP per person rises from 40000 to 41200. What is the growth in percent? (number only)",
+      "a": [
+       "3",
+       "3.0",
+       "3.00",
+       "3%"
+      ],
+      "hint": "1200 / 40000.",
+      "why": "1200 / 40000 = 3%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: with 2% growth, about how many years to double (Rule of 70)?",
+      "a": [
+       "35",
+       "35.0",
+       "35.00"
+      ],
+      "hint": "70 / 2.",
+      "why": "70 / 2 = 35."
+     }
+    ]
+   }
+  ]
+ },
+ "fin-taxes": {
+  "name": "Taxes",
+  "units": [
+   {
+    "title": "Tax Basics",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "Why taxes?",
+      "b": "Governments collect taxes to pay for public services like roads, schools and emergency help. Common taxes include income tax, sales tax and property tax."
+     },
+     {
+      "h": "Gross vs net pay",
+      "b": "Gross pay is what you earn before anything is taken out. Net pay, or take-home pay, is what you receive after taxes and other deductions. Employers withhold tax from each paycheck."
+     },
+     {
+      "h": "Filing a return",
+      "b": "A tax return is a form that reports your income and works out your tax. If too much was withheld, you get a refund. If too little, you owe more."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are taxes mainly used for?",
+      "o": [
+       "Only paying politicians",
+       "Public services like roads and schools",
+       "Private shopping",
+       "Making coins"
+      ],
+      "a": 1,
+      "why": "Tax revenue funds services for the public."
+     },
+     {
+      "t": "mc",
+      "q": "What is gross pay?",
+      "o": [
+       "Pay after taxes",
+       "A bonus",
+       "Pay before deductions",
+       "A refund"
+      ],
+      "a": 2,
+      "why": "Gross pay is total earnings before anything is taken out."
+     },
+     {
+      "t": "mc",
+      "q": "What is withholding?",
+      "o": [
+       "A refund",
+       "A penalty",
+       "Hiding income",
+       "An employer taking tax out of your paycheck"
+      ],
+      "a": 3,
+      "why": "Employers withhold tax and send it to the government."
+     },
+     {
+      "t": "mc",
+      "q": "What is a tax return?",
+      "o": [
+       "A form reporting income and calculating tax owed or refunded",
+       "A store return",
+       "A tax bill only",
+       "A receipt"
+      ],
+      "a": 0,
+      "why": "It summarizes your income and tax for the year."
+     },
+     {
+      "t": "tf",
+      "q": "Your take-home pay is the same as your gross pay.",
+      "a": false,
+      "why": "Take-home pay is lower because taxes are taken out."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Gross pay",
+        "Before deductions"
+       ],
+       [
+        "Net pay",
+        "Take-home amount"
+       ],
+       [
+        "Withholding",
+        "Tax taken from paycheck"
+       ],
+       [
+        "Refund",
+        "Money returned for overpaying"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the pay and tax cycle in order",
+      "items": [
+       [
+        "Earn gross pay",
+        1
+       ],
+       [
+        "Taxes are withheld",
+        2
+       ],
+       [
+        "Receive net pay",
+        3
+       ],
+       [
+        "File a tax return",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: gross pay is 3000 and taxes taken out are 600. What is net pay?",
+      "a": [
+       "2400",
+       "2400.0",
+       "2400.00"
+      ],
+      "hint": "Gross minus taxes.",
+      "why": "3000 - 600 = 2400."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 600 of tax is taken from gross pay of 3000. What percent is that? (number only)",
+      "a": [
+       "20",
+       "20.0",
+       "20.00",
+       "20%"
+      ],
+      "hint": "600 / 3000 x 100.",
+      "why": "600 / 3000 = 20%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: sales tax is 8% and an item costs 50 before tax. How much tax is added?",
+      "a": [
+       "4",
+       "4.0",
+       "4.00"
+      ],
+      "hint": "8% of 50.",
+      "why": "0.08 x 50 = 4."
+     }
+    ]
+   },
+   {
+    "title": "Types of Taxes",
+    "period": "Tax types",
+    "learn": [
+     {
+      "h": "Common taxes",
+      "b": "Governments collect many kinds of taxes. Income tax is on what you earn. Sales tax is added to purchases, property tax is on owning land or buildings, and payroll taxes fund social programs. Excise taxes target specific goods like fuel."
+     },
+     {
+      "h": "Who pays",
+      "b": "Some taxes are paid directly, like income tax. Others are built into prices, like sales tax. Businesses may pay taxes too, but costs can pass on to customers."
+     },
+     {
+      "h": "Progressive, proportional, regressive",
+      "b": "A progressive tax takes a larger share from higher incomes. A proportional (flat) tax takes the same share from everyone. A regressive tax takes a larger share from lower incomes."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which tax is added to the price of things you buy?",
+      "o": [
+       "Sales tax",
+       "Income tax",
+       "Property tax",
+       "Payroll tax"
+      ],
+      "a": 0,
+      "why": "Sales tax is added at the register."
+     },
+     {
+      "t": "mc",
+      "q": "A tax that takes a bigger share from higher incomes is...",
+      "o": [
+       "Regressive",
+       "Progressive",
+       "Flat",
+       "Excise"
+      ],
+      "a": 1,
+      "why": "Progressive rises with income."
+     },
+     {
+      "t": "mc",
+      "q": "Property tax is charged on...",
+      "o": [
+       "Your wages",
+       "Items you buy",
+       "Land and buildings you own",
+       "Gifts you receive"
+      ],
+      "a": 2,
+      "why": "It is based on the value of property."
+     },
+     {
+      "t": "mc",
+      "q": "A flat 10% tax on every income is...",
+      "o": [
+       "Progressive",
+       "Regressive",
+       "A credit",
+       "Proportional"
+      ],
+      "a": 3,
+      "why": "Everyone pays the same percent."
+     },
+     {
+      "t": "tf",
+      "q": "Payroll taxes usually fund social programs like pensions and health care.",
+      "a": true,
+      "why": "Payroll taxes are commonly earmarked for these programs."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Income tax",
+        "Tax on earnings"
+       ],
+       [
+        "Sales tax",
+        "Tax on purchases"
+       ],
+       [
+        "Property tax",
+        "Tax on owned property"
+       ],
+       [
+        "Excise tax",
+        "Tax on a specific good"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of buying with sales tax in order",
+      "items": [
+       [
+        "See the price tag",
+        1
+       ],
+       [
+        "Add the sales tax",
+        2
+       ],
+       [
+        "Pay the total",
+        3
+       ],
+       [
+        "Get the receipt",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: sales tax is 8%. What is the tax on a 50 purchase?",
+      "a": [
+       "4",
+       "4.0",
+       "4.00"
+      ],
+      "hint": "0.08 x 50.",
+      "why": "0.08 x 50 = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a home is valued at 200000 and the property tax rate is 1.2%. How much is the yearly tax?",
+      "a": [
+       "2400",
+       "2400.0",
+       "2400.00"
+      ],
+      "hint": "200000 x 0.012.",
+      "why": "200000 x 0.012 = 2400."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a fixed 200 fee is paid by someone earning 10000. What percent of income is that? (number only)",
+      "a": [
+       "2",
+       "2.0",
+       "2.00",
+       "2%"
+      ],
+      "hint": "200 / 10000 x 100.",
+      "why": "200 / 10000 = 2%, so it hits low earners harder (regressive)."
+     }
+    ]
+   },
+   {
+    "title": "Brackets and Rates",
+    "period": "Rates",
+    "learn": [
+     {
+      "h": "Progressive tax",
+      "b": "Many income taxes are progressive: higher income is taxed at higher rates. Income is split into tax brackets, and each slice is taxed at its own rate."
+     },
+     {
+      "h": "Marginal vs effective",
+      "b": "The marginal rate is the rate on your next dollar earned. The effective rate is your total tax divided by your total income. The effective rate is usually lower than the top bracket you reach."
+     },
+     {
+      "h": "Taxable income",
+      "b": "Taxable income is your income minus deductions. Only this amount is run through the brackets. Moving into a higher bracket taxes only the income above that threshold at the higher rate."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a progressive tax?",
+      "o": [
+       "Everyone pays the same amount",
+       "Higher incomes are taxed at higher rates",
+       "The tax shrinks every year",
+       "Only companies pay"
+      ],
+      "a": 1,
+      "why": "Progressive taxes rise in rate as income rises."
+     },
+     {
+      "t": "mc",
+      "q": "What is a marginal tax rate?",
+      "o": [
+       "Total tax divided by income",
+       "The lowest rate you pay",
+       "The rate on your next dollar of income",
+       "The sales tax"
+      ],
+      "a": 2,
+      "why": "Marginal rate applies to additional income."
+     },
+     {
+      "t": "mc",
+      "q": "How is taxable income calculated?",
+      "o": [
+       "Gross pay plus bonuses",
+       "Total spending",
+       "Savings minus debt",
+       "Income minus deductions"
+      ],
+      "a": 3,
+      "why": "Deductions reduce the amount that is taxed."
+     },
+     {
+      "t": "mc",
+      "q": "What is the effective tax rate?",
+      "o": [
+       "Total tax divided by total income",
+       "The top bracket rate",
+       "The sales tax rate",
+       "The refund rate"
+      ],
+      "a": 0,
+      "why": "It shows the overall percentage of income paid in tax."
+     },
+     {
+      "t": "tf",
+      "q": "Moving into a higher bracket does not tax all your income at the higher rate.",
+      "a": true,
+      "why": "Only the portion above the threshold is taxed at the higher rate."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Tax bracket",
+        "Income range with one rate"
+       ],
+       [
+        "Marginal rate",
+        "Rate on the next dollar"
+       ],
+       [
+        "Effective rate",
+        "Total tax divided by income"
+       ],
+       [
+        "Taxable income",
+        "Income after deductions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of calculating income tax in order",
+      "items": [
+       [
+        "Add up your income",
+        1
+       ],
+       [
+        "Subtract deductions",
+        2
+       ],
+       [
+        "Apply the bracket rates",
+        3
+       ],
+       [
+        "Subtract any credits",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: example system: the first 10000 is taxed at 10% and income above that at 20%. Tax on 30000?",
+      "a": [
+       "5000",
+       "5000.0",
+       "5000.00"
+      ],
+      "hint": "10% of 10000, plus 20% of 20000.",
+      "why": "1000 + 4000 = 5000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: same system. Tax on 20000 is 3000. What is the effective rate in percent? (number only)",
+      "a": [
+       "15",
+       "15.0",
+       "15.00",
+       "15%"
+      ],
+      "hint": "Tax / income x 100.",
+      "why": "3000 / 20000 = 15%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: gross income is 50000 and the deduction is 12000. What is taxable income?",
+      "a": [
+       "38000",
+       "38000.0",
+       "38000.00"
+      ],
+      "hint": "Subtract the deduction.",
+      "why": "50000 - 12000 = 38000."
+     }
+    ]
+   },
+   {
+    "title": "Withholding and Refunds",
+    "period": "Paychecks",
+    "learn": [
+     {
+      "h": "What withholding is",
+      "b": "Employers take money out of each paycheck and send it to the tax office. This is withholding, a way to pay your income tax during the year. The amount depends on your pay and a form you fill in."
+     },
+     {
+      "h": "Refund or bill",
+      "b": "At filing time, you compare tax owed with tax already withheld. If withheld is more, you get a refund. If withheld is less, you pay the difference."
+     },
+     {
+      "h": "Not a bonus",
+      "b": "A refund is your own money returned, not a gift. A big refund means you lent the government money without interest. Adjusting your form can fit withholding closer to your real tax."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is withholding?",
+      "o": [
+       "Tax taken from each paycheck",
+       "A tax credit",
+       "A yearly bonus",
+       "A penalty"
+      ],
+      "a": 0,
+      "why": "Employers withhold tax throughout the year."
+     },
+     {
+      "t": "mc",
+      "q": "When do you get a refund?",
+      "o": [
+       "When owed is more than withheld",
+       "When withheld tax is more than owed",
+       "When you do not file",
+       "When you are unemployed"
+      ],
+      "a": 1,
+      "why": "Overpayment gets returned."
+     },
+     {
+      "t": "mc",
+      "q": "Withheld tax is 4200 and tax owed is 3900. What happens?",
+      "o": [
+       "You owe 300",
+       "You owe 8100",
+       "You get a 300 refund",
+       "You get 4200"
+      ],
+      "a": 2,
+      "why": "4200 - 3900 = 300."
+     },
+     {
+      "t": "mc",
+      "q": "A large refund usually means...",
+      "o": [
+       "Taxes are free",
+       "Too little was withheld",
+       "No tax was owed ever",
+       "Too much was withheld"
+      ],
+      "a": 3,
+      "why": "You overpaid during the year."
+     },
+     {
+      "t": "tf",
+      "q": "A refund is extra income from the government.",
+      "a": false,
+      "why": "It is a return of your own overpaid money."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Withholding",
+        "Tax taken from pay"
+       ],
+       [
+        "Refund",
+        "Overpayment returned"
+       ],
+       [
+        "Balance due",
+        "Extra tax you owe"
+       ],
+       [
+        "Tax year",
+        "Period covered by filing"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the year-end filing steps in order",
+      "items": [
+       [
+        "Gather pay and tax forms",
+        1
+       ],
+       [
+        "Compute tax owed",
+        2
+       ],
+       [
+        "Compare with tax withheld",
+        3
+       ],
+       [
+        "Get a refund or pay the balance",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 4200 was withheld and tax owed is 3900. How much is the refund?",
+      "a": [
+       "300",
+       "300.0",
+       "300.00"
+      ],
+      "hint": "Withheld minus owed.",
+      "why": "4200 - 3900 = 300."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 2500 was withheld and tax owed is 3100. How much do you still owe?",
+      "a": [
+       "600",
+       "600.0",
+       "600.00"
+      ],
+      "hint": "Owed minus withheld.",
+      "why": "3100 - 2500 = 600."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 150 is withheld on each of 26 paychecks. What is the total withheld in the year?",
+      "a": [
+       "3900",
+       "3900.0",
+       "3900.00"
+      ],
+      "hint": "150 x 26.",
+      "why": "150 x 26 = 3900."
+     }
+    ]
+   },
+   {
+    "title": "Deductions and Credits",
+    "period": "Savings",
+    "learn": [
+     {
+      "h": "Deductions",
+      "b": "A deduction lowers your taxable income. If you are in a 20% bracket, a $1,000 deduction saves about $200 in tax. The standard deduction is a fixed amount you can subtract without listing expenses."
+     },
+     {
+      "h": "Credits",
+      "b": "A tax credit lowers your tax bill directly, dollar for dollar. A $1,000 credit cuts your tax by $1,000. That makes a credit usually worth more than a deduction of the same size."
+     },
+     {
+      "h": "Standard or itemize",
+      "b": "Itemizing means listing eligible expenses, like certain interest or charity gifts. You normally choose whichever method gives the larger deduction."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does a tax deduction reduce?",
+      "o": [
+       "Your tax bill directly",
+       "Your taxable income",
+       "Your gross pay before work",
+       "Sales tax"
+      ],
+      "a": 1,
+      "why": "Deductions lower the income that is taxed."
+     },
+     {
+      "t": "mc",
+      "q": "What does a tax credit reduce?",
+      "o": [
+       "Your income",
+       "Your age",
+       "Your tax bill dollar for dollar",
+       "Your deductions"
+      ],
+      "a": 2,
+      "why": "Credits subtract directly from tax owed."
+     },
+     {
+      "t": "mc",
+      "q": "Which usually lowers tax more: a $1,000 credit or a $1,000 deduction?",
+      "o": [
+       "The deduction",
+       "They are always equal",
+       "Neither",
+       "The credit"
+      ],
+      "a": 3,
+      "why": "A credit reduces tax by $1,000; a deduction only saves tax at your rate."
+     },
+     {
+      "t": "mc",
+      "q": "What is a standard deduction?",
+      "o": [
+       "A fixed amount you can subtract without listing expenses",
+       "A refund",
+       "A tax penalty",
+       "A sales tax"
+      ],
+      "a": 0,
+      "why": "It is a flat deduction available to most filers."
+     },
+     {
+      "t": "tf",
+      "q": "A tax credit only reduces taxable income.",
+      "a": false,
+      "why": "A credit reduces the tax owed directly, not the income."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Deduction",
+        "Lowers taxable income"
+       ],
+       [
+        "Credit",
+        "Lowers tax bill directly"
+       ],
+       [
+        "Standard deduction",
+        "Flat amount subtracted"
+       ],
+       [
+        "Itemizing",
+        "Listing eligible expenses"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for choosing a deduction method in order",
+      "items": [
+       [
+        "Add up itemizable expenses",
+        1
+       ],
+       [
+        "Find the standard deduction",
+        2
+       ],
+       [
+        "Compare the two amounts",
+        3
+       ],
+       [
+        "Use the larger one",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a 1000 deduction for someone in a 20% bracket cuts tax by how much?",
+      "a": [
+       "200",
+       "200.0",
+       "200.00"
+      ],
+      "hint": "Deduction x tax rate.",
+      "why": "1000 x 0.20 = 200."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: tax owed is 3000 and you have a 500 tax credit. How much tax is left to pay?",
+      "a": [
+       "2500",
+       "2500.0",
+       "2500.00"
+      ],
+      "hint": "A credit subtracts directly from tax.",
+      "why": "3000 - 500 = 2500."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: standard deduction is 10000 and your itemized deductions total 8500. Which amount should you use?",
+      "a": [
+       "10000",
+       "10000.0",
+       "10000.00"
+      ],
+      "hint": "Take the larger one.",
+      "why": "You use the bigger deduction: 10000."
+     }
+    ]
+   },
+   {
+    "title": "Employees and Freelancers",
+    "period": "W-2 vs 1099",
+    "learn": [
+     {
+      "h": "W-2 employees",
+      "b": "An employee works for an employer. The employer withholds income tax and payroll taxes from each paycheck and sends you a W-2 form at year end. You give a W-4 form to set how much is withheld."
+     },
+     {
+      "h": "1099 contractors",
+      "b": "An independent contractor, or freelancer, is paid without withholding and usually gets a 1099 form. They must set aside money for their own taxes and often make estimated tax payments during the year."
+     },
+     {
+      "h": "Self-employment tax",
+      "b": "Employees share Social Security and Medicare taxes with their employer. Self-employed people pay both parts, called self-employment tax. Keeping good records of income and expenses is important."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which form do employees usually receive at year end?",
+      "o": [
+       "1099",
+       "W-4",
+       "W-2",
+       "A parking ticket"
+      ],
+      "a": 2,
+      "why": "A W-2 reports wages and tax withheld."
+     },
+     {
+      "t": "mc",
+      "q": "Who handles tax payments for a 1099 contractor?",
+      "o": [
+       "The customer always",
+       "The contractor",
+       "The bank",
+       "Nobody"
+      ],
+      "a": 1,
+      "why": "Contractors are responsible for their own taxes."
+     },
+     {
+      "t": "mc",
+      "q": "What does Form W-4 do?",
+      "o": [
+       "Reports a freelancer's income",
+       "Files a return",
+       "Pays tax",
+       "Tells an employer how much tax to withhold"
+      ],
+      "a": 3,
+      "why": "The W-4 sets withholding for an employee's paycheck."
+     },
+     {
+      "t": "mc",
+      "q": "What does self-employment tax cover?",
+      "o": [
+       "Social Security and Medicare for self-employed people",
+       "Sales tax",
+       "Property tax",
+       "Parking fees"
+      ],
+      "a": 0,
+      "why": "It funds Social Security and Medicare contributions of the self-employed."
+     },
+     {
+      "t": "tf",
+      "q": "Independent contractors generally must set aside money for their own taxes.",
+      "a": true,
+      "why": "No employer withholds tax from their payments."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "W-2",
+        "Employee wage report"
+       ],
+       [
+        "1099",
+        "Contractor income report"
+       ],
+       [
+        "W-4",
+        "Withholding instructions"
+       ],
+       [
+        "Estimated taxes",
+        "Payments by the self-employed during the year"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put a freelancer's tax cycle in order",
+      "items": [
+       [
+        "Earn income",
+        1
+       ],
+       [
+        "Track income and expenses",
+        2
+       ],
+       [
+        "Pay estimated taxes",
+        3
+       ],
+       [
+        "File the annual return",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which form does an employee typically receive from an employer in the US?",
+      "a": [
+       "W-2",
+       "W2",
+       "form w-2",
+       "a w-2"
+      ],
+      "hint": "Employees get a wage form.",
+      "why": "Employees receive a W-2."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a freelancer earns 5000 and has 1200 of business expenses. What is the profit?",
+      "a": [
+       "3800",
+       "3800.0",
+       "3800.00"
+      ],
+      "hint": "Income minus expenses.",
+      "why": "5000 - 1200 = 3800."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in an example where self-employment tax is 15%, how much is owed on 40000 of net earnings?",
+      "a": [
+       "6000",
+       "6000.0",
+       "6000.00"
+      ],
+      "hint": "15% of 40000.",
+      "why": "0.15 x 40000 = 6000."
+     }
+    ]
+   },
+   {
+    "title": "Investment Taxes",
+    "period": "Investing taxes",
+    "learn": [
+     {
+      "h": "Capital gains",
+      "b": "A capital gain is the profit when you sell an asset for more than you paid (your basis). Gain = sale price minus basis. You usually owe tax only when you sell, not while the value just rises."
+     },
+     {
+      "h": "Short and long term",
+      "b": "Many countries tax gains on assets held a long time at lower rates than quick trades. Holding longer can reduce the tax. The exact time and rates differ by country and change over time."
+     },
+     {
+      "h": "Losses, dividends and interest",
+      "b": "Dividends and interest are usually taxed as income when received. A capital loss can often offset capital gains, which lowers your tax. Keep records of what you paid."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a capital gain?",
+      "o": [
+       "Profit from selling an asset for more than you paid",
+       "Your salary",
+       "Interest on a loan",
+       "A tax refund"
+      ],
+      "a": 0,
+      "why": "Gain = sale price minus basis."
+     },
+     {
+      "t": "mc",
+      "q": "What is the basis of an investment?",
+      "o": [
+       "What you sold it for",
+       "What you paid for it",
+       "Its dividends",
+       "Its tax rate"
+      ],
+      "a": 1,
+      "why": "Basis is your cost."
+     },
+     {
+      "t": "mc",
+      "q": "You buy for 500 and sell for 800. What is the gain?",
+      "o": [
+       "500",
+       "800",
+       "300",
+       "1300"
+      ],
+      "a": 2,
+      "why": "800 - 500 = 300."
+     },
+     {
+      "t": "mc",
+      "q": "Why can a capital loss help?",
+      "o": [
+       "It creates a refund of 100%",
+       "It cancels all taxes",
+       "It raises your basis",
+       "It can offset gains and reduce tax"
+      ],
+      "a": 3,
+      "why": "Losses can be used against gains."
+     },
+     {
+      "t": "tf",
+      "q": "You usually owe capital gains tax only when you sell the asset.",
+      "a": true,
+      "why": "Unrealized gains are generally not taxed until sale."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Basis",
+        "Amount paid"
+       ],
+       [
+        "Capital gain",
+        "Profit on sale"
+       ],
+       [
+        "Dividend",
+        "Share of company profit"
+       ],
+       [
+        "Capital loss",
+        "Sold for less than paid"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of taxing a stock sale in order",
+      "items": [
+       [
+        "Find your basis",
+        1
+       ],
+       [
+        "Find the sale price",
+        2
+       ],
+       [
+        "Subtract to get gain or loss",
+        3
+       ],
+       [
+        "Apply the tax rate",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: you buy a stock for 1000 and sell it for 1600. What is your gain?",
+      "a": [
+       "600",
+       "600.0",
+       "600.00"
+      ],
+      "hint": "Sale minus basis.",
+      "why": "1600 - 1000 = 600."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in an example where long-term gains are taxed at 15%, how much tax on a 600 gain?",
+      "a": [
+       "90",
+       "90.0",
+       "90.00"
+      ],
+      "hint": "15% of 600.",
+      "why": "0.15 x 600 = 90."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you have 600 of gains and 200 of losses. What is your net gain?",
+      "a": [
+       "400",
+       "400.0",
+       "400.00"
+      ],
+      "hint": "Gains minus losses.",
+      "why": "600 - 200 = 400."
+     }
+    ]
+   },
+   {
+    "title": "Retirement Accounts and Taxes",
+    "period": "Retirement taxes",
+    "learn": [
+     {
+      "h": "Tax-advantaged accounts",
+      "b": "Many countries offer retirement accounts with tax benefits. In the US, examples include the 401(k) and IRA. The goal is to encourage saving for the long term."
+     },
+     {
+      "h": "Pre-tax vs after-tax",
+      "b": "With a traditional (pre-tax) account, contributions lower your taxable income now, but withdrawals are taxed later. With a Roth (after-tax) account, you pay tax now and qualified withdrawals can be tax-free. Which is better depends on your tax rate now versus later."
+     },
+     {
+      "h": "Rules and penalties",
+      "b": "Retirement accounts often charge a penalty if you withdraw too early. Some also require withdrawals after a certain age. Rules differ by country and by account, so check yours."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How does a traditional pre-tax contribution affect taxable income today?",
+      "o": [
+       "It lowers it",
+       "It raises it",
+       "It does not change",
+       "It makes it zero"
+      ],
+      "a": 0,
+      "why": "Pre-tax money is not taxed until withdrawal."
+     },
+     {
+      "t": "mc",
+      "q": "What is special about qualified Roth withdrawals?",
+      "o": [
+       "They are always double taxed",
+       "They can be tax-free",
+       "They are illegal",
+       "They have no limits"
+      ],
+      "a": 1,
+      "why": "Roth money was already taxed going in."
+     },
+     {
+      "t": "mc",
+      "q": "Why are early-withdrawal penalties used?",
+      "o": [
+       "To raise prices",
+       "To lower taxes",
+       "To encourage long-term saving",
+       "To reward spending"
+      ],
+      "a": 2,
+      "why": "They discourage using retirement money early."
+     },
+     {
+      "t": "mc",
+      "q": "You earn 50000 and contribute 5000 pre-tax. What is your taxable income (ignoring other items)?",
+      "o": [
+       "50000",
+       "55000",
+       "5000",
+       "45000"
+      ],
+      "a": 3,
+      "why": "50000 - 5000 = 45000."
+     },
+     {
+      "t": "tf",
+      "q": "With a traditional account you may pay tax when you withdraw.",
+      "a": true,
+      "why": "Withdrawals are taxed because contributions were pre-tax."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Traditional",
+        "Taxed at withdrawal"
+       ],
+       [
+        "Roth",
+        "Taxed before contributing"
+       ],
+       [
+        "401(k)",
+        "Employer retirement plan"
+       ],
+       [
+        "Penalty",
+        "Charge for early withdrawal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the retirement saving steps in order",
+      "items": [
+       [
+        "Choose an account type",
+        1
+       ],
+       [
+        "Contribute from each paycheck",
+        2
+       ],
+       [
+        "Let investments grow",
+        3
+       ],
+       [
+        "Withdraw in retirement",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: you earn 50000 and put 5000 in a pre-tax account. What is your taxable income (ignore other items)?",
+      "a": [
+       "45000",
+       "45000.0",
+       "45000.00"
+      ],
+      "hint": "Subtract the contribution.",
+      "why": "50000 - 5000 = 45000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in a 20% bracket, how much tax do you save by contributing 5000 pre-tax?",
+      "a": [
+       "1000",
+       "1000.0",
+       "1000.00"
+      ],
+      "hint": "5000 x 0.20.",
+      "why": "5000 x 0.20 = 1000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: you withdraw 10000 from a traditional account taxed at 20%. How much do you keep?",
+      "a": [
+       "8000",
+       "8000.0",
+       "8000.00"
+      ],
+      "hint": "Keep 80%.",
+      "why": "10000 x 0.80 = 8000."
+     }
+    ]
+   }
+  ]
+ }
+}

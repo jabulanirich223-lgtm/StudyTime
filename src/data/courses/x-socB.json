@@ -1,0 +1,3617 @@
+{
+ "psych": {
+  "name": "Psychology",
+  "units": [
+   {
+    "title": "What Is Psychology?",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "The science of the mind",
+      "b": "Psychology is the scientific study of behavior and mental processes. Wilhelm Wundt opened the first psychology lab in 1879. Today psychologists study things like memory, emotions, and relationships."
+     },
+     {
+      "h": "Research methods",
+      "b": "Surveys ask many people questions. A case study looks deeply at one person. In an experiment, researchers assign people randomly to groups, so they can test cause and effect."
+     },
+     {
+      "h": "Correlation",
+      "b": "A correlation means two things are related. It does not prove that one causes the other. Only a well-designed experiment can show cause and effect."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Psychology is the scientific study of what?",
+      "o": [
+       "Behavior and mental processes",
+       "Only dreams",
+       "Only the brain's size",
+       "Human history"
+      ],
+      "a": 0,
+      "why": "That is the standard definition of psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Who opened the first psychology lab in 1879?",
+      "o": [
+       "Sigmund Freud",
+       "Wilhelm Wundt",
+       "B.F. Skinner",
+       "Carl Rogers"
+      ],
+      "a": 1,
+      "why": "Wundt's lab in Leipzig is seen as the start of modern psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Which method can show cause and effect?",
+      "o": [
+       "Survey",
+       "Case study",
+       "Experiment",
+       "Naturalistic observation"
+      ],
+      "a": 2,
+      "why": "Experiments control variables and use random assignment."
+     },
+     {
+      "t": "mc",
+      "q": "What does a correlation tell us?",
+      "o": [
+       "One thing causes the other",
+       "The two things are opposites",
+       "The data is false",
+       "Two things are related, but one may not cause the other"
+      ],
+      "a": 3,
+      "why": "Correlation does not prove causation."
+     },
+     {
+      "t": "tf",
+      "q": "A correlation proves that one variable causes the other.",
+      "a": false,
+      "why": "A third factor may explain the link."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Hypothesis",
+        "Testable prediction"
+       ],
+       [
+        "Variable",
+        "Factor that can change"
+       ],
+       [
+        "Survey",
+        "Questions given to many people"
+       ],
+       [
+        "Case study",
+        "In-depth look at one person"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the scientific method in order",
+      "items": [
+       [
+        "Ask a question",
+        1
+       ],
+       [
+        "Form a hypothesis",
+        2
+       ],
+       [
+        "Collect data",
+        3
+       ],
+       [
+        "Draw conclusions",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: who opened the first psychology lab in 1879? (last name)",
+      "a": [
+       "wundt",
+       "wilhelm wundt"
+      ],
+      "hint": "He was German.",
+      "why": "Wilhelm Wundt opened it in Leipzig."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in what year was the first psychology lab opened? (number)",
+      "a": [
+       "1879"
+      ],
+      "hint": "It is in the question above, in the 1800s.",
+      "why": "Wundt's lab opened in 1879."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which research method can show cause and effect? (one word)",
+      "a": [
+       "experiment",
+       "experiments"
+      ],
+      "hint": "Participants are assigned randomly to groups.",
+      "why": "Only a well-designed experiment can show cause and effect."
+     }
+    ]
+   },
+   {
+    "title": "Brain and Behavior",
+    "period": "Biology and the Mind",
+    "learn": [
+     {
+      "h": "Neurons",
+      "b": "A neuron is a nerve cell. It receives signals through dendrites, passes them down the axon, and releases chemical messengers called neurotransmitters into the synapse, the small gap before the next neuron."
+     },
+     {
+      "h": "Brain parts",
+      "b": "The cerebellum controls balance and coordination. The hippocampus helps form new memories. The amygdala handles fear and emotion. The frontal lobe helps with planning and decisions."
+     },
+     {
+      "h": "Two sides",
+      "b": "The brain has two hemispheres. The left hemisphere mostly controls the right side of the body, and the right hemisphere mostly controls the left side."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which brain part helps control balance and coordination?",
+      "o": [
+       "Cerebrum",
+       "Cerebellum",
+       "Hippocampus",
+       "Amygdala"
+      ],
+      "a": 1,
+      "why": "The cerebellum fine-tunes movement and balance."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of the hippocampus?",
+      "o": [
+       "Controlling hunger",
+       "Seeing colors",
+       "Forming new memories",
+       "Breathing"
+      ],
+      "a": 2,
+      "why": "Damage to the hippocampus makes it hard to form new memories."
+     },
+     {
+      "t": "mc",
+      "q": "What are neurotransmitters?",
+      "o": [
+       "Bones in the skull",
+       "Brain cells that protect neurons",
+       "Electric wires",
+       "Chemical messengers between neurons"
+      ],
+      "a": 3,
+      "why": "They cross the synapse to carry signals."
+     },
+     {
+      "t": "mc",
+      "q": "Which brain part is most linked to fear and emotion?",
+      "o": [
+       "Amygdala",
+       "Cerebellum",
+       "Occipital lobe",
+       "Brain stem"
+      ],
+      "a": 0,
+      "why": "The amygdala processes fear and other strong emotions."
+     },
+     {
+      "t": "tf",
+      "q": "The right side of the brain mostly controls the left side of the body.",
+      "a": true,
+      "why": "Each hemisphere controls the opposite side of the body."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Neuron",
+        "Nerve cell"
+       ],
+       [
+        "Synapse",
+        "Gap between neurons"
+       ],
+       [
+        "Amygdala",
+        "Processes fear and emotion"
+       ],
+       [
+        "Frontal lobe",
+        "Planning and decisions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a nerve signal in order",
+      "items": [
+       [
+        "Dendrites receive the signal",
+        1
+       ],
+       [
+        "Cell body processes it",
+        2
+       ],
+       [
+        "Signal travels down the axon",
+        3
+       ],
+       [
+        "Axon terminals release neurotransmitters",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which part of a neuron receives signals? (one word)",
+      "a": [
+       "dendrites",
+       "dendrite"
+      ],
+      "hint": "They look like tree branches.",
+      "why": "Dendrites receive signals from other neurons."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the small gap between two neurons is called the ____ (one word)",
+      "a": [
+       "synapse"
+      ],
+      "hint": "Neurotransmitters cross it.",
+      "why": "The synapse is the gap between neurons."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which brain part helps form new memories? (one word)",
+      "a": [
+       "hippocampus"
+      ],
+      "hint": "It sounds like a word for a river animal.",
+      "why": "The hippocampus helps form new memories."
+     }
+    ]
+   },
+   {
+    "title": "Sensation and Perception",
+    "period": "The Senses",
+    "learn": [
+     {
+      "h": "Sensation vs perception",
+      "b": "Sensation is when your sense organs detect a stimulus, like light or sound. Perception is when your brain organizes and interprets that information. Transduction is the step that turns physical energy into neural signals."
+     },
+     {
+      "h": "Seeing and hearing",
+      "b": "Light enters through the cornea, pupil, and lens, and lands on the retina. Rods work in dim light. Cones see color and detail in bright light. For hearing, sound waves shake the eardrum, and hair cells in the cochlea turn the vibrations into neural signals."
+     },
+     {
+      "h": "How the brain makes sense",
+      "b": "Gestalt psychologists showed that we group things into wholes, and that we see a figure against a background. We judge depth using clues like linear perspective. The absolute threshold is the smallest stimulus we notice half of the time."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the process that turns physical energy into neural signals?",
+      "o": [
+       "Transduction",
+       "Adaptation",
+       "Accommodation",
+       "Perception"
+      ],
+      "a": 0,
+      "why": "Transduction changes light, sound, and other energy into signals the brain can use."
+     },
+     {
+      "t": "mc",
+      "q": "Which retinal cells work best in dim light?",
+      "o": [
+       "Cones",
+       "Rods",
+       "Hair cells",
+       "Lens cells"
+      ],
+      "a": 1,
+      "why": "Rods handle dim light and side vision, while cones handle color and detail."
+     },
+     {
+      "t": "mc",
+      "q": "Where in the ear are sound vibrations turned into neural signals?",
+      "o": [
+       "The retina",
+       "The pupil",
+       "The cochlea",
+       "The lens"
+      ],
+      "a": 2,
+      "why": "Hair cells inside the cochlea do the transduction for hearing."
+     },
+     {
+      "t": "mc",
+      "q": "What is the smallest stimulus a person can detect 50% of the time called?",
+      "o": [
+       "Difference threshold",
+       "Sensory adaptation",
+       "Transduction",
+       "Absolute threshold"
+      ],
+      "a": 3,
+      "why": "The absolute threshold is the minimum stimulation needed to notice something half the time."
+     },
+     {
+      "t": "tf",
+      "q": "Perception is the process of detecting stimuli with sensory receptors.",
+      "a": false,
+      "why": "That describes sensation. Perception is organizing and interpreting the signals."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Cones",
+        "Color and detail in bright light"
+       ],
+       [
+        "Rods",
+        "Seeing in dim light"
+       ],
+       [
+        "Cochlea",
+        "Turns sound vibrations into signals"
+       ],
+       [
+        "Retina",
+        "Light-sensitive layer at the back of the eye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of light through the eye in order",
+      "items": [
+       [
+        "Cornea",
+        1
+       ],
+       [
+        "Pupil",
+        2
+       ],
+       [
+        "Lens",
+        3
+       ],
+       [
+        "Retina",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the name of the process that turns light or sound into neural signals? (one word)",
+      "a": [
+       "transduction"
+      ],
+      "hint": "It starts with the letters 'trans'.",
+      "why": "Transduction converts energy into neural signals."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which retinal cells let you see color? (one word)",
+      "a": [
+       "cones",
+       "cone"
+      ],
+      "hint": "They need bright light to work.",
+      "why": "Cones detect color and fine detail."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: when you see a vase standing out from its background, what Gestalt idea is this? (two words)",
+      "a": [
+       "figure-ground",
+       "figure ground"
+      ],
+      "hint": "We separate an object from what is behind it.",
+      "why": "Figure-ground is how we see a shape against a background."
+     }
+    ]
+   },
+   {
+    "title": "Learning and Memory",
+    "period": "How We Learn",
+    "learn": [
+     {
+      "h": "Conditioning",
+      "b": "Classical conditioning is learning by association, as in Pavlov's dogs, who learned that a bell meant food. Operant conditioning is learning from consequences. A reward after a behavior is positive reinforcement."
+     },
+     {
+      "h": "How memory works",
+      "b": "Memory has three jobs: encoding (getting information in), storage (keeping it), and retrieval (getting it out). Short-term memory holds about 7 items. Long-term memory is very large."
+     },
+     {
+      "h": "Better studying",
+      "b": "Spacing your study over several days helps you remember more than cramming. Testing yourself also strengthens memory."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Pavlov's dogs showed which kind of learning?",
+      "o": [
+       "Operant conditioning",
+       "Classical conditioning",
+       "Observational learning",
+       "Insight learning"
+      ],
+      "a": 1,
+      "why": "They learned to link a bell with food."
+     },
+     {
+      "t": "mc",
+      "q": "A dog gets a treat after it sits. This is an example of what?",
+      "o": [
+       "Punishment",
+       "Extinction",
+       "Positive reinforcement",
+       "Habituation"
+      ],
+      "a": 2,
+      "why": "Adding a reward makes the behavior more likely."
+     },
+     {
+      "t": "mc",
+      "q": "About how many items can short-term memory hold?",
+      "o": [
+       "About 7",
+       "About 70",
+       "An unlimited number",
+       "About 1"
+      ],
+      "a": 0,
+      "why": "Miller's research suggested 7, plus or minus 2."
+     },
+     {
+      "t": "mc",
+      "q": "Which study method best builds long-term memory?",
+      "o": [
+       "Cramming all night",
+       "Reading once",
+       "Only highlighting",
+       "Spacing study over several days"
+      ],
+      "a": 3,
+      "why": "Spaced practice beats cramming for long-term recall."
+     },
+     {
+      "t": "tf",
+      "q": "Long-term memory can only hold a small amount of information.",
+      "a": false,
+      "why": "Long-term memory has no known practical limit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Classical conditioning",
+        "Learning by association"
+       ],
+       [
+        "Operant conditioning",
+        "Learning from consequences"
+       ],
+       [
+        "Encoding",
+        "Getting information into memory"
+       ],
+       [
+        "Retrieval",
+        "Pulling a memory out"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the flow of information through memory in order",
+      "items": [
+       [
+        "Sensory memory",
+        1
+       ],
+       [
+        "Attention",
+        2
+       ],
+       [
+        "Short-term memory",
+        3
+       ],
+       [
+        "Long-term memory",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which scientist studied classical conditioning with dogs? (last name)",
+      "a": [
+       "pavlov",
+       "ivan pavlov"
+      ],
+      "hint": "His dogs learned a bell meant food.",
+      "why": "Pavlov discovered classical conditioning."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: memory has three jobs: encoding, storage, and ____ (one word)",
+      "a": [
+       "retrieval"
+      ],
+      "hint": "Getting information out.",
+      "why": "Retrieval is getting stored information out."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a dog gets a treat after it sits. Giving a reward to increase behavior is called positive ____ (one word)",
+      "a": [
+       "reinforcement"
+      ],
+      "hint": "It makes behavior stronger.",
+      "why": "Positive reinforcement adds a reward."
+     }
+    ]
+   },
+   {
+    "title": "Thinking and Intelligence",
+    "period": "Cognition",
+    "learn": [
+     {
+      "h": "Solving problems",
+      "b": "An algorithm is a step-by-step method that always works, like a math formula. A heuristic is a quick mental shortcut that is usually right but can fail. Functional fixedness means seeing an object only for its normal use."
+     },
+     {
+      "h": "Language",
+      "b": "Phonemes are the smallest units of sound in a language. Morphemes are the smallest units of meaning, like the word 'cat' or the ending '-s'. Syntax is the set of rules for word order. Babies babble at about four months and speak their first words around age one."
+     },
+     {
+      "h": "Intelligence",
+      "b": "Alfred Binet made the first practical intelligence test. IQ was first computed as mental age divided by chronological age, times 100. The average IQ is 100. Howard Gardner argued for several kinds of intelligence, not just one general ability."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which problem-solving method follows steps that guarantee a solution?",
+      "o": [
+       "Heuristic",
+       "Algorithm",
+       "Insight",
+       "Intuition"
+      ],
+      "a": 1,
+      "why": "An algorithm always works if you follow every step."
+     },
+     {
+      "t": "mc",
+      "q": "What is the smallest unit of meaning in a language?",
+      "o": [
+       "Phoneme",
+       "Syntax",
+       "Morpheme",
+       "Grammar"
+      ],
+      "a": 2,
+      "why": "Morphemes carry meaning, such as 'un-' or '-ed'."
+     },
+     {
+      "t": "mc",
+      "q": "Who created the first practical intelligence test?",
+      "o": [
+       "Sigmund Freud",
+       "Ivan Pavlov",
+       "Jean Piaget",
+       "Alfred Binet"
+      ],
+      "a": 3,
+      "why": "Binet designed a test to find children who needed extra help in school."
+     },
+     {
+      "t": "mc",
+      "q": "What is the average IQ score?",
+      "o": [
+       "100",
+       "50",
+       "85",
+       "150"
+      ],
+      "a": 0,
+      "why": "IQ tests are designed so the average score is 100."
+     },
+     {
+      "t": "tf",
+      "q": "Howard Gardner proposed that there are multiple intelligences instead of just one.",
+      "a": true,
+      "why": "He described kinds like musical, spatial, and bodily-kinesthetic intelligence."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Phoneme",
+        "Smallest unit of sound"
+       ],
+       [
+        "Syntax",
+        "Rules for word order"
+       ],
+       [
+        "Heuristic",
+        "Quick mental shortcut"
+       ],
+       [
+        "Functional fixedness",
+        "Seeing an object only for its usual use"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the stages of early language development in order",
+      "items": [
+       [
+        "Crying",
+        1
+       ],
+       [
+        "Babbling",
+        2
+       ],
+       [
+        "One-word stage",
+        3
+       ],
+       [
+        "Two-word sentences",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a child has mental age 12 and is 10 years old. Using IQ = mental age / chronological age x 100, what is the IQ?",
+      "a": [
+       "120"
+      ],
+      "hint": "Divide 12 by 10, then multiply by 100.",
+      "why": "12 / 10 = 1.2, and 1.2 x 100 = 120."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the name for a quick mental shortcut for making decisions? (one word)",
+      "a": [
+       "heuristic",
+       "heuristics"
+      ],
+      "hint": "It is the opposite of a step-by-step algorithm.",
+      "why": "A heuristic is a fast rule of thumb."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the smallest unit of sound in a language is called a ____ (one word)",
+      "a": [
+       "phoneme"
+      ],
+      "hint": "It sounds like 'phone'.",
+      "why": "Phonemes are the basic sounds, like /k/ in 'cat'."
+     }
+    ]
+   },
+   {
+    "title": "Development and Social Behavior",
+    "period": "People Over Time",
+    "learn": [
+     {
+      "h": "Stages of growth",
+      "b": "Jean Piaget described four stages of thinking in children: sensorimotor, preoperational, concrete operational, and formal operational. Erik Erikson said people face a social challenge at every stage of life."
+     },
+     {
+      "h": "Needs",
+      "b": "Abraham Maslow said people have a hierarchy of needs. Basic physiological needs like food and sleep come first, then safety, belonging, esteem, and finally self-actualization."
+     },
+     {
+      "h": "Groups",
+      "b": "Conformity means changing your behavior to match a group. Obedience means following an authority. The bystander effect means people are less likely to help when others are present."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which psychologist proposed four stages of cognitive development?",
+      "o": [
+       "Freud",
+       "Piaget",
+       "Pavlov",
+       "Skinner"
+      ],
+      "a": 1,
+      "why": "Piaget described how children's thinking changes with age."
+     },
+     {
+      "t": "mc",
+      "q": "What is at the base of Maslow's hierarchy of needs?",
+      "o": [
+       "Self-actualization",
+       "Esteem",
+       "Safety",
+       "Physiological needs"
+      ],
+      "a": 3,
+      "why": "Basic needs like food and water come first."
+     },
+     {
+      "t": "mc",
+      "q": "What does the bystander effect describe?",
+      "o": [
+       "People help more in large groups",
+       "People always help strangers",
+       "People are less likely to help when others are present",
+       "People only help family"
+      ],
+      "a": 2,
+      "why": "Responsibility is spread across onlookers."
+     },
+     {
+      "t": "mc",
+      "q": "What is conformity?",
+      "o": [
+       "Changing behavior to match a group",
+       "Obeying a direct order",
+       "Helping a stranger",
+       "Blaming others"
+      ],
+      "a": 0,
+      "why": "Asch's line experiments showed people conform to the group."
+     },
+     {
+      "t": "tf",
+      "q": "Erikson proposed that people face a social challenge at each stage of life.",
+      "a": true,
+      "why": "His theory has eight psychosocial stages."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stereotype",
+        "Fixed idea about a group"
+       ],
+       [
+        "Obedience",
+        "Following an authority's orders"
+       ],
+       [
+        "Attachment",
+        "Emotional bond to a caregiver"
+       ],
+       [
+        "Conformity",
+        "Matching a group's behavior"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Piaget's stages in order",
+      "items": [
+       [
+        "Sensorimotor",
+        1
+       ],
+       [
+        "Preoperational",
+        2
+       ],
+       [
+        "Concrete operational",
+        3
+       ],
+       [
+        "Formal operational",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which psychologist proposed four stages of cognitive development? (last name)",
+      "a": [
+       "piaget",
+       "jean piaget"
+      ],
+      "hint": "He was Swiss.",
+      "why": "Jean Piaget described four stages."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: changing your behavior to match a group is called ____ (one word)",
+      "a": [
+       "conformity"
+      ],
+      "hint": "Starts with 'con'.",
+      "why": "Conformity means matching the group."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: people are less likely to help when others are present. Name this effect (two words)",
+      "a": [
+       "bystander effect",
+       "the bystander effect"
+      ],
+      "hint": "It involves people standing by.",
+      "why": "This is the bystander effect."
+     }
+    ]
+   },
+   {
+    "title": "Motivation, Emotion, and Stress",
+    "period": "Feelings and Drives",
+    "learn": [
+     {
+      "h": "Motivation",
+      "b": "Intrinsic motivation means doing something because you enjoy it. Extrinsic motivation means doing it for a reward or to avoid punishment. Drive theory says that a need, like hunger, creates a push to act until the need is met."
+     },
+     {
+      "h": "Emotion",
+      "b": "The amygdala is key for fear. The James-Lange theory says body reactions come first, and then we feel the emotion. The Cannon-Bard theory says the body reaction and the feeling happen at the same time. The Schachter-Singer theory says emotion is arousal plus a thought label."
+     },
+     {
+      "h": "Stress",
+      "b": "Hans Selye described the general adaptation syndrome with three stages: alarm, resistance, and exhaustion. In stress, the body releases adrenaline and cortisol. Coping can focus on solving the problem or on calming your feelings."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which theory says emotion comes from physical arousal plus a mental label?",
+      "o": [
+       "James-Lange theory",
+       "Cannon-Bard theory",
+       "Schachter-Singer two-factor theory",
+       "Drive-reduction theory"
+      ],
+      "a": 2,
+      "why": "Schachter and Singer said we interpret our arousal to decide what we feel."
+     },
+     {
+      "t": "mc",
+      "q": "What is the first stage of the general adaptation syndrome?",
+      "o": [
+       "Resistance",
+       "Exhaustion",
+       "Recovery",
+       "Alarm"
+      ],
+      "a": 3,
+      "why": "Selye's stages go alarm, resistance, exhaustion."
+     },
+     {
+      "t": "mc",
+      "q": "Doing a hobby just because you enjoy it is an example of what?",
+      "o": [
+       "Intrinsic motivation",
+       "Extrinsic motivation",
+       "Drive reduction",
+       "Conformity"
+      ],
+      "a": 0,
+      "why": "The reward comes from the activity itself."
+     },
+     {
+      "t": "mc",
+      "q": "Which hormone is a main stress hormone released by the adrenal glands?",
+      "o": [
+       "Insulin",
+       "Cortisol",
+       "Melatonin",
+       "Oxytocin"
+      ],
+      "a": 1,
+      "why": "Cortisol helps the body respond to long stress."
+     },
+     {
+      "t": "tf",
+      "q": "The James-Lange theory says we feel emotion before our body reacts.",
+      "a": false,
+      "why": "It says the body reacts first, and the emotion follows."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Amygdala",
+        "Processes fear"
+       ],
+       [
+        "Cortisol",
+        "Stress hormone"
+       ],
+       [
+        "Extrinsic motivation",
+        "Acting for a reward"
+       ],
+       [
+        "Problem-focused coping",
+        "Dealing with the cause of stress"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the body's stress response in order",
+      "items": [
+       [
+        "A stressor appears",
+        1
+       ],
+       [
+        "The brain alerts the adrenal glands",
+        2
+       ],
+       [
+        "Adrenaline and cortisol are released",
+        3
+       ],
+       [
+        "Heart rate and breathing speed up",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the name of the stress hormone released by the adrenal glands? (one word)",
+      "a": [
+       "cortisol"
+      ],
+      "hint": "It starts with the letter c.",
+      "why": "Cortisol is the main long-term stress hormone."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in Selye's general adaptation syndrome, which stage comes after resistance? (one word)",
+      "a": [
+       "exhaustion"
+      ],
+      "hint": "The body runs out of energy.",
+      "why": "The three stages are alarm, resistance, and exhaustion."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a student reads books for fun, with no reward. Is this intrinsic or extrinsic motivation?",
+      "a": [
+       "intrinsic",
+       "intrinsic motivation"
+      ],
+      "hint": "The reason comes from inside.",
+      "why": "The enjoyment itself is the reward."
+     }
+    ]
+   },
+   {
+    "title": "Personality, Disorders, and Therapy",
+    "period": "Mind and Health",
+    "learn": [
+     {
+      "h": "Personality",
+      "b": "The Big Five traits are openness, conscientiousness, extraversion, agreeableness, and neuroticism. Sigmund Freud said the unconscious mind shapes personality. Carl Rogers said people grow best when they get unconditional positive regard, which means being accepted as they are."
+     },
+     {
+      "h": "Psychological disorders",
+      "b": "Psychologists use a manual called the DSM-5 to describe disorders. Anxiety disorders involve strong fear or worry, and OCD involves unwanted thoughts and repeated rituals. Bipolar disorder has swings between mania and depression. Schizophrenia can involve hallucinations and delusions."
+     },
+     {
+      "h": "Therapy",
+      "b": "Psychotherapy means treatment by talking. Cognitive-behavioral therapy (CBT) helps people change unhelpful thoughts and actions. Biomedical therapy uses medicine, like antidepressants, or treatments like ECT. Psychiatrists can prescribe medicine."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is NOT one of the Big Five personality traits?",
+      "o": [
+       "Openness",
+       "Conscientiousness",
+       "Agreeableness",
+       "Intelligence"
+      ],
+      "a": 3,
+      "why": "The Big Five are openness, conscientiousness, extraversion, agreeableness, and neuroticism."
+     },
+     {
+      "t": "mc",
+      "q": "Which therapy teaches people to change unhelpful thoughts and behaviors?",
+      "o": [
+       "Cognitive-behavioral therapy",
+       "Psychoanalysis",
+       "Electroconvulsive therapy",
+       "Hypnosis"
+      ],
+      "a": 0,
+      "why": "CBT links thoughts, feelings, and actions."
+     },
+     {
+      "t": "mc",
+      "q": "Seeing or hearing things that are not there is called what?",
+      "o": [
+       "Delusions",
+       "Hallucinations",
+       "Obsessions",
+       "Phobias"
+      ],
+      "a": 1,
+      "why": "Hallucinations are false sensory experiences."
+     },
+     {
+      "t": "mc",
+      "q": "Which manual is used to classify psychological disorders?",
+      "o": [
+       "WAIS",
+       "MMPI",
+       "DSM-5",
+       "Big Five"
+      ],
+      "a": 2,
+      "why": "DSM stands for Diagnostic and Statistical Manual of Mental Disorders."
+     },
+     {
+      "t": "tf",
+      "q": "Antidepressants are an example of biomedical therapy.",
+      "a": true,
+      "why": "Biomedical therapy treats the body or brain with drugs or other medical methods."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Bipolar disorder",
+        "Swings between mania and depression"
+       ],
+       [
+        "OCD",
+        "Unwanted thoughts and repeated rituals"
+       ],
+       [
+        "Unconditional positive regard",
+        "Fully accepting a person (Rogers)"
+       ],
+       [
+        "Psychoanalysis",
+        "Freud's therapy about the unconscious"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of CBT in order",
+      "items": [
+       [
+        "Notice a negative thought",
+        1
+       ],
+       [
+        "Question the evidence",
+        2
+       ],
+       [
+        "Replace it with a realistic thought",
+        3
+       ],
+       [
+        "Practice the new behavior",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which Big Five trait describes being organized and careful? (one word)",
+      "a": [
+       "conscientiousness"
+      ],
+      "hint": "It starts with 'conscien'.",
+      "why": "Conscientious people are organized and responsible."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the short name (abbreviation) for cognitive-behavioral therapy?",
+      "a": [
+       "cbt"
+      ],
+      "hint": "Three letters.",
+      "why": "CBT stands for cognitive-behavioral therapy."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which psychologist created client-centered therapy? (last name)",
+      "a": [
+       "rogers",
+       "carl rogers"
+      ],
+      "hint": "His first name was Carl.",
+      "why": "Carl Rogers believed in listening and accepting clients."
+     }
+    ]
+   }
+  ]
+ },
+ "ap-psych": {
+  "name": "AP Psychology",
+  "units": [
+   {
+    "title": "Biological Bases of Behavior",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "Research methods",
+      "b": "In an experiment, the researcher changes the independent variable and measures the dependent variable. Random assignment puts people into the experimental or control group by chance. A correlation shows a relationship but not cause. Researchers must follow ethics, such as informed consent and debriefing."
+     },
+     {
+      "h": "Neurons and neurotransmitters",
+      "b": "A neuron receives signals through dendrites and sends an action potential down the axon. The signal crosses the synapse using neurotransmitters. Dopamine affects reward and movement, and low dopamine is linked to Parkinson's disease. Serotonin affects mood, acetylcholine affects muscles and memory, and GABA calms neurons."
+     },
+     {
+      "h": "Nervous system and brain",
+      "b": "The central nervous system is the brain and spinal cord. In the peripheral system, the sympathetic division arouses the body and the parasympathetic division calms it. The hippocampus forms memories, the amygdala handles fear, and the cerebellum controls balance. The frontal lobe plans, the parietal lobe senses touch, the temporal lobe hears, and the occipital lobe sees. Neuroplasticity means the brain can rewire itself."
+     },
+     {
+      "h": "Senses and consciousness",
+      "b": "Transduction turns stimuli into neural signals. Rods see in dim light and cones see color. Sleep has NREM stages 1 to 3 and REM sleep, when vivid dreams happen. Depressants slow the nervous system, stimulants speed it up, and tolerance means needing more of a drug for the same effect."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which part of a neuron receives messages from other neurons?",
+      "o": [
+       "Dendrites",
+       "Axon",
+       "Myelin sheath",
+       "Axon terminal"
+      ],
+      "a": 0,
+      "why": "Dendrites are the branches that collect incoming signals."
+     },
+     {
+      "t": "mc",
+      "q": "Low levels of which neurotransmitter are linked to Parkinson's disease?",
+      "o": [
+       "Serotonin",
+       "Dopamine",
+       "GABA",
+       "Endorphins"
+      ],
+      "a": 1,
+      "why": "Parkinson's involves loss of dopamine-producing neurons that help control movement."
+     },
+     {
+      "t": "mc",
+      "q": "Which lobe of the cerebral cortex is mainly responsible for vision?",
+      "o": [
+       "Temporal lobe",
+       "Parietal lobe",
+       "Occipital lobe",
+       "Frontal lobe"
+      ],
+      "a": 2,
+      "why": "The occipital lobe, at the back of the brain, processes visual information."
+     },
+     {
+      "t": "mc",
+      "q": "In an experiment, what is the variable the researcher manipulates?",
+      "o": [
+       "Dependent variable",
+       "Confounding variable",
+       "Control variable",
+       "Independent variable"
+      ],
+      "a": 3,
+      "why": "The independent variable is changed to see its effect on the dependent variable."
+     },
+     {
+      "t": "tf",
+      "q": "The parasympathetic division of the nervous system calms the body after arousal.",
+      "a": true,
+      "why": "The sympathetic division arouses and the parasympathetic division restores calm."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Hippocampus",
+        "Forms new explicit memories"
+       ],
+       [
+        "Amygdala",
+        "Fear and aggression"
+       ],
+       [
+        "Cerebellum",
+        "Balance and coordination"
+       ],
+       [
+        "Hypothalamus",
+        "Hunger, thirst, and body temperature"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of neural communication in order",
+      "items": [
+       [
+        "Dendrites receive a signal",
+        1
+       ],
+       [
+        "An action potential travels down the axon",
+        2
+       ],
+       [
+        "Neurotransmitters cross the synapse",
+        3
+       ],
+       [
+        "The next neuron receives them",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: what is the term for the brain's ability to reorganize itself after experience or injury? (one word)",
+      "a": [
+       "neuroplasticity"
+      ],
+      "hint": "It combines 'neuro' and 'plastic'.",
+      "why": "Neuroplasticity is the brain's ability to change its connections."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: find the mean of these scores: 4, 6, 8, 10, 12",
+      "a": [
+       "8"
+      ],
+      "hint": "Add them up and divide by 5.",
+      "why": "4+6+8+10+12 = 40, and 40 / 5 = 8."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: REM sleep stands for ____ eye movement sleep (one word)",
+      "a": [
+       "rapid"
+      ],
+      "hint": "The opposite of slow.",
+      "why": "REM means rapid eye movement."
+     }
+    ]
+   },
+   {
+    "title": "Cognition",
+    "period": "Unit 2",
+    "learn": [
+     {
+      "h": "Memory systems",
+      "b": "The Atkinson-Shiffrin model has sensory memory, short-term (working) memory, and long-term memory. Explicit memory includes facts (semantic) and events (episodic). Implicit memory includes skills like riding a bike (procedural). Deep processing of meaning helps encoding."
+     },
+     {
+      "h": "Forgetting and memory errors",
+      "b": "Ebbinghaus found that forgetting is fast at first and then slows down. Retroactive interference is when new learning blocks old memories, and proactive interference is when old learning blocks new ones. Elizabeth Loftus showed that the wording of questions can change eyewitness memory, which is called the misinformation effect."
+     },
+     {
+      "h": "Thinking and decisions",
+      "b": "Concepts are mental groups, and schemas are mental frameworks. The availability heuristic judges by how easily examples come to mind. Confirmation bias is looking only for evidence that supports your beliefs. Functional fixedness and mental sets block problem solving. Divergent thinking creates many ideas, and convergent thinking finds one best answer."
+     },
+     {
+      "h": "Language and intelligence",
+      "b": "Phonemes, morphemes, and syntax build language. Chomsky said humans are born ready to learn language, and Skinner said language is learned by reinforcement. Spearman proposed general intelligence (g), Gardner proposed multiple intelligences, and Cattell separated fluid from crystallized intelligence. A good test is reliable (consistent) and valid (measures what it claims). IQ scores form a normal curve with a mean of 100 and a standard deviation of 15."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Remembering how to ride a bike is an example of which kind of memory?",
+      "o": [
+       "Episodic memory",
+       "Procedural (implicit) memory",
+       "Semantic memory",
+       "Sensory memory"
+      ],
+      "a": 1,
+      "why": "Procedural memory stores skills and habits without conscious recall."
+     },
+     {
+      "t": "mc",
+      "q": "Judging how likely something is by how easily examples come to mind is called what?",
+      "o": [
+       "Representativeness heuristic",
+       "Anchoring",
+       "Availability heuristic",
+       "Framing"
+      ],
+      "a": 2,
+      "why": "Vivid, recent examples feel more common than they are."
+     },
+     {
+      "t": "mc",
+      "q": "Learning a new phone number makes you forget your old one. What is this?",
+      "o": [
+       "Proactive interference",
+       "Encoding failure",
+       "Decay",
+       "Retroactive interference"
+      ],
+      "a": 3,
+      "why": "New information works backward to disrupt old memories."
+     },
+     {
+      "t": "mc",
+      "q": "A test that measures what it claims to measure has high what?",
+      "o": [
+       "Validity",
+       "Reliability",
+       "Standardization",
+       "Heritability"
+      ],
+      "a": 0,
+      "why": "Validity is accuracy. Reliability is consistency."
+     },
+     {
+      "t": "tf",
+      "q": "Elizabeth Loftus showed that the wording of a question can change eyewitness memories.",
+      "a": true,
+      "why": "Her misinformation effect studies used words like 'smashed' versus 'hit'."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Confirmation bias",
+        "Seeking evidence that fits your beliefs"
+       ],
+       [
+        "Functional fixedness",
+        "Seeing an object only for its usual use"
+       ],
+       [
+        "Fluid intelligence",
+        "Solving new problems"
+       ],
+       [
+        "Crystallized intelligence",
+        "Using stored knowledge"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the flow of information through memory in order",
+      "items": [
+       [
+        "Sensory memory",
+        1
+       ],
+       [
+        "Attention selects information",
+        2
+       ],
+       [
+        "Short-term memory",
+        3
+       ],
+       [
+        "Long-term memory",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: on a normal IQ curve, about what percent of scores fall within 1 standard deviation of the mean? (number)",
+      "a": [
+       "68",
+       "68%"
+      ],
+      "hint": "It is the 68-95-99.7 rule.",
+      "why": "About 68% of scores fall within one standard deviation."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the name of the bias for favoring evidence that supports what you already believe? (one word before 'bias')",
+      "a": [
+       "confirmation"
+      ],
+      "hint": "You 'confirm' what you think.",
+      "why": "Confirmation bias filters out opposing evidence."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which psychologist studied the misinformation effect? (last name)",
+      "a": [
+       "loftus",
+       "elizabeth loftus"
+      ],
+      "hint": "Her first name is Elizabeth.",
+      "why": "Elizabeth Loftus studied eyewitness memory."
+     }
+    ]
+   },
+   {
+    "title": "Development and Learning",
+    "period": "Unit 3",
+    "learn": [
+     {
+      "h": "Development and attachment",
+      "b": "Cross-sectional studies compare different age groups at one time, and longitudinal studies follow the same people over time. Harlow's monkeys showed that comfort matters for attachment. Ainsworth found secure, avoidant, and anxious-ambivalent attachment. Baumrind described authoritative, authoritarian, and permissive parenting."
+     },
+     {
+      "h": "Stages of development",
+      "b": "Piaget's stages are sensorimotor (object permanence), preoperational (egocentrism), concrete operational (conservation), and formal operational (abstract thinking). Vygotsky said children learn best in the zone of proximal development, with help. Kohlberg described preconventional, conventional, and postconventional morality. Erikson described eight psychosocial crises."
+     },
+     {
+      "h": "Classical and operant conditioning",
+      "b": "In classical conditioning, a neutral stimulus paired with an unconditioned stimulus becomes a conditioned stimulus. Learning is acquisition, and fading is extinction. In operant conditioning, reinforcement increases behavior and punishment decreases it. Negative reinforcement removes something unpleasant. A variable-ratio schedule gives steady responding and is hardest to extinguish."
+     },
+     {
+      "h": "Observational and cognitive learning",
+      "b": "Bandura's Bobo doll study showed children copy aggression they see. Mirror neurons may help us imitate. Tolman showed latent learning, which is learning without a reward at first. Garcia showed taste aversion can form after one pairing. Seligman found learned helplessness in dogs that could not escape shocks."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "At which Piaget stage do children develop object permanence?",
+      "o": [
+       "Preoperational",
+       "Concrete operational",
+       "Sensorimotor",
+       "Formal operational"
+      ],
+      "a": 2,
+      "why": "Babies learn that things still exist when out of sight."
+     },
+     {
+      "t": "mc",
+      "q": "A rat presses a lever to turn off an electric shock. What is this?",
+      "o": [
+       "Positive reinforcement",
+       "Positive punishment",
+       "Negative punishment",
+       "Negative reinforcement"
+      ],
+      "a": 3,
+      "why": "Removing an unpleasant stimulus increases the behavior."
+     },
+     {
+      "t": "mc",
+      "q": "Which reinforcement schedule produces high, steady responding and is most resistant to extinction?",
+      "o": [
+       "Variable ratio",
+       "Fixed ratio",
+       "Fixed interval",
+       "Variable interval"
+      ],
+      "a": 0,
+      "why": "Slot machines use it because the payoff is unpredictable."
+     },
+     {
+      "t": "mc",
+      "q": "Which Baumrind parenting style has high demands and high warmth?",
+      "o": [
+       "Authoritarian",
+       "Authoritative",
+       "Permissive",
+       "Neglectful"
+      ],
+      "a": 1,
+      "why": "Authoritative parents set clear rules and explain them."
+     },
+     {
+      "t": "tf",
+      "q": "Bandura's Bobo doll study showed that children can learn aggression by watching a model.",
+      "a": true,
+      "why": "Children who saw an adult hit the doll often copied the behavior."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Unconditioned stimulus",
+        "Naturally triggers a response"
+       ],
+       [
+        "Extinction",
+        "Learned response fades without the pairing"
+       ],
+       [
+        "Zone of proximal development",
+        "What a child can do with help"
+       ],
+       [
+        "Secure attachment",
+        "Child uses caregiver as a safe base"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Piaget's stages of cognitive development in order",
+      "items": [
+       [
+        "Sensorimotor",
+        1
+       ],
+       [
+        "Preoperational",
+        2
+       ],
+       [
+        "Concrete operational",
+        3
+       ],
+       [
+        "Formal operational",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which scientist did experiments with dogs that learned to salivate to a bell? (last name)",
+      "a": [
+       "pavlov",
+       "ivan pavlov"
+      ],
+      "hint": "He was Russian.",
+      "why": "Pavlov discovered classical conditioning."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a slot machine pays after an unpredictable number of pulls. Name the reinforcement schedule. (two words)",
+      "a": [
+       "variable ratio",
+       "variable-ratio"
+      ],
+      "hint": "The number of responses changes each time.",
+      "why": "A variable number of responses gives a reward, so it is variable ratio."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a child knows that pouring water into a taller glass does not change the amount. What is this idea called? (one word)",
+      "a": [
+       "conservation"
+      ],
+      "hint": "Concrete operational children understand it.",
+      "why": "Conservation means quantity stays the same when appearance changes."
+     }
+    ]
+   },
+   {
+    "title": "Social Psychology and Personality",
+    "period": "Unit 4",
+    "learn": [
+     {
+      "h": "Attitudes and attributions",
+      "b": "The fundamental attribution error is blaming other people's behavior on personality and ignoring the situation. The self-serving bias means taking credit for success and blaming outside causes for failure. Cognitive dissonance, from Festinger, is the tension we feel when our beliefs and actions do not match, and we often change our attitude to fix it. Persuasion can use the central route (facts) or the peripheral route (looks, feelings)."
+     },
+     {
+      "h": "Social influence",
+      "b": "Asch's line studies showed conformity to a group. Milgram's shock studies showed obedience to authority. Social facilitation helps performance on easy tasks, and social loafing means less effort in a group. Deindividuation, group polarization, and groupthink are group effects. In the bystander effect, more witnesses means less help because of diffusion of responsibility."
+     },
+     {
+      "h": "Bias and relationships",
+      "b": "A stereotype is a belief about a group, prejudice is an attitude, and discrimination is an action. In-group bias favors your own group. The mere exposure effect says we like what we see often. Superordinate goals, which need cooperation, can reduce conflict between groups."
+     },
+     {
+      "h": "Personality theories",
+      "b": "Freud's id seeks pleasure, the ego deals with reality, and the superego holds morals. Trait theories like the Big Five describe stable traits. Bandura's reciprocal determinism says thoughts, behavior, and environment affect each other. Humanistic theorists like Maslow and Rogers focus on growth. Projective tests like the Rorschach are less reliable than the MMPI."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which study investigated conformity to a group?",
+      "o": [
+       "Milgram's shock study",
+       "Zimbardo's prison study",
+       "Bobo doll study",
+       "Asch's line judgment study"
+      ],
+      "a": 3,
+      "why": "Participants often agreed with a group's wrong answers."
+     },
+     {
+      "t": "mc",
+      "q": "What do we call the tension from holding inconsistent beliefs and actions?",
+      "o": [
+       "Cognitive dissonance",
+       "Groupthink",
+       "Deindividuation",
+       "Self-serving bias"
+      ],
+      "a": 0,
+      "why": "Festinger said people reduce the tension, often by changing attitudes."
+     },
+     {
+      "t": "mc",
+      "q": "Blaming someone's behavior on personality and overlooking the situation is called what?",
+      "o": [
+       "Self-serving bias",
+       "Fundamental attribution error",
+       "Halo effect",
+       "In-group bias"
+      ],
+      "a": 1,
+      "why": "We underestimate how much the situation matters."
+     },
+     {
+      "t": "mc",
+      "q": "According to Freud, the id operates on which principle?",
+      "o": [
+       "Reality principle",
+       "Morality principle",
+       "Pleasure principle",
+       "Self-actualization"
+      ],
+      "a": 2,
+      "why": "The id wants immediate satisfaction."
+     },
+     {
+      "t": "tf",
+      "q": "In the bystander effect, each person is less likely to help when more people are present.",
+      "a": true,
+      "why": "Diffusion of responsibility makes everyone assume someone else will act."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Social loafing",
+        "Less effort in a group"
+       ],
+       [
+        "Groupthink",
+        "Wanting harmony over realistic decisions"
+       ],
+       [
+        "Foot-in-the-door",
+        "Small request first, bigger one later"
+       ],
+       [
+        "Superordinate goals",
+        "Shared goals that reduce conflict"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of cognitive dissonance in order",
+      "items": [
+       [
+        "Hold a belief",
+        1
+       ],
+       [
+        "Act against the belief",
+        2
+       ],
+       [
+        "Feel tension",
+        3
+       ],
+       [
+        "Change the attitude to fit",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: who conducted the famous electric shock obedience studies? (last name)",
+      "a": [
+       "milgram",
+       "stanley milgram"
+      ],
+      "hint": "He worked at Yale in the 1960s.",
+      "why": "Stanley Milgram studied obedience to authority."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in Freud's theory, which part of personality deals with reality? (one word)",
+      "a": [
+       "ego",
+       "the ego"
+      ],
+      "hint": "It sits between the id and superego.",
+      "why": "The ego balances desires with reality."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which Big Five trait describes being sociable and energetic? (one word)",
+      "a": [
+       "extraversion",
+       "extroversion"
+      ],
+      "hint": "The opposite is introversion.",
+      "why": "Extraversion describes outgoing people."
+     }
+    ]
+   },
+   {
+    "title": "Mental and Physical Health",
+    "period": "Unit 5",
+    "learn": [
+     {
+      "h": "Stress and health",
+      "b": "Selye's general adaptation syndrome has alarm, resistance, and exhaustion. Lazarus said stress depends on how we appraise events. Coping can be problem-focused or emotion-focused. The biopsychosocial model says health comes from biology, psychology, and social factors together."
+     },
+     {
+      "h": "Psychological disorders",
+      "b": "The DSM-5-TR classifies disorders. Anxiety disorders include phobias, panic disorder, GAD, OCD, and PTSD. Mood disorders include major depression and bipolar disorder. Schizophrenia has positive symptoms (hallucinations, delusions) and negative symptoms (flat affect). Other categories include personality, neurodevelopmental, and dissociative disorders. The diathesis-stress model says disorders come from vulnerability plus stress."
+     },
+     {
+      "h": "Psychotherapies",
+      "b": "Psychodynamic therapy explores unconscious conflicts. Humanistic therapy, like Rogers's, is client-centered. Behavior therapy uses conditioning, such as systematic desensitization, which pairs relaxation with feared things step by step. Beck's cognitive therapy changes distorted thoughts, and CBT combines thoughts and behavior. Placebo effects and meta-analyses help us judge how well therapy works."
+     },
+     {
+      "h": "Biomedical treatments",
+      "b": "Antipsychotics treat schizophrenia, and SSRIs are antidepressants that raise serotonin. Lithium treats bipolar disorder, and anti-anxiety drugs reduce anxiety. Electroconvulsive therapy (ECT) is used for severe depression. Psychiatrists are medical doctors who can prescribe drugs. Deinstitutionalization moved many patients out of hospitals into community care."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which therapy exposes a person to feared things step by step while they are relaxed?",
+      "o": [
+       "Systematic desensitization",
+       "Free association",
+       "Aversive conditioning",
+       "Client-centered therapy"
+      ],
+      "a": 0,
+      "why": "A fear hierarchy pairs relaxation with each feared item."
+     },
+     {
+      "t": "mc",
+      "q": "Which drug class is most often used to treat major depression?",
+      "o": [
+       "Antipsychotics",
+       "SSRIs",
+       "Stimulants",
+       "Anticonvulsants"
+      ],
+      "a": 1,
+      "why": "SSRIs increase serotonin availability."
+     },
+     {
+      "t": "mc",
+      "q": "Hallucinations and delusions are called what kind of schizophrenia symptoms?",
+      "o": [
+       "Negative symptoms",
+       "Mood symptoms",
+       "Positive symptoms",
+       "Withdrawal symptoms"
+      ],
+      "a": 2,
+      "why": "Positive means added behaviors that are not normally present."
+     },
+     {
+      "t": "mc",
+      "q": "Which model says health comes from biology, psychology, and social factors together?",
+      "o": [
+       "Medical model",
+       "Diathesis model",
+       "Psychodynamic model",
+       "Biopsychosocial model"
+      ],
+      "a": 3,
+      "why": "It looks at many causes instead of only one."
+     },
+     {
+      "t": "tf",
+      "q": "Psychiatrists are medical doctors and can usually prescribe medication.",
+      "a": true,
+      "why": "Most psychologists cannot prescribe drugs, although a few states allow it with training."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "PTSD",
+        "Flashbacks after trauma"
+       ],
+       [
+        "Bipolar disorder",
+        "Cycles of mania and depression"
+       ],
+       [
+        "Cognitive therapy (Beck)",
+        "Changes distorted thoughts"
+       ],
+       [
+        "ECT",
+        "Brief seizure for severe depression"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of systematic desensitization in order",
+      "items": [
+       [
+        "Learn relaxation",
+        1
+       ],
+       [
+        "Build a fear hierarchy",
+        2
+       ],
+       [
+        "Pair relaxation with the weakest fear",
+        3
+       ],
+       [
+        "Move up the hierarchy",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a person washes their hands over and over because of unwanted thoughts about germs. Give the abbreviation of the disorder.",
+      "a": [
+       "ocd",
+       "obsessive-compulsive disorder",
+       "obsessive compulsive disorder"
+      ],
+      "hint": "It has 'obsessive' and 'compulsive' in the name.",
+      "why": "This pattern describes obsessive-compulsive disorder."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which psychologist developed cognitive therapy for depression? (last name)",
+      "a": [
+       "beck",
+       "aaron beck"
+      ],
+      "hint": "His first name was Aaron.",
+      "why": "Aaron Beck taught people to challenge distorted thoughts."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in Selye's model, what is the final stage when the body's resources run out? (one word)",
+      "a": [
+       "exhaustion"
+      ],
+      "hint": "It comes after resistance.",
+      "why": "Exhaustion is the last stage of the general adaptation syndrome."
+     }
+    ]
+   }
+  ]
+ },
+ "ap-gov": {
+  "name": "AP US Government",
+  "units": [
+   {
+    "title": "Foundations of American Democracy",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "Founding ideas",
+      "b": "Locke's social contract and natural rights, popular sovereignty, and republicanism shaped the founders. The Articles of Confederation had a weak national government with no power to tax. The Great Compromise created a House based on population and a Senate with equal states. In Federalist No. 10, Madison said a large republic controls factions, and in Federalist No. 51 he explained checks and balances. Brutus No. 1 was an Anti-Federalist warning against a strong national government."
+     },
+     {
+      "h": "Federalism",
+      "b": "Federalism divides power between national and state governments. The Supremacy Clause makes federal law higher than conflicting state law, and the Tenth Amendment reserves other powers to the states. In McCulloch v. Maryland (1819), the Court upheld implied powers and national supremacy. In United States v. Lopez (1995), it limited the Commerce Clause. Categorical grants have strings attached, and block grants give states more freedom."
+     },
+     {
+      "h": "Separation of powers and amendments",
+      "b": "The Constitution splits power among three branches, and each can check the others. To amend the Constitution, two-thirds of both houses of Congress propose an amendment and three-fourths of the states (38 of 50) ratify it. This hard process makes the Constitution stable but still able to change."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which Anti-Federalist writing argued against ratifying the Constitution?",
+      "o": [
+       "Brutus No. 1",
+       "Federalist No. 10",
+       "Federalist No. 51",
+       "The Declaration of Independence"
+      ],
+      "a": 0,
+      "why": "Brutus warned that a large national government would threaten liberty."
+     },
+     {
+      "t": "mc",
+      "q": "What did McCulloch v. Maryland establish?",
+      "o": [
+       "Judicial review",
+       "Implied powers and national supremacy over states",
+       "The right to counsel",
+       "One person, one vote"
+      ],
+      "a": 1,
+      "why": "The Court said Congress can create a bank and states cannot tax it."
+     },
+     {
+      "t": "mc",
+      "q": "United States v. Lopez was important because it did what?",
+      "o": [
+       "Expanded the Commerce Clause",
+       "Ended segregation",
+       "Limited Congress's power under the Commerce Clause",
+       "Protected free speech"
+      ],
+      "a": 2,
+      "why": "The Court said carrying a gun near a school was not interstate commerce."
+     },
+     {
+      "t": "mc",
+      "q": "Which early national government had no power to tax?",
+      "o": [
+       "Declaration of Independence",
+       "Bill of Rights",
+       "Federalist Papers",
+       "Articles of Confederation"
+      ],
+      "a": 3,
+      "why": "The Articles gave Congress no power to tax or enforce laws."
+     },
+     {
+      "t": "tf",
+      "q": "A constitutional amendment can be proposed by two-thirds of both houses of Congress.",
+      "a": true,
+      "why": "Ratification then requires three-fourths of the states."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Great Compromise",
+        "Equal Senate, population-based House"
+       ],
+       [
+        "Federalist No. 51",
+        "Checks and balances"
+       ],
+       [
+        "Block grant",
+        "Federal money with few strings"
+       ],
+       [
+        "Supremacy Clause",
+        "Federal law beats conflicting state law"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Declaration of Independence",
+        1776
+       ],
+       [
+        "Articles of Confederation ratified",
+        1781
+       ],
+       [
+        "Constitution written",
+        1787
+       ],
+       [
+        "Bill of Rights ratified",
+        1791
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how many states must ratify a constitutional amendment? (number)",
+      "a": [
+       "38",
+       "thirty-eight",
+       "thirty eight"
+      ],
+      "hint": "It is three-fourths of 50, rounded up.",
+      "why": "3/4 of 50 is 37.5, so 38 states are needed."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which Founder wrote Federalist No. 10? (last name)",
+      "a": [
+       "madison",
+       "james madison"
+      ],
+      "hint": "He is called the Father of the Constitution.",
+      "why": "James Madison wrote about the dangers of factions."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the blank: the 1819 case McCulloch v. ____",
+      "a": [
+       "maryland"
+      ],
+      "hint": "A state on the east coast.",
+      "why": "McCulloch v. Maryland upheld the national bank."
+     }
+    ]
+   },
+   {
+    "title": "Interactions Among Branches of Government",
+    "period": "Unit 2",
+    "learn": [
+     {
+      "h": "Congress",
+      "b": "The House has 435 members with two-year terms, and the Senate has 100 members with six-year terms. Revenue bills start in the House. The Senate confirms appointments, ratifies treaties by two-thirds, and can filibuster until three-fifths (60 votes) end debate with cloture. The House Rules Committee sets rules for debate. Members can act as delegates, trustees, or politicos."
+     },
+     {
+      "h": "The presidency and bureaucracy",
+      "b": "The president can veto bills, command the military, grant pardons, and make appointments. Congress can override a veto with two-thirds of both houses. Informal powers include executive orders and the bully pulpit. The bureaucracy has cabinet departments, independent agencies, regulatory commissions, and government corporations. Iron triangles link agencies, committees, and interest groups."
+     },
+     {
+      "h": "The federal courts",
+      "b": "Article III creates the Supreme Court, and Congress creates lower courts. Marbury v. Madison (1803) set judicial review, the power to strike down laws that break the Constitution. Judges serve for life. Courts usually follow precedent, called stare decisis. The Court chooses cases by certiorari, and four justices must agree to hear one."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which case established judicial review?",
+      "o": [
+       "McCulloch v. Maryland",
+       "Marbury v. Madison",
+       "Brown v. Board of Education",
+       "Gideon v. Wainwright"
+      ],
+      "a": 1,
+      "why": "In 1803 the Court claimed the power to declare laws unconstitutional."
+     },
+     {
+      "t": "mc",
+      "q": "How many votes in each house are needed to override a presidential veto?",
+      "o": [
+       "A simple majority",
+       "Three-fifths",
+       "Two-thirds",
+       "Three-fourths"
+      ],
+      "a": 2,
+      "why": "Overriding a veto needs two-thirds of the House and the Senate."
+     },
+     {
+      "t": "mc",
+      "q": "Which House committee sets the rules for debate on bills?",
+      "o": [
+       "Ways and Means Committee",
+       "Judiciary Committee",
+       "Appropriations Committee",
+       "Rules Committee"
+      ],
+      "a": 3,
+      "why": "The Rules Committee decides how long debate lasts and what amendments are allowed."
+     },
+     {
+      "t": "mc",
+      "q": "How many senators are needed for cloture to end a filibuster?",
+      "o": [
+       "60",
+       "51",
+       "67",
+       "75"
+      ],
+      "a": 0,
+      "why": "Three-fifths of the Senate, which is 60 votes, ends a filibuster."
+     },
+     {
+      "t": "tf",
+      "q": "Treaties must be ratified by two-thirds of the Senate.",
+      "a": true,
+      "why": "This is a check on the president's power to make treaties."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Iron triangle",
+        "Agency, committee, and interest group"
+       ],
+       [
+        "Stare decisis",
+        "Courts follow past rulings"
+       ],
+       [
+        "Executive order",
+        "Presidential directive with force of law"
+       ],
+       [
+        "Bully pulpit",
+        "Using the office to persuade the public"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of how a bill becomes law in order",
+      "items": [
+       [
+        "Bill is introduced",
+        1
+       ],
+       [
+        "Committee holds hearings and markup",
+        2
+       ],
+       [
+        "Both chambers pass it",
+        3
+       ],
+       [
+        "President signs it into law",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how many senators must vote for cloture to end a filibuster? (number)",
+      "a": [
+       "60",
+       "sixty"
+      ],
+      "hint": "It is three-fifths of the Senate.",
+      "why": "60 votes end a filibuster."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: in what year was Marbury v. Madison decided?",
+      "a": [
+       "1803"
+      ],
+      "hint": "It was early in the 1800s.",
+      "why": "The Court decided it in 1803."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what Latin term means courts follow earlier rulings? (two words)",
+      "a": [
+       "stare decisis"
+      ],
+      "hint": "It means 'to stand by things decided'.",
+      "why": "Stare decisis keeps the law stable."
+     }
+    ]
+   },
+   {
+    "title": "Civil Liberties and Civil Rights",
+    "period": "Unit 3",
+    "learn": [
+     {
+      "h": "Incorporation and the First Amendment",
+      "b": "Selective incorporation applies the Bill of Rights to the states through the Due Process Clause of the Fourteenth Amendment. Gitlow v. New York (1925) started it for free speech. Engel v. Vitale (1962) banned school-sponsored prayer. Tinker v. Des Moines (1969) protected students' symbolic speech. Schenck v. United States created the clear and present danger test."
+     },
+     {
+      "h": "Rights of the accused and privacy",
+      "b": "The Fourth Amendment blocks unreasonable searches, and Mapp v. Ohio applies the exclusionary rule to states. Gideon v. Wainwright guarantees a lawyer in felony cases. Miranda v. Arizona requires police to warn suspects of their rights. Griswold v. Connecticut found a right to privacy. Roe v. Wade (1973) was overturned in Dobbs v. Jackson (2022)."
+     },
+     {
+      "h": "Equal protection and civil rights",
+      "b": "Plessy v. Ferguson (1896) allowed 'separate but equal'. Brown v. Board of Education (1954) ruled school segregation unconstitutional under the Fourteenth Amendment's Equal Protection Clause. The Civil Rights Act of 1964 banned discrimination in public places and jobs, and the Voting Rights Act of 1965 protected voting. De jure segregation is by law, and de facto segregation is by circumstance."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Through which amendment's clause does selective incorporation apply rights to states?",
+      "o": [
+       "The Tenth Amendment",
+       "The First Amendment",
+       "The Fourteenth Amendment's Due Process Clause",
+       "The Fifth Amendment's Takings Clause"
+      ],
+      "a": 2,
+      "why": "The Fourteenth Amendment limits state governments."
+     },
+     {
+      "t": "mc",
+      "q": "Which case protected students wearing black armbands to protest a war?",
+      "o": [
+       "Engel v. Vitale",
+       "Schenck v. United States",
+       "Wisconsin v. Yoder",
+       "Tinker v. Des Moines"
+      ],
+      "a": 3,
+      "why": "Students do not lose free speech rights at the schoolhouse gate."
+     },
+     {
+      "t": "mc",
+      "q": "Which case guaranteed lawyers to felony defendants who cannot afford one?",
+      "o": [
+       "Gideon v. Wainwright",
+       "Miranda v. Arizona",
+       "Mapp v. Ohio",
+       "Plessy v. Ferguson"
+      ],
+      "a": 0,
+      "why": "Gideon applied the Sixth Amendment right to counsel to states."
+     },
+     {
+      "t": "mc",
+      "q": "Brown v. Board of Education overturned which earlier case?",
+      "o": [
+       "Marbury v. Madison",
+       "Plessy v. Ferguson",
+       "Dred Scott v. Sandford",
+       "Roe v. Wade"
+      ],
+      "a": 1,
+      "why": "Brown rejected 'separate but equal' in public schools."
+     },
+     {
+      "t": "tf",
+      "q": "Mapp v. Ohio applied the exclusionary rule to state courts.",
+      "a": true,
+      "why": "Illegally obtained evidence cannot be used in state trials."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Miranda v. Arizona",
+        "Warning of right to remain silent"
+       ],
+       [
+        "Engel v. Vitale",
+        "School-sponsored prayer is unconstitutional"
+       ],
+       [
+        "Schenck v. U.S.",
+        "Clear and present danger test"
+       ],
+       [
+        "Griswold v. Connecticut",
+        "Right to privacy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Plessy v. Ferguson",
+        1896
+       ],
+       [
+        "Brown v. Board of Education",
+        1954
+       ],
+       [
+        "Civil Rights Act",
+        1964
+       ],
+       [
+        "Voting Rights Act",
+        1965
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: which amendment's Equal Protection Clause was used in Brown v. Board of Education? (number or ordinal)",
+      "a": [
+       "14",
+       "14th",
+       "fourteenth",
+       "14th amendment",
+       "fourteenth amendment"
+      ],
+      "hint": "It was ratified after the Civil War.",
+      "why": "The Fourteenth Amendment guarantees equal protection."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: which amendment protects against unreasonable searches and seizures? (number or ordinal)",
+      "a": [
+       "4",
+       "4th",
+       "fourth",
+       "4th amendment",
+       "fourth amendment"
+      ],
+      "hint": "It comes after the right to bear arms and quartering soldiers.",
+      "why": "The Fourth Amendment protects against unreasonable searches."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the blank: the 1966 case Miranda v. ____",
+      "a": [
+       "arizona"
+      ],
+      "hint": "A state in the Southwest.",
+      "why": "Miranda v. Arizona created the Miranda warning."
+     }
+    ]
+   },
+   {
+    "title": "American Political Ideologies and Beliefs",
+    "period": "Unit 4",
+    "learn": [
+     {
+      "h": "How beliefs form",
+      "b": "Political socialization is how people learn political beliefs. Family is usually the strongest early influence, followed by school, peers, media, and religion. Demographics like age, education, race, gender, and region also shape views. Core American values include liberty, equality, individualism, rule of law, and limited government."
+     },
+     {
+      "h": "Ideologies",
+      "b": "Liberals usually want more government action on economic and social inequality. Conservatives usually favor free markets, smaller government in the economy, and traditional values. Libertarians want minimal government in both economic and personal life. Many Americans are moderates who hold mixed views."
+     },
+     {
+      "h": "Public opinion and polls",
+      "b": "A random sample gives everyone in the population an equal chance to be chosen. A larger sample gives a smaller margin of error. Poor question wording or a biased sample can ruin a poll. Exit polls survey voters as they leave, and push polls spread a message as if they were polls. Political efficacy is the belief that you can affect government."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is usually the strongest early agent of political socialization?",
+      "o": [
+       "Social media",
+       "Employers",
+       "Courts",
+       "Family"
+      ],
+      "a": 3,
+      "why": "Children often adopt their parents' political views."
+     },
+     {
+      "t": "mc",
+      "q": "What makes a poll's margin of error smaller?",
+      "o": [
+       "A larger random sample",
+       "A shorter questionnaire",
+       "Leading questions",
+       "Polling only volunteers"
+      ],
+      "a": 0,
+      "why": "More respondents give a more accurate estimate."
+     },
+     {
+      "t": "mc",
+      "q": "Which ideology wants minimal government in both economic and personal life?",
+      "o": [
+       "Liberalism",
+       "Libertarianism",
+       "Conservatism",
+       "Socialism"
+      ],
+      "a": 1,
+      "why": "Libertarians stress individual freedom."
+     },
+     {
+      "t": "mc",
+      "q": "What is a poll designed to spread a message instead of measuring opinion?",
+      "o": [
+       "Exit poll",
+       "Tracking poll",
+       "Push poll",
+       "Straw poll"
+      ],
+      "a": 2,
+      "why": "A push poll uses loaded questions to persuade."
+     },
+     {
+      "t": "tf",
+      "q": "In a random sample, every member of the population has an equal chance of being selected.",
+      "a": true,
+      "why": "That is what makes a sample representative."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Political efficacy",
+        "Belief that you can influence government"
+       ],
+       [
+        "Exit poll",
+        "Survey of voters leaving the polls"
+       ],
+       [
+        "Conservative",
+        "Favors limited government in the economy"
+       ],
+       [
+        "Liberal",
+        "Favors government action on inequality"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of a good poll in order",
+      "items": [
+       [
+        "Define the population",
+        1
+       ],
+       [
+        "Select a random sample",
+        2
+       ],
+       [
+        "Ask neutral questions",
+        3
+       ],
+       [
+        "Report results with a margin of error",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a poll of 1,000 voters has a margin of error of 3 points and shows a candidate at 52%. What is the lowest likely percent? (number)",
+      "a": [
+       "49",
+       "49%"
+      ],
+      "hint": "Subtract the margin of error.",
+      "why": "52 - 3 = 49."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the term for how people acquire their political beliefs? (political ____)",
+      "a": [
+       "socialization"
+      ],
+      "hint": "Starts with 'social'.",
+      "why": "Political socialization comes from family, school, and media."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what is the term for the belief that you can influence government? (political ____)",
+      "a": [
+       "efficacy"
+      ],
+      "hint": "It means being effective.",
+      "why": "Political efficacy encourages participation."
+     }
+    ]
+   },
+   {
+    "title": "Political Participation",
+    "period": "Unit 5",
+    "learn": [
+     {
+      "h": "Voting and participation",
+      "b": "Turnout is higher among older, more educated, and wealthier citizens. The Twenty-sixth Amendment lowered the voting age to 18. Retrospective voting judges a candidate's past record, and prospective voting looks at future promises. Voter registration rules, voter ID laws, and early voting affect turnout."
+     },
+     {
+      "h": "Parties and elections",
+      "b": "The US has a two-party system because of winner-take-all rules, known as Duverger's law. Primaries and caucuses pick nominees, and closed primaries allow only party members. A candidate needs 270 of 538 electoral votes to win the presidency. Gerrymandering is drawing districts to favor a party. Reynolds v. Sims set one person, one vote for state districts. Citizens United v. FEC (2010) allowed unlimited independent spending, which super PACs use."
+     },
+     {
+      "h": "Interest groups and media",
+      "b": "Interest groups lobby to influence policy. The free rider problem is that people benefit from a group's work without joining. Social movements push for change from outside government. The media works as a linkage institution and sets the agenda by deciding what stories get attention."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What did Citizens United v. FEC decide?",
+      "o": [
+       "Governments cannot limit independent political spending by corporations and unions",
+       "Campaign donations are banned",
+       "Presidents get public funding",
+       "Primaries must be open"
+      ],
+      "a": 0,
+      "why": "The Court treated independent spending as protected political speech."
+     },
+     {
+      "t": "mc",
+      "q": "How many electoral votes are needed to win the presidency?",
+      "o": [
+       "218",
+       "270",
+       "300",
+       "435"
+      ],
+      "a": 1,
+      "why": "Out of 538 total, a majority is 270."
+     },
+     {
+      "t": "mc",
+      "q": "What is drawing district lines to favor one party called?",
+      "o": [
+       "Redistricting",
+       "Reapportionment",
+       "Gerrymandering",
+       "Incumbency"
+      ],
+      "a": 2,
+      "why": "Gerrymandering packs or cracks voters to help a party."
+     },
+     {
+      "t": "mc",
+      "q": "In which system does the candidate with the most votes win, even without a majority?",
+      "o": [
+       "Majority runoff",
+       "Proportional representation",
+       "Ranked-choice",
+       "Plurality"
+      ],
+      "a": 3,
+      "why": "Plurality, or first-past-the-post, does not require a majority."
+     },
+     {
+      "t": "tf",
+      "q": "Super PACs are not allowed to coordinate directly with candidates.",
+      "a": true,
+      "why": "This is the rule that lets them spend without limits."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Closed primary",
+        "Only registered party members vote"
+       ],
+       [
+        "Free rider problem",
+        "Benefits without joining the group"
+       ],
+       [
+        "Retrospective voting",
+        "Judging a candidate's past record"
+       ],
+       [
+        "Reynolds v. Sims",
+        "Equal-population state districts"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path to the presidency in order",
+      "items": [
+       [
+        "Primaries and caucuses",
+        1
+       ],
+       [
+        "National conventions",
+        2
+       ],
+       [
+        "General election",
+        3
+       ],
+       [
+        "Electoral College vote",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: how many electoral votes are there in total? (number)",
+      "a": [
+       "538"
+      ],
+      "hint": "A majority of it is 270.",
+      "why": "There are 538 electoral votes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: fill in the blank: Citizens United v. ____ (2010)",
+      "a": [
+       "fec",
+       "federal election commission"
+      ],
+      "hint": "It is an agency that oversees campaign finance.",
+      "why": "The FEC is the Federal Election Commission."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: what type of voting judges candidates by their past performance? (one word)",
+      "a": [
+       "retrospective"
+      ],
+      "hint": "It looks back.",
+      "why": "Retrospective voters reward or punish the record."
+     }
+    ]
+   }
+  ]
+ },
+ "ap-macro": {
+  "name": "AP Macroeconomics",
+  "units": [
+   {
+    "title": "Basic Economic Concepts",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "Scarcity and the PPC",
+      "b": "Scarcity means unlimited wants but limited resources, so we must choose. Opportunity cost is the value of the next best choice you give up. A production possibilities curve (PPC) shows the most of two goods an economy can make. Points on the curve are efficient, points inside show unused resources, and points outside cannot be reached yet. Economic growth shifts the curve outward."
+     },
+     {
+      "h": "Comparative advantage",
+      "b": "A producer has an absolute advantage if it makes more with the same resources. It has a comparative advantage if it has the lower opportunity cost. Countries gain when each specializes in what it has a comparative advantage in and then trades."
+     },
+     {
+      "h": "Supply and demand",
+      "b": "The law of demand says higher price means lower quantity demanded. The law of supply says higher price means higher quantity supplied. Equilibrium is where they are equal. A price ceiling below equilibrium creates a shortage, and a price floor above equilibrium creates a surplus. The circular flow shows households and firms trading goods, labor, and money."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is opportunity cost?",
+      "o": [
+       "The value of the next best alternative given up",
+       "The money price of a good",
+       "The total cost of production",
+       "The cost of all choices"
+      ],
+      "a": 0,
+      "why": "Every choice means giving up the next best option."
+     },
+     {
+      "t": "mc",
+      "q": "What does a point inside the PPC show?",
+      "o": [
+       "Efficient production",
+       "Unemployed or inefficiently used resources",
+       "An unattainable output",
+       "Economic growth"
+      ],
+      "a": 1,
+      "why": "The economy could produce more with its resources."
+     },
+     {
+      "t": "mc",
+      "q": "What does a price ceiling set below equilibrium cause?",
+      "o": [
+       "A surplus",
+       "A higher price",
+       "A shortage",
+       "A shift in demand"
+      ],
+      "a": 2,
+      "why": "At the low price, quantity demanded is greater than quantity supplied."
+     },
+     {
+      "t": "mc",
+      "q": "A country has a comparative advantage when it has what?",
+      "o": [
+       "Higher total output",
+       "More workers",
+       "Lower wages",
+       "A lower opportunity cost"
+      ],
+      "a": 3,
+      "why": "Comparative advantage is about opportunity cost, not total output."
+     },
+     {
+      "t": "tf",
+      "q": "Absolute advantage and comparative advantage mean the same thing.",
+      "a": false,
+      "why": "Absolute advantage is about output; comparative advantage is about opportunity cost."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Scarcity",
+        "Unlimited wants, limited resources"
+       ],
+       [
+        "Equilibrium",
+        "Quantity demanded equals quantity supplied"
+       ],
+       [
+        "Price floor",
+        "Minimum legal price"
+       ],
+       [
+        "Outward PPC shift",
+        "Economic growth"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this circular flow in order",
+      "items": [
+       [
+        "Households supply labor",
+        1
+       ],
+       [
+        "Firms pay wages",
+        2
+       ],
+       [
+        "Households buy goods",
+        3
+       ],
+       [
+        "Firms receive revenue",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: a worker can make 6 shirts or 3 hats in an hour. What is the opportunity cost of 1 hat, in shirts? (number)",
+      "a": [
+       "2"
+      ],
+      "hint": "Divide shirts by hats.",
+      "why": "6 / 3 = 2 shirts per hat."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: if demand rises and supply stays the same, does equilibrium price go up or down?",
+      "a": [
+       "up",
+       "rise",
+       "rises",
+       "increase",
+       "increases",
+       "goes up"
+      ],
+      "hint": "More demand makes the good more valuable.",
+      "why": "Higher demand raises the equilibrium price."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: an economy gives up 40 cars to make 20 more tractors. What is the opportunity cost of 1 tractor, in cars? (number)",
+      "a": [
+       "2"
+      ],
+      "hint": "Divide cars by tractors.",
+      "why": "40 / 20 = 2 cars."
+     }
+    ]
+   },
+   {
+    "title": "Economic Indicators and the Business Cycle",
+    "period": "Unit 2",
+    "learn": [
+     {
+      "h": "Measuring GDP",
+      "b": "GDP is the value of all final goods and services made in a country in a year. The expenditure formula is GDP = C + I + G + (X - M). Real GDP adjusts for price changes, and nominal GDP does not. GDP does not count used goods, transfer payments, or unpaid work like housework."
+     },
+     {
+      "h": "Unemployment and inflation",
+      "b": "The unemployment rate is the unemployed divided by the labor force. Frictional unemployment is people between jobs, structural is a skills mismatch, and cyclical comes from downturns. The natural rate is frictional plus structural. The CPI measures the average price of a consumer basket. Inflation rate = (new CPI - old CPI) / old CPI x 100."
+     },
+     {
+      "h": "The business cycle",
+      "b": "The business cycle has expansion, peak, contraction, and trough. A recession is a significant fall in real GDP. Unemployment is highest near a trough, and inflation often rises late in an expansion."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which of these is NOT counted in GDP?",
+      "o": [
+       "New cars made this year",
+       "Sales of used goods",
+       "Government spending on roads",
+       "Services like haircuts"
+      ],
+      "a": 1,
+      "why": "GDP only counts newly produced final goods and services."
+     },
+     {
+      "t": "mc",
+      "q": "Which type of unemployment happens when workers move between jobs?",
+      "o": [
+       "Structural",
+       "Cyclical",
+       "Frictional",
+       "Seasonal only"
+      ],
+      "a": 2,
+      "why": "Frictional unemployment is temporary job searching."
+     },
+     {
+      "t": "mc",
+      "q": "What does the natural rate of unemployment include?",
+      "o": [
+       "Only cyclical unemployment",
+       "All three types",
+       "No unemployment at all",
+       "Frictional and structural unemployment"
+      ],
+      "a": 3,
+      "why": "The natural rate excludes cyclical unemployment."
+     },
+     {
+      "t": "mc",
+      "q": "Which index measures the average price of a consumer basket?",
+      "o": [
+       "Consumer Price Index",
+       "GDP deflator only",
+       "Unemployment rate",
+       "Producer index"
+      ],
+      "a": 0,
+      "why": "The CPI is used to calculate the inflation rate."
+     },
+     {
+      "t": "tf",
+      "q": "Nominal GDP is adjusted for inflation.",
+      "a": false,
+      "why": "Real GDP is adjusted for inflation."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Frictional",
+        "Between jobs"
+       ],
+       [
+        "Structural",
+        "Skills do not match jobs"
+       ],
+       [
+        "Cyclical",
+        "Caused by a downturn"
+       ],
+       [
+        "Peak",
+        "Top of expansion"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the phases of the business cycle in order",
+      "items": [
+       [
+        "Expansion",
+        1
+       ],
+       [
+        "Peak",
+        2
+       ],
+       [
+        "Contraction",
+        3
+       ],
+       [
+        "Trough",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: C = 600, I = 150, G = 200, X = 100, M = 150 (billions). What is GDP? (number)",
+      "a": [
+       "900"
+      ],
+      "hint": "GDP = C + I + G + X - M.",
+      "why": "600 + 150 + 200 + 100 - 150 = 900."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: 8 million people are unemployed and the labor force is 160 million. What is the unemployment rate in percent? (number)",
+      "a": [
+       "5",
+       "5%"
+      ],
+      "hint": "Divide unemployed by labor force.",
+      "why": "8 / 160 = 0.05, which is 5%."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the CPI rises from 200 to 210. What is the inflation rate in percent? (number)",
+      "a": [
+       "5",
+       "5%"
+      ],
+      "hint": "Find the change and divide by the old CPI.",
+      "why": "(210 - 200) / 200 = 5%."
+     }
+    ]
+   },
+   {
+    "title": "National Income and Price Determination",
+    "period": "Unit 3",
+    "learn": [
+     {
+      "h": "Aggregate demand and supply",
+      "b": "The AD curve slopes downward because of the wealth, interest-rate, and exchange-rate effects. AD shifts with changes in consumption, investment, government spending, and net exports. Short-run aggregate supply (SRAS) shifts with input prices, productivity, and expectations. Long-run aggregate supply (LRAS) is vertical at full-employment output."
+     },
+     {
+      "h": "Gaps and self-correction",
+      "b": "If output is below full employment, there is a recessionary gap and unemployment is high. If output is above full employment, there is an inflationary gap and prices rise. A negative supply shock, like higher oil prices, shifts SRAS left and causes stagflation: high inflation and high unemployment. In the long run, wages adjust and the economy self-corrects."
+     },
+     {
+      "h": "Fiscal policy and the multiplier",
+      "b": "Expansionary fiscal policy raises government spending or cuts taxes during a recession. Contractionary policy does the opposite during inflation. The spending multiplier is 1 / (1 - MPC), or 1 / MPS. Automatic stabilizers, like unemployment benefits, work without new laws."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which change shifts aggregate demand to the right?",
+      "o": [
+       "A rise in input prices",
+       "Higher taxes on households",
+       "An increase in government spending",
+       "A fall in net exports"
+      ],
+      "a": 2,
+      "why": "Government spending is a component of AD."
+     },
+     {
+      "t": "mc",
+      "q": "What causes stagflation?",
+      "o": [
+       "A rise in government spending",
+       "A fall in interest rates",
+       "A rise in productivity",
+       "A negative supply shock"
+      ],
+      "a": 3,
+      "why": "SRAS shifts left, raising prices and lowering output."
+     },
+     {
+      "t": "mc",
+      "q": "If the MPC is 0.8, what is the spending multiplier?",
+      "o": [
+       "5",
+       "4",
+       "1.25",
+       "8"
+      ],
+      "a": 0,
+      "why": "1 / (1 - 0.8) = 5."
+     },
+     {
+      "t": "mc",
+      "q": "Which fiscal policy fits a recession?",
+      "o": [
+       "Raise taxes and cut spending",
+       "Raise government spending or cut taxes",
+       "Sell government bonds",
+       "Raise the reserve requirement"
+      ],
+      "a": 1,
+      "why": "Expansionary policy raises AD."
+     },
+     {
+      "t": "tf",
+      "q": "The long-run aggregate supply curve is vertical at full-employment output.",
+      "a": true,
+      "why": "In the long run, output depends on resources and technology, not the price level."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Recessionary gap",
+        "Output below full employment"
+       ],
+       [
+        "Inflationary gap",
+        "Output above full employment"
+       ],
+       [
+        "Automatic stabilizer",
+        "Acts without a new law"
+       ],
+       [
+        "MPS",
+        "Share of extra income saved"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the fiscal multiplier process in order",
+      "items": [
+       [
+        "Government spends more",
+        1
+       ],
+       [
+        "Incomes rise",
+        2
+       ],
+       [
+        "Households spend part of new income",
+        3
+       ],
+       [
+        "Total output rises by a multiple",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: the MPC is 0.75. What is the spending multiplier? (number)",
+      "a": [
+       "4"
+      ],
+      "hint": "Multiplier = 1 / (1 - MPC).",
+      "why": "1 / 0.25 = 4."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the MPC is 0.5 and government spending rises by $20 billion. What is the total change in GDP in billions? (number)",
+      "a": [
+       "40"
+      ],
+      "hint": "Multiplier = 2.",
+      "why": "2 x 20 = 40 billion."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: output is below full employment. Is this a recessionary or inflationary gap?",
+      "a": [
+       "recessionary",
+       "recessionary gap"
+      ],
+      "hint": "Unemployment is high.",
+      "why": "Output below potential is a recessionary gap."
+     }
+    ]
+   },
+   {
+    "title": "Financial Sector",
+    "period": "Unit 4",
+    "learn": [
+     {
+      "h": "Money",
+      "b": "Money is a medium of exchange, a unit of account, and a store of value. M1 is currency and checkable deposits, and M2 adds savings accounts and similar assets. Bond prices and interest rates move in opposite directions. The nominal interest rate is the real interest rate plus expected inflation."
+     },
+     {
+      "h": "Banks and money creation",
+      "b": "Banks keep a fraction of deposits as reserves and lend the rest. The required reserve ratio sets the minimum. The money multiplier is 1 / reserve ratio. Excess reserves are reserves above the requirement, and banks can lend them to create new money."
+     },
+     {
+      "h": "The Federal Reserve",
+      "b": "The Fed uses open market operations, the discount rate, the reserve requirement, and interest on reserves. To expand the money supply, it buys bonds and lowers rates. To fight inflation, it sells bonds and raises rates. The federal funds rate is the rate banks charge each other for overnight loans."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What happens when the Fed buys government bonds?",
+      "o": [
+       "The money supply decreases",
+       "Taxes rise",
+       "Bond prices fall",
+       "The money supply increases"
+      ],
+      "a": 3,
+      "why": "The Fed pays banks, which adds reserves."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is NOT a function of money?",
+      "o": [
+       "Guaranteeing full employment",
+       "Medium of exchange",
+       "Unit of account",
+       "Store of value"
+      ],
+      "a": 0,
+      "why": "Money has three functions."
+     },
+     {
+      "t": "mc",
+      "q": "How are bond prices and interest rates related?",
+      "o": [
+       "Directly",
+       "Inversely",
+       "Not related",
+       "Equal"
+      ],
+      "a": 1,
+      "why": "When rates rise, existing bonds lose value."
+     },
+     {
+      "t": "mc",
+      "q": "What is the rate banks charge each other for overnight loans?",
+      "o": [
+       "Discount rate",
+       "Prime rate",
+       "Federal funds rate",
+       "Mortgage rate"
+      ],
+      "a": 2,
+      "why": "The Fed targets the federal funds rate."
+     },
+     {
+      "t": "tf",
+      "q": "Excess reserves are reserves a bank holds above the required amount.",
+      "a": true,
+      "why": "Banks can lend excess reserves."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Open market operations",
+        "Fed buys or sells securities"
+       ],
+       [
+        "Discount rate",
+        "Rate the Fed charges banks"
+       ],
+       [
+        "Required reserve ratio",
+        "Fraction banks must hold"
+       ],
+       [
+        "M1",
+        "Currency and checkable deposits"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the money creation process in order",
+      "items": [
+       [
+        "Bank receives a deposit",
+        1
+       ],
+       [
+        "Bank keeps required reserves",
+        2
+       ],
+       [
+        "Bank lends the excess",
+        3
+       ],
+       [
+        "Loan is deposited in another bank",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: the reserve ratio is 10%. What is the money multiplier? (number)",
+      "a": [
+       "10"
+      ],
+      "hint": "Multiplier = 1 / ratio.",
+      "why": "1 / 0.10 = 10."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a bank receives a $500 deposit and the reserve ratio is 20%. How many dollars must it hold in required reserves? (number)",
+      "a": [
+       "100",
+       "$100"
+      ],
+      "hint": "Take 20% of 500.",
+      "why": "0.20 x 500 = 100."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: to fight inflation, should the Fed buy or sell bonds? (one word)",
+      "a": [
+       "sell"
+      ],
+      "hint": "It wants to reduce the money supply.",
+      "why": "Selling bonds removes reserves."
+     }
+    ]
+   },
+   {
+    "title": "Long-Run Consequences of Stabilization Policies",
+    "period": "Unit 5",
+    "learn": [
+     {
+      "h": "The Phillips curve",
+      "b": "The short-run Phillips curve shows a tradeoff between inflation and unemployment. The long-run Phillips curve is vertical at the natural rate of unemployment. It shifts when inflation expectations change or when supply shocks happen. A rise in AD moves the economy up along the short-run curve."
+     },
+     {
+      "h": "Deficits and crowding out",
+      "b": "A budget deficit is when spending is above revenue in one year, and the national debt is the total of past deficits. When the government borrows a lot, it raises the demand for loanable funds, so the real interest rate rises. Higher rates reduce private investment, which is called crowding out."
+     },
+     {
+      "h": "Economic growth",
+      "b": "Growth comes from more physical capital, more human capital (skills), better technology, and good institutions. Higher productivity shifts LRAS right and the PPC outward. The rule of 70 says the years to double equal 70 divided by the growth rate. Supply-side policies try to raise potential output."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the long-run Phillips curve look like?",
+      "o": [
+       "Vertical at the natural rate of unemployment",
+       "Downward sloping",
+       "Horizontal",
+       "Upward sloping"
+      ],
+      "a": 0,
+      "why": "In the long run, there is no tradeoff."
+     },
+     {
+      "t": "mc",
+      "q": "What is crowding out?",
+      "o": [
+       "Taxes that reduce spending",
+       "Government borrowing raises interest rates and lowers private investment",
+       "Banks hold more reserves",
+       "Imports replace exports"
+      ],
+      "a": 1,
+      "why": "Deficits compete for loanable funds."
+     },
+     {
+      "t": "mc",
+      "q": "Which change most directly raises long-run economic growth?",
+      "o": [
+       "A temporary tax rebate",
+       "A higher price level",
+       "Higher productivity from better technology",
+       "Lower interest in savings"
+      ],
+      "a": 2,
+      "why": "More output per worker raises potential GDP."
+     },
+     {
+      "t": "mc",
+      "q": "At 7% annual growth, about how long does it take for GDP to double?",
+      "o": [
+       "7 years",
+       "14 years",
+       "35 years",
+       "10 years"
+      ],
+      "a": 3,
+      "why": "70 / 7 = 10."
+     },
+     {
+      "t": "tf",
+      "q": "A budget deficit and the national debt mean exactly the same thing.",
+      "a": false,
+      "why": "A deficit is for one year, and debt is the total accumulated."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Budget deficit",
+        "One year's spending above revenue"
+       ],
+       [
+        "National debt",
+        "Total accumulated borrowing"
+       ],
+       [
+        "Human capital",
+        "Workers' skills and knowledge"
+       ],
+       [
+        "Supply-side policy",
+        "Aims to raise potential output"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the crowding-out chain in order",
+      "items": [
+       [
+        "Government runs a deficit",
+        1
+       ],
+       [
+        "Government demands loanable funds",
+        2
+       ],
+       [
+        "Interest rates rise",
+        3
+       ],
+       [
+        "Private investment falls",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: growth is 2% per year. How many years to double GDP using the rule of 70? (number)",
+      "a": [
+       "35"
+      ],
+      "hint": "70 divided by the growth rate.",
+      "why": "70 / 2 = 35."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: the long-run Phillips curve is vertical at the ____ rate of unemployment (one word)",
+      "a": [
+       "natural"
+      ],
+      "hint": "It is made of frictional and structural unemployment.",
+      "why": "The natural rate sets the long-run curve."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a government runs a $300 billion deficit each year for 4 years. How much debt is added, in billions? (number)",
+      "a": [
+       "1200",
+       "1,200"
+      ],
+      "hint": "Multiply 300 by 4.",
+      "why": "300 x 4 = 1,200 billion."
+     }
+    ]
+   },
+   {
+    "title": "Open Economy: International Trade and Finance",
+    "period": "Unit 6",
+    "learn": [
+     {
+      "h": "Balance of payments",
+      "b": "The balance of payments records money flows with the rest of the world. The current account includes trade in goods and services, and the financial (capital) account records buying and selling of assets. Together they sum to about zero. A trade deficit means imports are bigger than exports, which usually comes with a financial account surplus."
+     },
+     {
+      "h": "Exchange rates",
+      "b": "Exchange rates are set in the foreign exchange market by supply and demand. When a currency appreciates, it buys more foreign money, so exports become more expensive and imports cheaper. Net exports then fall. Higher interest rates attract foreign investors, which raises demand for the currency and makes it appreciate."
+     },
+     {
+      "h": "Trade policy",
+      "b": "A tariff is a tax on imports, and a quota limits the quantity imported. Both raise domestic prices and protect domestic producers, but they reduce overall gains from trade. A subsidy is a government payment to domestic producers."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If the US dollar appreciates, what happens to US exports?",
+      "o": [
+       "They become cheaper for foreigners",
+       "They become more expensive for foreigners",
+       "They are unaffected",
+       "They are banned"
+      ],
+      "a": 1,
+      "why": "A stronger dollar makes US goods cost more abroad."
+     },
+     {
+      "t": "mc",
+      "q": "What does the sum of the current account and financial account equal?",
+      "o": [
+       "GDP",
+       "The budget deficit",
+       "About zero",
+       "Net exports"
+      ],
+      "a": 2,
+      "why": "Balance of payments must balance."
+     },
+     {
+      "t": "mc",
+      "q": "What is a tariff?",
+      "o": [
+       "A limit on imports",
+       "A payment to producers",
+       "A trade agreement",
+       "A tax on imported goods"
+      ],
+      "a": 3,
+      "why": "Tariffs raise the price of imports."
+     },
+     {
+      "t": "mc",
+      "q": "If US interest rates rise relative to other countries, the dollar tends to what?",
+      "o": [
+       "Appreciate",
+       "Depreciate",
+       "Stay fixed",
+       "Disappear"
+      ],
+      "a": 0,
+      "why": "Foreign investors buy dollars to invest in US assets."
+     },
+     {
+      "t": "tf",
+      "q": "A trade deficit means a country imports more than it exports.",
+      "a": true,
+      "why": "Exports minus imports is negative."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Quota",
+        "Limit on quantity imported"
+       ],
+       [
+        "Depreciation",
+        "Currency loses value"
+       ],
+       [
+        "Subsidy",
+        "Payment to domestic producers"
+       ],
+       [
+        "Floating exchange rate",
+        "Set by market forces"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the interest-rate effect in order",
+      "items": [
+       [
+        "US interest rates rise",
+        1
+       ],
+       [
+        "Foreigners demand more dollars",
+        2
+       ],
+       [
+        "The dollar appreciates",
+        3
+       ],
+       [
+        "US net exports fall",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: 1 dollar = 0.90 euros. How many euros do you get for 200 dollars? (number)",
+      "a": [
+       "180"
+      ],
+      "hint": "Multiply 200 by 0.90.",
+      "why": "200 x 0.90 = 180."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: if the euro appreciates against the dollar, do US goods become cheaper or more expensive for Europeans?",
+      "a": [
+       "cheaper"
+      ],
+      "hint": "A euro buys more dollars.",
+      "why": "With a stronger euro, Europeans pay fewer euros for US goods."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: a country exports $50 billion and imports $70 billion of goods. What is the trade balance in billions? (negative number)",
+      "a": [
+       "-20",
+       "negative 20",
+       "-20 billion"
+      ],
+      "hint": "Exports minus imports.",
+      "why": "50 - 70 = -20."
+     }
+    ]
+   }
+  ]
+ }
+}
