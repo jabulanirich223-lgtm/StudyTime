@@ -1,0 +1,5991 @@
+{
+ "hist-us": {
+  "name": "US History",
+  "units": [
+   {
+    "title": "Colonies and Revolution",
+    "period": "1607-1783",
+    "learn": [
+     {
+      "h": "The first colonies",
+      "b": "England started its first lasting colony at Jamestown, Virginia, in 1607. In 1620 the Pilgrims landed at Plymouth. Over time there were 13 British colonies along the Atlantic coast."
+     },
+     {
+      "h": "Why the colonists got angry",
+      "b": "After a costly war with France, Britain taxed the colonies with laws like the Stamp Act. Colonists had no vote in Parliament, so they said 'no taxation without representation.'"
+     },
+     {
+      "h": "Becoming independent",
+      "b": "The war began at Lexington and Concord in 1775. Thomas Jefferson wrote the Declaration of Independence, adopted in 1776. The British army surrendered at Yorktown in 1781."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which was the first lasting English colony in America?",
+      "o": [
+       "Plymouth",
+       "Jamestown",
+       "Roanoke",
+       "Boston"
+      ],
+      "a": 1,
+      "why": "Jamestown, founded in 1607, was the first permanent English colony."
+     },
+     {
+      "t": "mc",
+      "q": "What did 'no taxation without representation' protest?",
+      "o": [
+       "Taxes made by Britain without a colonial vote",
+       "French land claims",
+       "Spanish trade rules",
+       "Native American treaties"
+      ],
+      "a": 0,
+      "why": "Colonists had no members in Parliament, yet Parliament taxed them."
+     },
+     {
+      "t": "mc",
+      "q": "Who was the main writer of the Declaration of Independence?",
+      "o": [
+       "Benjamin Franklin",
+       "George Washington",
+       "Thomas Jefferson",
+       "John Adams"
+      ],
+      "a": 2,
+      "why": "Thomas Jefferson wrote the first draft of the Declaration."
+     },
+     {
+      "t": "mc",
+      "q": "Which battles started the Revolutionary War in 1775?",
+      "o": [
+       "Saratoga and Yorktown",
+       "Gettysburg and Antietam",
+       "Trenton and Saratoga",
+       "Lexington and Concord"
+      ],
+      "a": 3,
+      "why": "The first shots were fired at Lexington and Concord in April 1775."
+     },
+     {
+      "t": "tf",
+      "q": "The Declaration of Independence was adopted in 1789.",
+      "a": false,
+      "why": "It was adopted in 1776; 1789 is when the new government under the Constitution began."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stamp Act",
+        "Tax on printed paper"
+       ],
+       [
+        "Boston Tea Party",
+        "Dumping tea into the harbor"
+       ],
+       [
+        "Minutemen",
+        "Colonial militia ready fast"
+       ],
+       [
+        "Loyalist",
+        "Colonist who backed Britain"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Jamestown founded",
+        1607
+       ],
+       [
+        "Pilgrims land at Plymouth",
+        1620
+       ],
+       [
+        "Declaration of Independence signed",
+        1776
+       ],
+       [
+        "British surrender at Yorktown",
+        1781
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year was the Declaration of Independence adopted?",
+      "a": [
+       "1776"
+      ],
+      "hint": "It is the year of the American Revolution's big declaration.",
+      "why": "It was adopted on July 4, 1776."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which colony, founded in 1607, was the first lasting English colony?",
+      "a": [
+       "jamestown"
+      ],
+      "hint": "It was named after King James.",
+      "why": "Jamestown, Virginia, was founded in 1607."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Colonists dumped tea into Boston Harbor in an event called the Boston ___ Party. Fill in the word.",
+      "a": [
+       "tea"
+      ],
+      "hint": "What was dumped into the water?",
+      "why": "The Boston Tea Party took place in 1773."
+     }
+    ]
+   },
+   {
+    "title": "A New Nation",
+    "period": "1783-1850",
+    "learn": [
+     {
+      "h": "Writing the Constitution",
+      "b": "The Articles of Confederation gave the national government too little power. In 1787 leaders wrote the Constitution, which made a stronger government with three branches. The Bill of Rights added ten amendments."
+     },
+     {
+      "h": "Growing bigger",
+      "b": "In 1803 the US bought the Louisiana Purchase from France, doubling its size. Many Americans believed in Manifest Destiny, the idea that the nation should stretch to the Pacific."
+     },
+     {
+      "h": "Costs of expansion",
+      "b": "Cotton farming grew after the cotton gin, and it increased slavery in the South. The Indian Removal Act of 1830 led to the Trail of Tears, when Native Americans were forced from their homelands."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many branches of government does the Constitution create?",
+      "o": [
+       "Two",
+       "Three",
+       "Four",
+       "Five"
+      ],
+      "a": 1,
+      "why": "Legislative, executive, and judicial branches."
+     },
+     {
+      "t": "mc",
+      "q": "From which country did the US buy the Louisiana Territory in 1803?",
+      "o": [
+       "Spain",
+       "Britain",
+       "Mexico",
+       "France"
+      ],
+      "a": 3,
+      "why": "Napoleon's France sold the land for about 15 million dollars."
+     },
+     {
+      "t": "mc",
+      "q": "What is the Bill of Rights?",
+      "o": [
+       "The first ten amendments to the Constitution",
+       "A tax law",
+       "The opening of the Constitution",
+       "A treaty that ended a war"
+      ],
+      "a": 0,
+      "why": "It protects basic freedoms like speech and religion."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Trail of Tears?",
+      "o": [
+       "A Civil War march",
+       "A Gold Rush route to California",
+       "Forced removal of Native Americans from the Southeast",
+       "The Pilgrims' voyage"
+      ],
+      "a": 2,
+      "why": "Cherokee and other nations were forced to move west in the 1830s."
+     },
+     {
+      "t": "tf",
+      "q": "The Articles of Confederation created a very strong central government.",
+      "a": false,
+      "why": "It was weak, which is why the Constitution replaced it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Federalist",
+        "Backed a strong national government"
+       ],
+       [
+        "Manifest Destiny",
+        "Belief the US should reach the Pacific"
+       ],
+       [
+        "Cotton gin",
+        "Machine that cleaned cotton fast"
+       ],
+       [
+        "Monroe Doctrine",
+        "Warned Europe to stay out of the Americas"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Constitution signed",
+        1787
+       ],
+       [
+        "Louisiana Purchase",
+        1803
+       ],
+       [
+        "War of 1812 begins",
+        1812
+       ],
+       [
+        "Indian Removal Act",
+        1830
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year was the Constitution signed?",
+      "a": [
+       "1787"
+      ],
+      "hint": "It was a few years after the Revolution ended.",
+      "why": "The Constitution was signed in 1787."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year did the US buy the Louisiana Territory?",
+      "a": [
+       "1803"
+      ],
+      "hint": "Thomas Jefferson was president.",
+      "why": "The Louisiana Purchase was made in 1803."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: From which country did the US buy the Louisiana Territory?",
+      "a": [
+       "france"
+      ],
+      "hint": "Napoleon was its leader.",
+      "why": "France sold the land to the US."
+     }
+    ]
+   },
+   {
+    "title": "Expansion and Reform",
+    "period": "1820-1860",
+    "learn": [
+     {
+      "h": "Growing and moving west",
+      "b": "The Erie Canal opened in 1825 and made it cheaper to ship goods from the Great Lakes to New York. Settlers followed the Oregon Trail west. The US also gained Texas in 1845, and after the Mexican-American War (1846-1848) it won California and more land in the Treaty of Guadalupe Hidalgo."
+     },
+     {
+      "h": "Reform movements",
+      "b": "Many Americans wanted to improve society. Some fought against alcohol (temperance), and Horace Mann pushed for public schools. Abolitionists like William Lloyd Garrison, who published The Liberator in 1831, wanted to end slavery."
+     },
+     {
+      "h": "Rights for women and the enslaved",
+      "b": "In 1848 women met at the Seneca Falls Convention in New York to demand equal rights, including the vote. Harriet Tubman and others helped enslaved people escape north on the Underground Railroad, a secret network of safe houses."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which waterway linked the Hudson River to the Great Lakes?",
+      "o": [
+       "The Panama Canal",
+       "The Erie Canal",
+       "The Mississippi River",
+       "The Suez Canal"
+      ],
+      "a": 1,
+      "why": "The Erie Canal, opened in 1825, made trade between the Midwest and New York cheap and fast."
+     },
+     {
+      "t": "mc",
+      "q": "Who published the anti-slavery newspaper The Liberator?",
+      "o": [
+       "Frederick Law Olmsted",
+       "Horace Mann",
+       "William Lloyd Garrison",
+       "Henry Clay"
+      ],
+      "a": 2,
+      "why": "Garrison began The Liberator in 1831 to demand an end to slavery."
+     },
+     {
+      "t": "mc",
+      "q": "What was the main goal of the 1848 Seneca Falls Convention?",
+      "o": [
+       "Ending the Mexican-American War",
+       "Building public schools",
+       "Banning alcohol",
+       "Equal rights for women"
+      ],
+      "a": 3,
+      "why": "Leaders like Elizabeth Cady Stanton demanded women's rights, including the vote."
+     },
+     {
+      "t": "mc",
+      "q": "What did the US gain in the Treaty of Guadalupe Hidalgo (1848)?",
+      "o": [
+       "California and other Mexican lands",
+       "The Louisiana Territory",
+       "Florida",
+       "Alaska"
+      ],
+      "a": 0,
+      "why": "Mexico gave up a huge area, including California, after the Mexican-American War."
+     },
+     {
+      "t": "tf",
+      "q": "The Underground Railroad was a real train that ran under the ground.",
+      "a": false,
+      "why": "It was a secret network of people and safe houses that helped enslaved people escape."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Temperance",
+        "Movement against drinking alcohol"
+       ],
+       [
+        "Oregon Trail",
+        "Route settlers used to go west"
+       ],
+       [
+        "Underground Railroad",
+        "Secret path to freedom"
+       ],
+       [
+        "Abolitionist",
+        "Person who wanted to end slavery"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Missouri Compromise",
+        1820
+       ],
+       [
+        "Erie Canal opens",
+        1825
+       ],
+       [
+        "The Liberator first published",
+        1831
+       ],
+       [
+        "Seneca Falls Convention",
+        1848
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year did the Erie Canal open?",
+      "a": [
+       "1825"
+      ],
+      "hint": "It opened in the 1820s, five years after the Missouri Compromise.",
+      "why": "The Erie Canal opened in 1825."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which 1848 convention in New York started the women's rights movement? (two words)",
+      "a": [
+       "seneca falls",
+       "the seneca falls convention",
+       "seneca falls convention"
+      ],
+      "hint": "It is named after a small town in New York.",
+      "why": "The Seneca Falls Convention took place in 1848."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which woman, nicknamed 'Moses', led many people to freedom on the Underground Railroad?",
+      "a": [
+       "harriet tubman",
+       "tubman"
+      ],
+      "hint": "Her first name is Harriet.",
+      "why": "Harriet Tubman escaped slavery and guided many others north."
+     }
+    ]
+   },
+   {
+    "title": "Civil War and Reconstruction",
+    "period": "1850-1877",
+    "learn": [
+     {
+      "h": "A divided country",
+      "b": "The North and South argued over slavery, especially in new western lands. After Abraham Lincoln won the 1860 election, Southern states seceded, or left the Union, and formed the Confederacy."
+     },
+     {
+      "h": "The war",
+      "b": "The war began at Fort Sumter in 1861. Lincoln's Emancipation Proclamation in 1863 declared enslaved people in Confederate states free. The Union won a key battle at Gettysburg, Pennsylvania, and the war ended in 1865."
+     },
+     {
+      "h": "Reconstruction",
+      "b": "After the war, Reconstruction tried to rebuild the South and bring its states back. The 13th Amendment ended slavery, the 14th gave citizenship to people born in the US, and the 15th protected the right of Black men to vote."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who was the US president during the Civil War?",
+      "o": [
+       "Andrew Jackson",
+       "Abraham Lincoln",
+       "Ulysses Grant",
+       "James Madison"
+      ],
+      "a": 1,
+      "why": "Abraham Lincoln led the Union from 1861 to 1865."
+     },
+     {
+      "t": "mc",
+      "q": "What did the 13th Amendment do?",
+      "o": [
+       "Gave women the vote",
+       "Abolished slavery",
+       "Created an income tax",
+       "Lowered the voting age"
+      ],
+      "a": 1,
+      "why": "It made slavery illegal across the United States."
+     },
+     {
+      "t": "mc",
+      "q": "In which state was the Battle of Gettysburg fought?",
+      "o": [
+       "Virginia",
+       "Maryland",
+       "Pennsylvania",
+       "Georgia"
+      ],
+      "a": 2,
+      "why": "Gettysburg is in Pennsylvania; the Union won there in July 1863."
+     },
+     {
+      "t": "mc",
+      "q": "What was the main goal of Reconstruction?",
+      "o": [
+       "Buy Alaska from Russia",
+       "Build the transcontinental railroad",
+       "End the Mexican War",
+       "Rebuild the South and bring its states back"
+      ],
+      "a": 3,
+      "why": "Reconstruction (1865-1877) rebuilt the South and readmitted its states."
+     },
+     {
+      "t": "tf",
+      "q": "The Emancipation Proclamation of 1863 declared enslaved people free in the Confederate states.",
+      "a": true,
+      "why": "It applied to areas in rebellion against the Union."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Confederacy",
+        "Southern states that left the Union"
+       ],
+       [
+        "Union",
+        "Northern states loyal to the US"
+       ],
+       [
+        "Abolitionist",
+        "Person who wanted to end slavery"
+       ],
+       [
+        "Secession",
+        "Leaving the Union"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Compromise of 1850",
+        1850
+       ],
+       [
+        "Attack on Fort Sumter",
+        1861
+       ],
+       [
+        "Emancipation Proclamation",
+        1863
+       ],
+       [
+        "Lee surrenders at Appomattox",
+        1865
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In which state was the Battle of Gettysburg fought?",
+      "a": [
+       "pennsylvania"
+      ],
+      "hint": "It is a northern state with Philadelphia.",
+      "why": "Gettysburg, Pennsylvania, was a turning point in 1863."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which amendment number abolished slavery?",
+      "a": [
+       "13",
+       "13th",
+       "thirteenth"
+      ],
+      "hint": "It is a lucky or unlucky number.",
+      "why": "The 13th Amendment ended slavery in 1865."
+     },
+     {
+      "t": "parsons",
+      "q": "Challenge: put these Civil War events in order",
+      "lines": [
+       "Attack on Fort Sumter",
+       "Emancipation Proclamation",
+       "Battle of Gettysburg",
+       "Lee surrenders at Appomattox",
+       "Lincoln is assassinated"
+      ],
+      "why": "These events happened in 1861, 1863, 1863, April 9 1865, and April 14 1865."
+     }
+    ]
+   },
+   {
+    "title": "The Gilded Age",
+    "period": "1865-1900",
+    "learn": [
+     {
+      "h": "Industry and railroads",
+      "b": "After the Civil War, factories and railroads grew fast. The first transcontinental railroad was finished in 1869. Business leaders like Andrew Carnegie (steel) and John D. Rockefeller (Standard Oil) built huge companies, and some became monopolies, controlling a whole industry."
+     },
+     {
+      "h": "Immigrants and cities",
+      "b": "Millions of immigrants arrived, many through Ellis Island in New York Harbor, which opened in 1892. They worked in factories and lived in crowded tenements. In 1882 the Chinese Exclusion Act banned Chinese workers from coming."
+     },
+     {
+      "h": "Workers and the West",
+      "b": "Workers formed labor unions to ask for better pay and safer jobs. In the West, the Homestead Act of 1862 offered 160 acres of free land to settlers. As settlers moved onto the Plains, Native Americans were pushed onto reservations, and the fighting ended at Wounded Knee in 1890."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In which year was the first transcontinental railroad completed?",
+      "o": [
+       "1849",
+       "1869",
+       "1885",
+       "1901"
+      ],
+      "a": 1,
+      "why": "The Union Pacific and Central Pacific lines met at Promontory, Utah, in 1869."
+     },
+     {
+      "t": "mc",
+      "q": "What is a monopoly?",
+      "o": [
+       "A union of workers",
+       "A tax on imports",
+       "One company that controls an industry",
+       "A law that protects land"
+      ],
+      "a": 2,
+      "why": "A monopoly has little or no competition, so it can set high prices."
+     },
+     {
+      "t": "mc",
+      "q": "Where did many European immigrants enter the US starting in 1892?",
+      "o": [
+       "Angel Island",
+       "Plymouth Rock",
+       "Jamestown",
+       "Ellis Island"
+      ],
+      "a": 3,
+      "why": "Ellis Island in New York Harbor was the main immigration station on the East Coast."
+     },
+     {
+      "t": "mc",
+      "q": "Which business leader built a huge steel company?",
+      "o": [
+       "Andrew Carnegie",
+       "John D. Rockefeller",
+       "Henry Ford",
+       "J. P. Morgan"
+      ],
+      "a": 0,
+      "why": "Carnegie Steel was among the largest steel producers; Rockefeller was in oil."
+     },
+     {
+      "t": "tf",
+      "q": "The Chinese Exclusion Act of 1882 stopped Chinese laborers from immigrating to the US.",
+      "a": true,
+      "why": "It was the first major law to ban a group of immigrants by nationality."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Monopoly",
+        "One company controls an industry"
+       ],
+       [
+        "Tenement",
+        "Crowded city apartment building"
+       ],
+       [
+        "Labor union",
+        "Workers group seeking better pay"
+       ],
+       [
+        "Homestead Act",
+        "Free western land for settlers"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Homestead Act",
+        1862
+       ],
+       [
+        "Transcontinental railroad finished",
+        1869
+       ],
+       [
+        "Chinese Exclusion Act",
+        1882
+       ],
+       [
+        "Wounded Knee",
+        1890
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: John D. Rockefeller's company was called Standard ___. Fill in the word.",
+      "a": [
+       "oil"
+      ],
+      "hint": "It sold something that powers lamps and later cars.",
+      "why": "Standard Oil controlled most of the US oil refining."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many acres of free land did the Homestead Act offer a settler?",
+      "a": [
+       "160"
+      ],
+      "hint": "It is a little more than 150.",
+      "why": "The Homestead Act of 1862 gave 160 acres to settlers who farmed it."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year was the first transcontinental railroad finished?",
+      "a": [
+       "1869"
+      ],
+      "hint": "It was the same decade the Civil War ended.",
+      "why": "The railroad was completed in 1869."
+     }
+    ]
+   },
+   {
+    "title": "Progressive Era and Imperialism",
+    "period": "1890-1920",
+    "learn": [
+     {
+      "h": "Progressives fix problems",
+      "b": "Progressives wanted to clean up cities, businesses, and government. Muckrakers were writers who exposed problems. Upton Sinclair's novel The Jungle (1906) showed how dirty meatpacking plants were, and Congress passed laws to make food safer. President Theodore Roosevelt broke up trusts, which is called trust-busting."
+     },
+     {
+      "h": "New amendments",
+      "b": "Reformers changed the Constitution. The 16th Amendment (1913) allowed an income tax and the 17th Amendment (1913) let voters elect senators directly. The 18th Amendment (1919) banned alcohol, and the 19th Amendment (1920) gave women the right to vote."
+     },
+     {
+      "h": "The US reaches overseas",
+      "b": "In the Spanish-American War of 1898, the US took the Philippines, Guam, and Puerto Rico from Spain. Hawaii was annexed that year as well. In 1914 the US opened the Panama Canal, which let ships cross between the Atlantic and Pacific."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What did muckrakers do?",
+      "o": [
+       "Broke up large companies",
+       "Wrote stories exposing problems and corruption",
+       "Built railroads",
+       "Led armies in Cuba"
+      ],
+      "a": 1,
+      "why": "Muckrakers like Upton Sinclair and Ida Tarbell used writing to push for reform."
+     },
+     {
+      "t": "mc",
+      "q": "The Jungle by Upton Sinclair exposed problems in which industry?",
+      "o": [
+       "Steel",
+       "Railroads",
+       "Meatpacking",
+       "Oil"
+      ],
+      "a": 2,
+      "why": "The book led to food safety laws such as the Meat Inspection Act."
+     },
+     {
+      "t": "mc",
+      "q": "Which land did the US take from Spain after the 1898 war?",
+      "o": [
+       "Cuba and Hawaii",
+       "Alaska and Texas",
+       "Panama and Mexico",
+       "The Philippines, Guam, and Puerto Rico"
+      ],
+      "a": 3,
+      "why": "Cuba became independent, but the US took the Philippines, Guam, and Puerto Rico."
+     },
+     {
+      "t": "mc",
+      "q": "Why was the Panama Canal important?",
+      "o": [
+       "It let ships cross between the Atlantic and Pacific",
+       "It connected the Great Lakes to the sea",
+       "It carried water to cities",
+       "It ended the Spanish-American War"
+      ],
+      "a": 0,
+      "why": "The canal saved ships a long trip around South America."
+     },
+     {
+      "t": "tf",
+      "q": "The 17th Amendment gave voters the power to elect US senators directly.",
+      "a": true,
+      "why": "Before 1913, state legislatures chose senators."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Muckraker",
+        "Writer who exposed corruption"
+       ],
+       [
+        "Trust-busting",
+        "Breaking up monopolies"
+       ],
+       [
+        "Imperialism",
+        "Taking control of other lands"
+       ],
+       [
+        "Prohibition",
+        "Ban on alcohol"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Spanish-American War",
+        1898
+       ],
+       [
+        "Theodore Roosevelt becomes president",
+        1901
+       ],
+       [
+        "The Jungle is published",
+        1906
+       ],
+       [
+        "Panama Canal opens",
+        1914
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which president was nicknamed the 'Trust Buster'? (full name or last name)",
+      "a": [
+       "theodore roosevelt",
+       "teddy roosevelt",
+       "roosevelt"
+      ],
+      "hint": "He was a Rough Rider before he was president.",
+      "why": "Theodore Roosevelt used the law to break up large trusts."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year was the Spanish-American War?",
+      "a": [
+       "1898"
+      ],
+      "hint": "It was near the end of the 1800s.",
+      "why": "The war took place in 1898."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Upton Sinclair wrote a book about meatpacking called The ___. Fill in the word.",
+      "a": [
+       "jungle",
+       "the jungle"
+      ],
+      "hint": "It is a wild place with trees and animals, but also the title.",
+      "why": "The Jungle (1906) pushed Congress to pass food safety laws."
+     }
+    ]
+   },
+   {
+    "title": "World War I to the Great Depression",
+    "period": "1914-1941",
+    "learn": [
+     {
+      "h": "The US in World War I",
+      "b": "Most Americans wanted to stay out of World War I, which began in 1914. In 1917 the US joined the Allies after German submarines sank ships and the Zimmermann Telegram was revealed. President Woodrow Wilson later offered the Fourteen Points as a plan for peace, and the Treaty of Versailles (1919) ended the war with Germany."
+     },
+     {
+      "h": "The Roaring Twenties",
+      "b": "The 1920s were a time of jazz, cars, radios, and new styles. The Harlem Renaissance was a flowering of Black art, music, and writing in New York City. Prohibition banned the sale of alcohol, but many people broke the law."
+     },
+     {
+      "h": "Depression and the New Deal",
+      "b": "The Dust Bowl was a drought that blew away farm soil on the southern Plains. Millions were out of work. After Franklin D. Roosevelt was elected in 1932, programs like the Civilian Conservation Corps (CCC) gave people jobs, the FDIC insured bank savings, and the Social Security Act of 1935 helped the elderly."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What helped push the US into World War I in 1917?",
+      "o": [
+       "The attack on Pearl Harbor",
+       "German submarine attacks and the Zimmermann Telegram",
+       "The sinking of the Maine",
+       "The Berlin Blockade"
+      ],
+      "a": 1,
+      "why": "Germany's attacks on ships and its secret telegram to Mexico angered Americans."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Harlem Renaissance?",
+      "o": [
+       "A new way to farm in the Plains",
+       "A bank rescue plan",
+       "A flowering of Black art, music, and literature",
+       "A peace treaty"
+      ],
+      "a": 2,
+      "why": "Writers like Langston Hughes and musicians like Duke Ellington were part of it."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Dust Bowl?",
+      "o": [
+       "A football game",
+       "A coal mining disaster",
+       "A flood on the Mississippi",
+       "Drought and dust storms on the southern Plains"
+      ],
+      "a": 3,
+      "why": "Poor farming and drought turned soil into dust, forcing many families to leave."
+     },
+     {
+      "t": "mc",
+      "q": "What does the Social Security Act of 1935 provide?",
+      "o": [
+       "Income for older Americans",
+       "Free land in the West",
+       "Votes for women",
+       "Money for building the canal"
+      ],
+      "a": 0,
+      "why": "It created a system of pensions for retired workers and other aid."
+     },
+     {
+      "t": "tf",
+      "q": "Prohibition was a law that banned the sale of alcohol in the US.",
+      "a": true,
+      "why": "The 18th Amendment started Prohibition, which lasted until 1933."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fourteen Points",
+        "Wilson's plan for peace"
+       ],
+       [
+        "Treaty of Versailles",
+        "Ended World War I with Germany"
+       ],
+       [
+        "FDIC",
+        "Insures bank savings"
+       ],
+       [
+        "CCC",
+        "Gave young men outdoor jobs"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "US enters World War I",
+        1917
+       ],
+       [
+        "Lindbergh flies solo across the Atlantic",
+        1927
+       ],
+       [
+        "Franklin D. Roosevelt elected",
+        1932
+       ],
+       [
+        "Social Security Act",
+        1935
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which president led the US during World War I? (last name is enough)",
+      "a": [
+       "woodrow wilson",
+       "wilson"
+      ],
+      "hint": "His first name is Woodrow.",
+      "why": "Woodrow Wilson was president from 1913 to 1921."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year did the US enter World War I?",
+      "a": [
+       "1917"
+      ],
+      "hint": "It was three years after the war began.",
+      "why": "The US declared war on Germany in April 1917."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Franklin D. Roosevelt's plan to fight the Depression was called the New ___. Fill in the word.",
+      "a": [
+       "deal"
+      ],
+      "hint": "Think of a bargain or agreement.",
+      "why": "The New Deal was a set of programs to bring relief, recovery, and reform."
+     }
+    ]
+   },
+   {
+    "title": "World War II",
+    "period": "1939-1945",
+    "learn": [
+     {
+      "h": "The war begins",
+      "b": "World War II began in 1939 when Germany invaded Poland. The Axis powers were Germany, Italy, and Japan. The Allies included Britain, the Soviet Union, and later the US. The US helped Britain with weapons through Lend-Lease before it joined the war."
+     },
+     {
+      "h": "Pearl Harbor and the home front",
+      "b": "On December 7, 1941, Japan attacked Pearl Harbor and the US entered the war. At home, factories made planes and tanks, and women like 'Rosie the Riveter' took war jobs. Under Executive Order 9066 in 1942, Japanese Americans were forced into internment camps."
+     },
+     {
+      "h": "Turning points and the end",
+      "b": "The US won the Battle of Midway in 1942. On D-Day, June 6, 1944, Allied troops landed in Normandy, France, under General Dwight Eisenhower. Germany surrendered in May 1945. The US built atomic bombs in the Manhattan Project and dropped them on Hiroshima and Nagasaki in August 1945, and Japan surrendered."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which countries were the main Axis powers?",
+      "o": [
+       "Britain, France, and the US",
+       "Germany, Italy, and Japan",
+       "Germany, Russia, and China",
+       "Italy, Spain, and Japan"
+      ],
+      "a": 1,
+      "why": "The Axis powers fought against the Allies."
+     },
+     {
+      "t": "mc",
+      "q": "What was D-Day?",
+      "o": [
+       "The attack on Pearl Harbor",
+       "Germany's invasion of Poland",
+       "The Allied invasion of Normandy, France",
+       "The bombing of Hiroshima"
+      ],
+      "a": 2,
+      "why": "On June 6, 1944, Allied troops landed on French beaches."
+     },
+     {
+      "t": "mc",
+      "q": "What did Executive Order 9066 lead to?",
+      "o": [
+       "The draft of women",
+       "The Lend-Lease program",
+       "The atomic bomb",
+       "Internment of Japanese Americans"
+      ],
+      "a": 3,
+      "why": "Thousands of Japanese Americans were forced to leave their homes and live in camps."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Manhattan Project?",
+      "o": [
+       "A secret program to build the atomic bomb",
+       "A plan to rebuild New York",
+       "A tank factory program",
+       "A spy ring in Germany"
+      ],
+      "a": 0,
+      "why": "Scientists in the US built the first atomic bombs."
+     },
+     {
+      "t": "tf",
+      "q": "Germany surrendered before Japan did in 1945.",
+      "a": true,
+      "why": "Germany surrendered in May 1945, and Japan in August-September 1945."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Allies",
+        "Britain, the USSR, the US, and others"
+       ],
+       [
+        "Lend-Lease",
+        "US weapons sent to allies"
+       ],
+       [
+        "Rosie the Riveter",
+        "Symbol of women war workers"
+       ],
+       [
+        "Internment",
+        "Forced relocation into camps"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Germany invades Poland",
+        1939
+       ],
+       [
+        "Battle of Midway",
+        1942
+       ],
+       [
+        "D-Day landings",
+        1944
+       ],
+       [
+        "Atomic bomb dropped on Hiroshima",
+        1945
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which general led the Allied forces on D-Day? (last name is enough)",
+      "a": [
+       "eisenhower",
+       "dwight eisenhower",
+       "dwight d. eisenhower",
+       "general eisenhower"
+      ],
+      "hint": "He later became a US president.",
+      "why": "Dwight D. Eisenhower was the Supreme Allied Commander."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Pearl Harbor was attacked on December ___, 1941. Type the day number.",
+      "a": [
+       "7"
+      ],
+      "hint": "It is the same number as the days of the week.",
+      "why": "Japan attacked on December 7, 1941."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What was the secret US project to build the atomic bomb called? (two words)",
+      "a": [
+       "manhattan project",
+       "the manhattan project"
+      ],
+      "hint": "It is named after a borough of New York City.",
+      "why": "The Manhattan Project produced the first atomic bombs."
+     }
+    ]
+   },
+   {
+    "title": "The Cold War and Civil Rights",
+    "period": "1945-1975",
+    "learn": [
+     {
+      "h": "The Cold War",
+      "b": "After World War II, the US and the Soviet Union became rivals. The US policy of containment tried to stop the spread of communism. The Marshall Plan gave money to rebuild Europe, NATO was formed in 1949, and in 1948 the Berlin Airlift flew food to West Berlin. The Cuban Missile Crisis of 1962 nearly led to nuclear war."
+     },
+     {
+      "h": "War and rivalry",
+      "b": "The US fought in the Korean War (1950-1953) and the Vietnam War. In 1957 the Soviets launched Sputnik, the first satellite, which started the Space Race. President Richard Nixon resigned in 1974 because of the Watergate scandal."
+     },
+     {
+      "h": "The Civil Rights Movement",
+      "b": "In Brown v. Board of Education (1954), the Supreme Court said segregated public schools were unconstitutional. In 1955 Rosa Parks refused to give up her bus seat in Montgomery, which led to a boycott. Sit-ins and marches followed, and the Voting Rights Act of 1965 outlawed unfair voting rules."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What was the US policy of containment?",
+      "o": [
+       "Limiting immigration",
+       "Stopping the spread of communism",
+       "Breaking up monopolies",
+       "Keeping troops at home"
+      ],
+      "a": 1,
+      "why": "The US tried to keep communism from spreading to new countries."
+     },
+     {
+      "t": "mc",
+      "q": "What did Brown v. Board of Education (1954) decide?",
+      "o": [
+       "Women could vote",
+       "Students could protest in class",
+       "Segregated public schools were unconstitutional",
+       "Police must read arrest rights"
+      ],
+      "a": 2,
+      "why": "The Court ended legal school segregation, though change took years."
+     },
+     {
+      "t": "mc",
+      "q": "In which city did Rosa Parks refuse to give up her bus seat?",
+      "o": [
+       "Little Rock",
+       "Birmingham",
+       "Atlanta",
+       "Montgomery"
+      ],
+      "a": 3,
+      "why": "The Montgomery bus boycott began after her arrest in 1955."
+     },
+     {
+      "t": "mc",
+      "q": "What caused the Cuban Missile Crisis of 1962?",
+      "o": [
+       "Soviet nuclear missiles placed in Cuba",
+       "A Soviet attack on Berlin",
+       "A US attack on Moscow",
+       "A North Korean invasion"
+      ],
+      "a": 0,
+      "why": "The US demanded that the missiles be removed, and the Soviets agreed."
+     },
+     {
+      "t": "tf",
+      "q": "The Berlin Airlift delivered food and supplies to West Berlin by plane.",
+      "a": true,
+      "why": "The Soviets blocked roads in 1948, so the Allies flew in supplies."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "NATO",
+        "Western military alliance"
+       ],
+       [
+        "Marshall Plan",
+        "US money to rebuild Europe"
+       ],
+       [
+        "Sit-in",
+        "Peaceful protest at a segregated place"
+       ],
+       [
+        "Voting Rights Act",
+        "Outlawed unfair voting rules"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Brown v. Board of Education",
+        1954
+       ],
+       [
+        "Cuban Missile Crisis",
+        1962
+       ],
+       [
+        "Voting Rights Act",
+        1965
+       ],
+       [
+        "Nixon resigns",
+        1974
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year did the Supreme Court decide Brown v. Board of Education?",
+      "a": [
+       "1954"
+      ],
+      "hint": "It was in the mid-1950s.",
+      "why": "The decision came in 1954."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Rosa Parks' bus protest started a boycott in which Alabama city?",
+      "a": [
+       "montgomery"
+      ],
+      "hint": "The city's name starts with M.",
+      "why": "The Montgomery bus boycott lasted over a year."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The 1957 Soviet satellite that began the Space Race was called ___.",
+      "a": [
+       "sputnik",
+       "sputnik 1"
+      ],
+      "hint": "Its name means 'traveling companion' in Russian.",
+      "why": "Sputnik shocked Americans and led to NASA being created in 1958."
+     }
+    ]
+   },
+   {
+    "title": "Modern America",
+    "period": "1877-Today",
+    "learn": [
+     {
+      "h": "Industry and reform",
+      "b": "After 1877 factories, railroads, and cities grew fast, and millions of immigrants arrived. Reformers pushed for change, and the 19th Amendment in 1920 gave women the right to vote."
+     },
+     {
+      "h": "Depression and world war",
+      "b": "The stock market crashed in 1929, starting the Great Depression. President Franklin D. Roosevelt answered with the New Deal. The US joined World War II after Japan attacked Pearl Harbor in 1941."
+     },
+     {
+      "h": "Cold War and civil rights",
+      "b": "After the war, the US and the Soviet Union competed in the Cold War without fighting each other directly. At home, leaders like Martin Luther King Jr. fought segregation, and the Civil Rights Act passed in 1964."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which president created the New Deal?",
+      "o": [
+       "Herbert Hoover",
+       "Franklin D. Roosevelt",
+       "Harry Truman",
+       "Dwight Eisenhower"
+      ],
+      "a": 1,
+      "why": "FDR's New Deal programs fought the Great Depression."
+     },
+     {
+      "t": "mc",
+      "q": "Who were the two main rivals in the Cold War?",
+      "o": [
+       "China and Japan",
+       "Germany and Italy",
+       "The US and the Soviet Union",
+       "Britain and France"
+      ],
+      "a": 2,
+      "why": "The US and the USSR competed for world influence from the late 1940s to 1991."
+     },
+     {
+      "t": "mc",
+      "q": "Who gave the 'I Have a Dream' speech in 1963?",
+      "o": [
+       "Martin Luther King Jr.",
+       "Malcolm X",
+       "Frederick Douglass",
+       "W.E.B. Du Bois"
+      ],
+      "a": 0,
+      "why": "King gave the speech at the March on Washington."
+     },
+     {
+      "t": "mc",
+      "q": "What did the 19th Amendment do?",
+      "o": [
+       "Ended slavery",
+       "Banned alcohol",
+       "Created the income tax",
+       "Gave women the right to vote"
+      ],
+      "a": 3,
+      "why": "It was ratified in 1920."
+     },
+     {
+      "t": "tf",
+      "q": "The US entered World War II after Japan attacked Pearl Harbor.",
+      "a": true,
+      "why": "The attack on December 7, 1941 brought the US into the war."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Great Depression",
+        "1930s economic crisis"
+       ],
+       [
+        "Cold War",
+        "US-Soviet rivalry without direct war"
+       ],
+       [
+        "Segregation",
+        "Forced separation by race"
+       ],
+       [
+        "Apollo 11",
+        "First Moon landing, 1969"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Stock market crash begins Depression",
+        1929
+       ],
+       [
+        "Attack on Pearl Harbor",
+        1941
+       ],
+       [
+        "Civil Rights Act",
+        1964
+       ],
+       [
+        "September 11 attacks",
+        2001
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year did Japan attack Pearl Harbor?",
+      "a": [
+       "1941"
+      ],
+      "hint": "The US entered World War II soon after.",
+      "why": "The attack came on December 7, 1941."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which amendment number gave women the right to vote?",
+      "a": [
+       "19",
+       "19th",
+       "nineteenth"
+      ],
+      "hint": "It was ratified in 1920.",
+      "why": "The 19th Amendment gave women the vote."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who gave the 'I Have a Dream' speech in 1963? (full name)",
+      "a": [
+       "martin luther king jr.",
+       "martin luther king jr",
+       "martin luther king",
+       "mlk",
+       "martin luther king junior"
+      ],
+      "hint": "He led the Civil Rights Movement.",
+      "why": "Martin Luther King Jr. spoke at the March on Washington."
+     }
+    ]
+   }
+  ]
+ },
+ "hist-world": {
+  "name": "World History",
+  "units": [
+   {
+    "title": "Prehistory and the First Farmers",
+    "period": "Before 3000 BCE",
+    "learn": [
+     {
+      "h": "Hunter-gatherers",
+      "b": "In the Paleolithic (Old Stone) Age, people were nomads who moved to follow animals and wild plants. They made stone tools, used fire, and lived in small groups. Objects made by early people, such as tools and cave paintings, are called artifacts."
+     },
+     {
+      "h": "The farming revolution",
+      "b": "Around 10,000 BCE, people in the Fertile Crescent of the Middle East learned to grow crops and tame animals. This is the Neolithic Revolution. Domestication means changing plants and animals so people can use them, such as wheat and sheep."
+     },
+     {
+      "h": "From villages to cities",
+      "b": "Farming made a food surplus, extra food. Because not everyone had to farm, people could become potters, builders, priests, or soldiers. Villages grew into cities along river valleys. In Sumer, people invented cuneiform writing around 3200 BCE."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How did Paleolithic people get food?",
+      "o": [
+       "By farming wheat",
+       "By hunting animals and gathering wild plants",
+       "By trading with cities",
+       "By building irrigation canals"
+      ],
+      "a": 1,
+      "why": "They moved around to follow food because they did not farm yet."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Neolithic Revolution?",
+      "o": [
+       "The invention of the wheel",
+       "The rise of the Roman Empire",
+       "The shift from hunting and gathering to farming",
+       "The first use of iron"
+      ],
+      "a": 2,
+      "why": "People began growing crops and raising animals, and settled in villages."
+     },
+     {
+      "t": "mc",
+      "q": "Where did farming first develop?",
+      "o": [
+       "The Amazon rainforest",
+       "Antarctica",
+       "The Sahara Desert",
+       "The Fertile Crescent"
+      ],
+      "a": 3,
+      "why": "The Fertile Crescent in the Middle East had rich soil and wild grains."
+     },
+     {
+      "t": "mc",
+      "q": "Why did a food surplus matter?",
+      "o": [
+       "Some people could do jobs other than farming",
+       "It made people move more",
+       "It stopped the use of tools",
+       "It ended trade"
+      ],
+      "a": 0,
+      "why": "Extra food freed people to become craftspeople, priests, and leaders."
+     },
+     {
+      "t": "tf",
+      "q": "People in the Paleolithic Age lived mostly in large permanent cities.",
+      "a": false,
+      "why": "Cities came after farming; Paleolithic people were mostly nomads."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Nomad",
+        "Person who moves from place to place"
+       ],
+       [
+        "Domestication",
+        "Taming plants or animals for use"
+       ],
+       [
+        "Surplus",
+        "Extra supply of food"
+       ],
+       [
+        "Artifact",
+        "Object made by early people"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Farming begins in the Fertile Crescent",
+        -10000
+       ],
+       [
+        "Cuneiform writing invented in Sumer",
+        -3200
+       ],
+       [
+        "Great Pyramid of Giza built",
+        -2560
+       ],
+       [
+        "Code of Hammurabi written",
+        -1754
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: People who move from place to place to follow food are called ___.",
+      "a": [
+       "nomads",
+       "nomad"
+      ],
+      "hint": "They do not settle in one place.",
+      "why": "Early hunter-gatherers were nomads."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The shift from hunting to farming is called the ___ Revolution. Fill in the missing word.",
+      "a": [
+       "neolithic",
+       "agricultural"
+      ],
+      "hint": "It names the New Stone Age.",
+      "why": "The Neolithic Revolution changed how people lived."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which people of Mesopotamia invented cuneiform writing?",
+      "a": [
+       "sumerians",
+       "the sumerians",
+       "sumer"
+      ],
+      "hint": "Their land was called Sumer.",
+      "why": "The Sumerians wrote on clay tablets with wedge-shaped marks."
+     }
+    ]
+   },
+   {
+    "title": "Ancient Civilizations",
+    "period": "Before 500 CE",
+    "learn": [
+     {
+      "h": "River valleys",
+      "b": "The first civilizations grew near rivers. Mesopotamia was between the Tigris and Euphrates rivers, and Egypt grew along the Nile. Rivers gave water and rich farmland."
+     },
+     {
+      "h": "Greece",
+      "b": "Ancient Greece was made of city-states called poleis. Athens developed an early form of democracy, where citizens voted on laws, while Sparta was known for its army."
+     },
+     {
+      "h": "Rome",
+      "b": "Rome began as a republic with a Senate. Julius Caesar's rule and death ended the republic, and Augustus became the first emperor. The Western Roman Empire fell in 476 CE."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Mesopotamia was located between which two rivers?",
+      "o": [
+       "Nile and Congo",
+       "Tigris and Euphrates",
+       "Indus and Ganges",
+       "Yellow and Yangtze"
+      ],
+      "a": 1,
+      "why": "Mesopotamia means 'land between the rivers' in Greek."
+     },
+     {
+      "t": "mc",
+      "q": "What was the writing system of ancient Egypt?",
+      "o": [
+       "Cuneiform",
+       "Runes",
+       "Hieroglyphics",
+       "The Latin alphabet"
+      ],
+      "a": 2,
+      "why": "Egyptians used picture symbols called hieroglyphics."
+     },
+     {
+      "t": "mc",
+      "q": "Which Greek city-state is known for early democracy?",
+      "o": [
+       "Athens",
+       "Sparta",
+       "Troy",
+       "Babylon"
+      ],
+      "a": 0,
+      "why": "Athenian citizens voted directly on laws."
+     },
+     {
+      "t": "mc",
+      "q": "Who was the first emperor of Rome?",
+      "o": [
+       "Julius Caesar",
+       "Nero",
+       "Constantine",
+       "Augustus"
+      ],
+      "a": 3,
+      "why": "Augustus became emperor in 27 BCE."
+     },
+     {
+      "t": "tf",
+      "q": "Ancient Egyptians built the pyramids as tombs for their pharaohs.",
+      "a": true,
+      "why": "Pyramids were royal burial places."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Pharaoh",
+        "Ruler of ancient Egypt"
+       ],
+       [
+        "Polis",
+        "Greek city-state"
+       ],
+       [
+        "Senate",
+        "Roman governing council"
+       ],
+       [
+        "Ziggurat",
+        "Mesopotamian temple tower"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Roman Republic founded",
+        -509
+       ],
+       [
+        "Alexander the Great dies",
+        -323
+       ],
+       [
+        "Julius Caesar assassinated",
+        -44
+       ],
+       [
+        "Western Roman Empire falls",
+        476
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which Greek city-state is known for early democracy?",
+      "a": [
+       "athens"
+      ],
+      "hint": "Its name starts with A.",
+      "why": "Athens developed an early form of democracy."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Mesopotamia lay between the Tigris and the ___ rivers.",
+      "a": [
+       "euphrates"
+      ],
+      "hint": "It starts with E.",
+      "why": "The Tigris and Euphrates rivers watered Mesopotamia."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What was the writing system of ancient Egypt called?",
+      "a": [
+       "hieroglyphics",
+       "hieroglyphs",
+       "hieroglyphic"
+      ],
+      "hint": "It used pictures and symbols.",
+      "why": "Egyptians wrote in hieroglyphics."
+     }
+    ]
+   },
+   {
+    "title": "Ancient India and China",
+    "period": "2600 BCE-550 CE",
+    "learn": [
+     {
+      "h": "Ancient India",
+      "b": "The Indus Valley civilization had planned cities like Harappa and Mohenjo-Daro with drains and straight streets. Later, Hinduism grew in India, and Siddhartha Gautama, the Buddha, taught Buddhism. Emperor Ashoka of the Maurya Empire supported Buddhism. The Gupta Empire (from 320 CE) was a golden age of math and science, including the idea of zero."
+     },
+     {
+      "h": "Early China",
+      "b": "Chinese rulers claimed the Mandate of Heaven, the idea that heaven gave them the right to rule while they ruled well. The philosopher Confucius (born 551 BCE) taught respect for family and good government. A dynasty is a family that rules for many generations."
+     },
+     {
+      "h": "Unified China",
+      "b": "Qin Shi Huang unified China in 221 BCE and began the Great Wall. The Han Dynasty began in 206 BCE and traded along the Silk Road. Under the Han, paper was invented and government officials were chosen by exams."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which was a city of the Indus Valley civilization?",
+      "o": [
+       "Babylon",
+       "Mohenjo-Daro",
+       "Thebes",
+       "Sparta"
+      ],
+      "a": 1,
+      "why": "Mohenjo-Daro had planned streets and drains around 2500 BCE."
+     },
+     {
+      "t": "mc",
+      "q": "Who founded Buddhism?",
+      "o": [
+       "Confucius",
+       "Ashoka",
+       "Siddhartha Gautama",
+       "Qin Shi Huang"
+      ],
+      "a": 2,
+      "why": "Siddhartha Gautama became known as the Buddha, or 'Enlightened One'."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Mandate of Heaven?",
+      "o": [
+       "A Chinese law code",
+       "A trade route",
+       "A holy book",
+       "The belief that heaven gave rulers the right to rule while they were just"
+      ],
+      "a": 3,
+      "why": "If a ruler was cruel, people believed he lost the Mandate."
+     },
+     {
+      "t": "mc",
+      "q": "Who unified China in 221 BCE?",
+      "o": [
+       "Qin Shi Huang",
+       "Confucius",
+       "Ashoka",
+       "Cai Lun"
+      ],
+      "a": 0,
+      "why": "He became the first emperor of a unified China."
+     },
+     {
+      "t": "tf",
+      "q": "Emperor Ashoka of the Maurya Empire supported Buddhism.",
+      "a": true,
+      "why": "After a bloody war, Ashoka turned to Buddhism and spread its message of peace."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Confucius",
+        "Taught respect and family duty"
+       ],
+       [
+        "Dynasty",
+        "Family that rules for generations"
+       ],
+       [
+        "Caste system",
+        "Social ranking in India"
+       ],
+       [
+        "Silk Road",
+        "Trade route linking China and the West"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Confucius is born",
+        -551
+       ],
+       [
+        "Qin unifies China",
+        -221
+       ],
+       [
+        "Han Dynasty begins",
+        -206
+       ],
+       [
+        "Gupta Empire begins",
+        320
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which Chinese thinker taught respect for parents and elders? (one word)",
+      "a": [
+       "confucius"
+      ],
+      "hint": "His name sounds like 'con-FEW-shus'.",
+      "why": "Confucius's ideas shaped Chinese society for centuries."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Gupta mathematicians helped spread the number ___ (type the word or the digit).",
+      "a": [
+       "zero",
+       "0"
+      ],
+      "hint": "It means nothing, but is very useful.",
+      "why": "The idea of zero as a number was developed in India."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Mohenjo-Daro was part of which valley civilization? (one word, then 'Valley')",
+      "a": [
+       "indus valley",
+       "indus",
+       "the indus valley"
+      ],
+      "hint": "The valley is named after a river in South Asia.",
+      "why": "The Indus Valley civilization flourished along the Indus River."
+     }
+    ]
+   },
+   {
+    "title": "The Medieval World",
+    "period": "500-1450",
+    "learn": [
+     {
+      "h": "Europe in the Middle Ages",
+      "b": "After Rome fell, Europe used feudalism. Kings gave land to lords, lords gave land to vassals, and peasants called serfs worked the land. The Magna Carta of 1215 limited the English king's power."
+     },
+     {
+      "h": "Empires and trade",
+      "b": "The Byzantine Empire kept Roman traditions with its capital at Constantinople. Islam spread after Muhammad's Hijra in 622. The Silk Road linked China to the Mediterranean, and Mali's ruler Mansa Musa became famous for his wealth."
+     },
+     {
+      "h": "Crisis and change",
+      "b": "The Crusades were Christian military campaigns to control the Holy Land. In the 1340s the Black Death, a plague spread by fleas on rats, killed millions in Europe."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "In feudalism, what did a lord give to a vassal?",
+      "o": [
+       "Votes",
+       "Ships",
+       "Land",
+       "Printing presses"
+      ],
+      "a": 2,
+      "why": "Vassals received land in return for loyalty and military service."
+     },
+     {
+      "t": "mc",
+      "q": "How was the Black Death spread in Europe?",
+      "o": [
+       "Contaminated bread",
+       "Eating pork",
+       "Spoiled wine",
+       "Fleas carried by rats"
+      ],
+      "a": 3,
+      "why": "Plague bacteria passed to people through fleas on rats."
+     },
+     {
+      "t": "mc",
+      "q": "The Silk Road connected China with what region?",
+      "o": [
+       "The Americas",
+       "Europe and the Mediterranean",
+       "Australia",
+       "Antarctica"
+      ],
+      "a": 1,
+      "why": "Goods like silk and spices traveled between Asia and Europe."
+     },
+     {
+      "t": "mc",
+      "q": "What was the capital of the Byzantine Empire?",
+      "o": [
+       "Rome",
+       "Athens",
+       "Constantinople",
+       "Alexandria"
+      ],
+      "a": 2,
+      "why": "Constantinople is modern Istanbul."
+     },
+     {
+      "t": "tf",
+      "q": "The Magna Carta of 1215 limited the power of the English king.",
+      "a": true,
+      "why": "It said even the king had to obey the law."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Crusades",
+        "Campaigns to control the Holy Land"
+       ],
+       [
+        "Samurai",
+        "Japanese warrior class"
+       ],
+       [
+        "Mansa Musa",
+        "Wealthy ruler of Mali"
+       ],
+       [
+        "Serf",
+        "Peasant tied to the land"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Muhammad's Hijra to Medina",
+        622
+       ],
+       [
+        "Charlemagne crowned emperor",
+        800
+       ],
+       [
+        "Norman conquest of England",
+        1066
+       ],
+       [
+        "Black Death reaches Europe",
+        1347
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In feudalism, a peasant tied to the land was called a ___.",
+      "a": [
+       "serf"
+      ],
+      "hint": "It rhymes with 'surf'.",
+      "why": "Serfs worked the land of a lord."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year was the Magna Carta signed?",
+      "a": [
+       "1215"
+      ],
+      "hint": "It is early in the 13th century.",
+      "why": "King John signed it in 1215."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What was the capital of the Byzantine Empire?",
+      "a": [
+       "constantinople",
+       "istanbul"
+      ],
+      "hint": "Today it is called Istanbul.",
+      "why": "Constantinople was the capital of the Byzantine Empire."
+     }
+    ]
+   },
+   {
+    "title": "Islam, Africa, and the Americas",
+    "period": "500-1500",
+    "learn": [
+     {
+      "h": "The rise of Islam",
+      "b": "Islam began in Mecca with the prophet Muhammad. Muslims follow the Quran, their holy book, and the Five Pillars of Islam: faith, prayer, charity, fasting, and pilgrimage. The Abbasid caliphate (from 750) ruled from Baghdad, where scholars at the House of Wisdom studied math and science."
+     },
+     {
+      "h": "Africa and the Mongols",
+      "b": "In West Africa, the empires of Mali and Songhai grew rich from trading gold and salt, and Timbuktu became a center of learning. In Asia, Genghis Khan united the Mongols in 1206 and built the largest land empire in history."
+     },
+     {
+      "h": "Empires of the Americas",
+      "b": "The Maya built cities and used a calendar and the idea of zero. The Aztec capital Tenochtitlan was built on an island in a lake around 1325. The Inca ruled a huge empire from Cusco in the Andes and kept records with knotted cords called quipus."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the Five Pillars of Islam?",
+      "o": [
+       "Five Muslim empires",
+       "The basic duties of Muslims",
+       "Five holy cities",
+       "Five books of the Quran"
+      ],
+      "a": 1,
+      "why": "They are faith, prayer, charity, fasting, and pilgrimage."
+     },
+     {
+      "t": "mc",
+      "q": "What was the House of Wisdom?",
+      "o": [
+       "A palace in Cairo",
+       "A mosque in Mecca",
+       "A center of learning in Baghdad",
+       "A Mongol fort"
+      ],
+      "a": 2,
+      "why": "Scholars there translated books and studied math, medicine, and science."
+     },
+     {
+      "t": "mc",
+      "q": "Why was Timbuktu important?",
+      "o": [
+       "It was the Aztec capital",
+       "It was the Inca capital",
+       "It was a Mongol camp",
+       "It was a center of trade and learning in Mali"
+      ],
+      "a": 3,
+      "why": "Caravans carrying gold and salt met there, and it had famous schools."
+     },
+     {
+      "t": "mc",
+      "q": "What did the Inca use to keep records?",
+      "o": [
+       "Quipus, or knotted cords",
+       "Cuneiform tablets",
+       "Hieroglyphs",
+       "Paper scrolls"
+      ],
+      "a": 0,
+      "why": "A quipu used knots and colors to store numbers and information."
+     },
+     {
+      "t": "tf",
+      "q": "Tenochtitlan, the Aztec capital, was built on an island in a lake.",
+      "a": true,
+      "why": "It was in Lake Texcoco, in what is now Mexico City."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Quran",
+        "Holy book of Islam"
+       ],
+       [
+        "Mecca",
+        "Holiest city in Islam"
+       ],
+       [
+        "Quipu",
+        "Inca knotted-cord record"
+       ],
+       [
+        "Tenochtitlan",
+        "Aztec capital city"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Abbasid caliphate begins",
+        750
+       ],
+       [
+        "Genghis Khan unites the Mongols",
+        1206
+       ],
+       [
+        "Aztecs found Tenochtitlan",
+        1325
+       ],
+       [
+        "Inca Empire begins to expand",
+        1438
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the holy book of Islam called? (one word)",
+      "a": [
+       "quran",
+       "koran"
+      ],
+      "hint": "It was revealed to the prophet Muhammad.",
+      "why": "The Quran is the holy book of Islam."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which people did Genghis Khan unite in 1206? (one word)",
+      "a": [
+       "mongols",
+       "mongol",
+       "the mongols"
+      ],
+      "hint": "They came from the steppes of Central Asia.",
+      "why": "Genghis Khan built the largest land empire in history."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many Pillars of Islam are there? (a number)",
+      "a": [
+       "5",
+       "five"
+      ],
+      "hint": "Count faith, prayer, charity, fasting, and pilgrimage.",
+      "why": "There are five pillars."
+     }
+    ]
+   },
+   {
+    "title": "Renaissance and Exploration",
+    "period": "1450-1800",
+    "learn": [
+     {
+      "h": "The Renaissance",
+      "b": "The Renaissance began in Italy and means 'rebirth.' Artists and thinkers like Leonardo da Vinci studied ancient Greece and Rome. The printing press helped ideas spread quickly."
+     },
+     {
+      "h": "Exploration and Reformation",
+      "b": "European explorers like Columbus crossed the Atlantic, starting the Columbian Exchange of plants, animals, and diseases. In 1517 Martin Luther's 95 Theses began the Reformation, which split Western Christianity."
+     },
+     {
+      "h": "Science and Enlightenment",
+      "b": "In the Scientific Revolution, Copernicus said the Sun is the center of the solar system. Enlightenment thinkers then stressed reason and individual rights, which inspired revolutions such as the French Revolution."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where did the Renaissance begin?",
+      "o": [
+       "France",
+       "Italy",
+       "England",
+       "Spain"
+      ],
+      "a": 1,
+      "why": "Italian cities like Florence were its early centers."
+     },
+     {
+      "t": "mc",
+      "q": "Who wrote the 95 Theses in 1517?",
+      "o": [
+       "John Calvin",
+       "Henry VIII",
+       "Johannes Gutenberg",
+       "Martin Luther"
+      ],
+      "a": 3,
+      "why": "Luther criticized Church practices, starting the Reformation."
+     },
+     {
+      "t": "mc",
+      "q": "Which idea did Copernicus propose?",
+      "o": [
+       "The Earth is the center of the universe",
+       "The Sun is the center of the solar system",
+       "The Earth is flat",
+       "The Moon makes its own light"
+      ],
+      "a": 1,
+      "why": "Copernicus put the Sun at the center, challenging the old view."
+     },
+     {
+      "t": "mc",
+      "q": "What did Enlightenment thinkers stress?",
+      "o": [
+       "Obedience to kings",
+       "Tradition above all",
+       "Reason and individual rights",
+       "Rule by the church"
+      ],
+      "a": 2,
+      "why": "Thinkers like Locke and Voltaire valued reason and rights."
+     },
+     {
+      "t": "tf",
+      "q": "The Columbian Exchange moved plants, animals, and diseases between the Americas and the Old World.",
+      "a": true,
+      "why": "Potatoes, horses, and diseases such as smallpox all crossed the Atlantic."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Renaissance",
+        "Rebirth of art and learning"
+       ],
+       [
+        "Reformation",
+        "Protest movement against Church practices"
+       ],
+       [
+        "Absolutism",
+        "King holds total power"
+       ],
+       [
+        "Enlightenment",
+        "Age of reason and rights"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Columbus reaches the Americas",
+        1492
+       ],
+       [
+        "Luther's 95 Theses",
+        1517
+       ],
+       [
+        "Spanish Armada defeated",
+        1588
+       ],
+       [
+        "French Revolution begins",
+        1789
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year did Columbus reach the Americas?",
+      "a": [
+       "1492"
+      ],
+      "hint": "The rhyme says 'In fourteen hundred and ninety-two'.",
+      "why": "Columbus landed in the Caribbean in 1492."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In which country did the Renaissance begin?",
+      "a": [
+       "italy"
+      ],
+      "hint": "Think of Florence and Rome.",
+      "why": "The Renaissance began in Italian city-states."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year did Martin Luther post his 95 Theses?",
+      "a": [
+       "1517"
+      ],
+      "hint": "It started the Reformation.",
+      "why": "Luther posted them in 1517."
+     }
+    ]
+   },
+   {
+    "title": "Revolutions and the Industrial Age",
+    "period": "1750-1914",
+    "learn": [
+     {
+      "h": "Revolutions",
+      "b": "In the French Revolution, people rose against the king in 1789 and later made France a republic. Napoleon became emperor in 1804 but was defeated at Waterloo in 1815. Enslaved people in Haiti, led by Toussaint Louverture, won independence in 1804. Simon Bolivar led many South American colonies to freedom from Spain."
+     },
+     {
+      "h": "The Industrial Revolution",
+      "b": "New machines like James Watt's improved steam engine moved work from homes to factories. Cities grew quickly, which is called urbanization. Factory work was often dangerous, and children worked long hours before reforms."
+     },
+     {
+      "h": "Empires and Asia",
+      "b": "European countries built colonies in Africa and Asia. At the Berlin Conference of 1884-1885, they set rules for dividing Africa without asking Africans. In Japan, the Meiji Restoration (1868) brought quick modernization under the emperor."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who led the slave revolt that created independent Haiti?",
+      "o": [
+       "Simon Bolivar",
+       "Toussaint Louverture",
+       "Napoleon",
+       "Maximilien Robespierre"
+      ],
+      "a": 1,
+      "why": "Haiti became independent in 1804 after a long revolution."
+     },
+     {
+      "t": "mc",
+      "q": "Where was Napoleon finally defeated in 1815?",
+      "o": [
+       "Trafalgar",
+       "Moscow",
+       "Waterloo",
+       "Austerlitz"
+      ],
+      "a": 2,
+      "why": "His final defeat at Waterloo in Belgium ended his rule."
+     },
+     {
+      "t": "mc",
+      "q": "What did the Berlin Conference of 1884-1885 do?",
+      "o": [
+       "It ended the slave trade in Haiti",
+       "It created the United Nations",
+       "It ended the Opium War",
+       "European powers made rules for dividing Africa"
+      ],
+      "a": 3,
+      "why": "No African leaders were invited."
+     },
+     {
+      "t": "mc",
+      "q": "What was the Meiji Restoration?",
+      "o": [
+       "Japan's push to modernize under the emperor",
+       "A Chinese rebellion",
+       "A Korean trade treaty",
+       "A Mongol invasion"
+      ],
+      "a": 0,
+      "why": "Japan built factories, railroads, and a modern army after 1868."
+     },
+     {
+      "t": "tf",
+      "q": "The Industrial Revolution moved much work from homes to factories.",
+      "a": true,
+      "why": "Machines and steam power made large factories possible."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Factory system",
+        "Making goods with machines in one place"
+       ],
+       [
+        "Urbanization",
+        "Growth of cities"
+       ],
+       [
+        "Colony",
+        "Land ruled by a distant country"
+       ],
+       [
+        "Meiji Restoration",
+        "Japan's modernization"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Haiti declares independence",
+        1804
+       ],
+       [
+        "Battle of Waterloo",
+        1815
+       ],
+       [
+        "Meiji Restoration",
+        1868
+       ],
+       [
+        "Berlin Conference",
+        1884
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which French emperor was defeated at Waterloo? (one name)",
+      "a": [
+       "napoleon",
+       "napoleon bonaparte"
+      ],
+      "hint": "His last name is Bonaparte.",
+      "why": "Napoleon lost at Waterloo in 1815."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: James Watt improved which type of engine? (one word)",
+      "a": [
+       "steam",
+       "steam engine"
+      ],
+      "hint": "It runs on hot water vapor.",
+      "why": "Watt's steam engine powered factories and trains."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who was called 'The Liberator' for helping South American colonies win freedom? (last name)",
+      "a": [
+       "bolivar",
+       "simon bolivar"
+      ],
+      "hint": "The country Bolivia is named after him.",
+      "why": "Simon Bolivar led independence in several countries."
+     }
+    ]
+   },
+   {
+    "title": "World Wars and Dictators",
+    "period": "1914-1945",
+    "learn": [
+     {
+      "h": "World War I",
+      "b": "World War I was fought mostly in trenches on the Western Front, and new weapons like machine guns, poison gas, and tanks caused huge losses. It ended with an armistice on November 11, 1918. In the Treaty of Versailles, Germany had to accept blame and pay reparations, or payments for war damage."
+     },
+     {
+      "h": "Dictators rise",
+      "b": "In Russia, Lenin led the Bolsheviks to power in 1917, and later Joseph Stalin ruled the Soviet Union as a dictator. Benito Mussolini became leader of Italy in 1922, using fascism, a system of extreme nationalism under a dictator. Adolf Hitler became Chancellor of Germany in 1933. These were totalitarian governments, which control nearly every part of life."
+     },
+     {
+      "h": "World War II",
+      "b": "Britain and France tried appeasement, giving in to Hitler to avoid war, but Germany invaded Poland in 1939. In 1941 Germany attacked the Soviet Union. The Nazis murdered six million Jews and millions of others in the Holocaust. The war ended in 1945."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What was trench warfare?",
+      "o": [
+       "Fighting with ships at sea",
+       "Soldiers fighting from long ditches, often in a stalemate",
+       "Fighting only in cities",
+       "Fighting with airplanes only"
+      ],
+      "a": 1,
+      "why": "The Western Front barely moved for years."
+     },
+     {
+      "t": "mc",
+      "q": "What did the Treaty of Versailles force Germany to do?",
+      "o": [
+       "Join the League of Nations first",
+       "Give up its king",
+       "Accept blame and pay reparations",
+       "Invade Poland"
+      ],
+      "a": 2,
+      "why": "Many Germans resented the harsh terms."
+     },
+     {
+      "t": "mc",
+      "q": "What is a totalitarian government?",
+      "o": [
+       "One run by a king and a parliament",
+       "One run by many small states",
+       "One that has no leader",
+       "One that controls almost every part of life"
+      ],
+      "a": 3,
+      "why": "The state controls the economy, media, and daily life."
+     },
+     {
+      "t": "mc",
+      "q": "What was appeasement?",
+      "o": [
+       "Giving in to a dictator to avoid war",
+       "Attacking first",
+       "Forming a military alliance",
+       "Blockading a port"
+      ],
+      "a": 0,
+      "why": "Britain and France let Hitler take land before 1939 hoping to keep peace."
+     },
+     {
+      "t": "tf",
+      "q": "World War I ended with an armistice on November 11, 1918.",
+      "a": true,
+      "why": "Fighting stopped at the 11th hour of the 11th day of the 11th month."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fascism",
+        "Extreme nationalism with a dictator"
+       ],
+       [
+        "Propaganda",
+        "Messages used to shape opinions"
+       ],
+       [
+        "Reparations",
+        "Payments by the losing side"
+       ],
+       [
+        "Holocaust",
+        "Nazi murder of six million Jews"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "Mussolini takes power in Italy",
+        1922
+       ],
+       [
+        "Hitler becomes Chancellor",
+        1933
+       ],
+       [
+        "Germany invades Poland",
+        1939
+       ],
+       [
+        "Germany invades the Soviet Union",
+        1941
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year did World War I end?",
+      "a": [
+       "1918"
+      ],
+      "hint": "It was four years after the war began.",
+      "why": "The armistice was signed in 1918."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who led Nazi Germany? (last name is enough)",
+      "a": [
+       "hitler",
+       "adolf hitler"
+      ],
+      "hint": "His first name is Adolf.",
+      "why": "Adolf Hitler was Germany's dictator from 1933 to 1945."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which Soviet leader ruled from the late 1920s until 1953? (one name)",
+      "a": [
+       "stalin",
+       "joseph stalin"
+      ],
+      "hint": "His name means 'man of steel'.",
+      "why": "Joseph Stalin ruled the USSR as a dictator."
+     }
+    ]
+   },
+   {
+    "title": "Cold War and Globalization",
+    "period": "1945-Today",
+    "learn": [
+     {
+      "h": "The Cold War",
+      "b": "After World War II, Europe was split by what Winston Churchill called an Iron Curtain, with Communist countries in the East and democracies in the West. NATO (1949) joined Western countries, and the Warsaw Pact (1955) joined Communist ones. Communists under Mao Zedong won in China in 1949. The Berlin Wall fell in 1989 and the Soviet Union collapsed in 1991."
+     },
+     {
+      "h": "Independence for colonies",
+      "b": "Decolonization is when colonies gain independence. India won independence from Britain in 1947 and was divided into India and Pakistan. Ghana became independent in 1957, and many African countries followed. In South Africa, apartheid ended and Nelson Mandela became president in 1994."
+     },
+     {
+      "h": "A connected world",
+      "b": "Globalization means countries are more connected by trade, travel, technology, and ideas. In 1993 European countries formed the European Union to work together on trade and law. Today the world also faces shared problems like climate change."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What was the Iron Curtain?",
+      "o": [
+       "A wall around Berlin",
+       "The line dividing Communist East and democratic West Europe",
+       "A treaty on weapons",
+       "A Soviet spy program"
+      ],
+      "a": 1,
+      "why": "Churchill used the phrase in 1946."
+     },
+     {
+      "t": "mc",
+      "q": "From which country did India win independence in 1947?",
+      "o": [
+       "France",
+       "Portugal",
+       "Britain",
+       "Russia"
+      ],
+      "a": 2,
+      "why": "Independence led to the creation of India and Pakistan."
+     },
+     {
+      "t": "mc",
+      "q": "What is decolonization?",
+      "o": [
+       "Countries building colonies",
+       "Countries joining NATO",
+       "Machines replacing workers",
+       "Colonies gaining independence"
+      ],
+      "a": 3,
+      "why": "Many Asian and African colonies became new nations after 1945."
+     },
+     {
+      "t": "mc",
+      "q": "What is globalization?",
+      "o": [
+       "Growing links between countries through trade and ideas",
+       "A ban on foreign goods",
+       "A war among many countries",
+       "A move to rural life"
+      ],
+      "a": 0,
+      "why": "Technology and trade tie economies and cultures together."
+     },
+     {
+      "t": "tf",
+      "q": "Nelson Mandela became South Africa's first Black president in 1994.",
+      "a": true,
+      "why": "He was elected after apartheid ended."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Warsaw Pact",
+        "Communist military alliance"
+       ],
+       [
+        "Decolonization",
+        "End of colonial rule"
+       ],
+       [
+        "Apartheid",
+        "South African racial separation"
+       ],
+       [
+        "European Union",
+        "Group of European countries"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "India becomes independent",
+        1947
+       ],
+       [
+        "Communists win in China",
+        1949
+       ],
+       [
+        "Soviet Union collapses",
+        1991
+       ],
+       [
+        "Mandela elected president",
+        1994
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: In what year did the Soviet Union collapse?",
+      "a": [
+       "1991"
+      ],
+      "hint": "It was two years after the Berlin Wall fell.",
+      "why": "The USSR broke into 15 countries in 1991."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who became South Africa's president in 1994? (last name is enough)",
+      "a": [
+       "mandela",
+       "nelson mandela"
+      ],
+      "hint": "He spent 27 years in prison.",
+      "why": "Nelson Mandela led South Africa after apartheid."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: India won independence in 1947 from which country?",
+      "a": [
+       "britain",
+       "great britain",
+       "uk",
+       "united kingdom"
+      ],
+      "hint": "Its empire once ruled India.",
+      "why": "India was a British colony before 1947."
+     }
+    ]
+   },
+   {
+    "title": "The Modern World",
+    "period": "1800-Today",
+    "learn": [
+     {
+      "h": "Industry and empires",
+      "b": "The Industrial Revolution began in Great Britain with machines and factories. Strong countries practiced imperialism, taking control of lands in Africa and Asia, which led to colonial rule and later independence movements."
+     },
+     {
+      "h": "World wars",
+      "b": "World War I began in 1914 after the assassination of Archduke Franz Ferdinand. World War II ended in 1945, after Nazi Germany murdered six million Jews in the Holocaust. The United Nations was founded in 1945."
+     },
+     {
+      "h": "After 1945",
+      "b": "The Cold War divided the world between the US and the Soviet Union. Many colonies became independent, such as India under Gandhi's nonviolent leadership. The Berlin Wall fell in 1989, and the USSR ended in 1991."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Where did the Industrial Revolution begin?",
+      "o": [
+       "Germany",
+       "Great Britain",
+       "Japan",
+       "Russia"
+      ],
+      "a": 1,
+      "why": "Britain had coal, iron, and early factories."
+     },
+     {
+      "t": "mc",
+      "q": "Which event triggered World War I?",
+      "o": [
+       "Invasion of Poland",
+       "Sinking of the Titanic",
+       "Assassination of Archduke Franz Ferdinand",
+       "Russian Revolution"
+      ],
+      "a": 2,
+      "why": "His killing in 1914 pulled alliances into war."
+     },
+     {
+      "t": "mc",
+      "q": "Gandhi led a nonviolent movement for independence from which country?",
+      "o": [
+       "Portugal",
+       "France",
+       "The Netherlands",
+       "Britain"
+      ],
+      "a": 3,
+      "why": "India gained independence from Britain in 1947."
+     },
+     {
+      "t": "mc",
+      "q": "Roughly how many Jews were murdered in the Holocaust?",
+      "o": [
+       "One million",
+       "Six million",
+       "Fifty thousand",
+       "Twenty million"
+      ],
+      "a": 1,
+      "why": "About six million Jews were killed by Nazi Germany."
+     },
+     {
+      "t": "tf",
+      "q": "The Cold War was a period of direct fighting between the US and the USSR.",
+      "a": false,
+      "why": "They competed through arms races and proxy wars but never fought each other directly."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Imperialism",
+        "One country controlling others"
+       ],
+       [
+        "Apartheid",
+        "South African system of racial separation"
+       ],
+       [
+        "United Nations",
+        "International group founded in 1945"
+       ],
+       [
+        "Nationalism",
+        "Strong pride in one's nation"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order",
+      "items": [
+       [
+        "World War I begins",
+        1914
+       ],
+       [
+        "Russian Revolution",
+        1917
+       ],
+       [
+        "World War II ends",
+        1945
+       ],
+       [
+        "Berlin Wall falls",
+        1989
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which country did the Industrial Revolution begin in?",
+      "a": [
+       "britain",
+       "great britain",
+       "england",
+       "uk",
+       "united kingdom"
+      ],
+      "hint": "It is an island nation in Europe.",
+      "why": "The Industrial Revolution began in Britain in the 1700s."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Whose assassination in 1914 triggered World War I? (Archduke ___)",
+      "a": [
+       "franz ferdinand",
+       "archduke franz ferdinand"
+      ],
+      "hint": "He was heir to the Austro-Hungarian throne.",
+      "why": "Archduke Franz Ferdinand was killed in Sarajevo."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year did the Berlin Wall fall?",
+      "a": [
+       "1989"
+      ],
+      "hint": "It was two years before the USSR collapsed.",
+      "why": "The wall fell on November 9, 1989."
+     }
+    ]
+   }
+  ]
+ },
+ "civics": {
+  "name": "US Government & Civics",
+  "units": [
+   {
+    "title": "Why Government? Types of Government",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "Why we have government",
+      "b": "A government makes laws, keeps order, protects people's rights, and provides services like roads and schools. Thinkers like John Locke said people agree to a social contract: they give some freedom to the government, and in return it protects their life, liberty, and property."
+     },
+     {
+      "h": "Who holds the power?",
+      "b": "In a monarchy, a king or queen rules; in an absolute monarchy, they have total power. In a dictatorship, one person has unlimited power. An oligarchy is rule by a small group. A theocracy is ruled by religious leaders."
+     },
+     {
+      "h": "Democracy",
+      "b": "In a direct democracy, citizens vote on laws themselves. In a representative democracy, or republic, citizens elect leaders to make laws for them. The United States is a representative democracy."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who wrote that government should protect life, liberty, and property?",
+      "o": [
+       "Karl Marx",
+       "John Locke",
+       "Napoleon",
+       "Julius Caesar"
+      ],
+      "a": 1,
+      "why": "Locke's ideas of natural rights influenced the Declaration of Independence."
+     },
+     {
+      "t": "mc",
+      "q": "Which government is ruled by religious leaders?",
+      "o": [
+       "Oligarchy",
+       "Republic",
+       "Theocracy",
+       "Monarchy"
+      ],
+      "a": 2,
+      "why": "In a theocracy, religious law guides government."
+     },
+     {
+      "t": "mc",
+      "q": "What is a republic?",
+      "o": [
+       "One ruler has total power",
+       "A small group rules",
+       "A king passes power to a child",
+       "Citizens elect leaders to govern for them"
+      ],
+      "a": 3,
+      "why": "The US is a republic, also called a representative democracy."
+     },
+     {
+      "t": "mc",
+      "q": "Which type of government has one ruler with unlimited power and no real elections?",
+      "o": [
+       "Dictatorship",
+       "Direct democracy",
+       "Constitutional monarchy",
+       "Republic"
+      ],
+      "a": 0,
+      "why": "A dictator controls the government without limits."
+     },
+     {
+      "t": "tf",
+      "q": "In a direct democracy, citizens vote on laws themselves.",
+      "a": true,
+      "why": "Ancient Athens is a famous example."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Monarchy",
+        "Ruled by a king or queen"
+       ],
+       [
+        "Oligarchy",
+        "Ruled by a small group"
+       ],
+       [
+        "Dictatorship",
+        "One ruler, unlimited power"
+       ],
+       [
+        "Republic",
+        "Citizens elect their leaders"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the social contract idea in order",
+      "items": [
+       [
+        "People live with no government",
+        1
+       ],
+       [
+        "They agree to form a government",
+        2
+       ],
+       [
+        "They give up some freedoms",
+        3
+       ],
+       [
+        "Government protects their rights",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A government ruled by religious leaders is a ___.",
+      "a": [
+       "theocracy"
+      ],
+      "hint": "The prefix 'theo' means god.",
+      "why": "A theocracy is led by religious authorities."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Rule by a small group of people is called an ___.",
+      "a": [
+       "oligarchy"
+      ],
+      "hint": "It starts with O.",
+      "why": "In an oligarchy, a few people hold the power."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which English philosopher wrote about life, liberty, and property? (last name)",
+      "a": [
+       "locke",
+       "john locke"
+      ],
+      "hint": "His first name is John.",
+      "why": "John Locke's ideas shaped American government."
+     }
+    ]
+   },
+   {
+    "title": "Foundations of Government",
+    "period": "Founding Ideas",
+    "learn": [
+     {
+      "h": "The Constitution",
+      "b": "The Constitution is the supreme law of the United States. It begins with 'We the People,' which shows that power comes from the people. This idea is called popular sovereignty."
+     },
+     {
+      "h": "Separating power",
+      "b": "To stop any one group from getting too strong, power is divided into three branches: legislative, executive, and judicial. Each branch can limit the others, which is called checks and balances."
+     },
+     {
+      "h": "Federalism and amendments",
+      "b": "In federalism, power is shared between the national government and state governments. The Constitution can be changed by amendments. The first ten amendments are the Bill of Rights."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the first three words of the Constitution?",
+      "o": [
+       "All men are",
+       "Life, Liberty, and",
+       "We the People",
+       "In God We"
+      ],
+      "a": 2,
+      "why": "The Preamble opens with 'We the People.'"
+     },
+     {
+      "t": "mc",
+      "q": "What does popular sovereignty mean?",
+      "o": [
+       "A king holds power",
+       "Power comes from the people",
+       "Courts make all laws",
+       "The army rules"
+      ],
+      "a": 1,
+      "why": "In a republic, government gets its authority from the people."
+     },
+     {
+      "t": "mc",
+      "q": "What does separation of powers divide?",
+      "o": [
+       "Democrats and Republicans",
+       "North, South, East, and West",
+       "Federal, state, and local levels",
+       "Legislative, executive, and judicial branches"
+      ],
+      "a": 3,
+      "why": "It splits government power among three branches."
+     },
+     {
+      "t": "mc",
+      "q": "How many amendments are in the Bill of Rights?",
+      "o": [
+       "Ten",
+       "Five",
+       "Twenty",
+       "Twenty-seven"
+      ],
+      "a": 0,
+      "why": "The Bill of Rights is the first ten amendments."
+     },
+     {
+      "t": "tf",
+      "q": "The Constitution can be changed through amendments.",
+      "a": true,
+      "why": "Article V explains how to amend it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Constitution",
+        "Supreme law of the land"
+       ],
+       [
+        "Amendment",
+        "Change to the Constitution"
+       ],
+       [
+        "Federalism",
+        "Power shared by nation and states"
+       ],
+       [
+        "Checks and balances",
+        "Each branch limits the others"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in the order they happened",
+      "items": [
+       [
+        "Declaration of Independence",
+        1
+       ],
+       [
+        "Articles of Confederation",
+        2
+       ],
+       [
+        "Constitution written",
+        3
+       ],
+       [
+        "Bill of Rights added",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The Constitution begins with 'We the ___'. Fill in the word.",
+      "a": [
+       "people"
+      ],
+      "hint": "It is who holds the power.",
+      "why": "'We the People' shows popular sovereignty."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many amendments make up the Bill of Rights?",
+      "a": [
+       "10",
+       "ten"
+      ],
+      "hint": "It is a round number.",
+      "why": "The Bill of Rights is the first ten amendments."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The idea that power comes from the people is called ___ sovereignty.",
+      "a": [
+       "popular"
+      ],
+      "hint": "It sounds like 'liked by many'.",
+      "why": "Popular sovereignty means government gets its power from the people."
+     }
+    ]
+   },
+   {
+    "title": "Federalism and the Constitution",
+    "period": "Structure",
+    "learn": [
+     {
+      "h": "How the Constitution was made",
+      "b": "At the Constitutional Convention, the Great Compromise created a Congress with two houses: the House (by population) and the Senate (two per state). The Federalist Papers, by Hamilton, Madison, and Jay, argued for approving the Constitution. Critics wanted a Bill of Rights, and the states ratified the Constitution in 1788."
+     },
+     {
+      "h": "Federalism",
+      "b": "Under federalism, power is divided. Delegated powers belong to the national government, like printing money. Reserved powers belong to the states, like running schools (10th Amendment). Concurrent powers are shared, like collecting taxes. The Supremacy Clause says federal law wins over conflicting state law."
+     },
+     {
+      "h": "Changing the Constitution",
+      "b": "There are 27 amendments. An amendment must be proposed by two-thirds of both houses of Congress and ratified by three-fourths of the states. With 50 states, that means 38 states."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What did the Great Compromise create?",
+      "o": [
+       "The Bill of Rights",
+       "A Congress with a House by population and a Senate with equal votes",
+       "The Electoral College",
+       "The Supreme Court"
+      ],
+      "a": 1,
+      "why": "Big states got more House seats, and every state got two senators."
+     },
+     {
+      "t": "mc",
+      "q": "How many amendments does the Constitution have?",
+      "o": [
+       "10",
+       "21",
+       "27",
+       "33"
+      ],
+      "a": 2,
+      "why": "The first ten are the Bill of Rights, and 17 more followed."
+     },
+     {
+      "t": "mc",
+      "q": "What does the 10th Amendment say?",
+      "o": [
+       "Citizens may bear arms",
+       "Slavery is abolished",
+       "Women may vote",
+       "Powers not given to the nation belong to the states or the people"
+      ],
+      "a": 3,
+      "why": "These are the reserved powers."
+     },
+     {
+      "t": "mc",
+      "q": "Which are concurrent powers?",
+      "o": [
+       "Powers shared by the national and state governments",
+       "Powers only states have",
+       "Powers only Congress has",
+       "Powers of the Supreme Court"
+      ],
+      "a": 0,
+      "why": "Both levels can collect taxes and build roads."
+     },
+     {
+      "t": "tf",
+      "q": "The Supremacy Clause says federal law overrides conflicting state law.",
+      "a": true,
+      "why": "The Constitution is the supreme law of the land."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Delegated powers",
+        "Given to the national government"
+       ],
+       [
+        "Reserved powers",
+        "Kept by the states"
+       ],
+       [
+        "Concurrent powers",
+        "Shared by both levels"
+       ],
+       [
+        "Ratify",
+        "Formally approve"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for adding an amendment in order",
+      "items": [
+       [
+        "Two-thirds of Congress proposes it",
+        1
+       ],
+       [
+        "It is sent to the states",
+        2
+       ],
+       [
+        "Three-fourths of states ratify it",
+        3
+       ],
+       [
+        "It becomes part of the Constitution",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Three-fourths of 50 states must ratify an amendment. How many states is that? (round up)",
+      "a": [
+       "38"
+      ],
+      "hint": "3/4 of 50 = 37.5, so you need the next whole number.",
+      "why": "37.5 rounds up to 38 states."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many amendments does the US Constitution have?",
+      "a": [
+       "27",
+       "twenty-seven",
+       "twenty seven"
+      ],
+      "hint": "It is one more than 26.",
+      "why": "There are 27 amendments."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The Federalist Papers argued for approving the ___. Fill in the word.",
+      "a": [
+       "constitution",
+       "the constitution",
+       "us constitution"
+      ],
+      "hint": "It is the supreme law of the land.",
+      "why": "The essays urged states to ratify the Constitution."
+     }
+    ]
+   },
+   {
+    "title": "The Three Branches",
+    "period": "How Government Works",
+    "learn": [
+     {
+      "h": "Congress",
+      "b": "Congress is the legislative branch and makes federal laws. It has two parts: the House of Representatives, based on state population, and the Senate, with two senators from each state."
+     },
+     {
+      "h": "President and courts",
+      "b": "The President leads the executive branch, carries out laws, and is commander in chief of the armed forces. The President can veto a bill, but Congress can override a veto with a two-thirds vote in both houses."
+     },
+     {
+      "h": "The Supreme Court",
+      "b": "The judicial branch includes the Supreme Court. It decides whether laws follow the Constitution, a power called judicial review."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which branch makes federal laws?",
+      "o": [
+       "The President",
+       "The Supreme Court",
+       "Congress",
+       "The Cabinet"
+      ],
+      "a": 2,
+      "why": "Article I gives lawmaking power to Congress."
+     },
+     {
+      "t": "mc",
+      "q": "How many senators does each state have?",
+      "o": [
+       "One",
+       "Two",
+       "Three",
+       "It depends on population"
+      ],
+      "a": 1,
+      "why": "Every state has two senators, so there are 100 in total."
+     },
+     {
+      "t": "mc",
+      "q": "Who is commander in chief of the armed forces?",
+      "o": [
+       "The President",
+       "The Secretary of Defense",
+       "The Speaker of the House",
+       "The Chief Justice"
+      ],
+      "a": 0,
+      "why": "The Constitution makes the President commander in chief."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of the Supreme Court?",
+      "o": [
+       "Command the military",
+       "Write the budget",
+       "Elect the President",
+       "Decide if laws follow the Constitution"
+      ],
+      "a": 3,
+      "why": "This power is called judicial review."
+     },
+     {
+      "t": "tf",
+      "q": "Congress can override a presidential veto with a two-thirds vote in both houses.",
+      "a": true,
+      "why": "A two-thirds vote in the House and Senate overrides a veto."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Legislative",
+        "Makes the laws"
+       ],
+       [
+        "Executive",
+        "Carries out the laws"
+       ],
+       [
+        "Judicial",
+        "Interprets the laws"
+       ],
+       [
+        "Veto",
+        "President rejects a bill"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of how a bill becomes law in order",
+      "items": [
+       [
+        "A member of Congress introduces a bill",
+        1
+       ],
+       [
+        "The House and Senate both pass it",
+        2
+       ],
+       [
+        "The President signs it",
+        3
+       ],
+       [
+        "It becomes law",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which branch makes federal laws? (one word)",
+      "a": [
+       "legislative",
+       "congress",
+       "legislative branch"
+      ],
+      "hint": "It includes the House and the Senate.",
+      "why": "Congress is the legislative branch."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many senators does each state have? (a number)",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "It is the same for every state.",
+      "why": "Each state has two senators."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who is commander in chief of the armed forces?",
+      "a": [
+       "president",
+       "the president"
+      ],
+      "hint": "The person leading the executive branch.",
+      "why": "The President is commander in chief."
+     }
+    ]
+   },
+   {
+    "title": "Courts and Landmark Cases",
+    "period": "The Judiciary",
+    "learn": [
+     {
+      "h": "How the courts work",
+      "b": "The Supreme Court has nine justices, nominated by the President and confirmed by the Senate, who serve for life during good behavior. Federal and state courts hear cases. A civil case is a dispute between people or groups, and a criminal case is when the government charges someone with a crime. A losing side can appeal, asking a higher court to review the decision."
+     },
+     {
+      "h": "Judicial review",
+      "b": "In Marbury v. Madison (1803), the Court claimed the power of judicial review: deciding whether laws or actions are unconstitutional. Courts also follow precedent, earlier decisions in similar cases."
+     },
+     {
+      "h": "Famous cases",
+      "b": "Plessy v. Ferguson (1896) allowed 'separate but equal', and Brown v. Board of Education (1954) overturned it for schools. Gideon v. Wainwright (1963) gave the right to a lawyer, Miranda v. Arizona (1966) required police to tell suspects their rights, and Tinker v. Des Moines (1969) protected student speech."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is judicial review?",
+      "o": [
+       "The power to write laws",
+       "The power to decide if a law is unconstitutional",
+       "The power to veto bills",
+       "The power to appoint judges"
+      ],
+      "a": 1,
+      "why": "Marbury v. Madison set this power for the Supreme Court."
+     },
+     {
+      "t": "mc",
+      "q": "How many justices serve on the Supreme Court?",
+      "o": [
+       "Seven",
+       "Eleven",
+       "Nine",
+       "Twelve"
+      ],
+      "a": 2,
+      "why": "There is one Chief Justice and eight Associate Justices."
+     },
+     {
+      "t": "mc",
+      "q": "What did Miranda v. Arizona require?",
+      "o": [
+       "Schools must be integrated",
+       "Students may wear armbands",
+       "States must provide lawyers",
+       "Police must tell suspects their rights"
+      ],
+      "a": 3,
+      "why": "Suspects must be told they can stay silent and ask for a lawyer."
+     },
+     {
+      "t": "mc",
+      "q": "What did Gideon v. Wainwright decide?",
+      "o": [
+       "Poor defendants must be given a lawyer",
+       "Police may search without cause",
+       "Schools may segregate",
+       "Judges serve for life"
+      ],
+      "a": 0,
+      "why": "The Sixth Amendment right to counsel applies in state courts."
+     },
+     {
+      "t": "tf",
+      "q": "Supreme Court justices serve for life unless they resign, retire, or are removed.",
+      "a": true,
+      "why": "They serve 'during good behavior', which protects their independence."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Judicial review",
+        "Deciding if laws are constitutional"
+       ],
+       [
+        "Precedent",
+        "Earlier ruling courts follow"
+       ],
+       [
+        "Appeal",
+        "Asking a higher court to review"
+       ],
+       [
+        "Defendant",
+        "Person accused in a case"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cases in order",
+      "items": [
+       [
+        "Marbury v. Madison",
+        1803
+       ],
+       [
+        "Plessy v. Ferguson",
+        1896
+       ],
+       [
+        "Brown v. Board of Education",
+        1954
+       ],
+       [
+        "Miranda v. Arizona",
+        1966
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many justices are on the Supreme Court? (a number)",
+      "a": [
+       "9",
+       "nine"
+      ],
+      "hint": "Think of the Chief Justice plus eight others.",
+      "why": "The Court has nine justices."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Marbury v. ___ established judicial review. Fill in the name.",
+      "a": [
+       "madison"
+      ],
+      "hint": "He later became the fourth President.",
+      "why": "Marbury v. Madison was decided in 1803."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The 1966 case that requires police to read suspects their rights is ___ v. Arizona.",
+      "a": [
+       "miranda"
+      ],
+      "hint": "Its name is the warning you hear on TV.",
+      "why": "Miranda v. Arizona created the Miranda warning."
+     }
+    ]
+   },
+   {
+    "title": "Rights and Responsibilities",
+    "period": "Citizenship",
+    "learn": [
+     {
+      "h": "Your basic rights",
+      "b": "The First Amendment protects freedom of speech, religion, press, assembly, and petition. The Fourth Amendment protects people from unreasonable searches. Due process means the government must follow fair legal steps."
+     },
+     {
+      "h": "Voting rights",
+      "b": "Over time, amendments widened voting rights. The 19th gave women the vote and the 26th set the voting age at 18."
+     },
+     {
+      "h": "Being a citizen",
+      "b": "Citizens have duties such as obeying laws, paying taxes, and serving on a jury when called. People born elsewhere can become citizens through naturalization."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which freedom is protected by the First Amendment?",
+      "o": [
+       "Right to bear arms",
+       "Freedom of speech",
+       "Right to a speedy trial",
+       "Protection from soldiers in homes"
+      ],
+      "a": 1,
+      "why": "The First Amendment protects speech, religion, press, assembly, and petition."
+     },
+     {
+      "t": "mc",
+      "q": "Which amendment protects against unreasonable searches?",
+      "o": [
+       "First",
+       "Second",
+       "Fourth",
+       "Tenth"
+      ],
+      "a": 2,
+      "why": "The Fourth Amendment requires warrants based on probable cause."
+     },
+     {
+      "t": "mc",
+      "q": "What voting age did the 26th Amendment set?",
+      "o": [
+       "16",
+       "21",
+       "25",
+       "18"
+      ],
+      "a": 3,
+      "why": "It lowered the voting age from 21 to 18 in 1971."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a duty of US citizens?",
+      "o": [
+       "Serving on a jury when called",
+       "Owning property",
+       "Joining a political party",
+       "Running for office"
+      ],
+      "a": 0,
+      "why": "Jury service is a civic duty; the other choices are optional."
+     },
+     {
+      "t": "tf",
+      "q": "The Second Amendment protects freedom of the press.",
+      "a": false,
+      "why": "Freedom of the press is in the First Amendment."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Free speech",
+        "Right to express ideas"
+       ],
+       [
+        "Due process",
+        "Fair legal procedures"
+       ],
+       [
+        "Jury",
+        "Citizens who decide a verdict"
+       ],
+       [
+        "Naturalization",
+        "Process of becoming a citizen"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps to become a citizen in order",
+      "items": [
+       [
+        "Become a lawful permanent resident",
+        1
+       ],
+       [
+        "Live in the US for several years",
+        2
+       ],
+       [
+        "Apply and pass the citizenship test",
+        3
+       ],
+       [
+        "Take the Oath of Allegiance",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which amendment protects freedom of speech? (e.g. 'first')",
+      "a": [
+       "first",
+       "1st",
+       "1",
+       "first amendment"
+      ],
+      "hint": "It is the first in the Bill of Rights.",
+      "why": "The First Amendment protects speech."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What voting age did the 26th Amendment set?",
+      "a": [
+       "18",
+       "eighteen"
+      ],
+      "hint": "It is the age you become an adult.",
+      "why": "The 26th Amendment lowered the voting age to 18."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The Fourth Amendment protects against unreasonable ___ and seizures.",
+      "a": [
+       "searches",
+       "search"
+      ],
+      "hint": "Police need a warrant to do this.",
+      "why": "It protects against unreasonable searches and seizures."
+     }
+    ]
+   },
+   {
+    "title": "Civil Rights and Equal Protection",
+    "period": "Equality Under Law",
+    "learn": [
+     {
+      "h": "Amendments for equality",
+      "b": "The 13th Amendment (1865) ended slavery, the 14th (1868) gave citizenship and equal protection of the laws, and the 15th (1870) said states could not deny the vote because of race. The 19th Amendment (1920) gave women the vote. Suffrage means the right to vote."
+     },
+     {
+      "h": "Jim Crow and the Civil Rights Movement",
+      "b": "After Reconstruction, Jim Crow laws in the South forced segregation. The Civil Rights Movement used boycotts, sit-ins, and marches. The Civil Rights Act of 1964 banned discrimination, which is unfair treatment because of a group, in jobs and public places."
+     },
+     {
+      "h": "Equality for more people",
+      "b": "The Voting Rights Act (1965) protected voting. Title IX (1972) banned sex discrimination in schools that get federal money. The Americans with Disabilities Act (1990) protects people with disabilities from discrimination in jobs, schools, and public places."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the 14th Amendment guarantee?",
+      "o": [
+       "Freedom of speech",
+       "Equal protection of the laws",
+       "The right to bear arms",
+       "Direct election of senators"
+      ],
+      "a": 1,
+      "why": "The Equal Protection Clause says states must treat people equally under the law."
+     },
+     {
+      "t": "mc",
+      "q": "What were Jim Crow laws?",
+      "o": [
+       "Laws that ended slavery",
+       "Laws that set taxes",
+       "Laws that enforced racial segregation",
+       "Laws that created schools"
+      ],
+      "a": 2,
+      "why": "They kept Black Americans separate and unequal in the South."
+     },
+     {
+      "t": "mc",
+      "q": "What did the 15th Amendment do?",
+      "o": [
+       "Gave women the vote",
+       "Set the voting age to 18",
+       "Banned alcohol",
+       "Stopped denying the vote because of race"
+      ],
+      "a": 3,
+      "why": "It was ratified in 1870, but states found ways to block voters later."
+     },
+     {
+      "t": "mc",
+      "q": "What does the Americans with Disabilities Act protect against?",
+      "o": [
+       "Discrimination against people with disabilities",
+       "Unfair taxes",
+       "Illegal searches",
+       "Child labor"
+      ],
+      "a": 0,
+      "why": "It requires access and fair treatment in jobs and public places."
+     },
+     {
+      "t": "tf",
+      "q": "The Civil Rights Act of 1964 banned discrimination based on race, color, religion, sex, or national origin.",
+      "a": true,
+      "why": "It covered jobs, public places, and more."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Suffrage",
+        "The right to vote"
+       ],
+       [
+        "Discrimination",
+        "Unfair treatment of a group"
+       ],
+       [
+        "Boycott",
+        "Refusing to buy or use"
+       ],
+       [
+        "Equal protection",
+        "Same legal protection for all"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order",
+      "items": [
+       [
+        "14th Amendment",
+        1868
+       ],
+       [
+        "19th Amendment",
+        1920
+       ],
+       [
+        "Civil Rights Act",
+        1964
+       ],
+       [
+        "Americans with Disabilities Act",
+        1990
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: The right to vote is called ___.",
+      "a": [
+       "suffrage"
+      ],
+      "hint": "It starts with an S.",
+      "why": "Suffrage means the right to vote."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which amendment number guarantees equal protection of the laws? (a number)",
+      "a": [
+       "14",
+       "14th",
+       "fourteenth"
+      ],
+      "hint": "It follows the 13th.",
+      "why": "The 14th Amendment has the Equal Protection Clause."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: In what year was the Americans with Disabilities Act passed?",
+      "a": [
+       "1990"
+      ],
+      "hint": "It was at the start of the 1990s.",
+      "why": "President George H. W. Bush signed it in 1990."
+     }
+    ]
+   },
+   {
+    "title": "Elections and Local Government",
+    "period": "Participation",
+    "learn": [
+     {
+      "h": "Electing a President",
+      "b": "Candidates first compete in primaries and caucuses, then are chosen at party conventions. Everyone votes in the general election in November. The Electoral College has 538 electors, and a candidate needs 270 to win."
+     },
+     {
+      "h": "State government",
+      "b": "Each state has its own constitution and a governor who leads the executive branch. States run most elections and many services."
+     },
+     {
+      "h": "Local government",
+      "b": "Cities, towns, and counties are local governments. A mayor leads many cities, and local governments often run schools, police, and fire services. Representatives in the US House serve two-year terms."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How many electoral votes are needed to win the presidency?",
+      "o": [
+       "218",
+       "538",
+       "270",
+       "435"
+      ],
+      "a": 2,
+      "why": "A majority of 538 electors is 270."
+     },
+     {
+      "t": "mc",
+      "q": "Who is the chief executive of a state?",
+      "o": [
+       "The governor",
+       "The mayor",
+       "The chief justice",
+       "The speaker"
+      ],
+      "a": 0,
+      "why": "Each state is led by a governor."
+     },
+     {
+      "t": "mc",
+      "q": "Which level of government usually runs local schools and police?",
+      "o": [
+       "Only the President",
+       "The Supreme Court",
+       "The United Nations",
+       "Local governments"
+      ],
+      "a": 3,
+      "why": "School districts, cities, and counties run these services."
+     },
+     {
+      "t": "mc",
+      "q": "How long is a term for a US Representative?",
+      "o": [
+       "Four years",
+       "Two years",
+       "Six years",
+       "Life"
+      ],
+      "a": 1,
+      "why": "House members face election every two years."
+     },
+     {
+      "t": "tf",
+      "q": "The Electoral College has 100 electors.",
+      "a": false,
+      "why": "It has 538 electors."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Ballot",
+        "Form or screen used to vote"
+       ],
+       [
+        "Governor",
+        "Chief executive of a state"
+       ],
+       [
+        "Mayor",
+        "Head of a city government"
+       ],
+       [
+        "Primary",
+        "Election to choose party candidates"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the presidential election steps in order",
+      "items": [
+       [
+        "Primaries and caucuses",
+        1
+       ],
+       [
+        "National conventions",
+        2
+       ],
+       [
+        "General election in November",
+        3
+       ],
+       [
+        "Electoral College votes",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: How many electoral votes does a candidate need to win the presidency?",
+      "a": [
+       "270"
+      ],
+      "hint": "It is half of 538, plus one.",
+      "why": "270 is a majority of 538 electoral votes."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many years is a term for a US Representative?",
+      "a": [
+       "2",
+       "two"
+      ],
+      "hint": "They are elected often.",
+      "why": "House terms are two years."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who is the chief executive of a state?",
+      "a": [
+       "governor",
+       "the governor"
+      ],
+      "hint": "It is not the President.",
+      "why": "Each state is led by a governor."
+     }
+    ]
+   },
+   {
+    "title": "Parties, Interest Groups, and Media",
+    "period": "Politics",
+    "learn": [
+     {
+      "h": "Political parties",
+      "b": "Parties choose candidates, raise money, and try to win elections. The US has a two-party system, dominated by Democrats and Republicans. A party platform is a statement of its goals and beliefs. Third parties exist but rarely win."
+     },
+     {
+      "h": "Interest groups",
+      "b": "An interest group is a group of people with a shared goal who try to influence government. Lobbying means trying to persuade lawmakers. A political action committee (PAC) raises money to support candidates."
+     },
+     {
+      "h": "Media and opinion",
+      "b": "The press is a watchdog that reports on government, protected by the First Amendment. Media bias is slanted coverage. Polls ask a sample of people what they think. Smart citizens check sources and compare reports."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a party platform?",
+      "o": [
+       "A stage for speeches",
+       "A statement of a party's goals and beliefs",
+       "A list of voters",
+       "A law passed by Congress"
+      ],
+      "a": 1,
+      "why": "Platforms tell voters what the party wants to do."
+     },
+     {
+      "t": "mc",
+      "q": "What is lobbying?",
+      "o": [
+       "Running for office",
+       "Counting votes",
+       "Trying to persuade lawmakers on an issue",
+       "Writing a constitution"
+      ],
+      "a": 2,
+      "why": "Interest groups hire lobbyists to meet with lawmakers."
+     },
+     {
+      "t": "mc",
+      "q": "Which two parties dominate US politics?",
+      "o": [
+       "Federalist and Whig",
+       "Libertarian and Green",
+       "Democratic and Federalist",
+       "Democratic and Republican"
+      ],
+      "a": 3,
+      "why": "Third parties exist, but the two main parties win nearly every election."
+     },
+     {
+      "t": "mc",
+      "q": "What is the press's role as a watchdog?",
+      "o": [
+       "Reporting on government and exposing wrongdoing",
+       "Writing laws",
+       "Choosing judges",
+       "Collecting taxes"
+      ],
+      "a": 0,
+      "why": "A free press helps citizens hold leaders accountable."
+     },
+     {
+      "t": "tf",
+      "q": "Lobbying means a candidate asking people for votes.",
+      "a": false,
+      "why": "Lobbying means trying to influence lawmakers on policies."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Platform",
+        "Party's statement of goals"
+       ],
+       [
+        "Lobbyist",
+        "Person who pressures lawmakers"
+       ],
+       [
+        "PAC",
+        "Group raising money for candidates"
+       ],
+       [
+        "Media bias",
+        "Slanted coverage"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these steps for checking a news story in order",
+      "items": [
+       [
+        "Read the full story, not just the headline",
+        1
+       ],
+       [
+        "Find out who published it",
+        2
+       ],
+       [
+        "Compare with other sources",
+        3
+       ],
+       [
+        "Decide if it is trustworthy",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Trying to influence lawmakers is called ___.",
+      "a": [
+       "lobbying",
+       "lobby"
+      ],
+      "hint": "A person who does it is a lobbyist.",
+      "why": "Lobbying is persuading lawmakers."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The two main US parties are the Democratic and ___ parties.",
+      "a": [
+       "republican",
+       "republicans"
+      ],
+      "hint": "It is the party whose symbol is an elephant.",
+      "why": "Democrats and Republicans dominate US elections."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A party's statement of its goals and beliefs is called its ___.",
+      "a": [
+       "platform"
+      ],
+      "hint": "It sounds like a stage, but it is a list of beliefs.",
+      "why": "Each party writes a platform every election year."
+     }
+    ]
+   },
+   {
+    "title": "Government, Money, and the World",
+    "period": "Policy",
+    "learn": [
+     {
+      "h": "Taxes and budgets",
+      "b": "Governments get revenue from taxes: income tax on earnings, sales tax on purchases, and property tax on land and buildings. The federal budget pays for things like defense, Social Security, and Medicare. A deficit happens when government spends more than it takes in during a year."
+     },
+     {
+      "h": "Foreign policy",
+      "b": "Foreign policy is how a country deals with other countries. Diplomacy means peaceful talks. Ambassadors represent their country abroad, and the Secretary of State leads the State Department. A tariff is a tax on imported goods, and a sanction is a penalty used to pressure a country."
+     },
+     {
+      "h": "Treaties and alliances",
+      "b": "The President negotiates treaties, but the Senate must approve them by a two-thirds vote. The US belongs to groups like the United Nations, which helps countries work on peace, and NATO, a military alliance."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is an income tax?",
+      "o": [
+       "A tax on land",
+       "A tax on money people earn",
+       "A tax on imported goods",
+       "A tax on things you buy"
+      ],
+      "a": 1,
+      "why": "It is the main source of federal revenue."
+     },
+     {
+      "t": "mc",
+      "q": "What is a budget deficit?",
+      "o": [
+       "Taking in more than is spent",
+       "A tax cut",
+       "Spending more than the government takes in",
+       "A trade agreement"
+      ],
+      "a": 2,
+      "why": "Debt is the total of past deficits."
+     },
+     {
+      "t": "mc",
+      "q": "What is diplomacy?",
+      "o": [
+       "A military attack",
+       "A tax on trade",
+       "A court ruling",
+       "Peaceful talks between countries"
+      ],
+      "a": 3,
+      "why": "Diplomats try to solve problems without war."
+     },
+     {
+      "t": "mc",
+      "q": "What vote does the Senate need to approve a treaty?",
+      "o": [
+       "Two-thirds",
+       "Simple majority",
+       "Three-fourths",
+       "Unanimous"
+      ],
+      "a": 0,
+      "why": "The Constitution requires two-thirds of senators present."
+     },
+     {
+      "t": "tf",
+      "q": "A tariff is a tax on imported goods.",
+      "a": true,
+      "why": "Tariffs make foreign goods cost more."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Revenue",
+        "Money the government takes in"
+       ],
+       [
+        "Tariff",
+        "Tax on imports"
+       ],
+       [
+        "Sanction",
+        "Penalty to pressure a country"
+       ],
+       [
+        "Ambassador",
+        "Representative in another country"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for making a treaty in order",
+      "items": [
+       [
+        "The President negotiates the treaty",
+        1
+       ],
+       [
+        "The President signs it",
+        2
+       ],
+       [
+        "The Senate votes with a two-thirds majority",
+        3
+       ],
+       [
+        "The treaty takes effect",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A tax on things you buy in a store is called a ___ tax.",
+      "a": [
+       "sales"
+      ],
+      "hint": "You pay it at the cash register.",
+      "why": "A sales tax is added to the price of goods."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: When the government spends more than it takes in, there is a budget ___.",
+      "a": [
+       "deficit"
+      ],
+      "hint": "It is the opposite of a surplus.",
+      "why": "A deficit adds to the national debt."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Who leads the State Department? (Secretary of ___)",
+      "a": [
+       "state",
+       "secretary of state"
+      ],
+      "hint": "It is named after the department.",
+      "why": "The Secretary of State is the chief diplomat."
+     }
+    ]
+   }
+  ]
+ },
+ "geography": {
+  "name": "World Geography",
+  "units": [
+   {
+    "title": "Maps and Earth Basics",
+    "period": "Map Skills",
+    "learn": [
+     {
+      "h": "Latitude and longitude",
+      "b": "Latitude lines run east-west and measure distance north or south of the equator. Longitude lines run north-south and measure distance east or west of the prime meridian, which passes through Greenwich, England."
+     },
+     {
+      "h": "Hemispheres and continents",
+      "b": "The equator splits Earth into Northern and Southern Hemispheres. There are seven continents: Africa, Antarctica, Asia, Australia, Europe, North America, and South America."
+     },
+     {
+      "h": "Reading a map",
+      "b": "A legend explains the symbols on a map. A scale shows how map distance matches real distance. The Pacific is the largest ocean."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which lines measure distance north or south of the equator?",
+      "o": [
+       "Longitude",
+       "Latitude",
+       "Meridians",
+       "Time zones"
+      ],
+      "a": 1,
+      "why": "Latitude measures north-south position."
+     },
+     {
+      "t": "mc",
+      "q": "The prime meridian passes through which place?",
+      "o": [
+       "Paris",
+       "Cairo",
+       "Greenwich, England",
+       "Rome"
+      ],
+      "a": 2,
+      "why": "Greenwich is at 0 degrees longitude."
+     },
+     {
+      "t": "mc",
+      "q": "How many continents are there?",
+      "o": [
+       "Five",
+       "Six",
+       "Eight",
+       "Seven"
+      ],
+      "a": 3,
+      "why": "The common model counts seven continents."
+     },
+     {
+      "t": "mc",
+      "q": "What does the equator divide Earth into?",
+      "o": [
+       "Northern and Southern Hemispheres",
+       "Eastern and Western Hemispheres",
+       "Land and water",
+       "Tropics and poles"
+      ],
+      "a": 0,
+      "why": "The equator is 0 degrees latitude."
+     },
+     {
+      "t": "tf",
+      "q": "The Pacific Ocean is the largest ocean on Earth.",
+      "a": true,
+      "why": "It covers about one third of Earth's surface."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Latitude",
+        "Distance north or south of equator"
+       ],
+       [
+        "Longitude",
+        "Distance east or west of prime meridian"
+       ],
+       [
+        "Scale",
+        "Map distance versus real distance"
+       ],
+       [
+        "Legend",
+        "Key to map symbols"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these oceans from largest to smallest",
+      "items": [
+       [
+        "Pacific",
+        1
+       ],
+       [
+        "Atlantic",
+        2
+       ],
+       [
+        "Indian",
+        3
+       ],
+       [
+        "Arctic",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Lines that measure distance north or south of the equator are lines of ___.",
+      "a": [
+       "latitude"
+      ],
+      "hint": "They are parallel to the equator.",
+      "why": "Latitude runs 0 to 90 degrees north and south."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: How many continents are there? (a number)",
+      "a": [
+       "7",
+       "seven"
+      ],
+      "hint": "It is more than five and less than eight.",
+      "why": "There are seven continents."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which is the largest ocean on Earth?",
+      "a": [
+       "pacific",
+       "pacific ocean",
+       "the pacific"
+      ],
+      "hint": "Its name means peaceful.",
+      "why": "The Pacific Ocean covers about a third of the Earth."
+     }
+    ]
+   },
+   {
+    "title": "Earth's Moving Surface",
+    "period": "Plate Tectonics",
+    "learn": [
+     {
+      "h": "Moving plates",
+      "b": "Earth's outer shell is broken into huge pieces called tectonic plates that move slowly. Alfred Wegener proposed continental drift, the idea that continents were once joined in one supercontinent called Pangaea. Plates meet at three kinds of boundaries."
+     },
+     {
+      "h": "Three boundaries",
+      "b": "At a divergent boundary, plates move apart. At a convergent boundary, plates collide, which can build mountains like the Himalayas. At a transform boundary, plates slide past each other, like along the San Andreas Fault in California."
+     },
+     {
+      "h": "Quakes, volcanoes, and erosion",
+      "b": "Earthquakes happen when plates suddenly slip along faults, and a seismograph measures them. Many volcanoes and quakes occur around the Pacific Ocean in the Ring of Fire. Weathering breaks rock down, erosion carries it away, and deposition drops it to build new land."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Who proposed the idea of continental drift?",
+      "o": [
+       "Charles Darwin",
+       "Alfred Wegener",
+       "Isaac Newton",
+       "Galileo"
+      ],
+      "a": 1,
+      "why": "Wegener noticed the continents fit together like puzzle pieces."
+     },
+     {
+      "t": "mc",
+      "q": "What do we call plates sliding past each other?",
+      "o": [
+       "A divergent boundary",
+       "A convergent boundary",
+       "A transform boundary",
+       "A subduction zone"
+      ],
+      "a": 2,
+      "why": "The San Andreas Fault is a famous example."
+     },
+     {
+      "t": "mc",
+      "q": "Where is the Ring of Fire?",
+      "o": [
+       "Around the Atlantic Ocean",
+       "Across the Sahara",
+       "In the Arctic",
+       "Around the edge of the Pacific Ocean"
+      ],
+      "a": 3,
+      "why": "Many volcanoes and earthquakes happen there."
+     },
+     {
+      "t": "mc",
+      "q": "What tool measures earthquakes?",
+      "o": [
+       "A seismograph",
+       "A barometer",
+       "A thermometer",
+       "An anemometer"
+      ],
+      "a": 0,
+      "why": "A seismograph records ground shaking."
+     },
+     {
+      "t": "tf",
+      "q": "The Himalayas formed where two plates collided.",
+      "a": true,
+      "why": "The Indian Plate pushed into the Eurasian Plate."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Divergent boundary",
+        "Plates move apart"
+       ],
+       [
+        "Convergent boundary",
+        "Plates collide"
+       ],
+       [
+        "Transform boundary",
+        "Plates slide past"
+       ],
+       [
+        "Seismograph",
+        "Measures earthquakes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of landform change in order",
+      "items": [
+       [
+        "Weathering breaks rock apart",
+        1
+       ],
+       [
+        "Erosion carries sediment away",
+        2
+       ],
+       [
+        "Deposition drops sediment",
+        3
+       ],
+       [
+        "A new landform such as a delta forms",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Wegener's idea that continents move is called continental ___.",
+      "a": [
+       "drift"
+      ],
+      "hint": "It means to move slowly.",
+      "why": "Wegener called it continental drift."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The ancient supercontinent was called ___.",
+      "a": [
+       "pangaea",
+       "pangea"
+      ],
+      "hint": "The name means 'all lands'.",
+      "why": "Pangaea broke apart over millions of years."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The belt of volcanoes around the Pacific is called the Ring of ___.",
+      "a": [
+       "fire"
+      ],
+      "hint": "It is hot.",
+      "why": "The Ring of Fire has many volcanoes and quakes."
+     }
+    ]
+   },
+   {
+    "title": "Landforms and Climate",
+    "period": "Physical Geography",
+    "learn": [
+     {
+      "h": "Landforms",
+      "b": "A peninsula is land surrounded by water on three sides. A plateau is high, flat land. A delta forms where a river meets the sea. An archipelago is a group of islands. Mount Everest is the highest mountain above sea level."
+     },
+     {
+      "h": "Climate and weather",
+      "b": "Weather is what the air is like today. Climate is the usual weather pattern over many years. Places near the equator are usually warm, and places near the poles are cold."
+     },
+     {
+      "h": "Biomes and Earth's layers",
+      "b": "A biome is a large natural region, such as rainforest, desert, or tundra. Tundra has permanently frozen ground. Earth has four layers: crust, mantle, outer core, and inner core."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the highest mountain above sea level?",
+      "o": [
+       "K2",
+       "Mount Everest",
+       "Denali",
+       "Kilimanjaro"
+      ],
+      "a": 1,
+      "why": "Everest is about 8,849 meters high."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the largest hot desert in the world?",
+      "o": [
+       "Gobi",
+       "Kalahari",
+       "Sahara",
+       "Atacama"
+      ],
+      "a": 2,
+      "why": "The Sahara in Africa is the largest hot desert."
+     },
+     {
+      "t": "mc",
+      "q": "What is climate?",
+      "o": [
+       "Today's temperature",
+       "A storm that lasts days",
+       "Tomorrow's forecast",
+       "The usual weather pattern over many years"
+      ],
+      "a": 3,
+      "why": "Climate is long-term; weather is short-term."
+     },
+     {
+      "t": "mc",
+      "q": "Which biome has permanently frozen ground?",
+      "o": [
+       "Tundra",
+       "Savanna",
+       "Rainforest",
+       "Desert"
+      ],
+      "a": 0,
+      "why": "Tundra has permafrost beneath the surface."
+     },
+     {
+      "t": "tf",
+      "q": "Tropical rainforests receive very little rainfall.",
+      "a": false,
+      "why": "Rainforests are among the wettest places on Earth."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Peninsula",
+        "Land with water on three sides"
+       ],
+       [
+        "Plateau",
+        "High flat land"
+       ],
+       [
+        "Delta",
+        "Land formed at a river's mouth"
+       ],
+       [
+        "Archipelago",
+        "Group of islands"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Earth's layers in order from the surface to the center",
+      "items": [
+       [
+        "Crust",
+        1
+       ],
+       [
+        "Mantle",
+        2
+       ],
+       [
+        "Outer core",
+        3
+       ],
+       [
+        "Inner core",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Which is the highest mountain above sea level?",
+      "a": [
+       "everest",
+       "mount everest",
+       "mt everest",
+       "mt. everest"
+      ],
+      "hint": "It is in the Himalayas.",
+      "why": "Mount Everest is about 8,849 meters high."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which is the largest hot desert in the world?",
+      "a": [
+       "sahara",
+       "the sahara",
+       "sahara desert"
+      ],
+      "hint": "It covers much of North Africa.",
+      "why": "The Sahara is the largest hot desert."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Land formed at a river's mouth from deposited sediment is a ___.",
+      "a": [
+       "delta"
+      ],
+      "hint": "It is also a Greek letter.",
+      "why": "Deltas, like the Nile Delta, form from deposited sediment."
+     }
+    ]
+   },
+   {
+    "title": "Water, Weather, and Biomes",
+    "period": "Physical Geography",
+    "learn": [
+     {
+      "h": "The water cycle",
+      "b": "Water moves in a cycle. Evaporation turns liquid water into vapor, condensation turns vapor into droplets that form clouds, precipitation brings rain or snow, and collection gathers water in oceans, lakes, and rivers."
+     },
+     {
+      "h": "Weather and storms",
+      "b": "Weather is the short-term condition of the air, while climate is the long-term pattern. Ocean currents like the Gulf Stream carry warm water and warm Western Europe. A hurricane is called a typhoon in the western Pacific. A monsoon is a seasonal wind that brings heavy rain, especially in South Asia."
+     },
+     {
+      "h": "Biomes",
+      "b": "A biome is a large region with similar climate, plants, and animals. Examples are desert, tropical rainforest, savanna (tropical grassland with scattered trees), and taiga (a cold forest of evergreen trees in northern Russia and Canada). Higher elevation usually means cooler temperatures."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is a typhoon?",
+      "o": [
+       "A desert wind",
+       "A hurricane in the western Pacific",
+       "A river flood",
+       "A type of earthquake"
+      ],
+      "a": 1,
+      "why": "The same kind of storm has different names in different oceans."
+     },
+     {
+      "t": "mc",
+      "q": "What does the Gulf Stream do?",
+      "o": [
+       "Cools North America",
+       "Freezes the Arctic",
+       "Carries warm water that warms Western Europe",
+       "Brings monsoon rain to India"
+      ],
+      "a": 2,
+      "why": "It makes Western Europe warmer than other places at similar latitudes."
+     },
+     {
+      "t": "mc",
+      "q": "What is a monsoon?",
+      "o": [
+       "A desert storm",
+       "A tornado",
+       "A kind of cloud",
+       "A seasonal wind that brings heavy rain"
+      ],
+      "a": 3,
+      "why": "South Asia gets much of its rain from the summer monsoon."
+     },
+     {
+      "t": "mc",
+      "q": "What is taiga?",
+      "o": [
+       "A cold forest of evergreen trees",
+       "A tropical rainforest",
+       "A treeless frozen plain",
+       "A hot desert"
+      ],
+      "a": 0,
+      "why": "It stretches across northern Canada, Russia, and Scandinavia."
+     },
+     {
+      "t": "tf",
+      "q": "Weather describes the long-term pattern of conditions in a region.",
+      "a": false,
+      "why": "That is climate; weather is short-term."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Evaporation",
+        "Liquid becomes vapor"
+       ],
+       [
+        "Condensation",
+        "Vapor becomes droplets"
+       ],
+       [
+        "Precipitation",
+        "Rain, snow, or hail falling"
+       ],
+       [
+        "Savanna",
+        "Tropical grassland"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the water cycle in order",
+      "items": [
+       [
+        "Evaporation",
+        1
+       ],
+       [
+        "Condensation",
+        2
+       ],
+       [
+        "Precipitation",
+        3
+       ],
+       [
+        "Collection",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Water vapor turning into liquid droplets is called ___.",
+      "a": [
+       "condensation"
+      ],
+      "hint": "This forms clouds.",
+      "why": "Condensation makes clouds."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A hurricane in the western Pacific is called a ___.",
+      "a": [
+       "typhoon"
+      ],
+      "hint": "It starts with T.",
+      "why": "The same storm is a hurricane, typhoon, or cyclone by region."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The tropical grassland biome with scattered trees, found in Africa, is the ___.",
+      "a": [
+       "savanna",
+       "savannah"
+      ],
+      "hint": "Lions live here.",
+      "why": "Savannas have grass and scattered trees."
+     }
+    ]
+   },
+   {
+    "title": "People and Places",
+    "period": "Human Geography",
+    "learn": [
+     {
+      "h": "Population",
+      "b": "India and China have the largest populations in the world. Population density means how many people live in a certain area. Many people now live in cities, a trend called urbanization."
+     },
+     {
+      "h": "Migration",
+      "b": "Migration is moving from one place to live in another. Push factors, like war or famine, drive people away. Pull factors, like jobs or safety, attract them. An emigrant leaves a country and an immigrant enters one."
+     },
+     {
+      "h": "Culture",
+      "b": "Culture means the customs, beliefs, and language a group shares. Mandarin Chinese has the most native speakers of any language. A capital city is the seat of government and is not always the largest city."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which two countries have the largest populations?",
+      "o": [
+       "United States and Brazil",
+       "Russia and Japan",
+       "India and China",
+       "Nigeria and Indonesia"
+      ],
+      "a": 2,
+      "why": "India and China each have more than 1.4 billion people."
+     },
+     {
+      "t": "mc",
+      "q": "What is urbanization?",
+      "o": [
+       "Growth of farmland",
+       "Decline of trade",
+       "Moving to remote villages",
+       "Growth of cities as more people live there"
+      ],
+      "a": 3,
+      "why": "Urbanization means a rising share of people living in cities."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of a push factor in migration?",
+      "o": [
+       "A job offer abroad",
+       "War in the home country",
+       "Good schools overseas",
+       "Family living abroad"
+      ],
+      "a": 1,
+      "why": "Push factors drive people away from their home."
+     },
+     {
+      "t": "mc",
+      "q": "Which language has the most native speakers?",
+      "o": [
+       "Mandarin Chinese",
+       "English",
+       "Hindi",
+       "Arabic"
+      ],
+      "a": 0,
+      "why": "Mandarin has more native speakers than any other language."
+     },
+     {
+      "t": "tf",
+      "q": "A country's capital city is always its largest city.",
+      "a": false,
+      "why": "For example, Canberra is Australia's capital, but Sydney is larger."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Immigrant",
+        "Person moving into a country"
+       ],
+       [
+        "Emigrant",
+        "Person leaving a country"
+       ],
+       [
+        "Culture",
+        "Shared customs and beliefs"
+       ],
+       [
+        "Population density",
+        "People per area"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these settlements from smallest to largest",
+      "items": [
+       [
+        "Village",
+        1
+       ],
+       [
+        "Town",
+        2
+       ],
+       [
+        "City",
+        3
+       ],
+       [
+        "Megacity",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A person who moves into a country is called an ___.",
+      "a": [
+       "immigrant"
+      ],
+      "hint": "It starts with 'im'.",
+      "why": "An immigrant moves into a new country."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which language has the most native speakers?",
+      "a": [
+       "mandarin",
+       "mandarin chinese",
+       "chinese"
+      ],
+      "hint": "It is spoken in China.",
+      "why": "Mandarin Chinese has the most native speakers."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The growth of cities as more people live there is called ___.",
+      "a": [
+       "urbanization"
+      ],
+      "hint": "It starts with 'urban'.",
+      "why": "Urbanization is the growth of cities."
+     }
+    ]
+   },
+   {
+    "title": "Population and Migration",
+    "period": "Human Geography",
+    "learn": [
+     {
+      "h": "Counting people",
+      "b": "Demography is the study of populations. A census is an official count of people. The birth rate and death rate are usually measured per 1,000 people. Natural increase equals the birth rate minus the death rate. Life expectancy is the average number of years a person is expected to live."
+     },
+     {
+      "h": "Density and pyramids",
+      "b": "Population density is people per unit of area: population divided by area. A country can be crowded even if it is small. A population pyramid shows ages and sexes. A wide base means many young people, as in fast-growing countries."
+     },
+     {
+      "h": "Why people move",
+      "b": "Pull factors attract people to a place, like jobs or safety. People moving within a country is internal migration. Many countries go through stages: first both birth and death rates are high, then death rates fall, then birth rates fall, and both end up low."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is natural increase?",
+      "o": [
+       "Births plus deaths",
+       "Birth rate minus death rate",
+       "Immigrants minus emigrants",
+       "People per square mile"
+      ],
+      "a": 1,
+      "why": "If births are higher than deaths, the population grows naturally."
+     },
+     {
+      "t": "mc",
+      "q": "What does a wide base on a population pyramid show?",
+      "o": [
+       "Many old people",
+       "Few births",
+       "Many young people",
+       "Equal ages"
+      ],
+      "a": 2,
+      "why": "The bottom of the pyramid shows the youngest ages."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a pull factor?",
+      "o": [
+       "War at home",
+       "Famine at home",
+       "Natural disaster at home",
+       "Better jobs in another country"
+      ],
+      "a": 3,
+      "why": "Pull factors attract people to a new place."
+     },
+     {
+      "t": "mc",
+      "q": "What does life expectancy measure?",
+      "o": [
+       "Average years a person is expected to live",
+       "Number of births per year",
+       "People per square mile",
+       "Percent who move"
+      ],
+      "a": 0,
+      "why": "It is a common measure of health and well-being."
+     },
+     {
+      "t": "tf",
+      "q": "A country with a small area always has a small population density.",
+      "a": false,
+      "why": "Density depends on both people and area; a small country with many people is dense."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Census",
+        "Official count of people"
+       ],
+       [
+        "Birth rate",
+        "Births per 1,000 people"
+       ],
+       [
+        "Life expectancy",
+        "Average years of life"
+       ],
+       [
+        "Population pyramid",
+        "Graph of ages and sexes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the demographic stages in order",
+      "items": [
+       [
+        "High birth and death rates",
+        1
+       ],
+       [
+        "Death rates fall",
+        2
+       ],
+       [
+        "Birth rates fall",
+        3
+       ],
+       [
+        "Low birth and death rates",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: A town has 600 people living on 30 square kilometers. What is its density in people per square km?",
+      "a": [
+       "20"
+      ],
+      "hint": "Divide 600 by 30.",
+      "why": "600 / 30 = 20 people per square kilometer."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: A country has a birth rate of 20 and a death rate of 8 per 1,000. What is its natural increase per 1,000?",
+      "a": [
+       "12"
+      ],
+      "hint": "Subtract the death rate from the birth rate.",
+      "why": "20 - 8 = 12 per 1,000."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: An official count of a country's people is called a ___.",
+      "a": [
+       "census"
+      ],
+      "hint": "The US holds one every ten years.",
+      "why": "A census counts the population."
+     }
+    ]
+   },
+   {
+    "title": "Economic and Political Geography",
+    "period": "Human Geography",
+    "learn": [
+     {
+      "h": "Sectors of the economy",
+      "b": "The primary sector gets raw materials, such as farming and mining. The secondary sector makes goods in factories. The tertiary sector provides services, such as teaching and shops. GDP, or Gross Domestic Product, measures the value of all goods and services a country makes in a year."
+     },
+     {
+      "h": "Trade",
+      "b": "Goods sold to other countries are exports, and goods bought from other countries are imports. A tariff is a tax on imports. Developed countries usually have higher incomes and more services than developing countries."
+     },
+     {
+      "h": "Borders and countries",
+      "b": "A border separates countries. Natural boundaries follow features like rivers and mountains, while others are straight lines drawn by people. The United Nations has 193 member countries, and the European Union is a group of European countries that share trade rules."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Mining belongs to which sector?",
+      "o": [
+       "Secondary",
+       "Primary",
+       "Tertiary",
+       "Quaternary"
+      ],
+      "a": 1,
+      "why": "It takes raw materials from the earth."
+     },
+     {
+      "t": "mc",
+      "q": "What does GDP measure?",
+      "o": [
+       "The number of people",
+       "The size of the army",
+       "The value of goods and services a country produces",
+       "The length of borders"
+      ],
+      "a": 2,
+      "why": "It is a common way to measure a country's economy."
+     },
+     {
+      "t": "mc",
+      "q": "What are exports?",
+      "o": [
+       "Goods bought from other countries",
+       "Taxes on trade",
+       "Raw materials only",
+       "Goods sold to other countries"
+      ],
+      "a": 3,
+      "why": "Imports are goods bought from other countries."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a natural boundary?",
+      "o": [
+       "A river",
+       "A straight line on a map",
+       "A fence",
+       "A checkpoint"
+      ],
+      "a": 0,
+      "why": "Rivers and mountains often mark borders."
+     },
+     {
+      "t": "tf",
+      "q": "A tariff is a tax on imported goods.",
+      "a": true,
+      "why": "Tariffs make imports more expensive."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Primary sector",
+        "Farming and mining"
+       ],
+       [
+        "Secondary sector",
+        "Manufacturing"
+       ],
+       [
+        "Service sector",
+        "Teaching and shops"
+       ],
+       [
+        "Import",
+        "Good bought from abroad"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of making a wooden table in order",
+      "items": [
+       [
+        "Cut down a tree",
+        1
+       ],
+       [
+        "Mill the wood into boards",
+        2
+       ],
+       [
+        "Build the table",
+        3
+       ],
+       [
+        "Sell it in a store",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Factory work belongs to the ___ sector (primary, secondary, or tertiary).",
+      "a": [
+       "secondary"
+      ],
+      "hint": "It is the second of the three sectors.",
+      "why": "Manufacturing is the secondary sector."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: GDP stands for Gross Domestic ___.",
+      "a": [
+       "product"
+      ],
+      "hint": "It measures what a country produces.",
+      "why": "GDP means Gross Domestic Product."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Goods a country sells to other countries are its ___.",
+      "a": [
+       "exports",
+       "export"
+      ],
+      "hint": "The prefix 'ex' means out.",
+      "why": "Exports go out of a country."
+     }
+    ]
+   },
+   {
+    "title": "Humans and the Environment",
+    "period": "Human-Environment Interaction",
+    "learn": [
+     {
+      "h": "Energy and resources",
+      "b": "Renewable resources, like solar, wind, and water power, can be replaced naturally. Nonrenewable resources, like coal, oil, and natural gas, are fossil fuels that take millions of years to form."
+     },
+     {
+      "h": "Climate change",
+      "b": "When fossil fuels burn, they release carbon dioxide, a greenhouse gas that traps heat in the air. More greenhouse gases make Earth warmer, which raises sea levels as ice melts."
+     },
+     {
+      "h": "Changing the land",
+      "b": "Deforestation is the clearing of forests, such as in the Amazon rainforest, the world's largest rainforest. Desertification is fertile land turning into desert. Sustainability means meeting today's needs without harming future generations, and conservation means protecting resources."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is a renewable energy source?",
+      "o": [
+       "Coal",
+       "Wind power",
+       "Oil",
+       "Natural gas"
+      ],
+      "a": 1,
+      "why": "Wind keeps blowing, so it can be used again and again."
+     },
+     {
+      "t": "mc",
+      "q": "Which gas from burning fossil fuels traps heat?",
+      "o": [
+       "Oxygen",
+       "Nitrogen",
+       "Carbon dioxide",
+       "Helium"
+      ],
+      "a": 2,
+      "why": "It is the main greenhouse gas from human activity."
+     },
+     {
+      "t": "mc",
+      "q": "What is deforestation?",
+      "o": [
+       "Planting new trees",
+       "Watering crops",
+       "Burning gas",
+       "Clearing forests"
+      ],
+      "a": 3,
+      "why": "Forests are cut for farms, wood, and cities."
+     },
+     {
+      "t": "mc",
+      "q": "What is sustainability?",
+      "o": [
+       "Meeting today's needs without harming the future",
+       "Using resources as fast as possible",
+       "Building bigger cities",
+       "Selling more goods"
+      ],
+      "a": 0,
+      "why": "It balances people's needs with protecting nature."
+     },
+     {
+      "t": "tf",
+      "q": "Coal, oil, and natural gas are renewable resources.",
+      "a": false,
+      "why": "They are fossil fuels that take millions of years to form."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Fossil fuel",
+        "Coal, oil, or gas"
+       ],
+       [
+        "Conservation",
+        "Protecting resources"
+       ],
+       [
+        "Desertification",
+        "Fertile land turning to desert"
+       ],
+       [
+        "Greenhouse gas",
+        "Gas that traps heat"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the greenhouse effect in order",
+      "items": [
+       [
+        "Sunlight warms Earth",
+        1
+       ],
+       [
+        "Earth gives off heat",
+        2
+       ],
+       [
+        "Gases trap some of the heat",
+        3
+       ],
+       [
+        "Temperatures rise",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: Burning fossil fuels releases the greenhouse gas carbon ___.",
+      "a": [
+       "dioxide",
+       "carbon dioxide"
+      ],
+      "hint": "Its chemical formula is CO2.",
+      "why": "Carbon dioxide traps heat."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: The clearing of forests is called ___.",
+      "a": [
+       "deforestation"
+      ],
+      "hint": "It means removing a forest.",
+      "why": "Deforestation destroys habitats."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Energy from sunlight is called ___ power.",
+      "a": [
+       "solar"
+      ],
+      "hint": "It starts with S.",
+      "why": "Solar panels turn sunlight into electricity."
+     }
+    ]
+   },
+   {
+    "title": "Regions of the World",
+    "period": "Countries and Capitals",
+    "learn": [
+     {
+      "h": "Big countries and rivers",
+      "b": "Russia is the largest country by area, followed by Canada and China. The Nile flows through Egypt and the Amazon flows through Brazil."
+     },
+     {
+      "h": "Capitals",
+      "b": "Every country has a capital. Tokyo is the capital of Japan, Cairo of Egypt, Ottawa of Canada, Nairobi of Kenya, and Brasilia of Brazil."
+     },
+     {
+      "h": "Continents and countries",
+      "b": "Africa has the most countries of any continent. Australia is both a country and a continent. Oslo is far north, Rome is in the middle latitudes, Nairobi is near the equator, and Cape Town is in the far south."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the capital of Brazil?",
+      "o": [
+       "Rio de Janeiro",
+       "Sao Paulo",
+       "Brasilia",
+       "Buenos Aires"
+      ],
+      "a": 2,
+      "why": "Brasilia became the capital in 1960."
+     },
+     {
+      "t": "mc",
+      "q": "Which continent has the most countries?",
+      "o": [
+       "Asia",
+       "Africa",
+       "Europe",
+       "South America"
+      ],
+      "a": 1,
+      "why": "Africa has 54 countries."
+     },
+     {
+      "t": "mc",
+      "q": "Which river flows through Egypt?",
+      "o": [
+       "Amazon",
+       "Danube",
+       "Ganges",
+       "Nile"
+      ],
+      "a": 3,
+      "why": "The Nile runs north through Egypt to the Mediterranean."
+     },
+     {
+      "t": "mc",
+      "q": "Which country is the largest by area?",
+      "o": [
+       "Russia",
+       "Canada",
+       "China",
+       "Brazil"
+      ],
+      "a": 0,
+      "why": "Russia covers more than 17 million square kilometers."
+     },
+     {
+      "t": "tf",
+      "q": "Australia is both a country and a continent.",
+      "a": true,
+      "why": "The country of Australia covers most of the Australian continent."
+     },
+     {
+      "t": "match",
+      "q": "Match each country to its capital",
+      "pairs": [
+       [
+        "Japan",
+        "Tokyo"
+       ],
+       [
+        "Egypt",
+        "Cairo"
+       ],
+       [
+        "Canada",
+        "Ottawa"
+       ],
+       [
+        "Kenya",
+        "Nairobi"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cities in order from north to south",
+      "items": [
+       [
+        "Oslo",
+        1
+       ],
+       [
+        "Rome",
+        2
+       ],
+       [
+        "Nairobi",
+        3
+       ],
+       [
+        "Cape Town",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the capital of Brazil?",
+      "a": [
+       "brasilia"
+      ],
+      "hint": "It is not Rio de Janeiro.",
+      "why": "Brasilia has been the capital since 1960."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the capital of Canada?",
+      "a": [
+       "ottawa"
+      ],
+      "hint": "It is not Toronto.",
+      "why": "Ottawa is Canada's capital."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: Which continent has the most countries?",
+      "a": [
+       "africa"
+      ],
+      "hint": "It is south of Europe.",
+      "why": "Africa has 54 countries."
+     }
+    ]
+   },
+   {
+    "title": "Africa, Asia, and the Middle East",
+    "period": "Regional Geography",
+    "learn": [
+     {
+      "h": "Africa",
+      "b": "The Sahara is in North Africa and the Nile flows north to the Mediterranean. Mount Kilimanjaro, in Tanzania, is Africa's highest mountain, and the Great Rift Valley is a long valley in East Africa."
+     },
+     {
+      "h": "Asia",
+      "b": "The Yangtze is Asia's longest river, in China, and the Ganges is a sacred river in India. The Gobi is a desert in Mongolia and China. Japan and Indonesia are archipelagos, groups of islands. Capitals include Beijing (China), New Delhi (India), and Tokyo (Japan)."
+     },
+     {
+      "h": "The Middle East",
+      "b": "The Middle East has deserts and rich oil reserves around the Persian Gulf. Riyadh is the capital of Saudi Arabia. The Dead Sea, between Israel and Jordan, is the lowest point on land."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Africa's highest mountain?",
+      "o": [
+       "Mount Everest",
+       "Mount Kilimanjaro",
+       "Mont Blanc",
+       "Mount Fuji"
+      ],
+      "a": 1,
+      "why": "It is in Tanzania and is about 5,895 meters high."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the longest river in Asia?",
+      "o": [
+       "The Nile",
+       "The Mekong",
+       "The Yangtze",
+       "The Tigris"
+      ],
+      "a": 2,
+      "why": "It flows across China to the East China Sea."
+     },
+     {
+      "t": "mc",
+      "q": "Which resource is plentiful around the Persian Gulf?",
+      "o": [
+       "Coal",
+       "Rainforest",
+       "Gold",
+       "Oil"
+      ],
+      "a": 3,
+      "why": "Saudi Arabia, Iraq, Kuwait, and others hold huge oil reserves."
+     },
+     {
+      "t": "mc",
+      "q": "Where is the lowest point on land?",
+      "o": [
+       "The Dead Sea shore",
+       "Death Valley",
+       "Lake Victoria",
+       "The Gobi"
+      ],
+      "a": 0,
+      "why": "It lies about 430 meters below sea level."
+     },
+     {
+      "t": "tf",
+      "q": "Mount Kilimanjaro is in Kenya.",
+      "a": false,
+      "why": "It is in Tanzania, near the Kenyan border."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Gobi",
+        "Desert in Mongolia and China"
+       ],
+       [
+        "Ganges",
+        "Sacred river of India"
+       ],
+       [
+        "Great Rift Valley",
+        "Long valley in East Africa"
+       ],
+       [
+        "Persian Gulf",
+        "Oil-rich Middle East waters"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cities in order from north to south",
+      "items": [
+       [
+        "Beijing",
+        1
+       ],
+       [
+        "New Delhi",
+        2
+       ],
+       [
+        "Bangkok",
+        3
+       ],
+       [
+        "Jakarta",
+        4
+       ]
+      ]
+     }
+    ],
+    "lab": [
+     {
+      "t": "input",
+      "q": "Challenge: What is the capital of India? (two words)",
+      "a": [
+       "new delhi",
+       "delhi"
+      ],
+      "hint": "It is next to Old Delhi.",
+      "why": "New Delhi is India's capital."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the capital of China?",
+      "a": [
+       "beijing"
+      ],
+      "hint": "The 2008 Summer Olympics were held there.",
+      "why": "Beijing is China's capital."
+     },
+     {
+      "t": "input",
+      "q": "Challenge: What is the capital of Saudi Arabia?",
+      "a": [
+       "riyadh"
+      ],
+      "hint": "It starts with R.",
+      "why": "Riyadh is Saudi Arabia's capital."
+     }
+    ]
+   }
+  ]
+ }
+}
