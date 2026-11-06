@@ -9,6 +9,7 @@ import { speak, enVoices, pickVoice, voiceScore, canSpeak, CHARACTER_VOICE, onVo
 import { Tock } from '../components/Tock';
 import { Svg, SVG, CourseIcon } from '../components/Icons';
 import { CAST } from '../data/cast';
+import { Buddy } from '../components/Buddy';
 import { Guidebook } from './Learn';
 
 function Mode({ color, icon, title, text, tag, btn, onGo, children }: { color: string; icon: string; title: string; text: string; tag?: string; btn: string; onGo: () => void; children?: React.ReactNode }) {
@@ -167,7 +168,7 @@ export function ProfileView() {
       <p className="muted small">Tap anyone to hear their voice.</p>
       <div className="crew pick">
         <button className="crew-mem" onClick={() => speak("Hi, I'm Tock! Let's make every minute count.", 'tock')}><span className="tock-wrap" style={{ width: 70 }}><Tock mood="cheer" /></span><b>Tock</b><span className="muted small">{CHARACTER_VOICE.tock.label}</span></button>
-        {CAST.map((c) => <button key={c.id} className="crew-mem" onClick={() => speak(`Hi, I'm ${c.name}. Ready to study?`, c.id)}><img src={c.img} alt="" /><b>{c.name}</b><span className="muted small">{CHARACTER_VOICE[c.id]?.label}</span></button>)}
+        {CAST.map((c) => <button key={c.id} className="crew-mem" onClick={() => speak(`Hi, I'm ${c.name}. Ready to study?`, c.id)}><span className="crew-b"><Buddy who={c.id} mood="wave" /></span><b>{c.name}</b><span className="muted small">{CHARACTER_VOICE[c.id]?.label}</span></button>)}
       </div>
 
       <h2 style={{ marginTop: 28, fontSize: 24 }}>Settings</h2>

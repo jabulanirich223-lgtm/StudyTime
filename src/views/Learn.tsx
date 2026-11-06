@@ -4,7 +4,7 @@ import { useGame, today, levelOf } from '../lib/store';
 import { useUI } from '../lib/ui';
 import { nid, startNode } from '../lib/launch';
 import { snd } from '../lib/sound';
-import { confetti } from '../lib/fx';
+import { confetti, burst } from '../lib/fx';
 import { Tock } from '../components/Tock';
 import { Svg, SVG, iconUrl, CourseIcon } from '../components/Icons';
 import type { NodeKind } from '../lib/types';
@@ -57,7 +57,7 @@ export function Learn() {
     const gems = 15 + Math.floor(Math.random() * 26);
     const bonus = Math.random() < 0.4 ? g.addXP(10) : 0;
     useGame.getState().set({ chests: { ...useGame.getState().chests, [cid]: today() }, gems: useGame.getState().gems + gems });
-    snd('chest'); confetti();
+    snd('chest'); confetti(); burst(document.querySelector(`[aria-label^="${unitName(s, ui2)} treasure chest"]`), ['#ffc800', '#ff9600', '#ffffff'], 40);
     ui.open(<div className="center"><div className="chest-open"><div className="rays" /><img src={iconUrl('chestopen')} alt="Open treasure chest" /></div>
       <h2>Chest opened!</h2><p className="pill gem" style={{ display: 'inline-flex', fontSize: 20 }}><Svg html={SVG.gem} />+{gems} gems</p>
       {bonus > 0 && <p style={{ color: 'var(--orange-d)', fontWeight: 900 }}>+{bonus} bonus XP</p>}

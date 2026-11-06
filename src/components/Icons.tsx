@@ -39,7 +39,9 @@ export const NAV_ICON: Record<string, string> = {
 };
 
 const unitIcons = import.meta.glob('../assets/icons/*.png', { eager: true, import: 'default' }) as Record<string, string>;
-export const iconUrl = (name: string) => unitIcons[`../assets/icons/${name}.png`];
+const flatIcons = import.meta.glob('../assets/flaticons/*.svg', { eager: true, import: 'default' }) as Record<string, string>;
+/** Flat vector icon if there is one, otherwise the older painted PNG. */
+export const iconUrl = (name: string) => flatIcons[`../assets/flaticons/${name}.svg`] || unitIcons[`../assets/icons/${name}.png`];
 
 export function Svg({ html, className = '', size }: { html: string; className?: string; size?: number }) {
   return <span className={`svg ${className}`} style={size ? { width: size, height: size } : undefined} dangerouslySetInnerHTML={{ __html: html }} />;

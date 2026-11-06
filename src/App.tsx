@@ -1,3 +1,4 @@
+import { Gallery } from './views/Gallery';
 import { useEffect, useRef } from 'react';
 import { SUBJECTS } from './data';
 import { courseIcon, levelName, trackOf } from './data/catalog';
@@ -93,6 +94,10 @@ function Overlays() {
 }
 
 export default function App() {
+  return location.hash.startsWith('#gallery') ? <Gallery /> : <Main />;
+}
+
+function Main() {
   const g = useGame();
   const ui = useUI();
   useEffect(() => {

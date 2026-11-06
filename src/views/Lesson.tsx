@@ -3,9 +3,10 @@ import { useGame, levelOf, checkBadges } from '../lib/store';
 import { useUI, type SessionCfg } from '../lib/ui';
 import { snd } from '../lib/sound';
 import { speakSegs, stopSpeak, itemSegs, onSpeaking, courseLang, type Seg } from '../lib/speech';
-import { confetti } from '../lib/fx';
+import { confetti, burst, floatText, kick } from '../lib/fx';
 import { shuffle, fmtTime, fmtYear, pick } from '../lib/util';
-import { CAST, face, type CastMember } from '../data/cast';
+import { CAST, type CastMember } from '../data/cast';
+import { Buddy, type Mood as BuddyMood } from '../components/Buddy';
 import { runCode, norm } from '../lib/run';
 import type { Code } from '../lib/types';
 import { Tock } from '../components/Tock';
@@ -56,6 +57,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
   const [mBad, setMBad] = useState<number[]>([]);
   const [combo, setCombo] = useState(0);
   const [lastOk, setLastOk] = useState(false);
+  const [fbMood, setFbMood] = useState<{ ask: BuddyMood; tock: BuddyMood }>({ ask: 'happy', tock: 'cheer' });
   const [now, setNow] = useState(Date.now());
   const [result, setResult] = useState<Result | null>(null);
   const st = useRef({ correct: 0, wrong: [] as Question[], log: [] as Log[], bonus: 0, start: Date.now(), err: false, fb: '', end: cfg.timer ? Date.now() + cfg.timer * 1000 : 0, lastSec: 0, finished: false });
@@ -130,7 +132,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     const mood: Mood = outHearts ? 'sad' : lvAfter > lvBefore ? 'trophy' : acc >= 60 || cfg.kind === 'lightning' ? 'cheer' : 'think';
     setResult({ head, sub: cfg.title, xp, gems, acc, secs, bonus: s.bonus, newBest, apScore, log: s.log, outHearts, perfect, mood });
     if (outHearts) snd('bad');
-    else { snd('done'); if (perfect || cfg.kind === 'lightning' || cfg.kind === 'apsim') confetti(); }
+    else { snd('done'); confetti(); }
     let d = 700;
     if (lvAfter > lvBefore) {
       setTimeout(() => {
@@ -209,6 +211,18 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
     if (!ok && cfg.requeue && !it._rq) setItems((l) => [...l, { ...it, _rq: true }]);
     if (cfg.exam) { snd('tap'); next(); return; }
     snd(ok ? (c && c % 5 === 0 ? 'combo' : 'ok') : 'bad');
+    requestAnimationFrame(() => {
+      const card = document.querySelector('.lesson .qcard') || document.querySelector('.lesson .l-inner');
+      const target = document.querySelector('.lesson .opt.sel, .lesson .typein input, .lesson .slots, .lesson .ide') || card;
+      if (ok) {
+        burst(target); kick(target, 'fx-glow');
+        if (c >= 3) { floatText(document.querySelector('.lesson .bar'), c >= 5 ? `🔥 ${c} in a row!` : `${c} in a row!`, '#ff9600'); kick(document.querySelector('.lesson .combo'), 'fx-pop'); }
+      } else {
+        kick(card, 'fx-shake');
+        if (cfg.hearts && !useGame.getState().unlimited) { floatText(document.querySelector('.lesson .pill.heart, .lesson .hearts'), '-1 ♥', '#ff4b4b'); snd('heart'); }
+      }
+    });
+    setFbMood(ok ? { ask: c >= 5 ? 'fire' : c >= 3 ? 'cheer' : pick(['happy', 'happy', 'proud', 'love'] as BuddyMood[]), tock: c >= 5 ? 'fire' : c >= 3 ? 'cheer' : pick(['happy', 'wink', 'proud'] as BuddyMood[]) } : { ask: pick(['sad', 'oops', 'shocked'] as BuddyMood[]), tock: pick(['sad', 'oops'] as BuddyMood[]) });
     setLastOk(ok); setPhase('feedback');
     s.fb = (ok ? 'Correct! ' : `Not quite. The correct answer is: ${answerText(it)}. `) + ('why' in it && it.why ? it.why : '');
     if (useGame.getState().autoRead && !cfg.fast) void speakSegs([{ text: s.fb }], askerRef.current?.id || 'tock'); else stopSpeak();
@@ -271,7 +285,6 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
   const pct = cfg.timer ? Math.max(0, (left / (cfg.timer * 1000)) * 100) : (i / total) * 100;
   const asker = askerFor(i);
   const kind = it.t === 'card' ? 'New idea' : it.t === 'mc' ? ('ap' in it && it.ap ? 'AP source question' : 'Choose the answer') : it.t === 'tf' ? 'True or false?' : it.t === 'match' ? 'Tap the matching pairs' : it.t === 'order' ? 'Put in order' : it.t === 'parsons' ? 'Arrange the code' : it.t === 'input' ? 'Type the answer' : it.t === 'code' ? 'Code challenge' : 'Date Dash';
-  const footMood: Mood = lastOk ? (combo >= 5 ? 'fire' : 'cheer') : 'sad';
 
   return (
     <div className="lesson" style={{ ['--u' as string]: cfg.color || 'var(--brand)' }}>
@@ -300,7 +313,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
               <div className="qhead"><span className="qkind"><i />{kind}</span>{!cfg.fast && <SpeakBtn segs={() => itemSegs(it, ord, lang)} who={asker?.id || 'tock'} />}</div>
               {'stim' in it && it.stim && <div className="stim">{it.stim}<span className="src">Source: {it.src}</span></div>}
               {asker ? (
-                <div className="asker"><Face c={asker} mood={phase === 'feedback' ? (lastOk ? 'happy' : 'sad') : 'neutral'} /><div className="speech"><span className="who">{asker.name}</span><h2 className="qtext">{it.q}</h2></div></div>
+                <div className="asker"><span className="asker-b"><Buddy who={asker.id} mood={phase === 'feedback' ? fbMood.ask : it.t === 'code' || it.t === 'parsons' ? 'think' : 'neutral'} /></span><div className="speech"><span className="who">{asker.name}</span><h2 className="qtext">{it.q}</h2></div></div>
               ) : <h2 className="qtext">{it.q}</h2>}
 
               {'code' in it && typeof it.code === 'string' && it.code && <pre className="snippet">{it.code}</pre>}
@@ -357,7 +370,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
           {it.t === 'card' ? (<><span /><button className="btn" onClick={next}>Continue</button></>)
           : phase === 'feedback' ? (
             <>
-              <div className="fb"><Tock mood={footMood} /><div><b>{lastOk ? (combo >= 5 ? pick(FIRE) : combo >= 3 ? `${combo} in a row!` : PRAISE[i % PRAISE.length]) : 'Correct answer:'}</b>
+              <div className="fb"><Tock mood={fbMood.tock} /><div><b>{lastOk ? (combo >= 5 ? pick(FIRE) : combo >= 3 ? `${combo} in a row!` : PRAISE[i % PRAISE.length]) : 'Correct answer:'}</b>
                 <span>{lastOk ? ('why' in it ? it.why : '') : answerText(it)}{!lastOk && it.t === 'code' && <pre className="snippet small-pre">{it.solution}</pre>}{!lastOk && 'why' in it && it.why ? <><br />{it.why}</> : null}</span></div></div>
               <div className="foot-btns">{!cfg.fast && <SpeakBtn icon segs={() => [{ text: st.current.fb }]} who={asker?.id || 'tock'} />}<button className="btn" onClick={next}>Continue</button></div>
             </>
@@ -378,7 +391,7 @@ function Results({ r, cfg }: { r: Result; cfg: SessionCfg }) {
     <div className="lesson">
       <div className="l-body"><div className="l-inner">
         <div className="res">
-          <div className="hero">{!r.outHearts && <img src={hero.img} alt={hero.name} />}<Tock mood={r.mood} /></div>
+          <div className="hero"><span className="hero-b"><Buddy who={hero.id} mood={r.outHearts ? 'sad' : r.acc >= 90 ? 'cheer' : r.acc >= 60 ? 'happy' : 'proud'} /></span><Tock mood={r.mood} /></div>
           <h2 style={r.outHearts ? { color: 'var(--red)' } : undefined}>{r.head}</h2>
           <p className="sub">{r.sub}</p>
           {r.outHearts && <p className="muted">Fix your mistakes in Review to refill hearts, or wait. One heart comes back every 20 minutes.</p>}
@@ -403,18 +416,6 @@ function Results({ r, cfg }: { r: Result; cfg: SessionCfg }) {
 }
 
 /** A crew member whose face reacts: neutral while asking, happy/sad after you answer, and a talking mouth while their voice plays. */
-export function Face({ c, mood, size }: { c: CastMember; mood: 'neutral' | 'happy' | 'sad'; size?: number }) {
-  const [talk, setTalk] = useState(false);
-  const [frame, setFrame] = useState(false);
-  useEffect(() => onSpeaking((s) => setTalk(s.on && s.who === c.id)), [c.id]);
-  useEffect(() => {
-    if (!talk) { setFrame(false); return; }
-    const iv = setInterval(() => setFrame((f) => !f), 170);
-    return () => clearInterval(iv);
-  }, [talk]);
-  const src = talk && frame ? face(c, 'talk') : face(c, mood);
-  return <img className={`who-face ${talk ? 'talking' : ''}`} src={src} alt={c.name} style={size ? { width: size } : undefined} />;
-}
 
 const normAns = (x: string) => x.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/['’‘ʼʿʾ`´]/g, '').replace(/[^\p{L}\p{N}.\-]+/gu, ' ').replace(/\s+/g, ' ').trim();
 

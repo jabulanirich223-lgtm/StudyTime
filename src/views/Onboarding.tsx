@@ -6,6 +6,7 @@ import { snd } from '../lib/sound';
 import { Tock } from '../components/Tock';
 import { Svg, SVG, CourseIcon } from '../components/Icons';
 import { CAST } from '../data/cast';
+import { Buddy, type Mood } from '../components/Buddy';
 
 const GOALS: [number, string, string][] = [[10, 'Casual', '5 min / day'], [20, 'Regular', '10 min / day'], [30, 'Serious', '15 min / day'], [50, 'Intense', '25 min / day']];
 
@@ -18,12 +19,12 @@ export function Onboarding() {
   const [step, setStep] = useState(0);
   const [subject, setSubject] = useState<string | null>(null);
   const [goal, setGoal] = useState(30);
-  const pos = [
-    { c: CAST[0], x: '2%', y: '28%', h: 230, r: -6 },
-    { c: CAST[1], x: '22%', y: '0%', h: 220, r: 4 },
-    { c: CAST[3], x: '48%', y: '44%', h: 230, r: 0 },
-    { c: CAST[2], x: '66%', y: '4%', h: 210, r: 6 },
-    { c: CAST[5], x: '26%', y: '52%', h: 200, r: -3 },
+  const pos: { c: (typeof CAST)[number]; x: string; y: string; w: number; m: Mood }[] = [
+    { c: CAST[0], x: '0%', y: '30%', w: 150, m: 'wave' },
+    { c: CAST[1], x: '18%', y: '2%', w: 140, m: 'cheer' },
+    { c: CAST[3], x: '45%', y: '38%', w: 150, m: 'happy' },
+    { c: CAST[2], x: '60%', y: '0%', w: 140, m: 'wink' },
+    { c: CAST[4], x: '24%', y: '56%', w: 118, m: 'think' },
   ];
 
   if (step === 0) return (
@@ -31,7 +32,7 @@ export function Onboarding() {
       <div className="onb-top"><Logo /><span className="muted small" style={{ textTransform: 'uppercase', letterSpacing: '.06em' }}>Academics · Languages · Coding · Money · Tech</span></div>
       <div className="onb-hero">
         <div className="onb-art" aria-hidden="true">
-          {pos.map((p) => <img key={p.c.id} src={p.c.img} alt="" style={{ left: p.x, top: p.y, height: p.h, transform: `rotate(${p.r}deg)` }} />)}
+          {pos.map((p) => <div key={p.c.id} className="onb-b" style={{ left: p.x, top: p.y, width: p.w }}><Buddy who={p.c.id} mood={p.m} /></div>)}
           <div className="tock-wrap" style={{ position: 'absolute', left: '78%', top: '48%', width: 120 }}><Tock mood="cheer" /></div>
         </div>
         <div className="onb-copy">
