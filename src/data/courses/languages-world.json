@@ -1,0 +1,6680 @@
+{
+ "ja-1": {
+  "name": "Japanese · Beginner",
+  "units": [
+   {
+    "title": "Greetings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Everyday greetings",
+      "b": "こんにちは (konnichiwa) means hello. おはよう (ohayou) is good morning, and こんばんは (konbanwa) is good evening. Use them at different times of the day."
+     },
+     {
+      "h": "Thanks and sorry",
+      "b": "ありがとう (arigatou) means thank you. すみません (sumimasen) means excuse me or sorry. さようなら (sayounara) means goodbye."
+     },
+     {
+      "h": "Introducing yourself",
+      "b": "Say はじめまして (hajimemashite) when you meet someone. Then say わたしは ○○ です (watashi wa ○○ desu), which means I am ○○."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does こんにちは (konnichiwa) mean?",
+      "o": [
+       "Good night",
+       "Hello",
+       "Thank you",
+       "Goodbye"
+      ],
+      "a": 1,
+      "why": "こんにちは (konnichiwa) is the standard daytime hello."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'thank you' in Japanese?",
+      "o": [
+       "おはよう (ohayou)",
+       "さようなら (sayounara)",
+       "ありがとう (arigatou)",
+       "こんばんは (konbanwa)"
+      ],
+      "a": 2,
+      "why": "ありがとう (arigatou) means thank you."
+     },
+     {
+      "t": "mc",
+      "q": "Which greeting do you use in the morning?",
+      "o": [
+       "おはよう (ohayou)",
+       "こんばんは (konbanwa)",
+       "おやすみ (oyasumi)",
+       "さようなら (sayounara)"
+      ],
+      "a": 0,
+      "why": "おはよう (ohayou) means good morning."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am Ken' politely?",
+      "o": [
+       "ケン を たべます (Ken o tabemasu)",
+       "ケン が すき (Ken ga suki)",
+       "ケン に いきます (Ken ni ikimasu)",
+       "わたしは ケン です (watashi wa Ken desu)"
+      ],
+      "a": 3,
+      "why": "わたしは ○○ です (watashi wa ○○ desu) is the pattern for I am ○○."
+     },
+     {
+      "t": "tf",
+      "q": "さようなら (sayounara) means goodbye.",
+      "a": true,
+      "why": "さようなら (sayounara) is used to say goodbye."
+     },
+     {
+      "t": "match",
+      "q": "Match each Japanese greeting to its meaning",
+      "pairs": [
+       [
+        "おはよう (ohayou)",
+        "Good morning"
+       ],
+       [
+        "こんばんは (konbanwa)",
+        "Good evening"
+       ],
+       [
+        "ありがとう (arigatou)",
+        "Thank you"
+       ],
+       [
+        "さようなら (sayounara)",
+        "Goodbye"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these greetings in order from morning to night",
+      "items": [
+       [
+        "おはよう (ohayou)",
+        1
+       ],
+       [
+        "こんにちは (konnichiwa)",
+        2
+       ],
+       [
+        "こんばんは (konbanwa)",
+        3
+       ],
+       [
+        "おやすみ (oyasumi)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 5",
+      "b": "いち (ichi) is 1, に (ni) is 2, さん (san) is 3, よん (yon) is 4, and ご (go) is 5. In writing they look like 一, 二, 三."
+     },
+     {
+      "h": "Numbers 6 to 10",
+      "b": "ろく (roku) is 6, なな (nana) is 7, はち (hachi) is 8, きゅう (kyuu) is 9, and じゅう (juu) is 10."
+     },
+     {
+      "h": "Family words",
+      "b": "おかあさん (okaasan) is mother and おとうさん (otousan) is father. いもうと (imouto) is younger sister. かぞく (kazoku) means family."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number is さん (san)?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "さん (san) is 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'five' in Japanese?",
+      "o": [
+       "ご (go)",
+       "ろく (roku)",
+       "はち (hachi)",
+       "に (ni)"
+      ],
+      "a": 0,
+      "why": "ご (go) is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does おかあさん (okaasan) mean?",
+      "o": [
+       "Father",
+       "Sister",
+       "Grandfather",
+       "Mother"
+      ],
+      "a": 3,
+      "why": "おかあさん (okaasan) means mother."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'father' politely?",
+      "o": [
+       "おかあさん (okaasan)",
+       "おとうさん (otousan)",
+       "いもうと (imouto)",
+       "かぞく (kazoku)"
+      ],
+      "a": 1,
+      "why": "おとうさん (otousan) means father."
+     },
+     {
+      "t": "tf",
+      "q": "はち (hachi) means seven.",
+      "a": false,
+      "why": "はち (hachi) means eight. Seven is なな (nana)."
+     },
+     {
+      "t": "match",
+      "q": "Match each number word to its number",
+      "pairs": [
+       [
+        "に (ni)",
+        "2"
+       ],
+       [
+        "ご (go)",
+        "5"
+       ],
+       [
+        "きゅう (kyuu)",
+        "9"
+       ],
+       [
+        "じゅう (juu)",
+        "10"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "いち (ichi)",
+        1
+       ],
+       [
+        "さん (san)",
+        2
+       ],
+       [
+        "ろく (roku)",
+        3
+       ],
+       [
+        "きゅう (kyuu)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Food words",
+      "b": "ごはん (gohan) is rice or a meal. さかな (sakana) is fish and にく (niku) is meat. りんご (ringo) is apple and パン (pan) is bread."
+     },
+     {
+      "h": "Drinks and verbs",
+      "b": "みず (mizu) is water and おちゃ (ocha) is tea. たべます (tabemasu) means eat and のみます (nomimasu) means drink."
+     },
+     {
+      "h": "Likes and requests",
+      "b": "おいしい (oishii) means delicious. すき (suki) means like. ください (kudasai) means please give me."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does みず (mizu) mean?",
+      "o": [
+       "Tea",
+       "Rice",
+       "Fish",
+       "Water"
+      ],
+      "a": 3,
+      "why": "みず (mizu) means water."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I drink tea'?",
+      "o": [
+       "おちゃを たべます (ocha o tabemasu)",
+       "おちゃを のみます (ocha o nomimasu)",
+       "みずを たべます (mizu o tabemasu)",
+       "ごはんを のみます (gohan o nomimasu)"
+      ],
+      "a": 1,
+      "why": "のみます (nomimasu) is the verb for drinking, and おちゃ (ocha) is tea."
+     },
+     {
+      "t": "mc",
+      "q": "What does おいしい (oishii) mean?",
+      "o": [
+       "Delicious",
+       "Cold",
+       "Hungry",
+       "Big"
+      ],
+      "a": 0,
+      "why": "おいしい (oishii) means delicious."
+     },
+     {
+      "t": "mc",
+      "q": "Which food is りんご (ringo)?",
+      "o": [
+       "Bread",
+       "Fish",
+       "Apple",
+       "Meat"
+      ],
+      "a": 2,
+      "why": "りんご (ringo) means apple."
+     },
+     {
+      "t": "tf",
+      "q": "パン (pan) means bread.",
+      "a": true,
+      "why": "パン (pan) is bread, borrowed from Portuguese."
+     },
+     {
+      "t": "match",
+      "q": "Match each food word to its meaning",
+      "pairs": [
+       [
+        "さかな (sakana)",
+        "Fish"
+       ],
+       [
+        "にく (niku)",
+        "Meat"
+       ],
+       [
+        "ごはん (gohan)",
+        "Rice or meal"
+       ],
+       [
+        "おちゃ (ocha)",
+        "Tea"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat fish every day",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "まいにち (mainichi)",
+        2
+       ],
+       [
+        "さかなを (sakana o)",
+        3
+       ],
+       [
+        "たべます (tabemasu)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "です and questions",
+      "b": "です (desu) is like am, is, or are. Add か (ka) at the end to make a question. がっこうですか (gakkou desu ka) means Is it school?"
+     },
+     {
+      "h": "Polite verbs",
+      "b": "Polite verbs end in ます (masu). いきます (ikimasu) means go, きます (kimasu) means come, and みます (mimasu) means see or watch."
+     },
+     {
+      "h": "Negatives and existing",
+      "b": "Change ます (masu) to ません (masen) for no. たべません (tabemasen) means do not eat. Use います (imasu) for living things and あります (arimasu) for objects."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does か (ka) at the end of a sentence do?",
+      "o": [
+       "Makes it a question",
+       "Makes it past tense",
+       "Makes it negative",
+       "Means thank you"
+      ],
+      "a": 0,
+      "why": "か (ka) turns a sentence into a question."
+     },
+     {
+      "t": "mc",
+      "q": "What does いきます (ikimasu) mean?",
+      "o": [
+       "Eat",
+       "Come",
+       "Go",
+       "Sleep"
+      ],
+      "a": 2,
+      "why": "いきます (ikimasu) means go."
+     },
+     {
+      "t": "mc",
+      "q": "What is the negative of たべます (tabemasu)?",
+      "o": [
+       "たべました (tabemashita)",
+       "たべません (tabemasen)",
+       "たべますか (tabemasu ka)",
+       "たべて (tabete)"
+      ],
+      "a": 1,
+      "why": "Replace ます (masu) with ません (masen) to make a verb negative."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence means 'There is a cat'?",
+      "o": [
+       "ねこが あります (neko ga arimasu)",
+       "ねこを たべます (neko o tabemasu)",
+       "ねこが いきます (neko ga ikimasu)",
+       "ねこが います (neko ga imasu)"
+      ],
+      "a": 3,
+      "why": "Animals are living things, so they use います (imasu)."
+     },
+     {
+      "t": "tf",
+      "q": "がっこう (gakkou) means school.",
+      "a": true,
+      "why": "がっこう (gakkou) is the word for school."
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its meaning",
+      "pairs": [
+       [
+        "いきます (ikimasu)",
+        "Go"
+       ],
+       [
+        "みます (mimasu)",
+        "See or watch"
+       ],
+       [
+        "のみます (nomimasu)",
+        "Drink"
+       ],
+       [
+        "きます (kimasu)",
+        "Come"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I go to school every day",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "まいにち (mainichi)",
+        2
+       ],
+       [
+        "がっこうに (gakkou ni)",
+        3
+       ],
+       [
+        "いきます (ikimasu)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ja-2": {
+  "name": "Japanese · Intermediate",
+  "units": [
+   {
+    "title": "Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Polite past",
+      "b": "Change ます (masu) to ました (mashita) for the past. たべます (tabemasu) becomes たべました (tabemashita), which means ate."
+     },
+     {
+      "h": "Past negative",
+      "b": "Use ませんでした (masen deshita) for did not. いきませんでした (ikimasen deshita) means did not go. The past of です (desu) is でした (deshita)."
+     },
+     {
+      "h": "Time words",
+      "b": "きのう (kinou) means yesterday. けさ (kesa) means this morning. These words often come near the start of the sentence."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does たべました (tabemashita) mean?",
+      "o": [
+       "Will eat",
+       "Do not eat",
+       "Ate",
+       "Want to eat"
+      ],
+      "a": 2,
+      "why": "ました (mashita) shows past tense, so it means ate."
+     },
+     {
+      "t": "mc",
+      "q": "What does きのう (kinou) mean?",
+      "o": [
+       "Yesterday",
+       "Tomorrow",
+       "Today",
+       "Next week"
+      ],
+      "a": 0,
+      "why": "きのう (kinou) means yesterday."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not go'?",
+      "o": [
+       "いきます (ikimasu)",
+       "いきました (ikimashita)",
+       "いきません (ikimasen)",
+       "いきませんでした (ikimasen deshita)"
+      ],
+      "a": 3,
+      "why": "ませんでした (masen deshita) is the polite past negative."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past of です (desu)?",
+      "o": [
+       "でした (deshita)",
+       "ません (masen)",
+       "ました (mashita)",
+       "ですか (desu ka)"
+      ],
+      "a": 0,
+      "why": "でした (deshita) is the past form of です (desu)."
+     },
+     {
+      "t": "tf",
+      "q": "ませんでした (masen deshita) is the polite past negative ending.",
+      "a": true,
+      "why": "It means did not, for example たべませんでした (tabemasen deshita) means did not eat."
+     },
+     {
+      "t": "match",
+      "q": "Match each present verb to its past form",
+      "pairs": [
+       [
+        "たべます (tabemasu)",
+        "たべました (tabemashita)"
+       ],
+       [
+        "いきます (ikimasu)",
+        "いきました (ikimashita)"
+       ],
+       [
+        "のみます (nomimasu)",
+        "のみました (nomimashita)"
+       ],
+       [
+        "みます (mimasu)",
+        "みました (mimashita)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I watched a movie yesterday",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "きのう (kinou)",
+        2
+       ],
+       [
+        "えいがを (eiga o)",
+        3
+       ],
+       [
+        "みました (mimashita)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Asking where",
+      "b": "どこ (doko) means where. えきは どこですか (eki wa doko desu ka) means Where is the station? The word えき (eki) means station."
+     },
+     {
+      "h": "Directions",
+      "b": "みぎ (migi) is right and ひだり (hidari) is left. まっすぐ (massugu) is straight. まがります (magarimasu) means turn."
+     },
+     {
+      "h": "Places and distance",
+      "b": "びょういん (byouin) is hospital and ぎんこう (ginkou) is bank. ちかい (chikai) means near and とおい (tooi) means far."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does えきは どこですか (eki wa doko desu ka) mean?",
+      "o": [
+       "Is this a station?",
+       "Where is the station?",
+       "I like the station",
+       "The station is big"
+      ],
+      "a": 1,
+      "why": "どこ (doko) means where, and えき (eki) means station."
+     },
+     {
+      "t": "mc",
+      "q": "What does みぎ (migi) mean?",
+      "o": [
+       "Left",
+       "Straight",
+       "Back",
+       "Right"
+      ],
+      "a": 3,
+      "why": "みぎ (migi) means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does まっすぐ (massugu) mean?",
+      "o": [
+       "Straight ahead",
+       "Turn",
+       "Far",
+       "Stop"
+      ],
+      "a": 0,
+      "why": "まっすぐ (massugu) means straight ahead."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'Please turn left'?",
+      "o": [
+       "みぎに まがってください (migi ni magatte kudasai)",
+       "まっすぐ たべてください (massugu tabete kudasai)",
+       "ひだりに まがってください (hidari ni magatte kudasai)",
+       "ひだりは どこですか (hidari wa doko desu ka)"
+      ],
+      "a": 2,
+      "why": "ひだり (hidari) is left, and まがってください (magatte kudasai) means please turn."
+     },
+     {
+      "t": "tf",
+      "q": "とおい (tooi) means near.",
+      "a": false,
+      "why": "とおい (tooi) means far. Near is ちかい (chikai)."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "えき (eki)",
+        "Station"
+       ],
+       [
+        "びょういん (byouin)",
+        "Hospital"
+       ],
+       [
+        "ぎんこう (ginkou)",
+        "Bank"
+       ],
+       [
+        "がっこう (gakkou)",
+        "School"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, where is the bank?",
+      "items": [
+       [
+        "すみません (sumimasen)",
+        1
+       ],
+       [
+        "ぎんこうは (ginkou wa)",
+        2
+       ],
+       [
+        "どこ (doko)",
+        3
+       ],
+       [
+        "ですか (desu ka)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Transport",
+      "b": "でんしゃ (densha) is train and ひこうき (hikouki) is airplane. きっぷ (kippu) is ticket. りょこう (ryokou) means trip."
+     },
+     {
+      "h": "Prices",
+      "b": "いくらですか (ikura desu ka) means How much is it? たかい (takai) means expensive or high. やすい (yasui) means cheap."
+     },
+     {
+      "h": "Wanting things",
+      "b": "Use ○○が ほしいです (○○ ga hoshii desu) for I want ○○. きっぷが ほしいです (kippu ga hoshii desu) means I want a ticket."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does いくらですか (ikura desu ka) mean?",
+      "o": [
+       "Where is it?",
+       "How much is it?",
+       "What is it?",
+       "Who is it?"
+      ],
+      "a": 1,
+      "why": "いくら (ikura) means how much."
+     },
+     {
+      "t": "mc",
+      "q": "What does でんしゃ (densha) mean?",
+      "o": [
+       "Airplane",
+       "Hotel",
+       "Bus",
+       "Train"
+      ],
+      "a": 3,
+      "why": "でんしゃ (densha) means train."
+     },
+     {
+      "t": "mc",
+      "q": "What does たかい (takai) mean when talking about a price?",
+      "o": [
+       "Expensive",
+       "Cheap",
+       "Free",
+       "Small"
+      ],
+      "a": 0,
+      "why": "たかい (takai) means high or expensive."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want a ticket'?",
+      "o": [
+       "きっぷを みます (kippu o mimasu)",
+       "きっぷは どこですか (kippu wa doko desu ka)",
+       "きっぷが たかい (kippu ga takai)",
+       "きっぷが ほしいです (kippu ga hoshii desu)"
+      ],
+      "a": 3,
+      "why": "ほしいです (hoshii desu) means want."
+     },
+     {
+      "t": "tf",
+      "q": "やすい (yasui) means expensive.",
+      "a": false,
+      "why": "やすい (yasui) means cheap."
+     },
+     {
+      "t": "match",
+      "q": "Match each travel word to its meaning",
+      "pairs": [
+       [
+        "ひこうき (hikouki)",
+        "Airplane"
+       ],
+       [
+        "ホテル (hoteru)",
+        "Hotel"
+       ],
+       [
+        "きっぷ (kippu)",
+        "Ticket"
+       ],
+       [
+        "りょこう (ryokou)",
+        "Trip"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: How much is this ticket?",
+      "items": [
+       [
+        "この (kono)",
+        1
+       ],
+       [
+        "きっぷは (kippu wa)",
+        2
+       ],
+       [
+        "いくら (ikura)",
+        3
+       ],
+       [
+        "ですか (desu ka)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Reasons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Describing things",
+      "b": "おもしろい (omoshiroi) means interesting or fun. つまらない (tsumaranai) means boring. かんたん (kantan) means easy and むずかしい (muzukashii) means difficult."
+     },
+     {
+      "h": "Giving an opinion",
+      "b": "Add と おもいます (to omoimasu) to say I think. おもしろいと おもいます (omoshiroi to omoimasu) means I think it is fun."
+     },
+     {
+      "h": "Reasons and contrast",
+      "b": "どうして (doushite) means why. から (kara) means because and goes after the reason. けど (kedo) means but."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I think it is fun'?",
+      "o": [
+       "おもしろいと おもいます (omoshiroi to omoimasu)",
+       "おもしろいを たべます (omoshiroi o tabemasu)",
+       "つまらないですか (tsumaranai desu ka)",
+       "おもしろいに いきます (omoshiroi ni ikimasu)"
+      ],
+      "a": 0,
+      "why": "と おもいます (to omoimasu) means I think."
+     },
+     {
+      "t": "mc",
+      "q": "What does むずかしい (muzukashii) mean?",
+      "o": [
+       "Easy",
+       "Boring",
+       "Difficult",
+       "Cheap"
+      ],
+      "a": 2,
+      "why": "むずかしい (muzukashii) means difficult."
+     },
+     {
+      "t": "mc",
+      "q": "What does どうして (doushite) mean?",
+      "o": [
+       "Where",
+       "When",
+       "Who",
+       "Why"
+      ],
+      "a": 3,
+      "why": "どうして (doushite) means why."
+     },
+     {
+      "t": "mc",
+      "q": "What does から (kara) mean after a reason?",
+      "o": [
+       "But",
+       "Because",
+       "Also",
+       "Maybe"
+      ],
+      "a": 1,
+      "why": "から (kara) after a clause means because."
+     },
+     {
+      "t": "tf",
+      "q": "きらい (kirai) means like.",
+      "a": false,
+      "why": "きらい (kirai) means dislike. Like is すき (suki)."
+     },
+     {
+      "t": "match",
+      "q": "Match each describing word to its meaning",
+      "pairs": [
+       [
+        "おもしろい (omoshiroi)",
+        "Interesting"
+       ],
+       [
+        "つまらない (tsumaranai)",
+        "Boring"
+       ],
+       [
+        "かんたん (kantan)",
+        "Easy"
+       ],
+       [
+        "むずかしい (muzukashii)",
+        "Difficult"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I think Japanese is interesting",
+      "items": [
+       [
+        "わたしは (watashi wa)",
+        1
+       ],
+       [
+        "にほんごは (nihongo wa)",
+        2
+       ],
+       [
+        "おもしろいと (omoshiroi to)",
+        3
+       ],
+       [
+        "おもいます (omoimasu)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "geography": {
+  "name": "World Geography",
+  "units": [
+   {
+    "title": "Maps and Earth Basics",
+    "period": "Map Skills",
+    "learn": [
+     {
+      "h": "Latitude and longitude",
+      "b": "Latitude lines run east-west and measure distance north or south of the equator. Longitude lines run north-south and measure distance east or west of the prime meridian, which passes through Greenwich, England."
+     },
+     {
+      "h": "Hemispheres and continents",
+      "b": "The equator splits Earth into Northern and Southern Hemispheres. There are seven continents: Africa, Antarctica, Asia, Australia, Europe, North America, and South America."
+     },
+     {
+      "h": "Reading a map",
+      "b": "A legend explains the symbols on a map. A scale shows how map distance matches real distance. The Pacific is the largest ocean."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which lines measure distance north or south of the equator?",
+      "o": [
+       "Longitude",
+       "Latitude",
+       "Meridians",
+       "Time zones"
+      ],
+      "a": 1,
+      "why": "Latitude measures north-south position."
+     },
+     {
+      "t": "mc",
+      "q": "The prime meridian passes through which place?",
+      "o": [
+       "Paris",
+       "Cairo",
+       "Greenwich, England",
+       "Rome"
+      ],
+      "a": 2,
+      "why": "Greenwich is at 0 degrees longitude."
+     },
+     {
+      "t": "mc",
+      "q": "How many continents are there?",
+      "o": [
+       "Five",
+       "Six",
+       "Eight",
+       "Seven"
+      ],
+      "a": 3,
+      "why": "The common model counts seven continents."
+     },
+     {
+      "t": "mc",
+      "q": "What does the equator divide Earth into?",
+      "o": [
+       "Northern and Southern Hemispheres",
+       "Eastern and Western Hemispheres",
+       "Land and water",
+       "Tropics and poles"
+      ],
+      "a": 0,
+      "why": "The equator is 0 degrees latitude."
+     },
+     {
+      "t": "tf",
+      "q": "The Pacific Ocean is the largest ocean on Earth.",
+      "a": true,
+      "why": "It covers about one third of Earth's surface."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Latitude",
+        "Distance north or south of equator"
+       ],
+       [
+        "Longitude",
+        "Distance east or west of prime meridian"
+       ],
+       [
+        "Scale",
+        "Map distance versus real distance"
+       ],
+       [
+        "Legend",
+        "Key to map symbols"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these oceans from largest to smallest",
+      "items": [
+       [
+        "Pacific",
+        1
+       ],
+       [
+        "Atlantic",
+        2
+       ],
+       [
+        "Indian",
+        3
+       ],
+       [
+        "Arctic",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Landforms and Climate",
+    "period": "Physical Geography",
+    "learn": [
+     {
+      "h": "Landforms",
+      "b": "A peninsula is land surrounded by water on three sides. A plateau is high, flat land. A delta forms where a river meets the sea. An archipelago is a group of islands. Mount Everest is the highest mountain above sea level."
+     },
+     {
+      "h": "Climate and weather",
+      "b": "Weather is what the air is like today. Climate is the usual weather pattern over many years. Places near the equator are usually warm, and places near the poles are cold."
+     },
+     {
+      "h": "Biomes and Earth's layers",
+      "b": "A biome is a large natural region, such as rainforest, desert, or tundra. Tundra has permanently frozen ground. Earth has four layers: crust, mantle, outer core, and inner core."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which is the highest mountain above sea level?",
+      "o": [
+       "K2",
+       "Mount Everest",
+       "Denali",
+       "Kilimanjaro"
+      ],
+      "a": 1,
+      "why": "Everest is about 8,849 meters high."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the largest hot desert in the world?",
+      "o": [
+       "Gobi",
+       "Kalahari",
+       "Sahara",
+       "Atacama"
+      ],
+      "a": 2,
+      "why": "The Sahara in Africa is the largest hot desert."
+     },
+     {
+      "t": "mc",
+      "q": "What is climate?",
+      "o": [
+       "Today's temperature",
+       "A storm that lasts days",
+       "Tomorrow's forecast",
+       "The usual weather pattern over many years"
+      ],
+      "a": 3,
+      "why": "Climate is long-term; weather is short-term."
+     },
+     {
+      "t": "mc",
+      "q": "Which biome has permanently frozen ground?",
+      "o": [
+       "Tundra",
+       "Savanna",
+       "Rainforest",
+       "Desert"
+      ],
+      "a": 0,
+      "why": "Tundra has permafrost beneath the surface."
+     },
+     {
+      "t": "tf",
+      "q": "Tropical rainforests receive very little rainfall.",
+      "a": false,
+      "why": "Rainforests are among the wettest places on Earth."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Peninsula",
+        "Land with water on three sides"
+       ],
+       [
+        "Plateau",
+        "High flat land"
+       ],
+       [
+        "Delta",
+        "Land formed at a river's mouth"
+       ],
+       [
+        "Archipelago",
+        "Group of islands"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Earth's layers in order from the surface to the center",
+      "items": [
+       [
+        "Crust",
+        1
+       ],
+       [
+        "Mantle",
+        2
+       ],
+       [
+        "Outer core",
+        3
+       ],
+       [
+        "Inner core",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "People and Places",
+    "period": "Human Geography",
+    "learn": [
+     {
+      "h": "Population",
+      "b": "India and China have the largest populations in the world. Population density means how many people live in a certain area. Many people now live in cities, a trend called urbanization."
+     },
+     {
+      "h": "Migration",
+      "b": "Migration is moving from one place to live in another. Push factors, like war or famine, drive people away. Pull factors, like jobs or safety, attract them. An emigrant leaves a country and an immigrant enters one."
+     },
+     {
+      "h": "Culture",
+      "b": "Culture means the customs, beliefs, and language a group shares. Mandarin Chinese has the most native speakers of any language. A capital city is the seat of government and is not always the largest city."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which two countries have the largest populations?",
+      "o": [
+       "United States and Brazil",
+       "Russia and Japan",
+       "India and China",
+       "Nigeria and Indonesia"
+      ],
+      "a": 2,
+      "why": "India and China each have more than 1.4 billion people."
+     },
+     {
+      "t": "mc",
+      "q": "What is urbanization?",
+      "o": [
+       "Growth of farmland",
+       "Decline of trade",
+       "Moving to remote villages",
+       "Growth of cities as more people live there"
+      ],
+      "a": 3,
+      "why": "Urbanization means a rising share of people living in cities."
+     },
+     {
+      "t": "mc",
+      "q": "Which is an example of a push factor in migration?",
+      "o": [
+       "A job offer abroad",
+       "War in the home country",
+       "Good schools overseas",
+       "Family living abroad"
+      ],
+      "a": 1,
+      "why": "Push factors drive people away from their home."
+     },
+     {
+      "t": "mc",
+      "q": "Which language has the most native speakers?",
+      "o": [
+       "Mandarin Chinese",
+       "English",
+       "Hindi",
+       "Arabic"
+      ],
+      "a": 0,
+      "why": "Mandarin has more native speakers than any other language."
+     },
+     {
+      "t": "tf",
+      "q": "A country's capital city is always its largest city.",
+      "a": false,
+      "why": "For example, Canberra is Australia's capital, but Sydney is larger."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Immigrant",
+        "Person moving into a country"
+       ],
+       [
+        "Emigrant",
+        "Person leaving a country"
+       ],
+       [
+        "Culture",
+        "Shared customs and beliefs"
+       ],
+       [
+        "Population density",
+        "People per area"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these settlements from smallest to largest",
+      "items": [
+       [
+        "Village",
+        1
+       ],
+       [
+        "Town",
+        2
+       ],
+       [
+        "City",
+        3
+       ],
+       [
+        "Megacity",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Regions of the World",
+    "period": "Countries and Capitals",
+    "learn": [
+     {
+      "h": "Big countries and rivers",
+      "b": "Russia is the largest country by area, followed by Canada and China. The Nile flows through Egypt and the Amazon flows through Brazil."
+     },
+     {
+      "h": "Capitals",
+      "b": "Every country has a capital. Tokyo is the capital of Japan, Cairo of Egypt, Ottawa of Canada, Nairobi of Kenya, and Brasilia of Brazil."
+     },
+     {
+      "h": "Continents and countries",
+      "b": "Africa has the most countries of any continent. Australia is both a country and a continent. Oslo is far north, Rome is in the middle latitudes, Nairobi is near the equator, and Cape Town is in the far south."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the capital of Brazil?",
+      "o": [
+       "Rio de Janeiro",
+       "Sao Paulo",
+       "Brasilia",
+       "Buenos Aires"
+      ],
+      "a": 2,
+      "why": "Brasilia became the capital in 1960."
+     },
+     {
+      "t": "mc",
+      "q": "Which continent has the most countries?",
+      "o": [
+       "Asia",
+       "Africa",
+       "Europe",
+       "South America"
+      ],
+      "a": 1,
+      "why": "Africa has 54 countries."
+     },
+     {
+      "t": "mc",
+      "q": "Which river flows through Egypt?",
+      "o": [
+       "Amazon",
+       "Danube",
+       "Ganges",
+       "Nile"
+      ],
+      "a": 3,
+      "why": "The Nile runs north through Egypt to the Mediterranean."
+     },
+     {
+      "t": "mc",
+      "q": "Which country is the largest by area?",
+      "o": [
+       "Russia",
+       "Canada",
+       "China",
+       "Brazil"
+      ],
+      "a": 0,
+      "why": "Russia covers more than 17 million square kilometers."
+     },
+     {
+      "t": "tf",
+      "q": "Australia is both a country and a continent.",
+      "a": true,
+      "why": "The country of Australia covers most of the Australian continent."
+     },
+     {
+      "t": "match",
+      "q": "Match each country to its capital",
+      "pairs": [
+       [
+        "Japan",
+        "Tokyo"
+       ],
+       [
+        "Egypt",
+        "Cairo"
+       ],
+       [
+        "Canada",
+        "Ottawa"
+       ],
+       [
+        "Kenya",
+        "Nairobi"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these cities in order from north to south",
+      "items": [
+       [
+        "Oslo",
+        1
+       ],
+       [
+        "Rome",
+        2
+       ],
+       [
+        "Nairobi",
+        3
+       ],
+       [
+        "Cape Town",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "psych": {
+  "name": "Psychology",
+  "units": [
+   {
+    "title": "What Is Psychology?",
+    "period": "Basics",
+    "learn": [
+     {
+      "h": "The science of the mind",
+      "b": "Psychology is the scientific study of behavior and mental processes. Wilhelm Wundt opened the first psychology lab in 1879. Today psychologists study things like memory, emotions, and relationships."
+     },
+     {
+      "h": "Research methods",
+      "b": "Surveys ask many people questions. A case study looks deeply at one person. In an experiment, researchers assign people randomly to groups, so they can test cause and effect."
+     },
+     {
+      "h": "Correlation",
+      "b": "A correlation means two things are related. It does not prove that one causes the other. Only a well-designed experiment can show cause and effect."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Psychology is the scientific study of what?",
+      "o": [
+       "Behavior and mental processes",
+       "Only dreams",
+       "Only the brain's size",
+       "Human history"
+      ],
+      "a": 0,
+      "why": "That is the standard definition of psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Who opened the first psychology lab in 1879?",
+      "o": [
+       "Sigmund Freud",
+       "Wilhelm Wundt",
+       "B.F. Skinner",
+       "Carl Rogers"
+      ],
+      "a": 1,
+      "why": "Wundt's lab in Leipzig is seen as the start of modern psychology."
+     },
+     {
+      "t": "mc",
+      "q": "Which method can show cause and effect?",
+      "o": [
+       "Survey",
+       "Case study",
+       "Experiment",
+       "Naturalistic observation"
+      ],
+      "a": 2,
+      "why": "Experiments control variables and use random assignment."
+     },
+     {
+      "t": "mc",
+      "q": "What does a correlation tell us?",
+      "o": [
+       "One thing causes the other",
+       "The two things are opposites",
+       "The data is false",
+       "Two things are related, but one may not cause the other"
+      ],
+      "a": 3,
+      "why": "Correlation does not prove causation."
+     },
+     {
+      "t": "tf",
+      "q": "A correlation proves that one variable causes the other.",
+      "a": false,
+      "why": "A third factor may explain the link."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Hypothesis",
+        "Testable prediction"
+       ],
+       [
+        "Variable",
+        "Factor that can change"
+       ],
+       [
+        "Survey",
+        "Questions given to many people"
+       ],
+       [
+        "Case study",
+        "In-depth look at one person"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the scientific method in order",
+      "items": [
+       [
+        "Ask a question",
+        1
+       ],
+       [
+        "Form a hypothesis",
+        2
+       ],
+       [
+        "Collect data",
+        3
+       ],
+       [
+        "Draw conclusions",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Brain and Behavior",
+    "period": "Biology and the Mind",
+    "learn": [
+     {
+      "h": "Neurons",
+      "b": "A neuron is a nerve cell. It receives signals through dendrites, passes them down the axon, and releases chemical messengers called neurotransmitters into the synapse, the small gap before the next neuron."
+     },
+     {
+      "h": "Brain parts",
+      "b": "The cerebellum controls balance and coordination. The hippocampus helps form new memories. The amygdala handles fear and emotion. The frontal lobe helps with planning and decisions."
+     },
+     {
+      "h": "Two sides",
+      "b": "The brain has two hemispheres. The left hemisphere mostly controls the right side of the body, and the right hemisphere mostly controls the left side."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which brain part helps control balance and coordination?",
+      "o": [
+       "Cerebrum",
+       "Cerebellum",
+       "Hippocampus",
+       "Amygdala"
+      ],
+      "a": 1,
+      "why": "The cerebellum fine-tunes movement and balance."
+     },
+     {
+      "t": "mc",
+      "q": "What is the main job of the hippocampus?",
+      "o": [
+       "Controlling hunger",
+       "Seeing colors",
+       "Forming new memories",
+       "Breathing"
+      ],
+      "a": 2,
+      "why": "Damage to the hippocampus makes it hard to form new memories."
+     },
+     {
+      "t": "mc",
+      "q": "What are neurotransmitters?",
+      "o": [
+       "Bones in the skull",
+       "Brain cells that protect neurons",
+       "Electric wires",
+       "Chemical messengers between neurons"
+      ],
+      "a": 3,
+      "why": "They cross the synapse to carry signals."
+     },
+     {
+      "t": "mc",
+      "q": "Which brain part is most linked to fear and emotion?",
+      "o": [
+       "Amygdala",
+       "Cerebellum",
+       "Occipital lobe",
+       "Brain stem"
+      ],
+      "a": 0,
+      "why": "The amygdala processes fear and other strong emotions."
+     },
+     {
+      "t": "tf",
+      "q": "The right side of the brain mostly controls the left side of the body.",
+      "a": true,
+      "why": "Each hemisphere controls the opposite side of the body."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Neuron",
+        "Nerve cell"
+       ],
+       [
+        "Synapse",
+        "Gap between neurons"
+       ],
+       [
+        "Amygdala",
+        "Processes fear and emotion"
+       ],
+       [
+        "Frontal lobe",
+        "Planning and decisions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a nerve signal in order",
+      "items": [
+       [
+        "Dendrites receive the signal",
+        1
+       ],
+       [
+        "Cell body processes it",
+        2
+       ],
+       [
+        "Signal travels down the axon",
+        3
+       ],
+       [
+        "Axon terminals release neurotransmitters",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Learning and Memory",
+    "period": "How We Learn",
+    "learn": [
+     {
+      "h": "Conditioning",
+      "b": "Classical conditioning is learning by association, as in Pavlov's dogs, who learned that a bell meant food. Operant conditioning is learning from consequences. A reward after a behavior is positive reinforcement."
+     },
+     {
+      "h": "How memory works",
+      "b": "Memory has three jobs: encoding (getting information in), storage (keeping it), and retrieval (getting it out). Short-term memory holds about 7 items. Long-term memory is very large."
+     },
+     {
+      "h": "Better studying",
+      "b": "Spacing your study over several days helps you remember more than cramming. Testing yourself also strengthens memory."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Pavlov's dogs showed which kind of learning?",
+      "o": [
+       "Operant conditioning",
+       "Classical conditioning",
+       "Observational learning",
+       "Insight learning"
+      ],
+      "a": 1,
+      "why": "They learned to link a bell with food."
+     },
+     {
+      "t": "mc",
+      "q": "A dog gets a treat after it sits. This is an example of what?",
+      "o": [
+       "Punishment",
+       "Extinction",
+       "Positive reinforcement",
+       "Habituation"
+      ],
+      "a": 2,
+      "why": "Adding a reward makes the behavior more likely."
+     },
+     {
+      "t": "mc",
+      "q": "About how many items can short-term memory hold?",
+      "o": [
+       "About 7",
+       "About 70",
+       "An unlimited number",
+       "About 1"
+      ],
+      "a": 0,
+      "why": "Miller's research suggested 7, plus or minus 2."
+     },
+     {
+      "t": "mc",
+      "q": "Which study method best builds long-term memory?",
+      "o": [
+       "Cramming all night",
+       "Reading once",
+       "Only highlighting",
+       "Spacing study over several days"
+      ],
+      "a": 3,
+      "why": "Spaced practice beats cramming for long-term recall."
+     },
+     {
+      "t": "tf",
+      "q": "Long-term memory can only hold a small amount of information.",
+      "a": false,
+      "why": "Long-term memory has no known practical limit."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Classical conditioning",
+        "Learning by association"
+       ],
+       [
+        "Operant conditioning",
+        "Learning from consequences"
+       ],
+       [
+        "Encoding",
+        "Getting information into memory"
+       ],
+       [
+        "Retrieval",
+        "Pulling a memory out"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the flow of information through memory in order",
+      "items": [
+       [
+        "Sensory memory",
+        1
+       ],
+       [
+        "Attention",
+        2
+       ],
+       [
+        "Short-term memory",
+        3
+       ],
+       [
+        "Long-term memory",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Development and Social Behavior",
+    "period": "People Over Time",
+    "learn": [
+     {
+      "h": "Stages of growth",
+      "b": "Jean Piaget described four stages of thinking in children: sensorimotor, preoperational, concrete operational, and formal operational. Erik Erikson said people face a social challenge at every stage of life."
+     },
+     {
+      "h": "Needs",
+      "b": "Abraham Maslow said people have a hierarchy of needs. Basic physiological needs like food and sleep come first, then safety, belonging, esteem, and finally self-actualization."
+     },
+     {
+      "h": "Groups",
+      "b": "Conformity means changing your behavior to match a group. Obedience means following an authority. The bystander effect means people are less likely to help when others are present."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which psychologist proposed four stages of cognitive development?",
+      "o": [
+       "Freud",
+       "Piaget",
+       "Pavlov",
+       "Skinner"
+      ],
+      "a": 1,
+      "why": "Piaget described how children's thinking changes with age."
+     },
+     {
+      "t": "mc",
+      "q": "What is at the base of Maslow's hierarchy of needs?",
+      "o": [
+       "Self-actualization",
+       "Esteem",
+       "Safety",
+       "Physiological needs"
+      ],
+      "a": 3,
+      "why": "Basic needs like food and water come first."
+     },
+     {
+      "t": "mc",
+      "q": "What does the bystander effect describe?",
+      "o": [
+       "People help more in large groups",
+       "People always help strangers",
+       "People are less likely to help when others are present",
+       "People only help family"
+      ],
+      "a": 2,
+      "why": "Responsibility is spread across onlookers."
+     },
+     {
+      "t": "mc",
+      "q": "What is conformity?",
+      "o": [
+       "Changing behavior to match a group",
+       "Obeying a direct order",
+       "Helping a stranger",
+       "Blaming others"
+      ],
+      "a": 0,
+      "why": "Asch's line experiments showed people conform to the group."
+     },
+     {
+      "t": "tf",
+      "q": "Erikson proposed that people face a social challenge at each stage of life.",
+      "a": true,
+      "why": "His theory has eight psychosocial stages."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Stereotype",
+        "Fixed idea about a group"
+       ],
+       [
+        "Obedience",
+        "Following an authority's orders"
+       ],
+       [
+        "Attachment",
+        "Emotional bond to a caregiver"
+       ],
+       [
+        "Conformity",
+        "Matching a group's behavior"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Piaget's stages in order",
+      "items": [
+       [
+        "Sensorimotor",
+        1
+       ],
+       [
+        "Preoperational",
+        2
+       ],
+       [
+        "Concrete operational",
+        3
+       ],
+       [
+        "Formal operational",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-bio": {
+  "name": "AP Biology",
+  "units": [
+   {
+    "title": "Chemistry of Life and Cells",
+    "period": "Units 1-2",
+    "learn": [
+     {
+      "h": "Water and molecules",
+      "b": "Water is polar, so its molecules form hydrogen bonds. This makes water cohesive and a good solvent. Proteins are built from amino acids, and nucleic acids are built from nucleotides."
+     },
+     {
+      "h": "Cell structures",
+      "b": "Eukaryotic cells have a membrane-bound nucleus; prokaryotes do not. Mitochondria make ATP, ribosomes build proteins, and lysosomes break down waste. The cell membrane controls what enters and leaves."
+     },
+     {
+      "h": "Moving across membranes",
+      "b": "Osmosis is the passive movement of water across a membrane. Active transport uses ATP to move substances against their gradient. A secreted protein travels from the rough ER to the Golgi to a vesicle."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What type of bond holds water molecules together, giving water cohesion?",
+      "o": [
+       "Ionic bonds",
+       "Hydrogen bonds",
+       "Metallic bonds",
+       "Peptide bonds"
+      ],
+      "a": 1,
+      "why": "Polar water molecules attract each other through hydrogen bonds."
+     },
+     {
+      "t": "mc",
+      "q": "What is the monomer of a protein?",
+      "o": [
+       "Nucleotide",
+       "Monosaccharide",
+       "Amino acid",
+       "Fatty acid"
+      ],
+      "a": 2,
+      "why": "Proteins are chains of amino acids."
+     },
+     {
+      "t": "mc",
+      "q": "Which organelle produces most of a cell's ATP?",
+      "o": [
+       "Mitochondrion",
+       "Ribosome",
+       "Golgi apparatus",
+       "Lysosome"
+      ],
+      "a": 0,
+      "why": "Mitochondria carry out most cellular respiration."
+     },
+     {
+      "t": "mc",
+      "q": "What is the passive movement of water across a membrane called?",
+      "o": [
+       "Active transport",
+       "Endocytosis",
+       "Exocytosis",
+       "Osmosis"
+      ],
+      "a": 3,
+      "why": "Osmosis needs no ATP; water moves toward higher solute concentration."
+     },
+     {
+      "t": "tf",
+      "q": "Prokaryotic cells have a membrane-bound nucleus.",
+      "a": false,
+      "why": "Only eukaryotic cells have a membrane-bound nucleus."
+     },
+     {
+      "t": "match",
+      "q": "Match each organelle to its job",
+      "pairs": [
+       [
+        "Ribosome",
+        "Builds proteins"
+       ],
+       [
+        "Lysosome",
+        "Breaks down waste"
+       ],
+       [
+        "Cell membrane",
+        "Controls what enters and leaves"
+       ],
+       [
+        "Nucleus",
+        "Stores DNA"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the path of a secreted protein in order",
+      "items": [
+       [
+        "Made on a ribosome at the rough ER",
+        1
+       ],
+       [
+        "Folded inside the rough ER",
+        2
+       ],
+       [
+        "Modified in the Golgi apparatus",
+        3
+       ],
+       [
+        "Sent out in a vesicle",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Cell Energy and Enzymes",
+    "period": "Units 3-4",
+    "learn": [
+     {
+      "h": "Enzymes",
+      "b": "Enzymes are proteins that speed up reactions by lowering the activation energy. They are not used up. Temperature and pH can change an enzyme's shape and its activity."
+     },
+     {
+      "h": "Photosynthesis",
+      "b": "Photosynthesis happens in chloroplasts. The light reactions in the thylakoid membranes make ATP and NADPH, and the Calvin cycle in the stroma uses them to build glucose from carbon dioxide."
+     },
+     {
+      "h": "Cellular respiration",
+      "b": "Cells break down glucose in four steps: glycolysis in the cytoplasm, pyruvate oxidation, the Krebs cycle, and the electron transport chain, which makes the most ATP. ATP is the cell's energy currency."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What are the reactants of photosynthesis?",
+      "o": [
+       "Oxygen and glucose",
+       "Nitrogen and water",
+       "Carbon dioxide and water",
+       "Lactic acid and ATP"
+      ],
+      "a": 2,
+      "why": "Plants combine CO2 and H2O using light energy."
+     },
+     {
+      "t": "mc",
+      "q": "Where do the light reactions occur in a chloroplast?",
+      "o": [
+       "Stroma",
+       "Thylakoid membranes",
+       "Matrix",
+       "Cytosol"
+      ],
+      "a": 1,
+      "why": "Light-capturing pigments sit in the thylakoid membranes."
+     },
+     {
+      "t": "mc",
+      "q": "Which stage of cellular respiration makes the most ATP?",
+      "o": [
+       "Glycolysis",
+       "Krebs cycle",
+       "Fermentation",
+       "Electron transport chain"
+      ],
+      "a": 3,
+      "why": "The electron transport chain drives ATP synthase."
+     },
+     {
+      "t": "mc",
+      "q": "How do enzymes speed up reactions?",
+      "o": [
+       "By lowering activation energy",
+       "By adding energy to products",
+       "By being used up",
+       "By raising temperature"
+      ],
+      "a": 0,
+      "why": "Enzymes provide an easier path for the reaction."
+     },
+     {
+      "t": "tf",
+      "q": "Glycolysis occurs in the cytoplasm and does not require oxygen.",
+      "a": true,
+      "why": "Glycolysis is the first, oxygen-independent step of respiration."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "ATP",
+        "Cell's energy currency"
+       ],
+       [
+        "Enzyme",
+        "Biological catalyst"
+       ],
+       [
+        "Chloroplast",
+        "Site of photosynthesis"
+       ],
+       [
+        "Receptor",
+        "Protein that binds a signal"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the stages of cellular respiration in order",
+      "items": [
+       [
+        "Glycolysis",
+        1
+       ],
+       [
+        "Pyruvate oxidation",
+        2
+       ],
+       [
+        "Krebs cycle",
+        3
+       ],
+       [
+        "Electron transport chain",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Genetics",
+    "period": "Units 5-6",
+    "learn": [
+     {
+      "h": "Cell division",
+      "b": "Mitosis makes two genetically identical cells. Meiosis makes gametes with half the number of chromosomes, and crossing over and independent assortment create variety."
+     },
+     {
+      "h": "Inheritance",
+      "b": "An allele is a version of a gene. Genotype is the genetic makeup and phenotype is the observable trait. A cross of Aa x Aa gives a 3:1 phenotype ratio when one allele is completely dominant."
+     },
+     {
+      "h": "From DNA to protein",
+      "b": "In DNA, A pairs with T and C pairs with G. Transcription copies DNA into mRNA. In translation, a ribosome reads mRNA codons (three bases) and tRNA brings the matching amino acids."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does mitosis produce?",
+      "o": [
+       "Four haploid cells",
+       "Two genetically identical cells",
+       "Two different haploid cells",
+       "One large cell"
+      ],
+      "a": 1,
+      "why": "Mitosis makes identical diploid daughter cells."
+     },
+     {
+      "t": "mc",
+      "q": "Compared with its parent cell, how many chromosomes does a gamete have?",
+      "o": [
+       "Double",
+       "One quarter",
+       "Half as many",
+       "The same number"
+      ],
+      "a": 2,
+      "why": "Meiosis halves the chromosome number."
+     },
+     {
+      "t": "mc",
+      "q": "What is the phenotype ratio of an Aa x Aa cross with complete dominance?",
+      "o": [
+       "1:1",
+       "1:2:1",
+       "9:3:3:1",
+       "3:1"
+      ],
+      "a": 3,
+      "why": "Three offspring show the dominant trait for each one that shows the recessive."
+     },
+     {
+      "t": "mc",
+      "q": "What does transcription produce?",
+      "o": [
+       "mRNA from a DNA template",
+       "Protein from mRNA",
+       "DNA from protein",
+       "tRNA from a ribosome"
+      ],
+      "a": 0,
+      "why": "RNA polymerase copies a DNA gene into mRNA."
+     },
+     {
+      "t": "tf",
+      "q": "In DNA, adenine pairs with cytosine.",
+      "a": false,
+      "why": "Adenine pairs with thymine; cytosine pairs with guanine."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Allele",
+        "Version of a gene"
+       ],
+       [
+        "Genotype",
+        "Genetic makeup"
+       ],
+       [
+        "Phenotype",
+        "Observable trait"
+       ],
+       [
+        "Codon",
+        "Three-base mRNA code"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of gene expression in order",
+      "items": [
+       [
+        "DNA is transcribed into mRNA",
+        1
+       ],
+       [
+        "mRNA moves to a ribosome",
+        2
+       ],
+       [
+        "tRNA brings amino acids matching codons",
+        3
+       ],
+       [
+        "A polypeptide chain forms",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Evolution and Ecology",
+    "period": "Units 7-8",
+    "learn": [
+     {
+      "h": "Natural selection",
+      "b": "Individuals vary, and some traits help them survive and reproduce more. Over generations, those traits become more common in the population. Mutations are the original source of new alleles."
+     },
+     {
+      "h": "Species",
+      "b": "Darwin and Wallace proposed natural selection. Speciation is the formation of new species, often after populations become isolated. A niche is an organism's role in its ecosystem."
+     },
+     {
+      "h": "Ecosystems",
+      "b": "Producers make their own food. Energy flows from producers to consumers, and only about 10% of energy passes to the next trophic level. A population is one species in an area; a community includes all species there."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does natural selection mean?",
+      "o": [
+       "Organisms choose their traits",
+       "Individuals with helpful traits reproduce more",
+       "Traits gained in life are passed on",
+       "All individuals survive equally"
+      ],
+      "a": 1,
+      "why": "Helpful heritable traits become more common."
+     },
+     {
+      "t": "mc",
+      "q": "Who proposed the theory of natural selection?",
+      "o": [
+       "Mendel",
+       "Lamarck",
+       "Darwin",
+       "Pasteur"
+      ],
+      "a": 2,
+      "why": "Charles Darwin published it in On the Origin of Species."
+     },
+     {
+      "t": "mc",
+      "q": "Which group makes its own food in an ecosystem?",
+      "o": [
+       "Producers",
+       "Consumers",
+       "Decomposers",
+       "Predators"
+      ],
+      "a": 0,
+      "why": "Producers use light or chemicals to make food."
+     },
+     {
+      "t": "mc",
+      "q": "About how much energy passes to the next trophic level?",
+      "o": [
+       "90%",
+       "50%",
+       "1%",
+       "10%"
+      ],
+      "a": 3,
+      "why": "Most energy is lost as heat at each step."
+     },
+     {
+      "t": "tf",
+      "q": "Mutations are the original source of new alleles.",
+      "a": true,
+      "why": "Mutations create new variation that selection can act on."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Population",
+        "One species in an area"
+       ],
+       [
+        "Community",
+        "All species in an area"
+       ],
+       [
+        "Niche",
+        "Organism's role in its ecosystem"
+       ],
+       [
+        "Speciation",
+        "Formation of new species"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this food chain in order, from producer to top consumer",
+      "items": [
+       [
+        "Grass",
+        1
+       ],
+       [
+        "Grasshopper",
+        2
+       ],
+       [
+        "Frog",
+        3
+       ],
+       [
+        "Snake",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-chem": {
+  "name": "AP Chemistry",
+  "units": [
+   {
+    "title": "Atoms and Bonding",
+    "period": "Structure",
+    "learn": [
+     {
+      "h": "Inside the atom",
+      "b": "The atomic number is the number of protons. Isotopes have the same protons but different neutrons. Valence electrons are the outer electrons that take part in bonding."
+     },
+     {
+      "h": "Periodic trends",
+      "b": "Moving left to right across a period, ionization energy and electronegativity generally increase. Fluorine has the highest electronegativity. Electrons fill subshells in order: 1s, 2s, 2p, 3s, and so on."
+     },
+     {
+      "h": "Bonds",
+      "b": "Ionic bonds form between a metal and a nonmetal when electrons transfer. Covalent bonds form between nonmetals when electrons are shared. A cation is a positive ion."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does the atomic number of an element tell you?",
+      "o": [
+       "Number of neutrons",
+       "Number of protons",
+       "Protons plus neutrons",
+       "Number of shells"
+      ],
+      "a": 1,
+      "why": "Atomic number equals the number of protons."
+     },
+     {
+      "t": "mc",
+      "q": "How does first ionization energy generally change across a period, left to right?",
+      "o": [
+       "It decreases",
+       "It stays the same",
+       "It increases",
+       "It is random"
+      ],
+      "a": 2,
+      "why": "Greater nuclear charge holds electrons more tightly."
+     },
+     {
+      "t": "mc",
+      "q": "Which type of bond forms between a metal and a nonmetal?",
+      "o": [
+       "Ionic",
+       "Covalent",
+       "Hydrogen",
+       "Nonpolar"
+      ],
+      "a": 0,
+      "why": "The metal gives electrons to the nonmetal, forming ions."
+     },
+     {
+      "t": "mc",
+      "q": "Which element has the highest electronegativity?",
+      "o": [
+       "Oxygen",
+       "Chlorine",
+       "Nitrogen",
+       "Fluorine"
+      ],
+      "a": 3,
+      "why": "Fluorine attracts shared electrons most strongly."
+     },
+     {
+      "t": "tf",
+      "q": "Electrons are found inside the nucleus of an atom.",
+      "a": false,
+      "why": "The nucleus has protons and neutrons; electrons are outside it."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Isotope",
+        "Same protons, different neutrons"
+       ],
+       [
+        "Cation",
+        "Positive ion"
+       ],
+       [
+        "Valence electrons",
+        "Outer shell electrons"
+       ],
+       [
+        "Covalent bond",
+        "Shared electron pair"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these subshells in the order electrons fill them",
+      "items": [
+       [
+        "1s",
+        1
+       ],
+       [
+        "2s",
+        2
+       ],
+       [
+        "2p",
+        3
+       ],
+       [
+        "3s",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Moles and Reactions",
+    "period": "Stoichiometry",
+    "learn": [
+     {
+      "h": "The mole",
+      "b": "A mole is 6.022 x 10^23 particles, which is Avogadro's number. Molar mass is the mass of one mole in grams. For water, H2O, it is 18 g/mol."
+     },
+     {
+      "h": "Balancing equations",
+      "b": "Mass is conserved in a reaction, so both sides must have the same number of each atom. Balanced: 2H2 + O2 -> 2H2O."
+     },
+     {
+      "h": "Limiting reactant and yield",
+      "b": "The limiting reactant is used up first and limits how much product forms. Percent yield is actual yield divided by theoretical yield, times 100."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Avogadro's number?",
+      "o": [
+       "3.0 x 10^8",
+       "1.6 x 10^-19",
+       "6.022 x 10^23",
+       "9.8 x 10^1"
+      ],
+      "a": 2,
+      "why": "One mole contains 6.022 x 10^23 particles."
+     },
+     {
+      "t": "mc",
+      "q": "What is the molar mass of H2O in g/mol?",
+      "o": [
+       "16",
+       "18",
+       "20",
+       "34"
+      ],
+      "a": 1,
+      "why": "2(1) + 16 = 18."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limiting reactant?",
+      "o": [
+       "The one in the largest amount",
+       "A catalyst",
+       "The product",
+       "The one used up first"
+      ],
+      "a": 3,
+      "why": "It runs out first and stops the reaction."
+     },
+     {
+      "t": "mc",
+      "q": "What are the coefficients that balance H2 + O2 -> H2O, in order?",
+      "o": [
+       "1, 1, 1",
+       "1, 2, 2",
+       "2, 1, 2",
+       "2, 2, 1"
+      ],
+      "a": 2,
+      "why": "2H2 + O2 -> 2H2O has 4 H and 2 O on each side."
+     },
+     {
+      "t": "tf",
+      "q": "Mass is conserved in a chemical reaction.",
+      "a": true,
+      "why": "Atoms are rearranged, not created or destroyed."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Mole",
+        "6.022 x 10^23 particles"
+       ],
+       [
+        "Reactant",
+        "Substance that is consumed"
+       ],
+       [
+        "Product",
+        "Substance that is formed"
+       ],
+       [
+        "Percent yield",
+        "Actual over theoretical yield"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of converting grams to particles in order",
+      "items": [
+       [
+        "Start with grams of the substance",
+        1
+       ],
+       [
+        "Divide by molar mass to get moles",
+        2
+       ],
+       [
+        "Multiply moles by 6.022 x 10^23",
+        3
+       ],
+       [
+        "The result is the number of particles",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Energy and Rates",
+    "period": "Thermochemistry and Kinetics",
+    "learn": [
+     {
+      "h": "Heat in reactions",
+      "b": "An exothermic reaction releases heat and has a negative change in enthalpy (delta H). An endothermic reaction absorbs heat. Heat transfer is calculated with q = mc(delta T)."
+     },
+     {
+      "h": "Reaction rates",
+      "b": "Rates depend on concentration, temperature, and catalysts. Higher temperature means more collisions with enough energy, so the rate usually goes up. Activation energy is the energy needed to start a reaction."
+     },
+     {
+      "h": "Catalysts and entropy",
+      "b": "A catalyst lowers the activation energy and is not used up. Entropy measures disorder, and nature tends toward more disorder."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is true of an exothermic reaction?",
+      "o": [
+       "It absorbs heat and delta H is positive",
+       "It releases heat and delta H is negative",
+       "It has no energy change",
+       "It only absorbs light"
+      ],
+      "a": 1,
+      "why": "Exothermic reactions give off heat to the surroundings."
+     },
+     {
+      "t": "mc",
+      "q": "What does a catalyst do?",
+      "o": [
+       "Raises activation energy",
+       "Changes the products",
+       "Is used up",
+       "Lowers activation energy"
+      ],
+      "a": 3,
+      "why": "A catalyst gives a lower-energy path and is not consumed."
+     },
+     {
+      "t": "mc",
+      "q": "How does raising the temperature usually affect reaction rate?",
+      "o": [
+       "It increases the rate",
+       "It decreases the rate",
+       "It has no effect",
+       "It stops the reaction"
+      ],
+      "a": 0,
+      "why": "More particles have enough energy to react."
+     },
+     {
+      "t": "mc",
+      "q": "In q = mc(delta T), what does q stand for?",
+      "o": [
+       "Charge",
+       "Pressure",
+       "Heat energy transferred",
+       "Moles"
+      ],
+      "a": 2,
+      "why": "q is the heat gained or lost, in joules."
+     },
+     {
+      "t": "tf",
+      "q": "An endothermic process absorbs heat from its surroundings.",
+      "a": true,
+      "why": "Endothermic means energy flows in."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Enthalpy",
+        "Heat content at constant pressure"
+       ],
+       [
+        "Activation energy",
+        "Energy needed to start a reaction"
+       ],
+       [
+        "Rate law",
+        "Links rate to concentrations"
+       ],
+       [
+        "Entropy",
+        "Measure of disorder"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these temperatures in order from coldest to hottest",
+      "items": [
+       [
+        "Absolute zero (0 K)",
+        1
+       ],
+       [
+        "Water freezes (273 K)",
+        2
+       ],
+       [
+        "Room temperature (298 K)",
+        3
+       ],
+       [
+        "Water boils (373 K)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Equilibrium and Acids",
+    "period": "Equilibrium and pH",
+    "learn": [
+     {
+      "h": "Equilibrium",
+      "b": "At equilibrium, the forward and reverse reaction rates are equal, so concentrations stay constant. The equilibrium constant K is the ratio of products to reactants. Le Chatelier's principle says a system shifts to oppose a change."
+     },
+     {
+      "h": "Acids and bases",
+      "b": "An acid donates H+ and a base accepts H+. A strong acid like HCl fully ionizes in water, while a weak acid like acetic acid does not."
+     },
+     {
+      "h": "pH",
+      "b": "pH measures acidity. At 25 C, pH 7 is neutral, below 7 is acidic, and above 7 is basic. A buffer resists changes in pH."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is true at chemical equilibrium?",
+      "o": [
+       "The forward rate is faster",
+       "Forward and reverse rates are equal",
+       "The reverse rate is zero",
+       "Both reactions stop"
+      ],
+      "a": 1,
+      "why": "Both reactions continue at the same rate, so concentrations stay constant."
+     },
+     {
+      "t": "mc",
+      "q": "What is the pH of a neutral solution at 25 C?",
+      "o": [
+       "0",
+       "7",
+       "10",
+       "14"
+      ],
+      "a": 1,
+      "why": "Pure water has pH 7 at 25 C."
+     },
+     {
+      "t": "mc",
+      "q": "If more reactant is added to a system at equilibrium, which way does it shift?",
+      "o": [
+       "Toward reactants",
+       "It does not shift",
+       "Toward products",
+       "It reverses permanently"
+      ],
+      "a": 2,
+      "why": "Le Chatelier: the system uses up the added reactant."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a strong acid?",
+      "o": [
+       "CH3COOH",
+       "NH3",
+       "NaOH",
+       "HCl"
+      ],
+      "a": 3,
+      "why": "HCl ionizes completely in water."
+     },
+     {
+      "t": "tf",
+      "q": "A solution with pH 3 is more acidic than one with pH 5.",
+      "a": true,
+      "why": "Lower pH means higher H+ concentration."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Acid",
+        "Donates H+"
+       ],
+       [
+        "Base",
+        "Accepts H+"
+       ],
+       [
+        "Buffer",
+        "Resists pH change"
+       ],
+       [
+        "K",
+        "Products over reactants at equilibrium"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these in order from most acidic to most basic",
+      "items": [
+       [
+        "Stomach acid",
+        1
+       ],
+       [
+        "Black coffee",
+        2
+       ],
+       [
+        "Pure water",
+        3
+       ],
+       [
+        "Household ammonia",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-calc": {
+  "name": "AP Calculus AB",
+  "units": [
+   {
+    "title": "Limits and Continuity",
+    "period": "Unit 1",
+    "learn": [
+     {
+      "h": "What is a limit?",
+      "b": "A limit is the value a function approaches as x gets close to a number. For example, the limit as x goes to 3 of 2x + 1 is 7. The limit does not depend on the value at the point itself."
+     },
+     {
+      "h": "Hard-looking limits",
+      "b": "If plugging in gives 0/0, simplify first. For (x^2 - 4)/(x - 2), factor to get x + 2, so the limit as x goes to 2 is 4."
+     },
+     {
+      "h": "Continuity",
+      "b": "A function is continuous at a if the limit as x goes to a exists and equals f(a). A removable discontinuity is a hole. As x goes to infinity, 1/x goes to 0."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 2 of (x^2 - 4)/(x - 2)?",
+      "o": [
+       "0",
+       "2",
+       "4",
+       "It does not exist"
+      ],
+      "a": 2,
+      "why": "It simplifies to x + 2, which is 4 at x = 2."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches 3 of (2x + 1)?",
+      "o": [
+       "6",
+       "7",
+       "8",
+       "9"
+      ],
+      "a": 1,
+      "why": "Plug in 3: 2(3) + 1 = 7."
+     },
+     {
+      "t": "mc",
+      "q": "What does continuity at x = a require?",
+      "o": [
+       "The graph has a hole at a",
+       "f(a) equals zero",
+       "The function is increasing at a",
+       "The limit exists and equals f(a)"
+      ],
+      "a": 3,
+      "why": "The limit and the function value must exist and match."
+     },
+     {
+      "t": "mc",
+      "q": "What is the limit as x approaches infinity of 1/x?",
+      "o": [
+       "0",
+       "1",
+       "Infinity",
+       "It does not exist"
+      ],
+      "a": 0,
+      "why": "As x grows, 1/x gets closer to 0."
+     },
+     {
+      "t": "tf",
+      "q": "If the limit of f(x) as x approaches a exists, then f(a) must be defined.",
+      "a": false,
+      "why": "A function can have a hole at a and still have a limit there."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Limit",
+        "Value a function approaches"
+       ],
+       [
+        "Asymptote",
+        "Line the graph nears"
+       ],
+       [
+        "Continuous",
+        "No breaks or jumps"
+       ],
+       [
+        "Removable discontinuity",
+        "A hole in the graph"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these limits in order from smallest to largest value",
+      "items": [
+       [
+        "lim x->0 of cos(x)",
+        1
+       ],
+       [
+        "lim x->2 of x^2",
+        2
+       ],
+       [
+        "lim x->3 of 2x",
+        3
+       ],
+       [
+        "lim x->1 of 10x",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Derivatives",
+    "period": "Units 2-3",
+    "learn": [
+     {
+      "h": "The derivative",
+      "b": "The derivative is the instantaneous rate of change, or the slope of the tangent line. The power rule says d/dx of x^n is n x^(n-1). The derivative of a constant is 0."
+     },
+     {
+      "h": "Common derivatives",
+      "b": "d/dx of sin x is cos x. d/dx of cos x is -sin x. d/dx of e^x is e^x. d/dx of ln x is 1/x."
+     },
+     {
+      "h": "Rules",
+      "b": "The product rule says (fg)' = f'g + fg'. The chain rule handles composite functions: differentiate the outside, keep the inside, then multiply by the derivative of the inside."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the derivative of x^3?",
+      "o": [
+       "x^2",
+       "3x^2",
+       "3x",
+       "x^4/4"
+      ],
+      "a": 1,
+      "why": "Power rule: bring down 3 and subtract 1 from the exponent."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of cos x?",
+      "o": [
+       "-cos x",
+       "tan x",
+       "cos x",
+       "-sin x"
+      ],
+      "a": 3,
+      "why": "The derivative of cos x is -sin x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the derivative of e^x?",
+      "o": [
+       "x e^(x-1)",
+       "ln x",
+       "e^x",
+       "1/x"
+      ],
+      "a": 2,
+      "why": "e^x is its own derivative."
+     },
+     {
+      "t": "mc",
+      "q": "Which is the product rule for (fg)'?",
+      "o": [
+       "f'g + fg'",
+       "f'g'",
+       "f'g - fg'",
+       "f' + g'"
+      ],
+      "a": 0,
+      "why": "Differentiate each factor in turn and add."
+     },
+     {
+      "t": "tf",
+      "q": "The derivative of a constant function is 0.",
+      "a": true,
+      "why": "A constant has a flat graph with slope 0."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Derivative",
+        "Instantaneous rate of change"
+       ],
+       [
+        "Chain rule",
+        "For composite functions"
+       ],
+       [
+        "Tangent line",
+        "Touches curve, slope f'(a)"
+       ],
+       [
+        "Power rule",
+        "d/dx of x^n is n x^(n-1)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for d/dx of (x^2 + 1)^3 in order",
+      "items": [
+       [
+        "Identify outer u^3 and inner x^2 + 1",
+        1
+       ],
+       [
+        "Differentiate outer: 3(x^2 + 1)^2",
+        2
+       ],
+       [
+        "Differentiate inner: 2x",
+        3
+       ],
+       [
+        "Multiply to get 6x(x^2 + 1)^2",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Applications of Derivatives",
+    "period": "Units 4-5",
+    "learn": [
+     {
+      "h": "Shape of a graph",
+      "b": "If f'(x) > 0 the function is increasing; if f'(x) < 0 it is decreasing. If f''(x) > 0 the graph is concave up. An inflection point is where concavity changes."
+     },
+     {
+      "h": "Extrema",
+      "b": "Critical points occur where f' is zero or undefined. If f' changes from positive to negative at c, f has a local maximum at c. If it changes from negative to positive, it has a local minimum."
+     },
+     {
+      "h": "Motion and optimization",
+      "b": "Velocity is the derivative of position, and acceleration is the derivative of velocity. Optimization uses derivatives to find the largest or smallest value."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "If f'(c) = 0 and f' changes from positive to negative at c, what does f have at c?",
+      "o": [
+       "Local minimum",
+       "Local maximum",
+       "Inflection point",
+       "Vertical asymptote"
+      ],
+      "a": 1,
+      "why": "The function rises, then falls, so c is a peak."
+     },
+     {
+      "t": "mc",
+      "q": "If f'(x) > 0 on an interval, what is f doing there?",
+      "o": [
+       "Decreasing",
+       "Constant",
+       "Increasing",
+       "Undefined"
+      ],
+      "a": 2,
+      "why": "A positive slope means the function is going up."
+     },
+     {
+      "t": "mc",
+      "q": "What is velocity in terms of position?",
+      "o": [
+       "The integral of position",
+       "The second derivative of position",
+       "The derivative of acceleration",
+       "The derivative of position"
+      ],
+      "a": 3,
+      "why": "Velocity is the rate of change of position."
+     },
+     {
+      "t": "mc",
+      "q": "Where does f(x) = -x^2 + 4x have its maximum?",
+      "o": [
+       "x = 1",
+       "x = 2",
+       "x = 4",
+       "x = 0"
+      ],
+      "a": 1,
+      "why": "f'(x) = -2x + 4 = 0 gives x = 2."
+     },
+     {
+      "t": "tf",
+      "q": "If f''(x) > 0 on an interval, the graph is concave up there.",
+      "a": true,
+      "why": "A positive second derivative means the slope is increasing."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Critical point",
+        "f' is zero or undefined"
+       ],
+       [
+        "Inflection point",
+        "Concavity changes"
+       ],
+       [
+        "Related rates",
+        "Rates that change together"
+       ],
+       [
+        "Optimization",
+        "Finding a maximum or minimum"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of the first derivative test in order",
+      "items": [
+       [
+        "Find f'(x)",
+        1
+       ],
+       [
+        "Set f'(x) = 0 and solve for x",
+        2
+       ],
+       [
+        "Check the sign of f' on each side",
+        3
+       ],
+       [
+        "Classify each point as max or min",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Integrals",
+    "period": "Units 6-8",
+    "learn": [
+     {
+      "h": "Antiderivatives",
+      "b": "An antiderivative of f is a function whose derivative is f. The integral of x^n is x^(n+1)/(n+1) + C. For example, the integral of 2x dx is x^2 + C, and the integral of cos x dx is sin x + C."
+     },
+     {
+      "h": "Definite integrals",
+      "b": "A definite integral gives the net area under a curve between two limits. Riemann sums approximate it with rectangles."
+     },
+     {
+      "h": "Fundamental Theorem",
+      "b": "The Fundamental Theorem of Calculus links derivatives and integrals: the integral from a to b of f(x) dx equals F(b) - F(a), where F is an antiderivative of f."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the integral of 2x dx?",
+      "o": [
+       "2x^2 + C",
+       "x^2 + C",
+       "x + C",
+       "2 + C"
+      ],
+      "a": 1,
+      "why": "The derivative of x^2 is 2x."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral from 0 to 3 of 2x dx?",
+      "o": [
+       "6",
+       "12",
+       "9",
+       "3"
+      ],
+      "a": 2,
+      "why": "x^2 evaluated from 0 to 3 is 9 - 0 = 9."
+     },
+     {
+      "t": "mc",
+      "q": "The Fundamental Theorem of Calculus connects which two ideas?",
+      "o": [
+       "Derivatives and integrals",
+       "Limits and sequences",
+       "Slopes and angles",
+       "Series and sums"
+      ],
+      "a": 0,
+      "why": "It shows integration and differentiation are inverse processes."
+     },
+     {
+      "t": "mc",
+      "q": "What is the integral of cos x dx?",
+      "o": [
+       "-sin x + C",
+       "cos x + C",
+       "-cos x + C",
+       "sin x + C"
+      ],
+      "a": 3,
+      "why": "The derivative of sin x is cos x."
+     },
+     {
+      "t": "tf",
+      "q": "The integral of x^2 dx equals 2x + C.",
+      "a": false,
+      "why": "It equals x^3/3 + C."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Antiderivative",
+        "Function whose derivative is f"
+       ],
+       [
+        "Definite integral",
+        "Net area between two limits"
+       ],
+       [
+        "Riemann sum",
+        "Rectangles that approximate area"
+       ],
+       [
+        "+ C",
+        "Constant of integration"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps for the integral from 0 to 2 of x dx in order",
+      "items": [
+       [
+        "Find the antiderivative: x^2/2",
+        1
+       ],
+       [
+        "Plug in the upper limit: 2",
+        2
+       ],
+       [
+        "Plug in the lower limit: 0",
+        3
+       ],
+       [
+        "Subtract: 2 - 0 = 2",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ap-psych": {
+  "name": "AP Psychology",
+  "units": [
+   {
+    "title": "Methods and Biology",
+    "period": "Research and the Brain",
+    "learn": [
+     {
+      "h": "Experiments",
+      "b": "In an experiment, the independent variable is what the researcher changes, and the dependent variable is the outcome measured. A placebo is an inactive treatment. In a double-blind study, neither participants nor researchers know who is in which group."
+     },
+     {
+      "h": "Statistics",
+      "b": "A correlation coefficient runs from -1 to +1. A value of -0.8 means a strong negative relationship. The median is less affected by outliers than the mean. Standard deviation shows how spread out scores are."
+     },
+     {
+      "h": "Brain basics",
+      "b": "The thalamus is the brain's sensory relay station. The hypothalamus controls hunger and body temperature. Neurons communicate with neurotransmitters."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is the independent variable in an experiment?",
+      "o": [
+       "The outcome measured",
+       "The factor the researcher manipulates",
+       "The factor held constant",
+       "An unrelated factor"
+      ],
+      "a": 1,
+      "why": "Researchers change it to see its effect on the dependent variable."
+     },
+     {
+      "t": "mc",
+      "q": "What does a correlation of -0.8 mean?",
+      "o": [
+       "Weak positive relationship",
+       "No relationship",
+       "Strong negative relationship",
+       "Perfect positive relationship"
+      ],
+      "a": 2,
+      "why": "It is close to -1, so as one variable rises the other falls."
+     },
+     {
+      "t": "mc",
+      "q": "What is a double-blind study?",
+      "o": [
+       "Only participants are unaware of groups",
+       "Only researchers are unaware of groups",
+       "Everyone knows the groups",
+       "Neither participants nor researchers know the groups"
+      ],
+      "a": 3,
+      "why": "This reduces bias from expectations."
+     },
+     {
+      "t": "mc",
+      "q": "Which brain structure acts as a relay station for sensory information?",
+      "o": [
+       "Thalamus",
+       "Hypothalamus",
+       "Pons",
+       "Medulla"
+      ],
+      "a": 0,
+      "why": "Most sensory signals pass through the thalamus."
+     },
+     {
+      "t": "tf",
+      "q": "The median is less affected by outliers than the mean.",
+      "a": true,
+      "why": "A single extreme score can pull the mean, but barely moves the median."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Placebo",
+        "Inactive treatment"
+       ],
+       [
+        "Sample",
+        "Group studied from a population"
+       ],
+       [
+        "Standard deviation",
+        "Spread of scores"
+       ],
+       [
+        "Dependent variable",
+        "Outcome measured"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of an experiment in order",
+      "items": [
+       [
+        "Form a hypothesis",
+        1
+       ],
+       [
+        "Randomly assign participants",
+        2
+       ],
+       [
+        "Manipulate the independent variable",
+        3
+       ],
+       [
+        "Measure the dependent variable",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Learning and Cognition",
+    "period": "Thinking and Memory",
+    "learn": [
+     {
+      "h": "Types of learning",
+      "b": "In classical conditioning, a neutral stimulus gets paired with a natural one until it triggers a response alone. In operant conditioning, behavior changes because of consequences. Bandura showed observational learning with his Bobo doll study."
+     },
+     {
+      "h": "Reinforcement schedules",
+      "b": "A variable-ratio schedule rewards behavior after an unpredictable number of responses, as with slot machines, and it produces high, steady responding."
+     },
+     {
+      "h": "Memory and thinking",
+      "b": "Loftus showed the misinformation effect: misleading information can change memories. The availability heuristic judges how likely something is by how easily examples come to mind. An algorithm guarantees a solution if followed correctly."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Bandura's Bobo doll study demonstrated which kind of learning?",
+      "o": [
+       "Classical conditioning",
+       "Observational learning",
+       "Insight learning",
+       "Latent learning"
+      ],
+      "a": 1,
+      "why": "Children copied aggressive behavior they had watched."
+     },
+     {
+      "t": "mc",
+      "q": "Which reinforcement schedule do slot machines use?",
+      "o": [
+       "Fixed-interval",
+       "Fixed-ratio",
+       "Variable-ratio",
+       "Variable-interval"
+      ],
+      "a": 2,
+      "why": "Rewards come after an unpredictable number of plays."
+     },
+     {
+      "t": "mc",
+      "q": "What did Elizabeth Loftus's research on memory show?",
+      "o": [
+       "Memory is a perfect recording",
+       "Forgetting only happens by decay",
+       "Eyewitnesses are never wrong",
+       "Misleading information can change memories"
+      ],
+      "a": 3,
+      "why": "This is the misinformation effect."
+     },
+     {
+      "t": "mc",
+      "q": "Judging how likely something is by how easily examples come to mind is called what?",
+      "o": [
+       "Availability heuristic",
+       "Anchoring",
+       "Representativeness heuristic",
+       "Algorithm"
+      ],
+      "a": 0,
+      "why": "Vivid or recent events seem more common."
+     },
+     {
+      "t": "tf",
+      "q": "An algorithm guarantees a solution if it is followed correctly.",
+      "a": true,
+      "why": "Unlike a heuristic shortcut, an algorithm is a step-by-step procedure."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Proactive interference",
+        "Old information blocks new"
+       ],
+       [
+        "Retroactive interference",
+        "New information blocks old"
+       ],
+       [
+        "Schema",
+        "Mental framework of ideas"
+       ],
+       [
+        "Confirmation bias",
+        "Favoring info that fits beliefs"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of classical conditioning in order",
+      "items": [
+       [
+        "Food (US) causes salivation (UR)",
+        1
+       ],
+       [
+        "A neutral bell is paired with the food",
+        2
+       ],
+       [
+        "The bell becomes a conditioned stimulus",
+        3
+       ],
+       [
+        "The bell alone causes salivation (CR)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Development and Personality",
+    "period": "Growth and Motivation",
+    "learn": [
+     {
+      "h": "Development",
+      "b": "Vygotsky's zone of proximal development is the range of tasks a child can do with help but not yet alone. Erikson described eight stages, starting with trust vs. mistrust. Authoritative parenting mixes warmth with firm rules."
+     },
+     {
+      "h": "Personality",
+      "b": "Freud said personality has an id (pleasure principle), an ego (reality), and a superego (conscience). The Big Five traits are openness, conscientiousness, extraversion, agreeableness, and neuroticism."
+     },
+     {
+      "h": "Motivation",
+      "b": "Intrinsic motivation comes from enjoying the activity itself. Extrinsic motivation comes from outside rewards or pressures."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What is Vygotsky's zone of proximal development?",
+      "o": [
+       "Tasks a child has already mastered",
+       "Tasks that are far too hard",
+       "Birth to age two",
+       "Tasks a child can do with help"
+      ],
+      "a": 3,
+      "why": "It is the gap between what a child can do alone and with guidance."
+     },
+     {
+      "t": "mc",
+      "q": "Which is NOT one of the Big Five personality traits?",
+      "o": [
+       "Openness",
+       "Conscientiousness",
+       "Dominance",
+       "Agreeableness"
+      ],
+      "a": 2,
+      "why": "The Big Five are openness, conscientiousness, extraversion, agreeableness, and neuroticism."
+     },
+     {
+      "t": "mc",
+      "q": "Which part of personality follows the pleasure principle in Freud's theory?",
+      "o": [
+       "Ego",
+       "Id",
+       "Superego",
+       "Persona"
+      ],
+      "a": 1,
+      "why": "The id seeks immediate satisfaction."
+     },
+     {
+      "t": "mc",
+      "q": "What is intrinsic motivation?",
+      "o": [
+       "Doing something for its own enjoyment",
+       "Doing something for money",
+       "Doing something to avoid punishment",
+       "Doing something for praise"
+      ],
+      "a": 0,
+      "why": "The reward comes from the activity itself."
+     },
+     {
+      "t": "tf",
+      "q": "Authoritative parenting combines warmth with firm rules.",
+      "a": true,
+      "why": "It is high in both support and expectations."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Id",
+        "Instinctive urges"
+       ],
+       [
+        "Superego",
+        "Moral conscience"
+       ],
+       [
+        "Intrinsic motivation",
+        "Driven by enjoyment"
+       ],
+       [
+        "Extrinsic motivation",
+        "Driven by outside rewards"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put Erikson's first four stages in order",
+      "items": [
+       [
+        "Trust vs. mistrust",
+        1
+       ],
+       [
+        "Autonomy vs. shame and doubt",
+        2
+       ],
+       [
+        "Initiative vs. guilt",
+        3
+       ],
+       [
+        "Industry vs. inferiority",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Disorders and Social Psychology",
+    "period": "Mind and Society",
+    "learn": [
+     {
+      "h": "Disorders and therapy",
+      "b": "Major depressive disorder involves persistent sadness and loss of interest. A phobia is an intense, irrational fear. Cognitive-behavioral therapy (CBT) helps people change unhelpful thoughts and behaviors. Schizophrenia and dissociative identity disorder are different conditions."
+     },
+     {
+      "h": "Attitudes",
+      "b": "Cognitive dissonance is the discomfort felt when beliefs and actions do not match, which people often reduce by changing the belief. Prejudice is an unjustified negative attitude toward a group."
+     },
+     {
+      "h": "Group effects",
+      "b": "The fundamental attribution error means blaming another person's behavior on personality while ignoring the situation. Groupthink happens when the wish for harmony overrides good decisions."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does cognitive-behavioral therapy focus on?",
+      "o": [
+       "Interpreting dreams",
+       "Changing unhelpful thoughts and behaviors",
+       "Only childhood memories",
+       "Only medication"
+      ],
+      "a": 1,
+      "why": "CBT targets the link between thoughts, feelings, and actions."
+     },
+     {
+      "t": "mc",
+      "q": "Which is a main symptom of major depressive disorder?",
+      "o": [
+       "Sudden extreme energy",
+       "Fear of open spaces",
+       "Persistent sadness and loss of interest",
+       "Hearing voices"
+      ],
+      "a": 2,
+      "why": "Sad mood or loss of interest lasting weeks is central to the diagnosis."
+     },
+     {
+      "t": "mc",
+      "q": "What is cognitive dissonance?",
+      "o": [
+       "Memory loss after trauma",
+       "Pressure from a group",
+       "Feeling helpless after failure",
+       "Discomfort when beliefs and actions conflict"
+      ],
+      "a": 3,
+      "why": "People try to reduce the tension, often by changing a belief."
+     },
+     {
+      "t": "mc",
+      "q": "What is the fundamental attribution error?",
+      "o": [
+       "Blaming others' behavior on personality, not the situation",
+       "Blaming yourself for everything",
+       "Ignoring all possible causes",
+       "Praising others too much"
+      ],
+      "a": 0,
+      "why": "We underestimate how much situations shape what others do."
+     },
+     {
+      "t": "tf",
+      "q": "Schizophrenia is the same condition as dissociative identity disorder.",
+      "a": false,
+      "why": "Schizophrenia involves psychosis; dissociative identity disorder involves separate identities."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Phobia",
+        "Intense irrational fear"
+       ],
+       [
+        "Anxiety disorder",
+        "Excessive worry"
+       ],
+       [
+        "Prejudice",
+        "Unjustified negative attitude"
+       ],
+       [
+        "Groupthink",
+        "Harmony overrides good decisions"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the steps of systematic desensitization in order",
+      "items": [
+       [
+        "Learn relaxation skills",
+        1
+       ],
+       [
+        "Make a list of fears from mild to severe",
+        2
+       ],
+       [
+        "Face the mildest fear while relaxed",
+        3
+       ],
+       [
+        "Move up to the most feared item",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ar-1": {
+  "name": "Arabic · Beginner",
+  "units": [
+   {
+    "title": "Greetings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and peace",
+      "b": "مرحبا (marhaban) means hello. السلام عليكم (as-salāmu ʿalaykum) means peace be upon you. The reply is وعليكم السلام (wa ʿalaykumu s-salām). Arabic is written from right to left."
+     },
+     {
+      "h": "Times of day",
+      "b": "صباح الخير (ṣabāḥ al-khayr) means good morning. مساء الخير (masāʾ al-khayr) means good evening. مع السلامة (maʿa s-salāma) means goodbye."
+     },
+     {
+      "h": "Polite words",
+      "b": "شكرا (shukran) means thank you and عفوا (ʿafwan) means you're welcome. نعم (naʿam) is yes and لا (lā) is no. Say اسمي (ismī) and your name for my name is."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does مرحبا (marhaban) mean?",
+      "o": [
+       "Goodbye",
+       "Hello",
+       "Thank you",
+       "Sorry"
+      ],
+      "a": 1,
+      "why": "مرحبا (marhaban) is a common hello."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'thank you' in Arabic?",
+      "o": [
+       "عفوا (ʿafwan)",
+       "مرحبا (marhaban)",
+       "لا (lā)",
+       "شكرا (shukran)"
+      ],
+      "a": 3,
+      "why": "شكرا (shukran) means thank you."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'goodbye'?",
+      "o": [
+       "مع السلامة (maʿa s-salāma)",
+       "صباح الخير (ṣabāḥ al-khayr)",
+       "نعم (naʿam)",
+       "اسمي (ismī)"
+      ],
+      "a": 0,
+      "why": "مع السلامة (maʿa s-salāma) means goodbye."
+     },
+     {
+      "t": "mc",
+      "q": "What does صباح الخير (ṣabāḥ al-khayr) mean?",
+      "o": [
+       "Good evening",
+       "Goodbye",
+       "Good morning",
+       "Thank you"
+      ],
+      "a": 2,
+      "why": "صباح (ṣabāḥ) means morning."
+     },
+     {
+      "t": "tf",
+      "q": "Arabic is written from right to left.",
+      "a": true,
+      "why": "Arabic script runs from right to left."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "نعم (naʿam)",
+        "Yes"
+       ],
+       [
+        "لا (lā)",
+        "No"
+       ],
+       [
+        "عفوا (ʿafwan)",
+        "You're welcome"
+       ],
+       [
+        "شكرا (shukran)",
+        "Thank you"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this short conversation in order",
+      "items": [
+       [
+        "مرحبا (marhaban)",
+        1
+       ],
+       [
+        "اسمي سارة (ismī Sāra)",
+        2
+       ],
+       [
+        "شكرا (shukran)",
+        3
+       ],
+       [
+        "مع السلامة (maʿa s-salāma)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 5",
+      "b": "واحد (wāḥid) is 1, اثنان (ithnān) is 2, ثلاثة (thalātha) is 3, أربعة (arbaʿa) is 4, and خمسة (khamsa) is 5."
+     },
+     {
+      "h": "Numbers 6 to 10",
+      "b": "ستة (sitta) is 6, سبعة (sabʿa) is 7, ثمانية (thamāniya) is 8, تسعة (tisʿa) is 9, and عشرة (ʿashara) is 10."
+     },
+     {
+      "h": "Family words",
+      "b": "أم (umm) is mother and أب (ab) is father. أخ (akh) is brother and أخت (ukht) is sister. عائلة (ʿāʾila) means family."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number is ثلاثة (thalātha)?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "ثلاثة (thalātha) is 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'five' in Arabic?",
+      "o": [
+       "ستة (sitta)",
+       "أربعة (arbaʿa)",
+       "تسعة (tisʿa)",
+       "خمسة (khamsa)"
+      ],
+      "a": 3,
+      "why": "خمسة (khamsa) is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does أم (umm) mean?",
+      "o": [
+       "Mother",
+       "Father",
+       "Sister",
+       "Brother"
+      ],
+      "a": 0,
+      "why": "أم (umm) means mother."
+     },
+     {
+      "t": "mc",
+      "q": "What does أخت (ukht) mean?",
+      "o": [
+       "Brother",
+       "Sister",
+       "Family",
+       "Friend"
+      ],
+      "a": 1,
+      "why": "أخت (ukht) means sister."
+     },
+     {
+      "t": "tf",
+      "q": "عشرة (ʿashara) means ten.",
+      "a": true,
+      "why": "عشرة (ʿashara) is 10."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "أب (ab)",
+        "Father"
+       ],
+       [
+        "أم (umm)",
+        "Mother"
+       ],
+       [
+        "أخ (akh)",
+        "Brother"
+       ],
+       [
+        "عائلة (ʿāʾila)",
+        "Family"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "واحد (wāḥid)",
+        1
+       ],
+       [
+        "ثلاثة (thalātha)",
+        2
+       ],
+       [
+        "خمسة (khamsa)",
+        3
+       ],
+       [
+        "سبعة (sabʿa)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Drinks",
+      "b": "ماء (māʾ) is water, شاي (shāy) is tea, and قهوة (qahwa) is coffee. أشرب (ashrab) means I drink."
+     },
+     {
+      "h": "Food",
+      "b": "خبز (khubz) is bread, أرز (aruzz) is rice, لحم (laḥm) is meat, and سمك (samak) is fish. آكل (ākul) means I eat."
+     },
+     {
+      "h": "Useful phrases",
+      "b": "لذيذ (ladhīdh) means delicious. من فضلك (min faḍlik) means please. أنا أشرب الشاي (anā ashrab ash-shāy) means I drink the tea."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does ماء (māʾ) mean?",
+      "o": [
+       "Water",
+       "Tea",
+       "Bread",
+       "Fish"
+      ],
+      "a": 0,
+      "why": "ماء (māʾ) means water."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I drink tea'?",
+      "o": [
+       "أنا آكل الشاي (anā ākul ash-shāy)",
+       "أنا أشرب الخبز (anā ashrab al-khubz)",
+       "أنا أشرب الشاي (anā ashrab ash-shāy)",
+       "أنا ماء الشاي (anā māʾ ash-shāy)"
+      ],
+      "a": 2,
+      "why": "أشرب (ashrab) means I drink."
+     },
+     {
+      "t": "mc",
+      "q": "What does لذيذ (ladhīdh) mean?",
+      "o": [
+       "Cold",
+       "Big",
+       "Hungry",
+       "Delicious"
+      ],
+      "a": 3,
+      "why": "لذيذ (ladhīdh) means delicious."
+     },
+     {
+      "t": "mc",
+      "q": "What is خبز (khubz)?",
+      "o": [
+       "Rice",
+       "Bread",
+       "Fish",
+       "Coffee"
+      ],
+      "a": 1,
+      "why": "خبز (khubz) means bread."
+     },
+     {
+      "t": "tf",
+      "q": "قهوة (qahwa) means coffee.",
+      "a": true,
+      "why": "قهوة (qahwa) is the Arabic word for coffee, and the English word comes from it."
+     },
+     {
+      "t": "match",
+      "q": "Match each food word to its meaning",
+      "pairs": [
+       [
+        "شاي (shāy)",
+        "Tea"
+       ],
+       [
+        "سمك (samak)",
+        "Fish"
+       ],
+       [
+        "لحم (laḥm)",
+        "Meat"
+       ],
+       [
+        "أرز (aruzz)",
+        "Rice"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat bread every day",
+      "items": [
+       [
+        "أنا (anā)",
+        1
+       ],
+       [
+        "آكل (ākul)",
+        2
+       ],
+       [
+        "الخبز (al-khubz)",
+        3
+       ],
+       [
+        "كل يوم (kull yawm)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Pronouns",
+      "b": "أنا (anā) is I, أنت (anta) is you (male), هو (huwa) is he, and هي (hiya) is she."
+     },
+     {
+      "h": "No 'am, is, are'",
+      "b": "In the present, Arabic usually has no word for am, is, or are. أنا طالب (anā ṭālib) means I am a student. Use ليس (laysa) for is not."
+     },
+     {
+      "h": "Questions and going",
+      "b": "Start a yes or no question with هل (hal). أين (ayna) means where and ماذا (mādhā) means what. أذهب (adhhab) means I go. مدرسة (madrasa) means school."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does هل (hal) do at the start of a sentence?",
+      "o": [
+       "Makes it negative",
+       "Makes it a yes or no question",
+       "Makes it past tense",
+       "Means thank you"
+      ],
+      "a": 1,
+      "why": "هل (hal) introduces a yes or no question."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am a student' (male)?",
+      "o": [
+       "أنا طالب (anā ṭālib)",
+       "أنا أذهب (anā adhhab)",
+       "هل طالب (hal ṭālib)",
+       "أنا ليس (anā laysa)"
+      ],
+      "a": 0,
+      "why": "Arabic skips the word for am in the present tense."
+     },
+     {
+      "t": "mc",
+      "q": "What does أين (ayna) mean?",
+      "o": [
+       "What",
+       "Who",
+       "Why",
+       "Where"
+      ],
+      "a": 3,
+      "why": "أين (ayna) means where."
+     },
+     {
+      "t": "mc",
+      "q": "What does أذهب (adhhab) mean?",
+      "o": [
+       "I eat",
+       "I drink",
+       "I go",
+       "I have"
+      ],
+      "a": 2,
+      "why": "أذهب (adhhab) means I go."
+     },
+     {
+      "t": "tf",
+      "q": "Arabic usually leaves out 'am, is, are' in the present tense.",
+      "a": true,
+      "why": "A sentence like أنا طالب (anā ṭālib) has no verb to be."
+     },
+     {
+      "t": "match",
+      "q": "Match each pronoun to its meaning",
+      "pairs": [
+       [
+        "أنا (anā)",
+        "I"
+       ],
+       [
+        "هو (huwa)",
+        "He"
+       ],
+       [
+        "هي (hiya)",
+        "She"
+       ],
+       [
+        "أنت (anta)",
+        "You (male)"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I go to school every day",
+      "items": [
+       [
+        "أنا (anā)",
+        1
+       ],
+       [
+        "أذهب (adhhab)",
+        2
+       ],
+       [
+        "إلى المدرسة (ilā l-madrasa)",
+        3
+       ],
+       [
+        "كل يوم (kull yawm)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "ar-2": {
+  "name": "Arabic · Intermediate",
+  "units": [
+   {
+    "title": "Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "The past tense",
+      "b": "For I, add ـتُ (-tu) to the past verb. ذهبت (dhahabtu) means I went. أكلت (akaltu) means I ate."
+     },
+     {
+      "h": "Past negative",
+      "b": "Use لم (lam) before a present verb to say did not. لم أذهب (lam adhhab) means I did not go."
+     },
+     {
+      "h": "Time words",
+      "b": "أمس (ams) means yesterday and اليوم (al-yawm) means today. غدا (ghadan) means tomorrow."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does أمس (ams) mean?",
+      "o": [
+       "Today",
+       "Tomorrow",
+       "Yesterday",
+       "Next week"
+      ],
+      "a": 2,
+      "why": "أمس (ams) means yesterday."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I ate'?",
+      "o": [
+       "آكل (ākul)",
+       "أكلت (akaltu)",
+       "لم آكل (lam ākul)",
+       "هل آكل (hal ākul)"
+      ],
+      "a": 1,
+      "why": "The ending ـتُ (-tu) marks the past for I."
+     },
+     {
+      "t": "mc",
+      "q": "What does ذهبت (dhahabtu) mean?",
+      "o": [
+       "I went",
+       "I will go",
+       "I go",
+       "I did not go"
+      ],
+      "a": 0,
+      "why": "ذهبت (dhahabtu) is the past tense of go for I."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not go'?",
+      "o": [
+       "ذهبت (dhahabtu)",
+       "أذهب (adhhab)",
+       "أنا ذهب (anā dhahab)",
+       "لم أذهب (lam adhhab)"
+      ],
+      "a": 3,
+      "why": "لم (lam) plus a present verb gives a past negative."
+     },
+     {
+      "t": "tf",
+      "q": "In the past tense, the ending ـتُ (-tu) means 'I'.",
+      "a": true,
+      "why": "ذهبت (dhahabtu) and أكلت (akaltu) both end in ـتُ (-tu) for I."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "أمس (ams)",
+        "Yesterday"
+       ],
+       [
+        "اليوم (al-yawm)",
+        "Today"
+       ],
+       [
+        "غدا (ghadan)",
+        "Tomorrow"
+       ],
+       [
+        "الأسبوع الماضي (al-usbūʿ al-māḍī)",
+        "Last week"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these time words in order from past to future",
+      "items": [
+       [
+        "أمس (ams)",
+        1
+       ],
+       [
+        "اليوم (al-yawm)",
+        2
+       ],
+       [
+        "غدا (ghadan)",
+        3
+       ],
+       [
+        "بعد غد (baʿda ghad)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Asking where",
+      "b": "أين (ayna) means where. أين البنك (ayna al-bank) means Where is the bank? Add من فضلك (min faḍlik) to be polite."
+     },
+     {
+      "h": "Directions",
+      "b": "يمين (yamīn) is right and يسار (yasār) is left. مباشرة (mubāsharatan) means straight ahead. انعطف (inʿaṭif) means turn."
+     },
+     {
+      "h": "Places and distance",
+      "b": "مستشفى (mustashfā) is hospital, محطة (maḥaṭṭa) is station, and بنك (bank) is bank. قريب (qarīb) means near and بعيد (baʿīd) means far."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does أين البنك (ayna al-bank) mean?",
+      "o": [
+       "The bank is big",
+       "I go to the bank",
+       "I like the bank",
+       "Where is the bank?"
+      ],
+      "a": 3,
+      "why": "أين (ayna) means where."
+     },
+     {
+      "t": "mc",
+      "q": "What does يمين (yamīn) mean?",
+      "o": [
+       "Left",
+       "Right",
+       "Straight",
+       "Back"
+      ],
+      "a": 1,
+      "why": "يمين (yamīn) means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does بعيد (baʿīd) mean?",
+      "o": [
+       "Near",
+       "Cheap",
+       "Far",
+       "Big"
+      ],
+      "a": 2,
+      "why": "بعيد (baʿīd) means far."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'turn left'?",
+      "o": [
+       "انعطف يسارا (inʿaṭif yasāran)",
+       "انعطف يمينا (inʿaṭif yamīnan)",
+       "امش مباشرة (imshi mubāsharatan)",
+       "أين اليسار (ayna al-yasār)"
+      ],
+      "a": 0,
+      "why": "يسار (yasār) means left and انعطف (inʿaṭif) means turn."
+     },
+     {
+      "t": "tf",
+      "q": "قريب (qarīb) means near.",
+      "a": true,
+      "why": "قريب (qarīb) means near or close."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "مستشفى (mustashfā)",
+        "Hospital"
+       ],
+       [
+        "محطة (maḥaṭṭa)",
+        "Station"
+       ],
+       [
+        "بنك (bank)",
+        "Bank"
+       ],
+       [
+        "مدرسة (madrasa)",
+        "School"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, please, where is the hospital?",
+      "items": [
+       [
+        "عفوا (ʿafwan)",
+        1
+       ],
+       [
+        "من فضلك (min faḍlik)",
+        2
+       ],
+       [
+        "أين (ayna)",
+        3
+       ],
+       [
+        "المستشفى (al-mustashfā)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Prices",
+      "b": "بكم (bikam) means How much? غالٍ (ghālin) means expensive and رخيص (rakhīṣ) means cheap."
+     },
+     {
+      "h": "Travel words",
+      "b": "تذكرة (tadhkira) is ticket, فندق (funduq) is hotel, and جواز سفر (jawāz safar) is passport. قطار (qiṭār) is train and طائرة (ṭāʾira) is plane."
+     },
+     {
+      "h": "Wanting and buying",
+      "b": "أريد (urīd) means I want. أريد تذكرة (urīd tadhkira) means I want a ticket. أشتري (ashtarī) means I buy."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does بكم (bikam) mean?",
+      "o": [
+       "Where is it?",
+       "What time is it?",
+       "How much is it?",
+       "Who is it?"
+      ],
+      "a": 2,
+      "why": "بكم (bikam) asks the price."
+     },
+     {
+      "t": "mc",
+      "q": "What does غالٍ (ghālin) mean?",
+      "o": [
+       "Cheap",
+       "Free",
+       "Small",
+       "Expensive"
+      ],
+      "a": 3,
+      "why": "غالٍ (ghālin) means expensive."
+     },
+     {
+      "t": "mc",
+      "q": "What is جواز سفر (jawāz safar)?",
+      "o": [
+       "Passport",
+       "Ticket",
+       "Hotel",
+       "Suitcase"
+      ],
+      "a": 0,
+      "why": "جواز سفر (jawāz safar) means passport."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I want a ticket'?",
+      "o": [
+       "أشتري فندق (ashtarī funduq)",
+       "أريد تذكرة (urīd tadhkira)",
+       "هل تذكرة (hal tadhkira)",
+       "لم تذكرة (lam tadhkira)"
+      ],
+      "a": 1,
+      "why": "أريد (urīd) means I want."
+     },
+     {
+      "t": "tf",
+      "q": "رخيص (rakhīṣ) means expensive.",
+      "a": false,
+      "why": "رخيص (rakhīṣ) means cheap."
+     },
+     {
+      "t": "match",
+      "q": "Match each travel word to its meaning",
+      "pairs": [
+       [
+        "فندق (funduq)",
+        "Hotel"
+       ],
+       [
+        "قطار (qiṭār)",
+        "Train"
+       ],
+       [
+        "طائرة (ṭāʾira)",
+        "Plane"
+       ],
+       [
+        "تذكرة (tadhkira)",
+        "Ticket"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Please, how much is this ticket?",
+      "items": [
+       [
+        "من فضلك (min faḍlik)",
+        1
+       ],
+       [
+        "بكم (bikam)",
+        2
+       ],
+       [
+        "هذه (hādhihi)",
+        3
+       ],
+       [
+        "التذكرة (at-tadhkira)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Reasons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Describing things",
+      "b": "ممتع (mumtiʿ) means fun or enjoyable and ممل (mumill) means boring. صعب (ṣaʿb) means difficult and سهل (sahl) means easy."
+     },
+     {
+      "h": "Giving an opinion",
+      "b": "أعتقد (aʿtaqid) means I think. أعتقد أنه ممتع (aʿtaqid annahu mumtiʿ) means I think it is fun. أحب (uḥibb) means I like."
+     },
+     {
+      "h": "Why and because",
+      "b": "لماذا (limādhā) means why and لأن (li-anna) means because. لكن (lākin) means but."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does لماذا (limādhā) mean?",
+      "o": [
+       "Where",
+       "Who",
+       "When",
+       "Why"
+      ],
+      "a": 3,
+      "why": "لماذا (limādhā) means why."
+     },
+     {
+      "t": "mc",
+      "q": "What does لأن (li-anna) mean?",
+      "o": [
+       "Because",
+       "But",
+       "Maybe",
+       "Also"
+      ],
+      "a": 0,
+      "why": "لأن (li-anna) introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "What does سهل (sahl) mean?",
+      "o": [
+       "Difficult",
+       "Boring",
+       "Easy",
+       "Far"
+      ],
+      "a": 2,
+      "why": "سهل (sahl) means easy."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I think it is fun'?",
+      "o": [
+       "لم أعتقد ممتع (lam aʿtaqid mumtiʿ)",
+       "أعتقد أنه ممتع (aʿtaqid annahu mumtiʿ)",
+       "هل ممتع (hal mumtiʿ)",
+       "أين ممتع (ayna mumtiʿ)"
+      ],
+      "a": 1,
+      "why": "أعتقد (aʿtaqid) means I think."
+     },
+     {
+      "t": "tf",
+      "q": "لكن (lākin) means 'but'.",
+      "a": true,
+      "why": "لكن (lākin) shows contrast."
+     },
+     {
+      "t": "match",
+      "q": "Match each describing word to its meaning",
+      "pairs": [
+       [
+        "ممتع (mumtiʿ)",
+        "Fun"
+       ],
+       [
+        "ممل (mumill)",
+        "Boring"
+       ],
+       [
+        "صعب (ṣaʿb)",
+        "Difficult"
+       ],
+       [
+        "سهل (sahl)",
+        "Easy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I think Arabic is fun",
+      "items": [
+       [
+        "أعتقد (aʿtaqid)",
+        1
+       ],
+       [
+        "أن (anna)",
+        2
+       ],
+       [
+        "العربية (al-ʿarabiyya)",
+        3
+       ],
+       [
+        "ممتعة (mumtiʿa)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "hi-1": {
+  "name": "Hindi · Beginner",
+  "units": [
+   {
+    "title": "Greetings",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Hello and goodbye",
+      "b": "नमस्ते (namaste) means hello. अलविदा (alvidā) means goodbye. Both are polite and common."
+     },
+     {
+      "h": "Thanks and sorry",
+      "b": "धन्यवाद (dhanyavād) means thank you. शुक्रिया (shukriyā) is a friendly way to say thanks. माफ़ कीजिए (māf kījiye) means excuse me or sorry."
+     },
+     {
+      "h": "Names and yes or no",
+      "b": "हाँ (hāṃ) means yes and नहीं (nahīṃ) means no. Say मेरा नाम रवि है (merā nām Ravi hai) for My name is Ravi."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does नमस्ते (namaste) mean?",
+      "o": [
+       "Goodbye",
+       "Sorry",
+       "Hello",
+       "Thank you"
+      ],
+      "a": 2,
+      "why": "नमस्ते (namaste) is the common Hindi hello."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'thank you' in Hindi?",
+      "o": [
+       "अलविदा (alvidā)",
+       "धन्यवाद (dhanyavād)",
+       "नहीं (nahīṃ)",
+       "नमस्ते (namaste)"
+      ],
+      "a": 1,
+      "why": "धन्यवाद (dhanyavād) means thank you."
+     },
+     {
+      "t": "mc",
+      "q": "Which word means 'yes'?",
+      "o": [
+       "हाँ (hāṃ)",
+       "नहीं (nahīṃ)",
+       "अलविदा (alvidā)",
+       "माफ़ (māf)"
+      ],
+      "a": 0,
+      "why": "हाँ (hāṃ) means yes."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'My name is Ravi'?",
+      "o": [
+       "मेरा घर रवि है (merā ghar Ravi hai)",
+       "रवि को धन्यवाद (Ravi ko dhanyavād)",
+       "रवि नहीं है (Ravi nahīṃ hai)",
+       "मेरा नाम रवि है (merā nām Ravi hai)"
+      ],
+      "a": 3,
+      "why": "नाम (nām) means name."
+     },
+     {
+      "t": "tf",
+      "q": "नहीं (nahīṃ) means no.",
+      "a": true,
+      "why": "नहीं (nahīṃ) is the Hindi word for no."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "हाँ (hāṃ)",
+        "Yes"
+       ],
+       [
+        "नहीं (nahīṃ)",
+        "No"
+       ],
+       [
+        "अलविदा (alvidā)",
+        "Goodbye"
+       ],
+       [
+        "धन्यवाद (dhanyavād)",
+        "Thank you"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this short conversation in order",
+      "items": [
+       [
+        "नमस्ते (namaste)",
+        1
+       ],
+       [
+        "मेरा नाम रवि है (merā nām Ravi hai)",
+        2
+       ],
+       [
+        "आपसे मिलकर खुशी हुई (āpse milkar khushī huī)",
+        3
+       ],
+       [
+        "अलविदा (alvidā)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 5",
+      "b": "एक (ek) is 1, दो (do) is 2, तीन (tīn) is 3, चार (chār) is 4, and पाँच (pāṃch) is 5."
+     },
+     {
+      "h": "Numbers 6 to 10",
+      "b": "छह (chheh) is 6, सात (sāt) is 7, आठ (āṭh) is 8, नौ (nau) is 9, and दस (das) is 10."
+     },
+     {
+      "h": "Family words",
+      "b": "माँ (māṃ) is mother and पिता (pitā) is father. भाई (bhāī) is brother and बहन (bahan) is sister. परिवार (parivār) means family."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What number is तीन (tīn)?",
+      "o": [
+       "1",
+       "2",
+       "3",
+       "4"
+      ],
+      "a": 2,
+      "why": "तीन (tīn) is 3."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'five' in Hindi?",
+      "o": [
+       "चार (chār)",
+       "छह (chheh)",
+       "सात (sāt)",
+       "पाँच (pāṃch)"
+      ],
+      "a": 3,
+      "why": "पाँच (pāṃch) is 5."
+     },
+     {
+      "t": "mc",
+      "q": "What does माँ (māṃ) mean?",
+      "o": [
+       "Mother",
+       "Father",
+       "Sister",
+       "Brother"
+      ],
+      "a": 0,
+      "why": "माँ (māṃ) means mother."
+     },
+     {
+      "t": "mc",
+      "q": "What does बहन (bahan) mean?",
+      "o": [
+       "Brother",
+       "Sister",
+       "Family",
+       "Friend"
+      ],
+      "a": 1,
+      "why": "बहन (bahan) means sister."
+     },
+     {
+      "t": "tf",
+      "q": "दस (das) means ten.",
+      "a": true,
+      "why": "दस (das) is 10."
+     },
+     {
+      "t": "match",
+      "q": "Match each family word to its meaning",
+      "pairs": [
+       [
+        "भाई (bhāī)",
+        "Brother"
+       ],
+       [
+        "पिता (pitā)",
+        "Father"
+       ],
+       [
+        "परिवार (parivār)",
+        "Family"
+       ],
+       [
+        "माँ (māṃ)",
+        "Mother"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "एक (ek)",
+        1
+       ],
+       [
+        "तीन (tīn)",
+        2
+       ],
+       [
+        "पाँच (pāṃch)",
+        3
+       ],
+       [
+        "आठ (āṭh)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Food words",
+      "b": "रोटी (roṭī) is flatbread and चावल (chāval) is rice. सेब (seb) is apple and फल (phal) is fruit."
+     },
+     {
+      "h": "Drinks and verbs",
+      "b": "पानी (pānī) is water, चाय (chāy) is tea, and दूध (dūdh) is milk. खाना (khānā) means to eat and पीना (pīnā) means to drink."
+     },
+     {
+      "h": "Wanting and tasting",
+      "b": "स्वादिष्ट (svādiṣṭ) means delicious. मुझे पानी चाहिए (mujhe pānī chāhiye) means I need water."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does पानी (pānī) mean?",
+      "o": [
+       "Tea",
+       "Water",
+       "Milk",
+       "Rice"
+      ],
+      "a": 1,
+      "why": "पानी (pānī) means water."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I drink tea'?",
+      "o": [
+       "मैं चाय खाता हूँ (maiṃ chāy khātā hūṃ)",
+       "मैं रोटी पीता हूँ (maiṃ roṭī pītā hūṃ)",
+       "मैं पानी नहीं (maiṃ pānī nahīṃ)",
+       "मैं चाय पीता हूँ (maiṃ chāy pītā hūṃ)"
+      ],
+      "a": 3,
+      "why": "पीना (pīnā) is the verb for drinking."
+     },
+     {
+      "t": "mc",
+      "q": "What does स्वादिष्ट (svādiṣṭ) mean?",
+      "o": [
+       "Delicious",
+       "Hungry",
+       "Hot",
+       "Cold"
+      ],
+      "a": 0,
+      "why": "स्वादिष्ट (svādiṣṭ) means tasty or delicious."
+     },
+     {
+      "t": "mc",
+      "q": "Which food is सेब (seb)?",
+      "o": [
+       "Rice",
+       "Milk",
+       "Apple",
+       "Bread"
+      ],
+      "a": 2,
+      "why": "सेब (seb) means apple."
+     },
+     {
+      "t": "tf",
+      "q": "दूध (dūdh) means milk.",
+      "a": true,
+      "why": "दूध (dūdh) is the Hindi word for milk."
+     },
+     {
+      "t": "match",
+      "q": "Match each food word to its meaning",
+      "pairs": [
+       [
+        "चावल (chāval)",
+        "Rice"
+       ],
+       [
+        "रोटी (roṭī)",
+        "Flatbread"
+       ],
+       [
+        "चाय (chāy)",
+        "Tea"
+       ],
+       [
+        "पानी (pānī)",
+        "Water"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I eat rice every day",
+      "items": [
+       [
+        "मैं (maiṃ)",
+        1
+       ],
+       [
+        "रोज़ (roz)",
+        2
+       ],
+       [
+        "चावल (chāval)",
+        3
+       ],
+       [
+        "खाता हूँ (khātā hūṃ)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Basics",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "To be",
+      "b": "मैं (maiṃ) is I and तुम (tum) is you. हूँ (hūṃ) is am and है (hai) is is. मैं छात्र हूँ (maiṃ chhātra hūṃ) means I am a student."
+     },
+     {
+      "h": "Questions",
+      "b": "क्या (kyā) at the start makes a yes or no question. It also means what. कहाँ (kahāṃ) means where."
+     },
+     {
+      "h": "Going and having",
+      "b": "जाना (jānā) means to go and आना (ānā) means to come. स्कूल (skūl) means school. मेरे पास एक बिल्ली है (mere pās ek billī hai) means I have a cat."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does क्या (kyā) mean at the start of a sentence?",
+      "o": [
+       "It makes a question",
+       "It means thank you",
+       "It makes it past tense",
+       "It means goodbye"
+      ],
+      "a": 0,
+      "why": "क्या (kyā) starts a yes or no question and also means what."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I am a student'?",
+      "o": [
+       "मैं छात्र नहीं (maiṃ chhātra nahīṃ)",
+       "मैं जाता हूँ (maiṃ jātā hūṃ)",
+       "मैं छात्र हूँ (maiṃ chhātra hūṃ)",
+       "तुम छात्र है (tum chhātra hai)"
+      ],
+      "a": 2,
+      "why": "हूँ (hūṃ) goes with मैं (maiṃ) and means am."
+     },
+     {
+      "t": "mc",
+      "q": "What does कहाँ (kahāṃ) mean?",
+      "o": [
+       "What",
+       "Who",
+       "Why",
+       "Where"
+      ],
+      "a": 3,
+      "why": "कहाँ (kahāṃ) means where."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I have a cat'?",
+      "o": [
+       "मैं एक बिल्ली हूँ (maiṃ ek billī hūṃ)",
+       "मेरे पास एक बिल्ली है (mere pās ek billī hai)",
+       "मैं बिल्ली जाता हूँ (maiṃ billī jātā hūṃ)",
+       "बिल्ली कहाँ नहीं (billī kahāṃ nahīṃ)"
+      ],
+      "a": 1,
+      "why": "मेरे पास (mere pās) is the way to say I have."
+     },
+     {
+      "t": "tf",
+      "q": "है (hai) means 'is'.",
+      "a": true,
+      "why": "है (hai) is the present tense of to be for he, she, and it."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "मैं (maiṃ)",
+        "I"
+       ],
+       [
+        "तुम (tum)",
+        "You"
+       ],
+       [
+        "जाना (jānā)",
+        "To go"
+       ],
+       [
+        "आना (ānā)",
+        "To come"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I go to school every day",
+      "items": [
+       [
+        "मैं (maiṃ)",
+        1
+       ],
+       [
+        "रोज़ (roz)",
+        2
+       ],
+       [
+        "स्कूल (skūl)",
+        3
+       ],
+       [
+        "जाता हूँ (jātā hūṃ)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "hi-2": {
+  "name": "Hindi · Intermediate",
+  "units": [
+   {
+    "title": "Past Tense",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Simple past",
+      "b": "गया (gayā) means went and खाया (khāyā) means ate. मैं स्कूल गया (maiṃ skūl gayā) means I went to school. था (thā) means was."
+     },
+     {
+      "h": "Past negative",
+      "b": "Put नहीं (nahīṃ) before the past verb. मैं नहीं गया (maiṃ nahīṃ gayā) means I did not go."
+     },
+     {
+      "h": "Time words",
+      "b": "आज (āj) means today and अभी (abhī) means now. पिछले हफ़्ते (pichhle hafte) means last week. कल (kal) means both yesterday and tomorrow, so the verb tells you which one."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "How do you say 'I ate food'?",
+      "o": [
+       "मैं खाना जाऊँगा (maiṃ khānā jāūṅgā)",
+       "मैं खाना नहीं हूँ (maiṃ khānā nahīṃ hūṃ)",
+       "मैंने खाना खाया (maiṃne khānā khāyā)",
+       "मैं खाना पीता हूँ (maiṃ khānā pītā hūṃ)"
+      ],
+      "a": 2,
+      "why": "खाया (khāyā) is the past of eat."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I went to school'?",
+      "o": [
+       "मैं स्कूल जाऊँगा (maiṃ skūl jāūṅgā)",
+       "मैं स्कूल गया (maiṃ skūl gayā)",
+       "मैं स्कूल खाया (maiṃ skūl khāyā)",
+       "मैं स्कूल कहाँ (maiṃ skūl kahāṃ)"
+      ],
+      "a": 1,
+      "why": "गया (gayā) means went."
+     },
+     {
+      "t": "mc",
+      "q": "What does था (thā) mean?",
+      "o": [
+       "Was",
+       "Will be",
+       "Is",
+       "Are"
+      ],
+      "a": 0,
+      "why": "था (thā) is the past of to be."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I did not go'?",
+      "o": [
+       "मैं जाता हूँ (maiṃ jātā hūṃ)",
+       "मैं गया हूँ (maiṃ gayā hūṃ)",
+       "मैं स्कूल है (maiṃ skūl hai)",
+       "मैं नहीं गया (maiṃ nahīṃ gayā)"
+      ],
+      "a": 3,
+      "why": "नहीं (nahīṃ) before the past verb makes it negative."
+     },
+     {
+      "t": "tf",
+      "q": "कल (kal) can mean both 'yesterday' and 'tomorrow'.",
+      "a": true,
+      "why": "Hindi uses the same word कल (kal) for both, and the verb tense shows which."
+     },
+     {
+      "t": "match",
+      "q": "Match each time word to its meaning",
+      "pairs": [
+       [
+        "आज (āj)",
+        "Today"
+       ],
+       [
+        "पिछले हफ़्ते (pichhle hafte)",
+        "Last week"
+       ],
+       [
+        "अगले हफ़्ते (agle hafte)",
+        "Next week"
+       ],
+       [
+        "अभी (abhī)",
+        "Now"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these time words in order from past to future",
+      "items": [
+       [
+        "पिछले हफ़्ते (pichhle hafte)",
+        1
+       ],
+       [
+        "आज (āj)",
+        2
+       ],
+       [
+        "अगले हफ़्ते (agle hafte)",
+        3
+       ],
+       [
+        "अगले महीने (agle mahīne)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Asking where",
+      "b": "कहाँ (kahāṃ) means where. बैंक कहाँ है (baiṅk kahāṃ hai) means Where is the bank?"
+     },
+     {
+      "h": "Directions",
+      "b": "दाएँ (dāeṃ) is right and बाएँ (bāeṃ) is left. सीधे (sīdhe) means straight. मुड़िए (muṛiye) means please turn."
+     },
+     {
+      "h": "Places and distance",
+      "b": "स्टेशन (sṭeshan) is station, अस्पताल (aspatāl) is hospital, and बैंक (baiṅk) is bank. पास (pās) means near and दूर (dūr) means far."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does बैंक कहाँ है (baiṅk kahāṃ hai) mean?",
+      "o": [
+       "The bank is big",
+       "I go to the bank",
+       "I like the bank",
+       "Where is the bank?"
+      ],
+      "a": 3,
+      "why": "कहाँ (kahāṃ) means where."
+     },
+     {
+      "t": "mc",
+      "q": "What does दाएँ (dāeṃ) mean?",
+      "o": [
+       "Left",
+       "Right",
+       "Straight",
+       "Back"
+      ],
+      "a": 1,
+      "why": "दाएँ (dāeṃ) means right."
+     },
+     {
+      "t": "mc",
+      "q": "What does सीधे (sīdhe) mean?",
+      "o": [
+       "Turn",
+       "Stop",
+       "Straight",
+       "Far"
+      ],
+      "a": 2,
+      "why": "सीधे (sīdhe) means straight."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'turn left'?",
+      "o": [
+       "बाएँ मुड़िए (bāeṃ muṛiye)",
+       "दाएँ मुड़िए (dāeṃ muṛiye)",
+       "सीधे जाइए (sīdhe jāiye)",
+       "बाएँ कहाँ है (bāeṃ kahāṃ hai)"
+      ],
+      "a": 0,
+      "why": "बाएँ (bāeṃ) is left and मुड़िए (muṛiye) is turn."
+     },
+     {
+      "t": "tf",
+      "q": "दूर (dūr) means far.",
+      "a": true,
+      "why": "दूर (dūr) means far away."
+     },
+     {
+      "t": "match",
+      "q": "Match each place to its meaning",
+      "pairs": [
+       [
+        "अस्पताल (aspatāl)",
+        "Hospital"
+       ],
+       [
+        "स्टेशन (sṭeshan)",
+        "Station"
+       ],
+       [
+        "बैंक (baiṅk)",
+        "Bank"
+       ],
+       [
+        "स्कूल (skūl)",
+        "School"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: Excuse me, where is the hospital?",
+      "items": [
+       [
+        "माफ़ कीजिए (māf kījiye)",
+        1
+       ],
+       [
+        "अस्पताल (aspatāl)",
+        2
+       ],
+       [
+        "कहाँ (kahāṃ)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Prices",
+      "b": "कितने का है (kitne kā hai) means How much is it? महँगा (mahaṅgā) means expensive and सस्ता (sastā) means cheap."
+     },
+     {
+      "h": "Travel words",
+      "b": "टिकट (ṭikaṭ) is ticket, होटल (hoṭal) is hotel, and पासपोर्ट (pāsporṭ) is passport. ट्रेन (ṭren) is train and यात्रा (yātrā) means journey."
+     },
+     {
+      "h": "Needing things",
+      "b": "Say मुझे ... चाहिए (mujhe ... chāhiye) for I need or want. मुझे एक टिकट चाहिए (mujhe ek ṭikaṭ chāhiye) means I need a ticket."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does कितने का है (kitne kā hai) mean?",
+      "o": [
+       "Where is it?",
+       "How much is it?",
+       "What is it?",
+       "Who is it?"
+      ],
+      "a": 1,
+      "why": "कितने का (kitne kā) asks the price."
+     },
+     {
+      "t": "mc",
+      "q": "What does महँगा (mahaṅgā) mean?",
+      "o": [
+       "Cheap",
+       "Free",
+       "Small",
+       "Expensive"
+      ],
+      "a": 3,
+      "why": "महँगा (mahaṅgā) means expensive."
+     },
+     {
+      "t": "mc",
+      "q": "What is पासपोर्ट (pāsporṭ)?",
+      "o": [
+       "Ticket",
+       "Hotel",
+       "Passport",
+       "Train"
+      ],
+      "a": 2,
+      "why": "पासपोर्ट (pāsporṭ) means passport."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I need a ticket'?",
+      "o": [
+       "मुझे एक टिकट चाहिए (mujhe ek ṭikaṭ chāhiye)",
+       "मैं एक टिकट खाता हूँ (maiṃ ek ṭikaṭ khātā hūṃ)",
+       "टिकट कहाँ नहीं (ṭikaṭ kahāṃ nahīṃ)",
+       "मैं टिकट गया (maiṃ ṭikaṭ gayā)"
+      ],
+      "a": 0,
+      "why": "मुझे ... चाहिए (mujhe ... chāhiye) means I need."
+     },
+     {
+      "t": "tf",
+      "q": "सस्ता (sastā) means expensive.",
+      "a": false,
+      "why": "सस्ता (sastā) means cheap."
+     },
+     {
+      "t": "match",
+      "q": "Match each travel word to its meaning",
+      "pairs": [
+       [
+        "होटल (hoṭal)",
+        "Hotel"
+       ],
+       [
+        "ट्रेन (ṭren)",
+        "Train"
+       ],
+       [
+        "टिकट (ṭikaṭ)",
+        "Ticket"
+       ],
+       [
+        "यात्रा (yātrā)",
+        "Journey"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: How much is this ticket?",
+      "items": [
+       [
+        "यह (yah)",
+        1
+       ],
+       [
+        "टिकट (ṭikaṭ)",
+        2
+       ],
+       [
+        "कितने का (kitne kā)",
+        3
+       ],
+       [
+        "है (hai)",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Reasons",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Describing things",
+      "b": "मज़ेदार (mazedār) means fun and उबाऊ (ubāū) means boring. आसान (āsān) means easy and मुश्किल (mushkil) means difficult."
+     },
+     {
+      "h": "Giving an opinion",
+      "b": "मुझे लगता है (mujhe lagtā hai) means I think or I feel. मुझे हिंदी पसंद है (mujhe hindī pasand hai) means I like Hindi."
+     },
+     {
+      "h": "Why and because",
+      "b": "क्यों (kyoṃ) means why and क्योंकि (kyoṃki) means because. लेकिन (lekin) means but."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does क्यों (kyoṃ) mean?",
+      "o": [
+       "Where",
+       "Who",
+       "Why",
+       "When"
+      ],
+      "a": 2,
+      "why": "क्यों (kyoṃ) means why."
+     },
+     {
+      "t": "mc",
+      "q": "What does क्योंकि (kyoṃki) mean?",
+      "o": [
+       "But",
+       "Because",
+       "Maybe",
+       "Also"
+      ],
+      "a": 1,
+      "why": "क्योंकि (kyoṃki) introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "What does आसान (āsān) mean?",
+      "o": [
+       "Easy",
+       "Difficult",
+       "Boring",
+       "Far"
+      ],
+      "a": 0,
+      "why": "आसान (āsān) means easy."
+     },
+     {
+      "t": "mc",
+      "q": "How do you say 'I like Hindi'?",
+      "o": [
+       "मुझे हिंदी कहाँ है (mujhe hindī kahāṃ hai)",
+       "मैं हिंदी गया (maiṃ hindī gayā)",
+       "हिंदी नहीं चाहिए (hindī nahīṃ chāhiye)",
+       "मुझे हिंदी पसंद है (mujhe hindī pasand hai)"
+      ],
+      "a": 3,
+      "why": "पसंद (pasand) means like."
+     },
+     {
+      "t": "tf",
+      "q": "लेकिन (lekin) means 'but'.",
+      "a": true,
+      "why": "लेकिन (lekin) shows contrast."
+     },
+     {
+      "t": "match",
+      "q": "Match each describing word to its meaning",
+      "pairs": [
+       [
+        "मज़ेदार (mazedār)",
+        "Fun"
+       ],
+       [
+        "उबाऊ (ubāū)",
+        "Boring"
+       ],
+       [
+        "मुश्किल (mushkil)",
+        "Difficult"
+       ],
+       [
+        "आसान (āsān)",
+        "Easy"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order: I think Hindi is fun",
+      "items": [
+       [
+        "मुझे लगता है (mujhe lagtā hai)",
+        1
+       ],
+       [
+        "कि (ki)",
+        2
+       ],
+       [
+        "हिंदी (hindī)",
+        3
+       ],
+       [
+        "मज़ेदार है (mazedār hai)",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "en-1": {
+  "name": "English · Beginner",
+  "units": [
+   {
+    "title": "Greetings and Introductions",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Saying hello",
+      "b": "Say Hello or Hi when you meet someone. Say Good morning before noon and Good evening at night. Say Goodbye when you leave."
+     },
+     {
+      "h": "Polite words",
+      "b": "Say Please when you ask for something. Say Thank you when someone helps you. The answer is You're welcome. Say Sorry after a mistake."
+     },
+     {
+      "h": "Introducing yourself",
+      "b": "Say My name is Ana. Then say Nice to meet you. To ask how someone is, say How are you? A common answer is I'm fine, thanks."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which greeting do you use in the morning?",
+      "o": [
+       "Good night",
+       "Good evening",
+       "Good morning",
+       "Goodbye"
+      ],
+      "a": 2,
+      "why": "Good morning is the greeting for the morning."
+     },
+     {
+      "t": "mc",
+      "q": "Someone says 'Thank you.' What do you answer?",
+      "o": [
+       "Sorry",
+       "You're welcome",
+       "Good morning",
+       "My name is Ana"
+      ],
+      "a": 1,
+      "why": "You're welcome is the polite answer to thank you."
+     },
+     {
+      "t": "mc",
+      "q": "How do you tell someone your name?",
+      "o": [
+       "My name is Ana.",
+       "I am hungry Ana.",
+       "Ana is goodbye.",
+       "Please Ana."
+      ],
+      "a": 0,
+      "why": "My name is ... is the standard way to give your name."
+     },
+     {
+      "t": "mc",
+      "q": "Which word makes a request polite?",
+      "o": [
+       "Sorry",
+       "Hello",
+       "Goodbye",
+       "Please"
+      ],
+      "a": 3,
+      "why": "Please makes a request polite."
+     },
+     {
+      "t": "tf",
+      "q": "You say 'Goodbye' when you leave.",
+      "a": true,
+      "why": "Goodbye is used when you are leaving."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to when you use it",
+      "pairs": [
+       [
+        "Hello",
+        "When you meet someone"
+       ],
+       [
+        "Goodbye",
+        "When you leave"
+       ],
+       [
+        "Sorry",
+        "After a mistake"
+       ],
+       [
+        "Thank you",
+        "When someone helps"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put this short conversation in order",
+      "items": [
+       [
+        "Hello!",
+        1
+       ],
+       [
+        "My name is Ana.",
+        2
+       ],
+       [
+        "Nice to meet you.",
+        3
+       ],
+       [
+        "Goodbye!",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Numbers and Family",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Numbers 1 to 10",
+      "b": "The numbers are one, two, three, four, five, six, seven, eight, nine, and ten. We write them as 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10."
+     },
+     {
+      "h": "Family words",
+      "b": "Your mother and father are your parents. Your brother is a boy in your family and your sister is a girl in your family. Family means the people who are related to you."
+     },
+     {
+      "h": "Talking about family",
+      "b": "Say I have two brothers. For more than one, add s: one brother, two brothers. Use have with I, you, we, and they."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which number is 'seven'?",
+      "o": [
+       "5",
+       "7",
+       "9",
+       "17"
+      ],
+      "a": 1,
+      "why": "Seven is the number 7."
+     },
+     {
+      "t": "mc",
+      "q": "Your father's wife is usually your ...",
+      "o": [
+       "Sister",
+       "Brother",
+       "Mother",
+       "Cousin"
+      ],
+      "a": 2,
+      "why": "Your father's wife is usually your mother."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ two sisters.",
+      "o": [
+       "have",
+       "has",
+       "am",
+       "is"
+      ],
+      "a": 0,
+      "why": "Use have with I."
+     },
+     {
+      "t": "mc",
+      "q": "What is the plural of 'brother'?",
+      "o": [
+       "Brother",
+       "Brothers",
+       "Brothes",
+       "Brotheren"
+      ],
+      "a": 1,
+      "why": "Add s to make most nouns plural."
+     },
+     {
+      "t": "tf",
+      "q": "'Sister' is a male family member.",
+      "a": false,
+      "why": "A sister is a female family member."
+     },
+     {
+      "t": "match",
+      "q": "Match each number word to its number",
+      "pairs": [
+       [
+        "one",
+        "1"
+       ],
+       [
+        "five",
+        "5"
+       ],
+       [
+        "eight",
+        "8"
+       ],
+       [
+        "ten",
+        "10"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these numbers in order from smallest to largest",
+      "items": [
+       [
+        "two",
+        1
+       ],
+       [
+        "four",
+        2
+       ],
+       [
+        "seven",
+        3
+       ],
+       [
+        "nine",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Food and Drink",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "Meals",
+      "b": "Breakfast is the morning meal. Lunch is the meal in the middle of the day. Dinner is the evening meal. A snack is a small bite between meals."
+     },
+     {
+      "h": "Food and drink words",
+      "b": "Common foods are bread, rice, and apples. Common drinks are water and milk. We eat food and we drink drinks."
+     },
+     {
+      "h": "Ordering and liking",
+      "b": "To order politely, say I'd like some tea, please. To say what you enjoy, say I like pizza. To say the opposite, say I don't like fish."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ water every day.",
+      "o": [
+       "eat",
+       "drink",
+       "read",
+       "wear"
+      ],
+      "a": 1,
+      "why": "We drink water. We eat food."
+     },
+     {
+      "t": "mc",
+      "q": "Which sentence is a polite way to order?",
+      "o": [
+       "Give me tea.",
+       "Tea now.",
+       "I'd like some tea, please.",
+       "I tea."
+      ],
+      "a": 2,
+      "why": "I'd like ..., please is a polite way to order."
+     },
+     {
+      "t": "mc",
+      "q": "Which meal do you eat in the morning?",
+      "o": [
+       "Breakfast",
+       "Lunch",
+       "Dinner",
+       "Midnight"
+      ],
+      "a": 0,
+      "why": "Breakfast is the first meal of the day."
+     },
+     {
+      "t": "mc",
+      "q": "Which of these is a fruit?",
+      "o": [
+       "Bread",
+       "Rice",
+       "Milk",
+       "Apple"
+      ],
+      "a": 3,
+      "why": "An apple is a fruit."
+     },
+     {
+      "t": "tf",
+      "q": "'Delicious' means the food tastes very good.",
+      "a": true,
+      "why": "Delicious means very tasty."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Breakfast",
+        "Morning meal"
+       ],
+       [
+        "Lunch",
+        "Midday meal"
+       ],
+       [
+        "Dinner",
+        "Evening meal"
+       ],
+       [
+        "Snack",
+        "Small food between meals"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a sentence",
+      "items": [
+       [
+        "I",
+        1
+       ],
+       [
+        "eat",
+        2
+       ],
+       [
+        "rice",
+        3
+       ],
+       [
+        "every day.",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Verbs and Daily Life",
+    "period": "Beginner",
+    "learn": [
+     {
+      "h": "To be",
+      "b": "Use am with I, is with he, she, and it, and are with you, we, and they. For example: I am a student. She is a teacher."
+     },
+     {
+      "h": "To have and present simple",
+      "b": "Use have with I, you, we, and they. Use has with he, she, and it. For daily actions, add s for he, she, and it: He goes to school."
+     },
+     {
+      "h": "Negatives",
+      "b": "Use don't with I, you, we, and they. Use doesn't with he, she, and it. For example: I don't like fish. She doesn't eat meat."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct word: She ___ a student.",
+      "o": [
+       "am",
+       "is",
+       "are",
+       "be"
+      ],
+      "a": 1,
+      "why": "Use is with she."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: They ___ a dog.",
+      "o": [
+       "has",
+       "is",
+       "have",
+       "does"
+      ],
+      "a": 2,
+      "why": "Use have with they."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: He ___ to school every day.",
+      "o": [
+       "go",
+       "goes",
+       "going",
+       "gone"
+      ],
+      "a": 1,
+      "why": "Add es to go for he, she, and it."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ like fish.",
+      "o": [
+       "doesn't",
+       "isn't",
+       "am not",
+       "don't"
+      ],
+      "a": 3,
+      "why": "Use don't with I."
+     },
+     {
+      "t": "tf",
+      "q": "'He have a cat' is a correct sentence.",
+      "a": false,
+      "why": "It should be 'He has a cat.'"
+     },
+     {
+      "t": "match",
+      "q": "Match each pronoun to the correct verb",
+      "pairs": [
+       [
+        "I",
+        "am"
+       ],
+       [
+        "She",
+        "is"
+       ],
+       [
+        "We",
+        "are"
+       ],
+       [
+        "He",
+        "has"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a sentence",
+      "items": [
+       [
+        "She",
+        1
+       ],
+       [
+        "goes",
+        2
+       ],
+       [
+        "to",
+        3
+       ],
+       [
+        "school.",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "en-2": {
+  "name": "English · Intermediate",
+  "units": [
+   {
+    "title": "Past Simple",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Regular past",
+      "b": "For regular verbs, add ed to talk about the past. Play becomes played and walk becomes walked. We often use words like yesterday and last week."
+     },
+     {
+      "h": "Irregular past",
+      "b": "Some common verbs change form. Go becomes went, eat becomes ate, see becomes saw, and have becomes had. You need to learn these."
+     },
+     {
+      "h": "Past negatives",
+      "b": "Use didn't plus the base verb. I didn't go to school. Do not add ed after didn't."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Choose the correct word: Yesterday I ___ pizza.",
+      "o": [
+       "eat",
+       "eaten",
+       "ate",
+       "eating"
+      ],
+      "a": 2,
+      "why": "Ate is the past simple of eat."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past simple of 'go'?",
+      "o": [
+       "Goed",
+       "Went",
+       "Gone",
+       "Going"
+      ],
+      "a": 1,
+      "why": "Go is irregular, and its past simple is went."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct sentence.",
+      "o": [
+       "She didn't came to school.",
+       "She didn't came to schools.",
+       "She not come to school.",
+       "She didn't come to school."
+      ],
+      "a": 3,
+      "why": "After didn't, use the base verb: come."
+     },
+     {
+      "t": "mc",
+      "q": "What is the past simple of 'play'?",
+      "o": [
+       "Played",
+       "Plaid",
+       "Plays",
+       "Playing"
+      ],
+      "a": 0,
+      "why": "Regular verbs add ed."
+     },
+     {
+      "t": "tf",
+      "q": "'I goed to the park' is correct English.",
+      "a": false,
+      "why": "The correct form is 'I went to the park.'"
+     },
+     {
+      "t": "match",
+      "q": "Match each verb to its past form",
+      "pairs": [
+       [
+        "go",
+        "went"
+       ],
+       [
+        "eat",
+        "ate"
+       ],
+       [
+        "see",
+        "saw"
+       ],
+       [
+        "have",
+        "had"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these times in order from earliest to latest",
+      "items": [
+       [
+        "last year",
+        1
+       ],
+       [
+        "last month",
+        2
+       ],
+       [
+        "last week",
+        3
+       ],
+       [
+        "yesterday",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Directions and Places",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving directions",
+      "b": "Say Turn left or Turn right. Say Go straight to keep walking forward. Say Stop at the corner when you must stop."
+     },
+     {
+      "h": "Place words",
+      "b": "Next to means beside. Opposite means on the other side. Between means in the middle of two things. Near means close and far means a long way away."
+     },
+     {
+      "h": "Asking politely",
+      "b": "Start with Excuse me. Then ask Where is the bank? or How do I get to the station? These questions are polite and clear."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word is the opposite of 'left'?",
+      "o": [
+       "Straight",
+       "Right",
+       "Back",
+       "Between"
+      ],
+      "a": 1,
+      "why": "Left and right are opposite directions."
+     },
+     {
+      "t": "mc",
+      "q": "Which question asks for directions politely?",
+      "o": [
+       "Station now!",
+       "Where station?",
+       "Give me station.",
+       "Excuse me, how do I get to the station?"
+      ],
+      "a": 3,
+      "why": "It uses Excuse me and a full question."
+     },
+     {
+      "t": "mc",
+      "q": "'The bank is next to the post office' means the bank is ...",
+      "o": [
+       "Beside the post office",
+       "Far from the post office",
+       "Inside the post office",
+       "Behind the city"
+      ],
+      "a": 0,
+      "why": "Next to means beside."
+     },
+     {
+      "t": "mc",
+      "q": "What does 'Go straight' mean?",
+      "o": [
+       "Turn around",
+       "Turn left",
+       "Keep going forward without turning",
+       "Stop walking"
+      ],
+      "a": 2,
+      "why": "Go straight means keep going forward."
+     },
+     {
+      "t": "tf",
+      "q": "'Far' means a short distance away.",
+      "a": false,
+      "why": "Far means a long distance away. Near means a short distance."
+     },
+     {
+      "t": "match",
+      "q": "Match each phrase to its meaning",
+      "pairs": [
+       [
+        "Turn left",
+        "Go to the left side"
+       ],
+       [
+        "Go straight",
+        "Keep walking forward"
+       ],
+       [
+        "Opposite",
+        "On the other side of"
+       ],
+       [
+        "Between",
+        "In the middle of two things"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a question",
+      "items": [
+       [
+        "Excuse me,",
+        1
+       ],
+       [
+        "where",
+        2
+       ],
+       [
+        "is",
+        3
+       ],
+       [
+        "the bank?",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Travel and Shopping",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Travel words",
+      "b": "A passport lets you travel to other countries. A ticket lets you take a train or plane. An airport is where planes land. A hotel is where you sleep on a trip."
+     },
+     {
+      "h": "Prices",
+      "b": "Ask How much is this? to learn the price. Expensive means it costs a lot. Cheap means it costs little. A receipt is paper that shows what you paid."
+     },
+     {
+      "h": "Useful phrases",
+      "b": "Say I'd like to buy this, please. Say I'd like to book a room for two nights. You can also ask Can I pay by card?"
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which word means 'costs a lot of money'?",
+      "o": [
+       "Cheap",
+       "Free",
+       "Expensive",
+       "Small"
+      ],
+      "a": 2,
+      "why": "Expensive means it costs a lot."
+     },
+     {
+      "t": "mc",
+      "q": "You show this at the airport to travel to another country.",
+      "o": [
+       "Receipt",
+       "Passport",
+       "Menu",
+       "Map"
+      ],
+      "a": 1,
+      "why": "A passport proves who you are when you travel abroad."
+     },
+     {
+      "t": "mc",
+      "q": "How do you ask the price of something?",
+      "o": [
+       "How much is this?",
+       "How many is this?",
+       "Where is this?",
+       "What is this for?"
+      ],
+      "a": 0,
+      "why": "How much is this? asks about the price."
+     },
+     {
+      "t": "mc",
+      "q": "Where do you sleep when you travel?",
+      "o": [
+       "Airport",
+       "Station",
+       "Bank",
+       "Hotel"
+      ],
+      "a": 3,
+      "why": "A hotel is a place to sleep on a trip."
+     },
+     {
+      "t": "tf",
+      "q": "'Cheap' means something costs a lot.",
+      "a": false,
+      "why": "Cheap means it costs very little."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its meaning",
+      "pairs": [
+       [
+        "Ticket",
+        "Lets you travel"
+       ],
+       [
+        "Receipt",
+        "Shows what you paid"
+       ],
+       [
+        "Airport",
+        "Where planes land"
+       ],
+       [
+        "Suitcase",
+        "Bag for travel clothes"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a question",
+      "items": [
+       [
+        "How much",
+        1
+       ],
+       [
+        "is",
+        2
+       ],
+       [
+        "this",
+        3
+       ],
+       [
+        "ticket?",
+        4
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Opinions and Plans",
+    "period": "Intermediate",
+    "learn": [
+     {
+      "h": "Giving opinions",
+      "b": "Start with I think, I believe, or In my opinion. Say I agree if you think the same. Say I disagree if you think differently."
+     },
+     {
+      "h": "Connecting ideas",
+      "b": "Because gives a reason. But shows a contrast. So shows a result. For example: I was tired, so I went to bed."
+     },
+     {
+      "h": "Future and comparing",
+      "b": "Use am, is, or are going to plus a verb for a plan: I am going to travel next year. Use more before long adjectives: more interesting. Use er for short ones: bigger."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What does 'I agree' mean?",
+      "o": [
+       "I think the same",
+       "I think differently",
+       "I don't know",
+       "I am leaving"
+      ],
+      "a": 0,
+      "why": "To agree is to think the same as someone."
+     },
+     {
+      "t": "mc",
+      "q": "Choose the correct word: I ___ going to travel next year.",
+      "o": [
+       "is",
+       "are",
+       "be",
+       "am"
+      ],
+      "a": 3,
+      "why": "Use am with I in the going to future."
+     },
+     {
+      "t": "mc",
+      "q": "Which word gives a reason?",
+      "o": [
+       "But",
+       "Because",
+       "Maybe",
+       "Also"
+      ],
+      "a": 1,
+      "why": "Because introduces a reason."
+     },
+     {
+      "t": "mc",
+      "q": "What is the comparative of 'interesting'?",
+      "o": [
+       "Interestinger",
+       "Most interesting",
+       "More interesting",
+       "Interesting more"
+      ],
+      "a": 2,
+      "why": "Long adjectives use more in the comparative."
+     },
+     {
+      "t": "tf",
+      "q": "'Disagree' means you think the same.",
+      "a": false,
+      "why": "Disagree means you think differently."
+     },
+     {
+      "t": "match",
+      "q": "Match each word to its job",
+      "pairs": [
+       [
+        "because",
+        "Gives a reason"
+       ],
+       [
+        "but",
+        "Shows contrast"
+       ],
+       [
+        "so",
+        "Shows a result"
+       ],
+       [
+        "I think",
+        "Starts an opinion"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put the words in order to make a sentence",
+      "items": [
+       [
+        "In my opinion,",
+        1
+       ],
+       [
+        "this",
+        2
+       ],
+       [
+        "book",
+        3
+       ],
+       [
+        "is better.",
+        4
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
