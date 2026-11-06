@@ -1,0 +1,2402 @@
+{
+ "world": {
+  "name": "AP World History",
+  "short": "WH",
+  "color": "#4fbf26",
+  "dark": "#3a9619",
+  "units": [
+   {
+    "title": "The Global Tapestry",
+    "period": "c. 1200–1450",
+    "c": "#4fbf26",
+    "d": "#3a9619",
+    "learn": [
+     {
+      "h": "Song China",
+      "b": "The Song dynasty ran its empire with a civil service exam based on Confucian learning. Neo-Confucianism mixed Confucian ideas with Buddhism and Daoism. Fast-growing Champa rice from Vietnam fed a booming population, and the Grand Canal moved goods north and south."
+     },
+     {
+      "h": "Dar al-Islam",
+      "b": "The Abbasid Caliphate weakened, and new Turkic Muslim states took power: the Seljuks, the Mamluks in Egypt, and the Delhi Sultanate in India. Muslim scholars kept and built on Greek learning in math, medicine and astronomy."
+     },
+     {
+      "h": "South and Southeast Asia",
+      "b": "Hindu Vijayanagara rivaled the Delhi Sultanate. The Bhakti movement taught personal devotion to one god. Srivijaya grew rich by controlling the Strait of Malacca, while the Khmer Empire built Angkor Wat."
+     },
+     {
+      "h": "Americas, Africa and Europe",
+      "b": "The Mexica ruled from Tenochtitlan using tribute and chinampa farms. The Inca used the mit'a labor system and quipu records. In Africa, Mali grew rich from gold, and Great Zimbabwe traded across the Indian Ocean. Europe was decentralized under feudalism and the Catholic Church."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which innovation helped Song China's population grow so quickly?",
+      "o": [
+       "Champa rice",
+       "The moldboard plow",
+       "Chinampa farming",
+       "The potato"
+      ],
+      "a": 0,
+      "why": "Champa rice ripened fast and resisted drought, so farmers could grow two crops a year."
+     },
+     {
+      "t": "mc",
+      "q": "The Inca made people work on state projects for a set time. This system was called…",
+      "o": [
+       "Mit'a",
+       "Encomienda",
+       "Hacienda",
+       "Devshirme"
+      ],
+      "a": 0,
+      "why": "The mit'a was a labor tax: communities sent workers to build roads, terraces and forts."
+     },
+     {
+      "t": "tf",
+      "q": "Srivijaya's power came mainly from controlling the Strait of Malacca.",
+      "a": true,
+      "why": "Srivijaya taxed ships passing through the strait between the Indian Ocean and South China Sea."
+     },
+     {
+      "t": "match",
+      "q": "Match each state to its city or monument",
+      "pairs": [
+       [
+        "Mexica",
+        "Tenochtitlan"
+       ],
+       [
+        "Inca",
+        "Cuzco"
+       ],
+       [
+        "Mali",
+        "Timbuktu"
+       ],
+       [
+        "Khmer Empire",
+        "Angkor Wat"
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Neo-Confucianism blended Confucian ideas with…",
+      "o": [
+       "Buddhism and Daoism",
+       "Islam and Christianity",
+       "Hinduism and Jainism",
+       "Zoroastrianism"
+      ],
+      "a": 0,
+      "why": "Song thinkers added Buddhist and Daoist ideas about the self and the universe to Confucian ethics."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Song dynasty begins",
+        960
+       ],
+       [
+        "Mongols sack Baghdad",
+        1258
+       ],
+       [
+        "Mansa Musa's hajj to Mecca",
+        1324
+       ],
+       [
+        "Ming dynasty founded",
+        1368
+       ]
+      ]
+     },
+     {
+      "t": "tf",
+      "q": "The Delhi Sultanate was ruled by Hindu kings.",
+      "a": false,
+      "why": "It was a Muslim sultanate ruling over a mostly Hindu population."
+     },
+     {
+      "t": "mc",
+      "q": "The Bhakti movement emphasized…",
+      "o": [
+       "Personal devotion to a single god",
+       "Strict caste rules",
+       "Conversion to Islam",
+       "Rejecting all religion"
+      ],
+      "a": 0,
+      "why": "Bhakti taught emotional devotion to one deity and often challenged caste barriers."
+     }
+    ]
+   },
+   {
+    "title": "Networks of Exchange",
+    "period": "c. 1200–1450",
+    "c": "#1aa3e8",
+    "d": "#1182bb",
+    "learn": [
+     {
+      "h": "The Silk Roads",
+      "b": "Overland routes carried luxury goods like silk and porcelain. Caravanserai (roadside inns) sheltered merchants. Banking tools such as bills of exchange and Chinese flying cash made long-distance trade easier."
+     },
+     {
+      "h": "The Mongols",
+      "b": "The Mongols built the largest land empire in history. Their Pax Mongolica made the Silk Roads safer, which spread trade, ideas and also the bubonic plague. The empire split into khanates such as the Yuan in China and the Ilkhanate in Persia."
+     },
+     {
+      "h": "Indian Ocean trade",
+      "b": "Monsoon winds made sailing predictable. Ships like dhows and junks, and tools like the compass and astrolabe, carried goods between East Africa, India and China. Swahili city-states mixed Bantu and Arab culture. Zheng He led huge Ming treasure fleets."
+     },
+     {
+      "h": "Trans-Saharan trade",
+      "b": "Camels and camel saddles made the Sahara crossable. West African gold was traded for Saharan salt, making Mali very rich. Travelers like Ibn Battuta and Marco Polo recorded these networks."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "What made Indian Ocean trade predictable?",
+      "o": [
+       "Monsoon wind patterns",
+       "Steam-powered ships",
+       "Mongol protection",
+       "The Grand Canal"
+      ],
+      "a": 0,
+      "why": "Monsoon winds change direction by season, so sailors could plan round trips."
+     },
+     {
+      "t": "mc",
+      "q": "The main exchange in trans-Saharan trade was…",
+      "o": [
+       "West African gold for Saharan salt",
+       "Chinese silk for European wool",
+       "Indian spices for Inca silver",
+       "Russian furs for Arab horses"
+      ],
+      "a": 0,
+      "why": "Gold from West Africa moved north; salt from the Sahara moved south."
+     },
+     {
+      "t": "tf",
+      "q": "The Pax Mongolica made Silk Road travel safer, which also helped spread the Black Death.",
+      "a": true,
+      "why": "More trade and travel across Mongol lands carried plague from Central Asia to the Mediterranean."
+     },
+     {
+      "t": "match",
+      "q": "Match each traveler to what they are known for",
+      "pairs": [
+       [
+        "Zheng He",
+        "Ming treasure voyages"
+       ],
+       [
+        "Ibn Battuta",
+        "Traveled across Dar al-Islam"
+       ],
+       [
+        "Marco Polo",
+        "Venetian at Kublai Khan's court"
+       ],
+       [
+        "Mansa Musa",
+        "Hajj with huge amounts of gold"
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Swahili city-states like Kilwa blended…",
+      "o": [
+       "Bantu and Arab/Islamic culture",
+       "Chinese and Persian culture",
+       "Inca and Spanish culture",
+       "Greek and Roman culture"
+      ],
+      "a": 0,
+      "why": "Swahili is a Bantu language with many Arabic words, reflecting this mix."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Genghis Khan unites the Mongols",
+        1206
+       ],
+       [
+        "Marco Polo reaches Yuan China",
+        1275
+       ],
+       [
+        "Black Death reaches Europe",
+        1347
+       ],
+       [
+        "Zheng He's first voyage",
+        1405
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "A caravanserai was…",
+      "o": [
+       "A roadside inn for merchants and their animals",
+       "A Mongol army unit",
+       "A type of ship",
+       "A tax on trade"
+      ],
+      "a": 0,
+      "why": "Caravanserai let traders rest safely along the Silk Roads and helped spread ideas too."
+     }
+    ]
+   },
+   {
+    "title": "Land-Based Empires",
+    "period": "c. 1450–1750",
+    "c": "#9b6bff",
+    "d": "#7a4ee0",
+    "learn": [
+     {
+      "h": "Gunpowder empires",
+      "b": "The Ottoman, Safavid and Mughal empires used cannons and guns to expand. Mehmed II took Constantinople in 1453. The Ottomans used the devshirme, taking Christian boys to train as janissary soldiers and officials."
+     },
+     {
+      "h": "Religion and rule",
+      "b": "The Ottomans were Sunni and the Safavids were Shia, which fueled their wars. Mughal emperor Akbar practiced religious tolerance and ended the jizya tax on non-Muslims. In Europe, Luther's 1517 protest started the Protestant Reformation."
+     },
+     {
+      "h": "East Asia",
+      "b": "The Manchu founded the Qing dynasty in 1644 and made Han men wear the queue hairstyle. Tokugawa Japan limited contact with outsiders."
+     },
+     {
+      "h": "Showing power",
+      "b": "Rulers built monuments to show legitimacy, like the Taj Mahal (a tomb built by Shah Jahan) and Versailles. Sikhism emerged in India, mixing ideas from Hinduism and Islam."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The Ottoman devshirme system…",
+      "o": [
+       "Took Christian boys to train as soldiers and officials",
+       "Gave land to nobles for military service",
+       "Taxed non-Muslims to fund mosques",
+       "Sent merchants to trade with Europe"
+      ],
+      "a": 0,
+      "why": "Boys were converted and trained to serve the sultan, including as janissaries."
+     },
+     {
+      "t": "match",
+      "q": "Match each empire to its feature",
+      "pairs": [
+       [
+        "Ottoman",
+        "Sunni rulers in Constantinople"
+       ],
+       [
+        "Safavid",
+        "Shia Islam as state religion"
+       ],
+       [
+        "Mughal",
+        "Akbar's religious tolerance"
+       ],
+       [
+        "Qing",
+        "Manchu rulers of China"
+       ]
+      ]
+     },
+     {
+      "t": "tf",
+      "q": "The Ottoman–Safavid rivalry was partly driven by the Sunni–Shia split.",
+      "a": true,
+      "why": "The Sunni Ottomans and Shia Safavids fought repeatedly over land and religion."
+     },
+     {
+      "t": "mc",
+      "q": "Akbar strengthened Mughal rule over a Hindu majority by…",
+      "o": [
+       "Promoting religious tolerance and ending the jizya",
+       "Forcing conversion to Islam",
+       "Expelling Hindu nobles",
+       "Banning all temples"
+      ],
+      "a": 0,
+      "why": "Tolerance won support from Hindu elites and helped hold the empire together."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Ottomans take Constantinople",
+        1453
+       ],
+       [
+        "Luther posts the 95 Theses",
+        1517
+       ],
+       [
+        "Akbar becomes emperor",
+        1556
+       ],
+       [
+        "Qing dynasty founded",
+        1644
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Sikhism combines elements of…",
+      "o": [
+       "Hinduism and Islam",
+       "Buddhism and Christianity",
+       "Judaism and Islam",
+       "Daoism and Confucianism"
+      ],
+      "a": 0,
+      "why": "Guru Nanak drew on Hindu and Muslim ideas and taught devotion to one God."
+     },
+     {
+      "t": "tf",
+      "q": "Akbar built the Taj Mahal as a mosque.",
+      "a": false,
+      "why": "Shah Jahan built the Taj Mahal as a tomb for his wife Mumtaz Mahal."
+     }
+    ]
+   },
+   {
+    "title": "Transoceanic Interconnections",
+    "period": "c. 1450–1750",
+    "c": "#ff9a1f",
+    "d": "#d97a08",
+    "learn": [
+     {
+      "h": "New ships, new routes",
+      "b": "The caravel, lateen sail, compass and astrolabe let Europeans sail farther. Portugal's Prince Henry sponsored exploration. Columbus reached the Caribbean in 1492 and Vasco da Gama reached India in 1498."
+     },
+     {
+      "h": "The Columbian Exchange",
+      "b": "Plants, animals and diseases crossed the Atlantic. Smallpox killed huge numbers of Native Americans. Potatoes and maize fed Afro-Eurasia, while horses, cattle and sugarcane came to the Americas."
+     },
+     {
+      "h": "Labor and society",
+      "b": "Sugar plantations drove the Atlantic slave trade and the Middle Passage. Spain used the encomienda and later the hacienda, and built a casta system ranking people by race and birthplace."
+     },
+     {
+      "h": "Money and resistance",
+      "b": "Joint-stock companies like the Dutch East India Company shared risk among investors. Mercantilism pushed states to gain wealth through colonies. Silver from Potosí flowed to China. Resistance included the Pueblo Revolt (1680) and maroon communities."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Which item traveled from the Americas to Afro-Eurasia in the Columbian Exchange?",
+      "o": [
+       "Potatoes",
+       "Horses",
+       "Smallpox",
+       "Sugarcane"
+      ],
+      "a": 0,
+      "why": "Potatoes came from the Andes and helped populations grow in Europe and Asia. The others went the other way."
+     },
+     {
+      "t": "mc",
+      "q": "Mercantilism is the idea that a state grows rich by…",
+      "o": [
+       "Exporting more than it imports and using colonies",
+       "Letting markets run with no government control",
+       "Sharing wealth equally",
+       "Avoiding overseas trade"
+      ],
+      "a": 0,
+      "why": "Mercantilist states wanted a favorable balance of trade and raw materials from colonies."
+     },
+     {
+      "t": "match",
+      "q": "Match each explorer to the achievement",
+      "pairs": [
+       [
+        "Vasco da Gama",
+        "Sea route to India"
+       ],
+       [
+        "Columbus",
+        "Reached the Caribbean in 1492"
+       ],
+       [
+        "Magellan's expedition",
+        "First circumnavigation"
+       ],
+       [
+        "Prince Henry",
+        "Sponsored Portuguese navigation"
+       ]
+      ]
+     },
+     {
+      "t": "tf",
+      "q": "Spanish silver from the Americas flowed into China, partly through the Manila galleons.",
+      "a": true,
+      "why": "Ming China demanded silver for taxes, so American silver crossed the Pacific via Manila."
+     },
+     {
+      "t": "mc",
+      "q": "The casta system in Spanish America ranked people by…",
+      "o": [
+       "Race and birthplace",
+       "Religion only",
+       "Wealth only",
+       "Military rank"
+      ],
+      "a": 0,
+      "why": "Peninsulares were at the top, then creoles, mestizos, and enslaved and Indigenous people below."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Columbus reaches the Caribbean",
+        1492
+       ],
+       [
+        "Da Gama reaches India",
+        1498
+       ],
+       [
+        "Cortés conquers Tenochtitlan",
+        1521
+       ],
+       [
+        "Pueblo Revolt",
+        1680
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "A joint-stock company…",
+      "o": [
+       "Let many investors share risk and profit",
+       "Was owned only by the king",
+       "Was a slave rebellion",
+       "Was a type of colonial tax"
+      ],
+      "a": 0,
+      "why": "Selling shares spread risk, which made costly voyages possible."
+     }
+    ]
+   },
+   {
+    "title": "Revolutions",
+    "period": "c. 1750–1900",
+    "c": "#ee4b4b",
+    "d": "#c43232",
+    "learn": [
+     {
+      "h": "The Enlightenment",
+      "b": "Thinkers used reason to question kings and churches. Locke argued for natural rights, Montesquieu for separation of powers, Rousseau for the social contract, and Voltaire for freedom of religion and speech."
+     },
+     {
+      "h": "Political revolutions",
+      "b": "The American Revolution (1776), French Revolution (1789) and Haitian Revolution (1791) spread these ideas. Toussaint Louverture led Haiti, the only successful large slave revolt to create a state. Creole leaders like Simón Bolívar freed much of South America."
+     },
+     {
+      "h": "Nationalism",
+      "b": "People began to see themselves as nations with shared language and history. Italy unified in 1861 and Germany in 1871."
+     },
+     {
+      "h": "Industrial Revolution",
+      "b": "Industry began in Britain thanks to coal, iron, rivers, colonies and capital. Watt's steam engine and the factory system changed work. A second industrial revolution brought steel, electricity and chemicals."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Why did industrialization start in Britain?",
+      "o": [
+       "Coal and iron deposits, rivers, and capital from colonies",
+       "A large enslaved workforce in factories",
+       "Government bans on trade",
+       "Lack of competition from other countries"
+      ],
+      "a": 0,
+      "why": "Britain had the natural resources, money and markets that factories needed."
+     },
+     {
+      "t": "match",
+      "q": "Match each thinker to the idea",
+      "pairs": [
+       [
+        "Locke",
+        "Natural rights"
+       ],
+       [
+        "Montesquieu",
+        "Separation of powers"
+       ],
+       [
+        "Rousseau",
+        "The social contract"
+       ],
+       [
+        "Voltaire",
+        "Freedom of religion and speech"
+       ]
+      ]
+     },
+     {
+      "t": "tf",
+      "q": "The Haitian Revolution created an independent state through a slave revolt.",
+      "a": true,
+      "why": "Haiti declared independence in 1804 after enslaved people defeated French forces."
+     },
+     {
+      "t": "mc",
+      "q": "Simón Bolívar led independence movements in…",
+      "o": [
+       "Northern South America",
+       "Mexico",
+       "Brazil",
+       "The Caribbean"
+      ],
+      "a": 0,
+      "why": "Bolívar helped free Venezuela, Colombia, Ecuador, Peru and Bolivia."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "U.S. Declaration of Independence",
+        1776
+       ],
+       [
+        "French Revolution begins",
+        1789
+       ],
+       [
+        "Haitian Revolution begins",
+        1791
+       ],
+       [
+        "Italy unifies",
+        1861
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "The Second Industrial Revolution was built on…",
+      "o": [
+       "Steel, electricity and chemicals",
+       "Water wheels and wool",
+       "Wind and sails",
+       "Silver mining"
+      ],
+      "a": 0,
+      "why": "After 1850, new industries in steel, electricity and chemicals took off."
+     },
+     {
+      "t": "mc",
+      "q": "Creoles in Latin America were…",
+      "o": [
+       "People of European descent born in the Americas",
+       "People born in Spain",
+       "Enslaved Africans",
+       "Indigenous nobles"
+      ],
+      "a": 0,
+      "why": "Creoles resented peninsulares, who held the top jobs, and led many independence movements."
+     }
+    ]
+   },
+   {
+    "title": "Consequences of Industrialization",
+    "period": "c. 1750–1900",
+    "c": "#14b8a6",
+    "d": "#0e8f81",
+    "learn": [
+     {
+      "h": "New imperialism",
+      "b": "Industrial nations wanted raw materials and markets. Social Darwinism was used to justify conquest. At the Berlin Conference (1884–85), Europeans divided Africa among themselves."
+     },
+     {
+      "h": "Pressure on Asia",
+      "b": "Britain beat Qing China in the Opium Wars, starting in 1839, and took Hong Kong. India saw the Sepoy Rebellion in 1857, after which the British crown ruled directly. China also faced the Taiping and Boxer rebellions."
+     },
+     {
+      "h": "Reform and resistance",
+      "b": "Japan's Meiji Restoration (1868) rapidly modernized the country with state-led industry. China's Self-Strengthening Movement had less success."
+     },
+     {
+      "h": "Migration and labor",
+      "b": "After slavery ended, indentured servants from India and China worked on plantations worldwide. Workers formed unions, and Marx and Engels wrote the Communist Manifesto in 1848."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The Berlin Conference was held to…",
+      "o": [
+       "Divide Africa among European powers without war",
+       "End the slave trade",
+       "Unify Germany",
+       "Settle the Opium Wars"
+      ],
+      "a": 0,
+      "why": "European powers set rules for claiming African land, with no Africans present."
+     },
+     {
+      "t": "mc",
+      "q": "Japan's Meiji Restoration is known for…",
+      "o": [
+       "Rapid state-led industrialization",
+       "Closing Japan to all foreigners",
+       "Becoming a British colony",
+       "A peasant revolution"
+      ],
+      "a": 0,
+      "why": "The Meiji government copied Western technology and built railways, factories and a modern army."
+     },
+     {
+      "t": "match",
+      "q": "Match each event to its description",
+      "pairs": [
+       [
+        "Opium Wars",
+        "Britain vs. Qing China"
+       ],
+       [
+        "Sepoy Rebellion",
+        "Revolt in India, 1857"
+       ],
+       [
+        "Taiping Rebellion",
+        "Huge Qing civil war"
+       ],
+       [
+        "Boxer Rebellion",
+        "Anti-foreign uprising, 1900"
+       ]
+      ]
+     },
+     {
+      "t": "tf",
+      "q": "After slavery was abolished, many indentured servants from India and China worked on plantations abroad.",
+      "a": true,
+      "why": "They signed contracts to work for years, often in harsh conditions, in places like the Caribbean."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "First Opium War begins",
+        1839
+       ],
+       [
+        "Communist Manifesto published",
+        1848
+       ],
+       [
+        "Sepoy Rebellion",
+        1857
+       ],
+       [
+        "Meiji Restoration",
+        1868
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Social Darwinism was used to…",
+      "o": [
+       "Justify imperialism as natural",
+       "Argue for equal rights",
+       "Oppose industry",
+       "Promote religious tolerance"
+      ],
+      "a": 0,
+      "why": "It misused ideas about survival of the fittest to claim some peoples should rule others."
+     }
+    ]
+   },
+   {
+    "title": "Global Conflict",
+    "period": "c. 1900–present",
+    "c": "#64748b",
+    "d": "#475569",
+    "learn": [
+     {
+      "h": "World War I",
+      "b": "Causes are often remembered as MAIN: militarism, alliances, imperialism and nationalism. It was a total war, using whole economies and colonial troops. The Treaty of Versailles (1919) blamed Germany and demanded reparations."
+     },
+     {
+      "h": "Revolutions",
+      "b": "The Mexican Revolution began in 1910. In 1917, Lenin's Bolsheviks took power in Russia and later formed the USSR."
+     },
+     {
+      "h": "Depression and fascism",
+      "b": "The Great Depression began in 1929. Some states expanded government spending, following Keynes. Others turned to fascism, like Mussolini's Italy and Hitler's Germany. Japan invaded Manchuria in 1931 for resources."
+     },
+     {
+      "h": "World War II",
+      "b": "WWII (1939–1945) was even deadlier. It included the Holocaust and ended in the Pacific after atomic bombs were dropped on Japan."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The causes of World War I are often summed up as MAIN. What does it stand for?",
+      "o": [
+       "Militarism, Alliances, Imperialism, Nationalism",
+       "Money, Armies, Industry, Navies",
+       "Monarchy, Anarchy, Inflation, Nationalism",
+       "Migration, Alliances, Industry, Nations"
+      ],
+      "a": 0,
+      "why": "These four long-term causes built tension before the 1914 assassination sparked war."
+     },
+     {
+      "t": "mc",
+      "q": "The Treaty of Versailles…",
+      "o": [
+       "Blamed Germany and demanded reparations",
+       "Created the United Nations",
+       "Ended World War II",
+       "Made Germany larger"
+      ],
+      "a": 0,
+      "why": "The war guilt clause and reparations caused anger that later helped the Nazis."
+     },
+     {
+      "t": "tf",
+      "q": "Total war means a country mobilizes its whole economy and population for the war effort.",
+      "a": true,
+      "why": "Factories, women workers, rationing and propaganda all served the war."
+     },
+     {
+      "t": "match",
+      "q": "Match each leader to the movement",
+      "pairs": [
+       [
+        "Lenin",
+        "Bolshevik Revolution"
+       ],
+       [
+        "Mussolini",
+        "Italian fascism"
+       ],
+       [
+        "Hitler",
+        "Nazi Germany"
+       ],
+       [
+        "Keynes",
+        "Government spending to fight depression"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "World War I begins",
+        1914
+       ],
+       [
+        "Russian Revolution",
+        1917
+       ],
+       [
+        "Great Depression begins",
+        1929
+       ],
+       [
+        "World War II begins",
+        1939
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Japan invaded Manchuria in 1931 mainly to…",
+      "o": [
+       "Gain raw materials and land",
+       "Spread communism",
+       "Free it from Russia",
+       "Protect Chinese peasants"
+      ],
+      "a": 0,
+      "why": "Japan had few natural resources and wanted Manchuria's coal and iron."
+     }
+    ]
+   },
+   {
+    "title": "Cold War and Decolonization",
+    "period": "c. 1900–present",
+    "c": "#e85d9c",
+    "d": "#c23f7c",
+    "learn": [
+     {
+      "h": "Two superpowers",
+      "b": "The U.S. and USSR competed after 1945. The U.S. used containment to stop communism, with the Truman Doctrine and the Marshall Plan aid. NATO and the Warsaw Pact were rival alliances. Proxy wars were fought in Korea and Vietnam."
+     },
+     {
+      "h": "Close calls and the end",
+      "b": "The Cuban Missile Crisis in 1962 nearly caused nuclear war. Gorbachev's reforms, glasnost and perestroika, came before the USSR collapsed in 1991."
+     },
+     {
+      "h": "China",
+      "b": "Mao's communists won in 1949. The Great Leap Forward caused a terrible famine."
+     },
+     {
+      "h": "Decolonization",
+      "b": "India won independence in 1947 through Gandhi's nonviolent movement, but partition caused mass violence. Ghana, led by Nkrumah, won independence peacefully in 1957, while Algeria fought a violent war against France. Many new states joined the Non-Aligned Movement."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The U.S. Cold War policy of containment aimed to…",
+      "o": [
+       "Stop the spread of communism",
+       "Conquer the USSR",
+       "Withdraw from world affairs",
+       "Share nuclear secrets"
+      ],
+      "a": 0,
+      "why": "Containment guided aid, alliances and wars from Europe to Asia."
+     },
+     {
+      "t": "mc",
+      "q": "The Non-Aligned Movement was made up of countries that…",
+      "o": [
+       "Refused to side with either superpower",
+       "Joined NATO",
+       "Joined the Warsaw Pact",
+       "Were still colonies"
+      ],
+      "a": 0,
+      "why": "Leaders like Nehru wanted to avoid being pulled into the Cold War."
+     },
+     {
+      "t": "tf",
+      "q": "Algeria won independence from France through a mostly peaceful process.",
+      "a": false,
+      "why": "Algeria fought a long, violent war of independence from 1954 to 1962."
+     },
+     {
+      "t": "match",
+      "q": "Match each leader to the event",
+      "pairs": [
+       [
+        "Gandhi",
+        "Nonviolent Indian independence"
+       ],
+       [
+        "Nkrumah",
+        "Independence of Ghana"
+       ],
+       [
+        "Mao Zedong",
+        "People's Republic of China"
+       ],
+       [
+        "Gorbachev",
+        "Glasnost and perestroika"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Indian independence",
+        1947
+       ],
+       [
+        "Communists win in China",
+        1949
+       ],
+       [
+        "Cuban Missile Crisis",
+        1962
+       ],
+       [
+        "Soviet Union collapses",
+        1991
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "The Marshall Plan was…",
+      "o": [
+       "U.S. economic aid to rebuild Western Europe",
+       "A Soviet five-year plan",
+       "A NATO battle plan",
+       "A UN peace treaty"
+      ],
+      "a": 0,
+      "why": "Aid helped Europe recover and made communism less attractive there."
+     }
+    ]
+   },
+   {
+    "title": "Globalization",
+    "period": "c. 1900–present",
+    "c": "#0ea5e9",
+    "d": "#0b7fb4",
+    "learn": [
+     {
+      "h": "Science and technology",
+      "b": "The Green Revolution used high-yield seeds and fertilizers to grow more food. Medicine wiped out smallpox, but diseases like HIV/AIDS spread. The internet and cell phones connected the world."
+     },
+     {
+      "h": "Economies",
+      "b": "Many states moved toward free markets. Deng Xiaoping opened China to markets from 1978. Trade deals like NAFTA and groups like the WTO and EU lowered trade barriers. Multinational corporations grew powerful."
+     },
+     {
+      "h": "Global institutions",
+      "b": "The United Nations was founded in 1945 to promote peace and cooperation. Human rights movements worked for women's rights and the end of apartheid in South Africa."
+     },
+     {
+      "h": "Costs",
+      "b": "Critics say globalization widens wealth gaps and exploits cheap labor. Burning fossil fuels has driven climate change."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The Green Revolution increased food production through…",
+      "o": [
+       "High-yield crops, fertilizers and irrigation",
+       "Collective farms only",
+       "Banning machines",
+       "Returning to traditional seeds"
+      ],
+      "a": 0,
+      "why": "It fed growing populations in places like India and Mexico, but used lots of water and chemicals."
+     },
+     {
+      "t": "mc",
+      "q": "Deng Xiaoping's reforms in China…",
+      "o": [
+       "Opened the economy to market forces",
+       "Started the Great Leap Forward",
+       "Ended the Communist Party",
+       "Closed China to trade"
+      ],
+      "a": 0,
+      "why": "China kept one-party rule but allowed private business and foreign investment."
+     },
+     {
+      "t": "tf",
+      "q": "The United Nations was founded after World War II to promote international cooperation.",
+      "a": true,
+      "why": "It was created in 1945 to replace the failed League of Nations."
+     },
+     {
+      "t": "match",
+      "q": "Match each organization to its purpose",
+      "pairs": [
+       [
+        "WTO",
+        "Sets global trade rules"
+       ],
+       [
+        "European Union",
+        "Economic and political union in Europe"
+       ],
+       [
+        "NAFTA",
+        "North American free trade"
+       ],
+       [
+        "United Nations",
+        "International peace and cooperation"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "United Nations founded",
+        1945
+       ],
+       [
+        "Deng's market reforms begin",
+        1978
+       ],
+       [
+        "Berlin Wall falls",
+        1989
+       ],
+       [
+        "Mandela elected president of South Africa",
+        1994
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "A common criticism of globalization is that it…",
+      "o": [
+       "Widens wealth gaps and exploits cheap labor",
+       "Stops all trade",
+       "Makes travel harder",
+       "Ends the internet"
+      ],
+      "a": 0,
+      "why": "Critics point to sweatshops and gaps between rich and poor countries."
+     }
+    ]
+   },
+   {
+    "kicker": "Bonus A",
+    "title": "Ancient River Valleys",
+    "period": "c. 3500–600 BCE",
+    "c": "#b8860b",
+    "d": "#8f6806",
+    "learn": [
+     {
+      "h": "Mesopotamia",
+      "b": "Between the Tigris and Euphrates rivers, Sumerian city-states built ziggurat temples and invented cuneiform writing. Later, Hammurabi of Babylon published one of the first written law codes."
+     },
+     {
+      "h": "Egypt",
+      "b": "Yearly Nile floods made farming reliable. Pharaohs ruled as god-kings, built pyramids as tombs, and scribes wrote in hieroglyphs."
+     },
+     {
+      "h": "Indus Valley",
+      "b": "Cities like Harappa and Mohenjo-daro had grid streets and drainage systems. Their script has never been fully deciphered."
+     },
+     {
+      "h": "Early China",
+      "b": "The Shang carved questions to ancestors on oracle bones. The Zhou claimed the Mandate of Heaven: heaven grants the right to rule and takes it away from unjust rulers."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Hammurabi's Code was…",
+      "o": [
+       "A written law code from Babylon",
+       "An Egyptian prayer book",
+       "A Chinese calendar",
+       "A Greek play"
+      ],
+      "a": 0,
+      "why": "It listed laws and punishments publicly, like \"an eye for an eye\"."
+     },
+     {
+      "t": "tf",
+      "q": "The Indus Valley script has been fully deciphered.",
+      "a": false,
+      "why": "Scholars still cannot read it, so much about Indus society is unknown."
+     },
+     {
+      "t": "match",
+      "q": "Match each civilization to its writing or site",
+      "pairs": [
+       [
+        "Sumer",
+        "Cuneiform"
+       ],
+       [
+        "Egypt",
+        "Hieroglyphs"
+       ],
+       [
+        "Shang China",
+        "Oracle bones"
+       ],
+       [
+        "Indus Valley",
+        "Mohenjo-daro"
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "The Mandate of Heaven said that…",
+      "o": [
+       "Heaven gives a ruler power and can take it away if he is unjust",
+       "Kings are chosen by elections",
+       "Priests rule instead of kings",
+       "Power passes to the oldest daughter"
+      ],
+      "a": 0,
+      "why": "The Zhou used it to justify overthrowing the Shang, and later dynasties used it too."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Cuneiform writing appears",
+        -3200
+       ],
+       [
+        "Great Pyramid of Giza built",
+        -2560
+       ],
+       [
+        "Code of Hammurabi",
+        -1754
+       ],
+       [
+        "Zhou dynasty begins",
+        -1046
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "kicker": "Bonus B",
+    "title": "Classical Empires",
+    "period": "c. 600 BCE–600 CE",
+    "c": "#c2410c",
+    "d": "#9a3409",
+    "learn": [
+     {
+      "h": "Persia",
+      "b": "Cyrus the Great founded the Persian Empire. Persia ruled through satraps (provincial governors), built the Royal Road, and generally tolerated local religions."
+     },
+     {
+      "h": "Greece and Rome",
+      "b": "Athens developed direct democracy. Alexander the Great spread Greek (Hellenistic) culture to Egypt and India. Rome went from republic to empire under Augustus and built roads, aqueducts and a lasting legal system."
+     },
+     {
+      "h": "Han China",
+      "b": "The Han dynasty expanded trade along the Silk Roads, used Confucian officials, and invented paper."
+     },
+     {
+      "h": "India",
+      "b": "Ashoka of the Maurya Empire turned to Buddhism after the bloody battle of Kalinga and spread it widely. The Gupta Empire had a golden age in math, including the concept of zero."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Ashoka is best known for…",
+      "o": [
+       "Spreading Buddhism after the Kalinga war",
+       "Founding Rome",
+       "Building the Great Wall",
+       "Conquering Persia"
+      ],
+      "a": 0,
+      "why": "Horrified by the violence at Kalinga, he promoted Buddhist ideas across his empire."
+     },
+     {
+      "t": "tf",
+      "q": "The Han dynasty is credited with inventing paper.",
+      "a": true,
+      "why": "Paper made record-keeping and learning much easier."
+     },
+     {
+      "t": "match",
+      "q": "Match each ruler to the achievement",
+      "pairs": [
+       [
+        "Cyrus the Great",
+        "Founded the Persian Empire"
+       ],
+       [
+        "Alexander the Great",
+        "Spread Hellenistic culture"
+       ],
+       [
+        "Augustus",
+        "First Roman emperor"
+       ],
+       [
+        "Ashoka",
+        "Maurya Buddhist ruler"
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Persian satraps were…",
+      "o": [
+       "Provincial governors",
+       "Priests of Zoroaster",
+       "Elite archers",
+       "Tax-free merchants"
+      ],
+      "a": 0,
+      "why": "Satraps ran provinces for the king, who checked on them with spies."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Cyrus founds the Persian Empire",
+        -550
+       ],
+       [
+        "Alexander the Great dies",
+        -323
+       ],
+       [
+        "Han dynasty founded",
+        -206
+       ],
+       [
+        "Fall of the Western Roman Empire",
+        476
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "A key achievement of the Gupta golden age was…",
+      "o": [
+       "The concept of zero and decimal numbers",
+       "The printing press",
+       "The compass",
+       "Gunpowder"
+      ],
+      "a": 0,
+      "why": "Gupta mathematicians developed zero and place value, later spread by Arab scholars."
+     }
+    ]
+   }
+  ],
+  "apq": [
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "A 14th-century traveler described the king of Mali wearing gold ornaments, while scholars studied in the mosques of Timbuktu.",
+    "src": "Paraphrased from Ibn Battuta's travel account, 1350s",
+    "q": "The wealth described most directly resulted from…",
+    "o": [
+     "Trans-Saharan trade in gold and salt",
+     "The Atlantic slave trade",
+     "Indian Ocean spice trade",
+     "Silver mining in the Americas"
+    ],
+    "a": 0,
+    "why": "Mali controlled gold fields and the trade routes across the Sahara."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Chart: silver exports from Spanish America rose sharply between 1550 and 1650, with a large share ending up in China.",
+    "src": "Data summary, historians' estimates",
+    "q": "Which factor best explains China's demand for silver in this period?",
+    "o": [
+     "The Ming required taxes to be paid in silver",
+     "China had no other money",
+     "The Qing banned paper money in 1400",
+     "Europeans forced China to buy silver"
+    ],
+    "a": 0,
+    "why": "The Ming \"single whip\" tax reform made silver the basis of payments."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "In 1839, Qing official Lin Zexu wrote to Queen Victoria asking how Britain could sell opium in China while banning it at home.",
+    "src": "Paraphrased from Lin Zexu's letter, 1839",
+    "q": "The letter best reflects…",
+    "o": [
+     "Qing efforts to stop the opium trade and loss of silver",
+     "Chinese support for free trade",
+     "British plans to colonize all of China",
+     "Japanese influence in China"
+    ],
+    "a": 0,
+    "why": "Opium imports reversed the flow of silver and caused addiction, leading to the Opium Wars."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "In 1872, the Japanese government opened the Tomioka silk mill using French machines and advisers.",
+    "src": "Historical summary",
+    "q": "This development is best understood as an example of…",
+    "o": [
+     "State-sponsored industrialization",
+     "Laissez-faire capitalism",
+     "Resistance to Western ideas",
+     "Feudal revival"
+    ],
+    "a": 0,
+    "why": "The Meiji state funded model factories to catch up with the West."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "\"Men are born and remain free and equal in rights.\"",
+    "src": "Declaration of the Rights of Man and of the Citizen, 1789, Article 1",
+    "q": "The ideas in this document most directly inspired…",
+    "o": [
+     "The Haitian Revolution",
+     "The Meiji Restoration",
+     "The Mongol conquests",
+     "The Protestant Reformation"
+    ],
+    "a": 0,
+    "why": "Enslaved people in Saint-Domingue applied the same ideas of liberty and equality to themselves."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "In 1955, leaders of 29 Asian and African countries met at Bandung, Indonesia, to discuss cooperation and opposition to colonialism.",
+    "src": "Historical summary",
+    "q": "The Bandung Conference is most closely connected to…",
+    "o": [
+     "The Non-Aligned Movement",
+     "The formation of NATO",
+     "The Warsaw Pact",
+     "The Berlin Conference"
+    ],
+    "a": 0,
+    "why": "Bandung laid the groundwork for nations that refused to join either Cold War bloc."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "At the Mughal court, Akbar hosted debates among Muslims, Hindus, Jains, Zoroastrians and Christians.",
+    "src": "Historical summary of Mughal court records",
+    "q": "Akbar's policy was most likely meant to…",
+    "o": [
+     "Win the loyalty of a religiously diverse population",
+     "Convert all subjects to Christianity",
+     "Weaken the Mughal army",
+     "Break ties with Persia"
+    ],
+    "a": 0,
+    "why": "Tolerance helped a Muslim ruler govern a Hindu-majority empire."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Ship records from the 1700s show millions of enslaved Africans carried to Brazil and the Caribbean.",
+    "src": "Data summary, Trans-Atlantic Slave Trade Database",
+    "q": "The main reason for this demand was…",
+    "o": [
+     "Labor for sugar plantations",
+     "Soldiers for European armies",
+     "Workers for Chinese silk factories",
+     "Miners in Siberia"
+    ],
+    "a": 0,
+    "why": "Sugar plantations were brutal and needed huge numbers of workers."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Graph: global carbon dioxide emissions stayed low before 1850, then rose steeply, especially after 1950.",
+    "src": "Data summary, climate research",
+    "q": "This trend is most directly connected to…",
+    "o": [
+     "Industrialization and fossil fuel use",
+     "The Columbian Exchange",
+     "The fall of the Mongol Empire",
+     "The Green Revolution ending"
+    ],
+    "a": 0,
+    "why": "Burning coal, oil and gas for industry and transport released the carbon."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "In 1930, Gandhi led thousands on a march to the sea to make salt, breaking a British law.",
+    "src": "Historical summary",
+    "q": "The Salt March is an example of…",
+    "o": [
+     "Nonviolent civil disobedience",
+     "Armed rebellion",
+     "Communist revolution",
+     "Religious crusade"
+    ],
+    "a": 0,
+    "why": "Gandhi used peaceful lawbreaking to show the injustice of British rule."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Article 231 of the 1919 treaty made Germany accept responsibility for the war and its damage.",
+    "src": "Treaty of Versailles, 1919 (summary)",
+    "q": "Resentment of this treaty most directly contributed to…",
+    "o": [
+     "The rise of the Nazi Party",
+     "The Russian Revolution",
+     "The founding of the UN",
+     "The Meiji Restoration"
+    ],
+    "a": 0,
+    "why": "Hitler promised to undo the treaty, which won him support."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Ibn Battuta worked as a judge (qadi) in places as far apart as Delhi and the Maldives.",
+    "src": "Historical summary of his travels",
+    "q": "He could do this mainly because…",
+    "o": [
+     "Shared Islamic law and Arabic linked Dar al-Islam",
+     "The Mongols ruled all of these lands",
+     "Europeans hired him as an ambassador",
+     "He spoke every local language"
+    ],
+    "a": 0,
+    "why": "Islam created a common legal and cultural world across many states."
+   }
+  ]
+ },
+ "us": {
+  "name": "AP US History",
+  "short": "US",
+  "color": "#1aa3e8",
+  "dark": "#1182bb",
+  "units": [
+   {
+    "title": "Contact and Conquest",
+    "period": "1491–1607",
+    "c": "#1aa3e8",
+    "d": "#1182bb",
+    "learn": [
+     {
+      "h": "Native societies",
+      "b": "Before 1492, Native peoples adapted to their environments. Maize farming in the Southwest supported settled Pueblo societies with irrigation. Plains peoples were often mobile, and Northeast groups mixed farming and hunting."
+     },
+     {
+      "h": "Spanish colonies",
+      "b": "Spain used the encomienda system to force Native people to work. Las Casas argued against this cruelty in the Valladolid debate against Sepúlveda. The Columbian Exchange brought horses and disease."
+     },
+     {
+      "h": "Rival empires",
+      "b": "France built fur-trade alliances with Native peoples. The Dutch focused on trade from New Amsterdam. England later sent large numbers of settlers to farm."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The spread of maize in the Southwest led to…",
+      "o": [
+       "Settled societies using irrigation",
+       "Nomadic hunting only",
+       "Fishing villages",
+       "Large cattle herds"
+      ],
+      "a": 0,
+      "why": "Reliable maize harvests let Pueblo peoples build permanent towns."
+     },
+     {
+      "t": "tf",
+      "q": "Bartolomé de las Casas argued against the harsh treatment of Native peoples.",
+      "a": true,
+      "why": "He wrote about Spanish cruelty and pushed for reform."
+     },
+     {
+      "t": "match",
+      "q": "Match each colonizer to its approach",
+      "pairs": [
+       [
+        "Spain",
+        "Encomienda and missions"
+       ],
+       [
+        "France",
+        "Fur trade alliances"
+       ],
+       [
+        "England",
+        "Large farming settlements"
+       ],
+       [
+        "Netherlands",
+        "Trade from New Amsterdam"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Columbus reaches the Caribbean",
+        1492
+       ],
+       [
+        "Cortés conquers the Aztecs",
+        1521
+       ],
+       [
+        "Jamestown founded",
+        1607
+       ],
+       [
+        "Pueblo Revolt",
+        1680
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "The encomienda system gave Spanish colonists…",
+      "o": [
+       "The right to Native labor and tribute",
+       "Land in Spain",
+       "Free passage home",
+       "Control of the Catholic Church"
+      ],
+      "a": 0,
+      "why": "Colonists were supposed to protect and Christianize workers, but it was abusive in practice."
+     }
+    ]
+   },
+   {
+    "title": "Colonial America",
+    "period": "1607–1754",
+    "c": "#ff9a1f",
+    "d": "#d97a08",
+    "learn": [
+     {
+      "h": "Chesapeake",
+      "b": "Jamestown survived by growing tobacco for export. The House of Burgesses (1619) was an early elected assembly. Bacon's Rebellion (1676) pushed planters toward enslaved African labor instead of indentured servants."
+     },
+     {
+      "h": "New England",
+      "b": "Puritans built towns around churches and families. The Mayflower Compact was an early self-government agreement."
+     },
+     {
+      "h": "Empire and religion",
+      "b": "Britain followed salutary neglect, loosely enforcing trade laws. The Great Awakening religious revival challenged established churches."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "One result of Bacon's Rebellion was that Virginia planters…",
+      "o": [
+       "Relied more on enslaved Africans",
+       "Freed all servants",
+       "Gave Native lands back",
+       "Ended tobacco farming"
+      ],
+      "a": 0,
+      "why": "Planters feared armed poor white servants and turned to slavery instead."
+     },
+     {
+      "t": "tf",
+      "q": "The Great Awakening was a religious revival that challenged established churches.",
+      "a": true,
+      "why": "Preachers like Jonathan Edwards and George Whitefield stressed personal faith."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "House of Burgesses",
+        "Elected assembly in Virginia"
+       ],
+       [
+        "Mayflower Compact",
+        "Pilgrim self-government agreement"
+       ],
+       [
+        "Salutary neglect",
+        "Loose British enforcement of rules"
+       ],
+       [
+        "Indentured servant",
+        "Worked for years to pay for passage"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Jamestown founded",
+        1607
+       ],
+       [
+        "House of Burgesses meets",
+        1619
+       ],
+       [
+        "Bacon's Rebellion",
+        1676
+       ],
+       [
+        "Salem witch trials",
+        1692
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "Revolution and Republic",
+    "period": "1754–1800",
+    "c": "#ee4b4b",
+    "d": "#c43232",
+    "learn": [
+     {
+      "h": "Road to revolution",
+      "b": "The French and Indian War ended in 1763 and left Britain in debt. The Proclamation of 1763 and taxes like the Stamp Act (1765) angered colonists, who protested taxation without representation."
+     },
+     {
+      "h": "Independence",
+      "b": "The Declaration of Independence (1776), written mainly by Jefferson, used Enlightenment ideas. Washington led the Continental Army."
+     },
+     {
+      "h": "A new government",
+      "b": "The Articles of Confederation were weak, as Shays' Rebellion (1786) showed. The Constitution (1787) created a stronger federal government. Anti-Federalists demanded a Bill of Rights."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Shays' Rebellion showed that…",
+      "o": [
+       "The Articles of Confederation were too weak",
+       "Britain still ruled the colonies",
+       "The Constitution was too strong",
+       "Slavery was ending"
+      ],
+      "a": 0,
+      "why": "The national government could not raise an army to stop the uprising."
+     },
+     {
+      "t": "tf",
+      "q": "Anti-Federalists demanded a Bill of Rights before supporting the Constitution.",
+      "a": true,
+      "why": "They feared a strong central government would threaten individual liberties."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Proclamation of 1763",
+        1763
+       ],
+       [
+        "Stamp Act",
+        1765
+       ],
+       [
+        "Declaration of Independence",
+        1776
+       ],
+       [
+        "Constitution written",
+        1787
+       ]
+      ]
+     },
+     {
+      "t": "match",
+      "q": "Match each founder to their role",
+      "pairs": [
+       [
+        "Hamilton",
+        "National bank"
+       ],
+       [
+        "Jefferson",
+        "Wrote the Declaration"
+       ],
+       [
+        "Madison",
+        "Father of the Constitution"
+       ],
+       [
+        "Washington",
+        "Led the Continental Army"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "title": "The Early Republic",
+    "period": "1800–1848",
+    "c": "#9b6bff",
+    "d": "#7a4ee0",
+    "learn": [
+     {
+      "h": "A growing nation",
+      "b": "Jefferson bought the Louisiana Territory from France in 1803, doubling the country. In Marbury v. Madison (1803), the Supreme Court claimed judicial review. The Monroe Doctrine (1823) warned Europe not to colonize the Americas again."
+     },
+     {
+      "h": "Jacksonian democracy",
+      "b": "Voting expanded to almost all white men. Andrew Jackson signed the Indian Removal Act (1830), which led to the Trail of Tears."
+     },
+     {
+      "h": "Market revolution and reform",
+      "b": "Canals like the Erie Canal, railroads and factories tied regions together. The Second Great Awakening inspired reforms such as abolition, temperance and the women's rights meeting at Seneca Falls (1848)."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Marbury v. Madison established…",
+      "o": [
+       "Judicial review",
+       "The Bill of Rights",
+       "Popular sovereignty",
+       "The two-party system"
+      ],
+      "a": 0,
+      "why": "The Court gave itself the power to strike down laws that break the Constitution."
+     },
+     {
+      "t": "tf",
+      "q": "The Monroe Doctrine warned European powers against new colonization in the Americas.",
+      "a": true,
+      "why": "It became a lasting principle of U.S. foreign policy."
+     },
+     {
+      "t": "match",
+      "q": "Match each term to its meaning",
+      "pairs": [
+       [
+        "Erie Canal",
+        "Linked the Great Lakes to New York City"
+       ],
+       [
+        "Seneca Falls",
+        "Women's rights convention"
+       ],
+       [
+        "Indian Removal Act",
+        "Forced relocation west of the Mississippi"
+       ],
+       [
+        "Second Great Awakening",
+        "Revival that sparked reform movements"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Louisiana Purchase",
+        1803
+       ],
+       [
+        "War of 1812 begins",
+        1812
+       ],
+       [
+        "Monroe Doctrine",
+        1823
+       ],
+       [
+        "Indian Removal Act",
+        1830
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Jacksonian democracy mainly…",
+      "o": [
+       "Expanded voting to most white men",
+       "Gave women the vote",
+       "Ended slavery",
+       "Created the Federal Reserve"
+      ],
+      "a": 0,
+      "why": "Property requirements for voting were dropped in most states."
+     }
+    ]
+   },
+   {
+    "title": "Civil War and Reconstruction",
+    "period": "1844–1877",
+    "c": "#64748b",
+    "d": "#475569",
+    "learn": [
+     {
+      "h": "Expansion and slavery",
+      "b": "Manifest Destiny drove westward expansion and the Mexican-American War (1846). New land reopened the fight over slavery: the Compromise of 1850, the Kansas-Nebraska Act (1854) and the Dred Scott decision (1857)."
+     },
+     {
+      "h": "The Civil War",
+      "b": "Lincoln's election in 1860 led Southern states to secede. The war lasted from 1861 to 1865. The Emancipation Proclamation (1863) freed enslaved people in Confederate states."
+     },
+     {
+      "h": "Reconstruction",
+      "b": "The 13th, 14th and 15th Amendments ended slavery, defined citizenship and protected voting regardless of race. Reconstruction ended in 1877 and Southern states rolled back many of these gains."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The Dred Scott decision ruled that…",
+      "o": [
+       "Black Americans were not citizens and Congress could not ban slavery in territories",
+       "Slavery was illegal everywhere",
+       "Kansas must be a free state",
+       "Women could vote"
+      ],
+      "a": 0,
+      "why": "The ruling angered the North and pushed the country closer to war."
+     },
+     {
+      "t": "match",
+      "q": "Match each item to what it did",
+      "pairs": [
+       [
+        "13th Amendment",
+        "Abolished slavery"
+       ],
+       [
+        "14th Amendment",
+        "Citizenship and equal protection"
+       ],
+       [
+        "15th Amendment",
+        "Voting regardless of race"
+       ],
+       [
+        "Emancipation Proclamation",
+        "Freed enslaved people in Confederate states"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Mexican-American War begins",
+        1846
+       ],
+       [
+        "Kansas-Nebraska Act",
+        1854
+       ],
+       [
+        "Civil War begins",
+        1861
+       ],
+       [
+        "Reconstruction ends",
+        1877
+       ]
+      ]
+     },
+     {
+      "t": "tf",
+      "q": "The Kansas-Nebraska Act let settlers vote on whether to allow slavery.",
+      "a": true,
+      "why": "This popular sovereignty led to violence known as Bleeding Kansas."
+     },
+     {
+      "t": "mc",
+      "q": "Manifest Destiny was the belief that…",
+      "o": [
+       "The U.S. was meant to expand across the continent",
+       "Slavery should end",
+       "The U.S. should stay out of foreign affairs",
+       "States could cancel federal laws"
+      ],
+      "a": 0,
+      "why": "It justified taking land from Mexico and Native nations."
+     }
+    ]
+   },
+   {
+    "title": "The Gilded Age",
+    "period": "1865–1898",
+    "c": "#ffc31f",
+    "d": "#d99c00",
+    "learn": [
+     {
+      "h": "Industry and big business",
+      "b": "The transcontinental railroad was finished in 1869. Carnegie used vertical integration in steel, and Rockefeller used horizontal integration with Standard Oil."
+     },
+     {
+      "h": "Workers and farmers",
+      "b": "Workers formed unions like the Knights of Labor and the AFL. Strikes and the Haymarket affair (1886) turned violent. Farmers formed the Populist Party to fight railroads and banks."
+     },
+     {
+      "h": "The West and segregation",
+      "b": "The Dawes Act (1887) broke up tribal lands into individual plots. Plessy v. Ferguson (1896) allowed \"separate but equal\" segregation. Millions of new immigrants came from southern and eastern Europe."
+     }
+    ],
+    "qs": [
+     {
+      "t": "match",
+      "q": "Match each name to its role",
+      "pairs": [
+       [
+        "Carnegie",
+        "Steel and vertical integration"
+       ],
+       [
+        "Rockefeller",
+        "Standard Oil"
+       ],
+       [
+        "AFL",
+        "Union of skilled workers"
+       ],
+       [
+        "Populists",
+        "Farmers' political party"
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Plessy v. Ferguson (1896) ruled that…",
+      "o": [
+       "\"Separate but equal\" segregation was legal",
+       "Schools must integrate",
+       "Unions were illegal",
+       "Immigrants could not vote"
+      ],
+      "a": 0,
+      "why": "It was overturned by Brown v. Board of Education in 1954."
+     },
+     {
+      "t": "tf",
+      "q": "The Dawes Act broke up tribal land into individual plots.",
+      "a": true,
+      "why": "The goal was assimilation, and Native nations lost most of their land."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Transcontinental railroad completed",
+        1869
+       ],
+       [
+        "Haymarket affair",
+        1886
+       ],
+       [
+        "Dawes Act",
+        1887
+       ],
+       [
+        "Plessy v. Ferguson",
+        1896
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "Vertical integration means…",
+      "o": [
+       "Controlling every step of production, from raw materials to sales",
+       "Buying out all competitors in one industry",
+       "Splitting a company in two",
+       "Selling stock to workers"
+      ],
+      "a": 0,
+      "why": "Carnegie owned the mines, ships and railroads that fed his steel mills."
+     }
+    ]
+   },
+   {
+    "title": "Progressives and World Wars",
+    "period": "1890–1945",
+    "c": "#14b8a6",
+    "d": "#0e8f81",
+    "learn": [
+     {
+      "h": "The Progressive Era",
+      "b": "Muckraker journalists exposed corruption and bad working conditions. Reformers won new amendments, including the 19th Amendment (1920), which gave women the vote."
+     },
+     {
+      "h": "World War I and the 1920s",
+      "b": "The U.S. entered WWI in 1917. Wilson proposed the Fourteen Points and the League of Nations, but the Senate rejected the treaty. The 1920s brought booming consumer culture."
+     },
+     {
+      "h": "Depression and World War II",
+      "b": "The 1929 stock market crash began the Great Depression. FDR's New Deal used government programs for relief and reform. After Pearl Harbor (1941), the U.S. entered WWII, and Japanese Americans were forced into internment camps."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "The New Deal was…",
+      "o": [
+       "FDR's programs for relief, recovery and reform",
+       "A Cold War treaty",
+       "A railroad law",
+       "A Progressive Era amendment"
+      ],
+      "a": 0,
+      "why": "Programs like Social Security still exist today."
+     },
+     {
+      "t": "tf",
+      "q": "The 19th Amendment gave women the right to vote in 1920.",
+      "a": true,
+      "why": "Suffragists had campaigned for over 70 years since Seneca Falls."
+     },
+     {
+      "t": "match",
+      "q": "Match each person or group to what they did",
+      "pairs": [
+       [
+        "Muckrakers",
+        "Exposed corruption"
+       ],
+       [
+        "Upton Sinclair",
+        "The Jungle, on meatpacking"
+       ],
+       [
+        "Franklin Roosevelt",
+        "The New Deal"
+       ],
+       [
+        "Woodrow Wilson",
+        "The Fourteen Points"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Spanish-American War",
+        1898
+       ],
+       [
+        "U.S. enters World War I",
+        1917
+       ],
+       [
+        "Stock market crash",
+        1929
+       ],
+       [
+        "Attack on Pearl Harbor",
+        1941
+       ]
+      ]
+     },
+     {
+      "t": "mc",
+      "q": "During WWII, Executive Order 9066 led to…",
+      "o": [
+       "The internment of Japanese Americans",
+       "The draft of women",
+       "The Marshall Plan",
+       "The end of segregation"
+      ],
+      "a": 0,
+      "why": "About 120,000 people of Japanese ancestry were forced into camps."
+     }
+    ]
+   },
+   {
+    "title": "Cold War America",
+    "period": "1945–1980",
+    "c": "#e85d9c",
+    "d": "#c23f7c",
+    "learn": [
+     {
+      "h": "Fear of communism",
+      "b": "The U.S. followed containment abroad. At home, McCarthyism accused people of being communists, often with little evidence."
+     },
+     {
+      "h": "Civil rights",
+      "b": "Brown v. Board of Education (1954) ended legal school segregation. After Rosa Parks' arrest, the Montgomery bus boycott began. Leaders like Martin Luther King Jr. used nonviolence, leading to the Civil Rights Act (1964) and the Voting Rights Act (1965)."
+     },
+     {
+      "h": "Great Society and turmoil",
+      "b": "LBJ's Great Society fought poverty. The Vietnam War divided the country. Watergate led Nixon to resign in 1974."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Brown v. Board of Education…",
+      "o": [
+       "Overturned \"separate but equal\" in public schools",
+       "Ended the Vietnam War",
+       "Created Medicare",
+       "Legalized unions"
+      ],
+      "a": 0,
+      "why": "The Court ruled that segregated schools were unequal by nature."
+     },
+     {
+      "t": "match",
+      "q": "Match each leader to the event",
+      "pairs": [
+       [
+        "Martin Luther King Jr.",
+        "Nonviolent civil rights movement"
+       ],
+       [
+        "Joseph McCarthy",
+        "Anti-communist accusations"
+       ],
+       [
+        "Lyndon Johnson",
+        "The Great Society"
+       ],
+       [
+        "Richard Nixon",
+        "Resigned after Watergate"
+       ]
+      ]
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Brown v. Board of Education",
+        1954
+       ],
+       [
+        "Civil Rights Act",
+        1964
+       ],
+       [
+        "Voting Rights Act",
+        1965
+       ],
+       [
+        "Nixon resigns",
+        1974
+       ]
+      ]
+     },
+     {
+      "t": "tf",
+      "q": "The Montgomery bus boycott began after Rosa Parks was arrested.",
+      "a": true,
+      "why": "The boycott lasted over a year and made King a national leader."
+     },
+     {
+      "t": "mc",
+      "q": "McCarthyism refers to…",
+      "o": [
+       "Accusing people of communism with little evidence",
+       "A plan to rebuild Europe",
+       "A civil rights march",
+       "A farm program"
+      ],
+      "a": 0,
+      "why": "Many lost jobs over accusations that were never proven."
+     }
+    ]
+   },
+   {
+    "title": "Modern America",
+    "period": "1980–present",
+    "c": "#0ea5e9",
+    "d": "#0b7fb4",
+    "learn": [
+     {
+      "h": "The Reagan era",
+      "b": "Ronald Reagan, elected in 1980, cut taxes and regulation and built up the military. The Cold War ended as the Berlin Wall fell in 1989."
+     },
+     {
+      "h": "A global economy",
+      "b": "NAFTA (1994) lowered trade barriers with Canada and Mexico. Computers and the internet changed work and daily life."
+     },
+     {
+      "h": "New challenges",
+      "b": "The September 11 attacks in 2001 led to the War on Terror. The 2008 financial crisis caused the Great Recession. Debates over immigration, health care and inequality continue."
+     }
+    ],
+    "qs": [
+     {
+      "t": "mc",
+      "q": "Reaganomics focused on…",
+      "o": [
+       "Tax cuts and less regulation",
+       "Higher taxes on everyone",
+       "Government ownership of industry",
+       "Ending all trade"
+      ],
+      "a": 0,
+      "why": "Supporters called it supply-side economics."
+     },
+     {
+      "t": "tf",
+      "q": "NAFTA lowered trade barriers among the U.S., Canada and Mexico.",
+      "a": true,
+      "why": "It took effect in 1994 and was later replaced by the USMCA."
+     },
+     {
+      "t": "order",
+      "q": "Put these events in order, earliest first",
+      "items": [
+       [
+        "Reagan elected",
+        1980
+       ],
+       [
+        "Berlin Wall falls",
+        1989
+       ],
+       [
+        "September 11 attacks",
+        2001
+       ],
+       [
+        "Financial crisis hits",
+        2008
+       ]
+      ]
+     },
+     {
+      "t": "match",
+      "q": "Match each president to a key event",
+      "pairs": [
+       [
+        "Ronald Reagan",
+        "Tax cuts and Cold War buildup"
+       ],
+       [
+        "Bill Clinton",
+        "Signed NAFTA"
+       ],
+       [
+        "George W. Bush",
+        "War on Terror"
+       ],
+       [
+        "Barack Obama",
+        "Affordable Care Act"
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "apq": [
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Las Casas (1552) described Spanish colonists' cruelty toward Native peoples in the Caribbean.",
+    "src": "Paraphrased from A Short Account of the Destruction of the Indies",
+    "q": "His account was most directly a response to…",
+    "o": [
+     "The encomienda system",
+     "The fur trade",
+     "The Mayflower Compact",
+     "The Stamp Act"
+    ],
+    "a": 0,
+    "why": "Encomienda forced labor caused massive suffering, which he condemned."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Virginia, 1676: Nathaniel Bacon led frontier settlers and servants who burned Jamestown.",
+    "src": "Historical summary",
+    "q": "One long-term result was…",
+    "o": [
+     "A shift toward enslaved African labor",
+     "The end of tobacco farming",
+     "Peace with all Native nations",
+     "Independence from Britain"
+    ],
+    "a": 0,
+    "why": "Planters saw enslaved workers as easier to control than armed former servants."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Thomas Paine argued it was absurd for a small island to rule a whole continent.",
+    "src": "Paraphrased from Common Sense, 1776",
+    "q": "Paine's main goal was to…",
+    "o": [
+     "Persuade colonists to support independence",
+     "Defend British rule",
+     "Call for a monarchy in America",
+     "Promote the Articles of Confederation"
+    ],
+    "a": 0,
+    "why": "Common Sense was a best-seller that pushed many toward independence."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "In 1848, reformers at Seneca Falls modeled their Declaration of Sentiments on the Declaration of Independence, adding that all men and women are created equal.",
+    "src": "Paraphrased from the Declaration of Sentiments, 1848",
+    "q": "This document most directly reflects…",
+    "o": [
+     "The growth of reform movements tied to the Second Great Awakening",
+     "Support for the Mexican-American War",
+     "Opposition to the Louisiana Purchase",
+     "The rise of Populism"
+    ],
+    "a": 0,
+    "why": "Many women's rights activists first organized through abolition and religious reform."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "Jacob Riis photographed crowded New York tenements to show how the urban poor lived.",
+    "src": "Paraphrased from How the Other Half Lives, 1890",
+    "q": "Work like this most directly led to…",
+    "o": [
+     "Progressive Era housing and labor reforms",
+     "The Dawes Act",
+     "The Monroe Doctrine",
+     "The end of Reconstruction"
+    ],
+    "a": 0,
+    "why": "Muckrakers made the public see problems and demand reform."
+   },
+   {
+    "t": "mc",
+    "ap": true,
+    "stim": "\"Separate educational facilities are inherently unequal.\"",
+    "src": "Brown v. Board of Education, 1954",
+    "q": "This ruling directly overturned the precedent set in…",
+    "o": [
+     "Plessy v. Ferguson",
+     "Marbury v. Madison",
+     "Dred Scott v. Sandford",
+     "McCulloch v. Maryland"
+    ],
+    "a": 0,
+    "why": "Plessy (1896) had allowed \"separate but equal\" facilities."
+   }
+  ]
+ }
+}
