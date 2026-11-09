@@ -22,7 +22,7 @@ const NODE_DESC: Record<NodeKind, string> = {
 };
 const NODE_ICON: Record<NodeKind, string> = { learn: SVG.scroll, p1: SVG.star, p2: SVG.dumbbell, lab: SVG.bolt, test: SVG.trophy };
 const OFFS = [0, 52, 78, 52, 0, -52, -78, -52];
-const ROW = 112;
+const ROW = 124;
 
 export function Guidebook({ ui: idx }: { ui: number }) {
   const g = useGame();
@@ -79,15 +79,21 @@ export function Learn() {
         let d = `M${pts[0][0]} ${pts[0][1]}`;
         for (let k = 1; k < pts.length; k++) d += ` C${pts[k - 1][0]} ${pts[k - 1][1] + ROW / 2} ${pts[k][0]} ${pts[k][1] - ROW / 2} ${pts[k][0]} ${pts[k][1]}`;
         const cid = nid(ui2, 'chest'), opened = g.chests[cid], ready = !opened && g.done[nid(ui2, 'test')];
+        // the finished part of the trail is drawn solid in the unit colour
+        const doneN = ns.filter((k) => g.done[nid(ui2, k)]).length;
+        const upTo = Math.min(doneN, pts.length - 1);
+        let dDone = '';
+        if (doneN > 0) { dDone = `M${pts[0][0]} ${pts[0][1]}`; for (let k = 1; k <= upTo; k++) dDone += ` C${pts[k - 1][0]} ${pts[k - 1][1] + ROW / 2} ${pts[k][0]} ${pts[k][1] - ROW / 2} ${pts[k][0]} ${pts[k][1]}`; }
         return (
           <section className="unit" key={ui2} style={{ ['--u' as string]: st.c, ['--ud' as string]: st.d }}>
             <div className="banner">
               <span className="banner-ico"><CourseIcon icon={st.icon} size={74} /></span>
-              <div className="banner-txt"><h2>{unitName(s, ui2)}</h2><p>{u.title} · {u.period}</p></div>
+              <div className="banner-txt"><h2>{unitName(s, ui2)}</h2><p>{u.title} · {u.period}</p>
+                <div className="bprog" aria-label={`${doneN} of ${ns.length} steps done`}><i style={{ width: `${(doneN / ns.length) * 100}%` }} /><b>{doneN}/{ns.length}</b></div></div>
               <button className="guide" onClick={() => ui.open(<Guidebook ui={ui2} />)}><Svg html={SVG.book} /><span>Guidebook</span></button>
             </div>
             <div className="path">
-              <svg className="trail" viewBox={`0 0 300 ${26 + n * ROW}`} style={{ height: 26 + n * ROW }} aria-hidden="true"><path d={d} /></svg>
+              <svg className="trail" viewBox={`0 0 300 ${26 + n * ROW}`} style={{ height: 26 + n * ROW }} aria-hidden="true"><path d={d} />{dDone && <path className="done" d={dDone} />}</svg>
               {ns.map((k, ki) => {
                 const id = nid(ui2, k), done = g.done[id], cur = id === first, off = offs[ki];
                 return (

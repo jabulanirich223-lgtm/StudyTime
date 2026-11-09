@@ -17,7 +17,7 @@ function createWindow() {
     title: app.getName(),
     icon: path.join(__dirname, '..', 'build', 'icon.png'),
     autoHideMenuBar: true,
-    webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true },
+    webPreferences: { contextIsolation: true, nodeIntegration: false, sandbox: true, autoplayPolicy: 'no-user-gesture-required' },
   });
   Menu.setApplicationMenu(null);
   // Open outside links in the default browser instead of inside the app.

@@ -5,7 +5,7 @@ import { useGame, TIERS, tierIdx, BADGES, levelOf } from '../lib/store';
 import { useUI } from '../lib/ui';
 import { startAPSim, startDrill, startUnit, startLightning, startDateDash, startReview, hasDates } from '../lib/launch';
 import { snd } from '../lib/sound';
-import { speak, enVoices, pickVoice, voiceScore, canSpeak, CHARACTER_VOICE, onVoiceStatus, voiceStatus, loadVoices, type VoiceStatus } from '../lib/speech';
+import { speak, CHARACTER_VOICE, onVoiceStatus, voiceStatus, loadVoices, type VoiceStatus } from '../lib/speech';
 import { Tock } from '../components/Tock';
 import { Svg, SVG, CourseIcon } from '../components/Icons';
 import { CAST } from '../data/cast';
@@ -148,9 +148,6 @@ function Toggle({ on, label, onClick }: { on: boolean; label: string; onClick: (
 export function ProfileView() {
   const g = useGame();
   const ui = useUI();
-  const [, force] = useState(0);
-  useEffect(() => { if (!canSpeak()) return; const f = () => force((n) => n + 1); speechSynthesis.addEventListener('voiceschanged', f); return () => speechSynthesis.removeEventListener('voiceschanged', f); }, []);
-  const voices = enVoices(), cur = pickVoice();
   return (
     <>
       <div className="prof-head">
@@ -180,23 +177,14 @@ export function ProfileView() {
 
       <h2 style={{ marginTop: 28, fontSize: 24 }}>Settings</h2>
       <div className="toggle-row"><span>Daily goal</span><select value={g.goal} onChange={(e) => g.set({ goal: Number(e.target.value) })}>{[10, 20, 30, 50, 80].map((n) => <option key={n} value={n}>{n} XP</option>)}</select></div>
-      <Toggle on={g.sound} label="Sound effects" onClick={() => g.set({ sound: !g.sound })} />
       <Toggle on={g.autoRead} label="Read questions aloud automatically" onClick={() => { g.set({ autoRead: !g.autoRead }); if (!g.autoRead) speak('Read aloud is on. I will read each question for you.'); }} />
-      <Toggle on={g.charVoices !== false} label="Character voices (natural AI voices, works offline)" onClick={() => { const on = g.charVoices === false; g.set({ charVoices: on }); if (on) void loadVoices(); }} />
-      {g.charVoices !== false && <VoiceState />}
-      {g.charVoices === false && <div className="toggle-row"><span>Voice</span>{voices.length ? (
-        <span className="row" style={{ justifyContent: 'flex-end' }}>
-          <select aria-label="Voice" value={cur?.name} style={{ maxWidth: 260 }} onChange={(e) => { g.set({ voiceName: e.target.value }); setTimeout(() => speak("Hi, I'm Tock. Is this voice better?"), 50); }}>
-            {voices.map((v) => <option key={v.name} value={v.name}>{v.name.replace(/^Microsoft /, '').replace(/ - English.*$/, '').replace(/\s*\(.*?\)\s*$/, '')}{voiceScore(v) >= 10 ? ' ★' : ''} · {v.lang}</option>)}
-          </select>
-          <button className="speak" onClick={() => speak('The Song dynasty ran its empire with a civil service exam based on Confucian learning.')}><Svg html={SVG.speaker} /><span>Preview</span></button>
-        </span>) : <span className="muted small">No voices found</span>}</div>}
+      <VoiceState />
       <div className="toggle-row"><span>Reading speed</span><select value={g.ttsRate} onChange={(e) => { g.set({ ttsRate: Number(e.target.value) }); setTimeout(() => speak('This is how fast I will read.'), 50); }}>{[[0.8, 'Slow'], [1, 'Normal'], [1.2, 'Fast'], [1.5, 'Very fast']].map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
       <div className="toggle-row"><span>Voice pitch</span><select value={g.ttsPitch} onChange={(e) => { g.set({ ttsPitch: Number(e.target.value) }); setTimeout(() => speak("Hi, I'm Tock. How does this sound?"), 50); }}>{[[0.8, 'Lower'], [1, 'Normal'], [1.15, 'Higher']].map(([v, l]) => <option key={v} value={v}>{l}</option>)}</select></div>
       <div className="toggle-row"><span>Reset all progress</span><button className="btn ghost" onClick={() => ui.open(
         <div className="center"><Tock mood="sad" size={120} /><h2>Reset all progress?</h2><p className="muted">This clears XP, streak, finished lessons and saved mistakes on this computer.</p>
           <div className="row" style={{ justifyContent: 'center' }}><button className="btn red" onClick={() => { g.reset(); ui.close(); ui.go('learn'); }}>Reset everything</button><button className="btn ghost" onClick={() => ui.close()}>Cancel</button></div></div>)}>Reset</button></div>
-      <p className="muted small">★ marks natural-sounding voices. Progress is saved on this computer.</p>
+      <p className="muted small">Progress is saved on this computer.</p>
     </>
   );
 }

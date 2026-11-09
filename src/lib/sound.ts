@@ -1,5 +1,3 @@
-import { useGame } from './store';
-
 /* Sound effects, synthesised live with Web Audio (no audio files).
    Built from a few "instruments": a bell/marimba voice, a soft pop, a noise whoosh and a low bonk,
    all sent through a light echo so they sound round and friendly. */
@@ -87,7 +85,12 @@ const SFX = {
 };
 export type Sfx = keyof typeof SFX;
 
+/** Sound is always on (there is no off switch). Browsers only start audio after a user gesture, so unlock on the first one. */
+if (typeof window !== 'undefined') {
+  const unlock = () => { try { audio(); } catch { /* audio not available */ } };
+  ['pointerdown', 'keydown', 'touchstart'].forEach((e) => window.addEventListener(e, unlock, { once: true, capture: true }));
+}
+
 export function snd(name: Sfx) {
-  if (!useGame.getState().sound) return;
   try { const v = audio(); SFX[name](v, v.ac.currentTime + 0.01); } catch { /* audio not available */ }
 }

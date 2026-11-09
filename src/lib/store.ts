@@ -34,7 +34,7 @@ export type State = {
   mistakes: { s: SubjectId; q: Question }[];
   best: { lightning: number; ap: Partial<Record<SubjectId, number>> };
   stats: { lessons: number; perfect: number; maxCombo: number; fixed: number };
-  sound: boolean; autoRead: boolean; charVoices: boolean; ttsRate: number; ttsPitch: number; voiceName: string;
+  autoRead: boolean; ttsRate: number; ttsPitch: number; voiceName: string;
   frozeUsed?: boolean;
   pro: boolean; proPlan: string | null; proSince: number; proWeek: string;
   name: string; avatar: string; avatarBg: string;
@@ -60,7 +60,7 @@ const fresh = (): State => ({
   best: { lightning: 0, ap: {} },
   stats: { lessons: 0, perfect: 0, maxCombo: 0, fixed: 0 },
   pro: false, proPlan: null, proSince: 0, proWeek: '', name: 'Learner', avatar: 'tock', avatarBg: '#ddf4ff',
-  sound: true, autoRead: false, charVoices: true, ttsRate: 1, ttsPitch: 1, voiceName: '',
+  autoRead: false, ttsRate: 1, ttsPitch: 1, voiceName: '',
 });
 
 export const useGame = create<State & Actions>()(
@@ -102,7 +102,10 @@ export const useGame = create<State & Actions>()(
       },
       reset: () => set({ ...fresh(), onboarded: true }),
     }),
-    { name: 'studytime-v1', partialize: (s) => { const { set: _a, addXP: _b, syncDay: _c, syncHearts: _d, loseHeart: _e, reset: _f, ...rest } = s; return rest as State; } },
+    { name: 'studytime-v1', version: 2,
+      // sound effects and character voices can no longer be switched off: drop the old saved switches
+      migrate: (p) => { const o = (p || {}) as Record<string, unknown>; delete o.sound; delete o.charVoices; return o as never; },
+      partialize: (s) => { const { set: _a, addXP: _b, syncDay: _c, syncHearts: _d, loseHeart: _e, reset: _f, ...rest } = s; return rest as State; } },
   ),
 );
 

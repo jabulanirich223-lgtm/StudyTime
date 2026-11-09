@@ -299,7 +299,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
       <div className="l-body">
         <div className="l-inner">
           {it.t === 'card' ? (
-            <div className="learncard">
+            <div className="learncard" key={i}>
               <Tock mood="think" />
               <div className="qcard">
                 <div className="qhead"><span className="qkind"><i />{cfg.title}</span><SpeakBtn segs={() => itemSegs(it)} /></div>
@@ -309,7 +309,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
               </div>
             </div>
           ) : (
-            <div className="qcard">
+            <div className="qcard" key={i}>
               <div className="qhead"><span className="qkind"><i />{kind}</span>{!cfg.fast && <SpeakBtn segs={() => itemSegs(it, ord, lang)} who={asker?.id || 'tock'} />}</div>
               {'stim' in it && it.stim && <div className="stim">{it.stim}<span className="src">Source: {it.src}</span></div>}
               {asker ? (
@@ -337,7 +337,7 @@ export function Lesson({ cfg }: { cfg: SessionCfg }) {
                 <div className="opts">{ord.map((oi, n) => {
                   const cls = phase === 'feedback' ? (oi === it.a ? 'right' : String(oi) === sel ? 'wrong' : '') : String(oi) === sel ? 'sel' : '';
                   return <button key={oi} className={`opt ${cls}`} disabled={phase !== 'answer'} onClick={() => { setSel(String(oi)); if (!cfg.fast) snd('tap'); if (cfg.fast) check(false, String(oi)); }}>
-                    <span className="k">{'abcd'[n]})</span>{it.o[oi]}</button>;
+                    <span className="k">{n + 1}</span>{it.o[oi]}</button>;
                 })}</div>
               )}
               {it.t === 'tf' && (

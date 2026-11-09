@@ -109,8 +109,7 @@ export async function speakSegs(segs: Seg[], who = 'tock') {
   const id = ++runId;
   const s = useGame.getState();
   emit(true, who);
-  const useKokoro = s.charVoices !== false;
-  const k = useKokoro ? await loadVoices() : null;
+  const k = await loadVoices();
   for (const seg of segs) {
     if (id !== runId) break;
     const text = clean(seg.text);
